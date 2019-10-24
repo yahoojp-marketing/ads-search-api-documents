@@ -66,6 +66,7 @@
         url: "./design/v0/Route.yaml",
         dom_id: '#swagger-ui',
         deepLinking: false,
+        docExpansion: 'none',
         defaultModelRendering: 'model',
         defaultModelExpandDepth: 20,
         tagsSorter: 'alpha',
@@ -99,30 +100,41 @@
             $.each($('.swagger-ui section > div > span > div'), function(index, value) {
               var clickParent = $('#apiSideMenu > ul').append('<li><p class="apiName">' + $(value).find('h4').data('tag') + '</p></li>')
               $( clickParent ).find('li:last-child > p.apiName').click(function() {
+                var clickedContent = $(this)
+                clickedContent.parent().find("ul").html("")
+
+                if( !$(value).hasClass("is-open") && $(this).next().is(":hidden")){
+                  $(value).find('h4').trigger('click')
+                }else{
+
+                }
+                $.each($(value).find('.opblock-summary-path'), function(i, v) {
+                        var t = $(v).data('path')
+                        var clickChild = clickedContent.parent().find("ul").append('<li class="childMethod">' + $(v).data('path').replace(/\/.+\//, "") + '</li>')
+
+                        $( clickChild ).find('li:last-child').click(function() {
+                          if(!m){
+                            m = true
+                            if( !$(value).hasClass("is-open") ){
+                              $(value).find('h4').trigger('click')
+                            }
+                            var p = $('[data-path="'+t+'"]').position().top - cTop
+                            $('html,body').animate({scrollTop:p}, speed, 'swing',function(){
+                              m = false
+                            });
+                          }
+                        })
+                      })
+
                 if(!o){
                     o = true
                     $(this).next().slideToggle(1,function(){
                       o = false
                     })
                 }
+
               })
               $('#apiSideMenu > ul > li:last-child').append('<ul class="methodTab"></ul>')
-              $.each($(value).find('.opblock-summary-path'), function(i, v) {
-                var t = $(v).data('path')
-                var clickChild = $('#apiSideMenu > ul > li:last-child > ul').append('<li class="childMethod">' + $(v).data('path').replace(/\/.+\//, "") + '</li>')
-                $( clickChild ).find('li:last-child').click(function() {
-                  if(!m){
-                    m = true
-                    if( !$(value).hasClass("is-open") ){
-                      $(value).find('h4').trigger('click')
-                    }
-                    var p = $('[data-path="'+t+'"]').position().top - cTop
-                    $('html,body').animate({scrollTop:p}, speed, 'swing',function(){
-                      m = false
-                    });
-                  }
-                })
-              })
 
             })
             $('.methodTab').hide()
