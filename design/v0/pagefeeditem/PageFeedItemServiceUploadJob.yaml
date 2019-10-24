@@ -1,0 +1,37 @@
+PageFeedItemServiceUploadJob:
+  type: object
+  properties:
+    accountId:
+      type: integer
+      format: int64
+      description: "<ja>アカウントID</ja><br><en>Account ID</en>"
+    endDate:
+      type: string
+      description: "<ja>ジョブの終了日<br>形式：yyyyMMddHHmmss</ja><br><en>End date of job<br>Format:yyyyMMddHHmmss</en>"
+    errorCount:
+      type: integer
+      format: int32
+      description: "<ja>エラーの件数</ja><br><en>count of error occured</en>"
+    feedIds:
+      type: array
+      items:
+        type: integer
+        format: int64
+        description: "<ja>フィードID</ja><br><en>Feed ID</en>"
+    jobId:
+      type: integer
+      format: int64
+      description: "<ja>ジョブID</ja><br><en>Job ID.</en>"
+    progress:
+      type: integer
+      format: int32
+      description: "<ja>ジョブの進捗状況</ja><br><en>Progress of page feed item job</en>"
+    startDate:
+      type: string
+      description: "<ja>ジョブの開始日<br>形式：yyyyMMddHHmmss</ja><br><en>Start date of job<br>Format:yyyyMMddHHmmss</en>"
+    uploadJobStatus:
+      $ref: 'PageFeedItemServiceUploadJobStatus.yaml#/PageFeedItemServiceUploadJobStatus'
+  title: PageFeedItemServiceUploadJob
+  description: "<ja>PageFeedItemServiceUploadJobオブジェクトは、ページフィードアイテム情報をダウンロードする処理内容を格納します。</ja><br><en>PageFeedItemServiceUploadJob\
+    \ object retains contents of page feed item information for upload.</en><hr><details><summary>Requirement</summary><table\
+    \ border='1'></table></details>"

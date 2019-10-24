@@ -1,0 +1,41 @@
+AuditLogServiceSelector:
+  type: object
+  required:
+  - accountId
+  properties:
+    accountId:
+      type: integer
+      format: int64
+      description: "<ja>アカウントIDです。</ja><br><en>Account ID</en>"
+    jobIds:
+      type: array
+      items:
+        type: integer
+        format: int64
+      maxItems: 1000
+      description: "<ja>登録したジョブのIDです。</ja><br><en>Created job ID</en>"
+    jobStatuses:
+      type: array
+      items:
+        $ref: 'AuditLogServiceJobStatus.yaml#/AuditLogServiceJobStatus'
+      maxItems: 4
+    numberResults:
+      type: integer
+      format: int32
+      minimum: 1
+      maximum: 1000
+      default: 500
+      description: "ページの最大件数です。このフィールドは、1以上を指定する必要があります。<br>Maximum number of results\
+        \ to return in this page. This field must be greater than or equal to 1. Also\
+        \ see Entity Limits per operation."
+    startIndex:
+      type: integer
+      format: int32
+      minimum: 1
+      default: 1
+      description: "ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。<br>Index of the first\
+        \ result to return in this page. This field must be greater than or equal\
+        \ to 1."
+  title: AuditLogServiceSelector
+  description: "<ja>AuditLogServiceSelectorオブジェクトは、登録したジョブを照会するための検索条件を保持します。</ja><br><en>AuditLogServiceSelector\
+    \ object retains search criterias to inquire a created job.</en>"

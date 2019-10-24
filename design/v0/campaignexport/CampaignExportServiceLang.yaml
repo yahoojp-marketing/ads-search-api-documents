@@ -1,0 +1,11 @@
+CampaignExportServiceLang:
+  type: string
+  enum:
+  - JA
+  - EN
+  - UNKNOWN
+  title: CampaignExportServiceLang
+  description: "<ja>CampaignExportServiceLangは、エクスポートするデータの言語設定です。</ja><br><en>CampaignExportServiceLang\
+    \ is a language setting for exporting data.</en><hr>\n* `JA` - <ja>日本語です。</ja><br><en>Japanese.</en><br>\n\
+    * `EN` - <ja>英語です。</ja><br><en>English.</en><br>\n* `UNKNOWN` - 未知の値です。<br>Unknown\
+    \ Value"

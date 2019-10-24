@@ -1,0 +1,32 @@
+AccountTrackingUrl:
+  type: object
+  properties:
+    accountId:
+      type: integer
+      format: int64
+      description: "<ja>アカウントIDです。</ja><br><en>Account ID.</en>"
+    accountName:
+      type: string
+      description: "<ja>アカウント名です。</ja><br><en>Account name.</en>"
+    disapprovalReasonCodes:
+      type: array
+      items:
+        type: string
+      description: "<ja>審査否認理由コードです。</ja><br><en>Code of disapproval reason.</en>"
+    disapprovalReviewUrl:
+      type: string
+      description: "<ja>審査否認されたトラッキングURLです。</ja><br><en>Tracking URL that has been\
+        \ disapproved.</en>"
+    inReviewUrl:
+      type: string
+      description: "<ja>審査中のトラッキングURLです。</ja><br><en>Tracking URL that is in review.</en>"
+    trackingUrl:
+      type: string
+      description: "<ja>トラッキングURLです。<br>※空で設定すると、既存の トラッキングURLは削除されます。</ja><br><en>Tracking\
+        \ URL.<br>*When tag is set blank, existing Tracking URL will be deleted</en>"
+    urlApprovalStatus:
+      $ref: 'AccountTrackingUrlServiceUrlApprovalStatus.yaml#/AccountTrackingUrlServiceUrlApprovalStatus'
+  title: AccountTrackingUrl
+  description: "<ja>AccountTrackingUrlオブジェクトは、アカウントトラッキングの情報を表します。</ja><br><en>AccountTrackingUrl\
+    \ object describes account tracking information.</en><hr><details><summary>Requirement</summary><table\
+    \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>SET</th></tr><tr><td>accountId</td><td>-</td><td>Requirement<br><i>NotUpdatable</i></td></tr><tr><td>accountName</td><td>-</td><td>-</td></tr><tr><td>disapprovalReasonCodes</td><td>-</td><td>-</td></tr><tr><td>disapprovalReviewUrl</td><td>-</td><td>-</td></tr><tr><td>inReviewUrl</td><td>-</td><td>-</td></tr><tr><td>trackingUrl</td><td>-</td><td>Optional<br><i>Updatable</i></td></tr><tr><td>urlApprovalStatus</td><td>-</td><td>-</td></tr></table></details>"

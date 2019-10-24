@@ -1,0 +1,19 @@
+AuditLogServiceOperation:
+  type: object
+  required:
+  - accountId
+  - operand
+  properties:
+    accountId:
+      type: integer
+      format: int64
+      description: "<ja>アカウントIDです。</ja><br><en>Account ID.</en>"
+    operand:
+      type: array
+      items:
+        $ref: 'AuditLogServiceJob.yaml#/AuditLogServiceJob'
+      minItems: 1
+      maxItems: 1
+  title: AuditLogServiceOperation
+  description: "<ja>AuditLogServiceOperationオブジェクトは、登録対象のジョブを保持します。</ja><br><en>AuditLogServiceOperation\
+    \ object retains the job information to be added.</en>"

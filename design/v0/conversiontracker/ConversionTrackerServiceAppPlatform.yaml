@@ -1,0 +1,9 @@
+ConversionTrackerServiceAppPlatform:
+  type: string
+  enum:
+  - ANDROID_MARKET
+  - UNKNOWN
+  title: ConversionTrackerServiceAppPlatform
+  description: "<ja>ConversionTrackerServiceAppPlatformは、アプリのプラットフォームです。</ja><br><en>ConversionTrackerServiceAppPlatform\
+    \ is App platform.</en><hr>\n* `ANDROID_MARKET` - <ja>Androidマーケットのプラットフォームです。</ja><br><en>Android\
+    \ market</en><br>\n* `UNKNOWN` - 未知の値です。<br>Unknown Value"

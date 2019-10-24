@@ -1,0 +1,22 @@
+CampaignServiceBiddingStrategyFailedReason:
+  type: string
+  enum:
+  - FAILURE
+  - CONVERSION_TRACKING_NOT_ENABLED
+  - NOT_ENOUGH_CONVERSIONS
+  - CANNOT_CREATE_CAMPAIGN_WITH_CONVERSION_OPTIMIZER
+  - BIDDING_STRATEGY_CANNOT_BE_OVERRIDDEN
+  - NOT_CPC_CAMPAIGN
+  - UNKNOWN
+  description: "<ja>CampaignServiceBiddingStrategyFailedReasonは、自動入札設定の結果（失敗原因）です。</ja><br><en>CampaignServiceBiddingStrategyFailedReason\
+    \ object displays the failure reason of Auto Bidding setting.</en><hr>\n* `CONVERSION_TRACKING_NOT_ENABLED`\
+    \ - <ja>コンバージョン測定タグが発行されていません。</ja><br><en>Failed [Invalid conversion tracking]</en><br>\n\
+    * `NOT_ENOUGH_CONVERSIONS` - <ja>コンバージョンの情報が十分でありません。</ja><br><en>Failed [Not\
+    \ enough conversion information]</en><br>\n* `CANNOT_CREATE_CAMPAIGN_WITH_CONVERSION_OPTIMIZER`\
+    \ - <ja>コンバージョンオプティマイザーの情報は作成不可です。</ja><br><en>Failed [Cannot create conversion\
+    \ optimizer information]</en><br>\n* `BIDDING_STRATEGY_CANNOT_BE_OVERRIDDEN` -\
+    \ <ja>自動入札設定の上書きができません。</ja><br><en>Failed [Cannot override Auto bidding]</en><br>\n\
+    * `NOT_CPC_CAMPAIGN` - <ja>手動入札ではありません。</ja><br><en>Failed [Not CPC Campaign]</en><br>\n\
+    * `FAILURE` - <ja>原因不明です。</ja><br><en>Failed [Cause unknown]</en><br>\n* `UNKNOWN`\
+    \ - 未知の値です。<br>Unknown Value"
+  title: CampaignServiceBiddingStrategyFailedReason

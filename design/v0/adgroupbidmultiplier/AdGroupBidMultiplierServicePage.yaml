@@ -1,0 +1,13 @@
+AdGroupBidMultiplierServicePage:
+  type: object
+  properties:
+    totalNumEntries:
+      type: integer
+      format: int32
+    values:
+      type: array
+      items:
+        $ref: 'AdGroupBidMultiplierServiceValue.yaml#/AdGroupBidMultiplierServiceValue'
+  title: AdGroupBidMultiplierServicePage
+  description: "<ja>AdGroupBidMultiplierServicePageオブジェクトは、入札価格調整率を格納するコンテナです。</ja><br><en>Container\
+    \ for bid multiplier.</en>"

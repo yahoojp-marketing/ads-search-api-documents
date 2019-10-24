@@ -1,0 +1,12 @@
+AuditLogServiceAddJobResponse:
+  type: object
+  properties:
+    errors:
+      type: array
+      items:
+        $ref: '../../Error.yaml#/Error'
+    rid:
+      type: string
+    rval:
+      $ref: 'AuditLogServiceReturnValue.yaml#/AuditLogServiceReturnValue'
+  title: AuditLogServiceAddJobResponse

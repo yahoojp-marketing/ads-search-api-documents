@@ -1,0 +1,16 @@
+FeedItemServiceMinuteOfHour:
+  type: string
+  enum:
+  - ZERO
+  - FIFTEEN
+  - THIRTY
+  - FORTY_FIVE
+  - UNKNOWN
+  title: FeedItemServiceMinuteOfHour
+  description: "<ja>FeedItemServiceMinuteOfHourは、時間（分）を表します。</ja><br><en>Minutes of\
+    \ an hour. Only supported for: 0, 15, 30, and 45 minutes past the hour.</en><hr>\n\
+    * `ZERO` - <ja>0分です。</ja><br><en>Zero minutes past the hour</en><br>\n* `FIFTEEN`\
+    \ - <ja>15分です。</ja><br><en>Fifteen minutes past the hour</en><br>\n* `THIRTY`\
+    \ - <ja>30分です。</ja><br><en>Thirty minutes past the hour</en><br>\n* `FORTY_FIVE`\
+    \ - <ja>45分です。</ja><br><en>Forty-five minutes past the hour</en><br>\n* `UNKNOWN`\
+    \ - 未知の値です。<br>Unknown Value"

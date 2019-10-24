@@ -1,0 +1,16 @@
+CampaignFeedServicePlaceholderType:
+  type: string
+  enum:
+  - QUICKLINK
+  - CALLEXTENSION
+  - CALLOUT
+  - STRUCTURED_SNIPPET
+  - UNKNOWN
+  title: CampaignFeedServicePlaceholderType
+  description: "<ja>CampaignFeedServicePlaceholderTypeは、FeedItem情報の種類を選択します。</ja><br><en>CampaignFeedServicePlaceholderType\
+    \ selects the type of FeedItem information.</en><hr>\n* `CALLOUT` - <ja>テキスト補足オプションです。</ja><br><en>Callout\
+    \ options.</en><br>\n* `STRUCTURED_SNIPPET` - <ja>カテゴリ補足オプションです。</ja><br><en>Structured\
+    \ snippet options.</en><br>\n* `QUICKLINK` - <ja>広告表示オプションのクイックリンクオプションです。</ja><br><en>QuickLinks\
+    \ of Ad Display Options.</en><br>\n* `CALLEXTENSION` - <ja>広告表示オプションの電話番号オプションです。</ja><br><en>Call\
+    \ Extensions of Ad Display Options.</en><br>\n* `UNKNOWN` - 未知の値です。<br>Unknown\
+    \ Value"

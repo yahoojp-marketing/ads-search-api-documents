@@ -1,0 +1,20 @@
+AdGroupCriterionLabelServiceOperation:
+  type: object
+  required:
+  - accountId
+  - operand
+  properties:
+    accountId:
+      type: integer
+      format: int64
+      description: "<ja>アカウントID</ja><br><en>Account ID</en>"
+    operand:
+      type: array
+      items:
+        $ref: 'AdGroupCriterionLabel.yaml#/AdGroupCriterionLabel'
+      minItems: 1
+      maxItems: 2000
+  title: AdGroupCriterionLabelServiceOperation
+  description: "<ja>AdGroupCriterionLabelServiceOperationオブジェクトは、操作の対象となる広告グループのクライテリアラベル情報と処理の内容を表します。</ja><br><en>AdGroupCriterionLabelServiceOperation\
+    \ displays information of ad group criterion label to be operated and processing\
+    \ content.</en>"

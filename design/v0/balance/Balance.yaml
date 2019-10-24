@@ -1,0 +1,13 @@
+Balance:
+  type: object
+  properties:
+    accountId:
+      type: integer
+      format: int64
+      description: <ja>アカウントIDです。</ja><br><en>Accoount ID</en>
+    balance:
+      type: integer
+      format: int64
+      description: <ja>未消化金額です。</ja><br><en>Balance</en>
+  title: Balance
+  description: '<ja>Balanceオブジェクトは、選択したアカウントの未消化予算の情報を表します。</ja><br><en>Account balance.</en>'

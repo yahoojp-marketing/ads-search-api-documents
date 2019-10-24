@@ -1,0 +1,12 @@
+ConversionTrackerServiceMutateResponse:
+  type: object
+  properties:
+    errors:
+      type: array
+      items:
+        $ref: '../../Error.yaml#/Error'
+    rid:
+      type: string
+    rval:
+      $ref: 'ConversionTrackerServiceReturnValue.yaml#/ConversionTrackerServiceReturnValue'
+  title: ConversionTrackerServiceMutateResponse

@@ -1,0 +1,15 @@
+SharedCriterionServiceValue:
+  type: object
+  properties:
+    errors:
+      type: array
+      items:
+        $ref: '../../Error.yaml#/Error'
+    operationSucceeded:
+      type: boolean
+      description: "<ja>処理結果を表示します。</ja><br><en>Showing operation result.</en>"
+    sharedCriterion:
+      $ref: 'SharedCriterion.yaml#/SharedCriterion'
+  title: SharedCriterionServiceValue
+  description: "<ja>SharedCriterionServiceValueは、実行結果（1エンティティ）を保持するオブジェクトです。</ja><br><en>SharedCriterionServiceValue\
+    \ object holds exec result (1 entity).</en>"

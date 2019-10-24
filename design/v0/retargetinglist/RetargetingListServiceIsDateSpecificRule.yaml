@@ -1,0 +1,11 @@
+RetargetingListServiceIsDateSpecificRule:
+  type: string
+  enum:
+  - 'TRUE'
+  - 'FALSE'
+  - UNKNOWN
+  title: RetargetingListServiceIsDateSpecificRule
+  description: "<ja>RetargetingListServiceIsDateSpecificRuleは、期限付きルールか定義します。</ja><br><en>RetargetingListServiceIsDateSpecificRule\
+    \ defines the rule with deadline.</en><hr>\n* `TRUE` - <ja>期限が付くルールとして定義します。</ja><br><en>Rule\
+    \ with deadline.</en><br>\n* `FALSE` - <ja>期限を付けないルールとして定義します。</ja><br><en>Rule\
+    \ without deadline.</en><br>\n* `UNKNOWN` - 未知の値です。<br>Unknown Value"

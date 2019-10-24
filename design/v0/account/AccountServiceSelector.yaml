@@ -1,0 +1,42 @@
+AccountServiceSelector:
+  type: object
+  properties:
+    accountIds:
+      type: array
+      items:
+        type: integer
+        format: int64
+      maxItems: 200
+      description: <ja>アカウントIDの配列です。</ja><br><en>Account IDs.</en>
+    accountStatuses:
+      type: array
+      items:
+        $ref: 'AccountServiceStatus.yaml#/AccountServiceStatus'
+    accountTypes:
+      type: array
+      items:
+        $ref: 'AccountServiceType.yaml#/AccountServiceType'
+    authType:
+      $ref: 'AccountServiceAuthType.yaml#/AccountServiceAuthType'
+    includeTestAccount:
+      $ref: 'AccountServiceIncludeTestAccount.yaml#/AccountServiceIncludeTestAccount'
+    numberResults:
+      type: integer
+      format: int32
+      minimum: 1
+      maximum: 200
+      default: 200
+      description: "ページの最大件数です。このフィールドは、1以上を指定する必要があります。<br>Maximum number of results\
+        \ to return in this page. This field must be greater than or equal to 1. Also\
+        \ see Entity Limits per operation."
+    startIndex:
+      type: integer
+      format: int32
+      minimum: 1
+      default: 1
+      description: "ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。<br>Index of the first\
+        \ result to return in this page. This field must be greater than or equal\
+        \ to 1."
+  title: AccountServiceSelector
+  description: "<ja>AccountServiceSelectorオブジェクトは、選択するアカウントを表します。</ja><br><en>Explains\
+    \ which accounts to return.</en>"

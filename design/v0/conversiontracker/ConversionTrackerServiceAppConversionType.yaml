@@ -1,0 +1,13 @@
+ConversionTrackerServiceAppConversionType:
+  type: string
+  enum:
+  - DOWNLOAD
+  - IN_APP_PURCHASE
+  - FIRST_OPEN
+  - UNKNOWN
+  title: ConversionTrackerServiceAppConversionType
+  description: "<ja>ConversionTrackerServiceAppConversionTypeは、アプリのコンバージョンの種別を表します。</ja><br><en>ConversionTrackerServiceAppConversionType\
+    \ describes App conversion type.</en><hr>\n* `FIRST_OPEN` - <ja>アプリ初回起動コンバージョンです。</ja><br><en>App\
+    \ first open conversion.</en><br>\n* `DOWNLOAD` - <ja>アプリダウンロード時のコンバージョンです。</ja><br><en>App\
+    \ download conversion.</en><br>\n* `IN_APP_PURCHASE` - <ja>アプリ内行動コンバージョンです。</ja><br><en>In-app\
+    \ action conversion.</en><br>\n* `UNKNOWN` - 未知の値です。<br>Unknown Value"

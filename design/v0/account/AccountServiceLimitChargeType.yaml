@@ -1,0 +1,11 @@
+AccountServiceLimitChargeType:
+  type: string
+  enum:
+  - SUM
+  - MONTHLY
+  - UNKNOWN
+  title: AccountServiceLimitChargeType
+  description: "<ja>AccountServiceLimitChargeTypeは、月額など予算に関するアカウントの種別です。</ja><br><en>Account\
+    \ payment, such as monthly amount.</en><hr>\n* `SUM` - <ja>総額アカウントです。</ja><br><en>Total\
+    \ amount</en><br>\n* `MONTHLY` - <ja>月額アカウントです。</ja><br><en>Monthly amount.</en><br>\n\
+    * `UNKNOWN` - 未知の値です。<br>Unknown Value"

@@ -1,0 +1,17 @@
+BalanceServiceValue:
+  type: object
+  properties:
+    balance:
+      $ref: 'Balance.yaml#/Balance'
+      description: <ja>アカウントの残高です。</ja><br><en>balance of the account.</en>
+    errors:
+      type: array
+      items:
+        $ref: '../../Error.yaml#/Error'
+      description: <ja>エラーの内容です。</ja><br><en>Error detail.</en>
+    operationSucceeded:
+      type: boolean
+      description: <ja>処理結果です。</ja><br><en>The result of operation.</en>
+  title: BalanceServiceValue
+  description: '<ja>BalanceValuesオブジェクトは、選択したアカウントの残高を表します。</ja><br><en>Explains its
+    specified account balance.</en>'

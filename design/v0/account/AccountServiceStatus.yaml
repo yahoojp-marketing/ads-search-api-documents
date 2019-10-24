@@ -1,0 +1,16 @@
+AccountServiceStatus:
+  type: string
+  enum:
+  - INPROGRESS
+  - WAIT_DECIDE
+  - SUSPENDED
+  - SERVING
+  - ENDED
+  - UNKNOWN
+  title: AccountServiceStatus
+  description: "<ja>AccountServiceStatusは、アカウントの契約状況を表します。</ja><br><en>Account status.</en><hr>\n\
+    * `INPROGRESS` - <ja>登録待ち</ja><br><en>Under registration process</en><br>\n* `WAIT_DECIDE`\
+    \ - <ja>確定待ち</ja><br><en>Waiting confirmation</en><br>\n* `SUSPENDED` - <ja>サービス停止中</ja><br><en>The\
+    \ account service is not active.</en><br>\n* `SERVING` - <ja>サービス中</ja><br><en>The\
+    \ account is active.</en><br>\n* `ENDED` - <ja>サービス終了</ja><br><en>The account　service\
+    \ has ended.</en><br>\n* `UNKNOWN` - 未知の値です。<br>Unknown Value"

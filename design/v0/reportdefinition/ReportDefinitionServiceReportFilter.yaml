@@ -1,0 +1,17 @@
+ReportDefinitionServiceReportFilter:
+  type: object
+  properties:
+    field:
+      type: string
+      description: "<ja>フィルタ条件を設定する表示 項目です。</ja><br><en>Field which you set filtering.</en>"
+    reportOperator:
+      $ref: 'ReportDefinitionServiceReportOperator.yaml#/ReportDefinitionServiceReportOperator'
+    value:
+      type: array
+      items:
+        type: string
+      description: "<ja>表示項目の条件値です。</ja><br><en>Condition values to filter the field.</en>"
+  title: ReportDefinitionServiceReportFilter
+  description: "<ja>ReportDefinitionServiceReportFilterオブジェクトは、レポートのフィルタ条件を表します。フィルタ条件は最大6つまで設定が可能です。</ja><br><en>ReportDefinitionServiceReportFilter\
+    \ object displays filtering report conditions. Filter condition can set up to\
+    \ 6.</en><hr><details><summary>Requirement</summary><table border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>REMOVE</th></tr><tr><td>field</td><td>-</td><td>Requirement</td><td>-</td></tr><tr><td>value</td><td>-</td><td>Requirement</td><td>-</td></tr><tr><td>reportOperator</td><td>-</td><td>Requirement</td><td>-</td></tr></table></details>"

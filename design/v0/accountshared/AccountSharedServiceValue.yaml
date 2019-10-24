@@ -1,0 +1,15 @@
+AccountSharedServiceValue:
+  type: object
+  properties:
+    accountShared:
+      $ref: 'AccountShared.yaml#/AccountShared'
+    errors:
+      type: array
+      items:
+        $ref: '../../Error.yaml#/Error'
+    operationSucceeded:
+      type: boolean
+      description: "<ja>処理結果を表示します。</ja><br><en>Showing operation results.</en>"
+  title: AccountSharedServiceValue
+  description: "<ja>AccountSharedServiceValueオブジェクトは、検索結果（1エンティティ）を保持します。</ja><br><en>AccountSharedServiceValue\
+    \ object holds search result (1 entity).</en>"

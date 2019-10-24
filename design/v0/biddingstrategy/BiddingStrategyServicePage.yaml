@@ -1,0 +1,14 @@
+BiddingStrategyServicePage:
+  type: object
+  properties:
+    totalNumEntries:
+      type: integer
+      format: int32
+      description: "<ja>取得される項目の総件数です。</ja><br><en>Total number of entries.</en>"
+    values:
+      type: array
+      items:
+        $ref: 'BiddingStrategyServiceValue.yaml#/BiddingStrategyServiceValue'
+  title: BiddingStrategyServicePage
+  description: "<ja>BiddingStrategyServicePageオブジェクトは、自動入札設定を取得したときの結果に関する情報を表します。</ja><br><en>BiddingStrategyServicePage\
+    \ object displays the results of auto bidding setting retrieval.</en>"

@@ -1,0 +1,15 @@
+FeedItemServiceValue:
+  type: object
+  properties:
+    errors:
+      type: array
+      items:
+        $ref: '../../Error.yaml#/Error'
+    feedItem:
+      $ref: 'FeedItem.yaml#/FeedItem'
+    operationSucceeded:
+      type: boolean
+      description: "<ja>処理結果です。</ja><br><en>Result of process.</en>"
+  title: FeedItemServiceValue
+  description: "<ja>FeedItemServiceValueオブジェクトは、フィードアイテム情報を格納します。</ja><br><en>FeedItemServiceValue\
+    \ contains FeedItem value information.</en>"

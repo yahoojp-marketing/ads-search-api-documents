@@ -1,0 +1,16 @@
+CampaignSharedSetServiceValue:
+  type: object
+  properties:
+    campaignSharedSet:
+      $ref: 'CampaignSharedSet.yaml#/CampaignSharedSet'
+    errors:
+      type: array
+      items:
+        $ref: '../../Error.yaml#/Error'
+    operationSucceeded:
+      type: boolean
+      description: "<ja>処理結果を表示します。</ja><br><en>Showing operation results</en>"
+  title: CampaignSharedSetServiceValue
+  description: "<ja>CampaignSharedSetServiceValueは、実行結果（1エンティティ）を保持するオブジェクトです。</ja><br><en>CampaignSharedSetServiceValue\
+    \ is object to hold execution result (1 entity).</en><hr><details><summary>Requirement</summary><table\
+    \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>REMOVE</th></tr><tr><td>campaignSharedSet</td><td>-</td><td>-</td><td>-</td></tr></table></details>"

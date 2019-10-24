@@ -1,0 +1,23 @@
+BiddingStrategy:
+  type: object
+  properties:
+    accountId:
+      type: integer
+      format: int64
+      description: "<ja>アカウントIDです。</ja><br><en>Account ID.</en>"
+    biddingScheme:
+      $ref: 'BiddingStrategyServiceBiddingScheme.yaml#/BiddingStrategyServiceBiddingScheme'
+    biddingStrategyId:
+      type: integer
+      format: int64
+      description: "<ja>自動入札IDです。</ja><br><en>Auto bidding ID.</en>"
+    biddingStrategyName:
+      type: string
+      description: "<ja>自動入札名です。（50文字以内になります）</ja><br><en>Auto bidding name(Can set\
+        \ up to 50 characters).</en>"
+    type:
+      $ref: 'BiddingStrategyServiceType.yaml#/BiddingStrategyServiceType'
+  title: BiddingStrategy
+  description: "<ja>BiddingStrategyオブジェクトは、入札方法を表します。</ja><br><en>Bidding strategy\
+    \ object displays the type of bidding.</en><hr><details><summary>Requirement</summary><table\
+    \ border='1'><tr><th>PROPERTY</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>accountId</td><td>Requirement</td><td>Requirement<br>(notupdatable)</td><td>Requirement<br>(notupdatable)</td></tr><tr><td>biddingScheme</td><td>Requirement</td><td>Optional<br>(updatable)</td><td>─</td></tr><tr><td>biddingStrategyId</td><td>─</td><td>Requirement<br>(notupdatable)</td><td>Requirement<br>(notupdatable)</td></tr><tr><td>biddingStrategyName</td><td>Requirement</td><td>Optional<br>(updatable)</td><td>─</td></tr><tr><td>type</td><td>─</td><td>─</td><td>─</td></tr></table></details>"

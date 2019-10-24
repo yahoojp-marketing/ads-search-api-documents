@@ -1,0 +1,59 @@
+CampaignServiceSelector:
+  type: object
+  required:
+  - accountId
+  properties:
+    accountId:
+      type: integer
+      format: int64
+      description: "<ja>検索条件：アカウントID</ja><br><en>Search condition: Account ID</en>"
+    biddingStrategyIds:
+      type: array
+      items:
+        type: integer
+        format: int64
+      maxItems: 1000
+      description: "<ja>検索条件：自動入札ID</ja><br><en>Search condition: Auto Bidding ID</en>"
+    campaignIds:
+      type: array
+      items:
+        type: integer
+        format: int64
+      maxItems: 1000
+      description: "<ja>検索条件：キャンペーンID<br>※指定しない場合は、フィルタ条件に すべてのキャンペーンが含まれます。</ja><br><en>Search\
+        \ condition: Campaign ID<br>* All campaign will return, if no campaign are\
+        \ not specified.</en>"
+    containsLabelId:
+      $ref: 'CampaignServiceContainsLabelId.yaml#/CampaignServiceContainsLabelId'
+    labelIds:
+      type: array
+      items:
+        type: integer
+        format: int64
+      maxItems: 1000
+      description: "<ja>検索条件：ラベルID</ja><br><en>Search condition: Label ID</en>"
+    numberResults:
+      type: integer
+      format: int32
+      minimum: 1
+      maximum: 2000
+      default: 500
+      description: "ページの最大件数です。このフィールドは、1以上を指定する必要があります。<br>Maximum number of results\
+        \ to return in this page. This field must be greater than or equal to 1. Also\
+        \ see Entity Limits per operation."
+    startIndex:
+      type: integer
+      format: int32
+      minimum: 1
+      default: 1
+      description: "ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。<br>Index of the first\
+        \ result to return in this page. This field must be greater than or equal\
+        \ to 1."
+    userStatuses:
+      type: array
+      items:
+        $ref: 'CampaignServiceUserStatus.yaml#/CampaignServiceUserStatus'
+      maxItems: 2
+  title: CampaignServiceSelector
+  description: "<ja>CampaignServiceSelectorオブジェクトは、操作の対象とするキャンペーンの情報およびフィルタ条件を表します。</ja><br><en>CampaignServiceSelector\
+    \ object displays information and filter criteria of campaign to be operated.</en>"

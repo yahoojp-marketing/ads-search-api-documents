@@ -1,0 +1,10 @@
+AdGroupWebpageServiceType:
+  type: string
+  enum:
+  - URL
+  - PAGE_TITLE
+  - PAGE_CONTENT
+  - CUSTOM_LABEL
+  - ALL_PAGES
+  - UNKNOWN
+  title: AdGroupWebpageServiceType

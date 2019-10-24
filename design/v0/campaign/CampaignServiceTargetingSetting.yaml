@@ -1,0 +1,9 @@
+CampaignServiceTargetingSetting:
+  type: object
+  properties:
+    targetAll:
+      $ref: 'CampaignServiceTargetAll.yaml#/CampaignServiceTargetAll'
+  title: CampaignServiceTargetingSetting
+  description: "<ja>CampaignServiceTargetingSettingは、ターゲット設定を保持するオブジェクトです。</ja><br><en>CampaignServiceTargetingSetting\
+    \ is object that holds target setting.</en><hr><details><summary>Requirement</summary><table\
+    \ border='1'><tr><th>PROPERTY</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>targetAll</td><td>Requirement</td><td>Requirement</td><td>-</td></tr></table></details>"

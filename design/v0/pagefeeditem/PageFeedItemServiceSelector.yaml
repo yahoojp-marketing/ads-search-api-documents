@@ -1,0 +1,54 @@
+PageFeedItemServiceSelector:
+  type: object
+  required:
+  - accountId
+  - feedIds
+  properties:
+    accountId:
+      type: integer
+      format: int64
+      description: "<ja>アカウントID</ja><br><en>Account ID</en>"
+    approvalStatuses:
+      type: array
+      items:
+        $ref: 'PageFeedItemServiceApprovalStatus.yaml#/PageFeedItemServiceApprovalStatus'
+      maxItems: 5
+    feedIds:
+      type: array
+      items:
+        type: integer
+        format: int64
+      minItems: 1
+      maxItems: 1000
+      description: "<ja>フィードID</ja><br><en>Feed ID</en>"
+    numberResults:
+      type: integer
+      format: int32
+      minimum: 1
+      maximum: 10000
+      default: 500
+      description: "ページの最大件数です。このフィールドは、1以上を指定する必要があります。<br>Maximum number of results\
+        \ to return in this page. This field must be greater than or equal to 1. Also\
+        \ see Entity Limits per operation."
+    pageFeedCustomLabel:
+      type: array
+      items:
+        type: string
+      maxItems: 5
+      description: "<ja>カスタムラベル</ja><br><en>Custom label</en>"
+    pageFeedUrl:
+      type: array
+      items:
+        $ref: 'PageFeedItemServicePageFeedUrl.yaml#/PageFeedItemServicePageFeedUrl'
+      maxItems: 5
+    startIndex:
+      type: integer
+      format: int32
+      minimum: 1
+      default: 1
+      description: "ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。<br>Index of the first\
+        \ result to return in this page. This field must be greater than or equal\
+        \ to 1."
+  title: PageFeedItemServiceSelector
+  description: "<ja>PageFeedItemServiceSelectorオブジェクトは、登録したページフィードアイテムを照会するための検索条件を格納します。</ja><br><en>PageFeedItemServiceSelector\
+    \ object stores search condition to inquire about registered page feed item.</en>"

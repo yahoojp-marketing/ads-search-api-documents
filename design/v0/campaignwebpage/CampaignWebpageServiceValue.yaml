@@ -1,0 +1,15 @@
+CampaignWebpageServiceValue:
+  type: object
+  properties:
+    campaignWebpage:
+      $ref: 'CampaignWebpage.yaml#/CampaignWebpage'
+    errors:
+      type: array
+      items:
+        $ref: '../../Error.yaml#/Error'
+    operationSucceeded:
+      type: boolean
+      description: "<ja>処理結果</ja><br><en>Operation result</en>"
+  title: CampaignWebpageServiceValue
+  description: "<ja>CampaignWebpageServiceValueオブジェクトは、操作結果を含むPageFeedItemの除外設定を表します。</ja><br><en>CampaignWebpageServiceValue\
+    \ object describes excluded settings including operation result.</en>"

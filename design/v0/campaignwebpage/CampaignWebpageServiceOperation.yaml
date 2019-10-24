@@ -1,0 +1,20 @@
+CampaignWebpageServiceOperation:
+  type: object
+  required:
+  - accountId
+  - operand
+  properties:
+    accountId:
+      type: integer
+      format: int64
+      description: "<ja>アカウントID</ja><br><en>Account ID</en>"
+    operand:
+      type: array
+      items:
+        $ref: 'CampaignWebpage.yaml#/CampaignWebpage'
+      minItems: 1
+      maxItems: 2000
+  title: CampaignWebpageServiceOperation
+  description: "<ja>CampaignWebpageServiceOperationオブジェクトは、mutateメソッドで操作対象となるPageFeedItemの除外設定を保持します。</ja><br><en>CampaignWebpageServiceOperation\
+    \ object contains the excluded setting of PageFeedItem which is the target of\
+    \ mutate operation.</en>"

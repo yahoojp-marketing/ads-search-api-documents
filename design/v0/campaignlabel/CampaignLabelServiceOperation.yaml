@@ -1,0 +1,20 @@
+CampaignLabelServiceOperation:
+  type: object
+  required:
+  - accountId
+  - operand
+  properties:
+    accountId:
+      type: integer
+      format: int64
+      description: "<ja>アカウントID</ja><br><en>Account ID</en>"
+    operand:
+      type: array
+      items:
+        $ref: 'CampaignLabel.yaml#/CampaignLabel'
+      minItems: 1
+      maxItems: 2000
+  title: CampaignLabelServiceOperation
+  description: "<ja>CampaignLabelServiceOperationオブジェクトは、操作の対象となるキャンペーンラベルの情報と処理の内容を表します。</ja><br><en>CampaignLabelServiceOperation\
+    \ object displays the information on campaign label to be operated and processing\
+    \ content.</en>"

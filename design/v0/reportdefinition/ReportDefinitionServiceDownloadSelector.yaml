@@ -1,0 +1,17 @@
+ReportDefinitionServiceDownloadSelector:
+  type: object
+  required:
+  - accountId
+  - reportJobId
+  properties:
+    accountId:
+      type: integer
+      format: int64
+      description: "<ja>アカウントIDです。</ja><br><en>Account ID.</en>"
+    reportJobId:
+      type: integer
+      format: int64
+      description: "<ja>レポートジョブIDです。</ja><br><en>Report Job ID.</en>"
+  title: ReportDefinitionServiceDownloadSelector
+  description: "<ja>レポートをダウンロードします。</ja><br><en>\
+          \ Download the report.</en>"

@@ -1,0 +1,16 @@
+AdGroupAdServiceAppAd:
+  type: object
+  properties:
+    appId:
+      type: string
+      description: "<ja>アプリIDです。<br>※アプリキャンペーンの 場合、自動で設定され ます。</ja><br><en>App ID.<br>*Automatically\
+        \ set for Mobile app campaign.</en>"
+    appStore:
+      $ref: 'AdGroupAdServiceAppStore.yaml#/AdGroupAdServiceAppStore'
+    description2:
+      type: string
+      description: "<ja>説明文（2行目）2です。</ja><br><en>Description2 (line2) of the ad.</en>"
+  title: AdGroupAdServiceAppAd
+  description: "<ja>AdGroupAdServiceAppAdオブジェクトは、アプリ向けの広告です。</ja><br><en>Appad object\
+    \ is for Mobile App ads.</en><hr><details><summary>Requirement</summary><table\
+    \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>appId</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>appStore</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>description2</td><td>-</td><td>Requirement</td><td>-</td><td>-</td></tr></table></details>"

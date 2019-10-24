@@ -1,0 +1,10 @@
+SharedCriterionServiceReturnValue:
+  type: object
+  properties:
+    values:
+      type: array
+      items:
+        $ref: 'SharedCriterionServiceValue.yaml#/SharedCriterionServiceValue'
+  title: SharedCriterionServiceReturnValue
+  description: "<ja>SharedCriterionServiceReturnValueは、実行結果（全エンティティのリスト）を保持するオブジェクトです。</ja><br><en>SharedCriterionServiceReturnValue\
+    \ object holds exec results (all entities list).</en>"

@@ -1,0 +1,43 @@
+AdGroupCriterion:
+  type: object
+  properties:
+    accountId:
+      type: integer
+      format: int64
+      description: "<ja>アカウントID</ja><br><en>Account ID.</en>"
+    adGroupId:
+      type: integer
+      format: int64
+      description: "<ja>広告グループID</ja><br><en>Ad group ID.</en>"
+    adGroupName:
+      type: string
+      description: "<ja>広告グループ名</ja><br><en>Ad group name.</en>"
+    adGroupTrackId:
+      type: integer
+      format: int64
+      description: "<ja>トラッキング用広告グループID</ja><br><en>Ad group ID for tracking.</en>"
+    biddableAdGroupCriterion:
+      $ref: 'AdGroupCriterionServiceBiddableAdGroupCriterion.yaml#/AdGroupCriterionServiceBiddableAdGroupCriterion'
+    campaignId:
+      type: integer
+      format: int64
+      description: "<ja>キャンペーンID</ja><br><en>Campaign ID.</en>"
+    campaignName:
+      type: string
+      description: "<ja>キャンペーン名</ja><br><en>Campaign name.</en>"
+    campaignTrackId:
+      type: integer
+      format: int64
+      description: "<ja>トラッキング用キャンペーンID</ja><br><en>Campaign ID for tracking.</en>"
+    criterion:
+      $ref: 'AdGroupCriterionServiceCriterion.yaml#/AdGroupCriterionServiceCriterion'
+    labels:
+      type: array
+      items:
+        $ref: 'AdGroupCriterionServiceLabel.yaml#/AdGroupCriterionServiceLabel'
+    use:
+      $ref: 'AdGroupCriterionServiceUse.yaml#/AdGroupCriterionServiceUse'
+  title: AdGroupCriterion
+  description: "<ja>AdGroupCriterionオブジェクトは、広告グループのクライテリアを表します。</ja><br><en>AdGroupCriterion\
+    \ object describes ad group criteria information.</en><hr><details><summary>Requirement</summary><table\
+    \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>accountId</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>adGroupId</td><td>-</td><td>Requirement<br><i>NotUpdatable</i></td><td>Requirement<br><i>NotUpdatable</i></td><td>Requirement<br><i>NotUpdatable</i></td></tr><tr><td>adGroupName</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>adGroupTrackId</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>biddableAdGroupCriterion</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>campaignId</td><td>-</td><td>Requirement<br><i>NotUpdatable</i></td><td>Requirement<br><i>NotUpdatable</i></td><td>Requirement<br><i>NotUpdatable</i></td></tr><tr><td>campaignName</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>campaignTrackId</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>criterion</td><td>-</td><td>Requirement</td><td>Requirement<br><i>NotUpdatable</i></td><td>Requirement<br><i>NotUpdatable</i></td></tr><tr><td>labels</td><td>-</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>use</td><td>-</td><td>Requirement</td><td>Requirement</td><td>Requirement</td></tr></table></details>"

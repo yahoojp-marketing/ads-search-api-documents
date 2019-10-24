@@ -1,0 +1,13 @@
+CampaignServiceGeoTargetTypeSetting:
+  type: object
+  properties:
+    negativeGeoTargetType:
+      $ref: 'CampaignServiceGeoTargetType.yaml#/CampaignServiceGeoTargetType'
+    positiveGeoTargetType:
+      $ref: 'CampaignServiceGeoTargetType.yaml#/CampaignServiceGeoTargetType'
+  title: CampaignServiceGeoTargetTypeSetting
+  description: "<ja>CampaignServiceGeoTargetTypeSettingsオブジェクトは、地域ターゲットの情報を格納するコンテナです。</ja><br><en>CampaignServiceGeoTargetTypeSettings\
+    \ object is a container for GeoTargeting.</en><hr><details><summary>Requirement</summary><table\
+    \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>negativeGeoTargetType</td><td>-</td><td>Optional<br>Default:\
+    \ LOCATION_OF_PRESENCE</td><td>Optional</td><td>-</td></tr><tr><td>positiveGeoTargetType</td><td>-</td><td>Optional<br>Default:\
+    \ DONT_CARE</td><td>Optional</td><td>-</td></tr></table></details>"

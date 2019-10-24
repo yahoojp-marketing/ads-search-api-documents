@@ -1,0 +1,17 @@
+FeedItemServiceAttribute:
+  type: object
+  properties:
+    feedAttributeId:
+      type: integer
+      format: int64
+      description: "<ja>フィード属性IDです。</ja><br><en>Feed attribute ID.</en>"
+    multipleFeedItemAttribute:
+      $ref: 'FeedItemServiceMultipleFeedItemAttribute.yaml#/FeedItemServiceMultipleFeedItemAttribute'
+    placeholderField:
+      $ref: 'FeedItemServicePlaceholderField.yaml#/FeedItemServicePlaceholderField'
+    simpleFeedItemAttribute:
+      $ref: 'FeedItemServiceSimpleFeedItemAttribute.yaml#/FeedItemServiceSimpleFeedItemAttribute'
+  title: FeedItemServiceAttribute
+  description: "<ja>FeedItemServiceAttributeオブジェクトは、フィードアイテムの属性情報の値を格納します。</ja><br><en>FeedItemServiceAttribute\
+    \ object holds the value of Feed Item information.</en><hr><details><summary>Requirement</summary><table\
+    \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>feedAttributeId</td><td>-</td><td>Ignore<br><ja>※アドカスタマイザーの場合、Requirement</ja><br><en>* Requirement for AD_CUSTOMIZER.</en></td><td>Ignore<br><ja>※アドカスタマイザーの場合、Requirement</ja><br><en>* Requirement for AD_CUSTOMIZER.</en></td><td>-</td></tr><tr><td>placeholderField</td><td>-</td><td>Requirement<br><ja>※アドカスタマイザーの場合、Ignore</ja><br><en>* Ignore for AD_CUSTOMIZER.</en></td><td>Requirement<br><ja>※アドカスタマイザーの場合、Ignore</ja><br><en>* Ignore for AD_CUSTOMIZER.</en></td><td>Ignore</td></tr><tr><td>multipleFeedItemAttribute</td><td>-</td><td>Optional<br><ja>※placeholderFieldが [ STRUCTURED_SNIPPET_VALUES, ADDITIONAL_ADVANCED_URLS, ADDITIONAL_ADVANCED_MOBILE_URLS ] の場合、Requirement</ja><br><en>∗ If placeholderField is [ STRUCTURED_SNIPPET_VALUES, ADDITIONAL_ADVANCED_URLS, ADDITIONAL_ADVANCED_MOBILE_URLS ], Requirement</en></td><td>Optional<br><ja>※placeholderFieldが [ STRUCTURED_SNIPPET_VALUES, ADDITIONAL_ADVANCED_URLS, ADDITIONAL_ADVANCED_MOBILE_URLS ] の場合、Requirement</ja><br><en>∗ If placeholderField is [ STRUCTURED_SNIPPET_VALUES, ADDITIONAL_ADVANCED_URLS, ADDITIONAL_ADVANCED_MOBILE_URLS ], Requirement</en></td><td>Ignore</td></tr><tr><td>simpleFeedItemAttribute</td><td>-</td><td>Optional<br><ja>※placeholderFieldが [ STRUCTURED_SNIPPET_VALUES, ADDITIONAL_ADVANCED_URLS, ADDITIONAL_ADVANCED_MOBILE_URLS ] 以外の場合、Requirement</ja><br><en>∗ If placeholderField is not [ STRUCTURED_SNIPPET_VALUES, ADDITIONAL_ADVANCED_URLS, ADDITIONAL_ADVANCED_MOBILE_URLS ], Requirement</en></td><td>Optional<br><ja>※placeholderFieldが [ STRUCTURED_SNIPPET_VALUES, ADDITIONAL_ADVANCED_URLS, ADDITIONAL_ADVANCED_MOBILE_URLS ] 以外の場合、Requirement</ja><br><en>∗ If placeholderField is not [ STRUCTURED_SNIPPET_VALUES, ADDITIONAL_ADVANCED_URLS, ADDITIONAL_ADVANCED_MOBILE_URLS ], Requirement</en></td><td>Ignore</td></tr></table></details>"

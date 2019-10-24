@@ -1,0 +1,14 @@
+PageFeedItemServiceBulkOutput:
+  type: string
+  enum:
+  - CSV
+  - TSV
+  - ZIPPED_CSV
+  - ZIPPED_TSV
+  - UNKNOWN
+  title: PageFeedItemServiceBulkOutput
+  description: "<ja>PageFeedItemServiceBulkOutputは、ページフィードアイテムファイル形式を指定します。</ja><br><en>PageFeedItemServiceBulkOutput\
+    \ specifies format of Page feed item file.</en><hr>\n* `CSV` - <ja>CSV形式</ja><br><en>Format\
+    \ of CSV</en><br>\n* `TSV` - <ja>TSV形式</ja><br><en>Format of TSV</en><br>\n* `ZIPPED_CSV`\
+    \ - <ja>ZIP圧縮されたCSV形式</ja><br><en>Zipped CSV.</en><br>\n* `ZIPPED_TSV` - <ja>ZIP圧縮されたTSV形式</ja><br><en>Zipped\
+    \ TSV.</en><br>\n* `UNKNOWN` - 未知の値です。<br>Unknown Value"

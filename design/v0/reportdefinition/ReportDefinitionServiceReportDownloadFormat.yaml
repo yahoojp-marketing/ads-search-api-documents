@@ -1,0 +1,13 @@
+ReportDefinitionServiceReportDownloadFormat:
+  type: string
+  enum:
+  - CSV
+  - XML
+  - TSV
+  - UNKNOWN
+  title: ReportDefinitionServiceReportDownloadFormat
+  description: "<ja>ReportDefinitionServiceReportDownloadFormatは、定義されたダウンロードレポートのファイル形式を表します。</ja><br><en>ReportDefinitionServiceReportDownloadFormat\
+    \ displays a file format of the report.</en><hr>\n* `CSV` - <ja>CSVフォーマットです。<br>カンマで区分されます。</ja><br><en>CSV\
+    \ output format.<br>Separated by comma.</en><br>\n* `XML` - <ja>XMLフォーマットです。</ja><br><en>XML\
+    \ output format.</en><br>\n* `TSV` - <ja>TSVフォーマットです。</ja><br><en>TSV output format.</en><br>\n\
+    * `UNKNOWN` - 未知の値です。<br>Unknown Value"

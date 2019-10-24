@@ -1,0 +1,15 @@
+CampaignExportServiceJobStatus:
+  type: string
+  enum:
+  - IN_PROGRESS
+  - COMPLETED
+  - TIMEOUT
+  - SYSTEM_ERROR
+  - UNKNOWN
+  title: CampaignExportServiceJobStatus
+  description: "<ja>CampaignExportServiceJobStatusは、エクスポートのジョブの処理状態です。</ja><br><en>CampaignExportServiceJobStatus\
+    \ is a status of job in export setting.</en><hr>\n* `IN_PROGRESS` - <ja>現在、処理中です。</ja><br><en>Currently\
+    \ in progress of creating.</en><br>\n* `COMPLETED` - <ja>処理が終了しました。</ja><br><en>Job\
+    \ has completed.</en><br>\n* `TIMEOUT` - <ja>タイムアウトしました。</ja><br><en>Timeout occured.</en><br>\n\
+    * `SYSTEM_ERROR` - <ja>システムエラーです。</ja><br><en>System error occured.</en><br>\n\
+    * `UNKNOWN` - 未知の値です。<br>Unknown Value"

@@ -1,0 +1,13 @@
+CampaignCriterionServiceKeyword:
+  type: object
+  properties:
+    keywordMatchType:
+      $ref: 'CampaignCriterionServiceKeywordMatchType.yaml#/CampaignCriterionServiceKeywordMatchType'
+    text:
+      type: string
+      description: "<ja>キーワードの内容です。<br>※最大80文字、10ワードです。</ja><br><en>CampaignCriterionServiceKeyword\
+        \ element.<br>* Maximum of 80 letters, 10 word.</en>"
+  title: CampaignCriterionServiceKeyword
+  description: "<ja>CampaignCriterionServiceKeywordオブジェクトは、キーワードに関する情報を表します。</ja><br><en>CampaignCriterionServiceKeyword\
+    \ object displays keyword information.</en><hr><details><summary>Requirement</summary><table\
+    \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>REMOVE</th></tr><tr><td>text</td><td>-</td><td>Requirement</td><td>-</td></tr><tr><td>keywordMatchType</td><td>-</td><td>Requirement</td><td>-</td></tr></table></details>"

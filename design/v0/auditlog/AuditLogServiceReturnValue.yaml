@@ -1,0 +1,10 @@
+AuditLogServiceReturnValue:
+  type: object
+  properties:
+    values:
+      type: array
+      items:
+        $ref: 'AuditLogServiceValue.yaml#/AuditLogServiceValue'
+  title: AuditLogServiceReturnValue
+  description: "<ja>AuditLogServiceReturnValueオブジェクトは、結果を保持します。</ja><br><en>AuditLogServiceReturnValue\
+    \ object retains the results.</en>"

@@ -1,0 +1,12 @@
+BalanceServiceGetResponse:
+  type: object
+  properties:
+    errors:
+      type: array
+      items:
+        $ref: '../../Error.yaml#/Error'
+    rid:
+      type: string
+    rval:
+      $ref: 'BalanceServicePage.yaml#/BalanceServicePage'
+  title: BalanceServiceGetResponse

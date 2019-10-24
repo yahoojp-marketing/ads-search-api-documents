@@ -1,0 +1,11 @@
+AdGroupWebpageServiceBidSource:
+  type: string
+  enum:
+  - ADGROUP
+  - CRITERION
+  - UNKNOWN
+  title: AdGroupWebpageServiceBidSource
+  description: "<ja>AdGroupWebpageServiceBidSourceは、入札価格の設定されているレベルを表します。</ja><br><en>AdGroupWebpageServiceBidSource\
+    \ describes the level at which bid is set.</en><hr>\n* `ADGROUP` - <ja>広告グループレベル</ja><br><en>Level\
+    \ of ad group</en><br>\n* `CRITERION` - <ja>キーワードレベル</ja><br><en>Level of keyword</en><br>\n\
+    * `UNKNOWN` - 未知の値です。<br>Unknown Value"

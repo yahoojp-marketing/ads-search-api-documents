@@ -1,0 +1,11 @@
+BiddingStrategyServiceReturnValue:
+  type: object
+  properties:
+    values:
+      type: array
+      items:
+        $ref: 'BiddingStrategyServiceValue.yaml#/BiddingStrategyServiceValue'
+  title: BiddingStrategyServiceReturnValue
+  description: "<ja>BiddingStrategyServiceReturnValueオブジェクトは、自動入札設定を作成・更新・削除したときの結果に関する情報を表します。</ja><br><en>BiddingStrategyServiceReturnValue\
+    \ object displays the results of auto bidding creation/update/removal setting\
+    \ .</en>"

@@ -1,0 +1,8 @@
+ConversionTrackerServiceAppPostbackUrl:
+  type: object
+  properties:
+    appPostbackUrlClearFlag:
+      $ref: 'ConversionTrackerServiceAppPostbackUrlClearFlag.yaml#/ConversionTrackerServiceAppPostbackUrlClearFlag'
+    url:
+      type: string
+  title: ConversionTrackerServiceAppPostbackUrl

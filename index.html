@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns="http://www.w3.org/1999/xhtml">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>APIリファレンス - Yahoo!広告</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
+    <link rel="stylesheet" href="scripts/swagger-ui.css" />
+    <link rel="icon" href="https://s.yimg.jp/images/marketing/support-marketing/site/images/favicon.ico" type="image/vnd.microsoft.icon" />
+    <link rel="stylesheet" href="https://s.yimg.jp/images/marketing/API/main.css" />
+  </head>
+  <body>
+  <header class="header">
+    <div class="masthead">
+      <p class="masthead__title"><a href="https://marketing.yahoo.co.jp/" class="masthead__trigger">Yahoo!広告</a></p>
+      <ul class="masthead__list">
+        <li class="masthead__item masthead__item--login">
+          <a href="https://ads-developers.yahoo.co.jp/developercenter/ja" target="_blank" rel="noopener" class="masthead__trigger02">DeveloperCenter</a></li>
+        <li class="masthead__item masthead__item--yj"><a href="https://www.yahoo.co.jp/" class="masthead__trigger02">Yahoo! JAPAN</a></li>
+      </ul>
+    </div><!-- /.masthead -->
+    <div class="hpHeader">
+      <div class="hpHeader__inner">
+        <div class="hpHeader__head">
+          <div class="hpHeader__wrap">
+            <h1 class="hpHeader__title">APIリファレンス (β)</h1>
+          </div>
+        </div>
+
+      </div>
+      <nav class="nav">
+        <div class="nav__inner">
+          <ul class="navPrimary">
+              <li class="navPrimary__item is-current"><a class="navPrimary__trigger" href="">検索広告APIリファレンス v0</a>
+              </li>
+
+          </ul>
+        </div><!-- /.nav__inner -->
+      </nav><!-- /.nav -->
+    </div><!--/.hpHeader-->
+  </header>
+
+  <div id="apiSideMenu" class="sideMenuAbsolute"><ul></ul></div>
+  <main class="main">
+    <div id="swagger-ui"></div>
+
+    <script src="scripts/swagger-ui-bundle.js"> </script>
+    <script src="scripts/swagger-ui-standalone-preset.js"> </script>
+    <script>
+    window.onload = function() {
+      // Begin Swagger UI call region
+      const DisableTryItOutPlugin = function() {
+        return {
+          statePlugins: {
+                spec: {
+                  wrapSelectors: {
+                    allowTryItOutFor:() =>() => false
+                  }
+                }
+            }
+          }
+      };
+      const ui = SwaggerUIBundle({
+        url: "./design/v0/Route.yaml",
+        dom_id: '#swagger-ui',
+        deepLinking: false,
+        defaultModelRendering: 'model',
+        defaultModelExpandDepth: 20,
+        tagsSorter: 'alpha',
+        presets: [
+          SwaggerUIBundle.presets.apis,
+          SwaggerUIStandalonePreset,
+          DisableTryItOutPlugin
+        ],
+        plugins: [
+          SwaggerUIBundle.plugins.DownloadUrl
+        ],
+        layout: "StandaloneLayout",
+        oauth2RedirectUrl: location.href.replace('index.html', '').replace(/#.*/g, '').replace(/\/$/g, '') + '/oauth2-redirect.html'
+      })
+      // End Swagger UI call region
+
+      window.ui = ui
+
+      $(function(){
+        $(window).on('scroll', function () {
+          var headerSize = 125
+          if(headerSize > $(window).scrollTop()) {
+            $('#apiSideMenu').addClass('sideMenuAbsolute').removeClass('sideMenuFixed')
+          } else {
+            $('#apiSideMenu').addClass('sideMenuFixed').removeClass('sideMenuAbsolute')
+          }
+        });
+
+        var observer_swagger = new MutationObserver(function () {
+            var speed = 500, cTop = 80,o=false,m = false
+            $.each($('.swagger-ui section > div > span > div'), function(index, value) {
+              var clickParent = $('#apiSideMenu > ul').append('<li><p class="apiName">' + $(value).find('h4').data('tag') + '</p></li>')
+              $( clickParent ).find('li:last-child > p.apiName').click(function() {
+                if(!o){
+                    o = true
+                    $(this).next().slideToggle(1,function(){
+                      o = false
+                    })
+                }
+              })
+              $('#apiSideMenu > ul > li:last-child').append('<ul class="methodTab"></ul>')
+              $.each($(value).find('.opblock-summary-path'), function(i, v) {
+                var t = $(v).data('path')
+                var clickChild = $('#apiSideMenu > ul > li:last-child > ul').append('<li class="childMethod">' + $(v).data('path').replace(/\/.+\//, "") + '</li>')
+                $( clickChild ).find('li:last-child').click(function() {
+                  if(!m){
+                    m = true
+                    if( !$(value).hasClass("is-open") ){
+                      $(value).find('h4').trigger('click')
+                    }
+                    var p = $('[data-path="'+t+'"]').position().top - cTop
+                    $('html,body').animate({scrollTop:p}, speed, 'swing',function(){
+                      m = false
+                    });
+                  }
+                })
+              })
+
+            })
+            $('.methodTab').hide()
+        });
+
+        observer_swagger.observe($('#swagger-ui')[0], {
+            childList: true,
+            subtree: true
+        });
+        var observer_menu = new MutationObserver(function () {
+          observer_swagger.disconnect()
+        });
+        observer_menu.observe($('#apiSideMenu')[0], {
+            childList: true,
+            subtree: true
+        });
+      })
+    }
+  </script>
+  </main>
+
+  <footer class="footer">
+  <div class="yjFooter">
+    <ul class="yjFooter__list">
+      <li class="yjFooter__item"><a href="https://privacy.yahoo.co.jp/" class="yjFooter__trigger">プライバシー</a></li>
+      <li class="yjFooter__item"><a href="https://marketing.yahoo.co.jp/guidelines/yahoo_ads_api.html" class="yjFooter__trigger">利用規約</a></li>
+      <li class="yjFooter__item"><a href="https://marketing.yahoo.co.jp/guidelines/" class="yjFooter__trigger">ガイドライン・各サービスの規約</a></li>
+      <li class="yjFooter__item"><a href="https://about.yahoo.co.jp/" class="yjFooter__trigger">会社概要</a></li>
+    </ul>
+    <p class="yjFooter__copyright"><small><span class="spHidden">Copyright </span>(C) <span class="spHidden"><span>2019</span></span> Yahoo Japan<span class="spHidden"> Corporation. All Rights Reserved.</span></small></p>
+  </div><!-- /.yjFooter -->
+
+</footer>
+
+  <script src="https://s.yimg.jp/images/marketing/lib/jquery/1.9.1/jquery.min.js"></script>
+  <script src="https://s.yimg.jp/images/marketing/support-marketing/site/js/main.js?201806"></script>
+  <script src="scripts/swagger-ui-bundle.js"> </script>
+  <script src="scripts/swagger-ui-standalone-preset.js"> </script>
+  </body>
+</html>

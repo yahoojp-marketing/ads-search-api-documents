@@ -1,0 +1,10 @@
+FeedItemServiceMultipleFeedItemAttribute:
+  type: object
+  properties:
+    feedAttributeValues:
+      type: array
+      items:
+        $ref: 'FeedItemServiceFeedAttributeValue.yaml#/FeedItemServiceFeedAttributeValue'
+    isRemove:
+      $ref: 'FeedItemServiceIsRemove.yaml#/FeedItemServiceIsRemove'
+  title: FeedItemServiceMultipleFeedItemAttribute

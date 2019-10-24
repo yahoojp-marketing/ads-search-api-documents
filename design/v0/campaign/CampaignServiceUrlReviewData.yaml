@@ -1,0 +1,18 @@
+CampaignServiceUrlReviewData:
+  type: object
+  properties:
+    disapprovalReasonCodes:
+      type: array
+      items:
+        type: string
+      description: "<ja>審査否認理由コードです。</ja><br><en>Code of Disapproval reason.<br></en>"
+    disapprovalReviewUrl:
+      $ref: 'CampaignServiceReviewUrl.yaml#/CampaignServiceReviewUrl'
+    inReviewUrl:
+      $ref: 'CampaignServiceReviewUrl.yaml#/CampaignServiceReviewUrl'
+    urlApprovalStatus:
+      $ref: 'CampaignServiceUrlApprovalStatus.yaml#/CampaignServiceUrlApprovalStatus'
+  title: CampaignServiceUrlReviewData
+  description: "<ja>CampaignServiceUrlReviewDataオブジェクトは、URLの審査状況を表します。</ja><br><en>CampaignServiceUrlReviewData\
+    \ object displays review status of URL.</en><hr><details><summary>Requirement</summary><table\
+    \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>disapprovalReasonCodes</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>disapprovalReviewUrl</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>inReviewUrl</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>urlApprovalStatus</td><td>-</td><td>-</td><td>-</td><td>-</td></tr></table></details>"

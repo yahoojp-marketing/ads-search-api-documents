@@ -1,0 +1,11 @@
+AdGroupServiceIsRemove:
+  type: string
+  enum:
+  - 'TRUE'
+  - 'FALSE'
+  - UNKNOWN
+  title: AdGroupServiceIsRemove
+  description: "<ja>AdGroupServiceIsRemoveは、カスタムパラメータの削除フラグです。</ja><br><en>AdGroupServiceIsRemove\
+    \ is Delete flag.</en><hr>\n* `TRUE` - <ja>カスタムパラメータの削除フラグがオンです。</ja><br><en>Delete\
+    \ flag is on.</en><br>\n* `FALSE` - <ja>カスタムパラメータの削除フラグがオフです。</ja><br><en>Delete\
+    \ flag is off.</en><br>\n* `UNKNOWN` - 未知の値です。<br>Unknown Value"

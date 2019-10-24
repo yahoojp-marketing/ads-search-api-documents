@@ -1,0 +1,12 @@
+AdGroupBidMultiplierServiceMutateResponse:
+  type: object
+  properties:
+    errors:
+      type: array
+      items:
+        $ref: '../../Error.yaml#/Error'
+    rid:
+      type: string
+    rval:
+      $ref: 'AdGroupBidMultiplierServiceReturnValue.yaml#/AdGroupBidMultiplierServiceReturnValue'
+  title: AdGroupBidMultiplierServiceMutateResponse

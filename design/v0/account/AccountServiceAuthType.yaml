@@ -1,0 +1,13 @@
+AccountServiceAuthType:
+  type: string
+  enum:
+    - REFERABLE
+    - UPDATABLE
+    - UNKNOWN
+  title: AccountServiceAuthType
+  description: |
+    <ja>権限タイプ</ja><br>
+    <en>Roles</en><hr>
+    * `REFERABLE` - <ja>参照権限</ja><br><en>Read only</en>
+    * `UPDATABLE` - <ja>更新権限</ja><br><en>Write</en>
+    * `UNKNOWN` - 未知の値です。<br>Unknown Value

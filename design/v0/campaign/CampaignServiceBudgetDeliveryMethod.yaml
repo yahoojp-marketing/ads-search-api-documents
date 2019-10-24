@@ -1,0 +1,14 @@
+CampaignServiceBudgetDeliveryMethod:
+  type: string
+  enum:
+  - STANDARD
+  - ACCELERATED
+  - UNKNOWN
+  description: "<ja>CampaignServiceBudgetDeliveryMethodは、予算に応じた広告の配信方法を表します。</ja><br><en>CampaignServiceBudgetDeliveryMethod\
+    \ is delivery method for the Budget which determines the rate at which the Budget\
+    \ is spent.</en><hr>\n* `STANDARD` - <ja>1日の中で均等に広告を表示します。</ja><br><en>The budget\
+    \ server will throttle serving evenly across the entire time period.</en><br>\n\
+    * `ACCELERATED` - <ja>できるだけ早く広告を配信します。</ja><br><en>The budget server will not\
+    \ throttle serving, and ads will serve as fast as possible.</en><br>\n* `UNKNOWN`\
+    \ - 未知の値です。<br>Unknown Value"
+  title: CampaignServiceBudgetDeliveryMethod

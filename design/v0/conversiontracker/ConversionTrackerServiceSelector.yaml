@@ -1,0 +1,74 @@
+ConversionTrackerServiceSelector:
+  type: object
+  required:
+  - accountId
+  properties:
+    accountId:
+      type: integer
+      format: int64
+      description: "<ja>アカウントIDです。</ja><br><en>Account ID.</en>"
+    appIds:
+      type: array
+      items:
+        type: string
+      maxItems: 500
+      description: "<ja>アプリケーションIDです。</ja><br><en>App ID.</en>"
+    categories:
+      type: array
+      items:
+        $ref: 'ConversionTrackerServiceCategory.yaml#/ConversionTrackerServiceCategory'
+      maxItems: 6
+    conversionCountingTypes:
+      type: array
+      items:
+        $ref: 'ConversionTrackerServiceConversionCountingType.yaml#/ConversionTrackerServiceConversionCountingType'
+      maxItems: 2
+    conversionDateRange:
+      $ref: 'ConversionTrackerServiceConversionDateRange.yaml#/ConversionTrackerServiceConversionDateRange'
+    conversionTrackerIds:
+      type: array
+      items:
+        type: integer
+        format: int64
+      maxItems: 500
+      description: "<ja>コンバージョントラッカーIDです。</ja><br><en>Conversion Tracker ID.</en>"
+    conversionTrackerTypes:
+      type: array
+      items:
+        $ref: 'ConversionTrackerServiceConversionTrackerType.yaml#/ConversionTrackerServiceConversionTrackerType'
+      maxItems: 2
+    excludeFromBiddings:
+      type: array
+      items:
+        $ref: 'ConversionTrackerServiceExcludeFromBidding.yaml#/ConversionTrackerServiceExcludeFromBidding'
+      maxItems: 2
+    numberResults:
+      type: integer
+      format: int32
+      minimum: 1
+      maximum: 500
+      default: 500
+      description: "ページの最大件数です。このフィールドは、1以上を指定する必要があります。<br>Maximum number of results\
+        \ to return in this page. This field must be greater than or equal to 1. Also\
+        \ see Entity Limits per operation."
+    startIndex:
+      type: integer
+      format: int32
+      minimum: 1
+      default: 1
+      description: "ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。<br>Index of the first\
+        \ result to return in this page. This field must be greater than or equal\
+        \ to 1."
+    statuses:
+      type: array
+      items:
+        $ref: 'ConversionTrackerServiceStatus.yaml#/ConversionTrackerServiceStatus'
+      maxItems: 2
+    trackingCodeTypes:
+      type: array
+      items:
+        $ref: 'ConversionTrackerServiceTrackingCodeType.yaml#/ConversionTrackerServiceTrackingCodeType'
+      maxItems: 3
+  title: ConversionTrackerServiceSelector
+  description: "<ja>ConversionTrackerServiceSelectorオブジェクトは、操作の対象となるコンバージョントラッカーおよび操作を指定します。</ja><br><en>ConversionTrackerServiceSelector\
+    \ object specifies ConversionTracker and operation.</en>"

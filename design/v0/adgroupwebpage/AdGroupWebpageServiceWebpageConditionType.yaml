@@ -1,0 +1,16 @@
+AdGroupWebpageServiceWebpageConditionType:
+  type: string
+  enum:
+  - URL
+  - PAGE_TITLE
+  - PAGE_CONTENT
+  - CUSTOM_LABEL
+  - ALL_PAGES
+  - UNKNOWN
+  title: AdGroupWebpageServiceWebpageConditionType
+  description: "<ja>AdGroupWebpageServiceWebpageConditionTypeは、Webページの条件種別です。</ja><br><en>AdGroupWebpageServiceWebpageConditionType\
+    \ is rule type of web page.</en><hr>\n* `PAGE_CONTENT` - <ja>Webページのコンテンツ</ja><br><en>Contents\
+    \ of web page</en><br>\n* `CUSTOM_LABEL` - <ja>カスタムラベル</ja><br><en>Custom label</en><br>\n\
+    * `ALL_PAGES` - <ja>すべてのWebページ</ja><br><en>All web pages</en><br>\n* `URL` - <ja>URL</ja><br><en>URL</en><br>\n\
+    * `PAGE_TITLE` - <ja>Webページのタイトル</ja><br><en>Title of web page</en><br>\n* `UNKNOWN`\
+    \ - 未知の値です。<br>Unknown Value"

@@ -1,0 +1,9 @@
+CampaignTargetServiceNetworkTarget:
+  type: object
+  properties:
+    networkCoverageType:
+      $ref: 'CampaignTargetServiceNetworkCoverageType.yaml#/CampaignTargetServiceNetworkCoverageType'
+  title: CampaignTargetServiceNetworkTarget
+  description: "<ja>CampaignTargetServiceNetworkTargetオブジェクトは、広告掲載方式を表します。</ja><br><en>CampaignTargetServiceNetworkTarget\
+    \ object describes Network coverage type.</en><hr><details><summary>Requirement</summary><table\
+    \ border='1'><tr><th>PROPERTY</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>networkCoverageType</td><td>Requirement</td><td>-</td><td>-</td></tr></table></details>"

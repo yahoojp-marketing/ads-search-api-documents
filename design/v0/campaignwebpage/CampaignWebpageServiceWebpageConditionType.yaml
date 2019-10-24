@@ -1,0 +1,16 @@
+CampaignWebpageServiceWebpageConditionType:
+  type: string
+  enum:
+  - URL
+  - PAGE_TITLE
+  - PAGE_CONTENT
+  - CUSTOM_LABEL
+  - ALL_PAGES
+  - UNKNOWN
+  title: CampaignWebpageServiceWebpageConditionType
+  description: "<ja>PageFeedItemを除外設定する種別です。</ja><br><en>Type to set PageFeedItem.</en><hr>\n\
+    * `CUSTOM_LABEL` - <ja>カスタム　ラベル</ja><br><en>Custom labels</en><br>\n* `ALL_PAGES`\
+    \ - <ja>すべてのWebページ</ja><br><en>All web pages</en><br>\n* `URL` - <ja>URL</ja><br><en>URLs</en><br>\n\
+    * `PAGE_TITLE` - <ja>Webページのタイトル</ja><br><en>Title of web pages</en><br>\n* `PAGE_CONTENT`\
+    \ - <ja>Webページのコンテンツ</ja><br><en>Contents of web pages</en><br>\n* `UNKNOWN` -\
+    \ 未知の値です。<br>Unknown Value"

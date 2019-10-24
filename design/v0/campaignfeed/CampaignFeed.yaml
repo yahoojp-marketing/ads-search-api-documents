@@ -1,0 +1,21 @@
+CampaignFeed:
+  type: object
+  properties:
+    accountId:
+      type: integer
+      format: int64
+      description: "<ja>アカウントIDです。</ja><br><en>Account ID.</en>"
+    campaignId:
+      type: integer
+      format: int64
+      description: "<ja>キャンペーンIDです。</ja><br><en>Campaign ID.</en>"
+    feedItemId:
+      type: integer
+      format: int64
+      description: "<ja>FeedItem情報のIDです。</ja><br><en>FeedItem information ID.</en>"
+    placeholderType:
+      $ref: 'CampaignFeedServicePlaceholderType.yaml#/CampaignFeedServicePlaceholderType'
+  title: CampaignFeed
+  description: "<ja>CampaignFeedオブジェクトは、キャンペーンに紐づけられたFeedItem情報を表します。</ja><br><en>CampaignFeed\
+    \ describes FeedItem information connected to campaign.</en><hr><details><summary>Requirement</summary><table\
+    \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>SET</th></tr><tr><td>accountId</td><td>-</td><td>-</td></tr><tr><td>campaignId</td><td>-</td><td>-</td></tr><tr><td>feedItemId</td><td>-</td><td>Requirement<br>Updatable</td></tr><tr><td>placeholderType</td><td>-</td><td>Ignore</td></tr></table></details>"

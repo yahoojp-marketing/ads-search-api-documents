@@ -1,0 +1,26 @@
+CampaignRetargetingList:
+  type: object
+  properties:
+    accountId:
+      type: integer
+      format: int64
+      description: "<ja>アカウントIDです。</ja><br><en>Account ID.</en>"
+    bidMultiplier:
+      type: number
+      format: double
+      description: "<ja>入札価格調整率です。</ja><br><en>Bid adjustment rate.</en>"
+    campaignId:
+      type: integer
+      format: int64
+      description: "<ja>キャンペーンIDです。</ja><br><en>Campaign ID.</en>"
+    campaignName:
+      type: string
+      description: "<ja>キャンペーン名称です。</ja><br><en>Name of campaign.</en>"
+    criterionTargetList:
+      $ref: 'CampaignRetargetingListServiceCriterionTargetList.yaml#/CampaignRetargetingListServiceCriterionTargetList'
+    excludedType:
+      $ref: 'CampaignRetargetingListServiceExcludedType.yaml#/CampaignRetargetingListServiceExcludedType'
+  title: CampaignRetargetingList
+  description: "<ja>CampaignRetargetingListオブジェクトは、キャンペーン階層におけるターゲットリストの設定情報を保持するオブジェクトです。</ja><br><en>CampaignRetargetingList\
+    \ object holds the setting information of Target List on campaign level.</en><hr><details><summary>Requirement</summary><table\
+    \ border='1'><tr><th>PROPERTY</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>accountId</td><td>-</td><td>-</td><td>-</td></tr><tr><td>bidMultiplier</td><td>Optional</td><td>Optional</td><td>-</td></tr><tr><td>campaignId</td><td>Requirement</td><td>Requirement</td><td>Requirement</td></tr><tr><td>campaignName</td><td>-</td><td>-</td><td>-</td></tr><tr><td>criterionTargetList</td><td>Requirement</td><td>Requirement</td><td>Requirement</td></tr><tr><td>excludedType</td><td>Optional<br>default:INCLUDED</td><td>Optional</td><td>Requirement</td></tr></table></details>"

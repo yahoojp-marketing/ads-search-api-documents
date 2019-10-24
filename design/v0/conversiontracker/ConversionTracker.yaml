@@ -1,0 +1,67 @@
+ConversionTracker:
+  type: object
+  properties:
+    accountId:
+      type: integer
+      format: int64
+      description: "<ja>アカウントIDです。</ja><br><en>Account ID</en>"
+    allConversionValue:
+      type: string
+      description: "<ja>自動入札設定対象のコンバージョン値と、対象外のコンバージョン値の合計です。</ja><br><en>Total value of conversions to be included to auto bidding and to be exluded from auto bidding.</en>"
+    allConversions:
+      type: integer
+      format: int64
+      description: "<ja>自動入札設定対象のコンバージョン数と、対象外のコンバージョン数の合計です。</ja><br><en>Total number\
+        \ of conversions to be included to auto bidding and to be excluded from auto\
+        \ bidding.</en>"
+    appConversion:
+      $ref: 'ConversionTrackerServiceAppConversion.yaml#/ConversionTrackerServiceAppConversion'
+    category:
+      $ref: 'ConversionTrackerServiceCategory.yaml#/ConversionTrackerServiceCategory'
+    conversionCountingType:
+      $ref: 'ConversionTrackerServiceConversionCountingType.yaml#/ConversionTrackerServiceConversionCountingType'
+    conversionTrackerId:
+      type: integer
+      format: int64
+      description: "<ja>コンバージョントラッカーのIDです。</ja><br><en>ConversionTracker ID.</en>"
+    conversionTrackerName:
+      type: string
+      description: "<ja>コンバージョントラッカーの名称です。</ja><br><en>ConversionTracker Name.</en>"
+    conversionTrackerType:
+      $ref: 'ConversionTrackerServiceConversionTrackerType.yaml#/ConversionTrackerServiceConversionTrackerType'
+    conversionValue:
+      type: string
+      description: "<ja>自動入札設定対象のコンバージョン値です。</ja><br><en>Conversion value to be included\
+        \ to auto bidding.</en>"
+    conversions:
+      type: integer
+      format: int64
+      description: "<ja>自動入札設定対象のコンバージョン数です。<br>ユニークコンバージョンか総コンバージョンかは、countingTypeに依存します。</ja><br><en>Conversions\
+        \ which counts as included to Auto Bidding setting.<br>countingType specifies\
+        \ whether one-per-click or many-per-click.</en>"
+    excludeFromBidding:
+      $ref: 'ConversionTrackerServiceExcludeFromBidding.yaml#/ConversionTrackerServiceExcludeFromBidding'
+    measurementPeriod:
+      type: integer
+      format: int32
+      description: "<ja>コンバージョン計測期間です（単位：日)。<br>7～90日間で設定可能です。<br>※アプリダウンロードの場合は30日間固定。</ja><br><en>Counting period of conversoins (days).<br>It is available between 7 to 90 days<br>* For Mobile App Download, this period is fixed as 30 days.</en>"
+    mostRecentConversionDate:
+      type: string
+      description: "<ja>直近のコンバージョン発生日です。</ja><br><en>The most latest date when conversion\
+        \ occured.</en>"
+    status:
+      $ref: 'ConversionTrackerServiceStatus.yaml#/ConversionTrackerServiceStatus'
+    userRevenueValue:
+      type: string
+      description: "<ja>このコンバージョントラッカーに対するユーザー指定の収益値です。<br>1コンバージョンあたりの売上金額が固定値の場合、その金額を設定することで、売上金額をレポートなどで確認できます。<br>ADDリクエスト時に未指定の場合、0が設定されます。</ja><br><en>The\
+        \ value of revenue of the conversion tracker specified by user.<br>When the\
+        \ sales revenue of 1 conversion is fixed value, you are able to review the\
+        \ total sales on reports by specifying the amount on this item.<br>If it is\
+        \ not specified on ADD request, the value &#34;0&#34; is set.</en>"
+    webConversion:
+      $ref: 'ConversionTrackerServiceWebConversion.yaml#/ConversionTrackerServiceWebConversion'
+  title: ConversionTracker
+  description: "<ja>ConversionTrackerオブジェクトは、コンバージョン測定タグやタグごとのパフォーマンスデータなどのコンバージョントラッカー情報を表します。</ja><br><en>ConversionTracker\
+    \ object shows ConversionTracker information such as ConversionTag and performance\
+    \ data by tag.</en><hr><details><summary>Requirement</summary><table border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th></tr><tr><td>allConversions</td><td>-</td><td>-</td><td>-</td></tr><tr><td>category</td><td>-</td><td>Requirement</td><td>Optional<br>Updatable</td></tr><tr><td>conversionTrackerId</td><td>-</td><td>-</td><td>Requirement</td></tr><tr><td>conversionTrackerName</td><td>-</td><td>Requirement</td><td>Optional<br>Updatable</td></tr><tr><td>conversionTrackerType</td><td>-</td><td>Requirement</td><td>Requirement</td></tr><tr><td>conversionValue</td><td>-</td><td>-</td><td>-</td></tr><tr><td>conversions</td><td>-</td><td>-</td><td>-</td></tr><tr><td>excludeFromBidding</td><td>-</td><td>Optional<br><ja>default:\
+    \ FALSE（使用する）</ja><br><en>default: FALSE（include）</en></td><td>Optional</td></tr><tr><td>mostRecentConversionDate</td><td>-</td><td>-</td><td>-</td></tr><tr><td>status</td><td>-</td><td>Requirement</td><td>Optional<br>Updatable</td></tr><tr><td>userRevenueValue</td><td>-</td><td>Optional</td><td>Optional<br>Updatable</td></tr><tr><td>allConversionValue</td><td>-</td><td>-</td><td>-</td></tr><tr><td>accountId</td><td>-</td><td>-</td><td>-</td></tr><tr><td>conversionCountingType</td><td>-</td><td>Optional<br>default：MANY_PER_CLICK</td><td>Optional</td></tr><tr><td>measurementPeriod</td><td>-</td><td>Optional<br>default: 30</td><td>Optional</td></tr><tr><td>webConversion</td><td>-</td><td>Optional<br><ja>※conversionTrackerTypeがWEB_CONVERSIONの場合、Requirement</ja><br><en>∗ If conversionTrackerType is WEB_CONVERSION, Requirement</en></td><td>Optional</td></tr><tr><td>appConversion</td><td>-</td><td>Optional<br><ja>※conversionTrackerTypeがAPP_CONVERSIONの場合、Requirement</ja><br><en>∗ If conversionTrackerType is APP_CONVERSION, Requirement</en></td><td>Optional</td></tr></table></details>"

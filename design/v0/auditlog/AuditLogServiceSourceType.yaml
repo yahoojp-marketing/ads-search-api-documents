@@ -1,0 +1,16 @@
+AuditLogServiceSourceType:
+  type: string
+  enum:
+  - API
+  - YAHOO_JAPAN
+  - CAMPAIGN_MANAGEMENT_TOOL
+  - ALL
+  - UNKNOWN
+  title: AuditLogServiceSourceType
+  description: "<ja>AuditLogServiceSourceTypeは、操作履歴における操作者を表します。</ja><br><en>AuditLogServiceSourceType\
+    \ desribes the operator information of operation history data.</en><hr>\n* `API`\
+    \ - <ja>APIアカウントによる操作です。</ja><br><en>Operated by API account.</en><br>\n* `YAHOO_JAPAN`\
+    \ - <ja>Yahoo!プロモーション広告システムによる操作です。</ja><br><en>Operated by the system of Yahoo!\
+    \ Japan Promotional Ad.</en><br>\n* `CAMPAIGN_MANAGEMENT_TOOL` - <ja>広告管理ツールからの履歴です。\
+    \ </ja><br><en>Campaign Management Tool</en><br>\n* `ALL` - <ja>すべての操作者による操作です。</ja><br><en>Operated\
+    \ by all of operators.</en><br>\n* `UNKNOWN` - 未知の値です。<br>Unknown Value"

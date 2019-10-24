@@ -1,0 +1,9 @@
+CampaignCriterionServiceCriterionType:
+  type: string
+  enum:
+  - KEYWORD
+  - UNKNOWN
+  title: CampaignCriterionServiceCriterionType
+  description: "<ja>CampaignCriterionServiceCriterionTypeは、クライテリアを表します。</ja><br><en>CampaignCriterionServiceCriterionType\
+    \ displays the type of criteria.</en><hr>\n* `KEYWORD` - <ja>キーワードです。</ja><br><en>Keyword.</en><br>\n\
+    * `UNKNOWN` - 未知の値です。<br>Unknown Value"

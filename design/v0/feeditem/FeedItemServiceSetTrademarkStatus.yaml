@@ -1,0 +1,11 @@
+FeedItemServiceSetTrademarkStatus:
+  type: object
+  properties:
+    feedItemId:
+      type: integer
+      format: int64
+      description: "<ja>フィードアイテムIDです。</ja><br><en>FeedItem ID</en>"
+  title: FeedItemServiceSetTrademarkStatus
+  description: "<ja>FeedItemServiceSetTrademarkStatusオブジェクトは、フィードアイテムの情報を格納します。</ja><br><en>FeedItemServiceSetTrademarkStatus object holds feed item information.\
+      \ </en><hr><details><summary>Requirement</summary><table\
+      \ border='1'><tr><th>PROPERTY</th><th>setTrademarkStatus</th></tr><tr><td>feedItemId</td><td>Requirement</td></tr></table></details>"

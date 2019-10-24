@@ -1,0 +1,18 @@
+FeedItemServiceTrademarkStatus:
+  type: string
+  enum:
+  - NO_RESTRICTION
+  - CONFLICT_WITH_TRADEMARK
+  - CLAIM_IN_PROGRESS
+  - DISAPPROVED_CLAIM
+  - DISAPPROVED_REVIEWER
+  - UNKNOWN
+  title: FeedItemServiceTrademarkStatus
+  description: "<ja>FeedItemServiceTrademarkStatusは、商標保護ステータスです。</ja><br><en>FeedItemServiceTrademarkStatus\
+    \ object describes the status of trademark.</en><hr>\n* `DISAPPROVED_CLAIM` -\
+    \ <ja>不服申立否認</ja><br><en>Disapproved claim.</en><br>\n* `DISAPPROVED_REVIEWER`\
+    \ - <ja>目視による審査での否認</ja><br><en>Disapproved reviewer.</en><br>\n* `NO_RESTRICTION`\
+    \ - <ja>制限なし</ja><br><en>No restriction.</en><br>\n* `CONFLICT_WITH_TRADEMARK`\
+    \ - <ja>商標に抵触して配信停止中</ja><br><en>Conflict with trademark.</en><br>\n* `CLAIM_IN_PROGRESS`\
+    \ - <ja>不服申立中</ja><br><en>Claim in progress.</en><br>\n* `UNKNOWN` - 未知の値です。<br>Unknown\
+    \ Value"

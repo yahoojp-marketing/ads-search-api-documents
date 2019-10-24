@@ -1,0 +1,15 @@
+AdGroupCriterionServiceValue:
+  type: object
+  properties:
+    adGroupCriterion:
+      $ref: 'AdGroupCriterion.yaml#/AdGroupCriterion'
+    errors:
+      type: array
+      items:
+        $ref: '../../Error.yaml#/Error'
+    operationSucceeded:
+      type: boolean
+      description: "<ja>処理結果です。</ja><br><en>Result of process</en>"
+  title: AdGroupCriterionServiceValue
+  description: "<ja>AdGroupCriterionServiceValueオブジェクトは、広告グループのクライテリアです。</ja><br><en>AdGroupCriterionServiceValue\
+    \ object is ad group criteria information including its operation results.</en>"

@@ -1,0 +1,25 @@
+AdGroupFeed:
+  type: object
+  properties:
+    accountId:
+      type: integer
+      format: int64
+      description: "<ja>アカウントIDです。</ja><br><en>Account ID.</en>"
+    adGroupId:
+      type: integer
+      format: int64
+      description: "<ja>広告グループIDです。</ja><br><en>Ad group ID.</en>"
+    campaignId:
+      type: integer
+      format: int64
+      description: "<ja>キャンペーンIDです。</ja><br><en>Campaign ID.</en>"
+    feedItemId:
+      type: integer
+      format: int64
+      description: "<ja>FeedItem情報のIDです。</ja><br><en>FeedItem information ID.</en>"
+    placeholderType:
+      $ref: 'AdGroupFeedServicePlaceholderType.yaml#/AdGroupFeedServicePlaceholderType'
+  title: AdGroupFeed
+  description: "<ja>AdGroupFeedオブジェクトは、広告グループに紐づけられたFeedItem情報を表します。</ja><br><en>AdGroupFeed\
+    \ describes the FeedItem information connected to ad group.</en><hr><details><summary>Requirement</summary><table\
+    \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>SET</th></tr><tr><td>accountId</td><td>-</td><td>-</td></tr><tr><td>adGroupId</td><td>-</td><td>-</td></tr><tr><td>campaignId</td><td>-</td><td>-</td></tr><tr><td>feedItemId</td><td>-</td><td>Requirement<br>Updatable</td></tr><tr><td>placeholderType</td><td>-</td><td>Ignore</td></tr></table></details>"

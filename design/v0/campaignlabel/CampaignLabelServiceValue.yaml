@@ -1,0 +1,16 @@
+CampaignLabelServiceValue:
+  type: object
+  properties:
+    campaignLabel:
+      $ref: 'CampaignLabel.yaml#/CampaignLabel'
+    errors:
+      type: array
+      items:
+        $ref: '../../Error.yaml#/Error'
+    operationSucceeded:
+      type: boolean
+      description: "<ja>処理結果です。trueの場合は、処理は成功しました。falseの場合は処理が失敗しています。</ja><br><en>The
+                    process results. If true, the process succeeded. If false, the process failed.</en>"
+  title: CampaignLabelServiceValue
+  description: "<ja>CampaignLabelServiceValueオブジェクトは、操作結果を含むキャンペーンラベルの情報を表します。</ja><br><en>CampaignLabelServiceValue\
+    \ object describes campaign label information including its operation results.</en>"

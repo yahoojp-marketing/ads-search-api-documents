@@ -1,0 +1,10 @@
+CampaignExportServiceReturnValue:
+  type: object
+  properties:
+    values:
+      type: array
+      items:
+        $ref: 'CampaignExportServiceValue.yaml#/CampaignExportServiceValue'
+  title: CampaignExportServiceReturnValue
+  description: "<ja>CampaignExportServiceReturnValue オブジェクトは、実行結果を表します。</ja><br><en>CampaignExportServiceReturnValue\
+    \ object describes the result.</en>"

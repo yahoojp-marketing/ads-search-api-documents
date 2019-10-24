@@ -1,0 +1,14 @@
+ConversionTrackerServiceMarkupLanguage:
+  type: string
+  enum:
+  - HTML
+  - CHTML
+  - XHTML
+  - WML
+  - UNKNOWN
+  title: ConversionTrackerServiceMarkupLanguage
+  description: "<ja>ConversionTrackerServiceMarkupLanguageは、スニペットの記述に使用するマークアップ言語を表します。</ja><br><en>ConversionTrackerServiceMarkupLanguage\
+    \ shows ConversionTrackerServiceMarkupLanguage for Snipet.</en><hr>\n* `HTML`\
+    \ - <ja>HTML言語です。</ja><br><en>HTML</en><br>\n* `XHTML` - <ja>XHTML言語です。参照のみ可能です。<br>※XHTMLの登録・更新は2016年6月15日で終了しました。</ja><br><en>XHTML. Reference only.<br>* Add/Update XHTML has been sunset on June15, 2016.</en><br>\n\
+    * `CHTML` - <ja>CHTML言語です。参照のみ可能です。</ja><br><en>CHTML. Reference only.</en><br>\n* `WML` - <ja>WML言語です。参照のみ可能です。</ja><br><en>WML. Reference only.</en><br>\n\
+    * `UNKNOWN` - 未知の値です。<br>Unknown Value"

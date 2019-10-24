@@ -1,0 +1,15 @@
+CampaignServiceValue:
+  type: object
+  properties:
+    campaign:
+      $ref: 'Campaign.yaml#/Campaign'
+    errors:
+      type: array
+      items:
+        $ref: '../../Error.yaml#/Error'
+    operationSucceeded:
+      type: boolean
+      description: "<ja>処理結果を表示します。</ja><br><en>Result of process.</en>"
+  title: CampaignServiceValue
+  description: "<ja>CampaignServiceValueオブジェクトは、操作結果を含むキャンペーンの情報を表します。</ja><br><en>CampaignServiceValue\
+    \ object is campaign information including its operation results.</en>"

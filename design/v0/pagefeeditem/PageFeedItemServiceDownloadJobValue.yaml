@@ -1,0 +1,17 @@
+PageFeedItemServiceDownloadJobValue:
+  type: object
+  properties:
+    errors:
+      type: array
+      items:
+        $ref: '../../Error.yaml#/Error'
+    job:
+      $ref: 'PageFeedItemServiceDownloadJob.yaml#/PageFeedItemServiceDownloadJob'
+    operationSucceeded:
+      type: boolean
+      description: "<ja>処理結果です。trueの場合は、処理は成功しました。falseの場合は処理が失敗しています。</ja><br><en>The
+                    process results. If true, the process succeeded. If false, the process failed.</en>"
+  title: PageFeedItemServiceDownloadJobValue
+  description: "<ja>PageFeedItemServiceDownloadJobValueは、ダウンロードの実行結果を格納するコンテナです。</ja><br><en>PageFeedItemServiceDownloadJobValue\
+    \ retains result of download execution.</en><hr><details><summary>Requirement</summary><table\
+    \ border='1'></table></details>"

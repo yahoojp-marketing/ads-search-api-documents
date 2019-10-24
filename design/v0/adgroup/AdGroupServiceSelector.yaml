@@ -1,0 +1,64 @@
+AdGroupServiceSelector:
+  type: object
+  required:
+  - accountId
+  properties:
+    accountId:
+      type: integer
+      format: int64
+      description: "<ja>検索条件：アカウントID</ja><br><en>Search condition: Account ID</en>"
+    adGroupIds:
+      type: array
+      items:
+        type: integer
+        format: int64
+      maxItems: 1000
+      description: "<ja>検索条件：広告グループID</ja><br><en>Search condition: Ad Group ID</en>"
+    biddingStrategyIds:
+      type: array
+      items:
+        type: integer
+        format: int64
+      maxItems: 1000
+      description: "<ja>検索条件：自動入札ID</ja><br><en>Search condition: Auto Bidding ID</en>"
+    campaignIds:
+      type: array
+      items:
+        type: integer
+        format: int64
+      maxItems: 1000
+      description: "<ja>検索条件：キャンペーンID</ja><br><en>Search condition: Campaign ID</en>"
+    containsLabelId:
+      $ref: 'AdGroupServiceContainsLabelId.yaml#/AdGroupServiceContainsLabelId'
+    labelIds:
+      type: array
+      items:
+        type: integer
+        format: int64
+      maxItems: 1000
+      description: "<ja>検索条件：ラベルID</ja><br><en>Search condition: Label ID</en>"
+    numberResults:
+      type: integer
+      format: int32
+      minimum: 1
+      maximum: 10000
+      default: 500
+      description: "ページの最大件数です。このフィールドは、1以上を指定する必要があります。<br>Maximum number of results\
+        \ to return in this page. This field must be greater than or equal to 1. Also\
+        \ see Entity Limits per operation."
+    startIndex:
+      type: integer
+      format: int32
+      minimum: 1
+      default: 1
+      description: "ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。<br>Index of the first\
+        \ result to return in this page. This field must be greater than or equal\
+        \ to 1."
+    userStatuses:
+      type: array
+      items:
+        $ref: 'AdGroupServiceUserStatus.yaml#/AdGroupServiceUserStatus'
+      maxItems: 2
+  title: AdGroupServiceSelector
+  description: "<ja>AdGroupServiceSelectorオブジェクトは、指定された広告グループを表します。</ja><br><en>AdGroupServiceSelector\
+    \ object displays the specified ad group.</en>"

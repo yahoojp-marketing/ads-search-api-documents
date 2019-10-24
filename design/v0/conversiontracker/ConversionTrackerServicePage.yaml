@@ -1,0 +1,34 @@
+ConversionTrackerServicePage:
+  type: object
+  properties:
+    totalAllConversionValue:
+      type: string
+      description: "<ja>自動入札設定の対象コンバージョン値と、対象外コンバージョン値の合計です。</ja><br><en>Total value\
+        \ of conversions on Auto Bidding setting and the value of conversions not\
+        \ on Auto Bidding setting.</en>"
+    totalAllConversions:
+      type: integer
+      format: int64
+      description: "<ja>自動入札設定の対象コンバージョン数と、対象外コンバージョン数の合計です。</ja><br><en>Total value\
+        \ of conversions on Auto Bidding setting and the value of conversions not\
+        \ on Auto Bidding setting.</en>"
+    totalConversionValue:
+      type: string
+      description: "<ja>自動入札設定の対象コンバージョン値の合計です。</ja><br><en>Total value of conversions\
+        \ on Auto Bidding setting.</en>"
+    totalConversions:
+      type: integer
+      format: int64
+      description: "<ja>自動入札設定の対象コンバージョン数の合計です。</ja><br><en>Total value of conversions\
+        \ on Auto Bidding setting.</en>"
+    totalNumEntries:
+      type: integer
+      format: int32
+      description: "<ja>取得される項目の総件数です。</ja><br><en>Total number of entries in the result that this page is a part of.</en>"
+    values:
+      type: array
+      items:
+        $ref: 'ConversionTrackerServiceValue.yaml#/ConversionTrackerServiceValue'
+  title: ConversionTrackerServicePage
+  description: "<ja>ConversionTrackerServicePageオブジェクトは、取得されるコンバージョントラッカー情報のエントリーを表します。</ja><br><en>ConversionTrackerServicePage\
+    \ object shows entry of ConversionTracker.</en>"

@@ -1,0 +1,12 @@
+CampaignTargetServicePlatformType:
+  type: string
+  enum:
+  - SMART_PHONE
+  - TABLET
+  - DESKTOP
+  - UNKNOWN
+  title: CampaignTargetServicePlatformType
+  description: "<ja>CampaignTargetServicePlatformTypeは、広告を配信するデバイスの種類です。</ja><br><en>CampaignTargetServicePlatformType\
+    \ is a platform of the selected device.</en><hr>\n* `SMART_PHONE` - <ja>スマートフォンです。</ja><br><en>Smartphone.</en><br>\n\
+    * `TABLET` - <ja>タブレットです。</ja><br><en>Tablet.</en><br>\n* `DESKTOP` - <ja>パソコンです。</ja><br><en>PC.</en><br>\n\
+    * `UNKNOWN` - 未知の値です。<br>Unknown Value"

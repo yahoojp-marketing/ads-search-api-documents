@@ -1,0 +1,21 @@
+CampaignServiceBiddingStrategy:
+  title: CampaignServiceBiddingStrategy
+  type: object
+  properties:
+    biddingScheme:
+      $ref: 'CampaignServiceBiddingScheme.yaml#/CampaignServiceBiddingScheme'
+    biddingStrategyId:
+      type: integer
+      format: int64
+      description: "<ja>自動入札ID</ja><br><en>Auto Bidding ID</en>"
+    biddingStrategyName:
+      type: string
+      description: "<ja>自動入札名<br>※50文字以内になります。</ja><br><en>Auto Bidding name.<br>* Up\
+        \ to 50 characters.</en>"
+    biddingStrategySource:
+      $ref: 'CampaignServiceBiddingStrategySource.yaml#/CampaignServiceBiddingStrategySource'
+    biddingStrategyType:
+      $ref: 'CampaignServiceBiddingStrategyType.yaml#/CampaignServiceBiddingStrategyType'
+  description: "<ja>CampaignServiceBiddingStrategyオブジェクトは、自動入札設定方法を表します。</ja><br><en>CampaignServiceBiddingStrategy\
+    \ object describes Auto Bidding setting.</en><hr><details><summary>Requirement</summary><table\
+    \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>biddingScheme</td><td>-</td><td>Optional</td><td>Optional</td><td>Ignore</td></tr><tr><td>biddingStrategyId</td><td>-</td><td>Optional</td><td>Optional<br><i>Updatable</i></td><td>Ignore</td></tr><tr><td>biddingStrategyName</td><td>-</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>biddingStrategySource</td><td>-</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>biddingStrategyType</td><td>-</td><td>Optional</td><td>Optional<br><i>Updatable</i></td><td>Ignore</td></tr></table></details>"

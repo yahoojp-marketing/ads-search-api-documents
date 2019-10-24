@@ -1,0 +1,14 @@
+CampaignServiceReviewUrl:
+  type: object
+  properties:
+    parameters:
+      type: array
+      items:
+        $ref: 'CampaignServiceCustomParameter.yaml#/CampaignServiceCustomParameter'
+    trackingUrl:
+      type: string
+      description: "<ja>トラッキングURLです。</ja><br><en>Tracking URL.</en>"
+  title: CampaignServiceReviewUrl
+  description: "<ja>CampaignServiceReviewUrlオブジェクトは、トラッキングURLとカスタムパラメータを表します。</ja><br><en>CampaignServiceReviewUrl\
+    \ object siplays the Tracking URL and Custom Parameter.</en><hr><details><summary>Requirement</summary><table\
+    \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>parameters</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>trackingUrl</td><td>-</td><td>-</td><td>-</td><td>-</td></tr></table></details>"

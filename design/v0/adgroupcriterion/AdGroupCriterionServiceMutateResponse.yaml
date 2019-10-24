@@ -1,0 +1,12 @@
+AdGroupCriterionServiceMutateResponse:
+  type: object
+  properties:
+    errors:
+      type: array
+      items:
+        $ref: '../../Error.yaml#/Error'
+    rid:
+      type: string
+    rval:
+      $ref: 'AdGroupCriterionServiceReturnValue.yaml#/AdGroupCriterionServiceReturnValue'
+  title: AdGroupCriterionServiceMutateResponse

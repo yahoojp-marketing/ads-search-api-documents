@@ -1,0 +1,10 @@
+RetargetingListServiceCustomKeyRuleItem:
+  type: object
+  properties:
+    textKey:
+      type: string
+      description: "<ja>評価項目</ja><br><en>Evaluation item.</en>"
+  title: RetargetingListServiceCustomKeyRuleItem
+  description: "<ja>RetargetingListServiceCustomKeyRuleItemは、カスタムキールールの評価式を保持するオブジェクトです。</ja><br><en>RetargetingListServiceCustomKeyRuleItem\
+    \ is an object that holds evaluation of custom key rules.</en><hr><details><summary>Requirement</summary><table\
+    \ border='1'><tr><th>PROPERTY</th><th>ADD</th><th>SET</th></tr><tr><td>textKey</td><td>Requirement</td><td>Requirement</td></tr></table></details>"

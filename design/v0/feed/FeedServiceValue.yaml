@@ -1,0 +1,16 @@
+FeedServiceValue:
+  type: object
+  properties:
+    errors:
+      type: array
+      items:
+        $ref: '../../Error.yaml#/Error'
+    feed:
+      $ref: 'Feed.yaml#/Feed'
+    operationSucceeded:
+      type: boolean
+      description: "<ja>処理結果です。trueの場合は、処理は成功しました。falseの場合は処理が失敗しています。</ja><br><en>The
+                    process results. If true, the process succeeded. If false, the process failed.</en>"
+  title: FeedServiceValue
+  description: "<ja>FeedServiceValueオブジェクトは、自動データ挿入のリスト内容を格納するコンテナです。</ja><br><en>FeedServiceValue\
+    \ contains FeedItem value information.</en>"

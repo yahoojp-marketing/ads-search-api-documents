@@ -1,0 +1,12 @@
+AdGroupCriterionServiceGetResponse:
+  type: object
+  properties:
+    errors:
+      type: array
+      items:
+        $ref: '../../Error.yaml#/Error'
+    rid:
+      type: string
+    rval:
+      $ref: 'AdGroupCriterionServicePage.yaml#/AdGroupCriterionServicePage'
+  title: AdGroupCriterionServiceGetResponse

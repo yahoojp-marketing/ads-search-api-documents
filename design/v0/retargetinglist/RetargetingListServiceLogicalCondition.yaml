@@ -1,0 +1,13 @@
+RetargetingListServiceLogicalCondition:
+  type: string
+  enum:
+  - AND
+  - OR
+  - NOT
+  - UNKNOWN
+  title: RetargetingListServiceLogicalCondition
+  description: "<ja>RetargetingListServiceLogicalConditionは、組合せターゲットリストの連結条件です。</ja><br><en>RetargetingListServiceLogicalCondition\
+    \ is the conditions of combined target list.</en><hr>\n* `NOT` - <ja>NOT条件の組合せです。</ja><br><en>NOT\
+    \ condition.</en><br>\n* `AND` - <ja>AND条件の組合せです。</ja><br><en>AND condition.</en><br>\n\
+    * `OR` - <ja>OR条件の組合せです。</ja><br><en>OR condition.</en><br>\n* `UNKNOWN` - 未知の値です。<br>Unknown\
+    \ Value"

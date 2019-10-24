@@ -1,0 +1,11 @@
+AuditLogServiceLang:
+  type: string
+  enum:
+  - JA
+  - EN
+  - UNKNOWN
+  title: AuditLogServiceLang
+  description: "<ja>AuditLogServiceLangは、操作履歴ファイルの言語設定を表します。</ja><br><en>AuditLogServiceLang\
+    \ describes the language setting of operation history data file.</en><hr>\n* `EN`\
+    \ - <ja>英語です。</ja><br><en>English language</en><br>\n* `JA` - <ja>日本語です。</ja><br><en>Japanese\
+    \ language</en><br>\n* `UNKNOWN` - 未知の値です。<br>Unknown Value"

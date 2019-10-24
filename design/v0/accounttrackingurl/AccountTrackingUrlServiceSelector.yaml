@@ -1,0 +1,29 @@
+AccountTrackingUrlServiceSelector:
+  type: object
+  properties:
+    accountIds:
+      type: array
+      items:
+        type: integer
+        format: int64
+      description: "<ja>検索条件：アカウントIDです。</ja><br><en>Search condition: Account ID.</en>"
+    numberResults:
+      type: integer
+      format: int32
+      minimum: 1
+      maximum: 1000
+      default: 1000
+      description: "ページの最大件数です。このフィールドは、1以上を指定する必要があります。<br>Maximum number of results\
+        \ to return in this page. This field must be greater than or equal to 1. Also\
+        \ see Entity Limits per operation."
+    startIndex:
+      type: integer
+      format: int32
+      minimum: 1
+      default: 1
+      description: "ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。<br>Index of the first\
+        \ result to return in this page. This field must be greater than or equal\
+        \ to 1."
+  title: AccountTrackingUrlServiceSelector
+  description: "<ja>AccountTrackingUrlServiceSelectorオブジェクトは、アカウントトラッキング情報のget処理の検索条件を表します。</ja><br><en>AccountTrackingUrlServiceSelector\
+    \ object describes the account tracking details.</en>"

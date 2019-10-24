@@ -1,0 +1,17 @@
+AuditLogServiceDownloadSelector:
+  type: object
+  required:
+  - accountId
+  - jobId
+  properties:
+    accountId:
+      type: integer
+      format: int64
+      description: "<ja>検索条件：アカウントIDです。</ja><br><en>Search condition: Account ID.</en>"
+    jobId:
+      type: integer
+      format: int64
+      description: "<ja>検索条件：ジョブIDです。</ja><br><en>Search condition: Job ID.</en>"
+  title: AuditLogServiceDownloadSelector
+  description: "<ja>操作履歴ファイルをダウンロードします。</ja><br><en>\
+        \ Download operation history data file.</en>"

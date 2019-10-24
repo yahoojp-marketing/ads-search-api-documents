@@ -1,0 +1,12 @@
+LabelServiceGetResponse:
+  type: object
+  properties:
+    errors:
+      type: array
+      items:
+        $ref: '../../Error.yaml#/Error'
+    rid:
+      type: string
+    rval:
+      $ref: 'LabelServicePage.yaml#/LabelServicePage'
+  title: LabelServiceGetResponse

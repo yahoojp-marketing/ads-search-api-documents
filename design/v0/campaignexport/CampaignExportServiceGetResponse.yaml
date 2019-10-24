@@ -1,0 +1,12 @@
+CampaignExportServiceGetResponse:
+  type: object
+  properties:
+    errors:
+      type: array
+      items:
+        $ref: '../../Error.yaml#/Error'
+    rid:
+      type: string
+    rval:
+      $ref: 'CampaignExportServicePage.yaml#/CampaignExportServicePage'
+  title: CampaignExportServiceGetResponse

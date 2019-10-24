@@ -1,0 +1,15 @@
+AuditLogServiceOutput:
+  type: string
+  enum:
+  - CSV
+  - TSV
+  - ZIPPED_CSV
+  - ZIPPED_TSV
+  - UNKNOWN
+  title: AuditLogServiceOutput
+  description: "<ja>AuditLogServiceOutputは、操作履歴取得ジョブのファイル形式を指定します。</ja><br><en>AuditLogServiceOutput\
+    \ specifies the file format of acruiqred operation history data.</en><hr>\n* `ZIPPED_CSV`\
+    \ - <ja>ZIP圧縮されたCSV形式です。</ja><br><en>in zipped CSV format</en><br>\n* `ZIPPED_TSV`\
+    \ - <ja>ZIP圧縮されたTSV形式です。</ja><br><en>in zipped TSV format</en><br>\n* `CSV` -\
+    \ <ja>CSV形式です。</ja><br><en>in CSV format</en><br>\n* `TSV` - <ja>TSV形式です。</ja><br><en>in\
+    \ TSV format</en><br>\n* `UNKNOWN` - 未知の値です。<br>Unknown Value"

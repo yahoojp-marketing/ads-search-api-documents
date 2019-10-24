@@ -1,0 +1,16 @@
+AccountServiceIncludeTestAccount:
+  type: string
+  default: EXCLUDE_TEST
+  enum:
+    - ONLY_TEST
+    - EXCLUDE_TEST
+    - ALL
+    - UNKNOWN
+  title: AccountServiceIncludeTestAccount
+  description: |
+    <ja>取得アカウント制御</ja><br>
+    <en>Control which accounts are retrieved.</en><hr>
+    * `ONLY_TEST` - <ja>テストアカウントのみ</ja><br><en>Test account only.</en>
+    * `EXCLUDE_TEST` - <ja>テストアカウントを除外</ja><br><en>Exclude test accounts.</en>
+    * `ALL` - <ja>全てのアカウント</ja><br><en>All accounts.</en>
+    * `UNKNOWN` - 未知の値です。<br>Unknown Value

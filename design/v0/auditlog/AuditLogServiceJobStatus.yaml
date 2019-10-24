@@ -1,0 +1,15 @@
+AuditLogServiceJobStatus:
+  type: string
+  enum:
+  - IN_PROGRESS
+  - COMPLETED
+  - TIMEOUT
+  - SYSTEM_ERROR
+  - UNKNOWN
+  title: AuditLogServiceJobStatus
+  description: "<ja>AuditLogServiceJobStatusは、操作履歴取得ジョブの実行状況を表します。</ja><br><en>AuditLogServiceJobStatus\
+    \ describes the job status of acquiring operation history data.</en><hr>\n* `SYSTEM_ERROR`\
+    \ - <ja>エラーです。</ja><br><en>It&#39;s error.</en><br>\n* `IN_PROGRESS` - <ja>処理中です。</ja><br><en>The\
+    \ process is in progress.</en><br>\n* `COMPLETED` - <ja>処理完了です。</ja><br><en>The\
+    \ process has been completed.</en><br>\n* `TIMEOUT` - <ja>タイムアウトです。</ja><br><en>Timeout\
+    \ occurred.</en><br>\n* `UNKNOWN` - 未知の値です。<br>Unknown Value"

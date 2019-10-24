@@ -1,0 +1,15 @@
+RetargetingListServiceTag:
+  type: object
+  properties:
+    snippet:
+      type: string
+      description: "<ja>サイトリターゲティングのタグです。</ja><br><en>RetargetingListServiceTag of\
+        \ Site Retargeting.</en>"
+    advancedSnippet:
+      type: string
+      description: "<ja>リニューアル版のサイトリターゲティングタグは、従来のタグよりもブラウザーなどの環境の影響を受けづらい新しいフォーマットのタグです。 <br/> 詳細は[ヘルプ](https://support-marketing.yahoo.co.jp/promotionalads/ss/articledetail?lan=ja&aid=7460)を参照</ja><br><en>\
+              \ The new format of site retargeting tag avoids the impacts such as changes made to the browser. <br/> [Help Page](https://support-marketing.yahoo.co.jp/promotionalads/ss/articledetail?lan=en&aid=6133)</en>"
+  title: RetargetingListServiceTag
+  description: "<ja>RetargetingListServiceTagは、サイトリターゲティングのタグを保持するオブジェクトです。</ja><br><en>RetargetingListServiceTag\
+    \ is an object that holds tag of Site Retargeting.</en><hr><details><summary>Requirement</summary><table\
+    \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th></tr><tr><td>snippet</td><td>-</td><td>-</td><td>-</td></tr><tr><td>advancedSnippet</td><td>-</td><td>-</td><td>-</td></tr></table></details>"

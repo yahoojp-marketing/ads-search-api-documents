@@ -1,0 +1,12 @@
+AdGroupFeedServiceGetResponse:
+  type: object
+  properties:
+    errors:
+      type: array
+      items:
+        $ref: '../../Error.yaml#/Error'
+    rid:
+      type: string
+    rval:
+      $ref: 'AdGroupFeedServicePage.yaml#/AdGroupFeedServicePage'
+  title: AdGroupFeedServiceGetResponse

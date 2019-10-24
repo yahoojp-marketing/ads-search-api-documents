@@ -1,0 +1,11 @@
+LabelServiceCountLabeledEntity:
+  type: string
+  enum:
+  - 'TRUE'
+  - 'FALSE'
+  - UNKNOWN
+  title: LabelServiceCountLabeledEntity
+  description: "<ja>LabelServiceCountLabeledEntityは、ラベル件数集計フラグの設定です。</ja><br><en>LabelServiceCountLabeledEntity\
+    \ is setting of Label number count flag.</en><hr>\n* `TRUE` - <ja>集計する</ja><br><en>counting</en><br>\n* `FALSE` - <ja>集計しない</ja><br><en>not\
+    \ count</en><br>\n* `UNKNOWN`\
+    \ - 未知の値です。<br>Unknown Value"

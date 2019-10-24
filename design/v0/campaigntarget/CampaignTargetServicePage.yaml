@@ -1,0 +1,15 @@
+CampaignTargetServicePage:
+  type: object
+  properties:
+    totalNumEntries:
+      type: integer
+      format: int32
+      description: "<ja>取得される項目の総件数です。</ja><br><en>Total number of entries in the\
+        \ result that this page is a part of.</en>"
+    values:
+      type: array
+      items:
+        $ref: 'CampaignTargetServiceValue.yaml#/CampaignTargetServiceValue'
+  title: CampaignTargetServicePage
+  description: "<ja>CampaignTargetServicePageオブジェクトは、取得されるキャンペーンのターゲティング設定に関するエントリーを表します。</ja><br><en>Explains\
+    \ entry of campaign target settings.</en>"

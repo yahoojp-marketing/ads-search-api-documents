@@ -1,0 +1,9 @@
+RetargetingListServiceUrlRuleItem:
+  type: object
+  properties:
+    urlRuleKey:
+      $ref: 'RetargetingListServiceUrlRuleKey.yaml#/RetargetingListServiceUrlRuleKey'
+  title: RetargetingListServiceUrlRuleItem
+  description: "<ja>RetargetingListServiceUrlRuleItemは、URLルールの評価式を保持するオブジェクトです。</ja><br><en>RetargetingListServiceUrlRuleItem\
+    \ is an object that holds evaluation of URL rules.</en><hr><details><summary>Requirement</summary><table\
+    \ border='1'><tr><th>PROPERTY</th><th>ADD</th><th>SET</th></tr><tr><td>urlRuleKey</td><td>Requirement</td><td>Requirement</td></tr></table></details>"

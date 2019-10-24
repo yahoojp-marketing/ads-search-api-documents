@@ -1,0 +1,23 @@
+AdGroupLabel:
+  type: object
+  properties:
+    accountId:
+      type: integer
+      format: int64
+      description: "<ja>アカウントID</ja><br><en>Account ID</en>"
+    adGroupId:
+      type: integer
+      format: int64
+      description: "<ja>広告グループID</ja><br><en>Ad Group ID</en>"
+    campaignId:
+      type: integer
+      format: int64
+      description: "<ja>キャンペーンID</ja><br><en>Campaign ID</en>"
+    labelId:
+      type: integer
+      format: int64
+      description: "<ja>ラベルID</ja><br><en>Label ID</en>"
+  title: AdGroupLabel
+  description: "<ja>AdGroupLabelオブジェクトは、広告グループラベルの情報を表します。</ja><br><en>AdGroupLabel\
+    \ object describes ad group label information.</en><hr><details><summary>Requirement</summary><table\
+    \ border='1'><tr><th>PROPERTY</th><th>ADD</th><th>REMOVE</th></tr><tr><td>accountId</td><td>Ignore</td><td>Ignore</td></tr><tr><td>adGroupId</td><td>Requirement</td><td>Requirement</td></tr><tr><td>campaignId</td><td>Requirement</td><td>Requirement</td></tr><tr><td>labelId</td><td>Requirement</td><td>Requirement</td></tr></table></details>"

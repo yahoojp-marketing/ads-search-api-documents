@@ -1,0 +1,20 @@
+AccountServiceOperation:
+  type: object
+  required:
+  - accountId
+  - operand
+  properties:
+    accountId:
+      type: integer
+      format: int64
+      description: "<ja>アカウントIDです。</ja><br><en>Account ID.</en>"
+    operand:
+      type: array
+      items:
+        $ref: 'Account.yaml#/Account'
+      minItems: 1
+      maxItems: 1
+  title: AccountServiceOperation
+  description: "<ja>AccountServiceOperationオブジェクトは、操作対象となるアカウント情報と処理の内容を表します。</ja><br><en>AccountServiceOperation\
+    \ object describes account information for operation and list\
+    \ of operations.</en>"

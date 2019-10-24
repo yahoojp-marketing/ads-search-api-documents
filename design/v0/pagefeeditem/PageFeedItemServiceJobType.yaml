@@ -1,0 +1,11 @@
+PageFeedItemServiceJobType:
+  type: string
+  enum:
+  - UPLOAD
+  - DOWNLOAD
+  - UNKNOWN
+  title: PageFeedItemServiceJobType
+  description: "<ja>PageFeedItemServiceJobTypeは、登録したジョブの種類を表します。</ja><br><en>PageFeedItemServiceJobType\
+    \ displays kind of registered job.</en><hr>\n* `UPLOAD` - <ja>アップロード</ja><br><en>Upload.</en><br>\n\
+    * `DOWNLOAD` - <ja>ダウンロード</ja><br><en>Download.</en><br>\n* `UNKNOWN` - 未知の値です。<br>Unknown\
+    \ Value"

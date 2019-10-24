@@ -1,0 +1,16 @@
+CampaignExportServiceFieldAttribute:
+  type: object
+  properties:
+    displayFieldNameEN:
+      type: string
+      description: "<ja>フィールドの英語表示名です。</ja><br><en>Display name (EN)</en>"
+    displayFieldNameJA:
+      type: string
+      description: "<ja>フィールドの日本語表示名です。</ja><br><en>Display name (JA)</en>"
+    fieldName:
+      type: string
+      description: "<ja>フィールド名です。</ja><br><en>Field name</en>"
+  title: CampaignExportServiceFieldAttribute
+  description: "<ja>CampaignExportServiceFieldAttribute オブジェクトは、ジョブ作成に使用できるフィールドを表します。</ja><br><en>CampaignExportServiceFieldAttribute\
+    \ object displays available fields for creating jobs.</en><hr><details><summary>Requirement</summary><table\
+    \ border='1'><tr><th>PROPERTY</th><th>GET</th></tr><tr><td>displayFieldNameEN</td><td>-</td></tr><tr><td>displayFieldNameJA</td><td>-</td></tr><tr><td>fieldName</td><td>-</td></tr></table></details>"

@@ -1,0 +1,10 @@
+ReportDefinitionServiceReturnValue:
+  type: object
+  properties:
+    values:
+      type: array
+      items:
+        $ref: 'ReportDefinitionServiceValue.yaml#/ReportDefinitionServiceValue'
+  title: ReportDefinitionServiceReturnValue
+  description: "<ja>ReportDefinitionServiceReturnValueオブジェクトは、操作結果を含むレポートのコンテナです。</ja><br><en>A\
+    \ container of reports including operation result.</en>"

@@ -1,0 +1,47 @@
+CampaignCriterionServiceSelector:
+  type: object
+  required:
+  - accountId
+  properties:
+    accountId:
+      type: integer
+      format: int64
+      description: "<ja>アカウントIDです。</ja><br><en>Account ID.</en>"
+    campaignIds:
+      type: array
+      items:
+        type: integer
+        format: int64
+      maxItems: 500
+      description: "<ja>キャンペーンIDの配列です。</ja><br><en>Campaign ID array.</en>"
+    criterionIds:
+      type: array
+      items:
+        type: integer
+        format: int64
+      maxItems: 500
+      description: "<ja>クライテリオンIDの配列です。<br>指定しない場合は、キャンペーンID以下のすべてのクライテリアが含まれます。</ja><br><en>Criterion\
+        \ ID array.<br>If no criterionIds, all of criterionIds under the campaign\
+        \ ID are returned.</en>"
+    numberResults:
+      type: integer
+      format: int32
+      minimum: 1
+      maximum: 500
+      default: 500
+      description: "ページの最大件数です。このフィールドは、1以上を指定する必要があります。<br>Maximum number of results\
+        \ to return in this page. This field must be greater than or equal to 1. Also\
+        \ see Entity Limits per operation."
+    startIndex:
+      type: integer
+      format: int32
+      minimum: 1
+      default: 1
+      description: "ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。<br>Index of the first\
+        \ result to return in this page. This field must be greater than or equal\
+        \ to 1."
+    use:
+      $ref: 'CampaignCriterionServiceUse.yaml#/CampaignCriterionServiceUse'
+  title: CampaignCriterionServiceSelector
+  description: "<ja>CampaignCriterionServiceSelectorオブジェクトは、操作の対象となるキャンペーンのクライテリアを表します。</ja><br><en>CampaignCriterionServiceSelector\
+    \ object describes campaign criteria for operation.</en>"

@@ -1,0 +1,15 @@
+BalanceServicePage:
+  type: object
+  properties:
+    totalNumEntries:
+      type: integer
+      format: int32
+      description: <ja>取得される項目の総件数です。</ja><br><en>The total number of retrieved entries.</en>
+    values:
+      type: array
+      items:
+        $ref: 'BalanceServiceValue.yaml#/BalanceServiceValue'
+      description: <ja>操作結果を含むアカウント情報の配列です。</ja><br><en>List of balance.</en>
+  title: BalanceServicePage
+  description: '<ja>BalancePageオブジェクトは、取得されるアカウント残高に関するエントリーを表します。</ja><br><en>Account
+    balance and a page of balance resulting from the query done by BalanceService.</en>'

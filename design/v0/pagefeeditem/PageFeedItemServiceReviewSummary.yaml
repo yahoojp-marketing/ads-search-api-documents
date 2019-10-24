@@ -1,0 +1,41 @@
+PageFeedItemServiceReviewSummary:
+  type: object
+  properties:
+    accountId:
+      type: integer
+      format: int64
+      description: "<ja>アカウントID</ja><br><en>Account ID</en>"
+    approvedCount:
+      type: integer
+      format: int64
+      description: "<ja>承認済みの件数</ja><br><en>Count of approved</en>"
+    approvedWithReviewCount:
+      type: integer
+      format: int64
+      description: "<ja>編集内容審査中の件数</ja><br><en>Count of approved with review</en>"
+    entityCount:
+      type: integer
+      format: int64
+      description: "<ja>フィードフォルダ内にあるページフィードアイテムの総件数</ja><br><en>Total count of page\
+        \ feed item in feed folder</en>"
+    feedId:
+      type: integer
+      format: int64
+      description: "<ja>フィードID</ja><br><en>Feed ID</en>"
+    postDisapprovedCount:
+      type: integer
+      format: int64
+      description: "<ja>配信停止の件数</ja><br><en>Count of distribution cancelled</en>"
+    preDisapprovedCount:
+      type: integer
+      format: int64
+      description: "<ja>掲載不可の件数</ja><br><en>Count of disapproved</en>"
+    reviewCount:
+      type: integer
+      format: int64
+      description: "<ja>審査中の件数</ja><br><en>Count of review</en>"
+  title: PageFeedItemServiceReviewSummary
+  description: "<ja>PageFeedItemServiceReviewSummaryオブジェクトは、ページフィードアイテムの審査成績、状況サマリーを格納します。</ja><br><en>PageFeedItemServiceReviewSummary\
+    \ object retains the examination results of the page feed item, the situation\
+    \ summary acquisition result.</en><hr><details><summary>Requirement</summary><table\
+    \ border='1'></table></details>"

@@ -1,0 +1,9 @@
+SharedCriterionServiceUse:
+  type: string
+  enum:
+  - NEGATIVE
+  - UNKNOWN
+  title: SharedCriterionServiceUse
+  description: "<ja>SharedCriterionServiceUseは、キーワードの種別を表示します。</ja><br><en>SharedCriterionServiceUse\
+    \ describes keyword type.</en><hr>\n* `NEGATIVE` - <ja>対象外キーワードです。</ja><br><en>Negative\
+    \ keyword list.</en><br>\n* `UNKNOWN` - 未知の値です。<br>Unknown Value"

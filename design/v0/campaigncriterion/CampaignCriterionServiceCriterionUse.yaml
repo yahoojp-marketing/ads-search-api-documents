@@ -1,0 +1,6 @@
+CampaignCriterionServiceCriterionUse:
+  type: string
+  enum:
+  - NEGATIVE
+  - UNKNOWN
+  title: CampaignCriterionServiceCriterionUse

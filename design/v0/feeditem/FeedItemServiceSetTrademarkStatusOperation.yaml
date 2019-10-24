@@ -1,0 +1,22 @@
+FeedItemServiceSetTrademarkStatusOperation:
+  type: object
+  required:
+  - accountId
+  - operand
+  - placeholderType
+  properties:
+    accountId:
+      type: integer
+      format: int64
+      description: "<ja>アカウントIDです。</ja><br><en>Account ID</en>"
+    operand:
+      type: array
+      items:
+        $ref: 'FeedItemServiceSetTrademarkStatus.yaml#/FeedItemServiceSetTrademarkStatus'
+      minItems: 1
+      maxItems: 2000
+    placeholderType:
+      $ref: 'FeedItemServicePlaceholderType.yaml#/FeedItemServicePlaceholderType'
+  title: FeedItemServiceSetTrademarkStatusOperation
+  description: "<ja>FeedItemServiceSetTrademarkStatusOperationオブジェクトは、操作対象の商標使用制限の情報を格納します。</ja><br><en>FeedItemServiceSetTrademarkStatusOperation object holds the target's trademark restriction information.\
+      \ </en>"

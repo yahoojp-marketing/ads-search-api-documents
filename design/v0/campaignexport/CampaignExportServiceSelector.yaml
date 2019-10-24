@@ -1,0 +1,41 @@
+CampaignExportServiceSelector:
+  type: object
+  required:
+  - accountId
+  properties:
+    accountId:
+      type: integer
+      format: int64
+      description: "<ja>検索条件：アカウントIDです。</ja><br><en>Search condition: Account ID.</en>"
+    jobIds:
+      type: array
+      items:
+        type: integer
+        format: int64
+      maxItems: 500
+      description: "<ja>検索条件：ジョブIDです。</ja><br><en>Search condition: Job ID.</en>"
+    jobStatuses:
+      type: array
+      items:
+        $ref: 'CampaignExportServiceJobStatus.yaml#/CampaignExportServiceJobStatus'
+      maxItems: 4
+    numberResults:
+      type: integer
+      format: int32
+      minimum: 1
+      maximum: 500
+      default: 500
+      description: "ページの最大件数です。このフィールドは、1以上を指定する必要があります。<br>Maximum number of results\
+              \ to return in this page. This field must be greater than or equal to 1. Also\
+              \ see Entity Limits per operation."
+    startIndex:
+      type: integer
+      format: int32
+      minimum: 1
+      default: 1
+      description: "ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。<br>Index of the first\
+              \ result to return in this page. This field must be greater than or equal\
+              \ to 1."
+  title: CampaignExportServiceSelector
+  description: "<ja>CampaignExportServiceSelector オブジェクトは、登録したジョブを検索する条件を表します。</ja><br><en>CampaignExportServiceSelector\
+    \ object describes the condition to search registered job settings.</en>"

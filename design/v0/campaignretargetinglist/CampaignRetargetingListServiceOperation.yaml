@@ -1,0 +1,20 @@
+CampaignRetargetingListServiceOperation:
+  type: object
+  required:
+  - accountId
+  - operand
+  properties:
+    accountId:
+      type: integer
+      format: int64
+      description: "<ja>アカウントIDです。</ja><br><en>Account ID.</en>"
+    operand:
+      type: array
+      items:
+        $ref: 'CampaignRetargetingList.yaml#/CampaignRetargetingList'
+      minItems: 1
+      maxItems: 1000
+  title: CampaignRetargetingListServiceOperation
+  description: "<ja>CampaignRetargetingListServiceOperationオブジェクトは、操作対象となるキャンペーン階層のターゲットリスト設定情報を保持します。</ja><br><en>CampaignRetargetingListServiceOperation\
+    \ object holds the setting information of target list on campaign level to be\
+    \ object.</en>"

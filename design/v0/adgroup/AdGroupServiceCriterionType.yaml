@@ -1,0 +1,9 @@
+AdGroupServiceCriterionType:
+  type: string
+  enum:
+  - TARGET_LIST
+  - UNKNOWN
+  title: AdGroupServiceCriterionType
+  description: "<ja>AdGroupServiceCriterionTypeは、クライテリアを表します。</ja><br><en>AdGroupServiceCriterionType\
+    \ displays the type of criteria.</en><hr>\n* `TARGET_LIST` - <ja>ターゲットリストです。</ja><br><en>Target list</en><br>\n\
+    * `UNKNOWN` - 未知の値です。<br>Unknown Value"

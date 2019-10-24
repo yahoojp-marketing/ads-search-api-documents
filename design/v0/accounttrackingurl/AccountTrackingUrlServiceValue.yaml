@@ -1,0 +1,15 @@
+AccountTrackingUrlServiceValue:
+  type: object
+  properties:
+    accountTrackingUrl:
+      $ref: 'AccountTrackingUrl.yaml#/AccountTrackingUrl'
+    errors:
+      type: array
+      items:
+        $ref: '../../Error.yaml#/Error'
+    operationSucceeded:
+      type: boolean
+      description: "<ja>処理結果を表示します。</ja><br><en>Displays process result.</en>"
+  title: AccountTrackingUrlServiceValue
+  description: "<ja>AccountTrackingUrlServiceValueオブジェクトは、実行結果（1 Entity）を含むアカウントトラッキング情報を表します。</ja><br><en>AccountTrackingUrlServiceValue\
+    \ object describes the account tracking details per entity result.</en>"

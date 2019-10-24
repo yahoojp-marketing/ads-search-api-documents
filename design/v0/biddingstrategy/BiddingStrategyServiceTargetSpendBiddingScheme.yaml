@@ -1,0 +1,13 @@
+BiddingStrategyServiceTargetSpendBiddingScheme:
+  type: object
+  properties:
+    bidCeiling:
+      type: integer
+      format: int64
+      description: "<ja>入札価格の上限です。（0～50000）<br>※「0」が設定された場合、上限設定はありません。</ja><br><en>Bid\
+        \ amount limit (0-50000).<br>* No limits if &#34;0&#34; is set.</en>"
+  title: BiddingStrategyServiceTargetSpendBiddingScheme
+  description: "<ja>BiddingStrategyServiceTargetSpendBiddingSchemeオブジェクトは、クリック数の最大化の自動入札設定情報を表します。\
+    \ （BiddingStrategyService用のオブジェクトです。）</ja><br><en>BiddingStrategyServiceTargetSpendBiddingScheme\
+    \ object describes Auto Bidding setting for Maximize Clicks.</en><hr><details><summary>Requirement</summary><table\
+    \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>bidCeiling</td><td>-</td><td>Optional</td><td>Optional<br>(updatable)</td><td>-</td></tr></table></details>"

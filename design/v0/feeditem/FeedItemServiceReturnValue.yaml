@@ -1,0 +1,10 @@
+FeedItemServiceReturnValue:
+  type: object
+  properties:
+    values:
+      type: array
+      items:
+        $ref: 'FeedItemServiceValue.yaml#/FeedItemServiceValue'
+  title: FeedItemServiceReturnValue
+  description: "<ja>FeedItemReturnオブジェクトは、フィードアイテムの情報を格納します。</ja><br><en>FeedItemReturn\
+    \ contains the Feed Item information.</en>"

@@ -1,0 +1,15 @@
+CampaignCriterionServiceValue:
+  type: object
+  properties:
+    campaignCriterion:
+      $ref: 'CampaignCriterion.yaml#/CampaignCriterion'
+    errors:
+      type: array
+      items:
+        $ref: '../../Error.yaml#/Error'
+    operationSucceeded:
+      type: boolean
+      description: "<ja>処理結果です。</ja><br><en>The operation.</en>"
+  title: CampaignCriterionServiceValue
+  description: "<ja>CampaignCriterionServiceValueオブジェクトは、処理結果を含むキャンペーンのクライテリアを表します。</ja><br><en>Campaign\
+    \ criteria including operation results.</en>"

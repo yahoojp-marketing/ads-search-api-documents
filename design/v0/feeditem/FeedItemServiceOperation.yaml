@@ -1,0 +1,22 @@
+FeedItemServiceOperation:
+  type: object
+  required:
+  - accountId
+  - operand
+  - placeholderType
+  properties:
+    accountId:
+      type: integer
+      format: int64
+      description: "<ja>アカウントIDです。</ja><br><en>Account ID.</en>"
+    operand:
+      type: array
+      items:
+        $ref: 'FeedItem.yaml#/FeedItem'
+      minItems: 1
+      maxItems: 2000
+    placeholderType:
+      $ref: 'FeedItemServicePlaceholderType.yaml#/FeedItemServicePlaceholderType'
+  title: FeedItemServiceOperation
+  description: "<ja>FeedItemServiceOperationオブジェクトは、フィードアイテムの情報を格納します。</ja><br><en>FeedItemServiceOperation\
+    \ contains the Feed Item information.</en>"

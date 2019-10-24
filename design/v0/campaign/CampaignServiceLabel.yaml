@@ -1,0 +1,20 @@
+CampaignServiceLabel:
+  type: object
+  properties:
+    color:
+      type: string
+      description: "<ja>カラー</ja><br><en>Color<br></en>"
+    description:
+      type: string
+      description: "<ja>説明文</ja><br><en>Description</en>"
+    labelId:
+      type: integer
+      format: int64
+      description: "<ja>ラベルID</ja><br><en>CampaignServiceLabel ID</en>"
+    labelName:
+      type: string
+      description: "<ja>ラベル名</ja><br><en>CampaignServiceLabel Name<br></en>"
+  title: CampaignServiceLabel
+  description: "<ja>紐づけられているラベル情報を表します。</ja><br><en>CampaignServiceLabel object describes\
+    \ label information to be associated.</en><hr><details><summary>Requirement</summary><table\
+    \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>color</td><td>Ignore</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>description</td><td>Ignore</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>labelId</td><td>Ignore</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>labelName</td><td>Ignore</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr></table></details>"

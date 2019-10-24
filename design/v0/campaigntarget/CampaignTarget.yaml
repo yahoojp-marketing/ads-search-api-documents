@@ -1,0 +1,24 @@
+CampaignTarget:
+  type: object
+  properties:
+    accountId:
+      type: integer
+      format: int64
+      description: "<ja>アカウントIDです。</ja><br><en>Account ID</en>"
+    bidMultiplier:
+      type: number
+      format: double
+      description: "<ja>入札価格調整率です。</ja><br><en>Bid multiplier</en>"
+    campaignId:
+      type: integer
+      format: int64
+      description: "<ja>キャンペーンIDです。</ja><br><en>Campaign ID</en>"
+    campaignName:
+      type: string
+      description: "<ja>キャンペーン名です。</ja><br><en>Campaign Name</en>"
+    target:
+      $ref: 'CampaignTargetServiceTarget.yaml#/CampaignTargetServiceTarget'
+  title: CampaignTarget
+  description: "<ja>CampaignTargetオブジェクトは、キャンペーンの各種ターゲティング設定を表します。</ja><br><en>CampaignTarget\
+    \ describes each type of targeting setting of Campaign.</en><hr><details><summary>Requirement</summary><table\
+    \ border='1'><tr><th>PROPERTY</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>accountId</td><td>Requirement</td><td>Requirement</td><td>Requirement</td></tr><tr><td>bidMultiplier</td><td>Optional</td><td>Optional</td><td>-</td></tr><tr><td>campaignId</td><td>Requirement</td><td>Requirement</td><td>Requirement</td></tr><tr><td>campaignName</td><td>-</td><td>-</td><td>-</td></tr><tr><td>target</td><td>Requirement</td><td>Requirement</td><td>Requirement</td></tr></table></details>"

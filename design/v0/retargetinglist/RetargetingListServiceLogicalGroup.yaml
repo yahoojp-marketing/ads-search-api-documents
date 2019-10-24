@@ -1,0 +1,13 @@
+RetargetingListServiceLogicalGroup:
+  type: object
+  properties:
+    logicalCondition:
+      $ref: 'RetargetingListServiceLogicalCondition.yaml#/RetargetingListServiceLogicalCondition'
+    logicalOperand:
+      type: array
+      items:
+        $ref: 'RetargetingListServiceLogicalRuleOperand.yaml#/RetargetingListServiceLogicalRuleOperand'
+  title: RetargetingListServiceLogicalGroup
+  description: "<ja>RetargetingListServiceLogicalGroupは、組合せグループの情報を保持するオブジェクトです。</ja><br><en>RetargetingListServiceLogicalGroup\
+    \ is an object that holds combination group information.</en><hr><details><summary>Requirement</summary><table\
+    \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th></tr><tr><td>logicalOperand</td><td>-</td><td>Requirement</td><td>Requirement</td></tr><tr><td>logicalCondition</td><td>-</td><td>Optional</td><td>Optional</td></tr></table></details>"

@@ -1,0 +1,12 @@
+AdGroupRetargetingListServiceExcludedType:
+  type: string
+  enum:
+  - INCLUDED
+  - EXCLUDED
+  - UNKNOWN
+  title: AdGroupRetargetingListServiceExcludedType
+  description: "<ja>AdGroupRetargetingListServiceExcludedTypeは、配信対象、および除外対象の設定を表します。</ja><br><en>AdGroupRetargetingListServiceExcludedType\
+    \ selects the setting type which delivers ads or do not deliver ads.</en><hr>\n\
+    * `EXCLUDED` - <ja>除外対象です。</ja><br><en>Ads not to be delivered</en><br>\n* `INCLUDED`\
+    \ - <ja>配信対象です。</ja><br><en>Ads to be delivered</en><br>\n* `UNKNOWN` - 未知の値です。<br>Unknown\
+    \ Value"

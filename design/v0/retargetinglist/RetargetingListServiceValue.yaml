@@ -1,0 +1,15 @@
+RetargetingListServiceValue:
+  type: object
+  properties:
+    errors:
+      type: array
+      items:
+        $ref: '../../Error.yaml#/Error'
+    operationSucceeded:
+      type: boolean
+      description: "<ja>処理結果を表示します。</ja><br><en>Displays process result.</en>"
+    targetList:
+      $ref: 'RetargetingListServiceTargetingList.yaml#/RetargetingListServiceTargetingList'
+  title: RetargetingListServiceValue
+  description: "<ja>RetargetingListServiceValueは、ターゲットリストのの実行結果（1 Entity）を保持するオブジェクトです。</ja><br><en>RetargetingListServiceValue\
+    \ is an object that holds results (one entity).</en>"

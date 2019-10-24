@@ -1,0 +1,10 @@
+DictionaryServiceGeographicLocationSelector:
+  type: object
+  required:
+  - lang
+  properties:
+    lang:
+      $ref: 'DictionaryServiceLang.yaml#/DictionaryServiceLang'
+  title: DictionaryServiceGeographicLocationSelector
+  description: "<ja>DictionaryServiceGeographicLocationSelectorオブジェクトは、取得したい地域情報に必要な情報を格納します。</ja><br><en>DictionaryServiceGeographicLocationSelector\
+    \ contain information to retrieve geographic location information.</en>"

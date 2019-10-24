@@ -1,0 +1,13 @@
+CampaignServiceDynamicAdsForSearchSetting:
+  type: object
+  properties:
+    feedIds:
+      description: "<ja>キャンペーンで使用するページフィードIDです。</ja><br><en>Page Feed ID for campaign.</en>"
+      type: array
+      items:
+        type: integer
+        format: int64
+  title: CampaignServiceDynamicAdsForSearchSetting
+  description: "<ja>CampaignServiceDynamicAdsForSearchSettingは、動的検索連動型広告に関する検索条件を表します。</ja><br><en>CampaignServiceDynamicAdsForSearchSetting\
+    \ displays search condition for Dynamic ads for search.</en><hr><details><summary>Requirement</summary><table\
+    \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>feedIds</td><td>-</td><td>Requirement</td><td>Requirement</td><td>Ignore</td></tr></table></details>"

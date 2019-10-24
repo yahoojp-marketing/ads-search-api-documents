@@ -1,0 +1,54 @@
+CampaignTargetServiceSelector:
+  type: object
+  required:
+  - accountId
+  properties:
+    accountId:
+      type: integer
+      format: int64
+      description: "<ja>アカウントIDです。</ja><br><en>Account ID.</en>"
+    campaignIds:
+      type: array
+      items:
+        type: integer
+        format: int64
+      maxItems: 500
+      description: "<ja>キャンペーンIDです。</ja><br><en>Campaign ID.</en>"
+    excludedType:
+      $ref: 'CampaignTargetServiceExcludedType.yaml#/CampaignTargetServiceExcludedType'
+    numberResults:
+      type: integer
+      format: int32
+      minimum: 1
+      maximum: 500
+      default: 500
+      description: "ページの最大件数です。このフィールドは、1以上を指定する必要があります。<br>Maximum number of results\
+        \ to return in this page. This field must be greater than or equal to 1. Also\
+        \ see Entity Limits per operation."
+    platformTypes:
+      type: array
+      items:
+        $ref: 'CampaignTargetServicePlatformType.yaml#/CampaignTargetServicePlatformType'
+      maxItems: 3
+    startIndex:
+      type: integer
+      format: int32
+      minimum: 1
+      default: 1
+      description: "ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。<br>Index of the first\
+        \ result to return in this page. This field must be greater than or equal\
+        \ to 1."
+    targetIds:
+      type: array
+      items:
+        type: string
+      maxItems: 500
+      description: "<ja>ターゲットIDです。</ja><br><en>Target ID.</en>"
+    targetTypes:
+      type: array
+      items:
+        $ref: 'CampaignTargetServiceTargetType.yaml#/CampaignTargetServiceTargetType'
+      maxItems: 4
+  title: CampaignTargetServiceSelector
+  description: "<ja>CampaignTargetServiceSelectorオブジェクトは、操作の対象とするキャンペーンのターゲティング設定を表します。</ja><br><en>CampaignTargetSelector\
+    \ object describes the targeting settings on the campaign to be operated.</en>"

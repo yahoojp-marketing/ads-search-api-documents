@@ -1,0 +1,25 @@
+CampaignServiceTargetRoasBiddingScheme:
+  type: object
+  properties:
+    bidCeiling:
+      type: integer
+      format: int64
+      description: "<ja>入札価格の上限です。<br>※「0」が設定された場合、上限設定はありません。</ja><br><en>Limit of bid (CPC).<br>* There will be no setting limit, if set as &#34;0&#34;.</en>"
+    bidFloor:
+      type: integer
+      format: int64
+      description: "<ja>入札価格の下限です。<br>※ 設定を解除する場合は「0」を指定します。</ja><br><en>Minimum CPC.<br>* Set\
+        \ &#34;0&#34; to deactivate.</en>"
+    targetRoas:
+      type: number
+      format: double
+      description: "<ja>広告費用対効果の目標値です。<br>0.01 ～ 1000.00（1% ～ 100000%）の範囲内のみ 許容します。<br>※ROAS:\
+        \ Return On Advertising Spend</ja><br><en>Target ROAS (Return On Advertising\
+        \ Spend)<br>* Limit range: 0.01 - 1000.00 (1% - 100000%)</en>"
+  title: CampaignServiceTargetRoasBiddingScheme
+  description: "<ja>CampaignServiceTargetRoasBiddingSchemeオブジェクトは、広告費用対効果の目標値の自動入札設定情報を表します。\
+    \ （BiddingStrategyService以外用のオブジェクトです。）</ja><br><en>CampaignServiceTargetRoasBiddingScheme\
+    \ object displays Auto Bidding setting for Target ROAS.</en><hr><details><summary>Requirement</summary><table\
+    \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>bidCeiling</td><td>-</td><td>Optional<br>Default\
+    \ : 0</td><td>Optional</td><td>Ignore</td></tr><tr><td>bidFloor</td><td>-</td><td>Optional<br>Default\
+    \ : 0</td><td>Optional</td><td>Ignore</td></tr><tr><td>targetRoas</td><td>-</td><td>Requirement</td><td>Requirement</td><td>Ignore</td></tr></table></details>"

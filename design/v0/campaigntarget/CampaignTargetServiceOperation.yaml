@@ -1,0 +1,20 @@
+CampaignTargetServiceOperation:
+  type: object
+  required:
+  - accountId
+  - operand
+  properties:
+    accountId:
+      type: integer
+      format: int64
+      description: "<ja>アカウントIDです。</ja><br><en>Account ID.</en>"
+    operand:
+      type: array
+      items:
+        $ref: 'CampaignTarget.yaml#/CampaignTarget'
+      minItems: 1
+      maxItems: 200
+
+  title: CampaignTargetServiceOperation
+  description: "<ja>CampaignTargetServiceOperationオブジェクトは、操作の対象となるキャンペーンのターゲティング設定および操作の内容を表します。</ja><br><en>Campaign\
+    \ target setting and its operation.</en>"

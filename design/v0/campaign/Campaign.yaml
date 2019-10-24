@@ -1,0 +1,75 @@
+Campaign:
+  type: object
+  properties:
+    accountId:
+      type: integer
+      format: int64
+      description: "<ja>アカウントID</ja><br><en>Account ID.</en>"
+    appId:
+      type: string
+      description: "<ja>アプリID（iOS）またはパッケージ名（Android）<br>※アプリキャンペーンでiOSの場合、入力は数値のみです。</ja><br><en>App\
+        \ ID (for iOS) or Package name (for Android).<br>*Input only the numbers for\
+        \ iOS in Mobile App Campaign.</en>"
+    appStore:
+      $ref: 'CampaignServiceAppStore.yaml#/CampaignServiceAppStore'
+    biddingStrategyConfiguration:
+      $ref: 'CampaignServiceBiddingStrategy.yaml#/CampaignServiceBiddingStrategy'
+    biddingStrategyFailedReason:
+      $ref: 'CampaignServiceBiddingStrategyFailedReason.yaml#/CampaignServiceBiddingStrategyFailedReason'
+    budget:
+      $ref: 'CampaignServiceBudget.yaml#/CampaignServiceBudget'
+    campaignId:
+      type: integer
+      format: int64
+      description: "<ja>キャンペーンID</ja><br><en>Campaign ID.</en>"
+    campaignName:
+      type: string
+      description: "<ja>キャンペーン名<br>※入力制限：50文字以内です。</ja><br><en>Campaign name.<br>\
+        \ *Insert limit: Up to 50 characters.</en>"
+    campaignTrackId:
+      type: integer
+      format: int64
+      description: "<ja>トラッキング用キャンペーンID</ja><br><en>Campaign\
+        \ ID for tracking.</en>"
+    conversionOptimizerEligibility:
+      $ref: 'CampaignServiceConversionOptimizerEligibility.yaml#/CampaignServiceConversionOptimizerEligibility'
+    customParameters:
+      $ref: 'CampaignServiceCustomParameters.yaml#/CampaignServiceCustomParameters'
+    endDate:
+      type: string
+      description: "<ja>キャンペーンの終了日<br>過去の日付、開始日以前の日付は指定できません。<br>※YYYYMMDD形式です。</ja><br><en>End date\
+        \ of Campaign.<br>*Cannot set the past date and date before the start date.<br>*In YYYYMMDD format.</en>"
+    failedBiddingStrategyConfiguration:
+      $ref: 'CampaignServiceBiddingStrategy.yaml#/CampaignServiceBiddingStrategy'
+    labels:
+      type: array
+      items:
+        $ref: 'CampaignServiceLabel.yaml#/CampaignServiceLabel'
+    servingStatus:
+      $ref: 'CampaignServiceServingStatus.yaml#/CampaignServiceServingStatus'
+    settings:
+      type: array
+      items:
+        $ref: 'CampaignServiceSettings.yaml#/CampaignServiceSettings'
+    startDate:
+      type: string
+      description: "<ja>キャンペーンの開始日<br>過去の日付は指定できません。<br>※配信開始済みのキャンペーンは変更できません。<br>※YYYYMMDD形式です。</ja><br><en>Start\
+        \ date of Campaign.<br>*Cannot set the past date.<br>*Cannot change the date\
+        \ to the campaign that is already active.<br>*In YYYYMMDD format.</en>"
+    trackingUrl:
+      type: string
+      description: "<ja>トラッキングURL<br>※アプリキャンペーンでAndroidの場合、設定はできません。</ja><br><en>Tracking\
+        \ URL.<br>*Cannot set if Mobile App Campaign is in Android.</en>"
+    type:
+      $ref: 'CampaignServiceType.yaml#/CampaignServiceType'
+    urlReviewData:
+      $ref: 'CampaignServiceUrlReviewData.yaml#/CampaignServiceUrlReviewData'
+    userStatus:
+      $ref: 'CampaignServiceUserStatus.yaml#/CampaignServiceUserStatus'
+  title: Campaign
+  description: "<ja>Campaignオブジェクトは、キャンペーンの情報を表します。</ja><br><en>Campaign object describes\
+    \ Campaign information.</en><hr><details><summary>Requirement</summary><table\
+    \ border='1'><tr><th>PROPERTY</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>accountId</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>appId</td><td><ja>campaignTypeがSTANDARDの場合:ignore<br>campaignTypeがMOBILE_APPの場合:Requirement\
+    \ campaignTypeがDYNAMIC_ADS_FOR_SEARCH_SETTINGの場合:ignore</ja><br><en>If campaignType is 'STANDARD':ignore<br>If campaignType is 'MOBILE_APP':Requirement<br>If campaignType is 'DYNAMIC_ADS_FOR_SEARCH_SETTING':ignore</en></td><td>Ignore</td><td>Ignore</td></tr><tr><td>appStore</td><td><ja>campaignTypeがSTANDARDの場合:ignore<br>campaignTypeがMOBILE_APPの場合:Requirement<br>campaignTypeがDYNAMIC_ADS_FOR_SEARCH_SETTINGの場合:ignore</ja><br><en>If campaignType is 'STANDARD':ignore<br>If campaignType is 'MOBILE_APP':Requirement<br>If campaignType is 'DYNAMIC_ADS_FOR_SEARCH_SETTING':ignore</en></td><td>Ignore</td><td>Ignore</td></tr><tr><td>biddingStrategyConfiguration</td><td>Requirement</td><td>Optional</td><td>Ignore</td></tr><tr><td>biddingStrategyFailedReason</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>budget</td><td>Requirement</td><td>Optional</td><td>Ignore</td></tr><tr><td>campaignId</td><td>Ignore</td><td>Requirement<br><i>NotUpdatable</i></td><td>Requirement<br><i>NotUpdatable</i></td></tr><tr><td>campaignName</td><td>Requirement</td><td>Optional</td><td>Ignore</td></tr><tr><td>campaignTrackId</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>conversionOptimizerEligibility</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>customParameters</td><td>Optional</td><td>Optional<br><ja>※トラッキングURLが審査中の場合、編集はできません。<br>※変更がない場合、審査対象とはなりません。</ja><br><en>* Cannot update when Tracking URL is in review.<br>* If there is no change on this field, it will not be reviewed.</en></td><td>Ignore</td></tr><tr><td>endDate</td><td>Optional<br>※Default:\
+    \ 20371231</td><td>Optional</td><td>Ignore</td></tr><tr><td>failedBiddingStrategyConfiguration</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>labels</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>servingStatus</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>settings</td><td>Optional<br><br><ja>campaignTypeがDYNAMIC_ADS_FOR_SEARCH_SETTINGの場合:Requirement<br><br>※TargetingSettingが未設定の場合のDefault値<br>SettingType:TARGET_LIST_SETTING<br>TargetAll:ACTIVE</ja><br><en>If campaignType is 'DYNAMIC_ADS_FOR_SEARCH_SETTING':Requirement<br><br>* Default value for the case of no setting 'TargetingSetting'<br>SettingType:TARGET_LIST_SETTING<br>TargetAll:ACTIVE</en></td><td>Optional</td><td>Ignore</td></tr><tr><td>startDate</td><td>Optional<br><ja>※Default:\
+    \ 当日日付</ja><br><en>* Default: Current date.</en></td><td>Optional</td><td>Ignore</td></tr><tr><td>trackingUrl</td><td>Optional</td><td>Optional<br><ja>※こちらが審査中の場合、編集はできません。<br>※変更がない場合、審査対象とはなりません。</ja><br><en>* Cannot update during review.<br>* If there is no change on this field, it will not be reviewed.</en></td><td>Ignore</td></tr><tr><td>urlReviewData</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>type</td><td>Optional<br>※Default: STANDARD</td><td>Ignore</td><td>Ignore</td></tr><tr><td>userStatus</td><td>Requirement</td><td>Optional</td><td>Ignore</td></tr></table></details>"

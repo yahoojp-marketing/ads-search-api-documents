@@ -1,0 +1,16 @@
+AdGroupAdLabelServiceValue:
+  type: object
+  properties:
+    adGroupAdLabel:
+      $ref: 'AdGroupAdLabel.yaml#/AdGroupAdLabel'
+    errors:
+      type: array
+      items:
+        $ref: '../../Error.yaml#/Error'
+    operationSucceeded:
+      type: boolean
+      description: "<ja>処理結果です。trueの場合は、処理は成功しました。falseの場合は処理が失敗しています。</ja><br><en>The
+                    process results. If true, the process succeeded. If false, the process failed.</en>"
+  title: AdGroupAdLabelServiceValue
+  description: "<ja>AdGroupAdLabelServiceValueオブジェクトは、操作結果を含む広告ラベルの情報を表します。</ja><br><en>AdGroupAdLabelServiceValue\
+    \ object describes ad group ad label information including its operation results.</en>"

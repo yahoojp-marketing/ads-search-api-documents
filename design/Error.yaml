@@ -1,0 +1,15 @@
+# https://github.com/yahoojp-marketing/ydn-api-documents/blob/master/docs/ja/api_reference/data/Common/Error.md
+Error:
+  description: '<ja>Errorオブジェクトは、エラー内容を表します。</ja><br><en>Error information.</en>'
+  type: object
+  properties:
+    code:
+      description: '<ja>エラーコードです。</ja><br><en>The error code.</en>'
+      type: string
+    message:
+      description: '<ja>エラーメッセージです。</ja><br><en>A simple string representation of the error and reason.</en>'
+      type: string
+    details:
+      type: array
+      items:
+        $ref: 'ErrorDetail.yaml#/ErrorDetail'

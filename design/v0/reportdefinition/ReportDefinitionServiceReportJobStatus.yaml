@@ -1,0 +1,9 @@
+ReportDefinitionServiceReportJobStatus:
+  type: string
+  enum:
+  - WAIT
+  - COMPLETED
+  - IN_PROGRESS
+  - FAILED
+  - UNKNOWN
+  title: ReportDefinitionServiceReportJobStatus

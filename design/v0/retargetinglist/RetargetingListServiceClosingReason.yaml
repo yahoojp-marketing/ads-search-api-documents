@@ -1,0 +1,9 @@
+RetargetingListServiceClosingReason:
+  type: string
+  enum:
+  - UNUSED_LIST
+  - UNKNOWN
+  title: RetargetingListServiceClosingReason
+  description: "<ja>RetargetingListServiceClosingReasonは、ターゲットリストのクローズ理由を表します。</ja><br><en>RetargetingListServiceClosingReason\
+    \ defines the reason for closing.</en><hr>\n* `UNUSED_LIST` - <ja>未利用です。</ja><br><en>Unused</en><br>\n\
+    * `UNKNOWN` - 未知の値です。<br>Unknown Value"

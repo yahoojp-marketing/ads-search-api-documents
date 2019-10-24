@@ -1,0 +1,9 @@
+FeedItemServiceCriterionTypeFeedItem:
+  type: string
+  enum:
+  - LOCATION
+  - UNKNOWN
+  title: FeedItemServiceCriterionTypeFeedItem
+  description: "<ja>FeedItemServiceCriterionTypeFeedItemオブジェクトは、地域設定のクライテリアを表します。</ja><br><en>FeedItemServiceCriterionTypeFeedItem\
+        \ object describes criteria information of location restriction.</en><hr>\n* `LOCATION` - <ja>地域設定です。</ja><br><en>location restriction\
+        \ </en><br>\n* `UNKNOWN` - 未知の値です。<br>Unknown Value"

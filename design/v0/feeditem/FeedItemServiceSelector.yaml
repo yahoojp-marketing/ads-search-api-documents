@@ -1,0 +1,54 @@
+FeedItemServiceSelector:
+  type: object
+  required:
+  - accountId
+  properties:
+    accountId:
+      type: integer
+      format: int64
+      description: "<ja>検索条件：アカウントIDです。</ja><br><en>Search condition: Account ID.</en>"
+    approvalStatuses:
+      type: array
+      items:
+        $ref: 'FeedItemServiceApprovalStatus.yaml#/FeedItemServiceApprovalStatus'
+      maxItems: 5
+    feedIds:
+      type: array
+      items:
+        type: integer
+        format: int64
+      maxItems: 1000
+      description: "<ja>検索条件：フィードIDです。</ja><br><en>Search condition: Feed ID.</en>"
+    feedItemIds:
+      type: array
+      items:
+        type: integer
+        format: int64
+      maxItems: 1000
+      description: "<ja>検索条件：フィードアイテムIDです。</ja><br><en>Search condition: Feed Item\
+        \ ID.</en>"
+    numberResults:
+      type: integer
+      format: int32
+      minimum: 1
+      maximum: 2000
+      default: 500
+      description: "ページの最大件数です。このフィールドは、1以上を指定する必要があります。<br>Maximum number of results\
+        \ to return in this page. This field must be greater than or equal to 1. Also\
+        \ see Entity Limits per operation."
+    placeholderTypes:
+      type: array
+      items:
+        $ref: 'FeedItemServicePlaceholderType.yaml#/FeedItemServicePlaceholderType'
+      maxItems: 5
+    startIndex:
+      type: integer
+      format: int32
+      minimum: 1
+      default: 1
+      description: "ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。<br>Index of the first\
+        \ result to return in this page. This field must be greater than or equal\
+        \ to 1."
+  title: FeedItemServiceSelector
+  description: "<ja>FeedItemServiceSelectorオブジェクトは、フィードアイテムの情報を指定します。</ja><br><en>FeedItemServiceSelector\
+    \ describes the Feed item information.</en>"

@@ -1,0 +1,19 @@
+CampaignFeedServiceOperation:
+  type: object
+  required:
+  - accountId
+  - operand
+  properties:
+    accountId:
+      type: integer
+      format: int64
+      description: "<ja>アカウントIDです。</ja><br><en>Account ID.</en>"
+    operand:
+      type: array
+      items:
+        $ref: 'CampaignFeedServiceList.yaml#/CampaignFeedServiceList'
+      minItems: 1
+      maxItems: 200
+  title: CampaignFeedServiceOperation
+  description: "<ja>CampaignFeedServiceOperationオブジェクトは、FeedItem情報を格納するコンテナです。</ja><br><en>CampaignFeedServiceOperation\
+    \ is a container of FeedItem information.</en>"

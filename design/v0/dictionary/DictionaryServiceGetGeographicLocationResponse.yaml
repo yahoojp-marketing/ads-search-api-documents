@@ -1,0 +1,12 @@
+DictionaryServiceGetGeographicLocationResponse:
+  type: object
+  properties:
+    errors:
+      type: array
+      items:
+        $ref: '../../Error.yaml#/Error'
+    rid:
+      type: string
+    rval:
+      $ref: 'DictionaryServiceGeographicLocationPage.yaml#/DictionaryServiceGeographicLocationPage'
+  title: DictionaryServiceGetGeographicLocationResponse

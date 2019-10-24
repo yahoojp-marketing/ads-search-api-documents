@@ -1,0 +1,10 @@
+AccountServiceAutoTaggingEnabled:
+  type: string
+  enum:
+  - 'TRUE'
+  - 'FALSE'
+  - UNKNOWN
+  title: AccountServiceAutoTaggingEnabled
+  description: "<ja>AccountServiceAutoTaggingEnabledは、自動タグ設定を する か しない かの管理フラグです。</ja><br><en>AccountServiceAutoTaggingEnabled\
+    \ is management flag for whether or not to set auto tag.</en><hr>\n* `TRUE` - <ja>する</ja><br><en>setting</en><br>\n* `FALSE` -\
+    \ <ja>しない</ja><br><en>not setting</en><br>\n* `UNKNOWN` - 未知の値です。<br>Unknown Value"

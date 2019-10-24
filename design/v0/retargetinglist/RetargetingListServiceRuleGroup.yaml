@@ -1,0 +1,11 @@
+RetargetingListServiceRuleGroup:
+  type: object
+  properties:
+    ruleItems:
+      type: array
+      items:
+        $ref: 'RetargetingListServiceRuleItem.yaml#/RetargetingListServiceRuleItem'
+  title: RetargetingListServiceRuleGroup
+  description: "<ja>RetargetingListServiceRuleGroupは、URL/LABELのルールをグループ化した情報を保持するオブジェクトです。</ja><br><en>RetargetingListServiceRuleGroup\
+    \ is an object that holds grouped URL/LABEL rules.</en><hr><details><summary>Requirement</summary><table\
+    \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th></tr><tr><td>ruleItems</td><td>-</td><td>Requirement</td><td>Requirement</td></tr></table></details>"

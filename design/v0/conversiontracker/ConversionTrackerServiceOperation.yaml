@@ -1,0 +1,19 @@
+ConversionTrackerServiceOperation:
+  type: object
+  required:
+  - accountId
+  - operand
+  properties:
+    accountId:
+      type: integer
+      format: int64
+      description: "<ja>アカウントIDです。</ja><br><en>Account ID</en>"
+    operand:
+      type: array
+      items:
+        $ref: 'ConversionTracker.yaml#/ConversionTracker'
+      minItems: 1
+      maxItems: 200
+  title: ConversionTrackerServiceOperation
+  description: "<ja>ConversionTrackerServiceOperationオブジェクトは、操作の対象となるコンバージョントラッカー情報および操作の内容を表します。</ja><br><en>ConversionTrackerServiceOperation\
+    \ object describes ConversionTracker information and operation.</en>"

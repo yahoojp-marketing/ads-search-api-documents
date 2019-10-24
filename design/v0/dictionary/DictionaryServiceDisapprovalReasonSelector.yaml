@@ -1,0 +1,10 @@
+DictionaryServiceDisapprovalReasonSelector:
+  type: object
+  required:
+  - lang
+  properties:
+    lang:
+      $ref: 'DictionaryServiceLang.yaml#/DictionaryServiceLang'
+  title: DictionaryServiceDisapprovalReasonSelector
+  description: "<ja>DictionaryServiceDisapprovalReasonSelectorオブジェクトは、 EditorialReason一覧取得リクエストを格納するコンテナです。</ja><br><en>DictionaryServiceDisapprovalReasonSelectorobject\
+    \ is a containter for EditorialReason list.</en>"

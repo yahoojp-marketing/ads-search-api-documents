@@ -1,0 +1,12 @@
+PageFeedItemServicePageFeedUrl:
+  type: object
+  properties:
+    matchType:
+      $ref: 'PageFeedItemServiceMatchType.yaml#/PageFeedItemServiceMatchType'
+    text:
+      type: string
+      description: "<ja>ページフィードURL</ja><br><en>Page feed URL</en>"
+  title: PageFeedItemServicePageFeedUrl
+  description: "<ja>PageFeedItemServicePageFeedUrlオブジェクトは、ページフィードURL検索条件を格納します。</ja><br><en>PageFeedItemServicePageFeedUrl\
+    \ object stores search condition of page feed URL.</en><hr><details><summary>Requirement</summary><table\
+    \ border='1'></table></details>"

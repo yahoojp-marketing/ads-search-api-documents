@@ -1,0 +1,14 @@
+AdGroupServiceReviewUrl:
+  type: object
+  properties:
+    parameters:
+      type: array
+      items:
+        $ref: 'AdGroupServiceCustomParameter.yaml#/AdGroupServiceCustomParameter'
+    trackingUrl:
+      type: string
+      description: "<ja>トラッキングURLです。</ja><br><en>Tracking URL.</en>"
+  title: AdGroupServiceReviewUrl
+  description: "<ja>AdGroupServiceReviewUrlオブジェクトは、トラッキングURLとカスタムパラメータを表します。</ja><br><en>AdGroupServiceReviewUrl\
+    \ object siplays the Tracking URL and Custom Parameter.</en><hr><details><summary>Requirement</summary><table\
+    \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>parameters</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>trackingUrl</td><td>-</td><td>-</td><td>-</td><td>-</td></tr></table></details>"

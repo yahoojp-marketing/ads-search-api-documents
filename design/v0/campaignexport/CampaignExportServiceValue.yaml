@@ -1,0 +1,15 @@
+CampaignExportServiceValue:
+  type: object
+  properties:
+    errors:
+      type: array
+      items:
+        $ref: '../../Error.yaml#/Error'
+    job:
+      $ref: 'CampaignExportServiceJob.yaml#/CampaignExportServiceJob'
+    operationSucceeded:
+      type: boolean
+      description: "<ja>処理結果を表示します。</ja><br><en>Displays process result.</en>"
+  title: CampaignExportServiceValue
+  description: "<ja>CampaignExportServiceValueオブジェクトは、実行結果（1 Entity）を含むジョブ情報を表します。</ja><br><en>CampaignExportServiceValue\
+    \ object describes the job information per entity in operation result.</en>"

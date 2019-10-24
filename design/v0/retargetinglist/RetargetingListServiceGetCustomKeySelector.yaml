@@ -1,0 +1,14 @@
+RetargetingListServiceGetCustomKeySelector:
+  type: object
+  required:
+  - accountId
+  properties:
+    accountId:
+      type: integer
+      format: int64
+      description: "<ja>検索条件：アカウントIDです。</ja><br><en>Search condition: Account ID.</en>"
+    targetListOwner:
+      $ref: 'RetargetingListServiceTargetListOwner.yaml#/RetargetingListServiceTargetListOwner'
+  title: RetargetingListServiceGetCustomKeySelector
+  description: "<ja>RetargetingListServiceGetCustomKeySelectorは、ターゲットリストの検索条件（実行パラメータ）を保持するオブジェクトです。</ja><br><en>RetargetingListServiceGetCustomKeySelector\
+    \ object holds search condition (execution parameter).</en>"

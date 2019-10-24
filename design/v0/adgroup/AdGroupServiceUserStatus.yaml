@@ -1,0 +1,13 @@
+AdGroupServiceUserStatus:
+  type: string
+  enum:
+  - ACTIVE
+  - PAUSED
+  - UNKNOWN
+  title: AdGroupServiceUserStatus
+  description: "<ja>AdGroupServiceUserStatusは、ユーザーにより広告配信の有無を調整できる設定です。</ja><br><en>AdGroupServiceUserStatus\
+    \ displays ad delivery status that can be set by an user.</en><hr>\n* `ACTIVE`\
+    \ - <ja>広告は配信されている状態です。</ja><br><en>Currently ad delivery is active.</en><br>\n\
+    * `PAUSED` - <ja>広告は一時停止の状態のため、配信されていません。</ja><br><en>Currently ad is paused,\
+    \ which the delivery is not active.</en><br>\n* `UNKNOWN` - 未知の値です。<br>Unknown\
+    \ Value"

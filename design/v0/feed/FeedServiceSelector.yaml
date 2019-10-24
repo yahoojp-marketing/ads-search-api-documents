@@ -1,0 +1,41 @@
+FeedServiceSelector:
+  type: object
+  required:
+  - accountId
+  properties:
+    accountId:
+      type: integer
+      format: int64
+      description: "<ja>アカウントIDです。</ja><br><en>Account ID.</en>"
+    feedIds:
+      type: array
+      items:
+        type: integer
+        format: int64
+      maxItems: 200
+      description: "<ja>自動データ挿入のリストのIDです。</ja><br><en>List ID of Feed.</en>"
+    numberResults:
+      type: integer
+      format: int32
+      minimum: 1
+      maximum: 50
+      default: 50
+      description: "ページの最大件数です。このフィールドは、1以上を指定する必要があります。<br>Maximum number of results\
+        \ to return in this page. This field must be greater than or equal to 1. Also\
+        \ see Entity Limits per operation."
+    placeholderTypes:
+      type: array
+      items:
+        $ref: 'FeedServicePlaceholderType.yaml#/FeedServicePlaceholderType'
+      maxItems: 2
+    startIndex:
+      type: integer
+      format: int32
+      minimum: 1
+      default: 1
+      description: "ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。<br>Index of the first\
+        \ result to return in this page. This field must be greater than or equal\
+        \ to 1."
+  title: FeedServiceSelector
+  description: "<ja>FeedServiceSelectorオブジェクトは、自動データ挿入のリストの基本情報を格納します。</ja><br><en>FeedServiceSelector\
+    \ describes the basic information of list of Data auto insertion.</en>"

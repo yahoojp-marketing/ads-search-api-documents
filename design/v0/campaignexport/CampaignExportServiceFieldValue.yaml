@@ -1,0 +1,18 @@
+CampaignExportServiceFieldValue:
+  type: object
+  properties:
+    errors:
+      type: array
+      items:
+        $ref: '../../Error.yaml#/Error'
+    fieldAttributes:
+      type: array
+      items:
+        $ref: 'CampaignExportServiceFieldAttribute.yaml#/CampaignExportServiceFieldAttribute'
+    operationSucceeded:
+      type: boolean
+      description: "<ja>処理結果です。trueの場合は、処理は成功しました。falseの場合は処理が失敗しています。</ja><br><en>The
+                    process results. If true, the process succeeded. If false, the process failed.</en>"
+  title: CampaignExportServiceFieldValue
+  description: "<ja>CampaignExportServiceFieldValue オブジェクトは、実行結果(全Entityのリスト)を保持します。</ja><br><en>CampaignExportServiceFieldValue\
+    \ object contains the results (list of all entities).</en>"

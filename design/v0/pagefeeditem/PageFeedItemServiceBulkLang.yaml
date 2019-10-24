@@ -1,0 +1,11 @@
+PageFeedItemServiceBulkLang:
+  type: string
+  enum:
+  - JA
+  - EN
+  - UNKNOWN
+  title: PageFeedItemServiceBulkLang
+  description: "<ja>PageFeedItemServiceBulkLangは、ページフィードアイテムファイルの言語設定を表します。</ja><br><en>PageFeedItemServiceBulkLang\
+    \ displays language setting of Page feed item file.</en><hr>\n* `JA` - <ja>日本語</ja><br><en>Language:Japanese</en><br>\n\
+    * `EN` - <ja>英語</ja><br><en>Language:English</en><br>\n* `UNKNOWN` - 未知の値です。<br>Unknown\
+    \ Value"

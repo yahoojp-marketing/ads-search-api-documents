@@ -1,0 +1,11 @@
+ReportDefinitionServiceReportSortType:
+  type: string
+  enum:
+  - ASC
+  - DESC
+  - UNKNOWN
+  title: ReportDefinitionServiceReportSortType
+  description: "<ja>ReportDefinitionServiceReportSortTypeは、ソート条件を表します。</ja><br><en>ReportDefinitionServiceReportSortType\
+    \ is a sort condition type.</en><hr>\n* `ASC` - <ja>昇順にソートされます。</ja><br><en>Sort\
+    \ in ascending order.</en><br>\n* `DESC` - <ja>降順にソートされます。</ja><br><en>Sort in\
+    \ descending order.</en><br>\n* `UNKNOWN` - 未知の値です。<br>Unknown Value"

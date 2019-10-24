@@ -1,0 +1,19 @@
+AdGroupCriterionServiceAdditionalUrl:
+  type: object
+  properties:
+    disapprovalReasonCodes:
+      type: array
+      items:
+        type: string
+      description: "<ja>審査否認理由のコードです。<br>(コード詳細は、DictionaryServiceのgetDisapprovalReasonのレスポンスを参照)</ja><br><en>Reject reason code.<br>(Refer to DictionaryService getDisapprovalReason response for details)</en>"
+    reviewUrl:
+      type: string
+      description: "<ja>審査中の最終リンク先URLです。</ja><br><en>Landing Page URL in editorial\
+        \ review.</en>"
+    url:
+      type: string
+      description: "<ja>最終リンク先URLです。</ja><br><en>Landing Page URL.</en>"
+  title: AdGroupCriterionServiceAdditionalUrl
+  description: "<ja>AdGroupCriterionServiceAdditionalUrlオブジェクトは、追加する最終リンク先URLを保持します。</ja><br><en>AdGroupCriterionServiceAdditionalUrl\
+    \ object holds additional Landing Page URLs.</en><hr><details><summary>Requirement</summary><table\
+    \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>disapprovalReasonCodes</td><td>-</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>reviewUrl</td><td>-</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>url</td><td>-</td><td>Requirement</td><td>Requirement</td><td>Ignore</td></tr></table></details>"

@@ -1,0 +1,19 @@
+CampaignWebpageServiceWebpage:
+  type: object
+  properties:
+    parameter:
+      $ref: 'CampaignWebpageServiceWebpageParameter.yaml#/CampaignWebpageServiceWebpageParameter'
+    targetId:
+      type: integer
+      format: int64
+      description: "<ja>CampaignWebpageServiceWebpageを識別するID</ja><br><en>Unique ID\
+        \ for each webpage</en>"
+    targetTrackId:
+      type: integer
+      format: int64
+      description: "<ja>CampaignWebpageServiceWebpageを識別するトラッキングID</ja><br><en>Unique\
+        \ tracking ID for each CampaignWebpageServiceWebpage</en>"
+  title: CampaignWebpageServiceWebpage
+  description: "<ja>CampaignWebpageServiceWebpageオブジェクトは、除外設定するCampaignWebpageServiceWebpageの条件を保持します。</ja><br><en>CampaignWebpageServiceWebpage\
+    \ object contains the rules of webpage to be excluded.</en><hr><details><summary>Requirement</summary><table\
+    \ border='1'><tr><th>PROPERTY</th><th>ADD</th><th>REMOVE</th></tr><tr><td>parameter</td><td>Requirement</td><td>Ignore</td></tr><tr><td>targetId</td><td>Ignore</td><td>Requirement</td></tr><tr><td>targetTrackId</td><td>Ignore</td><td>Ignore</td></tr></table></details>"

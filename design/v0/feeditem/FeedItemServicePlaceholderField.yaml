@@ -1,0 +1,41 @@
+FeedItemServicePlaceholderField:
+  type: string
+  enum:
+  - LINK_TEXT
+  - LINK_DESCRIPTION_1
+  - LINK_DESCRIPTION_2
+  - ADVANCED_URL
+  - ADVANCED_MOBILE_URL
+  - TRACKING_URL
+  - CALL_PHONE_NUMBER
+  - AD_CUSTOMIZER_INTEGER
+  - AD_CUSTOMIZER_PRICE
+  - AD_CUSTOMIZER_DATE
+  - AD_CUSTOMIZER_STRING
+  - CALLOUT_TEXT
+  - ADDITIONAL_ADVANCED_URLS
+  - ADDITIONAL_ADVANCED_MOBILE_URLS
+  - STRUCTURED_SNIPPET_HEADER
+  - STRUCTURED_SNIPPET_VALUES
+  - UNKNOWN
+  title: FeedItemServicePlaceholderField
+  description: "<ja>FeedItemServicePlaceholderFieldは、FeedItem情報の内容を選択します。</ja><br><en>FeedItemServicePlaceholderField\
+    \ object selects FeedItem information details.</en><hr>\n* `ADVANCED_URL` - <ja>最終リンク先URLです。</ja><br><en>Landing\
+    \ Page URL.</en><br>\n* `LINK_DESCRIPTION_1` - <ja>クイックリンク説明文1</ja><br><en>Description 1 of Quicklink.\
+    \ </en><br>\n* `LINK_DESCRIPTION_2` - <ja>クイックリンク説明文2</ja><br><en>Description 2 of Quicklink.\
+    \ </en><br>\n* `LINK_TEXT` - <ja>クイックリンクオプションのテキストです。</ja><br><en>QuickLink\
+    \ option text.</en><br>\n* `TRACKING_URL` - <ja>トラッキングURLです。</ja><br><en>Tracking\
+    \ URL.</en><br>\n* `AD_CUSTOMIZER_INTEGER` - <ja>データ自動挿入（INTEGERタイプの入力定義）です。</ja><br><en>Auto\
+    \ data insertion (INTEGER type defined).</en><br>\n* `AD_CUSTOMIZER_PRICE` - <ja>データ自動挿入（PRICEタイプの入力定義）です。</ja><br><en>Auto\
+    \ data insertion (PRICE type defined).</en><br>\n* `AD_CUSTOMIZER_STRING` - <ja>データ自動挿入（STRINGタイプの入力定義）です。</ja><br><en>Auto\
+    \ data insertion (STRING type defined.).</en><br>\n* `ADVANCED_MOBILE_URL` - <ja>スマートフォン向けURLです。</ja><br><en>Smartphone\
+    \ Landing Page URL.</en><br>\n* `AD_CUSTOMIZER_DATE` - <ja>データ自動挿入（DATEタイプの入力定義）です。</ja><br><en>Auto\
+    \ data insertion (DATE type defined).</en><br>\n* `STRUCTURED_SNIPPET_VALUES`\
+    \ - <ja>カテゴリ補足オプション（バリュー）です。</ja><br><en>Category Option (value)</en><br>\n* `CALL_PHONE_NUMBER`\
+    \ - <ja>電話番号オプションの電話番号です。</ja><br><en>Phone number of Call extensions.</en><br>\n\
+    * `ADDITIONAL_ADVANCED_MOBILE_URLS` - <ja>スマートフォン向けURLを2件以上設定する場合の入力定義です。</ja><br><en>Define\
+    \ when multiple smartphone landing page URLs are set.</en><br>\n* `STRUCTURED_SNIPPET_HEADER`\
+    \ - <ja>カテゴリ補足オプション（ヘッダ）です。</ja><br><en>Category Option (header)</en><br>\n* `ADDITIONAL_ADVANCED_URLS`\
+    \ - <ja>最終リンク先URLを2件以上設定する場合の入力定義です。</ja><br><en>Define when multiple Landing\
+    \ Page URLs are set.</en><br>\n* `CALLOUT_TEXT` - <ja>テキスト補足オプションのテキストです。</ja><br><en>Text\
+    \ for Callout option.</en><br>\n* `UNKNOWN` - 未知の値です。<br>Unknown Value"

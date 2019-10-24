@@ -1,0 +1,9 @@
+CampaignServiceBiddingStrategySource:
+  type: string
+  enum:
+  - CAMPAIGN
+  - UNKNOWN
+  description: "<ja>CampaignServiceBiddingStrategySourceは、自動入札設定のソースです。</ja><br><en>CampaignServiceBiddingStrategySource\
+    \ is a source of Auto Bidding.</en><hr>\n* `CAMPAIGN` - <ja>キャンペーンです。</ja><br><en>Campaign</en><br>\n\
+    * `UNKNOWN` - 未知の値です。<br>Unknown Value"
+  title: CampaignServiceBiddingStrategySource

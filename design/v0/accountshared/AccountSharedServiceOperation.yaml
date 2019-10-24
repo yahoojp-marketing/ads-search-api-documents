@@ -1,0 +1,19 @@
+AccountSharedServiceOperation:
+  type: object
+  required:
+  - accountId
+  - operand
+  properties:
+    accountId:
+      type: integer
+      format: int64
+      description: "<ja>アカウントIDです。</ja><br><en>Account ID.</en>"
+    operand:
+      type: array
+      items:
+        $ref: 'AccountShared.yaml#/AccountShared'
+      minItems: 1
+      maxItems: 20
+  title: AccountSharedServiceOperation
+  description: "<ja>AccountSharedServiceOperationオブジェクトは、操作対象となるアカウント情報と処理の内容を表します。</ja><br><en>AccountSharedServiceOperation\
+    \ object describes information of account for operation and list of operations.</en>"

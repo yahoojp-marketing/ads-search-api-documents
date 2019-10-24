@@ -1,0 +1,18 @@
+AdGroupServiceUrlReviewData:
+  type: object
+  properties:
+    disapprovalReasonCodes:
+      type: array
+      items:
+        type: string
+      description: "<ja>審査否認理由コードです。</ja><br><en>Code of Disapproval reason.<br></en>"
+    disapprovalReviewUrl:
+      $ref: 'AdGroupServiceReviewUrl.yaml#/AdGroupServiceReviewUrl'
+    inReviewUrl:
+      $ref: 'AdGroupServiceReviewUrl.yaml#/AdGroupServiceReviewUrl'
+    urlApprovalStatus:
+      $ref: 'AdGroupServiceUrlApprovalStatus.yaml#/AdGroupServiceUrlApprovalStatus'
+  title: AdGroupServiceUrlReviewData
+  description: "<ja>AdGroupServiceUrlReviewDataオブジェクトは、URLの審査状況を表します。</ja><br><en>AdGroupServiceUrlReviewData\
+    \ object displays review status of URL.</en><hr><details><summary>Requirement</summary><table\
+    \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>disapprovalReasonCodes</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>disapprovalReviewUrl</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>inReviewUrl</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>urlApprovalStatus</td><td>-</td><td>-</td><td>-</td><td>-</td></tr></table></details>"

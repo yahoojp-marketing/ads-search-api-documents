@@ -1,0 +1,15 @@
+CampaignServiceSettings:
+  type: object
+  properties:
+    dynamicAdsForSearchSetting:
+      $ref: 'CampaignServiceDynamicAdsForSearchSetting.yaml#/CampaignServiceDynamicAdsForSearchSetting'
+    geoTargetTypeSetting:
+      $ref: 'CampaignServiceGeoTargetTypeSetting.yaml#/CampaignServiceGeoTargetTypeSetting'
+    settingType:
+      $ref: 'CampaignServiceSettingType.yaml#/CampaignServiceSettingType'
+    targetingSetting:
+      $ref: 'CampaignServiceTargetingSetting.yaml#/CampaignServiceTargetingSetting'
+  title: CampaignServiceSettings
+  description: "<ja>CampaignServiceSettingsオブジェクトは、キャンペーンの地域ターゲットを格納するコンテナです。</ja><br><en>CampaignServiceSettings\
+    \ object is container for geographic targeting  of campaign.</en><hr><details><summary>Requirement</summary><table\
+    \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>dynamicAdsForSearchSetting</td><td>-</td><td>Optional<br><ja>※settingTypeがDYNAMIC_ADS_FOR_SEARCH_SETTINGの場合:Requirement</ja><br><en>∗ If settingType is DYNAMIC_ADS_FOR_SEARCH_SETTING, Requirement</en></td><td>Optional</td><td>Ignore</td></tr><tr><td>geoTargetTypeSetting</td><td>-</td><td>Optional<br><ja>※settingTypeがGEO_TARGET_TYPE_SETTINGの場合:Requirement</ja><br><en>∗ If settingType is GEO_TARGET_TYPE_SETTING, Requirement</en></td><td>Optional</td><td>-</td></tr><tr><td>settingType</td><td>-</td><td>Optional<br>※Default: GEO_TARGET _TYPE_SETTING</td><td>Requirement<br>NotUpdatable</td><td>-</td></tr><tr><td>targetingSetting</td><td>-</td><td>Optional<br><ja>※settingTypeがTARGET_LIST_SETTINGの場合:Requirement</ja><br><en>∗ If settingType is TARGET_LIST_SETTING, Requirement</en></td><td>Optional</td><td>-</td></tr></table></details>"

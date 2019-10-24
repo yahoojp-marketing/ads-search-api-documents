@@ -1,0 +1,12 @@
+ConversionTrackerServiceTrackingCodeType:
+  type: string
+  enum:
+  - WEBPAGE
+  - CLICK_TO_CALL
+  - IMPORT
+  - UNKNOWN
+  title: ConversionTrackerServiceTrackingCodeType
+  description: "<ja>ConversionTrackerServiceTrackingCodeTypeは、ウェブページのトラッキングタイプを表します。</ja><br><en>ConversionTrackerServiceTrackingCodeType\
+    \ describes tracking type of web page.</en><hr>\n* `WEBPAGE` - <ja>ウェブページでのコンバージョンです。</ja><br><en>Web\
+    \ page conversion</en><br>\n* `CLICK_TO_CALL` - <ja>電話番号発信のコンバージョンです。</ja><br><en>Click\
+    \ to call conversion</en><br>\n* `IMPORT` - <ja></ja><en></en><br>\n* `UNKNOWN` - 未知の値です。<br>Unknown Value"

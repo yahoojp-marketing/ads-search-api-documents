@@ -1,0 +1,43 @@
+SharedCriterionServiceSelector:
+  type: object
+  required:
+  - accountId
+  properties:
+    accountId:
+      type: integer
+      format: int64
+      description: "<ja>アカウントIDです。</ja><br><en>Account ID</en>"
+    criterionIds:
+      type: array
+      items:
+        type: integer
+        format: int64
+      maxItems: 1000
+      description: "<ja>クライテリオンのIDです。</ja><br><en>Criterion ID.</en>"
+    numberResults:
+      type: integer
+      format: int32
+      minimum: 1
+      maximum: 1000
+      default: 1000
+      description: "ページの最大件数です。このフィールドは、1以上を指定する必要があります。<br>Maximum number of results\
+        \ to return in this page. This field must be greater than or equal to 1. Also\
+        \ see Entity Limits per operation."
+    sharedListIds:
+      type: array
+      items:
+        type: integer
+        format: int64
+      maxItems: 20
+      description: "<ja>共有リストのIDです。</ja><br><en>Share list ID.</en>"
+    startIndex:
+      type: integer
+      format: int32
+      minimum: 1
+      default: 1
+      description: "ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。<br>Index of the first\
+        \ result to return in this page. This field must be greater than or equal\
+        \ to 1."
+  title: SharedCriterionServiceSelector
+  description: "<ja>SharedCriterionServiceSelectorオブジェクトは、検索条件を保持します。</ja><br><en>SharedCriterionServiceSelector\
+    \ object holds search criteria.</en>"

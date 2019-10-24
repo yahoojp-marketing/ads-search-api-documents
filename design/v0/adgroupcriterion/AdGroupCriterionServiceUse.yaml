@@ -1,0 +1,13 @@
+AdGroupCriterionServiceUse:
+  type: string
+  enum:
+  - BIDDABLE
+  - NEGATIVE
+  - UNKNOWN
+  title: AdGroupCriterionServiceUse
+  description: "<ja>AdGroupCriterionServiceUseは、選択するクライテリアを示します。</ja><br><en>AdGroupCriterionServiceUse\
+    \ describes criterion to be selected.</en><hr>\n* `BIDDABLE` - <ja>入札キーワードです。<br>※この項目は、CampaignCriterionServiceでは設定できません。</ja><br><en>Biddable\
+    \ criterion. *This item is not specifiable at CampaignCriterionService.</en><br>\n\
+    * `NEGATIVE` - <ja>検索対象外キーワード（広告を表示させないためのターゲット条件）です。</ja><br><en>Negative criterion\
+    \ (Target condition for not to display ad )</en><br>\n* `UNKNOWN` - 未知の値です。<br>Unknown\
+    \ Value"

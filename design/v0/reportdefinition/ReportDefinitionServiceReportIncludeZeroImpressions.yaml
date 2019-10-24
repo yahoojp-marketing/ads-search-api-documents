@@ -1,0 +1,11 @@
+ReportDefinitionServiceReportIncludeZeroImpressions:
+  type: string
+  enum:
+  - 'TRUE'
+  - 'FALSE'
+  - UNKNOWN
+  title: ReportDefinitionServiceReportIncludeZeroImpressions
+  description: "<ja>ReportDefinitionServiceReportIncludeZeroImpressionsオブジェクトは、レポートに0インプレッションの行を含めるかを選択します。</ja><br><en>ReportDefinitionServiceReportIncludeZeroImpressions\
+    \ object describes whether including \"0 impression\" line in the report or not.</en><hr>\n\
+    * `TRUE` - <ja>含めます</ja><br><en>Include.</en><br>\n* `FALSE` - <ja>含めません</ja><br><en>Exclude.</en><br>\n\
+    * `UNKNOWN` - 未知の値です。<br>Unknown Value"

@@ -1,0 +1,41 @@
+BiddingStrategyServiceSelector:
+  type: object
+  required:
+  - accountId
+  properties:
+    accountId:
+      type: integer
+      format: int64
+      description: "<ja>アカウントID</ja><br><en>Account ID.</en>"
+    biddingStrategyIds:
+      type: array
+      items:
+        type: integer
+        format: int64
+      maxItems: 500
+      description: "<ja>自動入札ID</ja><br><en>Auto bidding ID.</en>"
+    biddingStrategyTypes:
+      type: array
+      items:
+        $ref: 'BiddingStrategyServiceType.yaml#/BiddingStrategyServiceType'
+      maxItems: 3
+    numberResults:
+      type: integer
+      format: int32
+      minimum: 1
+      maximum: 500
+      default: 500
+      description: "ページの最大件数です。このフィールドは、1以上を指定する必要があります。<br>Maximum number of results\
+        \ to return in this page. This field must be greater than or equal to 1. Also\
+        \ see Entity Limits per operation."
+    startIndex:
+      type: integer
+      format: int32
+      minimum: 1
+      default: 1
+      description: "ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。<br>Index of the first\
+        \ result to return in this page. This field must be greater than or equal\
+        \ to 1."
+  title: BiddingStrategyServiceSelector
+  description: "<ja>BiddingStrategyServiceSelectorオブジェクトは、自動入札設定の検索条件に関する情報を表します。</ja><br><en>BiddingStrategyServiceSelector\
+    \ object displays the details of search results of auto bidding setting .</en>"

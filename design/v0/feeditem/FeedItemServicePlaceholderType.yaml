@@ -1,0 +1,18 @@
+FeedItemServicePlaceholderType:
+  type: string
+  enum:
+  - QUICKLINK
+  - CALLEXTENSION
+  - AD_CUSTOMIZER
+  - CALLOUT
+  - STRUCTURED_SNIPPET
+  - UNKNOWN
+  title: FeedItemServicePlaceholderType
+  description: "<ja>FeedItemServicePlaceholderTypeは、FeedItem情報の種類を選択します。</ja><br><en>FeedItemServicePlaceholderType\
+    \ selects FeeItem information type</en><hr>\n* `AD_CUSTOMIZER` - <ja>データ自動挿入です。</ja><br><en>Data\
+    \ Auto Insertion</en><br>\n* `CALLOUT` - <ja>テキスト補足オプションです。</ja><br><en>Callout\
+    \ option from Ad Display Option</en><br>\n* `STRUCTURED_SNIPPET` - <ja>カテゴリ補足オプションです。</ja><br><en>Structured\
+    \ snippet option from Ad Display Option</en><br>\n* `QUICKLINK` - <ja>広告表示オプションのクイックリンクオプションです。</ja><br><en>QuickLink\
+    \ option from Ad Display Option</en><br>\n* `CALLEXTENSION` - <ja>広告表示オプションの電話番号オプションです。</ja><br><en>Call\
+    \ Extension (Phone Number) option from Ad Display Option</en><br>\n* `UNKNOWN`\
+    \ - 未知の値です。<br>Unknown Value"

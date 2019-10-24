@@ -1,0 +1,12 @@
+AccountTrackingUrlServiceMutateResponse:
+  type: object
+  properties:
+    errors:
+      type: array
+      items:
+        $ref: '../../Error.yaml#/Error'
+    rid:
+      type: string
+    rval:
+      $ref: 'AccountTrackingUrlServiceReturnValue.yaml#/AccountTrackingUrlServiceReturnValue'
+  title: AccountTrackingUrlServiceMutateResponse

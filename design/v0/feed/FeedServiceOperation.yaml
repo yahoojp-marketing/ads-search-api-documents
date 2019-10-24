@@ -1,0 +1,19 @@
+FeedServiceOperation:
+  type: object
+  required:
+  - accountId
+  - operand
+  properties:
+    accountId:
+      type: integer
+      format: int64
+      description: "<ja>アカウントIDです。</ja><br><en>Account ID.</en>"
+    operand:
+      type: array
+      items:
+        $ref: 'Feed.yaml#/Feed'
+      minItems: 1
+      maxItems: 50
+  title: FeedServiceOperation
+  description: "<ja>FeedServiceOperationオブジェクトは、自動データ挿入のリストを格納するコンテナです。</ja><br><en>FeedServiceOperation\
+    \ contains the list of Data auto insertion.</en>"

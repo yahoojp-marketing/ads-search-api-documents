@@ -1,0 +1,25 @@
+CampaignCriterionServiceOperation:
+  type: object
+  required:
+  - accountId
+  - operand
+  properties:
+    accountId:
+      type: integer
+      format: int64
+      description: "<ja>アカウントIDです。</ja><br><en>Account ID.</en>"
+    campaignId:
+      type: integer
+      format: int64
+      description: "<ja>キャンペーンIDです。</ja><br><en>Campaign ID.</en>"
+    operand:
+      type: array
+      items:
+        $ref: 'CampaignCriterion.yaml#/CampaignCriterion'
+      minItems: 1
+      maxItems: 200
+    use:
+      $ref: 'CampaignCriterionServiceUse.yaml#/CampaignCriterionServiceUse'
+  title: CampaignCriterionServiceOperation
+  description: "<ja>CampaignCriterionServiceOperationオブジェクトは、操作の対象となるキャンペーンのクライテリアと処理の内容を表します。</ja><br><en>CampaignCriterionServiceOperation\
+    \ object describes campaign criteria for operation and list of operations.</en>"

@@ -1,0 +1,26 @@
+AdGroupBidMultiplier:
+  type: object
+  properties:
+    accountId:
+      type: integer
+      format: int64
+      description: "<ja>アカウントIDです。</ja><br><en>Account ID.</en>"
+    adGroupId:
+      type: integer
+      format: int64
+      description: "<ja>広告グループIDです。</ja><br><en>Ad group iD.</en>"
+    bidMultiplier:
+      type: number
+      format: double
+      description: "<ja>入札調整率です。0～10.0まで指定できます。0を指定した場合、広告は配信されません。</ja><br><en>Bid\
+        \ adjustment rate.<br>Can be specified between  0 to 10.0.<br>When specified\
+        \ &#39;0&#39;, the ad will not be delievered.</en>"
+    campaignId:
+      type: integer
+      format: int64
+      description: "<ja>キャンペーンIDです。</ja><br><en>Campaign ID.</en>"
+    platformType:
+      $ref: 'AdGroupBidMultiplierServicePlatformType.yaml#/AdGroupBidMultiplierServicePlatformType'
+  title: AdGroupBidMultiplier
+  description: "<ja>AdGroupBidMultiplierオブジェクトは、入札価格調整率を表します。</ja><br><en>Container\
+    \ for bid multiplier.</en><hr><details><summary>Requirement</summary><table border='1'><tr><th>PROPERTY</th><th>GET</th><th>SET</th><th>REMOVE</th></tr><tr><td>accountId</td><td>-</td><td>Ignore</td><td>Ignore</td></tr><tr><td>adGroupId</td><td>-</td><td>Requirement</td><td>Requirement</td></tr><tr><td>bidMultiplier</td><td>-</td><td>Requirement</td><td>Ignore</td></tr><tr><td>campaignId</td><td>-</td><td>Requirement</td><td>Requirement</td></tr><tr><td>platformType</td><td>-</td><td>Requirement</td><td>Requirement</td></tr></table></details>"

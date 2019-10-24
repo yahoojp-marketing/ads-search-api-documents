@@ -1,0 +1,39 @@
+Label:
+  type: object
+  properties:
+    accountId:
+      type: integer
+      format: int64
+      description: "<ja>アカウントID</ja><br><en>Account ID</en>"
+    color:
+      type: string
+      description: "<ja>カラー</ja><br><en>Color</en>"
+    description:
+      type: string
+      description: "<ja>説明文</ja><br><en>Description</en>"
+    labelId:
+      type: integer
+      format: int64
+      description: "<ja>ラベルID</ja><br><en>Label ID</en>"
+    labelName:
+      type: string
+      description: "<ja>ラベル名</ja><br><en>Label Name</en>"
+    labeledAdGroup:
+      type: integer
+      format: int64
+      description: "<ja>広告グループの紐付け数</ja><br><en>Number of labeled AdGroup</en>"
+    labeledAdGroupAd:
+      type: integer
+      format: int64
+      description: "<ja>広告の紐付け数</ja><br><en>Number of labeled AdGroupAd</en>"
+    labeledAdGroupCriterion:
+      type: integer
+      format: int64
+      description: "<ja>キーワードの紐付け数</ja><br><en>Number of labeled Ad Group Criterion</en>"
+    labeledCampaign:
+      type: integer
+      format: int64
+      description: "<ja>キャンペーンの紐付け数</ja><br><en>Number of labeled Campaign</en>"
+  title: Label
+  description: "<ja>Labelオブジェクトは、ラベルの情報を表します。</ja><br><en>Label object describes label\
+    \ information.</en><hr><details><summary>Requirement</summary><table border='1'><tr><th>PROPERTY</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>accountId</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>color</td><td>Optional</td><td>Optional</td><td>Ignore</td></tr><tr><td>description</td><td>Optional</td><td>Optional</td><td>Ignore</td></tr><tr><td>labelId</td><td>Ignore</td><td>Requirement</td><td>Requirement</td></tr><tr><td>labelName</td><td>Requirement</td><td>Optional</td><td>Ignore</td></tr><tr><td>labeledAdGroup</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>labeledAdGroupAd</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>labeledAdGroupCriterion</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>labeledCampaign</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr></table></details>"

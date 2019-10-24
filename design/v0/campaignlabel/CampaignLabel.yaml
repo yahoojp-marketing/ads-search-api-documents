@@ -1,0 +1,19 @@
+CampaignLabel:
+  type: object
+  properties:
+    accountId:
+      type: integer
+      format: int64
+      description: "<ja>アカウントID</ja><br><en>Account ID</en>"
+    campaignId:
+      type: integer
+      format: int64
+      description: "<ja>キャンペーンID</ja><br><en>Campaign ID</en>"
+    labelId:
+      type: integer
+      format: int64
+      description: "<ja>ラベルID</ja><br><en>Label ID</en>"
+  title: CampaignLabel
+  description: "<ja>CampaignLabelオブジェクトは、キャンペーンラベルの情報を表します。</ja><br><en>CampaignLabel\
+    \ object describes campaign label information.</en><hr><details><summary>Requirement</summary><table\
+    \ border='1'><tr><th>PROPERTY</th><th>ADD</th><th>REMOVE</th></tr><tr><td>accountId</td><td>Ignore</td><td>Ignore</td></tr><tr><td>campaignId</td><td>Requirement</td><td>Requirement</td></tr><tr><td>labelId</td><td>Requirement</td><td>Requirement</td></tr></table></details>"

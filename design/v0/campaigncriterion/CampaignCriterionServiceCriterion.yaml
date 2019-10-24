@@ -1,0 +1,21 @@
+CampaignCriterionServiceCriterion:
+  type: object
+  properties:
+    criterionId:
+      type: integer
+      format: int64
+      description: "<ja>クライテリアIDです。</ja><br><en>CampaignCriterionServiceCriterion\
+        \ ID.</en>"
+    criterionTrackId:
+      type: integer
+      format: int64
+      description: "<ja>クライテリオントラックIDです。<br>対象外キーワードでは返却されません。</ja><br><en>CampaignCriterionServiceCriterion\
+        \ Track ID.<br>This is not returned for Negative keyword.</en>"
+    criterionType:
+      $ref: 'CampaignCriterionServiceCriterionType.yaml#/CampaignCriterionServiceCriterionType'
+    keyword:
+      $ref: 'CampaignCriterionServiceKeyword.yaml#/CampaignCriterionServiceKeyword'
+  title: CampaignCriterionServiceCriterion
+  description: "<ja>CampaignCriterionServiceCriterionオブジェクトは、クライテリアを表します。 ※キャンペーン用クライテリアです。</ja><br><en>CampaignCriterionServiceCriterion\
+    \ object describes criteria information.</en><hr><details><summary>Requirement</summary><table\
+    \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>REMOVE</th></tr><tr><td>criterionId</td><td>-</td><td>-</td><td>Requirement<br><i>NotUpdatable</i></td></tr><tr><td>criterionTrackId</td><td>-</td><td>-</td><td>-</td></tr><tr><td>criterionType</td><td>-</td><td>Requirement</td><td>Requirement<br><i>NotUpdatable</i></td></tr><tr><td>keyword</td><td>-</td><td>Optional<br><ja>※criterionTypeがKEYWORDの場合、Requirement<br><en>∗ If criterionType is KEYWORD, Requirement</en></td><td>-</td></tr></table></details>"

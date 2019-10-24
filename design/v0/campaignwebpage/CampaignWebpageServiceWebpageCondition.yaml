@@ -1,0 +1,13 @@
+CampaignWebpageServiceWebpageCondition:
+  type: object
+  properties:
+    argument:
+      type: string
+      description: "<ja>条件の設定値(正規表現の指定可)</ja><br><en>Value of rule setting. ∗ Can specify\
+        \ regular expression</en>"
+    type:
+      $ref: 'CampaignWebpageServiceWebpageConditionType.yaml#/CampaignWebpageServiceWebpageConditionType'
+  title: CampaignWebpageServiceWebpageCondition
+  description: "<ja>CampaignWebpageServiceWebpageConditionオブジェクトは、Webpageの条件を保持します。</ja><br><en>CampaignWebpageServiceWebpageCondition\
+    \ object contains the rules of webpage.</en><hr><details><summary>Requirement</summary><table\
+    \ border='1'><tr><th>PROPERTY</th><th>ADD</th><th>REMOVE</th></tr><tr><td>argument</td><td>Requirement</td><td>Ignore</td></tr><tr><td>type</td><td>Requirement</td><td>Ignore</td></tr></table></details>"

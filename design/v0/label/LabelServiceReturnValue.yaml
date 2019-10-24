@@ -1,0 +1,10 @@
+LabelServiceReturnValue:
+  type: object
+  properties:
+    values:
+      type: array
+      items:
+        $ref: 'LabelServiceValue.yaml#/LabelServiceValue'
+  title: LabelServiceReturnValue
+  description: "<ja>LabelServiceReturnValueオブジェクトは、ラベルの情報を含む操作結果として戻される値を表します。</ja><br><en>LabelServiceReturnValue\
+    \ object is the value returned as the operation result including the label information.</en>"

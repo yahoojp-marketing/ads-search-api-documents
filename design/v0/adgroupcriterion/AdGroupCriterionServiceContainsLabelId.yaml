@@ -1,0 +1,11 @@
+AdGroupCriterionServiceContainsLabelId:
+  type: string
+  enum:
+  - 'TRUE'
+  - 'FALSE'
+  - UNKNOWN
+  title: AdGroupCriterionServiceContainsLabelId
+  description: "<ja>ラベルデータ取得フラグです。</ja><br><en>AdGroupCriterionServiceContainsLabelId\
+    \ object describes acquisition flag of label data.</en><hr>\n* `TRUE` - <ja>取得する</ja><br><en>acquiring</en><br>\n* `FALSE` - <ja>取得しない</ja><br><en>not\
+    \ acquire</en><br>\n* `UNKNOWN`\
+    \ - 未知の値です。<br>Unknown Value"

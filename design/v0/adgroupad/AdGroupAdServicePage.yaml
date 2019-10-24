@@ -1,0 +1,13 @@
+AdGroupAdServicePage:
+  type: object
+  properties:
+    totalNumEntries:
+      type: integer
+      format: int32
+    values:
+      type: array
+      items:
+        $ref: 'AdGroupAdServiceValue.yaml#/AdGroupAdServiceValue'
+  title: AdGroupAdServicePage
+  description: "<ja>AdGroupAdServicePageオブジェクトは、取得される広告に関するエントリーを表します。</ja><br><en>Entry\
+    \ of the ad.</en>"

@@ -1,0 +1,20 @@
+PageFeedItemServiceApprovalStatus:
+  type: string
+  enum:
+  - APPROVED
+  - APPROVED_WITH_REVIEW
+  - REVIEW
+  - PRE_DISAPPROVED
+  - POST_DISAPPROVED
+  - UNKNOWN
+  title: PageFeedItemServiceApprovalStatus
+  description: "<ja>PageFeedItemServiceApprovalStatusは、審査ステータスを表します。</ja><br><en>PageFeedItemServiceApprovalStatus\
+    \ displays Editorial Status.</en><hr>\n* `APPROVED` - <ja>承認済</ja><br><en>The\
+    \ item is approved</en><br>\n* `APPROVED_WITH_REVIEW` - <ja>編集内容審査中</ja><br><en>The\
+    \ item is approved<br>Updated items are under review</en><br>\n* `REVIEW` - <ja>審査中</ja><br><en>Under\
+    \ editorial review<br>Newly added keywords/ads are under review, and not displayed\
+    \ yet</en><br>\n* `PRE_DISAPPROVED` - <ja>掲載不可</ja><br><en>The item was rejected<br>Newly\
+    \ added keywords/ads have been rejected, so it cannot be displayed</en><br>\n\
+    * `POST_DISAPPROVED` - <ja>掲載停止</ja><br><en>The item was rejected<br>Ads already\
+    \ displayed have been taken offline due to a result from post review</en><br>\n\
+    * `UNKNOWN` - 未知の値です。<br>Unknown Value"

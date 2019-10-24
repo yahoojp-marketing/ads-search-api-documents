@@ -1,0 +1,19 @@
+AdGroupRetargetingListServiceOperation:
+  type: object
+  required:
+  - accountId
+  - operand
+  properties:
+    accountId:
+      type: integer
+      format: int64
+      description: "<ja>アカウントIDです。</ja><br><en>Account ID.</en>"
+    operand:
+      type: array
+      items:
+        $ref: 'AdGroupRetargetingList.yaml#/AdGroupRetargetingList'
+      minItems: 1
+      maxItems: 1000
+  title: AdGroupRetargetingListServiceOperation
+  description: "<ja>AdGroupRetargetingListServiceOperationは、操作対象の広告グループレベルでのターゲットリスト設定を保持するオブジェクトです。</ja><br><en>AdGroupRetargetingListServiceOperation\
+    \ is an object that holds target ad group retargeting.</en>"

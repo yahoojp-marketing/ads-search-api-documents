@@ -1,0 +1,16 @@
+AdGroupWebpageServiceValue:
+  type: object
+  properties:
+    adGroupWebpage:
+      $ref: 'AdGroupWebpage.yaml#/AdGroupWebpage'
+    errors:
+      type: array
+      items:
+        $ref: '../../Error.yaml#/Error'
+    operationSucceeded:
+      type: boolean
+      description: "<ja>処理結果です。trueの場合は、処理は成功しました。falseの場合は処理が失敗しています。</ja><br><en>The
+        process results. If true, the process succeeded. If false, the process failed.</en>"
+  title: AdGroupWebpageServiceValue
+  description: "<ja>AdGroupWebpageServiceValueオブジェクトは、操作結果を含むPageFeedItemの配信/除外設定を表します。</ja><br><en>AdGroupWebpageServiceValue\
+    \ object describes allowed or excluded settings including operation result.</en>"

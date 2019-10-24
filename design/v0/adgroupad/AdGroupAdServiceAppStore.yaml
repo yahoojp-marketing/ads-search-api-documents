@@ -1,0 +1,10 @@
+AdGroupAdServiceAppStore:
+  type: string
+  enum:
+  - IOS
+  - ANDROID
+  - UNKNOWN
+  title: AdGroupAdServiceAppStore
+  description: "<ja>AdGroupAdServiceAppStoreは、アプリストアの種別です。</ja><br><en>App Store.</en><hr>\n\
+    * `IOS` - <ja>iOS用アプリストアです。</ja><br><en>iOS app store.</en><br>\n* `ANDROID` - <ja>Android用アプリストアです。</ja><br><en>Android app store.</en><br>\n\
+    * `UNKNOWN` - 未知の値です。<br>Unknown Value"

@@ -1,0 +1,10 @@
+AdGroupAdServiceReturnValue:
+  type: object
+  properties:
+    values:
+      type: array
+      items:
+        $ref: 'AdGroupAdServiceValue.yaml#/AdGroupAdServiceValue'
+  title: AdGroupAdServiceReturnValue
+  description: "<ja>AdGroupAdServiceReturnValueオブジェクトは、AdGroupAdOperationの処理結果として戻される値を表します。</ja><br><en>Container\
+    \ returned as operation results.</en>"

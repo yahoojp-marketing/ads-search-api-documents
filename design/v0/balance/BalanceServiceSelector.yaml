@@ -1,0 +1,34 @@
+BalanceServiceSelector:
+  type: object
+  required:
+  - accountIds
+  properties:
+    accountIds:
+      type: array
+      items:
+        type: integer
+        format: int64
+      minimum: 1
+      maxItems: 200
+      description: <ja>アカウントIDの配列です。</ja><br><en>Account
+        IDs.</en>
+    numberResults:
+      type: integer
+      format: int32
+      minimum: 1
+      maximum: 200
+      default: 200
+      description: 'ページの最大件数です。このフィールドは、1以上を指定する必要があります。<br>Maximum number of results
+        to return in this page. This field must be greater than or equal to 1. Also
+        see Entity Limits per operation.'
+    startIndex:
+      type: integer
+      format: int32
+      minimum: 1
+      default: 1
+      description: 'ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。<br>Index of the first
+        result to return in this page. This field must be greater than or equal to
+        1.'
+  title: BalanceServiceSelector
+  description: '<ja>BalanceSelectorオブジェクトは、アカウント残高を取得するアカウントを示します。</ja><br><en>Explains
+    its account balance.</en>'

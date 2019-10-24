@@ -1,0 +1,15 @@
+CampaignTargetServiceTargetingStatus:
+  type: string
+  enum:
+  - ACTIVE
+  - OBSOLETE
+  - PHASING_OUT
+  - UNKNOWN
+  title: CampaignTargetServiceTargetingStatus
+  description: "<ja>CampaignTargetServiceTargetingStatusは、キャンペーンのターゲティングステータスを表します。</ja><br><en>Status\
+    \ of targeting setting.</en><hr>\n* `ACTIVE` - <ja>ターゲティング可能な状態です。</ja><br><en>Status\
+    \ when targeting is possible</en><br>\n* `OBSOLETE` - <ja>廃止のためターゲティング不可能な状態です。</ja><br><en>Status\
+    \ when targeting is not possible, because it is abolished</en><br>\n* `PHASING_OUT`\
+    \ - <ja>まもなく廃止またはターゲティング不可能になる状態です。</ja><br><en>Status when it soon be abolished,\
+    \ or targeting will become impossible</en><br>\n* `UNKNOWN` - 未知の値です。<br>Unknown\
+    \ Value"

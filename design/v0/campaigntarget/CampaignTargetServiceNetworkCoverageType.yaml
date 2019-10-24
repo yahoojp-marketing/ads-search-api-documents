@@ -1,0 +1,11 @@
+CampaignTargetServiceNetworkCoverageType:
+  type: string
+  enum:
+  - YAHOO_SEARCH
+  - UNKNOWN
+  title: CampaignTargetServiceNetworkCoverageType
+  description: "<ja>CampaignTargetServiceNetworkCoverageTypeは、広告掲載方式を表します。 この指定は、キャンペーンのPlatformTypeがWAP_MOBILEの場合、指定できません。</ja><br><en>Network\
+    \ coverage types. This cannot be specified if the campaign's platformType is specified\
+    \ as WAP MOBILE.</en><hr>\n* `YAHOO_SEARCH` - <ja>広告はYahoo!検索の検索結果画面にのみ表示されます。</ja><br><en>Ads\
+    \ are only displayed in the search results of Yahoo! Search.</en><br>\n* `UNKNOWN`\
+    \ - 未知の値です。<br>Unknown Value"

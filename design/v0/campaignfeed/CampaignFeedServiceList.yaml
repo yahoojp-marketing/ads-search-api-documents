@@ -1,0 +1,21 @@
+CampaignFeedServiceList:
+  type: object
+  properties:
+    accountId:
+      type: integer
+      format: int64
+      description: "<ja>アカウントIDです。</ja><br><en>Account ID.</en>"
+    campaignFeed:
+      type: array
+      items:
+        $ref: 'CampaignFeed.yaml#/CampaignFeed'
+    campaignId:
+      type: integer
+      format: int64
+      description: "<ja>キャンペーンIDです。</ja><br><en>Campaign ID.</en>"
+    placeholderType:
+      $ref: 'CampaignFeedServicePlaceholderType.yaml#/CampaignFeedServicePlaceholderType'
+  title: CampaignFeedServiceList
+  description: "<ja>CampaignFeedServiceListオブジェクトは、キャンペーンに関連付けられたFeedItem情報を表します。</ja><br><en>CampaignFeedServiceList\
+    \ object describes FeedItem information connected to campaign.</en><hr><details><summary>Requirement</summary><table\
+    \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>SET</th></tr><tr><td>accountId</td><td>-</td><td>Requirement</td></tr><tr><td>campaignFeed</td><td>-</td><td>Requirement<br>Updatable</td></tr><tr><td>campaignId</td><td>-</td><td>Requirement</td></tr><tr><td>placeholderType</td><td>-</td><td>Requirement<br>Updatable</td></tr></table></details>"

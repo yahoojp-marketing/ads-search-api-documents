@@ -1,0 +1,39 @@
+CampaignExportServiceJob:
+  type: object
+  properties:
+    accountId:
+      type: integer
+      format: int64
+      description: "<ja>アカウントIDです。</ja><br><en>Account ID</en>"
+    endDate:
+      type: string
+      description: "<ja>ジョブの終了日時です。</ja><br><en>End date and time of job setting</en>"
+    exportFields:
+      type: array
+      items:
+        type: string
+      description: "<ja>エクスポートするフィールドです。</ja><br><en>Fields to be exported</en>"
+    jobId:
+      type: integer
+      format: int64
+      description: "<ja>ジョブIDです。</ja><br><en>CampaignExportServiceJob ID</en>"
+    jobName:
+      type: string
+      description: "<ja>ジョブ名です。</ja><br><en>CampaignExportServiceJob name<br>∗ Default:\
+        \ NULL</en>"
+    jobStatus:
+      $ref: 'CampaignExportServiceJobStatus.yaml#/CampaignExportServiceJobStatus'
+    progress:
+      type: integer
+      format: int32
+      description: "<ja>処理進捗です。</ja><br><en>Progress of job setting</en>"
+    startDate:
+      type: string
+      description: "<ja>ジョブの開始日時です。</ja><br><en>Start date and time of job setting</en>"
+    userName:
+      type: string
+      description: "<ja>ジョブ実行者のユーザー名です。</ja><br><en>Name of user who run the job.</en>"
+  title: CampaignExportServiceJob
+  description: "<ja>CampaignExportServiceJob オブジェクトは、ジョブの情報を表します。</ja><br><en>CampaignExportServiceJob\
+    \ object describes the information of job settings.</en><hr><details><summary>Requirement</summary><table\
+    \ border='1'><tr><th>PROPERTY</th><th>GET</th></tr><tr><td>accountId</td><td>-</td></tr><tr><td>endDate</td><td>-</td></tr><tr><td>exportFields</td><td>-</td></tr><tr><td>jobId</td><td>-</td></tr><tr><td>jobName</td><td>-</td></tr><tr><td>progress</td><td>-</td></tr><tr><td>startDate</td><td>-</td></tr><tr><td>userName</td><td>-</td></tr><tr><td>jobStatus</td><td>-</td></tr></table></details>"

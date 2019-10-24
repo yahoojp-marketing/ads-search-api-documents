@@ -1,0 +1,36 @@
+AccountSharedServiceSelector:
+  type: object
+  required:
+  - accountId
+  properties:
+    accountId:
+      type: integer
+      format: int64
+      description: "<ja>アカウントIDです。</ja><br><en>Account ID.</en>"
+    numberResults:
+      type: integer
+      format: int32
+      minimum: 1
+      maximum: 20
+      default: 20
+      description: "ページの最大件数です。このフィールドは、1以上を指定する必要があります。<br>Maximum number of results\
+        \ to return in this page. This field must be greater than or equal to 1. Also\
+        \ see Entity Limits per operation."
+    sharedListIds:
+      type: array
+      items:
+        type: integer
+        format: int64
+      maxItems: 20
+      description: "<ja>検索対象外キーワードリストIDです。</ja><br><en>Negative keyword list ID.</en>"
+    startIndex:
+      type: integer
+      format: int32
+      minimum: 1
+      default: 1
+      description: "ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。<br>Index of the first\
+        \ result to return in this page. This field must be greater than or equal\
+        \ to 1."
+  title: AccountSharedServiceSelector
+  description: "<ja>AccountSharedServiceSelectorオブジェクトは、検索条件（実行パラメータ）を保持します。</ja><br><en>AccountSharedServiceSelector\
+    \ object holds search criteria (exec parameter).</en>"

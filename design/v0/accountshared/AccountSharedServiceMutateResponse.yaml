@@ -1,0 +1,12 @@
+AccountSharedServiceMutateResponse:
+  type: object
+  properties:
+    errors:
+      type: array
+      items:
+        $ref: '../../Error.yaml#/Error'
+    rid:
+      type: string
+    rval:
+      $ref: 'AccountSharedServiceReturnValue.yaml#/AccountSharedServiceReturnValue'
+  title: AccountSharedServiceMutateResponse

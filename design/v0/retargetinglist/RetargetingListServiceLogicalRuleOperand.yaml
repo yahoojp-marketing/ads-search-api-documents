@@ -1,0 +1,12 @@
+RetargetingListServiceLogicalRuleOperand:
+  type: object
+  properties:
+    targetListId:
+      type: integer
+      format: int64
+      description: "<ja>ターゲットリストIDです。<br>組合せのターゲットリストは設定できません。</ja><br><en>Target\
+        \ list ID.<br>Cannot set the combination target list.</en>"
+  title: RetargetingListServiceLogicalRuleOperand
+  description: "<ja>RetargetingListServiceLogicalRuleOperandは、組合せ対象のターゲットリストを保持するオブジェクトです。</ja><br><en>RetargetingListServiceLogicalRuleOperand\
+    \ is an object that holds target list of combination.</en><hr><details><summary>Requirement</summary><table\
+    \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th></tr><tr><td>targetListId</td><td>-</td><td>Requirement</td><td>Requirement</td></tr></table></details>"

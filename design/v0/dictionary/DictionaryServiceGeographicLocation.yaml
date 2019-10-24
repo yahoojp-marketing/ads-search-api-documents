@@ -1,0 +1,33 @@
+DictionaryServiceGeographicLocation:
+  type: object
+  properties:
+    child:
+      type: array
+      items:
+        $ref: 'DictionaryServiceGeographicLocation.yaml#/DictionaryServiceGeographicLocation'
+    code:
+      type: string
+      description: "<ja>地域コードです。</ja><br><en>Geographic code</en>"
+    fullName:
+      type: string
+      description: "<ja>地域名(都道府県名からすべて)です。</ja><br><en>Name of places (Prefecture\
+        \ and all)</en>"
+    geographicLocationStatus:
+      $ref: 'DictionaryServiceGeographicLocationStatus.yaml#/DictionaryServiceGeographicLocationStatus'
+    name:
+      type: string
+      description: "<ja>地域名(市区町村のみ)です。</ja><br><en>Name of places (City Only)</en>"
+    order:
+      type: string
+      description: "<ja>並び順です。<br>下記の順序に基づいた連番となります。<br>都道府県は北海道、青森、・・・・沖縄の順<br>都道府県配下の市区町村は五十音順</ja><br><en>Order\
+        \ of list<br><br>Sequential number based on the order below.<br><br>- Prefecture\
+        \ is in order of Hokkaido, Aomori to Okinawa. (North to South)<br><br>- Cities\
+        \ under prefecture are listed in the order of the 50-character Japanese kana\
+        \ syllabary.</en>"
+    parent:
+      type: string
+      description: "<ja>上位地域コードです。</ja><br><en>Parent geographic code</en>"
+  title: DictionaryServiceGeographicLocation
+  description: "<ja>DictionaryServiceGeographicLocationオブジェクトは、地域情報を格納します。</ja><br><en>DictionaryServiceGeographicLocation\
+    \ contains geographic location information.</en><hr><details><summary>Requirement</summary><table\
+    \ border='1'></table></details>"

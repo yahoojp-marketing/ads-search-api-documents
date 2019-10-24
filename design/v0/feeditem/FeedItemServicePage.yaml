@@ -1,0 +1,15 @@
+FeedItemServicePage:
+  type: object
+  properties:
+    totalNumEntries:
+      type: integer
+      format: int32
+      description: "<ja>取得される項目の総件数です。</ja><br><en>Total number of entries in the\
+        \ result.</en>"
+    values:
+      type: array
+      items:
+        $ref: 'FeedItemServiceValue.yaml#/FeedItemServiceValue'
+  title: FeedItemServicePage
+  description: "<ja>FeedItemServicePageオブジェクトは、フィードアイテムの情報を格納します。</ja><br><en>FeedItemServicePage\
+    \ contains the Feed item information.</en>"

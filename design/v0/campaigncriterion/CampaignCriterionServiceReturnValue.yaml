@@ -1,0 +1,10 @@
+CampaignCriterionServiceReturnValue:
+  type: object
+  properties:
+    values:
+      type: array
+      items:
+        $ref: 'CampaignCriterionServiceValue.yaml#/CampaignCriterionServiceValue'
+  title: CampaignCriterionServiceReturnValue
+  description: "<ja>CampaignCriterionServiceReturnValueオブジェクトは、操作結果を含むキャンペーンのクライテリアに関する情報のコンテナを表します。</ja><br><en>Container\
+    \ for campaign criteria including operation results.</en>"

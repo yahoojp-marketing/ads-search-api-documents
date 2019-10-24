@@ -1,0 +1,24 @@
+ReportDefinitionServiceReportOperator:
+  type: string
+  enum:
+  - EQUALS
+  - NOT_EQUALS
+  - GREATER_THAN
+  - GREATER_THAN_EQUALS
+  - LESS_THAN
+  - LESS_THAN_EQUALS
+  - CONTAINS
+  - IN
+  - UNKNOWN
+  title: ReportDefinitionServiceReportOperator
+  description: "<ja>ReportDefinitionServiceReportOperatorは、フィルタ条件を表します。</ja><br><en>ReportDefinitionServiceReportOperator\
+    \ displays filtering conditions for the report.</en><hr>\n* `LESS_THAN_EQUALS`\
+    \ - <ja>指定の値以下です。</ja><br><en>Less than equals to selected value.</en><br>\n*\
+    \ `CONTAINS` - <ja>指定の値を含みます。</ja><br><en>Contains the selected value.</en><br>\n\
+    * `IN` - <ja>いずれかに一致します。</ja><br><en>Equals to whichever of selected value.</en><br>\n\
+    * `EQUALS` - <ja>指定の値と一致します。</ja><br><en>Equal to selected value.</en><br>\n*\
+    \ `NOT_EQUALS` - <ja>指定の値と一致しません。</ja><br><en>Does not equals to selected value.</en><br>\n\
+    * `GREATER_THAN` - <ja>指定の値を超えます。</ja><br><en>Greater than selected value.</en><br>\n\
+    * `GREATER_THAN_EQUALS` - <ja>指定の値以上です。</ja><br><en>Greater than equals to selected\
+    \ value.</en><br>\n* `LESS_THAN` - <ja>指定の値未満です。</ja><br><en>Less than selected\
+    \ value.</en><br>\n* `UNKNOWN` - 未知の値です。<br>Unknown Value"

@@ -1,0 +1,20 @@
+FeedItemServiceFeedAttributeValue:
+  type: object
+  properties:
+    disapprovalReasonCodes:
+      type: array
+      items:
+        type: string
+      description: "<ja>審査の否認理由コードです。</ja><br><en>Reject reason code of editorial\
+        \ review.</en>"
+    feedAttributeValue:
+      type: string
+      description: "<ja>フィードアイテムの属性値です。</ja><br><en>FeedItem attribute value.</en>"
+    reviewFeedAttributeValue:
+      type: string
+      description: "<ja>レビュー中のフィードアイテムの属性値です。</ja><br><en>FeedItem attribute value\
+        \ in review.</en>"
+  title: FeedItemServiceFeedAttributeValue
+  description: "<ja>FeedItemServiceFeedAttributeValueオブジェクトは、フィードアイテムの属性値を表示します。</ja><br><en>FeedItemServiceFeedAttributeValue\
+    \ object describes FeedItem attribute value.</en><hr><details><summary>Requirement</summary><table\
+    \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>disapprovalReasonCodes</td><td>-</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>feedAttributeValue</td><td>-</td><td>Requirement</td><td>Requirement</td><td>Ignore</td></tr><tr><td>reviewFeedAttributeValue</td><td>Ignore</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr></table></details>"

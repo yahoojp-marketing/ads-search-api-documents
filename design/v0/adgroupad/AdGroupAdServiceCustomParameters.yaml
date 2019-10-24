@@ -1,0 +1,13 @@
+AdGroupAdServiceCustomParameters:
+  type: object
+  properties:
+    isRemove:
+      $ref: 'AdGroupAdServiceIsRemove.yaml#/AdGroupAdServiceIsRemove'
+    parameters:
+      type: array
+      items:
+        $ref: 'AdGroupAdServiceCustomParameter.yaml#/AdGroupAdServiceCustomParameter'
+  title: AdGroupAdServiceCustomParameters
+  description: "<ja>AdGroupAdServiceCustomParametersオブジェクトは、カスタムパラメータの設定を表します。</ja><br><en>AdGroupAdServiceCustomParameters\
+    \ displays the setting of custom parameters.</en><hr><details><summary>Requirement</summary><table\
+    \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>isRemove</td><td>-</td><td>-</td><td><ja>Optional<br>※AdGroupAdServiceの場合、Ignore。</ja><br><en>* Ignore for AdGroupAdService.</en></td><td>-</td></tr><tr><td>parameters</td><td>-</td><td>Requirement</td><td>Ignore</td><td>-</td></tr></table></details>"

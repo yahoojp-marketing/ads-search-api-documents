@@ -1,0 +1,11 @@
+CampaignRetargetingListServiceReturnValue:
+  type: object
+  properties:
+    values:
+      type: array
+      items:
+        $ref: 'CampaignRetargetingListServiceValue.yaml#/CampaignRetargetingListServiceValue'
+  title: CampaignRetargetingListServiceReturnValue
+  description: "<ja>CampaignRetargetingListPageオブジェクトは、キャンペーン階層のターゲットリスト設定における実行結果（全Entityのリスト）を保持します。</ja><br><en>CampaignRetargetingListPage\
+    \ object holds results (list of all entities) on Target List\
+    \ settings for campaign layer.</en>"

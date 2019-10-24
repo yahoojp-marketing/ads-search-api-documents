@@ -1,0 +1,12 @@
+RetargetingListServiceReachStorageStatus:
+  type: string
+  enum:
+  - OPEN
+  - CLOSED
+  - UNKNOWN
+  title: RetargetingListServiceReachStorageStatus
+  description: "<ja>RetargetingListServiceReachStorageStatusは、ターゲットリストの種別です。</ja><br><en>RetargetingListServiceReachStorageStatus\
+    \ is the flag status to store Cookie reach.</en><hr>\n* `CLOSED` - <ja>無効です。<br>リーチを蓄積しません。</ja><br><en>Invalid\
+    \ status.<br>Reach will not be stored.</en><br>\n* `OPEN` - <ja>有効です。<br>リーチを蓄積します。</ja><br><en>Valid\
+    \ status.<br>Reach will be stored.</en><br>\n* `UNKNOWN` - 未知の値です。<br>Unknown\
+    \ Value"

@@ -1,0 +1,9 @@
+CampaignServiceManualCpcBiddingScheme:
+  type: object
+  properties:
+    enhancedCpcEnabled:
+      $ref: 'CampaignServiceEnhancedCpcEnabled.yaml#/CampaignServiceEnhancedCpcEnabled'
+  title: CampaignServiceManualCpcBiddingScheme
+  description: "<ja>CampaignServiceManualCpcBiddingSchemeオブジェクトは、手動入札の設定情報を表します。</ja><br><en>CampaignServiceManualCpcBiddingScheme\
+    \ object displays a setting of Manual Bid.</en><hr><details><summary>Requirement</summary><table\
+    \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>enhancedCpcEnabled</td><td>-</td><td>Optional<br>Default:FALSE</td><td>Optional</td><td>Ignore</td></tr></table></details>"

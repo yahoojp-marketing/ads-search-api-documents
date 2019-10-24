@@ -1,0 +1,28 @@
+AccountShared:
+  type: object
+  properties:
+    accountId:
+      type: integer
+      format: int64
+      description: "<ja>アカウントIDです。</ja><br><en>Account ID.</en>"
+    memberCount:
+      type: integer
+      format: int32
+      description: "<ja>対象外キーワードリストに含まれるアイテム（検索対象外キーワード）数です。</ja><br><en>Number of\
+        \ items on Negative keyword list (keyword excluded on search).</en>"
+    name:
+      type: string
+      description: "<ja>対象外キーワードリスト名です。</ja><br><en>Negative keyword list name.</en>"
+    referenceCount:
+      type: integer
+      format: int32
+      description: "<ja>対象外キーワードリストを使用している キャンペーン数です。</ja><br><en>Number of campaigns\
+        \ which use negative keyword list.</en>"
+    sharedListId:
+      type: integer
+      format: int64
+      description: "<ja>対象外キーワードリストIDです。</ja><br><en>Negative keyword list ID.</en>"
+  title: AccountShared
+  description: "<ja>AccountSherdオブジェクトは、アカウント内で共有できる対象外キーワードリストの情報を表します。</ja><br><en>\
+    \ AccountShared object describes negative keyword list which can be shared within the account.</en><hr><details><summary>Requirement</summary><table\
+    \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>accountId</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>memberCount</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>name</td><td>-</td><td>Requirement</td><td>Requirement<br>Updatable</td><td>-</td></tr><tr><td>referenceCount</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>sharedListId</td><td>-</td><td>-</td><td>Requirement<br>NotUpdatable</td><td>Requirement</td></tr></table></details>"

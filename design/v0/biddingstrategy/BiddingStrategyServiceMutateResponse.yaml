@@ -1,0 +1,12 @@
+BiddingStrategyServiceMutateResponse:
+  type: object
+  properties:
+    errors:
+      type: array
+      items:
+        $ref: '../../Error.yaml#/Error'
+    rid:
+      type: string
+    rval:
+      $ref: 'BiddingStrategyServiceReturnValue.yaml#/BiddingStrategyServiceReturnValue'
+  title: BiddingStrategyServiceMutateResponse

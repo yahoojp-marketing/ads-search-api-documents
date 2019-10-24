@@ -1,0 +1,11 @@
+ConversionTrackerServiceStatus:
+  type: string
+  enum:
+  - ENABLED
+  - DISABLED
+  - UNKNOWN
+  title: ConversionTrackerServiceStatus
+  description: "<ja>ConversionTrackerServiceStatusは、コンバージョントラッカー情報のステータスを表します。</ja><br><en>It\
+    \ shows ConversionTracker status.</en><hr>\n* `DISABLED` - <ja>コンバージョンページへのアクセスが記録されません。</ja><br><en>It does not record access to Conversion page.</en><br>\n\
+    * `ENABLED` - <ja>コンバージョンページへのアクセスが記録されます。</ja><br><en>It records access to Conversion page.</en><br>\n* `UNKNOWN`\
+    \ - 未知の値です。<br>Unknown Value"

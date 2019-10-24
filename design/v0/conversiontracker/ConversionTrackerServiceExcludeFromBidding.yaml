@@ -1,0 +1,11 @@
+ConversionTrackerServiceExcludeFromBidding:
+  type: string
+  enum:
+  - 'TRUE'
+  - 'FALSE'
+  - UNKNOWN
+  title: ConversionTrackerServiceExcludeFromBidding
+  description: "<ja>ConversionTrackerServiceExcludeFromBiddingは、自動入札設定で使用するかを表します。</ja><br><en>ConversionTrackerServiceExcludeFromBidding\
+    \ describes whether exclude the data for Auto Bidding setting or not.</en><hr>\n\
+    * `TRUE` - <ja>使用しません。</ja><br><en>Exclude from Auto Bidding.</en><br>\n* `FALSE` - <ja>使用します。</ja><br><en>Include for Auto Bidding.</en><br>\n* `UNKNOWN` -\
+    \ 未知の値です。<br>Unknown Value"

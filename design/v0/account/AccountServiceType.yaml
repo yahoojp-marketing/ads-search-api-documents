@@ -1,0 +1,11 @@
+AccountServiceType:
+  type: string
+  enum:
+  - PREPAY
+  - INVOICE
+  - UNKNOWN
+  title: AccountServiceType
+  description: "<ja>AccountServiceTypeは、アカウントの料金支払い種別を示します。</ja><br><en>Payment type\
+    \ of the account.</en><hr>\n* `PREPAY` - <ja>クレジットカードや銀行振込などの前払い方式です。</ja><br><en>Creditcardor\
+    \ bank transfer</en><br>\n* `INVOICE` - <ja>代理店クライアントなどの請求書方式です。</ja><br><en>Invoice\
+    \ Type</en><br>\n* `UNKNOWN` - 未知の値です。<br>Unknown Value"

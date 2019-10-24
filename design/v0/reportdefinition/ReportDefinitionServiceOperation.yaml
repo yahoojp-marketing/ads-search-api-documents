@@ -1,0 +1,19 @@
+ReportDefinitionServiceOperation:
+  type: object
+  required:
+  - accountId
+  - operand
+  properties:
+    accountId:
+      type: integer
+      format: int64
+      description: "<ja>アカウントIDです。</ja><br><en>Account ID.</en>"
+    operand:
+      type: array
+      items:
+        $ref: 'ReportDefinition.yaml#/ReportDefinition'
+      minItems: 1
+      maxItems: 30
+  title: ReportDefinitionServiceOperation
+  description: "<ja>ReportDefinitionServiceOperationオブジェクトは、操作の対象となるレポートおよび操作の内容を表します。</ja><br><en>Target\
+    \ report and operation (add, update and remove report)</en>"

@@ -1,0 +1,36 @@
+AdGroupWebpage:
+  type: object
+  properties:
+    accountId:
+      type: integer
+      format: int64
+      description: "<ja>アカウントID</ja><br><en>Account ID</en>"
+    adGroupId:
+      type: integer
+      format: int64
+      description: "<ja>広告グループID</ja><br><en>Ad Group ID</en>"
+    adGroupTrackId:
+      type: integer
+      format: int64
+      description: "<ja>広告グループトラッキングID</ja><br><en>Ad Group Tracking ID</en>"
+    bid:
+      $ref: 'AdGroupWebpageServiceBid.yaml#/AdGroupWebpageServiceBid'
+    campaignId:
+      type: integer
+      format: int64
+      description: "<ja>キャンペーンID</ja><br><en>Campaign ID</en>"
+    campaignTrackId:
+      type: integer
+      format: int64
+      description: "<ja>キャンペーントラッキングID</ja><br><en>Campaign Tracking ID</en>"
+    excludedType:
+      $ref: 'AdGroupWebpageServiceExcludedType.yaml#/AdGroupWebpageServiceExcludedType'
+    userStatus:
+      $ref: 'AdGroupWebpageServiceUserStatus.yaml#/AdGroupWebpageServiceUserStatus'
+    webpage:
+      $ref: 'AdGroupWebpageServiceWebpage.yaml#/AdGroupWebpageServiceWebpage'
+  title: AdGroupWebpage
+  description: "<ja>AdGroupWebpageオブジェクトは、広告グループに関連付けた配信/除外設定の情報を保持します</ja><br><en>AdGroupWebpage\
+    \ object contains information of allowed or excluded settings setup to adgroup.</en><hr><details><summary>Requirement</summary><table\
+    \ border='1'><tr><th>PROPERTY</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>accountId</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>adGroupId</td><td>Requirement</td><td>Requirement</td><td>Requirement</td></tr><tr><td>adGroupTrackId</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>bid</td><td>Optional</td><td>Optional<br><ja>※ExcludedTypeがINCLUDEDのみ更新可</ja><br><en>∗ ExcludedType can update only INCLUDED</en></td><td>Ignore</td></tr><tr><td>campaignId</td><td>Requirement</td><td>Requirement</td><td>Requirement</td></tr><tr><td>campaignTrackId</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>excludedType</td><td>Optional<br>Default\
+    \ : INCLUDED</td><td>Ignore</td><td>Ignore</td></tr><tr><td>userStatus</td><td>Optional</td><td>Optional<br><ja>※ExcludedTypeがINCLUDEDのみ更新可</ja><br><en>∗ ExcludedType can update only INCLUDED</en></td><td>Ignore</td></tr><tr><td>webpage</td><td>Requirement</td><td>Requirement</td><td>Requirement</td></tr></table></details>"

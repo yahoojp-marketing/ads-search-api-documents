@@ -1,0 +1,13 @@
+AuditLogServiceEncoding:
+  type: string
+  enum:
+  - SJIS
+  - UTF_8
+  - UTF_16LE
+  - UNKNOWN
+  title: AuditLogServiceEncoding
+  description: "<ja>AuditLogServiceEncodingは、操作履歴ファイルのエンコーディング形式（文字コード）を表します。</ja><br><en>AuditLogServiceEncoding\
+    \ describes the encoding type (character encoding) for Operation History file.</en><hr>\n\
+    * `SJIS` - <ja>SJIS形式です。</ja><br><en>SJIS</en><br>\n* `UTF_8` - <ja>UTF_8形式です。</ja><br><en>UTF_8</en><br>\n\
+    * `UTF_16LE` - <ja>UTF_16LE形式です。</ja><br><en>UTF_16LE</en><br>\n* `UNKNOWN` -\
+    \ 未知の値です。<br>Unknown Value"

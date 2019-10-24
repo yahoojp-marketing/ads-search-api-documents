@@ -1,0 +1,22 @@
+AdGroupWebpageServiceBid:
+  type: object
+  properties:
+    adGroupMaxCpc:
+      type: integer
+      format: int64
+      description: "<ja>広告グループの最大入札価格</ja><br><en>Max bid of ad group</en>"
+    bidSource:
+      $ref: 'AdGroupWebpageServiceBidSource.yaml#/AdGroupWebpageServiceBidSource'
+    keywordMaxCpc:
+      type: integer
+      format: int64
+      description: "<ja>キーワードの最大入札価格</ja><br><en>Max bid of keyword</en>"
+    maxCpc:
+      type: integer
+      format: int64
+      description: "<ja>最大入札価格</ja><br><en>Max bid</en>"
+  title: AdGroupWebpageServiceBid
+  description: "<ja>AdGroupWebpageServiceBidオブジェクトは、入札価格を表示します。 （AdGroupWebpageService用のオブジェクトです。）</ja><br><en>AdGroupWebpageServiceBid\
+    \ object describes bid. (Object for AdGroupWebpageService.)</en><hr><details><summary>Requirement</summary><table\
+    \ border='1'><tr><th>PROPERTY</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>adGroupMaxCpc</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>bidSource</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>keywordMaxCpc</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>maxCpc</td><td>Optional<br>※Default:\
+    \ 1</td><td>Optional<br><i>Updatable</i></td><td>Ignore</td></tr></table></details>"

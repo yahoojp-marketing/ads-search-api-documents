@@ -1,0 +1,9 @@
+RetargetingListServiceDefaultTargetList:
+  type: object
+  properties:
+    tag:
+      $ref: 'RetargetingListServiceTag.yaml#/RetargetingListServiceTag'
+  title: RetargetingListServiceDefaultTargetList
+  description: "<ja>RetargetingListServiceDefaultTargetListは、デフォルトターゲットリストを保持するオブジェクトです。</ja><br><en>RetargetingListServiceDefaultTargetList\
+    \ is an object that holds default target list.</en><hr><details><summary>Requirement</summary><table\
+    \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th></tr><tr><td>tag</td><td>-</td><td>-</td><td>-</td></tr></table></details>"

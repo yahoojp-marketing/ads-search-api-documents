@@ -1,0 +1,15 @@
+ReportDefinitionServiceReportDownloadEncode:
+  type: string
+  enum:
+  - UTF-8
+  - SJIS
+  - EUC
+  - UTF16LE
+  - UNKNOWN
+  title: ReportDefinitionServiceReportDownloadEncode
+  description: "<ja>ReportDefinitionServiceReportDownloadEncodeは、ダウンロードするレポートの文字コードを表します。</ja><br><en>ReportDefinitionServiceReportDownloadEncode\
+    \ displays a character code of the report.</en><hr>\n* `UTF-8` - <ja>文字コード：UTF-8です。</ja><br><en>Character\
+    \ code: UTF-8.</en><br>\n* `SJIS` - <ja>文字コード：Shift-JISです。</ja><br><en>Character\
+    \ code: SJIS.</en><br>\n* `EUC` - <ja>文字コード：EUCです。</ja><br><en>Character code:\
+    \ EUC.</en><br>\n* `UTF16LE` - <ja>文字コード：UTF16LEです。</ja><br><en>Character code:\
+    \ UTF16LE.</en><br>\n* `UNKNOWN` - 未知の値です。<br>Unknown Value"

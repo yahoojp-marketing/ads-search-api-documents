@@ -1,0 +1,22 @@
+CampaignExportServiceEntityType:
+  type: string
+  enum:
+  - CAMPAIGN
+  - NEGATIVE_CAMPAIGN_CRITERION
+  - AD_GROUP
+  - BIDDABLE_AD_GROUP_CRITERION
+  - NEGATIVE_AD_GROUP_CRITERION
+  - AD
+  - ALL
+  - UNKNOWN
+  title: CampaignExportServiceEntityType
+  description: "<ja>CampaignExportServiceEntityTypeは、対象となるエンティティを表します。 ※リクエスト時はCampaignExportServiceEntityTypeで定義されている値をString型で指定します。\
+    \ ※レスポンスの値はenumとして返却されます。</ja><br><en>CampaignExportServiceEntityType object describes\
+    \ target entities. * When requesting, specify the value defined on CampaignExportServiceEntityType\
+    \ in string. * Response value is returned in enum type.</en><hr>\n* `AD` - <ja>広告</ja><br><en>Ad</en><br>\n\
+    * `ALL` - <ja>すべての広告エンティティ</ja><br><en>All entities</en><br>\n* `CAMPAIGN` - <ja>キャンペーン</ja><br><en>Campaign</en><br>\n\
+    * `NEGATIVE_CAMPAIGN_CRITERION` - <ja>対象外キーワード（キャンペーンレベル）</ja><br><en>Negative\
+    \ keyword (campaign level)</en><br>\n* `AD_GROUP` - <ja>広告グループ</ja><br><en>Ad\
+    \ group</en><br>\n* `BIDDABLE_AD_GROUP_CRITERION` - <ja>入札キーワード</ja><br><en>Biddable\
+    \ keyword</en><br>\n* `NEGATIVE_AD_GROUP_CRITERION` - <ja>対象外キーワード（広告グループレベル）</ja><br><en>Negative\
+    \ keyword (ad group level)</en><br>\n* `UNKNOWN` - 未知の値です。<br>Unknown Value"

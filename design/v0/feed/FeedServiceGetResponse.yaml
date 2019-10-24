@@ -1,0 +1,12 @@
+FeedServiceGetResponse:
+  type: object
+  properties:
+    errors:
+      type: array
+      items:
+        $ref: '../../Error.yaml#/Error'
+    rid:
+      type: string
+    rval:
+      $ref: 'FeedServicePage.yaml#/FeedServicePage'
+  title: FeedServiceGetResponse

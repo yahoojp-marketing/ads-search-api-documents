@@ -1,0 +1,11 @@
+ReportDefinitionServiceReportCompressType:
+  type: string
+  enum:
+  - NONE
+  - ZIP
+  - UNKNOWN
+  title: ReportDefinitionServiceReportCompressType
+  description: "<ja>ReportDefinitionServiceReportCompressTypeは、定義されたダウンロードレポートの圧縮の有無を表します。</ja><br><en>ReportDefinitionServiceReportCompressType\
+    \ displays if defined download report is compressed.</en><hr>\n* `NONE` - <ja>圧縮なしです。<br>※デフォルトに設定されます。</ja><br><en>Not\
+    \ compressed.<br>*Default setting.</en><br>\n* `ZIP` - <ja>Zip圧縮されます。</ja><br><en>Compressed\
+    \ to Zip file.</en><br>\n* `UNKNOWN` - 未知の値です。<br>Unknown Value"

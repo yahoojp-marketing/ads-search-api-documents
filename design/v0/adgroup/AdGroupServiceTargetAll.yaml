@@ -1,0 +1,15 @@
+AdGroupServiceTargetAll:
+  type: string
+  enum:
+  - ACTIVE
+  - DEACTIVE
+  - UNKNOWN
+  title: AdGroupServiceTargetAll
+  description: "<ja>サイトリターゲティングにおける配信対象ユーザーの設定内容を表します</ja><br><en>AdGroupServiceTargetAll\
+    \ describes the setting of target(include) users on Site Retargeting.</en><hr>\n\
+    * `ACTIVE` - <ja>すべてのユーザーを配信対象とします。<br>ターゲットリストのユーザーは入札価格調整率の適用のみ行います。</ja><br><en>All\
+    \ users are target of ad delivery.<br>Only applying bid adjustment rate is done\
+    \ for users on the Target List.</en><br>\n* `DEACTIVE` - <ja>ターゲットリストのユーザーのみを配信対象とします。<br>また、ターゲットリストのユーザーに対して入札価格調整率を適用します。</ja><br><en>Users\
+    \ on the Target List are target of ad delivery.<br>And bid adjustment rate is\
+    \ applied to users on the Target List.</en><br>\n* `UNKNOWN` - 未知の値です。<br>Unknown\
+    \ Value"

@@ -1,0 +1,11 @@
+RetargetingListServiceUrlRuleKey:
+  type: string
+  enum:
+  - URL
+  - REFFER_URL
+  - UNKNOWN
+  title: RetargetingListServiceUrlRuleKey
+  description: "<ja>RetargetingListServiceUrlRuleKeyは、URLルールに設定する評価項目です。</ja><br><en>RetargetingListServiceUrlRuleKey\
+    \ is the evaluation to set URL rules.</en><hr>\n* `URL` - <ja>URLです。</ja><br><en>URL.</en><br>\n\
+    * `REFFER_URL` - <ja>リファラURLです。</ja><br><en>Refer URL.</en><br>\n* `UNKNOWN` -\
+    \ 未知の値です。<br>Unknown Value"

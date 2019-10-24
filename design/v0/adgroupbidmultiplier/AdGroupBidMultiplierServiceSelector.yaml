@@ -1,0 +1,48 @@
+AdGroupBidMultiplierServiceSelector:
+  type: object
+  required:
+  - accountId
+  properties:
+    accountId:
+      type: integer
+      format: int64
+      description: "<ja>アカウントIDです。</ja><br><en>Account ID.</en>"
+    adGroupIds:
+      type: array
+      items:
+        type: integer
+        format: int64
+      maxItems: 1000
+      description: "<ja>広告グループIDです。</ja><br><en>Ad group ID.</en>"
+    campaignIds:
+      type: array
+      items:
+        type: integer
+        format: int64
+      maxItems: 1000
+      description: "<ja>キャンペーンIDです。</ja><br><en>Campaign ID.</en>"
+    numberResults:
+      type: integer
+      format: int32
+      minimum: 1
+      maximum: 10000
+      default: 1000
+      description: "ページの最大件数です。このフィールドは、1以上を指定する必要があります。<br>Maximum number of results\
+        \ to return in this page. This field must be greater than or equal to 1. Also\
+        \ see Entity Limits per operation."
+    platformTypes:
+      type: array
+      items:
+        $ref: 'AdGroupBidMultiplierServicePlatformType.yaml#/AdGroupBidMultiplierServicePlatformType'
+      maxItems: 3
+    startIndex:
+      type: integer
+      format: int32
+      minimum: 1
+      default: 1
+      description: "ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。<br>Index of the first\
+        \ result to return in this page. This field must be greater than or equal\
+        \ to 1."
+  title: AdGroupBidMultiplierServiceSelector
+  description: "<ja>AdGroupBidMultiplierServiceSelectorオブジェクトは、入札価格調整率を格納するコンテナです。</ja><br><en>Container\
+    \ for bid multiplier.</en>"

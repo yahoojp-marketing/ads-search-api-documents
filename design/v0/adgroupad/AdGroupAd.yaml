@@ -1,0 +1,73 @@
+AdGroupAd:
+  type: object
+  properties:
+    accountId:
+      type: integer
+      format: int64
+      description: "<ja>アカウントID</ja><br><en>Account ID.</en>"
+    ad:
+      $ref: 'AdGroupAdServiceAd.yaml#/AdGroupAdServiceAd'
+    adGroupId:
+      type: integer
+      format: int64
+      description: "<ja>広告グループID</ja><br><en>Ad group ID.</en>"
+    adGroupName:
+      type: string
+      description: "<ja>広告グループ名</ja><br><en>Ad group name.</en>"
+    adGroupTrackId:
+      type: integer
+      format: int64
+      description: "<ja>トラッキング用広告グループID</ja><br><en>Ad group\
+        \ ID for tracking.</en>"
+    adId:
+      type: integer
+      format: int64
+      description: "<ja>広告ID</ja><br><en>Ad ID.</en>"
+    adName:
+      type: string
+      description: "<ja>広告名</ja><br><en>Ad name.</en>"
+    adTrackId:
+      type: integer
+      format: int64
+      description: "<ja>トラッキング用広告ID</ja><br><en>Ad ID for\
+        \ tracking.</en>"
+    approvalStatus:
+      $ref: 'AdGroupAdServiceApprovalStatus.yaml#/AdGroupAdServiceApprovalStatus'
+    campaignId:
+      type: integer
+      format: int64
+      description: "<ja>キャンペーンID</ja><br><en>Campaign ID.</en>"
+    campaignName:
+      type: string
+      description: "<ja>キャンペーン名</ja><br><en>Campaign name.</en>"
+    campaignTrackId:
+      type: integer
+      format: int64
+      description: "<ja>トラッキング用キャンペーンID</ja><br><en>Campaign\
+        \ ID for tracking.</en>"
+    disapprovalReasonCodes:
+      type: array
+      items:
+        type: string
+      description: "<ja>審査否認の理由コード<br>(コード詳細は、DictionaryServiceのgetDisapprovalReasonのレスポンスを参照)</ja><br><en>Code of Disapproval reason.<br>(Refer to DictionaryService getDisapprovalReason response for details)</en>"
+    feedId:
+      type: integer
+      format: int64
+      description: "<ja>フィードID</ja><br><en>Feed ID.</en>"
+    invalidedTrademarks:
+      type: array
+      items:
+        type: string
+      description: "<ja>制限された商標</ja><br><en>Invalided trademarks.</en>"
+    labels:
+      type: array
+      items:
+        $ref: 'AdGroupAdServiceLabel.yaml#/AdGroupAdServiceLabel'
+    trademarkStatus:
+      $ref: 'AdGroupAdServiceTrademarkStatus.yaml#/AdGroupAdServiceTrademarkStatus'
+    userStatus:
+      $ref: 'AdGroupAdServiceUserStatus.yaml#/AdGroupAdServiceUserStatus'
+  title: AdGroupAd
+  description: "<ja>AdGroupAdオブジェクトは、広告に関する操作を行うための情報を表します。</ja><br><en>AdGroupAd\
+    \ object describes information for operations on ads.</en><hr><details><summary>Requirement</summary><table\
+    \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>accountId</td><td>-</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>ad</td><td>-</td><td>Requirement</td><td>Ignore</td><td>Ignore</td></tr><tr><td>adGroupId</td><td>-</td><td>Requirement<br><i>NotUpdatable</i></td><td>Requirement<br><i>NotUpdatable</i></td><td>Requirement<br><i>NotUpdatable</i></td></tr><tr><td>adGroupName</td><td>-</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>adGroupTrackId</td><td>-</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>adId</td><td>-</td><td>Ignore</td><td>Requirement<br><i>NotUpdatable</i></td><td>Requirement<br><i>NotUpdatable</i></td></tr><tr><td>adName</td><td>-</td><td>Requirement</td><td>Optional<br><i>Updatable</i></td><td>Ignore</td></tr><tr><td>adTrackId</td><td>-</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>approvalStatus</td><td>-</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>campaignId</td><td>-</td><td>Requirement<br><i>NotUpdatable</i></td><td>Requirement<br><i>NotUpdatable</i></td><td>Requirement<br><i>NotUpdatable</i></td></tr><tr><td>campaignName</td><td>-</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>campaignTrackId</td><td>-</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>disapprovalReasonCodes</td><td>-</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>feedId</td><td>-</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>invalidedTrademarks</td><td>-</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>labels</td><td>Ignore</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>trademarkStatus</td><td>-</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>userStatus</td><td>-</td><td>Requirement</td><td>Optional<br><i>Updatable</i></td><td>Ignore</td></tr></table></details>"

@@ -1,0 +1,24 @@
+ConversionTrackerServiceAppConversion:
+  type: object
+  properties:
+    appConversionType:
+      $ref: 'ConversionTrackerServiceAppConversionType.yaml#/ConversionTrackerServiceAppConversionType'
+    appId:
+      type: string
+      description: "<ja>アプリケーションIDです。</ja><br><en>Application ID</en>"
+    appPlatform:
+      $ref: 'ConversionTrackerServiceAppPlatform.yaml#/ConversionTrackerServiceAppPlatform'
+    appPostbackUrl:
+      $ref: 'ConversionTrackerServiceAppPostbackUrl.yaml#/ConversionTrackerServiceAppPostbackUrl'
+    snippetId:
+      type: integer
+      format: int64
+      description: "<ja>コンバージョンIDです。</ja><br><en>Converison ID</en>"
+    snippetLabel:
+      type: string
+      description: "<ja>コンバージョントラッカーラベルです。</ja><br><en>Converison tracker label</en>"
+  title: ConversionTrackerServiceAppConversion
+  description: "<ja>ConversionTrackerServiceAppConversionオブジェクトは、アプリコンバージョン測定タグやタグごとのパフォーマンスデータなどのアプリコンバージョントラッカー情報を表します。</ja><br><en>ConversionTrackerServiceAppConversion\
+    \ object describes the App ConversionTracker information such as App ConversionTag\
+    \ and performance data by tag.</en><hr><details><summary>Requirement</summary><table\
+    \ border='1'><tr><th>PROPERTY</th><th>ADD</th><th>SET</th></tr><tr><td>appConversionType</td><td>Requirement</td><td>-</td></tr><tr><td>appId</td><td>Optional</td><td>Optional</td></tr><tr><td>appPlatform</td><td>Requirement</td><td>-</td></tr><tr><td>appPostbackUrl</td><td>Optional</td><td>Optional</td></tr><tr><td>snippetId</td><td>-</td><td>-</td></tr><tr><td>snippetLabel</td><td>-</td><td>-</td></tr></table></details>"

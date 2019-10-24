@@ -1,0 +1,11 @@
+RetargetingListServiceLogicalTargetList:
+  type: object
+  properties:
+    logicalGroup:
+      type: array
+      items:
+        $ref: 'RetargetingListServiceLogicalGroup.yaml#/RetargetingListServiceLogicalGroup'
+  title: RetargetingListServiceLogicalTargetList
+  description: "<ja>RetargetingListServiceLogicalTargetListは、組合せターゲットリストの情報を保持するオブジェクトです。</ja><br><en>RetargetingListServiceLogicalTargetList\
+    \ is an object that holds the combination target list information.</en><hr><details><summary>Requirement</summary><table\
+    \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th></tr><tr><td>logicalGroup</td><td>-</td><td>Requirement</td><td>Requirement</td></tr></table></details>"

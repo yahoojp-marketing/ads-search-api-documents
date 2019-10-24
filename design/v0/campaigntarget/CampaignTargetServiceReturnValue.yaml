@@ -1,0 +1,10 @@
+CampaignTargetServiceReturnValue:
+  type: object
+  properties:
+    values:
+      type: array
+      items:
+        $ref: 'CampaignTargetServiceValue.yaml#/CampaignTargetServiceValue'
+  title: CampaignTargetServiceReturnValue
+  description: "<ja>CampaigｎTargetReturnValueオブジェクトは、操作結果を含むキャンペーンのターゲット設定に関する情報のコンテナです。</ja><br><en>Container\
+    \ for campaign target setting and its operation results.</en>"

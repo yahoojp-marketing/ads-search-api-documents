@@ -1,0 +1,10 @@
+AdGroupFeedServiceReturnValue:
+  type: object
+  properties:
+    values:
+      type: array
+      items:
+        $ref: 'AdGroupFeedServiceValue.yaml#/AdGroupFeedServiceValue'
+  title: AdGroupFeedServiceReturnValue
+  description: "<ja>AdGroupFeedServiceReturnValueオブジェクトは、FeedItem情報を格納するコンテナです。</ja><br><en>AdGroupFeedServiceReturnValue\
+    \ is a container of FeedItem information.</en>"

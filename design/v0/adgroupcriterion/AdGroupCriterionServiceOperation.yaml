@@ -1,0 +1,19 @@
+AdGroupCriterionServiceOperation:
+  type: object
+  required:
+  - accountId
+  - operand
+  properties:
+    accountId:
+      type: integer
+      format: int64
+      description: "<ja>アカウントIDです。</ja><br><en>Account ID.</en>"
+    operand:
+      type: array
+      items:
+        $ref: 'AdGroupCriterion.yaml#/AdGroupCriterion'
+      minItems: 1
+      maxItems: 2000
+  title: AdGroupCriterionServiceOperation
+  description: "<ja>AdGroupCriterionServiceOperationオブジェクトは、操作の対象となる広告グループのクライテリアおよび操作の内容を表します。</ja><br><en>AdGroupCriterionServiceOperation\
+    \ displays target ad group criteria information and its operation results.</en>"

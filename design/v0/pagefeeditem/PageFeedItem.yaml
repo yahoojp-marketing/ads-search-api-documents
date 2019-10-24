@@ -1,0 +1,36 @@
+PageFeedItem:
+  type: object
+  properties:
+    accountId:
+      type: integer
+      format: int64
+      description: "<ja>アカウントID</ja><br><en>Account ID</en>"
+    approvalStatus:
+      $ref: 'PageFeedItemServiceApprovalStatus.yaml#/PageFeedItemServiceApprovalStatus'
+    disapprovalReasonCodes:
+      type: array
+      items:
+        type: string
+      description: "<ja>審査否認理由コード</ja><br><en>Codes of disapproval reason</en>"
+    disapprovalReasonComment:
+      type: string
+      description: "<ja>審査否認理由のコメント</ja><br><en>Comment of disapproval reason</en>"
+    feedId:
+      type: integer
+      format: int64
+      description: "<ja>フィードID</ja><br><en>Feed ID</en>"
+    pageFeedCustomLabel:
+      type: string
+      description: "<ja>ページフィードアイテムのカスタムラベル<br>複数ある場合はカンマ区切り</ja><br><en>Custom label\
+        \ of Page feed item.<br>If multiple, comma separated.</en>"
+    pageFeedItemId:
+      type: integer
+      format: int64
+      description: "<ja>ページフィードアイテムID</ja><br><en>Page feed item ID</en>"
+    pageFeedUrl:
+      type: string
+      description: "<ja>ページフィードURL。</ja><br><en>Url of page feed</en>"
+  title: PageFeedItem
+  description: "<ja>PageFeedItemオブジェクトは、ページフィードアイテム情報を格納します。</ja><br><en>PageFeedItem\
+    \ object retains page feed Item.</en><hr><details><summary>Requirement</summary><table\
+    \ border='1'></table></details>"

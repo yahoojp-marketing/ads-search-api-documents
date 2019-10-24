@@ -1,0 +1,11 @@
+CampaignExportServiceOutput:
+  type: string
+  enum:
+  - CSV
+  - ZIPPED_CSV
+  - UNKNOWN
+  title: CampaignExportServiceOutput
+  description: "<ja>CampaignExportServiceOutputは、エクスポートするデータの形式設定です。</ja><br><en>CampaignExportServiceOutput\
+    \ is an output format for exporting data.</en><hr>\n* `CSV` - <ja>CSVフォーマットです。</ja><br><en>CSV\
+    \ format.</en><br>\n* `ZIPPED_CSV` - <ja>ZIP圧縮されたCSVフォーマットです。</ja><br><en>ZIP\
+    \ filed CSV format.</en><br>\n* `UNKNOWN` - 未知の値です。<br>Unknown Value"

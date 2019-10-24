@@ -1,0 +1,19 @@
+CampaignSharedSetServiceOperation:
+  type: object
+  required:
+  - accountId
+  - operand
+  properties:
+    accountId:
+      type: integer
+      format: int64
+      description: "<ja>操作対象のアカウントです。</ja><br><en>Account for the operation</en>"
+    operand:
+      type: array
+      items:
+        $ref: 'CampaignSharedSet.yaml#/CampaignSharedSet'
+      minItems: 1
+      maxItems: 1000
+  title: CampaignSharedSetServiceOperation
+  description: "<ja>CampaignSharedSetServiceOperationは、操作対象のキャンペーンと共有リストの関連付け情報を保持するオブジェクトです。</ja><br><en>CampaignSharedSetServiceOperation\
+    \ is object to hold setup information between campaign and shared list for operation.</en>"

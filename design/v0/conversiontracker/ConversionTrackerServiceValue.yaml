@@ -1,0 +1,15 @@
+ConversionTrackerServiceValue:
+  type: object
+  properties:
+    conversionTracker:
+      $ref: 'ConversionTracker.yaml#/ConversionTracker'
+    errors:
+      type: array
+      items:
+        $ref: '../../Error.yaml#/Error'
+    operationSucceeded:
+      type: boolean
+      description: "<ja>処理結果です。</ja><br><en>Operation result</en>"
+  title: ConversionTrackerServiceValue
+  description: "<ja>ConversionTrackerServiceValueオブジェクトは、操作結果を含むコンバージョントラッカー情報を表します。</ja><br><en>ConversionTrackerServiceValue\
+    \ object shows ConversionTracker information includes operation results.</en>"

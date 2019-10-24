@@ -1,0 +1,12 @@
+PageFeedItemServiceUploadResponse:
+  type: object
+  properties:
+    errors:
+      type: array
+      items:
+        $ref: '../../Error.yaml#/Error'
+    rid:
+      type: string
+    rval:
+      $ref: 'PageFeedItemServiceUploadReturnValue.yaml#/PageFeedItemServiceUploadReturnValue'
+  title: PageFeedItemServiceUploadResponse

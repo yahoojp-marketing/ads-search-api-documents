@@ -1,0 +1,10 @@
+AdGroupAdServiceTextAd2:
+  type: object
+  properties:
+    description2:
+      type: string
+      description: "<ja>説明文2（2行目）です。</ja><br><en>Description2 (line2) of the ad.</en>"
+  title: AdGroupAdServiceTextAd2
+  description: "<ja>AdGroupAdServiceTextAd2オブジェクトは、スポンサードサーチのPCおよびスマートフォン向けの広告を表します。</ja><br><en>AdGroupAdServiceTextAd2\
+    \ object is a text ad type for Sponsored Search on PC and smartphone.</en><hr><details><summary>Requirement</summary><table\
+    \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>description2</td><td>-</td><td>Requirement</td><td>-</td><td>-</td></tr></table></details>"

@@ -1,0 +1,20 @@
+CampaignTargetServiceDayOfWeek:
+  type: string
+  enum:
+  - MONDAY
+  - TUESDAY
+  - WEDNESDAY
+  - THURSDAY
+  - FRIDAY
+  - SATURDAY
+  - SUNDAY
+  - UNKNOWN
+  title: CampaignTargetServiceDayOfWeek
+  description: "<ja>CampaignTargetServiceDayOfWeekは、曜日を表します。</ja><br><en>A day of\
+    \ the week.</en><hr>\n* `MONDAY` - <ja>月曜日です。</ja><br><en>For Monday of the week</en><br>\n\
+    * `TUESDAY` - <ja>火曜日です。</ja><br><en>For Tuesday of the week</en><br>\n* `WEDNESDAY`\
+    \ - <ja>水曜日です。</ja><br><en>For Wednesday of the week</en><br>\n* `THURSDAY` -\
+    \ <ja>木曜日です。</ja><br><en>For Thursday of the week</en><br>\n* `FRIDAY` - <ja>金曜日です。</ja><br><en>For\
+    \ Friday of the week</en><br>\n* `SATURDAY` - <ja>土曜日です。</ja><br><en>For Saturday\
+    \ of the week</en><br>\n* `SUNDAY` - <ja>日曜日です。</ja><br><en>For Sunday of the\
+    \ week</en><br>\n* `UNKNOWN` - 未知の値です。<br>Unknown Value"

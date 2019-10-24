@@ -1,0 +1,12 @@
+AdGroupAdServiceGetResponse:
+  type: object
+  properties:
+    errors:
+      type: array
+      items:
+        $ref: '../../Error.yaml#/Error'
+    rid:
+      type: string
+    rval:
+      $ref: 'AdGroupAdServicePage.yaml#/AdGroupAdServicePage'
+  title: AdGroupAdServiceGetResponse

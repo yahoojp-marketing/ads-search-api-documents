@@ -1,0 +1,23 @@
+CampaignTargetServiceLocationTarget:
+  type: object
+  properties:
+    cityNameEN:
+      type: string
+      description: "<ja>市区町村名（英語）です。</ja><br><en>City （English）</en>"
+    cityNameJA:
+      type: string
+      description: "<ja>都道府県名（日本語）です。</ja><br><en>City （Japanese）</en>"
+    excludedType:
+      $ref: 'CampaignTargetServiceExcludedType.yaml#/CampaignTargetServiceExcludedType'
+    provinceNameEN:
+      type: string
+      description: "<ja>都道府県名（英語）です。</ja><br><en>Prefecture（English）</en>"
+    provinceNameJA:
+      type: string
+      description: "<ja>市区町村名（日本語）です。</ja><br><en>Prefecture（Japanese）</en>"
+    targetingStatus:
+      $ref: 'CampaignTargetServiceTargetingStatus.yaml#/CampaignTargetServiceTargetingStatus'
+  title: CampaignTargetServiceLocationTarget
+  description: "<ja>CampaignTargetServiceLocationTargetオブジェクトは、地域ターゲティング設定です。</ja><br><en>CampaignTargetServiceLocationTarget\
+    \ object is a location target setting.</en><hr><details><summary>Requirement</summary><table\
+    \ border='1'><tr><th>PROPERTY</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>cityNameEN</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>cityNameJA</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>excludedType</td><td>Optional</td><td>Ignore</td><td>Ignore</td></tr><tr><td>provinceNameEN</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>provinceNameJA</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>targetingStatus</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr></table></details>"

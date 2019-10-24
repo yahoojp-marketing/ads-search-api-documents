@@ -1,0 +1,18 @@
+AdGroupRetargetingListServiceCriterionTargetList:
+  type: object
+  properties:
+    retargetingTrackId:
+      type: integer
+      format: int64
+      description: "<ja>リターゲティングトラックIDです。</ja><br><en>Retargeting Track ID.</en>"
+    targetListId:
+      type: integer
+      format: int64
+      description: "<ja>ターゲットリストIDです。</ja><br><en>Target list ID.</en>"
+    targetListName:
+      type: string
+      description: "<ja>ターゲットリスト名です。</ja><br><en>Target list name.</en>"
+  title: AdGroupRetargetingListServiceCriterionTargetList
+  description: "<ja>AdGroupRetargetingListServiceCriterionTargetListは、ターゲットリスト情報を保持するオブジェクトです。</ja><br><en>AdGroupRetargetingListServiceCriterionTargetList\
+    \ is an object that holds target list information.</en><hr><details><summary>Requirement</summary><table\
+    \ border='1'><tr><th>PROPERTY</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>retargetingTrackId</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>targetListId</td><td>Requirement</td><td>Requirement</td><td>Requirement</td></tr><tr><td>targetListName</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr></table></details>"

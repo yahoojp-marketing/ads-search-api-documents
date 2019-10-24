@@ -1,0 +1,12 @@
+AdGroupWebpageServiceExcludedType:
+  type: string
+  enum:
+  - INCLUDED
+  - EXCLUDED
+  - UNKNOWN
+  title: AdGroupWebpageServiceExcludedType
+  description: "<ja>AdGroupWebpageServiceExcludedTypeは、配信対象、および除外対象の設定を表します。</ja><br><en>AdGroupWebpageServiceExcludedType\
+    \ describes the setting type which delivers ads or do not delivers ads.</en><hr>\n\
+    * `INCLUDED` - <ja>配信対象</ja><br><en>Ads to be delivered</en><br>\n* `EXCLUDED`\
+    \ - <ja>除外対象</ja><br><en>Ads not to be delivered</en><br>\n* `UNKNOWN` - 未知の値です。<br>Unknown\
+    \ Value"

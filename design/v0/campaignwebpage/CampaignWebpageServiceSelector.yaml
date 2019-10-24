@@ -1,0 +1,44 @@
+CampaignWebpageServiceSelector:
+  type: object
+  required:
+  - accountId
+  properties:
+    accountId:
+      type: integer
+      format: int64
+      description: "<ja>アカウントID</ja><br><en>Account ID</en>"
+    campaignIds:
+      type: array
+      items:
+        type: integer
+        format: int64
+      maxItems: 1000
+      description: "<ja>キャンペーンID</ja><br><en>Campaign ID</en>"
+    numberResults:
+      type: integer
+      format: int32
+      minimum: 1
+      maximum: 2000
+      default: 500
+      description: "ページの最大件数です。このフィールドは、1以上を指定する必要があります。<br>Maximum number of results\
+        \ to return in this page. This field must be greater than or equal to 1. Also\
+        \ see Entity Limits per operation."
+    startIndex:
+      type: integer
+      format: int32
+      minimum: 1
+      default: 1
+      description: "ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。<br>Index of the first\
+        \ result to return in this page. This field must be greater than or equal\
+        \ to 1."
+    targetIds:
+      type: array
+      items:
+        type: integer
+        format: int64
+      maxItems: 1000
+      description: "<ja>除外設定を識別するID</ja><br><en>Unique ID for each identify excluded\
+        \ settings</en>"
+  title: CampaignWebpageServiceSelector
+  description: "<ja>CampaignWebpageServiceSelectorオブジェクトは、取得する条件を保持します。</ja><br><en>CampaignWebpageServiceSelector\
+    \ object contains the rules to be acquired.</en>"

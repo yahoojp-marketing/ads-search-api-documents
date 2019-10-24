@@ -1,0 +1,20 @@
+CampaignExportServiceApprovalStatus:
+  type: string
+  enum:
+  - APPROVED
+  - APPROVED_WITH_REVIEW
+  - REVIEW
+  - PRE_DISAPPROVED
+  - POST_DISAPPROVED
+  - UNKNOWN
+  title: CampaignExportServiceApprovalStatus
+  description: "<ja>CampaignExportServiceApprovalStatusは、審査状況を表します。</ja><br><en>CampaignExportServiceApprovalStatus\
+    \ displays Editorial Status.</en><hr>\n* `APPROVED_WITH_REVIEW` - <ja>承認済です。<br>すでに掲載中のキーワード・広告を再編集し、審査中となり、編集前の広告が掲載されています。</ja><br><en>The\
+    \ item is approved<br>Updated items are under review</en><br>\n* `REVIEW` - <ja>審査中です。<br>新しく追加したキーワード・広告が審査中となり、広告は未掲載です。</ja><br><en>Under\
+    \ editorial review<br>Newly added keywords/ads are under review, and not displayed\
+    \ yet</en><br>\n* `PRE_DISAPPROVED` - <ja>掲載不可です。<br>新しく追加したキーワード・広告が審査で承認されず非掲載です。</ja><br><en>The\
+    \ item was rejected<br>Newly added keywords/ads have been rejected, so it cannot\
+    \ be displayed</en><br>\n* `POST_DISAPPROVED` - <ja>掲載停止です。<br>すでに掲載中のキーワード・広告について審査が行われた結果、承認されず非掲載です。</ja><br><en>The\
+    \ item was rejected<br>Ads already displayed have been taken offline due to a\
+    \ result from post review</en><br>\n* `APPROVED` - <ja>承認済です。</ja><br><en>The\
+    \ item is approved</en><br>\n* `UNKNOWN` - 未知の値です。<br>Unknown Value"

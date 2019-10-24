@@ -1,0 +1,13 @@
+AdGroupServiceCustomParameter:
+  type: object
+  properties:
+    key:
+      type: string
+      description: "<ja>キーです。</ja><br><en>Key of parameter.</en>"
+    value:
+      type: string
+      description: "<ja>値です。</ja><br><en>Value of parameter.<br></en>"
+  title: AdGroupServiceCustomParameter
+  description: "<ja>AdGroupServiceCustomParameterは、カスタムパラメータの内容を表します。</ja><br><en>AdGroupServiceCustomParameter\
+    \ displays the element of custom parameters.</en><hr><details><summary>Requirement</summary><table\
+    \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>key</td><td>-</td><td>Requirement</td><td>Requirement</td><td>-</td></tr><tr><td>value</td><td>-</td><td>Optional</td><td>Optional</td><td>-</td></tr></table></details>"

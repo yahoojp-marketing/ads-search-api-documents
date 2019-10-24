@@ -1,0 +1,29 @@
+PageFeedItemServiceUploadJobStatus:
+  type: string
+  enum:
+  - IN_PROGRESS
+  - COMPLETED
+  - COMPLETED_WITH_VALIDATION_ERROR
+  - FILE_FORMAT_ERROR
+  - FILE_ENCODING_ERROR
+  - COLUMN_HEADER_ERROR
+  - EXCEED_ROW_LINES
+  - EXCEED_FILE_COUNTS
+  - INVALID_FEED_ID
+  - TIMEOUT
+  - SYSTEM_ERROR
+  - UNKNOWN
+  title: PageFeedItemServiceUploadJobStatus
+  description: "<ja>PageFeedItemServiceUploadJobStatusは、ページフィードアイテムアップロードジョブの実行状況を表します。</ja><br><en>PageFeedItemServiceUploadJobStatus\
+    \ displays status of page feed item upload jobs.</en><hr>\n* `IN_PROGRESS` - <ja>処理中</ja><br><en>Currently\
+    \ in progress of creating.</en><br>\n* `INVALID_FEED_ID` - <ja>フィードIDが不正</ja><br><en>Feed\
+    \ ID is invalid.</en><br>\n* `TIMEOUT` - <ja>タイムアウト</ja><br><en>Timeout</en><br>\n\
+    * `EXCEED_ROW_LINES` - <ja>ファイルの最大行数が超過しています。</ja><br><en>Row count of the file\
+    \ exceeded the maximum.</en><br>\n* `COMPLETED` - <ja>処理完了</ja><br><en>Job has\
+    \ completed.</en><br>\n* `COMPLETED_WITH_VALIDATION_ERROR` - <ja>ファイル内の入力値が不正</ja><br><en>Contents\
+    \ written in the file are invalid.</en><br>\n* `COLUMN_HEADER_ERROR` - <ja>ファイルのヘッダーが不正</ja><br><en>Content\
+    \ header of the file is invalid.</en><br>\n* `FILE_FORMAT_ERROR` - <ja>ファイルのフォーマットが不正</ja><br><en>Format\
+    \ of the file is invalid.</en><br>\n* `FILE_ENCODING_ERROR` - <ja>ファイルのエンコードが不正</ja><br><en>Encoding\
+    \ of the file is invalid.</en><br>\n* `EXCEED_FILE_COUNTS` - <ja>複数のファイルを圧縮しているためエラー</ja><br><en>Count\
+    \ of the file exceeded the maximum.</en><br>\n* `SYSTEM_ERROR` - <ja>エラー</ja><br><en>Systen\
+    \ error.</en><br>\n* `UNKNOWN` - 未知の値です。<br>Unknown Value"

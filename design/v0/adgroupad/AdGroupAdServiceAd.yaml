@@ -1,0 +1,48 @@
+AdGroupAdServiceAd:
+  type: object
+  properties:
+    adType:
+      $ref: 'AdGroupAdServiceAdType.yaml#/AdGroupAdServiceAdType'
+    additionalAdvancedMobileUrls:
+      type: array
+      items:
+        $ref: 'AdGroupAdServiceAdditionalAdvancedMobileUrls.yaml#/AdGroupAdServiceAdditionalAdvancedMobileUrls'
+    additionalAdvancedUrls:
+      type: array
+      items:
+        $ref: 'AdGroupAdServiceAdditionalAdvancedUrls.yaml#/AdGroupAdServiceAdditionalAdvancedUrls'
+    advancedMobileUrl:
+      type: string
+      description: "<ja>最終リンク先URL（スマート フォン）です。</ja><br><en>Landing Page URL (Smartphone).</en>"
+    advancedUrl:
+      type: string
+      description: "<ja>最終リンク先URLです。</ja><br><en>Landing Page URL.</en>"
+    appAd:
+      $ref: 'AdGroupAdServiceAppAd.yaml#/AdGroupAdServiceAppAd'
+    customParameters:
+      $ref: 'AdGroupAdServiceCustomParameters.yaml#/AdGroupAdServiceCustomParameters'
+    description:
+      type: string
+      description: "<ja>説明文です。</ja><br><en>Description of ad.</en>"
+    devicePreference:
+      $ref: 'AdGroupAdServiceDevicePreference.yaml#/AdGroupAdServiceDevicePreference'
+    displayUrl:
+      type: string
+      description: "<ja>表示URLです。</ja><br><en>Display URL.</en>"
+    extendedTextAd:
+      $ref: 'AdGroupAdServiceExtendedTextAd.yaml#/AdGroupAdServiceExtendedTextAd'
+    headline:
+      type: string
+      description: "<ja>タイトル文です。</ja><br><en>Title of ad.</en>"
+    textAd2:
+      $ref: 'AdGroupAdServiceTextAd2.yaml#/AdGroupAdServiceTextAd2'
+    trackingUrl:
+      type: string
+      description: "<ja>トラッキングURLです。</ja><br><en>Tracking URL.</en>"
+    url:
+      type: string
+      description: "<ja>移行前のリンク先URLです。</ja><br><en>Destination URL before upgrading.</en>"
+  title: AdGroupAdServiceAd
+  description: "<ja>AdGroupAdServiceAdオブジェクトは、広告に関する情報を表します。</ja><br><en>AdGroupAdServiceAd\
+    \ object describes ad information.</en><hr><details><summary>Requirement</summary><table\
+    \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>adType</td><td>-</td><td>Requirement</td><td>-</td><td>-</td></tr><tr><td>additionalAdvancedMobileUrls</td><td>-</td><td>Optional<br><ja>※adTypeがDYNAMIC_SEARCH_LINKED_ADの場合:Ignore。</ja><br><en>∗If adType is DYNAMIC_SEARCH_LINK_AD, Ignore</en></td><td>-</td><td>-</td></tr><tr><td>additionalAdvancedUrls</td><td>-</td><td>Optional<br><ja>※adTypeがDYNAMIC_SEARCH_LINKED_ADの場合:Ignore。</ja><br><en>∗If adType is DYNAMIC_SEARCH_LINK_AD, Ignore</en></td><td>-</td><td>-</td></tr><tr><td>advancedMobileUrl</td><td>-</td><td>Optional<br><ja>※adTypeがDYNAMIC_SEARCH_LINKED_ADの場合:Ignore。</ja><br><en>∗If adType is DYNAMIC_SEARCH_LINK_AD, Ignore</en></td><td>-</td><td>-</td></tr><tr><td>advancedUrl</td><td>-</td><td>Requirement<br><ja>※adTypeがDYNAMIC_SEARCH_LINKED_ADの場合:Ignore。</ja><br><en>∗If adType is DYNAMIC_SEARCH_LINK_AD, Ignore</en></td><td>-</td><td>-</td></tr><tr><td>appAd</td><td>-</td><td>Optional<br><ja>※adTypeがAPP_ADの場合:Requirement。</ja><br><en>∗If adType is APP_AD, Requirement</en></td><td>-</td><td>-</td></tr><tr><td>customParameters</td><td>-</td><td>Optional</td><td>-</td><td>-</td></tr><tr><td>description</td><td>-</td><td>Requirement</td><td>Ignore</td><td>Ignore</td></tr><tr><td>devicePreference</td><td>-</td><td>Optional<br><ja>※DOUBLE_TEXT_ADの場合、Ignore。</ja><br><en>* Ignore for DOUBLE_TEXT_AD.</en></td><td>Ignore</td><td>Ignore</td></tr><tr><td>displayUrl</td><td>-</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>extendedTextAd</td><td>-</td><td>Optional<br><ja>※adTypeがEXTENDED_TEXT_ADの場合:Requirement。</ja><br><en>∗If adType is EXTENDED_TEXT_AD, Requirement</en></td><td>-</td><td>-</td></tr><tr><td>headline</td><td>-</td><td>Requirement<br><ja>※adTypeがDYNAMIC_SEARCH_LINKED_ADの場合:Ignore。</ja><br><en>∗If adType is DYNAMIC_SEARCH_LINKED_AD, Ignore</en></td><td>Ignore</td><td>Ignore</td></tr><tr><td>textAd2</td><td>-</td><td>Optional<br><ja>※adTypeがTEXT_AD2の場合:Requirement。</ja><br><en>∗If adType is TEXT_AD2, Requirement</en></td><td>-</td><td>-</td></tr><tr><td>trackingUrl</td><td>-</td><td>Optional</td><td>-</td><td>-</td></tr><tr><td>url</td><td>-</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr></table></details>"

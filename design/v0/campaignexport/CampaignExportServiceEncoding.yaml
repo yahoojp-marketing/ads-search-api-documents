@@ -1,0 +1,11 @@
+CampaignExportServiceEncoding:
+  type: string
+  enum:
+  - UTF-8
+  - SJIS
+  - UNKNOWN
+  title: CampaignExportServiceEncoding
+  description: "<ja>CampaignExportServiceEncodingは、エクスポートするデータのエンコーディング設定です。</ja><br><en>CampaignExportServiceEncoding\
+    \ is an encoding setting for exporting data.</en><hr>\n* `UTF-8` - <ja>UTF-8です。</ja><br><en>UTF-8\
+    \ encode.</en><br>\n* `SJIS` - <ja>Shift-JISです。</ja><br><en>Shift-JIS encode.</en><br>\n\
+    * `UNKNOWN` - 未知の値です。<br>Unknown Value"

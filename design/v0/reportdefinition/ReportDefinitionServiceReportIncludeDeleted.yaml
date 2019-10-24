@@ -1,0 +1,11 @@
+ReportDefinitionServiceReportIncludeDeleted:
+  type: string
+  enum:
+  - 'TRUE'
+  - 'FALSE'
+  - UNKNOWN
+  title: ReportDefinitionServiceReportIncludeDeleted
+  description: "<ja>ReportDefinitionServiceReportIncludeDeletedオブジェクトは、削除済みの項目をレポートに出力するかを選択します。</ja><br><en>ReportDefinitionServiceReportIncludeDeleted\
+    \ object describes whether to output deleted items on the report or not.</en><hr>\n\
+    * `TRUE` - <ja>出力します</ja><br><en>Output.</en><br>\n* `FALSE` - <ja>出力しません</ja><br><en>Do\
+    \ not output.</en><br>\n* `UNKNOWN` - 未知の値です。<br>Unknown Value"

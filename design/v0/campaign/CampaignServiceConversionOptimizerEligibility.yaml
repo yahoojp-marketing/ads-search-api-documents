@@ -1,0 +1,21 @@
+CampaignServiceConversionOptimizerEligibility:
+  type: string
+  enum:
+  - ENABLE
+  - DISABLE
+  - CAMPAIGN_IS_NOT_ACTIVE
+  - NOT_CPC_CAMPAIGN
+  - CONVERSION_TRACKING_NOT_ENABLED
+  - NOT_ENOUGH_CONVERSIONS
+  - UNKNOWN
+  description: "<ja>CampaignServiceConversionOptimizerEligibilityは、コンバージョンオプティマイザーが利用可能であるか判定します。</ja><br><en>CampaignServiceConversionOptimizerEligibility\
+    \ object is to determine if it is possible to use conversion optimizer.</en><hr>\n\
+    * `ENABLE` - <ja>利用可能です。</ja><br><en>Can use conversion optimizer.</en><br>\n\
+    * `DISABLE` - <ja>利用できません。</ja><br><en>Cannot use conversion optimizer.</en><br>\n\
+    * `CAMPAIGN_IS_NOT_ACTIVE` - <ja>キャンペーンがアクティブではありません。</ja><br><en>Campaign is\
+    \ not active.</en><br>\n* `NOT_CPC_CAMPAIGN` - <ja>コンバージョンオプティマイザーは、手動入札の場合にのみ有効です。</ja><br><en>Valid\
+    \ when it is in manual bidding.</en><br>\n* `CONVERSION_TRACKING_NOT_ENABLED`\
+    \ - <ja>コンバージョン測定タグが発行されていません。</ja><br><en>Conversion tracking tag is not enabled\
+    \ yet.</en><br>\n* `NOT_ENOUGH_CONVERSIONS` - <ja>コンバージョンの実績が十分ではありません。</ja><br><en>Conversion\
+    \ performance is not enough.</en><br>\n* `UNKNOWN` - 未知の値です。<br>Unknown Value"
+  title: CampaignServiceConversionOptimizerEligibility

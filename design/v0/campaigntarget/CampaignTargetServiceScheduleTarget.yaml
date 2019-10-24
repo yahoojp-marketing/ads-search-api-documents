@@ -1,0 +1,21 @@
+CampaignTargetServiceScheduleTarget:
+  type: object
+  properties:
+    dayOfWeek:
+      $ref: 'CampaignTargetServiceDayOfWeek.yaml#/CampaignTargetServiceDayOfWeek'
+    endHour:
+      type: integer
+      format: int32
+      description: "<ja>24時間表示の終了時刻です。</ja><br><en>Ending hour in 24 hour time.</en>"
+    endMinute:
+      $ref: 'CampaignTargetServiceMinuteOfHour.yaml#/CampaignTargetServiceMinuteOfHour'
+    startHour:
+      type: integer
+      format: int32
+      description: "<ja>24時間表示の開始時刻です。</ja><br><en>Starting hour in 24 hour time.</en>"
+    startMinute:
+      $ref: 'CampaignTargetServiceMinuteOfHour.yaml#/CampaignTargetServiceMinuteOfHour'
+  title: CampaignTargetServiceScheduleTarget
+  description: "<ja>CampaignTargetServiceScheduleTargetオブジェクトは、曜日・時間帯ターゲティングレポートを表します。</ja><br><en>CampaignTargetServiceScheduleTarget\
+    \ describes Day of week/Hour targeting report.</en><hr><details><summary>Requirement</summary><table\
+    \ border='1'><tr><th>PROPERTY</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>dayOfWeek</td><td>Requirement</td><td>-</td><td>-</td></tr><tr><td>endHour</td><td>Requirement</td><td>-</td><td>-</td></tr><tr><td>endMinute</td><td>Requirement</td><td>-</td><td>-</td></tr><tr><td>startHour</td><td>Requirement</td><td>-</td><td>-</td></tr><tr><td>startMinute</td><td>Requirement</td><td>-</td><td>-</td></tr></table></details>"

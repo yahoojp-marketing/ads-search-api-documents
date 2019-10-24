@@ -1,0 +1,9 @@
+ConversionTrackerServiceAppPostbackUrlClearFlag:
+  type: string
+  enum:
+  - 'TRUE'
+  - UNKNOWN
+  title: ConversionTrackerServiceAppPostbackUrlClearFlag
+  description: "<ja>ConversionTrackerServiceAppPostbackUrlClearFlagは、ポストバックURLのクリアフラグです。</ja><br><en>AppPostbackUrlClearFlg\
+    \ is the clear flag of postback URL.</en><hr>\n* `TRUE` - <ja>フラグはONです。</ja><br><en>Flag is ON.</en><br>\n\
+    * `UNKNOWN` - 未知の値です。<br>Unknown Value"

@@ -1,0 +1,71 @@
+FeedItem:
+  type: object
+  properties:
+    accountId:
+      type: integer
+      format: int64
+      description: "<ja>アカウントIDです。</ja><br><en>Account ID</en>"
+    approvalStatus:
+      $ref: 'FeedItemServiceApprovalStatus.yaml#/FeedItemServiceApprovalStatus'
+    customParameters:
+      $ref: 'FeedItemServiceCustomParameters.yaml#/FeedItemServiceCustomParameters'
+    devicePreference:
+      $ref: 'FeedItemServiceDevicePreference.yaml#/FeedItemServiceDevicePreference'
+    disapprovalReasonCodes:
+      type: array
+      items:
+        type: string
+      description: "<ja>審査否認理由です。</ja><br><en>Reject reason on editorial review</en>"
+    endDate:
+      type: string
+      description: "<ja>配信終了日です。<br>※空で設定すると、既存の配信終了日は削除されます。</ja><br><en>End date\
+        \ of ad display<br>∗On setting blank, existing end date of ad display will\
+        \ be deleted</en>"
+    feedId:
+      type: integer
+      format: int64
+      description: "<ja>フィードIDです。</ja><br><en>Feed ID</en>"
+    feedItemAttribute:
+      type: array
+      items:
+        $ref: 'FeedItemServiceAttribute.yaml#/FeedItemServiceAttribute'
+    feedItemId:
+      type: integer
+      format: int64
+      description: "<ja>フィードアイテムIDです。</ja><br><en>Feed Item ID</en>"
+    feedItemTrackId:
+      type: integer
+      format: int64
+      description: "<ja>トラッキング用フィードアイテムIDです。</ja><br><en>Feed\
+        \ Item ID for tracking</en>"
+    invalidedTrademarks:
+      type: array
+      items:
+        type: string
+      description: "<ja>制限された商標</ja><br><en>Invalided trademarks.</en>"
+    location:
+      $ref: 'FeedItemServiceLocation.yaml#/FeedItemServiceLocation'
+    placeholderType:
+      $ref: 'FeedItemServicePlaceholderType.yaml#/FeedItemServicePlaceholderType'
+    reviewCustomParameters:
+      $ref: 'FeedItemServiceCustomParameters.yaml#/FeedItemServiceCustomParameters'
+    scheduling:
+      $ref: 'FeedItemServiceScheduling.yaml#/FeedItemServiceScheduling'
+    startDate:
+      type: string
+      description: "<ja>配信開始日です。<br>※空で設定すると、既存の配信開始日は削除されます。</ja><br><en>Start date\
+        \ of ad display<br>∗On setting blank, existing start date of ad display will\
+        \ be deleted</en>"
+    targetingAdGroup:
+      $ref: 'FeedItemServiceTargetingAdGroup.yaml#/FeedItemServiceTargetingAdGroup'
+    targetingCampaign:
+      $ref: 'FeedItemServiceTargetingCampaign.yaml#/FeedItemServiceTargetingCampaign'
+    targetingKeyword:
+      $ref: 'FeedItemServiceTargetingKeyword.yaml#/FeedItemServiceTargetingKeyword'
+    trademarkStatus:
+      $ref: 'FeedItemServiceTrademarkStatus.yaml#/FeedItemServiceTrademarkStatus'
+  title: FeedItem
+  description: "<ja>FeedItemオブジェクトは、フィードアイテム情報を格納します。</ja><br><en>FeedItem object\
+    \ contains the information of Feed Item.</en><hr><details><summary>Requirement</summary><table\
+    \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>accountId</td><td>-</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>approvalStatus</td><td>-</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>customParameters</td><td>-</td><td>Ignore<br><ja>※クイックリンクオプションの場合、Optional</ja><br><en>* Optional for QUICKLINK.</en></td><td>Ignore<br><ja>※クイックリンクオプションの場合、Optional</ja><br><en>* Optional for QUICKLINK.</en></td><td>Ignore</td></tr><tr><td>devicePreference</td><td>-</td><td>Optional<br><ja>※電話番号オプションの場合、Optional<br>※Default:\
+    \ SMART_PHONE</ja><br><en>* Optional for CALLEXTENSION.<br>* Default: SMART_PHONE</en></td><td>Optional<br><ja>※電話番号オプションの場合、Ignore</ja><br><en>* Ignore for CALLEXTENSION.</en></td><td>Ignore</td></tr><tr><td>disapprovalReasonCodes</td><td>-</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>endDate</td><td>-</td><td>Optional</td><td>Optional</td><td>Ignore</td></tr><tr><td>feedItemAttribute</td><td>-</td><td>Requirement</td><td>Optional</td><td>Ignore</td></tr><tr><td>feedItemId</td><td>-</td><td>Ignore</td><td>Requirement</td><td>Requirement</td></tr><tr><td>feedItemTrackId</td><td>-</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>invalidedTrademarks</td><td>-</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>placeholderType</td><td>-</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>reviewCustomParameters</td><td>-</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>scheduling</td><td>-</td><td>Optional</td><td>Optional</td><td>Ignore</td></tr><tr><td>startDate</td><td>-</td><td>Optional</td><td>Optional</td><td>Ignore</td></tr><tr><td>targetingAdGroup</td><td>-</td><td>Ignore<br><ja>※アドカスタマイザーの場合、Optional</ja><br><en>* Optional for AD_CUSTOMIZER.</en></td><td>Ignore<br><ja>※アドカスタマイザーの場合、Optional</ja><br><en>* Optional for AD_CUSTOMIZER.</en></td><td>Ignore</td></tr><tr><td>targetingCampaign</td><td>-</td><td>Ignore<br><ja>※アドカスタマイザーの場合、Optional</ja><br><en>* Optional for AD_CUSTOMIZER.</en></td><td>Ignore<br><ja>※アドカスタマイザーの場合、Optional</ja><br><en>* Optional for AD_CUSTOMIZER.</en></td><td>Ignore</td></tr><tr><td>targetingKeyword</td><td>-</td><td>Ignore<br><ja>※アドカスタマイザーの場合、Optional</ja><br><en>* Optional for AD_CUSTOMIZER.</en></td><td>Ignore<br><ja>※アドカスタマイザーの場合、Optional</ja><br><en>* Optional for AD_CUSTOMIZER.</en></td><td>Ignore</td></tr><tr><td>trademarkStatus</td><td>-</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>feedId</td><td>-</td><td>Ignore<br><ja>※アドカスタマイザーの場合、Requirement</ja><br><en>* Requirement for AD_CUSTOMIZER.</en></td><td>Ignore</td><td>Ignore</td></tr><tr><td>location</td><td>-</td><td>Ignore<br><ja>※アドカスタマイザーの場合、Optional</ja><br><en>* Optional for AD_CUSTOMIZER.</en></td><td>Ignore</td><td>Ignore</td></tr></table></details>"

@@ -1,0 +1,23 @@
+FeedServicePlaceholderField:
+  type: string
+  enum:
+  - AD_CUSTOMIZER_INTEGER
+  - AD_CUSTOMIZER_PRICE
+  - AD_CUSTOMIZER_DATE
+  - AD_CUSTOMIZER_STRING
+  - DYNAMIC_AD_FOR_SEARCH_PAGE_FEEDS_PAGE_URL
+  - DYNAMIC_AD_FOR_SEARCH_PAGE_FEEDS_LABEL
+  - UNKNOWN
+  title: FeedServicePlaceholderField
+  description: "<ja>FeedServicePlaceholderFieldは、FeedItem情報の内容を選択します。</ja><br><en>FeedServicePlaceholderField\
+    \ object select the details of Feed Item information.</en><hr>\n* `AD_CUSTOMIZER_STRING`\
+    \ - <ja>データ自動挿入（STRINGタイプの入力定義）です。</ja><br><en>Data Auto Insertion (Input of STRING\
+    \ type).</en><br>\n* `DYNAMIC_AD_FOR_SEARCH_PAGE_FEEDS_PAGE_URL` - <ja>動的検索型連動広告ページフィードのページURLです。</ja><br><en>Page\
+    \ url of Dynamic ad for search page feeds.</en><br>\n* `DYNAMIC_AD_FOR_SEARCH_PAGE_FEEDS_LABEL`\
+    \ - <ja>動的検索型連動広告ページフィードのラベルです。</ja><br><en>Label of Dynamic ad for search page\
+    \ feeds.</en><br>\n* `AD_CUSTOMIZER_INTEGER` - <ja>データ自動挿入（INTEGERタイプの入力定義）です。</ja><br><en>Data\
+    \ Auto Insertion (Input of INTEGER type).</en><br>\n* `AD_CUSTOMIZER_PRICE` -\
+    \ <ja>データ自動挿入（PRICEタイプの入力定義）です。</ja><br><en>Data Auto Insertion (Input of PRICE\
+    \ type).</en><br>\n* `AD_CUSTOMIZER_DATE` - <ja>データ自動挿入（DATEタイプの入力定義）です。</ja><br><en>Data\
+    \ Auto Insertion (Input of DATE type).</en><br>\n* `UNKNOWN` - 未知の値です。<br>Unknown\
+    \ Value"

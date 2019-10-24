@@ -1,0 +1,80 @@
+Account:
+  type: object
+  properties:
+    accountId:
+      type: integer
+      format: int64
+      description: "<ja>アカウントID</ja><br><en>Account ID</en>"
+    accountName:
+      type: string
+      description: "<ja>アカウント名</ja><br><en>Account Name</en>"
+    accountStatus:
+      $ref: 'AccountServiceStatus.yaml#/AccountServiceStatus'
+    accountType:
+      $ref: 'AccountServiceType.yaml#/AccountServiceType'
+    authType:
+      $ref: 'AccountServiceAuthType.yaml#/AccountServiceAuthType'
+    autoTaggingEnabled:
+      $ref: 'AccountServiceAutoTaggingEnabled.yaml#/AccountServiceAutoTaggingEnabled'
+    budget:
+      $ref: 'AccountServiceBudget.yaml#/AccountServiceBudget'
+    deliveryStatus:
+      $ref: 'AccountServiceDeliveryStatus.yaml#/AccountServiceDeliveryStatus'
+    isTestAccount:
+      $ref: 'AccountServiceIsTestAccount.yaml#/AccountServiceIsTestAccount'
+  title: Account
+  description: |
+    <ja>Accountオブジェクトは、アカウントを表します。</ja><br>
+    <en>Search Account</en>
+    <hr>
+    <details><summary>Requirement</summary>
+    <table border='1'>
+      <tr>
+        <th>PROPERTY</th>
+        <th>SET</th>
+      </tr>
+      <tr>
+        <td>accountStatus</td>
+        <td>─</td>
+      </tr>
+      <tr>
+        <td>accountType</td>
+        <td>─</td>
+      </tr>
+      <tr>
+        <td>budget</td>
+        <td>─</td>
+      </tr>
+      <tr>
+      <td>accountId</td>
+        <td>Requirement<br>
+        <i>NotUpdatable</i></td>
+      </tr>
+      <tr>
+        <td>authType</td>
+        <td>─</td>
+      </tr>
+      <tr>
+        <td>accountName</td>
+        <td>
+          Optional<br>
+          <i>Updatable</i>
+        </td>
+      </tr>
+      <tr>
+        <td>autoTaggingEnabled</td>
+        <td>Optional<br>
+        default: FALSE<br>
+        <i>Updatable</i></td>
+      </tr>
+      <tr>
+        <td>deliveryStatus</td>
+        <td>Optional<br>
+          <i>Updatable</i>
+        </td>
+      </tr>
+      <tr>
+        <td>isTestAccount</td>
+        <td>─</td>
+      </tr>
+      </table></details>

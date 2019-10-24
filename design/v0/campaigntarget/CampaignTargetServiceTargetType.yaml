@@ -1,0 +1,14 @@
+CampaignTargetServiceTargetType:
+  type: string
+  enum:
+  - LOCATION
+  - SCHEDULE
+  - NETWORK
+  - PLATFORM
+  - UNKNOWN
+  title: CampaignTargetServiceTargetType
+  description: "<ja>CampaignTargetServiceTargetTypeは、キャンペーンのターゲティング設定を表します。</ja><br><en>Type\
+    \ of target setting.</en><hr>\n* `LOCATION` - <ja>地域ターゲットです。</ja><br><en>LocationTarget.</en><br>\n\
+    * `SCHEDULE` - <ja>時間帯ターゲットです。</ja><br><en>ScheduleTarget.</en><br>\n* `NETWORK`\
+    \ - <ja>ネットワークターゲットです。</ja><br><en>NetworkTarget.</en><br>\n* `PLATFORM` - <ja>デバイスターゲットです。</ja><br><en>PlatformTarget.</en><br>\n\
+    * `UNKNOWN` - 未知の値です。<br>Unknown Value"
