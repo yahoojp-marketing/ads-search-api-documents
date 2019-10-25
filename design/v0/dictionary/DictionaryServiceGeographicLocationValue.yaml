@@ -12,5 +12,4 @@ DictionaryServiceGeographicLocationValue:
       description: "<ja>オペレーション成功です。</ja><br><en>Operation is successful.</en>"
   title: DictionaryServiceGeographicLocationValue
   description: "<ja>DictionaryServiceGeographicLocationValueオブジェクトは、地域情報と処理の内容を表します。</ja><br><en>DictionaryServiceGeographicLocationValue\
-    \ object describes Geographic location and operation information.</en><hr><details><summary>Requirement</summary><table\
-    \ border='1'></table></details>"
+    \ object describes Geographic location and operation information.</en>"

@@ -29,5 +29,4 @@ DictionaryServiceGeographicLocation:
       description: "<ja>上位地域コードです。</ja><br><en>Parent geographic code</en>"
   title: DictionaryServiceGeographicLocation
   description: "<ja>DictionaryServiceGeographicLocationオブジェクトは、地域情報を格納します。</ja><br><en>DictionaryServiceGeographicLocation\
-    \ contains geographic location information.</en><hr><details><summary>Requirement</summary><table\
-    \ border='1'></table></details>"
+    \ contains geographic location information.</en>"

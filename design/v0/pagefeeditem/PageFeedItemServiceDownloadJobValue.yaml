@@ -13,5 +13,4 @@ PageFeedItemServiceDownloadJobValue:
                     process results. If true, the process succeeded. If false, the process failed.</en>"
   title: PageFeedItemServiceDownloadJobValue
   description: "<ja>PageFeedItemServiceDownloadJobValueは、ダウンロードの実行結果を格納するコンテナです。</ja><br><en>PageFeedItemServiceDownloadJobValue\
-    \ retains result of download execution.</en><hr><details><summary>Requirement</summary><table\
-    \ border='1'></table></details>"
+    \ retains result of download execution.</en>"

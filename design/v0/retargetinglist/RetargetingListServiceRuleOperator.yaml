@@ -23,4 +23,4 @@ RetargetingListServiceRuleOperator:
     \ not end with (the specified string).</en><br>\n* `CONTAINS` - <ja>（指定した文字列を）含みます。</ja><br><en>Contains\
     \ or include (the specified string).</en><br>\n* `UNKNOWN` - <ja>未指定です。<br>※読み取り専用で設定はできなくなります。</ja><br><en>Unknown,\
     \ or not been set.<br>*Cannot set for read only.</en><br>\n* `NOT_EQUAL` - <ja>一致しません。</ja><br><en>Do\
-    \ not equal nor match.</en><br>\n* `UNKNOWN` - 未知の値です。<br>Unknown Value"
+    \ not equal nor match.</en>"

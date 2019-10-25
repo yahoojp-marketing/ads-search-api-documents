@@ -140,22 +140,22 @@ tags:
       range, and fields. <br/>It also provides operation to get available report fields for specific report type.</en>
       <h2>レポートフィールド</h2>
       <ul>
-      <li>アカウントレポート: <a href="./reports/ja/ACCOUNT.csv" download>日本語版</a> / <a href="./reports/en/ACCOUNT.csv" download>英語版</a></li>
-      <li>キャンペーンレポート: <a href="./reports/ja/CAMPAIGN.csv" download>日本語版</a> / <a href="./reports/en/CAMPAIGN.csv" download>英語版</a></li>
-      <li>広告グループレポート: <a href="./reports/ja/ADGROUP.csv" download>日本語版</a> / <a href="./reports/en/ADGROUP.csv" download>英語版</a></li>
-      <li>広告レポート: <a href="./reports/ja/AD.csv" download>日本語版</a> / <a href="./reports/en/AD.csv" download>英語版</a></li>
-      <li>キーワードレポート: <a href="./reports/ja/KEYWORDS.csv" download>日本語版</a> / <a href="./reports/en/KEYWORDS.csv" download>英語版</a></li>
-      <li>検索クエリレポート: <a href="./reports/ja/SEARCH_QUERY.csv" download>日本語版</a> / <a href="./reports/en/SEARCH_QUERY.csv" download>英語版</a></li>
-      <li>地域別レポート: <a href="./reports/ja/GEO.csv" download>日本語版</a> / <a href="./reports/en/GEO.csv" download>英語版</a></li>
-      <li>広告表示オプションレポート: <a href="./reports/ja/FEED_ITEM.csv" download>日本語版</a> / <a href="./reports/en/FEED_ITEM.csv" download>英語版</a></li>
-      <li>地域ターゲティングレポート: <a href="./reports/ja/GEO_TARGET.csv" download>日本語版</a> / <a href="./reports/en/GEO_TARGET.csv" download>英語版</a></li>
-      <li>曜日・時間帯ターゲティングレポート: <a href="./reports/ja/SCHEDULE_TARGET.csv" download>日本語版</a> / <a href="./reports/en/SCHEDULE_TARGET.csv" download>英語版</a></li>
-      <li>自動入札レポート: <a href="./reports/ja/BID_STRATEGY.csv" download>日本語版</a> / <a href="./reports/en/BID_STRATEGY.csv" download>英語版</a></li>
-      <li>データ自動挿入レポート: <a href="./reports/ja/AD_CUSTOMIZERS.csv" download>日本語版</a> / <a href="./reports/en/AD_CUSTOMIZERS.csv" download>英語版</a></li>
-      <li>ターゲットリスト設定レポート: <a href="./reports/ja/TARGET_LIST.csv" download>日本語版</a> / <a href="./reports/en/TARGET_LIST.csv" download>英語版</a></li>
-      <li>最終リンク先URLレポート: <a href="./reports/ja/LANDING_PAGE_URL.csv" download>日本語版</a> / <a href="./reports/en/LANDING_PAGE_URL.csv" download>英語版</a></li>
-      <li>検索クエリーレポート（動的検索連動型広告）: <a href="./reports/ja/KEYWORDLESS_QUERY.csv" download>日本語版</a> / <a href="./reports/en/KEYWORDLESS_QUERY.csv" download>英語版</a></li>
-      <li>ページフィードターゲティングレポート: <a href="./reports/ja/WEBPAGE_CRITERION.csv" download>日本語版</a> / <a href="./reports/en/WEBPAGE_CRITERION.csv" download>英語版</a></li>
+      <li><a href="./reports/ja/ACCOUNT.csv" download>アカウントレポート / Account Report</a></li>
+      <li><a href="./reports/ja/CAMPAIGN.csv" download>キャンペーンレポート / Campaign Report</a></li>
+      <li><a href="./reports/ja/ADGROUP.csv" download>広告グループレポート / Ad Group Report</a></li>
+      <li><a href="./reports/ja/AD.csv" download>広告レポート / Ad Report</a></li>
+      <li><a href="./reports/ja/KEYWORDS.csv" download>キーワードレポート / Keyword Report</a></li>
+      <li><a href="./reports/ja/SEARCH_QUERY.csv" download>検索クエリレポート / Search Query Report</a></li>
+      <li><a href="./reports/ja/GEO.csv" download>地域別レポート / Geo Report</a></li>
+      <li><a href="./reports/ja/FEED_ITEM.csv" download>広告表示オプションレポート / Ad Display Option Report</a></li>
+      <li><a href="./reports/ja/GEO_TARGET.csv" download>地域ターゲティングレポート / Geo Targeting Report</a></li>
+      <li><a href="./reports/ja/SCHEDULE_TARGET.csv" download>曜日・時間帯ターゲティングレポート / Schedule Targeting Report</a></li>
+      <li><a href="./reports/ja/BID_STRATEGY.csv" download>自動入札レポート / Auto Bidding Report</a></li>
+      <li><a href="./reports/ja/AD_CUSTOMIZERS.csv" download>データ自動挿入レポート / Data Auto Insertion Report</a></li>
+      <li><a href="./reports/ja/TARGET_LIST.csv" download>ターゲットリスト設定レポート / Target List Setting Report</a></li>
+      <li><a href="./reports/ja/LANDING_PAGE_URL.csv" download>最終リンク先URLレポート / Landing Page URL Report</a></li>
+      <li><a href="./reports/ja/KEYWORDLESS_QUERY.csv" download>検索クエリーレポート（動的検索連動型広告） / Search Query Report (Dynamic Ads for Search)</a></li>
+      <li><a href="./reports/ja/WEBPAGE_CRITERION.csv" download>ページフィードターゲティングレポート / Page Feed Targeting Report</a></li>
       </ul>
   - name: CampaignExportService
     description: |

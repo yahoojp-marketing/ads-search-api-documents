@@ -18,5 +18,4 @@ DictionaryServiceDisapprovalReason:
   title: DictionaryServiceDisapprovalReason
   description: "<ja>DictionaryServiceDisapprovalReason オブジェクトは、 EditorialReason一覧を格納するコンテナです。</ja><br><en>DictionaryServiceDisapprovalReason\
     \ object is a container which stored the Description of disapproval reason and\
-    \ the Recommended solution.</en><hr><details><summary>Requirement</summary><table\
-    \ border='1'></table></details>"
+    \ the Recommended solution.</en>"

@@ -7,3 +7,9 @@ ReportDefinitionServiceReportJobStatus:
   - FAILED
   - UNKNOWN
   title: ReportDefinitionServiceReportJobStatus
+  description: "<ja>ReportDefinitionServiceReportJobStatusは、定義されたレポートの処理状況です。</ja><br><en>A status of the requested report.</en><hr>\n\
+      \ * `WAIT` - <ja>待機中です。</ja><br><en>Please wait for report request to complete.</en><br>\n\
+      \ * `COMPLETED` - <ja>正常に終了しました。</ja><br><en>Report request completed successfully.</en><br>\n\
+      \ * `IN_PROGRESS` - <ja>レポートは作成中です。</ja><br><en>Report is in creating process.</en><br>\n\
+      \ * `FAILED` - <ja>処理が失敗しました。</ja><br><en>Report request failed.</en><br>\n\
+      \ * `UNKNOWN` - 未知の値です。<br>Unknown Value"

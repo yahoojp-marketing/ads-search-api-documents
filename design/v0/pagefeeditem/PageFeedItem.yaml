@@ -32,5 +32,4 @@ PageFeedItem:
       description: "<ja>ページフィードURL。</ja><br><en>Url of page feed</en>"
   title: PageFeedItem
   description: "<ja>PageFeedItemオブジェクトは、ページフィードアイテム情報を格納します。</ja><br><en>PageFeedItem\
-    \ object retains page feed Item.</en><hr><details><summary>Requirement</summary><table\
-    \ border='1'></table></details>"
+    \ object retains page feed Item.</en>"

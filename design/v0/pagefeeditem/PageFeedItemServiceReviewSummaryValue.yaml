@@ -12,5 +12,4 @@ PageFeedItemServiceReviewSummaryValue:
     reviewSummary:
       $ref: 'PageFeedItemServiceReviewSummary.yaml#/PageFeedItemServiceReviewSummary'
   title: PageFeedItemServiceReviewSummaryValue
-  description: "<ja>PageFeedItemServiceReviewSummaryValueは、ページフィードアイテムの審査成績、状況サマリー取得結果を格納するコンテナです。</ja><br><en>PageFeedItemServiceReviewSummaryValueは、ページフィードアイテムの審査成績、状況サマリー取得結果を格納するコンテナです。</en><hr><details><summary>Requirement</summary><table\
-    \ border='1'></table></details>"
+  description: "<ja>PageFeedItemServiceReviewSummaryValueは、ページフィードアイテムの審査成績、状況サマリー取得結果を格納するコンテナです。</ja><br><en>PageFeedItemServiceReviewSummaryValue is a container storing the examination results of the page feed item, acquisitionc result of situation summary.</en>"

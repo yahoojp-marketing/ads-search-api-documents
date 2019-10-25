@@ -37,4 +37,4 @@ PageFeedItemServiceDownloadJob:
   title: PageFeedItemServiceDownloadJob
   description: "<ja>PageFeedItemServiceDownloadJobオブジェクトは、ページフィードアイテム情報をダウンロードする処理内容を格納します。</ja><br><en>PageFeedItemServiceDownloadJob\
     \ object retains contents of page feed item information for download.</en><hr><details><summary>Requirement</summary><table\
-    \ border='1'></table></details>"
+    \ border='1'><tr><th>PROPERTY</th><th>addDownloadJob</th></tr><tr><td>accountId</td><td>Requirement</td></tr><tr><td>bulkEncoding</td><td>Optional<br>Default：SJIS</td></tr><tr><td>bulkLang</td><td>Optional<br>Default：JA</td></tr><tr><td>bulkOutput</td><td>Optional<br>Default：CSV</td></tr><tr><td>downloadJobStatus</td><td>Ignore</td></tr><tr><td>endDate</td><td>Ignore</td></tr><tr><td>feedIds</td><td>Requirement</td></tr><tr><td>jobId</td><td>Ignore</td></tr><tr><td>progress</td><td>Ignore</td></tr><tr><td>startDate</td><td>Ignore</td></tr></table></details>"

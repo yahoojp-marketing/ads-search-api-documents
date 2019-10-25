@@ -33,5 +33,4 @@ PageFeedItemServiceUploadJob:
       $ref: 'PageFeedItemServiceUploadJobStatus.yaml#/PageFeedItemServiceUploadJobStatus'
   title: PageFeedItemServiceUploadJob
   description: "<ja>PageFeedItemServiceUploadJobオブジェクトは、ページフィードアイテム情報をダウンロードする処理内容を格納します。</ja><br><en>PageFeedItemServiceUploadJob\
-    \ object retains contents of page feed item information for upload.</en><hr><details><summary>Requirement</summary><table\
-    \ border='1'></table></details>"
+    \ object retains contents of page feed item information for upload.</en>"
