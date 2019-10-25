@@ -1,6 +1,6 @@
 openapi: 3.0.2
 info:
-  title: 'Yahoo!広告 検索広告 API リファレンス β / Yahoo! Ads Search Ads API Reference β'
+  title: 'Yahoo!広告 検索広告 API リファレンス β版 / Yahoo! Ads Search Ads API Reference β Version'
   version: 'v0'
   description: |
     <ja>Yahoo!広告 検索広告 APIのWebサービスについて説明します。<br>
