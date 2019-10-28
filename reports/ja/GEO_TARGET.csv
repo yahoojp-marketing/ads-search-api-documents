@@ -1,4 +1,4 @@
-"フィールド名/Field Name","日本語表示名称/Japanese Display Name","英語表示名称/English Display Name","XML属性/XML Attribute","型/Type","表示回数0回のレコード取得指定可否/Supports Zero Impressions","組合せ不可フィールド/Not compatible fields","動作区分/Behavior Type"
+﻿"フィールド名/Field Name","日本語表示名称/Japanese Display Name","英語表示名称/English Display Name","XML属性/XML Attribute","型/Type","表示回数0回のレコード取得指定可否/Supports Zero Impressions","組合せ不可フィールド/Not compatible fields","動作区分/Behavior Type"
 "CAMPAIGN_ID","キャンペーンID","CampaignID","campaignID","LONG","true",,"Attribute"
 "CAMPAIGN_NAME","キャンペーン名","Campaign Name","campaignName","STRING","true",,"Attribute"
 "COST","コスト","Cost","cost","LONG","true",,"Metric"
@@ -6,7 +6,6 @@
 "CLICKS","クリック数","Clicks","clicks","LONG","true",,"Metric"
 "CLICK_RATE","クリック率","CTR","ctr","DOUBLE","true",,"Metric"
 "AVG_CPC","平均CPC","Avg. CPC","averageCpc","DOUBLE","true",,"Metric"
-"AVG_DELIVER_RANK","平均掲載順位","Avg. Position","averagePosition","DOUBLE","true",,"Metric"
 "BID_MULTIPLIER","入札価格調整率(％)","Bid Adjustment(%)","bidAdjustment","LONG","true",,"Attribute"
 "TARGET_LOCATION_ID","地域ID","Target Location ID","targetLocationID","STRING","true",,"Attribute"
 "TARGET_LOCATION_NAME","地域","Target Location Name","targetLocationName","STRING","true",,"Attribute"
