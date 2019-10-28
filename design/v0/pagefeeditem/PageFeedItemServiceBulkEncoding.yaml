@@ -8,6 +8,6 @@ PageFeedItemServiceBulkEncoding:
   title: PageFeedItemServiceBulkEncoding
   description: "<ja>PageFeedItemServiceBulkEncodingは、ページフィードアイテムファイルのエンコーディング形式（文字コード）を表します。</ja><br><en>PageFeedItemServiceBulkEncoding\
     \ displays encoding(character code) of Page feed item file.</en><hr>\n* `UTF_8`\
-    \ - <ja>UTF_8形式</ja><br><en>Character code:UTF_8</en><br>\n* `UTF_16LE` - <ja>UTF_16LE形式</ja><br><en>Character\
-    \ code:UTF_16LE</en><br>\n* `SJIS` - <ja>SJIS形式</ja><br><en>Character code:SJIS</en><br>\n\
+    \ - <ja>UTF-8形式</ja><br><en>Character code:UTF-8</en><br>\n* `UTF-16LE` - <ja>UTF-16LE形式</ja><br><en>Character\
+    \ code:UTF-16LE</en><br>\n* `SJIS` - <ja>SJIS形式</ja><br><en>Character code:SJIS</en><br>\n\
     * `UNKNOWN` - 未知の値です。<br>Unknown Value"
