@@ -13,6 +13,23 @@ info:
     As one of redirect URI for application, you need to set "https://yahoojp-marketing.github.io/ads-search-api-documents/oauth2-redirect.html".
     </en>
 
+components:
+  securitySchemes:
+    oAuth:
+      type: oauth2
+      flows:
+        authorizationCode:
+          authorizationUrl: https://biz-oauth.yahoo.co.jp/oauth/v1/authorize
+          tokenUrl: https://biz-oauth.yahoo.co.jp/oauth/v1/token
+          scopes:
+            yahooads: アプリケーションを経由したYahoo!広告の各機能の操作/Operation by each function of Yahoo! Ads via applications.
+security:
+  - oAuth: [yahooads]
+
+servers:
+  - url: https://ads-search.yahooapis.jp/api/v0
+
+
 tags:
   - name: AccountService
     description: |
@@ -219,7 +236,7 @@ paths:
   ################## AccountService
   /AccountService/get:
     post:
-      description: '<ja>アカウントに関する情報を取得します。契約状況などのフィルタ条件を設定することが可能です。</ja><br></en>Returns
+      description: '<ja>アカウントに関する情報を取得します。契約状況などのフィルタ条件を設定することが可能です。</ja><br><en>Returns
         the account information. Enable to set the filter condition, such as the account
         Type.</en>'
       tags:
@@ -302,7 +319,7 @@ paths:
             </details>
   /AccountService/set:
     post:
-      description: '<ja>アカウントに関する情報を更新します。</ja><br></en>Updates the information related
+      description: '<ja>アカウントに関する情報を更新します。</ja><br><en>Updates the information related
         to the account.</en>'
       tags:
         - AccountService
@@ -386,7 +403,7 @@ paths:
             </details>
   /AccountSharedService/get:
     post:
-      description: '<ja>対象外キーワードリストの情報を取得します。</ja><br></en>Get negative keyword list
+      description: '<ja>対象外キーワードリストの情報を取得します。</ja><br><en>Get negative keyword list
         information.</en>'
       tags:
         - AccountSharedService
@@ -469,7 +486,7 @@ paths:
             </details>
   /AccountSharedService/add:
     post:
-      description: '<ja>アカウントに対象外キーワードリストを追加します。</ja><br></en>Add negative keyword
+      description: '<ja>アカウントに対象外キーワードリストを追加します。</ja><br><en>Add negative keyword
         list to account.</en>'
       tags:
         - AccountSharedService
@@ -552,7 +569,7 @@ paths:
             </details>
   /AccountSharedService/set:
     post:
-      description: '<ja>対象外キーワードリストの設定を変更します。</ja><br></en>Update negative keyword
+      description: '<ja>対象外キーワードリストの設定を変更します。</ja><br><en>Update negative keyword
         list information of account.</en>'
       tags:
         - AccountSharedService
@@ -635,7 +652,7 @@ paths:
             </details>
   /AccountSharedService/remove:
     post:
-      description: '<ja>アカウントから対象外キーワードリストを削除します。</ja><br></en>Remove negative keyword
+      description: '<ja>アカウントから対象外キーワードリストを削除します。</ja><br><en>Remove negative keyword
         list from account.</en>'
       tags:
         - AccountSharedService
@@ -720,7 +737,7 @@ paths:
             </details>
   /AdGroupBidMultiplierService/get:
     post:
-      description: '<ja>広告グループに関する入札価格調整率を取得します。</ja><br></en>Gets bid multiplier
+      description: '<ja>広告グループに関する入札価格調整率を取得します。</ja><br><en>Gets bid multiplier
         of adgroup</en>'
       tags:
         - AdGroupBidMultiplierService
@@ -803,7 +820,7 @@ paths:
             </details>
   /AdGroupBidMultiplierService/set:
     post:
-      description: '<ja>広告グループに関する入札価格調整率を設定、更新します。</ja><br></en>Updates adgroup bid
+      description: '<ja>広告グループに関する入札価格調整率を設定、更新します。</ja><br><en>Updates adgroup bid
         multiplier.</en>'
       tags:
         - AdGroupBidMultiplierService
@@ -886,7 +903,7 @@ paths:
             </details>
   /AdGroupBidMultiplierService/remove:
     post:
-      description: '<ja>広告グループに設定済みの入札価格調整率を削除します。</ja><br></en>Remove bid multiplier
+      description: '<ja>広告グループに設定済みの入札価格調整率を削除します。</ja><br><en>Remove bid multiplier
         which already set to ad group.</en>'
       tags:
         - AdGroupBidMultiplierService
@@ -971,7 +988,7 @@ paths:
             </details>
   /AdGroupService/get:
     post:
-      description: '<ja>広告グループに関する情報を取得します。</ja><br></en>Gets Ad group information.</en>'
+      description: '<ja>広告グループに関する情報を取得します。</ja><br><en>Gets Ad group information.</en>'
       tags:
         - AdGroupService
       requestBody:
@@ -1065,7 +1082,7 @@ paths:
             </details>
   /AdGroupService/add:
     post:
-      description: '<ja>広告グループを追加します。</ja><br></en>Create Ad group information.</en>'
+      description: '<ja>広告グループを追加します。</ja><br><en>Create Ad group information.</en>'
       tags:
         - AdGroupService
       requestBody:
@@ -1159,7 +1176,7 @@ paths:
             </details>
   /AdGroupService/set:
     post:
-      description: '<ja>広告グループを更新します。</ja><br></en>Updates Ad group information.</en>'
+      description: '<ja>広告グループを更新します。</ja><br><en>Updates Ad group information.</en>'
       tags:
         - AdGroupService
       requestBody:
@@ -1253,7 +1270,7 @@ paths:
             </details>
   /AdGroupService/remove:
     post:
-      description: '<ja>広告グループを削除します。</ja><br></en>Removes Ad group information.</en>'
+      description: '<ja>広告グループを削除します。</ja><br><en>Removes Ad group information.</en>'
       tags:
         - AdGroupService
       requestBody:
@@ -1349,7 +1366,7 @@ paths:
             </details>
   /AdGroupAdService/get:
     post:
-      description: '<ja>広告に関する情報を取得します。</ja><br></en>Returns ad information.</en>'
+      description: '<ja>広告に関する情報を取得します。</ja><br><en>Returns ad information.</en>'
       tags:
         - AdGroupAdService
       requestBody:
@@ -1439,7 +1456,7 @@ paths:
             </details>
   /AdGroupAdService/add:
     post:
-      description: '<ja>広告に関する情報を追加します。</ja><br></en>Add informations of ad.</en>'
+      description: '<ja>広告に関する情報を追加します。</ja><br><en>Add informations of ad.</en>'
       tags:
         - AdGroupAdService
       requestBody:
@@ -1529,7 +1546,7 @@ paths:
             </details>
   /AdGroupAdService/set:
     post:
-      description: '<ja>広告に関する情報を更新します。</ja><br></en>Updates ad information.</en>'
+      description: '<ja>広告に関する情報を更新します。</ja><br><en>Updates ad information.</en>'
       tags:
         - AdGroupAdService
       requestBody:
@@ -1619,7 +1636,7 @@ paths:
             </details>
   /AdGroupAdService/remove:
     post:
-      description: '<ja>広告に関する情報を削除します。</ja><br></en>Remove ad information.</en>'
+      description: '<ja>広告に関する情報を削除します。</ja><br><en>Remove ad information.</en>'
       tags:
         - AdGroupAdService
       requestBody:
@@ -1709,7 +1726,7 @@ paths:
             </details>
   /AdGroupAdService/setTrademarkStatus:
     post:
-      description: '<ja>商標の使用制限が解除されている場合は、制限が解除された旨の値が返却されます。</ja><br></en>When the trademark restriction is removed, a value indicates "removed" will be returned.</en>'
+      description: '<ja>商標の使用制限が解除されている場合は、制限が解除された旨の値が返却されます。</ja><br><en>When the trademark restriction is removed, a value indicates "removed" will be returned.</en>'
       tags:
         - AdGroupAdService
       requestBody:
@@ -1801,7 +1818,7 @@ paths:
             </details>
   /AdGroupFeedService/get:
     post:
-      description: '<ja>広告グループに設定されているFeedItem情報を取得します。</ja><br></en>Returns FeedItem
+      description: '<ja>広告グループに設定されているFeedItem情報を取得します。</ja><br><en>Returns FeedItem
         information of ad groups.</en>'
       tags:
         - AdGroupFeedService
@@ -1889,7 +1906,7 @@ paths:
       ・1つの広告グループに設定できるFeedItem情報は、QUICKLINKS、CALLEXTENSIONでそれぞれ20件までです。<br>
       ・CALLEXTENSIONについては1広告グループあたり1件の設定をお薦めします。<br>
       ・1リクエスト内で同一のadGroupIdに複数のFeedItem情報を設定できません。</ja><br>
-      </en>Add, update or release(remove) FeedItem information of ad group.<br>
+      <en>Add, update or release(remove) FeedItem information of ad group.<br>
        Update will overwrite the old information, so have to include the additional information on every updates. <br>
        ・To release FeedItem information, update with blank data.<br>・It is possible to set FeedItem information to ad groups in different campaigns by single request.<br>
        ・FeedItem information that can be set for a single ad group is up to 20 for each QUICKLINKS, CALLEXTENSION.<br>
@@ -1978,7 +1995,7 @@ paths:
             </details>
   /AdGroupAdLabelService/add:
     post:
-      description: '<ja>ラベルと広告の紐付けを登録します。</ja><br></en>Add informations of related
+      description: '<ja>ラベルと広告の紐付けを登録します。</ja><br><en>Add informations of related
         ad and label.</en>'
       tags:
         - AdGroupAdLabelService
@@ -2060,7 +2077,7 @@ paths:
             </details>
   /AdGroupAdLabelService/remove:
     post:
-      description: '<ja>ラベルと広告グループの紐付けを削除します。</ja><br></en>Remove informations of
+      description: '<ja>ラベルと広告グループの紐付けを削除します。</ja><br><en>Remove informations of
         related ad and label.</en>'
       tags:
         - AdGroupAdLabelService
@@ -2144,7 +2161,7 @@ paths:
             </details>
   /AdGroupCriterionService/get:
     post:
-      description: '<ja>広告グループに関するクライテリアを取得します。</ja><br></en>Get criteria of Ad group.</en>'
+      description: '<ja>広告グループに関するクライテリアを取得します。</ja><br><en>Get criteria of Ad group.</en>'
       tags:
         - AdGroupCriterionService
       requestBody:
@@ -2241,7 +2258,7 @@ paths:
             </details>
   /AdGroupCriterionService/add:
     post:
-      description: '<ja>広告グループに関するクライテリアを追加します。</ja><br></en>Add Ad group criteria.</en>'
+      description: '<ja>広告グループに関するクライテリアを追加します。</ja><br><en>Add Ad group criteria.</en>'
       tags:
         - AdGroupCriterionService
       requestBody:
@@ -2338,7 +2355,7 @@ paths:
             </details>
   /AdGroupCriterionService/set:
     post:
-      description: '<ja>広告グループに関するクライテリアを更新します。</ja><br></en>Update or change Ad group
+      description: '<ja>広告グループに関するクライテリアを更新します。</ja><br><en>Update or change Ad group
         criteria.</en>'
       tags:
         - AdGroupCriterionService
@@ -2436,7 +2453,7 @@ paths:
             </details>
   /AdGroupCriterionService/remove:
     post:
-      description: '<ja>広告グループに関するクライテリアを削除します。</ja><br></en>Removes Ad group criteria.</en>'
+      description: '<ja>広告グループに関するクライテリアを削除します。</ja><br><en>Removes Ad group criteria.</en>'
       tags:
         - AdGroupCriterionService
       requestBody:
@@ -2535,7 +2552,7 @@ paths:
             </details>
   /AdGroupWebpageService/get:
     post:
-      description: '<ja>広告グループに設定されているPageFeedItemの配信/除外設定を取得します。</ja><br></en>Get
+      description: '<ja>広告グループに設定されているPageFeedItemの配信/除外設定を取得します。</ja><br><en>Get
         allowed or excluded settings of PageFeedItem setting in ad group.</en>'
       tags:
         - AdGroupWebpageService
@@ -2620,7 +2637,7 @@ paths:
             </details>
   /AdGroupWebpageService/add:
     post:
-      description: '<ja>広告グループにPageFeedItemを配信、又は、除外として設定します。<br>※1リクエストで異なるキャンペーン配下の広告グループに対してWebページ情報の設定が可能です。<br>※1リクエスト内で同一のadGroupIdに同一組み合わせのWebpageParameterを設定できません。</ja><br></en>Set allowed
+      description: '<ja>広告グループにPageFeedItemを配信、又は、除外として設定します。<br>※1リクエストで異なるキャンペーン配下の広告グループに対してWebページ情報の設定が可能です。<br>※1リクエスト内で同一のadGroupIdに同一組み合わせのWebpageParameterを設定できません。</ja><br><en>Set allowed
         or excluded settings of PageFeedItem for ad group. <br>∗ With one request, web
         page information can be set for ad group under different campaign. <br>∗ Within
         one request, you can not set the same combination WebpageParameter to the
@@ -2708,7 +2725,7 @@ paths:
             </details>
   /AdGroupWebpageService/set:
     post:
-      description: '<ja>広告グループにPageFeedItemを配信、又は、除外として設定します。<br>※1リクエストで異なるキャンペーン配下の広告グループに対してWebページ情報の設定が可能です。<br>※1リクエスト内で同一のadGroupIdに同一組み合わせのWebpageParameterを設定できません。</ja><br></en>Set allowed
+      description: '<ja>広告グループにPageFeedItemを配信、又は、除外として設定します。<br>※1リクエストで異なるキャンペーン配下の広告グループに対してWebページ情報の設定が可能です。<br>※1リクエスト内で同一のadGroupIdに同一組み合わせのWebpageParameterを設定できません。</ja><br><en>Set allowed
         or excluded settings of PageFeedItem for ad group. <br>∗ With one request, web
         page information can be set for ad group under different campaign. <br>∗ Within
         one request, you can not set the same combination WebpageParameter to the
@@ -2796,7 +2813,7 @@ paths:
             </details>
   /AdGroupWebpageService/remove:
     post:
-      description: '<ja>広告グループに関連付けしているPageFeedItemを解除します。</ja><br></en>Remove PageFeedItem
+      description: '<ja>広告グループに関連付けしているPageFeedItemを解除します。</ja><br><en>Remove PageFeedItem
         associated with ad group.</en>'
       tags:
         - AdGroupWebpageService
@@ -2883,7 +2900,7 @@ paths:
             </details>
   /AuditLogService/get:
     post:
-      description: '<ja>操作履歴のダウンロードURLを取得します。</ja><br></en>Get the download URL for
+      description: '<ja>操作履歴のダウンロードURLを取得します。</ja><br><en>Get the download URL for
         operation history data.</en>'
       tags:
         - AuditLogService
@@ -2965,7 +2982,7 @@ paths:
             </details>
   /AuditLogService/addJob:
     post:
-      description: '<ja>操作履歴ファイルをダウンロードするためのジョブを登録します。</ja><br></en>Add a job to download
+      description: '<ja>操作履歴ファイルをダウンロードするためのジョブを登録します。</ja><br><en>Add a job to download
         operation history data file.</en>'
       tags:
         - AuditLogService
@@ -3130,7 +3147,7 @@ paths:
             </details>
   /BiddingStrategyService/get:
     post:
-      description: '<ja>自動入札設定に関する情報を取得します。</ja><br></en>Returns auto bidding information.</en>'
+      description: '<ja>自動入札設定に関する情報を取得します。</ja><br><en>Returns auto bidding information.</en>'
       tags:
         - BiddingStrategyService
       requestBody:
@@ -3213,7 +3230,7 @@ paths:
             </details>
   /BiddingStrategyService/add:
     post:
-      description: '<ja>自動入札設定を追加します。</ja><br></en>Creates the Auto bidding.</en>'
+      description: '<ja>自動入札設定を追加します。</ja><br><en>Creates the Auto bidding.</en>'
       tags:
         - BiddingStrategyService
       requestBody:
@@ -3296,7 +3313,7 @@ paths:
             </details>
   /BiddingStrategyService/set:
     post:
-      description: '<ja>自動入札設定を更新します。</ja><br></en>Updates an auto bidding.</en>'
+      description: '<ja>自動入札設定を更新します。</ja><br><en>Updates an auto bidding.</en>'
       tags:
         - BiddingStrategyService
       requestBody:
@@ -3379,7 +3396,7 @@ paths:
             </details>
   /BiddingStrategyService/remove:
     post:
-      description: '<ja>自動入札設定を削除します。</ja><br></en>Remove the auto bidding setting.</en>'
+      description: '<ja>自動入札設定を削除します。</ja><br><en>Remove the auto bidding setting.</en>'
       tags:
         - BiddingStrategyService
       requestBody:
@@ -3464,7 +3481,7 @@ paths:
             </details>
   /CampaignService/get:
     post:
-      description: '<ja>キャンペーンに関する情報を取得します。</ja><br></en>Gets information related
+      description: '<ja>キャンペーンに関する情報を取得します。</ja><br><en>Gets information related
         to campaigns.</en>'
       tags:
         - CampaignService
@@ -3565,7 +3582,7 @@ paths:
             </details>
   /CampaignService/add:
     post:
-      description: '<ja>キャンペーンを追加します。</ja><br></en>Add campaign information.</en>'
+      description: '<ja>キャンペーンを追加します。</ja><br><en>Add campaign information.</en>'
       tags:
         - CampaignService
       requestBody:
@@ -3665,7 +3682,7 @@ paths:
             </details>
   /CampaignService/set:
     post:
-      description: '<ja>キャンペーンを更新します。</ja><br></en>Updates the information related
+      description: '<ja>キャンペーンを更新します。</ja><br><en>Updates the information related
         to campaigns.</en>'
       tags:
         - CampaignService
@@ -3766,7 +3783,7 @@ paths:
             </details>
   /CampaignService/remove:
     post:
-      description: '<ja>キャンペーンを削除します。</ja><br></en>Removes the inforamtion related
+      description: '<ja>キャンペーンを削除します。</ja><br><en>Removes the inforamtion related
         to campaigns.</en>'
       tags:
         - CampaignService
@@ -3869,7 +3886,7 @@ paths:
             </details>
   /CampaignCriterionService/get:
     post:
-      description: '<ja>キャンペーンの除外クライテリアに関する情報を取得します。</ja><br></en>Gets negative criteria
+      description: '<ja>キャンペーンの除外クライテリアに関する情報を取得します。</ja><br><en>Gets negative criteria
         in campaign-level.</en>'
       tags:
         - CampaignCriterionService
@@ -3954,7 +3971,7 @@ paths:
             </details>
   /CampaignCriterionService/add:
     post:
-      description: '<ja>キャンペーンの除外クライテリアを追加します。</ja><br></en>Add negative criteria
+      description: '<ja>キャンペーンの除外クライテリアを追加します。</ja><br><en>Add negative criteria
         in campaign-level.</en>'
       tags:
         - CampaignCriterionService
@@ -4039,7 +4056,7 @@ paths:
             </details>
   /CampaignCriterionService/remove:
     post:
-      description: '<ja>キャンペーンの除外クライテリアを削除します。</ja><br></en>Removed negative criteria
+      description: '<ja>キャンペーンの除外クライテリアを削除します。</ja><br><en>Removed negative criteria
         in campaign-level.</en>'
       tags:
         - CampaignCriterionService
@@ -4126,7 +4143,7 @@ paths:
             </details>
   /AdGroupLabelService/add:
     post:
-      description: '<ja>ラベルと広告グループの紐付けを登録します。</ja><br></en>Add informations of related
+      description: '<ja>ラベルと広告グループの紐付けを登録します。</ja><br><en>Add informations of related
         ad group and label.</en>'
       tags:
         - AdGroupLabelService
@@ -4208,7 +4225,7 @@ paths:
             </details>
   /AdGroupLabelService/remove:
     post:
-      description: '<ja>ラベルと広告グループの紐付けを削除します。</ja><br></en>Remove informations of
+      description: '<ja>ラベルと広告グループの紐付けを削除します。</ja><br><en>Remove informations of
         related ad group and label.</en>'
       tags:
         - AdGroupLabelService
@@ -4292,7 +4309,7 @@ paths:
             </details>
   /AdGroupCriterionLabelService/add:
     post:
-      description: '<ja>ラベルと広告グループのクライテリアの紐付けを登録します。</ja><br></en>Add informations
+      description: '<ja>ラベルと広告グループのクライテリアの紐付けを登録します。</ja><br><en>Add informations
         of related conditions (criteria) of ad group and label.</en>'
       tags:
         - AdGroupCriterionLabelService
@@ -4375,7 +4392,7 @@ paths:
             </details>
   /AdGroupCriterionLabelService/remove:
     post:
-      description: '<ja>ラベルと広告グループのクライテリアの紐付けを削除します。</ja><br></en>Remove informations
+      description: '<ja>ラベルと広告グループのクライテリアの紐付けを削除します。</ja><br><en>Remove informations
         of related conditions (criteria) of ad group and label.</en>'
       tags:
         - AdGroupCriterionLabelService
@@ -4460,7 +4477,7 @@ paths:
             </details>
   /LabelService/get:
     post:
-      description: '<ja>ラベルに関する情報を取得します。</ja><br></en>Gets information related to
+      description: '<ja>ラベルに関する情報を取得します。</ja><br><en>Gets information related to
         labels.</en>'
       tags:
         - LabelService
@@ -4542,7 +4559,7 @@ paths:
             </details>
   /LabelService/add:
     post:
-      description: '<ja>ラベルを追加します。</ja><br></en>Add label information.</en>'
+      description: '<ja>ラベルを追加します。</ja><br><en>Add label information.</en>'
       tags:
         - LabelService
       requestBody:
@@ -4623,7 +4640,7 @@ paths:
             </details>
   /LabelService/set:
     post:
-      description: '<ja>ラベルを更新します。</ja><br></en>Updates the information related to
+      description: '<ja>ラベルを更新します。</ja><br><en>Updates the information related to
         labels.</en>'
       tags:
         - LabelService
@@ -4705,7 +4722,7 @@ paths:
             </details>
   /LabelService/remove:
     post:
-      description: '<ja>ラベルを削除します。</ja><br></en>Removes the inforamtion related to
+      description: '<ja>ラベルを削除します。</ja><br><en>Removes the inforamtion related to
         labels.</en>'
       tags:
         - LabelService
@@ -4789,7 +4806,7 @@ paths:
             </details>
   /ConversionTrackerService/get:
     post:
-      description: '<ja>コンバージョントラッカー情報を取得します。</ja><br></en>Describes the operation
+      description: '<ja>コンバージョントラッカー情報を取得します。</ja><br><en>Describes the operation
         which provide at ConversionTrackerService</en>'
       tags:
         - ConversionTrackerService
@@ -4873,7 +4890,7 @@ paths:
             </details>
   /ConversionTrackerService/add:
     post:
-      description: '<ja>コンバージョントラッカー情報を追加します。</ja><br></en>Add ConversionTracker informations.</en>'
+      description: '<ja>コンバージョントラッカー情報を追加します。</ja><br><en>Add ConversionTracker informations.</en>'
       tags:
         - ConversionTrackerService
       requestBody:
@@ -4956,7 +4973,7 @@ paths:
             </details>
   /ConversionTrackerService/set:
     post:
-      description: '<ja>コンバージョントラッカー情報を更新します。</ja><br></en>Update ConversionTracker
+      description: '<ja>コンバージョントラッカー情報を更新します。</ja><br><en>Update ConversionTracker
         informations.</en>'
       tags:
         - ConversionTrackerService
@@ -5042,7 +5059,7 @@ paths:
             </details>
   /SharedCriterionService/get:
     post:
-      description: '<ja>対象外キーワードリストの情報を取得します。</ja><br></en>Get negative keyword list
+      description: '<ja>対象外キーワードリストの情報を取得します。</ja><br><en>Get negative keyword list
         information.</en>'
       tags:
         - SharedCriterionService
@@ -5125,7 +5142,7 @@ paths:
             </details>
   /SharedCriterionService/add:
     post:
-      description: '<ja>対象外キーワードリストに対象外キーワードを追加します。</ja><br></en>Add negative keywords
+      description: '<ja>対象外キーワードリストに対象外キーワードを追加します。</ja><br><en>Add negative keywords
         to negative keyword list.</en>'
       tags:
         - SharedCriterionService
@@ -5208,7 +5225,7 @@ paths:
             </details>
   /SharedCriterionService/remove:
     post:
-      description: '<ja>対象外キーワードリストから対象外キーワードを削除します。</ja><br></en>Removes negative
+      description: '<ja>対象外キーワードリストから対象外キーワードを削除します。</ja><br><en>Removes negative
         keywords from negative keyword list.</en>'
       tags:
         - SharedCriterionService
@@ -5293,7 +5310,7 @@ paths:
             </details>
   /AdGroupRetargetingListService/get:
     post:
-      description: '<ja>広告グループレベルでのターゲットリスト設定に関する情報を取得します。</ja><br></en>Retreive the
+      description: '<ja>広告グループレベルでのターゲットリスト設定に関する情報を取得します。</ja><br><en>Retreive the
         target list setting in ad group level.</en>'
       tags:
         - AdGroupRetargetingListService
@@ -5377,7 +5394,7 @@ paths:
             </details>
   /AdGroupRetargetingListService/add:
     post:
-      description: '<ja>広告グループレベルでのターゲットリスト設定を追加します。</ja><br></en>Create the target
+      description: '<ja>広告グループレベルでのターゲットリスト設定を追加します。</ja><br><en>Create the target
         list setting in ad group level.</en>'
       tags:
         - AdGroupRetargetingListService
@@ -5461,7 +5478,7 @@ paths:
             </details>
   /AdGroupRetargetingListService/set:
     post:
-      description: '<ja>広告グループレベルでのターゲットリスト設定を更新します。</ja><br></en>Update the target
+      description: '<ja>広告グループレベルでのターゲットリスト設定を更新します。</ja><br><en>Update the target
         list setting in ad group level.</en>'
       tags:
         - AdGroupRetargetingListService
@@ -5545,7 +5562,7 @@ paths:
             </details>
   /AdGroupRetargetingListService/remove:
     post:
-      description: '<ja>広告グループレベルでのターゲットリスト設定を削除します。</ja><br></en>Delete the target
+      description: '<ja>広告グループレベルでのターゲットリスト設定を削除します。</ja><br><en>Delete the target
         list setting in ad group level.</en>'
       tags:
         - AdGroupRetargetingListService
@@ -5631,7 +5648,7 @@ paths:
             </details>
   /CampaignWebpageService/get:
     post:
-      description: '<ja>キャンペーンに設定されているPageFeedItemを照会します。</ja><br></en>Get PageFeedItem
+      description: '<ja>キャンペーンに設定されているPageFeedItemを照会します。</ja><br><en>Get PageFeedItem
         setting in campaign.</en>'
       tags:
         - CampaignWebpageService
@@ -5714,7 +5731,7 @@ paths:
             </details>
   /CampaignWebpageService/add:
     post:
-      description: '<ja>キャンペーンにPageFeedItemを配信除外として設定します。</ja><br></en>Set excluded
+      description: '<ja>キャンペーンにPageFeedItemを配信除外として設定します。</ja><br><en>Set excluded
         settings of PageFeedItem for campaign.</en>'
       tags:
         - CampaignWebpageService
@@ -5797,7 +5814,7 @@ paths:
             </details>
   /CampaignWebpageService/remove:
     post:
-      description: '<ja>キャンペーンに関連付けしているPageFeedItemを解除します。</ja><br></en>Remove PageFeedItem
+      description: '<ja>キャンペーンに関連付けしているPageFeedItemを解除します。</ja><br><en>Remove PageFeedItem
         associated with campaign.</en>'
       tags:
         - CampaignWebpageService
@@ -5882,7 +5899,7 @@ paths:
             </details>
   /CampaignRetargetingListService/get:
     post:
-      description: '<ja>キャンペーン階層におけるターゲットリストの設定情報を取得します。</ja><br></en>Retreive the
+      description: '<ja>キャンペーン階層におけるターゲットリストの設定情報を取得します。</ja><br><en>Retreive the
         target list setting in campaign level.</en>'
       tags:
         - CampaignRetargetingListService
@@ -5966,7 +5983,7 @@ paths:
             </details>
   /CampaignRetargetingListService/add:
     post:
-      description: '<ja>キャンペーン階層におけるターゲットリストの設定情報を追加します。</ja><br></en>Adds the target
+      description: '<ja>キャンペーン階層におけるターゲットリストの設定情報を追加します。</ja><br><en>Adds the target
         list setting in campaign level.</en>'
       tags:
         - CampaignRetargetingListService
@@ -6050,7 +6067,7 @@ paths:
             </details>
   /CampaignRetargetingListService/set:
     post:
-      description: '<ja>キャンペーン階層におけるターゲットリストの設定情報を更新します。</ja><br></en>Updates the
+      description: '<ja>キャンペーン階層におけるターゲットリストの設定情報を更新します。</ja><br><en>Updates the
         target list setting in campaign level.</en>'
       tags:
         - CampaignRetargetingListService
@@ -6134,7 +6151,7 @@ paths:
             </details>
   /CampaignRetargetingListService/remove:
     post:
-      description: '<ja>キャンペーン階層におけるターゲットリストの設定情報を削除します。</ja><br></en>Delete the target
+      description: '<ja>キャンペーン階層におけるターゲットリストの設定情報を削除します。</ja><br><en>Delete the target
         list setting in campaign level.</en>'
       tags:
         - CampaignRetargetingListService
@@ -6220,7 +6237,7 @@ paths:
             </details>
   /CampaignSharedSetService/get:
     post:
-      description: '<ja>キャンペーンと対象外キーワードリストの関連付け情報を取得します。</ja><br></en>Returns the
+      description: '<ja>キャンペーンと対象外キーワードリストの関連付け情報を取得します。</ja><br><en>Returns the
         setup information between campaign and negative keyword list.</en>'
       tags:
         - CampaignSharedSetService
@@ -6302,7 +6319,7 @@ paths:
             </details>
   /CampaignSharedSetService/add:
     post:
-      description: '<ja>キャンペーンに対象外キーワードリストの関連付け設定を行います。</ja><br></en>Setup negative
+      description: '<ja>キャンペーンに対象外キーワードリストの関連付け設定を行います。</ja><br><en>Setup negative
         keyword list for campaign.</en>'
       tags:
         - CampaignSharedSetService
@@ -6384,7 +6401,7 @@ paths:
             </details>
   /CampaignSharedSetService/remove:
     post:
-      description: '<ja>キャンペーンと対象外キーワードリストの関連付け設定を削除します。</ja><br></en>Remove the setup
+      description: '<ja>キャンペーンと対象外キーワードリストの関連付け設定を削除します。</ja><br><en>Remove the setup
         settings between campaign and negative keyword list.</en>'
       tags:
         - CampaignSharedSetService
@@ -6468,7 +6485,7 @@ paths:
             </details>
   /FeedItemService/get:
     post:
-      description: '<ja>フィードアイテム情報を取得します。</ja><br></en>Get Feed Item information.</en>'
+      description: '<ja>フィードアイテム情報を取得します。</ja><br><en>Get Feed Item information.</en>'
       tags:
         - FeedItemService
       requestBody:
@@ -6559,7 +6576,7 @@ paths:
             </details>
   /FeedItemService/add:
     post:
-      description: '<ja>フィードアイテム情報を追加します。</ja><br></en>Add Feed Item information.</en>'
+      description: '<ja>フィードアイテム情報を追加します。</ja><br><en>Add Feed Item information.</en>'
       tags:
         - FeedItemService
       requestBody:
@@ -6650,7 +6667,7 @@ paths:
             </details>
   /FeedItemService/set:
     post:
-      description: '<ja>フィードアイテム情報を更新します。</ja><br></en>Updates the Feed Item details.</en>'
+      description: '<ja>フィードアイテム情報を更新します。</ja><br><en>Updates the Feed Item details.</en>'
       tags:
         - FeedItemService
       requestBody:
@@ -6741,7 +6758,7 @@ paths:
             </details>
   /FeedItemService/remove:
     post:
-      description: '<ja>フィードアイテム情報を削除します。</ja><br></en>Remove the Feed Item details.</en>'
+      description: '<ja>フィードアイテム情報を削除します。</ja><br><en>Remove the Feed Item details.</en>'
       tags:
         - FeedItemService
       requestBody:
@@ -6832,7 +6849,7 @@ paths:
             </details>
   /FeedItemService/setTrademarkStatus:
     post:
-      description: '<ja>商標の使用制限解除を確認します。</ja><br></en>Confirm the status of trademark restriction.</en>'
+      description: '<ja>商標の使用制限解除を確認します。</ja><br><en>Confirm the status of trademark restriction.</en>'
       tags:
         - FeedItemService
       requestBody:
@@ -6925,7 +6942,7 @@ paths:
             </details>
   /FeedService/get:
     post:
-      description: '<ja>自動データ挿入のリスト情報を取得します。</ja><br></en>Returns Feed information.</en>'
+      description: '<ja>自動データ挿入のリスト情報を取得します。</ja><br><en>Returns Feed information.</en>'
       tags:
         - FeedService
       requestBody:
@@ -6978,7 +6995,7 @@ paths:
                 $ref: 'feed/FeedServiceGetResponse.yaml#/FeedServiceGetResponse'
   /FeedService/add:
     post:
-      description: '<ja>FeedItem情報を追加します。</ja><br></en>Add the information related
+      description: '<ja>FeedItem情報を追加します。</ja><br><en>Add the information related
         to Feed.</en>'
       tags:
         - FeedService
@@ -7032,7 +7049,7 @@ paths:
                 $ref: 'feed/FeedServiceMutateResponse.yaml#/FeedServiceMutateResponse'
   /FeedService/set:
     post:
-      description: '<ja>FeedItem情報を更新します。</ja><br></en>Updates Feed information.</en>'
+      description: '<ja>FeedItem情報を更新します。</ja><br><en>Updates Feed information.</en>'
       tags:
         - FeedService
       requestBody:
@@ -7085,7 +7102,7 @@ paths:
                 $ref: 'feed/FeedServiceMutateResponse.yaml#/FeedServiceMutateResponse'
   /FeedService/remove:
     post:
-      description: '<ja>FeedItem情報を削除します。</ja><br></en>Removes Feed information.</en>'
+      description: '<ja>FeedItem情報を削除します。</ja><br><en>Removes Feed information.</en>'
       tags:
         - FeedService
       requestBody:
@@ -7139,7 +7156,7 @@ paths:
   ################## PageFeedItemService
   /PageFeedItemService/upload:
     post:
-      description: '<ja>ページフィードアイテムのアップロード処理を実施します。</ja><br></en>Executes
+      description: '<ja>ページフィードアイテムのアップロード処理を実施します。</ja><br><en>Executes
         upload page feed item.</en>'
       tags:
         - PageFeedItemService
@@ -7159,7 +7176,7 @@ paths:
               - NEW_OR_REPLACE
               - MODIFY
           required: true
-          description: '<ja>PageFeedItemUploadTypeは、アップロードする方法の種類を表します。</ja><br></en>PageFeedItemUploadType displays kind of upload method.</en><hr>
+          description: '<ja>PageFeedItemUploadTypeは、アップロードする方法の種類を表します。</ja><br><en>PageFeedItemUploadType displays kind of upload method.</en><hr>
         `NEW_OR_REPLACE` - <ja>新規登録または、すべて置き換える場合の設定</ja><br><en>New registration or replace all.</en><br>
         `MODIFY` - <ja>既存のページフィードアイテムを更新</ja><br><en>Modify existing page feed item.</en>'
         - in: query
@@ -7416,7 +7433,7 @@ paths:
             </details>
   /PageFeedItemService/get:
     post:
-      description: '<ja>ページフィードアイテム情報を取得します。</ja><br></en>Gets information related
+      description: '<ja>ページフィードアイテム情報を取得します。</ja><br><en>Gets information related
         to page feed item.</en>'
       tags:
         - PageFeedItemService
@@ -7499,7 +7516,7 @@ paths:
             </details>
   /PageFeedItemService/getReviewSummary:
     post:
-      description: '<ja>登録されているページフィードアイテムの審査成績・状況のサマリーを取得します。</ja><br></en>Gets registered
+      description: '<ja>登録されているページフィードアイテムの審査成績・状況のサマリーを取得します。</ja><br><en>Gets registered
         approval records of page feed item and summary of each status.</en>'
       tags:
         - PageFeedItemService
@@ -7582,7 +7599,7 @@ paths:
             </details>
   /PageFeedItemService/getJobStatus:
     post:
-      description: '<ja>upload、downloadの処理状況を取得します。downloadJobStatusがCOMPLETEDの場合、レスポンスにダウンロードURLが設定されます。</ja><br></en>Gets
+      description: '<ja>upload、downloadの処理状況を取得します。downloadJobStatusがCOMPLETEDの場合、レスポンスにダウンロードURLが設定されます。</ja><br><en>Gets
         processing status about upload or download. If downloadJobStatus is COMPLETED,
         returns download URL as response.</en>'
       tags:
@@ -7666,7 +7683,7 @@ paths:
             </details>
   /PageFeedItemService/addDownloadJob:
     post:
-      description: '<ja>登録されているページフィードアイテムを一括でダウンロードするためジョブを登録します。</ja><br></en>Registers
+      description: '<ja>登録されているページフィードアイテムを一括でダウンロードするためジョブを登録します。</ja><br><en>Registers
         job to bulk download registered page feed item.</en>'
       tags:
         - PageFeedItemService
@@ -7751,7 +7768,7 @@ paths:
             </details>
   /CampaignLabelService/add:
     post:
-      description: '<ja>ラベルとキャンペーンの紐付けを登録します。</ja><br></en>Add informations of related
+      description: '<ja>ラベルとキャンペーンの紐付けを登録します。</ja><br><en>Add informations of related
         campaign and label.</en>'
       tags:
         - CampaignLabelService
@@ -7833,7 +7850,7 @@ paths:
             </details>
   /CampaignLabelService/remove:
     post:
-      description: '<ja>ラベルとキャンペーンの紐付けを削除します。</ja><br></en>Remove informations of
+      description: '<ja>ラベルとキャンペーンの紐付けを削除します。</ja><br><en>Remove informations of
         related campaign and label.</en>'
       tags:
         - CampaignLabelService
@@ -7917,7 +7934,7 @@ paths:
             </details>
   /CampaignFeedService/get:
     post:
-      description: '<ja>キャンペーンのFeedItem情報を取得します。</ja><br></en>Get FeedItem information
+      description: '<ja>キャンペーンのFeedItem情報を取得します。</ja><br><en>Get FeedItem information
         of campaign.</en>'
       tags:
         - CampaignFeedService
@@ -8004,7 +8021,7 @@ paths:
       ・FeedItem情報を解除するときは空の情報で更新します。<br>
       ・1つのキャンペーンに設定できるFeedItem情報は、QUICKLINKS、CALLEXTENSIONでそれぞれ20件までです。<br>
       ・CALLEXTENSIONについて1キャンペーンあたり1件の設定をお薦めします。<br>
-      ・1リクエスト内で同一のcampaignIdに複数のFeedItem情報は設定できません。</ja><br></en>Add, update
+      ・1リクエスト内で同一のcampaignIdに複数のFeedItem情報は設定できません。</ja><br><en>Add, update
         or release(remove) FeedItem information of ad group.<br>Update will overwrite
         the old information, so have to include the additional information on every
         updates. <br>* To release FeedItem information, update with blank data.<br>
@@ -8095,7 +8112,7 @@ paths:
             </details>
   /DictionaryService/getDisapprovalReason:
     post:
-      description: '<ja>EditorialReasonと推奨する対応方法の一覧を取得します。</ja><br></en>Get EditorialReason
+      description: '<ja>EditorialReasonと推奨する対応方法の一覧を取得します。</ja><br><en>Get EditorialReason
         and recommended resolution list.</en>'
       tags:
         - DictionaryService
@@ -8146,7 +8163,7 @@ paths:
                 $ref: 'dictionary/DictionaryServiceGetDisapprovalReasonResponse.yaml#/DictionaryServiceGetDisapprovalReasonResponse'
   /DictionaryService/getGeographicLocation:
     post:
-      description: '<ja>地域情報の一覧を取得します。</ja><br></en>Get the information list of geo
+      description: '<ja>地域情報の一覧を取得します。</ja><br><en>Get the information list of geo
         targeting.</en>'
       tags:
         - DictionaryService
@@ -8199,7 +8216,7 @@ paths:
   ################## CampaignTargetService
   /CampaignTargetService/get:
     post:
-      description: '<ja>キャンペーンのターゲティング設定に関する情報を取得します。</ja><br></en>Gets campaign informations
+      description: '<ja>キャンペーンのターゲティング設定に関する情報を取得します。</ja><br><en>Gets campaign informations
         related to targeting setting.</en>'
       tags:
         - CampaignTargetService
@@ -8283,7 +8300,7 @@ paths:
             </details>
   /CampaignTargetService/add:
     post:
-      description: '<ja>キャンペーンのターゲティング設定に関する情報を追加します。</ja><br></en>Adds campaign informations
+      description: '<ja>キャンペーンのターゲティング設定に関する情報を追加します。</ja><br><en>Adds campaign informations
         related to targeting setting.</en>'
       tags:
         - CampaignTargetService
@@ -8367,7 +8384,7 @@ paths:
             </details>
   /CampaignTargetService/set:
     post:
-      description: '<ja>キャンペーンのターゲティング設定に関する情報を変更します。※入札調整率（bidmultiplier）のみ変更可能です。</ja><br></en>Update
+      description: '<ja>キャンペーンのターゲティング設定に関する情報を変更します。※入札調整率（bidmultiplier）のみ変更可能です。</ja><br><en>Update
         campaign informations related to targeting setting.<br>* Bid Adjustment (bidmultiplier)
         is only modifiable.</en>'
       tags:
@@ -8452,7 +8469,7 @@ paths:
             </details>
   /CampaignTargetService/remove:
     post:
-      description: '<ja>キャンペーンのターゲティング設定に関する情報を削除します。</ja><br></en>Delete campaign
+      description: '<ja>キャンペーンのターゲティング設定に関する情報を削除します。</ja><br><en>Delete campaign
         informations related to targeting setting.</en>'
       tags:
         - CampaignTargetService
@@ -8861,7 +8878,7 @@ paths:
             </details>
   /RetargetingListService/get:
     post:
-      description: '<ja>ターゲットリストに関する情報を取得します。</ja><br></en>Retrieves the target list
+      description: '<ja>ターゲットリストに関する情報を取得します。</ja><br><en>Retrieves the target list
         information.</en>'
       tags:
         - RetargetingListService
@@ -8952,7 +8969,7 @@ paths:
             </details>
   /RetargetingListService/add:
     post:
-      description: '<ja>ターゲットリストを追加します。</ja><br></en>Adds target list.</en>'
+      description: '<ja>ターゲットリストを追加します。</ja><br><en>Adds target list.</en>'
       tags:
         - RetargetingListService
       requestBody:
@@ -9042,7 +9059,7 @@ paths:
             </details>
   /RetargetingListService/set:
     post:
-      description: '<ja>ターゲットリストを更新します。</ja><br></en>Updates the target list.</en>'
+      description: '<ja>ターゲットリストを更新します。</ja><br><en>Updates the target list.</en>'
       tags:
         - RetargetingListService
       requestBody:
@@ -9132,7 +9149,7 @@ paths:
             </details>
   /RetargetingListService/getCustomKey:
     post:
-      description: '<ja>カスタムキーに関する情報を取得します。</ja><br></en>Get custom key information.</en>'
+      description: '<ja>カスタムキーに関する情報を取得します。</ja><br><en>Get custom key information.</en>'
       tags:
         - RetargetingListService
       requestBody:
@@ -9224,7 +9241,7 @@ paths:
             </details>
   /BalanceService/get:
     post:
-      description: '<ja>選択したアカウント残高に関する情報を取得します。</ja><br></en>Returns account balance.</en>'
+      description: '<ja>選択したアカウント残高に関する情報を取得します。</ja><br><en>Returns account balance.</en>'
       tags:
         - BalanceService
       requestBody:
@@ -9306,7 +9323,7 @@ paths:
             </details>
   /ReportDefinitionService/get:
     post:
-      description: '<ja>レポート定義に関する情報を取得します。</ja><br></en>Get information related to
+      description: '<ja>レポート定義に関する情報を取得します。</ja><br><en>Get information related to
         report definition.</en>'
       tags:
         - ReportDefinitionService
@@ -9390,7 +9407,7 @@ paths:
             </details>
   /ReportDefinitionService/add:
     post:
-      description: '<ja>レポート定義を追加します。</ja><br></en>Adds report definitions.</en>'
+      description: '<ja>レポート定義を追加します。</ja><br><en>Adds report definitions.</en>'
       tags:
         - ReportDefinitionService
       requestBody:
@@ -9473,7 +9490,7 @@ paths:
             </details>
   /ReportDefinitionService/remove:
     post:
-      description: '<ja>レポート定義を削除します。</ja><br></en>Removes report definitions.</en>'
+      description: '<ja>レポート定義を削除します。</ja><br><en>Removes report definitions.</en>'
       tags:
         - ReportDefinitionService
       requestBody:
@@ -9556,7 +9573,7 @@ paths:
             </details>
   /ReportDefinitionService/getReportFields:
     post:
-      description: '<ja>レポートタイプに対して使用可能なレポートのフィールドを返します。</ja><br></en>Returns the
+      description: '<ja>レポートタイプに対して使用可能なレポートのフィールドを返します。</ja><br><en>Returns the
         available report fields for a given report type.</en>'
       tags:
         - ReportDefinitionService
@@ -9725,7 +9742,7 @@ paths:
             </details>
   /AccountTrackingUrlService/get:
     post:
-      description: '<ja>アカウントトラッキングに関する情報を取得します。</ja><br></en>Retrieves information
+      description: '<ja>アカウントトラッキングに関する情報を取得します。</ja><br><en>Retrieves information
         related to account tracking.</en>'
       tags:
         - AccountTrackingUrlService
@@ -9807,7 +9824,7 @@ paths:
             </details>
   /AccountTrackingUrlService/set:
     post:
-      description: '<ja>アカウントトラッキングを更新します。</ja><br></en>Updates account tracking information.</en>'
+      description: '<ja>アカウントトラッキングを更新します。</ja><br><en>Updates account tracking information.</en>'
       tags:
         - AccountTrackingUrlService
       requestBody:

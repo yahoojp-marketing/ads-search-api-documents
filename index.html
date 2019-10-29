@@ -51,17 +51,6 @@
     <script>
     window.onload = function() {
       // Begin Swagger UI call region
-      const DisableTryItOutPlugin = function() {
-        return {
-          statePlugins: {
-                spec: {
-                  wrapSelectors: {
-                    allowTryItOutFor:() =>() => false
-                  }
-                }
-            }
-          }
-      };
       const ui = SwaggerUIBundle({
         url: "./design/v0/Route.yaml",
         dom_id: '#swagger-ui',
@@ -72,8 +61,7 @@
         tagsSorter: 'alpha',
         presets: [
           SwaggerUIBundle.presets.apis,
-          SwaggerUIStandalonePreset,
-          DisableTryItOutPlugin
+          SwaggerUIStandalonePreset
         ],
         plugins: [
           SwaggerUIBundle.plugins.DownloadUrl
