@@ -7,14 +7,14 @@ AdGroupAdServiceAdType:
   - DYNAMIC_SEARCH_LINKED_AD
   - UNKNOWN
   title: AdGroupAdServiceAdType
-  description: "<ja>AdGroupAdServiceAdTypeは、広告の配信先デバイスと配信先に応じたタイトル・説明文の文字数を表します。 なお、選択した配信先デバイスにより、指定可能な広告の文字数は異なります。</ja><br><en>AdGroupAdServiceAdType\
+  description: "<div lang=\"ja\">AdGroupAdServiceAdTypeは、広告の配信先デバイスと配信先に応じたタイトル・説明文の文字数を表します。 なお、選択した配信先デバイスにより、指定可能な広告の文字数は異なります。</div><div lang=\"en\">AdGroupAdServiceAdType\
     \ is device type and number of title and description character.The number of character\
-    \ vary from the device type you choose.</en><hr>\n* `EXTENDED_TEXT_AD` - <ja>「タイトル15文字-15文字、説明文40文字」のテキスト広告です。<br>PC、スマートフォン・タブレット端末の場合にご利用いただけます。</ja><br><en>Text\
+    \ vary from the device type you choose.</div><hr>\n* <code>EXTENDED_TEXT_AD</code> - <div lang=\"ja\">「タイトル15文字-15文字、説明文40文字」のテキスト広告です。<br>PC、スマートフォン・タブレット端末の場合にご利用いただけます。</div><div lang=\"en\">Text\
     \ ads for “Title: 15 - 15 characters, Description: 40 characters”.<br>It is available\
-    \ for PC, Smartphone and Tablet.</en><br>\n* `DYNAMIC_SEARCH_LINKED_AD` - <ja>動的検索連動型広告です。</ja><br><en>Dynamic Search Ads</en><br>\n\
-    * `TEXT_AD2` - <ja>「タイトル15文字、説明文19文字-19文字」のテキスト広告です。<br>PC、スマートフォン・タブレット端末の場合にご利用いただけます。<br>※現在、こちらの広告タイプでは入稿できません。</ja><br><en>Text\
+    \ for PC, Smartphone and Tablet.</div>* <code>DYNAMIC_SEARCH_LINKED_AD</code> - <div lang=\"ja\">動的検索連動型広告です。</div><div lang=\"en\">Dynamic Search Ads</div>\
+    * <code>TEXT_AD2</code> - <div lang=\"ja\">「タイトル15文字、説明文19文字-19文字」のテキスト広告です。<br>PC、スマートフォン・タブレット端末の場合にご利用いただけます。<br>※現在、こちらの広告タイプでは入稿できません。</div><div lang=\"en\">Text\
     \ ads for “Title: 15 characters, Description: 19 characters / 19 characters”.<br>It\
     \ is available for PC, Smartphone and Tablet.<br>*Currently this ad type is not\
-    \ available for ad creation.</en><br>\n* `APP_AD` - <ja>アプリ用広告です。<br>スマートフォン・タブレット端末の場合にご利用いただけます。</ja><br><en>Ads\
-    \ for Mobile App Ads.<br>It is available for Smartphone or Tablet.</en><br>\n\
-    * `UNKNOWN` - 未知の値です。<br>Unknown Value"
+    \ available for ad creation.</div>* <code>APP_AD</code> - <div lang=\"ja\">アプリ用広告です。<br>スマートフォン・タブレット端末の場合にご利用いただけます。</div><div lang=\"en\">Ads\
+    \ for Mobile App Ads.<br>It is available for Smartphone or Tablet.</div>\
+    * <code>UNKNOWN</code> - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"

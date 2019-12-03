@@ -5,8 +5,8 @@ RetargetingListServiceCustomKey:
       type: array
       items:
         type: string
-      description: "<ja>評価項目</ja><br><en>Evaluation items.</en>"
+      description: "<div lang=\"ja\">評価項目</div><div lang=\"en\">Evaluation items.</div>"
   title: RetargetingListServiceCustomKey
-  description: "<ja>RetargetingListServiceCustomKeyは、カスタムキールールの評価式を保持するオブジェクトです。</ja><br><en>RetargetingListServiceCustomKey\
-    \ is an object that holds evaluation of custom key rules.</en><hr><details><summary>Requirement</summary><table\
+  description: "<div lang=\"ja\">RetargetingListServiceCustomKeyは、カスタムキールールの評価式を保持するオブジェクトです。</div><div lang=\"en\">RetargetingListServiceCustomKey\
+    \ is an object that holds evaluation of custom key rules.</div><hr><details><summary>Requirement</summary><table\
     \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th></tr><tr><td>textKey</td><td>-</td><td>-</td><td>-</td></tr></table></details>"

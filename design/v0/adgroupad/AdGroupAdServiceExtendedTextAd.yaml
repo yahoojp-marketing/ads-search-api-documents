@@ -3,18 +3,18 @@ AdGroupAdServiceExtendedTextAd:
   properties:
     headline2:
       type: string
-      description: "<ja>2行目のタイトルです。</ja><br><en>Title on the second line.</en>"
+      description: "<div lang=\"ja\">2行目のタイトルです。</div><div lang=\"en\">Title on the second line.</div>"
     path1:
       type: string
-      description: "<ja>自動作成される表示URLを補足するパスです。<br>※path2を指定する場合は、path1は必須。</ja><br><en>The\
+      description: "<div lang=\"ja\">自動作成される表示URLを補足するパスです。<br>※path2を指定する場合は、path1は必須。</div><div lang=\"en\">The\
         \ path information which complements display URL generated automatically.<br>*To\
-        \ specify path2, path1 is required.</en>"
+        \ specify path2, path1 is required.</div>"
     path2:
       type: string
-      description: "<ja>自動作成される表示URLを補足するパスです。<br>※path1を指定していない場合、path2はIgnore。</ja><br><en>The\
+      description: "<div lang=\"ja\">自動作成される表示URLを補足するパスです。<br>※path1を指定していない場合、path2はIgnore。</div><div lang=\"en\">The\
         \ path information which complements display URL generated automatically.<br>*If\
-        \ path1 is not specified, path2 can be ignored.</en>"
+        \ path1 is not specified, path2 can be ignored.</div>"
   title: AdGroupAdServiceExtendedTextAd
-  description: "<ja>AdGroupAdServiceExtendedTextAdオブジェクトは、拡大テキスト広告に関する情報を表します。</ja><br><en>AdGroupAdServiceExtendedTextAd\
-    \ obeject describes the information of Extended Text Ad.</en><hr><details><summary>Requirement</summary><table\
+  description: "<div lang=\"ja\">AdGroupAdServiceExtendedTextAdオブジェクトは、拡大テキスト広告に関する情報を表します。</div><div lang=\"en\">AdGroupAdServiceExtendedTextAd\
+    \ obeject describes the information of Extended Text Ad.</div><hr><details><summary>Requirement</summary><table\
     \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>headline2</td><td>-</td><td>Requirement</td><td>-</td><td>-</td></tr><tr><td>path1</td><td>-</td><td>Optional<br>※default:null</td><td>-</td><td>-</td></tr><tr><td>path2</td><td>-</td><td>Optional<br>※default:null</td><td>-</td><td>-</td></tr></table></details>"

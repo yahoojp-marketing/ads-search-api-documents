@@ -8,15 +8,15 @@ CampaignServiceBiddingStrategyFailedReason:
   - BIDDING_STRATEGY_CANNOT_BE_OVERRIDDEN
   - NOT_CPC_CAMPAIGN
   - UNKNOWN
-  description: "<ja>CampaignServiceBiddingStrategyFailedReasonは、自動入札設定の結果（失敗原因）です。</ja><br><en>CampaignServiceBiddingStrategyFailedReason\
-    \ object displays the failure reason of Auto Bidding setting.</en><hr>\n* `CONVERSION_TRACKING_NOT_ENABLED`\
-    \ - <ja>コンバージョン測定タグが発行されていません。</ja><br><en>Failed [Invalid conversion tracking]</en><br>\n\
-    * `NOT_ENOUGH_CONVERSIONS` - <ja>コンバージョンの情報が十分でありません。</ja><br><en>Failed [Not\
-    \ enough conversion information]</en><br>\n* `CANNOT_CREATE_CAMPAIGN_WITH_CONVERSION_OPTIMIZER`\
-    \ - <ja>コンバージョンオプティマイザーの情報は作成不可です。</ja><br><en>Failed [Cannot create conversion\
-    \ optimizer information]</en><br>\n* `BIDDING_STRATEGY_CANNOT_BE_OVERRIDDEN` -\
-    \ <ja>自動入札設定の上書きができません。</ja><br><en>Failed [Cannot override Auto bidding]</en><br>\n\
-    * `NOT_CPC_CAMPAIGN` - <ja>手動入札ではありません。</ja><br><en>Failed [Not CPC Campaign]</en><br>\n\
-    * `FAILURE` - <ja>原因不明です。</ja><br><en>Failed [Cause unknown]</en><br>\n* `UNKNOWN`\
-    \ - 未知の値です。<br>Unknown Value"
+  description: "<div lang=\"ja\">CampaignServiceBiddingStrategyFailedReasonは、自動入札設定の結果（失敗原因）です。</div><div lang=\"en\">CampaignServiceBiddingStrategyFailedReason\
+    \ object displays the failure reason of Auto Bidding setting.</div><hr>\n* <code>CONVERSION_TRACKING_NOT_ENABLED</code>\
+    \ - <div lang=\"ja\">コンバージョン測定タグが発行されていません。</div><div lang=\"en\">Failed [Invalid conversion tracking]</div>\
+    * <code>NOT_ENOUGH_CONVERSIONS</code> - <div lang=\"ja\">コンバージョンの情報が十分でありません。</div><div lang=\"en\">Failed [Not\
+    \ enough conversion information]</div>* <code>CANNOT_CREATE_CAMPAIGN_WITH_CONVERSION_OPTIMIZER</code>\
+    \ - <div lang=\"ja\">コンバージョンオプティマイザーの情報は作成不可です。</div><div lang=\"en\">Failed [Cannot create conversion\
+    \ optimizer information]</div>* <code>BIDDING_STRATEGY_CANNOT_BE_OVERRIDDEN</code> -\
+    \ <div lang=\"ja\">自動入札設定の上書きができません。</div><div lang=\"en\">Failed [Cannot override Auto bidding]</div>\
+    * <code>NOT_CPC_CAMPAIGN</code> - <div lang=\"ja\">手動入札ではありません。</div><div lang=\"en\">Failed [Not CPC Campaign]</div>\
+    * <code>FAILURE</code> - <div lang=\"ja\">原因不明です。</div><div lang=\"en\">Failed [Cause unknown]</div>* <code>UNKNOWN</code>\
+    \ - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"
   title: CampaignServiceBiddingStrategyFailedReason

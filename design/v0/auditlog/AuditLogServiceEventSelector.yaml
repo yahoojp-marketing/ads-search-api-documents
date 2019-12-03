@@ -3,38 +3,38 @@ AuditLogServiceEventSelector:
   properties:
     entityType:
       type: string
-      description: "<ja>AuditLogServiceEntityTypeオブジェクトは、操作履歴に出力するエンティティの種類を表します。</ja><br><en>AuditLogServiceEntityType\
-          \ object describes the type of entities to be output on the data of operation history.</en><hr>\n\
-          * `CAMPAIGN` - <ja>キャンペーンです。</ja><br><en>Campaign.</en><br>\n\
-          * `NEGATIVE_CAMPAIGN_CRITERION` - <ja>対象外キーワードです（キャンペーン）。</ja><br><en>Negative keywords (for campaign)</en><br>\n\
-          * `CAMPAIGN_CRITERION` - <ja>キャンペーンのターゲティング設定です。</ja><br><en>Targeting setting on campaign.</en><br>\n\
-          * `AD_GROUP` - <ja>広告グループです。</ja><br><en>Ad group.</en><br>\n\
-          * `AD_GROUP_BID_MULTIPLIER` - <ja>広告グループ入札価格調整率です。</ja><br><en>Bid adjustment for ad group.</en><br>\n\
-          * `BIDDABLE_AD_GROUP_CRITERION` - <ja>入札キーワードです。</ja><br><en>Bidding keyword.</en><br>\n\
-          * `NEGATIVE_AD_GROUP_CRITERION` - <ja>対象外キーワードです（広告グループ）。</ja><br><en>Negative keywords (for ad group)</en><br>\n\
-          * `AD` - <ja>広告です。</ja><br><en>Ad.</en><br>\n\
-          * `FEED` - <ja>Feedフォルダーです。</ja><br><en>Feed folder.</en><br>\n\
-          * `FEED_ITEM` - <ja>広告表示オプションです。</ja><br><en>Ad display options.</en><br>\n\
-          * `CAMPAIGN_FEED` - <ja>広告表示オプションです（キャンペーン）。</ja><br><en>Ad display options for campaign.</en><br>\n\
-          * `AD_GROUP_FEED` - <ja>広告表示オプションです（広告グループ）。</ja><br><en>Ad display options for ad group.</en><br>\n\
-          * `SS_IO` - <ja>アカウントです。</ja><br><en>Account.</en><br>\n\
-          * `SS_CONVERSION` - <ja>コンバージョントラッカー（コンバージョン測定）です。</ja><br><en>Conversion tracker for conversion tracking.</en><br>\n\
-          * `BIDDING_STRATEGY` - <ja>自動入札設定です。</ja><br><en>Auto bidding setting.</en><br>\n\
-          * `NEGATIVE_CAMPAIGN_USER_LIST` - <ja>対象外ターゲットリストです（キャンペーン）。</ja><br><en>Exclude target list for campaign.</en><br>\n\
-          * `NEGATIVE_AD_GROUP_USER_LIST` - <ja>対象外ターゲットリストです（広告グループ）。</ja><br><en>Exclude target list for ad group.</en><br>\n\
-          * `AD_GROUP_USER_LIST` - <ja>ターゲットリストです（広告グループ）。</ja><br><en>Target list for ad group.</en><br>\n\
-          * `TARGET_LIST` - <ja>サイトリターゲテイングのターゲットリストです。</ja><br><en>Target list of Site Retargeting.</en><br>\n\
-          * `SHARED_SET` - <ja>共有リストです。</ja><br><en>Shared list.</en><br>\n\
-          * `SHARED_CRITERION` - <ja>共有キーワードです。</ja><br><en>Shared keywords.</en><br>\n\
-          * `CAMPAIGN_SHARED_SET` - <ja>キャンペーン共有リストです。</ja><br><en>Shared list for campaign.</en><br>\n\
-          * `AD_CUSTOMIZER` - <ja>アドカスタマイザーです。</ja><br><en>Ad customizer.</en><br>\n\
-          * `EXCLUDE_AD_CUSTOMIZER` - <ja>アドカスタマイザーを除くすべての履歴です。</ja><br><en>All operation history excepting ad customizer.</en><br>\n\
-          * `ALL` - <ja>すべての履歴です。</ja><br><en>All operation history.</en><br>\n\
-          * `UNKNOWN` - 未知の値です。<br>Unknown Value"
+      description: "<div lang=\"ja\">AuditLogServiceEntityTypeオブジェクトは、操作履歴に出力するエンティティの種類を表します。</div><div lang=\"en\">AuditLogServiceEntityType\
+          \ object describes the type of entities to be output on the data of operation history.</div><hr>\n\
+          * <code>CAMPAIGN</code> - <div lang=\"ja\">キャンペーンです。</div><div lang=\"en\">Campaign.</div>\
+          * <code>NEGATIVE_CAMPAIGN_CRITERION</code> - <div lang=\"ja\">対象外キーワードです（キャンペーン）。</div><div lang=\"en\">Negative keywords (for campaign)</div>\
+          * <code>CAMPAIGN_CRITERION</code> - <div lang=\"ja\">キャンペーンのターゲティング設定です。</div><div lang=\"en\">Targeting setting on campaign.</div>\
+          * <code>AD_GROUP</code> - <div lang=\"ja\">広告グループです。</div><div lang=\"en\">Ad group.</div>\
+          * <code>AD_GROUP_BID_MULTIPLIER</code> - <div lang=\"ja\">広告グループ入札価格調整率です。</div><div lang=\"en\">Bid adjustment for ad group.</div>\
+          * <code>BIDDABLE_AD_GROUP_CRITERION</code> - <div lang=\"ja\">入札キーワードです。</div><div lang=\"en\">Bidding keyword.</div>\
+          * <code>NEGATIVE_AD_GROUP_CRITERION</code> - <div lang=\"ja\">対象外キーワードです（広告グループ）。</div><div lang=\"en\">Negative keywords (for ad group)</div>\
+          * <code>AD</code> - <div lang=\"ja\">広告です。</div><div lang=\"en\">Ad.</div>\
+          * <code>FEED</code> - <div lang=\"ja\">Feedフォルダーです。</div><div lang=\"en\">Feed folder.</div>\
+          * <code>FEED_ITEM</code> - <div lang=\"ja\">広告表示オプションです。</div><div lang=\"en\">Ad display options.</div>\
+          * <code>CAMPAIGN_FEED</code> - <div lang=\"ja\">広告表示オプションです（キャンペーン）。</div><div lang=\"en\">Ad display options for campaign.</div>\
+          * <code>AD_GROUP_FEED</code> - <div lang=\"ja\">広告表示オプションです（広告グループ）。</div><div lang=\"en\">Ad display options for ad group.</div>\
+          * <code>SS_IO</code> - <div lang=\"ja\">アカウントです。</div><div lang=\"en\">Account.</div>\
+          * <code>SS_CONVERSION</code> - <div lang=\"ja\">コンバージョントラッカー（コンバージョン測定）です。</div><div lang=\"en\">Conversion tracker for conversion tracking.</div>\
+          * <code>BIDDING_STRATEGY</code> - <div lang=\"ja\">自動入札設定です。</div><div lang=\"en\">Auto bidding setting.</div>\
+          * <code>NEGATIVE_CAMPAIGN_USER_LIST</code> - <div lang=\"ja\">対象外ターゲットリストです（キャンペーン）。</div><div lang=\"en\">Exclude target list for campaign.</div>\
+          * <code>NEGATIVE_AD_GROUP_USER_LIST</code> - <div lang=\"ja\">対象外ターゲットリストです（広告グループ）。</div><div lang=\"en\">Exclude target list for ad group.</div>\
+          * <code>AD_GROUP_USER_LIST</code> - <div lang=\"ja\">ターゲットリストです（広告グループ）。</div><div lang=\"en\">Target list for ad group.</div>\
+          * <code>TARGET_LIST</code> - <div lang=\"ja\">サイトリターゲテイングのターゲットリストです。</div><div lang=\"en\">Target list of Site Retargeting.</div>\
+          * <code>SHARED_SET</code> - <div lang=\"ja\">共有リストです。</div><div lang=\"en\">Shared list.</div>\
+          * <code>SHARED_CRITERION</code> - <div lang=\"ja\">共有キーワードです。</div><div lang=\"en\">Shared keywords.</div>\
+          * <code>CAMPAIGN_SHARED_SET</code> - <div lang=\"ja\">キャンペーン共有リストです。</div><div lang=\"en\">Shared list for campaign.</div>\
+          * <code>AD_CUSTOMIZER</code> - <div lang=\"ja\">アドカスタマイザーです。</div><div lang=\"en\">Ad customizer.</div>\
+          * <code>EXCLUDE_AD_CUSTOMIZER</code> - <div lang=\"ja\">アドカスタマイザーを除くすべての履歴です。</div><div lang=\"en\">All operation history excepting ad customizer.</div>\
+          * <code>ALL</code> - <div lang=\"ja\">すべての履歴です。</div><div lang=\"en\">All operation history.</div>\
+          * <code>UNKNOWN</code> - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"
     eventTypes:
       type: array
       items:
         $ref: 'AuditLogServiceEventTypes.yaml#/AuditLogServiceEventTypes'
   title: AuditLogServiceEventSelector
-  description: "<ja>AuditLogServiceEventSelectorオブジェクトは、操作履歴の取得対象を設定します。</ja><br><en>AuditLogServiceEventSelector\
-    \ object enables the target setting of acquiring operation history.</en>"
+  description: "<div lang=\"ja\">AuditLogServiceEventSelectorオブジェクトは、操作履歴の取得対象を設定します。</div><div lang=\"en\">AuditLogServiceEventSelector\
+    \ object enables the target setting of acquiring operation history.</div>"

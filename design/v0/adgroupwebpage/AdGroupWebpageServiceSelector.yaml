@@ -6,46 +6,46 @@ AdGroupWebpageServiceSelector:
     accountId:
       type: integer
       format: int64
-      description: "<ja>アカウントID</ja><br><en>Account ID</en>"
+      description: "<div lang=\"ja\">アカウントID</div><div lang=\"en\">Account ID</div>"
     adGroupIds:
       type: array
       items:
         type: integer
         format: int64
       maxItems: 1000
-      description: "<ja>広告グループID</ja><br><en>AdGroup ID</en>"
+      description: "<div lang=\"ja\">広告グループID</div><div lang=\"en\">AdGroup ID</div>"
     campaignIds:
       type: array
       items:
         type: integer
         format: int64
       maxItems: 1000
-      description: "<ja>キャンペーンID</ja><br><en>Campaign ID</en>"
+      description: "<div lang=\"ja\">キャンペーンID</div><div lang=\"en\">Campaign ID</div>"
     numberResults:
       type: integer
       format: int32
       minimum: 1
       maximum: 2000
       default: 500
-      description: "ページの最大件数です。このフィールドは、1以上を指定する必要があります。<br>Maximum number of results\
+      description: "<div lang=\"ja\">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div><div lang=\"en\">Maximum number of results\
         \ to return in this page. This field must be greater than or equal to 1. Also\
-        \ see Entity Limits per operation."
+        \ see Entity Limits per operation.</div>"
     startIndex:
       type: integer
       format: int32
       minimum: 1
       default: 1
-      description: "ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。<br>Index of the first\
+      description: "<div lang=\"ja\">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div><div lang=\"en\">Index of the first\
         \ result to return in this page. This field must be greater than or equal\
-        \ to 1."
+        \ to 1.</div>"
     targetIds:
       type: array
       items:
         type: integer
         format: int64
       maxItems: 1000
-      description: "<ja>配信/除外設定を識別するID</ja><br><en>Unique ID to identify &#39;Allow&#39;\
-        \ or &#39;Exclude&#39; settings</en>"
+      description: "<div lang=\"ja\">配信/除外設定を識別するID</div><div lang=\"en\">Unique ID to identify &#39;Allow&#39;\
+        \ or &#39;Exclude&#39; settings</div>"
   title: AdGroupWebpageServiceSelector
-  description: "<ja>AdGroupWebpageServiceSelectorオブジェクトは、取得する条件を保持します。</ja><br><en>AdGroupWebpageServiceSelector\
-    \ object contains the rules to be acquired.</en>"
+  description: "<div lang=\"ja\">AdGroupWebpageServiceSelectorオブジェクトは、取得する条件を保持します。</div><div lang=\"en\">AdGroupWebpageServiceSelector\
+    \ object contains the rules to be acquired.</div>"

@@ -3,7 +3,7 @@
   <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <title>APIリファレンス - Yahoo!広告</title>
+    <title>API Reference - Yahoo! Ads</title>
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
@@ -14,29 +14,37 @@
   <body>
   <header class="header">
     <div class="masthead">
-      <p class="masthead__title"><a href="https://marketing.yahoo.co.jp/" class="masthead__trigger">Yahoo!広告</a></p>
-      <ul class="masthead__list">
-        <li class="masthead__item masthead__item--login">
-          <a href="https://ads-developers.yahoo.co.jp/developercenter/ja/yahoo-ads-api/" target="_blank" rel="noopener" class="masthead__trigger02">DeveloperCenter</a></li>
-        <li class="masthead__item masthead__item--yj"><a href="https://www.yahoo.co.jp/" class="masthead__trigger02">Yahoo! JAPAN</a></li>
-      </ul>
+      <p class="masthead__title">
+        <a href="https://marketing.yahoo.co.jp/" lang="ja" class="masthead__trigger" >Yahoo!広告</a>
+        <a href="https://global-marketing.yahoo.co.jp/" lang="en" class="masthead__trigger_en" >Yahoo! Ads</a>
+      </p>
+        <ul class="masthead__list">
+          <li class="masthead__item masthead__item--login">
+            <div lang="ja"><a href="https://ads-developers.yahoo.co.jp/developercenter/ja/yahoo-ads-api/" target="_blank" rel="noopener" class="masthead__trigger02">DeveloperCenter</a></div><div lang="en"><a href="https://ads-developers.yahoo.co.jp/developercenter/en/yahoo-ads-api/" target="_blank" rel="noopener" class="masthead__trigger02">DeveloperCenter</a></div></li>
+          <li class="masthead__item masthead__item--yj"><div lang="ja"><a href="https://www.yahoo.co.jp/" class="masthead__trigger02">Yahoo! JAPAN</a></div><div lang="en"><a href="https://www.yahoo.co.jp/" class="masthead__trigger02">Yahoo! JAPAN</a></div></li>
+        </ul>
     </div><!-- /.masthead -->
     <div class="hpHeader">
       <div class="hpHeader__inner">
         <div class="hpHeader__head">
           <div class="hpHeader__wrap">
-            <h1 class="hpHeader__title">APIリファレンス β版</h1>
+            <h1 class="hpHeader__title" lang="ja">APIリファレンス β版</h1>
+            <h1 class="hpHeader__title" lang="en">API Reference β version</h1>
+            <div class="hpHeaderLanguage" lang="ja">
+              <a class="hpHeaderLanguage__trigger" href="?lang=en">English</a>
+            </div>
+            <div class="hpHeaderLanguage" lang="en">
+              <a class="hpHeaderLanguage__trigger" href="?lang=ja">日本語</a>
+            </div>
+
           </div>
         </div>
-
       </div>
       <nav class="nav">
         <div class="nav__inner">
-          <ul class="navPrimary">
-              <li class="navPrimary__item is-current"><a class="navPrimary__trigger" href="">検索広告APIリファレンス v0</a>
-              </li>
-
-          </ul>
+            <ul class="navPrimary">
+              <li class="navPrimary__item is-current"><div lang="ja"><a class="navPrimary__trigger" href="">検索広告APIリファレンス v0</a></div><div lang="en"><a class="navPrimary__trigger" href="">Search Ads API Reference v0</a></div></li>
+            </ul>
         </div><!-- /.nav__inner -->
       </nav><!-- /.nav -->
     </div><!--/.hpHeader-->
@@ -46,9 +54,42 @@
   <main class="main">
     <div id="swagger-ui"></div>
 
+    <style>
+    .swagger-ui summary {
+    display: list-item;
+    cursor: pointer;
+    }
+    .yjFooter__item[lang="en"] {
+    font-size: 12px;
+    }
+    .masthead__trigger_en {
+    display: block;
+    width: 178px;
+    height: 34px;
+    background: url(https://s.yimg.jp/c/logo/f/2.0/adse_r_34_2x.png) no-repeat;
+    -webkit-background-size: 178px 34px;
+    background-size: 178px 34px;
+    border-bottom: none;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    }
+    </style>
+    <style id="langType">* [lang="en"]{display:none;}</style>
     <script src="scripts/swagger-ui-bundle.js"> </script>
     <script src="scripts/swagger-ui-standalone-preset.js"> </script>
     <script>
+    var lang
+    window.addEventListener('DOMContentLoaded', function () {
+      if(location.search.indexOf('lang=en') != -1){
+        lang = "en"
+        document.title = 'API Reference - Yahoo! Ads';
+        $('#langType').html('* [lang="ja"]{display:none;}')
+      }else{
+        lang = "ja"
+        document.title = 'APIリファレンス - Yahoo!広告';
+      }
+    });
     window.onload = function() {
       // Begin Swagger UI call region
       const ui = SwaggerUIBundle({
@@ -58,6 +99,7 @@
         docExpansion: 'none',
         defaultModelRendering: 'model',
         defaultModelExpandDepth: 20,
+        // showCommonExtensions: true,
         tagsSorter: 'alpha',
         presets: [
           SwaggerUIBundle.presets.apis,
@@ -67,7 +109,7 @@
           SwaggerUIBundle.plugins.DownloadUrl
         ],
         layout: "StandaloneLayout",
-        oauth2RedirectUrl: location.href.replace('index.html', '').replace(/#.*/g, '').replace(/\/$/g, '') + '/oauth2-redirect.html'
+        oauth2RedirectUrl: location.href.replace('index.html', '').replace(/\?.+/, '').replace(/\/$/g, '') + '/oauth2-redirect.html'
       })
       // End Swagger UI call region
 
@@ -134,6 +176,12 @@
         });
         var observer_menu = new MutationObserver(function () {
           observer_swagger.disconnect()
+          if(lang == "en"){
+            $('.title').text("Yahoo! Ads Search Ads API Reference β Version")
+          }else{
+            $('.title').text("Yahoo!広告 検索広告 API リファレンス β版")
+          }
+
         });
         observer_menu.observe($('#apiSideMenu')[0], {
             childList: true,
@@ -146,12 +194,22 @@
 
   <footer class="footer">
   <div class="yjFooter">
-    <ul class="yjFooter__list">
-      <li class="yjFooter__item"><a href="https://privacy.yahoo.co.jp/" class="yjFooter__trigger">プライバシー</a></li>
-      <li class="yjFooter__item"><a href="https://marketing.yahoo.co.jp/guidelines/yahoo_ads_api.html" class="yjFooter__trigger">利用規約</a></li>
-      <li class="yjFooter__item"><a href="https://marketing.yahoo.co.jp/guidelines/" class="yjFooter__trigger">ガイドライン・各サービスの規約</a></li>
-      <li class="yjFooter__item"><a href="https://about.yahoo.co.jp/" class="yjFooter__trigger">会社概要</a></li>
-    </ul>
+      <ul class="yjFooter__list">
+        <li class="yjFooter__item" lang="ja"><a href="https://privacy.yahoo.co.jp/" class="yjFooter__trigger">プライバシー</a></li>
+        <li class="yjFooter__item" lang="en"><a href="https://privacy.yahoo.co.jp/" class="yjFooter__trigger">Privacy Policy (Japanese)</a></li>
+
+        <li class="yjFooter__item" lang="ja"><a href="https://marketing.yahoo.co.jp/guidelines/yahoo_ads_api.html" class="yjFooter__trigger">利用規約</a></li>
+        <li class="yjFooter__item" lang="en"><a href="https://about.yahoo.co.jp/docs/info/terms/" class="yjFooter__trigger">Terms of Service (Japanese)</a></li>
+
+        <li class="yjFooter__item" lang="ja"><a href="https://marketing.yahoo.co.jp/guidelines/" class="yjFooter__trigger">ガイドライン・各サービスの規約</a></li>
+        <li class="yjFooter__item" lang="en"><a href="https://global-marketing.yahoo.co.jp/guidelines/terms.html" class="yjFooter__trigger">Master Terms and Conditions</a></li>
+
+        <li class="yjFooter__item" lang="en"><a href="https://global-marketing.yahoo.co.jp/guidelines/trademarks.html" class="yjFooter__trigger">Trademarks</a></li>
+        <li class="yjFooter__item" lang="en"><a href="https://about.yahoo.co.jp/docs/pr/disclaimer.html" class="yjFooter__trigger">Disclaimer of Warranties (Japanese)</a></li>
+
+        <li class="yjFooter__item" lang="ja"><a href="https://about.yahoo.co.jp/" class="yjFooter__trigger">会社概要</a></li>
+        <li class="yjFooter__item" lang="en"><a href="https://about.yahoo.co.jp/info/en/company/" class="yjFooter__trigger">Company Info</a></li>
+      </ul>
     <p class="yjFooter__copyright"><small><span class="spHidden">Copyright </span>(C) <span class="spHidden"><span>2019</span></span> Yahoo Japan<span class="spHidden"> Corporation. All Rights Reserved.</span></small></p>
   </div><!-- /.yjFooter -->
 

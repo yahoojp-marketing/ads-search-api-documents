@@ -3,14 +3,14 @@ CampaignExportServiceFieldAttribute:
   properties:
     displayFieldNameEN:
       type: string
-      description: "<ja>フィールドの英語表示名です。</ja><br><en>Display name (EN)</en>"
+      description: "<div lang=\"ja\">フィールドの英語表示名です。</div><div lang=\"en\">Display name (EN)</div>"
     displayFieldNameJA:
       type: string
-      description: "<ja>フィールドの日本語表示名です。</ja><br><en>Display name (JA)</en>"
+      description: "<div lang=\"ja\">フィールドの日本語表示名です。</div><div lang=\"en\">Display name (JA)</div>"
     fieldName:
       type: string
-      description: "<ja>フィールド名です。</ja><br><en>Field name</en>"
+      description: "<div lang=\"ja\">フィールド名です。</div><div lang=\"en\">Field name</div>"
   title: CampaignExportServiceFieldAttribute
-  description: "<ja>CampaignExportServiceFieldAttribute オブジェクトは、ジョブ作成に使用できるフィールドを表します。</ja><br><en>CampaignExportServiceFieldAttribute\
-    \ object displays available fields for creating jobs.</en><hr><details><summary>Requirement</summary><table\
+  description: "<div lang=\"ja\">CampaignExportServiceFieldAttribute オブジェクトは、ジョブ作成に使用できるフィールドを表します。</div><div lang=\"en\">CampaignExportServiceFieldAttribute\
+    \ object displays available fields for creating jobs.</div><hr><details><summary>Requirement</summary><table\
     \ border='1'><tr><th>PROPERTY</th><th>GET</th></tr><tr><td>displayFieldNameEN</td><td>-</td></tr><tr><td>displayFieldNameJA</td><td>-</td></tr><tr><td>fieldName</td><td>-</td></tr></table></details>"

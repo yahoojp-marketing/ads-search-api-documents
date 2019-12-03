@@ -5,6 +5,6 @@ RetargetingListServiceIsAllVisitorRule:
   - 'FALSE'
   - UNKNOWN
   title: RetargetingListServiceIsAllVisitorRule
-  description: "<ja>RetargetingListServiceIsAllVisitorRuleは、すべての訪問者に対するルールか定義します。</ja><br><en>RetargetingListServiceIsAllVisitorRule\
-    \ define the rule of visitors.</en><hr>\n* `TRUE` - <ja>すべての訪問者へのターゲットリストです。</ja><br><en>Target list to all visitors.</en><br>\n* `FALSE` - <ja>通常の条件によるターゲットリストです。</ja><br><en>Target\
-    \ list in standard condition.</en><br>\n* `UNKNOWN` - 未知の値です。<br>Unknown Value"
+  description: "<div lang=\"ja\">RetargetingListServiceIsAllVisitorRuleは、すべての訪問者に対するルールか定義します。</div><div lang=\"en\">RetargetingListServiceIsAllVisitorRule\
+    \ define the rule of visitors.</div><hr>\n* <code>TRUE</code> - <div lang=\"ja\">すべての訪問者へのターゲットリストです。</div><div lang=\"en\">Target list to all visitors.</div>* <code>FALSE</code> - <div lang=\"ja\">通常の条件によるターゲットリストです。</div><div lang=\"en\">Target\
+    \ list in standard condition.</div>* <code>UNKNOWN</code> - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"

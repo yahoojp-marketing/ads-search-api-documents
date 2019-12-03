@@ -7,7 +7,7 @@ CampaignRetargetingListServiceOperation:
     accountId:
       type: integer
       format: int64
-      description: "<ja>アカウントIDです。</ja><br><en>Account ID.</en>"
+      description: "<div lang=\"ja\">アカウントIDです。</div><div lang=\"en\">Account ID.</div>"
     operand:
       type: array
       items:
@@ -15,6 +15,6 @@ CampaignRetargetingListServiceOperation:
       minItems: 1
       maxItems: 1000
   title: CampaignRetargetingListServiceOperation
-  description: "<ja>CampaignRetargetingListServiceOperationオブジェクトは、操作対象となるキャンペーン階層のターゲットリスト設定情報を保持します。</ja><br><en>CampaignRetargetingListServiceOperation\
+  description: "<div lang=\"ja\">CampaignRetargetingListServiceOperationオブジェクトは、操作対象となるキャンペーン階層のターゲットリスト設定情報を保持します。</div><div lang=\"en\">CampaignRetargetingListServiceOperation\
     \ object holds the setting information of target list on campaign level to be\
-    \ object.</en>"
+    \ object.</div>"

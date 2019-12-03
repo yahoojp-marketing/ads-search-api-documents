@@ -9,7 +9,7 @@ DictionaryServiceGeographicLocationValue:
       $ref: 'DictionaryServiceGeographicLocation.yaml#/DictionaryServiceGeographicLocation'
     operationSucceeded:
       type: boolean
-      description: "<ja>オペレーション成功です。</ja><br><en>Operation is successful.</en>"
+      description: "<div lang=\"ja\">オペレーション成功です。</div><div lang=\"en\">Operation is successful.</div>"
   title: DictionaryServiceGeographicLocationValue
-  description: "<ja>DictionaryServiceGeographicLocationValueオブジェクトは、地域情報と処理の内容を表します。</ja><br><en>DictionaryServiceGeographicLocationValue\
-    \ object describes Geographic location and operation information.</en>"
+  description: "<div lang=\"ja\">DictionaryServiceGeographicLocationValueオブジェクトは、地域情報と処理の内容を表します。</div><div lang=\"en\">DictionaryServiceGeographicLocationValue\
+    \ object describes Geographic location and operation information.</div>"

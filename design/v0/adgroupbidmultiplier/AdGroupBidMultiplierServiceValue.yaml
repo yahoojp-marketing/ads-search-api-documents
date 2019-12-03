@@ -9,7 +9,7 @@ AdGroupBidMultiplierServiceValue:
         $ref: '../../Error.yaml#/Error'
     operationSucceeded:
       type: boolean
-      description: "<ja>処理結果です。trueの場合は、処理は成功しました。falseの場合は処理が失敗しています。</ja><br><en>The process results. If true, the process succeeded. If false, the process failed.</en>"
+      description: "<div lang=\"ja\">処理結果です。trueの場合は、処理は成功しました。falseの場合は処理が失敗しています。</div><div lang=\"en\">The process results. If true, the process succeeded. If false, the process failed.</div>"
   title: AdGroupBidMultiplierServiceValue
-  description: "<ja>AdGroupBidMultiplierServiceValueオブジェクトは、入札価格調整率を格納するコンテナです。</ja><br><en>Container\
-    \ for bid multiplier.</en>"
+  description: "<div lang=\"ja\">AdGroupBidMultiplierServiceValueオブジェクトは、入札価格調整率を格納するコンテナです。</div><div lang=\"en\">Container\
+    \ for bid multiplier.</div>"

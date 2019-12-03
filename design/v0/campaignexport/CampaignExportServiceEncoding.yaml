@@ -5,7 +5,7 @@ CampaignExportServiceEncoding:
   - SJIS
   - UNKNOWN
   title: CampaignExportServiceEncoding
-  description: "<ja>CampaignExportServiceEncodingは、エクスポートするデータのエンコーディング設定です。</ja><br><en>CampaignExportServiceEncoding\
-    \ is an encoding setting for exporting data.</en><hr>\n* `UTF-8` - <ja>UTF-8です。</ja><br><en>UTF-8\
-    \ encode.</en><br>\n* `SJIS` - <ja>Shift-JISです。</ja><br><en>Shift-JIS encode.</en><br>\n\
-    * `UNKNOWN` - 未知の値です。<br>Unknown Value"
+  description: "<div lang=\"ja\">CampaignExportServiceEncodingは、エクスポートするデータのエンコーディング設定です。</div><div lang=\"en\">CampaignExportServiceEncoding\
+    \ is an encoding setting for exporting data.</div><hr>\n* <code>UTF-8</code> - <div lang=\"ja\">UTF-8です。</div><div lang=\"en\">UTF-8\
+    \ encode.</div>* <code>SJIS</code> - <div lang=\"ja\">Shift-JISです。</div><div lang=\"en\">Shift-JIS encode.</div>\
+    * <code>UNKNOWN</code> - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"

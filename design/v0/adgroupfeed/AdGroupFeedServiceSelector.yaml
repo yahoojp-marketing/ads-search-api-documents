@@ -6,37 +6,37 @@ AdGroupFeedServiceSelector:
     accountId:
       type: integer
       format: int64
-      description: "<ja>アカウントIDです。</ja><br><en>Account ID.</en>"
+      description: "<div lang=\"ja\">アカウントIDです。</div><div lang=\"en\">Account ID.</div>"
     adGroupIds:
       type: array
       items:
         type: integer
         format: int64
       maxItems: 500
-      description: "<ja>広告グループIDです。</ja><br><en>Ad group ID.</en>"
+      description: "<div lang=\"ja\">広告グループIDです。</div><div lang=\"en\">Ad group ID.</div>"
     campaignIds:
       type: array
       items:
         type: integer
         format: int64
       maxItems: 500
-      description: "<ja>キャンペーンIDです。</ja><br><en>Campaign ID.</en>"
+      description: "<div lang=\"ja\">キャンペーンIDです。</div><div lang=\"en\">Campaign ID.</div>"
     feedItemIds:
       type: array
       items:
         type: integer
         format: int64
       maxItems: 500
-      description: "<ja>FeedItem情報のIDです。</ja><br><en>FeedItem information ID.</en>"
+      description: "<div lang=\"ja\">FeedItem情報のIDです。</div><div lang=\"en\">FeedItem information ID.</div>"
     numberResults:
       type: integer
       format: int32
       minimum: 1
       maximum: 500
       default: 500
-      description: "ページの最大件数です。このフィールドは、1以上を指定する必要があります。<br>Maximum number of results\
+      description: "<div lang=\"ja\">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div><div lang=\"en\">Maximum number of results\
         \ to return in this page. This field must be greater than or equal to 1. Also\
-        \ see Entity Limits per operation."
+        \ see Entity Limits per operation.</div>"
     placeholderTypes:
       type: array
       items:
@@ -47,9 +47,9 @@ AdGroupFeedServiceSelector:
       format: int32
       minimum: 1
       default: 1
-      description: "ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。<br>Index of the first\
+      description: "<div lang=\"ja\">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div><div lang=\"en\">Index of the first\
         \ result to return in this page. This field must be greater than or equal\
-        \ to 1."
+        \ to 1.</div>"
   title: AdGroupFeedServiceSelector
-  description: "<ja>AdGroupFeedServiceSelectorオブジェクトは、FeedItem情報を指定します。</ja><br><en>AdGroupFeedServiceSelector\
-    \ describes the FeedItem information.</en>"
+  description: "<div lang=\"ja\">AdGroupFeedServiceSelectorオブジェクトは、FeedItem情報を指定します。</div><div lang=\"en\">AdGroupFeedServiceSelector\
+    \ describes the FeedItem information.</div>"

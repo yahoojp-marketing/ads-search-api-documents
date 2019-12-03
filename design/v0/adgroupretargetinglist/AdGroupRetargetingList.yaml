@@ -4,31 +4,31 @@ AdGroupRetargetingList:
     accountId:
       type: integer
       format: int64
-      description: "<ja>アカウントIDです。</ja><br><en>Account ID.</en>"
+      description: "<div lang=\"ja\">アカウントIDです。</div><div lang=\"en\">Account ID.</div>"
     adGroupId:
       type: integer
       format: int64
-      description: "<ja>広告グループIDです。</ja><br><en>Ad group ID.</en>"
+      description: "<div lang=\"ja\">広告グループIDです。</div><div lang=\"en\">Ad group ID.</div>"
     adGroupName:
       type: string
-      description: "<ja>広告グループ名です。</ja><br><en>Ad group name.</en>"
+      description: "<div lang=\"ja\">広告グループ名です。</div><div lang=\"en\">Ad group name.</div>"
     bidMultiplier:
       type: number
       format: double
-      description: "<ja>MaxCPC上昇値です。<br>※Default値：1.00</ja><br><en>Maximum CPC increase\
-        \ value.<br>* Default: 1.00</en>"
+      description: "<div lang=\"ja\">MaxCPC上昇値です。<br>※Default値：1.00</div><div lang=\"en\">Maximum CPC increase\
+        \ value.<br>* Default: 1.00</div>"
     campaignId:
       type: integer
       format: int64
-      description: "<ja>キャンペーンIDです。</ja><br><en>Campaign ID.</en>"
+      description: "<div lang=\"ja\">キャンペーンIDです。</div><div lang=\"en\">Campaign ID.</div>"
     campaignName:
       type: string
-      description: "<ja>キャンペーン名です。</ja><br><en>Campaign name.</en>"
+      description: "<div lang=\"ja\">キャンペーン名です。</div><div lang=\"en\">Campaign name.</div>"
     criterionTargetList:
       $ref: 'AdGroupRetargetingListServiceCriterionTargetList.yaml#/AdGroupRetargetingListServiceCriterionTargetList'
     excludedType:
       $ref: 'AdGroupRetargetingListServiceExcludedType.yaml#/AdGroupRetargetingListServiceExcludedType'
   title: AdGroupRetargetingList
-  description: "<ja>AdGroupRetargetingListは、広告グループレベルでのターゲットリスト設定を保持するオブジェクトです。</ja><br><en>AdGroupRetargetingList\
-    \ is an object that holds ad group user list information.</en><hr><details><summary>Requirement</summary><table\
+  description: "<div lang=\"ja\">AdGroupRetargetingListは、広告グループレベルでのターゲットリスト設定を保持するオブジェクトです。</div><div lang=\"en\">AdGroupRetargetingList\
+    \ is an object that holds ad group user list information.</div><hr><details><summary>Requirement</summary><table\
     \ border='1'><tr><th>PROPERTY</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>accountId</td><td>ignore</td><td>ignore</td><td>ignore</td></tr><tr><td>adGroupId</td><td>Requirement</td><td>Requirement</td><td>Requirement</td></tr><tr><td>adGroupName</td><td>ignore</td><td>ignore</td><td>ignore</td></tr><tr><td>bidMultiplier</td><td>Optional</td><td>Optional</td><td>ignore</td></tr><tr><td>campaignId</td><td>Requirement</td><td>Requirement</td><td>Requirement</td></tr><tr><td>campaignName</td><td>ignore</td><td>ignore</td><td>ignore</td></tr><tr><td>criterionTargetList</td><td>Requirement</td><td>Requirement</td><td>Requirement</td></tr><tr><td>excludedType</td><td>Optional</td><td>Optional</td><td>Requirement</td></tr></table></details>"

@@ -4,12 +4,12 @@ AccountTrackingUrlServicePage:
     totalNumEntries:
       type: integer
       format: int32
-      description: "<ja>取得される項目の総件数です。</ja><br><en>Total number of entries in the\
-        \ result.</en>"
+      description: "<div lang=\"ja\">取得される項目の総件数です。</div><div lang=\"en\">Total number of entries in the\
+        \ result.</div>"
     values:
       type: array
       items:
         $ref: 'AccountTrackingUrlServiceValue.yaml#/AccountTrackingUrlServiceValue'
   title: AccountTrackingUrlServicePage
-  description: "<ja>AccountTrackingUrlServicePageオブジェクトは、アカウントトラッキング情報に関するgetメソッドの実行結果を表します。</ja><br><en>AccountTrackingUrlServicePage\
-    \ object describes the account tracking information with get results.</en>"
+  description: "<div lang=\"ja\">AccountTrackingUrlServicePageオブジェクトは、アカウントトラッキング情報に関するgetメソッドの実行結果を表します。</div><div lang=\"en\">AccountTrackingUrlServicePage\
+    \ object describes the account tracking information with get results.</div>"

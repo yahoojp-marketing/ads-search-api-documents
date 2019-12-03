@@ -5,7 +5,6 @@ AdGroupAdServiceContainsLabelId:
   - 'FALSE'
   - UNKNOWN
   title: AdGroupAdServiceContainsLabelId
-  description: "<ja>ラベルデータ取得フラグです。</ja><br><en>AdGroupAdServiceContainsLabelId object\
-    \ describes acquisition flag of label data.</en><hr>\n* `TRUE` - <ja>取得する</ja><br><en>acquiring</en><br>\n\
-    * `FALSE` - <ja>取得しない</ja><br><en>not acquire</en><br>\n* `UNKNOWN` - 未知の値です。<br>Unknown\
-    \ Value"
+  description: "<div lang=\"ja\">ラベルデータ取得フラグです。</div><div lang=\"en\">AdGroupAdServiceContainsLabelId object\
+    \ describes acquisition flag of label data.</div><hr>\n* <code>TRUE</code> - <div lang=\"ja\">取得する</div><div lang=\"en\">acquiring</div>\
+    * <code>FALSE</code> - <div lang=\"ja\">取得しない</div><div lang=\"en\">not acquire</div>* <code>UNKNOWN</code> - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"

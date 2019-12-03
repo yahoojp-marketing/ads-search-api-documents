@@ -5,8 +5,7 @@ AdGroupWebpageServiceExcludedType:
   - EXCLUDED
   - UNKNOWN
   title: AdGroupWebpageServiceExcludedType
-  description: "<ja>AdGroupWebpageServiceExcludedTypeは、配信対象、および除外対象の設定を表します。</ja><br><en>AdGroupWebpageServiceExcludedType\
-    \ describes the setting type which delivers ads or do not delivers ads.</en><hr>\n\
-    * `INCLUDED` - <ja>配信対象</ja><br><en>Ads to be delivered</en><br>\n* `EXCLUDED`\
-    \ - <ja>除外対象</ja><br><en>Ads not to be delivered</en><br>\n* `UNKNOWN` - 未知の値です。<br>Unknown\
-    \ Value"
+  description: "<div lang=\"ja\">AdGroupWebpageServiceExcludedTypeは、配信対象、および除外対象の設定を表します。</div><div lang=\"en\">AdGroupWebpageServiceExcludedType\
+    \ describes the setting type which delivers ads or do not delivers ads.</div><hr>\n\
+    * <code>INCLUDED</code> - <div lang=\"ja\">配信対象</div><div lang=\"en\">Ads to be delivered</div>* <code>EXCLUDED</code>\
+    \ - <div lang=\"ja\">除外対象</div><div lang=\"en\">Ads not to be delivered</div>* <code>UNKNOWN</code> - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"

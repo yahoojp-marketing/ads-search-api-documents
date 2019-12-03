@@ -3,11 +3,11 @@ CampaignServiceCustomParameter:
   properties:
     key:
       type: string
-      description: "<ja>キーです。</ja><br><en>Key of parameter.</en>"
+      description: "<div lang=\"ja\">キーです。</div><div lang=\"en\">Key of parameter.</div>"
     value:
       type: string
-      description: "<ja>値です。</ja><br><en>Value of parameter.<br></en>"
+      description: "<div lang=\"ja\">値です。</div><div lang=\"en\">Value of parameter.<br></div>"
   title: CampaignServiceCustomParameter
-  description: "<ja>CampaignServiceCustomParameterは、カスタムパラメータの内容を表します。</ja><br><en>CampaignServiceCustomParameter\
-    \ displays the element of custom parameters.</en><hr><details><summary>Requirement</summary><table\
+  description: "<div lang=\"ja\">CampaignServiceCustomParameterは、カスタムパラメータの内容を表します。</div><div lang=\"en\">CampaignServiceCustomParameter\
+    \ displays the element of custom parameters.</div><hr><details><summary>Requirement</summary><table\
     \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>key</td><td>-</td><td>Requirement</td><td>Requirement</td><td>-</td></tr><tr><td>value</td><td>-</td><td>Optional</td><td>Optional</td><td>-</td></tr></table></details>"

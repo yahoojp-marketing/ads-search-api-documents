@@ -7,7 +7,7 @@ RetargetingListServiceOperation:
     accountId:
       type: integer
       format: int64
-      description: "<ja>アカウントIDです。</ja><br><en>Account ID.</en>"
+      description: "<div lang=\"ja\">アカウントIDです。</div><div lang=\"en\">Account ID.</div>"
     operand:
       type: array
       items:
@@ -17,5 +17,5 @@ RetargetingListServiceOperation:
     targetListOwner:
       $ref: 'RetargetingListServiceTargetListOwner.yaml#/RetargetingListServiceTargetListOwner'
   title: RetargetingListServiceOperation
-  description: "<ja>RetargetingListServiceOperationは、操作対象のターゲットリストを保持するオブジェクトです。</ja><br><en>RetargetingListServiceOperation\
-    \ is an object that holds target retargeting.</en>"
+  description: "<div lang=\"ja\">RetargetingListServiceOperationは、操作対象のターゲットリストを保持するオブジェクトです。</div><div lang=\"en\">RetargetingListServiceOperation\
+    \ is an object that holds target retargeting.</div>"

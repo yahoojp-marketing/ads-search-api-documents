@@ -3,7 +3,7 @@ CampaignServiceBiddingStrategySource:
   enum:
   - CAMPAIGN
   - UNKNOWN
-  description: "<ja>CampaignServiceBiddingStrategySourceは、自動入札設定のソースです。</ja><br><en>CampaignServiceBiddingStrategySource\
-    \ is a source of Auto Bidding.</en><hr>\n* `CAMPAIGN` - <ja>キャンペーンです。</ja><br><en>Campaign</en><br>\n\
-    * `UNKNOWN` - 未知の値です。<br>Unknown Value"
+  description: "<div lang=\"ja\">CampaignServiceBiddingStrategySourceは、自動入札設定のソースです。</div><div lang=\"en\">CampaignServiceBiddingStrategySource\
+    \ is a source of Auto Bidding.</div><hr>\n* <code>CAMPAIGN</code> - <div lang=\"ja\">キャンペーンです。</div><div lang=\"en\">Campaign</div>\
+    * <code>UNKNOWN</code> - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"
   title: CampaignServiceBiddingStrategySource

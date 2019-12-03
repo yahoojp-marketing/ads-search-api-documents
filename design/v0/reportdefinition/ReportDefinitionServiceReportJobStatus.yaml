@@ -7,9 +7,9 @@ ReportDefinitionServiceReportJobStatus:
   - FAILED
   - UNKNOWN
   title: ReportDefinitionServiceReportJobStatus
-  description: "<ja>ReportDefinitionServiceReportJobStatusは、定義されたレポートの処理状況です。</ja><br><en>A status of the requested report.</en><hr>\n\
-      \ * `WAIT` - <ja>待機中です。</ja><br><en>Please wait for report request to complete.</en><br>\n\
-      \ * `COMPLETED` - <ja>正常に終了しました。</ja><br><en>Report request completed successfully.</en><br>\n\
-      \ * `IN_PROGRESS` - <ja>レポートは作成中です。</ja><br><en>Report is in creating process.</en><br>\n\
-      \ * `FAILED` - <ja>処理が失敗しました。</ja><br><en>Report request failed.</en><br>\n\
-      \ * `UNKNOWN` - 未知の値です。<br>Unknown Value"
+  description: "<div lang=\"ja\">ReportDefinitionServiceReportJobStatusは、定義されたレポートの処理状況です。</div><div lang=\"en\">A status of the requested report.</div><hr>\n\
+      \ * <code>WAIT</code> - <div lang=\"ja\">待機中です。</div><div lang=\"en\">Please wait for report request to complete.</div>\
+      \ * <code>COMPLETED</code> - <div lang=\"ja\">正常に終了しました。</div><div lang=\"en\">Report request completed successfully.</div>\
+      \ * <code>IN_PROGRESS</code> - <div lang=\"ja\">レポートは作成中です。</div><div lang=\"en\">Report is in creating process.</div>\
+      \ * <code>FAILED</code> - <div lang=\"ja\">処理が失敗しました。</div><div lang=\"en\">Report request failed.</div>\
+      \ * <code>UNKNOWN</code> - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"

@@ -5,8 +5,8 @@ AdGroupServiceAdRotationMode:
   - ROTATE_FOREVER
   - UNKNOWN
   title: AdGroupServiceAdRotationMode
-  description: "<ja>AdGroupServiceAdRotationModeは、広告表示の最適化設定を表します。</ja><br><en>AdGroupServiceAdRotationMode\
-    \ describes Ad Rotation settings for optimizing and displaying ads.</en><hr>\n\
-    * `OPTIMIZE` - <ja>最適化して配信します。</ja><br><en>Optimizes and display ads</en><br>\n\
-    * `ROTATE_FOREVER` - <ja>常に均等に配信します（最適化しない）。</ja><br><en>Always rotates ads evenly\
-    \ (not optimized)</en><br>\n* `UNKNOWN` - 未知の値です。<br>Unknown Value"
+  description: "<div lang=\"ja\">AdGroupServiceAdRotationModeは、広告表示の最適化設定を表します。</div><div lang=\"en\">AdGroupServiceAdRotationMode\
+    \ describes Ad Rotation settings for optimizing and displaying ads.</div><hr>\n\
+    * <code>OPTIMIZE</code> - <div lang=\"ja\">最適化して配信します。</div><div lang=\"en\">Optimizes and display ads</div>\
+    * <code>ROTATE_FOREVER</code> - <div lang=\"ja\">常に均等に配信します（最適化しない）。</div><div lang=\"en\">Always rotates ads evenly\
+    \ (not optimized)</div>* <code>UNKNOWN</code> - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"

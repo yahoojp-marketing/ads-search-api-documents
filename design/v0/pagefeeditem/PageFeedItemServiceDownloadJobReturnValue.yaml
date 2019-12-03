@@ -6,5 +6,5 @@ PageFeedItemServiceDownloadJobReturnValue:
       items:
         $ref: 'PageFeedItemServiceDownloadJobValue.yaml#/PageFeedItemServiceDownloadJobValue'
   title: PageFeedItemServiceDownloadJobReturnValue
-  description: "<ja>PageFeedItemServiceDownloadJobReturnValueは、ダウンロードの実行結果をリストに格納するコンテナです。</ja><br><en>PageFeedItemServiceDownloadJobReturnValue\
-    \ retains list of download result.</en>"
+  description: "<div lang=\"ja\">PageFeedItemServiceDownloadJobReturnValueは、ダウンロードの実行結果をリストに格納するコンテナです。</div><div lang=\"en\">PageFeedItemServiceDownloadJobReturnValue\
+    \ retains list of download result.</div>"

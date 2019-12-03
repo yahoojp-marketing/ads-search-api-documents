@@ -3,12 +3,12 @@ AdGroupCriterionServiceCustomParameter:
   properties:
     key:
       type: string
-      description: "<ja>キーです。</ja><br><en>Key of parameter.</en>"
+      description: "<div lang=\"ja\">キーです。</div><div lang=\"en\">Key of parameter.</div>"
     value:
       type: string
-      description: "<ja>値です。</ja><br><en>Value of parameter.</en>"
+      description: "<div lang=\"ja\">値です。</div><div lang=\"en\">Value of parameter.</div>"
   title: AdGroupCriterionServiceCustomParameter
-  description: "<ja>AdGroupCriterionServiceCustomParameterは、カスタムパラメータの内容を表します。</ja><br><en>AdGroupCriterionServiceCustomParameter\
-    \ displays the element of custom parameters.</en><hr><details><summary>Requirement</summary><table\
-    \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>key</td><td>-</td><td>Requirement</td><td>Requirement<br><ja>※AdGroupAdService\
-    \ の場合、Ignore。</ja><br><en>* Ignore for AdGroupAdService.</en></td><td>-</td></tr><tr><td>value</td><td>-</td><td>Optional</td><td>Optional</td><td>-</td></tr></table></details>"
+  description: "<div lang=\"ja\">AdGroupCriterionServiceCustomParameterは、カスタムパラメータの内容を表します。</div><div lang=\"en\">AdGroupCriterionServiceCustomParameter\
+    \ displays the element of custom parameters.</div><hr><details><summary>Requirement</summary><table\
+    \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>key</td><td>-</td><td>Requirement</td><td>Requirement<br><div lang=\"ja\">※AdGroupAdService\
+    \ の場合、Ignore。</div><div lang=\"en\">* Ignore for AdGroupAdService.</div></td><td>-</td></tr><tr><td>value</td><td>-</td><td>Optional</td><td>Optional</td><td>-</td></tr></table></details>"

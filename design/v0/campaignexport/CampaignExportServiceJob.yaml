@@ -4,36 +4,36 @@ CampaignExportServiceJob:
     accountId:
       type: integer
       format: int64
-      description: "<ja>アカウントIDです。</ja><br><en>Account ID</en>"
+      description: "<div lang=\"ja\">アカウントIDです。</div><div lang=\"en\">Account ID</div>"
     endDate:
       type: string
-      description: "<ja>ジョブの終了日時です。</ja><br><en>End date and time of job setting</en>"
+      description: "<div lang=\"ja\">ジョブの終了日時です。</div><div lang=\"en\">End date and time of job setting</div>"
     exportFields:
       type: array
       items:
         type: string
-      description: "<ja>エクスポートするフィールドです。</ja><br><en>Fields to be exported</en>"
+      description: "<div lang=\"ja\">エクスポートするフィールドです。</div><div lang=\"en\">Fields to be exported</div>"
     jobId:
       type: integer
       format: int64
-      description: "<ja>ジョブIDです。</ja><br><en>CampaignExportServiceJob ID</en>"
+      description: "<div lang=\"ja\">ジョブIDです。</div><div lang=\"en\">CampaignExportServiceJob ID</div>"
     jobName:
       type: string
-      description: "<ja>ジョブ名です。</ja><br><en>CampaignExportServiceJob name<br>∗ Default:\
-        \ NULL</en>"
+      description: "<div lang=\"ja\">ジョブ名です。</div><div lang=\"en\">CampaignExportServiceJob name<br>∗ Default:\
+        \ NULL</div>"
     jobStatus:
       $ref: 'CampaignExportServiceJobStatus.yaml#/CampaignExportServiceJobStatus'
     progress:
       type: integer
       format: int32
-      description: "<ja>処理進捗です。</ja><br><en>Progress of job setting</en>"
+      description: "<div lang=\"ja\">処理進捗です。</div><div lang=\"en\">Progress of job setting</div>"
     startDate:
       type: string
-      description: "<ja>ジョブの開始日時です。</ja><br><en>Start date and time of job setting</en>"
+      description: "<div lang=\"ja\">ジョブの開始日時です。</div><div lang=\"en\">Start date and time of job setting</div>"
     userName:
       type: string
-      description: "<ja>ジョブ実行者のユーザー名です。</ja><br><en>Name of user who run the job.</en>"
+      description: "<div lang=\"ja\">ジョブ実行者のユーザー名です。</div><div lang=\"en\">Name of user who run the job.</div>"
   title: CampaignExportServiceJob
-  description: "<ja>CampaignExportServiceJob オブジェクトは、ジョブの情報を表します。</ja><br><en>CampaignExportServiceJob\
-    \ object describes the information of job settings.</en><hr><details><summary>Requirement</summary><table\
+  description: "<div lang=\"ja\">CampaignExportServiceJob オブジェクトは、ジョブの情報を表します。</div><div lang=\"en\">CampaignExportServiceJob\
+    \ object describes the information of job settings.</div><hr><details><summary>Requirement</summary><table\
     \ border='1'><tr><th>PROPERTY</th><th>GET</th></tr><tr><td>accountId</td><td>-</td></tr><tr><td>endDate</td><td>-</td></tr><tr><td>exportFields</td><td>-</td></tr><tr><td>jobId</td><td>-</td></tr><tr><td>jobName</td><td>-</td></tr><tr><td>progress</td><td>-</td></tr><tr><td>startDate</td><td>-</td></tr><tr><td>userName</td><td>-</td></tr><tr><td>jobStatus</td><td>-</td></tr></table></details>"

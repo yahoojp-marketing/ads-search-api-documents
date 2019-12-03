@@ -7,10 +7,10 @@ AdGroupFeedServicePlaceholderType:
   - STRUCTURED_SNIPPET
   - UNKNOWN
   title: AdGroupFeedServicePlaceholderType
-  description: "<ja>AdGroupFeedServicePlaceholderTypeは、FeedItem情報の種類を選択します。</ja><br><en>AdGroupFeedServicePlaceholderType\
-    \ selects the type of FeedItem information.</en><hr>\n* `STRUCTURED_SNIPPET` -\
-    \ <ja>カテゴリ補足オプションです。</ja><br><en>Structured snippet option.</en><br>\n* `QUICKLINK`\
-    \ - <ja>広告表示オプションのクイックリンクオプションです。</ja><br><en>QuickLinks of Ad Display Options.</en><br>\n\
-    * `CALLEXTENSION` - <ja>広告表示オプションの電話番号オプションです。</ja><br><en>Call Extensions of\
-    \ Ad Display Options.</en><br>\n* `CALLOUT` - <ja>テキスト補足オプションです。</ja><br><en>Callout\
-    \ option.</en><br>\n* `UNKNOWN` - 未知の値です。<br>Unknown Value"
+  description: "<div lang=\"ja\">AdGroupFeedServicePlaceholderTypeは、FeedItem情報の種類を選択します。</div><div lang=\"en\">AdGroupFeedServicePlaceholderType\
+    \ selects the type of FeedItem information.</div><hr>\n* <code>STRUCTURED_SNIPPET</code> -\
+    \ <div lang=\"ja\">カテゴリ補足オプションです。</div><div lang=\"en\">Structured snippet option.</div>* <code>QUICKLINK</code>\
+    \ - <div lang=\"ja\">広告表示オプションのクイックリンクオプションです。</div><div lang=\"en\">QuickLinks of Ad Display Options.</div>\
+    * <code>CALLEXTENSION</code> - <div lang=\"ja\">広告表示オプションの電話番号オプションです。</div><div lang=\"en\">Call Extensions of\
+    \ Ad Display Options.</div>* <code>CALLOUT</code> - <div lang=\"ja\">テキスト補足オプションです。</div><div lang=\"en\">Callout\
+    \ option.</div>* <code>UNKNOWN</code> - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"

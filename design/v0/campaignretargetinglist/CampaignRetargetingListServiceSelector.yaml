@@ -6,14 +6,14 @@ CampaignRetargetingListServiceSelector:
     accountId:
       type: integer
       format: int64
-      description: "<ja>アカウントIDです。</ja><br><en>Search conditon: Account ID.</en>"
+      description: "<div lang=\"ja\">アカウントIDです。</div><div lang=\"en\">Search conditon: Account ID.</div>"
     campaignIds:
       type: array
       items:
         type: integer
         format: int64
       maxItems: 1000
-      description: "<ja>キャンペーンIDです。</ja><br><en>Search conditon: Campaign ID.</en>"
+      description: "<div lang=\"ja\">キャンペーンIDです。</div><div lang=\"en\">Search conditon: Campaign ID.</div>"
     excludedType:
       $ref: 'CampaignRetargetingListServiceExcludedType.yaml#/CampaignRetargetingListServiceExcludedType'
     numberResults:
@@ -22,25 +22,25 @@ CampaignRetargetingListServiceSelector:
       minimum: 1
       maximum: 1000
       default: 500
-      description: "ページの最大件数です。このフィールドは、1以上を指定する必要があります。<br>Maximum number of results\
+      description: "<div lang=\"ja\">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div><div lang=\"en\">Maximum number of results\
         \ to return in this page. This field must be greater than or equal to 1. Also\
-        \ see Entity Limits per operation."
+        \ see Entity Limits per operation.</div>"
     startIndex:
       type: integer
       format: int32
       minimum: 1
       default: 1
-      description: "ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。<br>Index of the first\
+      description: "<div lang=\"ja\">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div><div lang=\"en\">Index of the first\
         \ result to return in this page. This field must be greater than or equal\
-        \ to 1."
+        \ to 1.</div>"
     targetListIds:
       type: array
       items:
         type: integer
         format: int64
       maxItems: 1000
-      description: "<ja>ターゲットリストIDです。</ja><br><en>Search conditon: Target List ID.</en>"
+      description: "<div lang=\"ja\">ターゲットリストIDです。</div><div lang=\"en\">Search conditon: Target List ID.</div>"
   title: CampaignRetargetingListServiceSelector
-  description: "<ja>CampaignRetargetingListServiceSelectorオブジェクトは、キャンペーン階層におけるターゲットリストの設定情報を取得するための検索条件（実行パラメータ）を保持します。</ja><br><en>CampaignRetargetingListServiceSelector\
+  description: "<div lang=\"ja\">CampaignRetargetingListServiceSelectorオブジェクトは、キャンペーン階層におけるターゲットリストの設定情報を取得するための検索条件（実行パラメータ）を保持します。</div><div lang=\"en\">CampaignRetargetingListServiceSelector\
     \ object holds search conditions (exec parameters) to get Target List settings\
-    \ on the campaign level.</en>"
+    \ on the campaign level.</div>"

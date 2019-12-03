@@ -7,7 +7,7 @@ CampaignFeedServiceOperation:
     accountId:
       type: integer
       format: int64
-      description: "<ja>アカウントIDです。</ja><br><en>Account ID.</en>"
+      description: "<div lang=\"ja\">アカウントIDです。</div><div lang=\"en\">Account ID.</div>"
     operand:
       type: array
       items:
@@ -15,5 +15,5 @@ CampaignFeedServiceOperation:
       minItems: 1
       maxItems: 200
   title: CampaignFeedServiceOperation
-  description: "<ja>CampaignFeedServiceOperationオブジェクトは、FeedItem情報を格納するコンテナです。</ja><br><en>CampaignFeedServiceOperation\
-    \ is a container of FeedItem information.</en>"
+  description: "<div lang=\"ja\">CampaignFeedServiceOperationオブジェクトは、FeedItem情報を格納するコンテナです。</div><div lang=\"en\">CampaignFeedServiceOperation\
+    \ is a container of FeedItem information.</div>"

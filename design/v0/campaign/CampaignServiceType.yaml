@@ -5,9 +5,9 @@ CampaignServiceType:
   - MOBILE_APP
   - DYNAMIC_ADS_FOR_SEARCH
   - UNKNOWN
-  description: "<ja>CampaignServiceType、キャンペーンタイプです。</ja><br><en>CampaignServiceType\
-    \ is the type of campaign.</en><hr>\n* `STANDARD` - <ja>標準キャンペーンです。</ja><br><en>Standard\
-    \ campaign.</en><br>\n* `MOBILE_APP` - <ja>アプリキャンペーンです。</ja><br><en>Mobile app\
-    \ download campaign.</en><br>\n* `DYNAMIC_ADS_FOR_SEARCH` - <ja>動的検索連動型広告用キャンペーンです。</ja><br><en>Dynamic\
-    \ ads for search campaign.</en><br>\n* `UNKNOWN` - 未知の値です。<br>Unknown Value"
+  description: "<div lang=\"ja\">CampaignServiceType、キャンペーンタイプです。</div><div lang=\"en\">CampaignServiceType\
+    \ is the type of campaign.</div><hr>\n* <code>STANDARD</code> - <div lang=\"ja\">標準キャンペーンです。</div><div lang=\"en\">Standard\
+    \ campaign.</div>* <code>MOBILE_APP</code> - <div lang=\"ja\">アプリキャンペーンです。</div><div lang=\"en\">Mobile app\
+    \ download campaign.</div>* <code>DYNAMIC_ADS_FOR_SEARCH</code> - <div lang=\"ja\">動的検索連動型広告用キャンペーンです。</div><div lang=\"en\">Dynamic\
+    \ ads for search campaign.</div>* <code>UNKNOWN</code> - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"
   title: CampaignServiceType

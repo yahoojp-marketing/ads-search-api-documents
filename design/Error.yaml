@@ -1,13 +1,12 @@
-# https://github.com/yahoojp-marketing/ydn-api-documents/blob/master/docs/ja/api_reference/data/Common/Error.md
 Error:
-  description: '<ja>Errorオブジェクトは、エラー内容を表します。</ja><br><en>Error information.</en>'
+  description: "<div lang=\"ja\">Errorオブジェクトは、エラー内容を表します。</div><div lang=\"en\">Error information.</div>"
   type: object
   properties:
     code:
-      description: '<ja>エラーコードです。</ja><br><en>The error code.</en>'
+      description: "<div lang=\"ja\">エラーコードです。</div><div lang=\"en\">The error code.</div>"
       type: string
     message:
-      description: '<ja>エラーメッセージです。</ja><br><en>A simple string representation of the error and reason.</en>'
+      description: "<div lang=\"ja\">エラーメッセージです。</div><div lang=\"en\">A simple string representation of the error and reason.</div>"
       type: string
     details:
       type: array

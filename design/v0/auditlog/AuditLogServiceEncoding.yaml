@@ -6,8 +6,8 @@ AuditLogServiceEncoding:
   - UTF_16LE
   - UNKNOWN
   title: AuditLogServiceEncoding
-  description: "<ja>AuditLogServiceEncodingは、操作履歴ファイルのエンコーディング形式（文字コード）を表します。</ja><br><en>AuditLogServiceEncoding\
-    \ describes the encoding type (character encoding) for Operation History file.</en><hr>\n\
-    * `SJIS` - <ja>SJIS形式です。</ja><br><en>SJIS</en><br>\n* `UTF_8` - <ja>UTF_8形式です。</ja><br><en>UTF_8</en><br>\n\
-    * `UTF_16LE` - <ja>UTF_16LE形式です。</ja><br><en>UTF_16LE</en><br>\n* `UNKNOWN` -\
-    \ 未知の値です。<br>Unknown Value"
+  description: "<div lang=\"ja\">AuditLogServiceEncodingは、操作履歴ファイルのエンコーディング形式（文字コード）を表します。</div><div lang=\"en\">AuditLogServiceEncoding\
+    \ describes the encoding type (character encoding) for Operation History file.</div><hr>\n\
+    * <code>SJIS</code> - <div lang=\"ja\">SJIS形式です。</div><div lang=\"en\">SJIS</div>* <code>UTF_8</code> - <div lang=\"ja\">UTF_8形式です。</div><div lang=\"en\">UTF_8</div>\
+    * <code>UTF_16LE</code> - <div lang=\"ja\">UTF_16LE形式です。</div><div lang=\"en\">UTF_16LE</div>* <code>UNKNOWN</code> -\
+    \ <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"

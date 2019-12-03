@@ -5,8 +5,7 @@ RetargetingListServiceTargetListOwner:
   - SHARED
   - UNKNOWN
   title: RetargetingListServiceTargetListOwner
-  description: "<ja>RetargetingListServiceTargetListOwnerは、ターゲットリストの所有状態を表します。</ja><br><en>RetargetingListServiceTargetListOwner\
-    \ describes the owner information of the target list.</en><hr>\n* `OWNER` - <ja>アカウントで専有されているターゲットリストです。</ja><br><en>The\
-    \ exclusive target list owned by an account.</en><br>\n* `SHARED` - <ja>複数のアカウント間で共有されているターゲットリストです。</ja><br><en>The\
-    \ target list shared by multiple accounts.</en><br>\n* `UNKNOWN` - 未知の値です。<br>Unknown\
-    \ Value"
+  description: "<div lang=\"ja\">RetargetingListServiceTargetListOwnerは、ターゲットリストの所有状態を表します。</div><div lang=\"en\">RetargetingListServiceTargetListOwner\
+    \ describes the owner information of the target list.</div><hr>\n* <code>OWNER</code> - <div lang=\"ja\">アカウントで専有されているターゲットリストです。</div><div lang=\"en\">The\
+    \ exclusive target list owned by an account.</div>* <code>SHARED</code> - <div lang=\"ja\">複数のアカウント間で共有されているターゲットリストです。</div><div lang=\"en\">The\
+    \ target list shared by multiple accounts.</div>* <code>UNKNOWN</code> - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"

@@ -8,14 +8,14 @@ CampaignServiceConversionOptimizerEligibility:
   - CONVERSION_TRACKING_NOT_ENABLED
   - NOT_ENOUGH_CONVERSIONS
   - UNKNOWN
-  description: "<ja>CampaignServiceConversionOptimizerEligibilityは、コンバージョンオプティマイザーが利用可能であるか判定します。</ja><br><en>CampaignServiceConversionOptimizerEligibility\
-    \ object is to determine if it is possible to use conversion optimizer.</en><hr>\n\
-    * `ENABLE` - <ja>利用可能です。</ja><br><en>Can use conversion optimizer.</en><br>\n\
-    * `DISABLE` - <ja>利用できません。</ja><br><en>Cannot use conversion optimizer.</en><br>\n\
-    * `CAMPAIGN_IS_NOT_ACTIVE` - <ja>キャンペーンがアクティブではありません。</ja><br><en>Campaign is\
-    \ not active.</en><br>\n* `NOT_CPC_CAMPAIGN` - <ja>コンバージョンオプティマイザーは、手動入札の場合にのみ有効です。</ja><br><en>Valid\
-    \ when it is in manual bidding.</en><br>\n* `CONVERSION_TRACKING_NOT_ENABLED`\
-    \ - <ja>コンバージョン測定タグが発行されていません。</ja><br><en>Conversion tracking tag is not enabled\
-    \ yet.</en><br>\n* `NOT_ENOUGH_CONVERSIONS` - <ja>コンバージョンの実績が十分ではありません。</ja><br><en>Conversion\
-    \ performance is not enough.</en><br>\n* `UNKNOWN` - 未知の値です。<br>Unknown Value"
+  description: "<div lang=\"ja\">CampaignServiceConversionOptimizerEligibilityは、コンバージョンオプティマイザーが利用可能であるか判定します。</div><div lang=\"en\">CampaignServiceConversionOptimizerEligibility\
+    \ object is to determine if it is possible to use conversion optimizer.</div><hr>\n\
+    * <code>ENABLE</code> - <div lang=\"ja\">利用可能です。</div><div lang=\"en\">Can use conversion optimizer.</div>\
+    * <code>DISABLE</code> - <div lang=\"ja\">利用できません。</div><div lang=\"en\">Cannot use conversion optimizer.</div>\
+    * <code>CAMPAIGN_IS_NOT_ACTIVE</code> - <div lang=\"ja\">キャンペーンがアクティブではありません。</div><div lang=\"en\">Campaign is\
+    \ not active.</div>* <code>NOT_CPC_CAMPAIGN</code> - <div lang=\"ja\">コンバージョンオプティマイザーは、手動入札の場合にのみ有効です。</div><div lang=\"en\">Valid\
+    \ when it is in manual bidding.</div>* <code>CONVERSION_TRACKING_NOT_ENABLED</code>\
+    \ - <div lang=\"ja\">コンバージョン測定タグが発行されていません。</div><div lang=\"en\">Conversion tracking tag is not enabled\
+    \ yet.</div>* <code>NOT_ENOUGH_CONVERSIONS</code> - <div lang=\"ja\">コンバージョンの実績が十分ではありません。</div><div lang=\"en\">Conversion\
+    \ performance is not enough.</div>* <code>UNKNOWN</code> - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"
   title: CampaignServiceConversionOptimizerEligibility

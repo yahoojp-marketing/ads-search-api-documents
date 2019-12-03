@@ -19,28 +19,27 @@ ReportDefinitionServiceReportType:
   - WEBPAGE_CRITERION
   - UNKNOWN
   title: ReportDefinitionServiceReportType
-  description: "<ja>ReportDefinitionServiceReportTypeは、レポートの種類を表します。</ja><br><en>ReportDefinitionServiceReportType\
-    \ displays a type of available report.</en><hr>\n* `ACCOUNT` - <ja>アカウントレポートです。</ja><br><en>Account\
-    \ Report.<br>Performance data of selected account.</en><br>\n* `FEED_ITEM` - <ja>広告表示オプションレポートです。</ja><br><en>Ad\
+  description: "<div lang=\"ja\">ReportDefinitionServiceReportTypeは、レポートの種類を表します。</div><div lang=\"en\">ReportDefinitionServiceReportType\
+    \ displays a type of available report.</div><hr>\n* <code>ACCOUNT</code> - <div lang=\"ja\">アカウントレポートです。</div><div lang=\"en\">Account\
+    \ Report.<br>Performance data of selected account.</div>* <code>FEED_ITEM</code> - <div lang=\"ja\">広告表示オプションレポートです。</div><div lang=\"en\">Ad\
     \ Display Option Report.<br>Performance data for selected Quick Links and/or Call\
-    \ Extension.</en><br>\n* `KEYWORDLESS_QUERY` - <ja>検索クエリーレポート（動的検索連動型広告）です。</ja><br><en>Search\
-    \ Query Report(DAS).</en><br>\n* `CAMPAIGN` - <ja>キャンペーンレポートです。</ja><br><en>Campaign\
-    \ Report.<br>Performance data for selected campaigns.</en><br>\n* `AD` - <ja>広告レポートです。</ja><br><en>Ad\
-    \ Report.<br>Performance data for selected ads.</en><br>\n* `BID_STRATEGY` - <ja>自動入札レポートです。</ja><br><en>Auto\
-    \ Bidding Report.<br>Performance data for selected Auto Bidding.</en><br>\n* `AD_CUSTOMIZERS`\
-    \ - <ja>データ自動挿入レポートです。</ja><br><en>Data Auto Insertion Report.<br>Performance\
-    \ data for selected Data Auto Insertion.</en><br>\n* `KEYWORDS` - <ja>キーワードレポートです。</ja><br><en>Keyword\
-    \ Report.<br>Performance data for selected keywords.</en><br>\n* `SCHEDULE_TARGET`\
-    \ - <ja>曜日・時間帯ターゲティングレポートです。</ja><br><en>Schedule Targeting Report.<br>Performance\
-    \ data in Day of Week / Hours.</en><br>\n* `LANDING_PAGE_URL` - <ja>最終リンク先URLレポートです。</ja><br><en>Landing\
-    \ Page Report.<br>Performance data for the final URL.</en><br>\n* `GEO_TARGET`\
-    \ - <ja>地域ターゲティングレポートです。</ja><br><en>Geo Targeting Report.<br>Performance data\
-    \ for location targeting.</en><br>\n* `SEARCH_QUERY` - <ja>検索クエリレポートです。</ja><br><en>Search\
+    \ Extension.</div>* <code>KEYWORDLESS_QUERY</code> - <div lang=\"ja\">検索クエリーレポート（動的検索連動型広告）です。</div><div lang=\"en\">Search\
+    \ Query Report(DAS).</div>* <code>CAMPAIGN</code> - <div lang=\"ja\">キャンペーンレポートです。</div><div lang=\"en\">Campaign\
+    \ Report.<br>Performance data for selected campaigns.</div>* <code>AD</code> - <div lang=\"ja\">広告レポートです。</div><div lang=\"en\">Ad\
+    \ Report.<br>Performance data for selected ads.</div>* <code>BID_STRATEGY</code> - <div lang=\"ja\">自動入札レポートです。</div><div lang=\"en\">Auto\
+    \ Bidding Report.<br>Performance data for selected Auto Bidding.</div>* <code>AD_CUSTOMIZERS</code>\
+    \ - <div lang=\"ja\">データ自動挿入レポートです。</div><div lang=\"en\">Data Auto Insertion Report.<br>Performance\
+    \ data for selected Data Auto Insertion.</div>* <code>KEYWORDS</code> - <div lang=\"ja\">キーワードレポートです。</div><div lang=\"en\">Keyword\
+    \ Report.<br>Performance data for selected keywords.</div>* <code>SCHEDULE_TARGET</code>\
+    \ - <div lang=\"ja\">曜日・時間帯ターゲティングレポートです。</div><div lang=\"en\">Schedule Targeting Report.<br>Performance\
+    \ data in Day of Week / Hours.</div>* <code>LANDING_PAGE_URL</code> - <div lang=\"ja\">最終リンク先URLレポートです。</div><div lang=\"en\">Landing\
+    \ Page Report.<br>Performance data for the final URL.</div>* <code>GEO_TARGET</code>\
+    \ - <div lang=\"ja\">地域ターゲティングレポートです。</div><div lang=\"en\">Geo Targeting Report.<br>Performance data\
+    \ for location targeting.</div>* <code>SEARCH_QUERY</code> - <div lang=\"ja\">検索クエリレポートです。</div><div lang=\"en\">Search\
     \ Query Report.<br>Performance data for search queries which triggered the ad\
-    \ and received the clicks.</en><br>\n* `WEBPAGE_CRITERION` - <ja>ページフィードターゲティングレポートです。</ja><br><en>Page\
-    \ Feed Targeting Report.</en><br>\n* `GEO` - <ja>地域別レポートです。</ja><br><en>Geo Report.<br>Performance\
-    \ data by selected location.</en><br>\n* `TARGET_LIST` - <ja>ターゲットリスト設定レポートです。</ja><br><en>Target\
-    \ List Report.<br>Performance data for selected target list.</en><br>\n* `ADGROUP`\
-    \ - <ja>広告グループレポートです。</ja><br><en>Ad Group Report.<br>Performance data for selected\
-    \ ad group for one or more of campaigns.</en><br>\n* `UNKNOWN` - 未知の値です。<br>Unknown\
-    \ Value"
+    \ and received the clicks.</div>* <code>WEBPAGE_CRITERION</code> - <div lang=\"ja\">ページフィードターゲティングレポートです。</div><div lang=\"en\">Page\
+    \ Feed Targeting Report.</div>* <code>GEO</code> - <div lang=\"ja\">地域別レポートです。</div><div lang=\"en\">Geo Report.<br>Performance\
+    \ data by selected location.</div>* <code>TARGET_LIST</code> - <div lang=\"ja\">ターゲットリスト設定レポートです。</div><div lang=\"en\">Target\
+    \ List Report.<br>Performance data for selected target list.</div>* <code>ADGROUP</code>\
+    \ - <div lang=\"ja\">広告グループレポートです。</div><div lang=\"en\">Ad Group Report.<br>Performance data for selected\
+    \ ad group for one or more of campaigns.</div>* <code>UNKNOWN</code> - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"

@@ -3,21 +3,21 @@ CampaignTargetServiceLocationTarget:
   properties:
     cityNameEN:
       type: string
-      description: "<ja>市区町村名（英語）です。</ja><br><en>City （English）</en>"
+      description: "<div lang=\"ja\">市区町村名（英語）です。</div><div lang=\"en\">City （English）</div>"
     cityNameJA:
       type: string
-      description: "<ja>都道府県名（日本語）です。</ja><br><en>City （Japanese）</en>"
+      description: "<div lang=\"ja\">都道府県名（日本語）です。</div><div lang=\"en\">City （Japanese）</div>"
     excludedType:
       $ref: 'CampaignTargetServiceExcludedType.yaml#/CampaignTargetServiceExcludedType'
     provinceNameEN:
       type: string
-      description: "<ja>都道府県名（英語）です。</ja><br><en>Prefecture（English）</en>"
+      description: "<div lang=\"ja\">都道府県名（英語）です。</div><div lang=\"en\">Prefecture（English）</div>"
     provinceNameJA:
       type: string
-      description: "<ja>市区町村名（日本語）です。</ja><br><en>Prefecture（Japanese）</en>"
+      description: "<div lang=\"ja\">市区町村名（日本語）です。</div><div lang=\"en\">Prefecture（Japanese）</div>"
     targetingStatus:
       $ref: 'CampaignTargetServiceTargetingStatus.yaml#/CampaignTargetServiceTargetingStatus'
   title: CampaignTargetServiceLocationTarget
-  description: "<ja>CampaignTargetServiceLocationTargetオブジェクトは、地域ターゲティング設定です。</ja><br><en>CampaignTargetServiceLocationTarget\
-    \ object is a location target setting.</en><hr><details><summary>Requirement</summary><table\
+  description: "<div lang=\"ja\">CampaignTargetServiceLocationTargetオブジェクトは、地域ターゲティング設定です。</div><div lang=\"en\">CampaignTargetServiceLocationTarget\
+    \ object is a location target setting.</div><hr><details><summary>Requirement</summary><table\
     \ border='1'><tr><th>PROPERTY</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>cityNameEN</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>cityNameJA</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>excludedType</td><td>Optional</td><td>Ignore</td><td>Ignore</td></tr><tr><td>provinceNameEN</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>provinceNameJA</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>targetingStatus</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr></table></details>"

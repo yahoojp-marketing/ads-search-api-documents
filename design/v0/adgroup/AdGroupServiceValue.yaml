@@ -9,7 +9,7 @@ AdGroupServiceValue:
         $ref: '../../Error.yaml#/Error'
     operationSucceeded:
       type: boolean
-      description: "<ja>処理結果を表示します。</ja><br><en>Result of process.</en>"
+      description: "<div lang=\"ja\">処理結果を表示します。</div><div lang=\"en\">Result of process.</div>"
   title: AdGroupServiceValue
-  description: "<ja>AdGroupServiceValueオブジェクトは、処理結果を含む広告グループに関する情報を表します。</ja><br><en>AdGroupServiceValue\
-    \ object displays ad group information including its operation results.</en>"
+  description: "<div lang=\"ja\">AdGroupServiceValueオブジェクトは、処理結果を含む広告グループに関する情報を表します。</div><div lang=\"en\">AdGroupServiceValue\
+    \ object displays ad group information including its operation results.</div>"

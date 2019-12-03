@@ -6,6 +6,6 @@ AdGroupServiceReturnValue:
       items:
         $ref: 'AdGroupServiceValue.yaml#/AdGroupServiceValue'
   title: AdGroupServiceReturnValue
-  description: "<ja>AdGroupServiceReturnValueオブジェクトは、操作の対象となる広告グループと処理の内容です。</ja><br><en>AdGroupServiceReturnValue\
+  description: "<div lang=\"ja\">AdGroupServiceReturnValueオブジェクトは、操作の対象となる広告グループと処理の内容です。</div><div lang=\"en\">AdGroupServiceReturnValue\
     \ object is a container which has ad group information including its operation\
-    \ results.</en>"
+    \ results.</div>"

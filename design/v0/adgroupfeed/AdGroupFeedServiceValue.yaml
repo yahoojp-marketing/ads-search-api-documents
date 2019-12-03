@@ -9,7 +9,7 @@ AdGroupFeedServiceValue:
         $ref: '../../Error.yaml#/Error'
     operationSucceeded:
       type: boolean
-      description: "<ja>処理結果を表示します。</ja><br><en>Showing operation results.</en>"
+      description: "<div lang=\"ja\">処理結果を表示します。</div><div lang=\"en\">Showing operation results.</div>"
   title: AdGroupFeedServiceValue
-  description: "<ja>AdGroupFeedServiceValueオブジェクトは、FeedItem情報を格納するコンテナです。</ja><br><en>AdGroupFeedServiceValue\
-    \ is a container of FeedItem information.</en>"
+  description: "<div lang=\"ja\">AdGroupFeedServiceValueオブジェクトは、FeedItem情報を格納するコンテナです。</div><div lang=\"en\">AdGroupFeedServiceValue\
+    \ is a container of FeedItem information.</div>"

@@ -6,5 +6,5 @@ AccountServiceReturnValue:
       items:
         $ref: 'AccountServiceValue.yaml#/AccountServiceValue'
   title: AccountServiceReturnValue
-  description: "<ja>AccountServiceReturnValueオブジェクトは、操作結果を含むアカウント情報のコンテナを表します。</ja><br><en>Container\
-    \ which has account information including operation results.</en>"
+  description: "<div lang=\"ja\">AccountServiceReturnValueオブジェクトは、操作結果を含むアカウント情報のコンテナを表します。</div><div lang=\"en\">Container\
+    \ which has account information including operation results.</div>"

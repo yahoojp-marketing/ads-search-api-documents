@@ -5,8 +5,8 @@ FeedServicePlaceholderType:
   - DYNAMIC_AD_FOR_SEARCH_PAGE_FEEDS
   - UNKNOWN
   title: FeedServicePlaceholderType
-  description: "<ja>FeedPlaceholderTypeは、FeedItem情報の種類を選択します。</ja><br><en>FeedServicePlaceholderType\
-    \ (enum) object select the type of Feed Item information.</en><hr>\n* `AD_CUSTOMIZER`\
-    \ - <ja>データ自動挿入です。</ja><br><en>Auto data insertion.</en><br>\n* `DYNAMIC_AD_FOR_SEARCH_PAGE_FEEDS`\
-    \ - <ja>動的検索連動型広告ページフィードです。</ja><br><en>Page feeds of dynamic ad for search.</en><br>\n\
-    * `UNKNOWN` - 未知の値です。<br>Unknown Value"
+  description: "<div lang=\"ja\">FeedPlaceholderTypeは、FeedItem情報の種類を選択します。</div><div lang=\"en\">FeedServicePlaceholderType\
+    \ (enum) object select the type of Feed Item information.</div><hr>\n* <code>AD_CUSTOMIZER</code>\
+    \ - <div lang=\"ja\">データ自動挿入です。</div><div lang=\"en\">Auto data insertion.</div>* <code>DYNAMIC_AD_FOR_SEARCH_PAGE_FEEDS</code>\
+    \ - <div lang=\"ja\">動的検索連動型広告ページフィードです。</div><div lang=\"en\">Page feeds of dynamic ad for search.</div>\
+    * <code>UNKNOWN</code> - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"

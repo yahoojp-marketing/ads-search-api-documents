@@ -4,10 +4,10 @@ Account:
     accountId:
       type: integer
       format: int64
-      description: "<ja>アカウントID</ja><br><en>Account ID</en>"
+      description: "<div lang=\"ja\">アカウントID</div><div lang=\"en\">Account ID</div>"
     accountName:
       type: string
-      description: "<ja>アカウント名</ja><br><en>Account Name</en>"
+      description: "<div lang=\"ja\">アカウント名</div><div lang=\"en\">Account Name</div>"
     accountStatus:
       $ref: 'AccountServiceStatus.yaml#/AccountServiceStatus'
     accountType:
@@ -24,8 +24,8 @@ Account:
       $ref: 'AccountServiceIsTestAccount.yaml#/AccountServiceIsTestAccount'
   title: Account
   description: |
-    <ja>Accountオブジェクトは、アカウントを表します。</ja><br>
-    <en>Search Account</en>
+    <div lang="ja">Accountオブジェクトは、アカウントを表します。</div>
+    <div lang="en">Search Account</div>
     <hr>
     <details><summary>Requirement</summary>
     <table border='1'>

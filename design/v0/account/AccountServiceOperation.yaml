@@ -7,7 +7,7 @@ AccountServiceOperation:
     accountId:
       type: integer
       format: int64
-      description: "<ja>アカウントIDです。</ja><br><en>Account ID.</en>"
+      description: "<div lang=\"ja\">アカウントIDです。</div><div lang=\"en\">Account ID.</div>"
     operand:
       type: array
       items:
@@ -15,6 +15,6 @@ AccountServiceOperation:
       minItems: 1
       maxItems: 1
   title: AccountServiceOperation
-  description: "<ja>AccountServiceOperationオブジェクトは、操作対象となるアカウント情報と処理の内容を表します。</ja><br><en>AccountServiceOperation\
+  description: "<div lang=\"ja\">AccountServiceOperationオブジェクトは、操作対象となるアカウント情報と処理の内容を表します。</div><div lang=\"en\">AccountServiceOperation\
     \ object describes account information for operation and list\
-    \ of operations.</en>"
+    \ of operations.</div>"

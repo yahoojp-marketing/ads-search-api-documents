@@ -7,11 +7,11 @@ ReportDefinitionServiceDownloadSelector:
     accountId:
       type: integer
       format: int64
-      description: "<ja>アカウントIDです。</ja><br><en>Account ID.</en>"
+      description: "<div lang=\"ja\">アカウントIDです。</div><div lang=\"en\">Account ID.</div>"
     reportJobId:
       type: integer
       format: int64
-      description: "<ja>レポートジョブIDです。</ja><br><en>Report Job ID.</en>"
+      description: "<div lang=\"ja\">レポートジョブIDです。</div><div lang=\"en\">Report Job ID.</div>"
   title: ReportDefinitionServiceDownloadSelector
-  description: "<ja>レポートをダウンロードします。</ja><br><en>\
-          \ Download the report.</en>"
+  description: "<div lang=\"ja\">レポートをダウンロードします。</div><div lang=\"en\">\
+          \ Download the report.</div>"

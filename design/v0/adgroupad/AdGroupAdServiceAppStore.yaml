@@ -5,6 +5,6 @@ AdGroupAdServiceAppStore:
   - ANDROID
   - UNKNOWN
   title: AdGroupAdServiceAppStore
-  description: "<ja>AdGroupAdServiceAppStoreは、アプリストアの種別です。</ja><br><en>App Store.</en><hr>\n\
-    * `IOS` - <ja>iOS用アプリストアです。</ja><br><en>iOS app store.</en><br>\n* `ANDROID` - <ja>Android用アプリストアです。</ja><br><en>Android app store.</en><br>\n\
-    * `UNKNOWN` - 未知の値です。<br>Unknown Value"
+  description: "<div lang=\"ja\">AdGroupAdServiceAppStoreは、アプリストアの種別です。</div><div lang=\"en\">App Store.</div><hr>\n\
+    * <code>IOS</code> - <div lang=\"ja\">iOS用アプリストアです。</div><div lang=\"en\">iOS app store.</div>* <code>ANDROID</code> - <div lang=\"ja\">Android用アプリストアです。</div><div lang=\"en\">Android app store.</div>\
+    * <code>UNKNOWN</code> - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"

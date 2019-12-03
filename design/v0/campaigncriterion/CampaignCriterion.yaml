@@ -4,19 +4,19 @@ CampaignCriterion:
     accountId:
       type: integer
       format: int64
-      description: "<ja>アカウントIDです。</ja><br><en>Account ID.</en>"
+      description: "<div lang=\"ja\">アカウントIDです。</div><div lang=\"en\">Account ID.</div>"
     campaignId:
       type: integer
       format: int64
-      description: "<ja>キャンペーンIDです。</ja><br><en>Campaign ID.</en>"
+      description: "<div lang=\"ja\">キャンペーンIDです。</div><div lang=\"en\">Campaign ID.</div>"
     campaignName:
       type: string
-      description: "<ja>キャンペーン名です。</ja><br><en>Campaign name.</en>"
+      description: "<div lang=\"ja\">キャンペーン名です。</div><div lang=\"en\">Campaign name.</div>"
     criterion:
       $ref: 'CampaignCriterionServiceCriterion.yaml#/CampaignCriterionServiceCriterion'
     use:
       $ref: 'CampaignCriterionServiceUse.yaml#/CampaignCriterionServiceUse'
   title: CampaignCriterion
-  description: "<ja>CampaignCriterionオブジェクトは、キャンペーンのクライテリアを表します。</ja><br><en>CampaignCriterion\
-    \ object describes campaign criteria.</en><hr><details><summary>Requirement</summary><table\
+  description: "<div lang=\"ja\">CampaignCriterionオブジェクトは、キャンペーンのクライテリアを表します。</div><div lang=\"en\">CampaignCriterion\
+    \ object describes campaign criteria.</div><hr><details><summary>Requirement</summary><table\
     \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>REMOVE</th></tr><tr><td>accountId</td><td>-</td><td>Requirement</td><td>Requirement<br>NoUpdatable</td></tr><tr><td>campaignId</td><td>-</td><td>Requirement</td><td>Requirement<br>NoUpdatable</td></tr><tr><td>campaignName</td><td>-</td><td>Ignore</td><td>Ignore</td></tr><tr><td>criterion</td><td>-</td><td>Requirement</td><td>Requirement<br>NoUpdatable</td></tr><tr><td>use</td><td>-</td><td>Requirement</td><td>Requirement<br>NoUpdatable</td></tr></table></details>"

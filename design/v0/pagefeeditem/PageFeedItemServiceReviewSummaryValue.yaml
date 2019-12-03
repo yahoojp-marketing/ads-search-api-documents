@@ -7,9 +7,9 @@ PageFeedItemServiceReviewSummaryValue:
         $ref: '../../Error.yaml#/Error'
     operationSucceeded:
       type: boolean
-      description: "<ja>処理結果です。trueの場合は、処理は成功しました。falseの場合は処理が失敗しています。</ja><br><en>The
-                    process results. If true, the process succeeded. If false, the process failed.</en>"
+      description: "<div lang=\"ja\">処理結果です。trueの場合は、処理は成功しました。falseの場合は処理が失敗しています。</div><div lang=\"en\">The
+                    process results. If true, the process succeeded. If false, the process failed.</div>"
     reviewSummary:
       $ref: 'PageFeedItemServiceReviewSummary.yaml#/PageFeedItemServiceReviewSummary'
   title: PageFeedItemServiceReviewSummaryValue
-  description: "<ja>PageFeedItemServiceReviewSummaryValueは、ページフィードアイテムの審査成績、状況サマリー取得結果を格納するコンテナです。</ja><br><en>PageFeedItemServiceReviewSummaryValue is a container storing the examination results of the page feed item, acquisitionc result of situation summary.</en>"
+  description: "<div lang=\"ja\">PageFeedItemServiceReviewSummaryValueは、ページフィードアイテムの審査成績、状況サマリー取得結果を格納するコンテナです。</div><div lang=\"en\">PageFeedItemServiceReviewSummaryValue is a container storing the examination results of the page feed item, acquisitionc result of situation summary.</div>"

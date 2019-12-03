@@ -7,9 +7,9 @@ AuditLogServiceOutput:
   - ZIPPED_TSV
   - UNKNOWN
   title: AuditLogServiceOutput
-  description: "<ja>AuditLogServiceOutputは、操作履歴取得ジョブのファイル形式を指定します。</ja><br><en>AuditLogServiceOutput\
-    \ specifies the file format of acruiqred operation history data.</en><hr>\n* `ZIPPED_CSV`\
-    \ - <ja>ZIP圧縮されたCSV形式です。</ja><br><en>in zipped CSV format</en><br>\n* `ZIPPED_TSV`\
-    \ - <ja>ZIP圧縮されたTSV形式です。</ja><br><en>in zipped TSV format</en><br>\n* `CSV` -\
-    \ <ja>CSV形式です。</ja><br><en>in CSV format</en><br>\n* `TSV` - <ja>TSV形式です。</ja><br><en>in\
-    \ TSV format</en><br>\n* `UNKNOWN` - 未知の値です。<br>Unknown Value"
+  description: "<div lang=\"ja\">AuditLogServiceOutputは、操作履歴取得ジョブのファイル形式を指定します。</div><div lang=\"en\">AuditLogServiceOutput\
+    \ specifies the file format of acruiqred operation history data.</div><hr>\n* <code>ZIPPED_CSV</code>\
+    \ - <div lang=\"ja\">ZIP圧縮されたCSV形式です。</div><div lang=\"en\">in zipped CSV format</div>* <code>ZIPPED_TSV</code>\
+    \ - <div lang=\"ja\">ZIP圧縮されたTSV形式です。</div><div lang=\"en\">in zipped TSV format</div>* <code>CSV</code> -\
+    \ <div lang=\"ja\">CSV形式です。</div><div lang=\"en\">in CSV format</div>* <code>TSV</code> - <div lang=\"ja\">TSV形式です。</div><div lang=\"en\">in\
+    \ TSV format</div>* <code>UNKNOWN</code> - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"

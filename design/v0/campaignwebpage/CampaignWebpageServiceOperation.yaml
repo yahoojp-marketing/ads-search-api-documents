@@ -7,7 +7,7 @@ CampaignWebpageServiceOperation:
     accountId:
       type: integer
       format: int64
-      description: "<ja>アカウントID</ja><br><en>Account ID</en>"
+      description: "<div lang=\"ja\">アカウントID</div><div lang=\"en\">Account ID</div>"
     operand:
       type: array
       items:
@@ -15,6 +15,6 @@ CampaignWebpageServiceOperation:
       minItems: 1
       maxItems: 2000
   title: CampaignWebpageServiceOperation
-  description: "<ja>CampaignWebpageServiceOperationオブジェクトは、mutateメソッドで操作対象となるPageFeedItemの除外設定を保持します。</ja><br><en>CampaignWebpageServiceOperation\
+  description: "<div lang=\"ja\">CampaignWebpageServiceOperationオブジェクトは、mutateメソッドで操作対象となるPageFeedItemの除外設定を保持します。</div><div lang=\"en\">CampaignWebpageServiceOperation\
     \ object contains the excluded setting of PageFeedItem which is the target of\
-    \ mutate operation.</en>"
+    \ mutate operation.</div>"

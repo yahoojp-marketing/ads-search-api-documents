@@ -7,7 +7,7 @@ PageFeedItemServiceSelector:
     accountId:
       type: integer
       format: int64
-      description: "<ja>アカウントID</ja><br><en>Account ID</en>"
+      description: "<div lang=\"ja\">アカウントID</div><div lang=\"en\">Account ID</div>"
     approvalStatuses:
       type: array
       items:
@@ -20,22 +20,22 @@ PageFeedItemServiceSelector:
         format: int64
       minItems: 1
       maxItems: 1000
-      description: "<ja>フィードID</ja><br><en>Feed ID</en>"
+      description: "<div lang=\"ja\">フィードID</div><div lang=\"en\">Feed ID</div>"
     numberResults:
       type: integer
       format: int32
       minimum: 1
       maximum: 10000
       default: 500
-      description: "ページの最大件数です。このフィールドは、1以上を指定する必要があります。<br>Maximum number of results\
+      description: "<div lang=\"ja\">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div><div lang=\"en\">Maximum number of results\
         \ to return in this page. This field must be greater than or equal to 1. Also\
-        \ see Entity Limits per operation."
+        \ see Entity Limits per operation.</div>"
     pageFeedCustomLabel:
       type: array
       items:
         type: string
       maxItems: 5
-      description: "<ja>カスタムラベル</ja><br><en>Custom label</en>"
+      description: "<div lang=\"ja\">カスタムラベル</div><div lang=\"en\">Custom label</div>"
     pageFeedUrl:
       type: array
       items:
@@ -46,9 +46,9 @@ PageFeedItemServiceSelector:
       format: int32
       minimum: 1
       default: 1
-      description: "ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。<br>Index of the first\
+      description: "<div lang=\"ja\">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div><div lang=\"en\">Index of the first\
         \ result to return in this page. This field must be greater than or equal\
-        \ to 1."
+        \ to 1.</div>"
   title: PageFeedItemServiceSelector
-  description: "<ja>PageFeedItemServiceSelectorオブジェクトは、登録したページフィードアイテムを照会するための検索条件を格納します。</ja><br><en>PageFeedItemServiceSelector\
-    \ object stores search condition to inquire about registered page feed item.</en>"
+  description: "<div lang=\"ja\">PageFeedItemServiceSelectorオブジェクトは、登録したページフィードアイテムを照会するための検索条件を格納します。</div><div lang=\"en\">PageFeedItemServiceSelector\
+    \ object stores search condition to inquire about registered page feed item.</div>"

@@ -6,5 +6,5 @@ FeedServiceReturnValue:
       items:
         $ref: 'FeedServiceValue.yaml#/FeedServiceValue'
   title: FeedServiceReturnValue
-  description: "<ja>FeedServiceReturnValueは、操作結果を含む自動データ挿入のリストのコンテナです。</ja><br><en>FeedReturn\
-    \ contains the result value of Data auto insertion.</en>"
+  description: "<div lang=\"ja\">FeedServiceReturnValueは、操作結果を含む自動データ挿入のリストのコンテナです。</div><div lang=\"en\">FeedReturn\
+    \ contains the result value of Data auto insertion.</div>"

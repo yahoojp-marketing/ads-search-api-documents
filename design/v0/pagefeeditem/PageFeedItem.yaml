@@ -4,32 +4,32 @@ PageFeedItem:
     accountId:
       type: integer
       format: int64
-      description: "<ja>アカウントID</ja><br><en>Account ID</en>"
+      description: "<div lang=\"ja\">アカウントID</div><div lang=\"en\">Account ID</div>"
     approvalStatus:
       $ref: 'PageFeedItemServiceApprovalStatus.yaml#/PageFeedItemServiceApprovalStatus'
     disapprovalReasonCodes:
       type: array
       items:
         type: string
-      description: "<ja>審査否認理由コード</ja><br><en>Codes of disapproval reason</en>"
+      description: "<div lang=\"ja\">審査否認理由コード</div><div lang=\"en\">Codes of disapproval reason</div>"
     disapprovalReasonComment:
       type: string
-      description: "<ja>審査否認理由のコメント</ja><br><en>Comment of disapproval reason</en>"
+      description: "<div lang=\"ja\">審査否認理由のコメント</div><div lang=\"en\">Comment of disapproval reason</div>"
     feedId:
       type: integer
       format: int64
-      description: "<ja>フィードID</ja><br><en>Feed ID</en>"
+      description: "<div lang=\"ja\">フィードID</div><div lang=\"en\">Feed ID</div>"
     pageFeedCustomLabel:
       type: string
-      description: "<ja>ページフィードアイテムのカスタムラベル<br>複数ある場合はカンマ区切り</ja><br><en>Custom label\
-        \ of Page feed item.<br>If multiple, comma separated.</en>"
+      description: "<div lang=\"ja\">ページフィードアイテムのカスタムラベル<br>複数ある場合はカンマ区切り</div><div lang=\"en\">Custom label\
+        \ of Page feed item.<br>If multiple, comma separated.</div>"
     pageFeedItemId:
       type: integer
       format: int64
-      description: "<ja>ページフィードアイテムID</ja><br><en>Page feed item ID</en>"
+      description: "<div lang=\"ja\">ページフィードアイテムID</div><div lang=\"en\">Page feed item ID</div>"
     pageFeedUrl:
       type: string
-      description: "<ja>ページフィードURL。</ja><br><en>Url of page feed</en>"
+      description: "<div lang=\"ja\">ページフィードURL。</div><div lang=\"en\">Url of page feed</div>"
   title: PageFeedItem
-  description: "<ja>PageFeedItemオブジェクトは、ページフィードアイテム情報を格納します。</ja><br><en>PageFeedItem\
-    \ object retains page feed Item.</en>"
+  description: "<div lang=\"ja\">PageFeedItemオブジェクトは、ページフィードアイテム情報を格納します。</div><div lang=\"en\">PageFeedItem\
+    \ object retains page feed Item.</div>"

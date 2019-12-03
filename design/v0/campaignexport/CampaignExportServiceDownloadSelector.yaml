@@ -7,11 +7,11 @@ CampaignExportServiceDownloadSelector:
     accountId:
       type: integer
       format: int64
-      description: "<ja>検索条件：アカウントIDです。</ja><br><en>Search condition: Account ID.</en>"
+      description: "<div lang=\"ja\">検索条件：アカウントIDです。</div><div lang=\"en\">Search condition: Account ID.</div>"
     jobId:
       type: integer
       format: int64
-      description: "<ja>検索条件：ジョブIDです。</ja><br><en>Search condition: Job ID.</en>"
+      description: "<div lang=\"ja\">検索条件：ジョブIDです。</div><div lang=\"en\">Search condition: Job ID.</div>"
   title: CampaignExportServiceDownloadSelector
-  description: "<ja>エクスポート結果をダウンロードします。</ja><br><en>\
-      \ Download the export result.</en>"
+  description: "<div lang=\"ja\">エクスポート結果をダウンロードします。</div><div lang=\"en\">\
+      \ Download the export result.</div>"

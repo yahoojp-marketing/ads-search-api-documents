@@ -5,7 +5,7 @@ RetargetingListServiceIsDateSpecificRule:
   - 'FALSE'
   - UNKNOWN
   title: RetargetingListServiceIsDateSpecificRule
-  description: "<ja>RetargetingListServiceIsDateSpecificRuleは、期限付きルールか定義します。</ja><br><en>RetargetingListServiceIsDateSpecificRule\
-    \ defines the rule with deadline.</en><hr>\n* `TRUE` - <ja>期限が付くルールとして定義します。</ja><br><en>Rule\
-    \ with deadline.</en><br>\n* `FALSE` - <ja>期限を付けないルールとして定義します。</ja><br><en>Rule\
-    \ without deadline.</en><br>\n* `UNKNOWN` - 未知の値です。<br>Unknown Value"
+  description: "<div lang=\"ja\">RetargetingListServiceIsDateSpecificRuleは、期限付きルールか定義します。</div><div lang=\"en\">RetargetingListServiceIsDateSpecificRule\
+    \ defines the rule with deadline.</div><hr>\n* <code>TRUE</code> - <div lang=\"ja\">期限が付くルールとして定義します。</div><div lang=\"en\">Rule\
+    \ with deadline.</div>* <code>FALSE</code> - <div lang=\"ja\">期限を付けないルールとして定義します。</div><div lang=\"en\">Rule\
+    \ without deadline.</div>* <code>UNKNOWN</code> - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"

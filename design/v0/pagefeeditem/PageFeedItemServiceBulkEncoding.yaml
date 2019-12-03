@@ -6,8 +6,8 @@ PageFeedItemServiceBulkEncoding:
   - UTF-16LE
   - UNKNOWN
   title: PageFeedItemServiceBulkEncoding
-  description: "<ja>PageFeedItemServiceBulkEncodingは、ページフィードアイテムファイルのエンコーディング形式（文字コード）を表します。</ja><br><en>PageFeedItemServiceBulkEncoding\
-    \ displays encoding(character code) of Page feed item file.</en><hr>\n* `UTF-8`\
-    \ - <ja>UTF-8形式</ja><br><en>Character code:UTF-8</en><br>\n* `UTF-16LE` - <ja>UTF-16LE形式</ja><br><en>Character\
-    \ code:UTF-16LE</en><br>\n* `SJIS` - <ja>SJIS形式</ja><br><en>Character code:SJIS</en><br>\n\
-    * `UNKNOWN` - 未知の値です。<br>Unknown Value"
+  description: "<div lang=\"ja\">PageFeedItemServiceBulkEncodingは、ページフィードアイテムファイルのエンコーディング形式（文字コード）を表します。</div><div lang=\"en\">PageFeedItemServiceBulkEncoding\
+    \ displays encoding(character code) of Page feed item file.</div><hr>\n* <code>UTF-8</code>\
+    \ - <div lang=\"ja\">UTF-8形式</div><div lang=\"en\">Character code:UTF-8</div>* <code>UTF-16LE</code> - <div lang=\"ja\">UTF-16LE形式</div><div lang=\"en\">Character\
+    \ code:UTF-16LE</div>* <code>SJIS</code> - <div lang=\"ja\">SJIS形式</div><div lang=\"en\">Character code:SJIS</div>\
+    * <code>UNKNOWN</code> - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"

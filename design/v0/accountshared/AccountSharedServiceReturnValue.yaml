@@ -6,5 +6,5 @@ AccountSharedServiceReturnValue:
       items:
         $ref: 'AccountSharedServiceValue.yaml#/AccountSharedServiceValue'
   title: AccountSharedServiceReturnValue
-  description: "<ja>AccountSharedServiceReturnValueオブジェクトは、検索結果（全エンティティのリスト）を保持します。</ja><br><en>AccountSharedServiceReturnValue\
-    \ object holds search results (all entities list).</en>"
+  description: "<div lang=\"ja\">AccountSharedServiceReturnValueオブジェクトは、検索結果（全エンティティのリスト）を保持します。</div><div lang=\"en\">AccountSharedServiceReturnValue\
+    \ object holds search results (all entities list).</div>"

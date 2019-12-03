@@ -3,11 +3,11 @@ AuditLogServiceDateRange:
   properties:
     endDate:
       type: string
-      description: "<ja>対象期間の終了日です。<br>※1 「YYYYMMDDhhmmss」形式です。秒単位まで指定できます。<br>時間の指定がない場合は、0:00:00として扱われます。<br>　【例】2016年5月25日 午後2時5分35秒に設定したい場合：20160525140535<br>※2 日付は19700101～20371231まで設定可能です。</ja><br><en>End date of target date. <br>*1 The format is specified as \"YYYYMMDDhhmmss\". It can be set at second bid level.<br>If it's not specified, the value'0:00:00' is set as default.<br>　ex.) To set 2:05:35 PM on May 25, 2017, the value for this option is \"20170525140535\".<br>*2 Available date range :Jan 1, 1970 (19700101) - Dec 31, 2037 (20371231)</en>"
+      description: "<div lang=\"ja\">対象期間の終了日です。<br>※1 「YYYYMMDDhhmmss」形式です。秒単位まで指定できます。<br>時間の指定がない場合は、0:00:00として扱われます。<br>　【例】2016年5月25日 午後2時5分35秒に設定したい場合：20160525140535<br>※2 日付は19700101～20371231まで設定可能です。</div><div lang=\"en\">End date of target date. <br>*1 The format is specified as \"YYYYMMDDhhmmss\". It can be set at second bid level.<br>If it's not specified, the value'0:00:00' is set as default.<br>　ex.) To set 2:05:35 PM on May 25, 2017, the value for this option is \"20170525140535\".<br>*2 Available date range :Jan 1, 1970 (19700101) - Dec 31, 2037 (20371231)</div>"
     startDate:
       type: string
-      description: "<ja>対象期間の開始日です。<br>※1 「YYYYMMDDhhmmss」形式です。秒単位まで指定できます。<br>時間の指定がない場合は、0:00:00として扱われます。<br>　【例】2016年5月25日 午後2時5分35秒に設定したい場合：20160525140535<br>※2 日付は19700101～20371231まで設定可能です。</ja><br><en>Start date of target date. <br>*1 The format is specified as \"YYYYMMDDhhmmss\". It can be set at second bid level.<br>If it's not specified, the value'0:00:00' is set as default.<br>　ex.) To set 2:05:35 PM on May 25, 2017, the value for this option is \"20170525140535\".<br>*2 Available date range :Jan 1, 1970 (19700101) - Dec 31, 2037 (20371231)</en>"
+      description: "<div lang=\"ja\">対象期間の開始日です。<br>※1 「YYYYMMDDhhmmss」形式です。秒単位まで指定できます。<br>時間の指定がない場合は、0:00:00として扱われます。<br>　【例】2016年5月25日 午後2時5分35秒に設定したい場合：20160525140535<br>※2 日付は19700101～20371231まで設定可能です。</div><div lang=\"en\">Start date of target date. <br>*1 The format is specified as \"YYYYMMDDhhmmss\". It can be set at second bid level.<br>If it's not specified, the value'0:00:00' is set as default.<br>　ex.) To set 2:05:35 PM on May 25, 2017, the value for this option is \"20170525140535\".<br>*2 Available date range :Jan 1, 1970 (19700101) - Dec 31, 2037 (20371231)</div>"
   title: AuditLogServiceDateRange
-  description: "<ja>AuditLogServiceDateRangeオブジェクトは操作履歴を取得する条件、期間を示します。</ja><br><en>AuditLogServiceDateRange\
-    \ object displays the conditions and period to get Operation History.</en><hr><details><summary>Requirement</summary><table\
+  description: "<div lang=\"ja\">AuditLogServiceDateRangeオブジェクトは操作履歴を取得する条件、期間を示します。</div><div lang=\"en\">AuditLogServiceDateRange\
+    \ object displays the conditions and period to get Operation History.</div><hr><details><summary>Requirement</summary><table\
     \ border='1'><tr><th>PROPERTY</th><th>add</th><th>remove</th></tr><tr><td>endDate</td><td>Requirement</td><td>-</td></tr><tr><td>startDate</td><td>Requirement</td><td>-</td></tr></table></details>"

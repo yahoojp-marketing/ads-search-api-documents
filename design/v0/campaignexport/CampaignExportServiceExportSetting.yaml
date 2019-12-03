@@ -6,7 +6,7 @@ CampaignExportServiceExportSetting:
     accountId:
       type: integer
       format: int64
-      description: "<ja>アカウントIDです。</ja><br><en>Account ID</en>"
+      description: "<div lang=\"ja\">アカウントIDです。</div><div lang=\"en\">Account ID</div>"
     adGroupAdApprovalStatuses:
       type: array
       items:
@@ -28,7 +28,7 @@ CampaignExportServiceExportSetting:
         type: integer
         format: int64
       maxItems: 500
-      description: "<ja>広告グループクライテリアIDです。</ja><br><en>Ad group criteria ID</en>"
+      description: "<div lang=\"ja\">広告グループクライテリアIDです。</div><div lang=\"en\">Ad group criteria ID</div>"
     adGroupCriterionUserStatuses:
       type: array
       items:
@@ -40,7 +40,7 @@ CampaignExportServiceExportSetting:
         type: integer
         format: int64
       maxItems: 500
-      description: "<ja>ダウンロード対象の広告グループIDです。</ja><br><en>Ad group ID of export objective</en>"
+      description: "<div lang=\"ja\">ダウンロード対象の広告グループIDです。</div><div lang=\"en\">Ad group ID of export objective</div>"
     adGroupUserStatuses:
       type: array
       items:
@@ -52,21 +52,21 @@ CampaignExportServiceExportSetting:
         type: integer
         format: int64
       maxItems: 500
-      description: "<ja>ダウンロード対象の広告IDです。</ja><br><en>Ad ID of export objective</en>"
+      description: "<div lang=\"ja\">ダウンロード対象の広告IDです。</div><div lang=\"en\">Ad ID of export objective</div>"
     campaignCriterionIds:
       type: array
       items:
         type: integer
         format: int64
       maxItems: 500
-      description: "<ja>キャンペーンクライテリアIDです。</ja><br><en>Campaign criteria ID</en>"
+      description: "<div lang=\"ja\">キャンペーンクライテリアIDです。</div><div lang=\"en\">Campaign criteria ID</div>"
     campaignIds:
       type: array
       items:
         type: integer
         format: int64
       maxItems: 500
-      description: "<ja>ダウンロード対象のキャンペーンIDです。</ja><br><en>Campaign ID of export objective</en>"
+      description: "<div lang=\"ja\">ダウンロード対象のキャンペーンIDです。</div><div lang=\"en\">Campaign ID of export objective</div>"
     campaignUserStatuses:
       type: array
       items:
@@ -83,15 +83,15 @@ CampaignExportServiceExportSetting:
       type: array
       items:
         type: string
-      description: "<ja>エクスポートするフィールドを指定します。</ja><br><en>Select which field to export.</en>"
+      description: "<div lang=\"ja\">エクスポートするフィールドを指定します。</div><div lang=\"en\">Select which field to export.</div>"
     jobName:
       type: string
-      description: "<ja>ダウンロードするジョブの名称です。</ja><br><en>Job information for export</en>"
+      description: "<div lang=\"ja\">ダウンロードするジョブの名称です。</div><div lang=\"en\">Job information for export</div>"
     lang:
       $ref: 'CampaignExportServiceLang.yaml#/CampaignExportServiceLang'
     output:
       $ref: 'CampaignExportServiceOutput.yaml#/CampaignExportServiceOutput'
   title: CampaignExportServiceExportSetting
-  description: "<ja>CampaignExportServiceExportSetting オブジェクトは、エクスポートする条件を表します。</ja><br><en>CampaignExportServiceExportSetting\
-    \ object describes the condition for exports.</en><hr><details><summary>Requirement</summary><table\
+  description: "<div lang=\"ja\">CampaignExportServiceExportSetting オブジェクトは、エクスポートする条件を表します。</div><div lang=\"en\">CampaignExportServiceExportSetting\
+    \ object describes the condition for exports.</div><hr><details><summary>Requirement</summary><table\
     \ border='1'><tr><th>PROPERTY</th><th>GET</th></tr><tr><td>accountId</td><td>Requirement</td></tr><tr><td>adGroupAdApprovalStatuses</td><td>Optional</td></tr><tr><td>adGroupAdUserStatuses</td><td>Optional</td></tr><tr><td>adGroupCriterionApprovalStatuses</td><td>Optional</td></tr><tr><td>adGroupCriterionIds</td><td>Optional</td></tr><tr><td>adGroupCriterionUserStatuses</td><td>Optional</td></tr><tr><td>adGroupIds</td><td>Optional</td></tr><tr><td>adGroupUserStatuses</td><td>Optional</td></tr><tr><td>adIds</td><td>Optional</td></tr><tr><td>campaignCriterionIds</td><td>Optional</td></tr><tr><td>campaignIds</td><td>Optional</td></tr><tr><td>campaignUserStatuses</td><td>Optional</td></tr><tr><td>encoding</td><td>Requirement</td></tr><tr><td>entityTypes</td><td>Optional</td></tr><tr><td>exportFields</td><td>Optional</td></tr><tr><td>jobName</td><td>Optional</td></tr><tr><td>lang</td><td>Requirement</td></tr><tr><td>output</td><td>Requirement</td></tr></table></details>"

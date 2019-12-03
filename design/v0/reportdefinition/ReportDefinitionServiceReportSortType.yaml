@@ -5,7 +5,7 @@ ReportDefinitionServiceReportSortType:
   - DESC
   - UNKNOWN
   title: ReportDefinitionServiceReportSortType
-  description: "<ja>ReportDefinitionServiceReportSortTypeは、ソート条件を表します。</ja><br><en>ReportDefinitionServiceReportSortType\
-    \ is a sort condition type.</en><hr>\n* `ASC` - <ja>昇順にソートされます。</ja><br><en>Sort\
-    \ in ascending order.</en><br>\n* `DESC` - <ja>降順にソートされます。</ja><br><en>Sort in\
-    \ descending order.</en><br>\n* `UNKNOWN` - 未知の値です。<br>Unknown Value"
+  description: "<div lang=\"ja\">ReportDefinitionServiceReportSortTypeは、ソート条件を表します。</div><div lang=\"en\">ReportDefinitionServiceReportSortType\
+    \ is a sort condition type.</div><hr>\n* <code>ASC</code> - <div lang=\"ja\">昇順にソートされます。</div><div lang=\"en\">Sort\
+    \ in ascending order.</div>* <code>DESC</code> - <div lang=\"ja\">降順にソートされます。</div><div lang=\"en\">Sort in\
+    \ descending order.</div>* <code>UNKNOWN</code> - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"

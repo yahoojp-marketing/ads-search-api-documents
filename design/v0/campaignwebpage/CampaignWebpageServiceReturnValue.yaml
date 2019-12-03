@@ -6,5 +6,5 @@ CampaignWebpageServiceReturnValue:
       items:
         $ref: 'CampaignWebpageServiceValue.yaml#/CampaignWebpageServiceValue'
   title: CampaignWebpageServiceReturnValue
-  description: "<ja>CampaignWebpageServiceReturnValueオブジェクトは、操作結果を含む除外設定のコンテナを保持します。</ja><br><en>CampaignWebpageServiceReturnValue\
-    \ object contains container for excluded settings including operation result.</en>"
+  description: "<div lang=\"ja\">CampaignWebpageServiceReturnValueオブジェクトは、操作結果を含む除外設定のコンテナを保持します。</div><div lang=\"en\">CampaignWebpageServiceReturnValue\
+    \ object contains container for excluded settings including operation result.</div>"

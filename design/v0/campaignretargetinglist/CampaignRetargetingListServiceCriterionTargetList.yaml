@@ -4,15 +4,15 @@ CampaignRetargetingListServiceCriterionTargetList:
     retargetingTrackId:
       type: integer
       format: int64
-      description: "<ja>リターゲティングトラックIDです。</ja><br><en>Retargeting Track ID.</en>"
+      description: "<div lang=\"ja\">リターゲティングトラックIDです。</div><div lang=\"en\">Retargeting Track ID.</div>"
     targetListId:
       type: integer
       format: int64
-      description: "<ja>ターゲットリストIDです。</ja><br><en>Target list ID.</en>"
+      description: "<div lang=\"ja\">ターゲットリストIDです。</div><div lang=\"en\">Target list ID.</div>"
     targetListName:
       type: string
-      description: "<ja>ターゲットリスト名です。</ja><br><en>Target list name.</en>"
+      description: "<div lang=\"ja\">ターゲットリスト名です。</div><div lang=\"en\">Target list name.</div>"
   title: CampaignRetargetingListServiceCriterionTargetList
-  description: "<ja>CampaignRetargetingListServiceCriterionTargetListは、ターゲットリスト情報を保持するオブジェクトです。</ja><br><en>CampaignRetargetingListServiceCriterionTargetList\
-    \ is an object that holds target list information.</en><hr><details><summary>Requirement</summary><table\
+  description: "<div lang=\"ja\">CampaignRetargetingListServiceCriterionTargetListは、ターゲットリスト情報を保持するオブジェクトです。</div><div lang=\"en\">CampaignRetargetingListServiceCriterionTargetList\
+    \ is an object that holds target list information.</div><hr><details><summary>Requirement</summary><table\
     \ border='1'><tr><th>PROPERTY</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>retargetingTrackId</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>targetListId</td><td>Requirement</td><td>Requirement</td><td>Requirement</td></tr><tr><td>targetListName</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr></table></details>"

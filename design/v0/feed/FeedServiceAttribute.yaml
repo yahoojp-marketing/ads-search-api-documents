@@ -4,15 +4,15 @@ FeedServiceAttribute:
     feedAttributeId:
       type: integer
       format: int64
-      description: "<ja>自動データ挿入のリストの属性（カラム）IDです。</ja><br><en>Attribute ID (column\
-        \ ID) of auto data insertion list.</en>"
+      description: "<div lang=\"ja\">自動データ挿入のリストの属性（カラム）IDです。</div><div lang=\"en\">Attribute ID (column\
+        \ ID) of auto data insertion list.</div>"
     feedAttributeName:
       type: string
-      description: "<ja>自動データ挿入のリストの属性（カラム）名です。</ja><br><en>Attribute name (column\
-        \ name) of auto data insertion list.</en>"
+      description: "<div lang=\"ja\">自動データ挿入のリストの属性（カラム）名です。</div><div lang=\"en\">Attribute name (column\
+        \ name) of auto data insertion list.</div>"
     placeholderField:
       $ref: 'FeedServicePlaceholderField.yaml#/FeedServicePlaceholderField'
   title: FeedServiceAttribute
-  description: "<ja>FeedServiceAttributeオブジェクトは、自動データ挿入のリストの属性を格納します。</ja><br><en>FeedServiceAttribute\
-    \ object contains the attribute of auto data insertion list.</en><hr><details><summary>Requirement</summary><table\
+  description: "<div lang=\"ja\">FeedServiceAttributeオブジェクトは、自動データ挿入のリストの属性を格納します。</div><div lang=\"en\">FeedServiceAttribute\
+    \ object contains the attribute of auto data insertion list.</div><hr><details><summary>Requirement</summary><table\
     \ border='1'><tr><th>PROPERTY</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>feedAttributeId</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>feedAttributeName</td><td>Requirement</td><td>Requirement</td><td>Ignore</td></tr><tr><td>placeholderField</td><td>Requirement</td><td>Requirement</td><td>Ignore</td></tr></table></details>"

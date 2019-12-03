@@ -4,6 +4,6 @@ CampaignTargetServicePlatformTarget:
     platformType:
       $ref: 'CampaignTargetServicePlatformType.yaml#/CampaignTargetServicePlatformType'
   title: CampaignTargetServicePlatformTarget
-  description: "<ja>CampaignTargetServicePlatformTargetオブジェクトは、デバイス設定を表します。</ja><br><en>CampaignTargetServicePlatformTarget\
-    \ object describes device setting.</en><hr><details><summary>Requirement</summary><table\
+  description: "<div lang=\"ja\">CampaignTargetServicePlatformTargetオブジェクトは、デバイス設定を表します。</div><div lang=\"en\">CampaignTargetServicePlatformTarget\
+    \ object describes device setting.</div><hr><details><summary>Requirement</summary><table\
     \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>platformType</td><td>-</td><td>Requirement</td><td>Requirement</td><td>-</td></tr></table></details>"

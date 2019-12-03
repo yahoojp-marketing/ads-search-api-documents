@@ -4,12 +4,12 @@ CampaignServicePage:
     totalNumEntries:
       type: integer
       format: int32
-      description: "<ja>取得される項目の総件数です。</ja><br><en>Total number of entries in the\
-        \ result.</en>"
+      description: "<div lang=\"ja\">取得される項目の総件数です。</div><div lang=\"en\">Total number of entries in the\
+        \ result.</div>"
     values:
       type: array
       items:
         $ref: 'CampaignServiceValue.yaml#/CampaignServiceValue'
   title: CampaignServicePage
-  description: "<ja>CampaignServicePageオブジェクトは、取得されるキャンペーンに関するエントリーを表します。</ja><br><en>CampaignServicePage\
-    \ object displays entries for campaign.</en>"
+  description: "<div lang=\"ja\">CampaignServicePageオブジェクトは、取得されるキャンペーンに関するエントリーを表します。</div><div lang=\"en\">CampaignServicePage\
+    \ object displays entries for campaign.</div>"

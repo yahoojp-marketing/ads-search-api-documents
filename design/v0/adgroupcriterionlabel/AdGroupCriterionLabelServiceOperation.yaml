@@ -7,7 +7,7 @@ AdGroupCriterionLabelServiceOperation:
     accountId:
       type: integer
       format: int64
-      description: "<ja>アカウントID</ja><br><en>Account ID</en>"
+      description: "<div lang=\"ja\">アカウントID</div><div lang=\"en\">Account ID</div>"
     operand:
       type: array
       items:
@@ -15,6 +15,6 @@ AdGroupCriterionLabelServiceOperation:
       minItems: 1
       maxItems: 2000
   title: AdGroupCriterionLabelServiceOperation
-  description: "<ja>AdGroupCriterionLabelServiceOperationオブジェクトは、操作の対象となる広告グループのクライテリアラベル情報と処理の内容を表します。</ja><br><en>AdGroupCriterionLabelServiceOperation\
+  description: "<div lang=\"ja\">AdGroupCriterionLabelServiceOperationオブジェクトは、操作の対象となる広告グループのクライテリアラベル情報と処理の内容を表します。</div><div lang=\"en\">AdGroupCriterionLabelServiceOperation\
     \ displays information of ad group criterion label to be operated and processing\
-    \ content.</en>"
+    \ content.</div>"

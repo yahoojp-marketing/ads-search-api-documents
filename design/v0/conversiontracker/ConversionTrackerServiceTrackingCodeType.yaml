@@ -6,7 +6,7 @@ ConversionTrackerServiceTrackingCodeType:
   - IMPORT
   - UNKNOWN
   title: ConversionTrackerServiceTrackingCodeType
-  description: "<ja>ConversionTrackerServiceTrackingCodeTypeは、ウェブページのトラッキングタイプを表します。</ja><br><en>ConversionTrackerServiceTrackingCodeType\
-    \ describes tracking type of web page.</en><hr>\n* `WEBPAGE` - <ja>ウェブページでのコンバージョンです。</ja><br><en>Web\
-    \ page conversion</en><br>\n* `CLICK_TO_CALL` - <ja>電話番号発信のコンバージョンです。</ja><br><en>Click\
-    \ to call conversion</en><br>\n* `IMPORT` - <ja></ja><en></en><br>\n* `UNKNOWN` - 未知の値です。<br>Unknown Value"
+  description: "<div lang=\"ja\">ConversionTrackerServiceTrackingCodeTypeは、ウェブページのトラッキングタイプを表します。</div><div lang=\"en\">ConversionTrackerServiceTrackingCodeType\
+    \ describes tracking type of web page.</div><hr>\n* <code>WEBPAGE</code> - <div lang=\"ja\">ウェブページでのコンバージョンです。</div><div lang=\"en\">Web\
+    \ page conversion</div>* <code>CLICK_TO_CALL</code> - <div lang=\"ja\">電話番号発信のコンバージョンです。</div><div lang=\"en\">Click\
+    \ to call conversion</div>* <code>IMPORT</code> - <div lang=\"ja\"></div><div lang=\"en\"></div>* <code>UNKNOWN</code> - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"

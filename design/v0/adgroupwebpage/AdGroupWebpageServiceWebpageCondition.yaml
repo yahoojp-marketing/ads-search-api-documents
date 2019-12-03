@@ -3,11 +3,11 @@ AdGroupWebpageServiceWebpageCondition:
   properties:
     argument:
       type: string
-      description: "<ja>条件の設定値(正規表現の指定可)</ja><br><en>Value of rule setting (Can specify\
-        \ regular expression)</en>"
+      description: "<div lang=\"ja\">条件の設定値(正規表現の指定可)</div><div lang=\"en\">Value of rule setting (Can specify\
+        \ regular expression)</div>"
     webpageConditionType:
       $ref: 'AdGroupWebpageServiceWebpageConditionType.yaml#/AdGroupWebpageServiceWebpageConditionType'
   title: AdGroupWebpageServiceWebpageCondition
-  description: "<ja>AdGroupWebpageServiceWebpageConditionオブジェクトは、Webpageの条件を保持します。</ja><br><en>AdGroupWebpageServiceWebpageCondition\
-    \ object contains the rules of webpage.</en><hr><details><summary>Requirement</summary><table\
-    \ border='1'><tr><th>PROPERTY</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>argument</td><td>Requirement<br><ja>※typeがALL_PAGESの場合はOptional</ja><br><en>∗ If type is ALL_PAGES, Optional</en></td><td>Ignore</td><td>Ignore</td></tr><tr><td>webpageConditionType</td><td>Requirement</td><td>Ignore</td><td>Ignore</td></tr></table></details>"
+  description: "<div lang=\"ja\">AdGroupWebpageServiceWebpageConditionオブジェクトは、Webpageの条件を保持します。</div><div lang=\"en\">AdGroupWebpageServiceWebpageCondition\
+    \ object contains the rules of webpage.</div><hr><details><summary>Requirement</summary><table\
+    \ border='1'><tr><th>PROPERTY</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>argument</td><td>Requirement<br><div lang=\"ja\">※typeがALL_PAGESの場合はOptional</div><div lang=\"en\">∗ If type is ALL_PAGES, Optional</div></td><td>Ignore</td><td>Ignore</td></tr><tr><td>webpageConditionType</td><td>Requirement</td><td>Ignore</td><td>Ignore</td></tr></table></details>"

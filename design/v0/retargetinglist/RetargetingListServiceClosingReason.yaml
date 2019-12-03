@@ -4,6 +4,6 @@ RetargetingListServiceClosingReason:
   - UNUSED_LIST
   - UNKNOWN
   title: RetargetingListServiceClosingReason
-  description: "<ja>RetargetingListServiceClosingReasonは、ターゲットリストのクローズ理由を表します。</ja><br><en>RetargetingListServiceClosingReason\
-    \ defines the reason for closing.</en><hr>\n* `UNUSED_LIST` - <ja>未利用です。</ja><br><en>Unused</en><br>\n\
-    * `UNKNOWN` - 未知の値です。<br>Unknown Value"
+  description: "<div lang=\"ja\">RetargetingListServiceClosingReasonは、ターゲットリストのクローズ理由を表します。</div><div lang=\"en\">RetargetingListServiceClosingReason\
+    \ defines the reason for closing.</div><hr>\n* <code>UNUSED_LIST</code> - <div lang=\"ja\">未利用です。</div><div lang=\"en\">Unused</div>\
+    * <code>UNKNOWN</code> - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"

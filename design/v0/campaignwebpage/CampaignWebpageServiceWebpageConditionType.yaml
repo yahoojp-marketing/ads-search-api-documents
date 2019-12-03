@@ -8,9 +8,9 @@ CampaignWebpageServiceWebpageConditionType:
   - ALL_PAGES
   - UNKNOWN
   title: CampaignWebpageServiceWebpageConditionType
-  description: "<ja>PageFeedItemを除外設定する種別です。</ja><br><en>Type to set PageFeedItem.</en><hr>\n\
-    * `CUSTOM_LABEL` - <ja>カスタム　ラベル</ja><br><en>Custom labels</en><br>\n* `ALL_PAGES`\
-    \ - <ja>すべてのWebページ</ja><br><en>All web pages</en><br>\n* `URL` - <ja>URL</ja><br><en>URLs</en><br>\n\
-    * `PAGE_TITLE` - <ja>Webページのタイトル</ja><br><en>Title of web pages</en><br>\n* `PAGE_CONTENT`\
-    \ - <ja>Webページのコンテンツ</ja><br><en>Contents of web pages</en><br>\n* `UNKNOWN` -\
-    \ 未知の値です。<br>Unknown Value"
+  description: "<div lang=\"ja\">PageFeedItemを除外設定する種別です。</div><div lang=\"en\">Type to set PageFeedItem.</div><hr>\n\
+    * <code>CUSTOM_LABEL</code> - <div lang=\"ja\">カスタム　ラベル</div><div lang=\"en\">Custom labels</div>* <code>ALL_PAGES</code>\
+    \ - <div lang=\"ja\">すべてのWebページ</div><div lang=\"en\">All web pages</div>* <code>URL</code> - <div lang=\"ja\">URL</div><div lang=\"en\">URLs</div>\
+    * <code>PAGE_TITLE</code> - <div lang=\"ja\">Webページのタイトル</div><div lang=\"en\">Title of web pages</div>* <code>PAGE_CONTENT</code>\
+    \ - <div lang=\"ja\">Webページのコンテンツ</div><div lang=\"en\">Contents of web pages</div>* <code>UNKNOWN</code> -\
+    \ <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"

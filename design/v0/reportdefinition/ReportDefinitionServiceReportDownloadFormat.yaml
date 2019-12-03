@@ -6,8 +6,8 @@ ReportDefinitionServiceReportDownloadFormat:
   - TSV
   - UNKNOWN
   title: ReportDefinitionServiceReportDownloadFormat
-  description: "<ja>ReportDefinitionServiceReportDownloadFormatは、定義されたダウンロードレポートのファイル形式を表します。</ja><br><en>ReportDefinitionServiceReportDownloadFormat\
-    \ displays a file format of the report.</en><hr>\n* `CSV` - <ja>CSVフォーマットです。<br>カンマで区分されます。</ja><br><en>CSV\
-    \ output format.<br>Separated by comma.</en><br>\n* `XML` - <ja>XMLフォーマットです。</ja><br><en>XML\
-    \ output format.</en><br>\n* `TSV` - <ja>TSVフォーマットです。</ja><br><en>TSV output format.</en><br>\n\
-    * `UNKNOWN` - 未知の値です。<br>Unknown Value"
+  description: "<div lang=\"ja\">ReportDefinitionServiceReportDownloadFormatは、定義されたダウンロードレポートのファイル形式を表します。</div><div lang=\"en\">ReportDefinitionServiceReportDownloadFormat\
+    \ displays a file format of the report.</div><hr>\n* <code>CSV</code> - <div lang=\"ja\">CSVフォーマットです。<br>カンマで区分されます。</div><div lang=\"en\">CSV\
+    \ output format.<br>Separated by comma.</div>* <code>XML</code> - <div lang=\"ja\">XMLフォーマットです。</div><div lang=\"en\">XML\
+    \ output format.</div>* <code>TSV</code> - <div lang=\"ja\">TSVフォーマットです。</div><div lang=\"en\">TSV output format.</div>\
+    * <code>UNKNOWN</code> - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"

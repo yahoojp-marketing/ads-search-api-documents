@@ -6,9 +6,9 @@ AdGroupServiceBid:
     maxCpc:
       type: integer
       format: int64
-      description: "<ja>キーワード入札価格です。</ja><br><en>Keyword bid (CPC).</en>"
+      description: "<div lang=\"ja\">キーワード入札価格です。</div><div lang=\"en\">Keyword bid (CPC).</div>"
   title: AdGroupServiceBid
-  description: "<ja>AdGroupServiceBidオブジェクトは、入札価格を表示します。</ja><br><en>AdGroupServiceBid\
-    \ object displays the bid values.</en><hr><details><summary>Requirement</summary><table\
+  description: "<div lang=\"ja\">AdGroupServiceBidオブジェクトは、入札価格を表示します。</div><div lang=\"en\">AdGroupServiceBid\
+    \ object displays the bid values.</div><hr><details><summary>Requirement</summary><table\
     \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>bidSource</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>maxCpc</td><td>-</td><td>Optional<br>※Default:\
     \ 1</td><td>Optional<br><i></i></td><td>-</td></tr></table></details>"

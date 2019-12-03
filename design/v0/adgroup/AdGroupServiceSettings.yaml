@@ -6,6 +6,6 @@ AdGroupServiceSettings:
     targetingSetting:
       $ref: 'AdGroupServiceTargetingSetting.yaml#/AdGroupServiceTargetingSetting'
   title: AdGroupServiceSettings
-  description: "<ja>AdGroupServiceSettingsは、ターゲットタイプを保持するオブジェクトです</ja><br><en>AdGroupServiceSettings\
-    \ is object that holds target type.</en><hr><details><summary>Requirement</summary><table\
+  description: "<div lang=\"ja\">AdGroupServiceSettingsは、ターゲットタイプを保持するオブジェクトです</div><div lang=\"en\">AdGroupServiceSettings\
+    \ is object that holds target type.</div><hr><details><summary>Requirement</summary><table\
     \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>criterionType</td><td>-</td><td>Requirement</td><td>Requirement</td><td>-</td></tr><tr><td>targetingSetting</td><td>-</td><td>Optional</td><td>Optional</td><td>-</td></tr></table></details>"

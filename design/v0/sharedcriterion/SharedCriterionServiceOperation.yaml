@@ -7,7 +7,7 @@ SharedCriterionServiceOperation:
     accountId:
       type: integer
       format: int64
-      description: "<ja>アカウントIDです。</ja><br><en>Account ID.</en>"
+      description: "<div lang=\"ja\">アカウントIDです。</div><div lang=\"en\">Account ID.</div>"
     operand:
       type: array
       items:
@@ -15,5 +15,5 @@ SharedCriterionServiceOperation:
       minItems: 1
       maxItems: 1000
   title: SharedCriterionServiceOperation
-  description: "<ja>SharedCriterionServiceOperationは、操作対象キャンペーンを保持するオブジェクトです。</ja><br><en>SharedCriterionServiceOperation\
-    \ object holds campaign for operation.</en>"
+  description: "<div lang=\"ja\">SharedCriterionServiceOperationは、操作対象キャンペーンを保持するオブジェクトです。</div><div lang=\"en\">SharedCriterionServiceOperation\
+    \ object holds campaign for operation.</div>"

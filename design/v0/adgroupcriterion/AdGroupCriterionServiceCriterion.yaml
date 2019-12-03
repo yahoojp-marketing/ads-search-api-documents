@@ -4,17 +4,17 @@ AdGroupCriterionServiceCriterion:
     criterionId:
       type: integer
       format: int64
-      description: "<ja>クライテリアIDです。</ja><br><en>AdGroupCriterionServiceCriterion ID.</en>"
+      description: "<div lang=\"ja\">クライテリアIDです。</div><div lang=\"en\">AdGroupCriterionServiceCriterion ID.</div>"
     criterionTrackId:
       type: integer
       format: int64
-      description: "<ja>トラッキング用クライテリアIDです。</ja><br><en>AdGroupCriterionServiceCriterion\
-        \ ID for tracking.</en>"
+      description: "<div lang=\"ja\">トラッキング用クライテリアIDです。</div><div lang=\"en\">AdGroupCriterionServiceCriterion\
+        \ ID for tracking.</div>"
     criterionType:
       $ref: 'AdGroupCriterionServiceCriterionType.yaml#/AdGroupCriterionServiceCriterionType'
     keyword:
       $ref: 'AdGroupCriterionServiceKeyword.yaml#/AdGroupCriterionServiceKeyword'
   title: AdGroupCriterionServiceCriterion
-  description: "<ja>AdGroupCriterionServiceCriterionオブジェクトは、クライテリアを表します。 ※広告グループ用クライテリアです。</ja><br><en>AdGroupCriterionServiceCriterion\
-    \ object displays criteria information.</en><hr><details><summary>Requirement</summary><table\
+  description: "<div lang=\"ja\">AdGroupCriterionServiceCriterionオブジェクトは、クライテリアを表します。 ※広告グループ用クライテリアです。</div><div lang=\"en\">AdGroupCriterionServiceCriterion\
+    \ object displays criteria information.</div><hr><details><summary>Requirement</summary><table\
     \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>criterionId</td><td>-</td><td>-</td><td>Requirement<br><i>NotUpdatable</i></td><td>Requirement<br><i>NotUpdatable</i></td></tr><tr><td>criterionTrackId</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>criterionType</td><td>-</td><td>Requirement</td><td>Requirement<br><i>NotUpdatable</i></td><td>Requirement<br><i>NotUpdatable</i></td></tr><tr><td>keyword</td><td>-</td><td>-</td><td>-</td><td>-</td></tr></table></details>"

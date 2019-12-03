@@ -11,9 +11,9 @@ ReportDefinitionServiceFieldValue:
         $ref: 'ReportDefinitionServiceReportFieldAttribute.yaml#/ReportDefinitionServiceReportFieldAttribute'
     operationSucceeded:
       type: boolean
-      description: "<ja>処理結果です。trueの場合は、処理は成功しました。falseの場合は処理が失敗しています。</ja><br><en>The
-                    process results. If true, the process succeeded. If false, the process failed.</en>"
+      description: "<div lang=\"ja\">処理結果です。trueの場合は、処理は成功しました。falseの場合は処理が失敗しています。</div><div lang=\"en\">The
+                    process results. If true, the process succeeded. If false, the process failed.</div>"
   title: ReportDefinitionServiceFieldValue
-  description: "<ja>ReportDefinitionServiceFieldValueオブジェクトは、取得される使用可能なレポートのエントリーを表します。</ja><br><en>ReportDefinitionServiceFieldValue\
-    \ object displays an entry of available reports by get operations.</en><hr><details><summary>Requirement</summary><table\
+  description: "<div lang=\"ja\">ReportDefinitionServiceFieldValueオブジェクトは、取得される使用可能なレポートのエントリーを表します。</div><div lang=\"en\">ReportDefinitionServiceFieldValue\
+    \ object displays an entry of available reports by get operations.</div><hr><details><summary>Requirement</summary><table\
     \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>REMOVE</th></tr><tr><td>fields</td><td>-</td><td>-</td><td>-</td></tr></table></details>"

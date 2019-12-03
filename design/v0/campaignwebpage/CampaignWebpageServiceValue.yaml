@@ -9,7 +9,7 @@ CampaignWebpageServiceValue:
         $ref: '../../Error.yaml#/Error'
     operationSucceeded:
       type: boolean
-      description: "<ja>処理結果</ja><br><en>Operation result</en>"
+      description: "<div lang=\"ja\">処理結果</div><div lang=\"en\">Operation result</div>"
   title: CampaignWebpageServiceValue
-  description: "<ja>CampaignWebpageServiceValueオブジェクトは、操作結果を含むPageFeedItemの除外設定を表します。</ja><br><en>CampaignWebpageServiceValue\
-    \ object describes excluded settings including operation result.</en>"
+  description: "<div lang=\"ja\">CampaignWebpageServiceValueオブジェクトは、操作結果を含むPageFeedItemの除外設定を表します。</div><div lang=\"en\">CampaignWebpageServiceValue\
+    \ object describes excluded settings including operation result.</div>"

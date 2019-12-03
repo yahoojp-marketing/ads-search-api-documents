@@ -3,19 +3,19 @@ DictionaryServiceDisapprovalReason:
   properties:
     description:
       type: string
-      description: "<ja>審査否認理由の内容です。</ja><br><en>Description of disapproval reason</en>"
+      description: "<div lang=\"ja\">審査否認理由の内容です。</div><div lang=\"en\">Description of disapproval reason</div>"
     disapprovalReasonCode:
       type: string
-      description: "<ja>審査コードです。</ja><br><en>Editorial code</en>"
+      description: "<div lang=\"ja\">審査コードです。</div><div lang=\"en\">Editorial code</div>"
     lang:
       $ref: 'DictionaryServiceLang.yaml#/DictionaryServiceLang'
     recommendation:
       type: string
-      description: "<ja>推奨する対応方法です。</ja><br><en>Recommended solution</en>"
+      description: "<div lang=\"ja\">推奨する対応方法です。</div><div lang=\"en\">Recommended solution</div>"
     title:
       type: string
-      description: "<ja>審査否認理由のタイトルです。</ja><br><en>Title of disapproval reason</en>"
+      description: "<div lang=\"ja\">審査否認理由のタイトルです。</div><div lang=\"en\">Title of disapproval reason</div>"
   title: DictionaryServiceDisapprovalReason
-  description: "<ja>DictionaryServiceDisapprovalReason オブジェクトは、 EditorialReason一覧を格納するコンテナです。</ja><br><en>DictionaryServiceDisapprovalReason\
+  description: "<div lang=\"ja\">DictionaryServiceDisapprovalReason オブジェクトは、 EditorialReason一覧を格納するコンテナです。</div><div lang=\"en\">DictionaryServiceDisapprovalReason\
     \ object is a container which stored the Description of disapproval reason and\
-    \ the Recommended solution.</en>"
+    \ the Recommended solution.</div>"

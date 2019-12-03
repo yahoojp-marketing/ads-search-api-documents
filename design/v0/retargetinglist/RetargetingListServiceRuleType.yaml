@@ -5,7 +5,7 @@ RetargetingListServiceRuleType:
   - CUSTOM_KEY_RULE
   - UNKNOWN
   title: RetargetingListServiceRuleType
-  description: "<ja>RetargetingListServiceRuleTypeは、ターゲットリストのルール種別です。</ja><br><en>RetargetingListServiceRuleType\
-    \ is the rule type of target list.</en><hr>\n* `URL_RULE` - <ja>URLルール</ja><br><en>URL\
-    \ rules.</en><br>\n* `CUSTOM_KEY_RULE` - <ja>カスタムキールール</ja><br><en>Custom key\
-    \ rules.</en><br>\n* `UNKNOWN` - 未知の値です。<br>Unknown Value"
+  description: "<div lang=\"ja\">RetargetingListServiceRuleTypeは、ターゲットリストのルール種別です。</div><div lang=\"en\">RetargetingListServiceRuleType\
+    \ is the rule type of target list.</div><hr>\n* <code>URL_RULE</code> - <div lang=\"ja\">URLルール</div><div lang=\"en\">URL\
+    \ rules.</div>* <code>CUSTOM_KEY_RULE</code> - <div lang=\"ja\">カスタムキールール</div><div lang=\"en\">Custom key\
+    \ rules.</div>* <code>UNKNOWN</code> - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"

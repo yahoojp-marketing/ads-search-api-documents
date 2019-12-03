@@ -6,5 +6,5 @@ AdGroupWebpageServiceReturnValue:
       items:
         $ref: 'AdGroupWebpageServiceValue.yaml#/AdGroupWebpageServiceValue'
   title: AdGroupWebpageServiceReturnValue
-  description: "<ja>AdGroupWebpageServiceReturnValueオブジェクトは、操作結果を含む配信/除外設定のコンテナを保持します。</ja><br><en>AdGroupWebpageServiceReturnValue\
-    \ object contains allowed or excluded settings including operation result.</en>"
+  description: "<div lang=\"ja\">AdGroupWebpageServiceReturnValueオブジェクトは、操作結果を含む配信/除外設定のコンテナを保持します。</div><div lang=\"en\">AdGroupWebpageServiceReturnValue\
+    \ object contains allowed or excluded settings including operation result.</div>"

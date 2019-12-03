@@ -4,37 +4,37 @@ PageFeedItemServiceReviewSummary:
     accountId:
       type: integer
       format: int64
-      description: "<ja>アカウントID</ja><br><en>Account ID</en>"
+      description: "<div lang=\"ja\">アカウントID</div><div lang=\"en\">Account ID</div>"
     approvedCount:
       type: integer
       format: int64
-      description: "<ja>承認済みの件数</ja><br><en>Count of approved</en>"
+      description: "<div lang=\"ja\">承認済みの件数</div><div lang=\"en\">Count of approved</div>"
     approvedWithReviewCount:
       type: integer
       format: int64
-      description: "<ja>編集内容審査中の件数</ja><br><en>Count of approved with review</en>"
+      description: "<div lang=\"ja\">編集内容審査中の件数</div><div lang=\"en\">Count of approved with review</div>"
     entityCount:
       type: integer
       format: int64
-      description: "<ja>フィードフォルダ内にあるページフィードアイテムの総件数</ja><br><en>Total count of page\
-        \ feed item in feed folder</en>"
+      description: "<div lang=\"ja\">フィードフォルダ内にあるページフィードアイテムの総件数</div><div lang=\"en\">Total count of page\
+        \ feed item in feed folder</div>"
     feedId:
       type: integer
       format: int64
-      description: "<ja>フィードID</ja><br><en>Feed ID</en>"
+      description: "<div lang=\"ja\">フィードID</div><div lang=\"en\">Feed ID</div>"
     postDisapprovedCount:
       type: integer
       format: int64
-      description: "<ja>配信停止の件数</ja><br><en>Count of distribution cancelled</en>"
+      description: "<div lang=\"ja\">配信停止の件数</div><div lang=\"en\">Count of distribution cancelled</div>"
     preDisapprovedCount:
       type: integer
       format: int64
-      description: "<ja>掲載不可の件数</ja><br><en>Count of disapproved</en>"
+      description: "<div lang=\"ja\">掲載不可の件数</div><div lang=\"en\">Count of disapproved</div>"
     reviewCount:
       type: integer
       format: int64
-      description: "<ja>審査中の件数</ja><br><en>Count of review</en>"
+      description: "<div lang=\"ja\">審査中の件数</div><div lang=\"en\">Count of review</div>"
   title: PageFeedItemServiceReviewSummary
-  description: "<ja>PageFeedItemServiceReviewSummaryオブジェクトは、ページフィードアイテムの審査成績、状況サマリーを格納します。</ja><br><en>PageFeedItemServiceReviewSummary\
+  description: "<div lang=\"ja\">PageFeedItemServiceReviewSummaryオブジェクトは、ページフィードアイテムの審査成績、状況サマリーを格納します。</div><div lang=\"en\">PageFeedItemServiceReviewSummary\
     \ object retains the examination results of the page feed item, the situation\
-    \ summary acquisition result.</en>"
+    \ summary acquisition result.</div>"

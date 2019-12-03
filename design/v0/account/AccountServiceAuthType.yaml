@@ -6,8 +6,8 @@ AccountServiceAuthType:
     - UNKNOWN
   title: AccountServiceAuthType
   description: |
-    <ja>権限タイプ</ja><br>
-    <en>Roles</en><hr>
-    * `REFERABLE` - <ja>参照権限</ja><br><en>Read only</en>
-    * `UPDATABLE` - <ja>更新権限</ja><br><en>Write</en>
-    * `UNKNOWN` - 未知の値です。<br>Unknown Value
+    <div lang="ja">権限タイプ</div>
+    <div lang="en">Roles</div><hr>
+    * <code>REFERABLE</code> - <div lang="ja">参照権限</div><div lang="en">Read only</div>
+    * <code>UPDATABLE</code> - <div lang="ja">更新権限</div><div lang="en">Write</div>
+    * <code>UNKNOWN</code> - <div lang="ja">未知の値です。</div><div lang="en">Unknown Value</div>

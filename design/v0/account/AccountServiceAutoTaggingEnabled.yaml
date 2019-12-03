@@ -5,6 +5,6 @@ AccountServiceAutoTaggingEnabled:
   - 'FALSE'
   - UNKNOWN
   title: AccountServiceAutoTaggingEnabled
-  description: "<ja>AccountServiceAutoTaggingEnabledは、自動タグ設定を する か しない かの管理フラグです。</ja><br><en>AccountServiceAutoTaggingEnabled\
-    \ is management flag for whether or not to set auto tag.</en><hr>\n* `TRUE` - <ja>する</ja><br><en>setting</en><br>\n* `FALSE` -\
-    \ <ja>しない</ja><br><en>not setting</en><br>\n* `UNKNOWN` - 未知の値です。<br>Unknown Value"
+  description: "<div lang=\"ja\">AccountServiceAutoTaggingEnabledは、自動タグ設定を する か しない かの管理フラグです。</div><div lang=\"en\">AccountServiceAutoTaggingEnabled\
+    \ is management flag for whether or not to set auto tag.</div><hr>\n* <code>TRUE</code> - <div lang=\"ja\">する</div><div lang=\"en\">setting</div>* <code>FALSE</code> -\
+    \ <div lang=\"ja\">しない</div><div lang=\"en\">not setting</div>* <code>UNKNOWN</code> - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"

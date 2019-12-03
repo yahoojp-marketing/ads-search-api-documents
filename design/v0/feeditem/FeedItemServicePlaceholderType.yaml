@@ -8,11 +8,11 @@ FeedItemServicePlaceholderType:
   - STRUCTURED_SNIPPET
   - UNKNOWN
   title: FeedItemServicePlaceholderType
-  description: "<ja>FeedItemServicePlaceholderTypeは、FeedItem情報の種類を選択します。</ja><br><en>FeedItemServicePlaceholderType\
-    \ selects FeeItem information type</en><hr>\n* `AD_CUSTOMIZER` - <ja>データ自動挿入です。</ja><br><en>Data\
-    \ Auto Insertion</en><br>\n* `CALLOUT` - <ja>テキスト補足オプションです。</ja><br><en>Callout\
-    \ option from Ad Display Option</en><br>\n* `STRUCTURED_SNIPPET` - <ja>カテゴリ補足オプションです。</ja><br><en>Structured\
-    \ snippet option from Ad Display Option</en><br>\n* `QUICKLINK` - <ja>広告表示オプションのクイックリンクオプションです。</ja><br><en>QuickLink\
-    \ option from Ad Display Option</en><br>\n* `CALLEXTENSION` - <ja>広告表示オプションの電話番号オプションです。</ja><br><en>Call\
-    \ Extension (Phone Number) option from Ad Display Option</en><br>\n* `UNKNOWN`\
-    \ - 未知の値です。<br>Unknown Value"
+  description: "<div lang=\"ja\">FeedItemServicePlaceholderTypeは、FeedItem情報の種類を選択します。</div><div lang=\"en\">FeedItemServicePlaceholderType\
+    \ selects FeeItem information type</div><hr>\n* <code>AD_CUSTOMIZER</code> - <div lang=\"ja\">データ自動挿入です。</div><div lang=\"en\">Data\
+    \ Auto Insertion</div>* <code>CALLOUT</code> - <div lang=\"ja\">テキスト補足オプションです。</div><div lang=\"en\">Callout\
+    \ option from Ad Display Option</div>* <code>STRUCTURED_SNIPPET</code> - <div lang=\"ja\">カテゴリ補足オプションです。</div><div lang=\"en\">Structured\
+    \ snippet option from Ad Display Option</div>* <code>QUICKLINK</code> - <div lang=\"ja\">広告表示オプションのクイックリンクオプションです。</div><div lang=\"en\">QuickLink\
+    \ option from Ad Display Option</div>* <code>CALLEXTENSION</code> - <div lang=\"ja\">広告表示オプションの電話番号オプションです。</div><div lang=\"en\">Call\
+    \ Extension (Phone Number) option from Ad Display Option</div>* <code>UNKNOWN</code>\
+    \ - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"

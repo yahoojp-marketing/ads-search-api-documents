@@ -4,11 +4,11 @@ Feed:
     accountId:
       type: integer
       format: int64
-      description: "<ja>アカウントIDです。<br>※入稿の仕様変更により不要になりました。</ja><br><en>Account ID.<br>*Not\
-        \ required by design change on editorials.</en>"
+      description: "<div lang=\"ja\">アカウントIDです。<br>※入稿の仕様変更により不要になりました。</div><div lang=\"en\">Account ID.<br>*Not\
+        \ required by design change on editorials.</div>"
     domain:
       type: string
-      description: "<ja>ドメインです。</ja><br><en>Domain.</en>"
+      description: "<div lang=\"ja\">ドメインです。</div><div lang=\"en\">Domain.</div>"
     feedAttribute:
       type: array
       items:
@@ -16,17 +16,17 @@ Feed:
     feedId:
       type: integer
       format: int64
-      description: "<ja>FeedIDです。</ja><br><en>Feed ID</en>"
+      description: "<div lang=\"ja\">FeedIDです。</div><div lang=\"en\">Feed ID</div>"
     feedName:
       type: string
-      description: "<ja>Feedのリスト名です。</ja><br><en>List name of Feed.</en>"
+      description: "<div lang=\"ja\">Feedのリスト名です。</div><div lang=\"en\">List name of Feed.</div>"
     feedTrackId:
       type: integer
       format: int64
-      description: "<ja>Feedのトラッキング用IDです。</ja><br><en>Tracking ID of Feed.</en>"
+      description: "<div lang=\"ja\">Feedのトラッキング用IDです。</div><div lang=\"en\">Tracking ID of Feed.</div>"
     placeholderType:
       $ref: 'FeedServicePlaceholderType.yaml#/FeedServicePlaceholderType'
   title: Feed
-  description: "<ja>Feedオブジェクトは、自動データ挿入のリストを格納します。</ja><br><en>Feed object is the\
-    \ list of Data elements on auto data insertion.</en><hr><details><summary>Requirement</summary><table\
+  description: "<div lang=\"ja\">Feedオブジェクトは、自動データ挿入のリストを格納します。</div><div lang=\"en\">Feed object is the\
+    \ list of Data elements on auto data insertion.</div><hr><details><summary>Requirement</summary><table\
     \ border='1'><tr><th>PROPERTY</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>accountId</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>domain</td><td>Optional</td><td>Ignore</td><td>Ignore</td></tr><tr><td>feedAttribute</td><td>Optional</td><td>Optional</td><td>Ignore</td></tr><tr><td>placeholderType</td><td>Requirement</td><td>Ignore</td><td>Ignore</td></tr><tr><td>feedId</td><td>Ignore</td><td>Requirement<br>Not updatable</td><td>Requirement<br>Not updatable</td></tr><tr><td>feedName</td><td>Requirement</td><td>Ignore</td><td>Ignore</td></tr><tr><td>feedTrackId</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr></table></details>"

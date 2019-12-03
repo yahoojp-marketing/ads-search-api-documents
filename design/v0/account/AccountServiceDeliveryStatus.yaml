@@ -5,7 +5,6 @@ AccountServiceDeliveryStatus:
   - PAUSED
   - UNKNOWN
   title: AccountServiceDeliveryStatus
-  description: "<ja>AccountServiceDeliveryStatusは、アカウントの配信状況を表します。</ja><br><en>Delivery\
-    \ status.</en><hr>\n* `PAUSED` - <ja>配信状況はオフです。</ja><br><en>Not active.</en><br>\n\
-    * `ACTIVE` - <ja>配信状況はオンです。</ja><br><en>Active</en><br>\n* `UNKNOWN` - 未知の値です。<br>Unknown\
-    \ Value"
+  description: "<div lang=\"ja\">AccountServiceDeliveryStatusは、アカウントの配信状況を表します。</div><div lang=\"en\">Delivery\
+    \ status.</div><hr>\n* <code>PAUSED</code> - <div lang=\"ja\">配信状況はオフです。</div><div lang=\"en\">Not active.</div>\
+    * <code>ACTIVE</code> - <div lang=\"ja\">配信状況はオンです。</div><div lang=\"en\">Active</div>* <code>UNKNOWN</code> - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"

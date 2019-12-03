@@ -5,7 +5,6 @@ PageFeedItemServiceBulkLang:
   - EN
   - UNKNOWN
   title: PageFeedItemServiceBulkLang
-  description: "<ja>PageFeedItemServiceBulkLangは、ページフィードアイテムファイルの言語設定を表します。</ja><br><en>PageFeedItemServiceBulkLang\
-    \ displays language setting of Page feed item file.</en><hr>\n* `JA` - <ja>日本語</ja><br><en>Language:Japanese</en><br>\n\
-    * `EN` - <ja>英語</ja><br><en>Language:English</en><br>\n* `UNKNOWN` - 未知の値です。<br>Unknown\
-    \ Value"
+  description: "<div lang=\"ja\">PageFeedItemServiceBulkLangは、ページフィードアイテムファイルの言語設定を表します。</div><div lang=\"en\">PageFeedItemServiceBulkLang\
+    \ displays language setting of Page feed item file.</div><hr>\n* <code>JA</code> - <div lang=\"ja\">日本語</div><div lang=\"en\">Language:Japanese</div>\
+    * <code>EN</code> - <div lang=\"ja\">英語</div><div lang=\"en\">Language:English</div>* <code>UNKNOWN</code> - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"

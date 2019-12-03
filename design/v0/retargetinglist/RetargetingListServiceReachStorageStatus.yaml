@@ -5,8 +5,7 @@ RetargetingListServiceReachStorageStatus:
   - CLOSED
   - UNKNOWN
   title: RetargetingListServiceReachStorageStatus
-  description: "<ja>RetargetingListServiceReachStorageStatusは、ターゲットリストの種別です。</ja><br><en>RetargetingListServiceReachStorageStatus\
-    \ is the flag status to store Cookie reach.</en><hr>\n* `CLOSED` - <ja>無効です。<br>リーチを蓄積しません。</ja><br><en>Invalid\
-    \ status.<br>Reach will not be stored.</en><br>\n* `OPEN` - <ja>有効です。<br>リーチを蓄積します。</ja><br><en>Valid\
-    \ status.<br>Reach will be stored.</en><br>\n* `UNKNOWN` - 未知の値です。<br>Unknown\
-    \ Value"
+  description: "<div lang=\"ja\">RetargetingListServiceReachStorageStatusは、ターゲットリストの種別です。</div><div lang=\"en\">RetargetingListServiceReachStorageStatus\
+    \ is the flag status to store Cookie reach.</div><hr>\n* <code>CLOSED</code> - <div lang=\"ja\">無効です。<br>リーチを蓄積しません。</div><div lang=\"en\">Invalid\
+    \ status.<br>Reach will not be stored.</div>* <code>OPEN</code> - <div lang=\"ja\">有効です。<br>リーチを蓄積します。</div><div lang=\"en\">Valid\
+    \ status.<br>Reach will be stored.</div>* <code>UNKNOWN</code> - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"

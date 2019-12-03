@@ -5,6 +5,6 @@ PageFeedItemServiceMatchType:
   - BROAD
   - UNKNOWN
   title: PageFeedItemServiceMatchType
-  description: "<ja>PageFeedItemServiceMatchTypeは、ページフィードURLの検索方法を表します。</ja><br><en>PageFeedItemServiceMatchType\
-    \ displays search method of page feed URL.</en><hr>\n* `EXACT` - <ja>完全一致</ja><br><en>Perfect match</en><br>\n* `BROAD` - <ja>部分一致</ja><br><en>Partial\
-    \ match</en><br>\n* `UNKNOWN` - 未知の値です。<br>Unknown Value"
+  description: "<div lang=\"ja\">PageFeedItemServiceMatchTypeは、ページフィードURLの検索方法を表します。</div><div lang=\"en\">PageFeedItemServiceMatchType\
+    \ displays search method of page feed URL.</div><hr>\n* <code>EXACT</code> - <div lang=\"ja\">完全一致</div><div lang=\"en\">Perfect match</div>* <code>BROAD</code> - <div lang=\"ja\">部分一致</div><div lang=\"en\">Partial\
+    \ match</div>* <code>UNKNOWN</code> - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"

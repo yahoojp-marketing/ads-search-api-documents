@@ -4,7 +4,7 @@ PageFeedItemServiceDownloadJob:
     accountId:
       type: integer
       format: int64
-      description: "<ja>アカウントID</ja><br><en>Account ID</en>"
+      description: "<div lang=\"ja\">アカウントID</div><div lang=\"en\">Account ID</div>"
     bulkEncoding:
       $ref: 'PageFeedItemServiceBulkEncoding.yaml#/PageFeedItemServiceBulkEncoding'
     bulkLang:
@@ -15,26 +15,26 @@ PageFeedItemServiceDownloadJob:
       $ref: 'PageFeedItemServiceDownloadJobStatus.yaml#/PageFeedItemServiceDownloadJobStatus'
     endDate:
       type: string
-      description: "<ja>ジョブの終了日<br>形式：yyyyMMddHHmmss</ja><br><en>End date of job<br>Format:yyyyMMddHHmmss</en>"
+      description: "<div lang=\"ja\">ジョブの終了日<br>形式：yyyyMMddHHmmss</div><div lang=\"en\">End date of job<br>Format:yyyyMMddHHmmss</div>"
     feedIds:
       type: array
       items:
         type: integer
         format: int64
       maxItems: 1000
-      description: "<ja>フィードID</ja><br><en>Feed ID</en>"
+      description: "<div lang=\"ja\">フィードID</div><div lang=\"en\">Feed ID</div>"
     jobId:
       type: integer
       format: int64
-      description: "<ja>ジョブID</ja><br><en>Job ID</en>"
+      description: "<div lang=\"ja\">ジョブID</div><div lang=\"en\">Job ID</div>"
     progress:
       type: integer
       format: int32
-      description: "<ja>ジョブの進捗状況</ja><br><en>Progress of page feed item job</en>"
+      description: "<div lang=\"ja\">ジョブの進捗状況</div><div lang=\"en\">Progress of page feed item job</div>"
     startDate:
       type: string
-      description: "<ja>ジョブの開始日<br>形式：yyyyMMddHHmmss</ja><br><en>End date of job<br>Format:yyyyMMddHHmmss</en>"
+      description: "<div lang=\"ja\">ジョブの開始日<br>形式：yyyyMMddHHmmss</div><div lang=\"en\">End date of job<br>Format:yyyyMMddHHmmss</div>"
   title: PageFeedItemServiceDownloadJob
-  description: "<ja>PageFeedItemServiceDownloadJobオブジェクトは、ページフィードアイテム情報をダウンロードする処理内容を格納します。</ja><br><en>PageFeedItemServiceDownloadJob\
-    \ object retains contents of page feed item information for download.</en><hr><details><summary>Requirement</summary><table\
+  description: "<div lang=\"ja\">PageFeedItemServiceDownloadJobオブジェクトは、ページフィードアイテム情報をダウンロードする処理内容を格納します。</div><div lang=\"en\">PageFeedItemServiceDownloadJob\
+    \ object retains contents of page feed item information for download.</div><hr><details><summary>Requirement</summary><table\
     \ border='1'><tr><th>PROPERTY</th><th>addDownloadJob</th></tr><tr><td>accountId</td><td>Requirement</td></tr><tr><td>bulkEncoding</td><td>Optional<br>Default：SJIS</td></tr><tr><td>bulkLang</td><td>Optional<br>Default：JA</td></tr><tr><td>bulkOutput</td><td>Optional<br>Default：CSV</td></tr><tr><td>downloadJobStatus</td><td>Ignore</td></tr><tr><td>endDate</td><td>Ignore</td></tr><tr><td>feedIds</td><td>Requirement</td></tr><tr><td>jobId</td><td>Ignore</td></tr><tr><td>progress</td><td>Ignore</td></tr><tr><td>startDate</td><td>Ignore</td></tr></table></details>"

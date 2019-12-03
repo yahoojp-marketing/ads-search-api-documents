@@ -7,7 +7,7 @@ ConversionTrackerServiceOperation:
     accountId:
       type: integer
       format: int64
-      description: "<ja>アカウントIDです。</ja><br><en>Account ID</en>"
+      description: "<div lang=\"ja\">アカウントIDです。</div><div lang=\"en\">Account ID</div>"
     operand:
       type: array
       items:
@@ -15,5 +15,5 @@ ConversionTrackerServiceOperation:
       minItems: 1
       maxItems: 200
   title: ConversionTrackerServiceOperation
-  description: "<ja>ConversionTrackerServiceOperationオブジェクトは、操作の対象となるコンバージョントラッカー情報および操作の内容を表します。</ja><br><en>ConversionTrackerServiceOperation\
-    \ object describes ConversionTracker information and operation.</en>"
+  description: "<div lang=\"ja\">ConversionTrackerServiceOperationオブジェクトは、操作の対象となるコンバージョントラッカー情報および操作の内容を表します。</div><div lang=\"en\">ConversionTrackerServiceOperation\
+    \ object describes ConversionTracker information and operation.</div>"

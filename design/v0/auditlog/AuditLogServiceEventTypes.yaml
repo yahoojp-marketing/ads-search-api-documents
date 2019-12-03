@@ -7,8 +7,8 @@ AuditLogServiceEventTypes:
   - ALL
   - UNKNOWN
   title: AuditLogServiceEventTypes
-  description: "<ja>AuditLogServiceEventTypesは、操作履歴で取得する操作タイプを表します。</ja><br><en>AuditLogServiceEventTypes\
-    \ describes the operation type to be acquired the operation history data.</en><hr>\n\
-    * `ADD` - <ja>追加</ja><br><en>add</en><br>\n* `SET` - <ja>更新</ja><br><en>update</en><br>\n\
-    * `REMOVE` - <ja>削除</ja><br><en>delete</en><br>\n* `ALL` - <ja>すべての操作タイプ</ja><br><en>all\
-    \ operation types</en><br>\n* `UNKNOWN` - 未知の値です。<br>Unknown Value"
+  description: "<div lang=\"ja\">AuditLogServiceEventTypesは、操作履歴で取得する操作タイプを表します。</div><div lang=\"en\">AuditLogServiceEventTypes\
+    \ describes the operation type to be acquired the operation history data.</div><hr>\n\
+    * <code>ADD</code> - <div lang=\"ja\">追加</div><div lang=\"en\">add</div>* <code>SET</code> - <div lang=\"ja\">更新</div><div lang=\"en\">update</div>\
+    * <code>REMOVE</code> - <div lang=\"ja\">削除</div><div lang=\"en\">delete</div>* <code>ALL</code> - <div lang=\"ja\">すべての操作タイプ</div><div lang=\"en\">all\
+    \ operation types</div>* <code>UNKNOWN</code> - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"

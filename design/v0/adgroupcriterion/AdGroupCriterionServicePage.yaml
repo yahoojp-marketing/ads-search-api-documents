@@ -4,12 +4,12 @@ AdGroupCriterionServicePage:
     totalNumEntries:
       type: integer
       format: int32
-      description: "<ja>取得される項目の総件数です。</ja><br><en>Total number of entries in the\
-        \ result.</en>"
+      description: "<div lang=\"ja\">取得される項目の総件数です。</div><div lang=\"en\">Total number of entries in the\
+        \ result.</div>"
     values:
       type: array
       items:
         $ref: 'AdGroupCriterionServiceValue.yaml#/AdGroupCriterionServiceValue'
   title: AdGroupCriterionServicePage
-  description: "<ja>AdGroupCriterionServicePageオブジェクトは、取得される広告グループのクライテリアのエントリーです。</ja><br><en>AdGroupCriterionServicePage\
-    \ object displays entries for ad group criteria.</en>"
+  description: "<div lang=\"ja\">AdGroupCriterionServicePageオブジェクトは、取得される広告グループのクライテリアのエントリーです。</div><div lang=\"en\">AdGroupCriterionServicePage\
+    \ object displays entries for ad group criteria.</div>"

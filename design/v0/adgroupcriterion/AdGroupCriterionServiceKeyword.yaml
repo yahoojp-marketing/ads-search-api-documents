@@ -5,9 +5,9 @@ AdGroupCriterionServiceKeyword:
       $ref: 'AdGroupCriterionServiceKeywordMatchType.yaml#/AdGroupCriterionServiceKeywordMatchType'
     text:
       type: string
-      description: "<ja>キーワードの内容です。<br>※最大80文字、10ワードです。</ja><br><en>AdGroupCriterionServiceKeyword\
-        \ element.<br>*Maximum of 80 letters, 10 word.</en>"
+      description: "<div lang=\"ja\">キーワードの内容です。<br>※最大80文字、10ワードです。</div><div lang=\"en\">AdGroupCriterionServiceKeyword\
+        \ element.<br>*Maximum of 80 letters, 10 word.</div>"
   title: AdGroupCriterionServiceKeyword
-  description: "<ja>AdGroupCriterionServiceKeywordオブジェクトは、キーワードに関する情報を表します。</ja><br><en>AdGroupCriterionServiceKeyword\
-    \ object displays keyword information.</en><hr><details><summary>Requirement</summary><table\
+  description: "<div lang=\"ja\">AdGroupCriterionServiceKeywordオブジェクトは、キーワードに関する情報を表します。</div><div lang=\"en\">AdGroupCriterionServiceKeyword\
+    \ object displays keyword information.</div><hr><details><summary>Requirement</summary><table\
     \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>text</td><td>-</td><td>Requirement</td><td>-</td><td>-</td></tr><tr><td>keywordMatchType</td><td>-</td><td>Requirement</td><td>-</td><td>-</td></tr></table></details>"

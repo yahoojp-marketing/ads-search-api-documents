@@ -6,8 +6,8 @@ ConversionTrackerServiceAppConversionType:
   - FIRST_OPEN
   - UNKNOWN
   title: ConversionTrackerServiceAppConversionType
-  description: "<ja>ConversionTrackerServiceAppConversionTypeは、アプリのコンバージョンの種別を表します。</ja><br><en>ConversionTrackerServiceAppConversionType\
-    \ describes App conversion type.</en><hr>\n* `FIRST_OPEN` - <ja>アプリ初回起動コンバージョンです。</ja><br><en>App\
-    \ first open conversion.</en><br>\n* `DOWNLOAD` - <ja>アプリダウンロード時のコンバージョンです。</ja><br><en>App\
-    \ download conversion.</en><br>\n* `IN_APP_PURCHASE` - <ja>アプリ内行動コンバージョンです。</ja><br><en>In-app\
-    \ action conversion.</en><br>\n* `UNKNOWN` - 未知の値です。<br>Unknown Value"
+  description: "<div lang=\"ja\">ConversionTrackerServiceAppConversionTypeは、アプリのコンバージョンの種別を表します。</div><div lang=\"en\">ConversionTrackerServiceAppConversionType\
+    \ describes App conversion type.</div><hr>\n* <code>FIRST_OPEN</code> - <div lang=\"ja\">アプリ初回起動コンバージョンです。</div><div lang=\"en\">App\
+    \ first open conversion.</div>* <code>DOWNLOAD</code> - <div lang=\"ja\">アプリダウンロード時のコンバージョンです。</div><div lang=\"en\">App\
+    \ download conversion.</div>* <code>IN_APP_PURCHASE</code> - <div lang=\"ja\">アプリ内行動コンバージョンです。</div><div lang=\"en\">In-app\
+    \ action conversion.</div>* <code>UNKNOWN</code> - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"

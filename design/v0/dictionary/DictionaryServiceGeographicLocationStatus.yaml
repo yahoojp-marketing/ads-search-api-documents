@@ -6,10 +6,9 @@ DictionaryServiceGeographicLocationStatus:
   - PHASING_OUT
   - UNKNOWN
   title: DictionaryServiceGeographicLocationStatus
-  description: "<ja>DictionaryServiceGeographicLocationStatusは、対象地域のステータスを示します。</ja><br><en>Status\
-    \ of geographic location.</en><hr>\n* `ACTIVE` - <ja>ターゲティング可能な状態。</ja><br><en>Status\
-    \ when targeting is possible</en><br>\n* `OBSOLETE` - <ja>廃止のためターゲティング不可能な状態。</ja><br><en>Status\
-    \ when targeting is not possible, because it is abolished</en><br>\n* `PHASING_OUT`\
-    \ - <ja>まもなく廃止またはターゲティング不可能になる状態。</ja><br><en>Status when it soon be abolished,\
-    \ or targeting will become impossible</en><br>\n* `UNKNOWN` - 未知の値です。<br>Unknown\
-    \ Value"
+  description: "<div lang=\"ja\">DictionaryServiceGeographicLocationStatusは、対象地域のステータスを示します。</div><div lang=\"en\">Status\
+    \ of geographic location.</div><hr>\n* <code>ACTIVE</code> - <div lang=\"ja\">ターゲティング可能な状態。</div><div lang=\"en\">Status\
+    \ when targeting is possible</div>* <code>OBSOLETE</code> - <div lang=\"ja\">廃止のためターゲティング不可能な状態。</div><div lang=\"en\">Status\
+    \ when targeting is not possible, because it is abolished</div>* <code>PHASING_OUT</code>\
+    \ - <div lang=\"ja\">まもなく廃止またはターゲティング不可能になる状態。</div><div lang=\"en\">Status when it soon be abolished,\
+    \ or targeting will become impossible</div>* <code>UNKNOWN</code> - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"

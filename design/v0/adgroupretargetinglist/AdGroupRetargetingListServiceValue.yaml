@@ -9,8 +9,8 @@ AdGroupRetargetingListServiceValue:
         $ref: '../../Error.yaml#/Error'
     operationSucceeded:
       type: boolean
-      description: "<ja>処理結果です。</ja><br><en>Process results.</en>"
+      description: "<div lang=\"ja\">処理結果です。</div><div lang=\"en\">Process results.</div>"
   title: AdGroupRetargetingListServiceValue
-  description: "<ja>AdGroupRetargetingListServiceValueは、広告グループレベルでのターゲットリスト設定の実行結果（1\
-    \ Entity）を保持するオブジェクトです。</ja><br><en>AdGroupRetargetingListServiceValue is an oject\
-    \ that holds results (one entity).</en>"
+  description: "<div lang=\"ja\">AdGroupRetargetingListServiceValueは、広告グループレベルでのターゲットリスト設定の実行結果（1\
+    \ Entity）を保持するオブジェクトです。</div><div lang=\"en\">AdGroupRetargetingListServiceValue is an oject\
+    \ that holds results (one entity).</div>"

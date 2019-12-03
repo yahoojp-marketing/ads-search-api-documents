@@ -9,15 +9,14 @@ FeedServicePlaceholderField:
   - DYNAMIC_AD_FOR_SEARCH_PAGE_FEEDS_LABEL
   - UNKNOWN
   title: FeedServicePlaceholderField
-  description: "<ja>FeedServicePlaceholderFieldは、FeedItem情報の内容を選択します。</ja><br><en>FeedServicePlaceholderField\
-    \ object select the details of Feed Item information.</en><hr>\n* `AD_CUSTOMIZER_STRING`\
-    \ - <ja>データ自動挿入（STRINGタイプの入力定義）です。</ja><br><en>Data Auto Insertion (Input of STRING\
-    \ type).</en><br>\n* `DYNAMIC_AD_FOR_SEARCH_PAGE_FEEDS_PAGE_URL` - <ja>動的検索型連動広告ページフィードのページURLです。</ja><br><en>Page\
-    \ url of Dynamic ad for search page feeds.</en><br>\n* `DYNAMIC_AD_FOR_SEARCH_PAGE_FEEDS_LABEL`\
-    \ - <ja>動的検索型連動広告ページフィードのラベルです。</ja><br><en>Label of Dynamic ad for search page\
-    \ feeds.</en><br>\n* `AD_CUSTOMIZER_INTEGER` - <ja>データ自動挿入（INTEGERタイプの入力定義）です。</ja><br><en>Data\
-    \ Auto Insertion (Input of INTEGER type).</en><br>\n* `AD_CUSTOMIZER_PRICE` -\
-    \ <ja>データ自動挿入（PRICEタイプの入力定義）です。</ja><br><en>Data Auto Insertion (Input of PRICE\
-    \ type).</en><br>\n* `AD_CUSTOMIZER_DATE` - <ja>データ自動挿入（DATEタイプの入力定義）です。</ja><br><en>Data\
-    \ Auto Insertion (Input of DATE type).</en><br>\n* `UNKNOWN` - 未知の値です。<br>Unknown\
-    \ Value"
+  description: "<div lang=\"ja\">FeedServicePlaceholderFieldは、FeedItem情報の内容を選択します。</div><div lang=\"en\">FeedServicePlaceholderField\
+    \ object select the details of Feed Item information.</div><hr>\n* <code>AD_CUSTOMIZER_STRING</code>\
+    \ - <div lang=\"ja\">データ自動挿入（STRINGタイプの入力定義）です。</div><div lang=\"en\">Data Auto Insertion (Input of STRING\
+    \ type).</div>* <code>DYNAMIC_AD_FOR_SEARCH_PAGE_FEEDS_PAGE_URL</code> - <div lang=\"ja\">動的検索型連動広告ページフィードのページURLです。</div><div lang=\"en\">Page\
+    \ url of Dynamic ad for search page feeds.</div>* <code>DYNAMIC_AD_FOR_SEARCH_PAGE_FEEDS_LABEL</code>\
+    \ - <div lang=\"ja\">動的検索型連動広告ページフィードのラベルです。</div><div lang=\"en\">Label of Dynamic ad for search page\
+    \ feeds.</div>* <code>AD_CUSTOMIZER_INTEGER</code> - <div lang=\"ja\">データ自動挿入（INTEGERタイプの入力定義）です。</div><div lang=\"en\">Data\
+    \ Auto Insertion (Input of INTEGER type).</div>* <code>AD_CUSTOMIZER_PRICE</code> -\
+    \ <div lang=\"ja\">データ自動挿入（PRICEタイプの入力定義）です。</div><div lang=\"en\">Data Auto Insertion (Input of PRICE\
+    \ type).</div>* <code>AD_CUSTOMIZER_DATE</code> - <div lang=\"ja\">データ自動挿入（DATEタイプの入力定義）です。</div><div lang=\"en\">Data\
+    \ Auto Insertion (Input of DATE type).</div>* <code>UNKNOWN</code> - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"

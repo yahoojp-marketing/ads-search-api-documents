@@ -13,36 +13,36 @@ AdGroupAdServiceAd:
         $ref: 'AdGroupAdServiceAdditionalAdvancedUrls.yaml#/AdGroupAdServiceAdditionalAdvancedUrls'
     advancedMobileUrl:
       type: string
-      description: "<ja>最終リンク先URL（スマート フォン）です。</ja><br><en>Landing Page URL (Smartphone).</en>"
+      description: "<div lang=\"ja\">最終リンク先URL（スマート フォン）です。</div><div lang=\"en\">Landing Page URL (Smartphone).</div>"
     advancedUrl:
       type: string
-      description: "<ja>最終リンク先URLです。</ja><br><en>Landing Page URL.</en>"
+      description: "<div lang=\"ja\">最終リンク先URLです。</div><div lang=\"en\">Landing Page URL.</div>"
     appAd:
       $ref: 'AdGroupAdServiceAppAd.yaml#/AdGroupAdServiceAppAd'
     customParameters:
       $ref: 'AdGroupAdServiceCustomParameters.yaml#/AdGroupAdServiceCustomParameters'
     description:
       type: string
-      description: "<ja>説明文です。</ja><br><en>Description of ad.</en>"
+      description: "<div lang=\"ja\">説明文です。</div><div lang=\"en\">Description of ad.</div>"
     devicePreference:
       $ref: 'AdGroupAdServiceDevicePreference.yaml#/AdGroupAdServiceDevicePreference'
     displayUrl:
       type: string
-      description: "<ja>表示URLです。</ja><br><en>Display URL.</en>"
+      description: "<div lang=\"ja\">表示URLです。</div><div lang=\"en\">Display URL.</div>"
     extendedTextAd:
       $ref: 'AdGroupAdServiceExtendedTextAd.yaml#/AdGroupAdServiceExtendedTextAd'
     headline:
       type: string
-      description: "<ja>タイトル文です。</ja><br><en>Title of ad.</en>"
+      description: "<div lang=\"ja\">タイトル文です。</div><div lang=\"en\">Title of ad.</div>"
     textAd2:
       $ref: 'AdGroupAdServiceTextAd2.yaml#/AdGroupAdServiceTextAd2'
     trackingUrl:
       type: string
-      description: "<ja>トラッキングURLです。</ja><br><en>Tracking URL.</en>"
+      description: "<div lang=\"ja\">トラッキングURLです。</div><div lang=\"en\">Tracking URL.</div>"
     url:
       type: string
-      description: "<ja>移行前のリンク先URLです。</ja><br><en>Destination URL before upgrading.</en>"
+      description: "<div lang=\"ja\">移行前のリンク先URLです。</div><div lang=\"en\">Destination URL before upgrading.</div>"
   title: AdGroupAdServiceAd
-  description: "<ja>AdGroupAdServiceAdオブジェクトは、広告に関する情報を表します。</ja><br><en>AdGroupAdServiceAd\
-    \ object describes ad information.</en><hr><details><summary>Requirement</summary><table\
-    \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>adType</td><td>-</td><td>Requirement</td><td>-</td><td>-</td></tr><tr><td>additionalAdvancedMobileUrls</td><td>-</td><td>Optional<br><ja>※adTypeがDYNAMIC_SEARCH_LINKED_ADの場合:Ignore。</ja><br><en>∗If adType is DYNAMIC_SEARCH_LINK_AD, Ignore</en></td><td>-</td><td>-</td></tr><tr><td>additionalAdvancedUrls</td><td>-</td><td>Optional<br><ja>※adTypeがDYNAMIC_SEARCH_LINKED_ADの場合:Ignore。</ja><br><en>∗If adType is DYNAMIC_SEARCH_LINK_AD, Ignore</en></td><td>-</td><td>-</td></tr><tr><td>advancedMobileUrl</td><td>-</td><td>Optional<br><ja>※adTypeがDYNAMIC_SEARCH_LINKED_ADの場合:Ignore。</ja><br><en>∗If adType is DYNAMIC_SEARCH_LINK_AD, Ignore</en></td><td>-</td><td>-</td></tr><tr><td>advancedUrl</td><td>-</td><td>Requirement<br><ja>※adTypeがDYNAMIC_SEARCH_LINKED_ADの場合:Ignore。</ja><br><en>∗If adType is DYNAMIC_SEARCH_LINK_AD, Ignore</en></td><td>-</td><td>-</td></tr><tr><td>appAd</td><td>-</td><td>Optional<br><ja>※adTypeがAPP_ADの場合:Requirement。</ja><br><en>∗If adType is APP_AD, Requirement</en></td><td>-</td><td>-</td></tr><tr><td>customParameters</td><td>-</td><td>Optional</td><td>-</td><td>-</td></tr><tr><td>description</td><td>-</td><td>Requirement</td><td>Ignore</td><td>Ignore</td></tr><tr><td>devicePreference</td><td>-</td><td>Optional<br><ja>※DOUBLE_TEXT_ADの場合、Ignore。</ja><br><en>* Ignore for DOUBLE_TEXT_AD.</en></td><td>Ignore</td><td>Ignore</td></tr><tr><td>displayUrl</td><td>-</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>extendedTextAd</td><td>-</td><td>Optional<br><ja>※adTypeがEXTENDED_TEXT_ADの場合:Requirement。</ja><br><en>∗If adType is EXTENDED_TEXT_AD, Requirement</en></td><td>-</td><td>-</td></tr><tr><td>headline</td><td>-</td><td>Requirement<br><ja>※adTypeがDYNAMIC_SEARCH_LINKED_ADの場合:Ignore。</ja><br><en>∗If adType is DYNAMIC_SEARCH_LINKED_AD, Ignore</en></td><td>Ignore</td><td>Ignore</td></tr><tr><td>textAd2</td><td>-</td><td>Optional<br><ja>※adTypeがTEXT_AD2の場合:Requirement。</ja><br><en>∗If adType is TEXT_AD2, Requirement</en></td><td>-</td><td>-</td></tr><tr><td>trackingUrl</td><td>-</td><td>Optional</td><td>-</td><td>-</td></tr><tr><td>url</td><td>-</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr></table></details>"
+  description: "<div lang=\"ja\">AdGroupAdServiceAdオブジェクトは、広告に関する情報を表します。</div><div lang=\"en\">AdGroupAdServiceAd\
+    \ object describes ad information.</div><hr><details><summary>Requirement</summary><table\
+    \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>adType</td><td>-</td><td>Requirement</td><td>-</td><td>-</td></tr><tr><td>additionalAdvancedMobileUrls</td><td>-</td><td>Optional<br><div lang=\"ja\">※adTypeがDYNAMIC_SEARCH_LINKED_ADの場合:Ignore。</div><div lang=\"en\">∗If adType is DYNAMIC_SEARCH_LINK_AD, Ignore</div></td><td>-</td><td>-</td></tr><tr><td>additionalAdvancedUrls</td><td>-</td><td>Optional<br><div lang=\"ja\">※adTypeがDYNAMIC_SEARCH_LINKED_ADの場合:Ignore。</div><div lang=\"en\">∗If adType is DYNAMIC_SEARCH_LINK_AD, Ignore</div></td><td>-</td><td>-</td></tr><tr><td>advancedMobileUrl</td><td>-</td><td>Optional<br><div lang=\"ja\">※adTypeがDYNAMIC_SEARCH_LINKED_ADの場合:Ignore。</div><div lang=\"en\">∗If adType is DYNAMIC_SEARCH_LINK_AD, Ignore</div></td><td>-</td><td>-</td></tr><tr><td>advancedUrl</td><td>-</td><td>Requirement<br><div lang=\"ja\">※adTypeがDYNAMIC_SEARCH_LINKED_ADの場合:Ignore。</div><div lang=\"en\">∗If adType is DYNAMIC_SEARCH_LINK_AD, Ignore</div></td><td>-</td><td>-</td></tr><tr><td>appAd</td><td>-</td><td>Optional<br><div lang=\"ja\">※adTypeがAPP_ADの場合:Requirement。</div><div lang=\"en\">∗If adType is APP_AD, Requirement</div></td><td>-</td><td>-</td></tr><tr><td>customParameters</td><td>-</td><td>Optional</td><td>-</td><td>-</td></tr><tr><td>description</td><td>-</td><td>Requirement</td><td>Ignore</td><td>Ignore</td></tr><tr><td>devicePreference</td><td>-</td><td>Optional<br><div lang=\"ja\">※DOUBLE_TEXT_ADの場合、Ignore。</div><div lang=\"en\">* Ignore for DOUBLE_TEXT_AD.</div></td><td>Ignore</td><td>Ignore</td></tr><tr><td>displayUrl</td><td>-</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>extendedTextAd</td><td>-</td><td>Optional<br><div lang=\"ja\">※adTypeがEXTENDED_TEXT_ADの場合:Requirement。</div><div lang=\"en\">∗If adType is EXTENDED_TEXT_AD, Requirement</div></td><td>-</td><td>-</td></tr><tr><td>headline</td><td>-</td><td>Requirement<br><div lang=\"ja\">※adTypeがDYNAMIC_SEARCH_LINKED_ADの場合:Ignore。</div><div lang=\"en\">∗If adType is DYNAMIC_SEARCH_LINKED_AD, Ignore</div></td><td>Ignore</td><td>Ignore</td></tr><tr><td>textAd2</td><td>-</td><td>Optional<br><div lang=\"ja\">※adTypeがTEXT_AD2の場合:Requirement。</div><div lang=\"en\">∗If adType is TEXT_AD2, Requirement</div></td><td>-</td><td>-</td></tr><tr><td>trackingUrl</td><td>-</td><td>Optional</td><td>-</td><td>-</td></tr><tr><td>url</td><td>-</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr></table></details>"

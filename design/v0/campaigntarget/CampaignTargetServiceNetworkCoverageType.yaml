@@ -4,8 +4,8 @@ CampaignTargetServiceNetworkCoverageType:
   - YAHOO_SEARCH
   - UNKNOWN
   title: CampaignTargetServiceNetworkCoverageType
-  description: "<ja>CampaignTargetServiceNetworkCoverageTypeは、広告掲載方式を表します。 この指定は、キャンペーンのPlatformTypeがWAP_MOBILEの場合、指定できません。</ja><br><en>Network\
+  description: "<div lang=\"ja\">CampaignTargetServiceNetworkCoverageTypeは、広告掲載方式を表します。 この指定は、キャンペーンのPlatformTypeがWAP_MOBILEの場合、指定できません。</div><div lang=\"en\">Network\
     \ coverage types. This cannot be specified if the campaign's platformType is specified\
-    \ as WAP MOBILE.</en><hr>\n* `YAHOO_SEARCH` - <ja>広告はYahoo!検索の検索結果画面にのみ表示されます。</ja><br><en>Ads\
-    \ are only displayed in the search results of Yahoo! Search.</en><br>\n* `UNKNOWN`\
-    \ - 未知の値です。<br>Unknown Value"
+    \ as WAP MOBILE.</div><hr>\n* <code>YAHOO_SEARCH</code> - <div lang=\"ja\">広告はYahoo!検索の検索結果画面にのみ表示されます。</div><div lang=\"en\">Ads\
+    \ are only displayed in the search results of Yahoo! Search.</div>* <code>UNKNOWN</code>\
+    \ - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"

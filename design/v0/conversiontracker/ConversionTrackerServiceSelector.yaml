@@ -6,13 +6,13 @@ ConversionTrackerServiceSelector:
     accountId:
       type: integer
       format: int64
-      description: "<ja>アカウントIDです。</ja><br><en>Account ID.</en>"
+      description: "<div lang=\"ja\">アカウントIDです。</div><div lang=\"en\">Account ID.</div>"
     appIds:
       type: array
       items:
         type: string
       maxItems: 500
-      description: "<ja>アプリケーションIDです。</ja><br><en>App ID.</en>"
+      description: "<div lang=\"ja\">アプリケーションIDです。</div><div lang=\"en\">App ID.</div>"
     categories:
       type: array
       items:
@@ -31,7 +31,7 @@ ConversionTrackerServiceSelector:
         type: integer
         format: int64
       maxItems: 500
-      description: "<ja>コンバージョントラッカーIDです。</ja><br><en>Conversion Tracker ID.</en>"
+      description: "<div lang=\"ja\">コンバージョントラッカーIDです。</div><div lang=\"en\">Conversion Tracker ID.</div>"
     conversionTrackerTypes:
       type: array
       items:
@@ -48,17 +48,17 @@ ConversionTrackerServiceSelector:
       minimum: 1
       maximum: 500
       default: 500
-      description: "ページの最大件数です。このフィールドは、1以上を指定する必要があります。<br>Maximum number of results\
+      description: "<div lang=\"ja\">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div><div lang=\"en\">Maximum number of results\
         \ to return in this page. This field must be greater than or equal to 1. Also\
-        \ see Entity Limits per operation."
+        \ see Entity Limits per operation.</div>"
     startIndex:
       type: integer
       format: int32
       minimum: 1
       default: 1
-      description: "ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。<br>Index of the first\
+      description: "<div lang=\"ja\">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div><div lang=\"en\">Index of the first\
         \ result to return in this page. This field must be greater than or equal\
-        \ to 1."
+        \ to 1.</div>"
     statuses:
       type: array
       items:
@@ -70,5 +70,5 @@ ConversionTrackerServiceSelector:
         $ref: 'ConversionTrackerServiceTrackingCodeType.yaml#/ConversionTrackerServiceTrackingCodeType'
       maxItems: 3
   title: ConversionTrackerServiceSelector
-  description: "<ja>ConversionTrackerServiceSelectorオブジェクトは、操作の対象となるコンバージョントラッカーおよび操作を指定します。</ja><br><en>ConversionTrackerServiceSelector\
-    \ object specifies ConversionTracker and operation.</en>"
+  description: "<div lang=\"ja\">ConversionTrackerServiceSelectorオブジェクトは、操作の対象となるコンバージョントラッカーおよび操作を指定します。</div><div lang=\"en\">ConversionTrackerServiceSelector\
+    \ object specifies ConversionTracker and operation.</div>"

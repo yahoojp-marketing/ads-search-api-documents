@@ -4,23 +4,23 @@ SharedCriterion:
     accountId:
       type: integer
       format: int64
-      description: "<ja>アカウントIDです。</ja><br><en>Account ID.</en>"
+      description: "<div lang=\"ja\">アカウントIDです。</div><div lang=\"en\">Account ID.</div>"
     criterionId:
       type: integer
       format: int64
-      description: "<ja>クライテリオンIDです。</ja><br><en>Criterion ID.</en>"
+      description: "<div lang=\"ja\">クライテリオンIDです。</div><div lang=\"en\">Criterion ID.</div>"
     keywordMatchType:
       $ref: 'SharedCriterionServiceKeywordMatchType.yaml#/SharedCriterionServiceKeywordMatchType'
     sharedListId:
       type: integer
       format: int64
-      description: "<ja>アカウント共有リストIDです。</ja><br><en>Account shared list ID.</en>"
+      description: "<div lang=\"ja\">アカウント共有リストIDです。</div><div lang=\"en\">Account shared list ID.</div>"
     text:
       type: string
-      description: "<ja>キーワードです。</ja><br><en>Keyword.</en>"
+      description: "<div lang=\"ja\">キーワードです。</div><div lang=\"en\">Keyword.</div>"
     use:
       $ref: 'SharedCriterionServiceUse.yaml#/SharedCriterionServiceUse'
   title: SharedCriterion
-  description: "<ja>SharedCriterionオブジェクトは、対象外キーワード情報を保持します。</ja><br><en>SharedCriterion\
-    \ object holds negative keyword information.</en><hr><details><summary>Requirement</summary><table\
+  description: "<div lang=\"ja\">SharedCriterionオブジェクトは、対象外キーワード情報を保持します。</div><div lang=\"en\">SharedCriterion\
+    \ object holds negative keyword information.</div><hr><details><summary>Requirement</summary><table\
     \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>REMOVE</th></tr><tr><td>accountId</td><td>-</td><td>-</td><td>-</td></tr><tr><td>criterionId</td><td>-</td><td>-</td><td>Requirement</td></tr><tr><td>sharedListId</td><td>-</td><td>Requirement</td><td>Requirement</td></tr><tr><td>text</td><td>-</td><td>Requirement</td><td>-</td></tr><tr><td>keywordMatchType</td><td>-</td><td>Requirement</td><td>-</td></tr><tr><td>use</td><td>-</td><td>-</td><td>-</td></tr></table></details>"

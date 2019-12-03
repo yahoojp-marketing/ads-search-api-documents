@@ -7,7 +7,7 @@ AccountSharedServiceOperation:
     accountId:
       type: integer
       format: int64
-      description: "<ja>アカウントIDです。</ja><br><en>Account ID.</en>"
+      description: "<div lang=\"ja\">アカウントIDです。</div><div lang=\"en\">Account ID.</div>"
     operand:
       type: array
       items:
@@ -15,5 +15,5 @@ AccountSharedServiceOperation:
       minItems: 1
       maxItems: 20
   title: AccountSharedServiceOperation
-  description: "<ja>AccountSharedServiceOperationオブジェクトは、操作対象となるアカウント情報と処理の内容を表します。</ja><br><en>AccountSharedServiceOperation\
-    \ object describes information of account for operation and list of operations.</en>"
+  description: "<div lang=\"ja\">AccountSharedServiceOperationオブジェクトは、操作対象となるアカウント情報と処理の内容を表します。</div><div lang=\"en\">AccountSharedServiceOperation\
+    \ object describes information of account for operation and list of operations.</div>"

@@ -7,7 +7,7 @@ AccountServiceSelector:
         type: integer
         format: int64
       maxItems: 200
-      description: <ja>アカウントIDの配列です。</ja><br><en>Account IDs.</en>
+      description: "<div lang=\"ja\">アカウントIDの配列です。</div><div lang=\"en\">Account IDs.</div>"
     accountStatuses:
       type: array
       items:
@@ -26,17 +26,17 @@ AccountServiceSelector:
       minimum: 1
       maximum: 200
       default: 200
-      description: "ページの最大件数です。このフィールドは、1以上を指定する必要があります。<br>Maximum number of results\
+      description: "<div lang=\"ja\">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div><div lang=\"en\">Maximum number of results\
         \ to return in this page. This field must be greater than or equal to 1. Also\
-        \ see Entity Limits per operation."
+        \ see Entity Limits per operation.</div>"
     startIndex:
       type: integer
       format: int32
       minimum: 1
       default: 1
-      description: "ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。<br>Index of the first\
+      description: "<div lang=\"ja\">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div><div lang=\"en\">Index of the first\
         \ result to return in this page. This field must be greater than or equal\
-        \ to 1."
+        \ to 1.</div>"
   title: AccountServiceSelector
-  description: "<ja>AccountServiceSelectorオブジェクトは、選択するアカウントを表します。</ja><br><en>Explains\
-    \ which accounts to return.</en>"
+  description: "<div lang=\"ja\">AccountServiceSelectorオブジェクトは、選択するアカウントを表します。</div><div lang=\"en\">Explains\
+    \ which accounts to return.</div>"

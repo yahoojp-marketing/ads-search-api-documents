@@ -6,12 +6,12 @@ BiddingStrategyServiceType:
   - TARGET_CPA
   - UNKNOWN
   title: BiddingStrategyServiceType
-  description: "<ja>BiddingStrategyServiceTypeは、自動入札タイプを表します。</ja><br><en>BiddingStrategyServiceType\
-    \ displays the Auto Bidding type.</en><hr>\n*\
-    \ `TARGET_CPA` - <ja>コンバージョン単価の目標値です。<br>※キャンペーンの更新時のみ適用可能です。広告グループには現在設定できません。</ja><br><en>Target\
+  description: "<div lang=\"ja\">BiddingStrategyServiceTypeは、自動入札タイプを表します。</div><div lang=\"en\">BiddingStrategyServiceType\
+    \ displays the Auto Bidding type.</div><hr>\n*\
+    \ <code>TARGET_CPA</code> - <div lang=\"ja\">コンバージョン単価の目標値です。<br>※キャンペーンの更新時のみ適用可能です。広告グループには現在設定できません。</div><div lang=\"en\">Target\
     \ conversion spend (CPA).<br>* Available on updating campaign process. Currently\
-    \ not available for ad group.</en><br>\n* `TARGET_ROAS` - <ja>広告費用対効果の目標値です。<br>※キャンペーンの更新時のみ適用可能です。広告グループには現在設定できません。</ja><br><en>Target\
+    \ not available for ad group.</div>* <code>TARGET_ROAS</code> - <div lang=\"ja\">広告費用対効果の目標値です。<br>※キャンペーンの更新時のみ適用可能です。広告グループには現在設定できません。</div><div lang=\"en\">Target\
     \ ROAS.<br>* Available on updating campaign process. Currently not available for\
-    \ ad group.</en><br>\n* `TARGET_SPEND` - <ja>クリック数を最大化します。<br>※キャンペーンに適用可能です。広告グループには現在設定できません。</ja><br><en>Maximize\
-    \ Clicks.<br>* Applicable for campaign. Currently not available for ad group.</en><br>\n\
-    * `UNKNOWN` - 未知の値です。<br>Unknown Value"
+    \ ad group.</div>* <code>TARGET_SPEND</code> - <div lang=\"ja\">クリック数を最大化します。<br>※キャンペーンに適用可能です。広告グループには現在設定できません。</div><div lang=\"en\">Maximize\
+    \ Clicks.<br>* Applicable for campaign. Currently not available for ad group.</div>\
+    * <code>UNKNOWN</code> - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"

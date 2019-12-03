@@ -6,21 +6,21 @@ AdGroupRetargetingListServiceSelector:
     accountId:
       type: integer
       format: int64
-      description: "<ja>検索条件：アカウントIDです。</ja><br><en>Account ID.</en>"
+      description: "<div lang=\"ja\">検索条件：アカウントIDです。</div><div lang=\"en\">Account ID.</div>"
     adGroupIds:
       type: array
       items:
         type: integer
         format: int64
       maxItems: 1000
-      description: "<ja>検索条件：広告グループIDです。</ja><br><en>Ad group ID.</en>"
+      description: "<div lang=\"ja\">検索条件：広告グループIDです。</div><div lang=\"en\">Ad group ID.</div>"
     campaignIds:
       type: array
       items:
         type: integer
         format: int64
       maxItems: 1000
-      description: "<ja>検索条件：キャンペーンIDです。</ja><br><en>Campaign ID.</en>"
+      description: "<div lang=\"ja\">検索条件：キャンペーンIDです。</div><div lang=\"en\">Campaign ID.</div>"
     excludedType:
       $ref: 'AdGroupRetargetingListServiceExcludedType.yaml#/AdGroupRetargetingListServiceExcludedType'
     numberResults:
@@ -29,24 +29,24 @@ AdGroupRetargetingListServiceSelector:
       minimum: 1
       maximum: 1000
       default: 500
-      description: "ページの最大件数です。このフィールドは、1以上を指定する必要があります。<br>Maximum number of results\
+      description: "<div lang=\"ja\">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div><div lang=\"en\">Maximum number of results\
         \ to return in this page. This field must be greater than or equal to 1. Also\
-        \ see Entity Limits per operation."
+        \ see Entity Limits per operation.</div>"
     startIndex:
       type: integer
       format: int32
       minimum: 1
       default: 1
-      description: "ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。<br>Index of the first\
+      description: "<div lang=\"ja\">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div><div lang=\"en\">Index of the first\
         \ result to return in this page. This field must be greater than or equal\
-        \ to 1."
+        \ to 1.</div>"
     targetListIds:
       type: array
       items:
         type: integer
         format: int64
       maxItems: 1000
-      description: "<ja>検索条件：ターゲットリストIDです。</ja><br><en>Target list ID.</en>"
+      description: "<div lang=\"ja\">検索条件：ターゲットリストIDです。</div><div lang=\"en\">Target list ID.</div>"
   title: AdGroupRetargetingListServiceSelector
-  description: "<ja>AdGroupRetargetingListServiceSelector、広告グループレベルでのターゲットリスト設定の検索条件（実行パラメータ）を保持するオブジェクトです。</ja><br><en>AdGroupRetargetingListServiceSelector\
-    \ is an object that holds search condition (parameter).</en>"
+  description: "<div lang=\"ja\">AdGroupRetargetingListServiceSelector、広告グループレベルでのターゲットリスト設定の検索条件（実行パラメータ）を保持するオブジェクトです。</div><div lang=\"en\">AdGroupRetargetingListServiceSelector\
+    \ is an object that holds search condition (parameter).</div>"

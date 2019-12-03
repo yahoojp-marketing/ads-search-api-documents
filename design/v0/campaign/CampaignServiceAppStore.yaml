@@ -1,9 +1,9 @@
 CampaignServiceAppStore:
   type: string
-  description: "<ja>CampaignServiceAppStore、ユーザーにより広告配信の有無を調整できる設定です。</ja><br><en>CampaignServiceAppStore\
-    \ is the type of app store.</en><hr>\n* `IOS` - <ja>iOS（App Store）です。</ja><br><en>iOS\
-    \ (App Store)</en><br>\n* `ANDROID` - <ja>Android（Google Play）です。</ja><br><en>Android\
-    \ (Google Play)</en><br>\n* `UNKNOWN` - 未知の値です。<br>Unknown Value"
+  description: "<div lang=\"ja\">CampaignServiceAppStore、ユーザーにより広告配信の有無を調整できる設定です。</div><div lang=\"en\">CampaignServiceAppStore\
+    \ is the type of app store.</div><hr>\n* <code>IOS</code> - <div lang=\"ja\">iOS（App Store）です。</div><div lang=\"en\">iOS\
+    \ (App Store)</div>* <code>ANDROID</code> - <div lang=\"ja\">Android（Google Play）です。</div><div lang=\"en\">Android\
+    \ (Google Play)</div>* <code>UNKNOWN</code> - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"
   enum:
   - IOS
   - ANDROID

@@ -7,7 +7,7 @@ AdGroupAdServiceSetTrademarkStatusOperation:
     accountId:
       type: integer
       format: int64
-      description: "<ja>アカウントIDです。</ja><br><en>Account ID</en>"
+      description: "<div lang=\"ja\">アカウントIDです。</div><div lang=\"en\">Account ID</div>"
     operand:
       type: array
       items:
@@ -15,5 +15,5 @@ AdGroupAdServiceSetTrademarkStatusOperation:
       minItems: 1
       maxItems: 2000
   title: AdGroupAdServiceSetTrademarkStatusOperation
-  description: "<ja>AdGroupAdServiceSetTrademarkStatusOperationオブジェクトは、操作対象の商標使用制限の情報を格納します。</ja><br><en>AdGroupAdServiceSetTrademarkStatusOperation\
-    \ object holds the target's trademark restriction information.</en>"
+  description: "<div lang=\"ja\">AdGroupAdServiceSetTrademarkStatusOperationオブジェクトは、操作対象の商標使用制限の情報を格納します。</div><div lang=\"en\">AdGroupAdServiceSetTrademarkStatusOperation\
+    \ object holds the target's trademark restriction information.</div>"

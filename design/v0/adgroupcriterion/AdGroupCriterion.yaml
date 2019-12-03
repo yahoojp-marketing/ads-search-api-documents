@@ -4,31 +4,31 @@ AdGroupCriterion:
     accountId:
       type: integer
       format: int64
-      description: "<ja>アカウントID</ja><br><en>Account ID.</en>"
+      description: "<div lang=\"ja\">アカウントID</div><div lang=\"en\">Account ID.</div>"
     adGroupId:
       type: integer
       format: int64
-      description: "<ja>広告グループID</ja><br><en>Ad group ID.</en>"
+      description: "<div lang=\"ja\">広告グループID</div><div lang=\"en\">Ad group ID.</div>"
     adGroupName:
       type: string
-      description: "<ja>広告グループ名</ja><br><en>Ad group name.</en>"
+      description: "<div lang=\"ja\">広告グループ名</div><div lang=\"en\">Ad group name.</div>"
     adGroupTrackId:
       type: integer
       format: int64
-      description: "<ja>トラッキング用広告グループID</ja><br><en>Ad group ID for tracking.</en>"
+      description: "<div lang=\"ja\">トラッキング用広告グループID</div><div lang=\"en\">Ad group ID for tracking.</div>"
     biddableAdGroupCriterion:
       $ref: 'AdGroupCriterionServiceBiddableAdGroupCriterion.yaml#/AdGroupCriterionServiceBiddableAdGroupCriterion'
     campaignId:
       type: integer
       format: int64
-      description: "<ja>キャンペーンID</ja><br><en>Campaign ID.</en>"
+      description: "<div lang=\"ja\">キャンペーンID</div><div lang=\"en\">Campaign ID.</div>"
     campaignName:
       type: string
-      description: "<ja>キャンペーン名</ja><br><en>Campaign name.</en>"
+      description: "<div lang=\"ja\">キャンペーン名</div><div lang=\"en\">Campaign name.</div>"
     campaignTrackId:
       type: integer
       format: int64
-      description: "<ja>トラッキング用キャンペーンID</ja><br><en>Campaign ID for tracking.</en>"
+      description: "<div lang=\"ja\">トラッキング用キャンペーンID</div><div lang=\"en\">Campaign ID for tracking.</div>"
     criterion:
       $ref: 'AdGroupCriterionServiceCriterion.yaml#/AdGroupCriterionServiceCriterion'
     labels:
@@ -38,6 +38,6 @@ AdGroupCriterion:
     use:
       $ref: 'AdGroupCriterionServiceUse.yaml#/AdGroupCriterionServiceUse'
   title: AdGroupCriterion
-  description: "<ja>AdGroupCriterionオブジェクトは、広告グループのクライテリアを表します。</ja><br><en>AdGroupCriterion\
-    \ object describes ad group criteria information.</en><hr><details><summary>Requirement</summary><table\
+  description: "<div lang=\"ja\">AdGroupCriterionオブジェクトは、広告グループのクライテリアを表します。</div><div lang=\"en\">AdGroupCriterion\
+    \ object describes ad group criteria information.</div><hr><details><summary>Requirement</summary><table\
     \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>accountId</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>adGroupId</td><td>-</td><td>Requirement<br><i>NotUpdatable</i></td><td>Requirement<br><i>NotUpdatable</i></td><td>Requirement<br><i>NotUpdatable</i></td></tr><tr><td>adGroupName</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>adGroupTrackId</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>biddableAdGroupCriterion</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>campaignId</td><td>-</td><td>Requirement<br><i>NotUpdatable</i></td><td>Requirement<br><i>NotUpdatable</i></td><td>Requirement<br><i>NotUpdatable</i></td></tr><tr><td>campaignName</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>campaignTrackId</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>criterion</td><td>-</td><td>Requirement</td><td>Requirement<br><i>NotUpdatable</i></td><td>Requirement<br><i>NotUpdatable</i></td></tr><tr><td>labels</td><td>-</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>use</td><td>-</td><td>Requirement</td><td>Requirement</td><td>Requirement</td></tr></table></details>"

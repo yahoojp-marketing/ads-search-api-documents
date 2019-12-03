@@ -4,6 +4,6 @@ AdGroupCriterionServiceCriterionType:
   - KEYWORD
   - UNKNOWN
   title: AdGroupCriterionServiceCriterionType
-  description: "<ja>AdGroupCriterionServiceCriterionTypeは、クライテリアを表します。</ja><br><en>AdGroupCriterionServiceCriterionType\
-    \ displays the type of criteria.</en><hr>\n* `KEYWORD` - <ja>キーワードです。</ja><br><en>Keyword.</en><br>\n\
-    * `UNKNOWN` - 未知の値です。<br>Unknown Value"
+  description: "<div lang=\"ja\">AdGroupCriterionServiceCriterionTypeは、クライテリアを表します。</div><div lang=\"en\">AdGroupCriterionServiceCriterionType\
+    \ displays the type of criteria.</div><hr>\n* <code>KEYWORD</code> - <div lang=\"ja\">キーワードです。</div><div lang=\"en\">Keyword.</div>\
+    * <code>UNKNOWN</code> - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"

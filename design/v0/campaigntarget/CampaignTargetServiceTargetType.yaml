@@ -7,8 +7,8 @@ CampaignTargetServiceTargetType:
   - PLATFORM
   - UNKNOWN
   title: CampaignTargetServiceTargetType
-  description: "<ja>CampaignTargetServiceTargetTypeは、キャンペーンのターゲティング設定を表します。</ja><br><en>Type\
-    \ of target setting.</en><hr>\n* `LOCATION` - <ja>地域ターゲットです。</ja><br><en>LocationTarget.</en><br>\n\
-    * `SCHEDULE` - <ja>時間帯ターゲットです。</ja><br><en>ScheduleTarget.</en><br>\n* `NETWORK`\
-    \ - <ja>ネットワークターゲットです。</ja><br><en>NetworkTarget.</en><br>\n* `PLATFORM` - <ja>デバイスターゲットです。</ja><br><en>PlatformTarget.</en><br>\n\
-    * `UNKNOWN` - 未知の値です。<br>Unknown Value"
+  description: "<div lang=\"ja\">CampaignTargetServiceTargetTypeは、キャンペーンのターゲティング設定を表します。</div><div lang=\"en\">Type\
+    \ of target setting.</div><hr>\n* <code>LOCATION</code> - <div lang=\"ja\">地域ターゲットです。</div><div lang=\"en\">LocationTarget.</div>\
+    * <code>SCHEDULE</code> - <div lang=\"ja\">時間帯ターゲットです。</div><div lang=\"en\">ScheduleTarget.</div>* <code>NETWORK</code>\
+    \ - <div lang=\"ja\">ネットワークターゲットです。</div><div lang=\"en\">NetworkTarget.</div>* <code>PLATFORM</code> - <div lang=\"ja\">デバイスターゲットです。</div><div lang=\"en\">PlatformTarget.</div>\
+    * <code>UNKNOWN</code> - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"

@@ -4,16 +4,16 @@ AdGroupAdServiceSetTrademarkStatus:
     adGroupId:
       type: integer
       format: int64
-      description: "<ja>広告グループIDです。</ja><br><en>Ad group ID</en>"
+      description: "<div lang=\"ja\">広告グループIDです。</div><div lang=\"en\">Ad group ID</div>"
     adId:
       type: integer
       format: int64
-      description: "<ja>広告IDです。</ja><br><en>Ad ID</en>"
+      description: "<div lang=\"ja\">広告IDです。</div><div lang=\"en\">Ad ID</div>"
     campaignId:
       type: integer
       format: int64
-      description: "<ja>キャンペーンIDです。</ja><br><en>Campaign ID</en>"
+      description: "<div lang=\"ja\">キャンペーンIDです。</div><div lang=\"en\">Campaign ID</div>"
   title: AdGroupAdServiceSetTrademarkStatus
-  description: "<ja>AdGroupAdServiceSetTrademarkStatusオブジェクトは、広告の情報を格納します。</ja><br><en>AdGroupAdServiceSetTrademarkStatus\
-    \ object holds ads information.</en><hr><details><summary>Requirement</summary><table\
+  description: "<div lang=\"ja\">AdGroupAdServiceSetTrademarkStatusオブジェクトは、広告の情報を格納します。</div><div lang=\"en\">AdGroupAdServiceSetTrademarkStatus\
+    \ object holds ads information.</div><hr><details><summary>Requirement</summary><table\
     \ border='1'><tr><th>PROPERTY</th><th>setTrademarkStatus</th></tr><tr><td>adGroupId</td><td>Requirement</td></tr><tr><td>adId</td><td>Requirement</td></tr><tr><td>campaignId</td><td>Requirement</td></tr></table></details>"

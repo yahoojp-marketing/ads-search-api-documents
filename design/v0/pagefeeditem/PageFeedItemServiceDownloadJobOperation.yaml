@@ -6,7 +6,7 @@ PageFeedItemServiceDownloadJobOperation:
     accountId:
       type: integer
       format: int64
-      description: "<ja>アカウントID</ja><br><en>Account ID</en>"
+      description: "<div lang=\"ja\">アカウントID</div><div lang=\"en\">Account ID</div>"
     operand:
       type: array
       items:
@@ -14,5 +14,5 @@ PageFeedItemServiceDownloadJobOperation:
       minItems: 1
       maxItems: 1
   title: PageFeedItemServiceDownloadJobOperation
-  description: "<ja>PageFeedItemServiceDownloadJobOperationオブジェクトは、ページフィードアイテムを一括でダウンロードするための処理の内容を表します。</ja><br><en>PageFeedItemServiceDownloadJobOperation\
-    \ object displays content of page feed item for download collectively.</en>"
+  description: "<div lang=\"ja\">PageFeedItemServiceDownloadJobOperationオブジェクトは、ページフィードアイテムを一括でダウンロードするための処理の内容を表します。</div><div lang=\"en\">PageFeedItemServiceDownloadJobOperation\
+    \ object displays content of page feed item for download collectively.</div>"

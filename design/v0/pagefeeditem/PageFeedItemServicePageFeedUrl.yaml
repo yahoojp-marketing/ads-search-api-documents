@@ -5,7 +5,7 @@ PageFeedItemServicePageFeedUrl:
       $ref: 'PageFeedItemServiceMatchType.yaml#/PageFeedItemServiceMatchType'
     text:
       type: string
-      description: "<ja>ページフィードURL</ja><br><en>Page feed URL</en>"
+      description: "<div lang=\"ja\">ページフィードURL</div><div lang=\"en\">Page feed URL</div>"
   title: PageFeedItemServicePageFeedUrl
-  description: "<ja>PageFeedItemServicePageFeedUrlオブジェクトは、ページフィードURL検索条件を格納します。</ja><br><en>PageFeedItemServicePageFeedUrl\
-    \ object stores search condition of page feed URL.</en>"
+  description: "<div lang=\"ja\">PageFeedItemServicePageFeedUrlオブジェクトは、ページフィードURL検索条件を格納します。</div><div lang=\"en\">PageFeedItemServicePageFeedUrl\
+    \ object stores search condition of page feed URL.</div>"

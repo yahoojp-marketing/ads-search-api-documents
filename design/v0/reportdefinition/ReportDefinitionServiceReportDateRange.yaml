@@ -3,13 +3,13 @@ ReportDefinitionServiceReportDateRange:
   properties:
     endDate:
       type: string
-      description: "<ja>集計の終了日です。</ja><br><en>End date. If DateRangeType selecet CUSTOM_DATE,\
-        \ this field is required.</en>"
+      description: "<div lang=\"ja\">集計の終了日です。</div><div lang=\"en\">End date. If DateRangeType selecet CUSTOM_DATE,\
+        \ this field is required.</div>"
     startDate:
       type: string
-      description: "<ja>集計の開始日です。</ja><br><en>Start data. If DateRangeType selecet\
-        \ CUSTOM_DATE, this field is required.</en>"
+      description: "<div lang=\"ja\">集計の開始日です。</div><div lang=\"en\">Start data. If DateRangeType selecet\
+        \ CUSTOM_DATE, this field is required.</div>"
   title: ReportDefinitionServiceReportDateRange
-  description: "<ja>ReportDefinitionServiceReportDateRangeオブジェクトは、レポートの集計対象期間を表します。</ja><br><en>ReportDefinitionServiceReportDateRange\
-    \ object displays date range of the report.</en><hr><details><summary>Requirement</summary><table\
+  description: "<div lang=\"ja\">ReportDefinitionServiceReportDateRangeオブジェクトは、レポートの集計対象期間を表します。</div><div lang=\"en\">ReportDefinitionServiceReportDateRange\
+    \ object displays date range of the report.</div><hr><details><summary>Requirement</summary><table\
     \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>REMOVE</th></tr><tr><td>endDate</td><td>-</td><td>Requirement</td><td>-</td></tr><tr><td>startDate</td><td>-</td><td>Requirement</td><td>-</td></tr></table></details>"

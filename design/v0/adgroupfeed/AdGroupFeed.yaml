@@ -4,22 +4,22 @@ AdGroupFeed:
     accountId:
       type: integer
       format: int64
-      description: "<ja>アカウントIDです。</ja><br><en>Account ID.</en>"
+      description: "<div lang=\"ja\">アカウントIDです。</div><div lang=\"en\">Account ID.</div>"
     adGroupId:
       type: integer
       format: int64
-      description: "<ja>広告グループIDです。</ja><br><en>Ad group ID.</en>"
+      description: "<div lang=\"ja\">広告グループIDです。</div><div lang=\"en\">Ad group ID.</div>"
     campaignId:
       type: integer
       format: int64
-      description: "<ja>キャンペーンIDです。</ja><br><en>Campaign ID.</en>"
+      description: "<div lang=\"ja\">キャンペーンIDです。</div><div lang=\"en\">Campaign ID.</div>"
     feedItemId:
       type: integer
       format: int64
-      description: "<ja>FeedItem情報のIDです。</ja><br><en>FeedItem information ID.</en>"
+      description: "<div lang=\"ja\">FeedItem情報のIDです。</div><div lang=\"en\">FeedItem information ID.</div>"
     placeholderType:
       $ref: 'AdGroupFeedServicePlaceholderType.yaml#/AdGroupFeedServicePlaceholderType'
   title: AdGroupFeed
-  description: "<ja>AdGroupFeedオブジェクトは、広告グループに紐づけられたFeedItem情報を表します。</ja><br><en>AdGroupFeed\
-    \ describes the FeedItem information connected to ad group.</en><hr><details><summary>Requirement</summary><table\
+  description: "<div lang=\"ja\">AdGroupFeedオブジェクトは、広告グループに紐づけられたFeedItem情報を表します。</div><div lang=\"en\">AdGroupFeed\
+    \ describes the FeedItem information connected to ad group.</div><hr><details><summary>Requirement</summary><table\
     \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>SET</th></tr><tr><td>accountId</td><td>-</td><td>-</td></tr><tr><td>adGroupId</td><td>-</td><td>-</td></tr><tr><td>campaignId</td><td>-</td><td>-</td></tr><tr><td>feedItemId</td><td>-</td><td>Requirement<br>Updatable</td></tr><tr><td>placeholderType</td><td>-</td><td>Ignore</td></tr></table></details>"

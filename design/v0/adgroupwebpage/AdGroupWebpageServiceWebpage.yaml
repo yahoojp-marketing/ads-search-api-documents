@@ -6,14 +6,14 @@ AdGroupWebpageServiceWebpage:
     targetId:
       type: integer
       format: int64
-      description: "<ja>AdGroupWebpageServiceWebpageを識別するID</ja><br><en>Unique ID\
-        \ for each identify webpage</en>"
+      description: "<div lang=\"ja\">AdGroupWebpageServiceWebpageを識別するID</div><div lang=\"en\">Unique ID\
+        \ for each identify webpage</div>"
     targetTrackId:
       type: integer
       format: int64
-      description: "<ja>AdGroupWebpageServiceWebpageを識別するトラッキングID</ja><br><en>Tracking\
-        \ ID for each identify webpage</en>"
+      description: "<div lang=\"ja\">AdGroupWebpageServiceWebpageを識別するトラッキングID</div><div lang=\"en\">Tracking\
+        \ ID for each identify webpage</div>"
   title: AdGroupWebpageServiceWebpage
-  description: "<ja>AdGroupWebpageServiceWebpageオブジェクトは、配信/除外設定するAdGroupWebpageServiceWebpageの条件を保持します。</ja><br><en>AdGroupWebpageServiceWebpage\
-    \ object contains the rules of webpage to be allowed or excluded.</en><hr><details><summary>Requirement</summary><table\
+  description: "<div lang=\"ja\">AdGroupWebpageServiceWebpageオブジェクトは、配信/除外設定するAdGroupWebpageServiceWebpageの条件を保持します。</div><div lang=\"en\">AdGroupWebpageServiceWebpage\
+    \ object contains the rules of webpage to be allowed or excluded.</div><hr><details><summary>Requirement</summary><table\
     \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>parameter</td><td>Ignore</td><td>Requirement</td><td>Ignore</td><td>Ignore</td></tr><tr><td>targetId</td><td>Ignore</td><td>Ignore</td><td>Requirement</td><td>Requirement</td></tr><tr><td>targetTrackId</td><td>Ignore</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr></table></details>"

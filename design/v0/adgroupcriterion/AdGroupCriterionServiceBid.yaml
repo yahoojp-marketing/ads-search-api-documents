@@ -4,21 +4,21 @@ AdGroupCriterionServiceBid:
     adGroupMaxCpc:
       type: integer
       format: int64
-      description: "<ja>広告グループ入札価格です。</ja><br><en>CPC of Ad group.</en>"
+      description: "<div lang=\"ja\">広告グループ入札価格です。</div><div lang=\"en\">CPC of Ad group.</div>"
     bidSource:
       $ref: 'AdGroupCriterionServiceBidSource.yaml#/AdGroupCriterionServiceBidSource'
     keywordMaxCpc:
       type: integer
       format: int64
-      description: "<ja>キーワード入札価格です。</ja><br><en>CPC of Keyword.</en>"
+      description: "<div lang=\"ja\">キーワード入札価格です。</div><div lang=\"en\">CPC of Keyword.</div>"
     maxCpc:
       type: integer
       format: int64
-      description: "<ja>キーワード入札価格です。<br>※maxCpcが「0」の場合は、設定なしと同様です。</ja><br><en>Keyword\
+      description: "<div lang=\"ja\">キーワード入札価格です。<br>※maxCpcが「0」の場合は、設定なしと同様です。</div><div lang=\"en\">Keyword\
         \ CPC.<br>* Confirmed as no setting, if value\
-        \ is set &#34;0&#34;.</en>"
+        \ is set &#34;0&#34;.</div>"
   title: AdGroupCriterionServiceBid
-  description: "<ja>AdGroupCriterionServiceBidオブジェクトは、入札価格を表示します。 （AdGroupCriterionService用のオブジェクトです。）</ja><br><en>AdGroupCriterionServiceBid\
-    \ object displays the bid values.s</en><hr><details><summary>Requirement</summary><table\
+  description: "<div lang=\"ja\">AdGroupCriterionServiceBidオブジェクトは、入札価格を表示します。 （AdGroupCriterionService用のオブジェクトです。）</div><div lang=\"en\">AdGroupCriterionServiceBid\
+    \ object displays the bid values.s</div><hr><details><summary>Requirement</summary><table\
     \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>adGroupMaxCpc</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>bidSource</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>keywordMaxCpc</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>maxCpc</td><td>-</td><td>Optional<br>※Default:\
     \ 1</td><td>Optional<br><i>Updatable</i></td><td>-</td></tr></table></details>"

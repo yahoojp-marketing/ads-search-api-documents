@@ -11,10 +11,10 @@ RetargetingListServiceRuleItem:
       $ref: 'RetargetingListServiceUrlRuleItem.yaml#/RetargetingListServiceUrlRuleItem'
     value:
       type: string
-      description: "<ja>評価値です。<br>※括弧（()）、シングルクォート（&#39;）、ダブルクォート（&#34;）、タブ（\t）は利用できません。<br>※250文字まで指定可能です。</ja><br><en>Evaluation\
+      description: "<div lang=\"ja\">評価値です。<br>※括弧（()）、シングルクォート（&#39;）、ダブルクォート（&#34;）、タブ（\t）は利用できません。<br>※250文字まで指定可能です。</div><div lang=\"en\">Evaluation\
         \ value.<br>*Cannot use: bracket, single quote, double quote, and tab.<br>*Can\
-        \ select up to 250 characters.</en>"
+        \ select up to 250 characters.</div>"
   title: RetargetingListServiceRuleItem
-  description: "<ja>RetargetingListServiceRuleItemは、ルールの評価条件を保持するオブジェクトです。</ja><br><en>RetargetingListServiceRuleItem\
-    \ is an object that holds evaluation condition of rule.</en><hr><details><summary>Requirement</summary><table\
-    \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th></tr><tr><td>ruleType</td><td>-</td><td>Requirement</td><td>Requirement</td></tr><tr><td>value</td><td>-</td><td>Requirement</td><td>Requirement</td></tr><tr><td>ruleOperator</td><td>-</td><td>Requirement</td><td>Requirement</td></tr><tr><td>customKeyRuleItem</td><td>-</td><td>Optional<br><ja>※ruleTypeがCUSTOM_KEY_RULEの場合、Requirement</ja><br><en>∗ If ruleType is CUSTOM_KEY_RULE, Requirement</en></td><td>Optional<br><ja>※ruleTypeがCUSTOM_KEY_RULEの場合、Requirement</ja><br><en>∗ If ruleType is CUSTOM_KEY_RULE, Requirement</en></td></tr><tr><td>urlRuleItem</td><td>-</td><td>Optional<br><ja>※ruleTypeがURL_RULEの場合、Requirement</ja><br><en>∗ If ruleType is URL_RULE, Requirement</en></td><td>Optional<br><ja>※ruleTypeがURL_RULEの場合、Requirement</ja><br><en>∗ If ruleType is URL_RULE, Requirement</en></td></tr></table></details>"
+  description: "<div lang=\"ja\">RetargetingListServiceRuleItemは、ルールの評価条件を保持するオブジェクトです。</div><div lang=\"en\">RetargetingListServiceRuleItem\
+    \ is an object that holds evaluation condition of rule.</div><hr><details><summary>Requirement</summary><table\
+    \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th></tr><tr><td>ruleType</td><td>-</td><td>Requirement</td><td>Requirement</td></tr><tr><td>value</td><td>-</td><td>Requirement</td><td>Requirement</td></tr><tr><td>ruleOperator</td><td>-</td><td>Requirement</td><td>Requirement</td></tr><tr><td>customKeyRuleItem</td><td>-</td><td>Optional<br><div lang=\"ja\">※ruleTypeがCUSTOM_KEY_RULEの場合、Requirement</div><div lang=\"en\">∗ If ruleType is CUSTOM_KEY_RULE, Requirement</div></td><td>Optional<br><div lang=\"ja\">※ruleTypeがCUSTOM_KEY_RULEの場合、Requirement</div><div lang=\"en\">∗ If ruleType is CUSTOM_KEY_RULE, Requirement</div></td></tr><tr><td>urlRuleItem</td><td>-</td><td>Optional<br><div lang=\"ja\">※ruleTypeがURL_RULEの場合、Requirement</div><div lang=\"en\">∗ If ruleType is URL_RULE, Requirement</div></td><td>Optional<br><div lang=\"ja\">※ruleTypeがURL_RULEの場合、Requirement</div><div lang=\"en\">∗ If ruleType is URL_RULE, Requirement</div></td></tr></table></details>"

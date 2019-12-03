@@ -6,6 +6,6 @@ FeedItemServiceScheduling:
       items:
         $ref: 'FeedItemServiceSchedule.yaml#/FeedItemServiceSchedule'
   title: FeedItemServiceScheduling
-  description: "<ja>FeedItemServiceSchedulingオブジェクトは、広告配信スケジュールを表します。</ja><br><en>FeedItemServiceScheduling\
-    \ object describes ad display schedule.</en><hr><details><summary>Requirement</summary><table\
+  description: "<div lang=\"ja\">FeedItemServiceSchedulingオブジェクトは、広告配信スケジュールを表します。</div><div lang=\"en\">FeedItemServiceScheduling\
+    \ object describes ad display schedule.</div><hr><details><summary>Requirement</summary><table\
     \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>schedules</td><td>-</td><td>Optional</td><td>Optional</td><td>-</td></tr></table></details>"

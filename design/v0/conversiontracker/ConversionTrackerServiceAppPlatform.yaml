@@ -4,6 +4,6 @@ ConversionTrackerServiceAppPlatform:
   - ANDROID_MARKET
   - UNKNOWN
   title: ConversionTrackerServiceAppPlatform
-  description: "<ja>ConversionTrackerServiceAppPlatformは、アプリのプラットフォームです。</ja><br><en>ConversionTrackerServiceAppPlatform\
-    \ is App platform.</en><hr>\n* `ANDROID_MARKET` - <ja>Androidマーケットのプラットフォームです。</ja><br><en>Android\
-    \ market</en><br>\n* `UNKNOWN` - 未知の値です。<br>Unknown Value"
+  description: "<div lang=\"ja\">ConversionTrackerServiceAppPlatformは、アプリのプラットフォームです。</div><div lang=\"en\">ConversionTrackerServiceAppPlatform\
+    \ is App platform.</div><hr>\n* <code>ANDROID_MARKET</code> - <div lang=\"ja\">Androidマーケットのプラットフォームです。</div><div lang=\"en\">Android\
+    \ market</div>* <code>UNKNOWN</code> - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"

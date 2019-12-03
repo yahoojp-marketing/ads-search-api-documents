@@ -4,12 +4,12 @@ FeedItemServiceTargetingAdGroup:
     targetingAdGroupId:
       type: integer
       format: int64
-      description: "<ja>配信に使用する広告グループIDです。<br>※設定を解除する場合は「0」を指定してください。<br>※addのリクエストで、「0」指定は未\
-        \ 指定と同じ扱いになります。</ja><br><en>Targeting Ad group ID.<br>* To deactive, insert\
+      description: "<div lang=\"ja\">配信に使用する広告グループIDです。<br>※設定を解除する場合は「0」を指定してください。<br>※addのリクエストで、「0」指定は未\
+        \ 指定と同じ扱いになります。</div><div lang=\"en\">Targeting Ad group ID.<br>* To deactive, insert\
         \ &#34;0&#34;.<br>* It would be &#34;no setting&#34;, if &#34;0&#34; is set\
-        \ in add request.</en>"
+        \ in add request.</div>"
   title: FeedItemServiceTargetingAdGroup
-  description: "<ja>FeedItemServiceTargetingAdGroupオブジェクトは、データ自動挿入の広告グループとの紐付けを表します。</ja><br><en>FeedItemServiceTargetingAdGroup\
-    \ contains ad group setting for Data Auto Insertion.</en><hr><details><summary>Requirement</summary><table\
-    \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>targetingAdGroupId</td><td>-</td><td>-<br><ja>※データ自動\
-    \ 挿入の場合、Optional</ja><br><en>* Optional for AD_CUSTOMIZER.</en></td><td>-<br><ja>※データ自動 挿入の場合、Optional</ja><br><en>* Optional for AD_CUSTOMIZER.</en></td><td>-</td></tr></table></details>"
+  description: "<div lang=\"ja\">FeedItemServiceTargetingAdGroupオブジェクトは、データ自動挿入の広告グループとの紐付けを表します。</div><div lang=\"en\">FeedItemServiceTargetingAdGroup\
+    \ contains ad group setting for Data Auto Insertion.</div><hr><details><summary>Requirement</summary><table\
+    \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>targetingAdGroupId</td><td>-</td><td>-<br><div lang=\"ja\">※データ自動\
+    \ 挿入の場合、Optional</div><div lang=\"en\">* Optional for AD_CUSTOMIZER.</div></td><td>-<br><div lang=\"ja\">※データ自動 挿入の場合、Optional</div><div lang=\"en\">* Optional for AD_CUSTOMIZER.</div></td><td>-</td></tr></table></details>"

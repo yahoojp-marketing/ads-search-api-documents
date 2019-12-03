@@ -6,8 +6,8 @@ AccountServiceIsTestAccount:
     - UNKNOWN
   title: AccountServiceIsTestAccount
   description: |
-    <ja>テストアカウント</ja><br>
-    <en>Test account.</en><hr>
-    * `TRUE` - <ja>テストアカウント</ja><br><en>Test account.</en>
-    * `FALSE` - <ja>Productionアカウント(テストアカウントではありません)</ja><br><en>Production (non-test) account.</en>
-    * `UNKNOWN` - 未知の値です。<br>Unknown Value
+    <div lang="ja">テストアカウント</div>
+    <div lang="en">Test account.</div><hr>
+    * <code>TRUE</code> - <div lang="ja">テストアカウント</div><div lang="en">Test account.</div>
+    * <code>FALSE</code> - <div lang="ja">Productionアカウント(テストアカウントではありません)</div><div lang="en">Production (non-test) account.</div>
+    * <code>UNKNOWN</code> - <div lang="ja">未知の値です。</div><div lang="en">Unknown Value</div>

@@ -6,13 +6,13 @@ FeedItemServiceTargetingKeyword:
     targetingKeywordId:
       type: integer
       format: int64
-      description: "<ja>指定したキーワード（text）を識別する IDになります。<br>※設定を解除する場合は「0」を指定 してください。</ja><br><en>ID\
-        \ to identify the Targeting keyword (text).<br>* To deactive, set &#34;0&#34;.</en>"
+      description: "<div lang=\"ja\">指定したキーワード（text）を識別する IDになります。<br>※設定を解除する場合は「0」を指定 してください。</div><div lang=\"en\">ID\
+        \ to identify the Targeting keyword (text).<br>* To deactive, set &#34;0&#34;.</div>"
     text:
       type: string
-      description: "<ja>指定するキーワードです。<br>※入力制限：80文字、10ワード までです。</ja><br><en>Keyword\
-        \ text.<br>* Insert limit: Up to 80 characters and/or 10 words.</en>"
+      description: "<div lang=\"ja\">指定するキーワードです。<br>※入力制限：80文字、10ワード までです。</div><div lang=\"en\">Keyword\
+        \ text.<br>* Insert limit: Up to 80 characters and/or 10 words.</div>"
   title: FeedItemServiceTargetingKeyword
-  description: "<ja>FeedItemServiceTargetingKeywordオブジェクトは、データ自動挿入のターゲットキーワードを表します。</ja><br><en>FeedItemServiceTargetingKeyword\
-    \ contains keyword setting for Data Auto Insertion.</en><hr><details><summary>Requirement</summary><table\
+  description: "<div lang=\"ja\">FeedItemServiceTargetingKeywordオブジェクトは、データ自動挿入のターゲットキーワードを表します。</div><div lang=\"en\">FeedItemServiceTargetingKeyword\
+    \ contains keyword setting for Data Auto Insertion.</div><hr><details><summary>Requirement</summary><table\
     \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>targetingKeywordId</td><td>-</td><td>-</td><td>Optional</td><td>-</td></tr><tr><td>text</td><td>-</td><td>Requirement</td><td>Requirement</td><td>-</td></tr><tr><td>keywordMatchType</td><td>-</td><td>Requirement</td><td>Requirement</td><td>-</td></tr></table></details>"

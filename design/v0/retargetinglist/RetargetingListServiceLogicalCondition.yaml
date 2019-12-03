@@ -6,8 +6,7 @@ RetargetingListServiceLogicalCondition:
   - NOT
   - UNKNOWN
   title: RetargetingListServiceLogicalCondition
-  description: "<ja>RetargetingListServiceLogicalConditionは、組合せターゲットリストの連結条件です。</ja><br><en>RetargetingListServiceLogicalCondition\
-    \ is the conditions of combined target list.</en><hr>\n* `NOT` - <ja>NOT条件の組合せです。</ja><br><en>NOT\
-    \ condition.</en><br>\n* `AND` - <ja>AND条件の組合せです。</ja><br><en>AND condition.</en><br>\n\
-    * `OR` - <ja>OR条件の組合せです。</ja><br><en>OR condition.</en><br>\n* `UNKNOWN` - 未知の値です。<br>Unknown\
-    \ Value"
+  description: "<div lang=\"ja\">RetargetingListServiceLogicalConditionは、組合せターゲットリストの連結条件です。</div><div lang=\"en\">RetargetingListServiceLogicalCondition\
+    \ is the conditions of combined target list.</div><hr>\n* <code>NOT</code> - <div lang=\"ja\">NOT条件の組合せです。</div><div lang=\"en\">NOT\
+    \ condition.</div>* <code>AND</code> - <div lang=\"ja\">AND条件の組合せです。</div><div lang=\"en\">AND condition.</div>\
+    * <code>OR</code> - <div lang=\"ja\">OR条件の組合せです。</div><div lang=\"en\">OR condition.</div>* <code>UNKNOWN</code> - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"

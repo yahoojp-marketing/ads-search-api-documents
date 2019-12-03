@@ -6,8 +6,7 @@ AdGroupBidMultiplierServicePlatformType:
   - DESKTOP
   - UNKNOWN
   title: AdGroupBidMultiplierServicePlatformType
-  description: "<ja>AdGroupBidMultiplierServicePlatformTypeは、広告を配信するデバイスの種類です。</ja><br><en>AdGroupBidMultiplierServicePlatformType\
-    \ is a platform of the selected device.</en><hr>\n* `DESKTOP` - <ja>パソコンです。</ja><br><en>PC.</en><br>\n\
-    * `SMART_PHONE` - <ja>スマートフォンです。</ja><br><en>Smartphone.</en><br>\n* `TABLET`\
-    \ - <ja>タブレットです。</ja><br><en>Tablet.</en><br>\n* `UNKNOWN` - 未知の値です。<br>Unknown\
-    \ Value"
+  description: "<div lang=\"ja\">AdGroupBidMultiplierServicePlatformTypeは、広告を配信するデバイスの種類です。</div><div lang=\"en\">AdGroupBidMultiplierServicePlatformType\
+    \ is a platform of the selected device.</div><hr>\n* <code>DESKTOP</code> - <div lang=\"ja\">パソコンです。</div><div lang=\"en\">PC.</div>\
+    * <code>SMART_PHONE</code> - <div lang=\"ja\">スマートフォンです。</div><div lang=\"en\">Smartphone.</div>* <code>TABLET</code>\
+    \ - <div lang=\"ja\">タブレットです。</div><div lang=\"en\">Tablet.</div>* <code>UNKNOWN</code> - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"

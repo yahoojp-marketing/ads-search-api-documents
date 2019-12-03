@@ -4,36 +4,36 @@ Label:
     accountId:
       type: integer
       format: int64
-      description: "<ja>アカウントID</ja><br><en>Account ID</en>"
+      description: "<div lang=\"ja\">アカウントID</div><div lang=\"en\">Account ID</div>"
     color:
       type: string
-      description: "<ja>カラー</ja><br><en>Color</en>"
+      description: "<div lang=\"ja\">カラー</div><div lang=\"en\">Color</div>"
     description:
       type: string
-      description: "<ja>説明文</ja><br><en>Description</en>"
+      description: "<div lang=\"ja\">説明文</div><div lang=\"en\">Description</div>"
     labelId:
       type: integer
       format: int64
-      description: "<ja>ラベルID</ja><br><en>Label ID</en>"
+      description: "<div lang=\"ja\">ラベルID</div><div lang=\"en\">Label ID</div>"
     labelName:
       type: string
-      description: "<ja>ラベル名</ja><br><en>Label Name</en>"
+      description: "<div lang=\"ja\">ラベル名</div><div lang=\"en\">Label Name</div>"
     labeledAdGroup:
       type: integer
       format: int64
-      description: "<ja>広告グループの紐付け数</ja><br><en>Number of labeled AdGroup</en>"
+      description: "<div lang=\"ja\">広告グループの紐付け数</div><div lang=\"en\">Number of labeled AdGroup</div>"
     labeledAdGroupAd:
       type: integer
       format: int64
-      description: "<ja>広告の紐付け数</ja><br><en>Number of labeled AdGroupAd</en>"
+      description: "<div lang=\"ja\">広告の紐付け数</div><div lang=\"en\">Number of labeled AdGroupAd</div>"
     labeledAdGroupCriterion:
       type: integer
       format: int64
-      description: "<ja>キーワードの紐付け数</ja><br><en>Number of labeled Ad Group Criterion</en>"
+      description: "<div lang=\"ja\">キーワードの紐付け数</div><div lang=\"en\">Number of labeled Ad Group Criterion</div>"
     labeledCampaign:
       type: integer
       format: int64
-      description: "<ja>キャンペーンの紐付け数</ja><br><en>Number of labeled Campaign</en>"
+      description: "<div lang=\"ja\">キャンペーンの紐付け数</div><div lang=\"en\">Number of labeled Campaign</div>"
   title: Label
-  description: "<ja>Labelオブジェクトは、ラベルの情報を表します。</ja><br><en>Label object describes label\
-    \ information.</en><hr><details><summary>Requirement</summary><table border='1'><tr><th>PROPERTY</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>accountId</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>color</td><td>Optional</td><td>Optional</td><td>Ignore</td></tr><tr><td>description</td><td>Optional</td><td>Optional</td><td>Ignore</td></tr><tr><td>labelId</td><td>Ignore</td><td>Requirement</td><td>Requirement</td></tr><tr><td>labelName</td><td>Requirement</td><td>Optional</td><td>Ignore</td></tr><tr><td>labeledAdGroup</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>labeledAdGroupAd</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>labeledAdGroupCriterion</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>labeledCampaign</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr></table></details>"
+  description: "<div lang=\"ja\">Labelオブジェクトは、ラベルの情報を表します。</div><div lang=\"en\">Label object describes label\
+    \ information.</div><hr><details><summary>Requirement</summary><table border='1'><tr><th>PROPERTY</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>accountId</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>color</td><td>Optional</td><td>Optional</td><td>Ignore</td></tr><tr><td>description</td><td>Optional</td><td>Optional</td><td>Ignore</td></tr><tr><td>labelId</td><td>Ignore</td><td>Requirement</td><td>Requirement</td></tr><tr><td>labelName</td><td>Requirement</td><td>Optional</td><td>Ignore</td></tr><tr><td>labeledAdGroup</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>labeledAdGroupAd</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>labeledAdGroupCriterion</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>labeledCampaign</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr></table></details>"

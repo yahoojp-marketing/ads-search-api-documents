@@ -7,7 +7,7 @@ AdGroupBidMultiplierServiceOperation:
     accountId:
       type: integer
       format: int64
-      description: "<ja>アカウントIDです。</ja><br><en>Account ID.</en>"
+      description: "<div lang=\"ja\">アカウントIDです。</div><div lang=\"en\">Account ID.</div>"
     operand:
       type: array
       items:
@@ -15,5 +15,5 @@ AdGroupBidMultiplierServiceOperation:
       minItems: 1
       maxItems: 10000
   title: AdGroupBidMultiplierServiceOperation
-  description: "<ja>AdGroupBidMultiplierServiceOperationオブジェクトは、入札価格調整率の操作内容を表します。</ja><br><en>Container\
-    \ for bid multiplier.</en>"
+  description: "<div lang=\"ja\">AdGroupBidMultiplierServiceOperationオブジェクトは、入札価格調整率の操作内容を表します。</div><div lang=\"en\">Container\
+    \ for bid multiplier.</div>"

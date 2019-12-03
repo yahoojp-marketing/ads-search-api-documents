@@ -4,11 +4,11 @@ FeedItemServiceTargetingCampaign:
     targetingCampaignId:
       type: integer
       format: int64
-      description: "<ja>配信に使用するキャンペーンIDです。<br>※設定を解除する場合は「0」を指定してください。<br>※addのリクエストで、「0」指定は未指定と同じ扱いになります。</ja><br><en>Campaign\
+      description: "<div lang=\"ja\">配信に使用するキャンペーンIDです。<br>※設定を解除する場合は「0」を指定してください。<br>※addのリクエストで、「0」指定は未指定と同じ扱いになります。</div><div lang=\"en\">Campaign\
         \ ID used for ad display.<br>*Specify &#39;0&#39; to clear the setting.<br>*The\
         \ specified &#39;0&#39; will be handled as same as &#39;not specified&#39;\
-        \ by add request.</en>"
+        \ by add request.</div>"
   title: FeedItemServiceTargetingCampaign
-  description: "<ja>FeedItemServiceTargetingCampaignオブジェクトは、データ自動挿入のキャンペーンとの紐付けを表します。</ja><br><en>FeedItemServiceTargetingCampaign\
-    \ contains Campaign setting for Data Auto Insertion.</en><hr><details><summary>Requirement</summary><table\
-    \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>targetingCampaignId</td><td>-</td><td>-<br><ja>※データ自動挿入の場合、Requirement</ja><br><en>* Requirement for AD_CUSTOMIZER.</en></td><td>-<br><ja>※データ自動挿入の場合、Requirement</ja><br><en>* Requirement for AD_CUSTOMIZER.</en></td><td>-</td></tr></table></details>"
+  description: "<div lang=\"ja\">FeedItemServiceTargetingCampaignオブジェクトは、データ自動挿入のキャンペーンとの紐付けを表します。</div><div lang=\"en\">FeedItemServiceTargetingCampaign\
+    \ contains Campaign setting for Data Auto Insertion.</div><hr><details><summary>Requirement</summary><table\
+    \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>targetingCampaignId</td><td>-</td><td>-<br><div lang=\"ja\">※データ自動挿入の場合、Requirement</div><div lang=\"en\">* Requirement for AD_CUSTOMIZER.</div></td><td>-<br><div lang=\"ja\">※データ自動挿入の場合、Requirement</div><div lang=\"en\">* Requirement for AD_CUSTOMIZER.</div></td><td>-</td></tr></table></details>"

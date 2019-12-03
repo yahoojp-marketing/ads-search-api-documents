@@ -7,12 +7,12 @@ CampaignServiceUrlApprovalStatus:
   - REVIEW
   - DISAPPROVED
   - UNKNOWN
-  description: "<ja>CampaignServiceUrlApprovalStatusは、URLの審査状況を表します。</ja><br><en>CampaignServiceUrlApprovalStatus\
-    \ is a review status of URL.</en><hr>\n* `APPROVED_WITH_REVIEW` - <ja>配信審査中です。</ja><br><en>Approved\
-    \ with in process of review.<br>Ad will stop displaying if disapproved.</en><br>\n\
-    * `REVIEW` - <ja>審査中です。</ja><br><en>In review status.</en><br>\n* `DISAPPROVED`\
-    \ - <ja>事前審査で否認となりました。<br>掲載不可です。</ja><br><en>It has been disapproved.<br>Ad cannot\
-    \ be displayed.</en><br>\n* `NONE` - <ja>未審査です。</ja><br><en>Not in review.</en><br>\n\
-    * `APPROVED` - <ja>審査で承認済です。</ja><br><en>Approved.<br>Ad can be displayed.</en><br>\n\
-    * `UNKNOWN` - 未知の値です。<br>Unknown Value"
+  description: "<div lang=\"ja\">CampaignServiceUrlApprovalStatusは、URLの審査状況を表します。</div><div lang=\"en\">CampaignServiceUrlApprovalStatus\
+    \ is a review status of URL.</div><hr>\n* <code>APPROVED_WITH_REVIEW</code> - <div lang=\"ja\">配信審査中です。</div><div lang=\"en\">Approved\
+    \ with in process of review.<br>Ad will stop displaying if disapproved.</div>\
+    * <code>REVIEW</code> - <div lang=\"ja\">審査中です。</div><div lang=\"en\">In review status.</div>* <code>DISAPPROVED</code>\
+    \ - <div lang=\"ja\">事前審査で否認となりました。<br>掲載不可です。</div><div lang=\"en\">It has been disapproved.<br>Ad cannot\
+    \ be displayed.</div>* <code>NONE</code> - <div lang=\"ja\">未審査です。</div><div lang=\"en\">Not in review.</div>\
+    * <code>APPROVED</code> - <div lang=\"ja\">審査で承認済です。</div><div lang=\"en\">Approved.<br>Ad can be displayed.</div>\
+    * <code>UNKNOWN</code> - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"
   title: CampaignServiceUrlApprovalStatus

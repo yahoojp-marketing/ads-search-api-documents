@@ -4,6 +4,6 @@ SharedCriterionServiceUse:
   - NEGATIVE
   - UNKNOWN
   title: SharedCriterionServiceUse
-  description: "<ja>SharedCriterionServiceUseは、キーワードの種別を表示します。</ja><br><en>SharedCriterionServiceUse\
-    \ describes keyword type.</en><hr>\n* `NEGATIVE` - <ja>対象外キーワードです。</ja><br><en>Negative\
-    \ keyword list.</en><br>\n* `UNKNOWN` - 未知の値です。<br>Unknown Value"
+  description: "<div lang=\"ja\">SharedCriterionServiceUseは、キーワードの種別を表示します。</div><div lang=\"en\">SharedCriterionServiceUse\
+    \ describes keyword type.</div><hr>\n* <code>NEGATIVE</code> - <div lang=\"ja\">対象外キーワードです。</div><div lang=\"en\">Negative\
+    \ keyword list.</div>* <code>UNKNOWN</code> - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"

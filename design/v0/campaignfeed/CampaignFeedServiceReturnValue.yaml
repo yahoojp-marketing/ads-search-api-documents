@@ -6,5 +6,5 @@ CampaignFeedServiceReturnValue:
       items:
         $ref: 'CampaignFeedServiceValue.yaml#/CampaignFeedServiceValue'
   title: CampaignFeedServiceReturnValue
-  description: "<ja>CampaignFeedServiceReturnValueオブジェクトは、FeedItem情報を格納するコンテナです。</ja><br><en>CampaignFeedServiceReturnValue\
-    \ is a container of FeedItem information.</en>"
+  description: "<div lang=\"ja\">CampaignFeedServiceReturnValueオブジェクトは、FeedItem情報を格納するコンテナです。</div><div lang=\"en\">CampaignFeedServiceReturnValue\
+    \ is a container of FeedItem information.</div>"

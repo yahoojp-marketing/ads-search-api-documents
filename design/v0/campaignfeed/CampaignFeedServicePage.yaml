@@ -4,11 +4,11 @@ CampaignFeedServicePage:
     totalNumEntries:
       type: integer
       format: int32
-      description: "<ja>取得される項目の総件数です。</ja><br><en>Total number of entries in the result that this page is a part of.</en>"
+      description: "<div lang=\"ja\">取得される項目の総件数です。</div><div lang=\"en\">Total number of entries in the result that this page is a part of.</div>"
     values:
       type: array
       items:
         $ref: 'CampaignFeedServiceValue.yaml#/CampaignFeedServiceValue'
   title: CampaignFeedServicePage
-  description: "<ja>CampaignFeedServicePageオブジェクトは、FeedItem情報を格納するコンテナです。</ja><br><en>CampaignFeedServicePage\
-    \ is a container of FeedItem information.</en>"
+  description: "<div lang=\"ja\">CampaignFeedServicePageオブジェクトは、FeedItem情報を格納するコンテナです。</div><div lang=\"en\">CampaignFeedServicePage\
+    \ is a container of FeedItem information.</div>"

@@ -1,0 +1,9 @@
+Response503:
+  description: |
+    <details>
+    <summary>Error Codes</summary>
+    <table border="1">
+    <tr><th>Code</th><th>Message</th><th>Description</th></tr>
+    <tr><td>0099</td><td>Out of service.</td><td><div lang="ja">APIがメンテナンス中、またはご利用できません。</div><div lang="en">API is under maintenance or not available to use.</div></td></tr>
+    </table>
+    </details>

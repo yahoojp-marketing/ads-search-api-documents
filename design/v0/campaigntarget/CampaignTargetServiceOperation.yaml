@@ -7,7 +7,7 @@ CampaignTargetServiceOperation:
     accountId:
       type: integer
       format: int64
-      description: "<ja>アカウントIDです。</ja><br><en>Account ID.</en>"
+      description: "<div lang=\"ja\">アカウントIDです。</div><div lang=\"en\">Account ID.</div>"
     operand:
       type: array
       items:
@@ -16,5 +16,5 @@ CampaignTargetServiceOperation:
       maxItems: 200
 
   title: CampaignTargetServiceOperation
-  description: "<ja>CampaignTargetServiceOperationオブジェクトは、操作の対象となるキャンペーンのターゲティング設定および操作の内容を表します。</ja><br><en>Campaign\
-    \ target setting and its operation.</en>"
+  description: "<div lang=\"ja\">CampaignTargetServiceOperationオブジェクトは、操作の対象となるキャンペーンのターゲティング設定および操作の内容を表します。</div><div lang=\"en\">Campaign\
+    \ target setting and its operation.</div>"

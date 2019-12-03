@@ -3,38 +3,38 @@ ReportDefinitionServiceReportFieldAttribute:
   properties:
     canFilter:
       type: boolean
-      description: "<ja>ユーザーがこのフィールドにフィルタを 適用できるかどうかを示します。</ja><br><en>Indicate if\
-        \ use can filter the fields.</en>"
+      description: "<div lang=\"ja\">ユーザーがこのフィールドにフィルタを 適用できるかどうかを示します。</div><div lang=\"en\">Indicate if\
+        \ use can filter the fields.</div>"
     canSelect:
       type: boolean
-      description: "<ja>ユーザーがこのフィールドを 選択できるかどうかを示します。</ja><br><en>Indicate if user\
-        \ can select the fields.</en>"
+      description: "<div lang=\"ja\">ユーザーがこのフィールドを 選択できるかどうかを示します。</div><div lang=\"en\">Indicate if user\
+        \ can select the fields.</div>"
     displayFieldNameEN:
       type: string
-      description: "<ja>ダウンロードされたレポートに 表示される英語名です。</ja><br><en>Field name displayed\
-        \ in downloaded report (in English).</en>"
+      description: "<div lang=\"ja\">ダウンロードされたレポートに 表示される英語名です。</div><div lang=\"en\">Field name displayed\
+        \ in downloaded report (in English).</div>"
     displayFieldNameJA:
       type: string
-      description: "<ja>ダウンロードされたレポートに 表示される日本語名です。</ja><br><en>Field name displayed\
-        \ in downloaded report (in Japanese).</en>"
+      description: "<div lang=\"ja\">ダウンロードされたレポートに 表示される日本語名です。</div><div lang=\"en\">Field name displayed\
+        \ in downloaded report (in Japanese).</div>"
     fieldName:
       type: string
-      description: "<ja>フィールド名です。</ja><br><en>Field name.</en>"
+      description: "<div lang=\"ja\">フィールド名です。</div><div lang=\"en\">Field name.</div>"
     fieldType:
       type: string
-      description: "<ja>フィールドの種類です。<br>数字、文字列、Enum値等を表します。</ja><br><en>Type of field.<br>Displays\
-        \ int, string, Enum, etc.</en>"
+      description: "<div lang=\"ja\">フィールドの種類です。<br>数字、文字列、Enum値等を表します。</div><div lang=\"en\">Type of field.<br>Displays\
+        \ int, string, Enum, etc.</div>"
     impossibleCombinationFields:
       type: array
       items:
         type: string
-      description: "<ja>組み合わせができないレポートフィールドです。</ja><br><en>Report fields which cannot\
-        \ be combined.</en>"
+      description: "<div lang=\"ja\">組み合わせができないレポートフィールドです。</div><div lang=\"en\">Report fields which cannot\
+        \ be combined.</div>"
     xmlAttributeName:
       type: string
-      description: "<ja>ダウンロードしたレポートの XMLアトリビュートです。</ja><br><en>XML attribute name\
-        \ displayed in donwloaded report.</en>"
+      description: "<div lang=\"ja\">ダウンロードしたレポートの XMLアトリビュートです。</div><div lang=\"en\">XML attribute name\
+        \ displayed in donwloaded report.</div>"
   title: ReportDefinitionServiceReportFieldAttribute
-  description: "<ja>ReportDefinitionServiceReportFieldAttributeオブジェクトは、レポート定義の作成に使用できるフィールドを表します。</ja><br><en>ReportDefinitionServiceReportFieldAttribute\
-    \ object describes the available field to create report definition.</en><hr><details><summary>Requirement</summary><table\
+  description: "<div lang=\"ja\">ReportDefinitionServiceReportFieldAttributeオブジェクトは、レポート定義の作成に使用できるフィールドを表します。</div><div lang=\"en\">ReportDefinitionServiceReportFieldAttribute\
+    \ object describes the available field to create report definition.</div><hr><details><summary>Requirement</summary><table\
     \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>REMOVE</th></tr><tr><td>canFilter</td><td>-</td><td>-</td><td>-</td></tr><tr><td>canSelect</td><td>-</td><td>-</td><td>-</td></tr><tr><td>displayFieldNameEN</td><td>-</td><td>-</td><td>-</td></tr><tr><td>displayFieldNameJA</td><td>-</td><td>-</td><td>-</td></tr><tr><td>fieldName</td><td>-</td><td>-</td><td>-</td></tr><tr><td>fieldType</td><td>-</td><td>-</td><td>-</td></tr><tr><td>impossibleCombinationFields</td><td>-</td><td>-</td><td>-</td></tr><tr><td>xmlAttributeName</td><td>-</td><td>-</td><td>-</td></tr></table></details>"

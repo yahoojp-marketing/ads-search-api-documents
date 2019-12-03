@@ -3,7 +3,7 @@ CampaignServiceBudgetPeriod:
   enum:
   - DAILY
   - UNKNOWN
-  description: "<ja>CampaignServiceBudgetPeriodは、予算の設定期間を表します。</ja><br><en>CampaignServiceBudgetPeriod\
-    \ displays the period for budget.</en><hr>\n* `DAILY` - <ja>1日単位です。</ja><br><en>daily</en><br>\n\
-    * `UNKNOWN` - 未知の値です。<br>Unknown Value"
+  description: "<div lang=\"ja\">CampaignServiceBudgetPeriodは、予算の設定期間を表します。</div><div lang=\"en\">CampaignServiceBudgetPeriod\
+    \ displays the period for budget.</div><hr>\n* <code>DAILY</code> - <div lang=\"ja\">1日単位です。</div><div lang=\"en\">daily</div>\
+    * <code>UNKNOWN</code> - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"
   title: CampaignServiceBudgetPeriod

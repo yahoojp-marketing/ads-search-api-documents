@@ -7,9 +7,9 @@ SharedCriterionServiceValue:
         $ref: '../../Error.yaml#/Error'
     operationSucceeded:
       type: boolean
-      description: "<ja>処理結果を表示します。</ja><br><en>Showing operation result.</en>"
+      description: "<div lang=\"ja\">処理結果を表示します。</div><div lang=\"en\">Showing operation result.</div>"
     sharedCriterion:
       $ref: 'SharedCriterion.yaml#/SharedCriterion'
   title: SharedCriterionServiceValue
-  description: "<ja>SharedCriterionServiceValueは、実行結果（1エンティティ）を保持するオブジェクトです。</ja><br><en>SharedCriterionServiceValue\
-    \ object holds exec result (1 entity).</en>"
+  description: "<div lang=\"ja\">SharedCriterionServiceValueは、実行結果（1エンティティ）を保持するオブジェクトです。</div><div lang=\"en\">SharedCriterionServiceValue\
+    \ object holds exec result (1 entity).</div>"

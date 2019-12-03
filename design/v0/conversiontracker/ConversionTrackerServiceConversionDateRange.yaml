@@ -3,12 +3,12 @@ ConversionTrackerServiceConversionDateRange:
   properties:
     endDate:
       type: string
-      description: "<ja>コンバージョン実績集計終了期間です。</ja><br><en>Conversion performance aggregation\
-        \ period end</en>"
+      description: "<div lang=\"ja\">コンバージョン実績集計終了期間です。</div><div lang=\"en\">Conversion performance aggregation\
+        \ period end</div>"
     startDate:
       type: string
-      description: "<ja>コンバージョン実績集計開始期間です。</ja><br><en>Conversion performance aggregation\
-        \ period start</en>"
+      description: "<div lang=\"ja\">コンバージョン実績集計開始期間です。</div><div lang=\"en\">Conversion performance aggregation\
+        \ period start</div>"
   title: ConversionTrackerServiceConversionDateRange
-  description: "<ja>ConversionTrackerServiceConversionDateRangeオブジェクトは、コンバージョンの取得期間を指定します。</ja><br><en>ConversionTrackerServiceConversionDateRange\
-    \ object is used to specify a period to obtain conversion.</en>"
+  description: "<div lang=\"ja\">ConversionTrackerServiceConversionDateRangeオブジェクトは、コンバージョンの取得期間を指定します。</div><div lang=\"en\">ConversionTrackerServiceConversionDateRange\
+    \ object is used to specify a period to obtain conversion.</div>"

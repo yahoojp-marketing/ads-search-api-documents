@@ -10,17 +10,16 @@ RetargetingListServiceRuleOperator:
   - NOT_START_WITH
   - ENDS_WITH
   - NOT_END_WITH
-#　UNKNOWNがすでに存在するため、追加分を削除
   title: RetargetingListServiceRuleOperator
-  description: "<ja>RetargetingListServiceRuleOperatorは、ルールの評価条件で設定する評価式の種別です。</ja><br><en>RetargetingListServiceRuleOperator\
-    \ is the evaluation type to set evaluation condition of rules.</en><hr>\n* `STARTS_WITH`\
-    \ - <ja>（指定した文字列で）始まります。</ja><br><en>Starts with (the specified string).</en><br>\n\
-    * `NOT_START_WITH` - <ja>（指定した文字列で）始まりません。</ja><br><en>Does not start with (the\
-    \ specified string).</en><br>\n* `EQUALS` - <ja>一致します。</ja><br><en>Equals or match.</en><br>\n\
-    * `NOT_CONTAIN` - <ja>（指定した文字列を）含みません。</ja><br><en>Does not contain nor include\
-    \ (the specified string).</en><br>\n* `ENDS_WITH` - <ja>（指定した文字列で）終わります。</ja><br><en>Ends\
-    \ with (the specified string).</en><br>\n* `NOT_END_WITH` - <ja>（指定した文字列で）終わりません。</ja><br><en>Does\
-    \ not end with (the specified string).</en><br>\n* `CONTAINS` - <ja>（指定した文字列を）含みます。</ja><br><en>Contains\
-    \ or include (the specified string).</en><br>\n* `UNKNOWN` - <ja>未指定です。<br>※読み取り専用で設定はできなくなります。</ja><br><en>Unknown,\
-    \ or not been set.<br>*Cannot set for read only.</en><br>\n* `NOT_EQUAL` - <ja>一致しません。</ja><br><en>Do\
-    \ not equal nor match.</en>"
+  description: "<div lang=\"ja\">RetargetingListServiceRuleOperatorは、ルールの評価条件で設定する評価式の種別です。</div><div lang=\"en\">RetargetingListServiceRuleOperator\
+    \ is the evaluation type to set evaluation condition of rules.</div><hr>\n* <code>STARTS_WITH</code>\
+    \ - <div lang=\"ja\">（指定した文字列で）始まります。</div><div lang=\"en\">Starts with (the specified string).</div>\
+    * <code>NOT_START_WITH</code> - <div lang=\"ja\">（指定した文字列で）始まりません。</div><div lang=\"en\">Does not start with (the\
+    \ specified string).</div>* <code>EQUALS</code> - <div lang=\"ja\">一致します。</div><div lang=\"en\">Equals or match.</div>\
+    * <code>NOT_CONTAIN</code> - <div lang=\"ja\">（指定した文字列を）含みません。</div><div lang=\"en\">Does not contain nor include\
+    \ (the specified string).</div>* <code>ENDS_WITH</code> - <div lang=\"ja\">（指定した文字列で）終わります。</div><div lang=\"en\">Ends\
+    \ with (the specified string).</div>* <code>NOT_END_WITH</code> - <div lang=\"ja\">（指定した文字列で）終わりません。</div><div lang=\"en\">Does\
+    \ not end with (the specified string).</div>* <code>CONTAINS</code> - <div lang=\"ja\">（指定した文字列を）含みます。</div><div lang=\"en\">Contains\
+    \ or include (the specified string).</div>* <code>UNKNOWN</code> - <div lang=\"ja\">未指定です。<br>※読み取り専用で設定はできなくなります。</div><div lang=\"en\">Unknown,\
+    \ or not been set.<br>*Cannot set for read only.</div>* <code>NOT_EQUAL</code> - <div lang=\"ja\">一致しません。</div><div lang=\"en\">Do\
+    \ not equal nor match.</div>"

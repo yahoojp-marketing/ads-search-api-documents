@@ -1,0 +1,9 @@
+Response500:
+  description: |
+    <details>
+    <summary>Error Codes</summary>
+    <table border="1">
+    <tr><th>Code</th><th>Message</th><th>Description</th></tr>
+    <tr><td>0002</td><td>An internal error has occurred.</td><td><div lang="ja">内部エラーが発生しました。再度操作を実行してください。 <br>もし、問題が解決しない場合は、お問い合わせページをご利用ください。</div><div lang="en">An internal error has occurred. Please try again later. <br>If the problem continues, please contact the support team via Inquiry page for assistance. </div></td></tr>
+    </table>
+    </details>

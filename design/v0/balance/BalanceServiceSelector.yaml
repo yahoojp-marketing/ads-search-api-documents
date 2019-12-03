@@ -8,27 +8,27 @@ BalanceServiceSelector:
       items:
         type: integer
         format: int64
-      minimum: 1
+      minItems: 1
       maxItems: 200
-      description: <ja>アカウントIDの配列です。</ja><br><en>Account
-        IDs.</en>
+      description: "<div lang=\"ja\">アカウントIDの配列です。</div><div lang=\"en\">Account
+        IDs.</div>"
     numberResults:
       type: integer
       format: int32
       minimum: 1
       maximum: 200
       default: 200
-      description: 'ページの最大件数です。このフィールドは、1以上を指定する必要があります。<br>Maximum number of results
+      description: "<div lang=\"ja\">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div><div lang=\"en\">Maximum number of results
         to return in this page. This field must be greater than or equal to 1. Also
-        see Entity Limits per operation.'
+        see Entity Limits per operation.</div>"
     startIndex:
       type: integer
       format: int32
       minimum: 1
       default: 1
-      description: 'ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。<br>Index of the first
+      description: "<div lang=\"ja\">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div><div lang=\"en\">Index of the first
         result to return in this page. This field must be greater than or equal to
-        1.'
+        1.</div>"
   title: BalanceServiceSelector
-  description: '<ja>BalanceSelectorオブジェクトは、アカウント残高を取得するアカウントを示します。</ja><br><en>Explains
-    its account balance.</en>'
+  description: "<div lang=\"ja\">BalanceSelectorオブジェクトは、アカウント残高を取得するアカウントを示します。</div><div lang=\"en\">Explains
+    its account balance.</div>"

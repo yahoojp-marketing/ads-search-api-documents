@@ -5,7 +5,7 @@ CampaignExportServiceOutput:
   - ZIPPED_CSV
   - UNKNOWN
   title: CampaignExportServiceOutput
-  description: "<ja>CampaignExportServiceOutputは、エクスポートするデータの形式設定です。</ja><br><en>CampaignExportServiceOutput\
-    \ is an output format for exporting data.</en><hr>\n* `CSV` - <ja>CSVフォーマットです。</ja><br><en>CSV\
-    \ format.</en><br>\n* `ZIPPED_CSV` - <ja>ZIP圧縮されたCSVフォーマットです。</ja><br><en>ZIP\
-    \ filed CSV format.</en><br>\n* `UNKNOWN` - 未知の値です。<br>Unknown Value"
+  description: "<div lang=\"ja\">CampaignExportServiceOutputは、エクスポートするデータの形式設定です。</div><div lang=\"en\">CampaignExportServiceOutput\
+    \ is an output format for exporting data.</div><hr>\n* <code>CSV</code> - <div lang=\"ja\">CSVフォーマットです。</div><div lang=\"en\">CSV\
+    \ format.</div>* <code>ZIPPED_CSV</code> - <div lang=\"ja\">ZIP圧縮されたCSVフォーマットです。</div><div lang=\"en\">ZIP\
+    \ filed CSV format.</div>* <code>UNKNOWN</code> - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"

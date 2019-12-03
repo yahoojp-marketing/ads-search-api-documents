@@ -1,0 +1,9 @@
+Response400:
+  description: |
+    <details>
+    <summary>Error Codes</summary>
+    <table border="1">
+    <tr><th>Code</th><th>Message</th><th>Description</th></tr>
+    <tr><td>0114</td><td>Invalid scope.</td><td><div lang="ja">アクセストークンが無効です。</div><div lang="en">The access token is invalid.</div></td></tr>
+    </table>
+    </details>

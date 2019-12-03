@@ -3,11 +3,11 @@ ReportDefinitionServiceReportSortField:
   properties:
     field:
       type: string
-      description: "<ja>レポート定義のソート対象です。</ja><br><en>Sort object (field) of report\
-        \ definition.</en>"
+      description: "<div lang=\"ja\">レポート定義のソート対象です。</div><div lang=\"en\">Sort object (field) of report\
+        \ definition.</div>"
     reportSortType:
       $ref: 'ReportDefinitionServiceReportSortType.yaml#/ReportDefinitionServiceReportSortType'
   title: ReportDefinitionServiceReportSortField
-  description: "<ja>ReportDefinitionServiceReportSortFieldオブジェクトは、レポート定義のソート詳細を表します。</ja><br><en>ReportDefinitionServiceReportSortField\
-    \ object describes sort details of report definition.</en><hr><details><summary>Requirement</summary><table\
+  description: "<div lang=\"ja\">ReportDefinitionServiceReportSortFieldオブジェクトは、レポート定義のソート詳細を表します。</div><div lang=\"en\">ReportDefinitionServiceReportSortField\
+    \ object describes sort details of report definition.</div><hr><details><summary>Requirement</summary><table\
     \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>REMOVE</th></tr><tr><td>field</td><td>-</td><td>Requirement</td><td>-</td></tr><tr><td>reportSortType</td><td>-</td><td>Requirement</td><td>-</td></tr></table></details>"

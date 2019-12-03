@@ -8,11 +8,10 @@ AdGroupAdServiceTrademarkStatus:
   - DISAPPROVED_REVIEWER
   - UNKNOWN
   title: AdGroupAdServiceTrademarkStatus
-  description: "<ja>AdGroupAdServiceTrademarkStatusは、商標保護ステータスです。</ja><br><en>AdGroupAdServiceTrademarkStatus\
-    \ object describes the status of trademark.</en><hr>\n* `DISAPPROVED_CLAIM` -\
-    \ <ja>不服申立否認</ja><br><en>Disapproved claim.</en><br>\n* `DISAPPROVED_REVIEWER`\
-    \ - <ja>目視による審査での否認</ja><br><en>Disapproved reviewer.</en><br>\n* `NO_RESTRICTION`\
-    \ - <ja>制限なし</ja><br><en>No restriction.</en><br>\n* `CONFLICT_WITH_TRADEMARK`\
-    \ - <ja>商標に抵触して配信停止中</ja><br><en>Conflict with trademark.</en><br>\n* `CLAIM_IN_PROGRESS`\
-    \ - <ja>不服申立中</ja><br><en>Claim in progress.</en><br>\n* `UNKNOWN` - 未知の値です。<br>Unknown\
-    \ Value"
+  description: "<div lang=\"ja\">AdGroupAdServiceTrademarkStatusは、商標保護ステータスです。</div><div lang=\"en\">AdGroupAdServiceTrademarkStatus\
+    \ object describes the status of trademark.</div><hr>\n* <code>DISAPPROVED_CLAIM</code> -\
+    \ <div lang=\"ja\">不服申立否認</div><div lang=\"en\">Disapproved claim.</div>* <code>DISAPPROVED_REVIEWER</code>\
+    \ - <div lang=\"ja\">目視による審査での否認</div><div lang=\"en\">Disapproved reviewer.</div>* <code>NO_RESTRICTION</code>\
+    \ - <div lang=\"ja\">制限なし</div><div lang=\"en\">No restriction.</div>* <code>CONFLICT_WITH_TRADEMARK</code>\
+    \ - <div lang=\"ja\">商標に抵触して配信停止中</div><div lang=\"en\">Conflict with trademark.</div>* <code>CLAIM_IN_PROGRESS</code>\
+    \ - <div lang=\"ja\">不服申立中</div><div lang=\"en\">Claim in progress.</div>* <code>UNKNOWN</code> - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"

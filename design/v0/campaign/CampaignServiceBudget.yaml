@@ -4,10 +4,10 @@ CampaignServiceBudget:
     amount:
       type: integer
       format: int64
-      description: "<ja>1日単位のキャンペーン予算利用金額です。</ja><br><en>Amount of budget of Campaign.</en>"
+      description: "<div lang=\"ja\">1日単位のキャンペーン予算利用金額です。</div><div lang=\"en\">Amount of budget of Campaign.</div>"
     budgetPeriod:
       $ref: 'CampaignServiceBudgetPeriod.yaml#/CampaignServiceBudgetPeriod'
   title: CampaignServiceBudget
-  description: "<ja>CampaignServiceBudgetオブジェクトは、キャンペーン予算に関する情報を表します。</ja><br><en>CampaignServiceBudget\
-    \ object displays budget information for campaign.</en><hr><details><summary>Requirement</summary><table\
+  description: "<div lang=\"ja\">CampaignServiceBudgetオブジェクトは、キャンペーン予算に関する情報を表します。</div><div lang=\"en\">CampaignServiceBudget\
+    \ object displays budget information for campaign.</div><hr><details><summary>Requirement</summary><table\
     \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>amount</td><td>-</td><td>Requirement</td><td>Optional</td><td>-</td></tr><tr><td>budgetPeriod</td><td>-</td><td>Requirement</td><td>Optional</td><td>-</td></tr></table></details>"

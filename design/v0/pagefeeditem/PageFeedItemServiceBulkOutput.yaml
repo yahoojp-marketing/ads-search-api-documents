@@ -7,8 +7,8 @@ PageFeedItemServiceBulkOutput:
   - ZIPPED_TSV
   - UNKNOWN
   title: PageFeedItemServiceBulkOutput
-  description: "<ja>PageFeedItemServiceBulkOutputは、ページフィードアイテムファイル形式を指定します。</ja><br><en>PageFeedItemServiceBulkOutput\
-    \ specifies format of Page feed item file.</en><hr>\n* `CSV` - <ja>CSV形式</ja><br><en>Format\
-    \ of CSV</en><br>\n* `TSV` - <ja>TSV形式</ja><br><en>Format of TSV</en><br>\n* `ZIPPED_CSV`\
-    \ - <ja>ZIP圧縮されたCSV形式</ja><br><en>Zipped CSV.</en><br>\n* `ZIPPED_TSV` - <ja>ZIP圧縮されたTSV形式</ja><br><en>Zipped\
-    \ TSV.</en><br>\n* `UNKNOWN` - 未知の値です。<br>Unknown Value"
+  description: "<div lang=\"ja\">PageFeedItemServiceBulkOutputは、ページフィードアイテムファイル形式を指定します。</div><div lang=\"en\">PageFeedItemServiceBulkOutput\
+    \ specifies format of Page feed item file.</div><hr>\n* <code>CSV</code> - <div lang=\"ja\">CSV形式</div><div lang=\"en\">Format\
+    \ of CSV</div>* <code>TSV</code> - <div lang=\"ja\">TSV形式</div><div lang=\"en\">Format of TSV</div>* <code>ZIPPED_CSV</code>\
+    \ - <div lang=\"ja\">ZIP圧縮されたCSV形式</div><div lang=\"en\">Zipped CSV.</div>* <code>ZIPPED_TSV</code> - <div lang=\"ja\">ZIP圧縮されたTSV形式</div><div lang=\"en\">Zipped\
+    \ TSV.</div>* <code>UNKNOWN</code> - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"

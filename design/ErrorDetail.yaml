@@ -1,11 +1,10 @@
-# https://github.com/yahoojp-marketing/ydn-api-documents/blob/master/docs/ja/api_reference/data/Common/ErrorDetail.md
 ErrorDetail:
-  description: '<ja>ErrorDetailオブジェクトは、エラーの詳細な内容を表します。</ja><br><en>Detailed information of error.</en>'
+  description: "<div lang=\"ja\">ErrorDetailオブジェクトは、エラーの詳細な内容を表します。</div><div lang=\"en\">Detailed information of error.</div>"
   type: object
   properties:
     requestKey:
-      description: '<ja>エラーが発生したフィールドです。</ja><br><en>The file that occured the error.</en>'
+      description: "<div lang=\"ja\">エラーが発生したフィールドです。</div><div lang=\"en\">The file that occured the error.</div>"
       type: string
     requestValue:
-      description: '<ja>エラーが発生した値です。</ja><br><en>The data that caused the error.</en>'
+      description: "<div lang=\"ja\">エラーが発生した値です。</div><div lang=\"en\">The data that caused the error.</div>"
       type: string

@@ -9,7 +9,7 @@ ConversionTrackerServiceValue:
         $ref: '../../Error.yaml#/Error'
     operationSucceeded:
       type: boolean
-      description: "<ja>処理結果です。</ja><br><en>Operation result</en>"
+      description: "<div lang=\"ja\">処理結果です。</div><div lang=\"en\">Operation result</div>"
   title: ConversionTrackerServiceValue
-  description: "<ja>ConversionTrackerServiceValueオブジェクトは、操作結果を含むコンバージョントラッカー情報を表します。</ja><br><en>ConversionTrackerServiceValue\
-    \ object shows ConversionTracker information includes operation results.</en>"
+  description: "<div lang=\"ja\">ConversionTrackerServiceValueオブジェクトは、操作結果を含むコンバージョントラッカー情報を表します。</div><div lang=\"en\">ConversionTrackerServiceValue\
+    \ object shows ConversionTracker information includes operation results.</div>"

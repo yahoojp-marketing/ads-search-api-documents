@@ -9,7 +9,7 @@ AccountServiceValue:
         $ref: '../../Error.yaml#/Error'
     operationSucceeded:
       type: boolean
-      description: "<ja>処理結果です。</ja><br><en>The result of operation.</en>"
+      description: "<div lang=\"ja\">処理結果です。</div><div lang=\"en\">The result of operation.</div>"
   title: AccountServiceValue
-  description: "<ja>AccountServiceValueオブジェクトは、操作結果を含むアカウント情報を表します。</ja><br><en>Account\
-    \ information including operation results.</en>"
+  description: "<div lang=\"ja\">AccountServiceValueオブジェクトは、操作結果を含むアカウント情報を表します。</div><div lang=\"en\">Account\
+    \ information including operation results.</div>"

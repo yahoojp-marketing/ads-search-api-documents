@@ -5,7 +5,7 @@ LabelServiceCountLabeledEntity:
   - 'FALSE'
   - UNKNOWN
   title: LabelServiceCountLabeledEntity
-  description: "<ja>LabelServiceCountLabeledEntityは、ラベル件数集計フラグの設定です。</ja><br><en>LabelServiceCountLabeledEntity\
-    \ is setting of Label number count flag.</en><hr>\n* `TRUE` - <ja>集計する</ja><br><en>counting</en><br>\n* `FALSE` - <ja>集計しない</ja><br><en>not\
-    \ count</en><br>\n* `UNKNOWN`\
-    \ - 未知の値です。<br>Unknown Value"
+  description: "<div lang=\"ja\">LabelServiceCountLabeledEntityは、ラベル件数集計フラグの設定です。</div><div lang=\"en\">LabelServiceCountLabeledEntity\
+    \ is setting of Label number count flag.</div><hr>\n* <code>TRUE</code> - <div lang=\"ja\">集計する</div><div lang=\"en\">counting</div>* <code>FALSE</code> - <div lang=\"ja\">集計しない</div><div lang=\"en\">not\
+    \ count</div>* <code>UNKNOWN</code>\
+    \ - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"

@@ -5,13 +5,13 @@ ConversionTrackerServiceWebConversion:
       $ref: 'ConversionTrackerServiceMarkupLanguage.yaml#/ConversionTrackerServiceMarkupLanguage'
     snippet:
       type: string
-      description: "<ja>トラッキングスクリプトです。</ja><br><en>Tracking script.</en>"
+      description: "<div lang=\"ja\">トラッキングスクリプトです。</div><div lang=\"en\">Tracking script.</div>"
     advancedSnippet:
       type: string
-      description: "<ja>リニューアル版のコンバージョンタグは、従来のタグよりもブラウザーなどの環境の影響を受けづらい新しいフォーマットです。<br/> 詳細は[ヘルプ](https://support-marketing.yahoo.co.jp/promotionalads/ss/articledetail?lan=ja&aid=1159)を参照</ja><br><en>The new format of conversion tag avoids the impacts such as changes made to the browser. <br/> [Help Page](https://support-marketing.yahoo.co.jp/promotionalads/ss/articledetail?lan=en&aid=353)</en>"
+      description: "<div lang=\"ja\">リニューアル版のコンバージョンタグは、従来のタグよりもブラウザーなどの環境の影響を受けづらい新しいフォーマットです。<br/> 詳細は[ヘルプ](https://support-marketing.yahoo.co.jp/promotionalads/ss/articledetail?lan=ja&aid=1159)を参照</div><div lang=\"en\">The new format of conversion tag avoids the impacts such as changes made to the browser. <br/> [Help Page](https://support-marketing.yahoo.co.jp/promotionalads/ss/articledetail?lan=en&aid=353)</div>"
     trackingCodeType:
       $ref: 'ConversionTrackerServiceTrackingCodeType.yaml#/ConversionTrackerServiceTrackingCodeType'
   title: ConversionTrackerServiceWebConversion
-  description: "<ja>ConversionTrackerServiceWebConversionオブジェクトは、ウェブページのコンバージョン測定タグやタグごとのパフォーマンスデータなどのコンバージョントラッカー情報を表します。</ja><br><en>ConversionTrackerServiceWebConversion\
+  description: "<div lang=\"ja\">ConversionTrackerServiceWebConversionオブジェクトは、ウェブページのコンバージョン測定タグやタグごとのパフォーマンスデータなどのコンバージョントラッカー情報を表します。</div><div lang=\"en\">ConversionTrackerServiceWebConversion\
     \ describes ConversionTracker information such as ConversionTag and performance\
-    \ data by tag.</en><hr><details><summary>Requirement</summary><table border='1'><tr><th>PROPERTY</th><th>ADD</th><th>SET</th></tr><tr><td>markupLanguage</td><td>Requirement</td><td>Optional<br>Updatable</td></tr><tr><td>snippet</td><td>Ignore</td><td>Ignore</td></tr><tr><td>advancedSnippet</td><td>Ignore</td><td>Ignore</td></tr><tr><td>trackingCodeType</td><td>Requirement</td><td>Optional<br>Updatable</td></tr></table></details>"
+    \ data by tag.</div><hr><details><summary>Requirement</summary><table border='1'><tr><th>PROPERTY</th><th>ADD</th><th>SET</th></tr><tr><td>markupLanguage</td><td>Requirement</td><td>Optional<br>Updatable</td></tr><tr><td>snippet</td><td>Ignore</td><td>Ignore</td></tr><tr><td>advancedSnippet</td><td>Ignore</td><td>Ignore</td></tr><tr><td>trackingCodeType</td><td>Requirement</td><td>Optional<br>Updatable</td></tr></table></details>"

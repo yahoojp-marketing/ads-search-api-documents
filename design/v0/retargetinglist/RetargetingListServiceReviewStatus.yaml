@@ -6,11 +6,11 @@ RetargetingListServiceReviewStatus:
   - DISAPPROVED_WITH_REVIEW
   - UNKNOWN
   title: RetargetingListServiceReviewStatus
-  description: "<ja>RetargetingListServiceReviewStatusは、ターゲットリストの審査状態を表します。</ja><br><en>RetargetingListServiceReviewStatus\
-    \ is the review status of target list..</en><hr>\n* `DISAPPROVED` - <ja>利用不可です。<br>プライバシーポリシーの違反などで強制停止されている状態です。</ja><br><en>Target\
+  description: "<div lang=\"ja\">RetargetingListServiceReviewStatusは、ターゲットリストの審査状態を表します。</div><div lang=\"en\">RetargetingListServiceReviewStatus\
+    \ is the review status of target list..</div><hr>\n* <code>DISAPPROVED</code> - <div lang=\"ja\">利用不可です。<br>プライバシーポリシーの違反などで強制停止されている状態です。</div><div lang=\"en\">Target\
     \ list is not available.<br>It has been stopped for violation of privacy policy\
-    \ or other reasons.</en><br>\n* `DISAPPROVED_WITH_REVIEW` - <ja>審査中です。<br>審査上問題なければ、一度利用不可になった\
-    \ ターゲットリストを利用可能に戻ります。</ja><br><en>Re-examining.<br>If there is no problem, the\
-    \ target list can be used again.</en><br>\n* `APPROVED` - <ja>利用可能です。<br>※初回作成時のデフォルト設定です。</ja><br><en>Target\
-    \ list is available to use.<br>*Default setting when list is created.</en><br>\n\
-    * `UNKNOWN` - 未知の値です。<br>Unknown Value"
+    \ or other reasons.</div>* <code>DISAPPROVED_WITH_REVIEW</code> - <div lang=\"ja\">審査中です。<br>審査上問題なければ、一度利用不可になった\
+    \ ターゲットリストを利用可能に戻ります。</div><div lang=\"en\">Re-examining.<br>If there is no problem, the\
+    \ target list can be used again.</div>* <code>APPROVED</code> - <div lang=\"ja\">利用可能です。<br>※初回作成時のデフォルト設定です。</div><div lang=\"en\">Target\
+    \ list is available to use.<br>*Default setting when list is created.</div>\
+    * <code>UNKNOWN</code> - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"

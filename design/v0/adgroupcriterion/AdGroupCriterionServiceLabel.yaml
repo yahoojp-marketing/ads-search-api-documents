@@ -3,18 +3,18 @@ AdGroupCriterionServiceLabel:
   properties:
     color:
       type: string
-      description: "<ja>カラー</ja><br><en>Color</en>"
+      description: "<div lang=\"ja\">カラー</div><div lang=\"en\">Color</div>"
     description:
       type: string
-      description: "<ja>説明文</ja><br><en>Description</en>"
+      description: "<div lang=\"ja\">説明文</div><div lang=\"en\">Description</div>"
     labelId:
       type: integer
       format: int64
-      description: "<ja>ラベルID</ja><br><en>AdGroupCriterionServiceLabel ID</en>"
+      description: "<div lang=\"ja\">ラベルID</div><div lang=\"en\">AdGroupCriterionServiceLabel ID</div>"
     labelName:
       type: string
-      description: "<ja>ラベル名</ja><br><en>AdGroupCriterionServiceLabel Name</en>"
+      description: "<div lang=\"ja\">ラベル名</div><div lang=\"en\">AdGroupCriterionServiceLabel Name</div>"
   title: AdGroupCriterionServiceLabel
-  description: "<ja>紐づけられているラベル情報を表します。</ja><br><en>AdGroupCriterionServiceLabel object\
-    \ describes label information.</en><hr><details><summary>Requirement</summary><table\
+  description: "<div lang=\"ja\">紐づけられているラベル情報を表します。</div><div lang=\"en\">AdGroupCriterionServiceLabel object\
+    \ describes label information.</div><hr><details><summary>Requirement</summary><table\
     \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>color</td><td>Ignore</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>description</td><td>Ignore</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>labelId</td><td>Ignore</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>labelName</td><td>Ignore</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr></table></details>"

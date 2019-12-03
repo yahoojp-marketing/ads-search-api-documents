@@ -7,15 +7,15 @@ CampaignServiceBiddingStrategy:
     biddingStrategyId:
       type: integer
       format: int64
-      description: "<ja>自動入札ID</ja><br><en>Auto Bidding ID</en>"
+      description: "<div lang=\"ja\">自動入札ID</div><div lang=\"en\">Auto Bidding ID</div>"
     biddingStrategyName:
       type: string
-      description: "<ja>自動入札名<br>※50文字以内になります。</ja><br><en>Auto Bidding name.<br>* Up\
-        \ to 50 characters.</en>"
+      description: "<div lang=\"ja\">自動入札名<br>※50文字以内になります。</div><div lang=\"en\">Auto Bidding name.<br>* Up\
+        \ to 50 characters.</div>"
     biddingStrategySource:
       $ref: 'CampaignServiceBiddingStrategySource.yaml#/CampaignServiceBiddingStrategySource'
     biddingStrategyType:
       $ref: 'CampaignServiceBiddingStrategyType.yaml#/CampaignServiceBiddingStrategyType'
-  description: "<ja>CampaignServiceBiddingStrategyオブジェクトは、自動入札設定方法を表します。</ja><br><en>CampaignServiceBiddingStrategy\
-    \ object describes Auto Bidding setting.</en><hr><details><summary>Requirement</summary><table\
+  description: "<div lang=\"ja\">CampaignServiceBiddingStrategyオブジェクトは、自動入札設定方法を表します。</div><div lang=\"en\">CampaignServiceBiddingStrategy\
+    \ object describes Auto Bidding setting.</div><hr><details><summary>Requirement</summary><table\
     \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>biddingScheme</td><td>-</td><td>Optional</td><td>Optional</td><td>Ignore</td></tr><tr><td>biddingStrategyId</td><td>-</td><td>Optional</td><td>Optional<br><i>Updatable</i></td><td>Ignore</td></tr><tr><td>biddingStrategyName</td><td>-</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>biddingStrategySource</td><td>-</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>biddingStrategyType</td><td>-</td><td>Optional</td><td>Optional<br><i>Updatable</i></td><td>Ignore</td></tr></table></details>"

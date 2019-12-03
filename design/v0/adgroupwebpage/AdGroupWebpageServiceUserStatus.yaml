@@ -5,8 +5,8 @@ AdGroupWebpageServiceUserStatus:
   - PAUSED
   - UNKNOWN
   title: AdGroupWebpageServiceUserStatus
-  description: "<ja>AdGroupWebpageServiceUserStatusは、ユーザーにより広告配信の有無を調整できる設定です。</ja><br><en>AdGroupWebpageServiceUserStatus\
-    \ displays ad delivery status that can be set by an user.</en><hr>\n* `PAUSED`\
-    \ - <ja>広告は一時停止の状態のため、配信されていません</ja><br><en>Currently ad is paused, which the\
-    \ delivery is not active.</en><br>\n* `ACTIVE` - <ja>広告は配信されている状態</ja><br><en>Currently\
-    \ ad delivery is active.</en><br>\n* `UNKNOWN` - 未知の値です。<br>Unknown Value"
+  description: "<div lang=\"ja\">AdGroupWebpageServiceUserStatusは、ユーザーにより広告配信の有無を調整できる設定です。</div><div lang=\"en\">AdGroupWebpageServiceUserStatus\
+    \ displays ad delivery status that can be set by an user.</div><hr>\n* <code>PAUSED</code>\
+    \ - <div lang=\"ja\">広告は一時停止の状態のため、配信されていません</div><div lang=\"en\">Currently ad is paused, which the\
+    \ delivery is not active.</div>* <code>ACTIVE</code> - <div lang=\"ja\">広告は配信されている状態</div><div lang=\"en\">Currently\
+    \ ad delivery is active.</div>* <code>UNKNOWN</code> - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"

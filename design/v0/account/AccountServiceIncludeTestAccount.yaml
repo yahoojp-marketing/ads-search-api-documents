@@ -8,9 +8,9 @@ AccountServiceIncludeTestAccount:
     - UNKNOWN
   title: AccountServiceIncludeTestAccount
   description: |
-    <ja>取得アカウント制御</ja><br>
-    <en>Control which accounts are retrieved.</en><hr>
-    * `ONLY_TEST` - <ja>テストアカウントのみ</ja><br><en>Test account only.</en>
-    * `EXCLUDE_TEST` - <ja>テストアカウントを除外</ja><br><en>Exclude test accounts.</en>
-    * `ALL` - <ja>全てのアカウント</ja><br><en>All accounts.</en>
-    * `UNKNOWN` - 未知の値です。<br>Unknown Value
+    <div lang="ja">取得アカウント制御</div>
+    <div lang="en">Control which accounts are retrieved.</div><hr>
+    * <code>ONLY_TEST</code> - <div lang="ja">テストアカウントのみ</div><div lang="en">Test account only.</div>
+    * <code>EXCLUDE_TEST</code> - <div lang="ja">テストアカウントを除外</div><div lang="en">Exclude test accounts.</div>
+    * <code>ALL</code> - <div lang="ja">全てのアカウント</div><div lang="en">All accounts.</div>
+    * <code>UNKNOWN</code> - <div lang="ja">未知の値です。</div><div lang="en">Unknown Value</div>

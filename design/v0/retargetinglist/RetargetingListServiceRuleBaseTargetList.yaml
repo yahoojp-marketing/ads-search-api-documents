@@ -3,9 +3,9 @@ RetargetingListServiceRuleBaseTargetList:
   properties:
     endDate:
       type: string
-      description: "<ja>ルール適用終了日です。<br>※YYYYMMDD形式です。<br>※リクエスト日は2037/12/30まで 指定可能です。</ja><br><en>End\
+      description: "<div lang=\"ja\">ルール適用終了日です。<br>※YYYYMMDD形式です。<br>※リクエスト日は2037/12/30まで 指定可能です。</div><div lang=\"en\">End\
         \ date of rule setting.<br>*In YYYYMMDD format<br>*Request date can be set\
-        \ up to 2037/12/30</en>"
+        \ up to 2037/12/30</div>"
     isAllVisitorRule:
       $ref: 'RetargetingListServiceIsAllVisitorRule.yaml#/RetargetingListServiceIsAllVisitorRule'
     isDateSpecificRule:
@@ -16,10 +16,10 @@ RetargetingListServiceRuleBaseTargetList:
         $ref: 'RetargetingListServiceRuleGroup.yaml#/RetargetingListServiceRuleGroup'
     startDate:
       type: string
-      description: "<ja>ルール適用開始日です。<br>※YYYYMMDD形式です。<br>※リクエスト日は2037/12/30まで 指定可能です。</ja><br><en>Start\
+      description: "<div lang=\"ja\">ルール適用開始日です。<br>※YYYYMMDD形式です。<br>※リクエスト日は2037/12/30まで 指定可能です。</div><div lang=\"en\">Start\
         \ date of rule setting.<br>*In YYYYMMDD format<br>*Request date can be set\
-        \ up to 2037/12/30</en>"
+        \ up to 2037/12/30</div>"
   title: RetargetingListServiceRuleBaseTargetList
-  description: "<ja>RetargetingListServiceRuleBaseTargetListは、ベースターゲットリストの情報を保持するオブジェクトです。</ja><br><en>RetargetingListServiceRuleBaseTargetList\
-    \ is an object that holds Rule based target list information.</en><hr><details><summary>Requirement</summary><table\
+  description: "<div lang=\"ja\">RetargetingListServiceRuleBaseTargetListは、ベースターゲットリストの情報を保持するオブジェクトです。</div><div lang=\"en\">RetargetingListServiceRuleBaseTargetList\
+    \ is an object that holds Rule based target list information.</div><hr><details><summary>Requirement</summary><table\
     \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th></tr><tr><td>endDate</td><td>-</td><td>Optional<br>*IsDateSpecific.TRUE:Requirement</td><td>Optional<br>*IsDateSpecific.TRUE:Requirement</td></tr><tr><td>rules</td><td>-</td><td>Optional<br>*IsAllVisitor.TRUE:Requirement</td><td>Optional<br>*IsAllVisitor.TRUE:Requirement</td></tr><tr><td>startDate</td><td>-</td><td>Optional<br>*IsDateSpecific.TRUE:Requirement</td><td>Optional<br>*IsDateSpecific.TRUE:Requirement</td></tr><tr><td>isAllVisitorRule</td><td>-</td><td>Requirement</td><td>Requirement</td></tr><tr><td>isDateSpecificRule</td><td>-</td><td>Optional</td><td>-</td></tr></table></details>"

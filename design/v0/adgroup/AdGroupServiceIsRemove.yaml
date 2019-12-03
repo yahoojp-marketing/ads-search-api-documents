@@ -5,7 +5,7 @@ AdGroupServiceIsRemove:
   - 'FALSE'
   - UNKNOWN
   title: AdGroupServiceIsRemove
-  description: "<ja>AdGroupServiceIsRemoveは、カスタムパラメータの削除フラグです。</ja><br><en>AdGroupServiceIsRemove\
-    \ is Delete flag.</en><hr>\n* `TRUE` - <ja>カスタムパラメータの削除フラグがオンです。</ja><br><en>Delete\
-    \ flag is on.</en><br>\n* `FALSE` - <ja>カスタムパラメータの削除フラグがオフです。</ja><br><en>Delete\
-    \ flag is off.</en><br>\n* `UNKNOWN` - 未知の値です。<br>Unknown Value"
+  description: "<div lang=\"ja\">AdGroupServiceIsRemoveは、カスタムパラメータの削除フラグです。</div><div lang=\"en\">AdGroupServiceIsRemove\
+    \ is Delete flag.</div><hr>\n* <code>TRUE</code> - <div lang=\"ja\">カスタムパラメータの削除フラグがオンです。</div><div lang=\"en\">Delete\
+    \ flag is on.</div>* <code>FALSE</code> - <div lang=\"ja\">カスタムパラメータの削除フラグがオフです。</div><div lang=\"en\">Delete\
+    \ flag is off.</div>* <code>UNKNOWN</code> - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"

@@ -4,10 +4,10 @@ CampaignServiceTargetSpendBiddingScheme:
     bidCeiling:
       type: integer
       format: int64
-      description: "<ja>入札価格の上限<br>※「0」が設定された 場合、上限設定は ありません。</ja><br><en>Bid amount limit.<br>* If &#34;0&#34; is set, no bid limit.</en>"
+      description: "<div lang=\"ja\">入札価格の上限<br>※「0」が設定された 場合、上限設定は ありません。</div><div lang=\"en\">Bid amount limit.<br>* If &#34;0&#34; is set, no bid limit.</div>"
   title: CampaignServiceTargetSpendBiddingScheme
-  description: "<ja>CampaignServiceTargetSpendBiddingSchemeオブジェクトは、クリック数の最大化の自動入札設定情報を表します。\
-    \ （BiddingStrategyService以外用のオブジェクトです。）</ja><br><en>CampaignServiceTargetSpendBiddingScheme\
-    \ object describes auto bidding setting for Maximize Clicks.</en><hr><details><summary>Requirement</summary><table\
+  description: "<div lang=\"ja\">CampaignServiceTargetSpendBiddingSchemeオブジェクトは、クリック数の最大化の自動入札設定情報を表します。\
+    \ （BiddingStrategyService以外用のオブジェクトです。）</div><div lang=\"en\">CampaignServiceTargetSpendBiddingScheme\
+    \ object describes auto bidding setting for Maximize Clicks.</div><hr><details><summary>Requirement</summary><table\
     \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>bidCeiling</td><td>-</td><td>Optional<br>Default\
     \ : 0</td><td>Optional</td><td>Ignore</td></tr></table></details>"

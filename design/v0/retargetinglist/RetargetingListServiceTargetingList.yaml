@@ -4,7 +4,7 @@ RetargetingListServiceTargetingList:
     accountId:
       type: integer
       format: int64
-      description: "<ja>アカウントIDです。</ja><br><en>Account ID.</en>"
+      description: "<div lang=\"ja\">アカウントIDです。</div><div lang=\"en\">Account ID.</div>"
     closingReason:
       $ref: 'RetargetingListServiceClosingReason.yaml#/RetargetingListServiceClosingReason'
     defaultTargetList:
@@ -14,13 +14,13 @@ RetargetingListServiceTargetingList:
     reach:
       type: integer
       format: int64
-      description: "<ja>リストに蓄積されているユーザー数です。</ja><br><en>Number of users stored to\
-        \ the list.</en>"
+      description: "<div lang=\"ja\">リストに蓄積されているユーザー数です。</div><div lang=\"en\">Number of users stored to\
+        \ the list.</div>"
     reachStorageSpan:
       type: integer
       format: int64
-      description: "<ja>Cookieを保持する日数です。<br>※Default：180<br>※1-540日まで設定可能です。</ja><br><en>Days\
-        \ to hold Cookie.<br>*Default: 180<br>*Can set from 1-540 days</en>"
+      description: "<div lang=\"ja\">Cookieを保持する日数です。<br>※Default：180<br>※1-540日まで設定可能です。</div><div lang=\"en\">Days\
+        \ to hold Cookie.<br>*Default: 180<br>*Can set from 1-540 days</div>"
     reachStorageStatus:
       $ref: 'RetargetingListServiceReachStorageStatus.yaml#/RetargetingListServiceReachStorageStatus'
     retargetingAccountStatus:
@@ -29,25 +29,25 @@ RetargetingListServiceTargetingList:
       $ref: 'RetargetingListServiceRuleBaseTargetList.yaml#/RetargetingListServiceRuleBaseTargetList'
     targetListDescription:
       type: string
-      description: "<ja>ターゲットリストの説明です。</ja><br><en>Description of Target List.</en>"
+      description: "<div lang=\"ja\">ターゲットリストの説明です。</div><div lang=\"en\">Description of Target List.</div>"
     targetListId:
       type: integer
       format: int64
-      description: "<ja>ターゲットリストIDです。</ja><br><en>Target List ID.</en>"
+      description: "<div lang=\"ja\">ターゲットリストIDです。</div><div lang=\"en\">Target List ID.</div>"
     targetListName:
       type: string
-      description: "<ja>ターゲットリスト名です。</ja><br><en>Target List name.</en>"
+      description: "<div lang=\"ja\">ターゲットリスト名です。</div><div lang=\"en\">Target List name.</div>"
     targetListOwner:
       $ref: 'RetargetingListServiceTargetListOwner.yaml#/RetargetingListServiceTargetListOwner'
     targetListTrackId:
       type: integer
       format: int64
-      description: "<ja>ターゲットリストのトラッキング用IDです。</ja><br><en>Tracking ID of Target list.</en>"
+      description: "<div lang=\"ja\">ターゲットリストのトラッキング用IDです。</div><div lang=\"en\">Tracking ID of Target list.</div>"
     targetListType:
       $ref: 'RetargetingListServiceTargetListType.yaml#/RetargetingListServiceTargetListType'
   title: RetargetingListServiceTargetingList
-  description: "<ja>RetargetingListServiceTargetingListは、リターゲティング情報（ターゲットリスト）を保持するオブジェクトです。</ja><br><en>RetargetingListServiceTargetingList\
-    \ is an object that holds retargeting information (target list).</en><hr><details><summary>Requirement</summary><table\
-    \ border='1'><tr><th>PROPERTY</th><th>ADD</th><th>SET</th></tr><tr><td>accountId</td><td>Requirement</td><td>Requirement</td></tr><tr><td>closingReason</td><td>Ignore</td><td>Ignore</td></tr><tr><td>reach</td><td>-</td><td>-</td></tr><tr><td>reachStorageSpan</td><td>‐</td><td>Optional<br><ja>\
-    \ ※LogicalTargetListの場合、Ignore</ja><br><en>* LogicalTargetList:Ignore</en></td></tr><tr><td>reachStorageStatus</td><td>Optional<br><ja>\
-    \ ※LogicalTargetListの場合、Ignore</ja><br><en>* LogicalTargetList:Ignore</en></td><td>Optional<br><ja>※LogicalTargetListの場合、Ignore</ja><br><en>* LogicalTargetList:Ignore</en></td></tr><tr><td>retargetingAccountStatus</td><td>-</td><td>-</td></tr><tr><td>targetListDescription</td><td>Optional</td><td>Optional</td></tr><tr><td>targetListId</td><td>-</td><td>Requirement</td></tr><tr><td>targetListName</td><td>Requirement</td><td>Optional</td></tr><tr><td>targetListTrackId</td><td>-</td><td>-</td></tr><tr><td>targetListType</td><td>Requirement</td><td>Requirement</td></tr><tr><td>targetListOwner</td><td>-</td><td>-</td></tr><tr><td>logicalTargetList</td><td>Optional<br><ja>※targetListTypeがLOGICALの場合、Requirement</ja><br><en>∗ If targetListType is LOGICAL, Requirement</en></td><td>Optional<br><ja>※targetListTypeがLOGICALの場合、Requirement</ja><br><en>∗ If targetListType is LOGICAL, Requirement</en></td></tr><tr><td>ruleBaseTargetList</td><td>Optional<br><ja>※targetListTypeがRULEの場合、Requirement</ja><br><en>∗ If targetListType is RULE, Requirement</en></td><td>Optional<br><ja>※targetListTypeがRULEの場合、Requirement</ja><br><en>∗ If targetListType is RULE, Requirement</en></td></tr><tr><td>defaultTargetList</td><td>Optional<br><ja>※targetListTypeがDEFAULTの場合、Requirement</ja><br><en>∗ If targetListType is DEFAULT, Requirement</en></td><td>Optional<br><ja>※targetListTypeがDEFAULTの場合、Requirement</ja><br><en>∗ If targetListType is DEFAULT, Requirement</en></td></tr></table></details>"
+  description: "<div lang=\"ja\">RetargetingListServiceTargetingListは、リターゲティング情報（ターゲットリスト）を保持するオブジェクトです。</div><div lang=\"en\">RetargetingListServiceTargetingList\
+    \ is an object that holds retargeting information (target list).</div><hr><details><summary>Requirement</summary><table\
+    \ border='1'><tr><th>PROPERTY</th><th>ADD</th><th>SET</th></tr><tr><td>accountId</td><td>Requirement</td><td>Requirement</td></tr><tr><td>closingReason</td><td>Ignore</td><td>Ignore</td></tr><tr><td>reach</td><td>-</td><td>-</td></tr><tr><td>reachStorageSpan</td><td>‐</td><td>Optional<br><div lang=\"ja\">\
+    \ ※LogicalTargetListの場合、Ignore</div><div lang=\"en\">* LogicalTargetList:Ignore</div></td></tr><tr><td>reachStorageStatus</td><td>Optional<br><div lang=\"ja\">\
+    \ ※LogicalTargetListの場合、Ignore</div><div lang=\"en\">* LogicalTargetList:Ignore</div></td><td>Optional<br><div lang=\"ja\">※LogicalTargetListの場合、Ignore</div><div lang=\"en\">* LogicalTargetList:Ignore</div></td></tr><tr><td>retargetingAccountStatus</td><td>-</td><td>-</td></tr><tr><td>targetListDescription</td><td>Optional</td><td>Optional</td></tr><tr><td>targetListId</td><td>-</td><td>Requirement</td></tr><tr><td>targetListName</td><td>Requirement</td><td>Optional</td></tr><tr><td>targetListTrackId</td><td>-</td><td>-</td></tr><tr><td>targetListType</td><td>Requirement</td><td>Requirement</td></tr><tr><td>targetListOwner</td><td>-</td><td>-</td></tr><tr><td>logicalTargetList</td><td>Optional<br><div lang=\"ja\">※targetListTypeがLOGICALの場合、Requirement</div><div lang=\"en\">∗ If targetListType is LOGICAL, Requirement</div></td><td>Optional<br><div lang=\"ja\">※targetListTypeがLOGICALの場合、Requirement</div><div lang=\"en\">∗ If targetListType is LOGICAL, Requirement</div></td></tr><tr><td>ruleBaseTargetList</td><td>Optional<br><div lang=\"ja\">※targetListTypeがRULEの場合、Requirement</div><div lang=\"en\">∗ If targetListType is RULE, Requirement</div></td><td>Optional<br><div lang=\"ja\">※targetListTypeがRULEの場合、Requirement</div><div lang=\"en\">∗ If targetListType is RULE, Requirement</div></td></tr><tr><td>defaultTargetList</td><td>Optional<br><div lang=\"ja\">※targetListTypeがDEFAULTの場合、Requirement</div><div lang=\"en\">∗ If targetListType is DEFAULT, Requirement</div></td><td>Optional<br><div lang=\"ja\">※targetListTypeがDEFAULTの場合、Requirement</div><div lang=\"en\">∗ If targetListType is DEFAULT, Requirement</div></td></tr></table></details>"

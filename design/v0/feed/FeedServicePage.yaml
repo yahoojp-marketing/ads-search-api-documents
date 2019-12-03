@@ -4,11 +4,11 @@ FeedServicePage:
     totalNumEntries:
       type: integer
       format: int32
-      description: "<ja>取得される項目の総件数です。</ja><br><en>Total number of entries in the result that this page is a part of.</en>"
+      description: "<div lang=\"ja\">取得される項目の総件数です。</div><div lang=\"en\">Total number of entries in the result that this page is a part of.</div>"
     values:
       type: array
       items:
         $ref: 'FeedServiceValue.yaml#/FeedServiceValue'
   title: FeedServicePage
-  description: "<ja>FeedServicePageオブジェクトは、自動データ挿入のリストの結果を格納するコンテナです。</ja><br><en>FeedServicePage\
-    \ contains the result of Data auto insertion.</en>"
+  description: "<div lang=\"ja\">FeedServicePageオブジェクトは、自動データ挿入のリストの結果を格納するコンテナです。</div><div lang=\"en\">FeedServicePage\
+    \ contains the result of Data auto insertion.</div>"

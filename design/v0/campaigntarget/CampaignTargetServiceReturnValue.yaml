@@ -6,5 +6,5 @@ CampaignTargetServiceReturnValue:
       items:
         $ref: 'CampaignTargetServiceValue.yaml#/CampaignTargetServiceValue'
   title: CampaignTargetServiceReturnValue
-  description: "<ja>CampaigｎTargetReturnValueオブジェクトは、操作結果を含むキャンペーンのターゲット設定に関する情報のコンテナです。</ja><br><en>Container\
-    \ for campaign target setting and its operation results.</en>"
+  description: "<div lang=\"ja\">CampaigｎTargetReturnValueオブジェクトは、操作結果を含むキャンペーンのターゲット設定に関する情報のコンテナです。</div><div lang=\"en\">Container\
+    \ for campaign target setting and its operation results.</div>"

@@ -4,11 +4,11 @@ SharedCriterionServicePage:
     totalNumEntries:
       type: integer
       format: int32
-      description: "<ja>取得される項目の総件数です。</ja><br><en>Total number of acruired items.</en>"
+      description: "<div lang=\"ja\">取得される項目の総件数です。</div><div lang=\"en\">Total number of acruired items.</div>"
     values:
       type: array
       items:
         $ref: 'SharedCriterionServiceValue.yaml#/SharedCriterionServiceValue'
   title: SharedCriterionServicePage
-  description: "<ja>SharedCriterionServicePageオブジェクトは、検索結果（全エンティティのリスト）を保持します。</ja><br><en>SharedCriterionServicePage\
-    \ object holds search results (all entities list).</en>"
+  description: "<div lang=\"ja\">SharedCriterionServicePageオブジェクトは、検索結果（全エンティティのリスト）を保持します。</div><div lang=\"en\">SharedCriterionServicePage\
+    \ object holds search results (all entities list).</div>"

@@ -5,7 +5,7 @@ AuditLogServiceLang:
   - EN
   - UNKNOWN
   title: AuditLogServiceLang
-  description: "<ja>AuditLogServiceLangは、操作履歴ファイルの言語設定を表します。</ja><br><en>AuditLogServiceLang\
-    \ describes the language setting of operation history data file.</en><hr>\n* `EN`\
-    \ - <ja>英語です。</ja><br><en>English language</en><br>\n* `JA` - <ja>日本語です。</ja><br><en>Japanese\
-    \ language</en><br>\n* `UNKNOWN` - 未知の値です。<br>Unknown Value"
+  description: "<div lang=\"ja\">AuditLogServiceLangは、操作履歴ファイルの言語設定を表します。</div><div lang=\"en\">AuditLogServiceLang\
+    \ describes the language setting of operation history data file.</div><hr>\n* <code>EN</code>\
+    \ - <div lang=\"ja\">英語です。</div><div lang=\"en\">English language</div>* <code>JA</code> - <div lang=\"ja\">日本語です。</div><div lang=\"en\">Japanese\
+    \ language</div>* <code>UNKNOWN</code> - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"

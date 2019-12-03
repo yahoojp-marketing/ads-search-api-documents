@@ -6,8 +6,7 @@ FeedItemServiceKeywordMatchType:
   - BROAD
   - UNKNOWN
   title: FeedItemServiceKeywordMatchType
-  description: "<ja>FeedItemServiceKeywordMatchTypeは、キーワードのマッチタイプを表します。</ja><br><en>FeedItemServiceKeywordMatchType\
-    \ describes keyword match type.</en><hr>\n* `EXACT` - <ja>完全一致です。</ja><br><en>Exact\
-    \ match.</en><br>\n* `PHRASE` - <ja>フレーズ一致です。</ja><br><en>Phrase match.</en><br>\n\
-    * `BROAD` - <ja>部分一致です。</ja><br><en>Broad match.</en><br>\n* `UNKNOWN` - 未知の値です。<br>Unknown\
-    \ Value"
+  description: "<div lang=\"ja\">FeedItemServiceKeywordMatchTypeは、キーワードのマッチタイプを表します。</div><div lang=\"en\">FeedItemServiceKeywordMatchType\
+    \ describes keyword match type.</div><hr>\n* <code>EXACT</code> - <div lang=\"ja\">完全一致です。</div><div lang=\"en\">Exact\
+    \ match.</div>* <code>PHRASE</code> - <div lang=\"ja\">フレーズ一致です。</div><div lang=\"en\">Phrase match.</div>\
+    * <code>BROAD</code> - <div lang=\"ja\">部分一致です。</div><div lang=\"en\">Broad match.</div>* <code>UNKNOWN</code> - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"

@@ -3,8 +3,8 @@ AdGroupAdServiceTextAd2:
   properties:
     description2:
       type: string
-      description: "<ja>説明文2（2行目）です。</ja><br><en>Description2 (line2) of the ad.</en>"
+      description: "<div lang=\"ja\">説明文2（2行目）です。</div><div lang=\"en\">Description2 (line2) of the ad.</div>"
   title: AdGroupAdServiceTextAd2
-  description: "<ja>AdGroupAdServiceTextAd2オブジェクトは、スポンサードサーチのPCおよびスマートフォン向けの広告を表します。</ja><br><en>AdGroupAdServiceTextAd2\
-    \ object is a text ad type for Sponsored Search on PC and smartphone.</en><hr><details><summary>Requirement</summary><table\
+  description: "<div lang=\"ja\">AdGroupAdServiceTextAd2オブジェクトは、スポンサードサーチのPCおよびスマートフォン向けの広告を表します。</div><div lang=\"en\">AdGroupAdServiceTextAd2\
+    \ object is a text ad type for Sponsored Search on PC and smartphone.</div><hr><details><summary>Requirement</summary><table\
     \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>description2</td><td>-</td><td>Requirement</td><td>-</td><td>-</td></tr></table></details>"

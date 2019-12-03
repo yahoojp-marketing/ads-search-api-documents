@@ -7,9 +7,9 @@ ReportDefinitionServiceReportDownloadEncode:
   - UTF16LE
   - UNKNOWN
   title: ReportDefinitionServiceReportDownloadEncode
-  description: "<ja>ReportDefinitionServiceReportDownloadEncodeは、ダウンロードするレポートの文字コードを表します。</ja><br><en>ReportDefinitionServiceReportDownloadEncode\
-    \ displays a character code of the report.</en><hr>\n* `UTF-8` - <ja>文字コード：UTF-8です。</ja><br><en>Character\
-    \ code: UTF-8.</en><br>\n* `SJIS` - <ja>文字コード：Shift-JISです。</ja><br><en>Character\
-    \ code: SJIS.</en><br>\n* `EUC` - <ja>文字コード：EUCです。</ja><br><en>Character code:\
-    \ EUC.</en><br>\n* `UTF16LE` - <ja>文字コード：UTF16LEです。</ja><br><en>Character code:\
-    \ UTF16LE.</en><br>\n* `UNKNOWN` - 未知の値です。<br>Unknown Value"
+  description: "<div lang=\"ja\">ReportDefinitionServiceReportDownloadEncodeは、ダウンロードするレポートの文字コードを表します。</div><div lang=\"en\">ReportDefinitionServiceReportDownloadEncode\
+    \ displays a character code of the report.</div><hr>\n* <code>UTF-8</code> - <div lang=\"ja\">文字コード：UTF-8です。</div><div lang=\"en\">Character\
+    \ code: UTF-8.</div>* <code>SJIS</code> - <div lang=\"ja\">文字コード：Shift-JISです。</div><div lang=\"en\">Character\
+    \ code: SJIS.</div>* <code>EUC</code> - <div lang=\"ja\">文字コード：EUCです。</div><div lang=\"en\">Character code:\
+    \ EUC.</div>* <code>UTF16LE</code> - <div lang=\"ja\">文字コード：UTF16LEです。</div><div lang=\"en\">Character code:\
+    \ UTF16LE.</div>* <code>UNKNOWN</code> - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"

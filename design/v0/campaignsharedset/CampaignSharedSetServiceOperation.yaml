@@ -7,7 +7,7 @@ CampaignSharedSetServiceOperation:
     accountId:
       type: integer
       format: int64
-      description: "<ja>操作対象のアカウントです。</ja><br><en>Account for the operation</en>"
+      description: "<div lang=\"ja\">操作対象のアカウントです。</div><div lang=\"en\">Account for the operation</div>"
     operand:
       type: array
       items:
@@ -15,5 +15,5 @@ CampaignSharedSetServiceOperation:
       minItems: 1
       maxItems: 1000
   title: CampaignSharedSetServiceOperation
-  description: "<ja>CampaignSharedSetServiceOperationは、操作対象のキャンペーンと共有リストの関連付け情報を保持するオブジェクトです。</ja><br><en>CampaignSharedSetServiceOperation\
-    \ is object to hold setup information between campaign and shared list for operation.</en>"
+  description: "<div lang=\"ja\">CampaignSharedSetServiceOperationは、操作対象のキャンペーンと共有リストの関連付け情報を保持するオブジェクトです。</div><div lang=\"en\">CampaignSharedSetServiceOperation\
+    \ is object to hold setup information between campaign and shared list for operation.</div>"

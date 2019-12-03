@@ -6,5 +6,5 @@ AdGroupAdServiceReturnValue:
       items:
         $ref: 'AdGroupAdServiceValue.yaml#/AdGroupAdServiceValue'
   title: AdGroupAdServiceReturnValue
-  description: "<ja>AdGroupAdServiceReturnValueオブジェクトは、AdGroupAdOperationの処理結果として戻される値を表します。</ja><br><en>Container\
-    \ returned as operation results.</en>"
+  description: "<div lang=\"ja\">AdGroupAdServiceReturnValueオブジェクトは、AdGroupAdOperationの処理結果として戻される値を表します。</div><div lang=\"en\">Container\
+    \ returned as operation results.</div>"

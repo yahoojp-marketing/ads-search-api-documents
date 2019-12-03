@@ -4,12 +4,12 @@ CampaignRetargetingListServicePage:
     totalNumEntries:
       type: integer
       format: int32
-      description: "<ja>取得される項目の総件数です。</ja><br><en>Total number of entries in the result that this page is a part of.</en>"
+      description: "<div lang=\"ja\">取得される項目の総件数です。</div><div lang=\"en\">Total number of entries in the result that this page is a part of.</div>"
     values:
       type: array
       items:
         $ref: 'CampaignRetargetingListServiceValue.yaml#/CampaignRetargetingListServiceValue'
   title: CampaignRetargetingListServicePage
-  description: "<ja>CampaignRetargetingListServicePageオブジェクトは、キャンペーン階層におけるターゲットリストの設定に関する実行結果（全Entityのリスト）を保持します。</ja><br><en>CampaignRetargetingListServicePage\
+  description: "<div lang=\"ja\">CampaignRetargetingListServicePageオブジェクトは、キャンペーン階層におけるターゲットリストの設定に関する実行結果（全Entityのリスト）を保持します。</div><div lang=\"en\">CampaignRetargetingListServicePage\
     \  object holds execution results (list of all entities) for Target\
-    \ List settings on the campaign level.</en>"
+    \ List settings on the campaign level.</div>"

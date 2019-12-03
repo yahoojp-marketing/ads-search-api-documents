@@ -6,14 +6,14 @@ CampaignTargetServiceSelector:
     accountId:
       type: integer
       format: int64
-      description: "<ja>アカウントIDです。</ja><br><en>Account ID.</en>"
+      description: "<div lang=\"ja\">アカウントIDです。</div><div lang=\"en\">Account ID.</div>"
     campaignIds:
       type: array
       items:
         type: integer
         format: int64
       maxItems: 500
-      description: "<ja>キャンペーンIDです。</ja><br><en>Campaign ID.</en>"
+      description: "<div lang=\"ja\">キャンペーンIDです。</div><div lang=\"en\">Campaign ID.</div>"
     excludedType:
       $ref: 'CampaignTargetServiceExcludedType.yaml#/CampaignTargetServiceExcludedType'
     numberResults:
@@ -22,9 +22,9 @@ CampaignTargetServiceSelector:
       minimum: 1
       maximum: 500
       default: 500
-      description: "ページの最大件数です。このフィールドは、1以上を指定する必要があります。<br>Maximum number of results\
+      description: "<div lang=\"ja\">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div><div lang=\"en\">Maximum number of results\
         \ to return in this page. This field must be greater than or equal to 1. Also\
-        \ see Entity Limits per operation."
+        \ see Entity Limits per operation.</div>"
     platformTypes:
       type: array
       items:
@@ -35,20 +35,20 @@ CampaignTargetServiceSelector:
       format: int32
       minimum: 1
       default: 1
-      description: "ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。<br>Index of the first\
+      description: "<div lang=\"ja\">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div><div lang=\"en\">Index of the first\
         \ result to return in this page. This field must be greater than or equal\
-        \ to 1."
+        \ to 1.</div>"
     targetIds:
       type: array
       items:
         type: string
       maxItems: 500
-      description: "<ja>ターゲットIDです。</ja><br><en>Target ID.</en>"
+      description: "<div lang=\"ja\">ターゲットIDです。</div><div lang=\"en\">Target ID.</div>"
     targetTypes:
       type: array
       items:
         $ref: 'CampaignTargetServiceTargetType.yaml#/CampaignTargetServiceTargetType'
       maxItems: 4
   title: CampaignTargetServiceSelector
-  description: "<ja>CampaignTargetServiceSelectorオブジェクトは、操作の対象とするキャンペーンのターゲティング設定を表します。</ja><br><en>CampaignTargetSelector\
-    \ object describes the targeting settings on the campaign to be operated.</en>"
+  description: "<div lang=\"ja\">CampaignTargetServiceSelectorオブジェクトは、操作の対象とするキャンペーンのターゲティング設定を表します。</div><div lang=\"en\">CampaignTargetSelector\
+    \ object describes the targeting settings on the campaign to be operated.</div>"

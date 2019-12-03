@@ -6,7 +6,7 @@ CampaignWebpageServiceWebpageParameter:
       items:
         $ref: 'CampaignWebpageServiceWebpageCondition.yaml#/CampaignWebpageServiceWebpageCondition'
   title: CampaignWebpageServiceWebpageParameter
-  description: "<ja>CampaignWebpageServiceWebpageParameterは、除外設定するWebpageの条件リストを保持します。\
-    \ 条件リストはAND条件で適用されます。</ja><br><en>CampaignWebpageServiceWebpageParameter contains\
+  description: "<div lang=\"ja\">CampaignWebpageServiceWebpageParameterは、除外設定するWebpageの条件リストを保持します。\
+    \ 条件リストはAND条件で適用されます。</div><div lang=\"en\">CampaignWebpageServiceWebpageParameter contains\
     \ the rule list of webpage to be excluded. The rule list is applied in the AND\
-    \ condition.</en><hr><details><summary>Requirement</summary><table border='1'><tr><th>PROPERTY</th><th>ADD</th><th>REMOVE</th></tr><tr><td>conditions</td><td>Requirement</td><td>Ignore</td></tr></table></details>"
+    \ condition.</div><hr><details><summary>Requirement</summary><table border='1'><tr><th>PROPERTY</th><th>ADD</th><th>REMOVE</th></tr><tr><td>conditions</td><td>Requirement</td><td>Ignore</td></tr></table></details>"

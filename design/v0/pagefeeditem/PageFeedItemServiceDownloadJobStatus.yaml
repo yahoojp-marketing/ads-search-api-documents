@@ -8,10 +8,10 @@ PageFeedItemServiceDownloadJobStatus:
   - SYSTEM_ERROR
   - UNKNOWN
   title: PageFeedItemServiceDownloadJobStatus
-  description: "<ja>PageFeedItemServiceDownloadJobStatusは、ページフィードアイテムダウンロードジョブの実行状況を表します。</ja><br><en>PageFeedItemServiceDownloadJobStatus\
-    \ displays status of page feed item download jobs.</en><hr>\n* `IN_PROGRESS` -\
-    \ <ja>処理中</ja><br><en>Currently in progress of creating.</en><br>\n* `COMPLETED`\
-    \ - <ja>処理完了</ja><br><en>Job has completed.</en><br>\n* `FIELDS_ERROR` - <ja>ダウンロード不可能なフィールドの組み合わせを指定した場合のエラー</ja><br><en>Error\
-    \ if invalid conbination.</en><br>\n* `TIMEOUT` - <ja>タイムアウト</ja><br><en>Timeout\
-    \ occured.</en><br>\n* `SYSTEM_ERROR` - <ja>エラー</ja><br><en>System error occured.</en><br>\n\
-    * `UNKNOWN` - 未知の値です。<br>Unknown Value"
+  description: "<div lang=\"ja\">PageFeedItemServiceDownloadJobStatusは、ページフィードアイテムダウンロードジョブの実行状況を表します。</div><div lang=\"en\">PageFeedItemServiceDownloadJobStatus\
+    \ displays status of page feed item download jobs.</div><hr>\n* <code>IN_PROGRESS</code> -\
+    \ <div lang=\"ja\">処理中</div><div lang=\"en\">Currently in progress of creating.</div>* <code>COMPLETED</code>\
+    \ - <div lang=\"ja\">処理完了</div><div lang=\"en\">Job has completed.</div>* <code>FIELDS_ERROR</code> - <div lang=\"ja\">ダウンロード不可能なフィールドの組み合わせを指定した場合のエラー</div><div lang=\"en\">Error\
+    \ if invalid conbination.</div>* <code>TIMEOUT</code> - <div lang=\"ja\">タイムアウト</div><div lang=\"en\">Timeout\
+    \ occured.</div>* <code>SYSTEM_ERROR</code> - <div lang=\"ja\">エラー</div><div lang=\"en\">System error occured.</div>\
+    * <code>UNKNOWN</code> - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"

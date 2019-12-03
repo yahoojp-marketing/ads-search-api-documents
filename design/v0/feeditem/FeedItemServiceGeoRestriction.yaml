@@ -5,9 +5,9 @@ FeedItemServiceGeoRestriction:
   - LOCATION_OF_PRESENCE
   - UNKNOWN
   title: FeedItemServiceGeoRestriction
-  description: "<ja>FeedItemServiceGeoRestrictionオブジェクトは、地域設定の配信を制御します。</ja><br><en>FeedItemServiceGeoRestriction\
-    \ object controls ad delivery of location restriction.</en><hr>\n* `NONE` - <ja>検索キーワードとユーザーの所在地の関係にかかわらず、配信されます。</ja><br><en>Regardless\
+  description: "<div lang=\"ja\">FeedItemServiceGeoRestrictionオブジェクトは、地域設定の配信を制御します。</div><div lang=\"en\">FeedItemServiceGeoRestriction\
+    \ object controls ad delivery of location restriction.</div><hr>\n* <code>NONE</code> - <div lang=\"ja\">検索キーワードとユーザーの所在地の関係にかかわらず、配信されます。</div><div lang=\"en\">Regardless\
     \ of the relationship between the search keyword and the user&#39;s location,\
-    \ Ads will be delivered.</en><br>\n* `LOCATION_OF_PRESENCE` - <ja>検索キーワードがユーザーの所在地と無関係の場合は配信されません。</ja><br><en>Ads\
-    \ will not be delivered if the search keyword is unrelated to the user&#39;s location.</en><br>\n\
-    * `UNKNOWN` - 未知の値です。<br>Unknown Value"
+    \ Ads will be delivered.</div>* <code>LOCATION_OF_PRESENCE</code> - <div lang=\"ja\">検索キーワードがユーザーの所在地と無関係の場合は配信されません。</div><div lang=\"en\">Ads\
+    \ will not be delivered if the search keyword is unrelated to the user&#39;s location.</div>\
+    * <code>UNKNOWN</code> - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"

@@ -4,11 +4,11 @@ CampaignWebpageServicePage:
     totalNumEntries:
       type: integer
       format: int32
-      description: "<ja>取得される項目の総件数</ja><br><en>Total number of items to be acquired</en>"
+      description: "<div lang=\"ja\">取得される項目の総件数</div><div lang=\"en\">Total number of items to be acquired</div>"
     values:
       type: array
       items:
         $ref: 'CampaignWebpageServiceValue.yaml#/CampaignWebpageServiceValue'
   title: CampaignWebpageServicePage
-  description: "<ja>CampaignWebpageServicePageオブジェクトは、取得されるPageFeedItemの除外設定に関するエントリーを表します。</ja><br><en>CampaignWebpageServicePage\
-    \ object describes entry on exclusion setting of acquired PageFeedItem.</en>"
+  description: "<div lang=\"ja\">CampaignWebpageServicePageオブジェクトは、取得されるPageFeedItemの除外設定に関するエントリーを表します。</div><div lang=\"en\">CampaignWebpageServicePage\
+    \ object describes entry on exclusion setting of acquired PageFeedItem.</div>"

@@ -4,35 +4,35 @@ AdGroup:
     accountId:
       type: integer
       format: int64
-      description: "<ja>アカウントIDです。</ja><br><en>Account ID</en>"
+      description: "<div lang=\"ja\">アカウントIDです。</div><div lang=\"en\">Account ID</div>"
     adGroupAdRotationMode:
       $ref: 'AdGroupServiceAdGroupAdRotationMode.yaml#/AdGroupServiceAdGroupAdRotationMode'
     adGroupId:
       type: integer
       format: int64
-      description: "<ja>広告グループIDです。</ja><br><en>Ad Group ID</en>"
+      description: "<div lang=\"ja\">広告グループIDです。</div><div lang=\"en\">Ad Group ID</div>"
     adGroupName:
       type: string
-      description: "<ja>広告グループ名です。</ja><br><en>Ad Group name</en>"
+      description: "<div lang=\"ja\">広告グループ名です。</div><div lang=\"en\">Ad Group name</div>"
     adGroupTrackId:
       type: integer
       format: int64
-      description: "<ja>トラッキング用広告グループIDです。</ja><br><en>Ad\
-        \ Group ID for tracking</en>"
+      description: "<div lang=\"ja\">トラッキング用広告グループIDです。</div><div lang=\"en\">Ad\
+        \ Group ID for tracking</div>"
     bid:
       $ref: 'AdGroupServiceBid.yaml#/AdGroupServiceBid'
     campaignId:
       type: integer
       format: int64
-      description: "<ja>キャンペーンIDです。</ja><br><en>Campaign ID</en>"
+      description: "<div lang=\"ja\">キャンペーンIDです。</div><div lang=\"en\">Campaign ID</div>"
     campaignName:
       type: string
-      description: "<ja>キャンペーン名です。</ja><br><en>Campaign name</en>"
+      description: "<div lang=\"ja\">キャンペーン名です。</div><div lang=\"en\">Campaign name</div>"
     campaignTrackId:
       type: integer
       format: int64
-      description: "<ja>トラッキング用キャンペーンIDです。</ja><br><en>Campaign\
-        \ ID for tracking</en>"
+      description: "<div lang=\"ja\">トラッキング用キャンペーンIDです。</div><div lang=\"en\">Campaign\
+        \ ID for tracking</div>"
     customParameters:
       $ref: 'AdGroupServiceCustomParameters.yaml#/AdGroupServiceCustomParameters'
     labels:
@@ -43,13 +43,13 @@ AdGroup:
       $ref: 'AdGroupServiceSettings.yaml#/AdGroupServiceSettings'
     trackingUrl:
       type: string
-      description: "<ja>トラッキングURLです。<br>※キャンペーンがアプリキャンペーンでAndroidの場合、設定はできません。</ja><br><en>Tracking\
-        \ URL<br>* Cannot set for a Mobile App campaign for Android OS</en>"
+      description: "<div lang=\"ja\">トラッキングURLです。<br>※キャンペーンがアプリキャンペーンでAndroidの場合、設定はできません。</div><div lang=\"en\">Tracking\
+        \ URL<br>* Cannot set for a Mobile App campaign for Android OS</div>"
     urlReviewData:
       $ref: 'AdGroupServiceUrlReviewData.yaml#/AdGroupServiceUrlReviewData'
     userStatus:
       $ref: 'AdGroupServiceUserStatus.yaml#/AdGroupServiceUserStatus'
   title: AdGroup
-  description: "<ja>AdGroup オブジェクトは、広告グループを表します。</ja><br><en>AdGroup object describes\
-    \ ad group information.</en><hr><details><summary>Requirement</summary><table\
-    \ border='1'><tr><th>PROPERTY</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>accountId</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>adGroupAdRotationMode</td><td>Optional</td><td>Optional</td><td>Ignore</td></tr><tr><td>adGroupId</td><td>Ignore</td><td>Requirement<br><i>NotUpdatable</i></td><td>Requirement<br><i>NotUpdatable</i></td></tr><tr><td>adGroupName</td><td>Requirement</td><td>Optional<br><i>Updatable</i></td><td>Ignore</td></tr><tr><td>adGroupTrackId</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>bid</td><td>Optional</td><td>Optional<br><i>Updatable</i></td><td>Ignore</td></tr><tr><td>campaignId</td><td>Requirement</td><td>Requirement<br><i>NotUpdatable</i></td><td>Requirement<br><i>NotUpdatable</i></td></tr><tr><td>campaignName</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>campaignTrackId</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>customParameters</td><td>Optional</td><td>Optional<br><ja>※トラッキングURLが審査中の場合、編集はできません。<br>※変更がない場合、審査対象とはなりません。</ja><br><en>* Cannot update this when Tracking URL is in editorial review<br>*Not to be reviewed if there is no change</en></td><td>Ignore</td></tr><tr><td>labels</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>settings</td><td>Optional<br><ja>※TargetingSettingが未設定の場合のDefault値<br>TargetCriterionType:TARGET_LIST<br>TargetAll:ACTIVE</ja><br><en>*Default value for the case of no setting 'TargetingSetting'<br>TargetCriterionType:TARGET_LIST<br>TargetAll:ACTIVE</en></td><td>Optional</td><td>Ignore</td></tr><tr><td>trackingUrl</td><td>Optional</td><td>Optional<br><ja>※こちらが審査中の場合、編集はできません。<br>※変更がない場合、審査対象とはなりません。</ja><br><en>* Cannot update when this is in editorial review<br>*Not to be reviewed if there is no change</en></td><td>Ignore</td></tr><tr><td>urlReviewData</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>userStatus</td><td>Requirement</td><td>Optional<br><i>Updatable</i></td><td>Ignore</td></tr></table></details>"
+  description: "<div lang=\"ja\">AdGroup オブジェクトは、広告グループを表します。</div><div lang=\"en\">AdGroup object describes\
+    \ ad group information.</div><hr><details><summary>Requirement</summary><table\
+    \ border='1'><tr><th>PROPERTY</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>accountId</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>adGroupAdRotationMode</td><td>Optional</td><td>Optional</td><td>Ignore</td></tr><tr><td>adGroupId</td><td>Ignore</td><td>Requirement<br><i>NotUpdatable</i></td><td>Requirement<br><i>NotUpdatable</i></td></tr><tr><td>adGroupName</td><td>Requirement</td><td>Optional<br><i>Updatable</i></td><td>Ignore</td></tr><tr><td>adGroupTrackId</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>bid</td><td>Optional</td><td>Optional<br><i>Updatable</i></td><td>Ignore</td></tr><tr><td>campaignId</td><td>Requirement</td><td>Requirement<br><i>NotUpdatable</i></td><td>Requirement<br><i>NotUpdatable</i></td></tr><tr><td>campaignName</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>campaignTrackId</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>customParameters</td><td>Optional</td><td>Optional<br><div lang=\"ja\">※トラッキングURLが審査中の場合、編集はできません。<br>※変更がない場合、審査対象とはなりません。</div><div lang=\"en\">* Cannot update this when Tracking URL is in editorial review<br>*Not to be reviewed if there is no change</div></td><td>Ignore</td></tr><tr><td>labels</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>settings</td><td>Optional<br><div lang=\"ja\">※TargetingSettingが未設定の場合のDefault値<br>TargetCriterionType:TARGET_LIST<br>TargetAll:ACTIVE</div><div lang=\"en\">*Default value for the case of no setting 'TargetingSetting'<br>TargetCriterionType:TARGET_LIST<br>TargetAll:ACTIVE</div></td><td>Optional</td><td>Ignore</td></tr><tr><td>trackingUrl</td><td>Optional</td><td>Optional<br><div lang=\"ja\">※こちらが審査中の場合、編集はできません。<br>※変更がない場合、審査対象とはなりません。</div><div lang=\"en\">* Cannot update when this is in editorial review<br>*Not to be reviewed if there is no change</div></td><td>Ignore</td></tr><tr><td>urlReviewData</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>userStatus</td><td>Requirement</td><td>Optional<br><i>Updatable</i></td><td>Ignore</td></tr></table></details>"

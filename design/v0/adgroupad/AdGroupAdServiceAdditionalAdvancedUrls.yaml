@@ -3,13 +3,13 @@ AdGroupAdServiceAdditionalAdvancedUrls:
   properties:
     advancedUrl:
       type: string
-      description: "<ja>最終リンク先URLです。</ja><br><en>Landing Page URL.</en>"
+      description: "<div lang=\"ja\">最終リンク先URLです。</div><div lang=\"en\">Landing Page URL.</div>"
     disapprovalReasonCodes:
       type: array
       items:
         type: string
-      description: "<ja>審査否認理由コードです。<br>(コード詳細は、DictionaryServiceのgetDisapprovalReasonのレスポンスを参照)</ja><br><en>Reject reason code.<br>(Refer to DictionaryService getDisapprovalReason response for details)</en>"
+      description: "<div lang=\"ja\">審査否認理由コードです。<br>(コード詳細は、DictionaryServiceのgetDisapprovalReasonのレスポンスを参照)</div><div lang=\"en\">Reject reason code.<br>(Refer to DictionaryService getDisapprovalReason response for details)</div>"
   title: AdGroupAdServiceAdditionalAdvancedUrls
-  description: "<ja>AdGroupAdServiceAdditionalAdvancedUrlsは、2件目以降の最終リンク先URLを保持するオブジェクトです。</ja><br><en>AdGroupAdServiceAdditionalAdvancedUrls\
-    \ is object to hold the 2nd and later Landing Page URLs.</en><hr><details><summary>Requirement</summary><table\
+  description: "<div lang=\"ja\">AdGroupAdServiceAdditionalAdvancedUrlsは、2件目以降の最終リンク先URLを保持するオブジェクトです。</div><div lang=\"en\">AdGroupAdServiceAdditionalAdvancedUrls\
+    \ is object to hold the 2nd and later Landing Page URLs.</div><hr><details><summary>Requirement</summary><table\
     \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>advancedUrl</td><td>-</td><td>Requirement</td><td>-</td><td>-</td></tr><tr><td>disapprovalReasonCodes</td><td>-</td><td>-</td><td>-</td><td>-</td></tr></table></details>"

@@ -7,7 +7,7 @@ AdGroupServiceOperation:
     accountId:
       type: integer
       format: int64
-      description: "<ja>アカウントIDです。</ja><br><en>Account ID.</en>"
+      description: "<div lang=\"ja\">アカウントIDです。</div><div lang=\"en\">Account ID.</div>"
     operand:
       type: array
       items:
@@ -15,5 +15,5 @@ AdGroupServiceOperation:
       minItems: 1
       maxItems: 2000
   title: AdGroupServiceOperation
-  description: "<ja>AdGroupServiceOperationオブジェクトは、操作の対象となる広告グループと処理の内容を表します。</ja><br><en>AdGroupServiceOperation\
-    \ displays target ad group information and its operation results.</en>"
+  description: "<div lang=\"ja\">AdGroupServiceOperationオブジェクトは、操作の対象となる広告グループと処理の内容を表します。</div><div lang=\"en\">AdGroupServiceOperation\
+    \ displays target ad group information and its operation results.</div>"

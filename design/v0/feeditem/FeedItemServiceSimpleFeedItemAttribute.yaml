@@ -3,8 +3,8 @@ FeedItemServiceSimpleFeedItemAttribute:
   properties:
     feedAttributeValue:
       type: string
-      description: "<ja>フィードアイテム情報の値です。<br><br>※データ自動挿入の利用時は、属性は以下のように入力してください：<br>・AD_CUSTOMIZER_INTEGER<br>ex) 99999999<br>・AD_CUSTOMIZER_PRICE<br>ex) 19800 or 19,800<br>・AD_CUSTOMIZER_DATE<br>ex) 20151231 235959<br>・AD_CUSTOMIZER_STRING<br>ex) hoge ・STRUCTURED_SNIPPET_HEADER<br>ex) ブランド</ja><br><en>Value of feed iteim information.<br><br>*When using data insertion, you need to enter attribution as follows:<br>・AD_CUSTOMIZER_INTEGER<br>ex) 99999999<br>・AD_CUSTOMIZER_PRICE<br>ex) 19800 or 19,800<br>・AD_CUSTOMIZER_DATE<br>ex) 20151231 235959<br>・AD_CUSTOMIZER_STRING<br>ex) home<br>・STRUCTURED_SNIPPET_HEADER<br>ex) brand</en>"
+      description: "<div lang=\"ja\">フィードアイテム情報の値です。<br><br>※データ自動挿入の利用時は、属性は以下のように入力してください：<br>・AD_CUSTOMIZER_INTEGER<br>ex) 99999999<br>・AD_CUSTOMIZER_PRICE<br>ex) 19800 or 19,800<br>・AD_CUSTOMIZER_DATE<br>ex) 20151231 235959<br>・AD_CUSTOMIZER_STRING<br>ex) hoge ・STRUCTURED_SNIPPET_HEADER<br>ex) ブランド</div><div lang=\"en\">Value of feed iteim information.<br><br>*When using data insertion, you need to enter attribution as follows:<br>・AD_CUSTOMIZER_INTEGER<br>ex) 99999999<br>・AD_CUSTOMIZER_PRICE<br>ex) 19800 or 19,800<br>・AD_CUSTOMIZER_DATE<br>ex) 20151231 235959<br>・AD_CUSTOMIZER_STRING<br>ex) home<br>・STRUCTURED_SNIPPET_HEADER<br>ex) brand</div>"
     reviewFeedAttributeValue:
       type: string
-      description: "<ja>審査中のフィードアイテム情報です。<br>※審査中の間のみ、レスポンス時に表示されます。</ja><br><en>The feed item information on editorial review.<br>*It is displayed for response only on Editorial Review.</en>"
+      description: "<div lang=\"ja\">審査中のフィードアイテム情報です。<br>※審査中の間のみ、レスポンス時に表示されます。</div><div lang=\"en\">The feed item information on editorial review.<br>*It is displayed for response only on Editorial Review.</div>"
   title: FeedItemServiceSimpleFeedItemAttribute

@@ -5,7 +5,7 @@ ConversionTrackerServiceAppConversion:
       $ref: 'ConversionTrackerServiceAppConversionType.yaml#/ConversionTrackerServiceAppConversionType'
     appId:
       type: string
-      description: "<ja>アプリケーションIDです。</ja><br><en>Application ID</en>"
+      description: "<div lang=\"ja\">アプリケーションIDです。</div><div lang=\"en\">Application ID</div>"
     appPlatform:
       $ref: 'ConversionTrackerServiceAppPlatform.yaml#/ConversionTrackerServiceAppPlatform'
     appPostbackUrl:
@@ -13,12 +13,12 @@ ConversionTrackerServiceAppConversion:
     snippetId:
       type: integer
       format: int64
-      description: "<ja>コンバージョンIDです。</ja><br><en>Converison ID</en>"
+      description: "<div lang=\"ja\">コンバージョンIDです。</div><div lang=\"en\">Converison ID</div>"
     snippetLabel:
       type: string
-      description: "<ja>コンバージョントラッカーラベルです。</ja><br><en>Converison tracker label</en>"
+      description: "<div lang=\"ja\">コンバージョントラッカーラベルです。</div><div lang=\"en\">Converison tracker label</div>"
   title: ConversionTrackerServiceAppConversion
-  description: "<ja>ConversionTrackerServiceAppConversionオブジェクトは、アプリコンバージョン測定タグやタグごとのパフォーマンスデータなどのアプリコンバージョントラッカー情報を表します。</ja><br><en>ConversionTrackerServiceAppConversion\
+  description: "<div lang=\"ja\">ConversionTrackerServiceAppConversionオブジェクトは、アプリコンバージョン測定タグやタグごとのパフォーマンスデータなどのアプリコンバージョントラッカー情報を表します。</div><div lang=\"en\">ConversionTrackerServiceAppConversion\
     \ object describes the App ConversionTracker information such as App ConversionTag\
-    \ and performance data by tag.</en><hr><details><summary>Requirement</summary><table\
+    \ and performance data by tag.</div><hr><details><summary>Requirement</summary><table\
     \ border='1'><tr><th>PROPERTY</th><th>ADD</th><th>SET</th></tr><tr><td>appConversionType</td><td>Requirement</td><td>-</td></tr><tr><td>appId</td><td>Optional</td><td>Optional</td></tr><tr><td>appPlatform</td><td>Requirement</td><td>-</td></tr><tr><td>appPostbackUrl</td><td>Optional</td><td>Optional</td></tr><tr><td>snippetId</td><td>-</td><td>-</td></tr><tr><td>snippetLabel</td><td>-</td><td>-</td></tr></table></details>"

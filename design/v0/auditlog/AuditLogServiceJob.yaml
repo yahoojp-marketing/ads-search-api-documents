@@ -6,7 +6,7 @@ AuditLogServiceJob:
     accountId:
       type: integer
       format: int64
-      description: "<ja>アカウントIDです。</ja><br><en>Account ID.</en>"
+      description: "<div lang=\"ja\">アカウントIDです。</div><div lang=\"en\">Account ID.</div>"
     dateRange:
       $ref: 'AuditLogServiceDateRange.yaml#/AuditLogServiceDateRange'
     encoding:
@@ -20,10 +20,10 @@ AuditLogServiceJob:
     jobId:
       type: integer
       format: int64
-      description: "<ja>ジョブIDです。</ja><br><en>Job ID.</en>"
+      description: "<div lang=\"ja\">ジョブIDです。</div><div lang=\"en\">Job ID.</div>"
     jobName:
       type: string
-      description: "<ja>ジョブ名です。</ja><br><en>Name of job.</en>"
+      description: "<div lang=\"ja\">ジョブ名です。</div><div lang=\"en\">Name of job.</div>"
     jobStatus:
       $ref: 'AuditLogServiceJobStatus.yaml#/AuditLogServiceJobStatus'
     lang:
@@ -33,7 +33,7 @@ AuditLogServiceJob:
     sourceType:
       $ref: 'AuditLogServiceSourceType.yaml#/AuditLogServiceSourceType'
   title: AuditLogServiceJob
-  description: "<ja>AuditLogServiceJobオブジェクトは、操作履歴取得で登録するジョブの情報を保持します。</ja><br><en>AuditLogServiceJob\
+  description: "<div lang=\"ja\">AuditLogServiceJobオブジェクトは、操作履歴取得で登録するジョブの情報を保持します。</div><div lang=\"en\">AuditLogServiceJob\
       \ object retains the job information to be added for getting operation history\
-      \ data.</en><hr><details><summary>Requirement</summary><table border='1'><tr><th>PROPERTY</th><th>addJob</th></tr><tr><td>accountId</td><td>Ignore</td></tr><tr><td>dateRange</td><td>Requirement</td></tr><tr><td>encoding</td><td>Optional<br>Default：SJIS</td></tr><td>eventSelector</td><td>Requirement</td></tr><tr><td>jobId</td><td>Ignore</td></tr><td>jobName</td><td>Optional</td></tr><tr><td>jobStatus</td><td>Ignore</td></tr><td>lang</td><td>Optional<br>Default：JA</td></tr><tr><td>output</td><td>Optional<br>Default：CSV</td></tr><td>sourceType</td><td>Optional<br>Default：API</td></tr></table></details>"
+      \ data.</div><hr><details><summary>Requirement</summary><table border='1'><tr><th>PROPERTY</th><th>addJob</th></tr><tr><td>accountId</td><td>Ignore</td></tr><tr><td>dateRange</td><td>Requirement</td></tr><tr><td>encoding</td><td>Optional<br>Default：SJIS</td></tr><td>eventSelector</td><td>Requirement</td></tr><tr><td>jobId</td><td>Ignore</td></tr><td>jobName</td><td>Optional</td></tr><tr><td>jobStatus</td><td>Ignore</td></tr><td>lang</td><td>Optional<br>Default：JA</td></tr><tr><td>output</td><td>Optional<br>Default：CSV</td></tr><td>sourceType</td><td>Optional<br>Default：API</td></tr></table></details>"
 
