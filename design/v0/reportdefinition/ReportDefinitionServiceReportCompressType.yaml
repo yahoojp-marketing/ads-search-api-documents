@@ -6,6 +6,6 @@ ReportDefinitionServiceReportCompressType:
   - UNKNOWN
   title: ReportDefinitionServiceReportCompressType
   description: "<div lang=\"ja\">ReportDefinitionServiceReportCompressTypeは、定義されたダウンロードレポートの圧縮の有無を表します。</div><div lang=\"en\">ReportDefinitionServiceReportCompressType\
-    \ displays if defined download report is compressed.</div><hr>\n* <code>NONE</code> - <div lang=\"ja\">圧縮なしです。<br>※デフォルトに設定されます。</div><div lang=\"en\">Not\
-    \ compressed.<br>*Default setting.</div>* <code>ZIP</code> - <div lang=\"ja\">Zip圧縮されます。</div><div lang=\"en\">Compressed\
-    \ to Zip file.</div>* <code>UNKNOWN</code> - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"
+    \ displays if defined download report is compressed.</div><hr>\n<p>* <code>NONE</code> - <span lang=\"ja\">圧縮なしです。<br>※デフォルトに設定されます。</span><span lang=\"en\">Not\
+    \ compressed.<br>*Default setting.</span></p><p>* <code>ZIP</code> - <span lang=\"ja\">Zip圧縮されます。</span><span lang=\"en\">Compressed\
+    \ to Zip file.</span></p><p>* <code>UNKNOWN</code> - <span lang=\"ja\">未知の値です。</span><span lang=\"en\">Unknown Value</span></p>"

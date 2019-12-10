@@ -6,6 +6,6 @@ ConversionTrackerServiceConversionCountingType:
   - UNKNOWN
   title: ConversionTrackerServiceConversionCountingType
   description: "<div lang=\"ja\">ConversionTrackerServiceConversionCountingTypeは、コンバージョンの計測方法を表します。</div><div lang=\"en\">ConversionTrackerServiceConversionCountingType\
-    \ desribes how to count conversions.</div><hr>\n* <code>ONE_PER_CLICK</code> - <div lang=\"ja\">ユニークコンバージョンです。</div><div lang=\"en\">One\
-    \ perticular conversion</div>* <code>MANY_PER_CLICK</code> - <div lang=\"ja\">総コンバージョンです。</div><div lang=\"en\">Total\
-    \ conversions (greater than one_per_click).</div>* <code>UNKNOWN</code> - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"
+    \ desribes how to count conversions.</div><hr>\n<p>* <code>ONE_PER_CLICK</code> - <span lang=\"ja\">ユニークコンバージョンです。</span><span lang=\"en\">One\
+    \ perticular conversion</span></p><p>* <code>MANY_PER_CLICK</code> - <span lang=\"ja\">総コンバージョンです。</span><span lang=\"en\">Total\
+    \ conversions (greater than one_per_click).</span></p><p>* <code>UNKNOWN</code> - <span lang=\"ja\">未知の値です。</span><span lang=\"en\">Unknown Value</span></p>"

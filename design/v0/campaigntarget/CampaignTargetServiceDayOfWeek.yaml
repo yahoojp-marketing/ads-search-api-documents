@@ -11,10 +11,10 @@ CampaignTargetServiceDayOfWeek:
   - UNKNOWN
   title: CampaignTargetServiceDayOfWeek
   description: "<div lang=\"ja\">CampaignTargetServiceDayOfWeekは、曜日を表します。</div><div lang=\"en\">A day of\
-    \ the week.</div><hr>\n* <code>MONDAY</code> - <div lang=\"ja\">月曜日です。</div><div lang=\"en\">For Monday of the week</div>\
-    * <code>TUESDAY</code> - <div lang=\"ja\">火曜日です。</div><div lang=\"en\">For Tuesday of the week</div>* <code>WEDNESDAY</code>\
-    \ - <div lang=\"ja\">水曜日です。</div><div lang=\"en\">For Wednesday of the week</div>* <code>THURSDAY</code> -\
-    \ <div lang=\"ja\">木曜日です。</div><div lang=\"en\">For Thursday of the week</div>* <code>FRIDAY</code> - <div lang=\"ja\">金曜日です。</div><div lang=\"en\">For\
-    \ Friday of the week</div>* <code>SATURDAY</code> - <div lang=\"ja\">土曜日です。</div><div lang=\"en\">For Saturday\
-    \ of the week</div>* <code>SUNDAY</code> - <div lang=\"ja\">日曜日です。</div><div lang=\"en\">For Sunday of the\
-    \ week</div>* <code>UNKNOWN</code> - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"
+    \ the week.</div><hr>\n<p>* <code>MONDAY</code> - <span lang=\"ja\">月曜日です。</span><span lang=\"en\">For Monday of the week</span></p>\
+    <p>* <code>TUESDAY</code> - <span lang=\"ja\">火曜日です。</span><span lang=\"en\">For Tuesday of the week</span></p><p>* <code>WEDNESDAY</code>\
+    \ - <span lang=\"ja\">水曜日です。</span><span lang=\"en\">For Wednesday of the week</span></p><p>* <code>THURSDAY</code> -\
+    \ <span lang=\"ja\">木曜日です。</span><span lang=\"en\">For Thursday of the week</span></p><p>* <code>FRIDAY</code> - <span lang=\"ja\">金曜日です。</span><span lang=\"en\">For\
+    \ Friday of the week</span></p><p>* <code>SATURDAY</code> - <span lang=\"ja\">土曜日です。</span><span lang=\"en\">For Saturday\
+    \ of the week</span></p><p>* <code>SUNDAY</code> - <span lang=\"ja\">日曜日です。</span><span lang=\"en\">For Sunday of the\
+    \ week</span></p><p>* <code>UNKNOWN</code> - <span lang=\"ja\">未知の値です。</span><span lang=\"en\">Unknown Value</span></p>"

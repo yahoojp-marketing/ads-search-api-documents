@@ -8,6 +8,6 @@ AccountServiceAuthType:
   description: |
     <div lang="ja">権限タイプ</div>
     <div lang="en">Roles</div><hr>
-    * <code>REFERABLE</code> - <div lang="ja">参照権限</div><div lang="en">Read only</div>
-    * <code>UPDATABLE</code> - <div lang="ja">更新権限</div><div lang="en">Write</div>
-    * <code>UNKNOWN</code> - <div lang="ja">未知の値です。</div><div lang="en">Unknown Value</div>
+    <p>* <code>REFERABLE</code> - <span lang="ja">参照権限</span><span lang="en">Read only</span></p>
+    <p>* <code>UPDATABLE</code> - <span lang="ja">更新権限</span><span lang="en">Write</span></p>
+    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>

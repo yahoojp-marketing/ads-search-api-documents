@@ -6,6 +6,6 @@ ReportDefinitionServiceReportSortType:
   - UNKNOWN
   title: ReportDefinitionServiceReportSortType
   description: "<div lang=\"ja\">ReportDefinitionServiceReportSortTypeは、ソート条件を表します。</div><div lang=\"en\">ReportDefinitionServiceReportSortType\
-    \ is a sort condition type.</div><hr>\n* <code>ASC</code> - <div lang=\"ja\">昇順にソートされます。</div><div lang=\"en\">Sort\
-    \ in ascending order.</div>* <code>DESC</code> - <div lang=\"ja\">降順にソートされます。</div><div lang=\"en\">Sort in\
-    \ descending order.</div>* <code>UNKNOWN</code> - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"
+    \ is a sort condition type.</div><hr>\n<p>* <code>ASC</code> - <span lang=\"ja\">昇順にソートされます。</span><span lang=\"en\">Sort\
+    \ in ascending order.</span></p><p>* <code>DESC</code> - <span lang=\"ja\">降順にソートされます。</span><span lang=\"en\">Sort in\
+    \ descending order.</span></p><p>* <code>UNKNOWN</code> - <span lang=\"ja\">未知の値です。</span><span lang=\"en\">Unknown Value</span></p>"

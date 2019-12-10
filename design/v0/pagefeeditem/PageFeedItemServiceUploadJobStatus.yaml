@@ -15,15 +15,15 @@ PageFeedItemServiceUploadJobStatus:
   - UNKNOWN
   title: PageFeedItemServiceUploadJobStatus
   description: "<div lang=\"ja\">PageFeedItemServiceUploadJobStatusは、ページフィードアイテムアップロードジョブの実行状況を表します。</div><div lang=\"en\">PageFeedItemServiceUploadJobStatus\
-    \ displays status of page feed item upload jobs.</div><hr>\n* <code>IN_PROGRESS</code> - <div lang=\"ja\">処理中</div><div lang=\"en\">Currently\
-    \ in progress of creating.</div>* <code>INVALID_FEED_ID</code> - <div lang=\"ja\">フィードIDが不正</div><div lang=\"en\">Feed\
-    \ ID is invalid.</div>* <code>TIMEOUT</code> - <div lang=\"ja\">タイムアウト</div><div lang=\"en\">Timeout</div>\
-    * <code>EXCEED_ROW_LINES</code> - <div lang=\"ja\">ファイルの最大行数が超過しています。</div><div lang=\"en\">Row count of the file\
-    \ exceeded the maximum.</div>* <code>COMPLETED</code> - <div lang=\"ja\">処理完了</div><div lang=\"en\">Job has\
-    \ completed.</div>* <code>COMPLETED_WITH_VALIDATION_ERROR</code> - <div lang=\"ja\">ファイル内の入力値が不正</div><div lang=\"en\">Contents\
-    \ written in the file are invalid.</div>* <code>COLUMN_HEADER_ERROR</code> - <div lang=\"ja\">ファイルのヘッダーが不正</div><div lang=\"en\">Content\
-    \ header of the file is invalid.</div>* <code>FILE_FORMAT_ERROR</code> - <div lang=\"ja\">ファイルのフォーマットが不正</div><div lang=\"en\">Format\
-    \ of the file is invalid.</div>* <code>FILE_ENCODING_ERROR</code> - <div lang=\"ja\">ファイルのエンコードが不正</div><div lang=\"en\">Encoding\
-    \ of the file is invalid.</div>* <code>EXCEED_FILE_COUNTS</code> - <div lang=\"ja\">複数のファイルを圧縮しているためエラー</div><div lang=\"en\">Count\
-    \ of the file exceeded the maximum.</div>* <code>SYSTEM_ERROR</code> - <div lang=\"ja\">エラー</div><div lang=\"en\">Systen\
-    \ error.</div>* <code>UNKNOWN</code> - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"
+    \ displays status of page feed item upload jobs.</div><hr>\n<p>* <code>IN_PROGRESS</code> - <span lang=\"ja\">処理中</span><span lang=\"en\">Currently\
+    \ in progress of creating.</span></p><p>* <code>INVALID_FEED_ID</code> - <span lang=\"ja\">フィードIDが不正</span><span lang=\"en\">Feed\
+    \ ID is invalid.</span></p><p>* <code>TIMEOUT</code> - <span lang=\"ja\">タイムアウト</span><span lang=\"en\">Timeout</span></p>\
+    <p>* <code>EXCEED_ROW_LINES</code> - <span lang=\"ja\">ファイルの最大行数が超過しています。</span><span lang=\"en\">Row count of the file\
+    \ exceeded the maximum.</span></p><p>* <code>COMPLETED</code> - <span lang=\"ja\">処理完了</span><span lang=\"en\">Job has\
+    \ completed.</span></p><p>* <code>COMPLETED_WITH_VALIDATION_ERROR</code> - <span lang=\"ja\">ファイル内の入力値が不正</span><span lang=\"en\">Contents\
+    \ written in the file are invalid.</span></p><p>* <code>COLUMN_HEADER_ERROR</code> - <span lang=\"ja\">ファイルのヘッダーが不正</span><span lang=\"en\">Content\
+    \ header of the file is invalid.</span></p><p>* <code>FILE_FORMAT_ERROR</code> - <span lang=\"ja\">ファイルのフォーマットが不正</span><span lang=\"en\">Format\
+    \ of the file is invalid.</span></p><p>* <code>FILE_ENCODING_ERROR</code> - <span lang=\"ja\">ファイルのエンコードが不正</span><span lang=\"en\">Encoding\
+    \ of the file is invalid.</span></p><p>* <code>EXCEED_FILE_COUNTS</code> - <span lang=\"ja\">複数のファイルを圧縮しているためエラー</span><span lang=\"en\">Count\
+    \ of the file exceeded the maximum.</span></p><p>* <code>SYSTEM_ERROR</code> - <span lang=\"ja\">エラー</span><span lang=\"en\">Systen\
+    \ error.</span></p><p>* <code>UNKNOWN</code> - <span lang=\"ja\">未知の値です。</span><span lang=\"en\">Unknown Value</span></p>"

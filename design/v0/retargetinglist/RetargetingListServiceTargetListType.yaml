@@ -7,7 +7,7 @@ RetargetingListServiceTargetListType:
   - UNKNOWN
   title: RetargetingListServiceTargetListType
   description: "<div lang=\"ja\">RetargetingListServiceTargetListTypeは、ターゲットリストの種別です。</div><div lang=\"en\">RetargetingListServiceTargetListType\
-    \ is the type of target list.</div><hr>\n* <code>RULE</code> - <div lang=\"ja\">URL条件リストです。</div><div lang=\"en\">URL\
-    \ Condition list</div>* <code>LOGICAL</code> - <div lang=\"ja\">組み合わせリストです。</div><div lang=\"en\">Combination\
-    \ list</div>* <code>DEFAULT</code> - <div lang=\"ja\">デフォルトリストです。</div><div lang=\"en\">Default list</div>\
-    * <code>UNKNOWN</code> - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"
+    \ is the type of target list.</div><hr>\n<p>* <code>RULE</code> - <span lang=\"ja\">URL条件リストです。</span><span lang=\"en\">URL\
+    \ Condition list</span></p><p>* <code>LOGICAL</code> - <span lang=\"ja\">組み合わせリストです。</span><span lang=\"en\">Combination\
+    \ list</span></p><p>* <code>DEFAULT</code> - <span lang=\"ja\">デフォルトリストです。</span><span lang=\"en\">Default list</span></p>\
+    <p>* <code>UNKNOWN</code> - <span lang=\"ja\">未知の値です。</span><span lang=\"en\">Unknown Value</span></p>"

@@ -6,6 +6,6 @@ AdGroupWebpageServiceBidSource:
   - UNKNOWN
   title: AdGroupWebpageServiceBidSource
   description: "<div lang=\"ja\">AdGroupWebpageServiceBidSourceは、入札価格の設定されているレベルを表します。</div><div lang=\"en\">AdGroupWebpageServiceBidSource\
-    \ describes the level at which bid is set.</div><hr>\n* <code>ADGROUP</code> - <div lang=\"ja\">広告グループレベル</div><div lang=\"en\">Level\
-    \ of ad group</div>* <code>CRITERION</code> - <div lang=\"ja\">キーワードレベル</div><div lang=\"en\">Level of keyword</div>\
-    * <code>UNKNOWN</code> - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"
+    \ describes the level at which bid is set.</div><hr>\n<p>* <code>ADGROUP</code> - <span lang=\"ja\">広告グループレベル</span><span lang=\"en\">Level\
+    \ of ad group</span></p><p>* <code>CRITERION</code> - <span lang=\"ja\">キーワードレベル</span><span lang=\"en\">Level of keyword</span></p>\
+    <p>* <code>UNKNOWN</code> - <span lang=\"ja\">未知の値です。</span><span lang=\"en\">Unknown Value</span></p>"

@@ -6,5 +6,5 @@ PageFeedItemServiceJobType:
   - UNKNOWN
   title: PageFeedItemServiceJobType
   description: "<div lang=\"ja\">PageFeedItemServiceJobTypeは、登録したジョブの種類を表します。</div><div lang=\"en\">PageFeedItemServiceJobType\
-    \ displays kind of registered job.</div><hr>\n* <code>UPLOAD</code> - <div lang=\"ja\">アップロード</div><div lang=\"en\">Upload.</div>\
-    * <code>DOWNLOAD</code> - <div lang=\"ja\">ダウンロード</div><div lang=\"en\">Download.</div>* <code>UNKNOWN</code> - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"
+    \ displays kind of registered job.</div><hr>\n<p>* <code>UPLOAD</code> - <span lang=\"ja\">アップロード</span><span lang=\"en\">Upload.</span></p>\
+    <p>* <code>DOWNLOAD</code> - <span lang=\"ja\">ダウンロード</span><span lang=\"en\">Download.</span></p><p>* <code>UNKNOWN</code> - <span lang=\"ja\">未知の値です。</span><span lang=\"en\">Unknown Value</span></p>"

@@ -5,5 +5,5 @@ AdGroupServiceCriterionType:
   - UNKNOWN
   title: AdGroupServiceCriterionType
   description: "<div lang=\"ja\">AdGroupServiceCriterionTypeは、クライテリアを表します。</div><div lang=\"en\">AdGroupServiceCriterionType\
-    \ displays the type of criteria.</div><hr>\n* <code>TARGET_LIST</code> - <div lang=\"ja\">ターゲットリストです。</div><div lang=\"en\">Target list</div>\
-    * <code>UNKNOWN</code> - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"
+    \ displays the type of criteria.</div><hr>\n<p>* <code>TARGET_LIST</code> - <span lang=\"ja\">ターゲットリストです。</span><span lang=\"en\">Target list</span></p>\
+    <p>* <code>UNKNOWN</code> - <span lang=\"ja\">未知の値です。</span><span lang=\"en\">Unknown Value</span></p>"

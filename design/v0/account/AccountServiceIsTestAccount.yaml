@@ -8,6 +8,6 @@ AccountServiceIsTestAccount:
   description: |
     <div lang="ja">テストアカウント</div>
     <div lang="en">Test account.</div><hr>
-    * <code>TRUE</code> - <div lang="ja">テストアカウント</div><div lang="en">Test account.</div>
-    * <code>FALSE</code> - <div lang="ja">Productionアカウント(テストアカウントではありません)</div><div lang="en">Production (non-test) account.</div>
-    * <code>UNKNOWN</code> - <div lang="ja">未知の値です。</div><div lang="en">Unknown Value</div>
+    <p>* <code>TRUE</code> - <span lang="ja">テストアカウント</span><span lang="en">Test account.</span></p>
+    <p>* <code>FALSE</code> - <span lang="ja">Productionアカウント(テストアカウントではありません)</span><span lang="en">Production (non-test) account.</span></p>
+    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>

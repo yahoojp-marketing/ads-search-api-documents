@@ -5,6 +5,6 @@ AdGroupServiceBidSource:
   - UNKNOWN
   title: AdGroupServiceBidSource
   description: "<div lang=\"ja\">AdGroupServiceBidSourceは、入札価格の設定されているレベルを表します。</div><div lang=\"en\">AdGroupServiceBidSource\
-    \ displays which level bid belongs to ad group.</div><hr>\n* <code>ADGROUP</code>\
-    \ - <div lang=\"ja\">広告グループレベルです。</div><div lang=\"en\">Effective Bid is Adgroup level bid</div>\
-    * <code>UNKNOWN</code> - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"
+    \ displays which level bid belongs to ad group.</div><hr>\n<p>* <code>ADGROUP</code>\
+    \ - <span lang=\"ja\">広告グループレベルです。</span><span lang=\"en\">Effective Bid is Adgroup level bid</span></p>\
+    <p>* <code>UNKNOWN</code> - <span lang=\"ja\">未知の値です。</span><span lang=\"en\">Unknown Value</span></p>"

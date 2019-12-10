@@ -13,10 +13,10 @@ CampaignExportServiceEntityType:
   description: "<div lang=\"ja\">CampaignExportServiceEntityTypeは、対象となるエンティティを表します。 ※リクエスト時はCampaignExportServiceEntityTypeで定義されている値をString型で指定します。\
     \ ※レスポンスの値はenumとして返却されます。</div><div lang=\"en\">CampaignExportServiceEntityType object describes\
     \ target entities. * When requesting, specify the value defined on CampaignExportServiceEntityType\
-    \ in string. * Response value is returned in enum type.</div><hr>\n* <code>AD</code> - <div lang=\"ja\">広告</div><div lang=\"en\">Ad</div>\
-    * <code>ALL</code> - <div lang=\"ja\">すべての広告エンティティ</div><div lang=\"en\">All entities</div>* <code>CAMPAIGN</code> - <div lang=\"ja\">キャンペーン</div><div lang=\"en\">Campaign</div>\
-    * <code>NEGATIVE_CAMPAIGN_CRITERION</code> - <div lang=\"ja\">対象外キーワード（キャンペーンレベル）</div><div lang=\"en\">Negative\
-    \ keyword (campaign level)</div>* <code>AD_GROUP</code> - <div lang=\"ja\">広告グループ</div><div lang=\"en\">Ad\
-    \ group</div>* <code>BIDDABLE_AD_GROUP_CRITERION</code> - <div lang=\"ja\">入札キーワード</div><div lang=\"en\">Biddable\
-    \ keyword</div>* <code>NEGATIVE_AD_GROUP_CRITERION</code> - <div lang=\"ja\">対象外キーワード（広告グループレベル）</div><div lang=\"en\">Negative\
-    \ keyword (ad group level)</div>* <code>UNKNOWN</code> - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"
+    \ in string. * Response value is returned in enum type.</div><hr>\n<p>* <code>AD</code> - <span lang=\"ja\">広告</span><span lang=\"en\">Ad</span></p>\
+    <p>* <code>ALL</code> - <span lang=\"ja\">すべての広告エンティティ</span><span lang=\"en\">All entities</span></p><p>* <code>CAMPAIGN</code> - <span lang=\"ja\">キャンペーン</span><span lang=\"en\">Campaign</span></p>\
+    <p>* <code>NEGATIVE_CAMPAIGN_CRITERION</code> - <span lang=\"ja\">対象外キーワード（キャンペーンレベル）</span><span lang=\"en\">Negative\
+    \ keyword (campaign level)</span></p><p>* <code>AD_GROUP</code> - <span lang=\"ja\">広告グループ</span><span lang=\"en\">Ad\
+    \ group</span></p><p>* <code>BIDDABLE_AD_GROUP_CRITERION</code> - <span lang=\"ja\">入札キーワード</span><span lang=\"en\">Biddable\
+    \ keyword</span></p><p>* <code>NEGATIVE_AD_GROUP_CRITERION</code> - <span lang=\"ja\">対象外キーワード（広告グループレベル）</span><span lang=\"en\">Negative\
+    \ keyword (ad group level)</span></p><p>* <code>UNKNOWN</code> - <span lang=\"ja\">未知の値です。</span><span lang=\"en\">Unknown Value</span></p>"

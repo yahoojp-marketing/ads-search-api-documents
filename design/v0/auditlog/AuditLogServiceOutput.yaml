@@ -8,8 +8,8 @@ AuditLogServiceOutput:
   - UNKNOWN
   title: AuditLogServiceOutput
   description: "<div lang=\"ja\">AuditLogServiceOutputは、操作履歴取得ジョブのファイル形式を指定します。</div><div lang=\"en\">AuditLogServiceOutput\
-    \ specifies the file format of acruiqred operation history data.</div><hr>\n* <code>ZIPPED_CSV</code>\
-    \ - <div lang=\"ja\">ZIP圧縮されたCSV形式です。</div><div lang=\"en\">in zipped CSV format</div>* <code>ZIPPED_TSV</code>\
-    \ - <div lang=\"ja\">ZIP圧縮されたTSV形式です。</div><div lang=\"en\">in zipped TSV format</div>* <code>CSV</code> -\
-    \ <div lang=\"ja\">CSV形式です。</div><div lang=\"en\">in CSV format</div>* <code>TSV</code> - <div lang=\"ja\">TSV形式です。</div><div lang=\"en\">in\
-    \ TSV format</div>* <code>UNKNOWN</code> - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"
+    \ specifies the file format of acruiqred operation history data.</div><hr>\n<p>* <code>ZIPPED_CSV</code>\
+    \ - <span lang=\"ja\">ZIP圧縮されたCSV形式です。</span><span lang=\"en\">in zipped CSV format</span></p><p>* <code>ZIPPED_TSV</code>\
+    \ - <span lang=\"ja\">ZIP圧縮されたTSV形式です。</span><span lang=\"en\">in zipped TSV format</span></p><p>* <code>CSV</code> -\
+    \ <span lang=\"ja\">CSV形式です。</span><span lang=\"en\">in CSV format</span></p><p>* <code>TSV</code> - <span lang=\"ja\">TSV形式です。</span><span lang=\"en\">in\
+    \ TSV format</span></p><p>* <code>UNKNOWN</code> - <span lang=\"ja\">未知の値です。</span><span lang=\"en\">Unknown Value</span></p>"

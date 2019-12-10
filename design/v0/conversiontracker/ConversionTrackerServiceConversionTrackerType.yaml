@@ -5,6 +5,6 @@ ConversionTrackerServiceConversionTrackerType:
   - APP_CONVERSION
   - UNKNOWN
   title: ConversionTrackerServiceConversionTrackerType
-  description: "<div lang=\"ja\">ConversionTrackerServiceConversionTrackerTypeは、コンバージョンの種別を表します。</div><div lang=\"en\">ConversionTrackerServiceConversionTrackerType describes conversion type.</div><hr>\n* <code>WEB_CONVERSION</code> - <div lang=\"ja\">ウェブページのコンバージョンです。</div><div lang=\"en\">Web page conversion\
-      \ </div>* <code>APP_CONVERSION</code> - <div lang=\"ja\">アプリのコンバージョンです。</div><div lang=\"en\">App conversion\
-      \ </div>* <code>UNKNOWN</code> - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"
+  description: "<div lang=\"ja\">ConversionTrackerServiceConversionTrackerTypeは、コンバージョンの種別を表します。</div><div lang=\"en\">ConversionTrackerServiceConversionTrackerType describes conversion type.</div><hr>\n<p>* <code>WEB_CONVERSION</code> - <span lang=\"ja\">ウェブページのコンバージョンです。</span><span lang=\"en\">Web page conversion\
+      \ </span></p><p>* <code>APP_CONVERSION</code> - <span lang=\"ja\">アプリのコンバージョンです。</span><span lang=\"en\">App conversion\
+      \ </span></p><p>* <code>UNKNOWN</code> - <span lang=\"ja\">未知の値です。</span><span lang=\"en\">Unknown Value</span></p>"

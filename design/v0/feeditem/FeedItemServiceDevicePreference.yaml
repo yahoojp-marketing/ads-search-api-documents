@@ -6,8 +6,8 @@ FeedItemServiceDevicePreference:
   - UNKNOWN
   title: FeedItemServiceDevicePreference
   description: "<div lang=\"ja\">FeedItemServiceDevicePreferenceは、広告を優先的に配信するデバイスを選択します。</div><div lang=\"en\">FeedItemServiceDevicePreference\
-    \ is a selection of device to deliver ads in high priority.</div><hr>\n* <code>SMART_PHONE</code>\
-    \ - <div lang=\"ja\">スマートフォンを優先的に配信します。<br>作成（add）時のみご利用いただけます。<br>※優先デバイスの変更（set）・削除（remove）は実施できません。</div><div lang=\"en\">Deliver\
+    \ is a selection of device to deliver ads in high priority.</div><hr>\n<p>* <code>SMART_PHONE</code>\
+    \ - <span lang=\"ja\">スマートフォンを優先的に配信します。<br>作成（add）時のみご利用いただけます。<br>※優先デバイスの変更（set）・削除（remove）は実施できません。</span><span lang=\"en\">Deliver\
     \ ads to Smartphone in higher priority<br>Available for add operation only<br>It\
-    \ cannot be used in set or remove operation</div>* <code>NONE</code> - <div lang=\"ja\">指定なし</div><div lang=\"en\">not\
-    \ specified</div>* <code>UNKNOWN</code> - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"
+    \ cannot be used in set or remove operation</span></p><p>* <code>NONE</code> - <span lang=\"ja\">指定なし</span><span lang=\"en\">not\
+    \ specified</span></p><p>* <code>UNKNOWN</code> - <span lang=\"ja\">未知の値です。</span><span lang=\"en\">Unknown Value</span></p>"

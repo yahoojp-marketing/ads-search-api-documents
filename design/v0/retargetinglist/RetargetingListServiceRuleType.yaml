@@ -6,6 +6,6 @@ RetargetingListServiceRuleType:
   - UNKNOWN
   title: RetargetingListServiceRuleType
   description: "<div lang=\"ja\">RetargetingListServiceRuleTypeは、ターゲットリストのルール種別です。</div><div lang=\"en\">RetargetingListServiceRuleType\
-    \ is the rule type of target list.</div><hr>\n* <code>URL_RULE</code> - <div lang=\"ja\">URLルール</div><div lang=\"en\">URL\
-    \ rules.</div>* <code>CUSTOM_KEY_RULE</code> - <div lang=\"ja\">カスタムキールール</div><div lang=\"en\">Custom key\
-    \ rules.</div>* <code>UNKNOWN</code> - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"
+    \ is the rule type of target list.</div><hr>\n<p>* <code>URL_RULE</code> - <span lang=\"ja\">URLルール</span><span lang=\"en\">URL\
+    \ rules.</span></p><p>* <code>CUSTOM_KEY_RULE</code> - <span lang=\"ja\">カスタムキールール</span><span lang=\"en\">Custom key\
+    \ rules.</span></p><p>* <code>UNKNOWN</code> - <span lang=\"ja\">未知の値です。</span><span lang=\"en\">Unknown Value</span></p>"

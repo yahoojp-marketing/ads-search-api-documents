@@ -7,5 +7,5 @@ ReportDefinitionServiceReportIncludeDeleted:
   title: ReportDefinitionServiceReportIncludeDeleted
   description: "<div lang=\"ja\">ReportDefinitionServiceReportIncludeDeletedオブジェクトは、削除済みの項目をレポートに出力するかを選択します。</div><div lang=\"en\">ReportDefinitionServiceReportIncludeDeleted\
     \ object describes whether to output deleted items on the report or not.</div><hr>\n\
-    * <code>TRUE</code> - <div lang=\"ja\">出力します</div><div lang=\"en\">Output.</div>* <code>FALSE</code> - <div lang=\"ja\">出力しません</div><div lang=\"en\">Do\
-    \ not output.</div>* <code>UNKNOWN</code> - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"
+    <p>* <code>TRUE</code> - <span lang=\"ja\">出力します</span><span lang=\"en\">Output.</span></p><p>* <code>FALSE</code> - <span lang=\"ja\">出力しません</span><span lang=\"en\">Do\
+    \ not output.</span></p><p>* <code>UNKNOWN</code> - <span lang=\"ja\">未知の値です。</span><span lang=\"en\">Unknown Value</span></p>"

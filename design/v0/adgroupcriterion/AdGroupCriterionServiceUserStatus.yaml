@@ -6,7 +6,7 @@ AdGroupCriterionServiceUserStatus:
   - UNKNOWN
   title: AdGroupCriterionServiceUserStatus
   description: "<div lang=\"ja\">AdGroupCriterionServiceUserStatusは、ユーザーにより広告配信の有無を調整できる設定です。</div><div lang=\"en\">AdGroupCriterionServiceUserStatus\
-    \ displays ad delivery status that can be set by an user.</div><hr>\n* <code>ACTIVE</code>\
-    \ - <div lang=\"ja\">広告は配信されている状態です。</div><div lang=\"en\">Currently ad delivery is active.</div>\
-    * <code>PAUSED</code> - <div lang=\"ja\">広告は一時停止の状態のため、配信されていません。</div><div lang=\"en\">Currently ad is paused,\
-    \ which the delivery is not active.</div>* <code>UNKNOWN</code> - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"
+    \ displays ad delivery status that can be set by an user.</div><hr>\n<p>* <code>ACTIVE</code>\
+    \ - <span lang=\"ja\">広告は配信されている状態です。</span><span lang=\"en\">Currently ad delivery is active.</span></p>\
+    <p>* <code>PAUSED</code> - <span lang=\"ja\">広告は一時停止の状態のため、配信されていません。</span><span lang=\"en\">Currently ad is paused,\
+    \ which the delivery is not active.</span></p><p>* <code>UNKNOWN</code> - <span lang=\"ja\">未知の値です。</span><span lang=\"en\">Unknown Value</span></p>"

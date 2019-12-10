@@ -7,6 +7,6 @@ CampaignTargetServicePlatformType:
   - UNKNOWN
   title: CampaignTargetServicePlatformType
   description: "<div lang=\"ja\">CampaignTargetServicePlatformTypeは、広告を配信するデバイスの種類です。</div><div lang=\"en\">CampaignTargetServicePlatformType\
-    \ is a platform of the selected device.</div><hr>\n* <code>SMART_PHONE</code> - <div lang=\"ja\">スマートフォンです。</div><div lang=\"en\">Smartphone.</div>\
-    * <code>TABLET</code> - <div lang=\"ja\">タブレットです。</div><div lang=\"en\">Tablet.</div>* <code>DESKTOP</code> - <div lang=\"ja\">パソコンです。</div><div lang=\"en\">PC.</div>\
-    * <code>UNKNOWN</code> - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"
+    \ is a platform of the selected device.</div><hr>\n<p>* <code>SMART_PHONE</code> - <span lang=\"ja\">スマートフォンです。</span><span lang=\"en\">Smartphone.</span></p>\
+    <p>* <code>TABLET</code> - <span lang=\"ja\">タブレットです。</span><span lang=\"en\">Tablet.</span></p><p>* <code>DESKTOP</code> - <span lang=\"ja\">パソコンです。</span><span lang=\"en\">PC.</span></p>\
+    <p>* <code>UNKNOWN</code> - <span lang=\"ja\">未知の値です。</span><span lang=\"en\">Unknown Value</span></p>"

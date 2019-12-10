@@ -6,6 +6,6 @@ ConversionTrackerServiceStatus:
   - UNKNOWN
   title: ConversionTrackerServiceStatus
   description: "<div lang=\"ja\">ConversionTrackerServiceStatusは、コンバージョントラッカー情報のステータスを表します。</div><div lang=\"en\">It\
-    \ shows ConversionTracker status.</div><hr>\n* <code>DISABLED</code> - <div lang=\"ja\">コンバージョンページへのアクセスが記録されません。</div><div lang=\"en\">It does not record access to Conversion page.</div>\
-    * <code>ENABLED</code> - <div lang=\"ja\">コンバージョンページへのアクセスが記録されます。</div><div lang=\"en\">It records access to Conversion page.</div>* <code>UNKNOWN</code>\
-    \ - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"
+    \ shows ConversionTracker status.</div><hr>\n<p>* <code>DISABLED</code> - <span lang=\"ja\">コンバージョンページへのアクセスが記録されません。</span><span lang=\"en\">It does not record access to Conversion page.</span></p>\
+    <p>* <code>ENABLED</code> - <span lang=\"ja\">コンバージョンページへのアクセスが記録されます。</span><span lang=\"en\">It records access to Conversion page.</span></p><p>* <code>UNKNOWN</code>\
+    \ - <span lang=\"ja\">未知の値です。</span><span lang=\"en\">Unknown Value</span></p>"

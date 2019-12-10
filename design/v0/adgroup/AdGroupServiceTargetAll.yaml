@@ -7,8 +7,8 @@ AdGroupServiceTargetAll:
   title: AdGroupServiceTargetAll
   description: "<div lang=\"ja\">サイトリターゲティングにおける配信対象ユーザーの設定内容を表します</div><div lang=\"en\">AdGroupServiceTargetAll\
     \ describes the setting of target(include) users on Site Retargeting.</div><hr>\n\
-    * <code>ACTIVE</code> - <div lang=\"ja\">すべてのユーザーを配信対象とします。<br>ターゲットリストのユーザーは入札価格調整率の適用のみ行います。</div><div lang=\"en\">All\
+    <p>* <code>ACTIVE</code> - <span lang=\"ja\">すべてのユーザーを配信対象とします。<br>ターゲットリストのユーザーは入札価格調整率の適用のみ行います。</span><span lang=\"en\">All\
     \ users are target of ad delivery.<br>Only applying bid adjustment rate is done\
-    \ for users on the Target List.</div>* <code>DEACTIVE</code> - <div lang=\"ja\">ターゲットリストのユーザーのみを配信対象とします。<br>また、ターゲットリストのユーザーに対して入札価格調整率を適用します。</div><div lang=\"en\">Users\
+    \ for users on the Target List.</span></p><p>* <code>DEACTIVE</code> - <span lang=\"ja\">ターゲットリストのユーザーのみを配信対象とします。<br>また、ターゲットリストのユーザーに対して入札価格調整率を適用します。</span><span lang=\"en\">Users\
     \ on the Target List are target of ad delivery.<br>And bid adjustment rate is\
-    \ applied to users on the Target List.</div>* <code>UNKNOWN</code> - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"
+    \ applied to users on the Target List.</span></p><p>* <code>UNKNOWN</code> - <span lang=\"ja\">未知の値です。</span><span lang=\"en\">Unknown Value</span></p>"

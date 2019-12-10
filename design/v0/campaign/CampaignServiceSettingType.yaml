@@ -6,9 +6,9 @@ CampaignServiceSettingType:
   - DYNAMIC_ADS_FOR_SEARCH_SETTING
   - UNKNOWN
   description: "<div lang=\"ja\">CampaignServiceSettingTypeは、キャンペーンのターゲティング設定情報を表します。</div><div lang=\"en\">CampaignServiceSettingType\
-    \ describes the setting information of Target on the campaign.</div><hr>\n* <code>GEO_TARGET_TYPE_SETTING</code>\
-    \ - <div lang=\"ja\">キャンペーンの地域ターゲットの設定です。</div><div lang=\"en\">Setting of Geographic Targeting on the\
-    \ Campaign.</div>* <code>TARGET_LIST_SETTING</code> - <div lang=\"ja\">サイトリターゲティングの設定です。</div><div lang=\"en\">Setting\
-    \ of Site Retargeting.</div>* <code>DYNAMIC_ADS_FOR_SEARCH_SETTING</code> - <div lang=\"ja\">動的検索連動型広告の設定です。</div><div lang=\"en\">Setting\
-    \ of Dynamic ads for search.</div>* <code>UNKNOWN</code> - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"
+    \ describes the setting information of Target on the campaign.</div><hr>\n<p>* <code>GEO_TARGET_TYPE_SETTING</code>\
+    \ - <span lang=\"ja\">キャンペーンの地域ターゲットの設定です。</span><span lang=\"en\">Setting of Geographic Targeting on the\
+    \ Campaign.</span></p><p>* <code>TARGET_LIST_SETTING</code> - <span lang=\"ja\">サイトリターゲティングの設定です。</span><span lang=\"en\">Setting\
+    \ of Site Retargeting.</span></p><p>* <code>DYNAMIC_ADS_FOR_SEARCH_SETTING</code> - <span lang=\"ja\">動的検索連動型広告の設定です。</span><span lang=\"en\">Setting\
+    \ of Dynamic ads for search.</span></p><p>* <code>UNKNOWN</code> - <span lang=\"ja\">未知の値です。</span><span lang=\"en\">Unknown Value</span></p>"
   title: CampaignServiceSettingType

@@ -6,21 +6,21 @@ CampaignServiceGeoTargetType:
   - LOCATION_OF_PRESENCE
   - UNKNOWN
   description: "<div lang=\"ja\">CampaignServiceGeoTargetTypeは、地域ターゲティングの地域判定の詳細設定を指定します。</div><div lang=\"en\">CampaignServiceGeoTargetType\
-    \ specifies Advanced Location options of Geo Targeting.</div><hr>\n* <code>DONT_CARE</code>\
-    \ - <div lang=\"ja\">ターゲット地域設定の場合：<br>対象地域に所在する可能性があるユーザー、対象地域に関連する語句で検索したユーザー、対象地域に関心を示している可能性のあるユーザーに広告を配信します。<br>除外ターゲット地域設定の場合：<br>対象地域に所在する可能性があるユーザー、対象地域に関連する語句で検索したユーザー、対象地域に関心を示している可能性のあるユーザーには広告を配信しません。</div><div lang=\"en\">Positive\
+    \ specifies Advanced Location options of Geo Targeting.</div><hr>\n<p>* <code>DONT_CARE</code>\
+    \ - <span lang=\"ja\">ターゲット地域設定の場合：<br>対象地域に所在する可能性があるユーザー、対象地域に関連する語句で検索したユーザー、対象地域に関心を示している可能性のあるユーザーに広告を配信します。<br>除外ターゲット地域設定の場合：<br>対象地域に所在する可能性があるユーザー、対象地域に関連する語句で検索したユーザー、対象地域に関心を示している可能性のあるユーザーには広告を配信しません。</span><span lang=\"en\">Positive\
     \ Geo Target (Advanced location options):<br>Your ads will be displayed to users\
     \ who may be in the target areas, to users who searched with queries including\
     \ the targeted locations, to users who may be interested in the target area.<br>Negative\
     \ Geo Target (Location exclusion options):<br>Your ads will not be displayed to\
     \ users who may stay in the targeted area, who searched with queries including\
-    \ the targeted locations, to users who may be interested in the area.</div>\
-    * <code>AREA_OF_INTENT</code> - <div lang=\"ja\">ターゲット地域設定の場合：<br>対象地域に関連する語句で検索したユーザーや、対象地域に関心を示している可能性のあるユーザーのみに広告を配信します。<br>※除外ターゲット地域設定の場合は選択できません。</div><div lang=\"en\">Positive\
+    \ the targeted locations, to users who may be interested in the area.</span></p>\
+    <p>* <code>AREA_OF_INTENT</code> - <span lang=\"ja\">ターゲット地域設定の場合：<br>対象地域に関連する語句で検索したユーザーや、対象地域に関心を示している可能性のあるユーザーのみに広告を配信します。<br>※除外ターゲット地域設定の場合は選択できません。</span><span lang=\"en\">Positive\
     \ Geo Target (Advanced location options):<br>Your ads will be displayed to users\
     \ who searched with queries including the targeted locations, to users who may\
     \ be interested in the target area.<br>* This is not selectable with Negative Geo\
-    \ Target (Location exclusion options).</div>* <code>LOCATION_OF_PRESENCE</code> - <div lang=\"ja\">ターゲット地域設定の場合：<br>対象地域に所在する可能性があるユーザーにのみ、広告を配信します。<br>除外ターゲット地域設定の場合：対象地域に所在する可能性があるユーザーには、広告は配信されません。</div><div lang=\"en\">Positive\
+    \ Target (Location exclusion options).</span></p><p>* <code>LOCATION_OF_PRESENCE</code> - <span lang=\"ja\">ターゲット地域設定の場合：<br>対象地域に所在する可能性があるユーザーにのみ、広告を配信します。<br>除外ターゲット地域設定の場合：対象地域に所在する可能性があるユーザーには、広告は配信されません。</span><span lang=\"en\">Positive\
     \ Geo Target (Advanced location options):<br>Your ads will be displayed only to\
     \ users who may be in the targeted area.<br>Negative Geo Target (Location Exclusion\
     \ options):<br>Your ads will not be displayed to users who may be in the targeted\
-    \ areas.</div>* <code>UNKNOWN</code> - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"
+    \ areas.</span></p><p>* <code>UNKNOWN</code> - <span lang=\"ja\">未知の値です。</span><span lang=\"en\">Unknown Value</span></p>"
   title: CampaignServiceGeoTargetType

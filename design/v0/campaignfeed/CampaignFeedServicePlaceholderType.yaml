@@ -8,8 +8,8 @@ CampaignFeedServicePlaceholderType:
   - UNKNOWN
   title: CampaignFeedServicePlaceholderType
   description: "<div lang=\"ja\">CampaignFeedServicePlaceholderTypeは、FeedItem情報の種類を選択します。</div><div lang=\"en\">CampaignFeedServicePlaceholderType\
-    \ selects the type of FeedItem information.</div><hr>\n* <code>CALLOUT</code> - <div lang=\"ja\">テキスト補足オプションです。</div><div lang=\"en\">Callout\
-    \ options.</div>* <code>STRUCTURED_SNIPPET</code> - <div lang=\"ja\">カテゴリ補足オプションです。</div><div lang=\"en\">Structured\
-    \ snippet options.</div>* <code>QUICKLINK</code> - <div lang=\"ja\">広告表示オプションのクイックリンクオプションです。</div><div lang=\"en\">QuickLinks\
-    \ of Ad Display Options.</div>* <code>CALLEXTENSION</code> - <div lang=\"ja\">広告表示オプションの電話番号オプションです。</div><div lang=\"en\">Call\
-    \ Extensions of Ad Display Options.</div>* <code>UNKNOWN</code> - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"
+    \ selects the type of FeedItem information.</div><hr>\n<p>* <code>CALLOUT</code> - <span lang=\"ja\">テキスト補足オプションです。</span><span lang=\"en\">Callout\
+    \ options.</span></p><p>* <code>STRUCTURED_SNIPPET</code> - <span lang=\"ja\">カテゴリ補足オプションです。</span><span lang=\"en\">Structured\
+    \ snippet options.</span></p><p>* <code>QUICKLINK</code> - <span lang=\"ja\">広告表示オプションのクイックリンクオプションです。</span><span lang=\"en\">QuickLinks\
+    \ of Ad Display Options.</span></p><p>* <code>CALLEXTENSION</code> - <span lang=\"ja\">広告表示オプションの電話番号オプションです。</span><span lang=\"en\">Call\
+    \ Extensions of Ad Display Options.</span></p><p>* <code>UNKNOWN</code> - <span lang=\"ja\">未知の値です。</span><span lang=\"en\">Unknown Value</span></p>"

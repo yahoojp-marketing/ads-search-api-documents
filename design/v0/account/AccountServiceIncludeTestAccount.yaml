@@ -10,7 +10,7 @@ AccountServiceIncludeTestAccount:
   description: |
     <div lang="ja">取得アカウント制御</div>
     <div lang="en">Control which accounts are retrieved.</div><hr>
-    * <code>ONLY_TEST</code> - <div lang="ja">テストアカウントのみ</div><div lang="en">Test account only.</div>
-    * <code>EXCLUDE_TEST</code> - <div lang="ja">テストアカウントを除外</div><div lang="en">Exclude test accounts.</div>
-    * <code>ALL</code> - <div lang="ja">全てのアカウント</div><div lang="en">All accounts.</div>
-    * <code>UNKNOWN</code> - <div lang="ja">未知の値です。</div><div lang="en">Unknown Value</div>
+    <p>* <code>ONLY_TEST</code> - <span lang="ja">テストアカウントのみ</span><span lang="en">Test account only.</span></p>
+    <p>* <code>EXCLUDE_TEST</code> - <span lang="ja">テストアカウントを除外</span><span lang="en">Exclude test accounts.</span></p>
+    <p>* <code>ALL</code> - <span lang="ja">全てのアカウント</span><span lang="en">All accounts.</span></p>
+    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>

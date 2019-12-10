@@ -9,8 +9,8 @@ AdGroupWebpageServiceWebpageConditionType:
   - UNKNOWN
   title: AdGroupWebpageServiceWebpageConditionType
   description: "<div lang=\"ja\">AdGroupWebpageServiceWebpageConditionTypeは、Webページの条件種別です。</div><div lang=\"en\">AdGroupWebpageServiceWebpageConditionType\
-    \ is rule type of web page.</div><hr>\n* <code>PAGE_CONTENT</code> - <div lang=\"ja\">Webページのコンテンツ</div><div lang=\"en\">Contents\
-    \ of web page</div>* <code>CUSTOM_LABEL</code> - <div lang=\"ja\">カスタムラベル</div><div lang=\"en\">Custom label</div>\
-    * <code>ALL_PAGES</code> - <div lang=\"ja\">すべてのWebページ</div><div lang=\"en\">All web pages</div>* <code>URL</code> - <div lang=\"ja\">URL</div><div lang=\"en\">URL</div>\
-    * <code>PAGE_TITLE</code> - <div lang=\"ja\">Webページのタイトル</div><div lang=\"en\">Title of web page</div>* <code>UNKNOWN</code>\
-    \ - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"
+    \ is rule type of web page.</div><hr>\n<p>* <code>PAGE_CONTENT</code> - <span lang=\"ja\">Webページのコンテンツ</span><span lang=\"en\">Contents\
+    \ of web page</span></p><p>* <code>CUSTOM_LABEL</code> - <span lang=\"ja\">カスタムラベル</span><span lang=\"en\">Custom label</span></p>\
+    <p>* <code>ALL_PAGES</code> - <span lang=\"ja\">すべてのWebページ</span><span lang=\"en\">All web pages</span></p><p>* <code>URL</code> - <span lang=\"ja\">URL</span><span lang=\"en\">URL</span></p>\
+    <p>* <code>PAGE_TITLE</code> - <span lang=\"ja\">Webページのタイトル</span><span lang=\"en\">Title of web page</span></p><p>* <code>UNKNOWN</code>\
+    \ - <span lang=\"ja\">未知の値です。</span><span lang=\"en\">Unknown Value</span></p>"

@@ -8,9 +8,9 @@ AuditLogServiceSourceType:
   - UNKNOWN
   title: AuditLogServiceSourceType
   description: "<div lang=\"ja\">AuditLogServiceSourceTypeは、操作履歴における操作者を表します。</div><div lang=\"en\">AuditLogServiceSourceType\
-    \ desribes the operator information of operation history data.</div><hr>\n* <code>API</code>\
-    \ - <div lang=\"ja\">APIアカウントによる操作です。</div><div lang=\"en\">Operated by API account.</div>* <code>YAHOO_JAPAN</code>\
-    \ - <div lang=\"ja\">Yahoo!プロモーション広告システムによる操作です。</div><div lang=\"en\">Operated by the system of Yahoo!\
-    \ Japan Promotional Ad.</div>* <code>CAMPAIGN_MANAGEMENT_TOOL</code> - <div lang=\"ja\">広告管理ツールからの履歴です。\
-    \ </div><div lang=\"en\">Campaign Management Tool</div>* <code>ALL</code> - <div lang=\"ja\">すべての操作者による操作です。</div><div lang=\"en\">Operated\
-    \ by all of operators.</div>* <code>UNKNOWN</code> - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"
+    \ desribes the operator information of operation history data.</div><hr>\n<p>* <code>API</code>\
+    \ - <span lang=\"ja\">APIアカウントによる操作です。</span><span lang=\"en\">Operated by API account.</span></p><p>* <code>YAHOO_JAPAN</code>\
+    \ - <span lang=\"ja\">Yahoo!プロモーション広告システムによる操作です。</span><span lang=\"en\">Operated by the system of Yahoo!\
+    \ Japan Promotional Ad.</span></p><p>* <code>CAMPAIGN_MANAGEMENT_TOOL</code> - <span lang=\"ja\">広告管理ツールからの履歴です。\
+    \ </span><span lang=\"en\">Campaign Management Tool</span></p><p>* <code>ALL</code> - <span lang=\"ja\">すべての操作者による操作です。</span><span lang=\"en\">Operated\
+    \ by all of operators.</span></p><p>* <code>UNKNOWN</code> - <span lang=\"ja\">未知の値です。</span><span lang=\"en\">Unknown Value</span></p>"

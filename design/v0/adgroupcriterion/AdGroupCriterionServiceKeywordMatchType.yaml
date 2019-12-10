@@ -7,6 +7,6 @@ AdGroupCriterionServiceKeywordMatchType:
   - UNKNOWN
   title: AdGroupCriterionServiceKeywordMatchType
   description: "<div lang=\"ja\">AdGroupCriterionServiceKeywordMatchTypeは、キーワードのマッチタイプを表します。</div><div lang=\"en\">AdGroupCriterionServiceKeywordMatchType\
-    \ describes keyword match type.</div><hr>\n* <code>EXACT</code> - <div lang=\"ja\">完全一致です。</div><div lang=\"en\">Exact\
-    \ match.</div>* <code>PHRASE</code> - <div lang=\"ja\">フレーズ一致です。</div><div lang=\"en\">Phrase match.</div>\
-    * <code>BROAD</code> - <div lang=\"ja\">部分一致です。</div><div lang=\"en\">Broad match.</div>* <code>UNKNOWN</code> - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"
+    \ describes keyword match type.</div><hr>\n<p>* <code>EXACT</code> - <span lang=\"ja\">完全一致です。</span><span lang=\"en\">Exact\
+    \ match.</span></p><p>* <code>PHRASE</code> - <span lang=\"ja\">フレーズ一致です。</span><span lang=\"en\">Phrase match.</span></p>\
+    <p>* <code>BROAD</code> - <span lang=\"ja\">部分一致です。</span><span lang=\"en\">Broad match.</span></p><p>* <code>UNKNOWN</code> - <span lang=\"ja\">未知の値です。</span><span lang=\"en\">Unknown Value</span></p>"

@@ -6,6 +6,6 @@ ReportDefinitionServiceReportLanguage:
   - UNKNOWN
   title: ReportDefinitionServiceReportLanguage
   description: "<div lang=\"ja\">ReportDefinitionServiceReportLanguageは、レポート定義の言語選択を表します。</div><div lang=\"en\">ReportDefinitionServiceReportLanguage\
-    \ is a language selection for report definition.</div><hr>\n* <code>JA</code> - <div lang=\"ja\">言語：日本語です。</div><div lang=\"en\">Language:\
-    \ Japanese.</div>* <code>EN</code> - <div lang=\"ja\">言語：英語です。</div><div lang=\"en\">Language: English.</div>\
-    * <code>UNKNOWN</code> - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"
+    \ is a language selection for report definition.</div><hr>\n<p>* <code>JA</code> - <span lang=\"ja\">言語：日本語です。</span><span lang=\"en\">Language:\
+    \ Japanese.</span></p><p>* <code>EN</code> - <span lang=\"ja\">言語：英語です。</span><span lang=\"en\">Language: English.</span></p>\
+    <p>* <code>UNKNOWN</code> - <span lang=\"ja\">未知の値です。</span><span lang=\"en\">Unknown Value</span></p>"

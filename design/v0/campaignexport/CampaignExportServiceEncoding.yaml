@@ -6,6 +6,6 @@ CampaignExportServiceEncoding:
   - UNKNOWN
   title: CampaignExportServiceEncoding
   description: "<div lang=\"ja\">CampaignExportServiceEncodingは、エクスポートするデータのエンコーディング設定です。</div><div lang=\"en\">CampaignExportServiceEncoding\
-    \ is an encoding setting for exporting data.</div><hr>\n* <code>UTF-8</code> - <div lang=\"ja\">UTF-8です。</div><div lang=\"en\">UTF-8\
-    \ encode.</div>* <code>SJIS</code> - <div lang=\"ja\">Shift-JISです。</div><div lang=\"en\">Shift-JIS encode.</div>\
-    * <code>UNKNOWN</code> - <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"
+    \ is an encoding setting for exporting data.</div><hr>\n<p>* <code>UTF-8</code> - <span lang=\"ja\">UTF-8です。</span><span lang=\"en\">UTF-8\
+    \ encode.</span></p><p>* <code>SJIS</code> - <span lang=\"ja\">Shift-JISです。</span><span lang=\"en\">Shift-JIS encode.</span></p>\
+    <p>* <code>UNKNOWN</code> - <span lang=\"ja\">未知の値です。</span><span lang=\"en\">Unknown Value</span></p>"

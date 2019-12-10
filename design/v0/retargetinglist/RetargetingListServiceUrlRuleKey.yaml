@@ -6,6 +6,6 @@ RetargetingListServiceUrlRuleKey:
   - UNKNOWN
   title: RetargetingListServiceUrlRuleKey
   description: "<div lang=\"ja\">RetargetingListServiceUrlRuleKeyは、URLルールに設定する評価項目です。</div><div lang=\"en\">RetargetingListServiceUrlRuleKey\
-    \ is the evaluation to set URL rules.</div><hr>\n* <code>URL</code> - <div lang=\"ja\">URLです。</div><div lang=\"en\">URL.</div>\
-    * <code>REFFER_URL</code> - <div lang=\"ja\">リファラURLです。</div><div lang=\"en\">Refer URL.</div>* <code>UNKNOWN</code> -\
-    \ <div lang=\"ja\">未知の値です。</div><div lang=\"en\">Unknown Value</div>"
+    \ is the evaluation to set URL rules.</div><hr>\n<p>* <code>URL</code> - <span lang=\"ja\">URLです。</span><span lang=\"en\">URL.</span></p>\
+    <p>* <code>REFFER_URL</code> - <span lang=\"ja\">リファラURLです。</span><span lang=\"en\">Refer URL.</span></p><p>* <code>UNKNOWN</code> -\
+    \ <span lang=\"ja\">未知の値です。</span><span lang=\"en\">Unknown Value</span></p>"
