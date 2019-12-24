@@ -1,5 +1,6 @@
 AdGroupWebpageServiceWebpageConditionType:
   type: string
+  nullable: true
   enum:
   - URL
   - PAGE_TITLE

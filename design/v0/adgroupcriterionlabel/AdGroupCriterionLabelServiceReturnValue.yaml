@@ -1,8 +1,10 @@
 AdGroupCriterionLabelServiceReturnValue:
   type: object
+  nullable: true
   properties:
     values:
       type: array
+      nullable: true
       items:
         $ref: 'AdGroupCriterionLabelServiceValue.yaml#/AdGroupCriterionLabelServiceValue'
   title: AdGroupCriterionLabelServiceReturnValue

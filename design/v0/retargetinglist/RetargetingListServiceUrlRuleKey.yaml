@@ -1,5 +1,6 @@
 RetargetingListServiceUrlRuleKey:
   type: string
+  nullable: true
   enum:
   - URL
   - REFFER_URL

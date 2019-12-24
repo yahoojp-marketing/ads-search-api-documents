@@ -1,35 +1,44 @@
 AdGroupFeedServiceSelector:
   type: object
+  nullable: true
   required:
   - accountId
   properties:
     accountId:
       type: integer
+      nullable: false
       format: int64
       description: "<div lang=\"ja\">アカウントIDです。</div><div lang=\"en\">Account ID.</div>"
     adGroupIds:
       type: array
+      nullable: true
       items:
         type: integer
+        nullable: true
         format: int64
       maxItems: 500
       description: "<div lang=\"ja\">広告グループIDです。</div><div lang=\"en\">Ad group ID.</div>"
     campaignIds:
       type: array
+      nullable: true
       items:
         type: integer
+        nullable: true
         format: int64
       maxItems: 500
       description: "<div lang=\"ja\">キャンペーンIDです。</div><div lang=\"en\">Campaign ID.</div>"
     feedItemIds:
       type: array
+      nullable: true
       items:
         type: integer
+        nullable: true
         format: int64
       maxItems: 500
       description: "<div lang=\"ja\">FeedItem情報のIDです。</div><div lang=\"en\">FeedItem information ID.</div>"
     numberResults:
       type: integer
+      nullable: true
       format: int32
       minimum: 1
       maximum: 500
@@ -39,11 +48,13 @@ AdGroupFeedServiceSelector:
         \ see Entity Limits per operation.</div>"
     placeholderTypes:
       type: array
+      nullable: true
       items:
         $ref: 'AdGroupFeedServicePlaceholderType.yaml#/AdGroupFeedServicePlaceholderType'
       maxItems: 4
     startIndex:
       type: integer
+      nullable: true
       format: int32
       minimum: 1
       default: 1

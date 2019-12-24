@@ -1,5 +1,6 @@
 CampaignCriterionServiceUse:
   type: string
+  nullable: true
   enum:
   - NEGATIVE
   - UNKNOWN

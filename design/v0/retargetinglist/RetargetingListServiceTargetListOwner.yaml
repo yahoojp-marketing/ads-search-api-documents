@@ -1,5 +1,6 @@
 RetargetingListServiceTargetListOwner:
   type: string
+  nullable: true
   enum:
   - OWNER
   - SHARED

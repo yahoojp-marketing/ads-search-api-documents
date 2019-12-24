@@ -1,15 +1,19 @@
 ReportDefinitionServiceReportFilter:
   type: object
+  nullable: true
   properties:
     field:
       type: string
+      nullable: true
       description: "<div lang=\"ja\">フィルタ条件を設定する表示 項目です。</div><div lang=\"en\">Field which you set filtering.</div>"
     reportOperator:
       $ref: 'ReportDefinitionServiceReportOperator.yaml#/ReportDefinitionServiceReportOperator'
     value:
       type: array
+      nullable: true
       items:
         type: string
+        nullable: true
       description: "<div lang=\"ja\">表示項目の条件値です。</div><div lang=\"en\">Condition values to filter the field.</div>"
   title: ReportDefinitionServiceReportFilter
   description: "<div lang=\"ja\">ReportDefinitionServiceReportFilterオブジェクトは、レポートのフィルタ条件を表します。フィルタ条件は最大6つまで設定が可能です。</div><div lang=\"en\">ReportDefinitionServiceReportFilter\

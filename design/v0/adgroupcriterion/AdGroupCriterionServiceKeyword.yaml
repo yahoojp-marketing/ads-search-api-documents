@@ -1,10 +1,12 @@
 AdGroupCriterionServiceKeyword:
   type: object
+  nullable: true
   properties:
     keywordMatchType:
       $ref: 'AdGroupCriterionServiceKeywordMatchType.yaml#/AdGroupCriterionServiceKeywordMatchType'
     text:
       type: string
+      nullable: true
       description: "<div lang=\"ja\">キーワードの内容です。<br>※最大80文字、10ワードです。</div><div lang=\"en\">AdGroupCriterionServiceKeyword\
         \ element.<br>*Maximum of 80 letters, 10 word.</div>"
   title: AdGroupCriterionServiceKeyword

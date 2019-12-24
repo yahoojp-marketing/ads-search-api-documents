@@ -1,5 +1,6 @@
 AuditLogServiceEncoding:
   type: string
+  nullable: true
   enum:
   - SJIS
   - UTF_8

@@ -1,8 +1,10 @@
 PageFeedItemServiceDownloadJobReturnValue:
   type: object
+  nullable: true
   properties:
     values:
       type: array
+      nullable: true
       items:
         $ref: 'PageFeedItemServiceDownloadJobValue.yaml#/PageFeedItemServiceDownloadJobValue'
   title: PageFeedItemServiceDownloadJobReturnValue

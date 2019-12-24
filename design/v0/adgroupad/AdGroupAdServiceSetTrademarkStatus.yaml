@@ -1,16 +1,20 @@
 AdGroupAdServiceSetTrademarkStatus:
   type: object
+  nullable: true
   properties:
     adGroupId:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">広告グループIDです。</div><div lang=\"en\">Ad group ID</div>"
     adId:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">広告IDです。</div><div lang=\"en\">Ad ID</div>"
     campaignId:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">キャンペーンIDです。</div><div lang=\"en\">Campaign ID</div>"
   title: AdGroupAdServiceSetTrademarkStatus

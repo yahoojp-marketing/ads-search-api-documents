@@ -1,5 +1,6 @@
 RetargetingListServiceRuleType:
   type: string
+  nullable: true
   enum:
   - URL_RULE
   - CUSTOM_KEY_RULE

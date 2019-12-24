@@ -1,5 +1,6 @@
 AccountServiceAutoTaggingEnabled:
   type: string
+  nullable: true
   enum:
   - 'TRUE'
   - 'FALSE'

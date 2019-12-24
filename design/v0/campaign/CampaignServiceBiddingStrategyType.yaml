@@ -1,5 +1,6 @@
 CampaignServiceBiddingStrategyType:
   type: string
+  nullable: true
   enum:
   - MANUAL_CPC
   - TARGET_ROAS

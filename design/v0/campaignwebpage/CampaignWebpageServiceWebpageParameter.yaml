@@ -1,8 +1,10 @@
 CampaignWebpageServiceWebpageParameter:
   type: object
+  nullable: true
   properties:
     conditions:
       type: array
+      nullable: true
       items:
         $ref: 'CampaignWebpageServiceWebpageCondition.yaml#/CampaignWebpageServiceWebpageCondition'
   title: CampaignWebpageServiceWebpageParameter

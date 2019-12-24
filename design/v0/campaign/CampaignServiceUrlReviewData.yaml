@@ -1,10 +1,13 @@
 CampaignServiceUrlReviewData:
   type: object
+  nullable: true
   properties:
     disapprovalReasonCodes:
       type: array
+      nullable: true
       items:
         type: string
+        nullable: true
       description: "<div lang=\"ja\">審査否認理由コードです。</div><div lang=\"en\">Code of Disapproval reason.<br></div>"
     disapprovalReviewUrl:
       $ref: 'CampaignServiceReviewUrl.yaml#/CampaignServiceReviewUrl'

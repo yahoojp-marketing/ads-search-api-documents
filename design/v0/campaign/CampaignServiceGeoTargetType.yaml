@@ -1,5 +1,6 @@
 CampaignServiceGeoTargetType:
   type: string
+  nullable: true
   enum:
   - DONT_CARE
   - AREA_OF_INTENT

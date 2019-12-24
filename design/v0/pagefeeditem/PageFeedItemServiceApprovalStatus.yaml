@@ -1,5 +1,6 @@
 PageFeedItemServiceApprovalStatus:
   type: string
+  nullable: true
   enum:
   - APPROVED
   - APPROVED_WITH_REVIEW

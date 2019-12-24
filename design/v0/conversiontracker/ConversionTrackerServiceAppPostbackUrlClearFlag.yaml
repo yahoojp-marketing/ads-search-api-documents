@@ -1,5 +1,6 @@
 ConversionTrackerServiceAppPostbackUrlClearFlag:
   type: string
+  nullable: true
   enum:
   - 'TRUE'
   - UNKNOWN

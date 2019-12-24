@@ -1,5 +1,6 @@
 CampaignTargetServicePlatformTarget:
   type: object
+  nullable: true
   properties:
     platformType:
       $ref: 'CampaignTargetServicePlatformType.yaml#/CampaignTargetServicePlatformType'

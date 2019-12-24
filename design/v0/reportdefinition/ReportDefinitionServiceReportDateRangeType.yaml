@@ -1,5 +1,6 @@
 ReportDefinitionServiceReportDateRangeType:
   type: string
+  nullable: true
   enum:
   - TODAY
   - YESTERDAY

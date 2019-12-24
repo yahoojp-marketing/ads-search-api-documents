@@ -1,12 +1,15 @@
 SharedCriterionServiceValue:
   type: object
+  nullable: true
   properties:
     errors:
       type: array
+      nullable: true
       items:
         $ref: '../../Error.yaml#/Error'
     operationSucceeded:
       type: boolean
+      nullable: true
       description: "<div lang=\"ja\">処理結果を表示します。</div><div lang=\"en\">Showing operation result.</div>"
     sharedCriterion:
       $ref: 'SharedCriterion.yaml#/SharedCriterion'

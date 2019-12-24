@@ -1,13 +1,16 @@
 DictionaryServiceGeographicLocationPage:
   type: object
+  nullable: true
   properties:
     totalNumEntries:
       type: integer
+      nullable: false
       format: int32
       description: "<div lang=\"ja\">取得全件数(ページ毎ではなく全件)です。</div><div lang=\"en\">Total number of entries.\
         \ (Sum total,  Not per page)</div>"
     values:
       type: array
+      nullable: true
       items:
         $ref: 'DictionaryServiceGeographicLocationValue.yaml#/DictionaryServiceGeographicLocationValue'
   title: DictionaryServiceGeographicLocationPage

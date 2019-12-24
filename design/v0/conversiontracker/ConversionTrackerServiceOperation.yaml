@@ -1,15 +1,18 @@
 ConversionTrackerServiceOperation:
   type: object
+  nullable: true
   required:
   - accountId
   - operand
   properties:
     accountId:
       type: integer
+      nullable: false
       format: int64
       description: "<div lang=\"ja\">アカウントIDです。</div><div lang=\"en\">Account ID</div>"
     operand:
       type: array
+      nullable: true
       items:
         $ref: 'ConversionTracker.yaml#/ConversionTracker'
       minItems: 1

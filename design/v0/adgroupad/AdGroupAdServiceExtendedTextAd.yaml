@@ -1,16 +1,20 @@
 AdGroupAdServiceExtendedTextAd:
   type: object
+  nullable: true
   properties:
     headline2:
       type: string
+      nullable: true
       description: "<div lang=\"ja\">2行目のタイトルです。</div><div lang=\"en\">Title on the second line.</div>"
     path1:
       type: string
+      nullable: true
       description: "<div lang=\"ja\">自動作成される表示URLを補足するパスです。<br>※path2を指定する場合は、path1は必須。</div><div lang=\"en\">The\
         \ path information which complements display URL generated automatically.<br>*To\
         \ specify path2, path1 is required.</div>"
     path2:
       type: string
+      nullable: true
       description: "<div lang=\"ja\">自動作成される表示URLを補足するパスです。<br>※path1を指定していない場合、path2はIgnore。</div><div lang=\"en\">The\
         \ path information which complements display URL generated automatically.<br>*If\
         \ path1 is not specified, path2 can be ignored.</div>"

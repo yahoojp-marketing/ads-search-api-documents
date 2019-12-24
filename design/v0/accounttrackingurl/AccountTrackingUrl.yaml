@@ -1,27 +1,35 @@
 AccountTrackingUrl:
   type: object
+  nullable: true
   properties:
     accountId:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">アカウントIDです。</div><div lang=\"en\">Account ID.</div>"
     accountName:
       type: string
+      nullable: true
       description: "<div lang=\"ja\">アカウント名です。</div><div lang=\"en\">Account name.</div>"
     disapprovalReasonCodes:
       type: array
+      nullable: true
       items:
         type: string
+        nullable: true
       description: "<div lang=\"ja\">審査否認理由コードです。</div><div lang=\"en\">Code of disapproval reason.</div>"
     disapprovalReviewUrl:
       type: string
+      nullable: true
       description: "<div lang=\"ja\">審査否認されたトラッキングURLです。</div><div lang=\"en\">Tracking URL that has been\
         \ disapproved.</div>"
     inReviewUrl:
       type: string
+      nullable: true
       description: "<div lang=\"ja\">審査中のトラッキングURLです。</div><div lang=\"en\">Tracking URL that is in review.</div>"
     trackingUrl:
       type: string
+      nullable: true
       description: "<div lang=\"ja\">トラッキングURLです。<br>※空で設定すると、既存の トラッキングURLは削除されます。</div><div lang=\"en\">Tracking\
         \ URL.<br>*When tag is set blank, existing Tracking URL will be deleted</div>"
     urlApprovalStatus:

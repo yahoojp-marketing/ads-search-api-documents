@@ -1,5 +1,6 @@
 CampaignServiceBiddingScheme:
   type: object
+  nullable: true
   properties:
     biddingStrategyType:
       $ref: 'CampaignServiceBiddingStrategyType.yaml#/CampaignServiceBiddingStrategyType'

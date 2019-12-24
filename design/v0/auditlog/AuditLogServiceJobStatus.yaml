@@ -1,5 +1,6 @@
 AuditLogServiceJobStatus:
   type: string
+  nullable: true
   enum:
   - IN_PROGRESS
   - COMPLETED

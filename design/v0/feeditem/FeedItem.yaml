@@ -1,8 +1,10 @@
 FeedItem:
   type: object
+  nullable: true
   properties:
     accountId:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">アカウントIDです。</div><div lang=\"en\">Account ID</div>"
     approvalStatus:
@@ -13,35 +15,44 @@ FeedItem:
       $ref: 'FeedItemServiceDevicePreference.yaml#/FeedItemServiceDevicePreference'
     disapprovalReasonCodes:
       type: array
+      nullable: true
       items:
         type: string
+        nullable: true
       description: "<div lang=\"ja\">審査否認理由です。</div><div lang=\"en\">Reject reason on editorial review</div>"
     endDate:
       type: string
+      nullable: true
       description: "<div lang=\"ja\">配信終了日です。<br>※空で設定すると、既存の配信終了日は削除されます。</div><div lang=\"en\">End date\
         \ of ad display<br>∗On setting blank, existing end date of ad display will\
         \ be deleted</div>"
     feedId:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">フィードIDです。</div><div lang=\"en\">Feed ID</div>"
     feedItemAttribute:
       type: array
+      nullable: true
       items:
         $ref: 'FeedItemServiceAttribute.yaml#/FeedItemServiceAttribute'
     feedItemId:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">フィードアイテムIDです。</div><div lang=\"en\">Feed Item ID</div>"
     feedItemTrackId:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">トラッキング用フィードアイテムIDです。</div><div lang=\"en\">Feed\
         \ Item ID for tracking</div>"
     invalidedTrademarks:
       type: array
+      nullable: true
       items:
         type: string
+        nullable: true
       description: "<div lang=\"ja\">制限された商標</div><div lang=\"en\">Invalided trademarks.</div>"
     location:
       $ref: 'FeedItemServiceLocation.yaml#/FeedItemServiceLocation'
@@ -53,6 +64,7 @@ FeedItem:
       $ref: 'FeedItemServiceScheduling.yaml#/FeedItemServiceScheduling'
     startDate:
       type: string
+      nullable: true
       description: "<div lang=\"ja\">配信開始日です。<br>※空で設定すると、既存の配信開始日は削除されます。</div><div lang=\"en\">Start date\
         \ of ad display<br>∗On setting blank, existing start date of ad display will\
         \ be deleted</div>"

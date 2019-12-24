@@ -1,5 +1,6 @@
 CampaignServiceConversionOptimizerEligibility:
   type: string
+  nullable: true
   enum:
   - ENABLE
   - DISABLE

@@ -1,8 +1,10 @@
 FeedServiceReturnValue:
   type: object
+  nullable: true
   properties:
     values:
       type: array
+      nullable: true
       items:
         $ref: 'FeedServiceValue.yaml#/FeedServiceValue'
   title: FeedServiceReturnValue

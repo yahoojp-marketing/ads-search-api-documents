@@ -1,8 +1,10 @@
 CampaignFeedServiceReturnValue:
   type: object
+  nullable: true
   properties:
     values:
       type: array
+      nullable: true
       items:
         $ref: 'CampaignFeedServiceValue.yaml#/CampaignFeedServiceValue'
   title: CampaignFeedServiceReturnValue

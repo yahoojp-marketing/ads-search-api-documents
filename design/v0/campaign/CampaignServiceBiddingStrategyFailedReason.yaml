@@ -1,5 +1,6 @@
 CampaignServiceBiddingStrategyFailedReason:
   type: string
+  nullable: true
   enum:
   - FAILURE
   - CONVERSION_TRACKING_NOT_ENABLED

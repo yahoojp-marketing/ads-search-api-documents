@@ -1,5 +1,6 @@
 FeedItemServiceDayOfWeek:
   type: string
+  nullable: true
   enum:
   - MONDAY
   - TUESDAY

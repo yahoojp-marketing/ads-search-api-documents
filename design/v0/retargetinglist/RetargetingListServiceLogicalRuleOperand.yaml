@@ -1,8 +1,10 @@
 RetargetingListServiceLogicalRuleOperand:
   type: object
+  nullable: true
   properties:
     targetListId:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">ターゲットリストIDです。<br>組合せのターゲットリストは設定できません。</div><div lang=\"en\">Target\
         \ list ID.<br>Cannot set the combination target list.</div>"

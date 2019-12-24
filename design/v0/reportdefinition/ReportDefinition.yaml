@@ -1,12 +1,15 @@
 ReportDefinition:
   type: object
+  nullable: true
   properties:
     accountId:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">アカウントIDです。</div><div lang=\"en\">Account ID.</div>"
     completeTime:
       type: string
+      nullable: true
       description: "<div lang=\"ja\">ジョブの完了時刻です。<br>※YYYY/MM/DD hh:mm:ss形式になります。<br>※hhは24時間表記になります。</div><div lang=\"en\">Completion\
         \ time of Report Job request.<br>*Displays in YYYY/MM/DD hh:mm:ss form.<br>*hh\
         \ will display in 24-hour time.</div>"
@@ -14,12 +17,15 @@ ReportDefinition:
       $ref: 'ReportDefinitionServiceReportDateRange.yaml#/ReportDefinitionServiceReportDateRange'
     fields:
       type: array
+      nullable: true
       items:
         type: string
+        nullable: true
       description: "<div lang=\"ja\">フィールド（レポートの出力項目名）です。</div><div lang=\"en\">Item name of the report.<br>Can\
         \ appoint the value retrieved from getReportFields.</div>"
     filters:
       type: array
+      nullable: true
       items:
         $ref: 'ReportDefinitionServiceReportFilter.yaml#/ReportDefinitionServiceReportFilter'
     reportCompressType:
@@ -36,9 +42,11 @@ ReportDefinition:
       $ref: 'ReportDefinitionServiceReportIncludeZeroImpressions.yaml#/ReportDefinitionServiceReportIncludeZeroImpressions'
     reportJobErrorDetail:
       type: string
+      nullable: true
       description: "<div lang=\"ja\">レポートジョブのエラー詳細です。</div><div lang=\"en\">Error details of Report Job.</div>"
     reportJobId:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">レポートジョブIDです。</div><div lang=\"en\">Report Job ID.</div>"
     reportJobStatus:
@@ -47,11 +55,13 @@ ReportDefinition:
       $ref: 'ReportDefinitionServiceReportLanguage.yaml#/ReportDefinitionServiceReportLanguage'
     reportName:
       type: string
+      nullable: true
       description: "<div lang=\"ja\">レポート名称です。</div><div lang=\"en\">Name of the report.</div>"
     reportType:
       $ref: 'ReportDefinitionServiceReportType.yaml#/ReportDefinitionServiceReportType'
     requestTime:
       type: string
+      nullable: true
       description: "<div lang=\"ja\">ジョブの起動時刻です。<br>※YYYY/MM/DD hh:mm:ss形式になります。<br>※hhは24時間表記になります。</div><div lang=\"en\">Start\
         \ time of Report Job request.<br>*Displays in YYYY/MM/DD hh:mm:ss form.<br>*hh\
         \ will display in 24-hour time.</div>"

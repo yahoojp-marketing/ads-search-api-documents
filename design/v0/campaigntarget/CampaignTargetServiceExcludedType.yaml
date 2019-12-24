@@ -1,5 +1,6 @@
 CampaignTargetServiceExcludedType:
   type: string
+  nullable: true
   enum:
   - INCLUDED
   - EXCLUDED

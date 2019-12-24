@@ -1,10 +1,12 @@
 RetargetingListServiceCustomKeyPage:
   type: object
+  nullable: true
   properties:
     customKeys:
       $ref: 'RetargetingListServiceCustomKey.yaml#/RetargetingListServiceCustomKey'
     totalNumEntries:
       type: integer
+      nullable: false
       format: int32
       description: "<div lang=\"ja\">取得される項目の総件数です。</div><div lang=\"en\">Total number of entries in the result that this page is a part of.</div>"
   title: RetargetingListServiceCustomKeyPage

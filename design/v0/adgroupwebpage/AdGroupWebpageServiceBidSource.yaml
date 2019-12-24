@@ -1,5 +1,6 @@
 AdGroupWebpageServiceBidSource:
   type: string
+  nullable: true
   enum:
   - ADGROUP
   - CRITERION

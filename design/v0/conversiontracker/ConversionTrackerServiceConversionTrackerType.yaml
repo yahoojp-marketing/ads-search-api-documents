@@ -1,5 +1,6 @@
 ConversionTrackerServiceConversionTrackerType:
   type: string
+  nullable: true
   enum:
   - WEB_CONVERSION
   - APP_CONVERSION

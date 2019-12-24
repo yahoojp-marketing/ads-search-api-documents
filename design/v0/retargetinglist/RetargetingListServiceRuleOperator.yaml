@@ -1,5 +1,6 @@
 RetargetingListServiceRuleOperator:
   type: string
+  nullable: true
   enum:
   - UNKNOWN
   - EQUALS

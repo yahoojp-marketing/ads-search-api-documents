@@ -1,8 +1,10 @@
 AdGroupCriterionServiceAdditionalAdvancedMobileUrls:
   type: object
+  nullable: true
   properties:
     additionalAdvancedMobileUrl:
       type: array
+      nullable: true
       items:
         $ref: 'AdGroupCriterionServiceAdditionalUrl.yaml#/AdGroupCriterionServiceAdditionalUrl'
     isRemove:

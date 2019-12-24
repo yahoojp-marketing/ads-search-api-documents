@@ -1,5 +1,6 @@
 AdGroupCriterionServiceIsRemove:
   type: string
+  nullable: true
   enum:
   - 'TRUE'
   - 'FALSE'

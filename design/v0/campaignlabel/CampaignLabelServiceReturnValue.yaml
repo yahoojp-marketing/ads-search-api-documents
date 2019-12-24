@@ -1,8 +1,10 @@
 CampaignLabelServiceReturnValue:
   type: object
+  nullable: true
   properties:
     values:
       type: array
+      nullable: true
       items:
         $ref: 'CampaignLabelServiceValue.yaml#/CampaignLabelServiceValue'
   title: CampaignLabelServiceReturnValue

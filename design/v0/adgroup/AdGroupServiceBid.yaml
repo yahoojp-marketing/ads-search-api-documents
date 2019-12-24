@@ -1,10 +1,12 @@
 AdGroupServiceBid:
   type: object
+  nullable: true
   properties:
     bidSource:
       $ref: 'AdGroupServiceBidSource.yaml#/AdGroupServiceBidSource'
     maxCpc:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">キーワード入札価格です。</div><div lang=\"en\">Keyword bid (CPC).</div>"
   title: AdGroupServiceBid

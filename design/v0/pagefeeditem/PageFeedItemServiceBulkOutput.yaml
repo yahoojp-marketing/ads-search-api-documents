@@ -1,5 +1,6 @@
 PageFeedItemServiceBulkOutput:
   type: string
+  nullable: true
   enum:
   - CSV
   - TSV

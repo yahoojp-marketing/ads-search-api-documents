@@ -1,8 +1,10 @@
 RetargetingListServiceReturnValue:
   type: object
+  nullable: true
   properties:
     values:
       type: array
+      nullable: true
       items:
         $ref: 'RetargetingListServiceValue.yaml#/RetargetingListServiceValue'
   title: RetargetingListServiceReturnValue

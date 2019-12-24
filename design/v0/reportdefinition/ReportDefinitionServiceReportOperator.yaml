@@ -1,5 +1,6 @@
 ReportDefinitionServiceReportOperator:
   type: string
+  nullable: true
   enum:
   - EQUALS
   - NOT_EQUALS

@@ -1,19 +1,24 @@
 AccountServiceSelector:
   type: object
+  nullable: true
   properties:
     accountIds:
       type: array
+      nullable: true
       items:
         type: integer
+        nullable: true
         format: int64
       maxItems: 200
       description: "<div lang=\"ja\">アカウントIDの配列です。</div><div lang=\"en\">Account IDs.</div>"
     accountStatuses:
       type: array
+      nullable: true
       items:
         $ref: 'AccountServiceStatus.yaml#/AccountServiceStatus'
     accountTypes:
       type: array
+      nullable: true
       items:
         $ref: 'AccountServiceType.yaml#/AccountServiceType'
     authType:
@@ -22,6 +27,7 @@ AccountServiceSelector:
       $ref: 'AccountServiceIncludeTestAccount.yaml#/AccountServiceIncludeTestAccount'
     numberResults:
       type: integer
+      nullable: true
       format: int32
       minimum: 1
       maximum: 200
@@ -31,6 +37,7 @@ AccountServiceSelector:
         \ see Entity Limits per operation.</div>"
     startIndex:
       type: integer
+      nullable: true
       format: int32
       minimum: 1
       default: 1

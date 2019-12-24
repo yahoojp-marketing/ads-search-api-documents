@@ -1,5 +1,6 @@
 CampaignServiceUrlApprovalStatus:
   type: string
+  nullable: true
   enum:
   - NONE
   - APPROVED

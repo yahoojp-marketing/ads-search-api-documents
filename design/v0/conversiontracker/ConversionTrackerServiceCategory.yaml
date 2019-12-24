@@ -1,5 +1,6 @@
 ConversionTrackerServiceCategory:
   type: string
+  nullable: true
   enum:
   - DEFAULT
   - PAGE_VIEW

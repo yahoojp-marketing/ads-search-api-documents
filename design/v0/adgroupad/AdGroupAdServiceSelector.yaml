@@ -1,24 +1,30 @@
 AdGroupAdServiceSelector:
   type: object
+  nullable: true
   required:
   - accountId
   properties:
     accountId:
       type: integer
+      nullable: false
       format: int64
       description: "<div lang=\"ja\">検索条件：アカウントID</div><div lang=\"en\">Search condition: Account ID.</div>"
     adGroupIds:
       type: array
+      nullable: true
       items:
         type: integer
+        nullable: true
         format: int64
       maxItems: 1000
       description: "<div lang=\"ja\">検索条件：広告グループID</div><div lang=\"en\">Search condition: Ad group ID.<br>Ads\
         \ returned will be from adgroups whose ids are included in this list.</div>"
     adIds:
       type: array
+      nullable: true
       items:
         type: integer
+        nullable: true
         format: int64
       maxItems: 1000
       description: "<div lang=\"ja\">検索条件：広告ID</div><div lang=\"en\">Search condition: Ad ID.<br>Ads will\
@@ -26,18 +32,22 @@ AdGroupAdServiceSelector:
         \ field, it will return all adIds under the adGroup.</div>"
     adTypes:
       type: array
+      nullable: true
       items:
         $ref: 'AdGroupAdServiceAdType.yaml#/AdGroupAdServiceAdType'
       maxItems: 4
     approvalStatuses:
       type: array
+      nullable: true
       items:
         $ref: 'AdGroupAdServiceApprovalStatus.yaml#/AdGroupAdServiceApprovalStatus'
       maxItems: 5
     campaignIds:
       type: array
+      nullable: true
       items:
         type: integer
+        nullable: true
         format: int64
       maxItems: 1000
       description: "<div lang=\"ja\">検索条件：キャンペーンID</div><div lang=\"en\">Search condition: Campaign ID.<br>Ads\
@@ -49,13 +59,16 @@ AdGroupAdServiceSelector:
       $ref: 'AdGroupAdServiceContainsLabelId.yaml#/AdGroupAdServiceContainsLabelId'
     labelIds:
       type: array
+      nullable: true
       items:
         type: integer
+        nullable: true
         format: int64
       maxItems: 1000
       description: "<div lang=\"ja\">検索条件：ラベルID</div><div lang=\"en\">Search condition: Label ID</div>"
     numberResults:
       type: integer
+      nullable: true
       format: int32
       minimum: 1
       maximum: 10000
@@ -65,6 +78,7 @@ AdGroupAdServiceSelector:
         \ see Entity Limits per operation.</div>"
     startIndex:
       type: integer
+      nullable: true
       format: int32
       minimum: 1
       default: 1
@@ -73,6 +87,7 @@ AdGroupAdServiceSelector:
         \ to 1.</div>"
     userStatuses:
       type: array
+      nullable: true
       items:
         $ref: 'AdGroupAdServiceUserStatus.yaml#/AdGroupAdServiceUserStatus'
       maxItems: 2

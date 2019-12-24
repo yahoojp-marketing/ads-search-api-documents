@@ -1,5 +1,6 @@
 AdGroupServiceAdRotationMode:
   type: string
+  nullable: true
   enum:
   - OPTIMIZE
   - ROTATE_FOREVER

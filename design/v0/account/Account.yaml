@@ -1,12 +1,15 @@
 Account:
   type: object
+  nullable: true
   properties:
     accountId:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">アカウントID</div><div lang=\"en\">Account ID</div>"
     accountName:
       type: string
+      nullable: true
       description: "<div lang=\"ja\">アカウント名</div><div lang=\"en\">Account Name</div>"
     accountStatus:
       $ref: 'AccountServiceStatus.yaml#/AccountServiceStatus'

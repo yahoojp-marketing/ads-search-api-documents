@@ -1,5 +1,6 @@
 RetargetingListServiceRuleItem:
   type: object
+  nullable: true
   properties:
     customKeyRuleItem:
       $ref: 'RetargetingListServiceCustomKeyRuleItem.yaml#/RetargetingListServiceCustomKeyRuleItem'
@@ -11,6 +12,7 @@ RetargetingListServiceRuleItem:
       $ref: 'RetargetingListServiceUrlRuleItem.yaml#/RetargetingListServiceUrlRuleItem'
     value:
       type: string
+      nullable: true
       description: "<div lang=\"ja\">評価値です。<br>※括弧（()）、シングルクォート（&#39;）、ダブルクォート（&#34;）、タブ（\t）は利用できません。<br>※250文字まで指定可能です。</div><div lang=\"en\">Evaluation\
         \ value.<br>*Cannot use: bracket, single quote, double quote, and tab.<br>*Can\
         \ select up to 250 characters.</div>"

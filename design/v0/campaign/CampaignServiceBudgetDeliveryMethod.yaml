@@ -1,5 +1,6 @@
 CampaignServiceBudgetDeliveryMethod:
   type: string
+  nullable: true
   enum:
   - STANDARD
   - ACCELERATED

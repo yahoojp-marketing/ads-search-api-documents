@@ -1,15 +1,18 @@
 CampaignSharedSetServiceOperation:
   type: object
+  nullable: true
   required:
   - accountId
   - operand
   properties:
     accountId:
       type: integer
+      nullable: false
       format: int64
       description: "<div lang=\"ja\">操作対象のアカウントです。</div><div lang=\"en\">Account for the operation</div>"
     operand:
       type: array
+      nullable: true
       items:
         $ref: 'CampaignSharedSet.yaml#/CampaignSharedSet'
       minItems: 1

@@ -1,5 +1,6 @@
 CampaignServiceServingStatus:
   type: string
+  nullable: true
   enum:
   - SERVING
   - ENDED

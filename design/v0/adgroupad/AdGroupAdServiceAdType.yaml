@@ -1,5 +1,6 @@
 AdGroupAdServiceAdType:
   type: string
+  nullable: true
   enum:
   - TEXT_AD2
   - APP_AD

@@ -1,5 +1,6 @@
 AdGroupServiceCriterionType:
   type: string
+  nullable: true
   enum:
   - TARGET_LIST
   - UNKNOWN

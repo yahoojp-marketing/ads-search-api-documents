@@ -1,8 +1,10 @@
 BiddingStrategyServiceReturnValue:
   type: object
+  nullable: true
   properties:
     values:
       type: array
+      nullable: true
       items:
         $ref: 'BiddingStrategyServiceValue.yaml#/BiddingStrategyServiceValue'
   title: BiddingStrategyServiceReturnValue

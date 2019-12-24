@@ -1,5 +1,6 @@
 ConversionTrackerServiceConversionCountingType:
   type: string
+  nullable: true
   enum:
   - ONE_PER_CLICK
   - MANY_PER_CLICK

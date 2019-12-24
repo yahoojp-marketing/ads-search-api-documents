@@ -1,12 +1,15 @@
 RetargetingListServicePage:
   type: object
+  nullable: true
   properties:
     totalNumEntries:
       type: integer
+      nullable: false
       format: int32
       description: "<div lang=\"ja\">取得される項目の総件数です。</div><div lang=\"en\">Total number the item have retrieved.</div>"
     values:
       type: array
+      nullable: true
       items:
         $ref: 'RetargetingListServiceValue.yaml#/RetargetingListServiceValue'
   title: RetargetingListServicePage

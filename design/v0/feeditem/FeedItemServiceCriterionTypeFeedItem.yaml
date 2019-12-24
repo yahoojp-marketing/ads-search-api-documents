@@ -1,5 +1,6 @@
 FeedItemServiceCriterionTypeFeedItem:
   type: string
+  nullable: true
   enum:
   - LOCATION
   - UNKNOWN

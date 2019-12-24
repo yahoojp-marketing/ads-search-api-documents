@@ -1,15 +1,18 @@
 CampaignServiceBiddingStrategy:
   title: CampaignServiceBiddingStrategy
   type: object
+  nullable: true
   properties:
     biddingScheme:
       $ref: 'CampaignServiceBiddingScheme.yaml#/CampaignServiceBiddingScheme'
     biddingStrategyId:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">自動入札ID</div><div lang=\"en\">Auto Bidding ID</div>"
     biddingStrategyName:
       type: string
+      nullable: true
       description: "<div lang=\"ja\">自動入札名<br>※50文字以内になります。</div><div lang=\"en\">Auto Bidding name.<br>* Up\
         \ to 50 characters.</div>"
     biddingStrategySource:

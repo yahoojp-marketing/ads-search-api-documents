@@ -1,5 +1,6 @@
 CampaignTargetServiceTargetType:
   type: string
+  nullable: true
   enum:
   - LOCATION
   - SCHEDULE

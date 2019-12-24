@@ -1,8 +1,10 @@
 AccountServiceReturnValue:
   type: object
+  nullable: true
   properties:
     values:
       type: array
+      nullable: true
       items:
         $ref: 'AccountServiceValue.yaml#/AccountServiceValue'
   title: AccountServiceReturnValue

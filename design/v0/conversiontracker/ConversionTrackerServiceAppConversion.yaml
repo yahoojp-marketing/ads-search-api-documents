@@ -1,10 +1,12 @@
 ConversionTrackerServiceAppConversion:
   type: object
+  nullable: true
   properties:
     appConversionType:
       $ref: 'ConversionTrackerServiceAppConversionType.yaml#/ConversionTrackerServiceAppConversionType'
     appId:
       type: string
+      nullable: true
       description: "<div lang=\"ja\">アプリケーションIDです。</div><div lang=\"en\">Application ID</div>"
     appPlatform:
       $ref: 'ConversionTrackerServiceAppPlatform.yaml#/ConversionTrackerServiceAppPlatform'
@@ -12,10 +14,12 @@ ConversionTrackerServiceAppConversion:
       $ref: 'ConversionTrackerServiceAppPostbackUrl.yaml#/ConversionTrackerServiceAppPostbackUrl'
     snippetId:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">コンバージョンIDです。</div><div lang=\"en\">Converison ID</div>"
     snippetLabel:
       type: string
+      nullable: true
       description: "<div lang=\"ja\">コンバージョントラッカーラベルです。</div><div lang=\"en\">Converison tracker label</div>"
   title: ConversionTrackerServiceAppConversion
   description: "<div lang=\"ja\">ConversionTrackerServiceAppConversionオブジェクトは、アプリコンバージョン測定タグやタグごとのパフォーマンスデータなどのアプリコンバージョントラッカー情報を表します。</div><div lang=\"en\">ConversionTrackerServiceAppConversion\

@@ -1,27 +1,34 @@
 Feed:
   type: object
+  nullable: true
   properties:
     accountId:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">アカウントIDです。<br>※入稿の仕様変更により不要になりました。</div><div lang=\"en\">Account ID.<br>*Not\
         \ required by design change on editorials.</div>"
     domain:
       type: string
+      nullable: true
       description: "<div lang=\"ja\">ドメインです。</div><div lang=\"en\">Domain.</div>"
     feedAttribute:
       type: array
+      nullable: true
       items:
         $ref: 'FeedServiceAttribute.yaml#/FeedServiceAttribute'
     feedId:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">FeedIDです。</div><div lang=\"en\">Feed ID</div>"
     feedName:
       type: string
+      nullable: true
       description: "<div lang=\"ja\">Feedのリスト名です。</div><div lang=\"en\">List name of Feed.</div>"
     feedTrackId:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">Feedのトラッキング用IDです。</div><div lang=\"en\">Tracking ID of Feed.</div>"
     placeholderType:

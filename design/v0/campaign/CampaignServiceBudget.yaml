@@ -1,8 +1,10 @@
 CampaignServiceBudget:
   type: object
+  nullable: true
   properties:
     amount:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">1日単位のキャンペーン予算利用金額です。</div><div lang=\"en\">Amount of budget of Campaign.</div>"
     budgetPeriod:

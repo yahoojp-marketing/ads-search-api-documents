@@ -1,17 +1,22 @@
 FeedItemServiceFeedAttributeValue:
   type: object
+  nullable: true
   properties:
     disapprovalReasonCodes:
       type: array
+      nullable: true
       items:
         type: string
+        nullable: true
       description: "<div lang=\"ja\">審査の否認理由コードです。</div><div lang=\"en\">Reject reason code of editorial\
         \ review.</div>"
     feedAttributeValue:
       type: string
+      nullable: true
       description: "<div lang=\"ja\">フィードアイテムの属性値です。</div><div lang=\"en\">FeedItem attribute value.</div>"
     reviewFeedAttributeValue:
       type: string
+      nullable: true
       description: "<div lang=\"ja\">レビュー中のフィードアイテムの属性値です。</div><div lang=\"en\">FeedItem attribute value\
         \ in review.</div>"
   title: FeedItemServiceFeedAttributeValue

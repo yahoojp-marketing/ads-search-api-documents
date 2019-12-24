@@ -1,23 +1,29 @@
 CampaignCriterionServiceSelector:
   type: object
+  nullable: true
   required:
   - accountId
   properties:
     accountId:
       type: integer
+      nullable: false
       format: int64
       description: "<div lang=\"ja\">アカウントIDです。</div><div lang=\"en\">Account ID.</div>"
     campaignIds:
       type: array
+      nullable: true
       items:
         type: integer
+        nullable: true
         format: int64
       maxItems: 500
       description: "<div lang=\"ja\">キャンペーンIDの配列です。</div><div lang=\"en\">Campaign ID array.</div>"
     criterionIds:
       type: array
+      nullable: true
       items:
         type: integer
+        nullable: true
         format: int64
       maxItems: 500
       description: "<div lang=\"ja\">クライテリオンIDの配列です。<br>指定しない場合は、キャンペーンID以下のすべてのクライテリアが含まれます。</div><div lang=\"en\">Criterion\
@@ -25,6 +31,7 @@ CampaignCriterionServiceSelector:
         \ ID are returned.</div>"
     numberResults:
       type: integer
+      nullable: true
       format: int32
       minimum: 1
       maximum: 500
@@ -34,6 +41,7 @@ CampaignCriterionServiceSelector:
         \ see Entity Limits per operation.</div>"
     startIndex:
       type: integer
+      nullable: true
       format: int32
       minimum: 1
       default: 1

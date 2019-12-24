@@ -1,8 +1,10 @@
 RetargetingListServiceTargetingList:
   type: object
+  nullable: true
   properties:
     accountId:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">アカウントIDです。</div><div lang=\"en\">Account ID.</div>"
     closingReason:
@@ -13,11 +15,13 @@ RetargetingListServiceTargetingList:
       $ref: 'RetargetingListServiceLogicalTargetList.yaml#/RetargetingListServiceLogicalTargetList'
     reach:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">リストに蓄積されているユーザー数です。</div><div lang=\"en\">Number of users stored to\
         \ the list.</div>"
     reachStorageSpan:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">Cookieを保持する日数です。<br>※Default：180<br>※1-540日まで設定可能です。</div><div lang=\"en\">Days\
         \ to hold Cookie.<br>*Default: 180<br>*Can set from 1-540 days</div>"
@@ -29,18 +33,22 @@ RetargetingListServiceTargetingList:
       $ref: 'RetargetingListServiceRuleBaseTargetList.yaml#/RetargetingListServiceRuleBaseTargetList'
     targetListDescription:
       type: string
+      nullable: true
       description: "<div lang=\"ja\">ターゲットリストの説明です。</div><div lang=\"en\">Description of Target List.</div>"
     targetListId:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">ターゲットリストIDです。</div><div lang=\"en\">Target List ID.</div>"
     targetListName:
       type: string
+      nullable: true
       description: "<div lang=\"ja\">ターゲットリスト名です。</div><div lang=\"en\">Target List name.</div>"
     targetListOwner:
       $ref: 'RetargetingListServiceTargetListOwner.yaml#/RetargetingListServiceTargetListOwner'
     targetListTrackId:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">ターゲットリストのトラッキング用IDです。</div><div lang=\"en\">Tracking ID of Target list.</div>"
     targetListType:

@@ -1,37 +1,47 @@
 Label:
   type: object
+  nullable: true
   properties:
     accountId:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">アカウントID</div><div lang=\"en\">Account ID</div>"
     color:
       type: string
+      nullable: true
       description: "<div lang=\"ja\">カラー</div><div lang=\"en\">Color</div>"
     description:
       type: string
+      nullable: true
       description: "<div lang=\"ja\">説明文</div><div lang=\"en\">Description</div>"
     labelId:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">ラベルID</div><div lang=\"en\">Label ID</div>"
     labelName:
       type: string
+      nullable: true
       description: "<div lang=\"ja\">ラベル名</div><div lang=\"en\">Label Name</div>"
     labeledAdGroup:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">広告グループの紐付け数</div><div lang=\"en\">Number of labeled AdGroup</div>"
     labeledAdGroupAd:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">広告の紐付け数</div><div lang=\"en\">Number of labeled AdGroupAd</div>"
     labeledAdGroupCriterion:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">キーワードの紐付け数</div><div lang=\"en\">Number of labeled Ad Group Criterion</div>"
     labeledCampaign:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">キャンペーンの紐付け数</div><div lang=\"en\">Number of labeled Campaign</div>"
   title: Label

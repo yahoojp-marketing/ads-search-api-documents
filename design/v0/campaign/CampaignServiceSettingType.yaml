@@ -1,5 +1,6 @@
 CampaignServiceSettingType:
   type: string
+  nullable: true
   enum:
   - GEO_TARGET_TYPE_SETTING
   - TARGET_LIST_SETTING

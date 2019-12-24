@@ -1,5 +1,6 @@
 AccountServiceLimitChargeType:
   type: string
+  nullable: true
   enum:
   - SUM
   - MONTHLY

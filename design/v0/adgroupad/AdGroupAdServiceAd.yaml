@@ -1,21 +1,26 @@
 AdGroupAdServiceAd:
   type: object
+  nullable: true
   properties:
     adType:
       $ref: 'AdGroupAdServiceAdType.yaml#/AdGroupAdServiceAdType'
     additionalAdvancedMobileUrls:
       type: array
+      nullable: true
       items:
         $ref: 'AdGroupAdServiceAdditionalAdvancedMobileUrls.yaml#/AdGroupAdServiceAdditionalAdvancedMobileUrls'
     additionalAdvancedUrls:
       type: array
+      nullable: true
       items:
         $ref: 'AdGroupAdServiceAdditionalAdvancedUrls.yaml#/AdGroupAdServiceAdditionalAdvancedUrls'
     advancedMobileUrl:
       type: string
+      nullable: true
       description: "<div lang=\"ja\">最終リンク先URL（スマート フォン）です。</div><div lang=\"en\">Landing Page URL (Smartphone).</div>"
     advancedUrl:
       type: string
+      nullable: true
       description: "<div lang=\"ja\">最終リンク先URLです。</div><div lang=\"en\">Landing Page URL.</div>"
     appAd:
       $ref: 'AdGroupAdServiceAppAd.yaml#/AdGroupAdServiceAppAd'
@@ -23,24 +28,29 @@ AdGroupAdServiceAd:
       $ref: 'AdGroupAdServiceCustomParameters.yaml#/AdGroupAdServiceCustomParameters'
     description:
       type: string
+      nullable: true
       description: "<div lang=\"ja\">説明文です。</div><div lang=\"en\">Description of ad.</div>"
     devicePreference:
       $ref: 'AdGroupAdServiceDevicePreference.yaml#/AdGroupAdServiceDevicePreference'
     displayUrl:
       type: string
+      nullable: true
       description: "<div lang=\"ja\">表示URLです。</div><div lang=\"en\">Display URL.</div>"
     extendedTextAd:
       $ref: 'AdGroupAdServiceExtendedTextAd.yaml#/AdGroupAdServiceExtendedTextAd'
     headline:
       type: string
+      nullable: true
       description: "<div lang=\"ja\">タイトル文です。</div><div lang=\"en\">Title of ad.</div>"
     textAd2:
       $ref: 'AdGroupAdServiceTextAd2.yaml#/AdGroupAdServiceTextAd2'
     trackingUrl:
       type: string
+      nullable: true
       description: "<div lang=\"ja\">トラッキングURLです。</div><div lang=\"en\">Tracking URL.</div>"
     url:
       type: string
+      nullable: true
       description: "<div lang=\"ja\">移行前のリンク先URLです。</div><div lang=\"en\">Destination URL before upgrading.</div>"
   title: AdGroupAdServiceAd
   description: "<div lang=\"ja\">AdGroupAdServiceAdオブジェクトは、広告に関する情報を表します。</div><div lang=\"en\">AdGroupAdServiceAd\

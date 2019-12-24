@@ -1,5 +1,6 @@
 FeedItemServicePlaceholderField:
   type: string
+  nullable: true
   enum:
   - LINK_TEXT
   - LINK_DESCRIPTION_1

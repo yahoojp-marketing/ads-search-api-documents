@@ -1,11 +1,14 @@
 AdGroupAdServiceCustomParameter:
   type: object
+  nullable: true
   properties:
     key:
       type: string
+      nullable: true
       description: "<div lang=\"ja\">キーです。</div><div lang=\"en\">Key of parameter.</div>"
     value:
       type: string
+      nullable: true
       description: "<div lang=\"ja\">値です。</div><div lang=\"en\">Value of parameter.</div>"
   title: AdGroupAdServiceCustomParameter
   description: "<div lang=\"ja\">AdGroupAdServiceCustomParameterは、カスタムパラメータの内容を表します。</div><div lang=\"en\">AdGroupAdServiceCustomParameter\

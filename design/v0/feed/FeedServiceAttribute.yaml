@@ -1,13 +1,16 @@
 FeedServiceAttribute:
   type: object
+  nullable: true
   properties:
     feedAttributeId:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">自動データ挿入のリストの属性（カラム）IDです。</div><div lang=\"en\">Attribute ID (column\
         \ ID) of auto data insertion list.</div>"
     feedAttributeName:
       type: string
+      nullable: true
       description: "<div lang=\"ja\">自動データ挿入のリストの属性（カラム）名です。</div><div lang=\"en\">Attribute name (column\
         \ name) of auto data insertion list.</div>"
     placeholderField:

@@ -1,5 +1,6 @@
 PageFeedItemServiceBulkEncoding:
   type: string
+  nullable: true
   enum:
   - SJIS
   - UTF-8

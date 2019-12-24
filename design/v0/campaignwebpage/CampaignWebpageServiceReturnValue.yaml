@@ -1,8 +1,10 @@
 CampaignWebpageServiceReturnValue:
   type: object
+  nullable: true
   properties:
     values:
       type: array
+      nullable: true
       items:
         $ref: 'CampaignWebpageServiceValue.yaml#/CampaignWebpageServiceValue'
   title: CampaignWebpageServiceReturnValue

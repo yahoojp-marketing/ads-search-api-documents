@@ -1,10 +1,12 @@
 AuditLogServiceJob:
   type: object
+  nullable: true
   required:
   - eventSelector
   properties:
     accountId:
       type: integer
+      nullable: false
       format: int64
       description: "<div lang=\"ja\">アカウントIDです。</div><div lang=\"en\">Account ID.</div>"
     dateRange:
@@ -13,16 +15,19 @@ AuditLogServiceJob:
       $ref: 'AuditLogServiceEncoding.yaml#/AuditLogServiceEncoding'
     eventSelector:
       type: array
+      nullable: true
       items:
         $ref: 'AuditLogServiceEventSelector.yaml#/AuditLogServiceEventSelector'
       minItems: 1
       maxItems: 25
     jobId:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">ジョブIDです。</div><div lang=\"en\">Job ID.</div>"
     jobName:
       type: string
+      nullable: true
       description: "<div lang=\"ja\">ジョブ名です。</div><div lang=\"en\">Name of job.</div>"
     jobStatus:
       $ref: 'AuditLogServiceJobStatus.yaml#/AuditLogServiceJobStatus'

@@ -1,15 +1,18 @@
 CampaignWebpageServiceWebpage:
   type: object
+  nullable: true
   properties:
     parameter:
       $ref: 'CampaignWebpageServiceWebpageParameter.yaml#/CampaignWebpageServiceWebpageParameter'
     targetId:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">CampaignWebpageServiceWebpageを識別するID</div><div lang=\"en\">Unique ID\
         \ for each webpage</div>"
     targetTrackId:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">CampaignWebpageServiceWebpageを識別するトラッキングID</div><div lang=\"en\">Unique\
         \ tracking ID for each CampaignWebpageServiceWebpage</div>"

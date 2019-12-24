@@ -1,5 +1,6 @@
 AdGroupServiceTargetAll:
   type: string
+  nullable: true
   enum:
   - ACTIVE
   - DEACTIVE

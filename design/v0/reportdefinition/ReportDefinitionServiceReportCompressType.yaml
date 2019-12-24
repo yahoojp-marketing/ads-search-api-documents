@@ -1,5 +1,6 @@
 ReportDefinitionServiceReportCompressType:
   type: string
+  nullable: true
   enum:
   - NONE
   - ZIP

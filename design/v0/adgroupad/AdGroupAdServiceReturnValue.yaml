@@ -1,8 +1,10 @@
 AdGroupAdServiceReturnValue:
   type: object
+  nullable: true
   properties:
     values:
       type: array
+      nullable: true
       items:
         $ref: 'AdGroupAdServiceValue.yaml#/AdGroupAdServiceValue'
   title: AdGroupAdServiceReturnValue

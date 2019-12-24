@@ -1,16 +1,20 @@
 AdGroupRetargetingListServiceCriterionTargetList:
   type: object
+  nullable: true
   properties:
     retargetingTrackId:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">リターゲティングトラックIDです。</div><div lang=\"en\">Retargeting Track ID.</div>"
     targetListId:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">ターゲットリストIDです。</div><div lang=\"en\">Target list ID.</div>"
     targetListName:
       type: string
+      nullable: true
       description: "<div lang=\"ja\">ターゲットリスト名です。</div><div lang=\"en\">Target list name.</div>"
   title: AdGroupRetargetingListServiceCriterionTargetList
   description: "<div lang=\"ja\">AdGroupRetargetingListServiceCriterionTargetListは、ターゲットリスト情報を保持するオブジェクトです。</div><div lang=\"en\">AdGroupRetargetingListServiceCriterionTargetList\

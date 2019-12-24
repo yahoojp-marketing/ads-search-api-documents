@@ -1,10 +1,12 @@
 AdGroupCriterionServiceCustomParameters:
   type: object
+  nullable: true
   properties:
     isRemove:
       $ref: 'AdGroupCriterionServiceIsRemove.yaml#/AdGroupCriterionServiceIsRemove'
     parameters:
       type: array
+      nullable: true
       items:
         $ref: 'AdGroupCriterionServiceCustomParameter.yaml#/AdGroupCriterionServiceCustomParameter'
   title: AdGroupCriterionServiceCustomParameters

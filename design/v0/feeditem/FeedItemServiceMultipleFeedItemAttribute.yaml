@@ -1,8 +1,10 @@
 FeedItemServiceMultipleFeedItemAttribute:
   type: object
+  nullable: true
   properties:
     feedAttributeValues:
       type: array
+      nullable: true
       items:
         $ref: 'FeedItemServiceFeedAttributeValue.yaml#/FeedItemServiceFeedAttributeValue'
     isRemove:

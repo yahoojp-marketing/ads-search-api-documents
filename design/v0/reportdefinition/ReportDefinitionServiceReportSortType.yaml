@@ -1,5 +1,6 @@
 ReportDefinitionServiceReportSortType:
   type: string
+  nullable: true
   enum:
   - ASC
   - DESC

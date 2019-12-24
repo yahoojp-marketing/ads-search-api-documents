@@ -1,12 +1,15 @@
 AdGroupCriterionServiceCriterion:
   type: object
+  nullable: true
   properties:
     criterionId:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">クライテリアIDです。</div><div lang=\"en\">AdGroupCriterionServiceCriterion ID.</div>"
     criterionTrackId:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">トラッキング用クライテリアIDです。</div><div lang=\"en\">AdGroupCriterionServiceCriterion\
         \ ID for tracking.</div>"

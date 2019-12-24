@@ -1,5 +1,6 @@
 RetargetingListServiceDefaultTargetList:
   type: object
+  nullable: true
   properties:
     tag:
       $ref: 'RetargetingListServiceTag.yaml#/RetargetingListServiceTag'

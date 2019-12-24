@@ -1,8 +1,10 @@
 SharedCriterionServiceReturnValue:
   type: object
+  nullable: true
   properties:
     values:
       type: array
+      nullable: true
       items:
         $ref: 'SharedCriterionServiceValue.yaml#/SharedCriterionServiceValue'
   title: SharedCriterionServiceReturnValue

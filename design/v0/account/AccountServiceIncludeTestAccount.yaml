@@ -1,5 +1,6 @@
 AccountServiceIncludeTestAccount:
   type: string
+  nullable: true
   default: EXCLUDE_TEST
   enum:
     - ONLY_TEST

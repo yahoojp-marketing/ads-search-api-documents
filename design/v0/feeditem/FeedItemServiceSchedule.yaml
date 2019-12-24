@@ -1,10 +1,12 @@
 FeedItemServiceSchedule:
   type: object
+  nullable: true
   properties:
     dayOfWeek:
       $ref: 'FeedItemServiceDayOfWeek.yaml#/FeedItemServiceDayOfWeek'
     endHour:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">終了時です。<br>※0 ～ 24の範囲で設定してください。</div><div lang=\"en\">End time in hour.<br>*Specify\
         \ from 0 - 24.</div>"
@@ -12,6 +14,7 @@ FeedItemServiceSchedule:
       $ref: 'FeedItemServiceMinuteOfHour.yaml#/FeedItemServiceMinuteOfHour'
     startHour:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">開始時です。<br>※0 ～ 23の範囲で設定してください。</div><div lang=\"en\">Start time in hour.<br>*Specify\
         \ from 0 - 23.</div>"

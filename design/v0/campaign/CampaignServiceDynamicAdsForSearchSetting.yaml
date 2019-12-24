@@ -1,11 +1,14 @@
 CampaignServiceDynamicAdsForSearchSetting:
   type: object
+  nullable: true
   properties:
     feedIds:
       description: "<div lang=\"ja\">キャンペーンで使用するページフィードIDです。</div><div lang=\"en\">Page Feed ID for campaign.</div>"
       type: array
+      nullable: true
       items:
         type: integer
+        nullable: true
         format: int64
   title: CampaignServiceDynamicAdsForSearchSetting
   description: "<div lang=\"ja\">CampaignServiceDynamicAdsForSearchSettingは、動的検索連動型広告に関する検索条件を表します。</div><div lang=\"en\">CampaignServiceDynamicAdsForSearchSetting\

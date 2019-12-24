@@ -1,8 +1,10 @@
 FeedItemServiceScheduling:
   type: object
+  nullable: true
   properties:
     schedules:
       type: array
+      nullable: true
       items:
         $ref: 'FeedItemServiceSchedule.yaml#/FeedItemServiceSchedule'
   title: FeedItemServiceScheduling

@@ -1,5 +1,6 @@
 AdGroupServiceSettings:
   type: object
+  nullable: true
   properties:
     criterionType:
       $ref: 'AdGroupServiceCriterionType.yaml#/AdGroupServiceCriterionType'

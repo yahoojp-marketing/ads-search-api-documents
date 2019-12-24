@@ -1,13 +1,17 @@
 AdGroupAdServiceAdditionalAdvancedUrls:
   type: object
+  nullable: true
   properties:
     advancedUrl:
       type: string
+      nullable: true
       description: "<div lang=\"ja\">最終リンク先URLです。</div><div lang=\"en\">Landing Page URL.</div>"
     disapprovalReasonCodes:
       type: array
+      nullable: true
       items:
         type: string
+        nullable: true
       description: "<div lang=\"ja\">審査否認理由コードです。<br>(コード詳細は、DictionaryServiceのgetDisapprovalReasonのレスポンスを参照)</div><div lang=\"en\">Reject reason code.<br>(Refer to DictionaryService getDisapprovalReason response for details)</div>"
   title: AdGroupAdServiceAdditionalAdvancedUrls
   description: "<div lang=\"ja\">AdGroupAdServiceAdditionalAdvancedUrlsは、2件目以降の最終リンク先URLを保持するオブジェクトです。</div><div lang=\"en\">AdGroupAdServiceAdditionalAdvancedUrls\

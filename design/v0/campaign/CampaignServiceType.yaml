@@ -1,5 +1,6 @@
 CampaignServiceType:
   type: string
+  nullable: true
   enum:
   - STANDARD
   - MOBILE_APP

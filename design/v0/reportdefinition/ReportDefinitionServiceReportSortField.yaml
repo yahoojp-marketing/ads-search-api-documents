@@ -1,8 +1,10 @@
 ReportDefinitionServiceReportSortField:
   type: object
+  nullable: true
   properties:
     field:
       type: string
+      nullable: true
       description: "<div lang=\"ja\">レポート定義のソート対象です。</div><div lang=\"en\">Sort object (field) of report\
         \ definition.</div>"
     reportSortType:

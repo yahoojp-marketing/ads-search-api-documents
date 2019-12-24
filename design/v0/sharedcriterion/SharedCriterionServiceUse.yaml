@@ -1,5 +1,6 @@
 SharedCriterionServiceUse:
   type: string
+  nullable: true
   enum:
   - NEGATIVE
   - UNKNOWN

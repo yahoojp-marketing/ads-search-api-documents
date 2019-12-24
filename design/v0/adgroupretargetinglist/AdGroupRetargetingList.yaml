@@ -1,28 +1,35 @@
 AdGroupRetargetingList:
   type: object
+  nullable: true
   properties:
     accountId:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">アカウントIDです。</div><div lang=\"en\">Account ID.</div>"
     adGroupId:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">広告グループIDです。</div><div lang=\"en\">Ad group ID.</div>"
     adGroupName:
       type: string
+      nullable: true
       description: "<div lang=\"ja\">広告グループ名です。</div><div lang=\"en\">Ad group name.</div>"
     bidMultiplier:
       type: number
+      nullable: true
       format: double
       description: "<div lang=\"ja\">MaxCPC上昇値です。<br>※Default値：1.00</div><div lang=\"en\">Maximum CPC increase\
         \ value.<br>* Default: 1.00</div>"
     campaignId:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">キャンペーンIDです。</div><div lang=\"en\">Campaign ID.</div>"
     campaignName:
       type: string
+      nullable: true
       description: "<div lang=\"ja\">キャンペーン名です。</div><div lang=\"en\">Campaign name.</div>"
     criterionTargetList:
       $ref: 'AdGroupRetargetingListServiceCriterionTargetList.yaml#/AdGroupRetargetingListServiceCriterionTargetList'

@@ -1,23 +1,29 @@
 AdGroupRetargetingListServiceSelector:
   type: object
+  nullable: true
   required:
   - accountId
   properties:
     accountId:
       type: integer
+      nullable: false
       format: int64
       description: "<div lang=\"ja\">検索条件：アカウントIDです。</div><div lang=\"en\">Account ID.</div>"
     adGroupIds:
       type: array
+      nullable: true
       items:
         type: integer
+        nullable: true
         format: int64
       maxItems: 1000
       description: "<div lang=\"ja\">検索条件：広告グループIDです。</div><div lang=\"en\">Ad group ID.</div>"
     campaignIds:
       type: array
+      nullable: true
       items:
         type: integer
+        nullable: true
         format: int64
       maxItems: 1000
       description: "<div lang=\"ja\">検索条件：キャンペーンIDです。</div><div lang=\"en\">Campaign ID.</div>"
@@ -25,6 +31,7 @@ AdGroupRetargetingListServiceSelector:
       $ref: 'AdGroupRetargetingListServiceExcludedType.yaml#/AdGroupRetargetingListServiceExcludedType'
     numberResults:
       type: integer
+      nullable: true
       format: int32
       minimum: 1
       maximum: 1000
@@ -34,6 +41,7 @@ AdGroupRetargetingListServiceSelector:
         \ see Entity Limits per operation.</div>"
     startIndex:
       type: integer
+      nullable: true
       format: int32
       minimum: 1
       default: 1
@@ -42,8 +50,10 @@ AdGroupRetargetingListServiceSelector:
         \ to 1.</div>"
     targetListIds:
       type: array
+      nullable: true
       items:
         type: integer
+        nullable: true
         format: int64
       maxItems: 1000
       description: "<div lang=\"ja\">検索条件：ターゲットリストIDです。</div><div lang=\"en\">Target list ID.</div>"

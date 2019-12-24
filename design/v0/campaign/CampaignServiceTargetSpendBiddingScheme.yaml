@@ -1,8 +1,10 @@
 CampaignServiceTargetSpendBiddingScheme:
   type: object
+  nullable: true
   properties:
     bidCeiling:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">入札価格の上限<br>※「0」が設定された 場合、上限設定は ありません。</div><div lang=\"en\">Bid amount limit.<br>* If &#34;0&#34; is set, no bid limit.</div>"
   title: CampaignServiceTargetSpendBiddingScheme

@@ -1,10 +1,13 @@
 ErrorDetail:
   description: "<div lang=\"ja\">ErrorDetailオブジェクトは、エラーの詳細な内容を表します。</div><div lang=\"en\">Detailed information of error.</div>"
   type: object
+  nullable: true
   properties:
     requestKey:
       description: "<div lang=\"ja\">エラーが発生したフィールドです。</div><div lang=\"en\">The file that occured the error.</div>"
       type: string
+      nullable: true
     requestValue:
       description: "<div lang=\"ja\">エラーが発生した値です。</div><div lang=\"en\">The data that caused the error.</div>"
       type: string
+      nullable: true

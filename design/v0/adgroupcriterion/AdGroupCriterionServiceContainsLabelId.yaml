@@ -1,5 +1,6 @@
 AdGroupCriterionServiceContainsLabelId:
   type: string
+  nullable: true
   enum:
   - 'TRUE'
   - 'FALSE'

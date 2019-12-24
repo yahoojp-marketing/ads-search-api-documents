@@ -1,5 +1,6 @@
 AdGroupServiceBidSource:
   type: string
+  nullable: true
   enum:
   - ADGROUP
   - UNKNOWN

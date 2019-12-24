@@ -1,5 +1,6 @@
 PageFeedItemServiceMatchType:
   type: string
+  nullable: true
   enum:
   - EXACT
   - BROAD

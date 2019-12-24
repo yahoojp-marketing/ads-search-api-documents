@@ -1,5 +1,6 @@
 CampaignExportServiceOutput:
   type: string
+  nullable: true
   enum:
   - CSV
   - ZIPPED_CSV

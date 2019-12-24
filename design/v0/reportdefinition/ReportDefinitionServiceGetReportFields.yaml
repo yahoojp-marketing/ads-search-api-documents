@@ -1,5 +1,6 @@
 ReportDefinitionServiceGetReportFields:
   type: object
+  nullable: true
   required:
   - reportType
   properties:

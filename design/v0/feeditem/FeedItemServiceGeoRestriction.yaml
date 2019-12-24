@@ -1,5 +1,6 @@
 FeedItemServiceGeoRestriction:
   type: string
+  nullable: true
   enum:
   - NONE
   - LOCATION_OF_PRESENCE

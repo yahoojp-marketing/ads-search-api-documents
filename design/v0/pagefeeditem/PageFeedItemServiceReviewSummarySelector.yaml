@@ -1,21 +1,26 @@
 PageFeedItemServiceReviewSummarySelector:
   type: object
+  nullable: true
   required:
   - accountId
   properties:
     accountId:
       type: integer
+      nullable: false
       format: int64
       description: "<div lang=\"ja\">アカウントID</div><div lang=\"en\">Account ID</div>"
     feedIds:
       type: array
+      nullable: true
       items:
         type: integer
+        nullable: true
         format: int64
       maxItems: 1000
       description: "<div lang=\"ja\">フィードID</div><div lang=\"en\">Feed ID</div>"
     numberResults:
       type: integer
+      nullable: true
       format: int32
       minimum: 1
       maximum: 10000
@@ -25,6 +30,7 @@ PageFeedItemServiceReviewSummarySelector:
         \ see Entity Limits per operation.</div>"
     startIndex:
       type: integer
+      nullable: true
       format: int32
       minimum: 1
       default: 1

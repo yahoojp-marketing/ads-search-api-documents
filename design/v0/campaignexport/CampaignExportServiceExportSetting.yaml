@@ -1,74 +1,92 @@
 CampaignExportServiceExportSetting:
   type: object
+  nullable: true
   required:
   - accountId
   properties:
     accountId:
       type: integer
+      nullable: false
       format: int64
       description: "<div lang=\"ja\">アカウントIDです。</div><div lang=\"en\">Account ID</div>"
     adGroupAdApprovalStatuses:
       type: array
+      nullable: true
       items:
         $ref: 'CampaignExportServiceApprovalStatus.yaml#/CampaignExportServiceApprovalStatus'
       maxItems: 5
     adGroupAdUserStatuses:
       type: array
+      nullable: true
       items:
         $ref: 'CampaignExportServiceUserStatus.yaml#/CampaignExportServiceUserStatus'
       maxItems: 2
     adGroupCriterionApprovalStatuses:
       type: array
+      nullable: true
       items:
         $ref: 'CampaignExportServiceApprovalStatus.yaml#/CampaignExportServiceApprovalStatus'
       maxItems: 5
     adGroupCriterionIds:
       type: array
+      nullable: true
       items:
         type: integer
+        nullable: true
         format: int64
       maxItems: 500
       description: "<div lang=\"ja\">広告グループクライテリアIDです。</div><div lang=\"en\">Ad group criteria ID</div>"
     adGroupCriterionUserStatuses:
       type: array
+      nullable: true
       items:
         $ref: 'CampaignExportServiceUserStatus.yaml#/CampaignExportServiceUserStatus'
       maxItems: 2
     adGroupIds:
       type: array
+      nullable: true
       items:
         type: integer
+        nullable: true
         format: int64
       maxItems: 500
       description: "<div lang=\"ja\">ダウンロード対象の広告グループIDです。</div><div lang=\"en\">Ad group ID of export objective</div>"
     adGroupUserStatuses:
       type: array
+      nullable: true
       items:
         $ref: 'CampaignExportServiceUserStatus.yaml#/CampaignExportServiceUserStatus'
       maxItems: 2
     adIds:
       type: array
+      nullable: true
       items:
         type: integer
+        nullable: true
         format: int64
       maxItems: 500
       description: "<div lang=\"ja\">ダウンロード対象の広告IDです。</div><div lang=\"en\">Ad ID of export objective</div>"
     campaignCriterionIds:
       type: array
+      nullable: true
       items:
         type: integer
+        nullable: true
         format: int64
       maxItems: 500
       description: "<div lang=\"ja\">キャンペーンクライテリアIDです。</div><div lang=\"en\">Campaign criteria ID</div>"
     campaignIds:
       type: array
+      nullable: true
       items:
         type: integer
+        nullable: true
         format: int64
       maxItems: 500
       description: "<div lang=\"ja\">ダウンロード対象のキャンペーンIDです。</div><div lang=\"en\">Campaign ID of export objective</div>"
     campaignUserStatuses:
       type: array
+      nullable: true
       items:
         $ref: 'CampaignExportServiceUserStatus.yaml#/CampaignExportServiceUserStatus'
       maxItems: 2
@@ -76,16 +94,20 @@ CampaignExportServiceExportSetting:
       $ref: 'CampaignExportServiceEncoding.yaml#/CampaignExportServiceEncoding'
     entityTypes:
       type: array
+      nullable: true
       items:
         $ref: 'CampaignExportServiceEntityType.yaml#/CampaignExportServiceEntityType'
       maxItems: 6
     exportFields:
       type: array
+      nullable: true
       items:
         type: string
+        nullable: true
       description: "<div lang=\"ja\">エクスポートするフィールドを指定します。</div><div lang=\"en\">Select which field to export.</div>"
     jobName:
       type: string
+      nullable: true
       description: "<div lang=\"ja\">ダウンロードするジョブの名称です。</div><div lang=\"en\">Job information for export</div>"
     lang:
       $ref: 'CampaignExportServiceLang.yaml#/CampaignExportServiceLang'

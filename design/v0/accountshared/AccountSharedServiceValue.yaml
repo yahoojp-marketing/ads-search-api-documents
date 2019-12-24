@@ -1,14 +1,17 @@
 AccountSharedServiceValue:
   type: object
+  nullable: true
   properties:
     accountShared:
       $ref: 'AccountShared.yaml#/AccountShared'
     errors:
       type: array
+      nullable: true
       items:
         $ref: '../../Error.yaml#/Error'
     operationSucceeded:
       type: boolean
+      nullable: true
       description: "<div lang=\"ja\">処理結果を表示します。</div><div lang=\"en\">Showing operation results.</div>"
   title: AccountSharedServiceValue
   description: "<div lang=\"ja\">AccountSharedServiceValueオブジェクトは、検索結果（1エンティティ）を保持します。</div><div lang=\"en\">AccountSharedServiceValue\

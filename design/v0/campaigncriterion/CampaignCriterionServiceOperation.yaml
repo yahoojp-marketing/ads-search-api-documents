@@ -1,19 +1,23 @@
 CampaignCriterionServiceOperation:
   type: object
+  nullable: true
   required:
   - accountId
   - operand
   properties:
     accountId:
       type: integer
+      nullable: false
       format: int64
       description: "<div lang=\"ja\">アカウントIDです。</div><div lang=\"en\">Account ID.</div>"
     campaignId:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">キャンペーンIDです。</div><div lang=\"en\">Campaign ID.</div>"
     operand:
       type: array
+      nullable: true
       items:
         $ref: 'CampaignCriterion.yaml#/CampaignCriterion'
       minItems: 1

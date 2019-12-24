@@ -1,14 +1,17 @@
 AdGroupAdServiceAppAd:
   type: object
+  nullable: true
   properties:
     appId:
       type: string
+      nullable: true
       description: "<div lang=\"ja\">アプリIDです。<br>※アプリキャンペーンの 場合、自動で設定され ます。</div><div lang=\"en\">App ID.<br>*Automatically\
         \ set for Mobile app campaign.</div>"
     appStore:
       $ref: 'AdGroupAdServiceAppStore.yaml#/AdGroupAdServiceAppStore'
     description2:
       type: string
+      nullable: true
       description: "<div lang=\"ja\">説明文（2行目）2です。</div><div lang=\"en\">Description2 (line2) of the ad.</div>"
   title: AdGroupAdServiceAppAd
   description: "<div lang=\"ja\">AdGroupAdServiceAppAdオブジェクトは、アプリ向けの広告です。</div><div lang=\"en\">Appad object\

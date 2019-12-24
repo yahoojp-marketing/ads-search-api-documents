@@ -1,5 +1,6 @@
 AdGroupAdServiceAppStore:
   type: string
+  nullable: true
   enum:
   - IOS
   - ANDROID

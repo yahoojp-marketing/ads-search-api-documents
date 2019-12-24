@@ -1,15 +1,18 @@
 AdGroupWebpageServiceOperation:
   type: object
+  nullable: true
   required:
   - accountId
   - operand
   properties:
     accountId:
       type: integer
+      nullable: false
       format: int64
       description: "<div lang=\"ja\">アカウントID</div><div lang=\"en\">Account ID</div>"
     operand:
       type: array
+      nullable: true
       items:
         $ref: 'AdGroupWebpage.yaml#/AdGroupWebpage'
       minItems: 1

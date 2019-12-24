@@ -1,26 +1,32 @@
 BiddingStrategyServiceSelector:
   type: object
+  nullable: true
   required:
   - accountId
   properties:
     accountId:
       type: integer
+      nullable: false
       format: int64
       description: "<div lang=\"ja\">アカウントID</div><div lang=\"en\">Account ID.</div>"
     biddingStrategyIds:
       type: array
+      nullable: true
       items:
         type: integer
+        nullable: true
         format: int64
       maxItems: 500
       description: "<div lang=\"ja\">自動入札ID</div><div lang=\"en\">Auto bidding ID.</div>"
     biddingStrategyTypes:
       type: array
+      nullable: true
       items:
         $ref: 'BiddingStrategyServiceType.yaml#/BiddingStrategyServiceType'
       maxItems: 3
     numberResults:
       type: integer
+      nullable: true
       format: int32
       minimum: 1
       maximum: 500
@@ -30,6 +36,7 @@ BiddingStrategyServiceSelector:
         \ see Entity Limits per operation.</div>"
     startIndex:
       type: integer
+      nullable: true
       format: int32
       minimum: 1
       default: 1

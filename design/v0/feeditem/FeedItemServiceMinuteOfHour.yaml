@@ -1,5 +1,6 @@
 FeedItemServiceMinuteOfHour:
   type: string
+  nullable: true
   enum:
   - ZERO
   - FIFTEEN

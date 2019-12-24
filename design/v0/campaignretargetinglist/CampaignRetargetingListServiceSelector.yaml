@@ -1,16 +1,20 @@
 CampaignRetargetingListServiceSelector:
   type: object
+  nullable: true
   required:
   - accountId
   properties:
     accountId:
       type: integer
+      nullable: false
       format: int64
       description: "<div lang=\"ja\">アカウントIDです。</div><div lang=\"en\">Search conditon: Account ID.</div>"
     campaignIds:
       type: array
+      nullable: true
       items:
         type: integer
+        nullable: true
         format: int64
       maxItems: 1000
       description: "<div lang=\"ja\">キャンペーンIDです。</div><div lang=\"en\">Search conditon: Campaign ID.</div>"
@@ -18,6 +22,7 @@ CampaignRetargetingListServiceSelector:
       $ref: 'CampaignRetargetingListServiceExcludedType.yaml#/CampaignRetargetingListServiceExcludedType'
     numberResults:
       type: integer
+      nullable: true
       format: int32
       minimum: 1
       maximum: 1000
@@ -27,6 +32,7 @@ CampaignRetargetingListServiceSelector:
         \ see Entity Limits per operation.</div>"
     startIndex:
       type: integer
+      nullable: true
       format: int32
       minimum: 1
       default: 1
@@ -35,8 +41,10 @@ CampaignRetargetingListServiceSelector:
         \ to 1.</div>"
     targetListIds:
       type: array
+      nullable: true
       items:
         type: integer
+        nullable: true
         format: int64
       maxItems: 1000
       description: "<div lang=\"ja\">ターゲットリストIDです。</div><div lang=\"en\">Search conditon: Target List ID.</div>"

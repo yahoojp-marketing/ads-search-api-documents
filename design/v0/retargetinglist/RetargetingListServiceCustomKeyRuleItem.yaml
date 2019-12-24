@@ -1,8 +1,10 @@
 RetargetingListServiceCustomKeyRuleItem:
   type: object
+  nullable: true
   properties:
     textKey:
       type: string
+      nullable: true
       description: "<div lang=\"ja\">評価項目</div><div lang=\"en\">Evaluation item.</div>"
   title: RetargetingListServiceCustomKeyRuleItem
   description: "<div lang=\"ja\">RetargetingListServiceCustomKeyRuleItemは、カスタムキールールの評価式を保持するオブジェクトです。</div><div lang=\"en\">RetargetingListServiceCustomKeyRuleItem\

@@ -1,21 +1,26 @@
 CampaignSharedSetServiceSelector:
   type: object
+  nullable: true
   required:
   - accountId
   properties:
     accountId:
       type: integer
+      nullable: false
       format: int64
       description: "<div lang=\"ja\">検索条件：アカウントIDです。</div><div lang=\"en\">Search criteria : Account ID.</div>"
     campaignIds:
       type: array
+      nullable: true
       items:
         type: integer
+        nullable: true
         format: int64
       maxItems: 1000
       description: "<div lang=\"ja\">検索条件：キャンペーンIDです。</div><div lang=\"en\">Search criteria : Campaign ID.</div>"
     numberResults:
       type: integer
+      nullable: true
       format: int32
       minimum: 1
       maximum: 1000
@@ -25,14 +30,17 @@ CampaignSharedSetServiceSelector:
         \ see Entity Limits per operation.</div>"
     sharedListIds:
       type: array
+      nullable: true
       items:
         type: integer
+        nullable: true
         format: int64
       maxItems: 20
       description: "<div lang=\"ja\">検索条件：対象外キーワードリストIDです。</div><div lang=\"en\">Search criteria : Shared\
         \ list ID.</div>"
     startIndex:
       type: integer
+      nullable: true
       format: int32
       minimum: 1
       default: 1

@@ -1,14 +1,18 @@
 Error:
   description: "<div lang=\"ja\">Errorオブジェクトは、エラー内容を表します。</div><div lang=\"en\">Error information.</div>"
   type: object
+  nullable: true
   properties:
     code:
       description: "<div lang=\"ja\">エラーコードです。</div><div lang=\"en\">The error code.</div>"
       type: string
+      nullable: true
     message:
       description: "<div lang=\"ja\">エラーメッセージです。</div><div lang=\"en\">A simple string representation of the error and reason.</div>"
       type: string
+      nullable: true
     details:
       type: array
+      nullable: true
       items:
         $ref: 'ErrorDetail.yaml#/ErrorDetail'

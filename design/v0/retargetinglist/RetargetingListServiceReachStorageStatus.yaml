@@ -1,5 +1,6 @@
 RetargetingListServiceReachStorageStatus:
   type: string
+  nullable: true
   enum:
   - OPEN
   - CLOSED

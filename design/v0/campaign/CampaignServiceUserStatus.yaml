@@ -1,5 +1,6 @@
 CampaignServiceUserStatus:
   type: string
+  nullable: true
   enum:
   - ACTIVE
   - PAUSED

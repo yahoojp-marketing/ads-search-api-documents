@@ -1,14 +1,17 @@
 ReportDefinitionServiceSelector:
   type: object
+  nullable: true
   required:
   - accountId
   properties:
     accountId:
       type: integer
+      nullable: false
       format: int64
       description: "<div lang=\"ja\">検索条件： アカウントIDです。</div><div lang=\"en\">Search condition: Account ID.</div>"
     numberResults:
       type: integer
+      nullable: true
       format: int32
       minimum: 1
       maximum: 500
@@ -18,22 +21,27 @@ ReportDefinitionServiceSelector:
         \ see Entity Limits per operation.</div>"
     reportJobIds:
       type: array
+      nullable: true
       items:
         type: integer
+        nullable: true
         format: int64
       maxItems: 500
       description: "<div lang=\"ja\">検索条件： レポートジョブIDです。</div><div lang=\"en\">Search condition: Report Job\
         \ ID.</div>"
     reportJobStatuses:
       type: array
+      nullable: true
       items:
         $ref: 'ReportDefinitionServiceReportJobStatus.yaml#/ReportDefinitionServiceReportJobStatus'
     reportTypes:
       type: array
+      nullable: true
       items:
         $ref: 'ReportDefinitionServiceReportType.yaml#/ReportDefinitionServiceReportType'
     startIndex:
       type: integer
+      nullable: true
       format: int32
       minimum: 1
       default: 1

@@ -1,16 +1,20 @@
 CampaignTargetServiceSelector:
   type: object
+  nullable: true
   required:
   - accountId
   properties:
     accountId:
       type: integer
+      nullable: false
       format: int64
       description: "<div lang=\"ja\">アカウントIDです。</div><div lang=\"en\">Account ID.</div>"
     campaignIds:
       type: array
+      nullable: true
       items:
         type: integer
+        nullable: true
         format: int64
       maxItems: 500
       description: "<div lang=\"ja\">キャンペーンIDです。</div><div lang=\"en\">Campaign ID.</div>"
@@ -18,6 +22,7 @@ CampaignTargetServiceSelector:
       $ref: 'CampaignTargetServiceExcludedType.yaml#/CampaignTargetServiceExcludedType'
     numberResults:
       type: integer
+      nullable: true
       format: int32
       minimum: 1
       maximum: 500
@@ -27,11 +32,13 @@ CampaignTargetServiceSelector:
         \ see Entity Limits per operation.</div>"
     platformTypes:
       type: array
+      nullable: true
       items:
         $ref: 'CampaignTargetServicePlatformType.yaml#/CampaignTargetServicePlatformType'
       maxItems: 3
     startIndex:
       type: integer
+      nullable: true
       format: int32
       minimum: 1
       default: 1
@@ -40,12 +47,15 @@ CampaignTargetServiceSelector:
         \ to 1.</div>"
     targetIds:
       type: array
+      nullable: true
       items:
         type: string
+        nullable: true
       maxItems: 500
       description: "<div lang=\"ja\">ターゲットIDです。</div><div lang=\"en\">Target ID.</div>"
     targetTypes:
       type: array
+      nullable: true
       items:
         $ref: 'CampaignTargetServiceTargetType.yaml#/CampaignTargetServiceTargetType'
       maxItems: 4

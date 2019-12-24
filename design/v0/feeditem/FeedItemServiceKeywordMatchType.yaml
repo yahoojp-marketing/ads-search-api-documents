@@ -1,5 +1,6 @@
 FeedItemServiceKeywordMatchType:
   type: string
+  nullable: true
   enum:
   - EXACT
   - PHRASE

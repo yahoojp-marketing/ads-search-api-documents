@@ -1,11 +1,14 @@
 AdGroupAdServicePage:
   type: object
+  nullable: true
   properties:
     totalNumEntries:
       type: integer
+      nullable: false
       format: int32
     values:
       type: array
+      nullable: true
       items:
         $ref: 'AdGroupAdServiceValue.yaml#/AdGroupAdServiceValue'
   title: AdGroupAdServicePage

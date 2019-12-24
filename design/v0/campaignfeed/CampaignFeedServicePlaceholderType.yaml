@@ -1,5 +1,6 @@
 CampaignFeedServicePlaceholderType:
   type: string
+  nullable: true
   enum:
   - QUICKLINK
   - CALLEXTENSION

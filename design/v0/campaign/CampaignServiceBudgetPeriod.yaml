@@ -1,5 +1,6 @@
 CampaignServiceBudgetPeriod:
   type: string
+  nullable: true
   enum:
   - DAILY
   - UNKNOWN

@@ -1,17 +1,22 @@
 AdGroupCriterionServiceAdditionalUrl:
   type: object
+  nullable: true
   properties:
     disapprovalReasonCodes:
       type: array
+      nullable: true
       items:
         type: string
+        nullable: true
       description: "<div lang=\"ja\">審査否認理由のコードです。<br>(コード詳細は、DictionaryServiceのgetDisapprovalReasonのレスポンスを参照)</div><div lang=\"en\">Reject reason code.<br>(Refer to DictionaryService getDisapprovalReason response for details)</div>"
     reviewUrl:
       type: string
+      nullable: true
       description: "<div lang=\"ja\">審査中の最終リンク先URLです。</div><div lang=\"en\">Landing Page URL in editorial\
         \ review.</div>"
     url:
       type: string
+      nullable: true
       description: "<div lang=\"ja\">最終リンク先URLです。</div><div lang=\"en\">Landing Page URL.</div>"
   title: AdGroupCriterionServiceAdditionalUrl
   description: "<div lang=\"ja\">AdGroupCriterionServiceAdditionalUrlオブジェクトは、追加する最終リンク先URLを保持します。</div><div lang=\"en\">AdGroupCriterionServiceAdditionalUrl\

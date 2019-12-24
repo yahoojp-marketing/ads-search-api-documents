@@ -1,8 +1,10 @@
 AuditLogServiceReturnValue:
   type: object
+  nullable: true
   properties:
     values:
       type: array
+      nullable: true
       items:
         $ref: 'AuditLogServiceValue.yaml#/AuditLogServiceValue'
   title: AuditLogServiceReturnValue

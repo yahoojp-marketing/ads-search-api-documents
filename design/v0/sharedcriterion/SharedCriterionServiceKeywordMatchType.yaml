@@ -1,5 +1,6 @@
 SharedCriterionServiceKeywordMatchType:
   type: string
+  nullable: true
   enum:
   - EXACT
   - PHRASE

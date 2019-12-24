@@ -1,20 +1,25 @@
 CampaignTarget:
   type: object
+  nullable: true
   properties:
     accountId:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">アカウントIDです。</div><div lang=\"en\">Account ID</div>"
     bidMultiplier:
       type: number
+      nullable: true
       format: double
       description: "<div lang=\"ja\">入札価格調整率です。</div><div lang=\"en\">Bid multiplier</div>"
     campaignId:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">キャンペーンIDです。</div><div lang=\"en\">Campaign ID</div>"
     campaignName:
       type: string
+      nullable: true
       description: "<div lang=\"ja\">キャンペーン名です。</div><div lang=\"en\">Campaign Name</div>"
     target:
       $ref: 'CampaignTargetServiceTarget.yaml#/CampaignTargetServiceTarget'

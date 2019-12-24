@@ -1,5 +1,6 @@
 AdGroupAdServiceTrademarkStatus:
   type: string
+  nullable: true
   enum:
   - NO_RESTRICTION
   - CONFLICT_WITH_TRADEMARK

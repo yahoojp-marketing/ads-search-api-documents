@@ -1,12 +1,15 @@
 ReportDefinitionServiceReportDateRange:
   type: object
+  nullable: true
   properties:
     endDate:
       type: string
+      nullable: true
       description: "<div lang=\"ja\">集計の終了日です。</div><div lang=\"en\">End date. If DateRangeType selecet CUSTOM_DATE,\
         \ this field is required.</div>"
     startDate:
       type: string
+      nullable: true
       description: "<div lang=\"ja\">集計の開始日です。</div><div lang=\"en\">Start data. If DateRangeType selecet\
         \ CUSTOM_DATE, this field is required.</div>"
   title: ReportDefinitionServiceReportDateRange

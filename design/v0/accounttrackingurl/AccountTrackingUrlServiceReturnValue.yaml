@@ -1,8 +1,10 @@
 AccountTrackingUrlServiceReturnValue:
   type: object
+  nullable: true
   properties:
     values:
       type: array
+      nullable: true
       items:
         $ref: 'AccountTrackingUrlServiceValue.yaml#/AccountTrackingUrlServiceValue'
   title: AccountTrackingUrlServiceReturnValue

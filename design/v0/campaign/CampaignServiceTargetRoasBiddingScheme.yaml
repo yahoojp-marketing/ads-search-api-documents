@@ -1,17 +1,21 @@
 CampaignServiceTargetRoasBiddingScheme:
   type: object
+  nullable: true
   properties:
     bidCeiling:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">入札価格の上限です。<br>※「0」が設定された場合、上限設定はありません。</div><div lang=\"en\">Limit of bid (CPC).<br>* There will be no setting limit, if set as &#34;0&#34;.</div>"
     bidFloor:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">入札価格の下限です。<br>※ 設定を解除する場合は「0」を指定します。</div><div lang=\"en\">Minimum CPC.<br>* Set\
         \ &#34;0&#34; to deactivate.</div>"
     targetRoas:
       type: number
+      nullable: true
       format: double
       description: "<div lang=\"ja\">広告費用対効果の目標値です。<br>0.01 ～ 1000.00（1% ～ 100000%）の範囲内のみ 許容します。<br>※ROAS:\
         \ Return On Advertising Spend</div><div lang=\"en\">Target ROAS (Return On Advertising\

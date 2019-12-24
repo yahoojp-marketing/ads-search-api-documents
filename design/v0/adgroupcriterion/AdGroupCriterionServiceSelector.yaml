@@ -1,36 +1,45 @@
 AdGroupCriterionServiceSelector:
   type: object
+  nullable: true
   required:
   - accountId
   - use
   properties:
     accountId:
       type: integer
+      nullable: false
       format: int64
       description: "<div lang=\"ja\">検索条件：アカウントID</div><div lang=\"en\">Search condition: Account ID.</div>"
     adGroupIds:
       type: array
+      nullable: true
       items:
         type: integer
+        nullable: true
         format: int64
       maxItems: 1000
       description: "<div lang=\"ja\">検索条件：広告グループID</div><div lang=\"en\">Search condition: Ad group ID.</div>"
     approvalStatuses:
       type: array
+      nullable: true
       items:
         $ref: 'AdGroupCriterionServiceApprovalStatus.yaml#/AdGroupCriterionServiceApprovalStatus'
       maxItems: 5
     biddingStrategyIds:
       type: array
+      nullable: true
       items:
         type: integer
+        nullable: true
         format: int64
       maxItems: 1000
       description: "<div lang=\"ja\">検索条件：自動入札ID</div><div lang=\"en\">Search condition: Auto bidding ID.</div>"
     campaignIds:
       type: array
+      nullable: true
       items:
         type: integer
+        nullable: true
         format: int64
       maxItems: 1000
       description: "<div lang=\"ja\">検索条件：キャンペーンID</div><div lang=\"en\">Search condition: Campaign ID.</div>"
@@ -38,8 +47,10 @@ AdGroupCriterionServiceSelector:
       $ref: 'AdGroupCriterionServiceContainsLabelId.yaml#/AdGroupCriterionServiceContainsLabelId'
     criterionIds:
       type: array
+      nullable: true
       items:
         type: integer
+        nullable: true
         format: int64
       maxItems: 1000
       description: "<div lang=\"ja\">検索条件：クライテリオンID<br>指定しない場合は、広告グループID以下のすべてのクライ テリアが含まれます。</div><div lang=\"en\">Search\
@@ -47,13 +58,16 @@ AdGroupCriterionServiceSelector:
         \ if theres is no designation.</div>"
     labelIds:
       type: array
+      nullable: true
       items:
         type: integer
+        nullable: true
         format: int64
       maxItems: 1000
       description: "<div lang=\"ja\">検索条件：ラベルID</div><div lang=\"en\">Search condition: Label ID</div>"
     numberResults:
       type: integer
+      nullable: true
       format: int32
       minimum: 1
       maximum: 10000
@@ -63,6 +77,7 @@ AdGroupCriterionServiceSelector:
         \ see Entity Limits per operation.</div>"
     startIndex:
       type: integer
+      nullable: true
       format: int32
       minimum: 1
       default: 1
@@ -73,6 +88,7 @@ AdGroupCriterionServiceSelector:
       $ref: 'AdGroupCriterionServiceUse.yaml#/AdGroupCriterionServiceUse'
     userStatuses:
       type: array
+      nullable: true
       items:
         $ref: 'AdGroupCriterionServiceUserStatus.yaml#/AdGroupCriterionServiceUserStatus'
       maxItems: 2

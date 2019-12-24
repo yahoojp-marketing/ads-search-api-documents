@@ -1,5 +1,6 @@
 AdGroupBidMultiplierServicePlatformType:
   type: string
+  nullable: true
   enum:
   - SMART_PHONE
   - TABLET

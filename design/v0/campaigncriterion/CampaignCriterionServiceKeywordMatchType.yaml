@@ -1,5 +1,6 @@
 CampaignCriterionServiceKeywordMatchType:
   type: string
+  nullable: true
   enum:
   - EXACT
   - PHRASE

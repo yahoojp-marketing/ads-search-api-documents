@@ -1,5 +1,6 @@
 CampaignServiceAppStore:
   type: string
+  nullable: true
   description: "<div lang=\"ja\">CampaignServiceAppStore、ユーザーにより広告配信の有無を調整できる設定です。</div><div lang=\"en\">CampaignServiceAppStore\
     \ is the type of app store.</div><hr>\n<p>* <code>IOS</code> - <span lang=\"ja\">iOS（App Store）です。</span><span lang=\"en\">iOS\
     \ (App Store)</span></p><p>* <code>ANDROID</code> - <span lang=\"ja\">Android（Google Play）です。</span><span lang=\"en\">Android\

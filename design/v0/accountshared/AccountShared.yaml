@@ -1,25 +1,31 @@
 AccountShared:
   type: object
+  nullable: true
   properties:
     accountId:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">アカウントIDです。</div><div lang=\"en\">Account ID.</div>"
     memberCount:
       type: integer
+      nullable: true
       format: int32
       description: "<div lang=\"ja\">対象外キーワードリストに含まれるアイテム（検索対象外キーワード）数です。</div><div lang=\"en\">Number of\
         \ items on Negative keyword list (keyword excluded on search).</div>"
     name:
       type: string
+      nullable: true
       description: "<div lang=\"ja\">対象外キーワードリスト名です。</div><div lang=\"en\">Negative keyword list name.</div>"
     referenceCount:
       type: integer
+      nullable: true
       format: int32
       description: "<div lang=\"ja\">対象外キーワードリストを使用している キャンペーン数です。</div><div lang=\"en\">Number of campaigns\
         \ which use negative keyword list.</div>"
     sharedListId:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">対象外キーワードリストIDです。</div><div lang=\"en\">Negative keyword list ID.</div>"
   title: AccountShared

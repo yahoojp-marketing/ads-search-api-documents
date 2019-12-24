@@ -1,5 +1,6 @@
 RetargetingListServiceUrlRuleItem:
   type: object
+  nullable: true
   properties:
     urlRuleKey:
       $ref: 'RetargetingListServiceUrlRuleKey.yaml#/RetargetingListServiceUrlRuleKey'

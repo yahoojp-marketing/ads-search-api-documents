@@ -1,38 +1,47 @@
 AdGroupCriterion:
   type: object
+  nullable: true
   properties:
     accountId:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">アカウントID</div><div lang=\"en\">Account ID.</div>"
     adGroupId:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">広告グループID</div><div lang=\"en\">Ad group ID.</div>"
     adGroupName:
       type: string
+      nullable: true
       description: "<div lang=\"ja\">広告グループ名</div><div lang=\"en\">Ad group name.</div>"
     adGroupTrackId:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">トラッキング用広告グループID</div><div lang=\"en\">Ad group ID for tracking.</div>"
     biddableAdGroupCriterion:
       $ref: 'AdGroupCriterionServiceBiddableAdGroupCriterion.yaml#/AdGroupCriterionServiceBiddableAdGroupCriterion'
     campaignId:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">キャンペーンID</div><div lang=\"en\">Campaign ID.</div>"
     campaignName:
       type: string
+      nullable: true
       description: "<div lang=\"ja\">キャンペーン名</div><div lang=\"en\">Campaign name.</div>"
     campaignTrackId:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">トラッキング用キャンペーンID</div><div lang=\"en\">Campaign ID for tracking.</div>"
     criterion:
       $ref: 'AdGroupCriterionServiceCriterion.yaml#/AdGroupCriterionServiceCriterion'
     labels:
       type: array
+      nullable: true
       items:
         $ref: 'AdGroupCriterionServiceLabel.yaml#/AdGroupCriterionServiceLabel'
     use:

@@ -1,26 +1,32 @@
 CampaignExportServiceSelector:
   type: object
+  nullable: true
   required:
   - accountId
   properties:
     accountId:
       type: integer
+      nullable: false
       format: int64
       description: "<div lang=\"ja\">検索条件：アカウントIDです。</div><div lang=\"en\">Search condition: Account ID.</div>"
     jobIds:
       type: array
+      nullable: true
       items:
         type: integer
+        nullable: true
         format: int64
       maxItems: 500
       description: "<div lang=\"ja\">検索条件：ジョブIDです。</div><div lang=\"en\">Search condition: Job ID.</div>"
     jobStatuses:
       type: array
+      nullable: true
       items:
         $ref: 'CampaignExportServiceJobStatus.yaml#/CampaignExportServiceJobStatus'
       maxItems: 4
     numberResults:
       type: integer
+      nullable: true
       format: int32
       minimum: 1
       maximum: 500
@@ -30,6 +36,7 @@ CampaignExportServiceSelector:
               \ see Entity Limits per operation.</div>"
     startIndex:
       type: integer
+      nullable: true
       format: int32
       minimum: 1
       default: 1

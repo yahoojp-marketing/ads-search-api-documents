@@ -1,13 +1,16 @@
 CampaignCriterionServiceCriterion:
   type: object
+  nullable: true
   properties:
     criterionId:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">クライテリアIDです。</div><div lang=\"en\">CampaignCriterionServiceCriterion\
         \ ID.</div>"
     criterionTrackId:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">クライテリオントラックIDです。<br>対象外キーワードでは返却されません。</div><div lang=\"en\">CampaignCriterionServiceCriterion\
         \ Track ID.<br>This is not returned for Negative keyword.</div>"

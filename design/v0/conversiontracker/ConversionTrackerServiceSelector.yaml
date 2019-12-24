@@ -1,25 +1,31 @@
 ConversionTrackerServiceSelector:
   type: object
+  nullable: true
   required:
   - accountId
   properties:
     accountId:
       type: integer
+      nullable: false
       format: int64
       description: "<div lang=\"ja\">アカウントIDです。</div><div lang=\"en\">Account ID.</div>"
     appIds:
       type: array
+      nullable: true
       items:
         type: string
+        nullable: true
       maxItems: 500
       description: "<div lang=\"ja\">アプリケーションIDです。</div><div lang=\"en\">App ID.</div>"
     categories:
       type: array
+      nullable: true
       items:
         $ref: 'ConversionTrackerServiceCategory.yaml#/ConversionTrackerServiceCategory'
       maxItems: 6
     conversionCountingTypes:
       type: array
+      nullable: true
       items:
         $ref: 'ConversionTrackerServiceConversionCountingType.yaml#/ConversionTrackerServiceConversionCountingType'
       maxItems: 2
@@ -27,23 +33,28 @@ ConversionTrackerServiceSelector:
       $ref: 'ConversionTrackerServiceConversionDateRange.yaml#/ConversionTrackerServiceConversionDateRange'
     conversionTrackerIds:
       type: array
+      nullable: true
       items:
         type: integer
+        nullable: true
         format: int64
       maxItems: 500
       description: "<div lang=\"ja\">コンバージョントラッカーIDです。</div><div lang=\"en\">Conversion Tracker ID.</div>"
     conversionTrackerTypes:
       type: array
+      nullable: true
       items:
         $ref: 'ConversionTrackerServiceConversionTrackerType.yaml#/ConversionTrackerServiceConversionTrackerType'
       maxItems: 2
     excludeFromBiddings:
       type: array
+      nullable: true
       items:
         $ref: 'ConversionTrackerServiceExcludeFromBidding.yaml#/ConversionTrackerServiceExcludeFromBidding'
       maxItems: 2
     numberResults:
       type: integer
+      nullable: true
       format: int32
       minimum: 1
       maximum: 500
@@ -53,6 +64,7 @@ ConversionTrackerServiceSelector:
         \ see Entity Limits per operation.</div>"
     startIndex:
       type: integer
+      nullable: true
       format: int32
       minimum: 1
       default: 1
@@ -61,11 +73,13 @@ ConversionTrackerServiceSelector:
         \ to 1.</div>"
     statuses:
       type: array
+      nullable: true
       items:
         $ref: 'ConversionTrackerServiceStatus.yaml#/ConversionTrackerServiceStatus'
       maxItems: 2
     trackingCodeTypes:
       type: array
+      nullable: true
       items:
         $ref: 'ConversionTrackerServiceTrackingCodeType.yaml#/ConversionTrackerServiceTrackingCodeType'
       maxItems: 3

@@ -1,17 +1,21 @@
 PageFeedItemServiceJobStatusSelector:
   type: object
+  nullable: true
   required:
   - accountId
   - jobType
   properties:
     accountId:
       type: integer
+      nullable: false
       format: int64
       description: "<div lang=\"ja\">アカウントID</div><div lang=\"en\">Account ID</div>"
     jobIds:
       type: array
+      nullable: true
       items:
         type: integer
+        nullable: true
         format: int64
       maxItems: 1000
       description: "<div lang=\"ja\">登録したジョブのID</div><div lang=\"en\">Registered job ID</div>"
@@ -19,6 +23,7 @@ PageFeedItemServiceJobStatusSelector:
       $ref: 'PageFeedItemServiceJobType.yaml#/PageFeedItemServiceJobType'
     numberResults:
       type: integer
+      nullable: true
       format: int32
       minimum: 1
       maximum: 10000
@@ -28,6 +33,7 @@ PageFeedItemServiceJobStatusSelector:
         \ see Entity Limits per operation.</div>"
     startIndex:
       type: integer
+      nullable: true
       format: int32
       minimum: 1
       default: 1

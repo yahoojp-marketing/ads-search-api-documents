@@ -1,5 +1,6 @@
 ConversionTrackerServiceTrackingCodeType:
   type: string
+  nullable: true
   enum:
   - WEBPAGE
   - CLICK_TO_CALL

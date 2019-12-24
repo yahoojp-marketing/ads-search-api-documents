@@ -1,5 +1,6 @@
 RetargetingListServiceReviewStatus:
   type: string
+  nullable: true
   enum:
   - APPROVED
   - DISAPPROVED

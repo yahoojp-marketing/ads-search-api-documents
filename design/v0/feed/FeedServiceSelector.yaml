@@ -1,21 +1,26 @@
 FeedServiceSelector:
   type: object
+  nullable: true
   required:
   - accountId
   properties:
     accountId:
       type: integer
+      nullable: false
       format: int64
       description: "<div lang=\"ja\">アカウントIDです。</div><div lang=\"en\">Account ID.</div>"
     feedIds:
       type: array
+      nullable: true
       items:
         type: integer
+        nullable: true
         format: int64
       maxItems: 200
       description: "<div lang=\"ja\">自動データ挿入のリストのIDです。</div><div lang=\"en\">List ID of Feed.</div>"
     numberResults:
       type: integer
+      nullable: true
       format: int32
       minimum: 1
       maximum: 50
@@ -25,11 +30,13 @@ FeedServiceSelector:
         \ see Entity Limits per operation.</div>"
     placeholderTypes:
       type: array
+      nullable: true
       items:
         $ref: 'FeedServicePlaceholderType.yaml#/FeedServicePlaceholderType'
       maxItems: 2
     startIndex:
       type: integer
+      nullable: true
       format: int32
       minimum: 1
       default: 1

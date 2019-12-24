@@ -1,5 +1,6 @@
 RetargetingListServiceClosingReason:
   type: string
+  nullable: true
   enum:
   - UNUSED_LIST
   - UNKNOWN

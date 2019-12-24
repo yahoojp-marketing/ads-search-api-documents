@@ -1,8 +1,10 @@
 RetargetingListServiceRuleBaseTargetList:
   type: object
+  nullable: true
   properties:
     endDate:
       type: string
+      nullable: true
       description: "<div lang=\"ja\">ルール適用終了日です。<br>※YYYYMMDD形式です。<br>※リクエスト日は2037/12/30まで 指定可能です。</div><div lang=\"en\">End\
         \ date of rule setting.<br>*In YYYYMMDD format<br>*Request date can be set\
         \ up to 2037/12/30</div>"
@@ -12,10 +14,12 @@ RetargetingListServiceRuleBaseTargetList:
       $ref: 'RetargetingListServiceIsDateSpecificRule.yaml#/RetargetingListServiceIsDateSpecificRule'
     rules:
       type: array
+      nullable: true
       items:
         $ref: 'RetargetingListServiceRuleGroup.yaml#/RetargetingListServiceRuleGroup'
     startDate:
       type: string
+      nullable: true
       description: "<div lang=\"ja\">ルール適用開始日です。<br>※YYYYMMDD形式です。<br>※リクエスト日は2037/12/30まで 指定可能です。</div><div lang=\"en\">Start\
         \ date of rule setting.<br>*In YYYYMMDD format<br>*Request date can be set\
         \ up to 2037/12/30</div>"

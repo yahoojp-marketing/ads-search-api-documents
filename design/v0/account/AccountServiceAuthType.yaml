@@ -1,5 +1,6 @@
 AccountServiceAuthType:
   type: string
+  nullable: true
   enum:
     - REFERABLE
     - UPDATABLE

@@ -1,5 +1,6 @@
 AuditLogServiceSourceType:
   type: string
+  nullable: true
   enum:
   - API
   - YAHOO_JAPAN

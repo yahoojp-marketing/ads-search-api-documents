@@ -1,5 +1,6 @@
 CampaignTargetServiceNetworkTarget:
   type: object
+  nullable: true
   properties:
     networkCoverageType:
       $ref: 'CampaignTargetServiceNetworkCoverageType.yaml#/CampaignTargetServiceNetworkCoverageType'

@@ -1,5 +1,6 @@
 FeedServicePlaceholderField:
   type: string
+  nullable: true
   enum:
   - AD_CUSTOMIZER_INTEGER
   - AD_CUSTOMIZER_PRICE

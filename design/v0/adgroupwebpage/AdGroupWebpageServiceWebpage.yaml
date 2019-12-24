@@ -1,15 +1,18 @@
 AdGroupWebpageServiceWebpage:
   type: object
+  nullable: true
   properties:
     parameter:
       $ref: 'AdGroupWebpageServiceWebpageParameter.yaml#/AdGroupWebpageServiceWebpageParameter'
     targetId:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">AdGroupWebpageServiceWebpageを識別するID</div><div lang=\"en\">Unique ID\
         \ for each identify webpage</div>"
     targetTrackId:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">AdGroupWebpageServiceWebpageを識別するトラッキングID</div><div lang=\"en\">Tracking\
         \ ID for each identify webpage</div>"

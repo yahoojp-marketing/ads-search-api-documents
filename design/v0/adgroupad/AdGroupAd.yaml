@@ -1,33 +1,41 @@
 AdGroupAd:
   type: object
+  nullable: true
   properties:
     accountId:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">アカウントID</div><div lang=\"en\">Account ID.</div>"
     ad:
       $ref: 'AdGroupAdServiceAd.yaml#/AdGroupAdServiceAd'
     adGroupId:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">広告グループID</div><div lang=\"en\">Ad group ID.</div>"
     adGroupName:
       type: string
+      nullable: true
       description: "<div lang=\"ja\">広告グループ名</div><div lang=\"en\">Ad group name.</div>"
     adGroupTrackId:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">トラッキング用広告グループID</div><div lang=\"en\">Ad group\
         \ ID for tracking.</div>"
     adId:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">広告ID</div><div lang=\"en\">Ad ID.</div>"
     adName:
       type: string
+      nullable: true
       description: "<div lang=\"ja\">広告名</div><div lang=\"en\">Ad name.</div>"
     adTrackId:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">トラッキング用広告ID</div><div lang=\"en\">Ad ID for\
         \ tracking.</div>"
@@ -35,32 +43,41 @@ AdGroupAd:
       $ref: 'AdGroupAdServiceApprovalStatus.yaml#/AdGroupAdServiceApprovalStatus'
     campaignId:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">キャンペーンID</div><div lang=\"en\">Campaign ID.</div>"
     campaignName:
       type: string
+      nullable: true
       description: "<div lang=\"ja\">キャンペーン名</div><div lang=\"en\">Campaign name.</div>"
     campaignTrackId:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">トラッキング用キャンペーンID</div><div lang=\"en\">Campaign\
         \ ID for tracking.</div>"
     disapprovalReasonCodes:
       type: array
+      nullable: true
       items:
         type: string
+        nullable: true
       description: "<div lang=\"ja\">審査否認の理由コード<br>(コード詳細は、DictionaryServiceのgetDisapprovalReasonのレスポンスを参照)</div><div lang=\"en\">Code of Disapproval reason.<br>(Refer to DictionaryService getDisapprovalReason response for details)</div>"
     feedId:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">フィードID</div><div lang=\"en\">Feed ID.</div>"
     invalidedTrademarks:
       type: array
+      nullable: true
       items:
         type: string
+        nullable: true
       description: "<div lang=\"ja\">制限された商標</div><div lang=\"en\">Invalided trademarks.</div>"
     labels:
       type: array
+      nullable: true
       items:
         $ref: 'AdGroupAdServiceLabel.yaml#/AdGroupAdServiceLabel'
     trademarkStatus:

@@ -1,5 +1,6 @@
 ConversionTrackerServiceAppPlatform:
   type: string
+  nullable: true
   enum:
   - ANDROID_MARKET
   - UNKNOWN

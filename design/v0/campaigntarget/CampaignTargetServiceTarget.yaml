@@ -1,5 +1,6 @@
 CampaignTargetServiceTarget:
   type: object
+  nullable: true
   properties:
     locationTarget:
       $ref: 'CampaignTargetServiceLocationTarget.yaml#/CampaignTargetServiceLocationTarget'
@@ -11,6 +12,7 @@ CampaignTargetServiceTarget:
       $ref: 'CampaignTargetServiceScheduleTarget.yaml#/CampaignTargetServiceScheduleTarget'
     targetId:
       type: string
+      nullable: true
       description: "<div lang=\"ja\">ターゲットIDです。</div><div lang=\"en\">CampaignTargetServiceTarget ID.</div>"
     targetType:
       $ref: 'CampaignTargetServiceTargetType.yaml#/CampaignTargetServiceTargetType'

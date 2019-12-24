@@ -1,5 +1,6 @@
 ReportDefinitionServiceReportLanguage:
   type: string
+  nullable: true
   enum:
   - JA
   - EN

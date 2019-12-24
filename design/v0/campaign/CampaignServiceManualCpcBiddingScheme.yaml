@@ -1,5 +1,6 @@
 CampaignServiceManualCpcBiddingScheme:
   type: object
+  nullable: true
   properties:
     enhancedCpcEnabled:
       $ref: 'CampaignServiceEnhancedCpcEnabled.yaml#/CampaignServiceEnhancedCpcEnabled'

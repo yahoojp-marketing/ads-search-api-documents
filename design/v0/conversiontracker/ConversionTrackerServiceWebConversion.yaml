@@ -1,13 +1,16 @@
 ConversionTrackerServiceWebConversion:
   type: object
+  nullable: true
   properties:
     markupLanguage:
       $ref: 'ConversionTrackerServiceMarkupLanguage.yaml#/ConversionTrackerServiceMarkupLanguage'
     snippet:
       type: string
+      nullable: true
       description: "<div lang=\"ja\">トラッキングスクリプトです。</div><div lang=\"en\">Tracking script.</div>"
     advancedSnippet:
       type: string
+      nullable: true
       description: "<div lang=\"ja\">リニューアル版のコンバージョンタグは、従来のタグよりもブラウザーなどの環境の影響を受けづらい新しいフォーマットです。<br/> 詳細は[ヘルプ](https://support-marketing.yahoo.co.jp/promotionalads/ss/articledetail?lan=ja&aid=1159)を参照</div><div lang=\"en\">The new format of conversion tag avoids the impacts such as changes made to the browser. <br/> [Help Page](https://support-marketing.yahoo.co.jp/promotionalads/ss/articledetail?lan=en&aid=353)</div>"
     trackingCodeType:
       $ref: 'ConversionTrackerServiceTrackingCodeType.yaml#/ConversionTrackerServiceTrackingCodeType'

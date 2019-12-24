@@ -1,24 +1,30 @@
 AdGroupAdLabel:
   type: object
+  nullable: true
   properties:
     accountId:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">アカウントID</div><div lang=\"en\">Account ID</div>"
     adGroupId:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">広告グループID</div><div lang=\"en\">Ad group ID</div>"
     adId:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">広告ID</div><div lang=\"en\">Ad group Ad ID</div>"
     campaignId:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">キャンペーンID</div><div lang=\"en\">Campaign ID</div>"
     labelId:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">ラベルID</div><div lang=\"en\">Label ID</div>"
   title: AdGroupAdLabel

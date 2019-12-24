@@ -1,5 +1,6 @@
 AdGroupCriterionServiceUse:
   type: string
+  nullable: true
   enum:
   - BIDDABLE
   - NEGATIVE

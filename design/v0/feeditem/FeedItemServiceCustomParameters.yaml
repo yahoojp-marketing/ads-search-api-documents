@@ -1,10 +1,12 @@
 FeedItemServiceCustomParameters:
   type: object
+  nullable: true
   properties:
     isRemove:
       $ref: 'FeedItemServiceIsRemove.yaml#/FeedItemServiceIsRemove'
     parameters:
       type: array
+      nullable: true
       items:
         $ref: 'FeedItemServiceCustomParameter.yaml#/FeedItemServiceCustomParameter'
   title: FeedItemServiceCustomParameters

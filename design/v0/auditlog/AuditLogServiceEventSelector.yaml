@@ -1,8 +1,10 @@
 AuditLogServiceEventSelector:
   type: object
+  nullable: true
   properties:
     entityType:
       type: string
+      nullable: true
       description: "<div lang=\"ja\">AuditLogServiceEntityTypeオブジェクトは、操作履歴に出力するエンティティの種類を表します。</div><div lang=\"en\">AuditLogServiceEntityType\
           \ object describes the type of entities to be output on the data of operation history.</div><hr>\n\
           <p>* <code>CAMPAIGN</code> - <span lang=\"ja\">キャンペーンです。</span><span lang=\"en\">Campaign.</span></p>\
@@ -33,6 +35,7 @@ AuditLogServiceEventSelector:
           <p>* <code>UNKNOWN</code> - <span lang=\"ja\">未知の値です。</span><span lang=\"en\">Unknown Value</span></p>"
     eventTypes:
       type: array
+      nullable: true
       items:
         $ref: 'AuditLogServiceEventTypes.yaml#/AuditLogServiceEventTypes'
   title: AuditLogServiceEventSelector

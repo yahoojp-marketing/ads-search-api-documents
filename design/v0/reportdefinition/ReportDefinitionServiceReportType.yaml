@@ -1,5 +1,6 @@
 ReportDefinitionServiceReportType:
   type: string
+  nullable: true
   enum:
   - ACCOUNT
   - CAMPAIGN

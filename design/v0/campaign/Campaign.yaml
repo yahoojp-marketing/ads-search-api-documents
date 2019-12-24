@@ -1,12 +1,15 @@
 Campaign:
   type: object
+  nullable: true
   properties:
     accountId:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">アカウントID</div><div lang=\"en\">Account ID.</div>"
     appId:
       type: string
+      nullable: true
       description: "<div lang=\"ja\">アプリID（iOS）またはパッケージ名（Android）<br>※アプリキャンペーンでiOSの場合、入力は数値のみです。</div><div lang=\"en\">App\
         \ ID (for iOS) or Package name (for Android).<br>*Input only the numbers for\
         \ iOS in Mobile App Campaign.</div>"
@@ -20,14 +23,17 @@ Campaign:
       $ref: 'CampaignServiceBudget.yaml#/CampaignServiceBudget'
     campaignId:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">キャンペーンID</div><div lang=\"en\">Campaign ID.</div>"
     campaignName:
       type: string
+      nullable: true
       description: "<div lang=\"ja\">キャンペーン名<br>※入力制限：50文字以内です。</div><div lang=\"en\">Campaign name.<br>\
         \ *Insert limit: Up to 50 characters.</div>"
     campaignTrackId:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">トラッキング用キャンペーンID</div><div lang=\"en\">Campaign\
         \ ID for tracking.</div>"
@@ -37,30 +43,35 @@ Campaign:
       $ref: 'CampaignServiceCustomParameters.yaml#/CampaignServiceCustomParameters'
     endDate:
       type: string
+      nullable: true
       description: "<div lang=\"ja\">キャンペーンの終了日<br>過去の日付、開始日以前の日付は指定できません。<br>※YYYYMMDD形式です。</div><div lang=\"en\">End date\
         \ of Campaign.<br>*Cannot set the past date and date before the start date.<br>*In YYYYMMDD format.</div>"
     failedBiddingStrategyConfiguration:
       $ref: 'CampaignServiceBiddingStrategy.yaml#/CampaignServiceBiddingStrategy'
     labels:
       type: array
+      nullable: true
       items:
         $ref: 'CampaignServiceLabel.yaml#/CampaignServiceLabel'
     servingStatus:
       $ref: 'CampaignServiceServingStatus.yaml#/CampaignServiceServingStatus'
     settings:
       type: array
+      nullable: true
       items:
         $ref: 'CampaignServiceSettings.yaml#/CampaignServiceSettings'
     startDate:
       type: string
+      nullable: true
       description: "<div lang=\"ja\">キャンペーンの開始日<br>過去の日付は指定できません。<br>※配信開始済みのキャンペーンは変更できません。<br>※YYYYMMDD形式です。</div><div lang=\"en\">Start\
         \ date of Campaign.<br>*Cannot set the past date.<br>*Cannot change the date\
         \ to the campaign that is already active.<br>*In YYYYMMDD format.</div>"
     trackingUrl:
       type: string
+      nullable: true
       description: "<div lang=\"ja\">トラッキングURL<br>※アプリキャンペーンでAndroidの場合、設定はできません。</div><div lang=\"en\">Tracking\
         \ URL.<br>*Cannot set if Mobile App Campaign is in Android.</div>"
-    type:
+    'type':
       $ref: 'CampaignServiceType.yaml#/CampaignServiceType'
     urlReviewData:
       $ref: 'CampaignServiceUrlReviewData.yaml#/CampaignServiceUrlReviewData'

@@ -1,8 +1,10 @@
 AdGroupWebpageServiceWebpageCondition:
   type: object
+  nullable: true
   properties:
     argument:
       type: string
+      nullable: true
       description: "<div lang=\"ja\">条件の設定値(正規表現の指定可)</div><div lang=\"en\">Value of rule setting (Can specify\
         \ regular expression)</div>"
     webpageConditionType:

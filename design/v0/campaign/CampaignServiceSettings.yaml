@@ -1,5 +1,6 @@
 CampaignServiceSettings:
   type: object
+  nullable: true
   properties:
     dynamicAdsForSearchSetting:
       $ref: 'CampaignServiceDynamicAdsForSearchSetting.yaml#/CampaignServiceDynamicAdsForSearchSetting'

@@ -1,5 +1,6 @@
 AdGroupServiceAdGroupAdRotationMode:
   type: object
+  nullable: true
   properties:
     adRotationMode:
       $ref: 'AdGroupServiceAdRotationMode.yaml#/AdGroupServiceAdRotationMode'

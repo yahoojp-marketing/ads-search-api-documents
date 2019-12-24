@@ -1,34 +1,42 @@
 FeedItemServiceSelector:
   type: object
+  nullable: true
   required:
   - accountId
   properties:
     accountId:
       type: integer
+      nullable: false
       format: int64
       description: "<div lang=\"ja\">検索条件：アカウントIDです。</div><div lang=\"en\">Search condition: Account ID.</div>"
     approvalStatuses:
       type: array
+      nullable: true
       items:
         $ref: 'FeedItemServiceApprovalStatus.yaml#/FeedItemServiceApprovalStatus'
       maxItems: 5
     feedIds:
       type: array
+      nullable: true
       items:
         type: integer
+        nullable: true
         format: int64
       maxItems: 1000
       description: "<div lang=\"ja\">検索条件：フィードIDです。</div><div lang=\"en\">Search condition: Feed ID.</div>"
     feedItemIds:
       type: array
+      nullable: true
       items:
         type: integer
+        nullable: true
         format: int64
       maxItems: 1000
       description: "<div lang=\"ja\">検索条件：フィードアイテムIDです。</div><div lang=\"en\">Search condition: Feed Item\
         \ ID.</div>"
     numberResults:
       type: integer
+      nullable: true
       format: int32
       minimum: 1
       maximum: 2000
@@ -38,11 +46,13 @@ FeedItemServiceSelector:
         \ see Entity Limits per operation.</div>"
     placeholderTypes:
       type: array
+      nullable: true
       items:
         $ref: 'FeedItemServicePlaceholderType.yaml#/FeedItemServicePlaceholderType'
       maxItems: 5
     startIndex:
       type: integer
+      nullable: true
       format: int32
       minimum: 1
       default: 1

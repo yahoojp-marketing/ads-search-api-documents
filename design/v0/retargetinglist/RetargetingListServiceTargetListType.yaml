@@ -1,5 +1,6 @@
 RetargetingListServiceTargetListType:
   type: string
+  nullable: true
   enum:
   - DEFAULT
   - RULE

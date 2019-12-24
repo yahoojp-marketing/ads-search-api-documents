@@ -1,11 +1,13 @@
 CampaignWebpageServiceWebpageCondition:
   type: object
+  nullable: true
   properties:
     argument:
       type: string
+      nullable: true
       description: "<div lang=\"ja\">条件の設定値(正規表現の指定可)</div><div lang=\"en\">Value of rule setting. ∗ Can specify\
         \ regular expression</div>"
-    type:
+    'type':
       $ref: 'CampaignWebpageServiceWebpageConditionType.yaml#/CampaignWebpageServiceWebpageConditionType'
   title: CampaignWebpageServiceWebpageCondition
   description: "<div lang=\"ja\">CampaignWebpageServiceWebpageConditionオブジェクトは、Webpageの条件を保持します。</div><div lang=\"en\">CampaignWebpageServiceWebpageCondition\

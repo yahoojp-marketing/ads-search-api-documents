@@ -1,8 +1,10 @@
 FeedItemServiceSetTrademarkStatus:
   type: object
+  nullable: true
   properties:
     feedItemId:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">フィードアイテムIDです。</div><div lang=\"en\">FeedItem ID</div>"
   title: FeedItemServiceSetTrademarkStatus

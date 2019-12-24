@@ -1,5 +1,6 @@
 AuditLogServiceEventTypes:
   type: string
+  nullable: true
   enum:
   - ADD
   - SET

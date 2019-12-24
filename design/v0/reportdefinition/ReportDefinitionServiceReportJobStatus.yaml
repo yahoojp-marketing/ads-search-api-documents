@@ -1,5 +1,6 @@
 ReportDefinitionServiceReportJobStatus:
   type: string
+  nullable: true
   enum:
   - WAIT
   - COMPLETED

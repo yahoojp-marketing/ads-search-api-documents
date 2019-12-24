@@ -1,5 +1,6 @@
 CampaignTargetServiceTargetingStatus:
   type: string
+  nullable: true
   enum:
   - ACTIVE
   - OBSOLETE

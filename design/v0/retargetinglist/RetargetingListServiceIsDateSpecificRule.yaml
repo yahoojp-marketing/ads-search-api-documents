@@ -1,5 +1,6 @@
 RetargetingListServiceIsDateSpecificRule:
   type: string
+  nullable: true
   enum:
   - 'TRUE'
   - 'FALSE'

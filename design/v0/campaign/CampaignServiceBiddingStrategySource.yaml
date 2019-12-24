@@ -1,5 +1,6 @@
 CampaignServiceBiddingStrategySource:
   type: string
+  nullable: true
   enum:
   - CAMPAIGN
   - UNKNOWN

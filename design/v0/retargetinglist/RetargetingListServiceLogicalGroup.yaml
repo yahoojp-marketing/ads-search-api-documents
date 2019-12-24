@@ -1,10 +1,12 @@
 RetargetingListServiceLogicalGroup:
   type: object
+  nullable: true
   properties:
     logicalCondition:
       $ref: 'RetargetingListServiceLogicalCondition.yaml#/RetargetingListServiceLogicalCondition'
     logicalOperand:
       type: array
+      nullable: true
       items:
         $ref: 'RetargetingListServiceLogicalRuleOperand.yaml#/RetargetingListServiceLogicalRuleOperand'
   title: RetargetingListServiceLogicalGroup

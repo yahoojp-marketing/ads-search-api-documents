@@ -1,18 +1,22 @@
 BiddingStrategyServiceTargetCpaBiddingScheme:
   type: object
+  nullable: true
   properties:
     bidCeiling:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">入札価格の上限です。<br>※「0」が設定された場合、上限設定はありません。</div><div lang=\"en\">CPC\
         \ limit<br>* No limits if numbers are set &#34;0&#34;</div>"
     bidFloor:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">入札価格の下限です。<br>※ 設定を解除する場合は「0」を指定します。</div><div lang=\"en\">Minimum CPC<br>* Set\
         \ &#34;0&#34; to deactivate</div>"
     targetCpa:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">コンバージョン単価の目標値です。（日本円）</div><div lang=\"en\">Target CPA\
         \ (JPY)<br></div>"

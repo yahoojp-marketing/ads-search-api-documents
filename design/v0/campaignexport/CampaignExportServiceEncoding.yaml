@@ -1,5 +1,6 @@
 CampaignExportServiceEncoding:
   type: string
+  nullable: true
   enum:
   - UTF-8
   - SJIS

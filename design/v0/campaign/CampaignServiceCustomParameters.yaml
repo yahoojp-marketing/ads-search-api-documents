@@ -1,10 +1,12 @@
 CampaignServiceCustomParameters:
   type: object
+  nullable: true
   properties:
     isRemove:
       $ref: 'CampaignServiceIsRemove.yaml#/CampaignServiceIsRemove'
     parameters:
       type: array
+      nullable: true
       items:
         $ref: 'CampaignServiceCustomParameter.yaml#/CampaignServiceCustomParameter'
   title: CampaignServiceCustomParameters

@@ -1,5 +1,6 @@
 CampaignRetargetingListServiceExcludedType:
   type: string
+  nullable: true
   enum:
   - INCLUDED
   - EXCLUDED

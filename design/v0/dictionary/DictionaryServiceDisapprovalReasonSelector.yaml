@@ -1,5 +1,6 @@
 DictionaryServiceDisapprovalReasonSelector:
   type: object
+  nullable: true
   required:
   - lang
   properties:

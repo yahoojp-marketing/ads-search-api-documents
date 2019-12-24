@@ -1,5 +1,6 @@
 ConversionTrackerServiceAppConversionType:
   type: string
+  nullable: true
   enum:
   - DOWNLOAD
   - IN_APP_PURCHASE

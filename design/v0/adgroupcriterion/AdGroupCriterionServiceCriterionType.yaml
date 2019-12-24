@@ -1,5 +1,6 @@
 AdGroupCriterionServiceCriterionType:
   type: string
+  nullable: true
   enum:
   - KEYWORD
   - UNKNOWN

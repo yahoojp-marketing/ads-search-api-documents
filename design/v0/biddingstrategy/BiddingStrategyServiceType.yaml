@@ -1,5 +1,6 @@
 BiddingStrategyServiceType:
   type: string
+  nullable: true
   enum:
   - TARGET_ROAS
   - TARGET_SPEND

@@ -1,16 +1,19 @@
 CampaignTargetServiceScheduleTarget:
   type: object
+  nullable: true
   properties:
     dayOfWeek:
       $ref: 'CampaignTargetServiceDayOfWeek.yaml#/CampaignTargetServiceDayOfWeek'
     endHour:
       type: integer
+      nullable: true
       format: int32
       description: "<div lang=\"ja\">24時間表示の終了時刻です。</div><div lang=\"en\">Ending hour in 24 hour time.</div>"
     endMinute:
       $ref: 'CampaignTargetServiceMinuteOfHour.yaml#/CampaignTargetServiceMinuteOfHour'
     startHour:
       type: integer
+      nullable: true
       format: int32
       description: "<div lang=\"ja\">24時間表示の開始時刻です。</div><div lang=\"en\">Starting hour in 24 hour time.</div>"
     startMinute:

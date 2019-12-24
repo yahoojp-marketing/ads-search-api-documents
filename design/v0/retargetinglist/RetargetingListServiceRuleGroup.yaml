@@ -1,8 +1,10 @@
 RetargetingListServiceRuleGroup:
   type: object
+  nullable: true
   properties:
     ruleItems:
       type: array
+      nullable: true
       items:
         $ref: 'RetargetingListServiceRuleItem.yaml#/RetargetingListServiceRuleItem'
   title: RetargetingListServiceRuleGroup

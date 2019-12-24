@@ -1,5 +1,6 @@
 FeedServicePlaceholderType:
   type: string
+  nullable: true
   enum:
   - AD_CUSTOMIZER
   - DYNAMIC_AD_FOR_SEARCH_PAGE_FEEDS

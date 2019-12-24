@@ -1,5 +1,6 @@
 AdGroupServiceTargetingSetting:
   type: object
+  nullable: true
   properties:
     targetAll:
       $ref: 'AdGroupServiceTargetAll.yaml#/AdGroupServiceTargetAll'

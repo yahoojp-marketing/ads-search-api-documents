@@ -1,5 +1,6 @@
 CampaignTargetServiceEndMinute:
   type: string
+  nullable: true
   enum:
   - ZERO
   - FIFTEEN

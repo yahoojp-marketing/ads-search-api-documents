@@ -1,8 +1,10 @@
 AdGroupWebpageServiceWebpageParameter:
   type: object
+  nullable: true
   properties:
     conditions:
       type: array
+      nullable: true
       items:
         $ref: 'AdGroupWebpageServiceWebpageCondition.yaml#/AdGroupWebpageServiceWebpageCondition'
   title: AdGroupWebpageServiceWebpageParameter

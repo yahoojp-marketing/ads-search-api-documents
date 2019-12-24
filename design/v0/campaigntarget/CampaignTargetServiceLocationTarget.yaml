@@ -1,19 +1,24 @@
 CampaignTargetServiceLocationTarget:
   type: object
+  nullable: true
   properties:
     cityNameEN:
       type: string
+      nullable: true
       description: "<div lang=\"ja\">市区町村名（英語）です。</div><div lang=\"en\">City （English）</div>"
     cityNameJA:
       type: string
+      nullable: true
       description: "<div lang=\"ja\">都道府県名（日本語）です。</div><div lang=\"en\">City （Japanese）</div>"
     excludedType:
       $ref: 'CampaignTargetServiceExcludedType.yaml#/CampaignTargetServiceExcludedType'
     provinceNameEN:
       type: string
+      nullable: true
       description: "<div lang=\"ja\">都道府県名（英語）です。</div><div lang=\"en\">Prefecture（English）</div>"
     provinceNameJA:
       type: string
+      nullable: true
       description: "<div lang=\"ja\">市区町村名（日本語）です。</div><div lang=\"en\">Prefecture（Japanese）</div>"
     targetingStatus:
       $ref: 'CampaignTargetServiceTargetingStatus.yaml#/CampaignTargetServiceTargetingStatus'

@@ -1,5 +1,6 @@
 AdGroupCriterionServiceUserStatus:
   type: string
+  nullable: true
   enum:
   - ACTIVE
   - PAUSED

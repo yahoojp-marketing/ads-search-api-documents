@@ -1,5 +1,6 @@
 CampaignExportServiceEntityType:
   type: string
+  nullable: true
   enum:
   - CAMPAIGN
   - NEGATIVE_CAMPAIGN_CRITERION

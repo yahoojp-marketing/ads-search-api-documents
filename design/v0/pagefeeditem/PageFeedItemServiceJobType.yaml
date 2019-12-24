@@ -1,5 +1,6 @@
 PageFeedItemServiceJobType:
   type: string
+  nullable: true
   enum:
   - UPLOAD
   - DOWNLOAD

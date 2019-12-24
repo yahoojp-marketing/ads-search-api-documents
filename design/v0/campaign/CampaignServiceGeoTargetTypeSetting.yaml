@@ -1,5 +1,6 @@
 CampaignServiceGeoTargetTypeSetting:
   type: object
+  nullable: true
   properties:
     negativeGeoTargetType:
       $ref: 'CampaignServiceGeoTargetType.yaml#/CampaignServiceGeoTargetType'

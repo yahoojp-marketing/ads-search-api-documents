@@ -1,16 +1,20 @@
 CampaignFeed:
   type: object
+  nullable: true
   properties:
     accountId:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">アカウントIDです。</div><div lang=\"en\">Account ID.</div>"
     campaignId:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">キャンペーンIDです。</div><div lang=\"en\">Campaign ID.</div>"
     feedItemId:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">FeedItem情報のIDです。</div><div lang=\"en\">FeedItem information ID.</div>"
     placeholderType:

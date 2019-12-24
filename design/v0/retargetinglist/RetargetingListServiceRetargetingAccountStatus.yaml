@@ -1,12 +1,15 @@
 RetargetingListServiceRetargetingAccountStatus:
   type: object
+  nullable: true
   properties:
     agreeDate:
       type: string
+      nullable: true
       description: "<div lang=\"ja\">規約同意日です。<br>※YYYYMMDD形式です。</div><div lang=\"en\">Agreement date.<br>*In\
         \ YYYYMMDD format.</div>"
     reviewRequestDate:
       type: string
+      nullable: true
       description: "<div lang=\"ja\">再審査依頼日です。<br>※YYYYMMDD形式です。</div><div lang=\"en\">Re-examination review\
         \ request date.<br>*In YYYYMMDD format.</div>"
     reviewStatus:

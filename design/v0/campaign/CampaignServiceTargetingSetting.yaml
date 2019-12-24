@@ -1,5 +1,6 @@
 CampaignServiceTargetingSetting:
   type: object
+  nullable: true
   properties:
     targetAll:
       $ref: 'CampaignServiceTargetAll.yaml#/CampaignServiceTargetAll'

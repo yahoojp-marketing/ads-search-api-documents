@@ -1,5 +1,6 @@
 AccountServiceType:
   type: string
+  nullable: true
   enum:
   - PREPAY
   - INVOICE

@@ -1,8 +1,10 @@
 FeedItemServiceAttribute:
   type: object
+  nullable: true
   properties:
     feedAttributeId:
       type: integer
+      nullable: true
       format: int64
       description: "<div lang=\"ja\">フィード属性IDです。</div><div lang=\"en\">Feed attribute ID.</div>"
     multipleFeedItemAttribute:

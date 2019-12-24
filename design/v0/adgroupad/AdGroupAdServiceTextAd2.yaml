@@ -1,8 +1,10 @@
 AdGroupAdServiceTextAd2:
   type: object
+  nullable: true
   properties:
     description2:
       type: string
+      nullable: true
       description: "<div lang=\"ja\">説明文2（2行目）です。</div><div lang=\"en\">Description2 (line2) of the ad.</div>"
   title: AdGroupAdServiceTextAd2
   description: "<div lang=\"ja\">AdGroupAdServiceTextAd2オブジェクトは、スポンサードサーチのPCおよびスマートフォン向けの広告を表します。</div><div lang=\"en\">AdGroupAdServiceTextAd2\
