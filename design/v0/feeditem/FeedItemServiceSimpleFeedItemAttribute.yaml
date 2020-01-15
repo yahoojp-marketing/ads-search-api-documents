@@ -11,3 +11,7 @@ FeedItemServiceSimpleFeedItemAttribute:
       nullable: true
       description: "<div lang=\"ja\">審査中のフィードアイテム情報です。<br>※審査中の間のみ、レスポンス時に表示されます。</div><div lang=\"en\">The feed item information on editorial review.<br>*It is displayed for response only on Editorial Review.</div>"
   title: FeedItemServiceSimpleFeedItemAttribute
+  description: "<div lang=\"ja\">このフィールドは、ADDおよびSET時に省略可能となり、REMOVE時に無視されます。<br>※placeholderFieldがSTRUCTURED_SNIPPET_VALUES, \
+  \ ADDITIONAL_ADVANCED_URLS, ADDITIONAL_ADVANCED_MOBILE_URLSの場合、ADDおよびSET時に必須となります。</div><div lang=\"en\">This field is \
+  \ optional in ADD and SET operation, and will be ignored in REMOVE operation. <br>If the placeholderField is STRUCTURED_SNIPPET_VALUES, \
+  \ ADDITIONAL_ADVANCED_URLS, or ADDITIONAL_ADVANCED_MOBILE_URLS, this field is required in ADD and SET operation. </div>"

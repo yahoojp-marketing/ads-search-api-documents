@@ -9,7 +9,7 @@ AdGroupWebpageServiceWebpageParameter:
         $ref: 'AdGroupWebpageServiceWebpageCondition.yaml#/AdGroupWebpageServiceWebpageCondition'
   title: AdGroupWebpageServiceWebpageParameter
   description: "<div lang=\"ja\">AdGroupWebpageServiceWebpageParameterオブジェクトは、配信/除外設定するWebpageの条件リストを保持します。\
-    \ 条件リストはAND条件で適用されます。</div><div lang=\"en\">AdGroupWebpageServiceWebpageParameter contains\
+    \ 条件リストはAND条件で適用されます。<br>このフィールドは、ADD時は必須となり、SET時は無視されます。</div><div lang=\"en\">AdGroupWebpageServiceWebpageParameter contains\
     \ the rule list of webpage to be allowed or excluded. The rule list is applied\
-    \ in the AND condition.</div><hr><details><summary>Requirement</summary><table\
-    \ border='1'><tr><th>PROPERTY</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>conditions</td><td>Requirement</td><td>Ignore</td><td>Ignore</td></tr></table></details>"
+    \ in the AND condition.<br>This field is required in ADD operation, and will be ignored in SET operation.
+</div>"

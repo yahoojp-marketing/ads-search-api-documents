@@ -39,5 +39,6 @@ AuditLogServiceEventSelector:
       items:
         $ref: 'AuditLogServiceEventTypes.yaml#/AuditLogServiceEventTypes'
   title: AuditLogServiceEventSelector
-  description: "<div lang=\"ja\">AuditLogServiceEventSelectorオブジェクトは、操作履歴の取得対象を設定します。</div><div lang=\"en\">AuditLogServiceEventSelector\
-    \ object enables the target setting of acquiring operation history.</div>"
+  description: "<div lang=\"ja\">AuditLogServiceEventSelectorオブジェクトは、操作履歴の取得対象を設定します。<br>このフィールドは、必須です。</div><div lang=\"en\">AuditLogServiceEventSelector\
+    \ object enables the target setting of acquiring operation history.<br>This field is required.
+</div>"

@@ -5,11 +5,12 @@ AdGroupWebpageServiceWebpageCondition:
     argument:
       type: string
       nullable: true
-      description: "<div lang=\"ja\">条件の設定値(正規表現の指定可)</div><div lang=\"en\">Value of rule setting (Can specify\
-        \ regular expression)</div>"
+      description: "<div lang=\"ja\">条件の設定値(正規表現の指定可)です。<br>ADD時、このフィールドは必須です。※typeがALL_PAGESの場合は省略可能となります。SET時、このフィールドは無視されます。</div><div lang=\"en\">Value of rule setting (Can specify\
+        \ regular expression)<br>This field is required in ADD operation, and will be ignored in SET operation. *If type is 'ALL_PAGES', this field is optional in ADD operation.
+</div>"
     webpageConditionType:
       $ref: 'AdGroupWebpageServiceWebpageConditionType.yaml#/AdGroupWebpageServiceWebpageConditionType'
   title: AdGroupWebpageServiceWebpageCondition
-  description: "<div lang=\"ja\">AdGroupWebpageServiceWebpageConditionオブジェクトは、Webpageの条件を保持します。</div><div lang=\"en\">AdGroupWebpageServiceWebpageCondition\
-    \ object contains the rules of webpage.</div><hr><details><summary>Requirement</summary><table\
-    \ border='1'><tr><th>PROPERTY</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>argument</td><td>Requirement<br><div lang=\"ja\">※typeがALL_PAGESの場合はOptional</div><div lang=\"en\">∗ If type is ALL_PAGES, Optional</div></td><td>Ignore</td><td>Ignore</td></tr><tr><td>webpageConditionType</td><td>Requirement</td><td>Ignore</td><td>Ignore</td></tr></table></details>"
+  description: "<div lang=\"ja\">AdGroupWebpageServiceWebpageConditionオブジェクトは、Webpageの条件を保持します。<br>このフィールドは、ADD時は必須となり、SET時は無視されます。</div><div lang=\"en\">AdGroupWebpageServiceWebpageCondition\
+    \ object contains the rules of webpage.<br>This field is required in ADD operation, and will be ignored in SET operation.
+</div>"

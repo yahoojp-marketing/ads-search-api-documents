@@ -7,9 +7,9 @@ CampaignCriterionServiceKeyword:
     text:
       type: string
       nullable: true
-      description: "<div lang=\"ja\">キーワードの内容です。<br>※最大80文字、10ワードです。</div><div lang=\"en\">CampaignCriterionServiceKeyword\
-        \ element.<br>* Maximum of 80 letters, 10 word.</div>"
+      description: "<div lang=\"ja\">キーワードの内容です。<br>ADD時、このフィールドは必須です。<br>※最大80文字、10ワードです。</div><div lang=\"en\">CampaignCriterionServiceKeyword\
+        \ element.<br>This field is required in ADD operation.
+<br>* Maximum of 80 letters, 10 word.</div>"
   title: CampaignCriterionServiceKeyword
-  description: "<div lang=\"ja\">CampaignCriterionServiceKeywordオブジェクトは、キーワードに関する情報を表します。</div><div lang=\"en\">CampaignCriterionServiceKeyword\
-    \ object displays keyword information.</div><hr><details><summary>Requirement</summary><table\
-    \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>REMOVE</th></tr><tr><td>text</td><td>-</td><td>Requirement</td><td>-</td></tr><tr><td>keywordMatchType</td><td>-</td><td>Requirement</td><td>-</td></tr></table></details>"
+  description: "<div lang=\"ja\">CampaignCriterionServiceKeywordオブジェクトは、キーワードに関する情報を表します。<br>ADD時、このフィールドは省略可能です。※criterionTypeがKEYWORDの場合、必須です。</div><div lang=\"en\">CampaignCriterionServiceKeyword\
+    \ object displays keyword information.<br>This field is optional in ADD operation. *This field is required when criterionType is 'KEYWORD'.</div>"

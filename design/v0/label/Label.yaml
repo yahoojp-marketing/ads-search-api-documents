@@ -6,44 +6,44 @@ Label:
       type: integer
       nullable: true
       format: int64
-      description: "<div lang=\"ja\">アカウントID</div><div lang=\"en\">Account ID</div>"
+      description: "<div lang=\"ja\">アカウントIDです。<br>このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div><div lang=\"en\">Account ID. <br> Although this field will be returned in the response, it will be ignored on input. </div>"
     color:
       type: string
       nullable: true
-      description: "<div lang=\"ja\">カラー</div><div lang=\"en\">Color</div>"
+      description: "<div lang=\"ja\">カラーです。<br> このフィールドは、ADDおよびSET時に省略可能となり、REMOVE時に無視されます。</div><div lang=\"en\">Color. <br>This field is optional in ADD and SET operation, and will be ignored in REMOVE operation.</div>"
     description:
       type: string
       nullable: true
-      description: "<div lang=\"ja\">説明文</div><div lang=\"en\">Description</div>"
+      description: "<div lang=\"ja\">説明文です。<br> このフィールドは、ADDおよびSET時に省略可能となり、REMOVE時に無視されます。</div><div lang=\"en\">Description. <br>This field is optional in ADD and SET operation, and will be ignored in REMOVE operation.</div>"
     labelId:
       type: integer
       nullable: true
       format: int64
-      description: "<div lang=\"ja\">ラベルID</div><div lang=\"en\">Label ID</div>"
+      description: "<div lang=\"ja\">ラベルIDです。<br> このフィールドは、SETおよびREMOVE時に必須となり、ADD時に無視されます。</div><div lang=\"en\">Label ID. <br>This field is required in SET and REMOVE operation, and will be ignored in ADD operation.</div>"
     labelName:
       type: string
       nullable: true
-      description: "<div lang=\"ja\">ラベル名</div><div lang=\"en\">Label Name</div>"
+      description: "<div lang=\"ja\">ラベル名です。<br> このフィールドは、ADD時に必須となり、SET時に省略可能となり、REMOVE時に無視されます。</div><div lang=\"en\">Label Name. <br>This field is required in ADD operation, is optional in SET operation, and will be ignored in REMOVE operation.</div>"
     labeledAdGroup:
       type: integer
       nullable: true
       format: int64
-      description: "<div lang=\"ja\">広告グループの紐付け数</div><div lang=\"en\">Number of labeled AdGroup</div>"
+      description: "<div lang=\"ja\">広告グループの紐付け数です。<br>このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div><div lang=\"en\">Number of labeled AdGroup. <br> Although this field will be returned in the response, it will be ignored on input. </div>"
     labeledAdGroupAd:
       type: integer
       nullable: true
       format: int64
-      description: "<div lang=\"ja\">広告の紐付け数</div><div lang=\"en\">Number of labeled AdGroupAd</div>"
+      description: "<div lang=\"ja\">広告の紐付け数です。<br>このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div><div lang=\"en\">Number of labeled AdGroupAd. <br> Although this field will be returned in the response, it will be ignored on input. </div>"
     labeledAdGroupCriterion:
       type: integer
       nullable: true
       format: int64
-      description: "<div lang=\"ja\">キーワードの紐付け数</div><div lang=\"en\">Number of labeled Ad Group Criterion</div>"
+      description: "<div lang=\"ja\">キーワードの紐付け数です。<br>このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div><div lang=\"en\">Number of labeled Ad Group Criterion. <br> Although this field will be returned in the response, it will be ignored on input. </div>"
     labeledCampaign:
       type: integer
       nullable: true
       format: int64
-      description: "<div lang=\"ja\">キャンペーンの紐付け数</div><div lang=\"en\">Number of labeled Campaign</div>"
+      description: "<div lang=\"ja\">キャンペーンの紐付け数です。<br>このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div><div lang=\"en\">Number of labeled Campaign. <br> Although this field will be returned in the response, it will be ignored on input. </div>"
   title: Label
   description: "<div lang=\"ja\">Labelオブジェクトは、ラベルの情報を表します。</div><div lang=\"en\">Label object describes label\
-    \ information.</div><hr><details><summary>Requirement</summary><table border='1'><tr><th>PROPERTY</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>accountId</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>color</td><td>Optional</td><td>Optional</td><td>Ignore</td></tr><tr><td>description</td><td>Optional</td><td>Optional</td><td>Ignore</td></tr><tr><td>labelId</td><td>Ignore</td><td>Requirement</td><td>Requirement</td></tr><tr><td>labelName</td><td>Requirement</td><td>Optional</td><td>Ignore</td></tr><tr><td>labeledAdGroup</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>labeledAdGroupAd</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>labeledAdGroupCriterion</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>labeledCampaign</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr></table></details>"
+    \ information.</div>"

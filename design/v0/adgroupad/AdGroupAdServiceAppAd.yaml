@@ -5,15 +5,14 @@ AdGroupAdServiceAppAd:
     appId:
       type: string
       nullable: true
-      description: "<div lang=\"ja\">アプリIDです。<br>※アプリキャンペーンの 場合、自動で設定され ます。</div><div lang=\"en\">App ID.<br>*Automatically\
+      description: "<div lang=\"ja\">アプリIDです。<br>※アプリキャンペーンの場合、自動で設定されます。</div><div lang=\"en\">App ID.<br>*Automatically\
         \ set for Mobile app campaign.</div>"
     appStore:
       $ref: 'AdGroupAdServiceAppStore.yaml#/AdGroupAdServiceAppStore'
     description2:
       type: string
       nullable: true
-      description: "<div lang=\"ja\">説明文（2行目）2です。</div><div lang=\"en\">Description2 (line2) of the ad.</div>"
+      description: "<div lang=\"ja\">説明文（2行目）2です。<br>ADD時、このフィールドは必須となります。</div><div lang=\"en\">Description2 (line2) of the ad.<br>This field is required in ADD operation.</div>"
   title: AdGroupAdServiceAppAd
-  description: "<div lang=\"ja\">AdGroupAdServiceAppAdオブジェクトは、アプリ向けの広告です。</div><div lang=\"en\">Appad object\
-    \ is for Mobile App ads.</div><hr><details><summary>Requirement</summary><table\
-    \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>appId</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>appStore</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>description2</td><td>-</td><td>Requirement</td><td>-</td><td>-</td></tr></table></details>"
+  description: "<div lang=\"ja\"> AdGroupAdServiceAppAdオブジェクトは、アプリ向けの広告です。<br>ADD時、このフィールドは省略可能となります。※adTypeがAPP_ADの場合は必須です。</div><div lang=\"en\">AdGroupAdServiceAppAd object\
+    \ is for Mobile App ads.<br>This field is optional in ADD operation. *If adType is APP_AD, this field is required.</div>"

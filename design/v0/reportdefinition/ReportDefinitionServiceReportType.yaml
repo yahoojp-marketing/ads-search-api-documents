@@ -20,8 +20,8 @@ ReportDefinitionServiceReportType:
   - WEBPAGE_CRITERION
   - UNKNOWN
   title: ReportDefinitionServiceReportType
-  description: "<div lang=\"ja\">ReportDefinitionServiceReportTypeは、レポートの種類を表します。</div><div lang=\"en\">ReportDefinitionServiceReportType\
-    \ displays a type of available report.</div><hr>\n<p>* <code>ACCOUNT</code> - <span lang=\"ja\">アカウントレポートです。</span><span lang=\"en\">Account\
+  description: "<div lang=\"ja\">ReportDefinitionServiceReportTypeは、レポートの種類を表します。<br> ADD時、このフィールドは必須となります。</div><div lang=\"en\">ReportDefinitionServiceReportType\
+    \ displays a type of available report. <br>This field is required in ADD operation.</div><hr>\n<p>* <code>ACCOUNT</code> - <span lang=\"ja\">アカウントレポートです。</span><span lang=\"en\">Account\
     \ Report.<br>Performance data of selected account.</span></p><p>* <code>FEED_ITEM</code> - <span lang=\"ja\">広告表示オプションレポートです。</span><span lang=\"en\">Ad\
     \ Display Option Report.<br>Performance data for selected Quick Links and/or Call\
     \ Extension.</span></p><p>* <code>KEYWORDLESS_QUERY</code> - <span lang=\"ja\">検索クエリーレポート（動的検索連動型広告）です。</span><span lang=\"en\">Search\

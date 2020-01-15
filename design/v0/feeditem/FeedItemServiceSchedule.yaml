@@ -8,19 +8,18 @@ FeedItemServiceSchedule:
       type: integer
       nullable: true
       format: int64
-      description: "<div lang=\"ja\">終了時です。<br>※0 ～ 24の範囲で設定してください。</div><div lang=\"en\">End time in hour.<br>*Specify\
-        \ from 0 - 24.</div>"
+      description: "<div lang=\"ja\">終了時です。<br>※0 ～ 24の範囲で設定してください。<br> このフィールドは、ADDおよびSET時に必須となります。</div><div lang=\"en\">End time in hour.<br>*Specify\
+        \ from 0 - 24. <br>This field is required in ADD and SET operation.</div>"
     endMinute:
       $ref: 'FeedItemServiceMinuteOfHour.yaml#/FeedItemServiceMinuteOfHour'
     startHour:
       type: integer
       nullable: true
       format: int64
-      description: "<div lang=\"ja\">開始時です。<br>※0 ～ 23の範囲で設定してください。</div><div lang=\"en\">Start time in hour.<br>*Specify\
-        \ from 0 - 23.</div>"
+      description: "<div lang=\"ja\">開始時です。<br>※0 ～ 23の範囲で設定してください。<br> このフィールドは、ADDおよびSET時に必須となります。</div><div lang=\"en\">Start time in hour.<br>*Specify\
+        \ from 0 - 23. <br>This field is required in ADD and SET operation.</div>"
     startMinute:
       $ref: 'FeedItemServiceMinuteOfHour.yaml#/FeedItemServiceMinuteOfHour'
   title: FeedItemServiceSchedule
-  description: "<div lang=\"ja\">FeedItemServiceScheduleオブジェクトは、広告表示オプションの配信スケジュール設定を表します。</div><div lang=\"en\">FeedItemServiceSchedule\
-    \ object describes display schedule from Ad Display Option.</div><hr><details><summary>Requirement</summary><table\
-    \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>dayOfWeek</td><td>-</td><td>Requirement</td><td>Requirement</td><td>-</td></tr><tr><td>endHour</td><td>-</td><td>Requirement</td><td>Requirement</td><td>-</td></tr><tr><td>endMinute</td><td>-</td><td>Requirement</td><td>Requirement</td><td>-</td></tr><tr><td>startHour</td><td>-</td><td>Requirement</td><td>Requirement</td><td>-</td></tr><tr><td>startMinute</td><td>-</td><td>Requirement</td><td>Requirement</td><td>-</td></tr></table></details>"
+  description: "<div lang=\"ja\">FeedItemServiceScheduleオブジェクトは、広告表示オプションの配信スケジュール設定を表します。<br> このフィールドは、ADDおよびSET時に省略可能となります。</div><div lang=\"en\">FeedItemServiceSchedule\
+    \ object describes display schedule from Ad Display Option. <br>This field is optional in ADD and SET operation. </div>"

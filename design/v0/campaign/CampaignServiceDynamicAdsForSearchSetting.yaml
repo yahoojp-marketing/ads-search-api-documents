@@ -3,7 +3,9 @@ CampaignServiceDynamicAdsForSearchSetting:
   nullable: true
   properties:
     feedIds:
-      description: "<div lang=\"ja\">キャンペーンで使用するページフィードIDです。</div><div lang=\"en\">Page Feed ID for campaign.</div>"
+      description: "<div lang=\"ja\">キャンペーンで使用するページフィードIDです。<br>ADD時およびSET時、このフィールドは必須となります。
+</div><div lang=\"en\">Page Feed ID for campaign.<br>This field is required in ADD and SET operation.
+</div>"
       type: array
       nullable: true
       items:
@@ -11,6 +13,6 @@ CampaignServiceDynamicAdsForSearchSetting:
         nullable: true
         format: int64
   title: CampaignServiceDynamicAdsForSearchSetting
-  description: "<div lang=\"ja\">CampaignServiceDynamicAdsForSearchSettingは、動的検索連動型広告に関する検索条件を表します。</div><div lang=\"en\">CampaignServiceDynamicAdsForSearchSetting\
-    \ displays search condition for Dynamic ads for search.</div><hr><details><summary>Requirement</summary><table\
-    \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>feedIds</td><td>-</td><td>Requirement</td><td>Requirement</td><td>Ignore</td></tr></table></details>"
+  description: "<div lang=\"ja\">CampaignServiceDynamicAdsForSearchSettingは、動的検索連動型広告に関する検索条件を表します。<br>ADD時、settingTypeがDYNAMIC_ADS_FOR_SEARCH_SETTINGの場合、必須となり、それ以外では省略可能となります。</div><div lang=\"en\">CampaignServiceDynamicAdsForSearchSetting\
+    \ displays search condition for Dynamic ads for search.<br>This field is optional. However, in ADD operation, this field is required only when settingType is 'DYNAMIC_ADS_FOR_SEARCH_SETTING', and it is optional when settingType is the others.
+</div>"

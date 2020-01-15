@@ -16,10 +16,11 @@ CampaignFeed:
       type: integer
       nullable: true
       format: int64
-      description: "<div lang=\"ja\">FeedItem情報のIDです。</div><div lang=\"en\">FeedItem information ID.</div>"
+      description: "<div lang=\"ja\">FeedItem情報のIDです。<br>SET時、このフィールドは必須です。</div><div lang=\"en\">FeedItem information ID.<br>This field is required in SET operation.
+</div>"
     placeholderType:
       $ref: 'CampaignFeedServicePlaceholderType.yaml#/CampaignFeedServicePlaceholderType'
   title: CampaignFeed
-  description: "<div lang=\"ja\">CampaignFeedオブジェクトは、キャンペーンに紐づけられたFeedItem情報を表します。</div><div lang=\"en\">CampaignFeed\
-    \ describes FeedItem information connected to campaign.</div><hr><details><summary>Requirement</summary><table\
-    \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>SET</th></tr><tr><td>accountId</td><td>-</td><td>-</td></tr><tr><td>campaignId</td><td>-</td><td>-</td></tr><tr><td>feedItemId</td><td>-</td><td>Requirement<br>Updatable</td></tr><tr><td>placeholderType</td><td>-</td><td>Ignore</td></tr></table></details>"
+  description: "<div lang=\"ja\">CampaignFeedオブジェクトは、キャンペーンに紐づけられたFeedItem情報を表します。<br>SET時、このフィールドは必須です。</div><div lang=\"en\">CampaignFeed\
+    \ describes FeedItem information connected to campaign.<br>This field is required in SET operation.
+</div>"

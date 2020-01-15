@@ -32,18 +32,19 @@ AccountServiceSelector:
       minimum: 1
       maximum: 200
       default: 200
-      description: "<div lang=\"ja\">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div><div lang=\"en\">Maximum number of results\
-        \ to return in this page. This field must be greater than or equal to 1. Also\
-        \ see Entity Limits per operation.</div>"
+      description: |
+        <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div>
+        <div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1. Also see Entity Limits per operation.</div>
     startIndex:
       type: integer
       nullable: true
       format: int32
       minimum: 1
       default: 1
-      description: "<div lang=\"ja\">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div><div lang=\"en\">Index of the first\
-        \ result to return in this page. This field must be greater than or equal\
-        \ to 1.</div>"
+      description: |
+        <div lang="ja">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div>
+        <div lang="en">Index of the first result to return in this page. This field must be greater than or equal to 1.</div>
   title: AccountServiceSelector
-  description: "<div lang=\"ja\">AccountServiceSelectorオブジェクトは、選択するアカウントを表します。</div><div lang=\"en\">Explains\
-    \ which accounts to return.</div>"
+  description: |
+    <div lang="ja">AccountServiceSelectorオブジェクトは、選択するアカウントを表します。</div>
+    <div lang="en">Explains which accounts to return.</div>

@@ -9,16 +9,19 @@ CampaignServiceBiddingStrategy:
       type: integer
       nullable: true
       format: int64
-      description: "<div lang=\"ja\">自動入札ID</div><div lang=\"en\">Auto Bidding ID</div>"
+      description: "<div lang=\"ja\">自動入札IDです。<br>ADD時、標準入札設定の場合、このフィールドは設定不可となり、ポートフォリオ入札設定の場合、必須となります。また、biddingSchemeと同時に設定することはできません。</div><div lang=\"en\">Auto Bidding ID.<br>This field cannot be specified when Standard bidding is setting, and is required when Portfolio bidding is setting in ADD operation. It cannot be specified at the same times as biddingScheme.
+</div>"
     biddingStrategyName:
       type: string
       nullable: true
-      description: "<div lang=\"ja\">自動入札名<br>※50文字以内になります。</div><div lang=\"en\">Auto Bidding name.<br>* Up\
+      description: "<div lang=\"ja\">自動入札名です。<br>ADD時、このフィールドは無視されます。<br>※50文字以内になります。</div><div lang=\"en\">Auto Bidding name.<br>This field will be ignored in ADD operation.
+<br>* Up\
         \ to 50 characters.</div>"
     biddingStrategySource:
       $ref: 'CampaignServiceBiddingStrategySource.yaml#/CampaignServiceBiddingStrategySource'
     biddingStrategyType:
       $ref: 'CampaignServiceBiddingStrategyType.yaml#/CampaignServiceBiddingStrategyType'
-  description: "<div lang=\"ja\">CampaignServiceBiddingStrategyオブジェクトは、自動入札設定方法を表します。</div><div lang=\"en\">CampaignServiceBiddingStrategy\
-    \ object describes Auto Bidding setting.</div><hr><details><summary>Requirement</summary><table\
-    \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>biddingScheme</td><td>-</td><td>Optional</td><td>Optional</td><td>Ignore</td></tr><tr><td>biddingStrategyId</td><td>-</td><td>Optional</td><td>Optional<br><i>Updatable</i></td><td>Ignore</td></tr><tr><td>biddingStrategyName</td><td>-</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>biddingStrategySource</td><td>-</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>biddingStrategyType</td><td>-</td><td>Optional</td><td>Optional<br><i>Updatable</i></td><td>Ignore</td></tr></table></details>"
+  description: "<div lang=\"ja\">CampaignServiceBiddingStrategyオブジェクトは、自動入札設定方法を表します。<br>ADD時、biddingStrategyConfigurationは必須となります。また、failedBiddingStrategyConfigurationはレスポンスの際に返却されますが、リクエストの際には無視されます。
+</div><div lang=\"en\">CampaignServiceBiddingStrategy\
+    \ object describes Auto Bidding setting.<br>biddingStrategyConfiguration is required in ADD operation. Although failedBiddingStrategyConfiguration will be returned in the response, it will be ignored on input.
+</div>"

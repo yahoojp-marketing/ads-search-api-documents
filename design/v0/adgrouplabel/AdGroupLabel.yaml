@@ -6,23 +6,22 @@ AdGroupLabel:
       type: integer
       nullable: true
       format: int64
-      description: "<div lang=\"ja\">アカウントID</div><div lang=\"en\">Account ID</div>"
+      description: "<div lang=\"ja\">アカウントIDです。<br>このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div><div lang=\"en\">Account ID.<br>Although this field will be returned in the response, it will be ignored on input. </div>"
     adGroupId:
       type: integer
       nullable: true
       format: int64
-      description: "<div lang=\"ja\">広告グループID</div><div lang=\"en\">Ad Group ID</div>"
+      description: "<div lang=\"ja\">広告グループIDです。<br>このフィールドは、いずれの場合でも必須となります。</div><div lang=\"en\">Ad Group ID.<br>This field is required in any cases.</div>"
     campaignId:
       type: integer
       nullable: true
       format: int64
-      description: "<div lang=\"ja\">キャンペーンID</div><div lang=\"en\">Campaign ID</div>"
+      description: "<div lang=\"ja\">キャンペーンIDです。<br>このフィールドは、いずれの場合でも必須となります。</div><div lang=\"en\">Campaign ID.<br>This field is required in any cases.</div>"
     labelId:
       type: integer
       nullable: true
       format: int64
-      description: "<div lang=\"ja\">ラベルID</div><div lang=\"en\">Label ID</div>"
+      description: "<div lang=\"ja\">ラベルIDです。<br>このフィールドは、いずれの場合でも必須となります。</div><div lang=\"en\">Label ID.<br>This field is required in any cases.</div>"
   title: AdGroupLabel
   description: "<div lang=\"ja\">AdGroupLabelオブジェクトは、広告グループラベルの情報を表します。</div><div lang=\"en\">AdGroupLabel\
-    \ object describes ad group label information.</div><hr><details><summary>Requirement</summary><table\
-    \ border='1'><tr><th>PROPERTY</th><th>ADD</th><th>REMOVE</th></tr><tr><td>accountId</td><td>Ignore</td><td>Ignore</td></tr><tr><td>adGroupId</td><td>Requirement</td><td>Requirement</td></tr><tr><td>campaignId</td><td>Requirement</td><td>Requirement</td></tr><tr><td>labelId</td><td>Requirement</td><td>Requirement</td></tr></table></details>"
+    \ object describes ad group label information.</div>"

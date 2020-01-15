@@ -12,7 +12,10 @@ AccountServiceValue:
     operationSucceeded:
       type: boolean
       nullable: true
-      description: "<div lang=\"ja\">処理結果です。</div><div lang=\"en\">The result of operation.</div>"
+      description: |
+        <div lang="ja">処理結果です。</div>
+        <div lang="en">The result of operation.</div>
   title: AccountServiceValue
-  description: "<div lang=\"ja\">AccountServiceValueオブジェクトは、操作結果を含むアカウント情報を表します。</div><div lang=\"en\">Account\
-    \ information including operation results.</div>"
+  description: |
+    <div lang="ja">AccountServiceValueオブジェクトは、操作結果を含むアカウント情報を表します。</div>
+    <div lang="en">Account information including operation results.</div>

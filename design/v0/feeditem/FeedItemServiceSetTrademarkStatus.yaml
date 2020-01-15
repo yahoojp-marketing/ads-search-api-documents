@@ -6,8 +6,7 @@ FeedItemServiceSetTrademarkStatus:
       type: integer
       nullable: true
       format: int64
-      description: "<div lang=\"ja\">フィードアイテムIDです。</div><div lang=\"en\">FeedItem ID</div>"
+      description: "<div lang=\"ja\">フィードアイテムIDです。<br> このフィールドは必須となります。</div><div lang=\"en\">FeedItem ID. <br>This field is required.</div>"
   title: FeedItemServiceSetTrademarkStatus
   description: "<div lang=\"ja\">FeedItemServiceSetTrademarkStatusオブジェクトは、フィードアイテムの情報を格納します。</div><div lang=\"en\">FeedItemServiceSetTrademarkStatus object holds feed item information.\
-      \ </div><hr><details><summary>Requirement</summary><table\
-      \ border='1'><tr><th>PROPERTY</th><th>setTrademarkStatus</th></tr><tr><td>feedItemId</td><td>Requirement</td></tr></table></details>"
+      \ </div>"

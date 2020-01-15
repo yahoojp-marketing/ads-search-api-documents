@@ -14,5 +14,4 @@ CampaignSharedSetServicePage:
         $ref: 'CampaignSharedSetServiceValue.yaml#/CampaignSharedSetServiceValue'
   title: CampaignSharedSetServicePage
   description: "<div lang=\"ja\">CampaignSharedSetServicePageは、実行結果（全エンティティのリスト）を保持するオブジェクトです。</div><div lang=\"en\">CampaignSharedSetServicePage\
-    \ is object to hold exec results (all entities list).</div><hr><details><summary>Requirement</summary><table\
-    \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>REMOVE</th></tr><tr><td>values</td><td>-</td><td>-</td><td>-</td></tr></table></details>"
+    \ is object to hold exec results (all entities list).</div>"

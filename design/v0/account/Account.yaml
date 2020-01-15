@@ -6,11 +6,15 @@ Account:
       type: integer
       nullable: true
       format: int64
-      description: "<div lang=\"ja\">アカウントID</div><div lang=\"en\">Account ID</div>"
+      description: |
+        <div lang="ja">アカウントIDです。<br>SET時、このフィールドは必須となります。</div>
+        <div lang="en">Account ID.<br>This field is required in SET operation.</div>
     accountName:
       type: string
       nullable: true
-      description: "<div lang=\"ja\">アカウント名</div><div lang=\"en\">Account Name</div>"
+      description: |
+        <div lang="ja">アカウント名です。<br>SET時、このフィールドは省略可能となります。</div>
+        <div lang="en">Account Name.<br>This field is optional in SET operation.</div>
     accountStatus:
       $ref: 'AccountServiceStatus.yaml#/AccountServiceStatus'
     accountType:
@@ -29,55 +33,3 @@ Account:
   description: |
     <div lang="ja">Accountオブジェクトは、アカウントを表します。</div>
     <div lang="en">Search Account</div>
-    <hr>
-    <details><summary>Requirement</summary>
-    <table border='1'>
-      <tr>
-        <th>PROPERTY</th>
-        <th>SET</th>
-      </tr>
-      <tr>
-        <td>accountStatus</td>
-        <td>─</td>
-      </tr>
-      <tr>
-        <td>accountType</td>
-        <td>─</td>
-      </tr>
-      <tr>
-        <td>budget</td>
-        <td>─</td>
-      </tr>
-      <tr>
-      <td>accountId</td>
-        <td>Requirement<br>
-        <i>NotUpdatable</i></td>
-      </tr>
-      <tr>
-        <td>authType</td>
-        <td>─</td>
-      </tr>
-      <tr>
-        <td>accountName</td>
-        <td>
-          Optional<br>
-          <i>Updatable</i>
-        </td>
-      </tr>
-      <tr>
-        <td>autoTaggingEnabled</td>
-        <td>Optional<br>
-        default: FALSE<br>
-        <i>Updatable</i></td>
-      </tr>
-      <tr>
-        <td>deliveryStatus</td>
-        <td>Optional<br>
-          <i>Updatable</i>
-        </td>
-      </tr>
-      <tr>
-        <td>isTestAccount</td>
-        <td>─</td>
-      </tr>
-      </table></details>

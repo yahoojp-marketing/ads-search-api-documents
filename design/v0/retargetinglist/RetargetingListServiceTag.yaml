@@ -14,5 +14,4 @@ RetargetingListServiceTag:
               \ The new format of site retargeting tag avoids the impacts such as changes made to the browser. <br/> [Help Page](https://support-marketing.yahoo.co.jp/promotionalads/ss/articledetail?lan=en&aid=6133)</div>"
   title: RetargetingListServiceTag
   description: "<div lang=\"ja\">RetargetingListServiceTagは、サイトリターゲティングのタグを保持するオブジェクトです。</div><div lang=\"en\">RetargetingListServiceTag\
-    \ is an object that holds tag of Site Retargeting.</div><hr><details><summary>Requirement</summary><table\
-    \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th></tr><tr><td>snippet</td><td>-</td><td>-</td><td>-</td></tr><tr><td>advancedSnippet</td><td>-</td><td>-</td><td>-</td></tr></table></details>"
+    \ is an object that holds tag of Site Retargeting.</div>"

@@ -4,7 +4,7 @@ ErrorDetail:
   nullable: true
   properties:
     requestKey:
-      description: "<div lang=\"ja\">エラーが発生したフィールドです。</div><div lang=\"en\">The file that occured the error.</div>"
+      description: "<div lang=\"ja\">エラーが発生したフィールドです。</div><div lang=\"en\">The file that occurred the error.</div>"
       type: string
       nullable: true
     requestValue:

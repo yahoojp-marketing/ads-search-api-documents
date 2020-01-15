@@ -5,6 +5,5 @@ AdGroupServiceAdGroupAdRotationMode:
     adRotationMode:
       $ref: 'AdGroupServiceAdRotationMode.yaml#/AdGroupServiceAdRotationMode'
   title: AdGroupServiceAdGroupAdRotationMode
-  description: "<div lang=\"ja\">AdGroupServiceAdGroupAdRotationModeは、広告表示の最適化設定を表します。</div><div lang=\"en\">AdGroupServiceAdGroupAdRotationMode\
-    \ describes Ad Rotation settings for optimizing and displaying ads.</div><hr><details><summary>Requirement</summary><table\
-    \ border='1'><tr><th>PROPERTY</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>adRotationMode</td><td>Optional</td><td>Optional</td><td>Ignore</td></tr></table></details>"
+  description: "<div lang=\"ja\">AdGroupServiceAdGroupAdRotationModeは、広告表示の最適化設定を表します。<br>ADDおよびSET時、このフィールドは省略可能となります。</div><div lang=\"en\">AdGroupServiceAdGroupAdRotationMode\
+    \ describes Ad Rotation settings for optimizing and displaying ads.<br>This field is optional in ADD and SET operation.</div>"

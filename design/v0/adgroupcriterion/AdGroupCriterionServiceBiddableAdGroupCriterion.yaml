@@ -9,14 +9,14 @@ AdGroupCriterionServiceBiddableAdGroupCriterion:
     advancedMobileUrl:
       type: string
       nullable: true
-      description: "<div lang=\"ja\">カスタムURL（スマートフォン）です。<br>※空で設定すると、既存のカスタムURL （スマートフォン）は削除されます。</div><div lang=\"en\">Upgraded\
-        \ Custom URL (Smartphone).<br>*When tag is set blank, existing upgraded Custom\
+      description: "<div lang=\"ja\">カスタムURL（スマートフォン）です。<br>ADDおよびSET時、このフィールドは省略可能となります。<br>※空で設定すると、既存のカスタムURL（スマートフォン）は削除されます。</div><div lang=\"en\">Upgraded\
+        \ Custom URL (Smartphone).<br>This field is optional in ADD and SET operation.<br>*When tag is set blank, existing upgraded Custom\
         \ URL (Smartphone) will be deleted.</div>"
     advancedUrl:
       type: string
       nullable: true
-      description: "<div lang=\"ja\">移行後のカスタムURLです。<br>※空で設定すると、既存の移行後の カスタムURLは削除されます。</div><div lang=\"en\">Upgraded\
-        \ Custom URL.<br>*When this is set blank, existing upgraded Custom URL will\
+      description: "<div lang=\"ja\">移行後のカスタムURLです。<br>ADDおよびSET時、このフィールドは省略可能となります。※ADD時、移行してtracking Urlを指定している場合は必須となります。<br>※空で設定すると、既存の移行後のカスタムURLは削除されます。</div><div lang=\"en\">Upgraded\
+        \ Custom URL.<br>This field is optional in ADD and SET operation. *If upgraded and tracking Url is specified, it is required in ADD operation.<br>*When this is set blank, existing upgraded Custom URL will\
         \ be deleted.</div>"
     approvalStatus:
       $ref: 'AdGroupCriterionServiceApprovalStatus.yaml#/AdGroupCriterionServiceApprovalStatus'
@@ -27,8 +27,8 @@ AdGroupCriterionServiceBiddableAdGroupCriterion:
     destinationUrl:
       type: string
       nullable: true
-      description: "<div lang=\"ja\">移行前のカスタムURLです。<br>※空で設定すると、既存の移行前の カスタムURLは削除されます。</div><div lang=\"en\">Custom\
-        \ URL of before upgrading.<br>*When tag is set blank, existing Custom URL\
+      description: "<div lang=\"ja\">移行前のカスタムURLです。<br>ADDおよびSET時、このフィールドは省略可能となります。<br>※空で設定すると、既存の移行前のカスタムURLは削除されます。</div><div lang=\"en\">Custom\
+        \ URL of before upgrading.<br>This field is optional in ADD and SET operation.<br>*When tag is set blank, existing Custom URL\
         \ before upgrade will be deleted.</div>"
     disapprovalReasonCodes:
       type: array
@@ -60,12 +60,10 @@ AdGroupCriterionServiceBiddableAdGroupCriterion:
     trackingUrl:
       type: string
       nullable: true
-      description: "<div lang=\"ja\">トラッキングURLです。<br>※空で設定すると、既存のトラッキングURLは 削除されます。</div><div lang=\"en\">Tracking\
-        \ URL.<br>*When tag is set blank, existing Tracking URL will be deleted.</div>"
+      description: "<div lang=\"ja\">トラッキングURLです。<br>ADDおよびSET時、このフィールドは省略可能となります。<br>※空で設定すると、既存のトラッキングURLは削除されます。</div><div lang=\"en\">Tracking\
+        \ URL.<br>This field is optional in ADD and SET operation.<br>*When tag is set blank, existing Tracking URL will be deleted.</div>"
     userStatus:
       $ref: 'AdGroupCriterionServiceUserStatus.yaml#/AdGroupCriterionServiceUserStatus'
   title: AdGroupCriterionServiceBiddableAdGroupCriterion
   description: "<div lang=\"ja\">AdGroupCriterionServiceBiddableAdGroupCriterionオブジェクトは、広告グループの単価設定可能（包含）クライテリアです。</div><div lang=\"en\">AdGroupCriterionServiceBiddableAdGroupCriterion\
-    \ object displays biddable criterion in ad group.</div><hr><details><summary>Requirement</summary><table\
-    \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>additionalAdvancedMobileUrls</td><td>-</td><td>Optional</td><td>Optional</td><td>-</td></tr><tr><td>additionalAdvancedUrls</td><td>-</td><td>Optional</td><td>Optional</td><td>-</td></tr><tr><td>advancedMobileUrl</td><td>-</td><td>Optional<br><div lang=\"ja\">※移行しない（advanced=FALSE）場合、Ignore</div><div lang=\"en\">* Ignore when not updating (advanced =FALSE).</div></td><td>Optional</td><td>-</td></tr><tr><td>advancedUrl</td><td>-</td><td>Optional<br><div lang=\"ja\">※移行してtracking\
-    \ Urlを指定している場合、Requirement<br>※移行しない（advanced=FALSE）場合、Ignore</div><div lang=\"en\">* Requirement when designating tracking URL after the upgrade.<br>* Ignore when not updating (advanced =FALSE).</div></td><td>Optional</td><td>-</td></tr><tr><td>approvalStatus</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>bid</td><td>-</td><td>Optional</td><td>Optional<br><i>Updatable</i></td><td>-</td></tr><tr><td>customParameters</td><td>-</td><td>Optional<br><div lang=\"ja\">※移行しない（advanced=FALSE）場合、Ignore</div><div lang=\"en\">* Ignore when not to be updated (advanced =FALSE).</div></td><td>Optional</td><td>-</td></tr><tr><td>destinationUrl</td><td>-</td><td>Optional</td><td>Optional<br><i>Updatable</i></td><td>-</td></tr><tr><td>disapprovalReasonCodes</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>reviewAdvancedMobileUrl</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>reviewAdvancedUrl</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>reviewCustomParameters</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>reviewDestinationUrl</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>reviewTrackingUrl</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>trackingUrl</td><td>-</td><td>Optional</td><td>Optional</td><td>-</td></tr><tr><td>userStatus</td><td>-</td><td>Requirement</td><td>Optional<br><i>Updatable</i></td><td>-</td></tr></table></details>"
+    \ object displays biddable criterion in ad group.</div>"

@@ -9,8 +9,8 @@ FeedItemServiceApprovalStatus:
   - POST_DISAPPROVED
   - UNKNOWN
   title: FeedItemServiceApprovalStatus
-  description: "<div lang=\"ja\">FeedItemServiceApprovalStatusは、審査状況を表します。</div><div lang=\"en\">FeedItemServiceApprovalStatus\
-    \ displays Editorial Status.</div><hr>\n<p>* <code>PRE_DISAPPROVED</code> - <span lang=\"ja\">掲載不可です。<br>新しく追加したキーワード・広告が審査で承認されず非掲載です。</span><span lang=\"en\">The\
+  description: "<div lang=\"ja\">FeedItemServiceApprovalStatusは、審査状況を表します。<br> このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div><div lang=\"en\">FeedItemServiceApprovalStatus\
+    \ displays Editorial Status. <br>Although this field will be returned in the response, it will be ignored on input. </div><hr>\n<p>* <code>PRE_DISAPPROVED</code> - <span lang=\"ja\">掲載不可です。<br>新しく追加したキーワード・広告が審査で承認されず非掲載です。</span><span lang=\"en\">The\
     \ item was rejected<br>Newly added keywords/ads have been rejected, so it cannot\
     \ be displayed</span></p><p>* <code>POST_DISAPPROVED</code> - <span lang=\"ja\">掲載停止です。<br>すでに掲載中のキーワード・広告について審査が行われた結果、承認されず非掲載です。</span><span lang=\"en\">The\
     \ item was rejected<br>Ads already displayed have been taken offline due to a\

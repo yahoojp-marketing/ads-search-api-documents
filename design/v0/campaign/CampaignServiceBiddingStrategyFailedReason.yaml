@@ -9,8 +9,10 @@ CampaignServiceBiddingStrategyFailedReason:
   - BIDDING_STRATEGY_CANNOT_BE_OVERRIDDEN
   - NOT_CPC_CAMPAIGN
   - UNKNOWN
-  description: "<div lang=\"ja\">CampaignServiceBiddingStrategyFailedReasonは、自動入札設定の結果（失敗原因）です。</div><div lang=\"en\">CampaignServiceBiddingStrategyFailedReason\
-    \ object displays the failure reason of Auto Bidding setting.</div><hr>\n<p>* <code>CONVERSION_TRACKING_NOT_ENABLED</code>\
+  description: "<div lang=\"ja\">CampaignServiceBiddingStrategyFailedReasonは、自動入札設定の結果（失敗原因）です。<br>このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+</div><div lang=\"en\">CampaignServiceBiddingStrategyFailedReason\
+    \ object displays the failure reason of Auto Bidding setting.<br>Although this field will be returned in the response, it will be ignored on input.
+</div><hr>\n<p>* <code>CONVERSION_TRACKING_NOT_ENABLED</code>\
     \ - <span lang=\"ja\">コンバージョン測定タグが発行されていません。</span><span lang=\"en\">Failed [Invalid conversion tracking]</span></p>\
     <p>* <code>NOT_ENOUGH_CONVERSIONS</code> - <span lang=\"ja\">コンバージョンの情報が十分でありません。</span><span lang=\"en\">Failed [Not\
     \ enough conversion information]</span></p><p>* <code>CANNOT_CREATE_CAMPAIGN_WITH_CONVERSION_OPTIMIZER</code>\

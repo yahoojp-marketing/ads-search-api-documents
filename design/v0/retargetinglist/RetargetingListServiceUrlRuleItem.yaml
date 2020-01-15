@@ -5,6 +5,6 @@ RetargetingListServiceUrlRuleItem:
     urlRuleKey:
       $ref: 'RetargetingListServiceUrlRuleKey.yaml#/RetargetingListServiceUrlRuleKey'
   title: RetargetingListServiceUrlRuleItem
-  description: "<div lang=\"ja\">RetargetingListServiceUrlRuleItemは、URLルールの評価式を保持するオブジェクトです。</div><div lang=\"en\">RetargetingListServiceUrlRuleItem\
-    \ is an object that holds evaluation of URL rules.</div><hr><details><summary>Requirement</summary><table\
-    \ border='1'><tr><th>PROPERTY</th><th>ADD</th><th>SET</th></tr><tr><td>urlRuleKey</td><td>Requirement</td><td>Requirement</td></tr></table></details>"
+  description: "<div lang=\"ja\">RetargetingListServiceUrlRuleItemは、URLルールの評価式を保持するオブジェクトです。<br>ADDおよびSET時、このフィールドは省略可能となります。<br>ruleTypeがURL_RULEの場合、ADDおよびSET時にこのフィールドは必須となります。</div><div lang=\"en\">RetargetingListServiceUrlRuleItem\
+    \ is an object that holds evaluation of URL rules. <br>This field is optional in ADD and SET operation. <br>If ruleType is \
+    \ URL_RULE, this field is required in ADD and SET operation.</div>"

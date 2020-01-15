@@ -6,26 +6,26 @@ AdGroupBidMultiplier:
       type: integer
       nullable: true
       format: int64
-      description: "<div lang=\"ja\">アカウントIDです。</div><div lang=\"en\">Account ID.</div>"
+      description: "<div lang=\"ja\">アカウントIDです。<br>このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div><div lang=\"en\">Account ID.<br>Although this field will be returned in the response, it will be ignored on input. </div>"
     adGroupId:
       type: integer
       nullable: true
       format: int64
-      description: "<div lang=\"ja\">広告グループIDです。</div><div lang=\"en\">Ad group iD.</div>"
+      description: "<div lang=\"ja\">広告グループIDです。<br>SETおよびREMOVE時、このフィールドは必須となります。</div><div lang=\"en\">Ad group ID.<br>This field is required in SET and REMOVE operation.</div>"
     bidMultiplier:
       type: number
       nullable: true
       format: double
-      description: "<div lang=\"ja\">入札調整率です。0～10.0まで指定できます。0を指定した場合、広告は配信されません。</div><div lang=\"en\">Bid\
+      description: "<div lang=\"ja\">入札調整率です。0～10.0まで指定できます。0を指定した場合、広告は配信されません。<br>SET時、このフィールドは必須となります。</div><div lang=\"en\">Bid\
         \ adjustment rate.<br>Can be specified between  0 to 10.0.<br>When specified\
-        \ &#39;0&#39;, the ad will not be delievered.</div>"
+        \ &#39;0&#39;, the ad will not be delivered.<br>This field is required in SET operation.</div>"
     campaignId:
       type: integer
       nullable: true
       format: int64
-      description: "<div lang=\"ja\">キャンペーンIDです。</div><div lang=\"en\">Campaign ID.</div>"
+      description: "<div lang=\"ja\">キャンペーンIDです。<br>SETおよびREMOVE時、このフィールドは必須となります。</div><div lang=\"en\">Campaign ID.<br>This field is required in SET and REMOVE operation.</div>"
     platformType:
       $ref: 'AdGroupBidMultiplierServicePlatformType.yaml#/AdGroupBidMultiplierServicePlatformType'
   title: AdGroupBidMultiplier
   description: "<div lang=\"ja\">AdGroupBidMultiplierオブジェクトは、入札価格調整率を表します。</div><div lang=\"en\">Container\
-    \ for bid multiplier.</div><hr><details><summary>Requirement</summary><table border='1'><tr><th>PROPERTY</th><th>GET</th><th>SET</th><th>REMOVE</th></tr><tr><td>accountId</td><td>-</td><td>Ignore</td><td>Ignore</td></tr><tr><td>adGroupId</td><td>-</td><td>Requirement</td><td>Requirement</td></tr><tr><td>bidMultiplier</td><td>-</td><td>Requirement</td><td>Ignore</td></tr><tr><td>campaignId</td><td>-</td><td>Requirement</td><td>Requirement</td></tr><tr><td>platformType</td><td>-</td><td>Requirement</td><td>Requirement</td></tr></table></details>"
+    \ for bid multiplier.</div>"

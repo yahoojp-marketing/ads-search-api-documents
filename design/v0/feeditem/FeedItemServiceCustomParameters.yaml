@@ -10,7 +10,7 @@ FeedItemServiceCustomParameters:
       items:
         $ref: 'FeedItemServiceCustomParameter.yaml#/FeedItemServiceCustomParameter'
   title: FeedItemServiceCustomParameters
-  description: "<div lang=\"ja\">FeedItemServiceCustomParametersオブジェクトは、カスタムパラメータの設定を表します。</div><div lang=\"en\">FeedItemServiceCustomParameters\
-    \ displays the setting of custom parameters.</div><hr><details><summary>Requirement</summary><table\
-    \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>isRemove</td><td>-</td><td>-</td><td>Optional</td><td>-</td></tr><tr><td>parameters</td><td>-</td><td>Requirement</td><td>Requirement<br><div lang=\"ja\">※既存の項目を置き換えます。<br>※削除フラグを立てた（isRemove=TRUE）場合、Ignore。こちらの項目関係なく\
-    \ 全項目が削除されます。</div><div lang=\"en\">* It will replace the current items.<br>Ignore if delete flag is set (isRemove =TRUE). All item will be deleted.</div></td><td>-</td></tr></table></details>"
+  description: "<div lang=\"ja\">FeedItemServiceCustomParametersオブジェクトは、カスタムパラメータの設定を表します。<br> CustomParametersおよびReviewCustomParameters配下では、このフィールドはレスポンスの際に返却されますが、リクエストの際には無視されます。<br>※CustomParameters配下でのみ、クイックリンクオプションの場合、ADDおよびSET時に省略可能となります。</div><div lang=\"en\">FeedItemServiceCustomParameters\
+    \ displays the setting of custom parameters. <br>Under customParameters and ReviewCustomParameters, this field will be \
+    \ returned in the response, but it will be ignored on input. <br> *Under customParameters, this field will be optional \ 
+    \ in ADD and SET operation for QUICKLINK option.</div>"

@@ -6,41 +6,41 @@ AdGroup:
       type: integer
       nullable: true
       format: int64
-      description: "<div lang=\"ja\">アカウントIDです。</div><div lang=\"en\">Account ID</div>"
+      description: "<div lang=\"ja\">アカウントIDです。<br>このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div><div lang=\"en\">Account ID.<br>Although this field will be returned in the response, it will be ignored on input. </div>"
     adGroupAdRotationMode:
       $ref: 'AdGroupServiceAdGroupAdRotationMode.yaml#/AdGroupServiceAdGroupAdRotationMode'
     adGroupId:
       type: integer
       nullable: true
       format: int64
-      description: "<div lang=\"ja\">広告グループIDです。</div><div lang=\"en\">Ad Group ID</div>"
+      description: "<div lang=\"ja\">広告グループIDです。<br>このフィールドは、ADD時は無視され、SETおよびREMOVE時は必須となります。</div><div lang=\"en\">Ad group ID.<br>This field will be ignored in ADD operation, and will be required in SET and REMOVE operation.</div>"
     adGroupName:
       type: string
       nullable: true
-      description: "<div lang=\"ja\">広告グループ名です。</div><div lang=\"en\">Ad Group name</div>"
+      description: "<div lang=\"ja\">広告グループ名です。<br>このフィールドは、ADD時は必須となり、SET時は省略可能となります。</div><div lang=\"en\">Ad Group name.<br>This field is required in ADD operation, and will be optional in SET operation.</div>"
     adGroupTrackId:
       type: integer
       nullable: true
       format: int64
-      description: "<div lang=\"ja\">トラッキング用広告グループIDです。</div><div lang=\"en\">Ad\
-        \ Group ID for tracking</div>"
+      description: "<div lang=\"ja\">トラッキング用広告グループIDです。<br>このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div><div lang=\"en\">Ad\
+        \ Group ID for tracking.<br>Although this field will be returned in the response, it will be ignored on input. </div>"
     bid:
       $ref: 'AdGroupServiceBid.yaml#/AdGroupServiceBid'
     campaignId:
       type: integer
       nullable: true
       format: int64
-      description: "<div lang=\"ja\">キャンペーンIDです。</div><div lang=\"en\">Campaign ID</div>"
+      description: "<div lang=\"ja\">キャンペーンIDです。<br>このフィールドは、いずれの場合でも必須となります。</div><div lang=\"en\">Campaign ID.<br>This field is required in any cases.</div>"
     campaignName:
       type: string
       nullable: true
-      description: "<div lang=\"ja\">キャンペーン名です。</div><div lang=\"en\">Campaign name</div>"
+      description: "<div lang=\"ja\">キャンペーン名です。<br>このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div><div lang=\"en\">Campaign name.<br>Although this field will be returned in the response, it will be ignored on input. </div>"
     campaignTrackId:
       type: integer
       nullable: true
       format: int64
-      description: "<div lang=\"ja\">トラッキング用キャンペーンIDです。</div><div lang=\"en\">Campaign\
-        \ ID for tracking</div>"
+      description: "<div lang=\"ja\">トラッキング用キャンペーンIDです。<br>このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div><div lang=\"en\">Campaign\
+        \ ID for tracking.<br>Although this field will be returned in the response, it will be ignored on input. </div>"
     customParameters:
       $ref: 'AdGroupServiceCustomParameters.yaml#/AdGroupServiceCustomParameters'
     labels:
@@ -53,13 +53,12 @@ AdGroup:
     trackingUrl:
       type: string
       nullable: true
-      description: "<div lang=\"ja\">トラッキングURLです。<br>※キャンペーンがアプリキャンペーンでAndroidの場合、設定はできません。</div><div lang=\"en\">Tracking\
-        \ URL<br>* Cannot set for a Mobile App campaign for Android OS</div>"
+      description: "<div lang=\"ja\">トラッキングURLです。<br>このフィールドは、省略可能となります。<br>※キャンペーンがアプリキャンペーンでAndroidの場合、設定はできません。<br>※SET時、こちらが審査中の場合、編集はできません。また、変更がない場合、審査対象とはなりません。</div><div lang=\"en\">Tracking\
+        \ URL.<br>This field is optional.<br>*Cannot set for a Mobile App campaign for Android OS.<br>*In SET operation, cannot update it when this field is in editorial review. In addition, if there is no change, it will not to be reviewed.</div>"
     urlReviewData:
       $ref: 'AdGroupServiceUrlReviewData.yaml#/AdGroupServiceUrlReviewData'
     userStatus:
       $ref: 'AdGroupServiceUserStatus.yaml#/AdGroupServiceUserStatus'
   title: AdGroup
   description: "<div lang=\"ja\">AdGroup オブジェクトは、広告グループを表します。</div><div lang=\"en\">AdGroup object describes\
-    \ ad group information.</div><hr><details><summary>Requirement</summary><table\
-    \ border='1'><tr><th>PROPERTY</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>accountId</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>adGroupAdRotationMode</td><td>Optional</td><td>Optional</td><td>Ignore</td></tr><tr><td>adGroupId</td><td>Ignore</td><td>Requirement<br><i>NotUpdatable</i></td><td>Requirement<br><i>NotUpdatable</i></td></tr><tr><td>adGroupName</td><td>Requirement</td><td>Optional<br><i>Updatable</i></td><td>Ignore</td></tr><tr><td>adGroupTrackId</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>bid</td><td>Optional</td><td>Optional<br><i>Updatable</i></td><td>Ignore</td></tr><tr><td>campaignId</td><td>Requirement</td><td>Requirement<br><i>NotUpdatable</i></td><td>Requirement<br><i>NotUpdatable</i></td></tr><tr><td>campaignName</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>campaignTrackId</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>customParameters</td><td>Optional</td><td>Optional<br><div lang=\"ja\">※トラッキングURLが審査中の場合、編集はできません。<br>※変更がない場合、審査対象とはなりません。</div><div lang=\"en\">* Cannot update this when Tracking URL is in editorial review<br>*Not to be reviewed if there is no change</div></td><td>Ignore</td></tr><tr><td>labels</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>settings</td><td>Optional<br><div lang=\"ja\">※TargetingSettingが未設定の場合のDefault値<br>TargetCriterionType:TARGET_LIST<br>TargetAll:ACTIVE</div><div lang=\"en\">*Default value for the case of no setting 'TargetingSetting'<br>TargetCriterionType:TARGET_LIST<br>TargetAll:ACTIVE</div></td><td>Optional</td><td>Ignore</td></tr><tr><td>trackingUrl</td><td>Optional</td><td>Optional<br><div lang=\"ja\">※こちらが審査中の場合、編集はできません。<br>※変更がない場合、審査対象とはなりません。</div><div lang=\"en\">* Cannot update when this is in editorial review<br>*Not to be reviewed if there is no change</div></td><td>Ignore</td></tr><tr><td>urlReviewData</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>userStatus</td><td>Requirement</td><td>Optional<br><i>Updatable</i></td><td>Ignore</td></tr></table></details>"
+    \ ad group information.</div>"

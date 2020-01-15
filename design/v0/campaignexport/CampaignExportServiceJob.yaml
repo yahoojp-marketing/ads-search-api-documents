@@ -45,5 +45,4 @@ CampaignExportServiceJob:
       description: "<div lang=\"ja\">ジョブ実行者のユーザー名です。</div><div lang=\"en\">Name of user who run the job.</div>"
   title: CampaignExportServiceJob
   description: "<div lang=\"ja\">CampaignExportServiceJob オブジェクトは、ジョブの情報を表します。</div><div lang=\"en\">CampaignExportServiceJob\
-    \ object describes the information of job settings.</div><hr><details><summary>Requirement</summary><table\
-    \ border='1'><tr><th>PROPERTY</th><th>GET</th></tr><tr><td>accountId</td><td>-</td></tr><tr><td>endDate</td><td>-</td></tr><tr><td>exportFields</td><td>-</td></tr><tr><td>jobId</td><td>-</td></tr><tr><td>jobName</td><td>-</td></tr><tr><td>progress</td><td>-</td></tr><tr><td>startDate</td><td>-</td></tr><tr><td>userName</td><td>-</td></tr><tr><td>jobStatus</td><td>-</td></tr></table></details>"
+    \ object describes the information of job settings.</div>"

@@ -17,7 +17,7 @@ SharedCriterionServiceSelector:
         nullable: true
         format: int64
       maxItems: 1000
-      description: "<div lang=\"ja\">クライテリオンのIDです。</div><div lang=\"en\">Criterion ID.</div>"
+      description: "<div lang=\"ja\">クライテリオンIDです。</div><div lang=\"en\">Criterion ID.</div>"
     numberResults:
       type: integer
       nullable: true

@@ -6,22 +6,24 @@ BiddingStrategy:
       type: integer
       nullable: true
       format: int64
-      description: "<div lang=\"ja\">アカウントIDです。</div><div lang=\"en\">Account ID.</div>"
+      description: "<div lang=\"ja\">アカウントIDです。<br>このフィールドは、いずれの場合でも必須です。</div><div lang=\"en\">Account ID.<br>This field is required in any cases.
+</div>"
     biddingScheme:
       $ref: 'BiddingStrategyServiceBiddingScheme.yaml#/BiddingStrategyServiceBiddingScheme'
     biddingStrategyId:
       type: integer
       nullable: true
       format: int64
-      description: "<div lang=\"ja\">自動入札IDです。</div><div lang=\"en\">Auto bidding ID.</div>"
+      description: "<div lang=\"ja\">自動入札IDです。<br>SET時およびREMOVE時、このフィールドは必須となります。</div><div lang=\"en\">Auto bidding ID.<br>This field is optional in SET and REMOVE operation.
+</div>"
     biddingStrategyName:
       type: string
       nullable: true
-      description: "<div lang=\"ja\">自動入札名です。（50文字以内になります）</div><div lang=\"en\">Auto bidding name(Can set\
-        \ up to 50 characters).</div>"
+      description: "<div lang=\"ja\">自動入札名です（50文字以内になります）。<br>このフィールドは、ADD時は必須となり、SET時は省略可能となります。</div><div lang=\"en\">Auto bidding name(Can set\
+        \ up to 50 characters).<br>This field is required in ADD operation, and will be optional in SET operation.
+</div>"
     'type':
       $ref: 'BiddingStrategyServiceType.yaml#/BiddingStrategyServiceType'
   title: BiddingStrategy
   description: "<div lang=\"ja\">BiddingStrategyオブジェクトは、入札方法を表します。</div><div lang=\"en\">Bidding strategy\
-    \ object displays the type of bidding.</div><hr><details><summary>Requirement</summary><table\
-    \ border='1'><tr><th>PROPERTY</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>accountId</td><td>Requirement</td><td>Requirement<br>(notupdatable)</td><td>Requirement<br>(notupdatable)</td></tr><tr><td>biddingScheme</td><td>Requirement</td><td>Optional<br>(updatable)</td><td>─</td></tr><tr><td>biddingStrategyId</td><td>─</td><td>Requirement<br>(notupdatable)</td><td>Requirement<br>(notupdatable)</td></tr><tr><td>biddingStrategyName</td><td>Requirement</td><td>Optional<br>(updatable)</td><td>─</td></tr><tr><td>type</td><td>─</td><td>─</td><td>─</td></tr></table></details>"
+    \ object displays the type of bidding.</div>"

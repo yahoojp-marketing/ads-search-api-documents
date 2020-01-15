@@ -21,8 +21,8 @@ ReportDefinition:
       items:
         type: string
         nullable: true
-      description: "<div lang=\"ja\">フィールド（レポートの出力項目名）です。</div><div lang=\"en\">Item name of the report.<br>Can\
-        \ appoint the value retrieved from getReportFields.</div>"
+      description: "<div lang=\"ja\">フィールド（レポートの出力項目名）です。<br>ADD時、このフィールドは必須となります。</div><div lang=\"en\">Item name of the report.<br>Can\
+        \ appoint the value retrieved from getReportFields. <br>This field is required in ADD operation.</div>"
     filters:
       type: array
       nullable: true
@@ -48,7 +48,7 @@ ReportDefinition:
       type: integer
       nullable: true
       format: int64
-      description: "<div lang=\"ja\">レポートジョブIDです。</div><div lang=\"en\">Report Job ID.</div>"
+      description: "<div lang=\"ja\">レポートジョブIDです。<br> REMOVE時、このフィールドは必須となります。</div><div lang=\"en\">Report Job ID. <br>This field is required in REMOVE operation.</div>"
     reportJobStatus:
       $ref: 'ReportDefinitionServiceReportJobStatus.yaml#/ReportDefinitionServiceReportJobStatus'
     reportLanguage:
@@ -56,7 +56,7 @@ ReportDefinition:
     reportName:
       type: string
       nullable: true
-      description: "<div lang=\"ja\">レポート名称です。</div><div lang=\"en\">Name of the report.</div>"
+      description: "<div lang=\"ja\">レポート名称です。<br>ADD時、このフィールドは必須となります。</div><div lang=\"en\">Name of the report. <br>This field is required in ADD operation.</div>"
     reportType:
       $ref: 'ReportDefinitionServiceReportType.yaml#/ReportDefinitionServiceReportType'
     requestTime:
@@ -69,5 +69,4 @@ ReportDefinition:
       $ref: 'ReportDefinitionServiceReportSortField.yaml#/ReportDefinitionServiceReportSortField'
   title: ReportDefinition
   description: "<div lang=\"ja\">ReportDefinitionオブジェクトは、レポートの情報を表します。</div><div lang=\"en\">ReportDefinition\
-    \ object describes report information.</div><hr><details><summary>Requirement</summary><table\
-    \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>REMOVE</th></tr><tr><td>accountId</td><td>-</td><td>-</td><td>-</td></tr><tr><td>completeTime</td><td>-</td><td>-</td><td>-</td></tr><tr><td>dateRange</td><td>-</td><td>Optional</td><td>-</td></tr><tr><td>fields</td><td>-</td><td>Requirement</td><td>-</td></tr><tr><td>filters</td><td>-</td><td>Optional</td><td>-</td></tr><tr><td>reportJobErrorDetail</td><td>-</td><td>-</td><td>-</td></tr><tr><td>reportJobId</td><td>-</td><td>-</td><td>Requirement</td></tr><tr><td>reportJobStatus</td><td>-</td><td>-</td><td>-</td></tr><tr><td>reportName</td><td>-</td><td>Requirement</td><td>-</td></tr><tr><td>reportType</td><td>-</td><td>Requirement</td><td>-</td></tr><tr><td>requestTime</td><td>-</td><td>-</td><td>-</td></tr><tr><td>sortFields</td><td>-</td><td>Optional</td><td>-</td></tr><tr><td>reportIncludeDeleted</td><td>-</td><td>Optional<br><div lang=\"ja\">※レポートタイプが以下の場合のみ。<br>・CAMPAIGN<br>・ADGROUP<br>・AD<br>・KEYWORDS<br>・FEED_ITEM<br>・AD_CUSTOMIZERS<br>これ以外の場合はIgnore</div><div lang=\"en\">∗ If ReportType is [ CAMPAIGN, ADGROUP, AD, KEYWORDS, FEED_ITEM, AD_CUSTOMIZERS ], Optional<br>Otherwise, Ignore</div></td><td>-</td></tr><tr><td>reportCompressType</td><td>-</td><td>Optional</td><td>-</td></tr><tr><td>reportDateRangeType</td><td>-</td><td>Requirement</td><td>-</td></tr><tr><td>reportDownloadFormat</td><td>-</td><td>Optional</td><td>-</td></tr><tr><td>reportLanguage</td><td>-</td><td>Optional</td><td>-</td></tr><tr><td>reportDownloadEncode</td><td>-</td><td>Optional</td><td>-</td></tr><tr><td>reportIncludeZeroImpressions</td><td>-</td><td>Optional</td><td>-</td></tr></table></details>"
+    \ object describes report information.</div>"

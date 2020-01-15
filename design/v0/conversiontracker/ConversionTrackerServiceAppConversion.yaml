@@ -7,7 +7,8 @@ ConversionTrackerServiceAppConversion:
     appId:
       type: string
       nullable: true
-      description: "<div lang=\"ja\">アプリケーションIDです。</div><div lang=\"en\">Application ID</div>"
+      description: "<div lang=\"ja\">アプリケーションIDです。<br>このフィールドは、いずれの場合でも省略可能となります。</div><div lang=\"en\">Application \
+      \ ID. <br>This field is optional in any cases.</div>"
     appPlatform:
       $ref: 'ConversionTrackerServiceAppPlatform.yaml#/ConversionTrackerServiceAppPlatform'
     appPostbackUrl:
@@ -22,7 +23,6 @@ ConversionTrackerServiceAppConversion:
       nullable: true
       description: "<div lang=\"ja\">コンバージョントラッカーラベルです。</div><div lang=\"en\">Converison tracker label</div>"
   title: ConversionTrackerServiceAppConversion
-  description: "<div lang=\"ja\">ConversionTrackerServiceAppConversionオブジェクトは、アプリコンバージョン測定タグやタグごとのパフォーマンスデータなどのアプリコンバージョントラッカー情報を表します。</div><div lang=\"en\">ConversionTrackerServiceAppConversion\
-    \ object describes the App ConversionTracker information such as App ConversionTag\
-    \ and performance data by tag.</div><hr><details><summary>Requirement</summary><table\
-    \ border='1'><tr><th>PROPERTY</th><th>ADD</th><th>SET</th></tr><tr><td>appConversionType</td><td>Requirement</td><td>-</td></tr><tr><td>appId</td><td>Optional</td><td>Optional</td></tr><tr><td>appPlatform</td><td>Requirement</td><td>-</td></tr><tr><td>appPostbackUrl</td><td>Optional</td><td>Optional</td></tr><tr><td>snippetId</td><td>-</td><td>-</td></tr><tr><td>snippetLabel</td><td>-</td><td>-</td></tr></table></details>"
+  description: "<div lang=\"ja\">ConversionTrackerServiceAppConversionオブジェクトは、アプリコンバージョン測定タグやタグごとのパフォーマンスデータなどのアプリコンバージョントラッカー情報を表します。<br>このフィールドは、ADDおよびSET時に省略可能となります。<br> ※ADD時、conversionTrackerTypeがAPP_CONVERSIONの場合は必須です。</div><div lang=\"en\">ConversionTrackerServiceAppConversion\
+    \ object describes the App ConversionTracker information such as App ConversionTag and performance data by \
+    \ tag. <br>This field is optional in ADD and SET operation. <br> *If the conversionTrackerType is APP_CONVERSION, this field will be required in ADD operation.</div>"

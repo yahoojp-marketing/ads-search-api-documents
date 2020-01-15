@@ -46,5 +46,4 @@ ReportDefinitionServiceReportFieldAttribute:
         \ displayed in downloaded report.</div>"
   title: ReportDefinitionServiceReportFieldAttribute
   description: "<div lang=\"ja\">ReportDefinitionServiceReportFieldAttributeオブジェクトは、レポート定義の作成に使用できるフィールドを表します。</div><div lang=\"en\">ReportDefinitionServiceReportFieldAttribute\
-    \ object describes the available field to create report definition.</div><hr><details><summary>Requirement</summary><table\
-    \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>REMOVE</th></tr><tr><td>canFilter</td><td>-</td><td>-</td><td>-</td></tr><tr><td>canSelect</td><td>-</td><td>-</td><td>-</td></tr><tr><td>displayFieldNameEN</td><td>-</td><td>-</td><td>-</td></tr><tr><td>displayFieldNameJA</td><td>-</td><td>-</td><td>-</td></tr><tr><td>fieldName</td><td>-</td><td>-</td><td>-</td></tr><tr><td>fieldType</td><td>-</td><td>-</td><td>-</td></tr><tr><td>impossibleCombinationFields</td><td>-</td><td>-</td><td>-</td></tr><tr><td>xmlAttributeName</td><td>-</td><td>-</td><td>-</td></tr></table></details>"
+    \ object describes the available field to create report definition.</div>"

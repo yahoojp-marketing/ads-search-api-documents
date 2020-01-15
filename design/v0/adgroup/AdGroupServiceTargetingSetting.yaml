@@ -5,6 +5,5 @@ AdGroupServiceTargetingSetting:
     targetAll:
       $ref: 'AdGroupServiceTargetAll.yaml#/AdGroupServiceTargetAll'
   title: AdGroupServiceTargetingSetting
-  description: "<div lang=\"ja\">AdGroupServiceTargetingSettingは、ターゲット設定を保持するオブジェクトです。</div><div lang=\"en\">AdGroupServiceTargetingSetting\
-    \ is object that holds target setting.</div><hr><details><summary>Requirement</summary><table\
-    \ border='1'><tr><th>PROPERTY</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>targetAll</td><td>Requirement</td><td>Requirement</td><td>-</td></tr></table></details>"
+  description: "<div lang=\"ja\">AdGroupServiceTargetingSettingは、ターゲット設定を保持するオブジェクトです。<br>ADDおよびSET時、このフィールドは省略可能となります。</div><div lang=\"en\">AdGroupServiceTargetingSetting\
+    \ is object that holds target setting.<br>This field is optional in ADD and SET operation.</div>"

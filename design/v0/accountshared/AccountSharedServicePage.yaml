@@ -14,4 +14,4 @@ AccountSharedServicePage:
         $ref: 'AccountSharedServiceValue.yaml#/AccountSharedServiceValue'
   title: AccountSharedServicePage
   description: "<div lang=\"ja\">AccountSharedServicePageオブジェクトは、検索結果（全エンティティのリスト）を保持します。</div><div lang=\"en\">AccountSharedServicePage\
-    \ object holds search results (all entitiesi list).</div>"
+    \ object holds search results (all entities list).</div>"

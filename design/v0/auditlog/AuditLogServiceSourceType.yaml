@@ -8,8 +8,9 @@ AuditLogServiceSourceType:
   - ALL
   - UNKNOWN
   title: AuditLogServiceSourceType
-  description: "<div lang=\"ja\">AuditLogServiceSourceTypeは、操作履歴における操作者を表します。</div><div lang=\"en\">AuditLogServiceSourceType\
-    \ desribes the operator information of operation history data.</div><hr>\n<p>* <code>API</code>\
+  description: "<div lang=\"ja\">AuditLogServiceSourceTypeは、操作履歴における操作者を表します。<br>このフィールドは、省略可能となります。その際、デフォルト値はAPIとなります。</div><div lang=\"en\">AuditLogServiceSourceType\
+    \ desribes the operator information of operation history data.<br>This field is optional. The default value will be API.
+</div><hr>\n<p>* <code>API</code>\
     \ - <span lang=\"ja\">APIアカウントによる操作です。</span><span lang=\"en\">Operated by API account.</span></p><p>* <code>YAHOO_JAPAN</code>\
     \ - <span lang=\"ja\">Yahoo!プロモーション広告システムによる操作です。</span><span lang=\"en\">Operated by the system of Yahoo!\
     \ Japan Promotional Ad.</span></p><p>* <code>CAMPAIGN_MANAGEMENT_TOOL</code> - <span lang=\"ja\">広告管理ツールからの履歴です。\

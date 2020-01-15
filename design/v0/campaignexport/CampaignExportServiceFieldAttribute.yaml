@@ -16,5 +16,4 @@ CampaignExportServiceFieldAttribute:
       description: "<div lang=\"ja\">フィールド名です。</div><div lang=\"en\">Field name</div>"
   title: CampaignExportServiceFieldAttribute
   description: "<div lang=\"ja\">CampaignExportServiceFieldAttribute オブジェクトは、ジョブ作成に使用できるフィールドを表します。</div><div lang=\"en\">CampaignExportServiceFieldAttribute\
-    \ object displays available fields for creating jobs.</div><hr><details><summary>Requirement</summary><table\
-    \ border='1'><tr><th>PROPERTY</th><th>GET</th></tr><tr><td>displayFieldNameEN</td><td>-</td></tr><tr><td>displayFieldNameJA</td><td>-</td></tr><tr><td>fieldName</td><td>-</td></tr></table></details>"
+    \ object displays available fields for creating jobs.</div>"

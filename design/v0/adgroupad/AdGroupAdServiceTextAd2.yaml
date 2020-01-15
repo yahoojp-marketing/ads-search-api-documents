@@ -5,8 +5,7 @@ AdGroupAdServiceTextAd2:
     description2:
       type: string
       nullable: true
-      description: "<div lang=\"ja\">説明文2（2行目）です。</div><div lang=\"en\">Description2 (line2) of the ad.</div>"
+      description: "<div lang=\"ja\">説明文2（2行目）です。<br>ADD時、このフィールドは必須となります。</div><div lang=\"en\">Description2 (line2) of the ad.<br>This field is required in ADD operation.</div>"
   title: AdGroupAdServiceTextAd2
-  description: "<div lang=\"ja\">AdGroupAdServiceTextAd2オブジェクトは、スポンサードサーチのPCおよびスマートフォン向けの広告を表します。</div><div lang=\"en\">AdGroupAdServiceTextAd2\
-    \ object is a text ad type for Sponsored Search on PC and smartphone.</div><hr><details><summary>Requirement</summary><table\
-    \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>description2</td><td>-</td><td>Requirement</td><td>-</td><td>-</td></tr></table></details>"
+  description: "<div lang=\"ja\">AdGroupAdServiceTextAd2オブジェクトは、スポンサードサーチのPCおよびスマートフォン向けの広告を表します。<br>ADD時、このフィールドは省略可能となります。※adTypeがTEXT_AD2の場合は必須です。</div><div lang=\"en\">AdGroupAdServiceTextAd2\
+    \ object is a text ad type for Sponsored Search on PC and smartphone.<br>This field is optional in ADD operation. *If adType is TEXT_AD2, this field is required.</div>"

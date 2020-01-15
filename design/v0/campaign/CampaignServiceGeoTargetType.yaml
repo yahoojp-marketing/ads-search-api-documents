@@ -6,8 +6,9 @@ CampaignServiceGeoTargetType:
   - AREA_OF_INTENT
   - LOCATION_OF_PRESENCE
   - UNKNOWN
-  description: "<div lang=\"ja\">CampaignServiceGeoTargetTypeは、地域ターゲティングの地域判定の詳細設定を指定します。</div><div lang=\"en\">CampaignServiceGeoTargetType\
-    \ specifies Advanced Location options of Geo Targeting.</div><hr>\n<p>* <code>DONT_CARE</code>\
+  description: "<div lang=\"ja\">CampaignServiceGeoTargetTypeは、地域ターゲティングの地域判定の詳細設定を指定します。<br>ADD時、このフィールドは省略可能となります。その際、デフォルト設定値はDONT_CAREとなります。</div><div lang=\"en\">CampaignServiceGeoTargetType\
+    \ specifies Advanced Location options of Geo Targeting.<br>This field is optional in ADD operation. The default value will be DONT_CARE.
+</div><hr>\n<p>* <code>DONT_CARE</code>\
     \ - <span lang=\"ja\">ターゲット地域設定の場合：<br>対象地域に所在する可能性があるユーザー、対象地域に関連する語句で検索したユーザー、対象地域に関心を示している可能性のあるユーザーに広告を配信します。<br>除外ターゲット地域設定の場合：<br>対象地域に所在する可能性があるユーザー、対象地域に関連する語句で検索したユーザー、対象地域に関心を示している可能性のあるユーザーには広告を配信しません。</span><span lang=\"en\">Positive\
     \ Geo Target (Advanced location options):<br>Your ads will be displayed to users\
     \ who may be in the target areas, to users who searched with queries including\

@@ -18,11 +18,9 @@ AdGroupCriterionServiceBid:
       type: integer
       nullable: true
       format: int64
-      description: "<div lang=\"ja\">キーワード入札価格です。<br>※maxCpcが「0」の場合は、設定なしと同様です。</div><div lang=\"en\">Keyword\
-        \ CPC.<br>* Confirmed as no setting, if value\
+      description: "<div lang=\"ja\">キーワード入札価格です。<br>このフィールドは、省略可能となります。その際、ADD時のデフォルト設定値は1となります。<br>※maxCpcが0の場合は、設定なしと同様です。</div><div lang=\"en\">CPC\
+        \ of Keyword.<br>This field is optional. The default value in ADD operation will be 1.<br>*Confirmed as no setting, if value\
         \ is set &#34;0&#34;.</div>"
   title: AdGroupCriterionServiceBid
-  description: "<div lang=\"ja\">AdGroupCriterionServiceBidオブジェクトは、入札価格を表示します。 （AdGroupCriterionService用のオブジェクトです。）</div><div lang=\"en\">AdGroupCriterionServiceBid\
-    \ object displays the bid values.s</div><hr><details><summary>Requirement</summary><table\
-    \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>adGroupMaxCpc</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>bidSource</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>keywordMaxCpc</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>maxCpc</td><td>-</td><td>Optional<br>※Default:\
-    \ 1</td><td>Optional<br><i>Updatable</i></td><td>-</td></tr></table></details>"
+  description: "<div lang=\"ja\">AdGroupCriterionServiceBidオブジェクトは、入札価格を表示します。 （AdGroupCriterionService用のオブジェクトです。）<br>ADDおよびSET時、このフィールドは省略可能となります。</div><div lang=\"en\">AdGroupCriterionServiceBid\
+    \ object displays the bid values. *Object for AdGroupCriterionService.<br>This field is optional in ADD and SET operation.</div>"

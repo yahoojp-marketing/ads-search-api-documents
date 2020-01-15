@@ -6,17 +6,23 @@ CampaignRetargetingListServiceCriterionTargetList:
       type: integer
       nullable: true
       format: int64
-      description: "<div lang=\"ja\">リターゲティングトラックIDです。</div><div lang=\"en\">Retargeting Track ID.</div>"
+      description: "<div lang=\"ja\">リターゲティングトラックIDです。<br>このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+</div><div lang=\"en\">Retargeting Track ID.<br>Although this field will be returned in the response, it will be ignored on input.
+</div>"
     targetListId:
       type: integer
       nullable: true
       format: int64
-      description: "<div lang=\"ja\">ターゲットリストIDです。</div><div lang=\"en\">Target list ID.</div>"
+      description: "<div lang=\"ja\">ターゲットリストIDです。<br>このフィールドは、いずれの場合でも必須です。</div><div lang=\"en\">Target list ID.<br>This field is required in any cases.
+</div>"
     targetListName:
       type: string
       nullable: true
-      description: "<div lang=\"ja\">ターゲットリスト名です。</div><div lang=\"en\">Target list name.</div>"
+      description: "<div lang=\"ja\">ターゲットリスト名です。<br>このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+</div><div lang=\"en\">Target list name.<br>Although this field will be returned in the response, it will be ignored on input.
+</div>"
   title: CampaignRetargetingListServiceCriterionTargetList
-  description: "<div lang=\"ja\">CampaignRetargetingListServiceCriterionTargetListは、ターゲットリスト情報を保持するオブジェクトです。</div><div lang=\"en\">CampaignRetargetingListServiceCriterionTargetList\
-    \ is an object that holds target list information.</div><hr><details><summary>Requirement</summary><table\
-    \ border='1'><tr><th>PROPERTY</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>retargetingTrackId</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>targetListId</td><td>Requirement</td><td>Requirement</td><td>Requirement</td></tr><tr><td>targetListName</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr></table></details>"
+  description: "<div lang=\"ja\">CampaignRetargetingListServiceCriterionTargetListは、ターゲットリスト情報を保持するオブジェクトです。<br>このフィールドは、いずれの場合でも必須です。
+</div><div lang=\"en\">CampaignRetargetingListServiceCriterionTargetList\
+    \ is an object that holds target list information.<br>This field is required in any cases.
+</div>"

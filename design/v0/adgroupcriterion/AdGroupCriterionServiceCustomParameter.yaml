@@ -5,13 +5,11 @@ AdGroupCriterionServiceCustomParameter:
     key:
       type: string
       nullable: true
-      description: "<div lang=\"ja\">キーです。</div><div lang=\"en\">Key of parameter.</div>"
+      description: "<div lang=\"ja\">キーです。<br>ADDおよびSET時、このフィールドは必須となります。</div><div lang=\"en\">Key of parameter.<br>This field is required in ADD and SET operation.</div>"
     value:
       type: string
       nullable: true
-      description: "<div lang=\"ja\">値です。</div><div lang=\"en\">Value of parameter.</div>"
+      description: "<div lang=\"ja\">値です。<br>ADDおよびSET時、このフィールドは省略可能となります。</div><div lang=\"en\">Value of parameter.<br>This field is optional in ADD and SET operation.</div>"
   title: AdGroupCriterionServiceCustomParameter
-  description: "<div lang=\"ja\">AdGroupCriterionServiceCustomParameterは、カスタムパラメータの内容を表します。</div><div lang=\"en\">AdGroupCriterionServiceCustomParameter\
-    \ displays the element of custom parameters.</div><hr><details><summary>Requirement</summary><table\
-    \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>key</td><td>-</td><td>Requirement</td><td>Requirement<br><div lang=\"ja\">※AdGroupAdService\
-    \ の場合、Ignore。</div><div lang=\"en\">* Ignore for AdGroupAdService.</div></td><td>-</td></tr><tr><td>value</td><td>-</td><td>Optional</td><td>Optional</td><td>-</td></tr></table></details>"
+  description: "<div lang=\"ja\">AdGroupCriterionServiceCustomParameterは、カスタムパラメータの内容を表します。<br>ADDおよびSET時、このフィールドは必須となります。※SET時、既存の項目を置き換えます。また、isRemoveの設定値がTRUEの場合は無視され、全項目が削除されます。</div><div lang=\"en\">AdGroupCriterionServiceCustomParameter\
+    \ displays the element of custom parameters.<br>This field is required in ADD and SET operation.<br>*In SET operation, it will replace the current items. In addition, it will be ignored and all item will be deleted if 'isRemove'  is set to TRUE. </div>"

@@ -5,24 +5,24 @@ CampaignTargetServiceLocationTarget:
     cityNameEN:
       type: string
       nullable: true
-      description: "<div lang=\"ja\">市区町村名（英語）です。</div><div lang=\"en\">City （English）</div>"
+      description: "<div lang=\"ja\">市区町村名（英語）です。<br>このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div><div lang=\"en\">City(English). <br> Although this field will be returned in the response, it will be ignored on input. </div>"
     cityNameJA:
       type: string
       nullable: true
-      description: "<div lang=\"ja\">都道府県名（日本語）です。</div><div lang=\"en\">City （Japanese）</div>"
+      description: "<div lang=\"ja\">市区町村名（日本語）です。<br>このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div><div lang=\"en\">City(Japanese). <br> Although this field will be returned in the response, it will be ignored on input. </div>"
     excludedType:
       $ref: 'CampaignTargetServiceExcludedType.yaml#/CampaignTargetServiceExcludedType'
     provinceNameEN:
       type: string
       nullable: true
-      description: "<div lang=\"ja\">都道府県名（英語）です。</div><div lang=\"en\">Prefecture（English）</div>"
+      description: "<div lang=\"ja\">都道府県名（英語）です。<br>このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div><div lang=\"en\">Prefecture(English). <br> Although this field will be returned in the response, it will be ignored on input. </div>"
     provinceNameJA:
       type: string
       nullable: true
-      description: "<div lang=\"ja\">市区町村名（日本語）です。</div><div lang=\"en\">Prefecture（Japanese）</div>"
+      description: "<div lang=\"ja\">都道府県名（日本語）です。<br>このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div><div lang=\"en\">Prefecture(Japanese). <br> Although this field will be returned in the response, it will be ignored on input. </div>"
     targetingStatus:
       $ref: 'CampaignTargetServiceTargetingStatus.yaml#/CampaignTargetServiceTargetingStatus'
   title: CampaignTargetServiceLocationTarget
-  description: "<div lang=\"ja\">CampaignTargetServiceLocationTargetオブジェクトは、地域ターゲティング設定です。</div><div lang=\"en\">CampaignTargetServiceLocationTarget\
-    \ object is a location target setting.</div><hr><details><summary>Requirement</summary><table\
-    \ border='1'><tr><th>PROPERTY</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>cityNameEN</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>cityNameJA</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>excludedType</td><td>Optional</td><td>Ignore</td><td>Ignore</td></tr><tr><td>provinceNameEN</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>provinceNameJA</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>targetingStatus</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr></table></details>"
+  description: "<div lang=\"ja\">CampaignTargetServiceLocationTargetオブジェクトは、地域ターゲティング設定です。<br>このフィールドは、ADDおよびSET時に省略可能となります。<br> ※targetTypeがLOCATIONの場合、このフィールドはADD時に必須となります。</div><div lang=\"en\">CampaignTargetServiceLocationTarget\
+    \ object is a location target setting. <br>This field is optional in ADD and SET operation.  <br> *If targetType is LOCATION, \
+    \ this field is required in ADD operation. </div>"

@@ -16,6 +16,7 @@ CampaignServiceUrlReviewData:
     urlApprovalStatus:
       $ref: 'CampaignServiceUrlApprovalStatus.yaml#/CampaignServiceUrlApprovalStatus'
   title: CampaignServiceUrlReviewData
-  description: "<div lang=\"ja\">CampaignServiceUrlReviewDataオブジェクトは、URLの審査状況を表します。</div><div lang=\"en\">CampaignServiceUrlReviewData\
-    \ object displays review status of URL.</div><hr><details><summary>Requirement</summary><table\
-    \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>disapprovalReasonCodes</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>disapprovalReviewUrl</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>inReviewUrl</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>urlApprovalStatus</td><td>-</td><td>-</td><td>-</td><td>-</td></tr></table></details>"
+  description: "<div lang=\"ja\">CampaignServiceUrlReviewDataオブジェクトは、URLの審査状況を表します。<br>このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+</div><div lang=\"en\">CampaignServiceUrlReviewData\
+    \ object displays review status of URL.<br>Although this field will be returned in the response, it will be ignored on input.
+</div>"

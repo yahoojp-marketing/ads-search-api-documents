@@ -16,5 +16,4 @@ RetargetingListServiceRetargetingAccountStatus:
       $ref: 'RetargetingListServiceReviewStatus.yaml#/RetargetingListServiceReviewStatus'
   title: RetargetingListServiceRetargetingAccountStatus
   description: "<div lang=\"ja\">RetargetingListServiceRetargetingAccountStatusは、アカウントのリタゲ審査ステータスを保持するオブジェクトです。</div><div lang=\"en\">RetargetingListServiceRetargetingAccountStatus\
-    \ is an object that holds retargeting review status of account.</div><hr><details><summary>Requirement</summary><table\
-    \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th></tr><tr><td>agreeDate</td><td>-</td><td>-</td><td>-</td></tr><tr><td>reviewRequestDate</td><td>-</td><td>-</td><td>-</td></tr><tr><td>reviewStatus</td><td>-</td><td>-</td><td>-</td></tr></table></details>"
+    \ is an object that holds retargeting review status of account.</div>"

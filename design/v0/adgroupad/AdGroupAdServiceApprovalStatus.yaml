@@ -9,8 +9,8 @@ AdGroupAdServiceApprovalStatus:
   - POST_DISAPPROVED
   - UNKNOWN
   title: AdGroupAdServiceApprovalStatus
-  description: "<div lang=\"ja\">AdGroupAdServiceApprovalStatusは、審査状況を表します。</div><div lang=\"en\">AdGroupAdServiceApprovalStatus\
-    \ displays Editorial Status.</div><hr>\n<p>* <code>APPROVED</code> - <span lang=\"ja\">承認済です。</span><span lang=\"en\">The\
+  description: "<div lang=\"ja\">AdGroupAdServiceApprovalStatusは、審査状況を表します。<br>このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div><div lang=\"en\">AdGroupAdServiceApprovalStatus\
+    \ displays Editorial Status.<br>Although this field will be returned in the response, it will be ignored on input. </div><hr>\n<p>* <code>APPROVED</code> - <span lang=\"ja\">承認済です。</span><span lang=\"en\">The\
     \ item is approved</span></p><p>* <code>APPROVED_WITH_REVIEW</code> - <span lang=\"ja\">承認済です。<br>すでに掲載中のキーワード・広告を再編集し、審査中となり、編集前の広告が掲載されています。</span><span lang=\"en\">The\
     \ item is approved<br>Updated items are under review</span></p><p>* <code>REVIEW</code> - <span lang=\"ja\">審査中です。<br>新しく追加したキーワード・広告が審査中となり、広告は未掲載です。</span><span lang=\"en\">Under\
     \ editorial review<br>Newly added keywords/ads are under review, and not displayed\

@@ -11,9 +11,11 @@ CampaignExportServiceEntityType:
   - ALL
   - UNKNOWN
   title: CampaignExportServiceEntityType
-  description: "<div lang=\"ja\">CampaignExportServiceEntityTypeは、対象となるエンティティを表します。 ※リクエスト時はCampaignExportServiceEntityTypeで定義されている値をString型で指定します。\
+  description: "<div lang=\"ja\">CampaignExportServiceEntityTypeは、対象となるエンティティを表します。<br>このフィールドは、省略可能となります。
+ ※リクエスト時はCampaignExportServiceEntityTypeで定義されている値をString型で指定します。\
     \ ※レスポンスの値はenumとして返却されます。</div><div lang=\"en\">CampaignExportServiceEntityType object describes\
-    \ target entities. * When requesting, specify the value defined on CampaignExportServiceEntityType\
+    \ target entities.<br>This field is optional.
+ * When requesting, specify the value defined on CampaignExportServiceEntityType\
     \ in string. * Response value is returned in enum type.</div><hr>\n<p>* <code>AD</code> - <span lang=\"ja\">広告</span><span lang=\"en\">Ad</span></p>\
     <p>* <code>ALL</code> - <span lang=\"ja\">すべての広告エンティティ</span><span lang=\"en\">All entities</span></p><p>* <code>CAMPAIGN</code> - <span lang=\"ja\">キャンペーン</span><span lang=\"en\">Campaign</span></p>\
     <p>* <code>NEGATIVE_CAMPAIGN_CRITERION</code> - <span lang=\"ja\">対象外キーワード（キャンペーンレベル）</span><span lang=\"en\">Negative\

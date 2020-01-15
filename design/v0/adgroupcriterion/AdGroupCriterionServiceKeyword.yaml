@@ -7,9 +7,8 @@ AdGroupCriterionServiceKeyword:
     text:
       type: string
       nullable: true
-      description: "<div lang=\"ja\">キーワードの内容です。<br>※最大80文字、10ワードです。</div><div lang=\"en\">AdGroupCriterionServiceKeyword\
-        \ element.<br>*Maximum of 80 letters, 10 word.</div>"
+      description: "<div lang=\"ja\">キーワードの内容です。<br>※最大80文字、10ワードです。<br>ADD時、このフィールドは必須となります。</div><div lang=\"en\">AdGroupCriterionServiceKeyword\
+        \ element.<br>*Maximum of 80 letters, 10 words.<br>This field is required in ADD operation.</div>"
   title: AdGroupCriterionServiceKeyword
   description: "<div lang=\"ja\">AdGroupCriterionServiceKeywordオブジェクトは、キーワードに関する情報を表します。</div><div lang=\"en\">AdGroupCriterionServiceKeyword\
-    \ object displays keyword information.</div><hr><details><summary>Requirement</summary><table\
-    \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>text</td><td>-</td><td>Requirement</td><td>-</td><td>-</td></tr><tr><td>keywordMatchType</td><td>-</td><td>Requirement</td><td>-</td><td>-</td></tr></table></details>"
+    \ object displays keyword information.</div>"

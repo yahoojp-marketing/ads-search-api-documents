@@ -16,5 +16,4 @@ DictionaryServiceDisapprovalReasonValue:
         process results. If true, the process succeeded. If false, the process failed.</div>"
   title: DictionaryServiceDisapprovalReasonValue
   description: "<div lang=\"ja\">DictionaryServiceDisapprovalReasonValueオブジェクトは、 EditorialReason一覧を格納するコンテナです。</div><div lang=\"en\">DictionaryServiceDisapprovalReasonValue\
-    \ object is a container for EditorialReason list.</div><hr><details><summary>Requirement</summary><table\
-    \ border='1'></table></details>"
+    \ object is a container for EditorialReason list.</div>"

@@ -20,8 +20,9 @@ FeedItemServicePlaceholderField:
   - STRUCTURED_SNIPPET_VALUES
   - UNKNOWN
   title: FeedItemServicePlaceholderField
-  description: "<div lang=\"ja\">FeedItemServicePlaceholderFieldは、FeedItem情報の内容を選択します。</div><div lang=\"en\">FeedItemServicePlaceholderField\
-    \ object selects FeedItem information details.</div><hr>\n<p>* <code>ADVANCED_URL</code> - <span lang=\"ja\">最終リンク先URLです。</span><span lang=\"en\">Landing\
+  description: "<div lang=\"ja\">FeedItemServicePlaceholderFieldは、FeedItem情報の内容を選択します。<br> このフィールドは、ADDおよびSET時に必須となり、REMOVE時に無視されます。<br> ※アドカスタマイザーの場合は、ADDおよびSET時に無視されます。</div><div lang=\"en\">FeedItemServicePlaceholderField\
+    \ object selects FeedItem information details. <br>This field is required in ADD and SET operation, and will be ignored in REMOVE operation. <br> *For AD_CUSTOMIZER, \
+    \ this field will be ignored in ADD and SET operation.</div><hr>\n<p>* <code>ADVANCED_URL</code> - <span lang=\"ja\">最終リンク先URLです。</span><span lang=\"en\">Landing\
     \ Page URL.</span></p><p>* <code>LINK_DESCRIPTION_1</code> - <span lang=\"ja\">クイックリンク説明文1</span><span lang=\"en\">Description 1 of Quicklink.\
     \ </span></p><p>* <code>LINK_DESCRIPTION_2</code> - <span lang=\"ja\">クイックリンク説明文2</span><span lang=\"en\">Description 2 of Quicklink.\
     \ </span></p><p>* <code>LINK_TEXT</code> - <span lang=\"ja\">クイックリンクオプションのテキストです。</span><span lang=\"en\">QuickLink\

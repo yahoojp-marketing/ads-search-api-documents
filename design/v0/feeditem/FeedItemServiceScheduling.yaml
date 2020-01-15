@@ -8,6 +8,5 @@ FeedItemServiceScheduling:
       items:
         $ref: 'FeedItemServiceSchedule.yaml#/FeedItemServiceSchedule'
   title: FeedItemServiceScheduling
-  description: "<div lang=\"ja\">FeedItemServiceSchedulingオブジェクトは、広告配信スケジュールを表します。</div><div lang=\"en\">FeedItemServiceScheduling\
-    \ object describes ad display schedule.</div><hr><details><summary>Requirement</summary><table\
-    \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>schedules</td><td>-</td><td>Optional</td><td>Optional</td><td>-</td></tr></table></details>"
+  description: "<div lang=\"ja\">FeedItemServiceSchedulingオブジェクトは、広告配信スケジュールを表します。<br>このフィールドは、ADDおよびSET時に省略可能となり、REMOVE時に無視されます。</div><div lang=\"en\">FeedItemServiceScheduling\
+    \ object describes ad display schedule. <br>This field is optional in ADD and SET operation, and will be ignored in REMOVE operation.</div>"

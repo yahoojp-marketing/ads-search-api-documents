@@ -8,15 +8,18 @@ AdGroupWebpageServiceWebpage:
       type: integer
       nullable: true
       format: int64
-      description: "<div lang=\"ja\">AdGroupWebpageServiceWebpageを識別するID</div><div lang=\"en\">Unique ID\
-        \ for each identify webpage</div>"
+      description: "<div lang=\"ja\">AdGroupWebpageServiceWebpageを識別するIDです。<br>このフィールドは、ADD時は無視され、SET時は必須となります。</div><div lang=\"en\">Unique ID\
+        \ for each identify webpage.<br>This field will be ignored in ADD operation, and is required in SET operation.
+</div>"
     targetTrackId:
       type: integer
       nullable: true
       format: int64
-      description: "<div lang=\"ja\">AdGroupWebpageServiceWebpageを識別するトラッキングID</div><div lang=\"en\">Tracking\
-        \ ID for each identify webpage</div>"
+      description: "<div lang=\"ja\">AdGroupWebpageServiceWebpageを識別するトラッキングIDです。<br>このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+</div><div lang=\"en\">Tracking\
+        \ ID for each identify webpage.<br>Although this field will be returned in the response, it will be ignored on input.
+</div>"
   title: AdGroupWebpageServiceWebpage
-  description: "<div lang=\"ja\">AdGroupWebpageServiceWebpageオブジェクトは、配信/除外設定するAdGroupWebpageServiceWebpageの条件を保持します。</div><div lang=\"en\">AdGroupWebpageServiceWebpage\
-    \ object contains the rules of webpage to be allowed or excluded.</div><hr><details><summary>Requirement</summary><table\
-    \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>parameter</td><td>Ignore</td><td>Requirement</td><td>Ignore</td><td>Ignore</td></tr><tr><td>targetId</td><td>Ignore</td><td>Ignore</td><td>Requirement</td><td>Requirement</td></tr><tr><td>targetTrackId</td><td>Ignore</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr></table></details>"
+  description: "<div lang=\"ja\">AdGroupWebpageServiceWebpageオブジェクトは、配信/除外設定するAdGroupWebpageServiceWebpageの条件を保持します。<br>このフィールドは、いずれの場合でも必須です。</div><div lang=\"en\">AdGroupWebpageServiceWebpage\
+    \ object contains the rules of webpage to be allowed or excluded.<br>This field is required in any cases.
+</div>"

@@ -11,5 +11,4 @@ RetargetingListServiceCustomKey:
       description: "<div lang=\"ja\">評価項目</div><div lang=\"en\">Evaluation items.</div>"
   title: RetargetingListServiceCustomKey
   description: "<div lang=\"ja\">RetargetingListServiceCustomKeyは、カスタムキールールの評価式を保持するオブジェクトです。</div><div lang=\"en\">RetargetingListServiceCustomKey\
-    \ is an object that holds evaluation of custom key rules.</div><hr><details><summary>Requirement</summary><table\
-    \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th></tr><tr><td>textKey</td><td>-</td><td>-</td><td>-</td></tr></table></details>"
+    \ is an object that holds evaluation of custom key rules.</div>"

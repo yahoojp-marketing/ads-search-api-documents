@@ -6,7 +6,7 @@ FeedItem:
       type: integer
       nullable: true
       format: int64
-      description: "<div lang=\"ja\">アカウントIDです。</div><div lang=\"en\">Account ID</div>"
+      description: "<div lang=\"ja\">アカウントIDです。<br>このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div><div lang=\"en\">Account ID. <br>Although this field will be returned in the response, it will be ignored on input. </div>"
     approvalStatus:
       $ref: 'FeedItemServiceApprovalStatus.yaml#/FeedItemServiceApprovalStatus'
     customParameters:
@@ -19,18 +19,18 @@ FeedItem:
       items:
         type: string
         nullable: true
-      description: "<div lang=\"ja\">審査否認理由です。</div><div lang=\"en\">Reject reason on editorial review</div>"
+      description: "<div lang=\"ja\">審査否認理由です。<br> このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div><div lang=\"en\">Reject reason on editorial review. <br>Although this field will be returned in the response, it will be ignored on input. </div>"
     endDate:
       type: string
       nullable: true
-      description: "<div lang=\"ja\">配信終了日です。<br>※空で設定すると、既存の配信終了日は削除されます。</div><div lang=\"en\">End date\
-        \ of ad display<br>∗On setting blank, existing end date of ad display will\
-        \ be deleted</div>"
+      description: "<div lang=\"ja\">配信終了日です。<br>※空で設定すると、既存の配信終了日は削除されます。<br> このフィールドは、ADDおよびSET時に省略可能となり、REMOVE時に無視されます。</div><div lang=\"en\">End date\
+        \ of ad display.<br>∗By setting blank, existing end date of ad display will\
+        \ be deleted. <br>This field is optional in ADD and SET operation, and will be ignored in REMOVE operation. </div>"
     feedId:
       type: integer
       nullable: true
       format: int64
-      description: "<div lang=\"ja\">フィードIDです。</div><div lang=\"en\">Feed ID</div>"
+      description: "<div lang=\"ja\">フィードIDです。<br> このフィールドはレスポンスの際に返却されますが、リクエストの際には無視されます。<br>※アドカスタマイザーの場合は、ADD時に必須となります。</div><div lang=\"en\">Feed ID. <br>Although this field will be returned in the response, it will be ignored on input. <br> *For AD_CUSTOMIZER, this field is required in ADD operation.</div>"
     feedItemAttribute:
       type: array
       nullable: true
@@ -40,20 +40,20 @@ FeedItem:
       type: integer
       nullable: true
       format: int64
-      description: "<div lang=\"ja\">フィードアイテムIDです。</div><div lang=\"en\">Feed Item ID</div>"
+      description: "<div lang=\"ja\">フィードアイテムIDです。<br>このフィールドは、SETおよびREMOVE時に必須となり、ADD時に無視されます。</div><div lang=\"en\">Feed Item ID. <br>This field is required in SET and REMOVE operation, and will be ignored in ADD operation.</div>"
     feedItemTrackId:
       type: integer
       nullable: true
       format: int64
-      description: "<div lang=\"ja\">トラッキング用フィードアイテムIDです。</div><div lang=\"en\">Feed\
-        \ Item ID for tracking</div>"
+      description: "<div lang=\"ja\">トラッキング用フィードアイテムIDです。<br> このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div><div lang=\"en\">Feed\
+        \ Item ID for tracking. <br>Although this field will be returned in the response, it will be ignored on input. </div>"
     invalidedTrademarks:
       type: array
       nullable: true
       items:
         type: string
         nullable: true
-      description: "<div lang=\"ja\">制限された商標</div><div lang=\"en\">Invalided trademarks.</div>"
+      description: "<div lang=\"ja\">制限された商標です。<br> このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。 </div><div lang=\"en\">Invalided trademarks. <br>Although this field will be returned in the response, it will be ignored on input. </div>"
     location:
       $ref: 'FeedItemServiceLocation.yaml#/FeedItemServiceLocation'
     placeholderType:
@@ -65,9 +65,9 @@ FeedItem:
     startDate:
       type: string
       nullable: true
-      description: "<div lang=\"ja\">配信開始日です。<br>※空で設定すると、既存の配信開始日は削除されます。</div><div lang=\"en\">Start date\
+      description: "<div lang=\"ja\">配信開始日です。<br>※空で設定すると、既存の配信開始日は削除されます。<br>このフィールドは、ADDおよびSET時に省略可能となり、REMOVE時に無視されます。</div><div lang=\"en\">Start date\
         \ of ad display<br>∗On setting blank, existing start date of ad display will\
-        \ be deleted</div>"
+        \ be deleted. <br>This field is optional in ADD and SET operation, and will be ignored in REMOVE operation.</div>"
     targetingAdGroup:
       $ref: 'FeedItemServiceTargetingAdGroup.yaml#/FeedItemServiceTargetingAdGroup'
     targetingCampaign:
@@ -78,6 +78,4 @@ FeedItem:
       $ref: 'FeedItemServiceTrademarkStatus.yaml#/FeedItemServiceTrademarkStatus'
   title: FeedItem
   description: "<div lang=\"ja\">FeedItemオブジェクトは、フィードアイテム情報を格納します。</div><div lang=\"en\">FeedItem object\
-    \ contains the information of Feed Item.</div><hr><details><summary>Requirement</summary><table\
-    \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>accountId</td><td>-</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>approvalStatus</td><td>-</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>customParameters</td><td>-</td><td>Ignore<br><div lang=\"ja\">※クイックリンクオプションの場合、Optional</div><div lang=\"en\">* Optional for QUICKLINK.</div></td><td>Ignore<br><div lang=\"ja\">※クイックリンクオプションの場合、Optional</div><div lang=\"en\">* Optional for QUICKLINK.</div></td><td>Ignore</td></tr><tr><td>devicePreference</td><td>-</td><td>Optional<br><div lang=\"ja\">※電話番号オプションの場合、Optional<br>※Default:\
-    \ SMART_PHONE</div><div lang=\"en\">* Optional for CALLEXTENSION.<br>* Default: SMART_PHONE</div></td><td>Optional<br><div lang=\"ja\">※電話番号オプションの場合、Ignore</div><div lang=\"en\">* Ignore for CALLEXTENSION.</div></td><td>Ignore</td></tr><tr><td>disapprovalReasonCodes</td><td>-</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>endDate</td><td>-</td><td>Optional</td><td>Optional</td><td>Ignore</td></tr><tr><td>feedItemAttribute</td><td>-</td><td>Requirement</td><td>Optional</td><td>Ignore</td></tr><tr><td>feedItemId</td><td>-</td><td>Ignore</td><td>Requirement</td><td>Requirement</td></tr><tr><td>feedItemTrackId</td><td>-</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>invalidedTrademarks</td><td>-</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>placeholderType</td><td>-</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>reviewCustomParameters</td><td>-</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>scheduling</td><td>-</td><td>Optional</td><td>Optional</td><td>Ignore</td></tr><tr><td>startDate</td><td>-</td><td>Optional</td><td>Optional</td><td>Ignore</td></tr><tr><td>targetingAdGroup</td><td>-</td><td>Ignore<br><div lang=\"ja\">※アドカスタマイザーの場合、Optional</div><div lang=\"en\">* Optional for AD_CUSTOMIZER.</div></td><td>Ignore<br><div lang=\"ja\">※アドカスタマイザーの場合、Optional</div><div lang=\"en\">* Optional for AD_CUSTOMIZER.</div></td><td>Ignore</td></tr><tr><td>targetingCampaign</td><td>-</td><td>Ignore<br><div lang=\"ja\">※アドカスタマイザーの場合、Optional</div><div lang=\"en\">* Optional for AD_CUSTOMIZER.</div></td><td>Ignore<br><div lang=\"ja\">※アドカスタマイザーの場合、Optional</div><div lang=\"en\">* Optional for AD_CUSTOMIZER.</div></td><td>Ignore</td></tr><tr><td>targetingKeyword</td><td>-</td><td>Ignore<br><div lang=\"ja\">※アドカスタマイザーの場合、Optional</div><div lang=\"en\">* Optional for AD_CUSTOMIZER.</div></td><td>Ignore<br><div lang=\"ja\">※アドカスタマイザーの場合、Optional</div><div lang=\"en\">* Optional for AD_CUSTOMIZER.</div></td><td>Ignore</td></tr><tr><td>trademarkStatus</td><td>-</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>feedId</td><td>-</td><td>Ignore<br><div lang=\"ja\">※アドカスタマイザーの場合、Requirement</div><div lang=\"en\">* Requirement for AD_CUSTOMIZER.</div></td><td>Ignore</td><td>Ignore</td></tr><tr><td>location</td><td>-</td><td>Ignore<br><div lang=\"ja\">※アドカスタマイザーの場合、Optional</div><div lang=\"en\">* Optional for AD_CUSTOMIZER.</div></td><td>Ignore</td><td>Ignore</td></tr></table></details>"
+    \ contains the information of Feed Item.</div>"

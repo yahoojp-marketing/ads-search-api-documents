@@ -8,9 +8,7 @@ AdGroupServiceBid:
       type: integer
       nullable: true
       format: int64
-      description: "<div lang=\"ja\">キーワード入札価格です。</div><div lang=\"en\">Keyword bid (CPC).</div>"
+      description: "<div lang=\"ja\">キーワード入札価格です。<br>このフィールドは、省略可能となります。その際、ADD時のデフォルト設定値は1となります。</div><div lang=\"en\">Keyword bid (CPC).<br>This field is optional. The default value in ADD operation will be 1.</div>"
   title: AdGroupServiceBid
-  description: "<div lang=\"ja\">AdGroupServiceBidオブジェクトは、入札価格を表示します。</div><div lang=\"en\">AdGroupServiceBid\
-    \ object displays the bid values.</div><hr><details><summary>Requirement</summary><table\
-    \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>bidSource</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>maxCpc</td><td>-</td><td>Optional<br>※Default:\
-    \ 1</td><td>Optional<br><i></i></td><td>-</td></tr></table></details>"
+  description: "<div lang=\"ja\">AdGroupServiceBidオブジェクトは、入札価格を表示します。<br>ADDおよびSET時、このフィールドは省略可能となります。</div><div lang=\"en\">AdGroupServiceBid\
+    \ object displays the bid values.<br>This field is optional in ADD and SET operation.</div>"

@@ -10,7 +10,5 @@ AdGroupServiceCustomParameters:
       items:
         $ref: 'AdGroupServiceCustomParameter.yaml#/AdGroupServiceCustomParameter'
   title: AdGroupServiceCustomParameters
-  description: "<div lang=\"ja\">AdGroupServiceCustomParametersオブジェクトは、カスタムパラメータの設定を表します。</div><div lang=\"en\">AdGroupServiceCustomParameters\
-    \ displays the setting of custom parameters.</div><hr><details><summary>Requirement</summary><table\
-    \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>isRemove</td><td>-</td><td>-</td><td>Optional</td><td>-</td></tr><tr><td>parameters</td><td>-</td><td>Requirement</td><td>Requirement<br><div lang=\"ja\">※既存の項目を置き換えます。<br>※削除フラグを立てた（isRemove=TRUE）場合、Ignore。こちらの項目関係なく\
-    \ 全項目が削除されます。</div><div lang=\"en\">* It will replace the current items.<br>Ignore if delete flag is set (isRemove =TRUE). All item will be deleted.</div></td><td>-</td></tr></table></details>"
+  description: "<div lang=\"ja\">AdGroupServiceCustomParametersオブジェクトは、カスタムパラメータの設定を表します。<br>このフィールドは、省略可能となります。<br>※SET時、トラッキングURLが審査中の場合、編集はできません。また、変更がない場合、審査対象とはなりません。</div><div lang=\"en\">AdGroupServiceCustomParameters\
+    \ displays the setting of custom parameters.<br>This field is optional.<br>*In SET operation, cannot update it when Tracking URL is in editorial review. In addition, if there is no change, it will not to be reviewed.</div>"

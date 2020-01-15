@@ -7,14 +7,16 @@ ConversionTrackerServiceWebConversion:
     snippet:
       type: string
       nullable: true
-      description: "<div lang=\"ja\">トラッキングスクリプトです。</div><div lang=\"en\">Tracking script.</div>"
+      description: "<div lang=\"ja\">トラッキングスクリプトです。<br>このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div><div lang=\"en\"> Tracking script.<br> Although this field will be returned in the response, it will be ignored on input. </div>"
     advancedSnippet:
       type: string
       nullable: true
-      description: "<div lang=\"ja\">リニューアル版のコンバージョンタグは、従来のタグよりもブラウザーなどの環境の影響を受けづらい新しいフォーマットです。<br/> 詳細は[ヘルプ](https://support-marketing.yahoo.co.jp/promotionalads/ss/articledetail?lan=ja&aid=1159)を参照</div><div lang=\"en\">The new format of conversion tag avoids the impacts such as changes made to the browser. <br/> [Help Page](https://support-marketing.yahoo.co.jp/promotionalads/ss/articledetail?lan=en&aid=353)</div>"
+      description: "<div lang=\"ja\">リニューアル版のコンバージョンタグは、従来のタグよりもブラウザーなどの環境の影響を受けづらい新しいフォーマットです。<br/> 詳細は[ヘルプ](https://support-marketing.yahoo.co.jp/promotionalads/ss/articledetail?lan=ja&aid=1159)をご参照ください。<br>このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div><div lang=\"en\">The new \
+      \ format of conversion tag avoids the impacts such as changes made to the browser. <br/> [Help Page](https://support-marketing.yahoo.co.jp/promotionalads/ss/articledetail?lan=en&aid=353) <br> Although this field will be returned in the response, it will be ignored on input. </div>"
     trackingCodeType:
       $ref: 'ConversionTrackerServiceTrackingCodeType.yaml#/ConversionTrackerServiceTrackingCodeType'
   title: ConversionTrackerServiceWebConversion
-  description: "<div lang=\"ja\">ConversionTrackerServiceWebConversionオブジェクトは、ウェブページのコンバージョン測定タグやタグごとのパフォーマンスデータなどのコンバージョントラッカー情報を表します。</div><div lang=\"en\">ConversionTrackerServiceWebConversion\
+  description: "<div lang=\"ja\">ConversionTrackerServiceWebConversionオブジェクトは、ウェブページのコンバージョン測定タグやタグごとのパフォーマンスデータなどのコンバージョントラッカー情報を表します。<br> このフィールドは、ADDおよびSET時に省略可能となります。<br>※ADD時、conversionTrackerTypeがWEB_CONVERSIONの場合、このフィールドは必須となります。</div><div lang=\"en\">ConversionTrackerServiceWebConversion\
     \ describes ConversionTracker information such as ConversionTag and performance\
-    \ data by tag.</div><hr><details><summary>Requirement</summary><table border='1'><tr><th>PROPERTY</th><th>ADD</th><th>SET</th></tr><tr><td>markupLanguage</td><td>Requirement</td><td>Optional<br>Updatable</td></tr><tr><td>snippet</td><td>Ignore</td><td>Ignore</td></tr><tr><td>advancedSnippet</td><td>Ignore</td><td>Ignore</td></tr><tr><td>trackingCodeType</td><td>Requirement</td><td>Optional<br>Updatable</td></tr></table></details>"
+    \ data by tag. <br>This field is optional in ADD and SET operation. <br> *If the conversionTrackerType is WEB_CONVERSION, \
+    \ this field will be required in ADD operation.</div>"

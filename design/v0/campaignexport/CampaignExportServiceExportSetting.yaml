@@ -8,7 +8,9 @@ CampaignExportServiceExportSetting:
       type: integer
       nullable: false
       format: int64
-      description: "<div lang=\"ja\">アカウントIDです。</div><div lang=\"en\">Account ID</div>"
+      description: "<div lang=\"ja\">アカウントIDです。<br>このフィールドは、必須です。
+</div><div lang=\"en\">Account ID.<br>This field is required.
+</div>"
     adGroupAdApprovalStatuses:
       type: array
       nullable: true
@@ -35,7 +37,9 @@ CampaignExportServiceExportSetting:
         nullable: true
         format: int64
       maxItems: 500
-      description: "<div lang=\"ja\">広告グループクライテリアIDです。</div><div lang=\"en\">Ad group criteria ID</div>"
+      description: "<div lang=\"ja\">広告グループクライテリアIDです。<br>このフィールドは、省略可能となります。
+</div><div lang=\"en\">Ad group criteria ID.<br>This field is optional.
+</div>"
     adGroupCriterionUserStatuses:
       type: array
       nullable: true
@@ -50,7 +54,9 @@ CampaignExportServiceExportSetting:
         nullable: true
         format: int64
       maxItems: 500
-      description: "<div lang=\"ja\">ダウンロード対象の広告グループIDです。</div><div lang=\"en\">Ad group ID of export objective</div>"
+      description: "<div lang=\"ja\">ダウンロード対象の広告グループIDです。<br>このフィールドは、省略可能となります。
+</div><div lang=\"en\">Ad group ID of export objective.<br>This field is optional.
+</div>"
     adGroupUserStatuses:
       type: array
       nullable: true
@@ -65,7 +71,9 @@ CampaignExportServiceExportSetting:
         nullable: true
         format: int64
       maxItems: 500
-      description: "<div lang=\"ja\">ダウンロード対象の広告IDです。</div><div lang=\"en\">Ad ID of export objective</div>"
+      description: "<div lang=\"ja\">ダウンロード対象の広告IDです。<br>このフィールドは、省略可能となります。
+</div><div lang=\"en\">Ad ID of export objective.<br>This field is optional.
+</div>"
     campaignCriterionIds:
       type: array
       nullable: true
@@ -74,7 +82,9 @@ CampaignExportServiceExportSetting:
         nullable: true
         format: int64
       maxItems: 500
-      description: "<div lang=\"ja\">キャンペーンクライテリアIDです。</div><div lang=\"en\">Campaign criteria ID</div>"
+      description: "<div lang=\"ja\">キャンペーンクライテリアIDです。<br>このフィールドは、省略可能となります。
+</div><div lang=\"en\">Campaign criteria ID.<br>This field is optional.
+</div>"
     campaignIds:
       type: array
       nullable: true
@@ -83,7 +93,9 @@ CampaignExportServiceExportSetting:
         nullable: true
         format: int64
       maxItems: 500
-      description: "<div lang=\"ja\">ダウンロード対象のキャンペーンIDです。</div><div lang=\"en\">Campaign ID of export objective</div>"
+      description: "<div lang=\"ja\">ダウンロード対象のキャンペーンIDです。<br>このフィールドは、省略可能となります。
+</div><div lang=\"en\">Campaign ID of export objective.<br>This field is optional.
+</div>"
     campaignUserStatuses:
       type: array
       nullable: true
@@ -104,16 +116,19 @@ CampaignExportServiceExportSetting:
       items:
         type: string
         nullable: true
-      description: "<div lang=\"ja\">エクスポートするフィールドを指定します。</div><div lang=\"en\">Select which field to export.</div>"
+      description: "<div lang=\"ja\">エクスポートするフィールドを指定します。<br>このフィールドは、省略可能となります。
+</div><div lang=\"en\">Select which field to export.<br>This field is optional.
+</div>"
     jobName:
       type: string
       nullable: true
-      description: "<div lang=\"ja\">ダウンロードするジョブの名称です。</div><div lang=\"en\">Job information for export</div>"
+      description: "<div lang=\"ja\">ダウンロードするジョブの名称です。<br>このフィールドは、省略可能となります。
+</div><div lang=\"en\">Job information for export.<br>This field is optional.
+</div>"
     lang:
       $ref: 'CampaignExportServiceLang.yaml#/CampaignExportServiceLang'
     output:
       $ref: 'CampaignExportServiceOutput.yaml#/CampaignExportServiceOutput'
   title: CampaignExportServiceExportSetting
   description: "<div lang=\"ja\">CampaignExportServiceExportSetting オブジェクトは、エクスポートする条件を表します。</div><div lang=\"en\">CampaignExportServiceExportSetting\
-    \ object describes the condition for exports.</div><hr><details><summary>Requirement</summary><table\
-    \ border='1'><tr><th>PROPERTY</th><th>GET</th></tr><tr><td>accountId</td><td>Requirement</td></tr><tr><td>adGroupAdApprovalStatuses</td><td>Optional</td></tr><tr><td>adGroupAdUserStatuses</td><td>Optional</td></tr><tr><td>adGroupCriterionApprovalStatuses</td><td>Optional</td></tr><tr><td>adGroupCriterionIds</td><td>Optional</td></tr><tr><td>adGroupCriterionUserStatuses</td><td>Optional</td></tr><tr><td>adGroupIds</td><td>Optional</td></tr><tr><td>adGroupUserStatuses</td><td>Optional</td></tr><tr><td>adIds</td><td>Optional</td></tr><tr><td>campaignCriterionIds</td><td>Optional</td></tr><tr><td>campaignIds</td><td>Optional</td></tr><tr><td>campaignUserStatuses</td><td>Optional</td></tr><tr><td>encoding</td><td>Requirement</td></tr><tr><td>entityTypes</td><td>Optional</td></tr><tr><td>exportFields</td><td>Optional</td></tr><tr><td>jobName</td><td>Optional</td></tr><tr><td>lang</td><td>Requirement</td></tr><tr><td>output</td><td>Requirement</td></tr></table></details>"
+    \ object describes the condition for exports.</div>"

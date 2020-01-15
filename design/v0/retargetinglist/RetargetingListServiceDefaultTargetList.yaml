@@ -5,6 +5,5 @@ RetargetingListServiceDefaultTargetList:
     tag:
       $ref: 'RetargetingListServiceTag.yaml#/RetargetingListServiceTag'
   title: RetargetingListServiceDefaultTargetList
-  description: "<div lang=\"ja\">RetargetingListServiceDefaultTargetListは、デフォルトターゲットリストを保持するオブジェクトです。</div><div lang=\"en\">RetargetingListServiceDefaultTargetList\
-    \ is an object that holds default target list.</div><hr><details><summary>Requirement</summary><table\
-    \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th></tr><tr><td>tag</td><td>-</td><td>-</td><td>-</td></tr></table></details>"
+  description: "<div lang=\"ja\">RetargetingListServiceDefaultTargetListは、デフォルトターゲットリストを保持するオブジェクトです。<br> このフィールドは、省略可能となります。<br> ※targetListTypeがDEFAULTの場合、このフィールドは必須となります。</div><div lang=\"en\">RetargetingListServiceDefaultTargetList\
+    \ is an object that holds default target list. <br>This field is optional. <br> If the targetListType is DEFAULT, this field is required. </div>"

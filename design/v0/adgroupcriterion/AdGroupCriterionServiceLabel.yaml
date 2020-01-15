@@ -5,21 +5,20 @@ AdGroupCriterionServiceLabel:
     color:
       type: string
       nullable: true
-      description: "<div lang=\"ja\">カラー</div><div lang=\"en\">Color</div>"
+      description: "<div lang=\"ja\">カラーです。<br>このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div><div lang=\"en\">Color.<br>Although this field will be returned in the response, it will be ignored on input. </div>"
     description:
       type: string
       nullable: true
-      description: "<div lang=\"ja\">説明文</div><div lang=\"en\">Description</div>"
+      description: "<div lang=\"ja\">説明文です。<br>このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div><div lang=\"en\">Description.<br>Although this field will be returned in the response, it will be ignored on input. </div>"
     labelId:
       type: integer
       nullable: true
       format: int64
-      description: "<div lang=\"ja\">ラベルID</div><div lang=\"en\">AdGroupCriterionServiceLabel ID</div>"
+      description: "<div lang=\"ja\">ラベルIDです。<br>このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div><div lang=\"en\">AdGroupCriterionServiceLabel ID.<br>Although this field will be returned in the response, it will be ignored on input. </div>"
     labelName:
       type: string
       nullable: true
-      description: "<div lang=\"ja\">ラベル名</div><div lang=\"en\">AdGroupCriterionServiceLabel Name</div>"
+      description: "<div lang=\"ja\">ラベル名です。<br>このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div><div lang=\"en\">AdGroupCriterionServiceLabel Name.<br>Although this field will be returned in the response, it will be ignored on input. </div>"
   title: AdGroupCriterionServiceLabel
-  description: "<div lang=\"ja\">紐づけられているラベル情報を表します。</div><div lang=\"en\">AdGroupCriterionServiceLabel object\
-    \ describes label information.</div><hr><details><summary>Requirement</summary><table\
-    \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>color</td><td>Ignore</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>description</td><td>Ignore</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>labelId</td><td>Ignore</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>labelName</td><td>Ignore</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr></table></details>"
+  description: "<div lang=\"ja\">AdGroupCriterionServiceLabelは、紐づけられているラベル情報を表します。<br>このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div><div lang=\"en\">AdGroupCriterionServiceLabel object\
+    \ describes label information.<br>Although this field will be returned in the response, it will be ignored on input. </div>"

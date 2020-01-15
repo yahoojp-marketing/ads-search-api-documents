@@ -7,8 +7,6 @@ CampaignServiceGeoTargetTypeSetting:
     positiveGeoTargetType:
       $ref: 'CampaignServiceGeoTargetType.yaml#/CampaignServiceGeoTargetType'
   title: CampaignServiceGeoTargetTypeSetting
-  description: "<div lang=\"ja\">CampaignServiceGeoTargetTypeSettingsオブジェクトは、地域ターゲットの情報を格納するコンテナです。</div><div lang=\"en\">CampaignServiceGeoTargetTypeSettings\
-    \ object is a container for GeoTargeting.</div><hr><details><summary>Requirement</summary><table\
-    \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>negativeGeoTargetType</td><td>-</td><td>Optional<br>Default:\
-    \ LOCATION_OF_PRESENCE</td><td>Optional</td><td>-</td></tr><tr><td>positiveGeoTargetType</td><td>-</td><td>Optional<br>Default:\
-    \ DONT_CARE</td><td>Optional</td><td>-</td></tr></table></details>"
+  description: "<div lang=\"ja\">CampaignServiceGeoTargetTypeSettingsオブジェクトは、地域ターゲットの情報を格納するコンテナです。<br>ADD時、settingTypeがGEO_TARGET_TYPE_SETTINGの場合、必須となり、それ以外では省略可能となります。</div><div lang=\"en\">CampaignServiceGeoTargetTypeSettings\
+    \ object is a container for GeoTargeting.<br>This field is optional. However, in ADD operation, this field is required only when settingType is 'GEO_TARGET_TYPE_SETTING', and it is optional when settingType is the others.
+</div>"

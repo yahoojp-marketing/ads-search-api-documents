@@ -10,6 +10,5 @@ AdGroupCriterionServiceAdditionalAdvancedMobileUrls:
     isRemove:
       $ref: 'AdGroupCriterionServiceIsRemove.yaml#/AdGroupCriterionServiceIsRemove'
   title: AdGroupCriterionServiceAdditionalAdvancedMobileUrls
-  description: "<div lang=\"ja\">AdGroupCriterionServiceAdditionalAdvancedMobileUrlsオブジェクトは、追加する最終リンク先URULのリストを保持します。</div><div lang=\"en\">AdGroupCriterionServiceAdditionalAdvancedMobileUrls\
-    \ object holds the list of added Landing Page URLs</div><hr><details><summary>Requirement</summary><table\
-    \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>additionalAdvancedMobileUrl</td><td>-</td><td>Requirement</td><td>Optional</td><td>Ignore</td></tr><tr><td>isRemove</td><td>-</td><td>Requirement</td><td>Optional</td><td>Ignore</td></tr></table></details>"
+  description: "<div lang=\"ja\">AdGroupCriterionServiceAdditionalAdvancedMobileUrlsオブジェクトは、追加する最終リンク先URULのリストを保持します。<br>ADDおよびSET時、このフィールドは省略可能となります。</div><div lang=\"en\">AdGroupCriterionServiceAdditionalAdvancedMobileUrls\
+    \ object holds the list of added Landing Page URLs.<br>This field is optional in ADD and SET operation.</div>"

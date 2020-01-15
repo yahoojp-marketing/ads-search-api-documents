@@ -12,8 +12,8 @@ RetargetingListServiceRuleOperator:
   - ENDS_WITH
   - NOT_END_WITH
   title: RetargetingListServiceRuleOperator
-  description: "<div lang=\"ja\">RetargetingListServiceRuleOperatorは、ルールの評価条件で設定する評価式の種別です。</div><div lang=\"en\">RetargetingListServiceRuleOperator\
-    \ is the evaluation type to set evaluation condition of rules.</div><hr>\n<p>* <code>STARTS_WITH</code>\
+  description: "<div lang=\"ja\">RetargetingListServiceRuleOperatorは、ルールの評価条件で設定する評価式の種別です。<br>ADDおよびSET時、このフィールドは必須となります。</div><div lang=\"en\">RetargetingListServiceRuleOperator\
+    \ is the evaluation type to set evaluation condition of rules. <br>This field is required in ADD and SET operation.</div><hr>\n<p>* <code>STARTS_WITH</code>\
     \ - <span lang=\"ja\">（指定した文字列で）始まります。</span><span lang=\"en\">Starts with (the specified string).</span></p>\
     <p>* <code>NOT_START_WITH</code> - <span lang=\"ja\">（指定した文字列で）始まりません。</span><span lang=\"en\">Does not start with (the\
     \ specified string).</span></p><p>* <code>EQUALS</code> - <span lang=\"ja\">一致します。</span><span lang=\"en\">Equals or match.</span></p>\

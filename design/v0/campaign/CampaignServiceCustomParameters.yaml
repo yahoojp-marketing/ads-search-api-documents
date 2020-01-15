@@ -10,7 +10,7 @@ CampaignServiceCustomParameters:
       items:
         $ref: 'CampaignServiceCustomParameter.yaml#/CampaignServiceCustomParameter'
   title: CampaignServiceCustomParameters
-  description: "<div lang=\"ja\">CampaignServiceCustomParametersオブジェクトは、カスタムパラメータの設定を表します。</div><div lang=\"en\">CampaignServiceCustomParameters\
-    \ displays the setting of custom parameters.</div><hr><details><summary>Requirement</summary><table\
-    \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>isRemove</td><td>-</td><td>-</td><td>Optional</td><td>-</td></tr><tr><td>parameters</td><td>-</td><td>Requirement</td><td>Requirement<br><div lang=\"ja\">※既存の項目を置き換えます。<br>※削除フラグを立てた（isRemove=TRUE）場合、Ignore。こちらの項目関係なく\
-    \ 全項目が削除されます。</div><div lang=\"en\">* It will replace the current items.<br>Ignore if delete flag is set (isRemove =TRUE). All item will be deleted.</div></td><td>-</td></tr></table></details>"
+  description: "<div lang=\"ja\">CampaignServiceCustomParametersオブジェクトは、カスタムパラメータの設定を表します。<br>ADD時およびSET時、このフィールドは省略可能となります。
+</div><div lang=\"en\">CampaignServiceCustomParameters\
+    \ displays the setting of custom parameters.<br>This field is optional in ADD and SET operation.
+</div>"

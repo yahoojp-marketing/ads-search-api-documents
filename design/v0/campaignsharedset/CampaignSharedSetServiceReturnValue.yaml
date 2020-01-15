@@ -9,5 +9,4 @@ CampaignSharedSetServiceReturnValue:
         $ref: 'CampaignSharedSetServiceValue.yaml#/CampaignSharedSetServiceValue'
   title: CampaignSharedSetServiceReturnValue
   description: "<div lang=\"ja\">CampaignSharedSetServiceReturnValueは、実行結果（全エンティティのリスト）を保持するオブジェクトです。</div><div lang=\"en\">CampaignSharedSetServiceReturnValue\
-    \ is object to hold exec result (all entities list).</div><hr><details><summary>Requirement</summary><table\
-    \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>REMOVE</th></tr><tr><td>values</td><td>-</td><td>-</td><td>-</td></tr></table></details>"
+    \ is object to hold exec result (all entities list).</div>"

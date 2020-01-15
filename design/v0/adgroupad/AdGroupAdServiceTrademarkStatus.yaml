@@ -9,8 +9,8 @@ AdGroupAdServiceTrademarkStatus:
   - DISAPPROVED_REVIEWER
   - UNKNOWN
   title: AdGroupAdServiceTrademarkStatus
-  description: "<div lang=\"ja\">AdGroupAdServiceTrademarkStatusは、商標保護ステータスです。</div><div lang=\"en\">AdGroupAdServiceTrademarkStatus\
-    \ object describes the status of trademark.</div><hr>\n<p>* <code>DISAPPROVED_CLAIM</code> -\
+  description: "<div lang=\"ja\">AdGroupAdServiceTrademarkStatusは、商標保護ステータスです。<br>このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div><div lang=\"en\">AdGroupAdServiceTrademarkStatus\
+    \ object describes the status of trademark.<br>Although this field will be returned in the response, it will be ignored on input. </div><hr>\n<p>* <code>DISAPPROVED_CLAIM</code> -\
     \ <span lang=\"ja\">不服申立否認</span><span lang=\"en\">Disapproved claim.</span></p><p>* <code>DISAPPROVED_REVIEWER</code>\
     \ - <span lang=\"ja\">目視による審査での否認</span><span lang=\"en\">Disapproved reviewer.</span></p><p>* <code>NO_RESTRICTION</code>\
     \ - <span lang=\"ja\">制限なし</span><span lang=\"en\">No restriction.</span></p><p>* <code>CONFLICT_WITH_TRADEMARK</code>\

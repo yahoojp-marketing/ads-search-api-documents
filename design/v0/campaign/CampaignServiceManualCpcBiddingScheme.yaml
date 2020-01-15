@@ -5,6 +5,6 @@ CampaignServiceManualCpcBiddingScheme:
     enhancedCpcEnabled:
       $ref: 'CampaignServiceEnhancedCpcEnabled.yaml#/CampaignServiceEnhancedCpcEnabled'
   title: CampaignServiceManualCpcBiddingScheme
-  description: "<div lang=\"ja\">CampaignServiceManualCpcBiddingSchemeオブジェクトは、手動入札の設定情報を表します。</div><div lang=\"en\">CampaignServiceManualCpcBiddingScheme\
-    \ object displays a setting of Manual Bid.</div><hr><details><summary>Requirement</summary><table\
-    \ border='1'><tr><th>PROPERTY</th><th>GET</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>enhancedCpcEnabled</td><td>-</td><td>Optional<br>Default:FALSE</td><td>Optional</td><td>Ignore</td></tr></table></details>"
+  description: "<div lang=\"ja\">CampaignServiceManualCpcBiddingSchemeオブジェクトは、手動入札の設定情報を表します。<br>ADD時、BiddingStrategyTypeがMANUAL_CPCの場合、必須となり、それ以外では省略可能となります。</div><div lang=\"en\">CampaignServiceManualCpcBiddingScheme\
+    \ object displays a setting of Manual Bid.<br>This field is required when BiddingStrategyType is 'MANUAL_CPC' in ADD operation. For other BiddingStrategyType, this field is optional in ADD operation.
+</div>"

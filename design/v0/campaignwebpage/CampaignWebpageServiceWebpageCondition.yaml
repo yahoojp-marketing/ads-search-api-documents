@@ -5,11 +5,10 @@ CampaignWebpageServiceWebpageCondition:
     argument:
       type: string
       nullable: true
-      description: "<div lang=\"ja\">条件の設定値(正規表現の指定可)</div><div lang=\"en\">Value of rule setting. ∗ Can specify\
-        \ regular expression</div>"
+      description: "<div lang=\"ja\">条件の設定値(正規表現の指定可)です。<br>このフィールドは、ADD時に必須となり、REMOVE時に無視されます。</div><div lang=\"en\">Value of rule setting. ∗ Can specify\
+        \ regular expression. <br> This field is required in ADD operation, and will be ignored in REMOVE operation.</div>"
     'type':
       $ref: 'CampaignWebpageServiceWebpageConditionType.yaml#/CampaignWebpageServiceWebpageConditionType'
   title: CampaignWebpageServiceWebpageCondition
-  description: "<div lang=\"ja\">CampaignWebpageServiceWebpageConditionオブジェクトは、Webpageの条件を保持します。</div><div lang=\"en\">CampaignWebpageServiceWebpageCondition\
-    \ object contains the rules of webpage.</div><hr><details><summary>Requirement</summary><table\
-    \ border='1'><tr><th>PROPERTY</th><th>ADD</th><th>REMOVE</th></tr><tr><td>argument</td><td>Requirement</td><td>Ignore</td></tr><tr><td>type</td><td>Requirement</td><td>Ignore</td></tr></table></details>"
+  description: "<div lang=\"ja\">CampaignWebpageServiceWebpageConditionオブジェクトは、Webpageの条件を保持します。<br> このフィールドは、ADD時に必須となり、REMOVE時に無視されます。</div><div lang=\"en\">CampaignWebpageServiceWebpageCondition\
+    \ object contains the rules of webpage. <br> This field is required in ADD operation, and will be ignored in REMOVE operation.</div>"

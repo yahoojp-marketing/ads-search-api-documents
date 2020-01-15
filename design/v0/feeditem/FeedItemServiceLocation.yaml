@@ -11,8 +11,9 @@ FeedItemServiceLocation:
     targetId:
       type: string
       nullable: true
-      description: "<div lang=\"ja\">地域種別コードです。</div><div lang=\"en\">FeedItemServiceLocation Type Code</div>"
+      description: "<div lang=\"ja\">地域種別コードです。<br> このフィールドは、ADD時に必須となり、SET時に省略可能となり、REMOVE時に無視されます。</div><div lang=\"en\">FeedItemServiceLocation \
+      \ Type Code. <br>This field is required in ADD operation, is optional in SET operation, and will be ignored in REMOVE operation.</div>"
   title: FeedItemServiceLocation
-  description: "<div lang=\"ja\">FeedItemServiceLocationオブジェクトは、地域設定情報を格納します。</div><div lang=\"en\">FeedItemServiceLocation\
-    \ object contains the information of Geographic FeedItemServiceLocation.</div><hr><details><summary>Requirement</summary><table\
-    \ border='1'><tr><th>PROPERTY</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>isRemove</td><td>Ignore</td><td>Optional<br><div lang=\"ja\">※地域設定を解除する場合は、isRemoveにTRUEを指定します。<br>解除後は、geoTargetingRestrictionにNONEが設定されます。</div><div lang=\"en\">* To deactivate the location restriction, set isRemove:TRUE.<br>After deactivation, geoTargetingRestriction is set to NONE.</div></td><td>Ignore</td></tr><tr><td>targetId</td><td>Requirement</td><td>Optional</td><td>Ignore</td></tr><tr><td>criterionTypeFeedItem</td><td>Optional<br>※default：LOCATION</td><td>Optional</td><td>Ignore</td></tr><tr><td>geoRestriction</td><td>Optional<br>※default：NONE</td><td>Optional</td><td>Ignore</td></tr></table></details>"
+  description: "<div lang=\"ja\">FeedItemServiceLocationオブジェクトは、地域設定情報を格納します。<br> このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br> ※アドカスタマイザーの場合は、ADD時に省略可能となります。</div><div lang=\"en\">FeedItemServiceLocation\
+    \ object contains the information of Geographic FeedItemServiceLocation. <br>Although this field will be returned in the \
+    \ response, it will be ignored on input. <br> *For AD_CUSTOMIZER, this field is optional in ADD operation.</div>"

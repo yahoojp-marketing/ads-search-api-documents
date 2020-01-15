@@ -6,21 +6,25 @@ AdGroupWebpageServiceBid:
       type: integer
       nullable: true
       format: int64
-      description: "<div lang=\"ja\">広告グループの最大入札価格</div><div lang=\"en\">Max bid of ad group</div>"
+      description: "<div lang=\"ja\">広告グループの最大入札価格です。<br>このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+</div><div lang=\"en\">Max bid of ad group.<br>Although this field will be returned in the response, it will be ignored on input.
+</div>"
     bidSource:
       $ref: 'AdGroupWebpageServiceBidSource.yaml#/AdGroupWebpageServiceBidSource'
     keywordMaxCpc:
       type: integer
       nullable: true
       format: int64
-      description: "<div lang=\"ja\">キーワードの最大入札価格</div><div lang=\"en\">Max bid of keyword</div>"
+      description: "<div lang=\"ja\">キーワードの最大入札価格です。<br>このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+</div><div lang=\"en\">Max bid of keyword.<br>Although this field will be returned in the response, it will be ignored on input.
+</div>"
     maxCpc:
       type: integer
       nullable: true
       format: int64
-      description: "<div lang=\"ja\">最大入札価格</div><div lang=\"en\">Max bid</div>"
+      description: "<div lang=\"ja\">最大入札価格です。<br>ADD時、このフィールドは省略可能となります。その際、デフォルト値は1となります。SET時、このフィールドは省略可能となります。</div><div lang=\"en\">Max bid.<br>This field is optional in ADD and SET operation. The default value in ADD operation will be 1. 
+</div>"
   title: AdGroupWebpageServiceBid
-  description: "<div lang=\"ja\">AdGroupWebpageServiceBidオブジェクトは、入札価格を表示します。 （AdGroupWebpageService用のオブジェクトです。）</div><div lang=\"en\">AdGroupWebpageServiceBid\
-    \ object describes bid. (Object for AdGroupWebpageService.)</div><hr><details><summary>Requirement</summary><table\
-    \ border='1'><tr><th>PROPERTY</th><th>ADD</th><th>SET</th><th>REMOVE</th></tr><tr><td>adGroupMaxCpc</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>bidSource</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>keywordMaxCpc</td><td>Ignore</td><td>Ignore</td><td>Ignore</td></tr><tr><td>maxCpc</td><td>Optional<br>※Default:\
-    \ 1</td><td>Optional<br><i>Updatable</i></td><td>Ignore</td></tr></table></details>"
+  description: "<div lang=\"ja\">AdGroupWebpageServiceBidオブジェクトは、入札価格を表示します。 （AdGroupWebpageService用のオブジェクトです。）<br>ADD時およびSET時、このフィールドは省略可能となります。※ExcludedTypeがINCLUDEDのみ更新可能です。</div><div lang=\"en\">AdGroupWebpageServiceBid\
+    \ object describes bid. (Object for AdGroupWebpageService.)<br>This field is optional in ADD and SET operation. *This field can be updated when ExcludedType is 'INCLUDED'.
+</div>"
