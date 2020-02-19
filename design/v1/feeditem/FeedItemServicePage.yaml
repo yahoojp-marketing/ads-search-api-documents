@@ -1,0 +1,18 @@
+FeedItemServicePage:
+  type: object
+  nullable: true
+  properties:
+    totalNumEntries:
+      type: integer
+      nullable: false
+      format: int32
+      description: "<div lang=\"ja\">取得される項目の総件数です。</div><div lang=\"en\">Total number of entries in the\
+        \ result.</div>"
+    values:
+      type: array
+      nullable: true
+      items:
+        $ref: 'FeedItemServiceValue.yaml#/FeedItemServiceValue'
+  title: FeedItemServicePage
+  description: "<div lang=\"ja\">FeedItemServicePageオブジェクトは、フィードアイテムの情報を格納します。</div><div lang=\"en\">FeedItemServicePage\
+    \ contains the Feed item information.</div>"

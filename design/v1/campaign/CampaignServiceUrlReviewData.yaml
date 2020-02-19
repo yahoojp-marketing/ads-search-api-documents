@@ -1,0 +1,22 @@
+CampaignServiceUrlReviewData:
+  type: object
+  nullable: true
+  properties:
+    disapprovalReasonCodes:
+      type: array
+      nullable: true
+      items:
+        type: string
+        nullable: true
+      description: "<div lang=\"ja\">審査否認理由コードです。</div><div lang=\"en\">Code of Disapproval reason.<br></div>"
+    disapprovalReviewUrl:
+      $ref: 'CampaignServiceReviewUrl.yaml#/CampaignServiceReviewUrl'
+    inReviewUrl:
+      $ref: 'CampaignServiceReviewUrl.yaml#/CampaignServiceReviewUrl'
+    urlApprovalStatus:
+      $ref: 'CampaignServiceUrlApprovalStatus.yaml#/CampaignServiceUrlApprovalStatus'
+  title: CampaignServiceUrlReviewData
+  description: "<div lang=\"ja\">CampaignServiceUrlReviewDataオブジェクトは、URLの審査状況を表します。<br>このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+</div><div lang=\"en\">CampaignServiceUrlReviewData\
+    \ object displays review status of URL.<br>Although this field will be returned in the response, it will be ignored on input.
+</div>"

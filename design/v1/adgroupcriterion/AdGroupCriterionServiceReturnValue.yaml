@@ -1,0 +1,13 @@
+AdGroupCriterionServiceReturnValue:
+  type: object
+  nullable: true
+  properties:
+    values:
+      type: array
+      nullable: true
+      items:
+        $ref: 'AdGroupCriterionServiceValue.yaml#/AdGroupCriterionServiceValue'
+  title: AdGroupCriterionServiceReturnValue
+  description: "<div lang=\"ja\">AdGroupCriterionServiceReturnValueオブジェクトは、処理結果を含む広告グループのクライテリアに関する情報を表します。</div><div lang=\"en\">AdGroupCriterionServiceReturnValue\
+    \ object is a container which has ad group criteria information including its\
+    \ operation results.</div>"

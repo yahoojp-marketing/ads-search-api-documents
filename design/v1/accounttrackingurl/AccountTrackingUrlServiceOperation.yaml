@@ -1,0 +1,22 @@
+AccountTrackingUrlServiceOperation:
+  type: object
+  nullable: true
+  required:
+  - operand
+  - accountId
+  properties:
+    accountId:
+      type: integer
+      nullable: false
+      format: int64
+      description: "<div lang=\"ja\">アカウントIDです。</div><div lang=\"en\">Account ID</div>"
+    operand:
+      type: array
+      nullable: true
+      items:
+        $ref: 'AccountTrackingUrl.yaml#/AccountTrackingUrl'
+      minItems: 1
+      maxItems: 1
+  title: AccountTrackingUrlServiceOperation
+  description: "<div lang=\"ja\">AccountTrackingUrlServiceOperationオブジェクトは、アカウントトラッキング情報と処理の内容を表します。</div><div lang=\"en\">AccountTrackingUrlServiceOperation\
+    \ object describes the account tracking infromation.</div>"

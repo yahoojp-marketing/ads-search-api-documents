@@ -1,0 +1,11 @@
+AdGroupServiceSettings:
+  type: object
+  nullable: true
+  properties:
+    criterionType:
+      $ref: 'AdGroupServiceCriterionType.yaml#/AdGroupServiceCriterionType'
+    targetingSetting:
+      $ref: 'AdGroupServiceTargetingSetting.yaml#/AdGroupServiceTargetingSetting'
+  title: AdGroupServiceSettings
+  description: "<div lang=\"ja\">AdGroupServiceSettingsは、ターゲットタイプを保持するオブジェクトです。<br>ADDおよびSET時、このフィールドは省略可能となります。</div><div lang=\"en\">AdGroupServiceSettings\
+    \ is object that holds target type.<br>This field is optional in ADD and SET operation.</div>"

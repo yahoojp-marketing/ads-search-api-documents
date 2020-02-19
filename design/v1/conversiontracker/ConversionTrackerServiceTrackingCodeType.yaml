@@ -1,0 +1,13 @@
+ConversionTrackerServiceTrackingCodeType:
+  type: string
+  nullable: true
+  enum:
+  - WEBPAGE
+  - CLICK_TO_CALL
+  - IMPORT
+  - UNKNOWN
+  title: ConversionTrackerServiceTrackingCodeType
+  description: "<div lang=\"ja\">ConversionTrackerServiceTrackingCodeTypeは、ウェブページのトラッキングタイプを表します。<br>このフィールドは、ADD時に必須となり、SET時に省略可能となります。</div><div lang=\"en\">ConversionTrackerServiceTrackingCodeType\
+    \ describes tracking type of web page. <br>This field is required in ADD operation, and is optional in SET operation.</div><hr>\n<p>* <code>WEBPAGE</code> - <span lang=\"ja\">ウェブページでのコンバージョンです。</span><span lang=\"en\">Web\
+    \ page conversion</span></p><p>* <code>CLICK_TO_CALL</code> - <span lang=\"ja\">電話番号発信のコンバージョンです。</span><span lang=\"en\">Click\
+    \ to call conversion</span></p><p>* <code>IMPORT</code> - <span lang=\"ja\"></span><span lang=\"en\"></span></p><p>* <code>UNKNOWN</code> - <span lang=\"ja\">未知の値です。</span><span lang=\"en\">Unknown Value</span></p>"

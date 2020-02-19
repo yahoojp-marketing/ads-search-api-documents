@@ -1,6 +1,6 @@
 openapi: 3.0.2
 info:
-  title: 'Yahoo!広告 検索広告 API リファレンス β版 / Yahoo! Ads Search Ads API Reference β Version'
+  title: 'Yahoo!広告 検索広告 API リファレンス / Yahoo! Ads Search Ads API Reference'
   version: 'v0'
   description: |
     <div lang="ja">Yahoo!広告 検索広告 APIのWebサービスについて説明します。<br>
@@ -151,9 +151,30 @@ tags:
 - name: ReportDefinitionService
   description: |
     <label class="report"></label>
-    <div lang="ja">ReportDefinitionServiceでは、レポート定義の取得および追加・削除を行います。<br/>レポート定義では、レポート形式、期間およびフィールドを指定します。<br/>また特定のレポート形式に対して使用可能なレポートフィールドを取得する操作が提供されます。</div><div lang="en">ReportDefinitionService
-    is to get, add or delete report definition. <br/>Report defines report type, date
-    range, and fields. <br/>It also provides operation to get available report fields for specific report type.</div>
+    <div lang="ja">ReportDefinitionServiceでは、レポート定義の取得および追加・削除を行います。<br/>
+    レポート定義では、レポート形式、期間およびフィールドを指定します。<br/>
+    また特定のレポート形式に対して使用可能なレポートフィールドを取得する操作が提供されます。<br>
+    以下の操作が実行可能です。<br>
+    ・レポートの取得<br>
+    ・レポートの登録<br>
+    ・レポートの削除<br>
+    ・レポート出力項目の取得<br>
+    【注意事項】<br>
+    ・すべてのレポートタイプにおいて配信実績のないデータは出力されません。<br>
+    ・レポートは、リクエストしてから1週間（7日間）で自動的に削除されます。<br>
+    </div>
+    <div lang="en">ReportDefinitionService is to get, add or delete report definition. <br/>
+    Report defines report type, date range, and fields. <br/>
+    It also provides operation to get available report fields for specific report type.<br>
+    The following operations are provided:<br>
+    - Get reports<br>
+    - Add reports<br>
+    - Delete reports<br>
+    - Get report fields' information<br>
+    [Notes]<br>
+    - Any ad data without actual performance is not output for all report types.<br>
+    - Report download jobs will be automatically deleted after a week (7 days) from requested.<br>
+    </div>
     <h2 lang="ja">レポートフィールド</h2>
     <h2 lang="en">Report Fields</h2>
     <ul>

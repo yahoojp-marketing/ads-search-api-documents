@@ -1,0 +1,22 @@
+AdGroupFeedServiceOperation:
+  type: object
+  nullable: true
+  required:
+  - accountId
+  - operand
+  properties:
+    accountId:
+      type: integer
+      nullable: false
+      format: int64
+      description: "<div lang=\"ja\">アカウントIDです。</div><div lang=\"en\">Account ID.</div>"
+    operand:
+      type: array
+      nullable: true
+      items:
+        $ref: 'AdGroupFeedServiceList.yaml#/AdGroupFeedServiceList'
+      minItems: 1
+      maxItems: 200
+  title: AdGroupFeedServiceOperation
+  description: "<div lang=\"ja\">AdGroupFeedServiceOperationオブジェクトは、FeedItem情報を格納するコンテナです。</div><div lang=\"en\">AdGroupFeedServiceOperation\
+    \ is a container of FeedItem information.</div>"

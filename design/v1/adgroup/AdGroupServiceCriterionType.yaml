@@ -1,0 +1,10 @@
+AdGroupServiceCriterionType:
+  type: string
+  nullable: true
+  enum:
+  - TARGET_LIST
+  - UNKNOWN
+  title: AdGroupServiceCriterionType
+  description: "<div lang=\"ja\">AdGroupServiceCriterionTypeは、クライテリアを表します。<br>ADDおよびSET時、このフィールドは必須となります。<br>※TargetingSettingが未設定の場合、ADD時のデフォルト設定値はTARGET_LISTとなります。</div><div lang=\"en\">AdGroupServiceCriterionType\
+    \ displays the type of criteria.<br>This field is required in ADD and SET operation.<br>*The default value in ADD operation for the case of no setting 'TargetingSetting' is TARGET_LIST.</div><hr>\n<p>* <code>TARGET_LIST</code> - <span lang=\"ja\">ターゲットリストです。</span><span lang=\"en\">Target list</span></p>\
+    <p>* <code>UNKNOWN</code> - <span lang=\"ja\">未知の値です。</span><span lang=\"en\">Unknown Value</span></p>"

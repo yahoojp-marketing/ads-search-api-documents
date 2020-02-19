@@ -28,8 +28,8 @@
       <div class="hpHeader__inner">
         <div class="hpHeader__head">
           <div class="hpHeader__wrap">
-            <h1 class="hpHeader__title" lang="ja">APIリファレンス β版</h1>
-            <h1 class="hpHeader__title" lang="en">API Reference β version</h1>
+            <h1 class="hpHeader__title" lang="ja">APIリファレンス</h1>
+            <h1 class="hpHeader__title" lang="en">API Reference</h1>
             <div class="hpHeaderLanguage" lang="ja">
               <a class="hpHeaderLanguage__trigger" href="?lang=en">English</a>
             </div>
@@ -44,11 +44,24 @@
         <div class="nav__inner">
             <ul class="navPrimary">
               <li class="navPrimary__item is-current">
-                <div lang="ja"><a class="navPrimary__trigger" href="">検索広告APIリファレンス v0</a></div>
-                <div lang="en"><a class="navPrimary__trigger" href="">Search Ads API Reference v0</a></div></li>
+                <div lang="ja"><a class="navPrimary__trigger" href="?lang=ja&v=1">検索広告APIリファレンス v1</a></div>
+                <div lang="en"><a class="navPrimary__trigger" href="?lang=en&v=1">Search Ads API Reference v1</a></div>
+                <ul class="navSecondary">
+                   <li class="navSecondary__item">
+                     <div lang="ja"><a class="navSecondary__trigger" href="?lang=ja&v=0">検索広告APIリファレンス v0</a></div>
+                     <div lang="en"><a class="navSecondary__trigger" href="?lang=en&v=0">Search Ads API Reference v0</a></div>
+                   </li>
+                </ul><!-- /.navSecondary -->
+              </li>
               <li class="navPrimary__item">
-                <div lang="ja"><a class="navPrimary__trigger" href="//yahoojp-marketing.github.io/ads-display-api-documents/">ディスプレイ広告APIリファレンス v0</a></div>
-                <div lang="en"><a class="navPrimary__trigger" href="//yahoojp-marketing.github.io/ads-display-api-documents/?lang=en">Display Ads API Reference v0</a></div>
+                <div lang="ja"><a class="navPrimary__trigger" href="../ads-display-api-documents/?lang=ja&v=1">ディスプレイ広告APIリファレンス v1</a></div>
+                <div lang="en"><a class="navPrimary__trigger" href="../ads-display-api-documents/?lang=en&v=1">Display Ads API Reference v1</a></div>
+                <ul class="navSecondary">
+                  <li class="navSecondary__item">
+                    <div lang="ja"><a class="navSecondary__trigger" href="../ads-display-api-documents/?lang=ja&v=0">ディスプレイ広告APIリファレンス v0</a></div>
+                    <div lang="en"><a class="navSecondary__trigger" href="../ads-display-api-documents/?lang=en&v=0">Display Ads API Reference v0</a></div>
+                  </li>
+                </ul><!-- /.navSecondary -->
               </li>
             </ul>
         </div><!-- /.nav__inner -->
@@ -89,6 +102,8 @@
     <script src="scripts/swagger-ui-standalone-preset.js"> </script>
     <script>
     var lang
+    var version = 1
+
     window.addEventListener('DOMContentLoaded', function () {
       if(location.search.indexOf('lang=en') != -1){
         lang = "en"
@@ -98,106 +113,115 @@
         lang = "ja"
         document.title = 'APIリファレンス - Yahoo!広告';
       }
+      var versionCheck = location.search.match(/[?&]v=([0-9]{1,3})/)
+      if(versionCheck){
+        version = versionCheck[1]
+      }
+
     });
-    window.onload = function() {
-      // Begin Swagger UI call region
-      const ui = SwaggerUIBundle({
-        url: "./design/v0/Route.yaml",
-        dom_id: '#swagger-ui',
-        deepLinking: false,
-        docExpansion: 'none',
-        defaultModelRendering: 'model',
-        defaultModelExpandDepth: 20,
-        // showCommonExtensions: true,
-        tagsSorter: 'alpha',
-        presets: [
-          SwaggerUIBundle.presets.apis,
-          SwaggerUIStandalonePreset
-        ],
-        plugins: [
-          SwaggerUIBundle.plugins.DownloadUrl
-        ],
-        layout: "StandaloneLayout",
-        oauth2RedirectUrl: location.href.replace('index.html', '').replace(/\?.+/, '').replace(/\/$/g, '') + '/oauth2-redirect.html'
-      })
-      // End Swagger UI call region
 
-      window.ui = ui
+   var routeFactory = function() {
+     return function () {
+       // Begin Swagger UI call region
+       const ui = SwaggerUIBundle({
+                                    url: "./design/v"+version+"/Route.yaml",
+                                    dom_id: '#swagger-ui',
+                                    deepLinking: false,
+                                    docExpansion: 'none',
+                                    defaultModelRendering: 'model',
+                                    defaultModelExpandDepth: 20,
+                                    // showCommonExtensions: true,
+                                    tagsSorter: 'alpha',
+                                    presets: [
+                                      SwaggerUIBundle.presets.apis,
+                                      SwaggerUIStandalonePreset
+                                    ],
+                                    plugins: [
+                                      SwaggerUIBundle.plugins.DownloadUrl
+                                    ],
+                                    layout: "StandaloneLayout",
+                                    oauth2RedirectUrl: location.href.replace('index.html', '').replace(/\?.+/, '').replace(/\/$/g, '') + '/oauth2-redirect.html'
+                                  })
+       // End Swagger UI call region
 
-      $(function(){
-        $(window).on('scroll', function () {
-          var headerSize = 125
-          if(headerSize > $(window).scrollTop()) {
-            $('#apiSideMenu').addClass('sideMenuAbsolute').removeClass('sideMenuFixed')
-          } else {
-            $('#apiSideMenu').addClass('sideMenuFixed').removeClass('sideMenuAbsolute')
-          }
-        });
+       window.ui = ui
 
-        var observer_swagger = new MutationObserver(function () {
-            var speed = 500, cTop = 80,o=false,m = false
-            $.each($('.swagger-ui section > div > span > div'), function(index, value) {
-              var clickParent = $('#apiSideMenu > ul').append('<li><p class="apiName">' + $(value).find('h4').data('tag') + '</p></li>')
-              $( clickParent ).find('li:last-child > p.apiName').click(function() {
-                var clickedContent = $(this)
-                clickedContent.parent().find("ul").html("")
+       $(function () {
+         $(window).on('scroll', function () {
+           var headerSize = 125
+           if (headerSize > $(window).scrollTop()) {
+             $('#apiSideMenu').addClass('sideMenuAbsolute').removeClass('sideMenuFixed')
+           } else {
+             $('#apiSideMenu').addClass('sideMenuFixed').removeClass('sideMenuAbsolute')
+           }
+         });
 
-                if( !$(value).hasClass("is-open") && $(this).next().is(":hidden")){
-                  $(value).find('h4').trigger('click')
-                }else{
+         var observer_swagger = new MutationObserver(function () {
+           var speed = 500, cTop = 80, o = false, m = false
+           $.each($('.swagger-ui section > div > span > div'), function (index, value) {
+             var clickParent = $('#apiSideMenu > ul').append('<li><p class="apiName">' + $(value).find('h4').data('tag') + '</p></li>')
+             $(clickParent).find('li:last-child > p.apiName').click(function () {
+               var clickedContent = $(this)
+               clickedContent.parent().find("ul").html("")
 
-                }
-                $.each($(value).find('.opblock-summary-path'), function(i, v) {
-                        var t = $(v).data('path')
-                        var clickChild = clickedContent.parent().find("ul").append('<li class="childMethod">' + $(v).data('path').replace(/\/.+\//, "") + '</li>')
+               if (!$(value).hasClass("is-open") && $(this).next().is(":hidden")) {
+                 $(value).find('h4').trigger('click')
+               } else {
 
-                        $( clickChild ).find('li:last-child').click(function() {
-                          if(!m){
-                            m = true
-                            if( !$(value).hasClass("is-open") ){
-                              $(value).find('h4').trigger('click')
-                            }
-                            var p = $('[data-path="'+t+'"]').position().top - cTop
-                            $('html,body').animate({scrollTop:p}, speed, 'swing',function(){
-                              m = false
-                            });
-                          }
-                        })
-                      })
+               }
+               $.each($(value).find('.opblock-summary-path'), function (i, v) {
+                 var t = $(v).data('path')
+                 var clickChild = clickedContent.parent().find("ul").append('<li class="childMethod">' + $(v).data('path').replace(/\/.+\//, "") + '</li>')
 
-                if(!o){
-                    o = true
-                    $(this).next().slideToggle(1,function(){
-                      o = false
-                    })
-                }
+                 $(clickChild).find('li:last-child').click(function () {
+                   if (!m) {
+                     m = true
+                     if (!$(value).hasClass("is-open")) {
+                       $(value).find('h4').trigger('click')
+                     }
+                     var p = $('[data-path="' + t + '"]').position().top - cTop
+                     $('html,body').animate({scrollTop: p}, speed, 'swing', function () {
+                       m = false
+                     });
+                   }
+                 })
+               })
 
-              })
-              $('#apiSideMenu > ul > li:last-child').append('<ul class="methodTab"></ul>')
+               if (!o) {
+                 o = true
+                 $(this).next().slideToggle(1, function () {
+                   o = false
+                 })
+               }
 
-            })
-            $('.methodTab').hide()
-        });
+             })
+             $('#apiSideMenu > ul > li:last-child').append('<ul class="methodTab"></ul>')
 
-        observer_swagger.observe($('#swagger-ui')[0], {
-            childList: true,
-            subtree: true
-        });
-        var observer_menu = new MutationObserver(function () {
-          observer_swagger.disconnect()
-          if(lang == "en"){
-            $('.title').text("Yahoo! Ads Search Ads API Reference β Version")
-          }else{
-            $('.title').text("Yahoo!広告 検索広告 API リファレンス β版")
-          }
+           })
+           $('.methodTab').hide()
+         });
 
-        });
-        observer_menu.observe($('#apiSideMenu')[0], {
-            childList: true,
-            subtree: true
-        });
-      })
-    }
+         observer_swagger.observe($('#swagger-ui')[0], {
+           childList: true,
+           subtree: true
+         });
+         var observer_menu = new MutationObserver(function () {
+           observer_swagger.disconnect()
+           if (lang == "en") {
+             $('.title').text("Yahoo! Ads Search Ads API Reference")
+           } else {
+             $('.title').text("Yahoo!広告 検索広告 API リファレンス")
+           }
+
+         });
+         observer_menu.observe($('#apiSideMenu')[0], {
+           childList: true,
+           subtree: true
+         });
+       })
+     }
+   }
+    window.onload = routeFactory();
   </script>
   </main>
 

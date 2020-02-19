@@ -1,0 +1,64 @@
+AdGroup:
+  type: object
+  nullable: true
+  properties:
+    accountId:
+      type: integer
+      nullable: true
+      format: int64
+      description: "<div lang=\"ja\">アカウントIDです。<br>このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div><div lang=\"en\">Account ID.<br>Although this field will be returned in the response, it will be ignored on input. </div>"
+    adGroupAdRotationMode:
+      $ref: 'AdGroupServiceAdGroupAdRotationMode.yaml#/AdGroupServiceAdGroupAdRotationMode'
+    adGroupId:
+      type: integer
+      nullable: true
+      format: int64
+      description: "<div lang=\"ja\">広告グループIDです。<br>このフィールドは、ADD時は無視され、SETおよびREMOVE時は必須となります。</div><div lang=\"en\">Ad group ID.<br>This field will be ignored in ADD operation, and will be required in SET and REMOVE operation.</div>"
+    adGroupName:
+      type: string
+      nullable: true
+      description: "<div lang=\"ja\">広告グループ名です。<br>このフィールドは、ADD時は必須となり、SET時は省略可能となります。</div><div lang=\"en\">Ad Group name.<br>This field is required in ADD operation, and will be optional in SET operation.</div>"
+    adGroupTrackId:
+      type: integer
+      nullable: true
+      format: int64
+      description: "<div lang=\"ja\">トラッキング用広告グループIDです。<br>このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div><div lang=\"en\">Ad\
+        \ Group ID for tracking.<br>Although this field will be returned in the response, it will be ignored on input. </div>"
+    bid:
+      $ref: 'AdGroupServiceBid.yaml#/AdGroupServiceBid'
+    campaignId:
+      type: integer
+      nullable: true
+      format: int64
+      description: "<div lang=\"ja\">キャンペーンIDです。<br>このフィールドは、いずれの場合でも必須となります。</div><div lang=\"en\">Campaign ID.<br>This field is required in any cases.</div>"
+    campaignName:
+      type: string
+      nullable: true
+      description: "<div lang=\"ja\">キャンペーン名です。<br>このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div><div lang=\"en\">Campaign name.<br>Although this field will be returned in the response, it will be ignored on input. </div>"
+    campaignTrackId:
+      type: integer
+      nullable: true
+      format: int64
+      description: "<div lang=\"ja\">トラッキング用キャンペーンIDです。<br>このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div><div lang=\"en\">Campaign\
+        \ ID for tracking.<br>Although this field will be returned in the response, it will be ignored on input. </div>"
+    customParameters:
+      $ref: 'AdGroupServiceCustomParameters.yaml#/AdGroupServiceCustomParameters'
+    labels:
+      type: array
+      nullable: true
+      items:
+        $ref: 'AdGroupServiceLabel.yaml#/AdGroupServiceLabel'
+    settings:
+      $ref: 'AdGroupServiceSettings.yaml#/AdGroupServiceSettings'
+    trackingUrl:
+      type: string
+      nullable: true
+      description: "<div lang=\"ja\">トラッキングURLです。<br>このフィールドは、省略可能となります。<br>※キャンペーンがアプリキャンペーンでAndroidの場合、設定はできません。<br>※SET時、こちらが審査中の場合、編集はできません。また、変更がない場合、審査対象とはなりません。</div><div lang=\"en\">Tracking\
+        \ URL.<br>This field is optional.<br>*Cannot set for a Mobile App campaign for Android OS.<br>*In SET operation, cannot update it when this field is in editorial review. In addition, if there is no change, it will not to be reviewed.</div>"
+    urlReviewData:
+      $ref: 'AdGroupServiceUrlReviewData.yaml#/AdGroupServiceUrlReviewData'
+    userStatus:
+      $ref: 'AdGroupServiceUserStatus.yaml#/AdGroupServiceUserStatus'
+  title: AdGroup
+  description: "<div lang=\"ja\">AdGroup オブジェクトは、広告グループを表します。</div><div lang=\"en\">AdGroup object describes\
+    \ ad group information.</div>"

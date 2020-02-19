@@ -1,0 +1,26 @@
+CampaignLabel:
+  type: object
+  nullable: true
+  properties:
+    accountId:
+      type: integer
+      nullable: true
+      format: int64
+      description: "<div lang=\"ja\">アカウントIDです。<br>このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+</div><div lang=\"en\">Account ID.<br>Although this field will be returned in the response, it will be ignored on input.
+</div>"
+    campaignId:
+      type: integer
+      nullable: true
+      format: int64
+      description: "<div lang=\"ja\">キャンペーンIDです。<br>このフィールドは、いずれの場合でも必須です。</div><div lang=\"en\">Campaign ID.<br>This field is required in any cases.
+</div>"
+    labelId:
+      type: integer
+      nullable: true
+      format: int64
+      description: "<div lang=\"ja\">ラベルIDです。<br>このフィールドは、いずれの場合でも必須です。</div><div lang=\"en\">Label ID.<br>This field is required in any cases.
+</div>"
+  title: CampaignLabel
+  description: "<div lang=\"ja\">CampaignLabelオブジェクトは、キャンペーンラベルの情報を表します。</div><div lang=\"en\">CampaignLabel\
+    \ object describes campaign label information.</div>"

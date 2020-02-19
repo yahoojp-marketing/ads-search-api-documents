@@ -1,0 +1,40 @@
+BidLandscape:
+  type: object
+  nullable: true
+  properties:
+    campaignId:
+      type: integer
+      nullable: true
+      format: int64
+      description: "<div lang=\"ja\">キャンペーンIDです。</div><br><div lang=\"en\">Campaign\
+        \ ID.</div>"
+    adGroupId:
+      type: integer
+      nullable: true
+      format: int64
+      description: "<div lang=\"ja\">広告グループIDです。</div><br><div lang=\"en\">Ad Gropup\
+        \ ID.</div>"
+    startDate:
+      type: string
+      nullable: true
+      description: "<div lang=\"ja\">開始日です。</div><br><div lang=\"en\">Start date.</div>"
+    endDate:
+      type: string
+      nullable: true
+      description: "<div lang=\"ja\">終了日です。</div><br><div lang=\"en\">End date.</div>"
+    landscapePoints:
+      type: array
+      nullable: true
+      items:
+        $ref: 'BidLandscapeServicePoints.yaml#/BidLandscapeServicePoints'
+    bidLandscapeType:
+      type: string
+      nullable: true
+      description: "<div lang=\"ja\">BidLandscape のサブタイプを示します。</div><br><div lang=\"en\">The subtype of BidLandscape.</div>"
+    adGroupBidLandscape:
+      $ref: 'BidLandscapeServiceAdGroupBidLandscape.yaml#/BidLandscapeServiceAdGroupBidLandscape'
+    criterionBidLandscape:
+      $ref: 'BidLandscapeServiceCriterionBidLandscape.yaml#/BidLandscapeServiceCriterionBidLandscape'
+  title: BidLandscape
+  description: "<div lang=\"ja\">BidLandscapeオブジェクトは、予測結果を表します。</div><br><div lang=\"\
+    en\">Expected results.</div>"

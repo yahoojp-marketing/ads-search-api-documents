@@ -1,0 +1,18 @@
+CampaignCriterionServicePage:
+  type: object
+  nullable: true
+  properties:
+    totalNumEntries:
+      type: integer
+      nullable: false
+      format: int32
+      description: "<div lang=\"ja\">取得される項目の総件数です。</div><div lang=\"en\">Total number of entries in the\
+        \ result that this page is a part of.</div>"
+    values:
+      type: array
+      nullable: true
+      items:
+        $ref: 'CampaignCriterionServiceValue.yaml#/CampaignCriterionServiceValue'
+  title: CampaignCriterionServicePage
+  description: "<div lang=\"ja\">CampaignCriterionServicePageオブジェクトは、取得されるキャンペーンのクライテリアのエントリーを表します。</div><div lang=\"en\">Entry\
+    \ of campaign criteria.</div>"

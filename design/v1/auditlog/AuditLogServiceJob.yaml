@@ -1,0 +1,46 @@
+AuditLogServiceJob:
+  type: object
+  nullable: true
+  required:
+  - eventSelector
+  properties:
+    accountId:
+      type: integer
+      nullable: true
+      format: int64
+      description: "<div lang=\"ja\">アカウントIDです。<br>このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div><div lang=\"en\">Account ID.<br>Although this field will be returned in the response, it will be ignored on input.
+</div>"
+    dateRange:
+      $ref: 'AuditLogServiceDateRange.yaml#/AuditLogServiceDateRange'
+    encoding:
+      $ref: 'AuditLogServiceEncoding.yaml#/AuditLogServiceEncoding'
+    eventSelector:
+      type: array
+      nullable: true
+      items:
+        $ref: 'AuditLogServiceEventSelector.yaml#/AuditLogServiceEventSelector'
+      minItems: 1
+      maxItems: 25
+    jobId:
+      type: integer
+      nullable: true
+      format: int64
+      description: "<div lang=\"ja\">ジョブIDです。<br>このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div><div lang=\"en\">Job ID.<br>Although this field will be returned in the response, it will be ignored on input.
+</div>"
+    jobName:
+      type: string
+      nullable: true
+      description: "<div lang=\"ja\">ジョブ名です。<br>このフィールドは、省略可能となります。</div><div lang=\"en\">Name of job.<br>This field is optional.
+</div>"
+    jobStatus:
+      $ref: 'AuditLogServiceJobStatus.yaml#/AuditLogServiceJobStatus'
+    lang:
+      $ref: 'AuditLogServiceLang.yaml#/AuditLogServiceLang'
+    output:
+      $ref: 'AuditLogServiceOutput.yaml#/AuditLogServiceOutput'
+    sourceType:
+      $ref: 'AuditLogServiceSourceType.yaml#/AuditLogServiceSourceType'
+  title: AuditLogServiceJob
+  description: "<div lang=\"ja\">AuditLogServiceJobオブジェクトは、操作履歴取得で登録するジョブの情報を保持します。<br></div><div lang=\"en\">AuditLogServiceJob\
+      \ object retains the job information to be added for getting operation history\
+      \ data.</div>"

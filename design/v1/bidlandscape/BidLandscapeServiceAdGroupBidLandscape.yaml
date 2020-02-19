@@ -1,0 +1,13 @@
+BidLandscapeServiceAdGroupBidLandscape:
+  type: object
+  nullable: true
+  properties:
+    adGroupBidLandscapeType:
+      $ref: 'BidLandscapeServiceAdGroupBidLandscapeType.yaml#/BidLandscapeServiceAdGroupBidLandscapeType'
+      description: "<div lang=\"ja\">ランドスケープのサブタイプを示します。</div><br><div lang=\"en\">This field indicates a Landscape Subtype</div>"
+    landscapeCurrent:
+      type: boolean
+      nullable: true
+      description: "<div lang=\"ja\">「LandscapeCurrent」の値を選択します。</div><br><div lang=\"en\">It selects the value of &#34;LandscapeCurrent&#34;</div>"
+  title: BidLandscapeServiceAdGroupBidLandscape
+  description: "<div lang=\"ja\">AdGroupBidLandscapeオブジェクトは、広告グループに関する予測の結果を表します。</div><br><div lang=\"en\">Expected results of AdGroup.</div>"

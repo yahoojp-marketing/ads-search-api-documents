@@ -1,0 +1,16 @@
+CampaignServiceCustomParameters:
+  type: object
+  nullable: true
+  properties:
+    isRemove:
+      $ref: 'CampaignServiceIsRemove.yaml#/CampaignServiceIsRemove'
+    parameters:
+      type: array
+      nullable: true
+      items:
+        $ref: 'CampaignServiceCustomParameter.yaml#/CampaignServiceCustomParameter'
+  title: CampaignServiceCustomParameters
+  description: "<div lang=\"ja\">CampaignServiceCustomParametersオブジェクトは、カスタムパラメータの設定を表します。<br>ADD時およびSET時、このフィールドは省略可能となります。
+</div><div lang=\"en\">CampaignServiceCustomParameters\
+    \ displays the setting of custom parameters.<br>This field is optional in ADD and SET operation.
+</div>"

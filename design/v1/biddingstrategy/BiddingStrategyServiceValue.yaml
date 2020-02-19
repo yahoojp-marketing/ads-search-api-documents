@@ -1,0 +1,19 @@
+BiddingStrategyServiceValue:
+  type: object
+  nullable: true
+  properties:
+    biddingStrategy:
+      $ref: 'BiddingStrategy.yaml#/BiddingStrategy'
+    errors:
+      type: array
+      nullable: true
+      items:
+        $ref: '../../Error.yaml#/Error'
+    operationSucceeded:
+      type: boolean
+      nullable: true
+      description: "<div lang=\"ja\">処理結果です。trueの場合は、処理は成功しました。falseの場合は処理が失敗しています。</div><div lang=\"en\">Result\
+        \ of process.<br>- true: Process succeeded.<br>- false: Process failed.</div>"
+  title: BiddingStrategyServiceValue
+  description: "<div lang=\"ja\">BiddingStrategyServiceValueオブジェクトは、自動入札設定の実行をしたときの結果に関する情報を表します。</div><div lang=\"en\">BiddingStrategyServiceValue\
+    \ object displays the results of auto bidding settings.</div>"

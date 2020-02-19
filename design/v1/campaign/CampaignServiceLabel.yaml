@@ -1,0 +1,26 @@
+CampaignServiceLabel:
+  type: object
+  nullable: true
+  properties:
+    color:
+      type: string
+      nullable: true
+      description: "<div lang=\"ja\">カラーです。</div><div lang=\"en\">Color<br></div>"
+    description:
+      type: string
+      nullable: true
+      description: "<div lang=\"ja\">説明文です。</div><div lang=\"en\">Description</div>"
+    labelId:
+      type: integer
+      nullable: true
+      format: int64
+      description: "<div lang=\"ja\">ラベルIDです。</div><div lang=\"en\">CampaignServiceLabel ID</div>"
+    labelName:
+      type: string
+      nullable: true
+      description: "<div lang=\"ja\">ラベル名です。</div><div lang=\"en\">CampaignServiceLabel Name<br></div>"
+  title: CampaignServiceLabel
+  description: "<div lang=\"ja\">紐づけられているラベル情報を表します。<br>このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+</div><div lang=\"en\">CampaignServiceLabel object describes\
+    \ label information to be associated.<br>Although this field will be returned in the response, it will be ignored on input.
+</div>"

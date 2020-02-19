@@ -1,0 +1,18 @@
+AdGroupAdServiceAdditionalAdvancedMobileUrls:
+  type: object
+  nullable: true
+  properties:
+    advancedMobileUrl:
+      type: string
+      nullable: true
+      description: "<div lang=\"ja\">最終リンク先URL（スマートフォン）です。<br>ADD時、このフィールドは必須となります。</div><div lang=\"en\">Landing Page URL (Smartphone).<br>This field is required in ADD operation.</div>"
+    disapprovalReasonCodes:
+      type: array
+      nullable: true
+      items:
+        type: string
+        nullable: true
+      description: "<div lang=\"ja\">審査否認理由コードです。<br>(コード詳細は、DictionaryServiceのgetDisapprovalReasonのレスポンスを参照)</div><div lang=\"en\">Reject reason code<br>(Refer to DictionaryService getDisapprovalReason response for details)</div>"
+  title: AdGroupAdServiceAdditionalAdvancedMobileUrls
+  description: "<div lang=\"ja\">AdGroupAdServiceAdditionalAdvancedMobileUrlsは、2件目以降の最終リンク先URL（スマートフォン）を保持するオブジェクトです。<br>ADD時、このフィールドは省略可能となります。※adTypeがDYNAMIC_SEARCH_LINKED_ADの場合は無視されます。</div><div lang=\"en\">AdGroupAdServiceAdditionalAdvancedMobileUrls\
+    \ is object to hold the 2nd and later Landing Page URLs (Smartphone).<br>This field is optional in ADD operation. *If adType is DYNAMIC_SEARCH_LINKED_AD, this field will be ignored.</div>"

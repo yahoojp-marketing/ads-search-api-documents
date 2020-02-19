@@ -1,0 +1,18 @@
+CampaignTargetServiceValue:
+  type: object
+  nullable: true
+  properties:
+    campaignTarget:
+      $ref: 'CampaignTarget.yaml#/CampaignTarget'
+    errors:
+      type: array
+      nullable: true
+      items:
+        $ref: '../../Error.yaml#/Error'
+    operationSucceeded:
+      type: boolean
+      nullable: true
+      description: "<div lang=\"ja\">処理結果です。</div><div lang=\"en\">The operation.</div>"
+  title: CampaignTargetServiceValue
+  description: "<div lang=\"ja\">CampaignTargetServiceValueオブジェクトは、処理結果を含むキャンペーンのターゲティング設定を表します。</div><div lang=\"en\">Campaign\
+    \ target settings including operation results.</div>"
