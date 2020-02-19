@@ -1,0 +1,12 @@
+RetargetingListServiceLogicalTargetList:
+  type: object
+  nullable: true
+  properties:
+    logicalGroup:
+      type: array
+      nullable: true
+      items:
+        $ref: 'RetargetingListServiceLogicalGroup.yaml#/RetargetingListServiceLogicalGroup'
+  title: RetargetingListServiceLogicalTargetList
+  description: "<div lang=\"ja\">RetargetingListServiceLogicalTargetListは、組合せターゲットリストの情報を保持するオブジェクトです。<br>このフィールドは、省略可能となります。<br> ※targetListTypeがLOGICALの場合、このフィールドは必須となります。</div><div lang=\"en\">RetargetingListServiceLogicalTargetList\
+    \ is an object that holds the combination target list information. <br>This field is optional. <br> If the targetListType is LOGICAL, this field is required. </div>"

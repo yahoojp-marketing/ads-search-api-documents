@@ -1,0 +1,19 @@
+FeedItemServiceCustomParameter:
+  type: object
+  nullable: true
+  properties:
+    key:
+      type: string
+      nullable: true
+      description: "<div lang=\"ja\">キーです。<br> このフィールドは、ADDおよびSET時に必須となります。</div><div lang=\"en\">Key \
+      \ of parameter. <br>This field is required in ADD and SET operation. </div>"
+    value:
+      type: string
+      nullable: true
+      description: "<div lang=\"ja\">値です。<br> このフィールドは、ADDおよびSET時に省略可能となります。</div><div lang=\"en\">Value of \
+      \ parameter.<br>This field is optional in ADD and SET operation.<br></div>"
+  title: FeedItemServiceCustomParameter
+  description: "<div lang=\"ja\">FeedItemServiceCustomParameterは、カスタムパラメータの内容を表します。<br> このフィールドは、ADDおよびSET時に必須となります。<br> SET時、このフィールドは既存の項目を置き換えます。<br> ※削除フラグを立てた場合(isRemove=TRUE)、このフィールドは無視され、こちらの項目関係なく、全項目が削除されます。</div><div lang=\"en\">FeedItemServiceCustomParameter\
+    \ displays the element of custom parameters. <br>This field is required in ADD and SET operation. <br> This field replaces the \
+    \ current items in SET operation. <br>*If the delete flag is set (isRemove=TRUE), this field will be ignored and all items will \
+    \ be deleted.</div>"

@@ -1,0 +1,22 @@
+AdGroupAdServiceOperation:
+  type: object
+  nullable: true
+  required:
+  - accountId
+  - operand
+  properties:
+    accountId:
+      type: integer
+      nullable: false
+      format: int64
+      description: "<div lang=\"ja\">アカウントIDです。</div><div lang=\"en\">Account ID.</div>"
+    operand:
+      type: array
+      nullable: true
+      items:
+        $ref: 'AdGroupAd.yaml#/AdGroupAd'
+      minItems: 1
+      maxItems: 2000
+  title: AdGroupAdServiceOperation
+  description: "<div lang=\"ja\">AdGroupAdServiceOperationオブジェクトは、操作の対象となる広告および操作の内容を表します。</div><div lang=\"en\">Ad\
+    \ and operations to call.</div>"

@@ -1,0 +1,12 @@
+FeedServiceReturnValue:
+  type: object
+  nullable: true
+  properties:
+    values:
+      type: array
+      nullable: true
+      items:
+        $ref: 'FeedServiceValue.yaml#/FeedServiceValue'
+  title: FeedServiceReturnValue
+  description: "<div lang=\"ja\">FeedServiceReturnValueは、操作結果を含む自動データ挿入のリストのコンテナです。</div><div lang=\"en\">FeedReturn\
+    \ contains the result value of Data auto insertion.</div>"

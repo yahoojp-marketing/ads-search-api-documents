@@ -1,0 +1,16 @@
+CampaignServiceSettings:
+  type: object
+  nullable: true
+  properties:
+    dynamicAdsForSearchSetting:
+      $ref: 'CampaignServiceDynamicAdsForSearchSetting.yaml#/CampaignServiceDynamicAdsForSearchSetting'
+    geoTargetTypeSetting:
+      $ref: 'CampaignServiceGeoTargetTypeSetting.yaml#/CampaignServiceGeoTargetTypeSetting'
+    settingType:
+      $ref: 'CampaignServiceSettingType.yaml#/CampaignServiceSettingType'
+    targetingSetting:
+      $ref: 'CampaignServiceTargetingSetting.yaml#/CampaignServiceTargetingSetting'
+  title: CampaignServiceSettings
+  description: "<div lang=\"ja\">CampaignServiceSettingsオブジェクトは、キャンペーンの地域ターゲットを格納するコンテナです。<br>ADD時、このフィールドは、campaignTypeがDYNAMIC_ADS_FOR_SEARCH_SETTINGの場合、必須となり、それ以外では省略可能となります。また、TargetingSettingが未設定の場合、デフォルト設定値は[SettingType:TARGET_LIST_SETTING, TargetAll:ACTIVE]となります。</div><div lang=\"en\">CampaignServiceSettings\
+    \ object is container for geographic targeting  of campaign.<br>This field is required when campaignType is 'DYNAMIC_ADS_FOR_SEARCH_SETTING' in ADD operation. For other campaignType, this field is optional in ADD operation.The default value will be TARGET_LIST_SETTING for SettingType or ACTIVE for TargetAll when TargetingSetting is not setting.
+</div>"

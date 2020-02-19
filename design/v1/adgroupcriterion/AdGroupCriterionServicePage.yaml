@@ -1,0 +1,18 @@
+AdGroupCriterionServicePage:
+  type: object
+  nullable: true
+  properties:
+    totalNumEntries:
+      type: integer
+      nullable: false
+      format: int32
+      description: "<div lang=\"ja\">取得される項目の総件数です。</div><div lang=\"en\">Total number of entries in the\
+        \ result.</div>"
+    values:
+      type: array
+      nullable: true
+      items:
+        $ref: 'AdGroupCriterionServiceValue.yaml#/AdGroupCriterionServiceValue'
+  title: AdGroupCriterionServicePage
+  description: "<div lang=\"ja\">AdGroupCriterionServicePageオブジェクトは、取得される広告グループのクライテリアのエントリーです。</div><div lang=\"en\">AdGroupCriterionServicePage\
+    \ object displays entries for ad group criteria.</div>"

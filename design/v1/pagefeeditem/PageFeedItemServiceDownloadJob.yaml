@@ -1,0 +1,47 @@
+PageFeedItemServiceDownloadJob:
+  type: object
+  nullable: true
+  properties:
+    accountId:
+      type: integer
+      nullable: true
+      format: int64
+      description: "<div lang=\"ja\">アカウントIDです。<br>このフィールドは必須です。</div><div lang=\"en\">Account ID. <br>This field is required.</div>"
+    bulkEncoding:
+      $ref: 'PageFeedItemServiceBulkEncoding.yaml#/PageFeedItemServiceBulkEncoding'
+    bulkLang:
+      $ref: 'PageFeedItemServiceBulkLang.yaml#/PageFeedItemServiceBulkLang'
+    bulkOutput:
+      $ref: 'PageFeedItemServiceBulkOutput.yaml#/PageFeedItemServiceBulkOutput'
+    downloadJobStatus:
+      $ref: 'PageFeedItemServiceDownloadJobStatus.yaml#/PageFeedItemServiceDownloadJobStatus'
+    endDate:
+      type: string
+      nullable: true
+      description: "<div lang=\"ja\">ジョブの終了日です。<br>このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>形式：yyyyMMddHHmmss</div><div lang=\"en\">End date of job. <br> Although this field will be returned in the response, it will be ignored on input.  <br>Format:yyyyMMddHHmmss</div>"
+    feedIds:
+      type: array
+      nullable: true
+      items:
+        type: integer
+        nullable: true
+        format: int64
+      maxItems: 1000
+      description: "<div lang=\"ja\">フィードIDです。<br>このフィールドは必須です。</div><div lang=\"en\">Feed ID. <br> This field is required.</div>"
+    jobId:
+      type: integer
+      nullable: true
+      format: int64
+      description: "<div lang=\"ja\">ジョブIDです。<br>このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div><div lang=\"en\">Job ID. <br> Although this field will be returned in the response, it will be ignored on input. </div>"
+    progress:
+      type: integer
+      nullable: true
+      format: int32
+      description: "<div lang=\"ja\">ジョブの進捗状況です。<br>このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div><div lang=\"en\">Progress of page feed item job. <br> Although this field will be returned in the response, it will be ignored on input. </div>"
+    startDate:
+      type: string
+      nullable: true
+      description: "<div lang=\"ja\">ジョブの開始日です。<br>このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。 <br>形式：yyyyMMddHHmmss </div><div lang=\"en\">Start date of job. <br> Although this field will be returned in the response, it will be ignored on input. <br>Format:yyyyMMddHHmmss</div>"
+  title: PageFeedItemServiceDownloadJob
+  description: "<div lang=\"ja\">PageFeedItemServiceDownloadJobオブジェクトは、ページフィードアイテム情報をダウンロードする処理内容を格納します。</div><div lang=\"en\">PageFeedItemServiceDownloadJob\
+    \ object retains contents of page feed item information for download.</div>"

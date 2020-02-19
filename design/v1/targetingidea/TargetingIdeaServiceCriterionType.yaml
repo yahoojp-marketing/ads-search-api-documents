@@ -1,0 +1,11 @@
+TargetingIdeaServiceCriterionType:
+  type: string
+  nullable: true
+  enum:
+  - KEYWORD
+  - UNKNOWN
+  title: TargetingIdeaServiceCriterionType
+  description: |
+    <div lang="ja">TargetingIdeaServiceCriterionTypeは、クライテリアを表します。</div><div lang="en">TargetingIdeaServiceCriterionType displays the type of criteria.</div></p>
+    <p>* <code>KEYWORD</code> - <span lang="ja">キーワードです。</span><span lang="en">Keyword.</span></p>
+    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>

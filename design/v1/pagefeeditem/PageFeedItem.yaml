@@ -1,0 +1,44 @@
+PageFeedItem:
+  type: object
+  nullable: true
+  properties:
+    accountId:
+      type: integer
+      nullable: true
+      format: int64
+      description: "<div lang=\"ja\">アカウントID</div><div lang=\"en\">Account ID</div>"
+    approvalStatus:
+      $ref: 'PageFeedItemServiceApprovalStatus.yaml#/PageFeedItemServiceApprovalStatus'
+    disapprovalReasonCodes:
+      type: array
+      nullable: true
+      items:
+        type: string
+        nullable: true
+      description: "<div lang=\"ja\">審査否認理由コード</div><div lang=\"en\">Codes of disapproval reason</div>"
+    disapprovalReasonComment:
+      type: string
+      nullable: true
+      description: "<div lang=\"ja\">審査否認理由のコメント</div><div lang=\"en\">Comment of disapproval reason</div>"
+    feedId:
+      type: integer
+      nullable: true
+      format: int64
+      description: "<div lang=\"ja\">フィードID</div><div lang=\"en\">Feed ID</div>"
+    pageFeedCustomLabel:
+      type: string
+      nullable: true
+      description: "<div lang=\"ja\">ページフィードアイテムのカスタムラベル<br>複数ある場合はカンマ区切り</div><div lang=\"en\">Custom label\
+        \ of Page feed item.<br>If multiple, comma separated.</div>"
+    pageFeedItemId:
+      type: integer
+      nullable: true
+      format: int64
+      description: "<div lang=\"ja\">ページフィードアイテムID</div><div lang=\"en\">Page feed item ID</div>"
+    pageFeedUrl:
+      type: string
+      nullable: true
+      description: "<div lang=\"ja\">ページフィードURL。</div><div lang=\"en\">Url of page feed</div>"
+  title: PageFeedItem
+  description: "<div lang=\"ja\">PageFeedItemオブジェクトは、ページフィードアイテム情報を格納します。</div><div lang=\"en\">PageFeedItem\
+    \ object retains page feed Item.</div>"

@@ -1,0 +1,45 @@
+PageFeedItemServiceJobStatusSelector:
+  type: object
+  nullable: true
+  required:
+  - accountId
+  - jobType
+  properties:
+    accountId:
+      type: integer
+      nullable: false
+      format: int64
+      description: "<div lang=\"ja\">アカウントID</div><div lang=\"en\">Account ID</div>"
+    jobIds:
+      type: array
+      nullable: true
+      items:
+        type: integer
+        nullable: true
+        format: int64
+      maxItems: 1000
+      description: "<div lang=\"ja\">登録したジョブのID</div><div lang=\"en\">Registered job ID</div>"
+    jobType:
+      $ref: 'PageFeedItemServiceJobType.yaml#/PageFeedItemServiceJobType'
+    numberResults:
+      type: integer
+      nullable: true
+      format: int32
+      minimum: 1
+      maximum: 10000
+      default: 500
+      description: "<div lang=\"ja\">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div><div lang=\"en\">Maximum number of results\
+        \ to return in this page. This field must be greater than or equal to 1. Also\
+        \ see Entity Limits per operation.</div>"
+    startIndex:
+      type: integer
+      nullable: true
+      format: int32
+      minimum: 1
+      default: 1
+      description: "<div lang=\"ja\">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div><div lang=\"en\">Index of the first\
+        \ result to return in this page. This field must be greater than or equal\
+        \ to 1.</div>"
+  title: PageFeedItemServiceJobStatusSelector
+  description: "<div lang=\"ja\">PageFeedItemServiceJobStatusSelectorオブジェクトは、upload、downloadの処理状況を取得するための検索条件を格納します。</div><div lang=\"en\">PageFeedItemServiceJobStatusSelector\
+    \ object retains search condition for The processing situation upload/download.</div>"

@@ -1,0 +1,23 @@
+AdGroupWebpageServiceOperation:
+  type: object
+  nullable: true
+  required:
+  - accountId
+  - operand
+  properties:
+    accountId:
+      type: integer
+      nullable: false
+      format: int64
+      description: "<div lang=\"ja\">アカウントID</div><div lang=\"en\">Account ID</div>"
+    operand:
+      type: array
+      nullable: true
+      items:
+        $ref: 'AdGroupWebpage.yaml#/AdGroupWebpage'
+      minItems: 1
+      maxItems: 2000
+  title: AdGroupWebpageServiceOperation
+  description: "<div lang=\"ja\">AdGroupWebpageServiceOperationオブジェクトは、mutateメソッドで操作対象となるPageFeedItemの配信/除外設定を保持します。</div><div lang=\"en\">AdGroupWebpageServiceOperation\
+    \ object contains the allowed or excluded setting of PageFeedItem which is the\
+    \ target of mutate operation.</div>"

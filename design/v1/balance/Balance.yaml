@@ -1,0 +1,16 @@
+Balance:
+  type: object
+  nullable: true
+  properties:
+    accountId:
+      type: integer
+      nullable: true
+      format: int64
+      description: "<div lang=\"ja\">アカウントIDです。</div><div lang=\"en\">Accoount ID</div>"
+    balance:
+      type: integer
+      nullable: true
+      format: int64
+      description: "<div lang=\"ja\">未消化金額です。</div><div lang=\"en\">Balance</div>"
+  title: Balance
+  description: "<div lang=\"ja\">Balanceオブジェクトは、選択したアカウントの未消化予算の情報を表します。</div><div lang=\"en\">Account balance.</div>"

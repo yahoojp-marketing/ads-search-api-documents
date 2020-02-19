@@ -1,0 +1,17 @@
+AdGroupFeedServicePage:
+  type: object
+  nullable: true
+  properties:
+    totalNumEntries:
+      type: integer
+      nullable: false
+      format: int32
+      description: "<div lang=\"ja\">取得される項目の総件数です。</div><div lang=\"en\">Total number of acquired items.</div>"
+    values:
+      type: array
+      nullable: true
+      items:
+        $ref: 'AdGroupFeedServiceValue.yaml#/AdGroupFeedServiceValue'
+  title: AdGroupFeedServicePage
+  description: "<div lang=\"ja\">AdGroupFeedServicePageオブジェクトは、FeedItem情報を格納するコンテナです。</div><div lang=\"en\">AdGroupFeedServicePage\
+    \ is a container of FeedItem information.</div>"

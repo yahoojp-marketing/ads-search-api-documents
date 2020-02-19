@@ -1,0 +1,17 @@
+CampaignSharedSetServicePage:
+  type: object
+  nullable: true
+  properties:
+    totalNumEntries:
+      type: integer
+      nullable: false
+      format: int32
+      description: "<div lang=\"ja\">取得される項目の総件数です。</div><div lang=\"en\">Total number of acquired items.</div>"
+    values:
+      type: array
+      nullable: true
+      items:
+        $ref: 'CampaignSharedSetServiceValue.yaml#/CampaignSharedSetServiceValue'
+  title: CampaignSharedSetServicePage
+  description: "<div lang=\"ja\">CampaignSharedSetServicePageは、実行結果（全エンティティのリスト）を保持するオブジェクトです。</div><div lang=\"en\">CampaignSharedSetServicePage\
+    \ is object to hold exec results (all entities list).</div>"

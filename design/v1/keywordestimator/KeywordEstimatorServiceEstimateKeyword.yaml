@@ -1,0 +1,22 @@
+KeywordEstimatorServiceEstimateKeyword:
+  type: object
+  nullable: true
+  required:
+    - keywordMatchType
+    - text
+  properties:
+    keywordMatchType:
+      $ref: 'KeywordEstimatorServiceKeywordMatchType.yaml#/KeywordEstimatorServiceKeywordMatchType'
+      description: |
+        <div lang="ja">キーワードのマッチタイプです。</div>
+        <div lang="en">Keyword match type</div>
+    text:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">キーワードです。</div>
+        <div lang="en">Keywords</div>
+  title: KeywordEstimatorServiceEstimateKeyword
+  description: |
+    <div lang="ja">KeywordEstimatorServiceEstimateKeyword オブジェクトは、見積もりのリクエストを格納するコンテナです。</div>
+    <div lang="en">KeywordEstimatorServiceEstimateKeyword object is a container for the estimate request.</div>

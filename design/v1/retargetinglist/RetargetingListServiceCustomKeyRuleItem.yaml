@@ -1,0 +1,13 @@
+RetargetingListServiceCustomKeyRuleItem:
+  type: object
+  nullable: true
+  properties:
+    textKey:
+      type: string
+      nullable: true
+      description: "<div lang=\"ja\">評価項目です。<br> ADDおよびSET時、このフィールドは必須となります。</div><div lang=\"en\">Evaluation \
+      \ item. <br>This field is required in ADD and SET operation. </div>"
+  title: RetargetingListServiceCustomKeyRuleItem
+  description: "<div lang=\"ja\">RetargetingListServiceCustomKeyRuleItemは、カスタムキールールの評価式を保持するオブジェクトです。<br>ADDおよびSET時、このフィールドは省略可能となります。<br>ruleTypeがCUSTOM_KEY_RULEの場合、ADDおよびSET時にこのフィールドは必須となります。</div><div lang=\"en\">RetargetingListServiceCustomKeyRuleItem\
+    \ is an object that holds evaluation of custom key rules.　<br>This field is optional in ADD and SET operation. <br> If \
+    \ ruleType is CUSTOM_KEY_RULE, this field is required in ADD and SET operation.</div>"

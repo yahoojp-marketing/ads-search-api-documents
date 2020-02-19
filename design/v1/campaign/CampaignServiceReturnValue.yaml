@@ -1,0 +1,13 @@
+CampaignServiceReturnValue:
+  type: object
+  nullable: true
+  properties:
+    values:
+      type: array
+      nullable: true
+      items:
+        $ref: 'CampaignServiceValue.yaml#/CampaignServiceValue'
+  title: CampaignServiceReturnValue
+  description: "<div lang=\"ja\">CampaignServiceReturnValueオブジェクトは、キャンペーンの情報を含む操作結果として戻される値を表します。</div><div lang=\"en\">CampaignServiceReturnValue\
+    \ object is a container which has campaign information including its operation\
+    \ results.</div>"

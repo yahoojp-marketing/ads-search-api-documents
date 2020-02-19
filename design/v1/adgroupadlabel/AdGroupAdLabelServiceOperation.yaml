@@ -1,0 +1,22 @@
+AdGroupAdLabelServiceOperation:
+  type: object
+  nullable: true
+  required:
+  - accountId
+  - operand
+  properties:
+    accountId:
+      type: integer
+      nullable: false
+      format: int64
+      description: "<div lang=\"ja\">アカウントID</div><div lang=\"en\">Account ID</div>"
+    operand:
+      type: array
+      nullable: true
+      items:
+        $ref: 'AdGroupAdLabel.yaml#/AdGroupAdLabel'
+      minItems: 1
+      maxItems: 2000
+  title: AdGroupAdLabelServiceOperation
+  description: "<div lang=\"ja\">AdGroupAdLabelServiceOperationオブジェクトは、操作の対象となる広告ラベルの情報と処理の内容を表します。</div><div lang=\"en\">AdGroupAdLabelServiceOperation\
+    \ displays information of ad group ad label to be operated and processing content.</div>"
