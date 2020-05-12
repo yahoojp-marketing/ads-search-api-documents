@@ -5,8 +5,8 @@ The following are the lists of value constraints.
 Entities in your accounts, campaigns, and ad groups have the following limits.  
 Learn more on [Entity Limits](https://ads-developers.yahoo.co.jp/developercenter/en/developers-guide/value-constraints.html).
 
-# Performance report registration limitｓ
-Up to 60 report can be created on an account at same time.
+# Performance report registration limits
+Up to 60 report can be created on an account at same time.  
 Counts when `reportJobStatus` is `WAIT` or `IN_PROGRESS`.
 
 # Charcter Lengh
@@ -20,7 +20,7 @@ Ad Name      | 255 characters*
 
 ※ Count: 1 count per half-width character, 3 counts per full-width character.
 
-See Yahoo! JAPAN Ads Insertion Rules (guideline) for restrictions on ads, keyword and bid.
+See Yahoo! JAPAN Ads [Insertion Rules (guideline)](https://ads-help.yahoo.co.jp/yahooads/middlecategory?lan=en&cid=793) for restrictions on ads, keyword and bid.
 
 # Maximum amount per request to be retrieved per service
 <table>
