@@ -9,7 +9,9 @@ RetargetingListServiceOperation:
       type: integer
       nullable: false
       format: int64
-      description: "<div lang=\"ja\">アカウントIDです。</div><div lang=\"en\">Account ID.</div>"
+      description: |
+        <div lang="ja">アカウントIDです。</div>
+        <div lang="en">Account ID.</div>
     operand:
       type: array
       nullable: true
@@ -20,5 +22,6 @@ RetargetingListServiceOperation:
     targetListOwner:
       $ref: 'RetargetingListServiceTargetListOwner.yaml#/RetargetingListServiceTargetListOwner'
   title: RetargetingListServiceOperation
-  description: "<div lang=\"ja\">RetargetingListServiceOperationは、操作対象のターゲットリストを保持するオブジェクトです。</div><div lang=\"en\">RetargetingListServiceOperation\
-    \ is an object that holds target retargeting.</div>"
+  description: |
+    <div lang="ja">RetargetingListServiceOperationは、操作対象のターゲットリストを保持するオブジェクトです。</div>
+    <div lang="en">RetargetingListServiceOperation is an object that holds target retargeting.</div>

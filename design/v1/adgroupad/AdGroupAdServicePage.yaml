@@ -12,5 +12,6 @@ AdGroupAdServicePage:
       items:
         $ref: 'AdGroupAdServiceValue.yaml#/AdGroupAdServiceValue'
   title: AdGroupAdServicePage
-  description: "<div lang=\"ja\">AdGroupAdServicePageオブジェクトは、取得される広告に関するエントリーを表します。</div><div lang=\"en\">Entry\
-    \ of the ad.</div>"
+  description: |
+    <div lang="ja">AdGroupAdServicePageオブジェクトは、取得される広告に関するエントリーを表します。</div>
+    <div lang="en">Entry of the ad.</div>

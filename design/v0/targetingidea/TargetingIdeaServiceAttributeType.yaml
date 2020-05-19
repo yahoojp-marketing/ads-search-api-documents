@@ -6,6 +6,7 @@ TargetingIdeaServiceAttributeType:
   - UNKNOWN
   title: TargetingIdeaServiceAttributeType
   description: |
-    <div lang="ja">TargetingIdeaServiceAttributeTypeは、見積もりの結果の属性を表します。</div><div lang="en">Attribute for estimated results.</div></p>
+    <div lang="ja">TargetingIdeaServiceAttributeTypeは、見積もりの結果の属性を表します。</div>
+    <div lang="en">Attribute for estimated results.</div>
     <p>* <code>KEYWORD</code> - <span lang="ja">キーワードを指定します。</span><span lang="en">Specify keyword.</span></p>
     <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>

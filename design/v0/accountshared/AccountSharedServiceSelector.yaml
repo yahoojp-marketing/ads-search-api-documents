@@ -8,7 +8,9 @@ AccountSharedServiceSelector:
       type: integer
       nullable: false
       format: int64
-      description: "<div lang=\"ja\">アカウントIDです。</div><div lang=\"en\">Account ID.</div>"
+      description: |
+        <div lang="ja">アカウントIDです。</div>
+        <div lang="en">Account ID.</div>
     numberResults:
       type: integer
       nullable: true
@@ -16,9 +18,9 @@ AccountSharedServiceSelector:
       minimum: 1
       maximum: 20
       default: 20
-      description: "<div lang=\"ja\">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div><div lang=\"en\">Maximum number of results\
-        \ to return in this page. This field must be greater than or equal to 1. Also\
-        \ see Entity Limits per operation.</div>"
+      description: |
+        <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div>
+        <div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1. Also see Entity Limits per operation.</div>
     sharedListIds:
       type: array
       nullable: true
@@ -27,16 +29,19 @@ AccountSharedServiceSelector:
         nullable: true
         format: int64
       maxItems: 20
-      description: "<div lang=\"ja\">検索対象外キーワードリストIDです。</div><div lang=\"en\">Negative keyword list ID.</div>"
+      description: |
+        <div lang="ja">検索対象外キーワードリストIDです。</div>
+        <div lang="en">Negative keyword list ID.</div>
     startIndex:
       type: integer
       nullable: true
       format: int32
       minimum: 1
       default: 1
-      description: "<div lang=\"ja\">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div><div lang=\"en\">Index of the first\
-        \ result to return in this page. This field must be greater than or equal\
-        \ to 1.</div>"
+      description: |
+        <div lang="ja">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div>
+        <div lang="en">Index of the first result to return in this page. This field must be greater than or equal to 1.</div>
   title: AccountSharedServiceSelector
-  description: "<div lang=\"ja\">AccountSharedServiceSelectorオブジェクトは、検索条件（実行パラメータ）を保持します。</div><div lang=\"en\">AccountSharedServiceSelector\
-    \ object holds search criteria (exec parameter).</div>"
+  description: |
+    <div lang="ja">AccountSharedServiceSelectorオブジェクトは、検索条件（実行パラメータ）を保持します。</div>
+    <div lang="en">AccountSharedServiceSelector object holds search criteria (exec parameter).</div>

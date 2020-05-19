@@ -8,5 +8,6 @@ AdGroupBidMultiplierServiceReturnValue:
       items:
         $ref: 'AdGroupBidMultiplierServiceValue.yaml#/AdGroupBidMultiplierServiceValue'
   title: AdGroupBidMultiplierServiceReturnValue
-  description: "<div lang=\"ja\">AdGroupBidMultiplierServiceReturnValueオブジェクトは、入札価格調整率を格納するコンテナです。</div><div lang=\"en\">Container\
-    \ for bid multiplier.</div>"
+  description: |
+    <div lang="ja">AdGroupBidMultiplierServiceReturnValueオブジェクトは、入札価格調整率を格納するコンテナです。</div>
+    <div lang="en">Container for bid multiplier.</div>

@@ -8,6 +8,6 @@ CampaignLabelServiceReturnValue:
       items:
         $ref: 'CampaignLabelServiceValue.yaml#/CampaignLabelServiceValue'
   title: CampaignLabelServiceReturnValue
-  description: "<div lang=\"ja\">CampaignLabelServiceReturnValueオブジェクトは、キャンペーンの情報を含む操作結果として戻される値を表します。</div><div lang=\"en\">CampaignLabelServiceReturnValue\
-    \ object describes value returned as operation result including campaign label\
-    \ information.</div>"
+  description: |
+    <div lang="ja">CampaignLabelServiceReturnValueオブジェクトは、キャンペーンの情報を含む操作結果として戻される値を表します。</div>
+    <div lang="en">CampaignLabelServiceReturnValue object describes value returned as operation result including campaign label information.</div>

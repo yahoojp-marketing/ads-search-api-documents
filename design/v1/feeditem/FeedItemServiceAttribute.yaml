@@ -6,7 +6,13 @@ FeedItemServiceAttribute:
       type: integer
       nullable: true
       format: int64
-      description: "<div lang=\"ja\">フィード属性IDです。<br> このフィールドは、ADDおよびSET時に無視されます。<br>※アドカスタマイザーの場合は、ADDおよびSET時に必須となります。</div><div lang=\"en\">Feed attribute ID. <br>This field will be ignored in ADD and SET operation. <br> *For AD_CUSTOMIZER, this field is required in ADD and SET operation.</div>"
+      description: |
+        <div lang="ja">フィード属性IDです。<br>
+        このフィールドは、ADDおよびSET時に無視されます。<br>
+        ※アドカスタマイザーの場合は、ADDおよびSET時に必須となります。</div>
+        <div lang="en">Feed attribute ID.<br>
+        This field will be ignored in ADD and SET operation.<br>
+        *For AD_CUSTOMIZER, this field is required in ADD and SET operation.</div>
     multipleFeedItemAttribute:
       $ref: 'FeedItemServiceMultipleFeedItemAttribute.yaml#/FeedItemServiceMultipleFeedItemAttribute'
     placeholderField:
@@ -14,5 +20,8 @@ FeedItemServiceAttribute:
     simpleFeedItemAttribute:
       $ref: 'FeedItemServiceSimpleFeedItemAttribute.yaml#/FeedItemServiceSimpleFeedItemAttribute'
   title: FeedItemServiceAttribute
-  description: "<div lang=\"ja\">FeedItemServiceAttributeオブジェクトは、フィードアイテムの属性情報の値を格納します。<br> このフィールドは、ADD時に必須となり、SET時に省略可能となり、REMOVE時に無視されます。</div><div lang=\"en\">FeedItemServiceAttribute\
-    \ object holds the value of Feed Item information. <br>This field is required in ADD operation, is optional in SET operation, and will be ignored in REMOVE operation.</div>"
+  description: |
+    <div lang="ja">FeedItemServiceAttributeオブジェクトは、フィードアイテムの属性情報の値を格納します。<br>
+    このフィールドは、ADD時に必須となり、SET時に省略可能となり、REMOVE時に無視されます。</div>
+    <div lang="en">FeedItemServiceAttribute object holds the value of Feed Item information.<br>
+    This field is required in ADD operation, is optional in SET operation, and will be ignored in REMOVE operation.</div>

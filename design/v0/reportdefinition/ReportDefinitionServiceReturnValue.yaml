@@ -8,5 +8,6 @@ ReportDefinitionServiceReturnValue:
       items:
         $ref: 'ReportDefinitionServiceValue.yaml#/ReportDefinitionServiceValue'
   title: ReportDefinitionServiceReturnValue
-  description: "<div lang=\"ja\">ReportDefinitionServiceReturnValueオブジェクトは、操作結果を含むレポートのコンテナです。</div><div lang=\"en\">A\
-    \ container of reports including operation result.</div>"
+  description: |
+    <div lang="ja">ReportDefinitionServiceReturnValueオブジェクトは、操作結果を含むレポートのコンテナです。</div>
+    <div lang="en">A container of reports including operation result.</div>

@@ -8,5 +8,6 @@ AccountTrackingUrlServiceReturnValue:
       items:
         $ref: 'AccountTrackingUrlServiceValue.yaml#/AccountTrackingUrlServiceValue'
   title: AccountTrackingUrlServiceReturnValue
-  description: "<div lang=\"ja\">AccountTrackingUrlServiceReturnValueオブジェクトは、アカウントトラッキング情報を含む結果として戻される値を表します。</div><div lang=\"en\">AccountTrackingUrlServiceReturnValue\
-    \ obaject describes account tracking details.</div>"
+  description: |
+    <div lang="ja">AccountTrackingUrlServiceReturnValueオブジェクトは、アカウントトラッキング情報を含む結果として戻される値を表します。</div>
+    <div lang="en">AccountTrackingUrlServiceReturnValue obaject describes account tracking details.</div>

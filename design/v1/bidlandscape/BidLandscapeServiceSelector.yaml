@@ -11,20 +11,23 @@ BidLandscapeServiceSelector:
       type: integer
       nullable: false
       format: int64
-      description: "<div lang=\"ja\">アカウントIDです。</div><br><div lang=\"en\">Account\
-        \ ID</div>"
+      description: |
+        <div lang="ja">アカウントIDです。</div>
+        <div lang="en">Account ID</div>
     campaignId:
       type: integer
       nullable: true
       format: int64
-      description: "<div lang=\"ja\">キャンペーンIDです。</div><br><div lang=\"en\">Campaign\
-        \ ID</div>"
+      description: |
+        <div lang="ja">キャンペーンIDです。</div>
+        <div lang="en">Campaign ID</div>
     adGroupId:
       type: integer
       nullable: true
       format: int64
-      description: "<div lang=\"ja\">広告グループIDです。</div><br><div lang=\"en\">Ad Gropup\
-        \ ID.</div>"
+      description: |
+        <div lang="ja">広告グループIDです。</div>
+        <div lang="en">Ad Gropup ID.</div>
     criterionIds:
       type: array
       nullable: true
@@ -33,8 +36,9 @@ BidLandscapeServiceSelector:
         nullable: true
         format: int64
       maxItems: 100
-      description: "<div lang=\"ja\">クライテリアIDです。最大100個まで指定できます。</div><br><div lang=\"\
-        en\">ID of this criterion. The maximum value is 100.</div>"
+      description: |
+        <div lang="ja">クライテリアIDです。最大100個まで指定できます。</div>
+        <div lang="en">ID of this criterion. The maximum value is 100.</div>
     simType:
       $ref: 'BidLandscapeServiceSimType.yaml#/BidLandscapeServiceSimType'
     startIndex:
@@ -43,9 +47,9 @@ BidLandscapeServiceSelector:
       format: int32
       minimum: 1
       default: 1
-      description: "<div lang=\"ja\">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div><div lang=\"en\">Index of the first
-        result to return in this page. This field must be greater than or equal to
-        1.</div>"
+      description: |
+        <div lang="ja">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div>
+        <div lang="en">Index of the first result to return in this page. This field must be greater than or equal to 1.</div>
     numberResults:
       type: integer
       nullable: true
@@ -53,10 +57,10 @@ BidLandscapeServiceSelector:
       minimum: 1
       maximum: 100
       default: 100
-      description: "<div lang=\"ja\">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div><div lang=\"en\">Maximum number of results
-        to return in this page. This field must be greater than or equal to 1. Also
-        see Entity Limits per operation.</div>"
+      description: |
+        <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div>
+        <div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1. Also see Entity Limits per operation.</div>
   title: BidLandscapeServiceSelector
-  description: "<div lang=\"ja\">BidLandscapeServiceSelectorオブジェクトは、予測するクライテリアを表します。</div><br><div\
-    \ lang=\"en\">BidLandscapeServiceSelector object describes the criteria to be\
-    \ estimated.</div>"
+  description: |
+    <div lang="ja">BidLandscapeServiceSelectorオブジェクトは、予測するクライテリアを表します。</div>
+    <div lang="en">BidLandscapeServiceSelector object describes the criteria to be estimated.</div>

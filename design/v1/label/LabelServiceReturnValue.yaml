@@ -8,5 +8,6 @@ LabelServiceReturnValue:
       items:
         $ref: 'LabelServiceValue.yaml#/LabelServiceValue'
   title: LabelServiceReturnValue
-  description: "<div lang=\"ja\">LabelServiceReturnValueオブジェクトは、ラベルの情報を含む操作結果として戻される値を表します。</div><div lang=\"en\">LabelServiceReturnValue\
-    \ object is the value returned as the operation result including the label information.</div>"
+  description: |
+    <div lang="ja">LabelServiceReturnValueオブジェクトは、ラベルの情報を含む操作結果として戻される値を表します。</div>
+    <div lang="en">LabelServiceReturnValue object is the value returned as the operation result including the label information.</div>

@@ -12,7 +12,10 @@ CampaignExportServiceValue:
     operationSucceeded:
       type: boolean
       nullable: true
-      description: "<div lang=\"ja\">処理結果を表示します。</div><div lang=\"en\">Displays process result.</div>"
+      description: |
+        <div lang="ja">処理結果を表示します。</div>
+        <div lang="en">Displays process result.</div>
   title: CampaignExportServiceValue
-  description: "<div lang=\"ja\">CampaignExportServiceValueオブジェクトは、実行結果（1 Entity）を含むジョブ情報を表します。</div><div lang=\"en\">CampaignExportServiceValue\
-    \ object describes the job information per entity in operation result.</div>"
+  description: |
+    <div lang="ja">CampaignExportServiceValueオブジェクトは、実行結果（1 Entity）を含むジョブ情報を表します。</div>
+    <div lang="en">CampaignExportServiceValue object describes the job information per entity in operation result.</div>

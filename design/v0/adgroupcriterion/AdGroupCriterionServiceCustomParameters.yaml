@@ -10,5 +10,8 @@ AdGroupCriterionServiceCustomParameters:
       items:
         $ref: 'AdGroupCriterionServiceCustomParameter.yaml#/AdGroupCriterionServiceCustomParameter'
   title: AdGroupCriterionServiceCustomParameters
-  description: "<div lang=\"ja\">AdGroupCriterionServiceCustomParametersオブジェクトは、カスタムパラメータの設定を表します。<br>ADDおよびSET時、このフィールドは省略可能となります。</div><div lang=\"en\">AdGroupCriterionServiceCustomParameters\
-    \ displays the setting of custom parameters.<br>This field is optional in ADD and SET operation.</div>"
+  description: |
+    <div lang="ja">AdGroupCriterionServiceCustomParametersオブジェクトは、カスタムパラメータの設定を表します。<br>
+    ADDおよびSET時、このフィールドは省略可能となります。</div>
+    <div lang="en">AdGroupCriterionServiceCustomParameters displays the setting of custom parameters.<br>
+    This field is optional in ADD and SET operation.</div>

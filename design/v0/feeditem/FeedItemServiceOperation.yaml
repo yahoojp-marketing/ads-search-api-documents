@@ -10,7 +10,9 @@ FeedItemServiceOperation:
       type: integer
       nullable: false
       format: int64
-      description: "<div lang=\"ja\">アカウントIDです。</div><div lang=\"en\">Account ID.</div>"
+      description: |
+        <div lang="ja">アカウントIDです。</div>
+        <div lang="en">Account ID.</div>
     operand:
       type: array
       nullable: true
@@ -21,5 +23,6 @@ FeedItemServiceOperation:
     placeholderType:
       $ref: 'FeedItemServicePlaceholderType.yaml#/FeedItemServicePlaceholderType'
   title: FeedItemServiceOperation
-  description: "<div lang=\"ja\">FeedItemServiceOperationオブジェクトは、フィードアイテムの情報を格納します。</div><div lang=\"en\">FeedItemServiceOperation\
-    \ contains the Feed Item information.</div>"
+  description: |
+    <div lang="ja">FeedItemServiceOperationオブジェクトは、フィードアイテムの情報を格納します。</div>
+    <div lang="en">FeedItemServiceOperation contains the Feed Item information.</div>

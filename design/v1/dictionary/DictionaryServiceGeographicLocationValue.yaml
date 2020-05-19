@@ -12,7 +12,10 @@ DictionaryServiceGeographicLocationValue:
     operationSucceeded:
       type: boolean
       nullable: true
-      description: "<div lang=\"ja\">オペレーション成功です。</div><div lang=\"en\">Operation is successful.</div>"
+      description: |
+        <div lang="ja">オペレーション成功です。</div>
+        <div lang="en">Operation is successful.</div>
   title: DictionaryServiceGeographicLocationValue
-  description: "<div lang=\"ja\">DictionaryServiceGeographicLocationValueオブジェクトは、地域情報と処理の内容を表します。</div><div lang=\"en\">DictionaryServiceGeographicLocationValue\
-    \ object describes Geographic location and operation information.</div>"
+  description: |
+    <div lang="ja">DictionaryServiceGeographicLocationValueオブジェクトは、地域情報と処理の内容を表します。</div>
+    <div lang="en">DictionaryServiceGeographicLocationValue object describes Geographic location and operation information.</div>

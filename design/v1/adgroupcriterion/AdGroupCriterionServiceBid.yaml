@@ -6,21 +6,32 @@ AdGroupCriterionServiceBid:
       type: integer
       nullable: true
       format: int64
-      description: "<div lang=\"ja\">広告グループ入札価格です。</div><div lang=\"en\">CPC of Ad group.</div>"
+      description: |
+        <div lang="ja">広告グループ入札価格です。</div>
+        <div lang="en">CPC of Ad group.</div>
     bidSource:
       $ref: 'AdGroupCriterionServiceBidSource.yaml#/AdGroupCriterionServiceBidSource'
     keywordMaxCpc:
       type: integer
       nullable: true
       format: int64
-      description: "<div lang=\"ja\">キーワード入札価格です。</div><div lang=\"en\">CPC of Keyword.</div>"
+      description: |
+        <div lang="ja">キーワード入札価格です。</div>
+        <div lang="en">CPC of Keyword.</div>
     maxCpc:
       type: integer
       nullable: true
       format: int64
-      description: "<div lang=\"ja\">キーワード入札価格です。<br>このフィールドは、省略可能となります。その際、ADD時のデフォルト設定値は1となります。<br>※maxCpcが0の場合は、設定なしと同様です。</div><div lang=\"en\">CPC\
-        \ of Keyword.<br>This field is optional. The default value in ADD operation will be 1.<br>*Confirmed as no setting, if value\
-        \ is set &#34;0&#34;.</div>"
+      description: |
+        <div lang="ja">キーワード入札価格です。<br>
+        このフィールドは、省略可能となります。その際、ADD時のデフォルト設定値は1となります。<br>
+        ※maxCpcが0の場合は、設定なしと同様です。</div>
+        <div lang="en">CPC of Keyword.<br>
+        This field is optional. The default value in ADD operation will be 1.<br>
+        *Confirmed as no setting, if value is set &#34;0&#34;.</div>
   title: AdGroupCriterionServiceBid
-  description: "<div lang=\"ja\">AdGroupCriterionServiceBidオブジェクトは、入札価格を表示します。 （AdGroupCriterionService用のオブジェクトです。）<br>ADDおよびSET時、このフィールドは省略可能となります。</div><div lang=\"en\">AdGroupCriterionServiceBid\
-    \ object displays the bid values. *Object for AdGroupCriterionService.<br>This field is optional in ADD and SET operation.</div>"
+  description: |
+    <div lang="ja">AdGroupCriterionServiceBidオブジェクトは、入札価格を表示します。 （AdGroupCriterionService用のオブジェクトです。）<br>
+    ADDおよびSET時、このフィールドは省略可能となります。</div>
+    <div lang="en">AdGroupCriterionServiceBid object displays the bid values. *Object for AdGroupCriterionService.<br>
+    This field is optional in ADD and SET operation.</div>

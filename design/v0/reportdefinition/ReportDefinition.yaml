@@ -6,13 +6,15 @@ ReportDefinition:
       type: integer
       nullable: true
       format: int64
-      description: "<div lang=\"ja\">アカウントIDです。</div><div lang=\"en\">Account ID.</div>"
+      description: |
+        <div lang="ja">アカウントIDです。</div>
+        <div lang="en">Account ID.</div>
     completeTime:
       type: string
       nullable: true
-      description: "<div lang=\"ja\">ジョブの完了時刻です。<br>※YYYY/MM/DD hh:mm:ss形式になります。<br>※hhは24時間表記になります。</div><div lang=\"en\">Completion\
-        \ time of Report Job request.<br>*Displays in YYYY/MM/DD hh:mm:ss form.<br>*hh\
-        \ will display in 24-hour time.</div>"
+      description: |
+        <div lang="ja">ジョブの完了時刻です。<br>※YYYY/MM/DD hh:mm:ss形式になります。<br>※hhは24時間表記になります。</div>
+        <div lang="en">Completion time of Report Job request.<br>*Displays in YYYY/MM/DD hh:mm:ss form.<br>*hh will display in 24-hour time.</div>
     dateRange:
       $ref: 'ReportDefinitionServiceReportDateRange.yaml#/ReportDefinitionServiceReportDateRange'
     fields:
@@ -21,8 +23,9 @@ ReportDefinition:
       items:
         type: string
         nullable: true
-      description: "<div lang=\"ja\">フィールド（レポートの出力項目名）です。<br>ADD時、このフィールドは必須となります。</div><div lang=\"en\">Item name of the report.<br>Can\
-        \ appoint the value retrieved from getReportFields. <br>This field is required in ADD operation.</div>"
+      description: |
+        <div lang="ja">フィールド（レポートの出力項目名）です。<br>ADD時、このフィールドは必須となります。</div>
+        <div lang="en">Item name of the report.<br>Can appoint the value retrieved from getReportFields.<br>This field is required in ADD operation.</div>
     filters:
       type: array
       nullable: true
@@ -43,12 +46,16 @@ ReportDefinition:
     reportJobErrorDetail:
       type: string
       nullable: true
-      description: "<div lang=\"ja\">レポートジョブのエラー詳細です。</div><div lang=\"en\">Error details of Report Job.</div>"
+      description: |
+        <div lang="ja">レポートジョブのエラー詳細です。</div>
+        <div lang="en">Error details of Report Job.</div>
     reportJobId:
       type: integer
       nullable: true
       format: int64
-      description: "<div lang=\"ja\">レポートジョブIDです。<br> REMOVE時、このフィールドは必須となります。</div><div lang=\"en\">Report Job ID. <br>This field is required in REMOVE operation.</div>"
+      description: |
+        <div lang="ja">レポートジョブIDです。<br> REMOVE時、このフィールドは必須となります。</div>
+        <div lang="en">Report Job ID.<br>This field is required in REMOVE operation.</div>
     reportJobStatus:
       $ref: 'ReportDefinitionServiceReportJobStatus.yaml#/ReportDefinitionServiceReportJobStatus'
     reportLanguage:
@@ -56,17 +63,20 @@ ReportDefinition:
     reportName:
       type: string
       nullable: true
-      description: "<div lang=\"ja\">レポート名称です。<br>ADD時、このフィールドは必須となります。</div><div lang=\"en\">Name of the report. <br>This field is required in ADD operation.</div>"
+      description: |
+        <div lang="ja">レポート名称です。<br>ADD時、このフィールドは必須となります。</div>
+        <div lang="en">Name of the report.<br>This field is required in ADD operation.</div>
     reportType:
       $ref: 'ReportDefinitionServiceReportType.yaml#/ReportDefinitionServiceReportType'
     requestTime:
       type: string
       nullable: true
-      description: "<div lang=\"ja\">ジョブの起動時刻です。<br>※YYYY/MM/DD hh:mm:ss形式になります。<br>※hhは24時間表記になります。</div><div lang=\"en\">Start\
-        \ time of Report Job request.<br>*Displays in YYYY/MM/DD hh:mm:ss form.<br>*hh\
-        \ will display in 24-hour time.</div>"
+      description: |
+        <div lang="ja">ジョブの起動時刻です。<br>※YYYY/MM/DD hh:mm:ss形式になります。<br>※hhは24時間表記になります。</div>
+        <div lang="en">Start time of Report Job request.<br>*Displays in YYYY/MM/DD hh:mm:ss form.<br>*hh will display in 24-hour time.</div>
     sortFields:
       $ref: 'ReportDefinitionServiceReportSortField.yaml#/ReportDefinitionServiceReportSortField'
   title: ReportDefinition
-  description: "<div lang=\"ja\">ReportDefinitionオブジェクトは、レポートの情報を表します。</div><div lang=\"en\">ReportDefinition\
-    \ object describes report information.</div>"
+  description: |
+    <div lang="ja">ReportDefinitionオブジェクトは、レポートの情報を表します。</div>
+    <div lang="en">ReportDefinition object describes report information.</div>

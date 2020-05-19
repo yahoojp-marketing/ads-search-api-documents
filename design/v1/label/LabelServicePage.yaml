@@ -6,7 +6,9 @@ LabelServicePage:
       type: integer
       nullable: false
       format: int32
-      description: "<div lang=\"ja\">取得される項目の総件数です。</div><div lang=\"en\">Total number of items to be acquired.</div>"
+      description: |
+        <div lang="ja">取得される項目の総件数です。</div>
+        <div lang="en">Total number of items to be acquired.</div>
     values:
       type: array
       nullable: true
@@ -15,5 +17,4 @@ LabelServicePage:
   title: LabelServicePage
   description: |
     <div lang="ja">LabelServicePageオブジェクトは、取得されるラベルに関するエントリーを表します。</div>
-    <br>
     <div lang="en">LabelServicePage  object describes the entry on label to be acquired.</div>

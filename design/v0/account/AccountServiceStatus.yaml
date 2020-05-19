@@ -17,5 +17,5 @@ AccountServiceStatus:
     <p>* <code>WAIT_DECIDE</code> - <span lang="ja">確定待ち</span><span lang="en">Waiting confirmation</span></p>
     <p>* <code>SUSPENDED</code> - <span lang="ja">サービス停止中</span><span lang="en">The account service is not active.</span></p>
     <p>* <code>SERVING</code> - <span lang="ja">サービス中</span><span lang="en">The account is active.</span></p>
-    <p>* <code>ENDED</code> - <span lang="ja">サービス終了</span><span lang="en">The account　service has ended.</span></p>
+    <p>* <code>ENDED</code> - <span lang="ja">サービス終了</span><span lang="en">The account service has ended.</span></p>
     <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>

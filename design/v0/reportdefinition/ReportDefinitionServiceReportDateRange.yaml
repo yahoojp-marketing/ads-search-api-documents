@@ -5,13 +5,18 @@ ReportDefinitionServiceReportDateRange:
     endDate:
       type: string
       nullable: true
-      description: "<div lang=\"ja\">集計の終了日です。<br>DateRangeTypeがCUSTOM_DATEの場合、このフィールドはADD時に必須となります。</div> <div lang=\"en\">End date. \
-      \ If DateRangeType is CUSTOM_DATE, this field is required in ADD operation. </div>"
+      description: |
+        <div lang="ja">集計の終了日です。<br>DateRangeTypeがCUSTOM_DATEの場合、このフィールドはADD時に必須となります。</div>
+        <div lang="en">End date. If DateRangeType is CUSTOM_DATE, this field is required in ADD operation.</div>
     startDate:
       type: string
       nullable: true
-      description: "<div lang=\"ja\">集計の開始日です。<br>DateRangeTypeがCUSTOM_DATEの場合、このフィールドはADD時に必須となります。</div> <div lang=\"en\">Start date. \
-      \ If DateRangeType is CUSTOM_DATE, this field is required in ADD operation. </div>"
+      description: |
+        <div lang="ja">集計の開始日です。<br>DateRangeTypeがCUSTOM_DATEの場合、このフィールドはADD時に必須となります。</div>
+        <div lang="en">Start date. If DateRangeType is CUSTOM_DATE, this field is required in ADD operation.</div>
   title: ReportDefinitionServiceReportDateRange
-  description: "<div lang=\"ja\">ReportDefinitionServiceReportDateRangeオブジェクトは、レポートの集計対象期間を表します。<br> ADD時、このフィールドは省略可能となります。</div><div lang=\"en\">ReportDefinitionServiceReportDateRange\
-    \ object displays date range of the report. <br>This field is optional in ADD operation.</div>"
+  description: |
+    <div lang="ja">ReportDefinitionServiceReportDateRangeオブジェクトは、レポートの集計対象期間を表します。<br>
+    ADD時、このフィールドは省略可能となります。</div>
+    <div lang="en">ReportDefinitionServiceReportDateRange object displays date range of the report.<br>
+    This field is optional in ADD operation.</div>

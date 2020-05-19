@@ -6,8 +6,10 @@ CampaignFeedServiceList:
       type: integer
       nullable: true
       format: int64
-      description: "<div lang=\"ja\">アカウントIDです。<br>SET時、このフィールドは必須です。</div><div lang=\"en\">Account ID.<br>This field is required in SET operation.
-</div>"
+      description: |
+        <div lang="ja">アカウントIDです。<br>
+        SET時、このフィールドは必須です。</div>
+        <div lang="en">Account ID.<br>This field is required in SET operation.</div>
     campaignFeed:
       type: array
       nullable: true
@@ -17,10 +19,14 @@ CampaignFeedServiceList:
       type: integer
       nullable: true
       format: int64
-      description: "<div lang=\"ja\">キャンペーンIDです。<br>SET時、このフィールドは必須です。</div><div lang=\"en\">Campaign ID.<br>This field is required in SET operation.
-</div>"
+      description: |
+        <div lang="ja">キャンペーンIDです。<br>
+        SET時、このフィールドは必須です。</div>
+        <div lang="en">Campaign ID.<br>
+        This field is required in SET operation.</div>
     placeholderType:
       $ref: 'CampaignFeedServicePlaceholderType.yaml#/CampaignFeedServicePlaceholderType'
   title: CampaignFeedServiceList
-  description: "<div lang=\"ja\">CampaignFeedServiceListオブジェクトは、キャンペーンに関連付けられたFeedItem情報を表します。</div><div lang=\"en\">CampaignFeedServiceList\
-    \ object describes FeedItem information connected to campaign.</div>"
+  description: |
+    <div lang="ja">CampaignFeedServiceListオブジェクトは、キャンペーンに関連付けられたFeedItem情報を表します。</div>
+    <div lang="en">CampaignFeedServiceList object describes FeedItem information connected to campaign.</div>

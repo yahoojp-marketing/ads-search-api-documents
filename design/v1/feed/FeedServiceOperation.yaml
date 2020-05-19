@@ -9,7 +9,9 @@ FeedServiceOperation:
       type: integer
       nullable: false
       format: int64
-      description: "<div lang=\"ja\">アカウントIDです。</div><div lang=\"en\">Account ID.</div>"
+      description: |
+        <div lang="ja">アカウントIDです。</div>
+        <div lang="en">Account ID.</div>
     operand:
       type: array
       nullable: true
@@ -18,5 +20,6 @@ FeedServiceOperation:
       minItems: 1
       maxItems: 50
   title: FeedServiceOperation
-  description: "<div lang=\"ja\">FeedServiceOperationオブジェクトは、自動データ挿入のリストを格納するコンテナです。</div><div lang=\"en\">FeedServiceOperation\
-    \ contains the list of Data auto insertion.</div>"
+  description: |
+    <div lang="ja">FeedServiceOperationオブジェクトは、自動データ挿入のリストを格納するコンテナです。</div>
+    <div lang="en">FeedServiceOperation contains the list of Data auto insertion.</div>

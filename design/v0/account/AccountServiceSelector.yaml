@@ -10,7 +10,9 @@ AccountServiceSelector:
         nullable: true
         format: int64
       maxItems: 200
-      description: "<div lang=\"ja\">アカウントIDの配列です。</div><div lang=\"en\">Account IDs.</div>"
+      description: |
+        <div lang="ja">アカウントIDの配列です。</div>
+        <div lang="en">Account IDs.</div>
     accountStatuses:
       type: array
       nullable: true

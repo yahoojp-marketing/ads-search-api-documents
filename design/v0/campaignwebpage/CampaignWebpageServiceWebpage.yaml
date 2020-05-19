@@ -8,14 +8,19 @@ CampaignWebpageServiceWebpage:
       type: integer
       nullable: true
       format: int64
-      description: "<div lang=\"ja\">CampaignWebpageServiceWebpageを識別するIDです。 <br> このフィールドは、REMOVE時に必須となり、ADD時は無視されます。</div><div lang=\"en\">Unique ID\
-        \ for each webpage. <br> This field is required in REMOVE operation, and will be ignored in ADD operation.</div>"
+      description: |
+        <div lang="ja">CampaignWebpageServiceWebpageを識別するIDです。<br> このフィールドは、REMOVE時に必須となり、ADD時は無視されます。</div>
+        <div lang="en">Unique ID for each webpage.<br> This field is required in REMOVE operation, and will be ignored in ADD operation.</div>
     targetTrackId:
       type: integer
       nullable: true
       format: int64
-      description: "<div lang=\"ja\">CampaignWebpageServiceWebpageを識別するトラッキングIDです。<br>このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div><div lang=\"en\">Unique\
-        \ tracking ID for each CampaignWebpageServiceWebpage. <br> Although this field will be returned in the response, it will be ignored on input. </div>"
+      description: |
+        <div lang="ja">CampaignWebpageServiceWebpageを識別するトラッキングIDです。<br>このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
+        <div lang="en">Unique tracking ID for each CampaignWebpageServiceWebpage.<br> Although this field will be returned in the response, it will be ignored on input.</div>
   title: CampaignWebpageServiceWebpage
-  description: "<div lang=\"ja\">CampaignWebpageServiceWebpageオブジェクトは、除外設定するCampaignWebpageServiceWebpageの条件を保持します。<br>このフィールドは、いずれの場合でも必須となります。</div><div lang=\"en\">CampaignWebpageServiceWebpage\
-    \ object contains the rules of webpage to be excluded.<br> This field is required in any cases.</div>"
+  description: |
+    <div lang="ja">CampaignWebpageServiceWebpageオブジェクトは、除外設定するCampaignWebpageServiceWebpageの条件を保持します。<br>
+    このフィールドは、いずれの場合でも必須となります。</div>
+    <div lang="en">CampaignWebpageServiceWebpage object contains the rules of webpage to be excluded.<br>
+    This field is required in any cases.</div>

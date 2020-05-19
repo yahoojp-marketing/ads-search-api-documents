@@ -8,6 +8,6 @@ BiddingStrategyServiceReturnValue:
       items:
         $ref: 'BiddingStrategyServiceValue.yaml#/BiddingStrategyServiceValue'
   title: BiddingStrategyServiceReturnValue
-  description: "<div lang=\"ja\">BiddingStrategyServiceReturnValueオブジェクトは、自動入札設定を作成・更新・削除したときの結果に関する情報を表します。</div><div lang=\"en\">BiddingStrategyServiceReturnValue\
-    \ object displays the results of auto bidding creation/update/removal setting\
-    \ .</div>"
+  description: |
+    <div lang="ja">BiddingStrategyServiceReturnValueオブジェクトは、自動入札設定を作成・更新・削除したときの結果に関する情報を表します。</div>
+    <div lang="en">BiddingStrategyServiceReturnValue object displays the results of auto bidding creation/update/removal setting .</div>

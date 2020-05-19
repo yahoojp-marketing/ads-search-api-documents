@@ -7,7 +7,8 @@ TargetingIdeaServicePage:
       nullable: false
       format: int32
       description: |
-        <div lang="ja">取得される項目の総件数です。</div><div lang="en">Total number of retrieved entries.</div>
+        <div lang="ja">取得される項目の総件数です。</div>
+        <div lang="en">Total number of retrieved entries.</div>
     values:
       type: array
       nullable: true
@@ -15,4 +16,5 @@ TargetingIdeaServicePage:
         $ref: 'TargetingIdeaServiceValue.yaml#/TargetingIdeaServiceValue'
   title: TargetingIdeaServicePage
   description: |
-    <div lang="ja">TargetingIdeaServicePageオブジェクトは、関連キーワードの結果を格納するコンテナです。</div><div lang="en">A container of result for related keyword.</div>
+    <div lang="ja">TargetingIdeaServicePageオブジェクトは、関連キーワードの結果を格納するコンテナです。</div>
+    <div lang="en">A container of result for related keyword.</div>

@@ -6,8 +6,9 @@ RetargetingListServiceTargetingList:
       type: integer
       nullable: true
       format: int64
-      description: "<div lang=\"ja\">アカウントIDです。<br> このフィールドは、いずれの場合でも必須となります。</div><div lang=\"en\">Account \
-      \ ID. <br>This field is required in any cases.</div>"
+      description: |
+        <div lang="ja">アカウントIDです。<br> このフィールドは、いずれの場合でも必須となります。</div>
+        <div lang="en">Account ID.<br>This field is required in any cases.</div>
     closingReason:
       $ref: 'RetargetingListServiceClosingReason.yaml#/RetargetingListServiceClosingReason'
     defaultTargetList:
@@ -18,15 +19,16 @@ RetargetingListServiceTargetingList:
       type: integer
       nullable: true
       format: int64
-      description: "<div lang=\"ja\">リストに蓄積されているユーザー数です。</div><div lang=\"en\">Number of users stored to\
-        \ the list.</div>"
+      description: |
+        <div lang="ja">リストに蓄積されているユーザー数です。</div>
+        <div lang="en">Number of users stored to the list.</div>
     reachStorageSpan:
       type: integer
       nullable: true
       format: int64
-      description: "<div lang=\"ja\">Cookieを保持する日数です。<br> SET時、このフィールドは省略可能となります。<br>LogicalTargetListの場合、SET時にこのフィールドは無視されます。<br>※Default：180<br>※1-540日まで設定可能です。</div><div lang=\"en\">Days\
-        \ to hold Cookie. <br>This field is optional in SET operation. <br> For LogicalTargetList, this field will be ignored \
-        \ in SET operation.<br>*Default: 180<br>*Can set from 1-540 days.</div>"
+      description: |
+        <div lang="ja">Cookieを保持する日数です。<br> SET時、このフィールドは省略可能となります。<br>LogicalTargetListの場合、SET時にこのフィールドは無視されます。<br>※Default：180<br>※1-540日まで設定可能です。</div>
+        <div lang="en">Days to hold Cookie.<br>This field is optional in SET operation.<br> For LogicalTargetList, this field will be ignored  in SET operation.<br>*Default: 180<br>*Can set from 1-540 days.</div>
     reachStorageStatus:
       $ref: 'RetargetingListServiceReachStorageStatus.yaml#/RetargetingListServiceReachStorageStatus'
     retargetingAccountStatus:
@@ -36,28 +38,34 @@ RetargetingListServiceTargetingList:
     targetListDescription:
       type: string
       nullable: true
-      description: "<div lang=\"ja\">ターゲットリストの説明です。<br>このフィールドは、いずれの場合でも省略可能となります。</div><div lang=\"en\">Description \ 
-      \ of Target List. <br>This field is optional in any cases.</div>"
+      description: |
+        <div lang="ja">ターゲットリストの説明です。<br>このフィールドは、いずれの場合でも省略可能となります。</div>
+        <div lang="en">Description of Target List.<br>This field is optional in any cases.</div>
     targetListId:
       type: integer
       nullable: true
       format: int64
-      description: "<div lang=\"ja\">ターゲットリストIDです。<br>SET時、このフィールドは必須となります。</div><div lang=\"en\">Target \
-      \ List ID. <br>This field is required in SET operation.</div>"
+      description: |
+        <div lang="ja">ターゲットリストIDです。<br>SET時、このフィールドは必須となります。</div>
+        <div lang="en">Target List ID.<br>This field is required in SET operation.</div>
     targetListName:
       type: string
       nullable: true
-      description: "<div lang=\"ja\">ターゲットリスト名です。<br>ADD時にこのフィールドは必須となり、SET時にこのフィールドは省略可能となります。</div><div lang=\"en\">Target \
-      \ List name. <br>This field is required in ADD operation, and is optional in SET operation.</div>"
+      description: |
+        <div lang="ja">ターゲットリスト名です。<br>ADD時にこのフィールドは必須となり、SET時にこのフィールドは省略可能となります。</div>
+        <div lang="en">Target List name.<br>This field is required in ADD operation, and is optional in SET operation.</div>
     targetListOwner:
       $ref: 'RetargetingListServiceTargetListOwner.yaml#/RetargetingListServiceTargetListOwner'
     targetListTrackId:
       type: integer
       nullable: true
       format: int64
-      description: "<div lang=\"ja\">ターゲットリストのトラッキング用IDです。</div><div lang=\"en\">Tracking ID of Target list.</div>"
+      description: |
+        <div lang="ja">ターゲットリストのトラッキング用IDです。</div>
+        <div lang="en">Tracking ID of Target list.</div>
     targetListType:
       $ref: 'RetargetingListServiceTargetListType.yaml#/RetargetingListServiceTargetListType'
   title: RetargetingListServiceTargetingList
-  description: "<div lang=\"ja\">RetargetingListServiceTargetingListは、リターゲティング情報（ターゲットリスト）を保持するオブジェクトです。</div><div lang=\"en\">RetargetingListServiceTargetingList\
-    \ is an object that holds retargeting information (target list).</div>"
+  description: |
+    <div lang="ja">RetargetingListServiceTargetingListは、リターゲティング情報（ターゲットリスト）を保持するオブジェクトです。</div>
+    <div lang="en">RetargetingListServiceTargetingList is an object that holds retargeting information (target list).</div>

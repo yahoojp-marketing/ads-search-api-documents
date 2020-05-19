@@ -7,8 +7,10 @@ AccountServiceAutoTaggingEnabled:
   - UNKNOWN
   title: AccountServiceAutoTaggingEnabled
   description: |
-    <div lang="ja">AccountServiceAutoTaggingEnabledは、自動タグ設定をするかしないかの管理フラグです。<br>SET時、このフィールドは省略可能となります。</div>
-    <div lang="en">AccountServiceAutoTaggingEnabled is management flag for whether or not to set auto tag.<br>This field is optional in SET operation.</div>
+    <div lang="ja">AccountServiceAutoTaggingEnabledは、自動タグ設定をするかしないかの管理フラグです。<br>
+    SET時、このフィールドは省略可能となります。</div>
+    <div lang="en">AccountServiceAutoTaggingEnabled is management flag for whether or not to set auto tag.<br>
+    This field is optional in SET operation.</div>
     <hr>
     <p>* <code>TRUE</code> - <span lang="ja">する</span><span lang="en">setting</span></p>
     <p>* <code>FALSE</code> - <span lang="ja">しない</span><span lang="en">not setting</span></p>

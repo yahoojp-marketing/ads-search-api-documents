@@ -8,5 +8,6 @@ AdGroupRetargetingListServiceReturnValue:
       items:
         $ref: 'AdGroupRetargetingListServiceValue.yaml#/AdGroupRetargetingListServiceValue'
   title: AdGroupRetargetingListServiceReturnValue
-  description: "<div lang=\"ja\">AdGroupRetargetingListServiceReturnValueは、広告グループレベルでのターゲットリスト設定の実行結果（全Entityのリスト）を保持するオブジェクトです。</div><div lang=\"en\">AdGroupRetargetingListServiceReturnValue\
-    \ is an object that holds results (list of all entity).</div>"
+  description: |
+    <div lang="ja">AdGroupRetargetingListServiceReturnValueは、広告グループレベルでのターゲットリスト設定の実行結果（全Entityのリスト）を保持するオブジェクトです。</div>
+    <div lang="en">AdGroupRetargetingListServiceReturnValue is an object that holds results (list of all entity).</div>

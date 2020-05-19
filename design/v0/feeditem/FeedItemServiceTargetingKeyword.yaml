@@ -8,14 +8,20 @@ FeedItemServiceTargetingKeyword:
       type: integer
       nullable: true
       format: int64
-      description: "<div lang=\"ja\">指定したキーワード（text）を識別する IDになります。<br>※設定を解除する場合は「0」を指定 してください。<br> このフィールドは、SET時に省略可能となります。</div><div lang=\"en\">ID\
-        \ to identify the Targeting keyword (text).<br>* To deactive, set &#34;0&#34;. <br>This field is optional in SET operation.</div>"
+      description: |
+        <div lang="ja">指定したキーワード（text）を識別する IDになります。<br>※設定を解除する場合は「0」を指定 してください。<br> このフィールドは、SET時に省略可能となります。</div>
+        <div lang="en">ID to identify the Targeting keyword (text).<br>* To deactive, set &#34;0&#34;.<br>This field is optional in SET operation.</div>
     text:
       type: string
       nullable: true
-      description: "<div lang=\"ja\">指定するキーワードです。<br>※入力制限：80文字、10ワード までです。<br> このフィールドはADDおよびSET時に必須となります。</div><div lang=\"en\">Keyword\
-        \ text.<br>* Insert limit: Up to 80 characters and/or 10 words.<br>This field is required in ADD and SET operation.</div>"
+      description: |
+        <div lang="ja">指定するキーワードです。<br>※入力制限：80文字、10ワード までです。<br> このフィールドはADDおよびSET時に必須となります。</div>
+        <div lang="en">Keyword text.<br>* Insert limit: Up to 80 characters and/or 10 words.<br>This field is required in ADD and SET operation.</div>
   title: FeedItemServiceTargetingKeyword
-  description: "<div lang=\"ja\">FeedItemServiceTargetingKeywordオブジェクトは、データ自動挿入のターゲットキーワードを表します。<br> このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br> ※アドカスタマイザーの場合は、ADDおよびSET時に省略可能となります。</div><div lang=\"en\">FeedItemServiceTargetingKeyword\
-    \ contains keyword setting for Data Auto Insertion. <br>Although this field will be returned in the response, it will be \
-    \ ignored on input. <br>*For AD_CUSTOMIZER, this field is optional in ADD and SET operation.</div>"
+  description: |
+    <div lang="ja">FeedItemServiceTargetingKeywordオブジェクトは、データ自動挿入のターゲットキーワードを表します。<br>
+    このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+    ※アドカスタマイザーの場合は、ADDおよびSET時に省略可能となります。</div>
+    <div lang="en">FeedItemServiceTargetingKeyword contains keyword setting for Data Auto Insertion.<br>
+    Although this field will be returned in the response, it will be  ignored on input.<br>
+    *For AD_CUSTOMIZER, this field is optional in ADD and SET operation.</div>

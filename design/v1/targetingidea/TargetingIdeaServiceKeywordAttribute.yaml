@@ -6,4 +6,5 @@ TargetingIdeaServiceKeywordAttribute:
       $ref: 'TargetingIdeaServiceProposalKeyword.yaml#/TargetingIdeaServiceProposalKeyword'
   title: TargetingIdeaServiceKeywordAttribute
   description: |
-    <div lang="ja">TargetingIdeaServiceKeywordAttributeオブジェクトは、提案結果のキーワードを格納するコンテナです。</div><div lang="en">A container for a result of suggested keywords.</div>
+    <div lang="ja">TargetingIdeaServiceKeywordAttributeオブジェクトは、提案結果のキーワードを格納するコンテナです。</div>
+    <div lang="en">A container for a result of suggested keywords.</div>

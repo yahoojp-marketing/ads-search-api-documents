@@ -6,16 +6,24 @@ PageFeedItemServiceUploadJob:
       type: integer
       nullable: true
       format: int64
-      description: "<div lang=\"ja\">アカウントID</div><div lang=\"en\">Account ID</div>"
+      description: |
+        <div lang="ja">アカウントID</div>
+        <div lang="en">Account ID</div>
     endDate:
       type: string
       nullable: true
-      description: "<div lang=\"ja\">ジョブの終了日<br>形式：yyyyMMddHHmmss</div><div lang=\"en\">End date of job<br>Format:yyyyMMddHHmmss</div>"
+      description: |
+        <div lang="ja">ジョブの終了日<br>
+        形式：yyyyMMddHHmmss</div>
+        <div lang="en">End date of job<br>
+        Format:yyyyMMddHHmmss</div>
     errorCount:
       type: integer
       nullable: true
       format: int32
-      description: "<div lang=\"ja\">エラーの件数</div><div lang=\"en\">count of error occured</div>"
+      description: |
+        <div lang="ja">エラーの件数</div>
+        <div lang="en">count of error occured</div>
     feedIds:
       type: array
       nullable: true
@@ -23,23 +31,34 @@ PageFeedItemServiceUploadJob:
         type: integer
         nullable: true
         format: int64
-        description: "<div lang=\"ja\">フィードID</div><div lang=\"en\">Feed ID</div>"
+        description: |
+          <div lang="ja">フィードID</div>
+          <div lang="en">Feed ID</div>
     jobId:
       type: integer
       nullable: true
       format: int64
-      description: "<div lang=\"ja\">ジョブID</div><div lang=\"en\">Job ID.</div>"
+      description: |
+        <div lang="ja">ジョブID</div>
+        <div lang="en">Job ID.</div>
     progress:
       type: integer
       nullable: true
       format: int32
-      description: "<div lang=\"ja\">ジョブの進捗状況</div><div lang=\"en\">Progress of page feed item job</div>"
+      description: |
+        <div lang="ja">ジョブの進捗状況</div>
+        <div lang="en">Progress of page feed item job</div>
     startDate:
       type: string
       nullable: true
-      description: "<div lang=\"ja\">ジョブの開始日<br>形式：yyyyMMddHHmmss</div><div lang=\"en\">Start date of job<br>Format:yyyyMMddHHmmss</div>"
+      description: |
+        <div lang="ja">ジョブの開始日<br>
+        形式：yyyyMMddHHmmss</div>
+        <div lang="en">Start date of job<br>
+        Format:yyyyMMddHHmmss</div>
     uploadJobStatus:
       $ref: 'PageFeedItemServiceUploadJobStatus.yaml#/PageFeedItemServiceUploadJobStatus'
   title: PageFeedItemServiceUploadJob
-  description: "<div lang=\"ja\">PageFeedItemServiceUploadJobオブジェクトは、ページフィードアイテム情報をダウンロードする処理内容を格納します。</div><div lang=\"en\">PageFeedItemServiceUploadJob\
-    \ object retains contents of page feed item information for upload.</div>"
+  description: |
+    <div lang="ja">PageFeedItemServiceUploadJobオブジェクトは、ページフィードアイテム情報をダウンロードする処理内容を格納します。</div>
+    <div lang="en">PageFeedItemServiceUploadJob object retains contents of page feed item information for upload.</div>

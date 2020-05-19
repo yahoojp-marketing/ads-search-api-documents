@@ -7,5 +7,6 @@ DictionaryServiceDisapprovalReasonSelector:
     lang:
       $ref: 'DictionaryServiceLang.yaml#/DictionaryServiceLang'
   title: DictionaryServiceDisapprovalReasonSelector
-  description: "<div lang=\"ja\">DictionaryServiceDisapprovalReasonSelectorオブジェクトは、 EditorialReason一覧取得リクエストを格納するコンテナです。</div><div lang=\"en\">DictionaryServiceDisapprovalReasonSelectorobject\
-    \ is a containter for EditorialReason list.</div>"
+  description: |
+    <div lang="ja">DictionaryServiceDisapprovalReasonSelectorオブジェクトは、EditorialReason一覧取得リクエストを格納するコンテナです。</div>
+    <div lang="en">DictionaryServiceDisapprovalReasonSelectorobject is a containter for EditorialReason list.</div>

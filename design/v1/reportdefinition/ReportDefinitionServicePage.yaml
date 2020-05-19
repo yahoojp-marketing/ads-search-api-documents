@@ -6,12 +6,15 @@ ReportDefinitionServicePage:
       type: integer
       nullable: false
       format: int32
-      description: "<div lang=\"ja\">取得される項目の総件数です。</div><div lang=\"en\">Total number of entries in the result that this page is a part of.</div>"
+      description: |
+        <div lang="ja">取得される項目の総件数です。</div>
+        <div lang="en">Total number of entries in the result that this page is a part of.</div>
     values:
       type: array
       nullable: true
       items:
         $ref: 'ReportDefinitionServiceValue.yaml#/ReportDefinitionServiceValue'
   title: ReportDefinitionServicePage
-  description: "<div lang=\"ja\">ReportDefinitionServicePageオブジェクトは、取得されるレポートのエントリーを表します。</div><div lang=\"en\">Entry\
-    \ obtained from get operations.</div>"
+  description: |
+    <div lang="ja">ReportDefinitionServicePageオブジェクトは、取得されるレポートのエントリーを表します。</div>
+    <div lang="en">Entry obtained from get operations.</div>

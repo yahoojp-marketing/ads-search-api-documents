@@ -8,17 +8,32 @@ AdGroupCriterionServiceAdditionalUrl:
       items:
         type: string
         nullable: true
-      description: "<div lang=\"ja\">審査否認理由のコードです。<br>(コード詳細は、DictionaryServiceのgetDisapprovalReasonのレスポンスを参照)<br>このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div><div lang=\"en\">Reject reason code.<br>(Refer to DictionaryService getDisapprovalReason response for details)\
-        \ <br>Although this field will be returned in the response, it will be ignored on input. </div>"
+      description: |
+        <div lang="ja">審査否認理由のコードです。<br>
+        (コード詳細は、DictionaryServiceのgetDisapprovalReasonのレスポンスを参照)<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
+        <div lang="en">Reject reason code.<br>
+        (Refer to DictionaryService getDisapprovalReason response for details) <br>
+        Although this field will be returned in the response, it will be ignored on input.</div>
     reviewUrl:
       type: string
       nullable: true
-      description: "<div lang=\"ja\">審査中の最終リンク先URLです。<br>このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div><div lang=\"en\">Landing Page URL in editorial\
-        \ review.<br>Although this field will be returned in the response, it will be ignored on input. </div>"
+      description: |
+        <div lang="ja">審査中の最終リンク先URLです。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
+        <div lang="en">Landing Page URL in editorial review.<br>
+        Although this field will be returned in the response, it will be ignored on input.</div>
     url:
       type: string
       nullable: true
-      description: "<div lang=\"ja\">最終リンク先URLです。<br>ADDおよびSET時、このフィールドは必須となります。</div><div lang=\"en\">Landing Page URL.<br>This field is required in ADD and SET operation.</div>"
+      description: |
+        <div lang="ja">最終リンク先URLです。<br>
+        ADDおよびSET時、このフィールドは必須となります。</div>
+        <div lang="en">Landing Page URL.<br>
+        This field is required in ADD and SET operation.</div>
   title: AdGroupCriterionServiceAdditionalUrl
-  description: "<div lang=\"ja\">AdGroupCriterionServiceAdditionalUrlオブジェクトは、追加する最終リンク先URLを保持します。<br>このフィールドは、ADD時は必須となり、SET時は省略可能となります。</div><div lang=\"en\">AdGroupCriterionServiceAdditionalUrl\
-    \ object holds additional Landing Page URLs.<br>This field is required in ADD operation, and will be optional in SET operation.</div>"
+  description: |
+    <div lang="ja">AdGroupCriterionServiceAdditionalUrlオブジェクトは、追加する最終リンク先URLを保持します。<br>
+    このフィールドは、ADD時は必須となり、SET時は省略可能となります。</div>
+    <div lang="en">AdGroupCriterionServiceAdditionalUrl object holds additional Landing Page URLs.<br>
+    This field is required in ADD operation, and will be optional in SET operation.</div>

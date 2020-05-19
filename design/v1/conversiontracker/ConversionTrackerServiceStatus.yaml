@@ -6,7 +6,12 @@ ConversionTrackerServiceStatus:
   - DISABLED
   - UNKNOWN
   title: ConversionTrackerServiceStatus
-  description: "<div lang=\"ja\">ConversionTrackerServiceStatusは、コンバージョントラッカー情報のステータスを表します。<br> このフィールドは、ADD時に必須となり、SET時に省略可能となります。</div><div lang=\"en\">It\
-    \ shows ConversionTracker status. <br>This field is required in ADD operation, and is optional in SET operation.</div><hr>\n<p>* <code>DISABLED</code> - <span lang=\"ja\">コンバージョンページへのアクセスが記録されません。</span><span lang=\"en\">It does not record access to Conversion page.</span></p>\
-    <p>* <code>ENABLED</code> - <span lang=\"ja\">コンバージョンページへのアクセスが記録されます。</span><span lang=\"en\">It records access to Conversion page.</span></p><p>* <code>UNKNOWN</code>\
-    \ - <span lang=\"ja\">未知の値です。</span><span lang=\"en\">Unknown Value</span></p>"
+  description: |
+    <div lang="ja">ConversionTrackerServiceStatusは、コンバージョントラッカー情報のステータスを表します。<br>
+    このフィールドは、ADD時に必須となり、SET時に省略可能となります。</div>
+    <div lang="en">It shows ConversionTracker status.<br>
+    This field is required in ADD operation, and is optional in SET operation.</div>
+    <hr>
+    <p>* <code>ENABLED</code> - <span lang="ja">コンバージョンページへのアクセスが記録されます。</span><span lang="en">It records access to Conversion page.</span></p>
+    <p>* <code>DISABLED</code> - <span lang="ja">コンバージョンページへのアクセスが記録されません。</span><span lang="en">It does not record access to Conversion page.</span></p>
+    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>

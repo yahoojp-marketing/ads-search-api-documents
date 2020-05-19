@@ -8,5 +8,6 @@ AuditLogServiceReturnValue:
       items:
         $ref: 'AuditLogServiceValue.yaml#/AuditLogServiceValue'
   title: AuditLogServiceReturnValue
-  description: "<div lang=\"ja\">AuditLogServiceReturnValueオブジェクトは、結果を保持します。</div><div lang=\"en\">AuditLogServiceReturnValue\
-    \ object retains the results.</div>"
+  description: |
+    <div lang="ja">AuditLogServiceReturnValueオブジェクトは、結果を保持します。</div>
+    <div lang="en">AuditLogServiceReturnValue object retains the results.</div>

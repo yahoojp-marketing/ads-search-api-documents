@@ -8,7 +8,9 @@ SharedCriterionServiceSelector:
       type: integer
       nullable: false
       format: int64
-      description: "<div lang=\"ja\">アカウントIDです。</div><div lang=\"en\">Account ID</div>"
+      description: |
+        <div lang="ja">アカウントIDです。</div>
+        <div lang="en">Account ID</div>
     criterionIds:
       type: array
       nullable: true
@@ -17,7 +19,9 @@ SharedCriterionServiceSelector:
         nullable: true
         format: int64
       maxItems: 1000
-      description: "<div lang=\"ja\">クライテリオンIDです。</div><div lang=\"en\">Criterion ID.</div>"
+      description: |
+        <div lang="ja">クライテリオンIDです。</div>
+        <div lang="en">Criterion ID.</div>
     numberResults:
       type: integer
       nullable: true
@@ -25,9 +29,9 @@ SharedCriterionServiceSelector:
       minimum: 1
       maximum: 1000
       default: 1000
-      description: "<div lang=\"ja\">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div><div lang=\"en\">Maximum number of results\
-        \ to return in this page. This field must be greater than or equal to 1. Also\
-        \ see Entity Limits per operation.</div>"
+      description: |
+        <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div>
+        <div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1. Also see Entity Limits per operation.</div>
     sharedListIds:
       type: array
       nullable: true
@@ -36,16 +40,19 @@ SharedCriterionServiceSelector:
         nullable: true
         format: int64
       maxItems: 20
-      description: "<div lang=\"ja\">共有リストのIDです。</div><div lang=\"en\">Share list ID.</div>"
+      description: |
+        <div lang="ja">共有リストのIDです。</div>
+        <div lang="en">Share list ID.</div>
     startIndex:
       type: integer
       nullable: true
       format: int32
       minimum: 1
       default: 1
-      description: "<div lang=\"ja\">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div><div lang=\"en\">Index of the first\
-        \ result to return in this page. This field must be greater than or equal\
-        \ to 1.</div>"
+      description: |
+        <div lang="ja">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div>
+        <div lang="en">Index of the first result to return in this page. This field must be greater than or equal to 1.</div>
   title: SharedCriterionServiceSelector
-  description: "<div lang=\"ja\">SharedCriterionServiceSelectorオブジェクトは、検索条件を保持します。</div><div lang=\"en\">SharedCriterionServiceSelector\
-    \ object holds search criteria.</div>"
+  description: |
+    <div lang="ja">SharedCriterionServiceSelectorオブジェクトは、検索条件を保持します。</div>
+    <div lang="en">SharedCriterionServiceSelector object holds search criteria.</div>
