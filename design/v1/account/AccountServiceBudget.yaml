@@ -7,22 +7,30 @@ AccountServiceBudget:
       nullable: true
       format: int64
       description: |
-        <div lang="ja">アカウントの広告予算金額です。<br>SET時、このフィールドは無視されます。</div>
-        <div lang="en">Amount of budget.<br>This field will be ignored in SET operation.</div>
+        <div lang="ja">アカウントの広告予算金額です。<br>
+        SET時、このフィールドは無視されます。</div>
+        <div lang="en">Amount of budget.<br>
+        This field will be ignored in SET operation.</div>
     endDate:
       type: string
       nullable: true
       description: |
-        <div lang="ja">掲載終了日です。<br>SET時、このフィールドは無視されます。<br>「yyyyMMdd」形式で表示されます。</div>
-        <div lang="en">End date of ad serving.<br>This field will be ignored in SET operation.<br>It is displayed in &#39;yyyyMMdd&#39; format.</div>
+        <div lang="ja">掲載終了日です。<br>
+        SET時、このフィールドは無視されます。<br>「yyyyMMdd」形式で表示されます。</div>
+        <div lang="en">End date of ad serving.<br>This field will be ignored in SET operation.<br>
+        It is displayed in &#39;yyyyMMdd&#39; format.</div>
     limitChargeType:
       $ref: 'AccountServiceLimitChargeType.yaml#/AccountServiceLimitChargeType'
     startDate:
       type: string
       nullable: true
       description: |
-        <div lang="ja">掲載開始日です。<br>「yyyyMMdd」形式で表示されます。<br>SET時、このフィールドは無視されます。</div>
-        <div lang="en">Start date of ad serving.<br>This field will be ignored in SET operation.<br>It is displayed in &#39;yyyyMMdd&#39; format.</div>
+        <div lang="ja">掲載開始日です。<br>
+        「yyyyMMdd」形式で表示されます。<br>
+        SET時、このフィールドは無視されます。</div>
+        <div lang="en">Start date of ad serving.<br>
+        This field will be ignored in SET operation.<br>
+        It is displayed in &#39;yyyyMMdd&#39; format.</div>
   title: AccountServiceBudget
   description: |
     <div lang="ja">AccountServiceBudgetオブジェクトは、広告予算を表します。</div>

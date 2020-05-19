@@ -6,11 +6,14 @@ FeedItemServiceTargetingAdGroup:
       type: integer
       nullable: true
       format: int64
-      description: "<div lang=\"ja\">配信に使用する広告グループIDです。<br>※設定を解除する場合は「0」を指定してください。<br>※addのリクエストで、「0」指定は未\
-        \ 指定と同じ扱いになります。<br>データ自動挿入の場合、このフィールドはADDおよびSET時に省略可能となります。 </div><div lang=\"en\">Targeting Ad group ID.<br>* To deactive, insert\
-        \ &#34;0&#34;.<br>* It would be &#34;no setting&#34;, if &#34;0&#34; is set\
-        \ in add request. <br>For AD_CUSTOMIZER, this field is optional in ADD and SET operation.</div>"
+      description: |
+        <div lang="ja">配信に使用する広告グループIDです。<br>※設定を解除する場合は「0」を指定してください。<br>※addのリクエストで、「0」指定は未 指定と同じ扱いになります。<br>データ自動挿入の場合、このフィールドはADDおよびSET時に省略可能となります。</div>
+        <div lang="en">Targeting Ad group ID.<br>* To deactive, insert &#34;0&#34;.<br>* It would be &#34;no setting&#34;, if &#34;0&#34; is set in add request.<br>For AD_CUSTOMIZER, this field is optional in ADD and SET operation.</div>
   title: FeedItemServiceTargetingAdGroup
-  description: "<div lang=\"ja\">FeedItemServiceTargetingAdGroupオブジェクトは、データ自動挿入の広告グループとの紐付けを表します。<br> このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>※アドカスタマイザーの場合、ADDおよびSET時に省略可能となります。</div><div lang=\"en\">FeedItemServiceTargetingAdGroup\
-    \ contains ad group setting for Data Auto Insertion.<br>Although this field will be returned in the response, it will be \
-    \ ignored on input. <br>*For AD_CUSTOMIZER, this field is optional in ADD and SET operation.</div>"
+  description: |
+    <div lang="ja">FeedItemServiceTargetingAdGroupオブジェクトは、データ自動挿入の広告グループとの紐付けを表します。<br>
+    このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+    ※アドカスタマイザーの場合、ADDおよびSET時に省略可能となります。</div>
+    <div lang="en">FeedItemServiceTargetingAdGroup contains ad group setting for Data Auto Insertion.<br>
+    Although this field will be returned in the response, it will be  ignored on input.<br>
+    *For AD_CUSTOMIZER, this field is optional in ADD and SET operation.</div>

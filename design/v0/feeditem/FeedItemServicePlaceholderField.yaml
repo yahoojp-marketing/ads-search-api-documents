@@ -20,24 +20,28 @@ FeedItemServicePlaceholderField:
   - STRUCTURED_SNIPPET_VALUES
   - UNKNOWN
   title: FeedItemServicePlaceholderField
-  description: "<div lang=\"ja\">FeedItemServicePlaceholderFieldは、FeedItem情報の内容を選択します。<br> このフィールドは、ADDおよびSET時に必須となり、REMOVE時に無視されます。<br> ※アドカスタマイザーの場合は、ADDおよびSET時に無視されます。</div><div lang=\"en\">FeedItemServicePlaceholderField\
-    \ object selects FeedItem information details. <br>This field is required in ADD and SET operation, and will be ignored in REMOVE operation. <br> *For AD_CUSTOMIZER, \
-    \ this field will be ignored in ADD and SET operation.</div><hr>\n<p>* <code>ADVANCED_URL</code> - <span lang=\"ja\">最終リンク先URLです。</span><span lang=\"en\">Landing\
-    \ Page URL.</span></p><p>* <code>LINK_DESCRIPTION_1</code> - <span lang=\"ja\">クイックリンク説明文1</span><span lang=\"en\">Description 1 of Quicklink.\
-    \ </span></p><p>* <code>LINK_DESCRIPTION_2</code> - <span lang=\"ja\">クイックリンク説明文2</span><span lang=\"en\">Description 2 of Quicklink.\
-    \ </span></p><p>* <code>LINK_TEXT</code> - <span lang=\"ja\">クイックリンクオプションのテキストです。</span><span lang=\"en\">QuickLink\
-    \ option text.</span></p><p>* <code>TRACKING_URL</code> - <span lang=\"ja\">トラッキングURLです。</span><span lang=\"en\">Tracking\
-    \ URL.</span></p><p>* <code>AD_CUSTOMIZER_INTEGER</code> - <span lang=\"ja\">データ自動挿入（INTEGERタイプの入力定義）です。</span><span lang=\"en\">Auto\
-    \ data insertion (INTEGER type defined).</span></p><p>* <code>AD_CUSTOMIZER_PRICE</code> - <span lang=\"ja\">データ自動挿入（PRICEタイプの入力定義）です。</span><span lang=\"en\">Auto\
-    \ data insertion (PRICE type defined).</span></p><p>* <code>AD_CUSTOMIZER_STRING</code> - <span lang=\"ja\">データ自動挿入（STRINGタイプの入力定義）です。</span><span lang=\"en\">Auto\
-    \ data insertion (STRING type defined.).</span></p><p>* <code>ADVANCED_MOBILE_URL</code> - <span lang=\"ja\">スマートフォン向けURLです。</span><span lang=\"en\">Smartphone\
-    \ Landing Page URL.</span></p><p>* <code>AD_CUSTOMIZER_DATE</code> - <span lang=\"ja\">データ自動挿入（DATEタイプの入力定義）です。</span><span lang=\"en\">Auto\
-    \ data insertion (DATE type defined).</span></p><p>* <code>STRUCTURED_SNIPPET_VALUES</code>\
-    \ - <span lang=\"ja\">カテゴリ補足オプション（バリュー）です。</span><span lang=\"en\">Category Option (value)</span></p><p>* <code>CALL_PHONE_NUMBER</code>\
-    \ - <span lang=\"ja\">電話番号オプションの電話番号です。</span><span lang=\"en\">Phone number of Call extensions.</span></p>\
-    <p>* <code>ADDITIONAL_ADVANCED_MOBILE_URLS</code> - <span lang=\"ja\">スマートフォン向けURLを2件以上設定する場合の入力定義です。</span><span lang=\"en\">Define\
-    \ when multiple smartphone landing page URLs are set.</span></p><p>* <code>STRUCTURED_SNIPPET_HEADER</code>\
-    \ - <span lang=\"ja\">カテゴリ補足オプション（ヘッダ）です。</span><span lang=\"en\">Category Option (header)</span></p><p>* <code>ADDITIONAL_ADVANCED_URLS</code>\
-    \ - <span lang=\"ja\">最終リンク先URLを2件以上設定する場合の入力定義です。</span><span lang=\"en\">Define when multiple Landing\
-    \ Page URLs are set.</span></p><p>* <code>CALLOUT_TEXT</code> - <span lang=\"ja\">テキスト補足オプションのテキストです。</span><span lang=\"en\">Text\
-    \ for Callout option.</span></p><p>* <code>UNKNOWN</code> - <span lang=\"ja\">未知の値です。</span><span lang=\"en\">Unknown Value</span></p>"
+  description: |
+    <div lang="ja">FeedItemServicePlaceholderFieldは、FeedItem情報の内容を選択します。<br>
+    このフィールドは、ADDおよびSET時に必須となり、REMOVE時に無視されます。<br>
+    ※アドカスタマイザーの場合は、ADDおよびSET時に無視されます。</div>
+    <div lang="en">FeedItemServicePlaceholderField object selects FeedItem information details.<br>
+    This field is required in ADD and SET operation, and will be ignored in REMOVE operation.<br>
+    *For AD_CUSTOMIZER,  this field will be ignored in ADD and SET operation.</div>
+    <hr>
+    <p>* <code>ADVANCED_URL</code> - <span lang="ja">最終リンク先URLです。</span><span lang="en">Landing Page URL.</span></p>
+    <p>* <code>LINK_DESCRIPTION_1</code> - <span lang="ja">クイックリンク説明文1</span><span lang="en">Description 1 of Quicklink.</span></p>
+    <p>* <code>LINK_DESCRIPTION_2</code> - <span lang="ja">クイックリンク説明文2</span><span lang="en">Description 2 of Quicklink.</span></p>
+    <p>* <code>LINK_TEXT</code> - <span lang="ja">クイックリンクオプションのテキストです。</span><span lang="en">QuickLink option text.</span></p>
+    <p>* <code>TRACKING_URL</code> - <span lang="ja">トラッキングURLです。</span><span lang="en">Tracking URL.</span></p>
+    <p>* <code>AD_CUSTOMIZER_INTEGER</code> - <span lang="ja">データ自動挿入（INTEGERタイプの入力定義）です。</span><span lang="en">Auto data insertion (INTEGER type defined).</span></p>
+    <p>* <code>AD_CUSTOMIZER_PRICE</code> - <span lang="ja">データ自動挿入（PRICEタイプの入力定義）です。</span><span lang="en">Auto data insertion (PRICE type defined).</span></p>
+    <p>* <code>AD_CUSTOMIZER_STRING</code> - <span lang="ja">データ自動挿入（STRINGタイプの入力定義）です。</span><span lang="en">Auto data insertion (STRING type defined.).</span></p>
+    <p>* <code>ADVANCED_MOBILE_URL</code> - <span lang="ja">スマートフォン向けURLです。</span><span lang="en">Smartphone Landing Page URL.</span></p>
+    <p>* <code>AD_CUSTOMIZER_DATE</code> - <span lang="ja">データ自動挿入（DATEタイプの入力定義）です。</span><span lang="en">Auto data insertion (DATE type defined).</span></p>
+    <p>* <code>STRUCTURED_SNIPPET_VALUES</code> - <span lang="ja">カテゴリ補足オプション（バリュー）です。</span><span lang="en">Category Option (value)</span></p>
+    <p>* <code>CALL_PHONE_NUMBER</code> - <span lang="ja">電話番号オプションの電話番号です。</span><span lang="en">Phone number of Call extensions.</span></p>
+    <p>* <code>ADDITIONAL_ADVANCED_MOBILE_URLS</code> - <span lang="ja">スマートフォン向けURLを2件以上設定する場合の入力定義です。</span><span lang="en">Define when multiple smartphone landing page URLs are set.</span></p>
+    <p>* <code>STRUCTURED_SNIPPET_HEADER</code> - <span lang="ja">カテゴリ補足オプション（ヘッダ）です。</span><span lang="en">Category Option (header)</span></p>
+    <p>* <code>ADDITIONAL_ADVANCED_URLS</code> - <span lang="ja">最終リンク先URLを2件以上設定する場合の入力定義です。</span><span lang="en">Define when multiple Landing Page URLs are set.</span></p>
+    <p>* <code>CALLOUT_TEXT</code> - <span lang="ja">テキスト補足オプションのテキストです。</span><span lang="en">Text for Callout option.</span></p>
+    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>

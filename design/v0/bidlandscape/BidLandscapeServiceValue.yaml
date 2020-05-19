@@ -12,8 +12,10 @@ BidLandscapeServiceValue:
     operationSucceeded:
       type: boolean
       nullable: true
-      description: "<div lang=\"ja\">処理結果です。</div><br><div lang=\"en\">The result\
-        \ of operation.</div>"
+      description: |
+        <div lang="ja">処理結果です。</div>
+        <div lang="en">The result of operation.</div>
   title: BidLandscapeServiceValue
-  description: "<div lang=\"ja\">BidLandscapeServiceValueオブジェクトは、予測処理の結果を格納するコンテナです。</div><br><div\
-    \ lang=\"en\">Container for estimated operation results.</div>"
+  description: |
+    <div lang="ja">BidLandscapeServiceValueオブジェクトは、予測処理の結果を格納するコンテナです。</div>
+    <div lang="en">Container for estimated operation results.</div>

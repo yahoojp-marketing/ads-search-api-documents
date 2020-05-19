@@ -12,8 +12,10 @@ AuditLogServiceValue:
     operationSucceeded:
       type: boolean
       nullable: true
-      description: "<div lang=\"ja\">処理結果です。trueの場合は、処理は成功しました。falseの場合は処理が失敗しています。</div><div lang=\"en\">The
-                    process results. If true, the process succeeded. If false, the process failed.</div>"
+      description: |
+        <div lang="ja">処理結果です。trueの場合は、処理は成功しました。falseの場合は処理が失敗しています。</div>
+        <div lang="en">The process results. If true, the process succeeded. If false, the process failed.</div>
   title: AuditLogServiceValue
-  description: "<div lang=\"ja\">AuditLogServiceValueオブジェクトは、実行結果（1エンティティ）を保持します。</div><div lang=\"en\">AuditLogServiceValue\
-    \ object retains the operation result (1 entity).</div>"
+  description: |
+    <div lang="ja">AuditLogServiceValueオブジェクトは、実行結果（1エンティティ）を保持します。</div>
+    <div lang="en">AuditLogServiceValue object retains the operation result (1 entity).</div>

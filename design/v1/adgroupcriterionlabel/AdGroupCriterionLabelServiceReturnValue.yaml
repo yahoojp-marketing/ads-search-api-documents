@@ -8,6 +8,6 @@ AdGroupCriterionLabelServiceReturnValue:
       items:
         $ref: 'AdGroupCriterionLabelServiceValue.yaml#/AdGroupCriterionLabelServiceValue'
   title: AdGroupCriterionLabelServiceReturnValue
-  description: "<div lang=\"ja\">AdGroupCriterionLabelServiceReturnValueオブジェクトは、広告グループのクライテリアラベル情報を含む操作結果として戻される値を表します。</div><div lang=\"en\">AdGroupCriterionLabelServiceReturnValue\
-    \ object describes value returned as the operation result including ad group criterion\
-    \ label information.</div>"
+  description: |
+    <div lang="ja">AdGroupCriterionLabelServiceReturnValueオブジェクトは、広告グループのクライテリアラベル情報を含む操作結果として戻される値を表します。</div>
+    <div lang="en">AdGroupCriterionLabelServiceReturnValue object describes value returned as the operation result including ad group criterion label information.</div>

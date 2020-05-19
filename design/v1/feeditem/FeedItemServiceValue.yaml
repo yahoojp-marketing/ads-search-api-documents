@@ -12,7 +12,10 @@ FeedItemServiceValue:
     operationSucceeded:
       type: boolean
       nullable: true
-      description: "<div lang=\"ja\">処理結果です。</div><div lang=\"en\">Result of process.</div>"
+      description: |
+        <div lang="ja">処理結果です。</div>
+        <div lang="en">Result of process.</div>
   title: FeedItemServiceValue
-  description: "<div lang=\"ja\">FeedItemServiceValueオブジェクトは、フィードアイテム情報を格納します。</div><div lang=\"en\">FeedItemServiceValue\
-    \ contains FeedItem value information.</div>"
+  description: |
+    <div lang="ja">FeedItemServiceValueオブジェクトは、フィードアイテム情報を格納します。</div>
+    <div lang="en">FeedItemServiceValue contains FeedItem value information.</div>

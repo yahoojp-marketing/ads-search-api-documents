@@ -6,13 +6,15 @@ CampaignExportServicePage:
       type: integer
       nullable: false
       format: int32
-      description: "<div lang=\"ja\">取得される項目の総件数です。</div><div lang=\"en\">Total number of entries in the\
-        \ result.</div>"
+      description: |
+        <div lang="ja">取得される項目の総件数です。</div>
+        <div lang="en">Total number of entries in the result.</div>
     values:
       type: array
       nullable: true
       items:
         $ref: 'CampaignExportServiceValue.yaml#/CampaignExportServiceValue'
   title: CampaignExportServicePage
-  description: "<div lang=\"ja\">CampaignExportServicePageオブジェクトは、エクポートに関する実行結果を表します。</div><div lang=\"en\">CampaignExportServicePage\
-    \ object describes the export (download) with results.</div>"
+  description: |
+    <div lang="ja">CampaignExportServicePageオブジェクトは、エクポートに関する実行結果を表します。</div>
+    <div lang="en">CampaignExportServicePage object describes the export (download) with results.</div>

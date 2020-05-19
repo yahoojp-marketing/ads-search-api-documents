@@ -8,7 +8,9 @@ PageFeedItemServiceReviewSummarySelector:
       type: integer
       nullable: false
       format: int64
-      description: "<div lang=\"ja\">アカウントID</div><div lang=\"en\">Account ID</div>"
+      description: |
+        <div lang="ja">アカウントID</div>
+        <div lang="en">Account ID</div>
     feedIds:
       type: array
       nullable: true
@@ -17,7 +19,9 @@ PageFeedItemServiceReviewSummarySelector:
         nullable: true
         format: int64
       maxItems: 1000
-      description: "<div lang=\"ja\">フィードID</div><div lang=\"en\">Feed ID</div>"
+      description: |
+        <div lang="ja">フィードID</div>
+        <div lang="en">Feed ID</div>
     numberResults:
       type: integer
       nullable: true
@@ -25,19 +29,19 @@ PageFeedItemServiceReviewSummarySelector:
       minimum: 1
       maximum: 10000
       default: 500
-      description: "<div lang=\"ja\">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div><div lang=\"en\">Maximum number of results\
-        \ to return in this page. This field must be greater than or equal to 1. Also\
-        \ see Entity Limits per operation.</div>"
+      description: |
+        <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div>
+        <div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1. Also see Entity Limits per operation.</div>
     startIndex:
       type: integer
       nullable: true
       format: int32
       minimum: 1
       default: 1
-      description: "<div lang=\"ja\">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div><div lang=\"en\">Index of the first\
-        \ result to return in this page. This field must be greater than or equal\
-        \ to 1.</div>"
+      description: |
+        <div lang="ja">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div>
+        <div lang="en">Index of the first result to return in this page. This field must be greater than or equal to 1.</div>
   title: PageFeedItemServiceReviewSummarySelector
-  description: "<div lang=\"ja\">PageFeedItemServiceReviewSummarySelectorオブジェクトは、登録したページフィードアイテムの審査成績、状況サマリーを取得するための検索条件を格納します。</div><div lang=\"en\">The\
-    \ PageFeedItemServiceReviewSummarySelector object stores search condition to acquire\
-    \ the examination results of the page feed item and the situation summary.</div>"
+  description: |
+    <div lang="ja">PageFeedItemServiceReviewSummarySelectorオブジェクトは、登録したページフィードアイテムの審査成績、状況サマリーを取得するための検索条件を格納します。</div>
+    <div lang="en">The PageFeedItemServiceReviewSummarySelector object stores search condition to acquire the examination results of the page feed item and the situation summary.</div>

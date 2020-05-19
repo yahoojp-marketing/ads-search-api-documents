@@ -12,7 +12,10 @@ AdGroupFeedServiceValue:
     operationSucceeded:
       type: boolean
       nullable: true
-      description: "<div lang=\"ja\">処理結果を表示します。</div><div lang=\"en\">Showing operation results.</div>"
+      description: |
+        <div lang="ja">処理結果を表示します。</div>
+        <div lang="en">Showing operation results.</div>
   title: AdGroupFeedServiceValue
-  description: "<div lang=\"ja\">AdGroupFeedServiceValueオブジェクトは、FeedItem情報を格納するコンテナです。</div><div lang=\"en\">AdGroupFeedServiceValue\
-    \ is a container of FeedItem information.</div>"
+  description: |
+    <div lang="ja">AdGroupFeedServiceValueオブジェクトは、FeedItem情報を格納するコンテナです。</div>
+    <div lang="en">AdGroupFeedServiceValue is a container of FeedItem information.</div>

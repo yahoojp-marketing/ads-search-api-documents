@@ -9,7 +9,9 @@ CampaignServiceOperation:
       type: integer
       nullable: false
       format: int64
-      description: "<div lang=\"ja\">アカウントIDです。</div><div lang=\"en\">Account ID.</div>"
+      description: |
+        <div lang="ja">アカウントIDです。</div>
+        <div lang="en">Account ID.</div>
     operand:
       type: array
       nullable: true
@@ -18,5 +20,6 @@ CampaignServiceOperation:
       minItems: 1
       maxItems: 2000
   title: CampaignServiceOperation
-  description: "<div lang=\"ja\">CampaignServiceOperationオブジェクトは、操作の対象となるキャンペーンの情報と処理の内容を表します。</div><div lang=\"en\">CampaignServiceOperation\
-    \ object displays target campaign information and its operation results.</div>"
+  description: |
+    <div lang="ja">CampaignServiceOperationオブジェクトは、操作の対象となるキャンペーンの情報と処理の内容を表します。</div>
+    <div lang="en">CampaignServiceOperation object displays target campaign information and its operation results.</div>

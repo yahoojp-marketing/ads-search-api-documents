@@ -6,16 +6,15 @@ Campaign:
       type: integer
       nullable: true
       format: int64
-      description: "<div lang=\"ja\">アカウントIDです。<br>このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
-</div><div lang=\"en\">Account ID.<br>Although this field will be returned in the response, it will be ignored on input.
-</div>"
+      description: |
+        <div lang="ja">アカウントIDです。<br>このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
+        <div lang="en">Account ID.<br>Although this field will be returned in the response, it will be ignored on input.</div>
     appId:
       type: string
       nullable: true
-      description: "<div lang=\"ja\">アプリID（iOS）またはパッケージ名（Android）です。<br>※アプリキャンペーンでiOSの場合、入力は数値のみです。<br>ADD時、campaignTypeがSTANDARD、またはDYNAMIC_ADS_FOR_SEARCH_SETTINGの場合、無視され、MOBILE_APPの場合、必須となります。</div><div lang=\"en\">App\
-        \ ID (for iOS) or Package name (for Android).<br>*Input only the numbers for\
-        \ iOS in Mobile App Campaign.<br> In ADD operation, this field will be ignored when campaignType is 'STANDARD' or 'DYNAMIC_ADS_FOR_SEARCH_SETTING', and is required when campaignType is MOBILE_APP.
-</div>"
+      description: |
+        <div lang="ja">アプリID（iOS）またはパッケージ名（Android）です。<br>※アプリキャンペーンでiOSの場合、入力は数値のみです。<br>ADD時、campaignTypeがSTANDARD、またはDYNAMIC_ADS_FOR_SEARCH_SETTINGの場合、無視され、MOBILE_APPの場合、必須となります。</div>
+        <div lang="en">App ID (for iOS) or Package name (for Android).<br>*Input only the numbers for iOS in Mobile App Campaign.<br> In ADD operation, this field will be ignored when campaignType is 'STANDARD' or 'DYNAMIC_ADS_FOR_SEARCH_SETTING', and is required when campaignType is MOBILE_APP.</div>
     appStore:
       $ref: 'CampaignServiceAppStore.yaml#/CampaignServiceAppStore'
     biddingStrategyConfiguration:
@@ -28,23 +27,22 @@ Campaign:
       type: integer
       nullable: true
       format: int64
-      description: "<div lang=\"ja\">キャンペーンIDです。<br>SET時およびREMOVE時、このフィールドは必須です。
-</div><div lang=\"en\">Campaign ID.<br>This field is required in SET and REMOVE operation.
-</div>"
+      description: |
+        <div lang="ja">キャンペーンIDです。<br>SET時およびREMOVE時、このフィールドは必須です。</div>
+        <div lang="en">Campaign ID.<br>This field is required in SET and REMOVE operation.</div>
     campaignName:
       type: string
       nullable: true
-      description: "<div lang=\"ja\">キャンペーン名です。<br>このフィールドは、ADD時に必須となり、SET時に省略可能となります。<br>※入力制限：50文字以内です。</div><div lang=\"en\">Campaign name.<br>\
-        \ *Insert limit: Up to 50 characters.<br>This field is required in ADD operation, and will be optional in SET operation.
-</div>"
+      description: |
+        <div lang="ja">キャンペーン名です。<br>このフィールドは、ADD時に必須となり、SET時に省略可能となります。<br>※入力制限：50文字以内です。</div>
+        <div lang="en">Campaign name.<br> *Insert limit: Up to 50 characters.<br>This field is required in ADD operation, and will be optional in SET operation.</div>
     campaignTrackId:
       type: integer
       nullable: true
       format: int64
-      description: "<div lang=\"ja\">トラッキング用キャンペーンIDです。<br>このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
-</div><div lang=\"en\">Campaign\
-        \ ID for tracking.<br>Although this field will be returned in the response, it will be ignored on input.
-</div>"
+      description: |
+        <div lang="ja">トラッキング用キャンペーンIDです。<br>このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
+        <div lang="en">Campaign ID for tracking.<br>Although this field will be returned in the response, it will be ignored on input.</div>
     conversionOptimizerEligibility:
       $ref: 'CampaignServiceConversionOptimizerEligibility.yaml#/CampaignServiceConversionOptimizerEligibility'
     customParameters:
@@ -52,10 +50,15 @@ Campaign:
     endDate:
       type: string
       nullable: true
-      description: "<div lang=\"ja\">キャンペーンの終了日です。<br>ADD時およびSET時、このフィールドは省略可能となります。ADD時のデフォルト設定値は20371231となります。
-<br>過去の日付、開始日以前の日付は指定できません。<br>※YYYYMMDD形式です。</div><div lang=\"en\">End date\
-        \ of Campaign.<br>This field is optional in ADD and SET operation. The default value in ADD operation will be 20371231.
-<br>*Cannot set the past date and date before the start date.<br>*In YYYYMMDD format.</div>"
+      description: |
+        <div lang="ja">キャンペーンの終了日です。<br>
+        ADD時およびSET時、このフィールドは省略可能となります。ADD時のデフォルト設定値は20371231となります。<br>
+        過去の日付、開始日以前の日付は指定できません。<br>
+        ※YYYYMMDD形式です。</div>
+        <div lang="en">End date of Campaign.<br>
+        This field is optional in ADD and SET operation. The default value in ADD operation will be 20371231.<br>
+        *Cannot set the past date and date before the start date.<br>
+        *In YYYYMMDD format.</div>
     failedBiddingStrategyConfiguration:
       $ref: 'CampaignServiceBiddingStrategy.yaml#/CampaignServiceBiddingStrategy'
     labels:
@@ -73,17 +76,22 @@ Campaign:
     startDate:
       type: string
       nullable: true
-      description: "<div lang=\"ja\">キャンペーンの開始日です。<br>ADD時およびSET時、このフィールドは省略可能となります。ADD時のデフォルト設定値は当日日付となります。<br>過去の日付は指定できません。<br>※配信開始済みのキャンペーンは変更できません。<br>※YYYYMMDD形式です。</div><div lang=\"en\">Start\
-        \ date of Campaign.<br>This field is optional in ADD and SET operation. The default value in ADD operation will be Today's date.
-<br>*Cannot set the past date.<br>*Cannot change the date\
-        \ to the campaign that is already active.<br>*In YYYYMMDD format.</div>"
+      description: |
+        <div lang="ja">キャンペーンの開始日です。<br>
+        ADD時およびSET時、このフィールドは省略可能となります。ADD時のデフォルト設定値は当日日付となります。<br>
+        過去の日付は指定できません。<br>
+        ※配信開始済みのキャンペーンは変更できません。<br>
+        ※YYYYMMDD形式です。</div>
+        <div lang="en">Start date of Campaign.<br>This field is optional in ADD and SET operation. The default value in ADD operation will be Today's date.<br>
+        *Cannot set the past date.<br>
+        *Cannot change the date to the campaign that is already active.<br>
+        *In YYYYMMDD format.</div>
     trackingUrl:
       type: string
       nullable: true
-      description: "<div lang=\"ja\">トラッキングURLです。<br>ADD時およびSET時、このフィールドは省略可能となります。
-<br>※アプリキャンペーンがAndroidの場合、設定はできません。</div><div lang=\"en\">Tracking\
-        \ URL.<br>This field is optional in ADD and SET operation.
-<br>*Cannot set if Mobile App Campaign is in Android.</div>"
+      description: |
+        <div lang="ja">トラッキングURLです。<br>ADD時およびSET時、このフィールドは省略可能となります。<br>※アプリキャンペーンがAndroidの場合、設定はできません。</div>
+        <div lang="en">Tracking URL.<br>This field is optional in ADD and SET operation.<br>*Cannot set if Mobile App Campaign is in Android.</div>
     'type':
       $ref: 'CampaignServiceType.yaml#/CampaignServiceType'
     urlReviewData:
@@ -91,5 +99,6 @@ Campaign:
     userStatus:
       $ref: 'CampaignServiceUserStatus.yaml#/CampaignServiceUserStatus'
   title: Campaign
-  description: "<div lang=\"ja\">Campaignオブジェクトは、キャンペーンの情報を表します。</div><div lang=\"en\">Campaign object describes\
-    \ Campaign information.</div>"
+  description: |
+    <div lang="ja">Campaignオブジェクトは、キャンペーンの情報を表します。</div>
+    <div lang="en">Campaign object describes Campaign information.</div>

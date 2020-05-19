@@ -8,7 +8,9 @@ CampaignServiceSelector:
       type: integer
       nullable: false
       format: int64
-      description: "<div lang=\"ja\">検索条件：アカウントIDです。</div><div lang=\"en\">Search condition: Account ID.</div>"
+      description: |
+        <div lang="ja">検索条件：アカウントIDです。</div>
+        <div lang="en">Search condition: Account ID.</div>
     biddingStrategyIds:
       type: array
       nullable: true
@@ -17,7 +19,9 @@ CampaignServiceSelector:
         nullable: true
         format: int64
       maxItems: 1000
-      description: "<div lang=\"ja\">検索条件：自動入札IDです。</div><div lang=\"en\">Search condition: Auto Bidding ID.</div>"
+      description: |
+        <div lang="ja">検索条件：自動入札IDです。</div>
+        <div lang="en">Search condition: Auto Bidding ID.</div>
     campaignIds:
       type: array
       nullable: true
@@ -26,9 +30,11 @@ CampaignServiceSelector:
         nullable: true
         format: int64
       maxItems: 1000
-      description: "<div lang=\"ja\">検索条件：キャンペーンIDです。<br>※指定しない場合は、フィルタ条件に すべてのキャンペーンが含まれます。</div><div lang=\"en\">Search\
-        \ condition: Campaign ID<br>* All campaign will return, if no campaign are\
-        \ not specified.</div>"
+      description: |
+        <div lang="ja">検索条件：キャンペーンIDです。<br>
+        ※指定しない場合は、フィルタ条件に すべてのキャンペーンが含まれます。</div>
+        <div lang="en">Search condition: Campaign ID<br>
+        * All campaign will return, if no campaign are not specified.</div>
     containsLabelId:
       $ref: 'CampaignServiceContainsLabelId.yaml#/CampaignServiceContainsLabelId'
     labelIds:
@@ -39,7 +45,9 @@ CampaignServiceSelector:
         nullable: true
         format: int64
       maxItems: 1000
-      description: "<div lang=\"ja\">検索条件：ラベルIDです。</div><div lang=\"en\">Search condition: Label ID.</div>"
+      description: |
+        <div lang="ja">検索条件：ラベルIDです。</div>
+        <div lang="en">Search condition: Label ID.</div>
     numberResults:
       type: integer
       nullable: true
@@ -47,18 +55,18 @@ CampaignServiceSelector:
       minimum: 1
       maximum: 10000
       default: 500
-      description: "<div lang=\"ja\">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div><div lang=\"en\">Maximum number of results\
-        \ to return in this page. This field must be greater than or equal to 1. Also\
-        \ see Entity Limits per operation.</div>"
+      description: |
+        <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div>
+        <div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1. Also see Entity Limits per operation.</div>
     startIndex:
       type: integer
       nullable: true
       format: int32
       minimum: 1
       default: 1
-      description: "<div lang=\"ja\">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div><div lang=\"en\">Index of the first\
-        \ result to return in this page. This field must be greater than or equal\
-        \ to 1.</div>"
+      description: |
+        <div lang="ja">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div>
+        <div lang="en">Index of the first result to return in this page. This field must be greater than or equal to 1.</div>
     userStatuses:
       type: array
       nullable: true
@@ -66,5 +74,6 @@ CampaignServiceSelector:
         $ref: 'CampaignServiceUserStatus.yaml#/CampaignServiceUserStatus'
       maxItems: 2
   title: CampaignServiceSelector
-  description: "<div lang=\"ja\">CampaignServiceSelectorオブジェクトは、操作の対象とするキャンペーンの情報およびフィルタ条件を表します。</div><div lang=\"en\">CampaignServiceSelector\
-    \ object displays information and filter criteria of campaign to be operated.</div>"
+  description: |
+    <div lang="ja">CampaignServiceSelectorオブジェクトは、操作の対象とするキャンペーンの情報およびフィルタ条件を表します。</div>
+    <div lang="en">CampaignServiceSelector object displays information and filter criteria of campaign to be operated.</div>

@@ -64,8 +64,8 @@ tags:
 - name: ConversionTrackerService
   description: |
     <label class="account"></label>
-    <div lang="ja">ConversionTrackerServiceでは、コンバージョントラッカー情報の取得および追加・更新を行います。<br/>コンバージョントラッカー情報とは、コンバージョン測定タグおよびタグごとのパフォーマンスデータを表します。<br/>本サービスを利用することで、スポンサードサーチで掲載されている広告からのコンバージョン数（商品の購入や会員登録、資料請求などサイト上で何らかの成約に至った件数）を取得することができ、広告がどの程度成果を上げているかなどを確認できます。<br/>コンバージョンタグは広告管理ツールとAPIで共有しています。</div><div lang="en">ConversionTrackerService
-    is to get, add, and update ConversionTracker information. <br/>Number of conversions
+    <div lang="ja">ConversionTrackerServiceでは、コンバージョントラッカー情報の取得および追加・更新を行います。<br/>コンバージョントラッカー情報とは、コンバージョン測定タグおよびタグごとのパフォーマンスデータを表します。<br/>本サービスを利用することで、検索広告で掲載されている広告からのコンバージョン数（商品の購入や会員登録、資料請求などサイト上で何らかの成約に至った件数）を取得することができ、広告がどの程度成果を上げているかなどを確認できます。<br/>コンバージョンタグは広告管理ツールとAPIで共有しています。</div><div lang="en">ConversionTrackerService
+    is to get, add, and update ConversionTracker information.<br/>Number of conversions
     and performance of Ads in Sponsored Search can be obtained.<br/>Conversion tag
     will be shared both in Campaign Management Tool and API.<br/>* ConversionTrackerInformation
     means Conversion Tag and performance data per tag. This service enables you to
@@ -163,8 +163,8 @@ tags:
     ・すべてのレポートタイプにおいて配信実績のないデータは出力されません。<br>
     ・レポートは、リクエストしてから1週間（7日間）で自動的に削除されます。<br>
     </div>
-    <div lang="en">ReportDefinitionService is to get, add or delete report definition. <br/>
-    Report defines report type, date range, and fields. <br/>
+    <div lang="en">ReportDefinitionService is to get, add or delete report definition.<br/>
+    Report defines report type, date range, and fields.<br/>
     It also provides operation to get available report fields for specific report type.<br>
     The following operations are provided:<br>
     - Get reports<br>
@@ -276,8 +276,9 @@ tags:
 paths:
   /LabelService/get:
     post:
-      description: "<div lang=\"ja\">ラベルに関する情報を取得します。</div><div lang=\"en\">Gets information\
-        \ related to labels.</div>"
+      description: |
+        <div lang="ja">ラベルに関する情報を取得します。</div>
+        <div lang="en">Gets information related to labels.</div>
       tags:
       - LabelService
       requestBody:
@@ -321,8 +322,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /AdGroupCriterionService/add:
     post:
-      description: "<div lang=\"ja\">広告グループに関するクライテリアを追加します。</div><div lang=\"en\"\
-        >Add Ad group criteria.</div>"
+      description: |
+        <div lang="ja">広告グループに関するクライテリアを追加します。</div>
+        <div lang="en">Add Ad group criteria.</div>
       tags:
       - AdGroupCriterionService
       requestBody:
@@ -382,8 +384,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /AdGroupService/get:
     post:
-      description: "<div lang=\"ja\">広告グループに関する情報を取得します。</div><div lang=\"en\">Gets\
-        \ Ad group information.</div>"
+      description: |
+        <div lang="ja">広告グループに関する情報を取得します。</div>
+        <div lang="en">Gets Ad group information.</div>
       tags:
       - AdGroupService
       requestBody:
@@ -440,8 +443,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /AccountSharedService/remove:
     post:
-      description: "<div lang=\"ja\">アカウントから対象外キーワードリストを削除します。</div><div lang=\"en\"\
-        >Remove negative keyword list from account.</div>"
+      description: |
+        <div lang="ja">アカウントから対象外キーワードリストを削除します。</div>
+        <div lang="en">Remove negative keyword list from account.</div>
       tags:
       - AccountSharedService
       requestBody:
@@ -486,9 +490,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /AccountService/get:
     post:
-      description: "<div lang=\"ja\">アカウントに関する情報を取得します。契約状況などのフィルタ条件を設定することが可能です。</div><div\
-        \ lang=\"en\">Returns the account information. Enable to set the filter condition,\
-        \ such as the account Type.</div>"
+      description: |
+        <div lang="ja">アカウントに関する情報を取得します。契約状況などのフィルタ条件を設定することが可能です。</div>
+        <div lang="en">Returns the account information. Enable to set the filter condition, such as the account Type.</div>
       tags:
       - AccountService
       requestBody:
@@ -532,8 +536,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /AdGroupWebpageService/remove:
     post:
-      description: "<div lang=\"ja\">広告グループに関連付けしているPageFeedItemを解除します。</div><div\
-        \ lang=\"en\">Remove PageFeedItem associated with ad group.</div>"
+      description: |
+        <div lang="ja">広告グループに関連付けしているPageFeedItemを解除します。</div>
+        <div lang="en">Remove PageFeedItem associated with ad group.</div>
       tags:
       - AdGroupWebpageService
       requestBody:
@@ -580,8 +585,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /ReportDefinitionService/get:
     post:
-      description: "<div lang=\"ja\">レポート定義に関する情報を取得します。</div><div lang=\"en\">Get\
-        \ information related to report definition.</div>"
+      description: |
+        <div lang="ja">レポート定義に関する情報を取得します。</div>
+        <div lang="en">Get information related to report definition.</div>
       tags:
       - ReportDefinitionService
       requestBody:
@@ -627,8 +633,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /AdGroupBidMultiplierService/get:
     post:
-      description: "<div lang=\"ja\">広告グループに関する入札価格調整率を取得します。</div><div lang=\"en\"\
-        >Gets bid multiplier of adgroup</div>"
+      description: |
+        <div lang="ja">広告グループに関する入札価格調整率を取得します。</div>
+        <div lang="en">Gets bid multiplier of adgroup</div>
       tags:
       - AdGroupBidMultiplierService
       requestBody:
@@ -673,8 +680,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /AdGroupLabelService/add:
     post:
-      description: "<div lang=\"ja\">ラベルと広告グループの紐付けを登録します。</div><div lang=\"en\">Add\
-        \ informations of related ad group and label.</div>"
+      description: |
+        <div lang="ja">ラベルと広告グループの紐付けを登録します。</div>
+        <div lang="en">Add informations of related ad group and label.</div>
       tags:
       - AdGroupLabelService
       requestBody:
@@ -718,8 +726,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /ReportDefinitionService/remove:
     post:
-      description: "<div lang=\"ja\">レポート定義を削除します。</div><div lang=\"en\">Removes report\
-        \ definitions.</div>"
+      description: |
+        <div lang="ja">レポート定義を削除します。</div>
+        <div lang="en">Removes report definitions.</div>
       tags:
       - ReportDefinitionService
       requestBody:
@@ -765,8 +774,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /AdGroupAdService/get:
     post:
-      description: "<div lang=\"ja\">広告に関する情報を取得します。</div><div lang=\"en\">Returns\
-        \ ad information.</div>"
+      description: |
+        <div lang="ja">広告に関する情報を取得します。</div>
+        <div lang="en">Returns ad information.</div>
       tags:
       - AdGroupAdService
       requestBody:
@@ -819,8 +829,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /CampaignService/get:
     post:
-      description: "<div lang=\"ja\">キャンペーンに関する情報を取得します。</div><div lang=\"en\">Gets\
-        \ information related to campaigns.</div>"
+      description: |
+        <div lang="ja">キャンペーンに関する情報を取得します。</div>
+        <div lang="en">Gets information related to campaigns.</div>
       tags:
       - CampaignService
       requestBody:
@@ -883,8 +894,9 @@ paths:
           $ref: '../Response403.yaml#/Response403'
   /AdGroupAdService/remove:
     post:
-      description: "<div lang=\"ja\">広告に関する情報を削除します。</div><div lang=\"en\">Remove\
-        \ ad information.</div>"
+      description: |
+        <div lang="ja">広告に関する情報を削除します。</div>
+        <div lang="en">Remove ad information.</div>
       tags:
       - AdGroupAdService
       requestBody:
@@ -937,8 +949,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /CampaignExportService/get:
     post:
-      description: "<div lang=\"ja\">登録したジョブに関するステータス情報を取得します。</div><div lang=\"en\"\
-        >Obtains the status of registered jobs.</div>"
+      description: |
+        <div lang="ja">登録したジョブに関するステータス情報を取得します。</div>
+        <div lang="en">Obtains the status of registered jobs.</div>
       tags:
       - CampaignExportService
       requestBody:
@@ -1073,8 +1086,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /AdGroupService/remove:
     post:
-      description: "<div lang=\"ja\">広告グループを削除します。</div><div lang=\"en\">Removes Ad\
-        \ group information.</div>"
+      description: |
+        <div lang="ja">広告グループを削除します。</div>
+        <div lang="en">Removes Ad group information.</div>
       tags:
       - AdGroupService
       requestBody:
@@ -1131,8 +1145,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /AdGroupAdService/set:
     post:
-      description: "<div lang=\"ja\">広告に関する情報を更新します。</div><div lang=\"en\">Updates\
-        \ ad information.</div>"
+      description: |
+        <div lang="ja">広告に関する情報を更新します。</div>
+        <div lang="en">Updates ad information.</div>
       tags:
       - AdGroupAdService
       requestBody:
@@ -1185,8 +1200,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /SharedCriterionService/get:
     post:
-      description: "<div lang=\"ja\">対象外キーワードリストの情報を取得します。</div><div lang=\"en\">Get\
-        \ negative keyword list information.</div>"
+      description: |
+        <div lang="ja">対象外キーワードリストの情報を取得します。</div>
+        <div lang="en">Get negative keyword list information.</div>
       tags:
       - SharedCriterionService
       requestBody:
@@ -1231,8 +1247,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /AccountService/set:
     post:
-      description: "<div lang=\"ja\">アカウントに関する情報を更新します。</div><div lang=\"en\">Updates\
-        \ the information related to the account.</div>"
+      description: |
+        <div lang="ja">アカウントに関する情報を更新します。</div>
+        <div lang="en">Updates the information related to the account.</div>
       tags:
       - AccountService
       requestBody:
@@ -1276,8 +1293,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /AdGroupRetargetingListService/remove:
     post:
-      description: "<div lang=\"ja\">広告グループレベルでのターゲットリスト設定を削除します。</div><div lang=\"\
-        en\">Delete the target list setting in ad group level.</div>"
+      description: |
+        <div lang="ja">広告グループレベルでのターゲットリスト設定を削除します。</div>
+        <div lang="en">Delete the target list setting in ad group level.</div>
       tags:
       - AdGroupRetargetingListService
       requestBody:
@@ -1323,8 +1341,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /ReportDefinitionService/getReportFields:
     post:
-      description: "<div lang=\"ja\">レポートタイプに対して使用可能なレポートのフィールドを返します。</div><div lang=\"\
-        en\">Returns the available report fields for a given report type.</div>"
+      description: |
+        <div lang="ja">レポートタイプに対して使用可能なレポートのフィールドを返します。</div>
+        <div lang="en">Returns the available report fields for a given report type.</div>
       tags:
       - ReportDefinitionService
       requestBody:
@@ -1370,8 +1389,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /KeywordEstimatorService/get:
     post:
-      description: "<div lang=\"ja\">獲得できるトラフィックの見積を取得します。</div><div lang=\"en\">Get\
-        \ traffic estimate.</div>"
+      description: |
+        <div lang="ja">獲得できるトラフィックの見積を取得します。</div>
+        <div lang="en">Get traffic estimate.</div>
       tags:
       - KeywordEstimatorService
       requestBody:
@@ -1413,11 +1433,11 @@ paths:
           $ref: '../Response401.yaml#/Response401'
         400:
           $ref: '../Response400.yaml#/Response400'
-
   /AccountSharedService/set:
     post:
-      description: "<div lang=\"ja\">対象外キーワードリストの設定を変更します。</div><div lang=\"en\">Update\
-        \ negative keyword list information of account.</div>"
+      description: |
+        <div lang="ja">対象外キーワードリストの設定を変更します。</div>
+        <div lang="en">Update negative keyword list information of account.</div>
       tags:
       - AccountSharedService
       requestBody:
@@ -1462,8 +1482,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /BiddingStrategyService/remove:
     post:
-      description: "<div lang=\"ja\">自動入札設定を削除します。</div><div lang=\"en\">Remove the\
-        \ auto bidding setting.</div>"
+      description: |
+        <div lang="ja">自動入札設定を削除します。</div>
+        <div lang="en">Remove the auto bidding setting.</div>
       tags:
       - BiddingStrategyService
       requestBody:
@@ -1509,8 +1530,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /AdGroupAdLabelService/remove:
     post:
-      description: "<div lang=\"ja\">ラベルと広告グループの紐付けを削除します。</div><div lang=\"en\">Remove\
-        \ informations of related ad and label.</div>"
+      description: |
+        <div lang="ja">ラベルと広告グループの紐付けを削除します。</div>
+        <div lang="en">Remove informations of related ad and label.</div>
       tags:
       - AdGroupAdLabelService
       requestBody:
@@ -1554,8 +1576,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /CampaignTargetService/get:
     post:
-      description: "<div lang=\"ja\">キャンペーンのターゲティング設定に関する情報を取得します。</div><div lang=\"\
-        en\">Gets campaign informations related to targeting setting.</div>"
+      description: |
+        <div lang="ja">キャンペーンのターゲティング設定に関する情報を取得します。</div>
+        <div lang="en">Gets campaign informations related to targeting setting.</div>
       tags:
       - CampaignTargetService
       requestBody:
@@ -1601,8 +1624,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /CampaignRetargetingListService/add:
     post:
-      description: "<div lang=\"ja\">キャンペーン階層におけるターゲットリストの設定情報を追加します。</div><div lang=\"\
-        en\">Adds the target list setting in campaign level.</div>"
+      description: |
+        <div lang="ja">キャンペーン階層におけるターゲットリストの設定情報を追加します。</div>
+        <div lang="en">Adds the target list setting in campaign level.</div>
       tags:
       - CampaignRetargetingListService
       requestBody:
@@ -1648,8 +1672,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /CampaignExportService/addJob:
     post:
-      description: "<div lang=\"ja\">エクスポートの登録を実施します。</div><div lang=\"en\">Creates\
-        \ job to register for export.</div>"
+      description: |
+        <div lang="ja">エクスポートの登録を実施します。</div>
+        <div lang="en">Creates job to register for export.</div>
       tags:
       - CampaignExportService
       requestBody:
@@ -1693,8 +1718,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /CampaignCriterionService/add:
     post:
-      description: "<div lang=\"ja\">キャンペーンの除外クライテリアを追加します。</div><div lang=\"en\"\
-        >Add negative criteria in campaign-level.</div>"
+      description: |
+        <div lang="ja">キャンペーンの除外クライテリアを追加します。</div>
+        <div lang="en">Add negative criteria in campaign-level.</div>
       tags:
       - CampaignCriterionService
       requestBody:
@@ -1741,8 +1767,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /RetargetingListService/set:
     post:
-      description: "<div lang=\"ja\">ターゲットリストを更新します。</div><div lang=\"en\">Updates\
-        \ the target list.</div>"
+      description: |
+        <div lang="ja">ターゲットリストを更新します。</div>
+        <div lang="en">Updates the target list.</div>
       tags:
       - RetargetingListService
       requestBody:
@@ -1795,8 +1822,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /AdGroupAdService/add:
     post:
-      description: "<div lang=\"ja\">広告に関する情報を追加します。</div><div lang=\"en\">Add informations\
-        \ of ad.</div>"
+      description: |
+        <div lang="ja">広告に関する情報を追加します。</div>
+        <div lang="en">Add informations of ad.</div>
       tags:
       - AdGroupAdService
       requestBody:
@@ -1849,11 +1877,13 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /AdGroupWebpageService/add:
     post:
-      description: "<div lang=\"ja\">広告グループにPageFeedItemを配信、又は、除外として設定します。<br>※1リクエストで異なるキャンペーン配下の広告グループに対してWebページ情報の設定が可能です。<br>※1リクエスト内で同一のadGroupIdに同一組み合わせのWebpageParameterを設定できません。</div><div\
-        \ lang=\"en\">Set allowed or excluded settings of PageFeedItem for ad group.\
-        \ <br>∗ With one request, web page information can be set for ad group under\
-        \ different campaign. <br>∗ Within one request, you can not set the same combination\
-        \ WebpageParameter to the same adGroupId.</div>"
+      description: |
+        <div lang="ja">広告グループにPageFeedItemを配信、又は、除外として設定します。<br>
+        ※1リクエストで異なるキャンペーン配下の広告グループに対してWebページ情報の設定が可能です。<br>
+        ※1リクエスト内で同一のadGroupIdに同一組み合わせのWebpageParameterを設定できません。</div>
+        <div lang="en">Set allowed or excluded settings of PageFeedItem for ad group.<br>
+        ∗ With one request, web page information can be set for ad group under different campaign.<br>
+        ∗ Within one request, you can not set the same combination WebpageParameter to the same adGroupId.</div>
       tags:
       - AdGroupWebpageService
       requestBody:
@@ -1900,8 +1930,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /SharedCriterionService/add:
     post:
-      description: "<div lang=\"ja\">対象外キーワードリストに対象外キーワードを追加します。</div><div lang=\"\
-        en\">Add negative keywords to negative keyword list.</div>"
+      description: |
+        <div lang="ja">対象外キーワードリストに対象外キーワードを追加します。</div>
+        <div lang="en">Add negative keywords to negative keyword list.</div>
       tags:
       - SharedCriterionService
       requestBody:
@@ -1946,8 +1977,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /AccountSharedService/add:
     post:
-      description: "<div lang=\"ja\">アカウントに対象外キーワードリストを追加します。</div><div lang=\"en\"\
-        >Add negative keyword list to account.</div>"
+      description: |
+        <div lang="ja">アカウントに対象外キーワードリストを追加します。</div>
+        <div lang="en">Add negative keyword list to account.</div>
       tags:
       - AccountSharedService
       requestBody:
@@ -1992,8 +2024,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /AdGroupCriterionService/set:
     post:
-      description: "<div lang=\"ja\">広告グループに関するクライテリアを更新します。</div><div lang=\"en\"\
-        >Update or change Ad group criteria.</div>"
+      description: |
+        <div lang="ja">広告グループに関するクライテリアを更新します。</div>
+        <div lang="en">Update or change Ad group criteria.</div>
       tags:
       - AdGroupCriterionService
       requestBody:
@@ -2177,8 +2210,9 @@ paths:
                 $ref: 'offlineconversion/OfflineConversionServiceUploadResponse.yaml#/OfflineConversionServiceUploadResponse'
   /AdGroupCriterionService/get:
     post:
-      description: "<div lang=\"ja\">広告グループに関するクライテリアを取得します。</div><div lang=\"en\"\
-        >Get criteria of Ad group.</div>"
+      description: |
+        <div lang="ja">広告グループに関するクライテリアを取得します。</div>
+        <div lang="en">Get criteria of Ad group.</div>
       tags:
       - AdGroupCriterionService
       requestBody:
@@ -2238,8 +2272,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /CampaignWebpageService/add:
     post:
-      description: "<div lang=\"ja\">キャンペーンにPageFeedItemを配信除外として設定します。</div><div lang=\"\
-        en\">Set excluded settings of PageFeedItem for campaign.</div>"
+      description: |
+        <div lang="ja">キャンペーンにPageFeedItemを配信除外として設定します。</div>
+        <div lang="en">Set excluded settings of PageFeedItem for campaign.</div>
       tags:
       - CampaignWebpageService
       requestBody:
@@ -2284,8 +2319,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /RetargetingListService/getCustomKey:
     post:
-      description: "<div lang=\"ja\">カスタムキーに関する情報を取得します。</div><div lang=\"en\">Get\
-        \ custom key information.</div>"
+      description: |
+        <div lang="ja">カスタムキーに関する情報を取得します。</div>
+        <div lang="en">Get custom key information.</div>
       tags:
       - RetargetingListService
       requestBody:
@@ -2338,8 +2374,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /AccountSharedService/get:
     post:
-      description: "<div lang=\"ja\">対象外キーワードリストの情報を取得します。</div><div lang=\"en\">Get\
-        \ negative keyword list information.</div>"
+      description: |
+        <div lang="ja">対象外キーワードリストの情報を取得します。</div>
+        <div lang="en">Get negative keyword list information.</div>
       tags:
       - AccountSharedService
       requestBody:
@@ -2384,9 +2421,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /PageFeedItemService/getJobStatus:
     post:
-      description: "<div lang=\"ja\">upload、downloadの処理状況を取得します。downloadJobStatusがCOMPLETEDの場合、レスポンスにダウンロードURLが設定されます。</div><div\
-        \ lang=\"en\">Gets processing status about upload or download. If downloadJobStatus\
-        \ is COMPLETED, returns download URL as response.</div>"
+      description: |
+        <div lang="ja">upload、downloadの処理状況を取得します。downloadJobStatusがCOMPLETEDの場合、レスポンスにダウンロードURLが設定されます。</div>
+        <div lang="en">Gets processing status about upload or download. If downloadJobStatus is COMPLETED, returns download URL as response.</div>
       tags:
       - PageFeedItemService
       requestBody:
@@ -2431,8 +2468,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /AdGroupCriterionService/remove:
     post:
-      description: "<div lang=\"ja\">広告グループに関するクライテリアを削除します。</div><div lang=\"en\"\
-        >Removes Ad group criteria.</div>"
+      description: |
+        <div lang="ja">広告グループに関するクライテリアを削除します。</div>
+        <div lang="en">Removes Ad group criteria.</div>
       tags:
       - AdGroupCriterionService
       requestBody:
@@ -2492,8 +2530,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /CampaignCriterionService/remove:
     post:
-      description: "<div lang=\"ja\">キャンペーンの除外クライテリアを削除します。</div><div lang=\"en\"\
-        >Removed negative criteria in campaign-level.</div>"
+      description: |
+        <div lang="ja">キャンペーンの除外クライテリアを削除します。</div>
+        <div lang="en">Removed negative criteria in campaign-level.</div>
       tags:
       - CampaignCriterionService
       requestBody:
@@ -2540,8 +2579,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /BiddingStrategyService/add:
     post:
-      description: "<div lang=\"ja\">自動入札設定を追加します。</div><div lang=\"en\">Creates the\
-        \ Auto bidding.</div>"
+      description: |
+        <div lang="ja">自動入札設定を追加します。</div>
+        <div lang="en">Creates the Auto bidding.</div>
       tags:
       - BiddingStrategyService
       requestBody:
@@ -2587,8 +2627,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /RetargetingListService/get:
     post:
-      description: "<div lang=\"ja\">ターゲットリストに関する情報を取得します。</div><div lang=\"en\">Retrieves\
-        \ the target list information.</div>"
+      description: |
+        <div lang="ja">ターゲットリストに関する情報を取得します。</div>
+        <div lang="en">Retrieves the target list information.</div>
       tags:
       - RetargetingListService
       requestBody:
@@ -2641,8 +2682,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /CampaignRetargetingListService/remove:
     post:
-      description: "<div lang=\"ja\">キャンペーン階層におけるターゲットリストの設定情報を削除します。</div><div lang=\"\
-        en\">Delete the target list setting in campaign level.</div>"
+      description: |
+        <div lang="ja">キャンペーン階層におけるターゲットリストの設定情報を削除します。</div>
+        <div lang="en">Delete the target list setting in campaign level.</div>
       tags:
       - CampaignRetargetingListService
       requestBody:
@@ -2688,8 +2730,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /ConversionTrackerService/set:
     post:
-      description: "<div lang=\"ja\">コンバージョントラッカー情報を更新します。</div><div lang=\"en\">Update\
-        \ ConversionTracker informations.</div>"
+      description: |
+        <div lang="ja">コンバージョントラッカー情報を更新します。</div>
+        <div lang="en">Update ConversionTracker informations.</div>
       tags:
       - ConversionTrackerService
       requestBody:
@@ -2735,8 +2778,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /CampaignLabelService/remove:
     post:
-      description: "<div lang=\"ja\">ラベルとキャンペーンの紐付けを削除します。</div><div lang=\"en\">Remove\
-        \ informations of related campaign and label.</div>"
+      description: |
+        <div lang="ja">ラベルとキャンペーンの紐付けを削除します。</div>
+        <div lang="en">Remove informations of related campaign and label.</div>
       tags:
       - CampaignLabelService
       requestBody:
@@ -2780,8 +2824,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /OfflineConversionService/get:
     post:
-      description: "<div lang=\"ja\">登録したオフラインコンバージョンデータの情報を取得します。</div><div lang=\"\
-        en\">Get registered offline conversion data information.</div>"
+      description: |
+        <div lang="ja">登録したオフラインコンバージョンデータの情報を取得します。</div>
+        <div lang="en">Get registered offline conversion data information.</div>
       tags:
       - OfflineConversionService
       requestBody:
@@ -2825,8 +2870,9 @@ paths:
                 $ref: 'offlineconversion/OfflineConversionServiceGetResponse.yaml#/OfflineConversionServiceGetResponse'
   /CampaignFeedService/get:
     post:
-      description: "<div lang=\"ja\">キャンペーンのFeedItem情報を取得します。</div><div lang=\"en\"\
-        >Get FeedItem information of campaign.</div>"
+      description: |
+        <div lang="ja">キャンペーンのFeedItem情報を取得します。</div>
+        <div lang="en">Get FeedItem information of campaign.</div>
       tags:
       - CampaignFeedService
       requestBody:
@@ -2871,8 +2917,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /FeedItemService/setTrademarkStatus:
     post:
-      description: "<div lang=\"ja\">商標の使用制限解除を確認します。</div><div lang=\"en\">Confirm\
-        \ the status of trademark restriction.</div>"
+      description: |
+        <div lang="ja">商標の使用制限解除を確認します。</div>
+        <div lang="en">Confirm the status of trademark restriction.</div>
       tags:
       - FeedItemService
       requestBody:
@@ -2926,8 +2973,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /LabelService/remove:
     post:
-      description: "<div lang=\"ja\">ラベルを削除します。</div><div lang=\"en\">Removes the\
-        \ inforamtion related to labels.</div>"
+      description: |
+        <div lang="ja">ラベルを削除します。</div>
+        <div lang="en">Removes the inforamtion related to labels.</div>
       tags:
       - LabelService
       requestBody:
@@ -2971,8 +3019,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /CampaignRetargetingListService/set:
     post:
-      description: "<div lang=\"ja\">キャンペーン階層におけるターゲットリストの設定情報を更新します。</div><div lang=\"\
-        en\">Updates the target list setting in campaign level.</div>"
+      description: |
+        <div lang="ja">キャンペーン階層におけるターゲットリストの設定情報を更新します。</div>
+        <div lang="en">Updates the target list setting in campaign level.</div>
       tags:
       - CampaignRetargetingListService
       requestBody:
@@ -3018,8 +3067,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /DictionaryService/getGeographicLocation:
     post:
-      description: "<div lang=\"ja\">地域情報の一覧を取得します。</div><div lang=\"en\">Get the\
-        \ information list of geo targeting.</div>"
+      description: |
+        <div lang="ja">地域情報の一覧を取得します。</div>
+        <div lang="en">Get the information list of geo targeting.</div>
       tags:
       - DictionaryService
       requestBody:
@@ -3063,8 +3113,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /AdGroupRetargetingListService/add:
     post:
-      description: "<div lang=\"ja\">広告グループレベルでのターゲットリスト設定を追加します。</div><div lang=\"\
-        en\">Create the target list setting in ad group level.</div>"
+      description: |
+        <div lang="ja">広告グループレベルでのターゲットリスト設定を追加します。</div>
+        <div lang="en">Create the target list setting in ad group level.</div>
       tags:
       - AdGroupRetargetingListService
       requestBody:
@@ -3110,8 +3161,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /AdGroupBidMultiplierService/set:
     post:
-      description: "<div lang=\"ja\">広告グループに関する入札価格調整率を設定、更新します。</div><div lang=\"\
-        en\">Updates adgroup bid multiplier.</div>"
+      description: |
+        <div lang="ja">広告グループに関する入札価格調整率を設定、更新します。</div>
+        <div lang="en">Updates adgroup bid multiplier.</div>
       tags:
       - AdGroupBidMultiplierService
       requestBody:
@@ -3156,8 +3208,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /CampaignSharedSetService/add:
     post:
-      description: "<div lang=\"ja\">キャンペーンに対象外キーワードリストの関連付け設定を行います。</div><div lang=\"\
-        en\">Setup negative keyword list for campaign.</div>"
+      description: |
+        <div lang="ja">キャンペーンに対象外キーワードリストの関連付け設定を行います。</div>
+        <div lang="en">Setup negative keyword list for campaign.</div>
       tags:
       - CampaignSharedSetService
       requestBody:
@@ -3201,8 +3254,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /AccountTrackingUrlService/set:
     post:
-      description: "<div lang=\"ja\">アカウントトラッキングを更新します。</div><div lang=\"en\">Updates\
-        \ account tracking information.</div>"
+      description: |
+        <div lang="ja">アカウントトラッキングを更新します。</div>
+        <div lang="en">Updates account tracking information.</div>
       tags:
       - AccountTrackingUrlService
       requestBody:
@@ -3292,8 +3346,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /FeedItemService/get:
     post:
-      description: "<div lang=\"ja\">フィードアイテム情報を取得します。</div><div lang=\"en\">Get Feed\
-        \ Item information.</div>"
+      description: |
+        <div lang="ja">フィードアイテム情報を取得します。</div>
+        <div lang="en">Get Feed Item information.</div>
       tags:
       - FeedItemService
       requestBody:
@@ -3347,8 +3402,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /PageFeedItemService/addDownloadJob:
     post:
-      description: "<div lang=\"ja\">登録されているページフィードアイテムを一括でダウンロードするためジョブを登録します。</div><div\
-        \ lang=\"en\">Registers job to bulk download registered page feed item.</div>"
+      description: |
+        <div lang="ja">登録されているページフィードアイテムを一括でダウンロードするためジョブを登録します。</div>
+        <div lang="en">Registers job to bulk download registered page feed item.</div>
       tags:
       - PageFeedItemService
       requestBody:
@@ -3393,8 +3449,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /AccountTrackingUrlService/get:
     post:
-      description: "<div lang=\"ja\">アカウントトラッキングに関する情報を取得します。</div><div lang=\"en\"\
-        >Retrieves information related to account tracking.</div>"
+      description: |
+        <div lang="ja">アカウントトラッキングに関する情報を取得します。</div>
+        <div lang="en">Retrieves information related to account tracking.</div>
       tags:
       - AccountTrackingUrlService
       requestBody:
@@ -3438,8 +3495,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /FeedItemService/remove:
     post:
-      description: "<div lang=\"ja\">フィードアイテム情報を削除します。</div><div lang=\"en\">Remove\
-        \ the Feed Item details.</div>"
+      description: |
+        <div lang="ja">フィードアイテム情報を削除します。</div>
+        <div lang="en">Remove the Feed Item details.</div>
       tags:
       - FeedItemService
       requestBody:
@@ -3493,8 +3551,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /CampaignSharedSetService/remove:
     post:
-      description: "<div lang=\"ja\">キャンペーンと対象外キーワードリストの関連付け設定を削除します。</div><div lang=\"\
-        en\">Remove the setup settings between campaign and negative keyword list.</div>"
+      description: |
+        <div lang="ja">キャンペーンと対象外キーワードリストの関連付け設定を削除します。</div>
+        <div lang="en">Remove the setup settings between campaign and negative keyword list.</div>
       tags:
       - CampaignSharedSetService
       requestBody:
@@ -3583,8 +3642,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /CampaignSharedSetService/get:
     post:
-      description: "<div lang=\"ja\">キャンペーンと対象外キーワードリストの関連付け情報を取得します。</div><div lang=\"\
-        en\">Returns the setup information between campaign and negative keyword list.</div>"
+      description: |
+        <div lang="ja">キャンペーンと対象外キーワードリストの関連付け情報を取得します。</div>
+        <div lang="en">Returns the setup information between campaign and negative keyword list.</div>
       tags:
       - CampaignSharedSetService
       requestBody:
@@ -3675,8 +3735,9 @@ paths:
                 format: binary
   /AdGroupService/set:
     post:
-      description: "<div lang=\"ja\">広告グループを更新します。</div><div lang=\"en\">Updates Ad\
-        \ group information.</div>"
+      description: |
+        <div lang="ja">広告グループを更新します。</div>
+        <div lang="en">Updates Ad group information.</div>
       tags:
       - AdGroupService
       requestBody:
@@ -3733,8 +3794,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /ConversionTrackerService/add:
     post:
-      description: "<div lang=\"ja\">コンバージョントラッカー情報を追加します。</div><div lang=\"en\">Add\
-        \ ConversionTracker informations.</div>"
+      description: |
+        <div lang="ja">コンバージョントラッカー情報を追加します。</div>
+        <div lang="en">Add ConversionTracker informations.</div>
       tags:
       - ConversionTrackerService
       requestBody:
@@ -3780,8 +3842,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /PageFeedItemService/get:
     post:
-      description: "<div lang=\"ja\">ページフィードアイテム情報を取得します。</div><div lang=\"en\">Gets\
-        \ information related to page feed item.</div>"
+      description: |
+        <div lang="ja">ページフィードアイテム情報を取得します。</div>
+        <div lang="en">Gets information related to page feed item.</div>
       tags:
       - PageFeedItemService
       requestBody:
@@ -3826,8 +3889,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /CampaignWebpageService/remove:
     post:
-      description: "<div lang=\"ja\">キャンペーンに関連付けしているPageFeedItemを解除します。</div><div\
-        \ lang=\"en\">Remove PageFeedItem associated with campaign.</div>"
+      description: |
+        <div lang="ja">キャンペーンに関連付けしているPageFeedItemを解除します。</div>
+        <div lang="en">Remove PageFeedItem associated with campaign.</div>
       tags:
       - CampaignWebpageService
       requestBody:
@@ -3872,8 +3936,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /ConversionTrackerService/get:
     post:
-      description: "<div lang=\"ja\">コンバージョントラッカー情報を取得します。</div><div lang=\"en\">Describes\
-        \ the operation which provide at ConversionTrackerService</div>"
+      description: |
+        <div lang="ja">コンバージョントラッカー情報を取得します。</div>
+        <div lang="en">Describes the operation which provide at ConversionTrackerService</div>
       tags:
       - ConversionTrackerService
       requestBody:
@@ -3919,8 +3984,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /AdGroupLabelService/remove:
     post:
-      description: "<div lang=\"ja\">ラベルと広告グループの紐付けを削除します。</div><div lang=\"en\">Remove\
-        \ informations of related ad group and label.</div>"
+      description: |
+        <div lang="ja">ラベルと広告グループの紐付けを削除します。</div>
+        <div lang="en">Remove informations of related ad group and label.</div>
       tags:
       - AdGroupLabelService
       requestBody:
@@ -3964,8 +4030,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /AdGroupRetargetingListService/set:
     post:
-      description: "<div lang=\"ja\">広告グループレベルでのターゲットリスト設定を更新します。</div><div lang=\"\
-        en\">Update the target list setting in ad group level.</div>"
+      description: |
+        <div lang="ja">広告グループレベルでのターゲットリスト設定を更新します。</div>
+        <div lang="en">Update the target list setting in ad group level.</div>
       tags:
       - AdGroupRetargetingListService
       requestBody:
@@ -4011,8 +4078,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /FeedItemService/add:
     post:
-      description: "<div lang=\"ja\">フィードアイテム情報を追加します。</div><div lang=\"en\">Add Feed\
-        \ Item information.</div>"
+      description: |
+        <div lang="ja">フィードアイテム情報を追加します。</div>
+        <div lang="en">Add Feed Item information.</div>
       tags:
       - FeedItemService
       requestBody:
@@ -4066,8 +4134,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /CampaignLabelService/add:
     post:
-      description: "<div lang=\"ja\">ラベルとキャンペーンの紐付けを登録します。</div><div lang=\"en\">Add\
-        \ informations of related campaign and label.</div>"
+      description: |
+        <div lang="ja">ラベルとキャンペーンの紐付けを登録します。</div>
+        <div lang="en">Add informations of related campaign and label.</div>
       tags:
       - CampaignLabelService
       requestBody:
@@ -4111,8 +4180,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /FeedService/get:
     post:
-      description: "<div lang=\"ja\">自動データ挿入のリスト情報を取得します。</div><div lang=\"en\">Returns\
-        \ Feed information.</div>"
+      description: |
+        <div lang="ja">自動データ挿入のリスト情報を取得します。</div>
+        <div lang="en">Returns Feed information.</div>
       tags:
       - FeedService
       requestBody:
@@ -4159,8 +4229,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /BiddingStrategyService/set:
     post:
-      description: "<div lang=\"ja\">自動入札設定を更新します。</div><div lang=\"en\">Updates an\
-        \ auto bidding.</div>"
+      description: |
+        <div lang="ja">自動入札設定を更新します。</div>
+        <div lang="en">Updates an auto bidding.</div>
       tags:
       - BiddingStrategyService
       requestBody:
@@ -4206,8 +4277,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /PageFeedItemService/upload:
     post:
-      description: "<div lang=\"ja\">ページフィードアイテムのアップロード処理を実施します。</div><div lang=\"\
-        en\">Executes upload page feed item.</div>"
+      description: |
+        <div lang="ja">ページフィードアイテムのアップロード処理を実施します。</div>
+        <div lang="en">Executes upload page feed item.</div>
       tags:
       - PageFeedItemService
       parameters:
@@ -4217,7 +4289,9 @@ paths:
           type: integer
           format: int64
         required: true
-        description: "<div lang=\"ja\">アカウントIDです。</div><div lang=\"en\">Account ID.</div>"
+        description: |
+          <div lang="ja">アカウントIDです。</div>
+          <div lang="en">Account ID.</div>
       - in: query
         name: uploadType
         schema:
@@ -4226,19 +4300,21 @@ paths:
           - NEW_OR_REPLACE
           - MODIFY
         required: true
-        description: "<div lang=\"ja\">PageFeedItemUploadTypeは、アップロードする方法の種類を表します。</div><div\
-          \ lang=\"en\">PageFeedItemUploadType displays kind of upload method.</div><hr>\
-          \ <code>NEW_OR_REPLACE</code> - <div lang=\"ja\">新規登録または、すべて置き換える場合の設定</div><div\
-          \ lang=\"en\">New registration or replace all.</div> <code>MODIFY</code>\
-          \ - <div lang=\"ja\">既存のページフィードアイテムを更新</div><div lang=\"en\">Modify existing\
-          \ page feed item.</div>"
+        description: |
+          <div lang="ja">PageFeedItemUploadTypeは、アップロードする方法の種類を表します。</div>
+          <div lang="en">PageFeedItemUploadType displays kind of upload method.</div>
+          <hr>
+          <code>NEW_OR_REPLACE</code> - <div lang="ja">新規登録または、すべて置き換える場合の設定</div><div lang="en">New registration or replace all.</div>
+          <code>MODIFY</code> - <div lang="ja">既存のページフィードアイテムを更新</div><div lang="en">Modify existing page feed item.</div>
       - in: query
         name: feedId
         schema:
           type: integer
           format: int64
         required: true
-        description: "<div lang=\"ja\">フィードIDです。</div><div lang=\"en\">Feed ID.</div>"
+        description: |
+          <div lang="ja">フィードIDです。</div>
+          <div lang="en">Feed ID.</div>
       requestBody:
         content:
           multipart/form-data:
@@ -4285,8 +4361,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /CampaignTargetService/add:
     post:
-      description: "<div lang=\"ja\">キャンペーンのターゲティング設定に関する情報を追加します。</div><div lang=\"\
-        en\">Adds campaign informations related to targeting setting.</div>"
+      description: |
+        <div lang="ja">キャンペーンのターゲティング設定に関する情報を追加します。</div>
+        <div lang="en">Adds campaign informations related to targeting setting.</div>
       tags:
       - CampaignTargetService
       requestBody:
@@ -4379,8 +4456,9 @@ paths:
                 format: binary
   /AdGroupService/add:
     post:
-      description: "<div lang=\"ja\">広告グループを追加します。</div><div lang=\"en\">Create Ad\
-        \ group information.</div>"
+      description: |
+        <div lang="ja">広告グループを追加します。</div>
+        <div lang="en">Create Ad group information.</div>
       tags:
       - AdGroupService
       requestBody:
@@ -4437,19 +4515,20 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /AdGroupFeedService/set:
     post:
-      description: "<div lang=\"ja\">広告グループにFeedItem情報を追加・更新・解除（削除）します。更新は常に上書きされるため追加分を含めて更新する必要があります。<br>\
-        \ ・FeedItem情報を解除するときは空の情報で更新します。<br>・1リクエストで異なるキャンペーン配下の広告グループに対してFeedItem情報の設定が可能です。<br>\
-        \ ・1つの広告グループに設定できるFeedItem情報は、QUICKLINKS、CALLEXTENSIONでそれぞれ20件までです。<br> ・CALLEXTENSIONについては1広告グループあたり1件の設定をお薦めします。<br>\
-        \ ・1リクエスト内で同一のadGroupIdに複数のFeedItem情報を設定できません。</div> <div lang=\"en\">Add,\
-        \ update or release(remove) FeedItem information of ad group.<br> Update will\
-        \ overwrite the old information, so have to include the additional information\
-        \ on every updates. <br> ・To release FeedItem information, update with blank\
-        \ data.<br>・It is possible to set FeedItem information to ad groups in different\
-        \ campaigns by single request.<br> ・FeedItem information that can be set for\
-        \ a single ad group is up to 20 for each QUICKLINKS, CALLEXTENSION.<br> ・As\
-        \ for CALLEXTENSION, We recommend setting only one phone number per ad group.<br>\
-        \ ・It is not possible to set multiple FeedItem information to an adGroupId\
-        \ by single request.</div>"
+      description: |
+        <div lang="ja">広告グループにFeedItem情報を追加・更新・解除（削除）します。更新は常に上書きされるため追加分を含めて更新する必要があります。<br>
+        ・FeedItem情報を解除するときは空の情報で更新します。<br>
+        ・1リクエストで異なるキャンペーン配下の広告グループに対してFeedItem情報の設定が可能です。<br>
+        ・1つの広告グループに設定できるFeedItem情報は、QUICKLINKS、CALLEXTENSIONでそれぞれ20件までです。<br>
+        ・CALLEXTENSIONについては1広告グループあたり1件の設定をお薦めします。<br>
+        ・1リクエスト内で同一のadGroupIdに複数のFeedItem情報を設定できません。</div>
+        <div lang="en">Add, update or release(remove) FeedItem information of ad group.<br>
+        Update will overwrite the old information, so have to include the additional information on every updates.<br>
+        ・To release FeedItem information, update with blank data.<br>
+        ・It is possible to set FeedItem information to ad groups in different campaigns by single request.<br>
+        ・FeedItem information that can be set for a single ad group is up to 20 for each QUICKLINKS, CALLEXTENSION.<br>
+        ・As for CALLEXTENSION, We recommend setting only one phone number per ad group.<br>
+        ・It is not possible to set multiple FeedItem information to an adGroupId by single request.</div>
       tags:
       - AdGroupFeedService
       requestBody:
@@ -4494,8 +4573,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /CampaignRetargetingListService/get:
     post:
-      description: "<div lang=\"ja\">キャンペーン階層におけるターゲットリストの設定情報を取得します。</div><div lang=\"\
-        en\">Retreive the target list setting in campaign level.</div>"
+      description: |
+        <div lang="ja">キャンペーン階層におけるターゲットリストの設定情報を取得します。</div>
+        <div lang="en">Retreive the target list setting in campaign level.</div>
       tags:
       - CampaignRetargetingListService
       requestBody:
@@ -4541,8 +4621,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /FeedService/set:
     post:
-      description: "<div lang=\"ja\">FeedItem情報を更新します。</div><div lang=\"en\">Updates\
-        \ Feed information.</div>"
+      description: |
+        <div lang="ja">FeedItem情報を更新します。</div>
+        <div lang="en">Updates Feed information.</div>
       tags:
       - FeedService
       requestBody:
@@ -4589,8 +4670,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /CampaignService/add:
     post:
-      description: "<div lang=\"ja\">キャンペーンを追加します。</div><div lang=\"en\">Add campaign\
-        \ information.</div>"
+      description: |
+        <div lang="ja">キャンペーンを追加します。</div>
+        <div lang="en">Add campaign information.</div>
       tags:
       - CampaignService
       requestBody:
@@ -4653,8 +4735,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /TargetingIdeaService/get:
     post:
-      description: "<div lang=\"ja\">指定された情報を元に新しいキーワード候補を提案するサービスです。</div><div lang=\"\
-        en\">Suggests related keywords based on the specified information.</div>"
+      description: |
+        <div lang="ja">指定された情報を元に新しいキーワード候補を提案するサービスです。</div>
+        <div lang="en">Suggests related keywords based on the specified information.</div>
       tags:
       - TargetingIdeaService
       requestBody:
@@ -4698,8 +4781,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /CampaignService/set:
     post:
-      description: "<div lang=\"ja\">キャンペーンを更新します。</div><div lang=\"en\">Updates the\
-        \ information related to campaigns.</div>"
+      description: |
+        <div lang="ja">キャンペーンを更新します。</div>
+        <div lang="en">Updates the information related to campaigns.</div>
       tags:
       - CampaignService
       requestBody:
@@ -4762,8 +4846,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /BiddingStrategyService/get:
     post:
-      description: "<div lang=\"ja\">自動入札設定に関する情報を取得します。</div><div lang=\"en\">Returns\
-        \ auto bidding information.</div>"
+      description: |
+        <div lang="ja">自動入札設定に関する情報を取得します。</div>
+        <div lang="en">Returns auto bidding information.</div>
       tags:
       - BiddingStrategyService
       requestBody:
@@ -4809,8 +4894,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /SharedCriterionService/remove:
     post:
-      description: "<div lang=\"ja\">対象外キーワードリストから対象外キーワードを削除します。</div><div lang=\"\
-        en\">Removes negative keywords from negative keyword list.</div>"
+      description: |
+        <div lang="ja">対象外キーワードリストから対象外キーワードを削除します。</div>
+        <div lang="en">Removes negative keywords from negative keyword list.</div>
       tags:
       - SharedCriterionService
       requestBody:
@@ -4855,8 +4941,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /FeedService/add:
     post:
-      description: "<div lang=\"ja\">FeedItem情報を追加します。</div><div lang=\"en\">Add the\
-        \ information related to Feed.</div>"
+      description: |
+        <div lang="ja">FeedItem情報を追加します。</div>
+        <div lang="en">Add the information related to Feed.</div>
       tags:
       - FeedService
       requestBody:
@@ -4903,7 +4990,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /LabelService/add:
     post:
-      description: "<div lang=\"ja\">ラベルを追加します。</div><div lang=\"en\">Add label information.</div>"
+      description: |
+        <div lang="ja">ラベルを追加します。</div>
+        <div lang="en">Add label information.</div>
       tags:
       - LabelService
       requestBody:
@@ -4947,8 +5036,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /LabelService/set:
     post:
-      description: "<div lang=\"ja\">ラベルを更新します。</div><div lang=\"en\">Updates the\
-        \ information related to labels.</div>"
+      description: |
+        <div lang="ja">ラベルを更新します。</div>
+        <div lang="en">Updates the information related to labels.</div>
       tags:
       - LabelService
       requestBody:
@@ -4992,11 +5082,13 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /AdGroupWebpageService/set:
     post:
-      description: "<div lang=\"ja\">広告グループにPageFeedItemを配信、又は、除外として設定します。<br>※1リクエストで異なるキャンペーン配下の広告グループに対してWebページ情報の設定が可能です。<br>※1リクエスト内で同一のadGroupIdに同一組み合わせのWebpageParameterを設定できません。</div><div\
-        \ lang=\"en\">Set allowed or excluded settings of PageFeedItem for ad group.\
-        \ <br>∗ With one request, web page information can be set for ad group under\
-        \ different campaign. <br>∗ Within one request, you can not set the same combination\
-        \ WebpageParameter to the same adGroupId.</div>"
+      description: |
+        <div lang="ja">広告グループにPageFeedItemを配信、又は、除外として設定します。<br>
+        ※1リクエストで異なるキャンペーン配下の広告グループに対してWebページ情報の設定が可能です。<br>
+        ※1リクエスト内で同一のadGroupIdに同一組み合わせのWebpageParameterを設定できません。</div>
+        <div lang="en">Set allowed or excluded settings of PageFeedItem for ad group.<br>
+        ∗ With one request, web page information can be set for ad group under different campaign.<br>
+        ∗ Within one request, you can not set the same combination WebpageParameter to the same adGroupId.</div>
       tags:
       - AdGroupWebpageService
       requestBody:
@@ -5043,8 +5135,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /FeedService/remove:
     post:
-      description: "<div lang=\"ja\">FeedItem情報を削除します。</div><div lang=\"en\">Removes\
-        \ Feed information.</div>"
+      description: |
+        <div lang="ja">FeedItem情報を削除します。</div>
+        <div lang="en">Removes Feed information.</div>
       tags:
       - FeedService
       requestBody:
@@ -5091,9 +5184,11 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /BidLandscapeService/get:
     post:
-      description: "<div lang=\"ja\">入札単価を変更したときのインプレッションやクリックの変化を予測します。<br>一度に指定できるクライテリアは最大100個です。</div><div\
-        \ lang=\"en\">Estimate the change of an impression and a click when a bid\
-        \ price is changed. <br>The maximum value of the selector criteria is 100.</div>"
+      description: |
+        <div lang="ja">入札単価を変更したときのインプレッションやクリックの変化を予測します。<br>
+        一度に指定できるクライテリアは最大100個です。</div>
+        <div lang="en">Estimate the change of an impression and a click when a bid price is changed.<br>
+        The maximum value of the selector criteria is 100.</div>
       tags:
       - BidLandscapeService
       requestBody:
@@ -5137,8 +5232,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /CampaignTargetService/remove:
     post:
-      description: "<div lang=\"ja\">キャンペーンのターゲティング設定に関する情報を削除します。</div><div lang=\"\
-        en\">Delete campaign informations related to targeting setting.</div>"
+      description: |
+        <div lang="ja">キャンペーンのターゲティング設定に関する情報を削除します。</div>
+        <div lang="en">Delete campaign informations related to targeting setting.</div>
       tags:
       - CampaignTargetService
       requestBody:
@@ -5184,8 +5280,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /AuditLogService/addJob:
     post:
-      description: "<div lang=\"ja\">操作履歴ファイルをダウンロードするためのジョブを登録します。</div><div lang=\"\
-        en\">Add a job to download operation history data file.</div>"
+      description: |
+        <div lang="ja">操作履歴ファイルをダウンロードするためのジョブを登録します。</div>
+        <div lang="en">Add a job to download operation history data file.</div>
       tags:
       - AuditLogService
       requestBody:
@@ -5229,8 +5326,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /CampaignExportService/getExportFields:
     get:
-      description: "<div lang=\"ja\">エクスポートできるフィールドを照会します。</div><div lang=\"en\">Obtains\
-        \ the fields which can export.</div>"
+      description: |
+        <div lang="ja">エクスポートできるフィールドを照会します。</div>
+        <div lang="en">Obtains the fields which can export.</div>
       tags:
       - CampaignExportService
       responses:
@@ -5269,8 +5367,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /AdGroupAdLabelService/add:
     post:
-      description: "<div lang=\"ja\">ラベルと広告の紐付けを登録します。</div><div lang=\"en\">Add informations\
-        \ of related ad and label.</div>"
+      description: |
+        <div lang="ja">ラベルと広告の紐付けを登録します。</div>
+        <div lang="en">Add informations of related ad and label.</div>
       tags:
       - AdGroupAdLabelService
       requestBody:
@@ -5314,8 +5413,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /BalanceService/get:
     post:
-      description: "<div lang=\"ja\">選択したアカウント残高に関する情報を取得します。</div><div lang=\"en\"\
-        >Returns account balance.</div>"
+      description: |
+        <div lang="ja">選択したアカウント残高に関する情報を取得します。</div>
+        <div lang="en">Returns account balance.</div>
       tags:
       - BalanceService
       requestBody:
@@ -5359,18 +5459,19 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /CampaignFeedService/set:
     post:
-      description: "<div lang=\"ja\">キャンペーンにFeedItem情報を追加・更新・解除（削除）します。<br> ・FeedItem情報を解除するときは空の情報で更新します。<br>\
-        \ ・1つのキャンペーンに設定できるFeedItem情報は、QUICKLINKS、CALLEXTENSIONでそれぞれ20件までです。<br> ・CALLEXTENSIONについて1キャンペーンあたり1件の設定をお薦めします。<br>\
-        \ ・1リクエスト内で同一のcampaignIdに複数のFeedItem情報は設定できません。</div><div lang=\"en\">Add,\
-        \ update or release(remove) FeedItem information of ad group.<br>Update will\
-        \ overwrite the old information, so have to include the additional information\
-        \ on every updates. <br>* To release FeedItem information, update with blank\
-        \ data.<br> * It is possible to set FeedItem information to ad groups in different\
-        \ campaigns by single request.<br> * FeedItem information that can be set\
-        \ for a single ad group is up to 20 for each QUICKLINKS, CALLEXTENSION.<br>\
-        \ * As for CALLEXTENSION, We recommend setting only one phone number per ad\
-        \ group.<br> * It is not possible to set multiple FeedItem information to\
-        \ an campaignId by single request.</div>"
+      description: |
+        <div lang="ja">キャンペーンにFeedItem情報を追加・更新・解除（削除）します。<br>
+        ・FeedItem情報を解除するときは空の情報で更新します。<br>
+        ・1つのキャンペーンに設定できるFeedItem情報は、QUICKLINKS、CALLEXTENSIONでそれぞれ20件までです。<br>
+        ・CALLEXTENSIONについて1キャンペーンあたり1件の設定をお薦めします。<br>
+        ・1リクエスト内で同一のcampaignIdに複数のFeedItem情報は設定できません。
+        </div><div lang="en">Add, update or release(remove) FeedItem information of ad group.<br>
+        Update will overwrite the old information, so have to include the additional information on every updates. <br>
+        * To release FeedItem information, update with blank data.<br>
+        * It is possible to set FeedItem information to ad groups in different campaigns by single request.<br>
+        * FeedItem information that can be set for a single ad group is up to 20 for each QUICKLINKS, CALLEXTENSION.<br>
+        * As for CALLEXTENSION, We recommend setting only one phone number per ad group.<br>
+        * It is not possible to set multiple FeedItem information to an campaignId by single request.</div>
       tags:
       - CampaignFeedService
       requestBody:
@@ -5415,9 +5516,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /PageFeedItemService/getReviewSummary:
     post:
-      description: "<div lang=\"ja\">登録されているページフィードアイテムの審査成績・状況のサマリーを取得します。</div><div\
-        \ lang=\"en\">Gets registered approval records of page feed item and summary\
-        \ of each status.</div>"
+      description: |
+        <div lang="ja">登録されているページフィードアイテムの審査成績・状況のサマリーを取得します。</div>
+        <div lang="en">Gets registered approval records of page feed item and summary of each status.</div>
       tags:
       - PageFeedItemService
       requestBody:
@@ -5462,8 +5563,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /AdGroupBidMultiplierService/remove:
     post:
-      description: "<div lang=\"ja\">広告グループに設定済みの入札価格調整率を削除します。</div><div lang=\"\
-        en\">Remove bid multiplier which already set to ad group.</div>"
+      description: |
+        <div lang="ja">広告グループに設定済みの入札価格調整率を削除します。</div>
+        <div lang="en">Remove bid multiplier which already set to ad group.</div>
       tags:
       - AdGroupBidMultiplierService
       requestBody:
@@ -5508,8 +5610,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /AdGroupRetargetingListService/get:
     post:
-      description: "<div lang=\"ja\">広告グループレベルでのターゲットリスト設定に関する情報を取得します。</div><div\
-        \ lang=\"en\">Retreive the target list setting in ad group level.</div>"
+      description: |
+        <div lang="ja">広告グループレベルでのターゲットリスト設定に関する情報を取得します。</div>
+        <div lang="en">Retreive the target list setting in ad group level.</div>
       tags:
       - AdGroupRetargetingListService
       requestBody:
@@ -5555,8 +5658,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /AdGroupFeedService/get:
     post:
-      description: "<div lang=\"ja\">広告グループに設定されているFeedItem情報を取得します。</div><div lang=\"\
-        en\">Returns FeedItem information of ad groups.</div>"
+      description: |
+        <div lang="ja">広告グループに設定されているFeedItem情報を取得します。</div>
+        <div lang="en">Returns FeedItem information of ad groups.</div>
       tags:
       - AdGroupFeedService
       requestBody:
@@ -5601,8 +5705,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /ReportDefinitionService/add:
     post:
-      description: "<div lang=\"ja\">レポート定義を追加します。</div><div lang=\"en\">Adds report\
-        \ definitions.</div>"
+      description: |
+        <div lang="ja">レポート定義を追加します。</div>
+        <div lang="en">Adds report definitions.</div>
       tags:
       - ReportDefinitionService
       requestBody:
@@ -5692,8 +5797,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /FeedItemService/set:
     post:
-      description: "<div lang=\"ja\">フィードアイテム情報を更新します。</div><div lang=\"en\">Updates\
-        \ the Feed Item details.</div>"
+      description: |
+        <div lang="ja">フィードアイテム情報を更新します。</div>
+        <div lang="en">Updates the Feed Item details.</div>
       tags:
       - FeedItemService
       requestBody:
@@ -5747,9 +5853,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /AdGroupWebpageService/get:
     post:
-      description: "<div lang=\"ja\">広告グループに設定されているPageFeedItemの配信/除外設定を取得します。</div><div\
-        \ lang=\"en\">Get allowed or excluded settings of PageFeedItem setting in\
-        \ ad group.</div>"
+      description: |
+        <div lang="ja">広告グループに設定されているPageFeedItemの配信/除外設定を取得します。</div>
+        <div lang="en">Get allowed or excluded settings of PageFeedItem setting in ad group.</div>
       tags:
       - AdGroupWebpageService
       requestBody:
@@ -5796,8 +5902,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /AuditLogService/get:
     post:
-      description: "<div lang=\"ja\">操作履歴のダウンロードURLを取得します。</div><div lang=\"en\">Get\
-        \ the download URL for operation history data.</div>"
+      description: |
+        <div lang="ja">操作履歴のダウンロードURLを取得します。</div>
+        <div lang="en">Get the download URL for operation history data.</div>
       tags:
       - AuditLogService
       requestBody:
@@ -5841,9 +5948,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /AdGroupAdService/setTrademarkStatus:
     post:
-      description: "<div lang=\"ja\">商標の使用制限が解除されている場合は、制限が解除された旨の値が返却されます。</div><div\
-        \ lang=\"en\">When the trademark restriction is removed, a value indicates\
-        \ \"removed\" will be returned.</div>"
+      description: |
+        <div lang="ja">商標の使用制限が解除されている場合は、制限が解除された旨の値が返却されます。</div>
+        <div lang="en">When the trademark restriction is removed, a value indicates "removed" will be returned.</div>
       tags:
       - AdGroupAdService
       requestBody:
@@ -5896,8 +6003,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /CampaignService/remove:
     post:
-      description: "<div lang=\"ja\">キャンペーンを削除します。</div><div lang=\"en\">Removes the\
-        \ inforamtion related to campaigns.</div>"
+      description: |
+        <div lang="ja">キャンペーンを削除します。</div>
+        <div lang="en">Removes the inforamtion related to campaigns.</div>
       tags:
       - CampaignService
       requestBody:
@@ -5960,8 +6068,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /CampaignWebpageService/get:
     post:
-      description: "<div lang=\"ja\">キャンペーンに設定されているPageFeedItemを照会します。</div><div lang=\"\
-        en\">Get PageFeedItem setting in campaign.</div>"
+      description: |
+        <div lang="ja">キャンペーンに設定されているPageFeedItemを照会します。</div>
+        <div lang="en">Get PageFeedItem setting in campaign.</div>
       tags:
       - CampaignWebpageService
       requestBody:
@@ -6006,8 +6115,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /RetargetingListService/add:
     post:
-      description: "<div lang=\"ja\">ターゲットリストを追加します。</div><div lang=\"en\">Adds target\
-        \ list.</div>"
+      description: |
+        <div lang="ja">ターゲットリストを追加します。</div>
+        <div lang="en">Adds target list.</div>
       tags:
       - RetargetingListService
       requestBody:
@@ -6060,8 +6170,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /AdGroupCriterionLabelService/add:
     post:
-      description: "<div lang=\"ja\">ラベルと広告グループのクライテリアの紐付けを登録します。</div><div lang=\"\
-        en\">Add informations of related conditions (criteria) of ad group and label.</div>"
+      description: |
+        <div lang="ja">ラベルと広告グループのクライテリアの紐付けを登録します。</div>
+        <div lang="en">Add informations of related conditions (criteria) of ad group and label.</div>
       tags:
       - AdGroupCriterionLabelService
       requestBody:
@@ -6106,9 +6217,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /AdGroupCriterionLabelService/remove:
     post:
-      description: "<div lang=\"ja\">ラベルと広告グループのクライテリアの紐付けを削除します。</div><div lang=\"\
-        en\">Remove informations of related conditions (criteria) of ad group and\
-        \ label.</div>"
+      description: |
+        <div lang="ja">ラベルと広告グループのクライテリアの紐付けを削除します。</div>
+        <div lang="en">Remove informations of related conditions (criteria) of ad group and label.</div>
       tags:
       - AdGroupCriterionLabelService
       requestBody:
@@ -6153,9 +6264,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /CampaignTargetService/set:
     post:
-      description: "<div lang=\"ja\">キャンペーンのターゲティング設定に関する情報を変更します。※入札調整率（bidmultiplier）のみ変更可能です。</div><div\
-        \ lang=\"en\">Update campaign informations related to targeting setting.<br>*\
-        \ Bid Adjustment (bidmultiplier) is only modifiable.</div>"
+      description: |
+        <div lang="ja">キャンペーンのターゲティング設定に関する情報を変更します。※入札調整率（bidmultiplier）のみ変更可能です。</div>
+        <div lang="en">Update campaign informations related to targeting setting.<br>* Bid Adjustment (bidmultiplier) is only modifiable.</div>
       tags:
       - CampaignTargetService
       requestBody:
@@ -6201,8 +6312,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /CampaignCriterionService/get:
     post:
-      description: "<div lang=\"ja\">キャンペーンの除外クライテリアに関する情報を取得します。</div><div lang=\"\
-        en\">Gets negative criteria in campaign-level.</div>"
+      description: |
+        <div lang="ja">キャンペーンの除外クライテリアに関する情報を取得します。</div>
+        <div lang="en">Gets negative criteria in campaign-level.</div>
       tags:
       - CampaignCriterionService
       requestBody:

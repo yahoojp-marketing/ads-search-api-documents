@@ -8,4 +8,8 @@ ConversionTrackerServiceAppPostbackUrl:
       type: string
       nullable: true
   title: ConversionTrackerServiceAppPostbackUrl
-  description: "<div lang=\"ja\">ポストバックURLです。<br> このフィールドは、いずれの場合でも省略可能となります。</div><div lang=\"en\">Postback URL. <br> This field is optional in any cases. </div>"
+  description: |
+    <div lang="ja">ポストバックURLです。<br>
+    このフィールドは、いずれの場合でも省略可能となります。</div>
+    <div lang="en">Postback URL.<br>
+    This field is optional in any cases.</div>

@@ -8,5 +8,6 @@ CampaignExportServiceReturnValue:
       items:
         $ref: 'CampaignExportServiceValue.yaml#/CampaignExportServiceValue'
   title: CampaignExportServiceReturnValue
-  description: "<div lang=\"ja\">CampaignExportServiceReturnValue オブジェクトは、実行結果を表します。</div><div lang=\"en\">CampaignExportServiceReturnValue\
-    \ object describes the result.</div>"
+  description: |
+    <div lang="ja">CampaignExportServiceReturnValue オブジェクトは、実行結果を表します。</div>
+    <div lang="en">CampaignExportServiceReturnValue object describes the result.</div>

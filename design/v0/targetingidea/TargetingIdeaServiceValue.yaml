@@ -7,9 +7,11 @@ TargetingIdeaServiceValue:
       nullable: true
       format: int64
       description: |
-        <div lang="ja">検索条件：アカウントIDです。</div><div lang="en">Account ID.</div>
+        <div lang="ja">検索条件：アカウントIDです。</div>
+        <div lang="en">Account ID.</div>
     typeAttributeMapEntry:
       $ref: 'TargetingIdeaServiceTypeAttributeMapEntry.yaml#/TargetingIdeaServiceTypeAttributeMapEntry'
   title: TargetingIdeaServiceValue
   description: |
-    <div lang="ja">TargetingIdeaServiceValueオブジェクトは、関連キーワードの結果を表します。</div><div lang="en">Result of the related keyword.</div>
+    <div lang="ja">TargetingIdeaServiceValueオブジェクトは、関連キーワードの結果を表します。</div>
+    <div lang="en">Result of the related keyword.</div>

@@ -9,12 +9,16 @@ CampaignCriterionServiceOperation:
       type: integer
       nullable: false
       format: int64
-      description: "<div lang=\"ja\">アカウントIDです。</div><div lang=\"en\">Account ID.</div>"
+      description: |
+        <div lang="ja">アカウントIDです。</div>
+        <div lang="en">Account ID.</div>
     campaignId:
       type: integer
       nullable: true
       format: int64
-      description: "<div lang=\"ja\">キャンペーンIDです。</div><div lang=\"en\">Campaign ID.</div>"
+      description: |
+        <div lang="ja">キャンペーンIDです。</div>
+        <div lang="en">Campaign ID.</div>
     operand:
       type: array
       nullable: true
@@ -25,5 +29,6 @@ CampaignCriterionServiceOperation:
     use:
       $ref: 'CampaignCriterionServiceUse.yaml#/CampaignCriterionServiceUse'
   title: CampaignCriterionServiceOperation
-  description: "<div lang=\"ja\">CampaignCriterionServiceOperationオブジェクトは、操作の対象となるキャンペーンのクライテリアと処理の内容を表します。</div><div lang=\"en\">CampaignCriterionServiceOperation\
-    \ object describes campaign criteria for operation and list of operations.</div>"
+  description: |
+    <div lang="ja">CampaignCriterionServiceOperationオブジェクトは、操作の対象となるキャンペーンのクライテリアと処理の内容を表します。</div>
+    <div lang="en">CampaignCriterionServiceOperation object describes campaign criteria for operation and list of operations.</div>

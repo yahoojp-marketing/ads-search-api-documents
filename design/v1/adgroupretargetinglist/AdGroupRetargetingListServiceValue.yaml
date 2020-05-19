@@ -12,8 +12,10 @@ AdGroupRetargetingListServiceValue:
     operationSucceeded:
       type: boolean
       nullable: true
-      description: "<div lang=\"ja\">処理結果です。</div><div lang=\"en\">Process results.</div>"
+      description: |
+        <div lang="ja">処理結果です。</div>
+        <div lang="en">Process results.</div>
   title: AdGroupRetargetingListServiceValue
-  description: "<div lang=\"ja\">AdGroupRetargetingListServiceValueは、広告グループレベルでのターゲットリスト設定の実行結果（1\
-    \ Entity）を保持するオブジェクトです。</div><div lang=\"en\">AdGroupRetargetingListServiceValue is an oject\
-    \ that holds results (one entity).</div>"
+  description: |
+    <div lang="ja">AdGroupRetargetingListServiceValueは、広告グループレベルでのターゲットリスト設定の実行結果（1 Entity）を保持するオブジェクトです。</div>
+    <div lang="en">AdGroupRetargetingListServiceValue is an oject that holds results (one entity).</div>

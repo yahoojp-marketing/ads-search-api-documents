@@ -9,7 +9,9 @@ AuditLogServiceOperation:
       type: integer
       nullable: false
       format: int64
-      description: "<div lang=\"ja\">アカウントIDです。</div><div lang=\"en\">Account ID.</div>"
+      description: |
+        <div lang="ja">アカウントIDです。</div>
+        <div lang="en">Account ID.</div>
     operand:
       type: array
       nullable: true
@@ -18,5 +20,6 @@ AuditLogServiceOperation:
       minItems: 1
       maxItems: 1
   title: AuditLogServiceOperation
-  description: "<div lang=\"ja\">AuditLogServiceOperationオブジェクトは、登録対象のジョブを保持します。</div><div lang=\"en\">AuditLogServiceOperation\
-    \ object retains the job information to be added.</div>"
+  description: |
+    <div lang="ja">AuditLogServiceOperationオブジェクトは、登録対象のジョブを保持します。</div>
+    <div lang="en">AuditLogServiceOperation object retains the job information to be added.</div>

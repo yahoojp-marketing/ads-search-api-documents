@@ -8,7 +8,9 @@ FeedServiceSelector:
       type: integer
       nullable: false
       format: int64
-      description: "<div lang=\"ja\">アカウントIDです。</div><div lang=\"en\">Account ID.</div>"
+      description: |
+        <div lang="ja">アカウントIDです。</div>
+        <div lang="en">Account ID.</div>
     feedIds:
       type: array
       nullable: true
@@ -17,7 +19,9 @@ FeedServiceSelector:
         nullable: true
         format: int64
       maxItems: 200
-      description: "<div lang=\"ja\">自動データ挿入のリストのIDです。</div><div lang=\"en\">List ID of Feed.</div>"
+      description: |
+        <div lang="ja">自動データ挿入のリストのIDです。</div>
+        <div lang="en">List ID of Feed.</div>
     numberResults:
       type: integer
       nullable: true
@@ -25,9 +29,9 @@ FeedServiceSelector:
       minimum: 1
       maximum: 50
       default: 50
-      description: "<div lang=\"ja\">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div><div lang=\"en\">Maximum number of results\
-        \ to return in this page. This field must be greater than or equal to 1. Also\
-        \ see Entity Limits per operation.</div>"
+      description: |
+        <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div>
+        <div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1. Also see Entity Limits per operation.</div>
     placeholderTypes:
       type: array
       nullable: true
@@ -40,9 +44,10 @@ FeedServiceSelector:
       format: int32
       minimum: 1
       default: 1
-      description: "<div lang=\"ja\">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div><div lang=\"en\">Index of the first\
-        \ result to return in this page. This field must be greater than or equal\
-        \ to 1.</div>"
+      description: |
+        <div lang="ja">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div>
+        <div lang="en">Index of the first result to return in this page. This field must be greater than or equal to 1.</div>
   title: FeedServiceSelector
-  description: "<div lang=\"ja\">FeedServiceSelectorオブジェクトは、自動データ挿入のリストの基本情報を格納します。</div><div lang=\"en\">FeedServiceSelector\
-    \ describes the basic information of list of Data auto insertion.</div>"
+  description: |
+    <div lang="ja">FeedServiceSelectorオブジェクトは、自動データ挿入のリストの基本情報を格納します。</div>
+    <div lang="en">FeedServiceSelector describes the basic information of list of Data auto insertion.</div>

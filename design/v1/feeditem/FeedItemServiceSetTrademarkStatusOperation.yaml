@@ -10,7 +10,9 @@ FeedItemServiceSetTrademarkStatusOperation:
       type: integer
       nullable: false
       format: int64
-      description: "<div lang=\"ja\">アカウントIDです。</div><div lang=\"en\">Account ID</div>"
+      description: |
+        <div lang="ja">アカウントIDです。</div>
+        <div lang="en">Account ID</div>
     operand:
       type: array
       nullable: true
@@ -21,5 +23,6 @@ FeedItemServiceSetTrademarkStatusOperation:
     placeholderType:
       $ref: 'FeedItemServicePlaceholderType.yaml#/FeedItemServicePlaceholderType'
   title: FeedItemServiceSetTrademarkStatusOperation
-  description: "<div lang=\"ja\">FeedItemServiceSetTrademarkStatusOperationオブジェクトは、操作対象の商標使用制限の情報を格納します。</div><div lang=\"en\">FeedItemServiceSetTrademarkStatusOperation object holds the target's trademark restriction information.\
-      \ </div>"
+  description: |
+    <div lang="ja">FeedItemServiceSetTrademarkStatusOperationオブジェクトは、操作対象の商標使用制限の情報を格納します。</div>
+    <div lang="en">FeedItemServiceSetTrademarkStatusOperation object holds the target's trademark restriction information.</div>

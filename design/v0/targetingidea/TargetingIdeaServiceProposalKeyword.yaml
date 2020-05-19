@@ -14,7 +14,9 @@ TargetingIdeaServiceProposalKeyword:
       type: string
       nullable: true
       description: |
-        <div lang="ja">キーワードです。<br>※最大80文字、10ワードまで入力できます。</div><div lang="en">Keyword<br>*Can enter within 80 characters and/or 10 words.</div>
+        <div lang="ja">キーワードです。<br>※最大80文字、10ワードまで入力できます。</div>
+        <div lang="en">Keyword<br>*Can enter within 80 characters and/or 10 words.</div>
   title: TargetingIdeaServiceProposalKeyword
   description: |
-    <div lang="ja">TargetingIdeaServiceProposalKeywordオブジェクトは、関連キーワードのキーワードを格納するコンテナです。</div><div lang="en">A container of keywords related to specified keyword.</div>
+    <div lang="ja">TargetingIdeaServiceProposalKeywordオブジェクトは、関連キーワードのキーワードを格納するコンテナです。</div>
+    <div lang="en">A container of keywords related to specified keyword.</div>

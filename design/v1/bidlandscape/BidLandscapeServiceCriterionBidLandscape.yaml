@@ -6,6 +6,10 @@ BidLandscapeServiceCriterionBidLandscape:
       type: integer
       nullable: true
       format: int64
-      description: "<div lang=\"ja\">クライテリアIDです。</div><br><div lang=\"en\">Criterion ID.</div>"
+      description: |
+        <div lang="ja">クライテリアIDです。</div>
+        <div lang="en">Criterion ID.</div>
   title: BidLandscapeServiceCriterionBidLandscape
-  description: "<div lang=\"ja\">CriterionBidLandscapeオブジェクトは、クライテリアに関する予測の結果を表します。</div><br><div lang=\"en\">Expected results of criterion.</div>"
+  description: |
+    <div lang="ja">CriterionBidLandscapeオブジェクトは、クライテリアに関する予測の結果を表します。</div>
+    <div lang="en">Expected results of criterion.</div>

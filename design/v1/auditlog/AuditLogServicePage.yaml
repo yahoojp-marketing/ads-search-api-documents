@@ -6,12 +6,15 @@ AuditLogServicePage:
       type: integer
       nullable: false
       format: int32
-      description: "<div lang=\"ja\">取得される項目の総件数です。</div><div lang=\"en\">Total number of entries in the result that this page is a part of.</div>"
+      description: |
+        <div lang="ja">取得される項目の総件数です。</div>
+        <div lang="en">Total number of entries in the result that this page is a part of.</div>
     values:
       type: array
       nullable: true
       items:
         $ref: 'AuditLogServiceValue.yaml#/AuditLogServiceValue'
   title: AuditLogServicePage
-  description: "<div lang=\"ja\">AuditLogServicePageオブジェクトは、実行結果(全エンティティのリスト)を保持します。</div><div lang=\"en\">AuditLogServicePage\
-    \ object retains the execution result (list of all entities).</div>"
+  description: |
+    <div lang="ja">AuditLogServicePageオブジェクトは、実行結果(全エンティティのリスト)を保持します。</div>
+    <div lang="en">AuditLogServicePage object retains the execution result (list of all entities).</div>

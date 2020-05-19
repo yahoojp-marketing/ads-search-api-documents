@@ -6,15 +6,20 @@ FeedServiceAttribute:
       type: integer
       nullable: true
       format: int64
-      description: "<div lang=\"ja\">自動データ挿入のリストの属性（カラム）IDです。<br> このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div><div lang=\"en\">Attribute ID (column\
-        \ ID) of auto data insertion list. <br> Although this field will be returned in the response, it will be ignored on input. </div>"
+      description: |
+        <div lang="ja">自動データ挿入のリストの属性（カラム）IDです。<br> このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
+        <div lang="en">Attribute ID (column ID) of auto data insertion list.<br> Although this field will be returned in the response, it will be ignored on input.</div>
     feedAttributeName:
       type: string
       nullable: true
-      description: "<div lang=\"ja\">自動データ挿入のリストの属性（カラム）名です。<br> このフィールドはADDおよびSET時に必須となり、REMOVE時に無視されます。</div><div lang=\"en\">Attribute name (column\
-        \ name) of auto data insertion list. <br>This field is required in ADD and SET operation, and will be ignored in REMOVE operation.</div>"
+      description: |
+        <div lang="ja">自動データ挿入のリストの属性（カラム）名です。<br> このフィールドはADDおよびSET時に必須となり、REMOVE時に無視されます。</div>
+        <div lang="en">Attribute name (column name) of auto data insertion list.<br>This field is required in ADD and SET operation, and will be ignored in REMOVE operation.</div>
     placeholderField:
       $ref: 'FeedServicePlaceholderField.yaml#/FeedServicePlaceholderField'
   title: FeedServiceAttribute
-  description: "<div lang=\"ja\">FeedServiceAttributeオブジェクトは、自動データ挿入のリストの属性を格納します。<br>このフィールドは、ADDおよびSET時に省略可能となり、REMOVE時に無視されます。</div><div lang=\"en\">FeedServiceAttribute\
-    \ object contains the attribute of auto data insertion list. <br>This field is optional in ADD and SET operation, and will be ignored in REMOVE operation.</div>"
+  description: |
+    <div lang="ja">FeedServiceAttributeオブジェクトは、自動データ挿入のリストの属性を格納します。<br>
+    このフィールドは、ADDおよびSET時に省略可能となり、REMOVE時に無視されます。</div>
+    <div lang="en">FeedServiceAttribute object contains the attribute of auto data insertion list.<br>
+    This field is optional in ADD and SET operation, and will be ignored in REMOVE operation.</div>

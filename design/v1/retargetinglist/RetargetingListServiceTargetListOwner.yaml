@@ -2,11 +2,14 @@ RetargetingListServiceTargetListOwner:
   type: string
   nullable: true
   enum:
-  - OWNER
-  - SHARED
-  - UNKNOWN
+    - OWNER
+    - SHARED
+    - UNKNOWN
   title: RetargetingListServiceTargetListOwner
-  description: "<div lang=\"ja\">RetargetingListServiceTargetListOwnerは、ターゲットリストの所有状態を表します。</div><div lang=\"en\">RetargetingListServiceTargetListOwner\
-    \ describes the owner information of the target list.</div><hr>\n<p>* <code>OWNER</code> - <span lang=\"ja\">アカウントで専有されているターゲットリストです。</span><span lang=\"en\">The\
-    \ exclusive target list owned by an account.</span></p><p>* <code>SHARED</code> - <span lang=\"ja\">複数のアカウント間で共有されているターゲットリストです。</span><span lang=\"en\">The\
-    \ target list shared by multiple accounts.</span></p><p>* <code>UNKNOWN</code> - <span lang=\"ja\">未知の値です。</span><span lang=\"en\">Unknown Value</span></p>"
+  description: |
+    <div lang="ja">RetargetingListServiceTargetListOwnerは、ターゲットリストの所有状態を表します。</div>
+    <div lang="en">RetargetingListServiceTargetListOwner describes the owner information of the target list.</div>
+    <hr>
+    <p>* <code>OWNER</code> - <span lang="ja">アカウントで専有されているターゲットリストです。</span><span lang="en">The exclusive target list owned by an account.</span></p>
+    <p>* <code>SHARED</code> - <span lang="ja">複数のアカウント間で共有されているターゲットリストです。</span><span lang="en">The target list shared by multiple accounts.</span></p>
+    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>

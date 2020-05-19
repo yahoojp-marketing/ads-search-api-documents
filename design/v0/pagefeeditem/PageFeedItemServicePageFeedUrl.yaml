@@ -7,7 +7,10 @@ PageFeedItemServicePageFeedUrl:
     text:
       type: string
       nullable: true
-      description: "<div lang=\"ja\">ページフィードURL</div><div lang=\"en\">Page feed URL</div>"
+      description: |
+        <div lang="ja">ページフィードURL</div>
+        <div lang="en">Page feed URL</div>
   title: PageFeedItemServicePageFeedUrl
-  description: "<div lang=\"ja\">PageFeedItemServicePageFeedUrlオブジェクトは、ページフィードURL検索条件を格納します。</div><div lang=\"en\">PageFeedItemServicePageFeedUrl\
-    \ object stores search condition of page feed URL.</div>"
+  description: |
+    <div lang="ja">PageFeedItemServicePageFeedUrlオブジェクトは、ページフィードURL検索条件を格納します。</div>
+    <div lang="en">PageFeedItemServicePageFeedUrl object stores search condition of page feed URL.</div>

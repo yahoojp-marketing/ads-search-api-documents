@@ -6,28 +6,26 @@ BiddingStrategyServiceTargetCpaBiddingScheme:
       type: integer
       nullable: true
       format: int64
-      description: "<div lang=\"ja\">入札価格の上限です。<br>※「0」が設定された場合、上限設定はありません。<br>このフィールドは、いずれの場合でも省略可能となります。</div><div lang=\"en\">CPC\
-        \ limit.<br>* No limits if &#34;0&#34; is set.<br>This field is optional in any cases.
-</div>"
+      description: |
+        <div lang="ja">入札価格の上限です。<br>※「0」が設定された場合、上限設定はありません。<br>このフィールドは、いずれの場合でも省略可能となります。</div>
+        <div lang="en">CPC limit.<br>* No limits if &#34;0&#34; is set.<br>This field is optional in any cases.</div>
     bidFloor:
       type: integer
       nullable: true
       format: int64
-
-      description: "<div lang=\"ja\">入札価格の下限です。<br>※ 設定を解除する場合は「0」を指定します。<br>このフィールドは、いずれの場合でも省略可能となります。</div><div lang=\"en\">Minimum CPC.<br>* Set\
-
-        \ &#34;0&#34; to deactivate.<br>This field is optional in any cases.
-</div>"
+      description: |
+        <div lang="ja">入札価格の下限です。<br>※ 設定を解除する場合は「0」を指定します。<br>このフィールドは、いずれの場合でも省略可能となります。</div>
+        <div lang="en">Minimum CPC.<br>* Set &#34;0&#34; to deactivate.<br>This field is optional in any cases.</div>
     targetCpa:
       type: integer
       nullable: true
       format: int64
-
-      description: "<div lang=\"ja\">コンバージョン単価の目標値です（日本円です）。<br>このフィールドは、ADD時は必須となり、SET時は省略可能となります。</div><div lang=\"en\">Target CPA\
-        \ (JPY).<br>This field is required in ADD operation, and will be optional in SET operation.
-</div>"
+      description: |
+        <div lang="ja">コンバージョン単価の目標値です（日本円です）。<br>このフィールドは、ADD時は必須となり、SET時は省略可能となります。</div>
+        <div lang="en">Target CPA (JPY).<br>This field is required in ADD operation, and will be optional in SET operation.</div>
   title: BiddingStrategyServiceTargetCpaBiddingScheme
-  description: "<div lang=\"ja\">BiddingStrategyServiceTargetCpaBiddingSchemeオブジェクトは、コンバージョン単価の目標値の自動入札設定情報を表します。<br>このフィールドは、省略可能となります。※ADD時、typeがTARGET_CPAの場合は必須です。</div><div lang=\"en\">BiddingStrategyServiceTargetCpaBiddingScheme\
-
-    \ object displays Auto Bidding setting for Target CPA.<br>This field is optional. *If type is 'TARGET_CPA', this field is required in ADD operation.
-</div>"
+  description: |
+    <div lang="ja">BiddingStrategyServiceTargetCpaBiddingSchemeオブジェクトは、コンバージョン単価の目標値の自動入札設定情報を表します。<br>
+    このフィールドは、省略可能となります。※ADD時、typeがTARGET_CPAの場合は必須です。</div>
+    <div lang="en">BiddingStrategyServiceTargetCpaBiddingScheme object displays Auto Bidding setting for Target CPA.<br>
+    This field is optional. *If type is 'TARGET_CPA', this field is required in ADD operation.</div>

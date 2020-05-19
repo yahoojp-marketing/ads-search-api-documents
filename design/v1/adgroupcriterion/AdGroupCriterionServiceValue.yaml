@@ -12,7 +12,10 @@ AdGroupCriterionServiceValue:
     operationSucceeded:
       type: boolean
       nullable: true
-      description: "<div lang=\"ja\">処理結果です。</div><div lang=\"en\">Result of process</div>"
+      description: |
+        <div lang="ja">処理結果です。</div>
+        <div lang="en">Result of process</div>
   title: AdGroupCriterionServiceValue
-  description: "<div lang=\"ja\">AdGroupCriterionServiceValueオブジェクトは、広告グループのクライテリアです。</div><div lang=\"en\">AdGroupCriterionServiceValue\
-    \ object is ad group criteria information including its operation results.</div>"
+  description: |
+    <div lang="ja">AdGroupCriterionServiceValueオブジェクトは、広告グループのクライテリアです。</div>
+    <div lang="en">AdGroupCriterionServiceValue object is ad group criteria information including its operation results.</div>

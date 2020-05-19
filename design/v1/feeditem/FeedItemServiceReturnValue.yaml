@@ -8,5 +8,6 @@ FeedItemServiceReturnValue:
       items:
         $ref: 'FeedItemServiceValue.yaml#/FeedItemServiceValue'
   title: FeedItemServiceReturnValue
-  description: "<div lang=\"ja\">FeedItemReturnオブジェクトは、フィードアイテムの情報を格納します。</div><div lang=\"en\">FeedItemReturn\
-    \ contains the Feed Item information.</div>"
+  description: |
+    <div lang="ja">FeedItemReturnオブジェクトは、フィードアイテムの情報を格納します。</div>
+    <div lang="en">FeedItemReturn contains the Feed Item information.</div>

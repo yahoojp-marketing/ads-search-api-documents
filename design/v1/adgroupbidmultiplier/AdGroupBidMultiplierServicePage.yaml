@@ -12,5 +12,6 @@ AdGroupBidMultiplierServicePage:
       items:
         $ref: 'AdGroupBidMultiplierServiceValue.yaml#/AdGroupBidMultiplierServiceValue'
   title: AdGroupBidMultiplierServicePage
-  description: "<div lang=\"ja\">AdGroupBidMultiplierServicePageオブジェクトは、入札価格調整率を格納するコンテナです。</div><div lang=\"en\">Container\
-    \ for bid multiplier.</div>"
+  description: |
+    <div lang="ja">AdGroupBidMultiplierServicePageオブジェクトは、入札価格調整率を格納するコンテナです。</div>
+    <div lang="en">Container for bid multiplier.</div>

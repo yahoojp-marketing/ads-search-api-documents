@@ -18,14 +18,18 @@ AdGroupAdServiceAd:
       type: string
       nullable: true
       description: |
-        <div lang="ja">最終リンク先URL（スマートフォン）です。<br>ADD時、このフィールドは省略可能となります。※adTypeがDYNAMIC_SEARCH_LINKED_ADの場合は無視されます。</div>
-        <div lang="en">Landing Page URL (Smartphone).<br>This field is optional in ADD operation. *If adType is DYNAMIC_SEARCH_LINKED_AD, this field will be ignored.</div>
+        <div lang="ja">最終リンク先URL（スマートフォン）です。<br>
+        ADD時、このフィールドは省略可能となります。※adTypeがDYNAMIC_SEARCH_LINKED_ADの場合は無視されます。</div>
+        <div lang="en">Landing Page URL (Smartphone).<br>
+        This field is optional in ADD operation. *If adType is DYNAMIC_SEARCH_LINKED_AD, this field will be ignored.</div>
     advancedUrl:
       type: string
       nullable: true
       description: |
-        <div lang="ja">最終リンク先URLです。<br>ADD時、このフィールドは必須となります。※adTypeがDYNAMIC_SEARCH_LINKED_ADの場合は無視されます。</div>
-        <div lang="en">Landing Page URL.<br>This field is required in ADD operation. *If adType is DYNAMIC_SEARCH_LINKED_AD, this field will be ignored.</div>
+        <div lang="ja">最終リンク先URLです。<br>
+        ADD時、このフィールドは必須となります。※adTypeがDYNAMIC_SEARCH_LINKED_ADの場合は無視されます。</div>
+        <div lang="en">Landing Page URL.<br>
+        This field is required in ADD operation. *If adType is DYNAMIC_SEARCH_LINKED_AD, this field will be ignored.</div>
     appAd:
       $ref: 'AdGroupAdServiceAppAd.yaml#/AdGroupAdServiceAppAd'
     customParameters:
@@ -34,39 +38,51 @@ AdGroupAdServiceAd:
       type: string
       nullable: true
       description: |
-        <div lang="ja">説明文です。<br>ADD時、このフィールドは必須となります。</div>
-        <div lang="en">Description of ad.<br>This field is required in ADD operation.</div>
+        <div lang="ja">説明文です。<br>
+        ADD時、このフィールドは必須となります。</div>
+        <div lang="en">Description of ad.<br>
+        This field is required in ADD operation.</div>
     devicePreference:
       $ref: 'AdGroupAdServiceDevicePreference.yaml#/AdGroupAdServiceDevicePreference'
     displayUrl:
       type: string
       nullable: true
       description: |
-        <div lang="ja">表示URLです。<br>このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
-        <div lang="en">Display URL.<br>Although this field will be returned in the response, it will be ignored on input. </div>
+        <div lang="ja">表示URLです。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
+        <div lang="en">Display URL.<br>
+        Although this field will be returned in the response, it will be ignored on input.</div>
     extendedTextAd:
       $ref: 'AdGroupAdServiceExtendedTextAd.yaml#/AdGroupAdServiceExtendedTextAd'
     headline:
       type: string
       nullable: true
       description: |
-        <div lang="ja">タイトル文です。<br>ADD時、このフィールドは必須となります。※adTypeがDYNAMIC_SEARCH_LINKED_ADの場合は無視されます。</div>
-        <div lang="en">Title of ad.<br>This field is required in ADD operation. *If adType is DYNAMIC_SEARCH_LINKED_AD, this field will be ignored.</div>
+        <div lang="ja">タイトル文です。<br>
+        ADD時、このフィールドは必須となります。※adTypeがDYNAMIC_SEARCH_LINKED_ADの場合は無視されます。</div>
+        <div lang="en">Title of ad.<br>
+        This field is required in ADD operation. *If adType is DYNAMIC_SEARCH_LINKED_AD, this field will be ignored.</div>
     textAd2:
       $ref: 'AdGroupAdServiceTextAd2.yaml#/AdGroupAdServiceTextAd2'
     trackingUrl:
       type: string
       nullable: true
       description: |
-        <div lang="ja">トラッキングURLです。<br>ADD時、このフィールドは省略可能となります。</div>
-        <div lang="en">Tracking URL.<br>This field is optional in ADD operation.</div>
+        <div lang="ja">トラッキングURLです。<br>
+        ADD時、このフィールドは省略可能となります。</div>
+        <div lang="en">Tracking URL.<br>
+        This field is optional in ADD operation.</div>
     url:
       type: string
       nullable: true
       description: |
-        <div lang="ja">移行前のリンク先URLです。<br>このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
-        <div lang="en">Destination URL before upgrading. <br>Although this field will be returned in the response, it will be ignored on input. </div>
+        <div lang="ja">移行前のリンク先URLです。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
+        <div lang="en">Destination URL before upgrading. <br>
+        Although this field will be returned in the response, it will be ignored on input.</div>
   title: AdGroupAdServiceAd
   description: |
-    <div lang="ja">AdGroupAdServiceAdオブジェクトは、広告に関する情報を表します。<br>ADD時、このフィールドは必須となります。</div>
-    <div lang="en">AdGroupAdServiceAd object describes ad information.<br>This field is required in ADD operation.</div>
+    <div lang="ja">AdGroupAdServiceAdオブジェクトは、広告に関する情報を表します。<br>
+    ADD時、このフィールドは必須となります。</div>
+    <div lang="en">AdGroupAdServiceAd object describes ad information.<br>
+    This field is required in ADD operation.</div>

@@ -8,17 +8,25 @@ CampaignTargetServiceScheduleTarget:
       type: integer
       nullable: true
       format: int32
-      description: "<div lang=\"ja\">24時間表示の終了時刻です。<br>このフィールドは、ADD時に必須となります。</div><div lang=\"en\">Ending hour in 24 hour time.<br>This field is required in ADD operation.</div>"
+      description: |
+        <div lang="ja">24時間表示の終了時刻です。<br>このフィールドは、ADD時に必須となります。</div>
+        <div lang="en">Ending hour in 24 hour time.<br>This field is required in ADD operation.</div>
     endMinute:
       $ref: 'CampaignTargetServiceMinuteOfHour.yaml#/CampaignTargetServiceMinuteOfHour'
     startHour:
       type: integer
       nullable: true
       format: int32
-      description: "<div lang=\"ja\">24時間表示の開始時刻です。<br>このフィールドは、ADD時に必須となります。</div><div lang=\"en\">Starting hour in 24 hour time.<br>This field is required in ADD operation.</div>"
+      description: |
+        <div lang="ja">24時間表示の開始時刻です。<br>このフィールドは、ADD時に必須となります。</div>
+        <div lang="en">Starting hour in 24 hour time.<br>This field is required in ADD operation.</div>
     startMinute:
       $ref: 'CampaignTargetServiceMinuteOfHour.yaml#/CampaignTargetServiceMinuteOfHour'
   title: CampaignTargetServiceScheduleTarget
-  description: "<div lang=\"ja\">CampaignTargetServiceScheduleTargetオブジェクトは、曜日・時間帯ターゲティングレポートを表します。<br>このフィールドは、ADD時およびSET時に省略可能となります。<br>※targetTypeがSCHEDULEの場合、このフィールドはADD時に必須となります。</div><div lang=\"en\">CampaignTargetServiceScheduleTarget\
-    \ describes Day of week/Hour targeting report.<br>*This field is optional in ADD and SET operation. <br> If targetType is SCHEDULE, this field is required in ADD operation.
-</div>"
+  description: |
+    <div lang="ja">CampaignTargetServiceScheduleTargetオブジェクトは、曜日・時間帯ターゲティングレポートを表します。<br>
+    このフィールドは、ADD時およびSET時に省略可能となります。<br>
+    ※targetTypeがSCHEDULEの場合、このフィールドはADD時に必須となります。</div>
+    <div lang="en">CampaignTargetServiceScheduleTarget describes Day of week/Hour targeting report.<br>
+    *This field is optional in ADD and SET operation.<br>
+    If targetType is SCHEDULE, this field is required in ADD operation.</div>

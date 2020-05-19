@@ -5,15 +5,18 @@ RetargetingListServiceRetargetingAccountStatus:
     agreeDate:
       type: string
       nullable: true
-      description: "<div lang=\"ja\">規約同意日です。<br>※YYYYMMDD形式です。</div><div lang=\"en\">Agreement date.<br>*In\
-        \ YYYYMMDD format.</div>"
+      description: |
+        <div lang="ja">規約同意日です。<br>※YYYYMMDD形式です。</div>
+        <div lang="en">Agreement date.<br>*In YYYYMMDD format.</div>
     reviewRequestDate:
       type: string
       nullable: true
-      description: "<div lang=\"ja\">再審査依頼日です。<br>※YYYYMMDD形式です。</div><div lang=\"en\">Re-examination review\
-        \ request date.<br>*In YYYYMMDD format.</div>"
+      description: |
+        <div lang="ja">再審査依頼日です。<br>※YYYYMMDD形式です。</div>
+        <div lang="en">Re-examination review request date.<br>*In YYYYMMDD format.</div>
     reviewStatus:
       $ref: 'RetargetingListServiceReviewStatus.yaml#/RetargetingListServiceReviewStatus'
   title: RetargetingListServiceRetargetingAccountStatus
-  description: "<div lang=\"ja\">RetargetingListServiceRetargetingAccountStatusは、アカウントのリタゲ審査ステータスを保持するオブジェクトです。</div><div lang=\"en\">RetargetingListServiceRetargetingAccountStatus\
-    \ is an object that holds retargeting review status of account.</div>"
+  description: |
+    <div lang="ja">RetargetingListServiceRetargetingAccountStatusは、アカウントのリタゲ審査ステータスを保持するオブジェクトです。</div>
+    <div lang="en">RetargetingListServiceRetargetingAccountStatus is an object that holds retargeting review status of account.</div>

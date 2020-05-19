@@ -6,8 +6,14 @@ RetargetingListServiceLogicalRuleOperand:
       type: integer
       nullable: true
       format: int64
-      description: "<div lang=\"ja\">ターゲットリストIDです。<br>組合せのターゲットリストは設定できません。<br> このフィールドは、ADDおよびSET時に必須となります。</div><div lang=\"en\">Target\
-        \ list ID.<br>Cannot set the combination target list. <br>This field is required in ADD and SET operation.</div>"
+      description: |
+        <div lang="ja">ターゲットリストIDです。<br>組合せのターゲットリストは設定できません。<br>
+        このフィールドは、ADDおよびSET時に必須となります。</div>
+        <div lang="en">Target list ID.<br>Cannot set the combination target list.<br>
+        This field is required in ADD and SET operation.</div>
   title: RetargetingListServiceLogicalRuleOperand
-  description: "<div lang=\"ja\">RetargetingListServiceLogicalRuleOperandは、組合せ対象のターゲットリストを保持するオブジェクトです。<br>このフィールドは、ADDおよびSET時に必須となります。</div><div lang=\"en\">RetargetingListServiceLogicalRuleOperand\
-    \ is an object that holds target list of combination. <br>This field is required in ADD and SET operation. </div>"
+  description: |
+    <div lang="ja">RetargetingListServiceLogicalRuleOperandは、組合せ対象のターゲットリストを保持するオブジェクトです。<br>
+    このフィールドは、ADDおよびSET時に必須となります。</div>
+    <div lang="en">RetargetingListServiceLogicalRuleOperand is an object that holds target list of combination.<br>
+    This field is required in ADD and SET operation.</div>

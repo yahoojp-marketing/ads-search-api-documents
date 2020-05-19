@@ -5,19 +5,24 @@ AdGroupAdServiceExtendedTextAd:
     headline2:
       type: string
       nullable: true
-      description: "<div lang=\"ja\">2行目のタイトルです。<br>ADD時、このフィールドは必須となります。</div><div lang=\"en\">Title on the second line.<br>This field is required in ADD operation.</div>"
+      description: |
+        <div lang="ja">2行目のタイトルです。<br>ADD時、このフィールドは必須となります。</div>
+        <div lang="en">Title on the second line.<br>This field is required in ADD operation.</div>
     path1:
       type: string
       nullable: true
-      description: "<div lang=\"ja\">自動作成される表示URLを補足するパスです。<br>ADD時、このフィールドは省略可能となります。その際、デフォルト設定値はnullとなります。<br>※path2を指定する場合は、path1は必須です。</div><div lang=\"en\">The\
-        \ path information which complements display URL generated automatically.<br>This field is optional in ADD operation. The default value will be null.<br>*To\
-        \ specify path2, path1 is required.</div>"
+      description: |
+        <div lang="ja">自動作成される表示URLを補足するパスです。<br>ADD時、このフィールドは省略可能となります。その際、デフォルト設定値はnullとなります。<br>※path2を指定する場合は、path1は必須です。</div>
+        <div lang="en">The path information which complements display URL generated automatically.<br>This field is optional in ADD operation. The default value will be null.<br>*To specify path2, path1 is required.</div>
     path2:
       type: string
       nullable: true
-      description: "<div lang=\"ja\">自動作成される表示URLを補足するパスです。<br>ADD時、このフィールドは省略可能となります。その際、デフォルト設定値はnullとなります。<br>※path1を指定していない場合、path2は無視されます。</div><div lang=\"en\">The\
-        \ path information which complements display URL generated automatically.<br>This field is optional in ADD operation. The default value will be null.<br>*If\
-        \ path1 is not specified, path2 will be ignored.</div>"
+      description: |
+        <div lang="ja">自動作成される表示URLを補足するパスです。<br>ADD時、このフィールドは省略可能となります。その際、デフォルト設定値はnullとなります。<br>※path1を指定していない場合、path2は無視されます。</div>
+        <div lang="en">The path information which complements display URL generated automatically.<br>This field is optional in ADD operation. The default value will be null.<br>*If path1 is not specified, path2 will be ignored.</div>
   title: AdGroupAdServiceExtendedTextAd
-  description: "<div lang=\"ja\">AdGroupAdServiceExtendedTextAdオブジェクトは、拡大テキスト広告に関する情報を表します。<br>ADD時、このフィールドは省略可能となります。※adTypeがEXTENDED_TEXT_ADの場合は必須です。</div><div lang=\"en\">AdGroupAdServiceExtendedTextAd\
-    \ object describes the information of Extended Text Ad.<br>This field is optional in ADD operation. *If adType is EXTENDED_TEXT_AD, this field is required.</div>"
+  description: |
+    <div lang="ja">AdGroupAdServiceExtendedTextAdオブジェクトは、拡大テキスト広告に関する情報を表します。<br>
+    ADD時、このフィールドは省略可能となります。※adTypeがEXTENDED_TEXT_ADの場合は必須です。</div>
+    <div lang="en">AdGroupAdServiceExtendedTextAd object describes the information of Extended Text Ad.<br>
+    This field is optional in ADD operation. *If adType is EXTENDED_TEXT_AD, this field is required.</div>

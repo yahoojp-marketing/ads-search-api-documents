@@ -5,15 +5,22 @@ CampaignExportServiceFieldAttribute:
     displayFieldNameEN:
       type: string
       nullable: true
-      description: "<div lang=\"ja\">フィールドの英語表示名です。</div><div lang=\"en\">Display name (EN)</div>"
+      description: |
+        <div lang="ja">フィールドの英語表示名です。</div>
+        <div lang="en">Display name (EN)</div>
     displayFieldNameJA:
       type: string
       nullable: true
-      description: "<div lang=\"ja\">フィールドの日本語表示名です。</div><div lang=\"en\">Display name (JA)</div>"
+      description: |
+        <div lang="ja">フィールドの日本語表示名です。</div>
+        <div lang="en">Display name (JA)</div>
     fieldName:
       type: string
       nullable: true
-      description: "<div lang=\"ja\">フィールド名です。</div><div lang=\"en\">Field name</div>"
+      description: |
+        <div lang="ja">フィールド名です。</div>
+        <div lang="en">Field name</div>
   title: CampaignExportServiceFieldAttribute
-  description: "<div lang=\"ja\">CampaignExportServiceFieldAttribute オブジェクトは、ジョブ作成に使用できるフィールドを表します。</div><div lang=\"en\">CampaignExportServiceFieldAttribute\
-    \ object displays available fields for creating jobs.</div>"
+  description: |
+    <div lang="ja">CampaignExportServiceFieldAttribute オブジェクトは、ジョブ作成に使用できるフィールドを表します。</div>
+    <div lang="en">CampaignExportServiceFieldAttribute object displays available fields for creating jobs.</div>

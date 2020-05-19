@@ -5,7 +5,11 @@ ReportDefinitionServiceReportFilter:
     field:
       type: string
       nullable: true
-      description: "<div lang=\"ja\">フィルタ条件を設定する表示項目です。<br>ADD時、このフィールドは必須となります。 </div><div lang=\"en\">Field which you set filtering. <br>This field is required in ADD operation.</div>"
+      description: |
+        <div lang="ja">フィルタ条件を設定する表示項目です。<br>
+        ADD時、このフィールドは必須となります。 </div>
+        <div lang="en">Field which you set filtering.<br>
+        This field is required in ADD operation.</div>
     reportOperator:
       $ref: 'ReportDefinitionServiceReportOperator.yaml#/ReportDefinitionServiceReportOperator'
     value:
@@ -14,8 +18,14 @@ ReportDefinitionServiceReportFilter:
       items:
         type: string
         nullable: true
-      description: "<div lang=\"ja\">表示項目の条件値です。<br>ADD時、このフィールドは必須となります。</div><div lang=\"en\">Condition values to filter the field. <br>This field is required in ADD operation.</div>"
+      description: |
+        <div lang="ja">表示項目の条件値です。<br>
+        ADD時、このフィールドは必須となります。</div>
+        <div lang="en">Condition values to filter the field.<br>
+        This field is required in ADD operation.</div>
   title: ReportDefinitionServiceReportFilter
-  description: "<div lang=\"ja\">ReportDefinitionServiceReportFilterオブジェクトは、レポートのフィルタ条件を表します。フィルタ条件は最大6つまで設定が可能です。<br>ADD時、このフィールドは省略可能となります。 </div><div lang=\"en\">ReportDefinitionServiceReportFilter\
-    \ object displays filtering report conditions. Filter condition can set up to\
-    \ 6. <br>This field is optional in ADD operation. </div>"
+  description: |
+    <div lang="ja">ReportDefinitionServiceReportFilterオブジェクトは、レポートのフィルタ条件を表します。フィルタ条件は最大6つまで設定が可能です。<br>
+    ADD時、このフィールドは省略可能となります。 </div>
+    <div lang="en">ReportDefinitionServiceReportFilter object displays filtering report conditions. Filter condition can set up to 6.<br>
+    This field is optional in ADD operation.</div>
