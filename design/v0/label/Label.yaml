@@ -13,8 +13,8 @@ Label:
       type: string
       nullable: true
       description: |
-        <div lang="ja">カラーコードです。例：#FFFFFF<br> このフィールドは、ADDおよびSET時に省略可能となり、REMOVE時に無視されます。</div>
-        <div lang="en">Color code. e.g. #FFFFFF<br>This field is optional in ADD and SET operation, and will be ignored in REMOVE operation.</div>
+        <div lang="ja">カラーです。<br> このフィールドは、ADDおよびSET時に省略可能となり、REMOVE時に無視されます。</div>
+        <div lang="en">Color.<br>This field is optional in ADD and SET operation, and will be ignored in REMOVE operation.</div>
     description:
       type: string
       nullable: true
