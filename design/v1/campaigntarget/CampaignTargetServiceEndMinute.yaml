@@ -1,0 +1,10 @@
+CampaignTargetServiceEndMinute:
+  type: string
+  nullable: true
+  enum:
+  - ZERO
+  - FIFTEEN
+  - THIRTY
+  - FORTY_FIVE
+  - UNKNOWN
+  title: CampaignTargetServiceEndMinute
