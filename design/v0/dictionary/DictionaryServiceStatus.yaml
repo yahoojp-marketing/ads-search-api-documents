@@ -1,9 +1,0 @@
-DictionaryServiceStatus:
-  type: string
-  nullable: true
-  enum:
-  - ACTIVE
-  - OBSOLETE
-  - PHASING_OUT
-  - UNKNOWN
-  title: DictionaryServiceStatus

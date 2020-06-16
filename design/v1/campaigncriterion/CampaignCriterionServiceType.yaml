@@ -1,7 +1,0 @@
-CampaignCriterionServiceType:
-  type: string
-  nullable: true
-  enum:
-  - KEYWORD
-  - UNKNOWN
-  title: CampaignCriterionServiceType
