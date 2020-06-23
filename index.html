@@ -1,256 +1,135 @@
 <!DOCTYPE html>
 <html lang="ja" xmlns="http://www.w3.org/1999/xhtml">
-  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <title>API Reference - Yahoo! Ads</title>
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
-    <link rel="stylesheet" href="scripts/swagger-ui.css" />
-    <link rel="icon" href="https://s.yimg.jp/images/marketing/support-marketing/site/images/favicon.ico" type="image/vnd.microsoft.icon" />
-    <link rel="stylesheet" href="https://s.yimg.jp/images/marketing/API/main.css" />
-  </head>
-  <body>
-  <header class="header">
-    <div class="masthead">
-      <p class="masthead__title">
-        <a href="https://marketing.yahoo.co.jp/" lang="ja" class="masthead__trigger" >Yahoo!広告</a>
-        <a href="https://global-marketing.yahoo.co.jp/" lang="en" class="masthead__trigger_en" >Yahoo! Ads</a>
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <title>API Reference - Yahoo! Ads</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
+  <link rel="stylesheet" href="scripts/swagger-ui.css" />
+  <link rel="icon" href="https://s.yimg.jp/images/marketing/support-marketing/site/images/favicon.ico" type="image/vnd.microsoft.icon" />
+  <link rel="stylesheet" href="https://s.yimg.jp/images/marketing/API/main.css" />
+</head>
+<body>
+<header class="header">
+  <div class="masthead">
+    <p class="masthead__title">
+      <a href="https://marketing.yahoo.co.jp/" lang="ja" class="masthead__trigger" >Yahoo!広告</a>
+      <a href="https://global-marketing.yahoo.co.jp/" lang="en" class="masthead__trigger_en" >Yahoo! Ads</a>
+    </p>
+    <ul class="masthead__list">
+      <li class="masthead__item masthead__item--login">
+        <div lang="ja"><a href="https://ads-developers.yahoo.co.jp/developercenter/ja/yahoo-ads-api/" target="_blank" rel="noopener" class="masthead__trigger02">DeveloperCenter</a></div><div lang="en"><a href="https://ads-developers.yahoo.co.jp/developercenter/en/yahoo-ads-api/" target="_blank" rel="noopener" class="masthead__trigger02">DeveloperCenter</a></div></li>
+      <li class="masthead__item masthead__item--yj"><div lang="ja"><a href="https://www.yahoo.co.jp/" class="masthead__trigger02">Yahoo! JAPAN</a></div><div lang="en"><a href="https://www.yahoo.co.jp/" class="masthead__trigger02">Yahoo! JAPAN</a></div></li>
+    </ul>
+  </div><!-- /.masthead -->
+</header>
+
+<main class="main">
+  <div class="information">
+    <div class="ja">
+      <h4>ページ移転のお知らせ</h4>
+      <p>
+        Yahoo!広告 APIリファレンスは下記のURLに移転しました。<br>
+        ブックマークなどに登録している場合は、新しいURLへの変更をお願いします。
       </p>
-        <ul class="masthead__list">
-          <li class="masthead__item masthead__item--login">
-            <div lang="ja"><a href="https://ads-developers.yahoo.co.jp/developercenter/ja/yahoo-ads-api/" target="_blank" rel="noopener" class="masthead__trigger02">DeveloperCenter</a></div><div lang="en"><a href="https://ads-developers.yahoo.co.jp/developercenter/en/yahoo-ads-api/" target="_blank" rel="noopener" class="masthead__trigger02">DeveloperCenter</a></div></li>
-          <li class="masthead__item masthead__item--yj"><div lang="ja"><a href="https://www.yahoo.co.jp/" class="masthead__trigger02">Yahoo! JAPAN</a></div><div lang="en"><a href="https://www.yahoo.co.jp/" class="masthead__trigger02">Yahoo! JAPAN</a></div></li>
-        </ul>
-    </div><!-- /.masthead -->
-    <div class="hpHeader">
-      <div class="hpHeader__inner">
-        <div class="hpHeader__head">
-          <div class="hpHeader__wrap">
-            <h1 class="hpHeader__title" lang="ja">APIリファレンス</h1>
-            <h1 class="hpHeader__title" lang="en">API Reference</h1>
-            <div class="hpHeaderLanguage" lang="ja">
-              <a class="hpHeaderLanguage__trigger" href="?lang=en">English</a>
-            </div>
-            <div class="hpHeaderLanguage" lang="en">
-              <a class="hpHeaderLanguage__trigger" href="?lang=ja">日本語</a>
-            </div>
-
-          </div>
-        </div>
+      <div class="url">
+        <p>・検索広告 API <a href="https://ads-developers.yahoo.co.jp/reference/ads-display-api/">https://ads-developers.yahoo.co.jp/reference/ads-display-api/</a><br>
+          ・ディスプレイ広告 API <a href="https://ads-developers.yahoo.co.jp/reference/ads-search-api/">https://ads-developers.yahoo.co.jp/reference/ads-search-api/</a>
+        </p>
       </div>
-      <nav class="nav">
-        <div class="nav__inner">
-            <ul class="navPrimary">
-              <li class="navPrimary__item is-current">
-                <div lang="ja"><a class="navPrimary__trigger" href="?lang=ja&v=1">検索広告APIリファレンス v1</a></div>
-                <div lang="en"><a class="navPrimary__trigger" href="?lang=en&v=1">Search Ads API Reference v1</a></div>
-                <ul class="navSecondary">
-                   <li class="navSecondary__item">
-                     <div lang="ja"><a class="navSecondary__trigger" href="?lang=ja&v=0">検索広告APIリファレンス v0</a></div>
-                     <div lang="en"><a class="navSecondary__trigger" href="?lang=en&v=0">Search Ads API Reference v0</a></div>
-                   </li>
-                </ul><!-- /.navSecondary -->
-              </li>
-              <li class="navPrimary__item">
-                <div lang="ja"><a class="navPrimary__trigger" href="../ads-display-api-documents/?lang=ja&v=1">ディスプレイ広告APIリファレンス v1</a></div>
-                <div lang="en"><a class="navPrimary__trigger" href="../ads-display-api-documents/?lang=en&v=1">Display Ads API Reference v1</a></div>
-                <ul class="navSecondary">
-                  <li class="navSecondary__item">
-                    <div lang="ja"><a class="navSecondary__trigger" href="../ads-display-api-documents/?lang=ja&v=0">ディスプレイ広告APIリファレンス v0</a></div>
-                    <div lang="en"><a class="navSecondary__trigger" href="../ads-display-api-documents/?lang=en&v=0">Display Ads API Reference v0</a></div>
-                  </li>
-                </ul><!-- /.navSecondary -->
-              </li>
-            </ul>
-        </div><!-- /.nav__inner -->
-      </nav><!-- /.nav -->
-    </div><!--/.hpHeader-->
-  </header>
+    </div>
+    <div class="en">
+      <h4>This page has moved</h4>
+      <p>
+        Yahoo! JAPAN Ads API Reference site has been moved to the following URL.<br>
+        Please access to the new URL and update your bookmark.
+      </p>
+      <div class="url">
+        <p>・Search Ads API <a href="https://ads-developers.yahoo.co.jp/reference/ads-display-api?lang=en">https://ads-developers.yahoo.co.jp/reference/ads-display-api?lang=en</a><br>
+          ・Display Ads API <a href="https://ads-developers.yahoo.co.jp/reference/ads-search-api?lang=en">https://ads-developers.yahoo.co.jp/reference/ads-search-api?lang=en</a>
+      </div>
+    </div>
+  </div>
 
-  <div id="apiSideMenu" class="sideMenuAbsolute"><ul></ul></div>
-  <main class="main">
-    <div id="swagger-ui"></div>
-
-    <style>
-    .swagger-ui summary {
-    display: list-item;
-    cursor: pointer;
+  <style>
+    .main .information {
+      padding: 60px 0 80px;
+      margin-top: 1em;
+      min-height: 1px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
     }
-    .yjFooter__item[lang="en"] {
-    font-size: 12px;
+    .main .information .en {
+      margin-top: 50px;
     }
-    .yjFooter__item:nth-last-child(2):after {
-      display: none
+    .main .information .ja h4,
+    .main .information .en h4 {
+      font-size: 21px;
+      margin: 0;
+      font-family: sans-serif;
+      color: #3b4151;
+      text-align: center;
     }
-    .masthead__trigger_en {
-    display: block;
-    width: 178px;
-    height: 34px;
-    background: url(https://s.yimg.jp/c/logo/f/2.0/adse_r_34_2x.png) no-repeat;
-    -webkit-background-size: 178px 34px;
-    background-size: 178px 34px;
-    border-bottom: none;
-    overflow: hidden;
-    text-indent: 100%;
-    white-space: nowrap;
+    .main .information .ja p,
+    .main .information .en p {
+      font-size: 14px;
+      margin: 0;
+      font-family: sans-serif;
+      color: #3b4151;
+      text-align: center;
+      margin-top: 20px;
+      line-height: 1.6;
     }
-    </style>
-    <style id="langType">* [lang="en"]{display:none;}</style>
-    <script src="scripts/swagger-ui-bundle.js"> </script>
-    <script src="scripts/swagger-ui-standalone-preset.js"> </script>
-    <script>
-    var lang
-    var version = 1
+    .main .information .ja .url,
+    .main .information .en .url {
+      margin-top: 10px;
+      font-size: 14px;
+      text-align: center;
+      line-height: 1.6;
+    }
+  </style>
+  <style id="langType">* [lang="en"]{display:none;}</style>
+</main>
 
-    window.addEventListener('DOMContentLoaded', function () {
-      if(location.search.indexOf('lang=en') != -1){
-        lang = "en"
-        document.title = 'API Reference - Yahoo! Ads';
-        $('#langType').html('* [lang="ja"]{display:none;}')
-      }else{
-        lang = "ja"
-        document.title = 'APIリファレンス - Yahoo!広告';
-      }
-      var versionCheck = location.search.match(/[?&]v=([0-9]{1,3})/)
-      if(versionCheck){
-        version = versionCheck[1]
-      }
-
-    });
-      
-   var routeFactory = function() {
-     return function () {
-       // Begin Swagger UI call region
-       const ui = SwaggerUIBundle({
-                                    url: "./design/v"+version+"/Route.yaml",
-                                    dom_id: '#swagger-ui',
-                                    deepLinking: false,
-                                    docExpansion: 'none',
-                                    defaultModelRendering: 'model',
-                                    defaultModelExpandDepth: 20,
-                                    // showCommonExtensions: true,
-                                    tagsSorter: 'alpha',
-                                    presets: [
-                                      SwaggerUIBundle.presets.apis,
-                                      SwaggerUIStandalonePreset
-                                    ],
-                                    plugins: [
-                                      SwaggerUIBundle.plugins.DownloadUrl
-                                    ],
-                                    layout: "StandaloneLayout",
-                                    oauth2RedirectUrl: location.href.replace('index.html', '').replace(/\?.+/, '').replace(/\/$/g, '') + '/oauth2-redirect.html'
-                                  })
-       // End Swagger UI call region
-
-       window.ui = ui
-
-       $(function () {
-         $(window).on('scroll', function () {
-           var headerSize = 125
-           if (headerSize > $(window).scrollTop()) {
-             $('#apiSideMenu').addClass('sideMenuAbsolute').removeClass('sideMenuFixed')
-           } else {
-             $('#apiSideMenu').addClass('sideMenuFixed').removeClass('sideMenuAbsolute')
-           }
-         });
-
-         var observer_swagger = new MutationObserver(function () {
-           var speed = 500, cTop = 80, o = false, m = false
-           $.each($('.swagger-ui section > div > span > div'), function (index, value) {
-             var clickParent = $('#apiSideMenu > ul').append('<li><p class="apiName">' + $(value).find('h4').data('tag') + '</p></li>')
-             $(clickParent).find('li:last-child > p.apiName').click(function () {
-               var clickedContent = $(this)
-               clickedContent.parent().find("ul").html("")
-
-               if (!$(value).hasClass("is-open") && $(this).next().is(":hidden")) {
-                 $(value).find('h4').trigger('click')
-               } else {
-
-               }
-               $.each($(value).find('.opblock-summary-path'), function (i, v) {
-                 var t = $(v).data('path')
-                 var clickChild = clickedContent.parent().find("ul").append('<li class="childMethod">' + $(v).data('path').replace(/\/.+\//, "") + '</li>')
-
-                 $(clickChild).find('li:last-child').click(function () {
-                   if (!m) {
-                     m = true
-                     if (!$(value).hasClass("is-open")) {
-                       $(value).find('h4').trigger('click')
-                     }
-                     var p = $('[data-path="' + t + '"]').position().top - cTop
-                     $('html,body').animate({scrollTop: p}, speed, 'swing', function () {
-                       m = false
-                     });
-                   }
-                 })
-               })
-
-               if (!o) {
-                 o = true
-                 $(this).next().slideToggle(1, function () {
-                   o = false
-                 })
-               }
-
-             })
-             $('#apiSideMenu > ul > li:last-child').append('<ul class="methodTab"></ul>')
-
-           })
-           $('.methodTab').hide()
-         });
-
-         observer_swagger.observe($('#swagger-ui')[0], {
-           childList: true,
-           subtree: true
-         });
-         var observer_menu = new MutationObserver(function () {
-           observer_swagger.disconnect()
-           if (lang == "en") {
-             $('.title').text("Yahoo! Ads Search Ads API Reference v" + version)
-           } else {
-             $('.title').text("Yahoo!広告 検索広告 API リファレンス v" + version)
-           }
-
-         });
-         observer_menu.observe($('#apiSideMenu')[0], {
-           childList: true,
-           subtree: true
-         });
-       })
-     }
-   }
-    window.onload = routeFactory();
-  </script>
-  </main>
-
-  <footer class="footer">
+<footer class="footer">
   <div class="yjFooter">
-      <ul class="yjFooter__list">
-        <li class="yjFooter__item" lang="ja"><a href="https://privacy.yahoo.co.jp/" class="yjFooter__trigger">プライバシー</a></li>
-        <li class="yjFooter__item" lang="en"><a href="https://privacy.yahoo.co.jp/" class="yjFooter__trigger">Privacy Policy (Japanese)</a></li>
+    <ul class="yjFooter__list">
+      <li class="yjFooter__item" lang="ja"><a href="https://privacy.yahoo.co.jp/" class="yjFooter__trigger">プライバシー</a></li>
+      <li class="yjFooter__item" lang="en"><a href="https://privacy.yahoo.co.jp/" class="yjFooter__trigger">Privacy Policy (Japanese)</a></li>
 
-        <li class="yjFooter__item" lang="ja"><a href="https://marketing.yahoo.co.jp/guidelines/yahoo_ads_api.html" class="yjFooter__trigger">利用規約</a></li>
-        <li class="yjFooter__item" lang="en"><a href="https://about.yahoo.co.jp/docs/info/terms/" class="yjFooter__trigger">Terms of Service (Japanese)</a></li>
+      <li class="yjFooter__item" lang="ja"><a href="https://marketing.yahoo.co.jp/guidelines/yahoo_ads_api.html" class="yjFooter__trigger">利用規約</a></li>
+      <li class="yjFooter__item" lang="en"><a href="https://about.yahoo.co.jp/docs/info/terms/" class="yjFooter__trigger">Terms of Service (Japanese)</a></li>
 
-        <li class="yjFooter__item" lang="ja"><a href="https://marketing.yahoo.co.jp/guidelines/" class="yjFooter__trigger">ガイドライン・各サービスの規約</a></li>
-        <li class="yjFooter__item" lang="en"><a href="https://global-marketing.yahoo.co.jp/guidelines/terms.html" class="yjFooter__trigger">Master Terms and Conditions</a></li>
+      <li class="yjFooter__item" lang="ja"><a href="https://marketing.yahoo.co.jp/guidelines/" class="yjFooter__trigger">ガイドライン・各サービスの規約</a></li>
+      <li class="yjFooter__item" lang="en"><a href="https://global-marketing.yahoo.co.jp/guidelines/terms.html" class="yjFooter__trigger">Master Terms and Conditions</a></li>
 
-        <li class="yjFooter__item" lang="en"><a href="https://global-marketing.yahoo.co.jp/guidelines/trademarks.html" class="yjFooter__trigger">Trademarks</a></li>
-        <li class="yjFooter__item" lang="en"><a href="https://about.yahoo.co.jp/docs/pr/disclaimer.html" class="yjFooter__trigger">Disclaimer of Warranties (Japanese)</a></li>
+      <li class="yjFooter__item" lang="en"><a href="https://global-marketing.yahoo.co.jp/guidelines/trademarks.html" class="yjFooter__trigger">Trademarks</a></li>
+      <li class="yjFooter__item" lang="en"><a href="https://about.yahoo.co.jp/docs/pr/disclaimer.html" class="yjFooter__trigger">Disclaimer of Warranties (Japanese)</a></li>
 
-        <li class="yjFooter__item" lang="ja"><a href="https://about.yahoo.co.jp/" class="yjFooter__trigger">会社概要</a></li>
-        <li class="yjFooter__item" lang="en"><a href="https://about.yahoo.co.jp/info/en/company/" class="yjFooter__trigger">Company Info</a></li>
-      </ul>
+      <li class="yjFooter__item" lang="ja"><a href="https://about.yahoo.co.jp/" class="yjFooter__trigger">会社概要</a></li>
+      <li class="yjFooter__item" lang="en"><a href="https://about.yahoo.co.jp/info/en/company/" class="yjFooter__trigger">Company Info</a></li>
+    </ul>
     <p class="yjFooter__copyright"><small><span class="spHidden">Copyright </span>(C) <span class="spHidden"><span>2020</span></span> Yahoo Japan<span class="spHidden"> Corporation. All Rights Reserved.</span></small></p>
   </div><!-- /.yjFooter -->
 
 </footer>
 
-  <script src="https://s.yimg.jp/images/marketing/lib/jquery/1.9.1/jquery.min.js"></script>
-  <script src="https://s.yimg.jp/images/marketing/support-marketing/site/js/main.js?201806"></script>
-  <script src="scripts/swagger-ui-bundle.js"> </script>
-  <script src="scripts/swagger-ui-standalone-preset.js"> </script>
-  </body>
+<script src="https://s.yimg.jp/images/marketing/lib/jquery/1.9.1/jquery.min.js"></script>
+<script src="https://s.yimg.jp/images/marketing/support-marketing/site/js/main.js?201806"></script>
+<script src="scripts/swagger-ui-bundle.js"> </script>
+<script src="scripts/swagger-ui-standalone-preset.js"> </script>
+</body>
 </html>

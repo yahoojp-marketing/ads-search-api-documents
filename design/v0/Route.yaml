@@ -3,14 +3,8 @@ info:
   title: 'Yahoo!広告 検索広告 API リファレンス / Yahoo! Ads Search Ads API Reference'
   version: 'v0'
   description: |
-    <div lang="ja">Yahoo!広告 検索広告 APIのWebサービスについて説明します。<br>
-    「Try it out」のご利用には、事前にアプリケーションの登録が必要です。また、アプリケーションのリダイレクトURIの1つに<br>
-    https://yahoojp-marketing.github.io/ads-search-api-documents/oauth2-redirect.htmlを登録してください。
-    </div>
-    <div lang="en">Search Ads API Web Services supported in Yahoo! Ads API.<br>
-    When you use "Try it out", you need to register your application in advance.<br>
-    As one of redirect URI for application, you need to set "https://yahoojp-marketing.github.io/ads-search-api-documents/oauth2-redirect.html".
-    </div>
+    <div lang="ja">Yahoo!広告 検索広告 APIのWebサービスについて説明します。</div>
+    <div lang="en">Search Ads API Web Services supported in Yahoo! Ads API.</div>
 
 components:
   securitySchemes:
