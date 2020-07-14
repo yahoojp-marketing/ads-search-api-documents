@@ -1,2 +1,2 @@
-## [English](/docs/bestpractice/en/)
-## [Japanese](/docs/bestpractice/ja/)
+## [English](en/)
+## [Japanese](ja/)
