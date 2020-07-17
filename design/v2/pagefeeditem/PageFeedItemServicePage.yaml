@@ -1,0 +1,20 @@
+PageFeedItemServicePage:
+  type: object
+  nullable: true
+  properties:
+    totalNumEntries:
+      type: integer
+      nullable: false
+      format: int32
+      description: |
+        <div lang="ja">取得される項目の総件数です。</div>
+        <div lang="en">Total number of entries in the result that this page is a part of.</div>
+    values:
+      type: array
+      nullable: true
+      items:
+        $ref: 'PageFeedItemServiceReturnValue.yaml#/PageFeedItemServiceReturnValue'
+  title: PageFeedItemServicePage
+  description: |
+    <div lang="ja">PageFeedItemServicePageオブジェクトは、ページフィードアイテムのリストの結果を格納するコンテナです。</div>
+    <div lang="en">PageFeedItemServicePage object retains result of page feed item list.</div>

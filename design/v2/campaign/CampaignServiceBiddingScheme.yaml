@@ -1,0 +1,20 @@
+CampaignServiceBiddingScheme:
+  type: object
+  nullable: true
+  properties:
+    biddingStrategyType:
+      $ref: 'CampaignServiceBiddingStrategyType.yaml#/CampaignServiceBiddingStrategyType'
+    manualCpcBiddingScheme:
+      $ref: 'CampaignServiceManualCpcBiddingScheme.yaml#/CampaignServiceManualCpcBiddingScheme'
+    targetCpaBiddingScheme:
+      $ref: 'CampaignServiceTargetCpaBiddingScheme.yaml#/CampaignServiceTargetCpaBiddingScheme'
+    targetRoasBiddingScheme:
+      $ref: 'CampaignServiceTargetRoasBiddingScheme.yaml#/CampaignServiceTargetRoasBiddingScheme'
+    targetSpendBiddingScheme:
+      $ref: 'CampaignServiceTargetSpendBiddingScheme.yaml#/CampaignServiceTargetSpendBiddingScheme'
+  title: CampaignServiceBiddingScheme
+  description: |
+    <div lang="ja">CampaignServiceBiddingSchemeオブジェクトは、自動入札設定の詳細情報を表します。 （BiddingStrategyService以外用のオブジェクトです。）<br>
+    ADD時、標準入札設定の場合、このフィールドは必須となり、ポートフォリオ入札設定の場合、設定不可となります。また、biddingStrategyIdと同時に設定することはできません。</div>
+    <div lang="en">CampaignServiceBiddingScheme object displays the details of Auto Bidding setting.<br>
+    This field is required when Standard bidding is setting, and cannot be specified when Portfolio bidding is setting in ADD operation. It cannot be specified at the same times as biddingStrategyId.</div>
