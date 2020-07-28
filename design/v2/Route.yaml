@@ -1,10 +1,10 @@
 openapi: 3.0.2
 info:
-  title: 'Yahoo!広告 検索広告 API リファレンス / Yahoo! Ads Search Ads API Reference'
+  title: 'Yahoo!広告 検索広告 API リファレンス / Yahoo! JAPAN Ads Search Ads API Reference'
   version: 'v2'
   description: |
     <div lang="ja">Yahoo!広告 検索広告 APIのWebサービスについて説明します。</div>
-    <div lang="en">Search Ads API Web Services supported in Yahoo! Ads API.</div>
+    <div lang="en">Search Ads API Web Services supported in Yahoo! JAPAN Ads API.</div>
     <div><a target="_blank" href="https://github.com/yahoojp-marketing/ads-search-api-documents/blob/master/design/v2/Route.yaml">OpenAPI Specification</a></div>
 
 components:
@@ -17,7 +17,7 @@ components:
           tokenUrl: https://biz-oauth.yahoo.co.jp/oauth/v1/token
           scopes:
             yahooads: アプリケーションを経由したYahoo!広告の各機能の操作/Operation by each function of Yahoo!
-              Ads via applications.
+              JAPAN Ads via applications.
 security:
   - oAuth: [yahooads]
 
