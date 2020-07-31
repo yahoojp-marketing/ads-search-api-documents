@@ -6,3 +6,4 @@
 ## Appendix
 * [値の制限](./constraints.md)
 * [エラーコード](./errorcodes.md)
+* [アドカスタマイザー機能（データの自動挿入）](./autoinsert_data.md)

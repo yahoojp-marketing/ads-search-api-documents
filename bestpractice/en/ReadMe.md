@@ -6,3 +6,4 @@ Best Practice introduces an efficient way of using Yahoo! JAPAN Ads API.<br>Plea
 ## Appendix
 * [Value Constraints](./constraints.md)
 * [Error code](./errorcodes.md)
+* [Ad Customizers feature (Data Assignment)](./autoinsert_data.md)
