@@ -3,7 +3,10 @@
 * [レポートの作成・取得](./search_ads_report.md)
 * [広告表示オプションの追加](./addisplayoption.md)
 * [アドカスタマイザー機能（データの自動挿入）](./autoinsert_data.md)
+* [コンバージョントラッキング機能](./cv_tracking.md)
+* [動的検索連動型広告](./dynamic_ads_for_search.md)
 
 ## Appendix
 * [値の制限](./constraints.md)
 * [エラーコード](./errorcodes.md)
+* [検索広告操作履歴](./ope_history.md)
