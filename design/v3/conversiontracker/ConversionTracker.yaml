@@ -1,0 +1,113 @@
+ConversionTracker:
+  type: object
+  nullable: true
+  properties:
+    accountId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">アカウントIDです。</div>
+        <div lang="en">Account ID.</div>
+    allConversionValue:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">自動入札設定対象のコンバージョン値と、対象外のコンバージョン値の合計です。</div>
+        <div lang="en">Total value of conversions to be included to auto bidding and to be exluded from auto bidding.</div>
+    allConversions:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">自動入札設定対象のコンバージョン数と、対象外のコンバージョン数の合計です。</div>
+        <div lang="en">Total number of conversions to be included to auto bidding and to be excluded from auto bidding.</div>
+    appConversion:
+      $ref: 'ConversionTrackerServiceAppConversion.yaml#/ConversionTrackerServiceAppConversion'
+    appLinkConversion:
+      $ref: 'ConversionTrackerServiceAppLinkConversion.yaml#/ConversionTrackerServiceAppLinkConversion'
+    category:
+      $ref: 'ConversionTrackerServiceCategory.yaml#/ConversionTrackerServiceCategory'
+    conversionCountingType:
+      $ref: 'ConversionTrackerServiceConversionCountingType.yaml#/ConversionTrackerServiceConversionCountingType'
+    conversionTrackerId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">コンバージョントラッカーのIDです。<br>
+        このフィールドは、SET時に必須となります。</div>
+        <div lang="en">ConversionTracker ID.<br>
+        This field is required in SET operation.</div>
+    conversionTrackerTrackId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">トラッキング用コンバージョントラッカーIDです。</div>
+        <div lang="en">ConversionTracker ID for tracking.</div>
+    conversionTrackerName:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">コンバージョントラッカーの名称です。<br>
+        このフィールドは、ADD時に必須となり、SET時に省略可能となります。</div>
+        <div lang="en">ConversionTracker Name.<br>
+        This field is required in ADD operation, and is optional in SET operation.</div>
+    conversionTrackerType:
+      $ref: 'ConversionTrackerServiceConversionTrackerType.yaml#/ConversionTrackerServiceConversionTrackerType'
+    conversionValue:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">自動入札設定対象のコンバージョン値です。</div>
+        <div lang="en">Conversion value to be included to auto bidding.</div>
+    conversions:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">自動入札設定対象のコンバージョン数です。<br>
+        ユニークコンバージョンか総コンバージョンかは、countingTypeに依存します。</div>
+        <div lang="en">Conversions which counts as included to Auto Bidding setting.<br>
+        countingType specifies whether one-per-click or many-per-click.</div>
+    excludeFromBidding:
+      $ref: 'ConversionTrackerServiceExcludeFromBidding.yaml#/ConversionTrackerServiceExcludeFromBidding'
+    measurementPeriod:
+      type: integer
+      nullable: true
+      format: int32
+      description: |
+        <div lang="ja">コンバージョン計測期間です（単位：日)。<br>
+        7～90日間で設定可能です。<br>※アプリダウンロードの場合は30日間固定。<br>
+        このフィールドは、ADDおよびSET時に省略可能となります。<br>※ADD時のデフォルト設定値は30となります。</div>
+        <div lang="en">Counting period of conversoins (days).<br>It is available between 7 to 90 days<br>
+        * For Mobile App Download, this period is fixed as 30 days.<br>
+        This field is optional in ADD and SET operation.<br>
+        *The default value in ADD operation will be 30.</div>
+    mostRecentConversionDate:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">直近のコンバージョン発生日です。</div>
+        <div lang="en">The most latest date when conversion occured.</div>
+    status:
+      $ref: 'ConversionTrackerServiceStatus.yaml#/ConversionTrackerServiceStatus'
+    userRevenueValue:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">このコンバージョントラッカーに対するユーザー指定の収益値です。<br>
+        1コンバージョンあたりの売上金額が固定値の場合、その金額を設定することで、売上金額をレポートなどで確認できます。<br>
+        ADDリクエスト時に未指定の場合、0が設定されます。<br>
+        このフィールドは、ADD時およびSET時に省略可能となります。</div>
+        <div lang="en">The value of revenue of the conversion tracker specified by user.<br>
+        When the sales revenue of 1 conversion is fixed value, you are able to review the total sales on reports by specifying the amount on this item.<br>
+        If it is not specified on ADD request, the value &#34;0&#34; is set.<br>
+        This field is optional in ADD and SET operation.</div>
+    webConversion:
+      $ref: 'ConversionTrackerServiceWebConversion.yaml#/ConversionTrackerServiceWebConversion'
+  title: ConversionTracker
+  description: |
+    <div lang="ja">ConversionTrackerオブジェクトは、コンバージョン測定タグやタグごとのパフォーマンスデータなどのコンバージョントラッカー情報を表します。</div>
+    <div lang="en">ConversionTracker object shows ConversionTracker information such as ConversionTag and performance data by tag.</div>

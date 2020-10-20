@@ -1,0 +1,12 @@
+AdGroupServiceAdGroupAdRotationMode:
+  type: object
+  nullable: true
+  properties:
+    adRotationMode:
+      $ref: 'AdGroupServiceAdRotationMode.yaml#/AdGroupServiceAdRotationMode'
+  title: AdGroupServiceAdGroupAdRotationMode
+  description: |
+    <div lang="ja">AdGroupServiceAdGroupAdRotationModeは、広告表示の最適化設定を表します。<br>
+    ADDおよびSET時、このフィールドは省略可能となります。</div>
+    <div lang="en">AdGroupServiceAdGroupAdRotationMode describes Ad Rotation settings for optimizing and displaying ads.<br>
+    This field is optional in ADD and SET operation.</div>

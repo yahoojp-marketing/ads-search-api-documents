@@ -1,0 +1,20 @@
+DictionaryServiceDisapprovalReasonPage:
+  type: object
+  nullable: true
+  properties:
+    totalNumEntries:
+      type: integer
+      nullable: false
+      format: int32
+      description: |
+        <div lang="ja">取得される項目の総件数です。</div>
+        <div lang="en">Total number of entries in the result that this page is a part of.</div>
+    values:
+      type: array
+      nullable: true
+      items:
+        $ref: 'DictionaryServiceDisapprovalReasonValue.yaml#/DictionaryServiceDisapprovalReasonValue'
+  title: DictionaryServiceDisapprovalReasonPage
+  description: |
+    <div lang="ja">DictionaryServiceDisapprovalReasonPageオブジェクトは、 EditorialReason一覧を格納するコンテナです。</div>
+    <div lang="en">DictionaryServiceDisapprovalReasonPage object is a container for EditorialReason list</div>

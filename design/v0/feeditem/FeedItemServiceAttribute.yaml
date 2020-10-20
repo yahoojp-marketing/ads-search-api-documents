@@ -18,6 +18,10 @@ FeedItemServiceAttribute:
   title: FeedItemServiceAttribute
   description: |
     <div lang="ja">FeedItemServiceAttributeオブジェクトは、フィードアイテムの属性情報の値を格納します。<br>
-    このフィールドは、ADD時に必須となり、SET時に省略可能となり、REMOVE時に無視されます。</div>
+    このフィールドは、ADD時に必須となり、SET時に省略可能となり、REMOVE時に無視されます。<br>
+    SET時にfeedItemAttributeを指定するとすべて上書きされます。
+    </div>
     <div lang="en">FeedItemServiceAttribute object holds the value of Feed Item information.<br>
-    This field is required in ADD operation, is optional in SET operation, and will be ignored in REMOVE operation.</div>
+    This field is required in ADD operation, is optional in SET operation, and will be ignored in REMOVE operation.<br>
+    If feedItemAttribute is specified in SET operation, it will be overwritten.
+    </div>

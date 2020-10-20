@@ -1,0 +1,14 @@
+CampaignTargetServicePlatformTarget:
+  type: object
+  nullable: true
+  properties:
+    platformType:
+      $ref: 'CampaignTargetServicePlatformType.yaml#/CampaignTargetServicePlatformType'
+  title: CampaignTargetServicePlatformTarget
+  description: |
+    <div lang="ja">CampaignTargetServicePlatformTargetオブジェクトは、デバイス設定を表します。<br>
+    このフィールドは、ADD時およびSET時に省略可能となります。<br>
+    ※TargetTypeがPLATFORMの場合、このフィールドはADD時に必須となります。</div>
+    <div lang="en">CampaignTargetServicePlatformTarget object describes device setting.<br>
+    This field is optional in ADD and SET operation.<br>
+    *If targetType is PLATFORM, this field is required in ADD operation.</div>

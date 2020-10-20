@@ -25,5 +25,9 @@ CampaignFeedServiceList:
       $ref: 'CampaignFeedServicePlaceholderType.yaml#/CampaignFeedServicePlaceholderType'
   title: CampaignFeedServiceList
   description: |
-    <div lang="ja">CampaignFeedServiceListオブジェクトは、キャンペーンに関連付けられたFeedItem情報を表します。</div>
-    <div lang="en">CampaignFeedServiceList object describes FeedItem information connected to campaign.</div>
+    <div lang="ja">CampaignFeedServiceListオブジェクトは、キャンペーンに関連付けられたFeedItem情報を表します。<br>
+    更新時にcampaignFeedを指定するとすべて上書きされ、未指定のcampaignFeedの属性情報は削除されます。
+    </div>
+    <div lang="en">CampaignFeedServiceList object describes FeedItem information connected to campaign.<br>
+    Upon updating, if campaignFeed is specified, the attribute information will be overwritten, but if campaignFeed is not specified, it will be deleted.
+    </div>

@@ -31,5 +31,56 @@ FeedItemServiceFeedAttributeValue:
         Although this field will be returned in the response, it will be ignored on input.</div>
   title: FeedItemServiceFeedAttributeValue
   description: |
-    <div lang="ja">FeedItemServiceFeedAttributeValueオブジェクトは、フィードアイテムの属性値を表示します。</div>
-    <div lang="en">FeedItemServiceFeedAttributeValue object describes FeedItem attribute value.</div>
+    <div lang="ja">FeedItemServiceFeedAttributeValueオブジェクトは、フィードアイテムの属性値を表示します。<br>
+    更新時にfeedAttributeValueを指定するとすべて上書きされ、未指定のfeedAttributeValueの属性情報は削除されます。<br>
+    feedAttributeValueに空文字を指定すると、下記の場合のみフィードアイテムの属性情報は削除されます。
+      <table border="1">
+        <thead>
+          <tr>
+            <th>placeholderType</th>
+            <th>placeholderField</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>QUICKLINK</td>
+            <td>ADVANCED_MOBILE_URL</td>
+          </tr>
+          <tr>
+            <td>QUICKLINK</td>
+            <td>TRACKING_URL</td>
+          </tr>
+          <tr>
+            <td>AD_CUTOMIZER</td>
+            <td>any</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div lang="en">FeedItemServiceFeedAttributeValue object describes FeedItem attribute value.<br>
+      Upon updating, if feedAttributeValue is specified, the attribute information will be overwritten, but if feedAttributeValue is not specified, it will be deleted.<br>
+      If an empty string is specified in feedAttributeValue, the attribute information of the feed item will be deleted only for the following cases.
+      <table border="1">
+        <thead>
+          <tr>
+            <th>placeholderType</th>
+            <th>placeholderField</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>QUICKLINK</td>
+            <td>ADVANCED_MOBILE_URL</td>
+          </tr>
+          <tr>
+            <td>QUICKLINK</td>
+            <td>TRACKING_URL</td>
+          </tr>
+          <tr>
+            <td>AD_CUTOMIZER</td>
+            <td>any</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+

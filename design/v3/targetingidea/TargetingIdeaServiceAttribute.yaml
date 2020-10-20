@@ -1,0 +1,12 @@
+TargetingIdeaServiceAttribute:
+  type: object
+  nullable: true
+  properties:
+    attributeType:
+      $ref: 'TargetingIdeaServiceAttributeType.yaml#/TargetingIdeaServiceAttributeType'
+    keywordAttribute:
+      $ref: 'TargetingIdeaServiceKeywordAttribute.yaml#/TargetingIdeaServiceKeywordAttribute'
+  title: TargetingIdeaServiceAttribute
+  description: |
+    <div lang="ja">TargetingIdeaServiceAttributeオブジェクトは、見積もりの結果の属性を表します。</div>
+    <div lang="en">TargetingIdeaServiceAttribute for estimated results.</div>

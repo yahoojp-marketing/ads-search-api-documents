@@ -1,0 +1,50 @@
+ConversionTrackerServiceAppLinkConversion:
+  type: object
+  nullable: true
+  properties:
+    appVendorId:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">アプリ計測ベンダー識別子です。</div>
+        <div lang="en">Application Vendor ID.</div>
+    appId:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">アプリケーションIDです。</div>
+        <div lang="en">Application ID.</div>
+    appLinkPlatform:
+      $ref: 'ConversionTrackerServiceAppLinkPlatform.yaml#/ConversionTrackerServiceAppLinkPlatform'
+    appEventType:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">アプリイベントタイプです。</div>
+        <div lang="en">Application Event Type.</div>
+    snippet:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">トラッキングスクリプトです。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
+        <div lang="en"> Tracking script.<br>
+        Although this field will be returned in the response, it will be ignored on input.</div>
+    advancedSnippet:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">リニューアル版のコンバージョンタグは、従来のタグよりもブラウザーなどの環境の影響を受けづらい新しいフォーマットです。<br/>
+        詳細は[ヘルプ](https://support-marketing.yahoo.co.jp/promotionalads/ss/articledetail?lan=ja&aid=1159)をご参照ください。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
+        <div lang="en">The new format of conversion tag avoids the impacts such as changes made to the browser. <br/>
+        [Help Page](https://support-marketing.yahoo.co.jp/promotionalads/ss/articledetail?lan=en&aid=353) <br>
+        Although this field will be returned in the response, it will be ignored on input.</div>
+  title: ConversionTrackerServiceAppLinkConversion
+  description: |
+    <div lang="ja">ConversionTrackerServiceAppLinkConversionオブジェクトは、アプリコンバージョン測定タグやタグごとのパフォーマンスデータなどのアプリコンバージョントラッカー情報を表します。<br>
+    このフィールドは、ADDおよびSET時に省略可能となります。<br>
+    ※ADD時、conversionTrackerTypeがAPP_LINK_CONVERSIONの場合は必須です。</div>
+    <div lang="en">ConversionTrackerServiceAppConversion object describes the App ConversionTracker information such as App ConversionTag and performance data by  tag.<br>
+    This field is optional in ADD and SET operation.<br>
+    *If the conversionTrackerType is APP_LINK_CONVERSION, this field will be required in ADD operation.</div>

@@ -1,0 +1,17 @@
+AdGroupCriterionServiceAdditionalAdvancedUrls:
+  type: object
+  nullable: true
+  properties:
+    additionalAdvancedUrl:
+      type: array
+      nullable: true
+      items:
+        $ref: 'AdGroupCriterionServiceAdditionalUrl.yaml#/AdGroupCriterionServiceAdditionalUrl'
+    isRemove:
+      $ref: 'AdGroupCriterionServiceIsRemove.yaml#/AdGroupCriterionServiceIsRemove'
+  title: AdGroupCriterionServiceAdditionalAdvancedUrls
+  description: |
+    <div lang="ja">AdGroupCriterionServiceAdditionalAdvancedUrlsオブジェクトは、追加する最終リンク先URULのリストを保持します。<br>
+    ADDおよびSET時、このフィールドは省略可能となります。</div>
+    <div lang="en">AdGroupCriterionServiceAdditionalAdvancedUrls object holds list of Landing Page URL to be added.<br>
+    This field is optional in ADD and SET operation.</div>

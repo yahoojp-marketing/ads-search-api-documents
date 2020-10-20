@@ -1940,6 +1940,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /AuditLogService/download:
     post:
+      description: |
+        <div lang="ja">操作履歴をダウンロードします。</div>
+        <div lang="en">Download the data of user operation history.</div>
       tags:
         - AuditLogService
       requestBody:
@@ -4462,6 +4465,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /PageFeedItemService/download:
     post:
+      description: |
+        <div lang="ja">ページフィードアイテムをダウンロードします。</div>
+        <div lang="en">Download page feed items.</div>
       tags:
         - PageFeedItemService
       requestBody:
@@ -4507,6 +4513,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /PageFeedItemService/downloadErrorFile:
     post:
+      description: |
+        <div lang="ja">ページフィードアイテムのエラーファイルをダウンロードします。</div>
+        <div lang="en">Download the error file of page feed items.</div>
       tags:
         - PageFeedItemService
       requestBody:
@@ -4881,13 +4890,11 @@ paths:
     post:
       description: |
         <div lang="ja">キャンペーンにFeedItem情報を追加・更新・解除（削除）します。<br>
-        ・FeedItem情報を解除するときは空の情報で更新します。<br>
         ・1つのキャンペーンに設定できるFeedItem情報は、QUICKLINKS、CALLEXTENSIONでそれぞれ20件までです。<br>
         ・CALLEXTENSIONについて1キャンペーンあたり1件の設定をお薦めします。<br>
         ・1リクエスト内で同一のcampaignIdに複数のFeedItem情報は設定できません。
         </div><div lang="en">Add, update or release(remove) FeedItem information of ad group.<br>
         Update will overwrite the old information, so have to include the additional information on every updates. <br>
-        * To release FeedItem information, update with blank data.<br>
         * It is possible to set FeedItem information to ad groups in different campaigns by single request.<br>
         * FeedItem information that can be set for a single ad group is up to 20 for each QUICKLINKS, CALLEXTENSION.<br>
         * As for CALLEXTENSION, We recommend setting only one phone number per ad group.<br>
@@ -5220,6 +5227,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /CampaignExportService/download:
     post:
+      description: |
+        <div lang="ja">エクスポート結果をダウンロードします。</div>
+        <div lang="en">Download the export result.</div>
       tags:
         - CampaignExportService
       requestBody:
@@ -5860,6 +5870,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /ReportDefinitionService/download:
     post:
+      description: |
+        <div lang="ja">レポートをダウンロードします。</div>
+        <div lang="en">Download the report.</div>
       tags:
         - ReportDefinitionService
       requestBody:

@@ -1,0 +1,17 @@
+CampaignTargetServiceNetworkCoverageType:
+  type: string
+  nullable: true
+  enum:
+  - YAHOO_SEARCH
+  - SEARCH_NETWORK
+  - UNKNOWN
+  title: CampaignTargetServiceNetworkCoverageType
+  description: |
+    <div lang="ja">CampaignTargetServiceNetworkCoverageTypeは、広告掲載方式を表します。 この指定は、キャンペーンのPlatformTypeがWAP_MOBILEの場合、指定できません。<br>
+    このフィールドは、ADD時に必須となります。</div>
+    <div lang="en">Network coverage types. This cannot be specified if the campaign's platformType is specified as WAP MOBILE.<br>
+    This field is required in ADD operation.</div>
+    <hr>
+    <p>* <code>YAHOO_SEARCH</code> - <span lang="ja">広告はYahoo!検索の検索結果画面にのみ表示されます。</span><span lang="en">Ads are only displayed in the search results of Yahoo! JAPAN Search.</span></p>
+    <p>* <code>SEARCH_NETWORK</code> - <span lang="ja">広告はYahoo!検索を含むすべての広告掲載方式に配信されます。</span><span lang="en">Ads are delivered in all ad distribution including Yahoo! JAPAN Search.</span></p>
+    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>

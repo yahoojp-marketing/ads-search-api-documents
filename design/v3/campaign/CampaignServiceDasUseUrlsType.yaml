@@ -1,0 +1,17 @@
+CampaignServiceDasUseUrlsType:
+  type: string
+  nullable: true
+  enum:
+  - USE_SUPPLIED_URLS_ONLY
+  - TOP_DOMAIN_ONLY
+  - DOMAIN_AND_SUPPLIED_URLS
+  - UNKNOWN
+  description: |
+    <div lang="ja">DSAのURL使用タイプです。</div>
+    <div lang="en">DSA URL usage type.</div>
+    <hr>
+    <p>* <code>USE_SUPPLIED_URLS_ONLY</code> - <span lang="ja">PageFeedで指定されたURLのみを使用します。</span><span lang="en">Uses only the URL specified in PageFeed.</span></p>
+    <p>* <code>TOP_DOMAIN_ONLY</code> - <span lang="ja">TopDomainからAdWordsに自動クローリングします。</span><span lang="en">Automatically crawl from TopDomain to AdWords.</span></p>
+    <p>* <code>DOMAIN_AND_SUPPLIED_URLS</code> - <span lang="ja">TopDomainからの自動クローリングと、PageFeedで指定されたURLの双方に配信します。</span><span lang="en">It will be delivered to both the automatic crawling from the TopDomain and the URL specified in PageFeed.</span></p>
+    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>
+  title: CampaignServiceDasUseUrlsType

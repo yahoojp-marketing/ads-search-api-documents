@@ -1,0 +1,21 @@
+LabelServiceValue:
+  type: object
+  nullable: true
+  properties:
+    errors:
+      type: array
+      nullable: true
+      items:
+        $ref: '../../Error.yaml#/Error'
+    label:
+      $ref: 'Label.yaml#/Label'
+    operationSucceeded:
+      type: boolean
+      nullable: true
+      description: |
+        <div lang="ja">処理結果です。trueの場合は、処理は成功しました。falseの場合は処理が失敗しています。</div>
+        <div lang="en">The process results. If true, the process succeeded. If false, the process failed.</div>
+  title: LabelServiceValue
+  description: |
+    <div lang="ja">LabelServiceValueオブジェクトは、操作結果を含むラベルの情報を表します。</div>
+    <div lang="en">LabelServiceValue object describes label information including its operation results.</div>

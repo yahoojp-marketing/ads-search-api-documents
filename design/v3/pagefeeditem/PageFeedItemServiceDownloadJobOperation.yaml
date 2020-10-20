@@ -1,0 +1,24 @@
+PageFeedItemServiceDownloadJobOperation:
+  type: object
+  nullable: true
+  required:
+  - operand
+  properties:
+    accountId:
+      type: integer
+      nullable: false
+      format: int64
+      description: |
+        <div lang="ja">アカウントID</div>
+        <div lang="en">Account ID</div>
+    operand:
+      type: array
+      nullable: true
+      items:
+        $ref: 'PageFeedItemServiceDownloadJob.yaml#/PageFeedItemServiceDownloadJob'
+      minItems: 1
+      maxItems: 1
+  title: PageFeedItemServiceDownloadJobOperation
+  description: |
+    <div lang="ja">PageFeedItemServiceDownloadJobOperationオブジェクトは、ページフィードアイテムを一括でダウンロードするための処理の内容を表します。</div>
+    <div lang="en">PageFeedItemServiceDownloadJobOperation object displays content of page feed item for download collectively.</div>

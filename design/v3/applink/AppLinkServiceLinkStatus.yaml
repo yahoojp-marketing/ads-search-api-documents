@@ -1,0 +1,17 @@
+AppLinkServiceLinkStatus:
+  type: string
+  nullable: true
+  enum:
+  - ENABLED
+  - DISABLED
+  - UNKNOWN
+  title: AppLinkServiceLinkStatus
+  description: |
+    <div lang="ja">AppLinkServiceLinkStatusは、リンクステータスを表します。<br>
+    SET時、このフィールドは省略可能となります。</div>
+    <div lang="en">Link Status.<br>
+    This field is optional in SET operation.</div>
+    <hr>
+    <p>* <code>ENABLED</code> - <span lang="ja">リンクは有効です。</span><span lang="en">The link is valid.</span></p>
+    <p>* <code>DISABLED</code> - <span lang="ja">リンクは無効です。</span><span lang="en">The link is invalid.</span></p>
+    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>

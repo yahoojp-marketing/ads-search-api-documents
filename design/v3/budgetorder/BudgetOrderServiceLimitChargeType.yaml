@@ -1,0 +1,22 @@
+BudgetOrderServiceLimitChargeType:
+  type: string
+  nullable: true
+  enum:
+  - SUM
+  - MONTHLY
+  - UNKNOWN
+  title: BudgetOrderServiceLimitChargeType
+  description: |
+    <div lang="ja">
+    BudgetOrderServiceLimitChargeTypeは、アカウントの予算種別を表します。<br>
+    SET時、このフィールドは省略可能となります。また、月額予算を変更する場合は<code>MONTHLY</code>を指定します。
+    </div>
+    <div lang="en">
+    BudgetOrderServiceLimitChargeType serves the account's budget allotment.<br>
+    This field is optional in SET operation.
+    Specify <code>MONTHLY</code> to change the monthly budget.
+    </div>
+    <hr>
+    <p>* <code>SUM</code> - <span lang="ja">総額アカウントです。</span><span lang="en">Total amount</span></p>
+    <p>* <code>MONTHLY</code> - <span lang="ja">月額アカウントです。</span><span lang="en">Monthly amount</span></p>
+    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>

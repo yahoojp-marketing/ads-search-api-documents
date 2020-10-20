@@ -1,0 +1,15 @@
+AppLinkServiceAppLinkPlatform:
+  type: string
+  nullable: true
+  enum:
+  - ANDROID
+  - UNKNOWN
+  title: AppLinkServiceAppLinkPlatform
+  description: |
+    <div lang="ja">AppLinkServiceAppLinkPlatformは、アプリケーションプラットフォームを表します。<br>
+    ADD時、このフィールドは省略可能となります。</div>
+    <div lang="en">App Link Platform.<br>
+    This field is optional in ADD operation.</div>
+    <hr>
+    <p>* <code>ANDROID</code> - <span lang="ja">ANDROID</span><span lang="en">ANDROID</span></p>
+    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>
