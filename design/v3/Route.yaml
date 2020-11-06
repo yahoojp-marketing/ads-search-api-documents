@@ -5,7 +5,7 @@ info:
   description: |
     <div lang="ja">Yahoo!広告 検索広告 APIのWebサービスについて説明します。</div>
     <div lang="en">Search Ads API Web Services supported in Yahoo! JAPAN Ads API.</div>
-    <div><a target="_blank" href="./design/v3/Route.yaml">OpenAPI Specification</a></div>
+    <div><a target="_blank" href="https://github.com/yahoojp-marketing/ads-search-api-documents/blob/master/design/v3/Route.yaml">OpenAPI Specification</a></div>
 
 components:
   securitySchemes:
