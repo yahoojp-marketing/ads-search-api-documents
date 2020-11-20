@@ -14,6 +14,11 @@ RetargetingListServiceReachStorageStatus:
     This field is optional.<br>
     *For logicalTargetList, this field will be returned  in the response, but it will be ignored on input.</div>
     <hr>
-    <p>* <code>CLOSED</code> - <span lang="ja">無効です。<br>リーチを蓄積しません。</span><span lang="en">Invalid status.<br>Reach will not be stored.</span></p>
-    <p>* <code>OPEN</code> - <span lang="ja">有効です。<br>リーチを蓄積します。</span><span lang="en">Valid status.<br>Reach will be stored.</span></p>
-    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>
+    <dl class=term>
+      <dt class="term__item">CLOSED</dt>
+      <dd class="term__desc"><span lang="ja">無効です。<br>リーチを蓄積しません。</span><span lang="en">Invalid status.<br>Reach will not be stored.</span></dd>
+      <dt class="term__item">OPEN</dt>
+      <dd class="term__desc"><span lang="ja">有効です。<br>リーチを蓄積します。</span><span lang="en">Valid status.<br>Reach will be stored.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

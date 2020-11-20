@@ -14,8 +14,15 @@ CampaignTargetServiceTargetType:
     <div lang="en">Type of target setting.<br>
     This field is required in any cases.</div>
     <hr>
-    <p>* <code>LOCATION</code> - <span lang="ja">地域ターゲットです。</span><span lang="en">LocationTarget.</span></p>
-    <p>* <code>SCHEDULE</code> - <span lang="ja">時間帯ターゲットです。</span><span lang="en">ScheduleTarget.</span></p>
-    <p>* <code>NETWORK</code> - <span lang="ja">ネットワークターゲットです。</span><span lang="en">NetworkTarget.</span></p>
-    <p>* <code>PLATFORM</code> - <span lang="ja">デバイスターゲットです。</span><span lang="en">PlatformTarget.</span></p>
-    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>
+    <dl class=term>
+      <dt class="term__item">LOCATION</dt>
+      <dd class="term__desc"><span lang="ja">地域ターゲットです。</span><span lang="en">LocationTarget.</span></dd>
+      <dt class="term__item">SCHEDULE</dt>
+      <dd class="term__desc"><span lang="ja">時間帯ターゲットです。</span><span lang="en">ScheduleTarget.</span></dd>
+      <dt class="term__item">NETWORK</dt>
+      <dd class="term__desc"><span lang="ja">ネットワークターゲットです。</span><span lang="en">NetworkTarget.</span></dd>
+      <dt class="term__item">PLATFORM</dt>
+      <dd class="term__desc"><span lang="ja">デバイスターゲットです。</span><span lang="en">PlatformTarget.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

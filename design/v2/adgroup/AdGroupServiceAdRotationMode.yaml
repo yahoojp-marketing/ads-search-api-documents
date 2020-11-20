@@ -12,6 +12,11 @@ AdGroupServiceAdRotationMode:
     <div lang="en">AdGroupServiceAdRotationMode describes Ad Rotation settings for optimizing and displaying ads.<br>
     This field is optional in ADD and SET operation.</div>
     <hr>
-    <p>* <code>OPTIMIZE</code> - <span lang="ja">最適化して配信します。</span><span lang="en">Optimizes and display ads</span></p>
-    <p>* <code>ROTATE_FOREVER</code> - <span lang="ja">常に均等に配信します（最適化しない）。</span><span lang="en">Always rotates ads evenly (not optimized)</span></p>
-    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>
+    <dl class=term>
+      <dt class="term__item">OPTIMIZE</dt>
+      <dd class="term__desc"><span lang="ja">最適化して配信します。</span><span lang="en">Optimizes and display ads</span></dd>
+      <dt class="term__item">ROTATE_FOREVER</dt>
+      <dd class="term__desc"><span lang="ja">常に均等に配信します（最適化しない）。</span><span lang="en">Always rotates ads evenly (not optimized)</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

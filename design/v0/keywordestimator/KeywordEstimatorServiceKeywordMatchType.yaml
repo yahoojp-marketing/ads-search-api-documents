@@ -11,7 +11,13 @@ KeywordEstimatorServiceKeywordMatchType:
     <div lang="ja">KeywordEstimatorServiceKeywordMatchTypeは、キーワードのマッチタイプを表します。</div>
     <div lang="en">KeywordEstimatorServiceKeywordMatchType describes keyword match type.</div>
     <hr>
-    <p> * <code>EXACT</code> - <span lang="ja">完全一致です。</span><span lang="en">Exact match.</span></p>
-    <p> * <code>PHRASE</code> - <span lang="ja">フレーズ一致です。</span><span lang="en">Phrase match.</span></p>
-    <p> * <code>BROAD</code> - <span lang="ja">部分一致です。</span><span lang="en">Broad match.</span></p>
-    <p> * <code>UNKNOWN</code> - <span lang=ja>未知の値です。</span><span lang=en>Unknown Value.</span></p>
+    <dl class=term>
+      <dt class="term__item">EXACT</dt>
+      <dd class="term__desc"><span lang="ja">完全一致です。</span><span lang="en">Exact match.</span></dd>
+      <dt class="term__item">PHRASE</dt>
+      <dd class="term__desc"><span lang="ja">フレーズ一致です。</span><span lang="en">Phrase match.</span></dd>
+      <dt class="term__item">BROAD</dt>
+      <dd class="term__desc"><span lang="ja">部分一致です。</span><span lang="en">Broad match.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang=ja>未知の値です。</span><span lang=en>Unknown Value.</span></dd>
+    </dl>

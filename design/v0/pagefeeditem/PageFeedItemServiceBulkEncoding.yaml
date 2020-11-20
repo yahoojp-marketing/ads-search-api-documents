@@ -15,7 +15,13 @@ PageFeedItemServiceBulkEncoding:
     This field is optional.<br>
     The default value will be SJIS.</div>
     <hr>
-    <p>* <code>UTF-8</code> - <span lang="ja">UTF-8形式</span><span lang="en">Character code:UTF-8</span></p>
-    <p>* <code>UTF-16LE</code> - <span lang="ja">UTF-16LE形式</span><span lang="en">Character code:UTF-16LE</span></p>
-    <p>* <code>SJIS</code> - <span lang="ja">SJIS形式</span><span lang="en">Character code:SJIS</span></p>
-    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>
+    <dl class=term>
+      <dt class="term__item">UTF-8</dt>
+      <dd class="term__desc"><span lang="ja">UTF-8形式</span><span lang="en">Character code:UTF-8</span></dd>
+      <dt class="term__item">UTF-16LE</dt>
+      <dd class="term__desc"><span lang="ja">UTF-16LE形式</span><span lang="en">Character code:UTF-16LE</span></dd>
+      <dt class="term__item">SJIS</dt>
+      <dd class="term__desc"><span lang="ja">SJIS形式</span><span lang="en">Character code:SJIS</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

@@ -12,6 +12,11 @@ RetargetingListServiceIsAllVisitorRule:
     <div lang="en">RetargetingListServiceIsAllVisitorRule define the rule of visitors.<br>
     This field is required in ADD and SET operation.</div>
     <hr>
-    <p>* <code>TRUE</code> - <span lang="ja">すべての訪問者へのターゲットリストです。</span><span lang="en">Target list to all visitors.</span></p>
-    <p>* <code>FALSE</code> - <span lang="ja">通常の条件によるターゲットリストです。</span><span lang="en">Target list in standard condition.</span></p>
-    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>
+    <dl class=term>
+      <dt class="term__item">TRUE</dt>
+      <dd class="term__desc"><span lang="ja">すべての訪問者へのターゲットリストです。</span><span lang="en">Target list to all visitors.</span></dd>
+      <dt class="term__item">FALSE</dt>
+      <dd class="term__desc"><span lang="ja">通常の条件によるターゲットリストです。</span><span lang="en">Target list in standard condition.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

@@ -12,6 +12,11 @@ AuditLogServiceLang:
     <div lang="en">AuditLogServiceLang describes the language setting of operation history data file.<br>
     This field is optional. The default value will be JA.</div>
     <hr>
-    <p>* <code>EN</code> - <span lang="ja">英語です。</span><span lang="en">English language</span></p>
-    <p>* <code>JA</code> - <span lang="ja">日本語です。</span><span lang="en">Japanese language</span></p>
-    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>
+    <dl class=term>
+      <dt class="term__item">EN</dt>
+      <dd class="term__desc"><span lang="ja">英語です。</span><span lang="en">English language</span></dd>
+      <dt class="term__item">JA</dt>
+      <dd class="term__desc"><span lang="ja">日本語です。</span><span lang="en">Japanese language</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

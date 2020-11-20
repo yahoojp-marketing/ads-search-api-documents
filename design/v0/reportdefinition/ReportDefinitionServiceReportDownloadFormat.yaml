@@ -14,7 +14,13 @@ ReportDefinitionServiceReportDownloadFormat:
     This field is optional in ADD operation.
     </div>
     <hr>
-    <p>* <code>CSV</code> - <span lang="ja">CSVフォーマットです。<br>カンマで区分されます。<br> ※デフォルトに設定されます。</span><span lang="en">CSV output format.<br>Separated by comma.<br> *Default setting.</span></p>
-    <p>* <code>XML</code> - <span lang="ja">XMLフォーマットです。</span><span lang="en">XML output format.</span></p>
-    <p>* <code>TSV</code> - <span lang="ja">TSVフォーマットです。</span><span lang="en">TSV output format.</span></p>
-    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>
+    <dl class=term>
+      <dt class="term__item">CSV</dt>
+      <dd class="term__desc"><span lang="ja">CSVフォーマットです。<br>カンマで区分されます。<br> ※デフォルトに設定されます。</span><span lang="en">CSV output format.<br>Separated by comma.<br> *Default setting.</span></dd>
+      <dt class="term__item">XML</dt>
+      <dd class="term__desc"><span lang="ja">XMLフォーマットです。</span><span lang="en">XML output format.</span></dd>
+      <dt class="term__item">TSV</dt>
+      <dd class="term__desc"><span lang="ja">TSVフォーマットです。</span><span lang="en">TSV output format.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

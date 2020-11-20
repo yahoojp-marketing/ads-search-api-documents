@@ -13,7 +13,13 @@ ConversionTrackerServiceAppConversionType:
     <div lang="en">ConversionTrackerServiceAppConversionType describes App conversion type.<br>
     This field is required in ADD operation.</div>
     <hr>
-    <p>* <code>FIRST_OPEN</code> - <span lang="ja">アプリ初回起動コンバージョンです。</span><span lang="en">App first open conversion.</span></p>
-    <p>* <code>DOWNLOAD</code> - <span lang="ja">アプリダウンロード時のコンバージョンです。</span><span lang="en">App download conversion.</span></p>
-    <p>* <code>IN_APP_PURCHASE</code> - <span lang="ja">アプリ内行動コンバージョンです。</span><span lang="en">In-app action conversion.</span></p>
-    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>
+    <dl class=term>
+      <dt class="term__item">FIRST_OPEN</dt>
+      <dd class="term__desc"><span lang="ja">アプリ初回起動コンバージョンです。</span><span lang="en">App first open conversion.</span></dd>
+      <dt class="term__item">DOWNLOAD</dt>
+      <dd class="term__desc"><span lang="ja">アプリダウンロード時のコンバージョンです。</span><span lang="en">App download conversion.</span></dd>
+      <dt class="term__item">IN_APP_PURCHASE</dt>
+      <dd class="term__desc"><span lang="ja">アプリ内行動コンバージョンです。</span><span lang="en">In-app action conversion.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

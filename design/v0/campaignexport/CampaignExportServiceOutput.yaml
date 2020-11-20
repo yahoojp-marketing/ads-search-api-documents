@@ -12,6 +12,11 @@ CampaignExportServiceOutput:
     <div lang="en">CampaignExportServiceOutput is an output format for exporting data.<br>
     This field is required.</div>
     <hr>
-    <p>* <code>CSV</code> - <span lang="ja">CSVフォーマットです。</span><span lang="en">CSV format.</span></p>
-    <p>* <code>ZIPPED_CSV</code> - <span lang="ja">ZIP圧縮されたCSVフォーマットです。</span><span lang="en">ZIP filed CSV format.</span></p>
-    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>
+    <dl class=term>
+      <dt class="term__item">CSV</dt>
+      <dd class="term__desc"><span lang="ja">CSVフォーマットです。</span><span lang="en">CSV format.</span></dd>
+      <dt class="term__item">ZIPPED_CSV</dt>
+      <dd class="term__desc"><span lang="ja">ZIP圧縮されたCSVフォーマットです。</span><span lang="en">ZIP filed CSV format.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

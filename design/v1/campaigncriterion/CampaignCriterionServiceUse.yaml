@@ -11,5 +11,9 @@ CampaignCriterionServiceUse:
     <div lang="en">CampaignCriterionServiceUse describes the criteria to be selected.<br>
     This field is required in ADD and REMOVE operation.</div>
     <hr>
-    <p>* <code>NEGATIVE</code> - <span lang="ja">除外クライテリア（広告を表示させないためのターゲット条件）です。</span><span lang="en">Negative criteria (a part of target condition not to display ads).</span></p>
-    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>
+    <dl class=term>
+      <dt class="term__item">NEGATIVE</dt>
+      <dd class="term__desc"><span lang="ja">除外クライテリア（広告を表示させないためのターゲット条件）です。</span><span lang="en">Negative criteria (a part of target condition not to display ads).</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

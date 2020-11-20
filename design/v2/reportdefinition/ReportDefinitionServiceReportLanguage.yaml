@@ -12,6 +12,11 @@ ReportDefinitionServiceReportLanguage:
     <div lang="en">ReportDefinitionServiceReportLanguage is a language selection for report definition.<br>
     This field is optional in ADD operation.</div>
     <hr>
-    <p>* <code>JA</code> - <span lang="ja">言語：日本語です。<br>※デフォルトに設定されます。</span><span lang="en">Language: Japanese.<br> *Default setting.</span></p>
-    <p>* <code>EN</code> - <span lang="ja">言語：英語です。</span><span lang="en">Language: English.</span></p>
-    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>
+    <dl class=term>
+      <dt class="term__item">JA</dt>
+      <dd class="term__desc"><span lang="ja">言語：日本語です。<br>※デフォルトに設定されます。</span><span lang="en">Language: Japanese.<br> *Default setting.</span></dd>
+      <dt class="term__item">EN</dt>
+      <dd class="term__desc"><span lang="ja">言語：英語です。</span><span lang="en">Language: English.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

@@ -6,6 +6,8 @@ info:
     <div lang="ja">Yahoo!広告 検索広告 APIのWebサービスについて説明します。</div>
     <div lang="en">Search Ads API Web Services supported in Yahoo! JAPAN Ads API.</div>
     <div><a target="_blank" href="https://github.com/yahoojp-marketing/ads-search-api-documents/blob/master/design/v2/Route.yaml">OpenAPI Specification</a></div>
+    <div lang="ja"><a target="_blank" href="https://github.com/yahoojp-marketing/ads-search-api-documents/blob/master/bestpractice/ja">Best Practice</a></div>
+    <div lang="en"><a target="_blank" href="https://github.com/yahoojp-marketing/ads-search-api-documents/blob/master/bestpractice/en">Best Practice</a></div>
 
 components:
   securitySchemes:
@@ -4407,8 +4409,12 @@ paths:
               <div lang="ja">PageFeedItemUploadTypeは、アップロードする方法の種類を表します。</div>
               <div lang="en">PageFeedItemUploadType displays kind of upload method.</div>
               <hr>
-              <p>* <code>NEW_OR_REPLACE</code> - <span lang="ja">新規登録または、すべて置き換える場合の設定</span><span lang="en">New registration or replace all.</span></p>
-              <p>* <code>MODIFY</code> - <span lang="ja">既存のページフィードアイテムを更新</span><span lang="en">Modify existing page feed item.</span></p>
+              <dl class="term">
+                <dt class="term__item">NEW_OR_REPLACE</dt>
+                <dd class="term__desc"><span lang="ja">新規登録または、すべて置き換える場合の設定</span><span lang="en">New registration or replace all.</span></dd>
+                <dt class="term__item">MODIFY</dt>
+                <dd class="term__desc"><span lang="ja">既存のページフィードアイテムを更新</span><span lang="en">Modify existing page feed item.</span></dd>
+              </dl>
           required: true
           description: |
             <div lang="ja">PageFeedItemUploadTypeは、アップロードする方法の種類を表します。</div>

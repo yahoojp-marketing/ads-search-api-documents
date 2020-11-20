@@ -13,7 +13,13 @@ RetargetingListServiceTargetListType:
     <div lang="en">RetargetingListServiceTargetListType is the type of target list.<br>
     This field is required in any cases.</div>
     <hr>
-    <p>* <code>RULE</code> - <span lang="ja">URL条件リストです。</span><span lang="en">URL Condition list</span></p>
-    <p>* <code>LOGICAL</code> - <span lang="ja">組み合わせリストです。</span><span lang="en">Combination list</span></p>
-    <p>* <code>DEFAULT</code> - <span lang="ja">デフォルトリストです。</span><span lang="en">Default list</span></p>
-    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>
+    <dl class=term>
+      <dt class="term__item">RULE</dt>
+      <dd class="term__desc"><span lang="ja">URL条件リストです。</span><span lang="en">URL Condition list</span></dd>
+      <dt class="term__item">LOGICAL</dt>
+      <dd class="term__desc"><span lang="ja">組み合わせリストです。</span><span lang="en">Combination list</span></dd>
+      <dt class="term__item">DEFAULT</dt>
+      <dd class="term__desc"><span lang="ja">デフォルトリストです。</span><span lang="en">Default list</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

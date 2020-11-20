@@ -12,6 +12,11 @@ CampaignTargetServiceNetworkCoverageType:
     <div lang="en">Network coverage types. This cannot be specified if the campaign's platformType is specified as WAP MOBILE.<br>
     This field is required in ADD operation.</div>
     <hr>
-    <p>* <code>YAHOO_SEARCH</code> - <span lang="ja">広告はYahoo!検索の検索結果画面にのみ表示されます。</span><span lang="en">Ads are only displayed in the search results of Yahoo! JAPAN Search.</span></p>
-    <p>* <code>SEARCH_NETWORK</code> - <span lang="ja">広告はYahoo!検索を含むすべての広告掲載方式に配信されます。</span><span lang="en">Ads are delivered in all ad distribution including Yahoo! JAPAN Search.</span></p>
-    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>
+    <dl class=term>
+      <dt class="term__item">YAHOO_SEARCH</dt>
+      <dd class="term__desc"><span lang="ja">広告はYahoo!検索の検索結果画面にのみ表示されます。</span><span lang="en">Ads are only displayed in the search results of Yahoo! JAPAN Search.</span></dd>
+      <dt class="term__item">SEARCH_NETWORK</dt>
+      <dd class="term__desc"><span lang="ja">広告はYahoo!検索を含むすべての広告掲載方式に配信されます。</span><span lang="en">Ads are delivered in all ad distribution including Yahoo! JAPAN Search.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

@@ -10,6 +10,10 @@ CampaignServiceBiddingStrategySource:
     <div lang="en">CampaignServiceBiddingStrategySource is a source of Auto Bidding.<br>
     This field will be ignored in ADD operation.</div>
     <hr>
-    <p>* <code>CAMPAIGN</code> - <span lang="ja">キャンペーンです。</span><span lang="en">Campaign</span></p>
-    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>
+    <dl class=term>
+      <dt class="term__item">CAMPAIGN</dt>
+      <dd class="term__desc"><span lang="ja">キャンペーンです。</span><span lang="en">Campaign</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>
   title: CampaignServiceBiddingStrategySource

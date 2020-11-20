@@ -15,9 +15,17 @@ AdGroupAdServiceTrademarkStatus:
     <div lang="en">AdGroupAdServiceTrademarkStatus object describes the status of trademark.<br>
     Although this field will be returned in the response, it will be ignored on input.</div>
     <hr>
-    <p>* <code>DISAPPROVED_CLAIM</code> - <span lang="ja">不服申立否認</span><span lang="en">Disapproved claim.</span></p>
-    <p>* <code>DISAPPROVED_REVIEWER</code> - <span lang="ja">目視による審査での否認</span><span lang="en">Disapproved reviewer.</span></p>
-    <p>* <code>NO_RESTRICTION</code> - <span lang="ja">制限なし</span><span lang="en">No restriction.</span></p>
-    <p>* <code>CONFLICT_WITH_TRADEMARK</code> - <span lang="ja">商標に抵触して配信停止中</span><span lang="en">Conflict with trademark.</span></p>
-    <p>* <code>CLAIM_IN_PROGRESS</code> - <span lang="ja">不服申立中</span><span lang="en">Claim in progress.</span></p>
-    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>
+    <dl class=term>
+      <dt class="term__item">DISAPPROVED_CLAIM</dt>
+      <dd class="term__desc"><span lang="ja">不服申立否認</span><span lang="en">Disapproved claim.</span></dd>
+      <dt class="term__item">DISAPPROVED_REVIEWER</dt>
+      <dd class="term__desc"><span lang="ja">目視による審査での否認</span><span lang="en">Disapproved reviewer.</span></dd>
+      <dt class="term__item">NO_RESTRICTION</dt>
+      <dd class="term__desc"><span lang="ja">制限なし</span><span lang="en">No restriction.</span></dd>
+      <dt class="term__item">CONFLICT_WITH_TRADEMARK</dt>
+      <dd class="term__desc"><span lang="ja">商標に抵触して配信停止中</span><span lang="en">Conflict with trademark.</span></dd>
+      <dt class="term__item">CLAIM_IN_PROGRESS</dt>
+      <dd class="term__desc"><span lang="ja">不服申立中</span><span lang="en">Claim in progress.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

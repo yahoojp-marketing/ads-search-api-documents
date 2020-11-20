@@ -12,6 +12,11 @@ AccountServiceAutoTaggingEnabled:
     <div lang="en">AccountServiceAutoTaggingEnabled is management flag for whether or not to set auto tag.<br>
     This field is optional in SET operation.</div>
     <hr>
-    <p>* <code>TRUE</code> - <span lang="ja">する</span><span lang="en">setting</span></p>
-    <p>* <code>FALSE</code> - <span lang="ja">しない</span><span lang="en">not setting</span></p>
-    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>
+    <dl class=term>
+      <dt class="term__item">TRUE</dt>
+      <dd class="term__desc"><span lang="ja">する</span><span lang="en">setting</span></dd>
+      <dt class="term__item">FALSE</dt>
+      <dd class="term__desc"><span lang="ja">しない</span><span lang="en">not setting</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

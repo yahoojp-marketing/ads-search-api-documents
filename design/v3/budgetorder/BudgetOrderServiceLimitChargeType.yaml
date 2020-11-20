@@ -17,6 +17,11 @@ BudgetOrderServiceLimitChargeType:
     Specify <code>MONTHLY</code> to change the monthly budget.
     </div>
     <hr>
-    <p>* <code>SUM</code> - <span lang="ja">総額アカウントです。</span><span lang="en">Total amount</span></p>
-    <p>* <code>MONTHLY</code> - <span lang="ja">月額アカウントです。</span><span lang="en">Monthly amount</span></p>
-    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>
+    <dl class=term>
+      <dt class="term__item">SUM</dt>
+      <dd class="term__desc"><span lang="ja">総額アカウントです。</span><span lang="en">Total amount</span></dd>
+      <dt class="term__item">MONTHLY</dt>
+      <dd class="term__desc"><span lang="ja">月額アカウントです。</span><span lang="en">Monthly amount</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

@@ -12,6 +12,11 @@ AdGroupAdServiceUserStatus:
     <div lang="en">AdGroupAdServiceUserStatus displays ad delivery status that can be set by an user.<br>
     This field is required in ADD operation, and will be optional in SET operation.</div>
     <hr>
-    <p>* <code>ACTIVE</code> - <span lang="ja">広告は配信されている状態です。</span><span lang="en">Currently ad delivery is active.</span></p>
-    <p>* <code>PAUSED</code> - <span lang="ja">広告は一時停止の状態のため、配信されていません。</span><span lang="en">Currently ad is paused, which the delivery is not active.</span></p>
-    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>
+    <dl class=term>
+      <dt class="term__item">ACTIVE</dt>
+      <dd class="term__desc"><span lang="ja">広告は配信されている状態です。</span><span lang="en">Currently ad delivery is active.</span></dd>
+      <dt class="term__item">PAUSED</dt>
+      <dd class="term__desc"><span lang="ja">広告は一時停止の状態のため、配信されていません。</span><span lang="en">Currently ad is paused, which the delivery is not active.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

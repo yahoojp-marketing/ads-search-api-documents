@@ -11,5 +11,9 @@ RetargetingListServiceClosingReason:
     <div lang="en">RetargetingListServiceClosingReason defines the reason for closing.　<br>
     Although this field will be returned in the response, it will be ignored on input.</div>
     <hr>
-    <p>* <code>UNUSED_LIST</code> - <span lang="ja">未利用です。</span><span lang="en">Unused</span></p>
-    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>
+    <dl class=term>
+      <dt class="term__item">UNUSED_LIST</dt>
+      <dd class="term__desc"><span lang="ja">未利用です。</span><span lang="en">Unused</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

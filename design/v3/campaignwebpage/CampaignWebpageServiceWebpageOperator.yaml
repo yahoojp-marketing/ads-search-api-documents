@@ -16,6 +16,11 @@ CampaignWebpageServiceWebpageOperator:
     If you specified EQUALS in operator, you can specify only one value in condition. <br>
     This field will be ignored in SET and REMOVE operation.</div>
     <hr>
-    <p>* <code>CONTAINS</code> - <span lang="ja">指定の値を含みます。</span><span lang="en">Contains the selected value.</span></p>
-    <p>* <code>EQUALS</code> - <span lang="ja">指定の値と一致します。</span><span lang="en">Equal to selected value.</span></p>
-    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>
+    <dl class=term>
+      <dt class="term__item">CONTAINS</dt>
+      <dd class="term__desc"><span lang="ja">指定の値を含みます。</span><span lang="en">Contains the selected value.</span></dd>
+      <dt class="term__item">EQUALS</dt>
+      <dd class="term__desc"><span lang="ja">指定の値と一致します。</span><span lang="en">Equal to selected value.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

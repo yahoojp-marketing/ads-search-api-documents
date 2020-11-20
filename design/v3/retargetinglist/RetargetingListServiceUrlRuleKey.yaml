@@ -12,6 +12,11 @@ RetargetingListServiceUrlRuleKey:
     <div lang="en">RetargetingListServiceUrlRuleKey is the evaluation to set URL rules.<br>
     This field is required in ADD and SET operation.</div>
     <hr>
-    <p>* <code>URL</code> - <span lang="ja">URLです。</span><span lang="en">URL.</span></p>
-    <p>* <code>REFFER_URL</code> - <span lang="ja">リファラURLです。</span><span lang="en">Refer URL.</span></p>
-    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>
+    <dl class=term>
+      <dt class="term__item">URL</dt>
+      <dd class="term__desc"><span lang="ja">URLです。</span><span lang="en">URL.</span></dd>
+      <dt class="term__item">REFFER_URL</dt>
+      <dd class="term__desc"><span lang="ja">リファラURLです。</span><span lang="en">Refer URL.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

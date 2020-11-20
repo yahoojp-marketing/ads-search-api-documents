@@ -16,8 +16,15 @@ PageFeedItemServiceBulkOutput:
     This field is optional.<br>
     The default value will be CSV.</div>
     <hr>
-    <p>* <code>CSV</code> - <span lang="ja">CSV形式</span><span lang="en">Format of CSV</span></p>
-    <p>* <code>TSV</code> - <span lang="ja">TSV形式</span><span lang="en">Format of TSV</span></p>
-    <p>* <code>ZIPPED_CSV</code> - <span lang="ja">ZIP圧縮されたCSV形式</span><span lang="en">Zipped CSV.</span></p>
-    <p>* <code>ZIPPED_TSV</code> - <span lang="ja">ZIP圧縮されたTSV形式</span><span lang="en">Zipped TSV.</span></p>
-    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>
+    <dl class=term>
+      <dt class="term__item">CSV</dt>
+      <dd class="term__desc"><span lang="ja">CSV形式</span><span lang="en">Format of CSV</span></dd>
+      <dt class="term__item">TSV</dt>
+      <dd class="term__desc"><span lang="ja">TSV形式</span><span lang="en">Format of TSV</span></dd>
+      <dt class="term__item">ZIPPED_CSV</dt>
+      <dd class="term__desc"><span lang="ja">ZIP圧縮されたCSV形式</span><span lang="en">Zipped CSV.</span></dd>
+      <dt class="term__item">ZIPPED_TSV</dt>
+      <dd class="term__desc"><span lang="ja">ZIP圧縮されたTSV形式</span><span lang="en">Zipped TSV.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

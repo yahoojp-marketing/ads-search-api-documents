@@ -12,6 +12,11 @@ CampaignServiceAppStore:
     <div lang="en">CampaignServiceAppStore is the type of app store.<br>
     In ADD operation, this field will be ignored when campaignType is 'STANDARD' or 'DYNAMIC_ADS_FOR_SEARCH_SETTING', and is required when campaignType is MOBILE_APP.</div>
     <hr>
-    <p>* <code>IOS</code> - <span lang="ja">iOS（App Store）です。</span><span lang="en">iOS(App Store)</span></p>
-    <p>* <code>ANDROID</code> - <span lang="ja">Android（Google Play）です。</span><span lang="en">Android(Google Play)</span></p>
-    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>
+    <dl class=term>
+      <dt class="term__item">IOS</dt>
+      <dd class="term__desc"><span lang="ja">iOS（App Store）です。</span><span lang="en">iOS(App Store)</span></dd>
+      <dt class="term__item">ANDROID</dt>
+      <dd class="term__desc"><span lang="ja">Android（Google Play）です。</span><span lang="en">Android(Google Play)</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>
