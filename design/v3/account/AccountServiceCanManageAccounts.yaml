@@ -8,10 +8,12 @@ AccountServiceCanManageAccounts:
   title: AccountServiceCanManageAccounts
   description: |
     <div lang="ja">
-    AccountServiceCanManageAccountsは、マネージャアカウントかどうかを表します。
+    AccountServiceCanManageAccountsは、マネージャアカウントかどうかを表します。<br>
+    *現在利用できません
     </div>
     <div lang="en">
-    AccountServiceCanManageAccounts describes whether it is a manager account.
+    AccountServiceCanManageAccounts describes whether it is a manager account.<br>
+    * Not Available.
     </div>
     <hr>
     <dl class=term>

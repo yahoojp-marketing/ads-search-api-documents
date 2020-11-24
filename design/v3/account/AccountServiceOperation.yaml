@@ -17,8 +17,8 @@ AccountServiceOperation:
       nullable: true
       format: int64
       description: |
-        <div lang="ja">マネージャアカウントIDです。<br>※v4以降提供開始</div>
-        <div lang="en">Manager Account ID.<br>* This is available from v4.</div>
+        <div lang="ja">マネージャアカウントIDです。<br>※現在利用できません</div>
+        <div lang="en">Manager Account ID.<br>* Not Available.</div>
     operand:
       type: array
       nullable: true

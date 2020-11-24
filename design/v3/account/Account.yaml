@@ -18,11 +18,11 @@ Account:
       description: |
         <div lang="ja">
         アカウントが属しているマネージャアカウントIDです。<br>
-        ※v4以降提供開始
+        ※現在利用できません
         </div>
         <div lang="en">
         Manager account ID to which the account belongs.<br>
-        * This is available from v4.
+        * Not Available.
         </div>
     accountName:
       type: string
