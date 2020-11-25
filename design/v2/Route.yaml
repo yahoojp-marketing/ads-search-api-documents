@@ -1851,8 +1851,8 @@ paths:
   /AuditLogService/get:
     post:
       description: |
-        <div lang="ja">操作履歴のダウンロードURLを取得します。</div>
-        <div lang="en">Get the download URL for operation history data.</div>
+        <div lang="ja">downloadの処理状況を取得します。</div>
+        <div lang="en">Gets processing status about download.</div>
       tags:
         - AuditLogService
       requestBody:
@@ -4665,8 +4665,8 @@ paths:
   /PageFeedItemService/getJobStatus:
     post:
       description: |
-        <div lang="ja">upload、downloadの処理状況を取得します。downloadJobStatusがCOMPLETEDの場合、レスポンスにダウンロードURLが設定されます。</div>
-        <div lang="en">Gets processing status about upload or download. If downloadJobStatus is COMPLETED, returns download URL as response.</div>
+        <div lang="ja">upload、downloadの処理状況を取得します。</div>
+        <div lang="en">Gets processing status about upload or download.</div>
       tags:
         - PageFeedItemService
       requestBody:
