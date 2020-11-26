@@ -27,7 +27,6 @@ FeedItemServicePlaceholderField:
     <div lang="en">FeedItemServicePlaceholderField object selects FeedItem information details.<br>
     This field is required in ADD and SET operation, and will be ignored in REMOVE operation.<br>
     *For AD_CUSTOMIZER,  this field will be ignored in ADD and SET operation.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">LINK_TEXT</dt>
       <dd class="term__desc"><span lang="ja">クイックリンクオプションのテキストです。</span><span lang="en">QuickLink option text.</span></dd>

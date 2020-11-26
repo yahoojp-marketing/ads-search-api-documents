@@ -10,7 +10,6 @@ DictionaryServiceGeographicLocationStatus:
   description: |
     <div lang="ja">DictionaryServiceGeographicLocationStatusは、対象地域のステータスを示します。</div>
     <div lang="en">Status of geographic location.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">ACTIVE</dt>
       <dd class="term__desc"><span lang="ja">ターゲティング可能な状態。</span><span lang="en">Status when targeting is possible</span></dd>

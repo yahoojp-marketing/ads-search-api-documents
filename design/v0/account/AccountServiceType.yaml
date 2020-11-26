@@ -9,7 +9,6 @@ AccountServiceType:
   description: |
     <div lang="ja">AccountServiceTypeは、アカウントの料金支払い種別を示します。</div>
     <div lang="en">Payment type of the account.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">PREPAY</dt>
       <dd class="term__desc"><span lang="ja">クレジットカードや銀行振込などの前払い方式です。</span><span lang="en">Creditcardor bank transfer</span></dd>

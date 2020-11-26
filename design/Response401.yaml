@@ -1,12 +1,18 @@
 Response401:
   description: |
-    <details>
-    <summary>Error Codes</summary>
-    <table border="1">
-    <tr><th>Code</th><th>Message</th><th>Description</th></tr>
-    <tr><td>0110</td><td>Require access token.</td><td><div lang="ja">アクセストークンがリクエストヘッダに存在していません。</div><div lang="en">There is no access token in the request header.</div></td></tr>
-    <tr><td>0111</td><td>Authentication failed.</td><td><div lang="ja">アクセストークンの認証に失敗しました。</div><div lang="en">The access token authentication failed.</div></td></tr>
-    <tr><td>0112</td><td>Account not found.</td><td><div lang="ja">アカウントが見つかりませんでした。</div><div lang="en">The account can not found.</div></td></tr>
-    <tr><td>0113</td><td>Deactivated account.</td><td><div lang="ja">アカウントが無効です。</div><div lang="en">The account is deactivated.</div></td></tr>
+    <p class="cellContent__head">Error codes</p>
+    <div class="cellContent__body">
+    <table class="apiTable">
+      <colgroup span="1" class="short"></colgroup>
+      <colgroup span="2"></colgroup>
+      <thead>
+        <tr><th>Code</th><th>Message</th><th>Description</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>0110</td><td>Require access token.</td><td><div lang="ja">アクセストークンがリクエストヘッダに存在していません。</div><div lang="en">There is no access token in the request header.</div></td></tr>
+        <tr><td>0111</td><td>Authentication failed.</td><td><div lang="ja">アクセストークンの認証に失敗しました。</div><div lang="en">The access token authentication failed.</div></td></tr>
+        <tr><td>0112</td><td>Account not found.</td><td><div lang="ja">アカウントが見つかりませんでした。</div><div lang="en">The account can not found.</div></td></tr>
+        <tr><td>0113</td><td>Deactivated account.</td><td><div lang="ja">アカウントが無効です。</div><div lang="en">The account is deactivated.</div></td></tr>
+      </tbody>
     </table>
-    </details>
+    </div>

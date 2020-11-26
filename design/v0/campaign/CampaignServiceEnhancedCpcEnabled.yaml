@@ -10,7 +10,6 @@ CampaignServiceEnhancedCpcEnabled:
     このフィールドは省略可能となります。その際、デフォルト設定値はFALSEとなります。</div>
     <div lang="en">CampaignServiceEnhancedCpcEnabled specifies flag of Maximize Conversions.<br>
     This field is optional. The default value will be FALSE.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">TRUE</dt>
       <dd class="term__desc"><span lang="ja">入札設定にコンバージョンの最大化を設定する</span><span lang="en">Activate the setting of Maximize Conversions</span></dd>

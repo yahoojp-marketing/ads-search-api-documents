@@ -9,7 +9,6 @@ BidLandscapeServiceSimType:
   description: |
     <div lang="ja">BidLandscapeServiceSimTypeは、見積もりの対象を表します。</div>
     <div lang="en">Expected a number of impression and click by changing bid.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">ADGROUP</dt>
       <dd class="term__desc"><span lang="ja">広告グループを指定します。</span><span lang="en">Specify Ad group.</span></dd>

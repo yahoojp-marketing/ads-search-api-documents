@@ -13,7 +13,6 @@ BiddingStrategyServiceType:
     このフィールドは、biddingScheme配下ではADD時は必須となり、SET時は省略可能となります。</div>
     <div lang="en">BiddingStrategyServiceType displays the Auto Bidding type.<br>
     Under biddingScheme, this field is required in ADD operation, and will be optional in SET operation.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">TARGET_ROAS</dt>
       <dd class="term__desc"><span lang="ja"">広告費用対効果の目標値です。<br>※キャンペーンの更新時のみ適用可能です。広告グループには現在設定できません。</span><span lang="en">Target ROAS.<br>* Available on updating campaign process. Currently not available for ad group.</span></dd>

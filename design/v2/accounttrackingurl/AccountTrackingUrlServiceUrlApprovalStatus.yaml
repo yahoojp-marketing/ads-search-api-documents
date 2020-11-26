@@ -12,7 +12,6 @@ AccountTrackingUrlServiceUrlApprovalStatus:
   description: |
     <div lang="ja">AccountTrackingUrlServiceUrlApprovalStatusは、URLの審査状況を表します。</div>
     <div lang="en">AccountTrackingUrlServiceUrlApprovalStatus is a review status of URL.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">DISAPPROVED</dt>
       <dd class="term__desc"><span lang="ja">事前審査で否認となりました。<br>掲載不可です。</span><span lang="en">It has been disapproved.<br>Ad cannot be displayed.</span></dd>

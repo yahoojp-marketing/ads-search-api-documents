@@ -13,7 +13,6 @@ ConversionTrackerServiceExcludeFromBidding:
     <div lang="en">ConversionTrackerServiceExcludeFromBidding describes whether exclude the data for Auto Bidding setting or not.<br>
     This field is optional in ADD and SET  operation.<br>
     *The default value in ADD operation will be FALSE.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">TRUE</dt>
       <dd class="term__desc"><span lang="ja">使用しません。</span><span lang="en">Exclude from Auto Bidding.</span></dd>

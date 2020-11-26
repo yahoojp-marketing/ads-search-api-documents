@@ -8,7 +8,6 @@ SharedCriterionServiceUse:
   description: |
     <div lang="ja">SharedCriterionServiceUseは、キーワードの種別を表示します。</div>
     <div lang="en">SharedCriterionServiceUse describes keyword type.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">NEGATIVE</dt>
       <dd class="term__desc"><span lang="ja">対象外キーワードです。</span><span lang="en">Negative keyword list.</span></dd>

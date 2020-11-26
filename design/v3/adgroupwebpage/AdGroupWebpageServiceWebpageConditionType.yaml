@@ -14,7 +14,6 @@ AdGroupWebpageServiceWebpageConditionType:
     このフィールドは、ADD時は必須となり、SET時は無視されます。</div>
     <div lang="en">AdGroupWebpageServiceWebpageConditionType is rule type of web page.<br>
     This field is required in ADD operation, and will be ignored in SET operation.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">PAGE_CONTENT</dt>
       <dd class="term__desc"><span lang="ja">Webページのコンテンツ</span><span lang="en">Contents of web page</span></dd>

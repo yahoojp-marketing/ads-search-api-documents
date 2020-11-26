@@ -13,7 +13,6 @@ AdGroupCriterionServiceIsRemove:
     <div lang="en">AdGroupCriterionServiceIsRemove is Delete flag.<br>
     This field is optional in SET operation.<br>
     In ADD operation, it is required under 'additionalAdvancedUrls' and 'additionalAdvancedMobileUrls'.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">TRUE</dt>
       <dd class="term__desc"><span lang="ja">カスタムパラメータの削除フラグがオンです。</span><span lang="en">Delete flag is on.</span></dd>

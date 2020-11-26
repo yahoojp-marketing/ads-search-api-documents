@@ -8,7 +8,6 @@ TargetingIdeaServiceAttributeType:
   description: |
     <div lang="ja">TargetingIdeaServiceAttributeTypeは、見積もりの結果の属性を表します。</div>
     <div lang="en">Attribute for estimated results.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">KEYWORD</dt>
       <dd class="term__desc"><span lang="ja">キーワードを指定します。</span><span lang="en">Specify keyword.</span></dd>

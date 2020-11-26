@@ -10,7 +10,6 @@ CampaignServiceTargetAll:
     ADD時およびSET時、このフィールドは必須となります。</div>
     <div lang="en">CampaignServiceTargetAll describes the setting of target(include) users on Site Retargeting.<br>
     This field is required in ADD and SET operation.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">ACTIVE</dt>
       <dd class="term__desc"><span lang="ja">すべてのユーザーを配信対象とします。<br>ターゲットリストのユーザーは入札価格調整率の適用のみ行います。</span><span lang="en">All users are target of ad delivery.<br>Only applying bid adjustment rate is done for users on the Target List.</span></dd>

@@ -18,7 +18,6 @@ PageFeedItemServiceUploadJobStatus:
   description: |
     <div lang="ja">PageFeedItemServiceUploadJobStatusは、ページフィードアイテムアップロードジョブの実行状況を表します。</div>
     <div lang="en">PageFeedItemServiceUploadJobStatus displays status of page feed item upload jobs.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">IN_PROGRESS</dt>
       <dd class="term__desc"><span lang="ja">処理中</span><span lang="en">Currently in progress of creating.</span></dd>

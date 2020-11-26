@@ -11,7 +11,6 @@ AccountServiceDeliveryStatus:
     SET時、このフィールドは省略可能となります。</div>
     <div lang="en">Delivery status.<br>
     This field is optional in SET operation.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">PAUSED</dt>
       <dd class="term__desc"><span lang="ja">配信状況はオフです。</span><span lang="en">Not active.</span></dd>

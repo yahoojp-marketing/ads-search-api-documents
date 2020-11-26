@@ -20,7 +20,6 @@ ReportDefinitionServiceReportDateRangeType:
     ADD時、このフィールドは必須となります。</div>
     <div lang="en">ReportDefinitionServiceReportDateRangeType displays a date range of the report.<br>
     This field is required in ADD operation.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">TODAY</dt>
       <dd class="term__desc"><span lang="ja">本日です。</span><span lang="en">Reports are generated for today only.</span></dd>

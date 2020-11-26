@@ -13,7 +13,6 @@ AdGroupAdServiceAdType:
     ADD時、このフィールドは必須となります。<br>なお、選択した配信先デバイスにより、指定可能な広告の文字数は異なります。</div>
     <div lang="en">AdGroupAdServiceAdType is device type and number of title and description character.<br>This field is required in ADD operation.<br>
     The number of character vary from the device type you choose.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">EXTENDED_TEXT_AD</dt>
       <dd class="term__desc"><span lang="ja">「タイトル15文字-15文字、説明文40文字」のテキスト広告です。<br>PC、スマートフォン・タブレット端末の場合にご利用いただけます。</span><span lang="en">Text ads for “Title: 15 - 15 characters, Description: 40 characters”.<br>It is available for PC, Smartphone and Tablet.</span></dd>

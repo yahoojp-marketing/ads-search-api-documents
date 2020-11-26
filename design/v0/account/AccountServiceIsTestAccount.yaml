@@ -9,7 +9,6 @@ AccountServiceIsTestAccount:
   description: |
     <div lang="ja">isTestAccountは、テストアカウントかどうかを表すフラグです。</div>
     <div lang="en">Test account.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">TRUE</dt>
       <dd class="term__desc"><span lang="ja">テストアカウント</span><span lang="en">Test account.</span></dd>

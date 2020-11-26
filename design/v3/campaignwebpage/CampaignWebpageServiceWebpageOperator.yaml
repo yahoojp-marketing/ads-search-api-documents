@@ -15,7 +15,6 @@ CampaignWebpageServiceWebpageOperator:
     This field can be specified only if the type is URL.<br> 
     If you specified EQUALS in operator, you can specify only one value in condition. <br>
     This field will be ignored in SET and REMOVE operation.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">CONTAINS</dt>
       <dd class="term__desc"><span lang="ja">指定の値を含みます。</span><span lang="en">Contains the selected value.</span></dd>

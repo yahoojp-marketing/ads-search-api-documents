@@ -27,7 +27,6 @@ FeedItemServicePlaceholderField:
     <div lang="en">FeedItemServicePlaceholderField object selects FeedItem information details.<br>
     This field is required in ADD and SET operation, and will be ignored in REMOVE operation.<br>
     *For AD_CUSTOMIZER,  this field will be ignored in ADD and SET operation.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">ADVANCED_URL</dt>
       <dd class="term__desc"><span lang="ja">最終リンク先URLです。</span><span lang="en">Landing Page URL.</span></dd>

@@ -13,7 +13,6 @@ AuditLogServiceJobStatus:
     このフィールドは、job配下ではレスポンスの際に返却されますが、リクエストの際には無視されます。</div>
     <div lang="en">AuditLogServiceJobStatus describes the job status of acquiring operation history data.<br>
     Under 'job', although this field will be returned in the response, it will be ignored on input.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">SYSTEM_ERROR</dt>
       <dd class="term__desc"><span lang="ja">エラーです。</span><span lang="en">It&#39;s error.</span></dd>

@@ -14,7 +14,6 @@ PageFeedItemServiceBulkOutput:
     <div lang="en">PageFeedItemServiceBulkOutput specifies format of Page feed item file.<br>
     This field is optional.<br>
     The default value will be CSV.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">CSV</dt>
       <dd class="term__desc"><span lang="ja">CSV形式</span><span lang="en">Format of CSV</span></dd>

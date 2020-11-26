@@ -15,7 +15,6 @@ ConversionTrackerServiceCategory:
     このフィールドは、ADD時に必須となり、SET時に省略可能となります。</div>
     <div lang="en">ConversionTrackerServiceCategory is a category for ConversionTracker.<br>
     This field is required in ADD operation, and is optional in SET operation.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">DOWNLOAD</dt>
       <dd class="term__desc"><span lang="ja">ダウンロードです。<br>※広告管理ツールおよびレポート上での表示は「その他」になります。</span><span lang="en"> Download.<br> *This will be displayed as Others in Campaign Management Tool and Reports.</span></dd>

@@ -13,7 +13,6 @@ RetargetingListServiceReachStorageStatus:
     <div lang="en">RetargetingListServiceReachStorageStatus is the flag status to store Cookie reach.<br>
     This field is optional.<br>
     *For logicalTargetList, this field will be returned  in the response, but it will be ignored on input.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">CLOSED</dt>
       <dd class="term__desc"><span lang="ja">無効です。<br>リーチを蓄積しません。</span><span lang="en">Invalid status.<br>Reach will not be stored.</span></dd>

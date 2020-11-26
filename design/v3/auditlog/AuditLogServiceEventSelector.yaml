@@ -8,7 +8,6 @@ AuditLogServiceEventSelector:
       description: |
         <div lang="ja">AuditLogServiceEntityTypeオブジェクトは、操作履歴に出力するエンティティの種類を表します。</div>
         <div lang="en">AuditLogServiceEntityType object describes the type of entities to be output on the data of operation history.</div>
-        <hr>
         <dl class=term>
           <dt class="term__item">CAMPAIGN</dt>
           <dd class="term__desc"><span lang="ja">キャンペーンです。</span><span lang="en">Campaign.</span></dd>

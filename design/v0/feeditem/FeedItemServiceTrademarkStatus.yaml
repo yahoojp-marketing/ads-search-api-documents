@@ -14,7 +14,6 @@ FeedItemServiceTrademarkStatus:
     このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
     <div lang="en">FeedItemServiceTrademarkStatus object describes the status of trademark.<br>
     Although this field will be returned in the response, it will be ignored on input.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">DISAPPROVED_CLAIM</dt>
       <dd class="term__desc"><span lang="ja">不服申立否認</span><span lang="en">Disapproved claim.</span></dd>

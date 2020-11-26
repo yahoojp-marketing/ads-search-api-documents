@@ -9,7 +9,6 @@ OfflineConversionServiceUploadType:
   description:
     <div lang="ja">アップロード種別です。</div>
     <div lang="en">Upload type.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">NEW</dt>
       <dd class="term__desc"><span lang="ja">新規アップロードです。</span><span lang="en">New upload.</span></dd>

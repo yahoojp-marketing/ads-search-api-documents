@@ -14,7 +14,6 @@ FeedItemServiceApprovalStatus:
     このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
     <div lang="en">FeedItemServiceApprovalStatus displays Editorial Status.<br>
     Although this field will be returned in the response, it will be ignored on input.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">APPROVED</dt>
       <dd class="term__desc"><span lang="ja">承認済です。</span><span lang="en">The item is approved</span></dd>

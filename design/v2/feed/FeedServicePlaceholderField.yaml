@@ -15,7 +15,6 @@ FeedServicePlaceholderField:
     このフィールドは、ADDおよびSET時に必須となり、REMOVE時に無視されます。</div>
     <div lang="en">FeedServicePlaceholderField object select the details of Feed Item information.<br>
     This field is required in ADD and SET operation, and will be ignored in REMOVE operation.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">AD_CUSTOMIZER_INTEGER</dt>
       <dd class="term__desc"><span lang="ja">データ自動挿入（INTEGERタイプの入力定義）です。</span><span lang="en">Data Auto Insertion (Input of INTEGER type).</span></dd>

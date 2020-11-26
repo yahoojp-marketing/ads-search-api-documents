@@ -13,7 +13,6 @@ ConversionTrackerServiceMarkupLanguage:
     このフィールドは、ADD時に必須となり、SET時に省略可能となります。</div>
     <div lang="en">ConversionTrackerServiceMarkupLanguage shows ConversionTrackerServiceMarkupLanguage for Snipet.<br>
     This field is required in ADD operation, and is optional in SET operation.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">HTML</dt>
       <dd class="term__desc"><span lang="ja">HTML言語です。</span><span lang="en">HTML</span></dd>

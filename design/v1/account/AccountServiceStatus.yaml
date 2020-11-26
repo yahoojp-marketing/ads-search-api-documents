@@ -12,7 +12,6 @@ AccountServiceStatus:
   description: |
     <div lang="ja">AccountServiceStatusは、アカウントの契約状況を表します。</div>
     <div lang="en">Account status.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">INPROGRESS</dt>
       <dd class="term__desc"><span lang="ja">登録待ち</span><span lang="en">Under registration process</span></dd>

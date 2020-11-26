@@ -9,7 +9,6 @@ PageFeedItemServiceMatchType:
   description: |
     <div lang="ja">PageFeedItemServiceMatchTypeは、ページフィードURLの検索方法を表します。</div>
     <div lang="en">PageFeedItemServiceMatchType displays search method of page feed URL.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">EXACT</dt>
       <dd class="term__desc"><span lang="ja">完全一致</span><span lang="en">Perfect match</span></dd>

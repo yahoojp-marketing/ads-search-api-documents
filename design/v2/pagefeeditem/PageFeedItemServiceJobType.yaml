@@ -9,7 +9,6 @@ PageFeedItemServiceJobType:
   description: |
     <div lang="ja">PageFeedItemServiceJobTypeは、登録したジョブの種類を表します。</div>
     <div lang="en">PageFeedItemServiceJobType displays kind of registered job.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">UPLOAD</dt>
       <dd class="term__desc"><span lang="ja">アップロード</span><span lang="en">Upload.</span></dd>

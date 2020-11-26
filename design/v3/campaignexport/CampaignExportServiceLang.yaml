@@ -11,7 +11,6 @@ CampaignExportServiceLang:
     このフィールドは、必須です。</div>
     <div lang="en">CampaignExportServiceLang is a language setting for exporting data.<br>
     This field is required.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">JA</dt>
       <dd class="term__desc"><span lang="ja">日本語です。</span><span lang="en">Japanese.</span></dd>

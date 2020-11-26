@@ -9,7 +9,6 @@ AccountServiceAuthType:
   description: |
     <div lang="ja">権限タイプ</div>
     <div lang="en">Roles</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">REFERABLE</dt>
       <dd class="term__desc"><span lang="ja">参照権限</span><span lang="en">Read only</span></dd>

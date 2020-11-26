@@ -9,7 +9,6 @@ AppLinkServiceSyncStatus:
   description: |
     <div lang="ja">AppLinkServiceSyncStatusは、リンクID同期ステータスを表します。</div>
     <div lang="en">Sync Status.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">IN_PROGRESS</dt>
       <dd class="term__desc"><span lang="ja">同期中です。</span><span lang="en">Synchronization is in progress.</span></dd>

@@ -14,7 +14,6 @@ FeedItemServicePlaceholderType:
     このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
     <div lang="en">FeedItemServicePlaceholderType selects FeeItem information type.<br>
     Although this field will be returned in the response, it will be ignored on input.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">QUICKLINK</dt>
       <dd class="term__desc"><span lang="ja">広告表示オプションのクイックリンクオプションです。</span><span lang="en">QuickLink option from Ad Display Option</span></dd>

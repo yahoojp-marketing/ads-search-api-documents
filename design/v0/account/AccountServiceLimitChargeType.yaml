@@ -11,7 +11,6 @@ AccountServiceLimitChargeType:
     SET時、このフィールドは無視されます。</div>
     <div lang="en">Account payment, such as monthly amount.<br>
     This field will be ignored in SET operation.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">SUM</dt>
       <dd class="term__desc"><span lang="ja">総額アカウントです。</span><span lang="en">Total amount</span></dd>

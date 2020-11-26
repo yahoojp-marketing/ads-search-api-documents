@@ -13,7 +13,6 @@ PageFeedItemServiceBulkLang:
     <div lang="en">PageFeedItemServiceBulkLang displays language setting of Page feed item file.<br>
     This field is optional.<br>
     The default value will be JA.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">JA</dt>
       <dd class="term__desc"><span lang="ja">日本語</span><span lang="en">Language:Japanese</span></dd>

@@ -13,7 +13,6 @@ CampaignFeedServicePlaceholderType:
     SET時、campaignFeed配下では無視され、campaignFeedList配下では必須です。</div>
     <div lang="en">CampaignFeedServicePlaceholderType selects the type of FeedItem information.<br>
     In SET operation, this field will be ignored under 'campaignFeed', and this field is required under 'campaignFeedList'.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">CALLOUT</dt>
       <dd class="term__desc"><span lang="ja">テキスト補足オプションです。</span><span lang="en">Callout options.</span></dd>

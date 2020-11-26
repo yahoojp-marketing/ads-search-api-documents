@@ -13,7 +13,6 @@ AccountServiceLimitChargeType:
     <div lang="en">Account payment, such as monthly amount.<br>
     This field is optional in SET operation. Specify <code>MONTHLY</code> to change the monthly budget.
     </div>
-    <hr>
     <dl class=term>
       <dt class="term__item">SUM</dt>
       <dd class="term__desc"><span lang="ja">総額アカウントです。</span><span lang="en">Total amount</span></dd>

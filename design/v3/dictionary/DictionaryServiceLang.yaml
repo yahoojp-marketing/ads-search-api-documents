@@ -9,7 +9,6 @@ DictionaryServiceLang:
   description: |
     <div lang="ja">DictionaryServiceLangは、提供される一覧の言語選択を表します。</div>
     <div lang="en">DictionaryServiceLang is a language selection of the list.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">JA</dt>
       <dd class="term__desc"><span lang="ja">日本語です。</span><span lang="en">Japanese language</span></dd>

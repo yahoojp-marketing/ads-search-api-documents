@@ -10,7 +10,6 @@ AppLinkServiceAppLinkPlatform:
     ADD時、このフィールドは省略可能となります。</div>
     <div lang="en">App Link Platform.<br>
     This field is optional in ADD operation.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">ANDROID</dt>
       <dd class="term__desc"><span lang="ja">ANDROID</span><span lang="en">ANDROID</span></dd>

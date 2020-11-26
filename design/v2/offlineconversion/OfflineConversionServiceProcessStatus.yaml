@@ -11,7 +11,6 @@ OfflineConversionServiceProcessStatus:
   description:
     <div lang="ja">処理ステータスです。</div>
     <div lang="en">Processing status.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">PROCESSING</dt>
       <dd class="term__desc"><span lang="ja">処理中です。</span><span lang="en">Currently in progress of creating.</span></dd>

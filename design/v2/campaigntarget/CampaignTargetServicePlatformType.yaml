@@ -12,7 +12,6 @@ CampaignTargetServicePlatformType:
     このフィールドは、ADDおよびSET時に必須となります。</div>
     <div lang="en">CampaignTargetServicePlatformType is a platform of the selected device.<br>
     This field is required in ADD and SET operation.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">SMART_PHONE</dt>
       <dd class="term__desc"><span lang="ja">スマートフォンです。</span><span lang="en">Smartphone.</span></dd>

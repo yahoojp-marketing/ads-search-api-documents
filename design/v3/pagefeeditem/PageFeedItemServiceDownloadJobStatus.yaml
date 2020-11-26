@@ -14,7 +14,6 @@ PageFeedItemServiceDownloadJobStatus:
     このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
     <div lang="en">PageFeedItemServiceDownloadJobStatus displays status of page feed item download jobs.<br>
     Although this field will be returned in the response, it will be ignored on input.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">IN_PROGRESS</dt>
       <dd class="term__desc"><span lang="ja">処理中</span><span lang="en">Currently in progress of creating.</span></dd>

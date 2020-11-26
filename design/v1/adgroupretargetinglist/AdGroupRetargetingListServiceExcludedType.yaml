@@ -11,7 +11,6 @@ AdGroupRetargetingListServiceExcludedType:
     このフィールドは省略可能となります。</div>
     <div lang="en">AdGroupRetargetingListServiceExcludedType selects the setting type which delivers ads or do not deliver ads.<br>
     This field is optional.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">INCLUDED</dt>
       <dd class="term__desc"><span lang="ja">配信対象です。</span><span lang="en">Ads to be delivered</span></dd>

@@ -13,7 +13,6 @@ ReportDefinitionServiceReportDownloadEncode:
     ADD時、このフィールドは省略可能となります。</div>
     <div lang="en">ReportDefinitionServiceReportDownloadEncode displays a character code of the report.<br>
     This field is optional in ADD operation.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">UTF-8</dt>
       <dd class="term__desc"><span lang="ja">文字コード：UTF-8です。<br>※デフォルトに設定されます。</span><span lang="en">Character code: UTF-8.<br>*Default setting.</span></dd>

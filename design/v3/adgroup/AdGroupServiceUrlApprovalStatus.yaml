@@ -12,7 +12,6 @@ AdGroupServiceUrlApprovalStatus:
   description: |
     <div lang="ja">AdGroupServiceUrlApprovalStatusは、URLの審査状況を表します。</div>
     <div lang="en">AdGroupServiceUrlApprovalStatus is a review status of URL.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">REVIEW</dt>
       <dd class="term__desc"><span lang="ja">審査中です。</span><span lang="en">In review status.</span></dd>

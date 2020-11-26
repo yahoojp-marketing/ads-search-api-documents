@@ -11,7 +11,6 @@ AdGroupAdServiceUserStatus:
     このフィールドは、ADD時は必須となり、SET時は省略可能となります。</div>
     <div lang="en">AdGroupAdServiceUserStatus displays ad delivery status that can be set by an user.<br>
     This field is required in ADD operation, and will be optional in SET operation.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">ACTIVE</dt>
       <dd class="term__desc"><span lang="ja">広告は配信されている状態です。</span><span lang="en">Currently ad delivery is active.</span></dd>

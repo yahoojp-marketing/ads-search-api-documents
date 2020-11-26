@@ -8,7 +8,6 @@ TargetingIdeaServiceCriterionType:
   description: |
     <div lang="ja">TargetingIdeaServiceCriterionTypeは、クライテリアを表します。</div>
     <div lang="en">TargetingIdeaServiceCriterionType displays the type of criteria.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">KEYWORD</dt>
       <dd class="term__desc"><span lang="ja">キーワードです。</span><span lang="en">Keyword.</span></dd>

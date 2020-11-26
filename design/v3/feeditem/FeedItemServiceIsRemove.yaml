@@ -17,7 +17,6 @@ FeedItemServiceIsRemove:
     Under location object, this field will be ignored in ADD and REMOVE operation, and is optional in SET operation.<br>
     *To deactivate the location restriction, set isRemove of location object to TRUE.<br>
     After the deactivation, geoTargetingRestriction will be set to NONE.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">TRUE</dt>
       <dd class="term__desc"><span lang="ja">カスタムパラメータの削除フラグがオンです。</span><span lang="en">Delete flag is on.</span></dd>

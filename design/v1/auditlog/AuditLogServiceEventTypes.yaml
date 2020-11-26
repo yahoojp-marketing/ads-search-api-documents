@@ -11,7 +11,6 @@ AuditLogServiceEventTypes:
   description: |
     <div lang="ja">AuditLogServiceEventTypesは、操作履歴で取得する操作タイプを表します。</div>
     <div lang="en">AuditLogServiceEventTypes describes the operation type to be acquired the operation history data.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">ADD</dt>
       <dd class="term__desc"><span lang="ja">追加</span><span lang="en">add</span></dd>

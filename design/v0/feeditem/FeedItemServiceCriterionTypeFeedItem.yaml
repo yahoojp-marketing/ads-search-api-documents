@@ -11,8 +11,7 @@ FeedItemServiceCriterionTypeFeedItem:
     ※ADD時のデフォルト設定値はLOCATIONとなります。</div>
     <div lang="en">FeedItemServiceCriterionTypeFeedItem object describes criteria information of location restriction.<br>
     This field is optional in ADD and SET operation, and will be ignored in REMOVE operation.<br>
-    *The default value in ADD operation will be LOCATION.</div>
-    <hr>
+    *The default value in ADD operation will be LOCATION.</div>
     <dl class=term>
       <dt class="term__item">LOCATION</dt>
       <dd class="term__desc"><span lang="ja">地域設定です。</span><span lang="en">location restriction</span></dd>

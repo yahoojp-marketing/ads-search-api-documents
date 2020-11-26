@@ -14,7 +14,6 @@ CampaignWebpageServiceWebpageConditionType:
     このフィールドは、ADD時に必須となり、REMOVE時に無視されます。</div>
     <div lang="en">Type to set PageFeedItem.<br>
     This field is required in ADD operation, and will be ignored in REMOVE operation.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">URL</dt>
       <dd class="term__desc"><span lang="ja">URL</span><span lang="en">URLs</span></dd>

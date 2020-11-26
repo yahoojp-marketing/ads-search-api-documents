@@ -26,7 +26,6 @@ ReportDefinitionServiceReportIncludeDeleted:
     <tr><td>AD_CUSTOMIZERS</td><td>FEED_ITEM</td></tr>
     <tr><td>WEBPAGE_CRITERION</td><td>CAMPAIGN, ADGROUP, CRITERION</td></tr>
     </table>
-    <hr>
     <dl class=term>
       <dt class="term__item">TRUE</dt>
       <dd class="term__desc"><span lang="ja">出力します。<br>※デフォルトに設定されます。</span><span lang="en">Output.<br>*Default setting.</span></dd>

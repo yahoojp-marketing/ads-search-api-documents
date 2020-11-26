@@ -11,7 +11,6 @@ AdGroupServiceAdRotationMode:
     ADDおよびSET時、このフィールドは省略可能となります。</div>
     <div lang="en">AdGroupServiceAdRotationMode describes Ad Rotation settings for optimizing and displaying ads.<br>
     This field is optional in ADD and SET operation.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">OPTIMIZE</dt>
       <dd class="term__desc"><span lang="ja">最適化して配信します。</span><span lang="en">Optimizes and display ads</span></dd>

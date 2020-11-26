@@ -12,7 +12,6 @@ AuditLogServiceEncoding:
     このフィールドは、省略可能となります。その際、デフォルト値はSJISとなります。</div>
     <div lang="en">AuditLogServiceEncoding describes the encoding type (character encoding) for Operation History file.<br>
     This field is optional. The default value will be SJIS.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">SJIS</dt>
       <dd class="term__desc"><span lang="ja">SJIS形式です。</span><span lang="en">SJIS</span></dd>

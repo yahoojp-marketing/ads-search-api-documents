@@ -12,7 +12,6 @@ RetargetingListServiceLogicalCondition:
     このフィールドは、ADDおよびSET時に省略可能となります。</div>
     <div lang="en">RetargetingListServiceLogicalCondition is the conditions of combined target list.<br>
     This field is optional in ADD and SET operation.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">NOT</dt>
       <dd class="term__desc"><span lang="ja">NOT条件の組合せです。</span><span lang="en">NOT condition.</span></dd>

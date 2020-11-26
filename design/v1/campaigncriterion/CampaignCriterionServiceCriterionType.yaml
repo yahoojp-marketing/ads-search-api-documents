@@ -10,7 +10,6 @@ CampaignCriterionServiceCriterionType:
     ADD時およびREMOVE時、このフィールドは必須です。</div>
     <div lang="en">CampaignCriterionServiceCriterionType displays the type of criteria.<br>
     This field is required in ADD and REMOVE operation.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">KEYWORD</dt>
       <dd class="term__desc"><span lang="ja">キーワードです。</span><span lang="en">Keyword.</span></dd>

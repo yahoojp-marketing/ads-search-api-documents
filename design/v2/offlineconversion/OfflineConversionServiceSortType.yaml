@@ -9,7 +9,6 @@ OfflineConversionServiceSortType:
   description:
     <div lang="ja">OfflineConversionServiceSortTypeは、ソート条件を表します。</div>
     <div lang="en">OfflineConversionServiceSortType is a sort condition type.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">ASC</dt>
       <dd class="term__desc"><span lang="ja">昇順にソートされます。</span><span lang="en">Sort in ascending order.</span></dd>

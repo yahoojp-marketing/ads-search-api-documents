@@ -9,7 +9,6 @@ AdGroupCriterionServiceBidSource:
   description: |
     <div lang="ja">AdGroupCriterionServiceBidSourceは、入札価格の設定されているレベルを表します。</div>
     <div lang="en">AdGroupCriterionServiceBidSource displays which level bid belongs to (criterion or ad group.)</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">ADGROUP</dt>
       <dd class="term__desc"><span lang="ja">広告グループレベルです。</span><span lang="en">Effective Bid is Adgroup level bid</span></dd>

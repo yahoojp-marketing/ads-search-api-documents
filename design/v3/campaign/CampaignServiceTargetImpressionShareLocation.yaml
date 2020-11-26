@@ -12,7 +12,6 @@ CampaignServiceTargetImpressionShareLocation:
     このフィールドは省略可能となります。その際、デフォルト設定値は<code>ANYWHERE_ON_PAGE</code>となります。</div>
     <div lang="en">CampaignServiceTargetImpressionShare specifies search result posting position to achieve the target ratio of impression share.<br>
     This field is optional. The default value will be <code>ANYWHERE_ON_PAGE</code>.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">ANYWHERE_ON_PAGE</dt>
       <dd class="term__desc"><span lang="ja">任意の位置です。</span><span lang="en">Arbitrary position.</span></dd>

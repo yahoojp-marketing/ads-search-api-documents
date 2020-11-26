@@ -10,7 +10,6 @@ ConversionTrackerServiceAppPlatform:
     このフィールドは、ADD時に必須となります。</div>
     <div lang="en">ConversionTrackerServiceAppPlatform is App platform.<br>
     This field is required in ADD operation.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">ANDROID_MARKET</dt>
       <dd class="term__desc"><span lang="ja">Androidマーケットのプラットフォームです。</span><span lang="en">Android market</span></dd>

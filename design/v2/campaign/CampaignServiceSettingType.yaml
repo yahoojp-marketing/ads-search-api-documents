@@ -12,7 +12,6 @@ CampaignServiceSettingType:
     ADD時、このフィールドは省略可能となります。その際、デフォルト設定値はGEO_TARGET_TYPE_SETTINGとなります。</div>
     <div lang="en">CampaignServiceSettingType describes the setting information of Target on the campaign.<br>
     This field is optional in ADD operation. The default value will be GEO_TARGET_TYPE_SETTING.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">GEO_TARGET_TYPE_SETTING</dt>
       <dd class="term__desc"><span lang="ja">キャンペーンの地域ターゲットの設定です。</span><span lang="en">Setting of Geographic Targeting on the Campaign.</span></dd>

@@ -9,7 +9,6 @@ KeywordEstimatorServiceIsNegativeBool:
   description: |
     <div lang="ja">KeywordEstimatorServiceIsNegativeBoolは、対象外キーワードの対象有無を表します。</div>
     <div lang="en">KeywordEstimatorServiceIsNegativeBool expresses it whether you include Negative Keywords in data.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">TRUE</dt>
       <dd class="term__desc"><span lang="ja">対象外キーワードを対象にする。</span><span lang="en">Intend for Negative Keywords</span></dd>

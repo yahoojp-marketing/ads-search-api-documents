@@ -11,7 +11,6 @@ CampaignServiceUrlApprovalStatus:
   description: |
     <div lang="ja">CampaignServiceUrlApprovalStatusは、URLの審査状況を表します。</div>
     <div lang="en">CampaignServiceUrlApprovalStatus is a review status of URL.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">APPROVED_WITH_REVIEW</dt>
       <dd class="term__desc"><span lang="ja">配信審査中です。</span><span lang="en">Approved with in process of review.<br>Ad will stop displaying if disapproved.</span></dd>

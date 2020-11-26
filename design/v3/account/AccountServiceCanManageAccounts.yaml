@@ -15,7 +15,6 @@ AccountServiceCanManageAccounts:
     AccountServiceCanManageAccounts describes whether it is a manager account.<br>
     * Not Available.
     </div>
-    <hr>
     <dl class=term>
       <dt class="term__item">TRUE</dt>
       <dd class="term__desc"><span lang="ja">マネージャアカウントです。</span><span lang="en">Manager Account.</span></dd>

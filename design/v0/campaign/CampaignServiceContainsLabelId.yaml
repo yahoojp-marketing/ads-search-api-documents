@@ -8,7 +8,6 @@ CampaignServiceContainsLabelId:
   description: |
     <div lang="ja">ラベルデータ取得フラグです。</div>
     <div lang="en">CampaignServiceContainsLabelId object describes acquisition flag of label data.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">TRUE</dt>
       <dd class="term__desc"><span lang="ja">取得する</span><span lang="en">acquiring</span></dd>

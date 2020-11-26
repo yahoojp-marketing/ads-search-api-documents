@@ -11,7 +11,6 @@ ConversionTrackerServiceStatus:
     このフィールドは、ADD時に必須となり、SET時に省略可能となります。</div>
     <div lang="en">It shows ConversionTracker status.<br>
     This field is required in ADD operation, and is optional in SET operation.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">DISABLED</dt>
       <dd class="term__desc"><span lang="ja">コンバージョンページへのアクセスが記録されません。</span><span lang="en">It does not record access to Conversion page.</span></dd>

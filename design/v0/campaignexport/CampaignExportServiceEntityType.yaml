@@ -16,7 +16,6 @@ CampaignExportServiceEntityType:
     このフィールドは、省略可能となります。※リクエスト時はCampaignExportServiceEntityTypeで定義されている値をString型で指定します。 ※レスポンスの値はenumとして返却されます。</div>
     <div lang="en">CampaignExportServiceEntityType object describes target entities.<br>
     This field is optional. * When requesting, specify the value defined on CampaignExportServiceEntityType in string. * Response value is returned in enum type.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">AD</dt>
       <dd class="term__desc"><span lang="ja">広告</span><span lang="en">Ad</span></dd>

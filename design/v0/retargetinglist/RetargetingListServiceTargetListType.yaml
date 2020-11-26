@@ -12,7 +12,6 @@ RetargetingListServiceTargetListType:
     このフィールドは、いずれの場合でも必須となります。</div>
     <div lang="en">RetargetingListServiceTargetListType is the type of target list.<br>
     This field is required in any cases.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">RULE</dt>
       <dd class="term__desc"><span lang="ja">URL条件リストです。</span><span lang="en">URL Condition list</span></dd>

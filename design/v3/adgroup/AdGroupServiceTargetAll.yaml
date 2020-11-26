@@ -13,7 +13,6 @@ AdGroupServiceTargetAll:
     <div lang="en">AdGroupServiceTargetAll describes the setting of target(include) users on Site Retargeting.<br>
     This field is required in ADD and SET operation.<br>
     *The default value in ADD operation for the case of no setting 'TargetingSetting' is ACTIVE.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">ACTIVE</dt>
       <dd class="term__desc"><span lang="ja">すべてのユーザーを配信対象とします。<br>ターゲットリストのユーザーは入札価格調整率の適用のみ行います。</span><span lang="en">All users are target of ad delivery.<br>Only applying bid adjustment rate is done for users on the Target List.</span></dd>

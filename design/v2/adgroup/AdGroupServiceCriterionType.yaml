@@ -12,7 +12,6 @@ AdGroupServiceCriterionType:
     <div lang="en">AdGroupServiceCriterionType displays the type of criteria.<br>
     This field is required in ADD and SET operation.<br>
     *The default value in ADD operation for the case of no setting 'TargetingSetting' is TARGET_LIST.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">TARGET_LIST</dt>
       <dd class="term__desc"><span lang="ja">ターゲットリストです。</span><span lang="en">Target list</span></dd>

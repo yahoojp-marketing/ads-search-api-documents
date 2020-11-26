@@ -9,7 +9,6 @@ AdGroupAdServiceAppStore:
   description: |
     <div lang="ja">AdGroupAdServiceAppStoreは、アプリストアの種別です。</div>
     <div lang="en">App Store.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">IOS</dt>
       <dd class="term__desc"><span lang="ja">iOS用アプリストアです。</span><span lang="en">iOS app store.</span></dd>

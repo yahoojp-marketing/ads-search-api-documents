@@ -11,7 +11,6 @@ AdGroupAdServiceIsRemove:
     SET時、このフィールドは無視されます。</div>
     <div lang="en">AdGroupAdServiceIsRemove is Delete flag.<br>
     This field will be ignored in SET operation.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">TRUE</dt>
       <dd class="term__desc"><span lang="ja">カスタムパラメータの削除フラグがオンです。</span><span lang="en">Delete flag is on.</span></dd>

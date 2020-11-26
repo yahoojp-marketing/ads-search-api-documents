@@ -14,7 +14,6 @@ PageFeedItemServiceBulkEncoding:
     <div lang="en">PageFeedItemServiceBulkEncoding displays encoding(character code) of Page feed item file.<br>
     This field is optional.<br>
     The default value will be SJIS.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">UTF-8</dt>
       <dd class="term__desc"><span lang="ja">UTF-8形式</span><span lang="en">Character code:UTF-8</span></dd>

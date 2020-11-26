@@ -9,7 +9,6 @@ CampaignServiceDasUseUrlsType:
   description: |
     <div lang="ja">DSAのURL使用タイプです。</div>
     <div lang="en">DSA URL usage type.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">USE_SUPPLIED_URLS_ONLY</dt>
       <dd class="term__desc"><span lang="ja">PageFeedで指定されたURLのみを使用します。</span><span lang="en">Uses only the URL specified in PageFeed.</span></dd>

@@ -1,9 +1,15 @@
 Response503:
   description: |
-    <details>
-    <summary>Error Codes</summary>
-    <table border="1">
-    <tr><th>Code</th><th>Message</th><th>Description</th></tr>
-    <tr><td>0099</td><td>Out of service.</td><td><div lang="ja">APIがメンテナンス中、またはご利用できません。</div><div lang="en">API is under maintenance or not available to use.</div></td></tr>
+    <p class="cellContent__head">Error codes</p>
+    <div class="cellContent__body">
+    <table class="apiTable">
+      <colgroup span="1" class="short"></colgroup>
+      <colgroup span="2"></colgroup>
+      <thead>
+        <tr><th>Code</th><th>Message</th><th>Description</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>0099</td><td>Out of service.</td><td><div lang="ja">APIがメンテナンス中、またはご利用できません。</div><div lang="en">API is under maintenance or not available to use.</div></td></tr>
+      </tbody>
     </table>
-    </details>
+    </div>

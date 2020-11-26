@@ -13,7 +13,6 @@ CampaignServiceBiddingStrategyType:
     ADD時、標準入札設定の場合、このフィールドは必須となり、ポートフォリオ入札設定の場合、省略可能となります。</div>
     <div lang="en">CampaignServiceBiddingStrategyType displays the Auto Bidding type.<br>
     This field is required when Standard bidding is setting, and is optional when Portfolio bidding is setting in ADD operation.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">TARGET_ROAS</dt>
       <dd class="term__desc"><span lang="ja">広告費用対効果の目標値です。<br>※キャンペーンの更新時のみ適用可能です。広告グループには現在設定できません。</span><span lang="en">Target ROAS.<br>* Available on updating campaign process. Currently not available for ad group.</span></dd>

@@ -13,7 +13,6 @@ FeedItemServiceGeoRestriction:
     <div lang="en">FeedItemServiceGeoRestriction object controls ad delivery of location restriction.<br>
     This field is optional in ADD and SET operation, and will be ignored in  REMOVE operation.<br>
     The default value in ADD operation will be NONE.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">NONE</dt>
       <dd class="term__desc"><span lang="ja">検索キーワードとユーザーの所在地の関係にかかわらず、配信されます。</span><span lang="en">Regardless of the relationship between the search keyword and the user&#39;s location, Ads will be delivered.</span></dd>

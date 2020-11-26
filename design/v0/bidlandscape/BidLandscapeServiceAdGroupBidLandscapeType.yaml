@@ -9,7 +9,6 @@ BidLandscapeServiceAdGroupBidLandscapeType:
   description: |
     <div lang=ja>AdGroupBidLandscapeTypeは、AdGroupLandscapeのタイプを示します。</div>
     <div lang=en>The type of AdGroupLandscape</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">UNIFORM</dt>
       <dd class="term__desc"><span lang=ja>デフォルトの入札単価があらゆるクライテリアに適用されることを示します。</span><span lang=en>It shows a default bid price is applied to every criteria.</span></dd>

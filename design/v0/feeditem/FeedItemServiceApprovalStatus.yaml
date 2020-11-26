@@ -14,7 +14,6 @@ FeedItemServiceApprovalStatus:
     このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
     <div lang="en">FeedItemServiceApprovalStatus displays Editorial Status.<br>
     Although this field will be returned in the response, it will be ignored on input.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">PRE_DISAPPROVED</dt>
       <dd class="term__desc"><span lang="ja">掲載不可です。<br>新しく追加したキーワード・広告が審査で承認されず非掲載です。</span><span lang="en">The item was rejected<br>Newly added keywords/ads have been rejected, so it cannot be displayed</span></dd>

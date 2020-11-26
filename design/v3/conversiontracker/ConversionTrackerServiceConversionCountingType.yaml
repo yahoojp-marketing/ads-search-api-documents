@@ -13,7 +13,6 @@ ConversionTrackerServiceConversionCountingType:
     <div lang="en">ConversionTrackerServiceConversionCountingType desribes how to count conversions.<br>
     This field is optional in ADD and SET operation.<br>
     *The default value in ADD operation will be MANY_PER_CLICK.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">ONE_PER_CLICK</dt>
       <dd class="term__desc"><span lang="ja">ユニークコンバージョンです。</span><span lang="en">One perticular conversion</span></dd>

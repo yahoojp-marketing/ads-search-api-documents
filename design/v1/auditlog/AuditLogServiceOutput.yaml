@@ -13,7 +13,6 @@ AuditLogServiceOutput:
     このフィールドは、省略可能となります。その際、デフォルト値はCSVとなります。</div>
     <div lang="en">AuditLogServiceOutput specifies the file format of acruiqred operation history data.<br>
     This field is optional. The default value will be CSV.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">ZIPPED_CSV</dt>
       <dd class="term__desc"><span lang="ja">ZIP圧縮されたCSV形式です。</span><span lang="en">in zipped CSV format</span></dd>

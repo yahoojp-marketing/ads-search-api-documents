@@ -12,7 +12,6 @@ AdGroupCriterionServiceKeywordMatchType:
     ADD時、このフィールドは必須となります。</div>
     <div lang="en">AdGroupCriterionServiceKeywordMatchType describes keyword match type.<br>
     This field is required in ADD operation.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">EXACT</dt>
       <dd class="term__desc"><span lang="ja">完全一致です。</span><span lang="en">Exact match.</span></dd>

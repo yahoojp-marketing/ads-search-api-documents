@@ -9,7 +9,6 @@ CampaignServiceBudgetPeriod:
     このフィールドは、ADD時は必須となり、SET時は省略可能となります。</div>
     <div lang="en">CampaignServiceBudgetPeriod displays the period for budget.<br>
     This field is required in ADD operation, and is optional in SET operation.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">DAILY</dt>
       <dd class="term__desc"><span lang="ja">1日単位です。</span><span lang="en">daily</span></dd>

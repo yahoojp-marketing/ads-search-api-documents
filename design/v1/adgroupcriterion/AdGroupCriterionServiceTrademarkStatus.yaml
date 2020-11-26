@@ -14,7 +14,6 @@ AdGroupCriterionServiceTrademarkStatus:
     このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
     <div lang="en">AdGroupCriterionServiceTrademarkStatus object describes the status of trademark.<br>
     Although this field will be returned in the response, it will be ignored on input.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">NO_RESTRICTION</dt>
       <dd class="term__desc"><span lang="ja">制限なし</span><span lang="en">No restriction.</span></dd>

@@ -10,7 +10,6 @@ TargetingIdeaServiceKeywordMatchType:
   description: |
     <div lang="ja">TargetingIdeaServiceKeywordMatchTypeは、キーワードのマッチタイプを表します。</div>
     <div lang="en">TargetingIdeaServiceKeywordMatchType describes keyword match type.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">EXACT</dt>
       <dd class="term__desc"><span lang="ja">完全一致です。</span><span lang="en">Exact match.</span></dd>

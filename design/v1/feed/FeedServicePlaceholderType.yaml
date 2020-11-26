@@ -11,7 +11,6 @@ FeedServicePlaceholderType:
     このフィールドは、ADD時に必須となり、SETおよびREMOVE時に無視されます。</div>
     <div lang="en">FeedServicePlaceholderType (enum) object select the type of Feed Item information.<br>
     This field is required in ADD operation, and will be ignored in SET and REMOVE operation.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">AD_CUSTOMIZER</dt>
       <dd class="term__desc"><span lang="ja">データ自動挿入です。</span><span lang="en">Auto data insertion.</span></dd>

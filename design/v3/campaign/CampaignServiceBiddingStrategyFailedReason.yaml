@@ -14,7 +14,6 @@ CampaignServiceBiddingStrategyFailedReason:
     このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
     <div lang="en">CampaignServiceBiddingStrategyFailedReason object displays the failure reason of Auto Bidding setting.<br>
     Although this field will be returned in the response, it will be ignored on input.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">FAILURE</dt>
       <dd class="term__desc"><span lang="ja">原因不明です。</span><span lang="en">Failed [Cause unknown]</span></dd>

@@ -9,7 +9,6 @@ LabelServiceCountLabeledEntity:
   description: |
     <div lang="ja">LabelServiceCountLabeledEntityは、ラベル件数集計フラグの設定です。</div>
     <div lang="en">LabelServiceCountLabeledEntity is setting of Label number count flag.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">TRUE</dt>
       <dd class="term__desc"><span lang="ja">集計する</span><span lang="en">counting</span></dd>

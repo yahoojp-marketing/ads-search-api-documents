@@ -12,7 +12,6 @@ AdGroupCriterionServiceApprovalStatus:
   description: |
     <div lang="ja">AdGroupCriterionServiceApprovalStatusは、審査状況を表します。</div>
     <div lang="en">AdGroupCriterionServiceApprovalStatus displays Editorial Status.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">APPROVED</dt>
       <dd class="term__desc"><span lang="ja">承認済です。</span><span lang="en">The item is approved</span></dd>

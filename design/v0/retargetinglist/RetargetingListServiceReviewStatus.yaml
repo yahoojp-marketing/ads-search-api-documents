@@ -10,7 +10,6 @@ RetargetingListServiceReviewStatus:
   description: |
     <div lang="ja">RetargetingListServiceReviewStatusは、ターゲットリストの審査状態を表します。</div>
     <div lang="en">RetargetingListServiceReviewStatus is the review status of target list.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">DISAPPROVED</dt>
       <dd class="term__desc"><span lang="ja">利用不可です。<br>プライバシーポリシーの違反などで強制停止されている状態です。</span><span lang="en">Target list is not available.<br>It has been stopped for violation of privacy policy or other reasons.</span></dd>

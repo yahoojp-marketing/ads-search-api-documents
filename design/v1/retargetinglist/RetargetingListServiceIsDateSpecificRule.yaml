@@ -11,7 +11,6 @@ RetargetingListServiceIsDateSpecificRule:
     ADD時、このフィールドは省略可能となります。</div>
     <div lang="en">RetargetingListServiceIsDateSpecificRule defines the rule with deadline.<br>
     This field is optional in ADD operation.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">TRUE</dt>
       <dd class="term__desc"><span lang="ja">期限が付くルールとして定義します。</span><span lang="en">Rule with deadline.</span></dd>

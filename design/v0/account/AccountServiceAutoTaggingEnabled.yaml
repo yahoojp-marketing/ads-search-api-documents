@@ -11,7 +11,6 @@ AccountServiceAutoTaggingEnabled:
     SET時、このフィールドは省略可能となります。</div>
     <div lang="en">AccountServiceAutoTaggingEnabled is management flag for whether or not to set auto tag.<br>
     This field is optional in SET operation.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">TRUE</dt>
       <dd class="term__desc"><span lang="ja">する</span><span lang="en">setting</span></dd>

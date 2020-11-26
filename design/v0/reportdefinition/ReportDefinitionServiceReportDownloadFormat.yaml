@@ -13,7 +13,6 @@ ReportDefinitionServiceReportDownloadFormat:
     <div lang="en">ReportDefinitionServiceReportDownloadFormat displays a file format of the report.<br>
     This field is optional in ADD operation.
     </div>
-    <hr>
     <dl class=term>
       <dt class="term__item">CSV</dt>
       <dd class="term__desc"><span lang="ja">CSVフォーマットです。<br>カンマで区分されます。<br> ※デフォルトに設定されます。</span><span lang="en">CSV output format.<br>Separated by comma.<br> *Default setting.</span></dd>
