@@ -54,7 +54,7 @@
 "LABELS_JSON","ラベル(JSON)","Labels(JSON)","LabelsJson","STRING","true",,"Attribute","","",
 "BID_STRATEGY_ID","自動入札ID","Auto Bidding ID","autoBiddingID","LONG","true",,"Attribute","","","データ取得出来ない場合、値に[--]が設定されます"
 "BID_STRATEGY_NAME","自動入札名","Auto Bidding Name","autoBiddingName","STRING","true",,"Attribute","","",
-"BID_STRATEGY_TYPE","入札方法","Bidding","bidding","ENUM","true",,"Attribute","個別クリック単価,検索結果ページの目標掲載位置,クリック数の最大化,拡張クリック単価（旧「コンバージョン数の最大化」）,コンバージョン単価の目標値,広告費用対効果の目標値,コンバージョン数の最大化,その他","Individual CPC,Target position in search results,Maximize Clicks,Enhanced CPC (Former: Maximize Conversions),Target CPA,Target ROAS,Maximize Conversions,Other",
+"BID_STRATEGY_TYPE","入札方法","Bidding","bidding","ENUM","true",,"Attribute","個別クリック単価,検索結果ページの目標掲載位置,クリック数の最大化,拡張クリック単価（旧「コンバージョン数の最大化」）,コンバージョン単価の目標値,広告費用対効果の目標値,コンバージョン数の最大化,ページ最上部掲載,その他","Individual CPC,Target position in search results,Maximize Clicks,Enhanced CPC (Former: Maximize Conversions),Target CPA,Target ROAS,Maximize Conversions,Absolute top placement,Other",
 "ENHANCED_CPC_ENABLED","拡張クリック単価設定","Enhanced CPC","enhancedCpcEnabled","ENUM","true",,"Attribute","有効,無効","true,false",
 "ABSOLUTE_TOP_IMPRESSION_PERCENTAGE","インプレッションにおけるページ最上部の割合","Search absolute top impression rate","absoluteTopImpressionPercentage","DOUBLE","true","[CLICK_TYPE, CONVERSION_NAME, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",
 "TOP_IMPRESSION_PERCENTAGE","インプレッションにおけるページ上部の割合","Search top impression rate","topImpressionPercentage","DOUBLE","true","[CLICK_TYPE, CONVERSION_NAME, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",
