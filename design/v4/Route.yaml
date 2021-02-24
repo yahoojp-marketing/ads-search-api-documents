@@ -254,6 +254,11 @@ tags:
       <label class="account"></label>
       <div lang="ja">AccountTrackingUrlServiceでは、アカウントトラッキングに関する情報の取得および更新を行います。</div><div lang="en">AccountTrackingUrlService
       is to get or update account tracking information.</div>
+  - name: KeywordPlanIdeaService
+    description: |
+      <label class="proposal"></label>
+      <div lang="ja">KeywordPlanIdeaServiceは、指定された情報を元に新しいキーワード候補を提案するサービスです。</div>
+      <div lang="en">KeywordPlanIdeaService is a service that suggests new related keywords based on the specified value.</div>
   - name: KeywordEstimatorService
     description: |
       <label class="proposal"></label>
@@ -261,6 +266,11 @@ tags:
       (deprecated) このAPIは将来のバージョンで削除予定です。このAPIの代わりにKeywordForecastMetricsServiceを使用してください。</div>
       <div lang="en">KeywordEstimatorService is to request traffic estimates based on exsisting campaign data (device, geo targeting setting etc).<br>
       (deprecated) This API is deprecated in the futere version. Use KeywordForecastMetricsService instead of this.</div>
+  - name: KeywordForecastMetricsService
+    description: |
+      <label class="proposal"></label>
+      <div lang="ja">KeywordForecastMetricsServiceは、キーワードの実績情報を取得します。</div>
+      <div lang="en">KeywordForecastMetricsService gets performance information of keywords.</div>
   - name: OfflineConversionService
     description: |
       <label class="account"></label>
@@ -276,6 +286,12 @@ tags:
       <label class="campaign"></label>
       <div lang="ja">AppLinkServiceは、アプリリンク情報の操作を提供します。</div>
       <div lang="en">AppLinkService provides operations for App link information.</div>
+  - name: AccountLinkService
+    description: |
+      <label class="account"></label>
+      <div lang="ja">AccountLinkServiceは、アカウントリンクの操作を提供します。</div>
+      <div lang="en">AccountLinkService provides account link operations.</div>
+
 paths:
   /AccountManagementService/get:
     post:
@@ -6988,6 +7004,58 @@ paths:
           $ref: '../Response401.yaml#/Response401'
         400:
           $ref: '../Response400.yaml#/Response400'
+  /KeywordPlanIdeaService/get:
+    post:
+      description: |
+        <div lang="ja">指定された情報を元に新しいキーワード候補を提案するサービスです。</div>
+        <div lang="en">Suggests new related keywords based on the specified value.</div>
+      tags:
+        - KeywordPlanIdeaService
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: 'keywordplanidea/KeywordPlanIdeaServiceSelector.yaml#/KeywordPlanIdeaServiceSelector'
+      responses:
+        503:
+          $ref: '../Response503.yaml#/Response503'
+        500:
+          $ref: '../Response500.yaml#/Response500'
+        200:
+          description: |
+            <p class="cellContent__head">Error codes</p>
+            <div class="cellContent__body">
+            <table class="apiTable">
+              <colgroup span="1" class="short"></colgroup>
+              <colgroup span="2"></colgroup>
+              <thead>
+                <tr><th>Code</th><th>Message</th><th>Description</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>0001</td><td>Invalid Request.</td><td><div lang="ja">さまざまな要因が考えられます。<br>主な要因は、パラメータの値が不正か、誤りがあるためにオペレーションが完了できません。</div><div lang="en">This error can result for a variety of reasons. <br>Typically because one of the parameter values in the request is wrong or invalid and the operation cannot be completed.</div></td></tr>
+                <tr><td>R0001</td><td>Require.</td><td><div lang="ja">必須です。</div><div lang="en">It is missing required parameter.</div></td></tr>
+                <tr><td>F0001</td><td>Invalid format.</td><td><div lang="ja">値の形式が不正です。</div><div lang="en">The value format is invalid.</div></td></tr>
+                <tr><td>V0001</td><td>Invalid value.</td><td><div lang="ja">値が無効です。</div><div lang="en">The value is invalid.</div></td></tr>
+                <tr><td>S0001</td><td>Invalid Status.</td><td><div lang="ja">ステータスが無効です。</div><div lang="en">The status is invalid.</div></td></tr>
+                <tr><td>L0002</td><td>Over list size.</td><td><div lang="ja">配列の要素数が上限値を超過しています。</div><div lang="en">The number of elements in the array exceeds the upper limit.</div></td></tr>
+                <tr><td>L0001</td><td>Lower list size.</td><td><div lang="ja">配列の要素数が下限値を下回っています。</div><div lang="en">The number of elements in the array is below the lower limit.</div></td></tr>
+                <tr><td>D0001</td><td>Duplicate.</td><td><div lang="ja">一意な値が重複しています。</div><div lang="en">The unique value is duplicated.</div></td></tr>
+                <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
+                <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
+                <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
+              </tbody>
+            </table>
+            </div>
+          content:
+            application/json:
+              schema:
+                $ref: 'keywordplanidea/KeywordPlanIdeaServiceGetResponse.yaml#/KeywordPlanIdeaServiceGetResponse'
+        403:
+          $ref: '../Response403.yaml#/Response403'
+        401:
+          $ref: '../Response401.yaml#/Response401'
+        400:
+          $ref: '../Response400.yaml#/Response400'
   /KeywordEstimatorService/get:
     post:
       description: |
@@ -7036,6 +7104,58 @@ paths:
             application/json:
               schema:
                 $ref: 'keywordestimator/KeywordEstimatorServiceGetResponse.yaml#/KeywordEstimatorServiceGetResponse'
+        403:
+          $ref: '../Response403.yaml#/Response403'
+        401:
+          $ref: '../Response401.yaml#/Response401'
+        400:
+          $ref: '../Response400.yaml#/Response400'
+  /KeywordForecastMetricsService/get:
+    post:
+      description: |
+        <div lang="ja">キーワードの実績情報を取得します。</div>
+        <div lang="en">■■■TODO 英訳お願いします。■■■</div>
+      tags:
+        - KeywordForecastMetricsService
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: 'keywordforecastmetrics/KeywordForecastMetricsServiceSelector.yaml#/KeywordForecastMetricsServiceSelector'
+      responses:
+        503:
+          $ref: '../Response503.yaml#/Response503'
+        500:
+          $ref: '../Response500.yaml#/Response500'
+        200:
+          description: |
+            <p class="cellContent__head">Error codes</p>
+            <div class="cellContent__body">
+            <table class="apiTable">
+              <colgroup span="1" class="short"></colgroup>
+              <colgroup span="2"></colgroup>
+              <thead>
+                <tr><th>Code</th><th>Message</th><th>Description</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>0001</td><td>Invalid Request.</td><td><div lang="ja">さまざまな要因が考えられます。<br>主な要因は、パラメータの値が不正か、誤りがあるためにオペレーションが完了できません。</div><div lang="en">This error can result for a variety of reasons. <br>Typically because one of the parameter values in the request is wrong or invalid and the operation cannot be completed.</div></td></tr>
+                <tr><td>R0001</td><td>Require.</td><td><div lang="ja">必須です。</div><div lang="en">It is missing required parameter.</div></td></tr>
+                <tr><td>F0001</td><td>Invalid format.</td><td><div lang="ja">値の形式が不正です。</div><div lang="en">The value format is invalid.</div></td></tr>
+                <tr><td>V0001</td><td>Invalid value.</td><td><div lang="ja">値が無効です。</div><div lang="en">The value is invalid.</div></td></tr>
+                <tr><td>S0001</td><td>Invalid Status.</td><td><div lang="ja">ステータスが無効です。</div><div lang="en">The status is invalid.</div></td></tr>
+                <tr><td>L0002</td><td>Over list size.</td><td><div lang="ja">配列の要素数が上限値を超過しています。</div><div lang="en">The number of elements in the array exceeds the upper limit.</div></td></tr>
+                <tr><td>L0001</td><td>Lower list size.</td><td><div lang="ja">配列の要素数が下限値を下回っています。</div><div lang="en">The number of elements in the array is below the lower limit.</div></td></tr>
+                <tr><td>D0001</td><td>Duplicate.</td><td><div lang="ja">一意な値が重複しています。</div><div lang="en">The unique value is duplicated.</div></td></tr>
+                <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
+                <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
+                <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
+              </tbody>
+            </table>
+            </div>
+          content:
+            application/json:
+              schema:
+                $ref: 'keywordforecastmetrics/KeywordForecastMetricsServiceGetResponse.yaml#/KeywordForecastMetricsServiceGetResponse'
         403:
           $ref: '../Response403.yaml#/Response403'
         401:
@@ -7589,6 +7709,60 @@ paths:
             application/json:
               schema:
                 $ref: 'applink/AppLinkServiceMutateResponse.yaml#/AppLinkServiceMutateResponse'
+        403:
+          $ref: '../Response403.yaml#/Response403'
+        401:
+          $ref: '../Response401.yaml#/Response401'
+        400:
+          $ref: '../Response400.yaml#/Response400'
+  /AccountLinkService/get:
+    post:
+      description: |
+        <div lang="ja">アカウントリンクの情報を取得します。<br>
+        既に承認済みのアカウントリンク情報のみが取得できます。</div>
+        <div lang="en">Get account link information.<br>
+        Only account link information that has already been approved can be obtained.</div>
+      tags:
+        - AccountLinkService
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: 'accountlink/AccountLinkServiceSelector.yaml#/AccountLinkServiceSelector'
+      responses:
+        503:
+          $ref: '../Response503.yaml#/Response503'
+        500:
+          $ref: '../Response500.yaml#/Response500'
+        200:
+          description: |
+            <p class="cellContent__head">Error codes</p>
+            <div class="cellContent__body">
+            <table class="apiTable">
+              <colgroup span="1" class="short"></colgroup>
+              <colgroup span="2"></colgroup>
+              <thead>
+                <tr><th>Code</th><th>Message</th><th>Description</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>0001</td><td>Invalid Request.</td><td><div lang="ja">さまざまな要因が考えられます。<br>主な要因は、パラメータの値が不正か、誤りがあるためにオペレーションが完了できません。</div><div lang="en">This error can result for a variety of reasons. <br>Typically because one of the parameter values in the request is wrong or invalid and the operation cannot be completed.</div></td></tr>
+                <tr><td>R0001</td><td>Require.</td><td><div lang="ja">必須です。</div><div lang="en">It is missing required parameter.</div></td></tr>
+                <tr><td>F0001</td><td>Invalid format.</td><td><div lang="ja">値の形式が不正です。</div><div lang="en">The value format is invalid.</div></td></tr>
+                <tr><td>V0001</td><td>Invalid value.</td><td><div lang="ja">値が無効です。</div><div lang="en">The value is invalid.</div></td></tr>
+                <tr><td>S0001</td><td>Invalid Status.</td><td><div lang="ja">ステータスが無効です。</div><div lang="en">The status is invalid.</div></td></tr>
+                <tr><td>L0002</td><td>Over list size.</td><td><div lang="ja">配列の要素数が上限値を超過しています。</div><div lang="en">The number of elements in the array exceeds the upper limit.</div></td></tr>
+                <tr><td>L0001</td><td>Lower list size.</td><td><div lang="ja">配列の要素数が下限値を下回っています。</div><div lang="en">The number of elements in the array is below the lower limit.</div></td></tr>
+                <tr><td>D0001</td><td>Duplicate.</td><td><div lang="ja">一意な値が重複しています。</div><div lang="en">The unique value is duplicated.</div></td></tr>
+                <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
+                <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
+                <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
+              </tbody>
+            </table>
+            </div>
+          content:
+            application/json:
+              schema:
+                $ref: 'accountlink/AccountLinkServiceGetResponse.yaml#/AccountLinkServiceGetResponse'
         403:
           $ref: '../Response403.yaml#/Response403'
         401:

@@ -1,0 +1,31 @@
+KeywordForecastMetricsServiceKeywordPlanCampaign:
+  type: object
+  nullable: true
+  required:
+    - maxCpc
+    - keywordPlanAdGroup
+  properties:
+    keywordPlanNetwork:
+      $ref: 'KeywordForecastMetricsServiceKeywordPlanNetwork.yaml#/KeywordForecastMetricsServiceKeywordPlanNetwork'
+    maxCpc:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">最大クリック単価です。</div>
+        <div lang="en">Maximum CPC.</div>
+    geoTargets:
+      type: array
+      nullable: true
+      items:
+        type: string
+        nullable: true
+      description: |
+        <div lang="ja">地域情報です。</div>
+        <div lang="en">Area information.</div>
+    keywordPlanAdGroup:
+      $ref: 'KeywordForecastMetricsServiceKeywordPlanAdGroup.yaml#/KeywordForecastMetricsServiceKeywordPlanAdGroup'
+  title: KeywordForecastMetricsServiceKeywordPlanCampaign
+  description: |
+    <div lang="ja">KeywordForecastMetricsServiceKeywordPlanCampaign オブジェクトは、見積もりリクエストを格納します。</div>
+    <div lang="en">KeywordForecastMetricsServiceKeywordPlanCampaign object is a container for the estimate request.</div>

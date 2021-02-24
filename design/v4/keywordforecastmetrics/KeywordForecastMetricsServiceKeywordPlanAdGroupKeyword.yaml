@@ -1,0 +1,38 @@
+KeywordForecastMetricsServiceKeywordPlanAdGroupKeyword:
+  type: object
+  nullable: true
+  required:
+    - text
+    - matchType
+  properties:
+    text:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">キーワードです。</div>
+        <div lang="en">Keyword</div>
+    matchType:
+      $ref: 'KeywordForecastMetricsServiceMatchType.yaml#/KeywordForecastMetricsServiceMatchType'
+    maxCpc:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">最大クリック単価です。<br>
+        isNegativeがTRUEのときにmaxCpcを指定することはできません。</div>
+        <div lang="en">Maximum CPC.<br>
+        When isNegative is TRUE, maxCPC cannot be specified.</div>
+    isNegative:
+      type: boolean
+      nullable: true
+      description: |
+        <div lang="ja">除外キーワードです。<br>
+        デフォルト値はfalseです。<br>
+        除外キーワードのみでのリクエストはできません。</div>
+        <div lang="en">Refine keyword.<br>
+        The default value will be FALSE.<br>
+        Cannot request with only refine keyword.</div>
+  title: KeywordForecastMetricsServiceKeywordPlanAdGroupKeyword
+  description: |
+    <div lang="ja">KeywordForecastMetricsServiceKeywordPlanAdGroupKeyword オブジェクトは、見積もりリクエストを格納します。</div>
+    <div lang="en">KeywordForecastMetricsServiceKeywordPlanAdGroupKeyword object contains the estimate request.</div>
