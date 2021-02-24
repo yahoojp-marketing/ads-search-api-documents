@@ -38,9 +38,11 @@ PageFeedItemServiceDownloadJob:
       maxItems: 1000
       description: |
         <div lang="ja">フィードIDです。<br>
-        このフィールドは必須です。</div>
+        このフィールドは必須です。<br>
+        ※ADD時、feedIds[]に設定できるfeedIdは1つだけです。</div>
         <div lang="en">Feed ID.<br>
-        This field is required.</div>
+        This field is required.<br>
+        *In ADD operation, only one feedId can be set in feedIds[].</div>
     jobId:
       type: integer
       nullable: true

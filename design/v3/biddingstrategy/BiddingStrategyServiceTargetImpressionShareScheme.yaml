@@ -1,4 +1,4 @@
-BiddingStrategyServiceTargetImpressionShareScheme: # TODO なおすこと
+BiddingStrategyServiceTargetImpressionShareScheme:
   type: object
   nullable: true
   properties:

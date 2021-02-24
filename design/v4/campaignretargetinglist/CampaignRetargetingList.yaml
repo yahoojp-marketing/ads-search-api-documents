@@ -1,0 +1,39 @@
+CampaignRetargetingList:
+  type: object
+  nullable: true
+  properties:
+    accountId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">アカウントIDです。</div>
+        <div lang="en">Account ID.</div>
+    bidMultiplier:
+      type: number
+      nullable: true
+      format: double
+      description: |
+        <div lang="ja">入札価格調整率です。<br>このフィールドは、いずれの場合でも省略可能となります。</div>
+        <div lang="en">Bid adjustment rate.<br>This field is optional in any cases.</div>
+    campaignId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">キャンペーンIDです。<br>このフィールドは、いずれの場合でも必須です。</div>
+        <div lang="en">Campaign ID.<br>This field is required in any cases.</div>
+    campaignName:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">キャンペーン名称です。</div>
+        <div lang="en">Name of campaign.</div>
+    criterionTargetList:
+      $ref: 'CampaignRetargetingListServiceCriterionTargetList.yaml#/CampaignRetargetingListServiceCriterionTargetList'
+    excludedType:
+      $ref: 'CampaignRetargetingListServiceExcludedType.yaml#/CampaignRetargetingListServiceExcludedType'
+  title: CampaignRetargetingList
+  description: |
+    <div lang="ja">CampaignRetargetingListオブジェクトは、キャンペーン階層におけるターゲットリストの設定情報を保持するオブジェクトです。</div>
+    <div lang="en">CampaignRetargetingList object holds the setting information of Target List on campaign level.</div>

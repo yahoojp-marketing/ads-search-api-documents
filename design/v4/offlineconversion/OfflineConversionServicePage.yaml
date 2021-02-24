@@ -1,0 +1,13 @@
+OfflineConversionServicePage:
+  type: object
+  nullable: true
+  properties:
+    totalNumEntries:
+      type: integer
+      nullable: true
+      format: int32
+    values:
+      type: array
+      nullable: true
+      items:
+        $ref: 'OfflineConversionServiceValue.yaml#/OfflineConversionServiceValue'

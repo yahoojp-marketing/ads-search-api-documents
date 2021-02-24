@@ -1,0 +1,25 @@
+AppLinkServiceOperation:
+  type: object
+  nullable: true
+  required:
+  - accountId
+  - operand
+  properties:
+    accountId:
+      type: integer
+      nullable: false
+      format: int64
+      description: |
+        <div lang="ja">アカウントIDです。</div>
+        <div lang="en">Account ID.</div>
+    operand:
+      type: array
+      nullable: true
+      items:
+        $ref: 'AppLink.yaml#/AppLink'
+      minItems: 1
+      maxItems: 10
+  title: AppLinkServiceOperation
+  description: |
+    <div lang="ja">AppLinkServiceOperationオブジェクトは、操作対象となるアプリリンク情報と処理の内容を表します。</div>
+    <div lang="en">AppLinkServiceOperation object describes appLink information for operation and list of operations.</div>

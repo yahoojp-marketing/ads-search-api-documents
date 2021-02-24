@@ -9,7 +9,7 @@
 "INVALID_CLICKS","無効なクリック","Invalid Clicks","invalidClicks","LONG","true","[CONVERSION_NAME, HOUR_OF_DAY, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",
 "INVALID_CLICK_RATE","無効なクリック率","Invalid Click Rate","invalidClickRate","DOUBLE","true","[CONVERSION_NAME, HOUR_OF_DAY, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",
 "IMPRESSION_SHARE","インプレッションシェア","Impression Share","impressionShare","DOUBLE","true","[CLICK_TYPE, CONVERSION_NAME, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",
-"EXACT_MATCH_IMPRESSION_SHARE","完全一致のインプレッションシェア","Exact Match Impression Share","exactMatchImpressionShare","DOUBLE","true","[CLICK_TYPE, CONVERSION_NAME, OBJECT_OF_CONVERSION_TRACKING]","Metric","","","データ取得出来ない場合、値に[--]が設定されます"
+"EXACT_MATCH_IMPRESSION_SHARE","完全一致のインプレッションシェア","Exact Match Impression Share","exactMatchImpressionShare","DOUBLE","true","[CLICK_TYPE, CONVERSION_NAME, OBJECT_OF_CONVERSION_TRACKING]","Metric","","","データ取得出来ない場合、値に[--]が設定されます/When the data cannot be retrieved, the value is set to [--]"
 "BUDGET_LOST_IMPRESSION_SHARE","インプレッション損失率（予算）","Budget Lost Impression Share","budgetLostImpressionShare","DOUBLE","true","[CLICK_TYPE, CONVERSION_NAME, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",
 "QUALITY_LOST_IMPRESSION_SHARE","インプレッション損失率（掲載順位）","Quality Lost Impression Share","qualityLostImpressionShare","DOUBLE","true","[CLICK_TYPE, CONVERSION_NAME, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",
 "TRACKING_URL","トラッキングURL","Tracking URL","trackingURL","STRING","true",,"Attribute","","",
@@ -23,7 +23,7 @@
 "ALL_CONV_VALUE","すべてのコンバージョンの価値","All Conv. Value","allConvValue","DOUBLE","true","[HOUR_OF_DAY]","Metric","","",
 "COST_PER_ALL_CONV","コスト/すべてのコンバージョン数","Cost Per All Conv.","costPerAllConv","DOUBLE","true","[CONVERSION_NAME, HOUR_OF_DAY, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",
 "VALUE_PER_ALL_CONV","価値/すべてのコンバージョン数","Value Per All Conv.","valuePerAllConv","DOUBLE","true","[HOUR_OF_DAY]","Metric","","",
-"CROSS_DEVICE_CONVERSIONS","デバイスをまたいだコンバージョン数","Conversions across devices","crossDeviceConversions","DOUBLE","true","[HOUR_OF_DAY]","Metric","","","データ取得出来ない場合、値に[--]が設定されます"
+"CROSS_DEVICE_CONVERSIONS","デバイスをまたいだコンバージョン数","Conversions across devices","crossDeviceConversions","DOUBLE","true","[HOUR_OF_DAY]","Metric","","","データ取得出来ない場合、値に[--]が設定されます/When the data cannot be retrieved, the value is set to [--]"
 "NETWORK","広告掲載方式の指定","Network","network","ENUM","false",,"Segment","ウェブ検索,その他の広告掲載方式,その他","Web Search,All Ad Distribution,Other",
 "CLICK_TYPE","クリック種別","ClickType","clickType","ENUM","false","[BUDGET_LOST_IMPRESSION_SHARE, EXACT_MATCH_IMPRESSION_SHARE, IMPRESSION_SHARE, QUALITY_LOST_IMPRESSION_SHARE]","Segment","メイン広告,クイックリンク,電話番号,その他","Ad,QuickLinks,PhoneCalls,Other",
 "DEVICE","デバイス","Device","device","ENUM","false",,"Segment","PC,フルブラウザ搭載の携帯端末,フルブラウザ搭載のタブレット端末,その他","Computers,Mobile devices with full browsers,Tablets with full browsers,Other",

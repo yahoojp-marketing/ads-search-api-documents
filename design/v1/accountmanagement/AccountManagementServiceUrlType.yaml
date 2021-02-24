@@ -1,0 +1,30 @@
+AccountManagementServiceUrlType:
+  type: string
+  nullable: true
+  enum:
+  - PC
+  - DOCOMO
+  - KDDI
+  - SOFTBANK
+  - OTHER
+  - UNKNOWN
+  title: AccountManagementServiceUrlType
+  description: |
+    <div lang="ja">AccountManagementServiceUrlTypeは、申し込みURL種別を表します。<br>
+    このフィールドは、ADD時は必須となり、SET時は無視されます。</div>
+    <div lang="en">AccountManagementServiceUrlType describes the type of application url.<br>
+    This field is required in ADD operation, and will be ignored in SET operation.</div>
+    <dl class=term>
+      <dt class="term__item">PC</dt>
+      <dd class="term__desc"><span lang="ja">PCです。</span><span lang="en">PC.</span></dd>
+      <dt class="term__item">DOCOMO</dt>
+      <dd class="term__desc"><span lang="ja">ドコモです。</span><span lang="en">Docomo.</span></dd>
+      <dt class="term__item">KDDI</dt>
+      <dd class="term__desc"><span lang="ja">auです。</span><span lang="en">au.</span></dd>
+      <dt class="term__item">SOFTBANK</dt>
+      <dd class="term__desc"><span lang="ja">ソフトバンクです。</span><span lang="en">Softbank.</span></dd>
+      <dt class="term__item">OTHER</dt>
+      <dd class="term__desc"><span lang="ja">その他です。</span><span lang="en">other.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value.</span></dd>
+    </dl>

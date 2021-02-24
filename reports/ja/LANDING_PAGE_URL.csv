@@ -22,7 +22,7 @@
 "ALL_CONV_VALUE","すべてのコンバージョンの価値","All Conv. Value","allConvValue","DOUBLE","false",,"Metric","","",
 "COST_PER_ALL_CONV","コスト/すべてのコンバージョン数","Cost Per All Conv.","costPerAllConv","DOUBLE","false","[CONVERSION_NAME, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",
 "VALUE_PER_ALL_CONV","価値/すべてのコンバージョン数","Value Per All Conv.","valuePerAllConv","DOUBLE","false",,"Metric","","",
-"CROSS_DEVICE_CONVERSIONS","デバイスをまたいだコンバージョン数","Conversions across devices","crossDeviceConversions","DOUBLE","false",,"Metric","","","データ取得出来ない場合、値に[--]が設定されます"
+"CROSS_DEVICE_CONVERSIONS","デバイスをまたいだコンバージョン数","Conversions across devices","crossDeviceConversions","DOUBLE","false",,"Metric","","","データ取得出来ない場合、値に[--]が設定されます/When the data cannot be retrieved, the value is set to [--]"
 "CAMPAIGN_TRACKING_ID","キャンペーントラッキングID","Campaign Tracking ID","campaignTrackingID","LONG","false",,"Segment","","",
 "ADGROUP_TRACKING_ID","広告グループトラッキングID","Ad Group Tracking ID","adgroupTrackingID","LONG","false",,"Segment","","",
 "NETWORK","広告掲載方式の指定","Network","network","ENUM","false",,"Segment","ウェブ検索,その他の広告掲載方式,その他","Web Search,All Ad Distribution,Other",

@@ -10,7 +10,7 @@
 "CLICKS","クリック数","Clicks","clicks","LONG","true","[CONVERSION_NAME, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",
 "CLICK_RATE","クリック率","CTR","ctr","DOUBLE","true","[CONVERSION_NAME, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",
 "AVG_CPC","平均CPC","Avg. CPC","averageCpc","DOUBLE","true","[CONVERSION_NAME, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",
-"BID_MULTIPLIER","入札価格調整率(％)","Bid Adjustment(%)","bidAdjustment","LONG","true",,"Attribute","","","データ取得出来ない場合、値に[--]が設定されます"
+"BID_MULTIPLIER","入札価格調整率(％)","Bid Adjustment(%)","bidAdjustment","LONG","true",,"Attribute","","","データ取得出来ない場合、値に[--]が設定されます/When the data cannot be retrieved, the value is set to [--]"
 "TARGET_LIST_ID","ターゲットリストID","Target List ID","targetListID","LONG","true",,"Attribute","","",
 "TARGET_LIST_NAME","ターゲットリスト名","Target List Name","targetListName","STRING","true",,"Attribute","","",
 "TARGET_LIST_STATUS","訪問履歴の蓄積","Reach Status","reachStatus","ENUM","true",,"Attribute","蓄積する,蓄積しない,その他","Open,Closed,Other",
@@ -24,7 +24,7 @@
 "ALL_CONV_VALUE","すべてのコンバージョンの価値","All Conv. Value","allConvValue","DOUBLE","true",,"Metric","","",
 "COST_PER_ALL_CONV","コスト/すべてのコンバージョン数","Cost Per All Conv.","costPerAllConv","DOUBLE","true",,"Metric","","",
 "VALUE_PER_ALL_CONV","価値/すべてのコンバージョン数","Value Per All Conv.","valuePerAllConv","DOUBLE","true",,"Metric","","",
-"CROSS_DEVICE_CONVERSIONS","デバイスをまたいだコンバージョン数","Conversions across devices","crossDeviceConversions","DOUBLE","true",,"Metric","","","データ取得出来ない場合、値に[--]が設定されます"
+"CROSS_DEVICE_CONVERSIONS","デバイスをまたいだコンバージョン数","Conversions across devices","crossDeviceConversions","DOUBLE","true",,"Metric","","","データ取得出来ない場合、値に[--]が設定されます/When the data cannot be retrieved, the value is set to [--]"
 "TARGET_LIST_ATTACHMENT_LEVEL","レベル","Level","targetListAttachmentLevel","ENUM","true",,"Attribute","その他,広告グループ,キャンペーン","Other,Ad Group,Campaign",
 "CAMPAIGN_TRACKING_ID","キャンペーントラッキングID","Campaign Tracking ID","campaignTrackingID","LONG","true",,"Attribute","","",
 "ADGROUP_TRACKING_ID","広告グループトラッキングID","Ad Group Tracking ID","adgroupTrackingID","LONG","true",,"Segment","","",

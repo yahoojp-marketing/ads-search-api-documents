@@ -13,7 +13,7 @@
 "CLICK_RATE","クリック率","CTR","ctr","DOUBLE","true","[CONVERSION_NAME, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",
 "AVG_CPC","平均CPC","Avg. CPC","averageCpc","DOUBLE","true","[CONVERSION_NAME, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",
 "IMPRESSION_SHARE","インプレッションシェア","Impression Share","impressionShare","DOUBLE","true","[CLICK_TYPE, CONVERSION_NAME, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",
-"EXACT_MATCH_IMPRESSION_SHARE","完全一致のインプレッションシェア","Exact Match Impression Share","exactMatchImpressionShare","DOUBLE","true","[CLICK_TYPE, CONVERSION_NAME, OBJECT_OF_CONVERSION_TRACKING]","Metric","","","データ取得出来ない場合、値に[--]が設定されます"
+"EXACT_MATCH_IMPRESSION_SHARE","完全一致のインプレッションシェア","Exact Match Impression Share","exactMatchImpressionShare","DOUBLE","true","[CLICK_TYPE, CONVERSION_NAME, OBJECT_OF_CONVERSION_TRACKING]","Metric","","","データ取得出来ない場合、値に[--]が設定されます/When the data cannot be retrieved, the value is set to [--]"
 "QUALITY_LOST_IMPRESSION_SHARE","インプレッション損失率（掲載順位）","Quality Lost Impression Share","qualityLostImpressionShare","DOUBLE","true","[CLICK_TYPE, CONVERSION_NAME, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",
 "TRACKING_URL","トラッキングURL","Tracking URL","trackingURL","STRING","true",,"Attribute","","",
 "CUSTOM_PARAMETERS","カスタムパラメータ","Custom Parameters","customParameters","STRING","true",,"Attribute","","",
@@ -27,10 +27,10 @@
 "ALL_CONV_VALUE","すべてのコンバージョンの価値","All Conv. Value","allConvValue","DOUBLE","true","[HOUR_OF_DAY]","Metric","","",
 "COST_PER_ALL_CONV","コスト/すべてのコンバージョン数","Cost Per All Conv.","costPerAllConv","DOUBLE","true","[CONVERSION_NAME, HOUR_OF_DAY, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",
 "VALUE_PER_ALL_CONV","価値/すべてのコンバージョン数","Value Per All Conv.","valuePerAllConv","DOUBLE","true","[HOUR_OF_DAY]","Metric","","",
-"CROSS_DEVICE_CONVERSIONS","デバイスをまたいだコンバージョン数","Conversions across devices","crossDeviceConversions","DOUBLE","true","[HOUR_OF_DAY]","Metric","","","データ取得出来ない場合、値に[--]が設定されます"
-"ADGROUP_MOBILE_BID_MODIFIER","スマートフォン入札価格調整率（％）","Smartphone Bid Adjustment (%)","mobileBidAdj","DOUBLE","true",,"Attribute","","","データ取得出来ない場合、値に[--]が設定されます"
-"ADGROUP_DESKTOP_BID_MODIFIER","PC入札価格調整率（％）","PC Bid Adjustment (%)","desktopBidAdj","DOUBLE","true",,"Attribute","","","データ取得出来ない場合、値に[--]が設定されます"
-"ADGROUP_TABLET_BID_MODIFIER","タブレット入札価格調整率（％）","Tablet Bid Adjustment (%)","tabletBidAdj","DOUBLE","true",,"Attribute","","","データ取得出来ない場合、値に[--]が設定されます"
+"CROSS_DEVICE_CONVERSIONS","デバイスをまたいだコンバージョン数","Conversions across devices","crossDeviceConversions","DOUBLE","true","[HOUR_OF_DAY]","Metric","","","データ取得出来ない場合、値に[--]が設定されます/When the data cannot be retrieved, the value is set to [--]"
+"ADGROUP_MOBILE_BID_MODIFIER","スマートフォン入札価格調整率（％）","Smartphone Bid Adjustment (%)","mobileBidAdj","DOUBLE","true",,"Attribute","","","データ取得出来ない場合、値に[--]が設定されます/When the data cannot be retrieved, the value is set to [--]"
+"ADGROUP_DESKTOP_BID_MODIFIER","PC入札価格調整率（％）","PC Bid Adjustment (%)","desktopBidAdj","DOUBLE","true",,"Attribute","","","データ取得出来ない場合、値に[--]が設定されます/When the data cannot be retrieved, the value is set to [--]"
+"ADGROUP_TABLET_BID_MODIFIER","タブレット入札価格調整率（％）","Tablet Bid Adjustment (%)","tabletBidAdj","DOUBLE","true",,"Attribute","","","データ取得出来ない場合、値に[--]が設定されます/When the data cannot be retrieved, the value is set to [--]"
 "CAMPAIGN_TRACKING_ID","キャンペーントラッキングID","Campaign Tracking ID","campaignTrackingID","LONG","true",,"Attribute","","",
 "ADGROUP_TRACKING_ID","広告グループトラッキングID","Ad Group Tracking ID","adgroupTrackingID","LONG","true",,"Attribute","","",
 "NETWORK","広告掲載方式の指定","Network","network","ENUM","false",,"Segment","ウェブ検索,その他の広告掲載方式,その他","Web Search,All Ad Distribution,Other",
@@ -50,8 +50,8 @@
 "LABELS_JSON","ラベル(JSON)","Labels(JSON)","LabelsJson","STRING","true",,"Attribute","","",
 "ABSOLUTE_TOP_IMPRESSION_PERCENTAGE","インプレッションにおけるページ最上部の割合","Search absolute top impression rate","absoluteTopImpressionPercentage","DOUBLE","true","[CLICK_TYPE, CONVERSION_NAME, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",
 "TOP_IMPRESSION_PERCENTAGE","インプレッションにおけるページ上部の割合","Search top impression rate","topImpressionPercentage","DOUBLE","true","[CLICK_TYPE, CONVERSION_NAME, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",
-"SEARCH_ABSOLUTE_TOP_IMPRESSION_SHARE","ページ最上部のインプレッションシェア","Search absolute top impression share","searchAbsoluteTopImpressionShare","DOUBLE","true","[CLICK_TYPE, CONVERSION_NAME, OBJECT_OF_CONVERSION_TRACKING]","Metric","","","データ取得出来ない場合、値に[--]が設定されます"
-"SEARCH_TOP_IMPRESSION_SHARE","ページ上部のインプレッションシェア","Search top impression share","searchTopImpressionShare","DOUBLE","true","[CLICK_TYPE, CONVERSION_NAME, OBJECT_OF_CONVERSION_TRACKING]","Metric","","","データ取得出来ない場合、値に[--]が設定されます"
+"SEARCH_ABSOLUTE_TOP_IMPRESSION_SHARE","ページ最上部のインプレッションシェア","Search absolute top impression share","searchAbsoluteTopImpressionShare","DOUBLE","true","[CLICK_TYPE, CONVERSION_NAME, OBJECT_OF_CONVERSION_TRACKING]","Metric","","","データ取得出来ない場合、値に[--]が設定されます/When the data cannot be retrieved, the value is set to [--]"
+"SEARCH_TOP_IMPRESSION_SHARE","ページ上部のインプレッションシェア","Search top impression share","searchTopImpressionShare","DOUBLE","true","[CLICK_TYPE, CONVERSION_NAME, OBJECT_OF_CONVERSION_TRACKING]","Metric","","","データ取得出来ない場合、値に[--]が設定されます/When the data cannot be retrieved, the value is set to [--]"
 "SEARCH_BUDGET_LOST_ABSOLUTE_TOP_IMPRESSION_SHARE","ページ最上部のインプレッション損失率（予算）","Search lost absolute top impression share (budget)","searchBudgetLostAbsoluteTopImpressionShare","DOUBLE","true","[CLICK_TYPE, CONVERSION_NAME, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",
 "SEARCH_RANK_LOST_ABSOLUTE_TOP_IMPRESSION_SHARE","ページ最上部のインプレッション損失率（掲載順位）","Search lost absolute top impression share (rank)","searchRankLostAbsoluteTopImpressionShare","DOUBLE","true","[CLICK_TYPE, CONVERSION_NAME, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",
 "SEARCH_BUDGET_LOST_TOP_IMPRESSION_SHARE","ページ上部のインプレッション損失率（予算）","Search lost top impression share (budget)","searchBudgetLostTopImpressionShare","DOUBLE","true","[CLICK_TYPE, CONVERSION_NAME, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",

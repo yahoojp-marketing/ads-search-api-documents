@@ -1,0 +1,50 @@
+KeywordEstimatorServiceEstimateResult:
+  type: object
+  nullable: true
+  properties:
+    clicks:
+      type: number
+      nullable: true
+      format: double
+      description: |
+        <div lang="ja">1日あたりのクリック数です。</div>
+        <div lang="en">Number of clicks per day</div>
+    cost:
+      type: number
+      nullable: true
+      format: double
+      description: |
+        <div lang="ja">1日あたりの推定合計費用です。</div>
+        <div lang="en">Total amount of CPC cost per day</div>
+    cpc:
+      type: number
+      nullable: true
+      format: double
+      description: |
+        <div lang="ja">推定平均クリック単価です。</div>
+        <div lang="en">Assumed average CPC</div>
+    ctr:
+      type: number
+      nullable: true
+      format: double
+      description: |
+        <div lang="ja">推定CTRです。</div>
+        <div lang="en">Estimation of CTR.</div>
+    impressions:
+      type: number
+      nullable: true
+      format: double
+      description: |
+        <div lang="ja">1日当たりの推定インプレッション数です。</div>
+        <div lang="en">Estimation of impression per day.</div>
+    rank:
+      type: number
+      nullable: true
+      format: double
+      description: |
+        <div lang="ja">推定平均掲載順位です。</div>
+        <div lang="en">Assumed average display rank</div>
+  title: KeywordEstimatorServiceEstimateResult
+  description: |
+    <div lang="ja">KeywordEstimatorServiceEstimateResult オブジェクトは、見積もりリクエストを格納するコンテナです。</div>
+    <div lang="en">EstimateKeyword object is a container for the estimate request.</div>

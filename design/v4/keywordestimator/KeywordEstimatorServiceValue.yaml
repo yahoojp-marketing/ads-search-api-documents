@@ -1,0 +1,18 @@
+KeywordEstimatorServiceValue:
+  type: object
+  nullable: true
+  properties:
+    data:
+      $ref: 'KeywordEstimatorServiceResult.yaml#/KeywordEstimatorServiceResult'
+    errors:
+      type: array
+      nullable: true
+      items:
+        $ref: '../../Error.yaml#/Error'
+    operationSucceeded:
+      type: boolean
+      nullable: true
+      description: |
+        <div lang="ja">処理結果です。</div>
+        <div lang="en">Operation result.</div>
+  title: KeywordEstimatorServiceValue

@@ -27,6 +27,11 @@ servers:
   - url: https://ads-search.yahooapis.jp/api/v2
 
 tags:
+  - name: AccountManagementService
+    description: |
+      <label class="account" ></label>
+      <div lang="ja">AccountManagementServiceでは、アカウントに関する情報の取得および、追加、更新を行います。<br/>AccountManagementServiceは、一部の利用者向けの限定機能となります。</div>
+      <div lang="en">AccountManagementService provides functions for creating and managing accounts.<br/>AccountManagementService is a limited function for some users.</div>
   - name: AccountService
     description: |
       <label class="account" ></label>
@@ -266,6 +271,161 @@ tags:
       <div lang="en">OfflineConversionService is to get offline conversion data, upload and download file.</div>
 
 paths:
+  /AccountManagementService/get:
+    post:
+      description: |
+        <div lang="ja">アカウントに関する情報を取得します。契約状況などのフィルタ条件を設定することが可能です。</div>
+        <div lang="en">Returns the account information. Enable to set the filter condition, such as the account Type.</div>
+      tags:
+        - AccountManagementService
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: 'accountmanagement/AccountManagementServiceSelector.yaml#/AccountManagementServiceSelector'
+      responses:
+        503:
+          $ref: '../Response503.yaml#/Response503'
+        500:
+          $ref: '../Response500.yaml#/Response500'
+        200:
+          description: |
+            <p class="cellContent__head">Error codes</p>
+            <div class="cellContent__body">
+            <table class="apiTable">
+              <colgroup span="1" class="short"></colgroup>
+              <colgroup span="2"></colgroup>
+              <thead>
+                <tr><th>Code</th><th>Message</th><th>Description</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>0001</td><td>Invalid Request.</td><td><div lang="ja">さまざまな要因が考えられます。<br>主な要因は、パラメータの値が不正か、誤りがあるためにオペレーションが完了できません。</div><div lang="en">This error can result for a variety of reasons. <br>Typically because one of the parameter values in the request is wrong or invalid and the operation cannot be completed.</div></td></tr>
+                <tr><td>R0001</td><td>Require.</td><td><div lang="ja">必須です。</div><div lang="en">It is missing required parameter.</div></td></tr>
+                <tr><td>F0001</td><td>Invalid format.</td><td><div lang="ja">値の形式が不正です。</div><div lang="en">The value format is invalid.</div></td></tr>
+                <tr><td>V0001</td><td>Invalid value.</td><td><div lang="ja">値が無効です。</div><div lang="en">The value is invalid.</div></td></tr>
+                <tr><td>S0001</td><td>Invalid Status.</td><td><div lang="ja">ステータスが無効です。</div><div lang="en">The status is invalid.</div></td></tr>
+                <tr><td>L0002</td><td>Over list size.</td><td><div lang="ja">配列の要素数が上限値を超過しています。</div><div lang="en">The number of elements in the array exceeds the upper limit.</div></td></tr>
+                <tr><td>L0001</td><td>Lower list size.</td><td><div lang="ja">配列の要素数が下限値を下回っています。</div><div lang="en">The number of elements in the array is below the lower limit.</div></td></tr>
+                <tr><td>D0001</td><td>Duplicate.</td><td><div lang="ja">一意な値が重複しています。</div><div lang="en">The unique value is duplicated.</div></td></tr>
+                <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
+                <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
+                <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
+              </tbody>
+            </table>
+            </div>
+          content:
+            application/json:
+              schema:
+                $ref: 'accountmanagement/AccountManagementServiceGetResponse.yaml#/AccountManagementServiceGetResponse'
+        403:
+          $ref: '../Response403.yaml#/Response403'
+        401:
+          $ref: '../Response401.yaml#/Response401'
+        400:
+          $ref: '../Response400.yaml#/Response400'
+  /AccountManagementService/add:
+    post:
+      description: |
+        <div lang="ja">後請求のアカウントに関する情報を追加します。</div>
+        <div lang="en">Adds the information related to the invoice account.</div>
+      tags:
+        - AccountManagementService
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: 'accountmanagement/AccountManagementServiceOperation.yaml#/AccountManagementServiceOperation'
+      responses:
+        503:
+          $ref: '../Response503.yaml#/Response503'
+        500:
+          $ref: '../Response500.yaml#/Response500'
+        200:
+          description: |
+            <p class="cellContent__head">Error codes</p>
+            <div class="cellContent__body">
+            <table class="apiTable">
+              <colgroup span="1" class="short"></colgroup>
+              <colgroup span="2"></colgroup>
+              <thead>
+                <tr><th>Code</th><th>Message</th><th>Description</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>0001</td><td>Invalid Request.</td><td><div lang="ja">さまざまな要因が考えられます。<br>主な要因は、パラメータの値が不正か、誤りがあるためにオペレーションが完了できません。</div><div lang="en">This error can result for a variety of reasons. <br>Typically because one of the parameter values in the request is wrong or invalid and the operation cannot be completed.</div></td></tr>
+                <tr><td>R0001</td><td>Require.</td><td><div lang="ja">必須です。</div><div lang="en">It is missing required parameter.</div></td></tr>
+                <tr><td>F0001</td><td>Invalid format.</td><td><div lang="ja">値の形式が不正です。</div><div lang="en">The value format is invalid.</div></td></tr>
+                <tr><td>V0001</td><td>Invalid value.</td><td><div lang="ja">値が無効です。</div><div lang="en">The value is invalid.</div></td></tr>
+                <tr><td>S0001</td><td>Invalid Status.</td><td><div lang="ja">ステータスが無効です。</div><div lang="en">The status is invalid.</div></td></tr>
+                <tr><td>L0002</td><td>Over list size.</td><td><div lang="ja">配列の要素数が上限値を超過しています。</div><div lang="en">The number of elements in the array exceeds the upper limit.</div></td></tr>
+                <tr><td>L0001</td><td>Lower list size.</td><td><div lang="ja">配列の要素数が下限値を下回っています。</div><div lang="en">The number of elements in the array is below the lower limit.</div></td></tr>
+                <tr><td>D0001</td><td>Duplicate.</td><td><div lang="ja">一意な値が重複しています。</div><div lang="en">The unique value is duplicated.</div></td></tr>
+                <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
+                <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
+                <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
+              </tbody>
+            </table>
+            </div>
+          content:
+            application/json:
+              schema:
+                $ref: 'accountmanagement/AccountManagementServiceMutateResponse.yaml#/AccountManagementServiceMutateResponse'
+        403:
+          $ref: '../Response403.yaml#/Response403'
+        401:
+          $ref: '../Response401.yaml#/Response401'
+        400:
+          $ref: '../Response400.yaml#/Response400'
+  /AccountManagementService/set:
+    post:
+      description: "<div lang=\"ja\">アカウントに関する情報を更新します。</div><div lang=\"en\">Updates\
+        \ the information related to the account.</div>"
+      tags:
+        - AccountManagementService
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: 'accountmanagement/AccountManagementServiceOperation.yaml#/AccountManagementServiceOperation'
+      responses:
+        503:
+          $ref: '../Response503.yaml#/Response503'
+        500:
+          $ref: '../Response500.yaml#/Response500'
+        200:
+          description: |
+            <p class="cellContent__head">Error codes</p>
+            <div class="cellContent__body">
+            <table class="apiTable">
+              <colgroup span="1" class="short"></colgroup>
+              <colgroup span="2"></colgroup>
+              <thead>
+                <tr><th>Code</th><th>Message</th><th>Description</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>0001</td><td>Invalid Request.</td><td><div lang="ja">さまざまな要因が考えられます。<br>主な要因は、パラメータの値が不正か、誤りがあるためにオペレーションが完了できません。</div><div lang="en">This error can result for a variety of reasons. <br>Typically because one of the parameter values in the request is wrong or invalid and the operation cannot be completed.</div></td></tr>
+                <tr><td>R0001</td><td>Require.</td><td><div lang="ja">必須です。</div><div lang="en">It is missing required parameter.</div></td></tr>
+                <tr><td>F0001</td><td>Invalid format.</td><td><div lang="ja">値の形式が不正です。</div><div lang="en">The value format is invalid.</div></td></tr>
+                <tr><td>V0001</td><td>Invalid value.</td><td><div lang="ja">値が無効です。</div><div lang="en">The value is invalid.</div></td></tr>
+                <tr><td>S0001</td><td>Invalid Status.</td><td><div lang="ja">ステータスが無効です。</div><div lang="en">The status is invalid.</div></td></tr>
+                <tr><td>L0002</td><td>Over list size.</td><td><div lang="ja">配列の要素数が上限値を超過しています。</div><div lang="en">The number of elements in the array exceeds the upper limit.</div></td></tr>
+                <tr><td>L0001</td><td>Lower list size.</td><td><div lang="ja">配列の要素数が下限値を下回っています。</div><div lang="en">The number of elements in the array is below the lower limit.</div></td></tr>
+                <tr><td>D0001</td><td>Duplicate.</td><td><div lang="ja">一意な値が重複しています。</div><div lang="en">The unique value is duplicated.</div></td></tr>
+                <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
+                <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
+                <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
+              </tbody>
+            </table>
+            </div>
+          content:
+            application/json:
+              schema:
+                $ref: 'accountmanagement/AccountManagementServiceMutateResponse.yaml#/AccountManagementServiceMutateResponse'
+        403:
+          $ref: '../Response403.yaml#/Response403'
+        401:
+          $ref: '../Response401.yaml#/Response401'
+        400:
+          $ref: '../Response400.yaml#/Response400'
   /AccountService/get:
     post:
       description: |
