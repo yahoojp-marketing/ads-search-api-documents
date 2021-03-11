@@ -18,8 +18,7 @@ components:
           authorizationUrl: https://biz-oauth.yahoo.co.jp/oauth/v1/authorize
           tokenUrl: https://biz-oauth.yahoo.co.jp/oauth/v1/token
           scopes:
-            yahooads: アプリケーションを経由したYahoo!広告の各機能の操作/Operation by each function of Yahoo!
-              JAPAN Ads via applications.
+            yahooads: アプリケーションを経由したYahoo!広告の各機能の操作/Operation by each function of Yahoo! JAPAN Ads via applications.
 security:
   - oAuth: [yahooads]
 
@@ -377,8 +376,7 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /AccountManagementService/set:
     post:
-      description: "<div lang=\"ja\">アカウントに関する情報を更新します。</div><div lang=\"en\">Updates\
-        \ the information related to the account.</div>"
+      description: "<div lang=\"ja\">アカウントに関する情報を更新します。</div><div lang=\"en\">Updates the information related to the account.</div>"
       tags:
         - AccountManagementService
       requestBody:
