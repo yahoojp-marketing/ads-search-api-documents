@@ -7215,8 +7215,14 @@ paths:
   /OfflineConversionService/upload:
     post:
       description: |
-        <div lang="ja">オフラインコンバージョンデータのアップロード処理を実施します。</div>
-        <div lang="en">Execute upload offline conversion data.</div>
+        <div lang="ja">
+        オフラインコンバージョンデータのアップロード処理を実施します。<br>
+        ・ファイルサイズ上限20Mbyte(20,971,520 byte)
+        </div>
+        <div lang="en">
+        Execute upload offline conversion data.<br>
+        * File size upper limit 20Mbyte(20,971,520 byte)
+        </div>
       tags:
         - OfflineConversionService
       parameters:
