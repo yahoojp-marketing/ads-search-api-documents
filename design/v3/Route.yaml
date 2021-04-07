@@ -2756,6 +2756,7 @@ paths:
                 <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
+                <tr><td>120020</td><td>Can not set value.</td><td><div lang="ja">値を設定することができません。</div><div lang="en">Value cannot be set.</div></td></tr>
                 <tr><td>210311</td><td>Campaign has been started.</td><td><div lang="ja">すでに開始しているキャンペーンの開始日は変更できません。</div><div lang="en">The start date of a campaign that has already started can not change.</div></td></tr>
                 <tr><td>210310</td><td>Select the correct bid type.</td><td><div lang="ja">入札最適化タイプと一致しません。</div><div lang="en">It does not match the correct bid type.</div></td></tr>
                 <tr><td>210307</td><td>Budget is lower than ad group/keywords.</td><td><div lang="ja">予算額は、キャンペーン内の広告グループ・キーワードに設定されている予算よりも高く設定してください。</div><div lang="en">The budget should be set higher than the budget set for the ad group / keyword in the campaign.</div></td></tr>
