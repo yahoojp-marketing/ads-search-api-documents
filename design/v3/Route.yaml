@@ -179,22 +179,22 @@ tags:
       <h2 lang="ja">レポートフィールド</h2>
       <h2 lang="en">Report Fields</h2>
       <ul>
-      <li><div lang="ja"><a href="./reports/ja/ACCOUNT.csv" download>アカウントレポート</a></div></li><li><div lang="en"><a href="./reports/en/ACCOUNT.csv" download>Account Report</a></div></li>
-      <li><div lang="ja"><a href="./reports/ja/CAMPAIGN.csv" download>キャンペーンレポート</a></div></li><li><div lang="en"><a href="./reports/en/CAMPAIGN.csv" download>Campaign Report</a></div></li>
-      <li><div lang="ja"><a href="./reports/ja/ADGROUP.csv" download>広告グループレポート</a></div></li><li><div lang="en"><a href="./reports/en/ADGROUP.csv" download>Ad Group Report</a></div></li>
-      <li><div lang="ja"><a href="./reports/ja/AD.csv" download>広告レポート</a></div></li><li><div lang="en"><a href="./reports/en/AD.csv" download>Ad Report</a></div></li>
-      <li><div lang="ja"><a href="./reports/ja/KEYWORDS.csv" download>キーワードレポート</a></div></li><li><div lang="en"><a href="./reports/en/KEYWORDS.csv" download>Keyword Report</a></div></li>
-      <li><div lang="ja"><a href="./reports/ja/SEARCH_QUERY.csv" download>検索クエリレポート</a></div></li><li><div lang="en"><a href="./reports/en/SEARCH_QUERY.csv" download>Search Query Report</a></div></li>
-      <li><div lang="ja"><a href="./reports/ja/GEO.csv" download>地域別レポート</a></div></li><li><div lang="en"><a href="./reports/en/GEO.csv" download>Geo Report</a></div></li>
-      <li><div lang="ja"><a href="./reports/ja/FEED_ITEM.csv" download>広告表示オプションレポート</a></div></li><li><div lang="en"><a href="./reports/en/FEED_ITEM.csv" download>Ad Display Option Report</a></div></li>
-      <li><div lang="ja"><a href="./reports/ja/GEO_TARGET.csv" download>地域ターゲティングレポート</a></div></li><li><div lang="en"><a href="./reports/en/GEO_TARGET.csv" download>Geo Targeting Report</a></div></li>
-      <li><div lang="ja"><a href="./reports/ja/SCHEDULE_TARGET.csv" download>曜日・時間帯ターゲティングレポート</a></div></li><li><div lang="en"><a href="./reports/en/SCHEDULE_TARGET.csv" download>Schedule Targeting Report</a></div></li>
-      <li><div lang="ja"><a href="./reports/ja/BID_STRATEGY.csv" download>自動入札レポート</a></div></li><li><div lang="en"><a href="./reports/en/BID_STRATEGY.csv" download>Auto Bidding Report</a></div></li>
-      <li><div lang="ja"><a href="./reports/ja/AD_CUSTOMIZERS.csv" download>データ自動挿入レポート</a></div></li><li><div lang="en"><a href="./reports/en/AD_CUSTOMIZERS.csv" download>Data Auto Insertion Report</a></div></li>
-      <li><div lang="ja"><a href="./reports/ja/TARGET_LIST.csv" download>ターゲットリスト設定レポート</a></div></li><li><div lang="en"><a href="./reports/en/TARGET_LIST.csv" download>Target List Setting Report</a></div></li>
-      <li><div lang="ja"><a href="./reports/ja/LANDING_PAGE_URL.csv" download>最終リンク先URLレポート</a></div></li><li><div lang="en"><a href="./reports/en/LANDING_PAGE_URL.csv" download>Landing Page URL Report</a></div></li>
-      <li><div lang="ja"><a href="./reports/ja/KEYWORDLESS_QUERY.csv" download>検索クエリーレポート（動的検索連動型広告）</a></div></li><li><div lang="en"><a href="./reports/en/KEYWORDLESS_QUERY.csv" download>Search Query Report (Dynamic Ads for Search)</a></div></li>
-      <li><div lang="ja"><a href="./reports/ja/WEBPAGE_CRITERION.csv" download>ページフィードターゲティングレポート</a></div></li><li><div lang="en"><a href="./reports/en/WEBPAGE_CRITERION.csv" download>Page Feed Targeting Report</a></div></li>
+      <li><div lang="ja"><a href="./reports/v3/ACCOUNT.csv" download>アカウントレポート</a></div></li><li><div lang="en"><a href="./reports/v3/ACCOUNT.csv" download>Account Report</a></div></li>
+      <li><div lang="ja"><a href="./reports/v3/CAMPAIGN.csv" download>キャンペーンレポート</a></div></li><li><div lang="en"><a href="./reports/v3/CAMPAIGN.csv" download>Campaign Report</a></div></li>
+      <li><div lang="ja"><a href="./reports/v3/ADGROUP.csv" download>広告グループレポート</a></div></li><li><div lang="en"><a href="./reports/v3/ADGROUP.csv" download>Ad Group Report</a></div></li>
+      <li><div lang="ja"><a href="./reports/v3/AD.csv" download>広告レポート</a></div></li><li><div lang="en"><a href="./reports/v3/AD.csv" download>Ad Report</a></div></li>
+      <li><div lang="ja"><a href="./reports/v3/KEYWORDS.csv" download>キーワードレポート</a></div></li><li><div lang="en"><a href="./reports/v3/KEYWORDS.csv" download>Keyword Report</a></div></li>
+      <li><div lang="ja"><a href="./reports/v3/SEARCH_QUERY.csv" download>検索クエリレポート</a></div></li><li><div lang="en"><a href="./reports/v3/SEARCH_QUERY.csv" download>Search Query Report</a></div></li>
+      <li><div lang="ja"><a href="./reports/v3/GEO.csv" download>地域別レポート</a></div></li><li><div lang="en"><a href="./reports/v3/GEO.csv" download>Geo Report</a></div></li>
+      <li><div lang="ja"><a href="./reports/v3/FEED_ITEM.csv" download>広告表示オプションレポート</a></div></li><li><div lang="en"><a href="./reports/v3/FEED_ITEM.csv" download>Ad Display Option Report</a></div></li>
+      <li><div lang="ja"><a href="./reports/v3/GEO_TARGET.csv" download>地域ターゲティングレポート</a></div></li><li><div lang="en"><a href="./reports/v3/GEO_TARGET.csv" download>Geo Targeting Report</a></div></li>
+      <li><div lang="ja"><a href="./reports/v3/SCHEDULE_TARGET.csv" download>曜日・時間帯ターゲティングレポート</a></div></li><li><div lang="en"><a href="./reports/v3/SCHEDULE_TARGET.csv" download>Schedule Targeting Report</a></div></li>
+      <li><div lang="ja"><a href="./reports/v3/BID_STRATEGY.csv" download>自動入札レポート</a></div></li><li><div lang="en"><a href="./reports/v3/BID_STRATEGY.csv" download>Auto Bidding Report</a></div></li>
+      <li><div lang="ja"><a href="./reports/v3/AD_CUSTOMIZERS.csv" download>データ自動挿入レポート</a></div></li><li><div lang="en"><a href="./reports/v3/AD_CUSTOMIZERS.csv" download>Data Auto Insertion Report</a></div></li>
+      <li><div lang="ja"><a href="./reports/v3/TARGET_LIST.csv" download>ターゲットリスト設定レポート</a></div></li><li><div lang="en"><a href="./reports/v3/TARGET_LIST.csv" download>Target List Setting Report</a></div></li>
+      <li><div lang="ja"><a href="./reports/v3/LANDING_PAGE_URL.csv" download>最終リンク先URLレポート</a></div></li><li><div lang="en"><a href="./reports/v3/LANDING_PAGE_URL.csv" download>Landing Page URL Report</a></div></li>
+      <li><div lang="ja"><a href="./reports/v3/KEYWORDLESS_QUERY.csv" download>検索クエリーレポート（動的検索連動型広告）</a></div></li><li><div lang="en"><a href="./reports/v3/KEYWORDLESS_QUERY.csv" download>Search Query Report (Dynamic Ads for Search)</a></div></li>
+      <li><div lang="ja"><a href="./reports/v3/WEBPAGE_CRITERION.csv" download>ページフィードターゲティングレポート</a></div></li><li><div lang="en"><a href="./reports/v3/WEBPAGE_CRITERION.csv" download>Page Feed Targeting Report</a></div></li>
       </ul>
   - name: CampaignExportService
     description: |
