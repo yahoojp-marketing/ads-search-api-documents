@@ -12,9 +12,11 @@ ConversionTrackerServiceCategory:
   title: ConversionTrackerServiceCategory
   description: |
     <div lang="ja">ConversionTrackerServiceCategoryは、トラッキング対象のコンバージョントラッカー情報のカテゴリです。<br>
-    このフィールドは、ADD時に必須となり、SET時に省略可能となります。</div>
+    このフィールドは、ADD時に必須となり、SET時に省略可能となります。<br>
+    *SET時、LEADは指定できません。</div>
     <div lang="en">ConversionTrackerServiceCategory is a category for ConversionTracker.<br>
-    This field is required in ADD operation, and is optional in SET operation.</div>
+    This field is required in ADD operation, and is optional in SET operation.<br>
+    * LEAD cannot be specified in SET operation.</div>
     <dl class=term>
       <dt class="term__item">DEFAULT</dt>
       <dd class="term__desc"><span lang="ja">その他です。</span><span lang="en">Others</span></dd>
