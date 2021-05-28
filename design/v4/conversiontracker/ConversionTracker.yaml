@@ -44,8 +44,10 @@ ConversionTracker:
       nullable: true
       format: int64
       description: |
-        <div lang="ja">トラッキング用コンバージョントラッカーIDです。</div>
-        <div lang="en">ConversionTracker ID for tracking.</div>
+        <div lang="ja">トラッキング用コンバージョントラッカーIDです。<br>
+        ADD時、このフィールドは省略可能となります。※conversionTrackerTypeがAPP_LINK_CONVERSIONの場合は必須です。</div>
+        <div lang="en">ConversionTracker ID for tracking.<br>
+        This field is optional in ADD operation. *If conversionTrackerType is APP_LINK_CONVERSION, this field is required.</div>
     conversionTrackerName:
       type: string
       nullable: true

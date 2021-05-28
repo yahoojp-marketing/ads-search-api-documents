@@ -7,9 +7,9 @@ ConversionTrackerServiceAppLinkPlatform:
   title: ConversionTrackerServiceAppLinkPlatform
   description: |
     <div lang="ja">ConversionTrackerServiceAppLinkPlatformは、アプリケーションプラットフォームの種別を表します。<br>
-    このフィールドは、ADD時に必須となります。</div>
+    このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
     <div lang="en">ConversionTrackerServiceAppConversionType describes Application Platform.<br>
-    This field is required in ADD operation.</div>
+    Although this field will be returned in the response, it will be ignored on input.</div>
     <dl class=term>
       <dt class="term__item">ANDROID</dt>
       <dd class="term__desc"><span lang="ja">ANDROID</span><span lang="en">ANDROID</span></dd>

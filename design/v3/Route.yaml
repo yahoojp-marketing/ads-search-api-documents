@@ -3447,7 +3447,7 @@ paths:
     post:
       description: |
         <div lang="ja">コンバージョントラッカー情報を取得します。</div>
-        <div lang="en">Describes the operation which provide at ConversionTrackerService</div>
+        <div lang="en">Get ConversionTracker informations.</div>
       tags:
         - ConversionTrackerService
       requestBody:
@@ -3608,8 +3608,8 @@ paths:
   /ConversionTrackerService/getAppEventType:
     post:
       description: |
-        <div lang="ja">コンバージョントラッカー情報を更新します。</div>
-        <div lang="en">Update ConversionTracker informations.</div>
+        <div lang="ja">アプリイベントタイプ情報を取得します。</div>
+        <div lang="en">Get AppEventType informations.</div>
       tags:
         - ConversionTrackerService
       requestBody:
@@ -6002,7 +6002,7 @@ paths:
   /CampaignTargetService/set:
     post:
       description: |
-        <div lang="ja">キャンペーンのターゲティング設定に関する情報を変更します。※入札調整率（bidmultiplier）のみ変更可能です。</div>
+        <div lang="ja">キャンペーンのターゲティング設定に関する情報を変更します。※入札価格調整率（bidmultiplier）のみ変更可能です。</div>
         <div lang="en">Update campaign informations related to targeting setting.<br>* Bid Adjustment (bidmultiplier) is only modifiable.</div>
       tags:
         - CampaignTargetService

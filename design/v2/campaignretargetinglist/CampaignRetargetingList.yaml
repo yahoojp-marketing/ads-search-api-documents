@@ -14,8 +14,19 @@ CampaignRetargetingList:
       nullable: true
       format: double
       description: |
-        <div lang="ja">入札価格調整率です。<br>このフィールドは、いずれの場合でも省略可能となります。</div>
-        <div lang="en">Bid adjustment rate.<br>This field is optional in any cases.</div>
+        <div lang="ja">
+          入札価格調整率です。0.10～10.00まで指定できます。<br>
+          0を指定した場合、広告は配信されません。<br>
+          また、入札価格調整率の値は小数点第二位まで指定可能です。<br>
+          このフィールドは省略可能となります。その際、デフォルト設定値は1.0となります。
+        </div>
+        <div lang="en">
+          Bid adjustment rate.<br>
+          Can be specified between  0.10 to 10.00.<br>
+          When specified &#39;0&#39;, the ad will not be delivered.<br>
+          Bid adjustment rate can be specified up to two decimal places.<br>
+          This field is optional. The default value will be 1.0.
+        </div>
     campaignId:
       type: integer
       nullable: true
