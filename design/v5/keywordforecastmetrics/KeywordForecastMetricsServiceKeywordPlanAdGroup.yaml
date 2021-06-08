@@ -1,0 +1,25 @@
+KeywordForecastMetricsServiceKeywordPlanAdGroup:
+  type: object
+  nullable: true
+  required:
+    - keywordPlanAdGroupKeywords
+  properties:
+    maxCpc:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">最大クリック単価です。</div>
+        <div lang="en">Maximum CPC.</div>
+    keywordPlanAdGroupKeywords:
+      type: array
+      nullable: true
+      items:
+        $ref: 'KeywordForecastMetricsServiceKeywordPlanAdGroupKeyword.yaml#/KeywordForecastMetricsServiceKeywordPlanAdGroupKeyword'
+      description: |
+        <div lang="ja">見積もりを行うキーワードのコンテナです。</div>
+        <div lang="en">A container for the keywords to estimate</div>
+  title: KeywordForecastMetricsServiceKeywordPlanAdGroup
+  description: |
+    <div lang="ja">KeywordForecastMetricsServiceKeywordPlanAdGroup オブジェクトは、見積もりリクエストを格納します。</div>
+    <div lang="en">KeywordForecastMetricsServiceKeywordPlanAdGroup object is a container for the estimate request.</div>

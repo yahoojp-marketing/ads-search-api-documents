@@ -1,0 +1,20 @@
+AdGroupWebpageServiceWebpageCondition:
+  type: object
+  nullable: true
+  properties:
+    argument:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">条件の設定値(正規表現の指定可)です。<br>ADD時、このフィールドは必須です。※typeがALL_PAGESの場合は省略可能となります。SET時、このフィールドは無視されます。</div>
+        <div lang="en">Value of rule setting (Can specify regular expression)<br>This field is required in ADD operation, and will be ignored in SET operation. *If type is 'ALL_PAGES', this field is optional in ADD operation.</div>
+    webpageConditionType:
+      $ref: 'AdGroupWebpageServiceWebpageConditionType.yaml#/AdGroupWebpageServiceWebpageConditionType'
+    operator:
+      $ref: 'AdGroupWebpageServiceOperator.yaml#/AdGroupWebpageServiceOperator'
+  title: AdGroupWebpageServiceWebpageCondition
+  description: |
+    <div lang="ja">AdGroupWebpageServiceWebpageConditionオブジェクトは、Webpageの条件を保持します。<br>
+    このフィールドは、ADD時は必須となり、SET時は無視されます。</div>
+    <div lang="en">AdGroupWebpageServiceWebpageCondition object contains the rules of webpage.<br>
+    This field is required in ADD operation, and will be ignored in SET operation.</div>
