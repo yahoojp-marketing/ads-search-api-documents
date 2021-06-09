@@ -49,8 +49,6 @@ ConversionTrackerServiceAppLinkConversion:
   title: ConversionTrackerServiceAppLinkConversion
   description: |
     <div lang="ja">ConversionTrackerServiceAppLinkConversionオブジェクトは、アプリコンバージョン測定タグやタグごとのパフォーマンスデータなどのアプリコンバージョントラッカー情報を表します。<br>
-    ADD時、このフィールドは省略可能となります。<br>
-    ※現在、こちらのコンバージョン種別は利用できません。</div>
+    ADD時、このフィールドは省略可能となります。</div>
     <div lang="en">ConversionTrackerServiceAppConversion object describes the App ConversionTracker information such as App ConversionTag and performance data by tag.<br>
-    This field is optional in ADD operation.<br>
-    *Currently this conversionTracker type is not available.</div>
+    This field is optional in ADD operation.</div>

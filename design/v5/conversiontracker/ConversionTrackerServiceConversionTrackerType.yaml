@@ -18,7 +18,7 @@ ConversionTrackerServiceConversionTrackerType:
       <dt class="term__item">APP_CONVERSION</dt>
       <dd class="term__desc"><span lang="ja">アプリのコンバージョンです。</span><span lang="en">App conversion</span></dd>
       <dt class="term__item">APP_LINK_CONVERSION</dt>
-      <dd class="term__desc"><span lang="ja">アプリリンクコンバージョンです。<br>※現在、こちらのコンバージョン種別は利用できません。</span><span lang="en">App conversion<br>*Currently this conversionTracker type is not available.</span></dd>
+      <dd class="term__desc"><span lang="ja">アプリリンクコンバージョンです。</span><span lang="en">App conversion</span></dd>
       <dt class="term__item">UNKNOWN</dt>
       <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
     </dl>
