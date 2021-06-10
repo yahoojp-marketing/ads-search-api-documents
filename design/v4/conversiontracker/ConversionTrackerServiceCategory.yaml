@@ -13,10 +13,22 @@ ConversionTrackerServiceCategory:
   description: |
     <div lang="ja">ConversionTrackerServiceCategoryは、トラッキング対象のコンバージョントラッカー情報のカテゴリです。<br>
     このフィールドは、ADD時に必須となり、SET時に省略可能となります。<br>
-    *SET時、LEADは指定できません。</div>
+    *SET時、LEADは指定できません。<br>
+    *conversionTrackerTypeがAPP_LINK_CONVERSIONの場合、ADDおよびSET時にappEventTypeによって指定できる値に制限があります。<br>
+     appEventTypeはConversionTrackerService/getAppEventTypeで取得されるappEvent.appEventTypeで確認できます。<br>
+    ・first_openの場合はDOWNLOADのみ選択できます。<br>
+    ・in_app_purchaseの場合はPURCHASEのみ選択できます。<br>
+    ・その他の場合は任意の値を選択できます。<br>
+    </div>
     <div lang="en">ConversionTrackerServiceCategory is a category for ConversionTracker.<br>
     This field is required in ADD operation, and is optional in SET operation.<br>
-    * LEAD cannot be specified in SET operation.</div>
+    * <code>LEAD</code> cannot be specified in SET operation.<br>
+    * In ADD and SET operation, if the conversionTrackerType is APP_LINK_CONVERSION, there is a limit to the values that can be specified by appEventType.<br>
+    appEventType can be confirmed by appEvent.appEventType obtained by ConversionTrackerService/getAppEventType.<br>
+    - In case of first_open, only DOWNLOAD can be selected.<br>
+    - In case of in_app_purchase, only PURCHASE can be selected.<br>
+    - In other cases, any value can be selected.<br>
+    </div>
     <dl class=term>
       <dt class="term__item">DEFAULT</dt>
       <dd class="term__desc"><span lang="ja">その他です。</span><span lang="en">Others</span></dd>

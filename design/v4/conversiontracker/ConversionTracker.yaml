@@ -82,11 +82,15 @@ ConversionTracker:
       description: |
         <div lang="ja">コンバージョン計測期間です（単位：日)。<br>
         7～90日間で設定可能です。<br>※アプリダウンロードの場合は30日間固定。<br>
-        このフィールドは、ADDおよびSET時に省略可能となります。<br>※ADD時のデフォルト設定値は30となります。</div>
+        このフィールドは、ADDおよびSET時に省略可能となります。<br>※ADD時のデフォルト設定値は30となります。<br>
+        ※conversionTrackerTypeがAPP_LINK_CONVERSIONの場合、ADDおよびSET時にappEventTypeがfirst_openの場合は30のみ指定可能となります。<br>
+        appEventTypeはConversionTrackerService/getAppEventTypeで取得されるappEvent.appEventTypeで確認できます。</div>
         <div lang="en">Counting period of conversoins (days).<br>It is available between 7 to 90 days<br>
         * For Mobile App Download, this period is fixed as 30 days.<br>
         This field is optional in ADD and SET operation.<br>
-        *The default value in ADD operation will be 30.</div>
+        * The default value in ADD operation will be 30.<br>
+        * In ADD and SET operation, if conversionTrackerType is APP_LINK_CONVERSION and appEventType is first_open, Only 30 can be specified.<br>
+        appEventType can be confirmed by appEvent.appEventType obtained by ConversionTrackerService/getAppEventType.</div>
     mostRecentConversionDate:
       type: string
       nullable: true
@@ -102,11 +106,15 @@ ConversionTracker:
         <div lang="ja">このコンバージョントラッカーに対するユーザー指定の収益値です。<br>
         1コンバージョンあたりの売上金額が固定値の場合、その金額を設定することで、売上金額をレポートなどで確認できます。<br>
         ADDリクエスト時に未指定の場合、0が設定されます。<br>
-        このフィールドは、ADD時およびSET時に省略可能となります。</div>
+        このフィールドは、ADD時およびSET時に省略可能となります。<br>
+        *conversionTrackerTypeがAPP_LINK_CONVERSIONの場合、ADDおよびSET時にappEventTypeがin_app_purchaseの場合は指定されても無視されます。<br>
+        appEventTypeはConversionTrackerService/getAppEventTypeで取得されるappEvent.appEventTypeで確認できます。</div>
         <div lang="en">The value of revenue of the conversion tracker specified by user.<br>
         When the sales revenue of 1 conversion is fixed value, you are able to review the total sales on reports by specifying the amount on this item.<br>
         If it is not specified on ADD request, the value &#34;0&#34; is set.<br>
-        This field is optional in ADD and SET operation.</div>
+        This field is optional in ADD and SET operation.<br>
+        * In ADD and SET operation, if conversionTrackerType is APP_LINK_CONVERSION and appEventType is in_app_purchase, it will be ignored even if specified.<br>
+        appEventType can be confirmed by appEvent.appEventType obtained by ConversionTrackerService/getAppEventType.</div>
     webConversion:
       $ref: 'ConversionTrackerServiceWebConversion.yaml#/ConversionTrackerServiceWebConversion'
   title: ConversionTracker
