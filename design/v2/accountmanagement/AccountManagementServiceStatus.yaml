@@ -17,7 +17,7 @@ AccountManagementServiceStatus:
     Although this field will be returned in the response, it will be ignored on input.</div>
     <dl class=term>
       <dt class="term__item">INPROGRESS</dt>
-      <dd class="term__desc"><span lang="ja">登録待ちです。</span><span lang="en">Under registration process.</span></dd>
+      <dd class="term__desc"><span lang="ja">審査中です。</span><span lang="en">Under review.</span></dd>
       <dt class="term__item">WAIT_DECIDE</dt>
       <dd class="term__desc"><span lang="ja">確定待ちです。</span><span lang="en">Waiting confirmation.</span></dd>
       <dt class="term__item">SUSPENDED</dt>

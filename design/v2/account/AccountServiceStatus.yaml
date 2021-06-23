@@ -14,7 +14,7 @@ AccountServiceStatus:
     <div lang="en">Account status.</div>
     <dl class=term>
       <dt class="term__item">INPROGRESS</dt>
-      <dd class="term__desc"><span lang="ja">登録待ち</span><span lang="en">Under registration process</span></dd>
+      <dd class="term__desc"><span lang="ja">審査中</span><span lang="en">Under review</span></dd>
       <dt class="term__item">WAIT_DECIDE</dt>
       <dd class="term__desc"><span lang="ja">確定待ち</span><span lang="en">Waiting confirmation</span></dd>
       <dt class="term__item">SUSPENDED</dt>
