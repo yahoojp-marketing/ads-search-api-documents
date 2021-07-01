@@ -18,7 +18,7 @@ ConversionTrackerServiceCategory:
      appEventTypeはConversionTrackerService/getAppEventTypeで取得されるappEvent.appEventTypeで確認できます。<br>
     ・first_openの場合はDOWNLOADのみ選択できます。<br>
     ・in_app_purchaseの場合はPURCHASEのみ選択できます。<br>
-    ・その他の場合は任意の値を選択できます。<br>
+    ・その他の場合はDOWNLOAD以外の値を選択できます。<br>
     </div>
     <div lang="en">ConversionTrackerServiceCategory is a category for ConversionTracker.<br>
     This field is required in ADD operation, and is optional in SET operation.<br>
@@ -27,7 +27,7 @@ ConversionTrackerServiceCategory:
     appEventType can be confirmed by appEvent.appEventType obtained by ConversionTrackerService/getAppEventType.<br>
     - In case of first_open, only DOWNLOAD can be selected.<br>
     - In case of in_app_purchase, only PURCHASE can be selected.<br>
-    - In other cases, any value can be selected.<br>
+    - In other cases, values other than DOWNLOAD can be selected.<br>
     </div>
     <dl class=term>
       <dt class="term__item">DEFAULT</dt>
