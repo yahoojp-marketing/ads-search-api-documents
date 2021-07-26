@@ -76,7 +76,7 @@ Specify the following.<br>
 * uploadType (NEW_OR_REPLACE or MODIFY)
 
 ##### Request sample
-https://ads-search.yahooapis.jp/api/v2/PageFeedItemService/upload?file=temp.csv&accountId=111111&uploadType=NEW_OR_REPLACE&feedId=123456
+https://ads-search.yahooapis.jp/api/v5/PageFeedItemService/upload?file=temp.csv&accountId=111111&uploadType=NEW_OR_REPLACE&feedId=123456
 
 ##### Response sample
 ```json

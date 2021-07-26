@@ -1,9 +1,0 @@
-ReportDefinitionServiceGetReportFields:
-  type: object
-  nullable: true
-  required:
-  - reportType
-  properties:
-    reportType:
-      $ref: 'ReportDefinitionServiceReportType.yaml#/ReportDefinitionServiceReportType'
-  title: ReportDefinitionServiceGetReportFields

@@ -76,7 +76,7 @@ FeedService:addを使用して、フィードアイテム情報を追加しま�
 * アップロードタイプ（NEW_OR_REPLACE:新規登録または、全て置き換える。MODIFY:既存のページフィードアイテムを更新）
 
 ##### ＜リクエストサンプル＞
-https://ads-search.yahooapis.jp/api/v2/PageFeedItemService/upload?file=temp.csv&accountId=111111&uploadType=NEW_OR_REPLACE&feedId=123456
+https://ads-search.yahooapis.jp/api/v5/PageFeedItemService/upload?file=temp.csv&accountId=111111&uploadType=NEW_OR_REPLACE&feedId=123456
 
 ##### ＜レスポンスサンプル＞
 ```json
