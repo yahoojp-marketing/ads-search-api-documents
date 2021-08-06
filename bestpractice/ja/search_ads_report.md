@@ -94,8 +94,8 @@ ReportDefinitionServiceのaddを使用します。以下の指定が必要です
       "filters": [
         {
           "field": "COST",
-          "reportOperator": "NOT_EQUALS",
-          "value": [
+          "filterOperator": "NOT_EQUALS",
+          "values": [
             "100"
           ]
         }

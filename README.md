@@ -11,6 +11,7 @@ Yahoo!広告 APIのドキュメント一覧です。
 ---
 
 The documents of Yahoo! JAPAN Ads API are as follows.
+
 - [OpenAPI Specification](design/)
 - [Best practice](bestpractice/)
 - [Field list of each report type](reports/)

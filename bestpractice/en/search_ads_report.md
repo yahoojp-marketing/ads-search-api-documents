@@ -100,8 +100,8 @@ It requires the following:
       "filters": [
         {
           "field": "COST",
-          "reportOperator": "NOT_EQUALS",
-          "value": [
+          "filterOperator": "NOT_EQUALS",
+          "values": [
             "100"
           ]
         }
