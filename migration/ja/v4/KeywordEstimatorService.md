@@ -8,4 +8,4 @@ KeywordEstimatorServiceはv5以降のバージョンで使用できなくなる�
 v4からは、KeywordEstimatorServiceのかわりにKeywordForecastMetricsServiceを使用することができます。  
 KeywordEstimatorServiceで利用できる機能はKeywordForecastMetricsServiceでも利用可能です。
 
-[こちら](../resources/KeywordForecastMetricsService-diff.xlsx)にv3 KeywordEstimatorServiceとv4 KeywordForecastMetricsServiceのフィールド差分まとめましたのでご活用ください。
+[こちら](resources/KeywordForecastMetricsService-diff.xlsx)にv3 KeywordEstimatorServiceとv4 KeywordForecastMetricsServiceのフィールド差分まとめましたのでご活用ください。
