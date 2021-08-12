@@ -8,4 +8,4 @@ TargetingIdeaServiceはv4からは使用できなくなります。
 v4からは、TargetingIdeaServiceのかわりにKeywordPlanIdeaServiceを使用することができます。  
 TargetingIdeaServiceで利用できる機能はKeywordPlanIdeaServiceでも利用可能です。
 
-[こちら](resources/KeywordPlanIdeaService-diff.xlsx)にv3 TargetingIdeaServiceとv4 KeywordPlanIdeaServiceのフィールド差分まとめましたのでご活用ください。
+[こちら](../resources/KeywordPlanIdeaService-diff.xlsx)にv3 TargetingIdeaServiceとv4 KeywordPlanIdeaServiceのフィールド差分まとめましたのでご活用ください。
