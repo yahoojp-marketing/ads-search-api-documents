@@ -19,6 +19,7 @@ TargetingIdeaServiceSelector:
       items:
         type: string
         nullable: true
+      maximum: 100
       description: |
         <div lang="ja">キーワードを格納するコンテナです。</div>
         <div lang="en">Container that stores the keyword.</div>
