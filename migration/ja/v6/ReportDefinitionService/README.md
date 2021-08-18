@@ -28,7 +28,8 @@ v6 ReportDefinitionServiceでは、一部のレポートタイプとレポート
   - `AD_CUSTOMIZERS`
   - 代替となるレポートタイプについては[レポートタイプごとの変更点](ReportType.md)をご参照ください
 - reportIncludeZeroImpressionsフィールドはv6以降のバージョンで廃止されます。
-  - 代替となる方法として、フィルタ条件を指定することで調整が可能です。
+  - インプレッションのない項目もまとめて出力されるため、データが大量となり、レポート取得時にエラーが発生する可能性があります。
+  - v6以降のバージョンでインプレッションのある項目のみをレポートに出力するには、フィルタ条件でimps等の項目を1以上に設定してください。
 ```r
 #リクエスト例
 {
@@ -43,9 +44,9 @@ v6 ReportDefinitionServiceでは、一部のレポートタイプとレポート
       ],
       "filters": [
         "field": "IMPS",
-        "filterOperator": "GREATER_THAN",
+        "filterOperator": "GREATER_THAN_EQUALS",
         "values": [
-          "0"
+          "1"
         ]
       ],
       "reportDateRangeType": "YESTERDAY",

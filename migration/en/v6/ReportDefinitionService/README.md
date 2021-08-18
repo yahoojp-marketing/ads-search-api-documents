@@ -28,7 +28,8 @@ v6 ReportDefinitionService has changes on some report types and report output it
   - `AD_CUSTOMIZERS`
   - Refer to [Changes by Report Type](ReportType.md) for the alternative report types
 - The reportIncludeZeroImpressions field will be removed in v6 and later versions.
-  - As an alternative method, it can be adjusted by specifying the filter condition.
+  - Items without impressions are also output together, resulting in a large amount of data and an error may occur when retrieving the report.
+  - To output only the items with impressions in the v6 or later version to the report, set the items such as imps to 1 or more in the filter condition.
 ```r
 #request sample
 {
@@ -43,9 +44,9 @@ v6 ReportDefinitionService has changes on some report types and report output it
       ],
       "filters": [
         "field": "IMPS",
-        "filterOperator": "GREATER_THAN",
+        "filterOperator": "GREATER_THAN_EQUALS",
         "values": [
-          "0"
+          "1"
         ]
       ],
       "reportDateRangeType": "YESTERDAY",
