@@ -107,13 +107,13 @@ ConversionTracker:
         1コンバージョンあたりの売上金額が固定値の場合、その金額を設定することで、売上金額をレポートなどで確認できます。<br>
         ADDリクエスト時に未指定の場合、0が設定されます。<br>
         このフィールドは、ADD時およびSET時に省略可能となります。<br>
-        *conversionTrackerTypeがAPP_LINK_CONVERSIONの場合、ADDおよびSET時にappEventTypeがin_app_purchaseの場合は指定されても無視されます。<br>
+        ※conversionTrackerTypeがAPP_LINK_CONVERSIONの場合、ADDおよびSET時にappEventTypeがin_app_purchaseの場合は0のみ指定可能となります。<br>
         appEventTypeはConversionTrackerService/getAppEventTypeで取得されるappEvent.appEventTypeで確認できます。</div>
         <div lang="en">The value of revenue of the conversion tracker specified by user.<br>
         When the sales revenue of 1 conversion is fixed value, you are able to review the total sales on reports by specifying the amount on this item.<br>
         If it is not specified on ADD request, the value &#34;0&#34; is set.<br>
         This field is optional in ADD and SET operation.<br>
-        * In ADD and SET operation, if conversionTrackerType is APP_LINK_CONVERSION and appEventType is in_app_purchase, it will be ignored even if specified.<br>
+        * In ADD and SET operation, if conversionTrackerType is APP_LINK_CONVERSION and appEventType is in_app_purchase, Only 0 can be specified.<br>
         appEventType can be confirmed by appEvent.appEventType obtained by ConversionTrackerService/getAppEventType.</div>
     webConversion:
       $ref: 'ConversionTrackerServiceWebConversion.yaml#/ConversionTrackerServiceWebConversion'
