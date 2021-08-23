@@ -7113,7 +7113,7 @@ paths:
     post:
       description: |
         <div lang="ja">キーワードの実績情報を取得します。</div>
-        <div lang="en">■■■TODO 英訳お願いします。■■■</div>
+        <div lang="en">Get the performance information of the keyword.</div>
       tags:
         - KeywordForecastMetricsService
       requestBody:

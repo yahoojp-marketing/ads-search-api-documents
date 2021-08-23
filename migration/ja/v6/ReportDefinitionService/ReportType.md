@@ -171,8 +171,8 @@ LANDING_PAGE_URL_SMARTPHONEの変更内容の詳細
 |  | 変更前 | 変更後 |
 | --- | --- | --- |
 | ENUM | LANDING_PAGE_URL_SMARTPHONE | FINAL_URL_SMARTPHONE |
-| 日本語表示名称 | 最終リンク先URL（スマートフォン） | 最終リンク先URL（スマートフォン） |
-| 英語表示名称 | Landing Page URL (Smartphone) | Final URL (Smartphone) |
+| 日本語表示名称 | 最終リンク先URL（スマートフォン） | スマートフォン向けURL |
+| 英語表示名称 | Landing Page URL (Smartphone) | Smartphone final URL |
 
 ### 組み合わせ不可項目の変更点
 2021年9月13日に掲載されるv6のAPIリファレンスをご確認ください。
@@ -225,8 +225,8 @@ LANDING_PAGE_URL_SMARTPHONEの変更内容の詳細
 |  | 変更前 | 変更後 |
 | --- | --- | --- |
 | ENUM | LANDING_PAGE_URL_SMARTPHONE | FINAL_URL_SMARTPHONE |
-| 日本語表示名称 | 最終リンク先URL（スマートフォン） | 最終リンク先URL（スマートフォン） |
-| 英語表示名称 | Landing Page URL (Smartphone) | Final URL (Smartphone) |
+| 日本語表示名称 | 最終リンク先URL（スマートフォン） | スマートフォン向けURL |
+| 英語表示名称 | Landing Page URL (Smartphone) | Smartphone final URL |
 
 ### 組み合わせ不可項目の変更点
 2021年9月13日に掲載されるv6のAPIリファレンスをご確認ください。
@@ -348,8 +348,8 @@ LANDING_PAGE_URL_SMARTPHONEの変更内容の詳細
 |  | 変更前 | 変更後 |
 | --- | --- | --- |
 | ENUM | LANDING_PAGE_URL_SMARTPHONE | FINAL_URL_SMARTPHONE |
-| 日本語表示名称 | 最終リンク先URL（スマートフォン） | 最終リンク先URL（スマートフォン） |
-| 英語表示名称 | Landing Page URL (Smartphone) | Final URL (Smartphone) |
+| 日本語表示名称 | 最終リンク先URL（スマートフォン） | スマートフォン向けURL |
+| 英語表示名称 | Landing Page URL (Smartphone) | Smartphone final URL |
 
 ### 組み合わせ不可項目の変更点
 2021年9月13日に掲載されるv6のAPIリファレンスをご確認ください。

@@ -171,8 +171,8 @@ Change details on LANDING_PAGE_URL_SMARTPHONE
 |  | Before | After |
 | --- | --- | --- |
 | ENUM | LANDING_PAGE_URL_SMARTPHONE | FINAL_URL_SMARTPHONE |
-| Japanese | 最終リンク先URL（スマートフォン） | 最終リンク先URL（スマートフォン） |
-| English | Landing Page URL (Smartphone) | Final URL (Smartphone) |
+| Japanese | 最終リンク先URL（スマートフォン） | スマートフォン向けURL |
+| English | Landing Page URL (Smartphone) | Smartphone final URL |
 
 ### Changes on items that cannot be combined
 Check out the v6 API reference that will be posted on September 13, 2021.
@@ -225,7 +225,8 @@ Change details on LANDING_PAGE_URL_SMARTPHONE
 |  | Before | After |
 | --- | --- | --- |
 | ENUM | LANDING_PAGE_URL_SMARTPHONE | FINAL_URL_SMARTPHONE |
-| JapaneseEnglish | Landing Page URL (Smartphone) | Final URL (Smartphone) |
+| Japanese | 最終リンク先URL（スマートフォン） | スマートフォン向けURL |
+| English | Landing Page URL (Smartphone) | Smartphone final URL |
 
 ### Changes on items that cannot be combined
 Check out the v6 API reference that will be posted on September 13, 2021.
@@ -347,8 +348,8 @@ Change details on LANDING_PAGE_URL_SMARTPHONE
 | | Before | After |
 | --- | --- | --- |
 | ENUM | LANDING_PAGE_URL_SMARTPHONE | FINAL_URL_SMARTPHONE |
-| Japanese | 最終リンク先URL（スマートフォン） | 最終リンク先URL（スマートフォン） |
-| English | Landing Page URL (Smartphone) | Final URL (Smartphone) |
+| Japanese | 最終リンク先URL（スマートフォン） | スマートフォン向けURL |
+| English | Landing Page URL (Smartphone) | Smartphone final URL |
 
 ### Changes on items that cannot be combined
 Check out the v6 API reference that will be posted on September 13, 2021.

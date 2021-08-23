@@ -24,6 +24,8 @@ AdGroupAdServiceAdditionalAdvancedMobileUrls:
   title: AdGroupAdServiceAdditionalAdvancedMobileUrls
   description: |
     <div lang="ja">AdGroupAdServiceAdditionalAdvancedMobileUrlsは、2件目以降の最終リンク先URL（スマートフォン）を保持するオブジェクトです。<br>
+    ※こちらのフィールドは、現在利用できません。<br>
     ADD時、このフィールドは省略可能となります。※adTypeがDYNAMIC_SEARCH_LINKED_ADの場合は無視されます。</div>
     <div lang="en">AdGroupAdServiceAdditionalAdvancedMobileUrls is object to hold the 2nd and later Landing Page URLs (Smartphone).<br>
+    *This field is currently unavailable.<br>
     This field is optional in ADD operation. *If adType is DYNAMIC_SEARCH_LINKED_AD, this field will be ignored.</div>
