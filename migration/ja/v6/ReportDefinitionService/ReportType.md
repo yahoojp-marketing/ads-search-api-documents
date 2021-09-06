@@ -36,6 +36,10 @@ Yahoo!検索広告v6 ReportDefinitionServiceでのレポートタイプごとの
 | AVG_CPC | 桁数処理が切り捨てから四捨五入になります |
 | COST_PER_CONV | レポートの値が小数点以下の値なし（桁数処理は切り捨て）から小数点以下の値あり（桁数処理は四捨五入）になります |
 | COST_PER_ALL_CONV | レポートの値が小数点以下の値なし（桁数処理は切り捨て）から小数点以下の値あり（桁数処理は四捨五入）になります |
+| ALL_CONV_VALUE | 桁数処理が小数点第3位で四捨五入から小数点第5位で四捨五入になります |
+| ALL_CONV_VALUE_PER_COST | 桁数処理が小数点第3位で四捨五入から小数点第5位で四捨五入になります |
+| CONV_VALUE | 桁数処理が小数点第3位で四捨五入から小数点第5位で四捨五入になります |
+| CONV_VALUE_PER_COST | 桁数処理が小数点第3位で四捨五入から小数点第5位で四捨五入になります |
 | DEVICE | レポートの値が変わります。詳細は下記をご確認下さい |
 
 DEVICEの変更内容
@@ -78,6 +82,10 @@ DEVICEの変更内容
 | SEARCH_RANK_LOST_ABSOLUTE_TOP_IMPRESSION_SHARE | 桁数処理が小数点第3位で四捨五入から小数点第5位で四捨五入になります |
 | SEARCH_BUDGET_LOST_TOP_IMPRESSION_SHARE | 桁数処理が小数点第3位で四捨五入から小数点第5位で四捨五入になります |
 | SEARCH_BUDGET_LOST_ABSOLUTE_TOP_IMPRESSION_SHARE | 桁数処理が小数点第3位で四捨五入から小数点第5位で四捨五入になります |
+| ALL_CONV_VALUE | 桁数処理が小数点第3位で四捨五入から小数点第5位で四捨五入になります |
+| ALL_CONV_VALUE_PER_COST | 桁数処理が小数点第3位で四捨五入から小数点第5位で四捨五入になります |
+| CONV_VALUE | 桁数処理が小数点第3位で四捨五入から小数点第5位で四捨五入になります |
+| CONV_VALUE_PER_COST | 桁数処理が小数点第3位で四捨五入から小数点第5位で四捨五入になります |
 
 DEVICEの変更内容の詳細
 
@@ -119,6 +127,10 @@ DEVICEの変更内容の詳細
 | SEARCH_RANK_LOST_ABSOLUTE_TOP_IMPRESSION_SHARE | 桁数処理が小数点第3位で四捨五入から小数点第5位で四捨五入になります |
 | SEARCH_BUDGET_LOST_TOP_IMPRESSION_SHARE | 桁数処理が小数点第3位で四捨五入から小数点第5位で四捨五入になります |
 | SEARCH_BUDGET_LOST_ABSOLUTE_TOP_IMPRESSION_SHARE | 桁数処理が小数点第3位で四捨五入から小数点第5位で四捨五入になります |
+| ALL_CONV_VALUE | 桁数処理が小数点第3位で四捨五入から小数点第5位で四捨五入になります |
+| ALL_CONV_VALUE_PER_COST | 桁数処理が小数点第3位で四捨五入から小数点第5位で四捨五入になります |
+| CONV_VALUE | 桁数処理が小数点第3位で四捨五入から小数点第5位で四捨五入になります |
+| CONV_VALUE_PER_COST | 桁数処理が小数点第3位で四捨五入から小数点第5位で四捨五入になります |
 
 DEVICEの変更内容の詳細
 
@@ -149,6 +161,10 @@ DEVICEの変更内容の詳細
 | ABSOLUTE_TOP_IMPRESSION_PERCENTAGE | 桁数処理が小数点第3位で四捨五入から小数点第5位で四捨五入になります |
 | LANDING_PAGE_URL | フィールドの名称が変わります。詳細は下記をご確認下さい |
 | LANDING_PAGE_URL_SMARTPHONE | フィールドの名称が変わります。詳細は下記をご確認下さい |
+| ALL_CONV_VALUE | 桁数処理が小数点第3位で四捨五入から小数点第5位で四捨五入になります |
+| ALL_CONV_VALUE_PER_COST | 桁数処理が小数点第3位で四捨五入から小数点第5位で四捨五入になります |
+| CONV_VALUE | 桁数処理が小数点第3位で四捨五入から小数点第5位で四捨五入になります |
+| CONV_VALUE_PER_COST | 桁数処理が小数点第3位で四捨五入から小数点第5位で四捨五入になります |
 
 DEVICEの変更内容の詳細
 
@@ -203,6 +219,10 @@ LANDING_PAGE_URL_SMARTPHONEの変更内容の詳細
 | SEARCH_BUDGET_LOST_ABSOLUTE_TOP_IMPRESSION_SHARE | 桁数処理が小数点第3位で四捨五入から小数点第5位で四捨五入になります |
 | LANDING_PAGE_URL | フィールドの名称が変わります。詳細は下記をご確認下さい |
 | LANDING_PAGE_URL_SMARTPHONE | フィールドの名称が変わります。詳細は下記をご確認下さい |
+| ALL_CONV_VALUE | 桁数処理が小数点第3位で四捨五入から小数点第5位で四捨五入になります |
+| ALL_CONV_VALUE_PER_COST | 桁数処理が小数点第3位で四捨五入から小数点第5位で四捨五入になります |
+| CONV_VALUE | 桁数処理が小数点第3位で四捨五入から小数点第5位で四捨五入になります |
+| CONV_VALUE_PER_COST | 桁数処理が小数点第3位で四捨五入から小数点第5位で四捨五入になります |
 
 DEVICEの変更内容の詳細
 
@@ -245,6 +265,10 @@ LANDING_PAGE_URL_SMARTPHONEの変更内容の詳細
 | TOP_IMPRESSION_PERCENTAGE | 桁数処理が小数点第3位で四捨五入から小数点第5位で四捨五入になります |
 | ABSOLUTE_TOP_IMPRESSION_PERCENTAGE | 桁数処理が小数点第3位で四捨五入から小数点第5位で四捨五入になります |
 | LANDING_PAGE_URL | フィールドの名称が変わります。詳細は下記をご確認下さい |
+| ALL_CONV_VALUE | 桁数処理が小数点第3位で四捨五入から小数点第5位で四捨五入になります |
+| ALL_CONV_VALUE_PER_COST | 桁数処理が小数点第3位で四捨五入から小数点第5位で四捨五入になります |
+| CONV_VALUE | 桁数処理が小数点第3位で四捨五入から小数点第5位で四捨五入になります |
+| CONV_VALUE_PER_COST | 桁数処理が小数点第3位で四捨五入から小数点第5位で四捨五入になります |
 
 DEVICEの変更内容の詳細
 
@@ -279,6 +303,10 @@ LANDING_PAGE_URLの変更内容の詳細
 | COST_PER_ALL_CONV | レポートの値が小数点以下の値なし（桁数処理は切り捨て）から小数点以下の値あり（桁数処理は四捨五入）になります |
 | DEVICE | レポートの値が変わります。詳細は下記をご確認下さい |
 | CITY_WARD_DISTRICT | レポートの値が変わります。詳細は下記をご確認下さい |
+| ALL_CONV_VALUE | 桁数処理が小数点第3位で四捨五入から小数点第5位で四捨五入になります |
+| ALL_CONV_VALUE_PER_COST | 桁数処理が小数点第3位で四捨五入から小数点第5位で四捨五入になります |
+| CONV_VALUE | 桁数処理が小数点第3位で四捨五入から小数点第5位で四捨五入になります |
+| CONV_VALUE_PER_COST | 桁数処理が小数点第3位で四捨五入から小数点第5位で四捨五入になります |
 
 DEVICEの変更内容の詳細
 
@@ -326,6 +354,10 @@ CITY_WARD_DISTRICTの変更内容の詳細
 | PLACEHOLDER_TYPE | PLACEHOLDER_TYPEの値に「アドカスタマイザー（英語表示名称: Data Auto Insertion）」が追加されます |
 | LANDING_PAGE_URL | フィールドの名称が変わります。詳細は下記をご確認下さい |
 | LANDING_PAGE_URL_SMARTPHONE | フィールドの名称が変わります。詳細は下記をご確認下さい |
+| ALL_CONV_VALUE | 桁数処理が小数点第3位で四捨五入から小数点第5位で四捨五入になります |
+| ALL_CONV_VALUE_PER_COST | 桁数処理が小数点第3位で四捨五入から小数点第5位で四捨五入になります |
+| CONV_VALUE | 桁数処理が小数点第3位で四捨五入から小数点第5位で四捨五入になります |
+| CONV_VALUE_PER_COST | 桁数処理が小数点第3位で四捨五入から小数点第5位で四捨五入になります |
 
 DEVICEの変更内容の詳細
 
@@ -364,6 +396,10 @@ LANDING_PAGE_URL_SMARTPHONEの変更内容の詳細
 | AVG_CPC | 桁数処理が切り捨てから四捨五入になります |
 | COST_PER_CONV | レポートの値が小数点以下の値なし（桁数処理は切り捨て）から小数点以下の値あり（桁数処理は四捨五入）になります |
 | COST_PER_ALL_CONV | レポートの値が小数点以下の値なし（桁数処理は切り捨て）から小数点以下の値あり（桁数処理は四捨五入）になります |
+| ALL_CONV_VALUE | 桁数処理が小数点第3位で四捨五入から小数点第5位で四捨五入になります |
+| ALL_CONV_VALUE_PER_COST | 桁数処理が小数点第3位で四捨五入から小数点第5位で四捨五入になります |
+| CONV_VALUE | 桁数処理が小数点第3位で四捨五入から小数点第5位で四捨五入になります |
+| CONV_VALUE_PER_COST | 桁数処理が小数点第3位で四捨五入から小数点第5位で四捨五入になります |
 
 ### 組み合わせ不可項目の変更点
 2021年9月13日に掲載されるv6のAPIリファレンスをご確認ください。
@@ -378,6 +414,10 @@ LANDING_PAGE_URL_SMARTPHONEの変更内容の詳細
 | AVG_CPC | 桁数処理が切り捨てから四捨五入になります |
 | COST_PER_CONV | レポートの値が小数点以下の値なし（桁数処理は切り捨て）から小数点以下の値あり（桁数処理は四捨五入）になります |
 | COST_PER_ALL_CONV | レポートの値が小数点以下の値なし（桁数処理は切り捨て）から小数点以下の値あり（桁数処理は四捨五入）になります |
+| ALL_CONV_VALUE | 桁数処理が小数点第3位で四捨五入から小数点第5位で四捨五入になります |
+| ALL_CONV_VALUE_PER_COST | 桁数処理が小数点第3位で四捨五入から小数点第5位で四捨五入になります |
+| CONV_VALUE | 桁数処理が小数点第3位で四捨五入から小数点第5位で四捨五入になります |
+| CONV_VALUE_PER_COST | 桁数処理が小数点第3位で四捨五入から小数点第5位で四捨五入になります |
 
 ### 組み合わせ不可項目の変更点
 2021年9月13日に掲載されるv6のAPIリファレンスをご確認ください。
@@ -393,6 +433,10 @@ LANDING_PAGE_URL_SMARTPHONEの変更内容の詳細
 | AVG_CPC | 桁数処理が切り捨てから四捨五入になります |
 | COST_PER_CONV | レポートの値が小数点以下の値なし（桁数処理は切り捨て）から小数点以下の値あり（桁数処理は四捨五入）になります |
 | COST_PER_ALL_CONV | レポートの値が小数点以下の値なし（桁数処理は切り捨て）から小数点以下の値あり（桁数処理は四捨五入）になります |
+| ALL_CONV_VALUE | 桁数処理が小数点第3位で四捨五入から小数点第5位で四捨五入になります |
+| ALL_CONV_VALUE_PER_COST | 桁数処理が小数点第3位で四捨五入から小数点第5位で四捨五入になります |
+| CONV_VALUE | 桁数処理が小数点第3位で四捨五入から小数点第5位で四捨五入になります |
+| CONV_VALUE_PER_COST | 桁数処理が小数点第3位で四捨五入から小数点第5位で四捨五入になります |
 | DEVICE | レポートの値が変わります。詳細は下記をご確認下さい |
 
 DEVICEの変更内容の詳細
@@ -485,6 +529,10 @@ DEVICEの変更内容の詳細
 | COST_PER_ALL_CONV | レポートの値が小数点以下の値なし（桁数処理は切り捨て）から小数点以下の値あり（桁数処理は四捨五入）になります |
 | TOP_IMPRESSION_PERCENTAGE | 桁数処理が小数点第3位で四捨五入から小数点第5位で四捨五入になります |
 | ABSOLUTE_TOP_IMPRESSION_PERCENTAGE | 桁数処理が小数点第3位で四捨五入から小数点第5位で四捨五入になります |
+| ALL_CONV_VALUE | 桁数処理が小数点第3位で四捨五入から小数点第5位で四捨五入になります |
+| ALL_CONV_VALUE_PER_COST | 桁数処理が小数点第3位で四捨五入から小数点第5位で四捨五入になります |
+| CONV_VALUE | 桁数処理が小数点第3位で四捨五入から小数点第5位で四捨五入になります |
+| CONV_VALUE_PER_COST | 桁数処理が小数点第3位で四捨五入から小数点第5位で四捨五入になります |
 | DEVICE | レポートの値が変わります。詳細は下記をご確認下さい |
 
 DEVICEの変更内容の詳細
@@ -510,6 +558,10 @@ DEVICEの変更内容の詳細
 | AVG_CPC | 桁数処理が切り捨てから四捨五入になります |
 | COST_PER_CONV | レポートの値が小数点以下の値なし（桁数処理は切り捨て）から小数点以下の値あり（桁数処理は四捨五入）になります |
 | COST_PER_ALL_CONV | レポートの値が小数点以下の値なし（桁数処理は切り捨て）から小数点以下の値あり（桁数処理は四捨五入）になります |
+| ALL_CONV_VALUE | 桁数処理が小数点第3位で四捨五入から小数点第5位で四捨五入になります |
+| ALL_CONV_VALUE_PER_COST | 桁数処理が小数点第3位で四捨五入から小数点第5位で四捨五入になります |
+| CONV_VALUE | 桁数処理が小数点第3位で四捨五入から小数点第5位で四捨五入になります |
+| CONV_VALUE_PER_COST | 桁数処理が小数点第3位で四捨五入から小数点第5位で四捨五入になります |
 
 ### 組み合わせ不可項目の変更点
 2021年9月13日に掲載されるv6のAPIリファレンスをご確認ください。
@@ -605,17 +657,17 @@ includeDeletedは設定できません
 
 #### フィールド一覧
 
-| フィールド |
-| --- |
-| ACCOUNT_ID	 |
-| ACCOUNT_NAME |
-| ADGROUP_ID	 |
-| ADGROUP_NAME	 |
-| CAMPAIGN_ID |
-| CAMPAIGN_NAME |
-| DEVICE_TYPE	 |
-| BID_MULTIPLIER	 |
-| BID_MODIFIER_ATTACHMENT_LEVEL |
+| フィールド | 備考 |
+| --- | ---|
+| ACCOUNT_ID	 | |
+| ACCOUNT_NAME | |
+| ADGROUP_ID	 | |
+| ADGROUP_NAME	 | |
+| CAMPAIGN_ID | |
+| CAMPAIGN_NAME | |
+| DEVICE_TYPE	 | |
+| BID_MULTIPLIER	 | レポートの値は小数点以下の値あり（桁数処理は切り捨て）になります。 |
+| BID_MODIFIER_ATTACHMENT_LEVEL | |
 
 #### 新規フィールドの詳細
 

@@ -28,8 +28,9 @@ v6 ReportDefinitionService has changes on some report types and report output it
   - `AD_CUSTOMIZERS`
   - Refer to [Changes by Report Type](ReportType.md) for the alternative report types
 - The reportIncludeZeroImpressions field will be removed in v6 and later versions.
-  - Items without impressions are also output together, resulting in a large amount of data and an error may occur when retrieving the report.
-  - To output only the items with impressions in the v6 or later version to the report, set the items such as imps to 1 or more in the filter condition.
+  - In previous versions, by default, items with all zero achievements were excluded.
+  - In v6 and later versions, items without achievements are also output together, resulting in a large amount of data and an error may occur when retrieving the report.
+  - To output only the items with achievements in the v6 or later version to the report, set the items such as IMPS to 1 or more in the filter condition.
 ```r
 #request sample
 {
@@ -71,7 +72,7 @@ v6 ReportDefinitionService has changes on some report types and report output it
 
     | | LONG | DOUBLE | STRING ※ | ENUM |
     | --- | --- | --- | --- | --- | 
-    | Before | -- | -- | -- | --　(or default value) |
+    | Before | 0 or -- | 0 or -- | -- | --　(or default value) |
     | After | 0 | 0 | "" | "" |
 
     (※ For ACCOUNT\_ID and ACCOUNT\_NAME, the account ID and account name are entered, they are not "-" or "" ".)

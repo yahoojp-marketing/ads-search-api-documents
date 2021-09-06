@@ -37,6 +37,10 @@ Yahoo! JAPAN Search Ads API v6 changes the following output items (fields) by ea
 | AVG_CPC | Digit processing will change from rounding down to being rounded. |
 | COST_PER_CONV | The value in the report changes from no decimal point value (rounded down to the nearest whole number) to a value after the decimal point (rounded down to the nearest whole number). |
 | COST_PER_ALL_CONV | The value in the report changes from no decimal point value (rounded down to the nearest whole number) to a value after the decimal point (rounded down to the nearest whole number). |
+| ALL_CONV_VALUE | Digit processing will change from being rounded from the 3rd decimal place to the 5th decimal place. |
+| ALL_CONV_VALUE_PER_COST | Digit processing will change from being rounded from the 3rd decimal place to the 5th decimal place. |
+| CONV_VALUE | Digit processing will change from being rounded from the 3rd decimal place to the 5th decimal place. |
+| CONV_VALUE_PER_COST | Digit processing will change from being rounded from the 3rd decimal place to the 5th decimal place. |
 | DEVICE | The value in the report changes. See the following details |
 
 Changes on DEVICE
@@ -79,6 +83,10 @@ Check out the v6 API reference that will be posted on September 13, 2021.
 | SEARCH_RANK_LOST_ABSOLUTE_TOP_IMPRESSION_SHARE | Digit processing will change from being rounded from the 3rd decimal place to the 5th decimal place. |
 | SEARCH_BUDGET_LOST_TOP_IMPRESSION_SHARE | Digit processing will change from being rounded from the 3rd decimal place to the 5th decimal place.|
 | SEARCH_BUDGET_LOST_ABSOLUTE_TOP_IMPRESSION_SHARE | Digit processing will change from being rounded from the 3rd decimal place to the 5th decimal place.
+| ALL_CONV_VALUE | Digit processing will change from being rounded from the 3rd decimal place to the 5th decimal place. |
+| ALL_CONV_VALUE_PER_COST | Digit processing will change from being rounded from the 3rd decimal place to the 5th decimal place. |
+| CONV_VALUE | Digit processing will change from being rounded from the 3rd decimal place to the 5th decimal place. |
+| CONV_VALUE_PER_COST | Digit processing will change from being rounded from the 3rd decimal place to the 5th decimal place. |
 
 Change details on DEVICE
 
@@ -119,6 +127,10 @@ Check out the v6 API reference that will be posted on September 13, 2021.
 | SEARCH_RANK_LOST_ABSOLUTE_TOP_IMPRESSION_SHARE | Digit processing will change from being rounded from the 3rd decimal place to the 5th decimal place. |
 | SEARCH_BUDGET_LOST_TOP_IMPRESSION_SHARE | Digit processing will change from being rounded from the 3rd decimal place to the 5th decimal place. |
 | SEARCH_BUDGET_LOST_ABSOLUTE_TOP_IMPRESSION_SHARE | Digit processing will change from being rounded from the 3rd decimal place to the 5th decimal place.
+| ALL_CONV_VALUE | Digit processing will change from being rounded from the 3rd decimal place to the 5th decimal place. |
+| ALL_CONV_VALUE_PER_COST | Digit processing will change from being rounded from the 3rd decimal place to the 5th decimal place. |
+| CONV_VALUE | Digit processing will change from being rounded from the 3rd decimal place to the 5th decimal place. |
+| CONV_VALUE_PER_COST | Digit processing will change from being rounded from the 3rd decimal place to the 5th decimal place. |
 
 Change details on DEVICE
 
@@ -149,6 +161,10 @@ Check out the v6 API reference that will be posted on September 13, 2021.
 | ABSOLUTE_TOP_IMPRESSION_PERCENTAGE | Digit processing will change from being rounded from the 3rd decimal place to the 5th decimal place. |
 | LANDING_PAGE_URL | The field name changes. See the following details |
 | LANDING_PAGE_URL_SMARTPHONE | The field name changes. See the following details |
+| ALL_CONV_VALUE | Digit processing will change from being rounded from the 3rd decimal place to the 5th decimal place. |
+| ALL_CONV_VALUE_PER_COST | Digit processing will change from being rounded from the 3rd decimal place to the 5th decimal place. |
+| CONV_VALUE | Digit processing will change from being rounded from the 3rd decimal place to the 5th decimal place. |
+| CONV_VALUE_PER_COST | Digit processing will change from being rounded from the 3rd decimal place to the 5th decimal place. |
 
 Change details on DEVICE
 
@@ -203,6 +219,10 @@ Check out the v6 API reference that will be posted on September 13, 2021.
 | SEARCH_BUDGET_LOST_ABSOLUTE_TOP_IMPRESSION_SHARE | Digit processing will change from being rounded from the 3rd decimal place to the 5th decimal place. |
 | LANDING_PAGE_URL | The field name changes. See the following details |
 | LANDING_PAGE_URL_SMARTPHONE | The field name changes. See the following details |
+| ALL_CONV_VALUE | Digit processing will change from being rounded from the 3rd decimal place to the 5th decimal place. |
+| ALL_CONV_VALUE_PER_COST | Digit processing will change from being rounded from the 3rd decimal place to the 5th decimal place. |
+| CONV_VALUE | Digit processing will change from being rounded from the 3rd decimal place to the 5th decimal place. |
+| CONV_VALUE_PER_COST | Digit processing will change from being rounded from the 3rd decimal place to the 5th decimal place. |
 
 Change details on DEVICE
 
@@ -245,6 +265,10 @@ Check out the v6 API reference that will be posted on September 13, 2021.
 | TOP_IMPRESSION_PERCENTAGE | Digit processing will change from being rounded from the 3rd decimal place to the 5th decimal place. |
 | ABSOLUTE_TOP_IMPRESSION_PERCENTAGE | Digit processing will change from being rounded from the 3rd decimal place to the 5th decimal place. |
 | LANDING_PAGE_URL | The field name changes. See the following details |
+| ALL_CONV_VALUE | Digit processing will change from being rounded from the 3rd decimal place to the 5th decimal place. |
+| ALL_CONV_VALUE_PER_COST | Digit processing will change from being rounded from the 3rd decimal place to the 5th decimal place. |
+| CONV_VALUE | Digit processing will change from being rounded from the 3rd decimal place to the 5th decimal place. |
+| CONV_VALUE_PER_COST | Digit processing will change from being rounded from the 3rd decimal place to the 5th decimal place. |
 
 Change details on DEVICE
 
@@ -279,6 +303,10 @@ Check out the v6 API reference that will be posted on September 13, 2021.
 | COST_PER_ALL_CONV | The value in the report changes from no decimal point value (rounded down to the nearest whole number) to a value after the decimal point (rounded down to the nearest whole number). |
 | DEVICE |  See the following details |
 | CITY_WARD_DISTRICT | The value in the report changes. See the following details |
+| ALL_CONV_VALUE | Digit processing will change from being rounded from the 3rd decimal place to the 5th decimal place. |
+| ALL_CONV_VALUE_PER_COST | Digit processing will change from being rounded from the 3rd decimal place to the 5th decimal place. |
+| CONV_VALUE | Digit processing will change from being rounded from the 3rd decimal place to the 5th decimal place. |
+| CONV_VALUE_PER_COST | Digit processing will change from being rounded from the 3rd decimal place to the 5th decimal place. |
 
 Change details on DEVICE
 
@@ -326,6 +354,10 @@ Data Auto Insertion Report is deprecated. Fields of the report are added to Ad D
 | PLACEHOLDER_TYPE | "アドカスタマイザー (Data Auto Insertion)" is added to the value of PLAECEHOLDER_TYPE |
 | LANDING_PAGE_URL | The field name changes. See the following details |
 | LANDING_PAGE_URL_SMARTPHONE | The field name changes. See the following details |
+| ALL_CONV_VALUE | Digit processing will change from being rounded from the 3rd decimal place to the 5th decimal place. |
+| ALL_CONV_VALUE_PER_COST | Digit processing will change from being rounded from the 3rd decimal place to the 5th decimal place. |
+| CONV_VALUE | Digit processing will change from being rounded from the 3rd decimal place to the 5th decimal place. |
+| CONV_VALUE_PER_COST | Digit processing will change from being rounded from the 3rd decimal place to the 5th decimal place. |
 
 Change details on DEVICE
 
@@ -364,6 +396,10 @@ Check out the v6 API reference that will be posted on September 13, 2021.
 | AVG_CPC | Digit processing will change from rounding down to being rounded. |
 | COST_PER_CONV | The value in the report changes from no decimal point value (rounded down to the nearest whole number) to a value after the decimal point (rounded down to the nearest whole number). |
 | COST_PER_ALL_CONV | The value in the report changes from no decimal point value (rounded down to the nearest whole number) to a value after the decimal point (rounded down to the nearest whole number).
+| ALL_CONV_VALUE | Digit processing will change from being rounded from the 3rd decimal place to the 5th decimal place. |
+| ALL_CONV_VALUE_PER_COST | Digit processing will change from being rounded from the 3rd decimal place to the 5th decimal place. |
+| CONV_VALUE | Digit processing will change from being rounded from the 3rd decimal place to the 5th decimal place. |
+| CONV_VALUE_PER_COST | Digit processing will change from being rounded from the 3rd decimal place to the 5th decimal place. |
 
 ### Changes on items that cannot be combined
 Check out the v6 API reference that will be posted on September 13, 2021.
@@ -377,6 +413,10 @@ Check out the v6 API reference that will be posted on September 13, 2021.
 | AVG_DELIVER_RANK | To be deletedDigit processing will change from rounding down to being rounded. |
 | COST_PER_CONV | The value in the report changes from no decimal point value (rounded down to the nearest whole number) to a value after the decimal point (rounded down to the nearest whole number). |
 | COST_PER_ALL_CONV | The value in the report changes from no decimal point value (rounded down to the nearest whole number) to a value after the decimal point (rounded down to the nearest whole number). |
+| ALL_CONV_VALUE | Digit processing will change from being rounded from the 3rd decimal place to the 5th decimal place. |
+| ALL_CONV_VALUE_PER_COST | Digit processing will change from being rounded from the 3rd decimal place to the 5th decimal place. |
+| CONV_VALUE | Digit processing will change from being rounded from the 3rd decimal place to the 5th decimal place. |
+| CONV_VALUE_PER_COST | Digit processing will change from being rounded from the 3rd decimal place to the 5th decimal place. |
 
 ### Changes on items that cannot be combined
 Check out the v6 API reference that will be posted on September 13, 2021.
@@ -392,6 +432,10 @@ Check out the v6 API reference that will be posted on September 13, 2021.
  AVG_CPC | Digit processing will change from rounding down to being rounded. |
 | COST_PER_CONV | The value in the report changes from no decimal point value (rounded down to the nearest whole number) to a value after the decimal point (rounded down to the nearest whole number). |
 | COST_PER_ALL_CONV | The value in the report changes from no decimal point value (rounded down to the nearest whole number) to a value after the decimal point (rounded down to the nearest whole number). |
+| ALL_CONV_VALUE | Digit processing will change from being rounded from the 3rd decimal place to the 5th decimal place. |
+| ALL_CONV_VALUE_PER_COST | Digit processing will change from being rounded from the 3rd decimal place to the 5th decimal place. |
+| CONV_VALUE | Digit processing will change from being rounded from the 3rd decimal place to the 5th decimal place. |
+| CONV_VALUE_PER_COST | Digit processing will change from being rounded from the 3rd decimal place to the 5th decimal place. |
 | DEVICE |  See the following details |
 
 Change details on DEVICE
@@ -484,6 +528,10 @@ Check out the v6 API reference that will be posted on September 13, 2021.
 | COST_PER_ALL_CONV | The value in the report changes from no decimal point value (rounded down to the nearest whole number) to a value after the decimal point (rounded down to the nearest whole number). |
 | TOP_IMPRESSION_PERCENTAGE | Digit processing will change from being rounded from the 3rd decimal place to the 5th decimal place. |
 | ABSOLUTE_TOP_IMPRESSION_PERCENTAGE | Digit processing will change from being rounded from the 3rd decimal place to the 5th decimal place. |
+| ALL_CONV_VALUE | Digit processing will change from being rounded from the 3rd decimal place to the 5th decimal place. |
+| ALL_CONV_VALUE_PER_COST | Digit processing will change from being rounded from the 3rd decimal place to the 5th decimal place. |
+| CONV_VALUE | Digit processing will change from being rounded from the 3rd decimal place to the 5th decimal place. |
+| CONV_VALUE_PER_COST | Digit processing will change from being rounded from the 3rd decimal place to the 5th decimal place. |
 | DEVICE | The value in the report changes. See the following details |
 
 Change details on DEVICE
@@ -509,6 +557,10 @@ Check out the v6 API reference that will be posted on September 13, 2021.
 | AVG_CPC | Digit processing will change from rounding down to being rounded. |
 | COST_PER_CONV | The value in the report changes from no decimal point value (rounded down to the nearest whole number) to a value after the decimal point (rounded down to the nearest whole number). |
 | COST_PER_ALL_CONV | The value in the report changes from no decimal point value (rounded down to the nearest whole number) to a value after the decimal point (rounded down to the nearest whole number). |
+| ALL_CONV_VALUE | Digit processing will change from being rounded from the 3rd decimal place to the 5th decimal place. |
+| ALL_CONV_VALUE_PER_COST | Digit processing will change from being rounded from the 3rd decimal place to the 5th decimal place. |
+| CONV_VALUE | Digit processing will change from being rounded from the 3rd decimal place to the 5th decimal place. |
+| CONV_VALUE_PER_COST | Digit processing will change from being rounded from the 3rd decimal place to the 5th decimal place. |
 
 ### Changes on items that cannot be combined
 Check out the v6 API reference that will be posted on September 13, 2021.
@@ -604,17 +656,17 @@ The bid adjustment fields in Campaign Report and Ad Group Report are deprecated 
 
 #### Field list
 
-| Field |
-| --- |
-| ACCOUNT_ID	 |
-| ACCOUNT_NAME |
-| ADGROUP_ID	 |
-| ADGROUP_NAME	 |
-| CAMPAIGN_ID |
-| CAMPAIGN_NAME |
-| DEVICE_TYPE	 |
-| BID_MULTIPLIER	 |
-| BID_MODIFIER_ATTACHMENT_LEVEL |
+| Field | Note |
+| --- | ---|
+| ACCOUNT_ID	 | |
+| ACCOUNT_NAME | |
+| ADGROUP_ID	 | |
+| ADGROUP_NAME	 | |
+| CAMPAIGN_ID | |
+| CAMPAIGN_NAME | |
+| DEVICE_TYPE	 | |
+| BID_MULTIPLIER	 | Digit processing will change from being rounded from the 3rd decimal place to the 5th decimal place. |
+| BID_MODIFIER_ATTACHMENT_LEVEL | |
 
 #### New fields detail
 
