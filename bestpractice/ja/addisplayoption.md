@@ -459,6 +459,7 @@ No                | CALL_PHONE_NUMBER
 ##### ※FeedItemの更新について
 更新時にfeedItemAttributeを指定するとすべて上書きされ、未指定のフィードアイテムの属性情報は削除されます。
 また、下記の場合のみfeedAttributeValueに空文字を指定することで削除が可能です。
+
 placeholderType   | placeholderField
 ----------------- | --------------------
 QUICKLINK         | ADVANCED_MOBILE_URL
