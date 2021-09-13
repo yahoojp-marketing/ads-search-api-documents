@@ -18,9 +18,9 @@ AdGroupAdServiceAd:
       type: string
       nullable: true
       description: |
-        <div lang="ja">最終リンク先URL（スマートフォン）です。<br>
+        <div lang="ja">スマートフォン向けURLです。<br>
         ADD時、このフィールドは省略可能となります。※adTypeがDYNAMIC_SEARCH_LINKED_ADの場合は無視されます。</div>
-        <div lang="en">Landing Page URL (Smartphone).<br>
+        <div lang="en">Smartphone final URL.<br>
         This field is optional in ADD operation. *If adType is DYNAMIC_SEARCH_LINKED_AD, this field will be ignored.</div>
     advancedUrl:
       type: string
@@ -28,7 +28,7 @@ AdGroupAdServiceAd:
       description: |
         <div lang="ja">最終リンク先URLです。<br>
         ADD時、このフィールドは必須となります。※adTypeがDYNAMIC_SEARCH_LINKED_ADの場合は無視されます。</div>
-        <div lang="en">Landing Page URL.<br>
+        <div lang="en">Final URL.<br>
         This field is required in ADD operation. *If adType is DYNAMIC_SEARCH_LINKED_AD, this field will be ignored.</div>
     appAd:
       $ref: 'AdGroupAdServiceAppAd.yaml#/AdGroupAdServiceAppAd'

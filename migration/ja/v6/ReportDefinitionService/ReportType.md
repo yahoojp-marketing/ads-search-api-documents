@@ -8,17 +8,17 @@ Yahoo!検索広告v6 ReportDefinitionServiceでのレポートタイプごとの
 - [キャンペーンレポート: `CAMPAIGN`](#キャンペーンレポート-campaign)
 - [広告グループレポート: `ADGROUP`](#広告グループレポート-adgroup)
 - [広告レポート: `AD`](#広告レポート-ad)
-- [キーワードレポート: `KEYWORDS`](#広告グループレポート-keywords)
+- [キーワードレポート: `KEYWORDS`](#キーワードレポート-keywords)
 - [検索クエリーレポート: `SEARCH_QUERY`](#検索クエリーレポート-search_query)
 - [地域別レポート: `GEO`](#地域別レポート-geo)
 - [広告表示オプションレポート: `FEED_ITEM`](#広告表示オプションレポート-feed_item)
 - [地域ターゲティングレポート: `GEO_TARGET`](#地域ターゲティングレポート-geo_target)
-- [曜日・時間帯ターゲティングレポート: `SCHEDULE_TARGET`](#曜日・時間帯ターゲティングレポート-schedule_target)
+- [曜日・時間帯ターゲティングレポート: `SCHEDULE_TARGET`](#曜日時間帯ターゲティングレポート-schedule_target)
 - [自動入札レポート: `BID_STRATEGY`](#自動入札レポート-bid_strategy)
 - [ターゲットリストレポート: `TARGET_LIST`](#ターゲットリストレポート-target_list)
 - [キャンペーンターゲットリストレポート: `CAMPAIGN_TARGET_LIST`](#キャンペーンターゲットリストレポート-campaign_target_list)
 - [広告グループターゲットリストレポート: `ADGROUP_TARGET_LIST`](#広告グループターゲットリストレポート-adgroup_target_list)
-- [検索クエリーレポート（動的検索連動型広告）: `KEYWORDLESS_QUERY`](#検索クエリーレポート（動的検索連動型広告）-keywordless_query)
+- [検索クエリーレポート（動的検索連動型広告）: `KEYWORDLESS_QUERY`](#検索クエリーレポート動的検索連動型広告-keywordless_query`)
 - [データ自動挿入レポート: `AD_CUSTOMIZERS`](#データ自動挿入レポート-ad_customizers)
 - [ページフィードターゲティングレポート: `WEBPAGE_CRITERION`](#ページフィードターゲティングレポート-webpage_criterion)
 - [最終リンク先URLレポート: `LANDING_PAGE_URL`](#最終リンク先URLレポート-landing_page_url)
@@ -562,6 +562,9 @@ DEVICEの変更内容の詳細
 | ALL_CONV_VALUE_PER_COST | 桁数処理が小数点第3位で四捨五入から小数点第5位で四捨五入になります |
 | CONV_VALUE | 桁数処理が小数点第3位で四捨五入から小数点第5位で四捨五入になります |
 | CONV_VALUE_PER_COST | 桁数処理が小数点第3位で四捨五入から小数点第5位で四捨五入になります |
+
+### レポート行数の変化
+行の最小単位がSEARCH_QUERYからSEARCH_QUERY+URLになるため、行数が増える可能性があります。
 
 ### 組み合わせ不可項目の変更点
 2021年9月13日に掲載されるv6のAPIリファレンスをご確認ください。

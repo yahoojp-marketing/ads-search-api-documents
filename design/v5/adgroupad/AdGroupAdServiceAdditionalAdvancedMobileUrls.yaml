@@ -6,9 +6,9 @@ AdGroupAdServiceAdditionalAdvancedMobileUrls:
       type: string
       nullable: true
       description: |
-        <div lang="ja">最終リンク先URL（スマートフォン）です。<br>
+        <div lang="ja">スマートフォン向けURLです。<br>
         ADD時、このフィールドは必須となります。</div>
-        <div lang="en">Landing Page URL (Smartphone).<br>
+        <div lang="en">Smartphone final URL.<br>
         This field is required in ADD operation.</div>
     disapprovalReasonCodes:
       type: array

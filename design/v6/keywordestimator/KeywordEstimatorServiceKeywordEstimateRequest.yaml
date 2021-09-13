@@ -1,0 +1,18 @@
+KeywordEstimatorServiceKeywordEstimateRequest:
+  type: object
+  nullable: true
+  required:
+    - estimateKeyword
+  properties:
+    estimateKeyword:
+      $ref: 'KeywordEstimatorServiceEstimateKeyword.yaml#/KeywordEstimatorServiceEstimateKeyword'
+    isNegativeBool:
+      $ref: 'KeywordEstimatorServiceIsNegativeBool.yaml#/KeywordEstimatorServiceIsNegativeBool'
+    maxCpc:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">キーワードの見積もりに使用する上限クリック単価です。</div>
+        <div lang="en">maxCpc for the keyword</div>
+  title: KeywordEstimatorServiceKeywordEstimateRequest

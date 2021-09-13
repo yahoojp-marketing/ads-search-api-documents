@@ -459,6 +459,7 @@ For this example, each Ad Display Option will be added to the account of company
 ##### *About the updating of FeedItem
 Upon updating, if feedItemAttribute is specified, the attribute information will be overwritten, but if the feed item is not specified, it will be deleted.
 Only for the following cases, the attribute information of the feed item can be deleted if you specified an empty string for feedAttributeValue.
+
 placeholderType   | placeholderField
 ----------------- | --------------------
 QUICKLINK         | ADVANCED_MOBILE_URL

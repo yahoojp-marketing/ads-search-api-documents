@@ -1,0 +1,71 @@
+CampaignTargetServiceSelector:
+  type: object
+  nullable: true
+  required:
+  - accountId
+  properties:
+    accountId:
+      type: integer
+      nullable: false
+      format: int64
+      description: |
+        <div lang="ja">アカウントIDです。</div>
+        <div lang="en">Account ID.</div>
+    campaignIds:
+      type: array
+      nullable: true
+      items:
+        type: integer
+        nullable: true
+        format: int64
+      maxItems: 500
+      description: |
+        <div lang="ja">キャンペーンIDです。</div>
+        <div lang="en">Campaign ID.</div>
+    excludedType:
+      $ref: 'CampaignTargetServiceExcludedType.yaml#/CampaignTargetServiceExcludedType'
+    numberResults:
+      type: integer
+      nullable: true
+      format: int32
+      minimum: 1
+      maximum: 500
+      default: 500
+      description: |
+        <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div>
+        <div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1. Also see Entity Limits per operation.</div>
+    platformTypes:
+      type: array
+      nullable: true
+      items:
+        $ref: 'CampaignTargetServicePlatformType.yaml#/CampaignTargetServicePlatformType'
+      maxItems: 3
+    startIndex:
+      type: integer
+      nullable: true
+      format: int32
+      minimum: 1
+      default: 1
+      description: |
+        <div lang="ja">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div>
+        <div lang="en">Index of the first result to return in this page. This field must be greater than or equal to 1.</div>
+    targetIds:
+      type: array
+      nullable: true
+      items:
+        type: string
+        nullable: true
+      maxItems: 500
+      description: |
+        <div lang="ja">ターゲットIDです。</div>
+        <div lang="en">Target ID.</div>
+    targetTypes:
+      type: array
+      nullable: true
+      items:
+        $ref: 'CampaignTargetServiceTargetType.yaml#/CampaignTargetServiceTargetType'
+      maxItems: 4
+  title: CampaignTargetServiceSelector
+  description: |
+    <div lang="ja">CampaignTargetServiceSelectorオブジェクトは、操作の対象とするキャンペーンのターゲティング設定を表します。</div>
+    <div lang="en">CampaignTargetSelector object describes the targeting settings on the campaign to be operated.</div>

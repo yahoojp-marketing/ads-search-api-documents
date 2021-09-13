@@ -1,0 +1,13 @@
+AdGroupAdLabelServiceReturnValue:
+  type: object
+  nullable: true
+  properties:
+    values:
+      type: array
+      nullable: true
+      items:
+        $ref: 'AdGroupAdLabelServiceValue.yaml#/AdGroupAdLabelServiceValue'
+  title: AdGroupAdLabelServiceReturnValue
+  description: |
+    <div lang="ja">AdGroupAdLabelServiceReturnValueオブジェクトは、広告のラベル情報を含む操作結果として戻される値を表します。</div>
+    <div lang="en">AdGroupAdLabelServiceReturnValue object describes value returned as operation result including ad group ad label information.</div>

@@ -1,0 +1,20 @@
+KeywordPlanIdeaServiceSeed:
+  type: object
+  nullable: true
+  required:
+    - seedType
+  properties:
+    keywordAndUrlSeed:
+      $ref: 'KeywordPlanIdeaServiceKeywordAndUrlSeed.yaml#/KeywordPlanIdeaServiceKeywordAndUrlSeed'
+    keywordSeed:
+      $ref: 'KeywordPlanIdeaServiceKeywordSeed.yaml#/KeywordPlanIdeaServiceKeywordSeed'
+    urlSeed:
+      $ref: 'KeywordPlanIdeaServiceUrlSeed.yaml#/KeywordPlanIdeaServiceUrlSeed'
+    siteSeed:
+      $ref: 'KeywordPlanIdeaServiceSiteSeed.yaml#/KeywordPlanIdeaServiceSiteSeed'
+    seedType:
+      $ref: 'KeywordPlanIdeaServiceSeedType.yaml#/KeywordPlanIdeaServiceSeedType'
+  title: KeywordPlanIdeaServiceSeed
+  description: |
+    <div lang="ja">KeywordPlanIdeaServiceSeedオブジェクトは、キーワード候補作成条件の詳細情報を表します。</div>
+    <div lang="en">KeywordPlanIdeaServiceSeed object describes detailed information about related keywords creation conditions.</div>

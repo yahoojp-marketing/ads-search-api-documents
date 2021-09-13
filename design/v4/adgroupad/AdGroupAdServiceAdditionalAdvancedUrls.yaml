@@ -8,7 +8,7 @@ AdGroupAdServiceAdditionalAdvancedUrls:
       description: |
         <div lang="ja">最終リンク先URLです。<br>
         ADD時、このフィールドは必須となります。</div>
-        <div lang="en">Landing Page URL.<br>
+        <div lang="en">Final URL.<br>
         This field is required in ADD operation.</div>
     disapprovalReasonCodes:
       type: array
