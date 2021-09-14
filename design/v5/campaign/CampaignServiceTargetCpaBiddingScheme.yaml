@@ -30,10 +30,10 @@ CampaignServiceTargetCpaBiddingScheme:
       description: |
         <div lang="ja">コンバージョン単価の目標値です。<br>
         ADD時およびSET時、このフィールドは必須となります。<br>
-        ※制限値：0 ～ 99999999<br>※日本円のみの設定です。</div>
+        ※制限値：1 ～ 800000<br>※日本円のみの設定です。</div>
         <div lang="en">Target CPA (JPY).<br>
         This field is required in ADD and SET operation.<br>
-        * Range limit: 0 - 99999999</div>
+        * Range limit: 1 - 800000</div>
   title: CampaignServiceTargetCpaBiddingScheme
   description: |
     <div lang="ja">CampaignServiceTargetCpaBiddingSchemeオブジェクトは、コンバージョン単価の目標値の自動入札設定情報を表します。 （BiddingStrategyService以外用のオブジェクトです。）<br>

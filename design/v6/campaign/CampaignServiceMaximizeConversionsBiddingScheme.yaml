@@ -8,10 +8,10 @@ CampaignServiceMaximizeConversionsBiddingScheme:
       format: int64
       description: |
         <div lang="ja">コンバージョン単価の目標値です。<br>
-        ※制限値：0 ～ 99999999<br>
+        ※制限値：1 ～ 800000<br>
         ※日本円のみの設定です。</div>
         <div lang="en">Target CPA (JPY).<br>
-        * Range limit: 0 - 99999999</div>
+        * Range limit: 1 - 800000</div>
   title: CampaignServiceMaximizeConversionsBiddingScheme
   description: |
     <div lang="ja">CampaignServiceMaximizeConversionsBiddingSchemeオブジェクトは、コンバージョン単価の目標値の自動入札設定情報を表します。<br>
