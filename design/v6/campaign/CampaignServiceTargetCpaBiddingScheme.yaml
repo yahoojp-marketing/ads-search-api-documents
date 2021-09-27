@@ -8,22 +8,18 @@ CampaignServiceTargetCpaBiddingScheme:
       format: int64
       description: |
         <div lang="ja">入札価格の上限です。<br>
-        このフィールドは省略可能となります。その際、デフォルト設定値は0となります。<br>
-        ※「0」が設定された場合、上限設定はありません。</div>
+        このフィールドの追加と編集は廃止され、現在設定できません。</div>
         <div lang="en">Limit of bid (CPC).<br>
-        This field is optional. The default value will be 0.<br>
-        * No limits if &#34;0&#34; is set.</div>
+        Adding and editing this field is obsolete. Currently not available.</div>
     bidFloor:
       type: integer
       nullable: true
       format: int64
       description: |
         <div lang="ja">入札価格の下限です。<br>
-        このフィールドは省略可能となります。その際、デフォルト設定値は0となります。<br>
-        ※ 設定を解除する場合は「0」を指定します。</div>
+        このフィールドの追加と編集は廃止され、現在設定できません。</div>
         <div lang="en">Minimum CPC.<br>
-        This field is optional. The default value will be 0.<br>
-        * Set &#34;0&#34; to deactivate.</div>
+        Adding and editing this field is obsolete. Currently not available.</div>
     targetCpa:
       type: integer
       nullable: true

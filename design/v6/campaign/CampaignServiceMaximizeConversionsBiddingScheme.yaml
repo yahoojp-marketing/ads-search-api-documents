@@ -15,6 +15,6 @@ CampaignServiceMaximizeConversionsBiddingScheme:
   title: CampaignServiceMaximizeConversionsBiddingScheme
   description: |
     <div lang="ja">CampaignServiceMaximizeConversionsBiddingSchemeオブジェクトは、コンバージョン単価の目標値の自動入札設定情報を表します。<br>
-    ※こちらのフィールドは、現在利用できません。</div>
+    ADD時、BiddingStrategyTypeがMAXIMIZE_CONVERSIONSの場合、必須となり、それ以外では省略可能となります。</div>
     <div lang="en">CampaignServiceMaximizeConversionsBiddingScheme object displays Auto Bidding setting for Target CPA.<br>
-    *This field is currently unavailable.</div>
+    This field is required when BiddingStrategyType is 'MAXIMIZE_CONVERSIONS' in ADD operation. For other BiddingStrategyType, this field is optional in ADD operation.</div>

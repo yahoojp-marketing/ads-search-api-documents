@@ -27,7 +27,7 @@ CampaignServiceBiddingStrategyType:
       <dt class="term__item">MAXIMIZE_CONVERSIONS</dt>
       <dd class="term__desc"><span lang="ja">コンバージョン数を最大化します。<br>※キャンペーンに適用可能です。広告グループには現在設定できません。</span><span lang="en">Maximize Conversions.<br>* Applicable for campaign. Currently not available for ad group.</span></dd>
       <dt class="term__item">MAXIMIZE_CONVERSION_VALUE</dt>
-      <dd class="term__desc"><span lang="ja">コンバージョン価値を最大化します。<br>※こちらのタイプは、現在利用できません。</span><span lang="en">Maximize Conversions Value.<br>*This type is currently unavailable.</span></dd>
+      <dd class="term__desc"><span lang="ja">コンバージョン価値を最大化します。<br>※キャンペーンに適用可能です。広告グループには現在設定できません。</span><span lang="en">Maximize Conversions Value.<br>* Applicable for campaign. Currently not available for ad group.</span></dd>
       <dt class="term__item">TARGET_IMPRESSION_SHARE</dt>
       <dd class="term__desc"><span lang="ja">インプレッションシェアの目標値です。<br>※キャンペーンに適用可能です。広告グループには現在設定できません。</span><span lang="en">Target value of impression share.<br>* Applicable for campaign. Currently not available for ad group.</span></dd>
       <dt class="term__item">UNKNOWN</dt>
