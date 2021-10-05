@@ -328,8 +328,8 @@ Change details on CITY_WARD_DISTRICT
 Check out the v6 API reference that will be posted on September 13, 2021.
 
 ### Overall changes
-- The smallest unit of a row changes from COUNTRY_TERRITORY to COUNTRY_TERRITORY and LOCATION_TYPE
-- Rows that do not have a CITY value disappear
+- Even if LOCATION_TYPE is not selected for the output item, the contents will be output separately according to LOCATION_TYPE.
+- Some lines with a CITY value of "Other" disappear.<br>This will cause a difference in the total compared to account reports and so on.
 
 ## Ad Display Option Report: `FEED_ITEM`
 Data Auto Insertion Report is deprecated. Fields of the report are added to Ad Display Option Report.

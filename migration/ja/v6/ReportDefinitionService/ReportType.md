@@ -18,7 +18,7 @@ Yahoo!検索広告v6 ReportDefinitionServiceでのレポートタイプごとの
 - [ターゲットリストレポート: `TARGET_LIST`](#ターゲットリストレポート-target_list)
 - [キャンペーンターゲットリストレポート: `CAMPAIGN_TARGET_LIST`](#キャンペーンターゲットリストレポート-campaign_target_list)
 - [広告グループターゲットリストレポート: `ADGROUP_TARGET_LIST`](#広告グループターゲットリストレポート-adgroup_target_list)
-- [検索クエリーレポート（動的検索連動型広告）: `KEYWORDLESS_QUERY`](#検索クエリーレポート動的検索連動型広告-keywordless_query`)
+- [検索クエリーレポート（動的検索連動型広告）: `KEYWORDLESS_QUERY`](#検索クエリーレポート動的検索連動型広告-keywordless_query)
 - [データ自動挿入レポート: `AD_CUSTOMIZERS`](#データ自動挿入レポート-ad_customizers)
 - [ページフィードターゲティングレポート: `WEBPAGE_CRITERION`](#ページフィードターゲティングレポート-webpage_criterion)
 - [最終リンク先URLレポート: `LANDING_PAGE_URL`](#最終リンク先URLレポート-landing_page_url)
@@ -328,8 +328,8 @@ CITY_WARD_DISTRICTの変更内容の詳細
 2021年9月13日に掲載されるv6のAPIリファレンスをご確認ください。
 
 ### 全体の変更点
-- 行の最小単位がCOUNTRY_TERRITORYからCOUNTRY_TERRITORYとLOCATION_TYPEになります
-- CITYの値が存在しない行が表示されなくなります
+- 出力項目にLOCATION_TYPEを選択されていない場合も、LOCATION_TYPEにて内容が分かれた状態で出力されます。
+- CITYの値が「その他」の行が一部表示されなくなります。<br>これにより、アカウントレポートなどと比べ合計に差異が発生します。
 
 ## 広告表示オプションレポート: `FEED_ITEM`
 データ自動挿入レポートが廃止になり、広告表示オプションレポートにデータ自動挿入レポートのフィールドが追加されます。
