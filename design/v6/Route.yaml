@@ -262,7 +262,7 @@ tags:
   - name: KeywordEstimatorService
     description: |
       <label class="proposal"></label>
-      <div lang="ja">KeywordEstimatorServiceは、既存のキャンペーンの登録内容（デバイス、地域ターゲティングの設定状況、など）に基づき、獲得できるトラフィックの見積もり機能を提供します。<br>
+      <div lang="ja">KeywordEstimatorServiceは、既存のキャンペーンの登録内容（地域ターゲティングの設定状況、など）に基づき、獲得できるトラフィックの見積もり機能を提供します。<br>
       (deprecated) このAPIは将来のバージョンで削除予定です。このAPIの代わりにKeywordForecastMetricsServiceを使用してください。</div>
       <div lang="en">KeywordEstimatorService is to request traffic estimates based on exsisting campaign data (device, geo targeting setting etc).<br>
       (deprecated) This API is deprecated in the futere version. Use KeywordForecastMetricsService instead of this.</div>

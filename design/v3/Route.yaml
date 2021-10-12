@@ -261,7 +261,7 @@ tags:
   - name: KeywordEstimatorService
     description: |
       <label class="proposal"></label>
-      <div lang="ja">KeywordEstimatorServiceは、既存のキャンペーンの登録内容（デバイス、地域ターゲティングの設定状況、など）に基づき、獲得できるトラフィックの見積もり機能を提供します。</div>
+      <div lang="ja">KeywordEstimatorServiceは、既存のキャンペーンの登録内容（地域ターゲティングの設定状況、など）に基づき、獲得できるトラフィックの見積もり機能を提供します。</div>
       <div lang="en">KeywordEstimatorService is to request traffic estimates based on exsisting campaign data (device, geo targeting setting etc).</div>
   - name: OfflineConversionService
     description: |
