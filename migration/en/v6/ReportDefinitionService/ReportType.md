@@ -289,9 +289,6 @@ Change details on LANDING_PAGE_URL
 ### Changes on items that cannot be combined
 Check out the v6 API reference that will be posted on September 13, 2021.
 
-### Overall changes
-- TRACKING_URL and LANDING_PAGE_URL behave as segments
-
 ## Geo Report `GEO`
 ### Changes by each field
 
