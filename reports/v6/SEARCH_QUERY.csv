@@ -14,7 +14,7 @@
 "CLICKS","クリック数","Clicks","clicks","LONG","false","[CONVERSION_NAME, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",
 "CLICK_RATE","クリック率","CTR","ctr","DOUBLE","false","[CONVERSION_NAME, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",
 "AVG_CPC","平均CPC","Avg. CPC","averageCpc","DOUBLE","false","[CONVERSION_NAME, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",
-"TRACKING_URL","トラッキングURL","Tracking URL","trackingURL","STRING","false",,"Attribute","","",
+"TRACKING_URL","トラッキングURL","Tracking URL","trackingURL","STRING","false",,"Segment","","",
 "FINAL_URL","最終リンク先URL","Final URL","finalURL","STRING","false",,"Segment","","",
 "CONVERSIONS","コンバージョン数","Conversions","conversions","DOUBLE","false","[MONTH_OF_YEAR]","Metric","","",
 "CONV_RATE","コンバージョン率","Conv. Rate","convRate","DOUBLE","false","[CONVERSION_NAME, MONTH_OF_YEAR, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",
