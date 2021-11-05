@@ -8,7 +8,7 @@
 "ADGROUP_NAME","広告グループ名","Ad Group Name","adgroupName","STRING","true",,"Attribute","","",
 "CUSTOM_URL","カスタムURL","Custom URL","customURL","STRING","true",,"Attribute","","",
 "KEYWORD","キーワード","Keyword","keyword","STRING","true",,"Attribute","","",
-"KEYWORD_DISTRIBUTION_SETTINGS","配信設定","Distribution Settings","keywordDistributionSettings","ENUM","true",,"Attribute","オン,オフ,その他","true,false,Other",
+"KEYWORD_DISTRIBUTION_SETTINGS","配信設定","Distribution Settings","keywordDistributionSettings","ENUM","true",,"Attribute","オン,オフ,その他","ON,OFF,Other",
 "KEYWORD_EDITORIAL_STATUS","審査状況","Editorial Status","kwEditorialStatus","ENUM","true",,"Attribute","審査完了,編集内容審査中,審査中,掲載不可,掲載停止,その他","APPROVED,APPROVED_WITH_REVIEW,REVIEW,PRE_DISAPPROVED,POST_DISAPPROVED,Other",
 "ADGROUP_BID","広告グループの入札価格","Ad Group Bid","adGroupBid","LONG","true",,"Attribute","","",
 "BID","入札価格","Bid (JPY)","bid","LONG","true",,"Attribute","","",

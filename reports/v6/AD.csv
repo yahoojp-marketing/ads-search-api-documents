@@ -10,7 +10,7 @@
 "DISPLAY_URL","表示URL","Display URL","displayURL","STRING","true",,"Attribute","","",
 "DESTINATION_URL","リンク先URL","Destination URL","destinationURL","STRING","true",,"Attribute","","",
 "AD_TYPE","広告タイプ","Ad Type","adType","ENUM","true",,"Attribute","テキスト（15・33）,従来のURL形式の広告,ショートテキスト（12・12）,アプリダウンロード広告,拡大テキスト広告,動的検索連動型広告,レスポンシブ検索広告,その他","Text Ad(15-33),Ad with previous URL format,Short Ad(12-12),Mobile app download ads,Extended text ads,Dynamic ads for search,Responsive ads for search,Other",
-"AD_DISTRIBUTION_SETTINGS","配信設定","Distribution Settings","adDistributionSettings","ENUM","true",,"Attribute","オン,オフ,その他","true,false,Other",
+"AD_DISTRIBUTION_SETTINGS","配信設定","Distribution Settings","adDistributionSettings","ENUM","true",,"Attribute","オン,オフ,その他","ON,OFF,Other",
 "AD_EDITORIAL_STATUS","審査状況","Editorial Status","adEditorialStatus","ENUM","true",,"Attribute","審査完了,編集内容審査中,審査中,掲載不可,掲載停止,その他","APPROVED,APPROVED_WITH_REVIEW,REVIEW,PRE_DISAPPROVED,POST_DISAPPROVED,Other",
 "COST","コスト","Cost","cost","LONG","true","[CONVERSION_NAME, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",
 "IMPS","インプレッション数","Impressions","impressions","LONG","true","[CONVERSION_NAME, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",

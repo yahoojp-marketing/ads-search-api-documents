@@ -5,7 +5,7 @@
 "ADGROUP_ID","広告グループID","Ad Group ID","adgroupID","LONG","true",,"Attribute","","",
 "CAMPAIGN_NAME","キャンペーン名","Campaign Name","campaignName","STRING","true",,"Attribute","","",
 "ADGROUP_NAME","広告グループ名","Ad Group Name","adgroupName","STRING","true",,"Attribute","","",
-"ADGROUP_DISTRIBUTION_SETTINGS","配信設定","Distribution Settings","adgroupDistributionSettings","ENUM","true",,"Attribute","オン,オフ,その他","true,false,Other",
+"ADGROUP_DISTRIBUTION_SETTINGS","配信設定","Distribution Settings","adgroupDistributionSettings","ENUM","true",,"Attribute","オン,オフ,その他","ON,OFF,Other",
 "ADGROUP_BID","広告グループの入札価格","Ad Group Bid","adGroupBid","LONG","true",,"Attribute","","",
 "COST","コスト","Cost","cost","LONG","true","[CONVERSION_NAME, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",
 "IMPS","インプレッション数","Impressions","impressions","LONG","true","[CONVERSION_NAME, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",

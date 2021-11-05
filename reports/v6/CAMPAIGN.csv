@@ -3,7 +3,7 @@
 "ACCOUNT_NAME","アカウント名","Account Name","accountName","STRING","true",,"Attribute","","",
 "CAMPAIGN_ID","キャンペーンID","CampaignID","campaignID","LONG","true",,"Attribute","","",
 "CAMPAIGN_NAME","キャンペーン名","Campaign Name","campaignName","STRING","true",,"Attribute","","",
-"CAMPAIGN_DISTRIBUTION_SETTINGS","キャンペーン配信設定","Distribution Settings","campaignDistributionSettings","ENUM","true",,"Attribute","オン,オフ,その他","true,false,Other",
+"CAMPAIGN_DISTRIBUTION_SETTINGS","キャンペーン配信設定","Distribution Settings","campaignDistributionSettings","ENUM","true",,"Attribute","オン,オフ,その他","ON,OFF,Other",
 "CAMPAIGN_DISTRIBUTION_STATUS","配信状況","Distribution Status","campaignDistributionStatus","ENUM","true",,"Attribute","配信中,終了,ペンディング,停止,その他","SERVING,ENDED,PENDING,STOP,Other",
 "DAILY_SPENDING_LIMIT","1日の予算","Daily Spending Limit","dailySpendingLimit","LONG","true",,"Attribute","","",
 "CAMPAIGN_START_DATE","開始日","Start Date","campaignStartDate","STRING","true",,"Attribute","","",
@@ -13,8 +13,8 @@
 "CLICKS","クリック数","Clicks","clicks","LONG","true","[CONVERSION_NAME, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",
 "CLICK_RATE","クリック率","CTR","ctr","DOUBLE","true","[CONVERSION_NAME, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",
 "AVG_CPC","平均CPC","Avg. CPC","averageCpc","DOUBLE","true","[CONVERSION_NAME, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",
-"INVALID_CLICKS","無効なクリック","Invalid Clicks","invalidClicks","LONG","true","[CONVERSION_NAME, DEVICE, HOUR_OF_DAY, MONTH_OF_YEAR, OBJECT_OF_CONVERSION_TRACKING, STATS_G_TARGET_DEVICE_ID]","Metric","","",
-"INVALID_CLICK_RATE","無効なクリック率","Invalid Click Rate","invalidClickRate","DOUBLE","true","[CONVERSION_NAME, DEVICE, HOUR_OF_DAY, MONTH_OF_YEAR, OBJECT_OF_CONVERSION_TRACKING, STATS_G_TARGET_DEVICE_ID]","Metric","","",
+"INVALID_CLICKS","無効なクリック","Invalid Clicks","invalidClicks","LONG","true","[CONVERSION_NAME, DEVICE, HOUR_OF_DAY, MONTH_OF_YEAR, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",
+"INVALID_CLICK_RATE","無効なクリック率","Invalid Click Rate","invalidClickRate","DOUBLE","true","[CONVERSION_NAME, DEVICE, HOUR_OF_DAY, MONTH_OF_YEAR, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",
 "IMPRESSION_SHARE","インプレッションシェア","Impression Share","impressionShare","DOUBLE","true","[CLICK_TYPE, CONVERSION_NAME, MONTH_OF_YEAR, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",
 "EXACT_MATCH_IMPRESSION_SHARE","完全一致のインプレッションシェア","Exact Match Impression Share","exactMatchImpressionShare","DOUBLE","true","[CLICK_TYPE, CONVERSION_NAME, HOUR_OF_DAY, MONTH_OF_YEAR, OBJECT_OF_CONVERSION_TRACKING]","Metric","","","データ取得出来ない場合、値に[--]が設定されます/When the data cannot be retrieved, the value is set to [--]"
 "BUDGET_LOST_IMPRESSION_SHARE","インプレッション損失率（予算）","Budget Lost Impression Share","budgetLostImpressionShare","DOUBLE","true","[CLICK_TYPE, CONVERSION_NAME, MONTH_OF_YEAR, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",
@@ -51,7 +51,7 @@
 "LABELS_JSON","ラベル(JSON)","Labels(JSON)","labelsJson","STRING","true",,"Attribute","","",
 "BID_STRATEGY_ID","自動入札ID","Auto Bidding ID","autoBiddingID","LONG","true",,"Attribute","","","データ取得出来ない場合、値に[--]が設定されます/When the data cannot be retrieved, the value is set to [--]"
 "BID_STRATEGY_NAME","自動入札名","Auto Bidding Name","autoBiddingName","STRING","true",,"Attribute","","",
-"BID_STRATEGY_TYPE","入札方法","Bidding","bidding","ENUM","true",,"Attribute","個別クリック単価,検索結果ページの目標掲載位置,クリック数の最大化,拡張クリック単価（旧「コンバージョン数の最大化」）,コンバージョン単価の目標値,広告費用対効果の目標値,コンバージョン数の最大化,ページ最上部掲載,その他","Individual CPC,Target position in search results,Maximize Clicks,Enhanced CPC (Former: Maximize Conversions),Target CPA,Target ROAS,Maximize Conversions,Absolute top placement,Other",
+"BID_STRATEGY_TYPE","入札方法","Bidding","bidding","ENUM","true",,"Attribute","個別クリック単価,検索結果ページの目標掲載位置,クリック数の最大化,拡張クリック単価（旧「コンバージョン数の最大化」）,コンバージョン単価の目標値,広告費用対効果の目標値,コンバージョン数の最大化,ページ最上部掲載,コンバージョン価値の最大化,その他","Individual CPC,Target position in search results,Maximize Clicks,Enhanced CPC (Former: Maximize Conversions),Target CPA,Target ROAS,Maximize Conversions,Absolute top placement,Maximize conversion value,Other",
 "ENHANCED_CPC_ENABLED","拡張クリック単価設定","Enhanced CPC","enhancedCpcEnabled","ENUM","true",,"Attribute","有効,無効","true,false",
 "ABSOLUTE_TOP_IMPRESSION_PERCENTAGE","インプレッションにおけるページ最上部の割合","Search absolute top impression rate","absoluteTopImpressionPercentage","DOUBLE","true","[CLICK_TYPE, CONVERSION_NAME, HOUR_OF_DAY, MONTH_OF_YEAR, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",
 "TOP_IMPRESSION_PERCENTAGE","インプレッションにおけるページ上部の割合","Search top impression rate","topImpressionPercentage","DOUBLE","true","[CLICK_TYPE, CONVERSION_NAME, HOUR_OF_DAY, MONTH_OF_YEAR, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",
