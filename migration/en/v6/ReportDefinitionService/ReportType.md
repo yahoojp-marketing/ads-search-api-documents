@@ -193,6 +193,10 @@ Change details on LANDING_PAGE_URL_SMARTPHONE
 ### Changes on items that cannot be combined
 Check out the v6 API reference that will be posted on September 13, 2021.
 
+### Other
+If AD_KEYWORD_ID is specified in the output field, the line of ad type: dynamic search-linked ad will not be output.
+If you want to output the rows of dynamic search-linked ads, please create a report without including AD_KEYWORD_ID.
+
 ## Keyword Report: `KEYWORDS`
 ### Changes by each field
 
