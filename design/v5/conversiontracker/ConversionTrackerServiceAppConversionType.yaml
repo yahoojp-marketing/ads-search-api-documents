@@ -16,9 +16,9 @@ ConversionTrackerServiceAppConversionType:
       <dt class="term__item">DOWNLOAD</dt>
       <dd class="term__desc"><span lang="ja">アプリダウンロード時のコンバージョンです。</span><span lang="en">App download conversion.</span></dd>
       <dt class="term__item">IN_APP_PURCHASE</dt>
-      <dd class="term__desc"><span lang="ja">アプリ内行動コンバージョンです。</span><span lang="en">In-app action conversion.</span></dd>
+      <dd class="term__desc"><span lang="ja">アプリ内行動コンバージョンです。<br>※IN_APP_PURCHASEの登録と更新は廃止され、現在設定できません。</span><span lang="en">In-app action conversion.<br>*Adding and editing IN_APP_PURCHASE is obsolete. Currently not available.</span></dd>
       <dt class="term__item">FIRST_OPEN</dt>
-      <dd class="term__desc"><span lang="ja">アプリ初回起動コンバージョンです。</span><span lang="en">App first open conversion.</span></dd>
+      <dd class="term__desc"><span lang="ja">アプリ初回起動コンバージョンです。<br>※FIRST_OPENの登録と更新は廃止され、現在設定できません。</span><span lang="en">App first open conversion.<br>*Adding and editing FIRST_OPEN is obsolete. Currently not available.</span></dd>
       <dt class="term__item">UNKNOWN</dt>
       <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
     </dl>
