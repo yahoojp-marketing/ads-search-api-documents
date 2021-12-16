@@ -6,5 +6,5 @@
 "CAMPAIGN_ID","キャンペーンID","CampaignID","campaignID","LONG","true",,"Attribute","","",
 "CAMPAIGN_NAME","キャンペーン名","Campaign Name","campaignName","STRING","true",,"Attribute","","",
 "DEVICE_TYPE","入札価格調整率を設定したデバイス","Device","deviceType","ENUM","false",,"Attribute","PC,スマートフォン,タブレット,その他","PC,Smartphone,Tablet,Other",
-"BID_MULTIPLIER","入札価格調整率(％)","Bid Adjustment(%)","bidAdjustment","DOUBLE","true",,"Attribute","","","データ取得出来ない場合、値に[--]が設定されます/When the data cannot be retrieved, the value is set to [--]"
+"BID_MULTIPLIER","入札価格調整率(％)","Bid Adjustment(%)","bidAdjustment","DOUBLE","true",,"Attribute","","","データ取得出来ない場合、値は空文字が設定されます/When the data cannot be retrieved, the value is set to a blank"
 "BID_MODIFIER_ATTACHMENT_LEVEL","入札価格調整率の対象","Level","bidModifierAttachmentLevel","ENUM","false",,"Attribute","広告グループ,キャンペーン,その他","Ad Group,Campaign,Other",

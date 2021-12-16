@@ -13,8 +13,8 @@
 "ADGROUP_BID","広告グループの入札価格","Ad Group Bid","adGroupBid","LONG","true",,"Attribute","","",
 "BID","入札価格","Bid (JPY)","bid","LONG","true",,"Attribute","","",
 "NEGATIVE_KEYWORD","対象外キーワード","Negative Keywords","negativeKeywords","STRING","true",,"Attribute","","",
-"QUALITY_INDEX","品質インデックス","Quality Index","qualityIndex","LONG","true",,"Attribute","","","データ取得出来ない場合、値に[--]が設定されます/When the data cannot be retrieved, the value is set to [--]"
-"FIRST_PAGE_BID_ESTIMATE","1ページ目掲載に必要な入札価格","First Page Bid Estimate","firstPageBidEstimate","LONG","true",,"Attribute","","","データ取得出来ない場合、値に[--]が設定されます/When the data cannot be retrieved, the value is set to [--]"
+"QUALITY_INDEX","品質インデックス","Quality Index","qualityIndex","LONG","true",,"Attribute","","","データ取得出来ない場合、値は空文字が設定されます/When the data cannot be retrieved, the value is set to a blank"
+"FIRST_PAGE_BID_ESTIMATE","1ページ目掲載に必要な入札価格","First Page Bid Estimate","firstPageBidEstimate","LONG","true",,"Attribute","","","データ取得出来ない場合、値は空文字が設定されます/When the data cannot be retrieved, the value is set to a blank"
 "KEYWORD_MATCH_TYPE","マッチタイプ","Match Type","keywordMatchType","ENUM","true",,"Attribute","完全一致,フレーズ一致,部分一致,その他","EXACT,PHRASE,BROAD,Other",
 "COST","コスト","Cost","cost","LONG","true","[CONVERSION_NAME, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",
 "IMPS","インプレッション数","Impressions","impressions","LONG","true","[CONVERSION_NAME, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",
@@ -22,9 +22,9 @@
 "CLICK_RATE","クリック率","CTR","ctr","DOUBLE","true","[CONVERSION_NAME, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",
 "AVG_CPC","平均CPC","Avg. CPC","averageCpc","DOUBLE","true","[CONVERSION_NAME, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",
 "IMPRESSION_SHARE","インプレッションシェア","Impression Share","impressionShare","DOUBLE","true","[CLICK_TYPE, CONVERSION_NAME, MONTH_OF_YEAR, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",
-"EXACT_MATCH_IMPRESSION_SHARE","完全一致のインプレッションシェア","Exact Match Impression Share","exactMatchImpressionShare","DOUBLE","true","[CLICK_TYPE, CONVERSION_NAME, MONTH_OF_YEAR, OBJECT_OF_CONVERSION_TRACKING]","Metric","","","データ取得出来ない場合、値に[--]が設定されます/When the data cannot be retrieved, the value is set to [--]"
+"EXACT_MATCH_IMPRESSION_SHARE","完全一致のインプレッションシェア","Exact Match Impression Share","exactMatchImpressionShare","DOUBLE","true","[CLICK_TYPE, CONVERSION_NAME, MONTH_OF_YEAR, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",
 "QUALITY_LOST_IMPRESSION_SHARE","インプレッション損失率（掲載順位）","Quality Lost Impression Share","qualityLostImpressionShare","DOUBLE","true","[CLICK_TYPE, CONVERSION_NAME, MONTH_OF_YEAR, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",
-"TOP_OF_PAGE_BID_ESTIMATE","1ページ目上部掲載に必要な入札価格","Top Of Page Bid Estimate","topOfPageBidEstimate","LONG","true",,"Attribute","","","データ取得出来ない場合、値に[--]が設定されます/When the data cannot be retrieved, the value is set to [--]"
+"TOP_OF_PAGE_BID_ESTIMATE","1ページ目上部掲載に必要な入札価格","Top Of Page Bid Estimate","topOfPageBidEstimate","LONG","true",,"Attribute","","","データ取得出来ない場合、値は空文字が設定されます/When the data cannot be retrieved, the value is set to a blank"
 "TRACKING_URL","トラッキングURL","Tracking URL","trackingURL","STRING","true",,"Attribute","","",
 "CUSTOM_PARAMETERS","カスタムパラメータ","Custom Parameters","customParameters","STRING","true",,"Attribute","","",
 "FINAL_URL","最終リンク先URL","Final URL","finalURL","STRING","true",,"Attribute","","",
@@ -39,7 +39,7 @@
 "ALL_CONV_VALUE","すべてのコンバージョンの価値","All Conv. Value","allConvValue","DOUBLE","true","[MONTH_OF_YEAR]","Metric","","",
 "COST_PER_ALL_CONV","コスト/すべてのコンバージョン数","Cost Per All Conv.","costPerAllConv","DOUBLE","true","[CONVERSION_NAME, MONTH_OF_YEAR, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",
 "VALUE_PER_ALL_CONV","価値/すべてのコンバージョン数","Value Per All Conv.","valuePerAllConv","DOUBLE","true","[MONTH_OF_YEAR]","Metric","","",
-"CROSS_DEVICE_CONVERSIONS","デバイスをまたいだコンバージョン数","Conversions across devices","crossDeviceConversions","DOUBLE","true",,"Metric","","","データ取得出来ない場合、値に[--]が設定されます/When the data cannot be retrieved, the value is set to [--]"
+"CROSS_DEVICE_CONVERSIONS","デバイスをまたいだコンバージョン数","Conversions across devices","crossDeviceConversions","DOUBLE","true",,"Metric","","","データ取得出来ない場合、値は空文字が設定されます/When the data cannot be retrieved, the value is set to a blank"
 "CAMPAIGN_TRACKING_ID","キャンペーントラッキングID","Campaign Tracking ID","campaignTrackingID","LONG","true",,"Attribute","","",
 "ADGROUP_TRACKING_ID","広告グループトラッキングID","Ad Group Tracking ID","adgroupTrackingID","LONG","true",,"Attribute","","",
 "KEYWORD_TRACKING_ID","キーワードトラッキングID","Keyword Tracking ID","keywordTrackingID","LONG","true",,"Attribute","","",
@@ -59,8 +59,8 @@
 "LABELS_JSON","ラベル(JSON)","Labels(JSON)","labelsJson","STRING","true",,"Attribute","","",
 "ABSOLUTE_TOP_IMPRESSION_PERCENTAGE","インプレッションにおけるページ最上部の割合","Search absolute top impression rate","absoluteTopImpressionPercentage","DOUBLE","true","[CLICK_TYPE, CONVERSION_NAME, MONTH_OF_YEAR, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",
 "TOP_IMPRESSION_PERCENTAGE","インプレッションにおけるページ上部の割合","Search top impression rate","topImpressionPercentage","DOUBLE","true","[CLICK_TYPE, CONVERSION_NAME, MONTH_OF_YEAR, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",
-"SEARCH_ABSOLUTE_TOP_IMPRESSION_SHARE","ページ最上部のインプレッションシェア","Search absolute top impression share","searchAbsoluteTopImpressionShare","DOUBLE","true","[CLICK_TYPE, CONVERSION_NAME, OBJECT_OF_CONVERSION_TRACKING]","Metric","","","データ取得出来ない場合、値に[--]が設定されます/When the data cannot be retrieved, the value is set to [--]"
-"SEARCH_TOP_IMPRESSION_SHARE","ページ上部のインプレッションシェア","Search top impression share","searchTopImpressionShare","DOUBLE","true","[CLICK_TYPE, CONVERSION_NAME, MONTH_OF_YEAR, OBJECT_OF_CONVERSION_TRACKING]","Metric","","","データ取得出来ない場合、値に[--]が設定されます/When the data cannot be retrieved, the value is set to [--]"
+"SEARCH_ABSOLUTE_TOP_IMPRESSION_SHARE","ページ最上部のインプレッションシェア","Search absolute top impression share","searchAbsoluteTopImpressionShare","DOUBLE","true","[CLICK_TYPE, CONVERSION_NAME, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",
+"SEARCH_TOP_IMPRESSION_SHARE","ページ上部のインプレッションシェア","Search top impression share","searchTopImpressionShare","DOUBLE","true","[CLICK_TYPE, CONVERSION_NAME, MONTH_OF_YEAR, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",
 "SEARCH_BUDGET_LOST_ABSOLUTE_TOP_IMPRESSION_SHARE","ページ最上部のインプレッション損失率（予算）","Search lost absolute top impression share (budget)","searchBudgetLostAbsoluteTopImpressionShare","DOUBLE","true","[CLICK_TYPE, CONVERSION_NAME, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",
 "SEARCH_RANK_LOST_ABSOLUTE_TOP_IMPRESSION_SHARE","ページ最上部のインプレッション損失率（掲載順位）","Search lost absolute top impression share (rank)","searchRankLostAbsoluteTopImpressionShare","DOUBLE","true","[CLICK_TYPE, CONVERSION_NAME, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",
 "SEARCH_BUDGET_LOST_TOP_IMPRESSION_SHARE","ページ上部のインプレッション損失率（予算）","Search lost top impression share (budget)","searchBudgetLostTopImpressionShare","DOUBLE","true","[CLICK_TYPE, CONVERSION_NAME, MONTH_OF_YEAR, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",
@@ -68,6 +68,6 @@
 "SYSTEM_SERVING_STATUS","キーワードの状況","Keyword status","keywordStatus","ENUM","true",,"Attribute","掲載,検索数が少ない,その他","Active,Low search volume,Other",
 "CONV_VALUE_PER_COST","コンバージョンの価値/コスト","Conv. Value Per Cost","convValuePerCost","DOUBLE","true","[CONVERSION_NAME, MONTH_OF_YEAR, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",
 "ALL_CONV_VALUE_PER_COST","すべてのコンバージョンの価値/コスト","All Conv. Value Per Cost","allConvValuePerCost","DOUBLE","true","[CONVERSION_NAME, MONTH_OF_YEAR, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",
-"SEARCH_PREDICTED_CTR","推定クリック値","Expected CTR","searchPredictedCtr","ENUM","true",,"Attribute","平均より上,平均値,平均より下","Above average,Average,Below average","データ取得出来ない場合、値に[--]が設定されます/When the data cannot be retrieved, the value is set to [--]"
-"HISTORICAL_QUALITY_SCORE","品質インデックス（履歴）","Quality index (hist.)","historicalQualityScore","LONG","true","[CLICK_TYPE, CONVERSION_NAME, DAY_OF_WEEK, DEVICE, NETWORK, OBJECT_OF_CONVERSION_TRACKING]","Metric","","","データ取得出来ない場合、値に[--]が設定されます/When the data cannot be retrieved, the value is set to [--]"
-"HISTORICAL_SEARCH_PREDICTED_CTR","推定クリック値（履歴）","Expected CTR (hist.)","historicalSearchPredictedCtr","ENUM","true","[CLICK_TYPE, CONVERSION_NAME, DAY_OF_WEEK, DEVICE, NETWORK, OBJECT_OF_CONVERSION_TRACKING]","Metric","平均より上,平均値,平均より下","Above average,Average,Below average","データ取得出来ない場合、値に[--]が設定されます/When the data cannot be retrieved, the value is set to [--]"
+"SEARCH_PREDICTED_CTR","推定クリック値","Expected CTR","searchPredictedCtr","ENUM","true",,"Attribute","平均より上,平均値,平均より下","Above average,Average,Below average","データ取得出来ない場合、値は空文字が設定されます/When the data cannot be retrieved, the value is set to a blank"
+"HISTORICAL_QUALITY_SCORE","品質インデックス（履歴）","Quality index (hist.)","historicalQualityScore","LONG","true","[CLICK_TYPE, CONVERSION_NAME, DAY_OF_WEEK, DEVICE, NETWORK, OBJECT_OF_CONVERSION_TRACKING]","Metric","","","データ取得出来ない場合、値は空文字が設定されます/When the data cannot be retrieved, the value is set to a blank"
+"HISTORICAL_SEARCH_PREDICTED_CTR","推定クリック値（履歴）","Expected CTR (hist.)","historicalSearchPredictedCtr","ENUM","true","[CLICK_TYPE, CONVERSION_NAME, DAY_OF_WEEK, DEVICE, NETWORK, OBJECT_OF_CONVERSION_TRACKING]","Metric","平均より上,平均値,平均より下","Above average,Average,Below average","データ取得出来ない場合、値は空文字が設定されます/When the data cannot be retrieved, the value is set to a blank"

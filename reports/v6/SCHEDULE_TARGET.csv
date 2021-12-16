@@ -8,7 +8,7 @@
 "CLICKS","クリック数","Clicks","clicks","LONG","true",,"Metric","","",
 "CLICK_RATE","クリック率","CTR","ctr","DOUBLE","true",,"Metric","","",
 "AVG_CPC","平均CPC","Avg. CPC","averageCpc","DOUBLE","true",,"Metric","","",
-"BID_MULTIPLIER","入札価格調整率(％)","Bid Adjustment(%)","bidAdjustment","DOUBLE","true",,"Attribute","","","データ取得出来ない場合、値に[--]が設定されます/When the data cannot be retrieved, the value is set to [--]"
+"BID_MULTIPLIER","入札価格調整率(％)","Bid Adjustment(%)","bidAdjustment","DOUBLE","true",,"Attribute","","","データ取得出来ない場合、値は空文字が設定されます/When the data cannot be retrieved, the value is set to a blank"
 "TARGET_SCHEDULE_ID","曜日・時間帯ID","Target Schedule ID","targetScheduleID","LONG","true",,"Attribute","","",
 "TARGET_SCHEDULE","曜日・時間帯","Target Schedule","targetSchedule","ENUM","true",,"Attribute","月曜日,火曜日,水曜日,木曜日,金曜日,土曜日,日曜日,その他","Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday,Other",
 "CONVERSIONS","コンバージョン数","Conversions","conversions","DOUBLE","true","[MONTH_OF_YEAR]","Metric","","",
@@ -21,7 +21,7 @@
 "ALL_CONV_VALUE","すべてのコンバージョンの価値","All Conv. Value","allConvValue","DOUBLE","true","[MONTH_OF_YEAR]","Metric","","",
 "COST_PER_ALL_CONV","コスト/すべてのコンバージョン数","Cost Per All Conv.","costPerAllConv","DOUBLE","true","[MONTH_OF_YEAR]","Metric","","",
 "VALUE_PER_ALL_CONV","価値/すべてのコンバージョン数","Value Per All Conv.","valuePerAllConv","DOUBLE","true","[MONTH_OF_YEAR]","Metric","","",
-"CROSS_DEVICE_CONVERSIONS","デバイスをまたいだコンバージョン数","Conversions across devices","crossDeviceConversions","DOUBLE","true",,"Metric","","","データ取得出来ない場合、値に[--]が設定されます/When the data cannot be retrieved, the value is set to [--]"
+"CROSS_DEVICE_CONVERSIONS","デバイスをまたいだコンバージョン数","Conversions across devices","crossDeviceConversions","DOUBLE","true",,"Metric","","","データ取得出来ない場合、値は空文字が設定されます/When the data cannot be retrieved, the value is set to a blank"
 "CAMPAIGN_TRACKING_ID","キャンペーントラッキングID","Campaign Tracking ID","campaignTrackingID","LONG","true",,"Attribute","","",
 "DAY","日","Day","day","STRING","false",,"Segment","","",
 "QUARTER","四半期","Quarter","quarter","STRING","false",,"Segment","","",
