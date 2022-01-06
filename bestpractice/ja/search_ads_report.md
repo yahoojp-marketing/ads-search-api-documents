@@ -59,12 +59,12 @@ ReportDefinitionServiceのaddを使用します。以下の指定が必要です
 ##### ＜リクエストサンプル＞
 ```json
 {
-  "accountId": "11111111",
+  "accountId": 11111111,
   "operand": [
     {
       "dateRange": {
-        "endDate": "20371231",
-        "startDate": "19700101"
+        "endDate": "20211231",
+        "startDate": "20211101"
       },
       "fields": [
         "COST",
@@ -72,7 +72,6 @@ ReportDefinitionServiceのaddを使用します。以下の指定が必要です
         "CLICKS",
         "CLICK_RATE",
         "AVG_CPC",
-        "AVG_DELIVER_RANK",
         "TRACKING_URL",
         "CONVERSIONS",
         "CONV_RATE",
@@ -87,7 +86,6 @@ ReportDefinitionServiceのaddを使用します。以下の指定が必要です
         "QUARTER",
         "YEAR",
         "MONTH",
-        "MONTH_OF_YEAR",
         "WEEK",
         "HOUR_OF_DAY"
       ],
@@ -102,10 +100,9 @@ ReportDefinitionServiceのaddを使用します。以下の指定が必要です
       ],
       "reportCompressType": "ZIP",
       "reportDateRangeType": "CUSTOM_DATE",
-      "reportDownloadEncode": "UTF-8",
+      "reportDownloadEncode": "UTF8",
       "reportDownloadFormat": "CSV",
       "reportIncludeDeleted": "TRUE",
-      "reportIncludeZeroImpressions": "TRUE",
       "reportLanguage": "JA",
       "reportName": "Sample Report Definition",
       "reportType": "ACCOUNT",
@@ -121,49 +118,80 @@ ReportDefinitionServiceのaddを使用します。以下の指定が必要です
 ```
 
 ##### ＜レスポンスサンプル＞
-※長くなるため、一部、省略しています。
+
 ```json
 {
-    "errors": null,
-    "rid": "1",
-    "rval": {
-        "values": [
+  "errors": null,
+  "rid": "398875d659ae490e14fd8354ff8ff1b6",
+  "rval": {
+    "values": [
+      {
+        "errors": null,
+        "operationSucceeded": true,
+        "reportDefinition": {
+          "accountId": 11111111,
+          "completeTime": null,
+          "dateRange": {
+            "endDate": "20211231",
+            "startDate": "20211101"
+          },
+          "fields": [
+            "COST",
+            "IMPS",
+            "CLICKS",
+            "CLICK_RATE",
+            "AVG_CPC",
+            "TRACKING_URL",
+            "CONVERSIONS",
+            "CONV_RATE",
+            "CONV_VALUE",
+            "COST_PER_CONV",
+            "VALUE_PER_CONV",
+            "NETWORK",
+            "CLICK_TYPE",
+            "DEVICE",
+            "DAY",
+            "DAY_OF_WEEK",
+            "QUARTER",
+            "YEAR",
+            "MONTH",
+            "WEEK",
+            "HOUR_OF_DAY"
+          ],
+          "filters": [
             {
-                "errors": null,
-                "operationSucceeded": true,
-                "reportDefinition": {
-                    "accountId": 11111111,
-                    "completeTime": null,
-                    "dateRange": {
-                        "endDate": "20371231",
-                        "startDate": "19700101"
-                    },
-                    "fields": [
-                        "COST",
-                        ...
-                    ],
-                    "filters": [
-                        {
-                            "field": "COST",
-                            "reportOperator": "NOT_EQUALS",
-                            "value": [
-                                "100"
-                            ]
-                        }
-                    ],
-                    "reportCompressType": "ZIP",
-                    "reportDateRangeType": "CUSTOM_DATE",
-                    "reportDownloadEncode": "UTF-8",
-                    "reportDownloadFormat": "CSV",
-                    "reportIncludeDeleted": "TRUE",
-                    "reportIncludeZeroImpressions": "TRUE",
-                    "reportJobErrorDetail": null,
-                    "reportJobId": 11111111,
-                    ...
-                }
+              "field": "COST",
+              "filterOperator": "NOT_EQUALS",
+              "values": [
+                "100"
+              ]
             }
-        ]
-    }
+          ],
+          "reportCompressType": "ZIP",
+          "reportDateRangeType": "CUSTOM_DATE",
+          "reportDecimalPartDisplayType": "SIMPLE_DISPLAY",
+          "reportDownloadEncode": "UTF8",
+          "reportDownloadFormat": "CSV",
+          "reportIncludeDeleted": "TRUE",
+          "reportJobErrorDetail": null,
+          "reportJobId": 2222222222,
+          "reportJobStatus": "WAIT",
+          "reportLanguage": "JA",
+          "reportName": "Sample Report Definition",
+          "reportSkipColumnHeader": "FALSE",
+          "reportSkipReportSummary": "FALSE",
+          "reportType": "ACCOUNT",
+          "requestTime": "2021/12/24 19:18:38",
+          "sortFields": [
+            {
+              "field": "CLICKS",
+              "reportSortType": "ASC"
+            }
+          ]
+        }
+      }
+    ]
+  }
 }
 ```
 
@@ -178,58 +206,88 @@ ReportDefinitionServiceのgetを使用します。<br>
   "accountId": 11111111,
   "numberResults": 1,
   "reportJobIds": [
-    11111111
+    2222222222
   ],
   "startIndex": 1
 }
 ```
 
 ##### ＜レスポンスサンプル＞
-※長くなるため、一部、省略しています。
+
 ```json
 {
-    "errors": null,
-    "rid": "11111111",
-    "rval": {
-        "totalNumEntries": 1,
-        "values": [
+  "errors": null,
+  "rid": "0865ecc73df3bec4b8cac750efde2668",
+  "rval": {
+    "totalNumEntries": 1,
+    "values": [
+      {
+        "errors": null,
+        "operationSucceeded": true,
+        "reportDefinition": {
+          "accountId": 11111111,
+          "completeTime": "2021/12/24 19:18:43",
+          "dateRange": {
+            "endDate": "20211231",
+            "startDate": "20211101"
+          },
+          "fields": [
+            "COST",
+            "IMPS",
+            "CLICKS",
+            "CLICK_RATE",
+            "AVG_CPC",
+            "TRACKING_URL",
+            "CONVERSIONS",
+            "CONV_RATE",
+            "CONV_VALUE",
+            "COST_PER_CONV",
+            "VALUE_PER_CONV",
+            "NETWORK",
+            "CLICK_TYPE",
+            "DEVICE",
+            "DAY",
+            "DAY_OF_WEEK",
+            "QUARTER",
+            "YEAR",
+            "MONTH",
+            "WEEK",
+            "HOUR_OF_DAY"
+          ],
+          "filters": [
             {
-                "errors": null,
-                "operationSucceeded": true,
-                "reportDefinition": {
-                    "accountId": 11111111,
-                    "completeTime": "2020/05/22 10:52:05",
-                    "dateRange": {
-                        "endDate": "20371231",
-                        "startDate": "19700101"
-                    },
-                    "fields": [
-                        "COST",
-                        ...
-                    ],
-                    "filters": [
-                        {
-                            "field": "COST",
-                            "reportOperator": "NOT_EQUALS",
-                            "value": [
-                                "100"
-                            ]
-                        }
-                    ],
-                    "reportCompressType": "ZIP",
-                    "reportDateRangeType": "CUSTOM_DATE",
-                    "reportDownloadEncode": "UTF-8",
-                    "reportDownloadFormat": "CSV",
-                    "reportIncludeDeleted": "TRUE",
-                    "reportIncludeZeroImpressions": "TRUE",
-                    "reportJobErrorDetail": null,
-                    "reportJobId": 11111111,
-                    "reportJobStatus": "COMPLETED",
-                    ...
-                }
+              "field": "COST",
+              "filterOperator": "NOT_EQUALS",
+              "values": [
+                "100"
+              ]
             }
-        ]
-    }
+          ],
+          "reportCompressType": "ZIP",
+          "reportDateRangeType": "CUSTOM_DATE",
+          "reportDecimalPartDisplayType": "SIMPLE_DISPLAY",
+          "reportDownloadEncode": "UTF8",
+          "reportDownloadFormat": "CSV",
+          "reportIncludeDeleted": "TRUE",
+          "reportJobErrorDetail": null,
+          "reportJobId": 2222222222,
+          "reportJobStatus": "COMPLETED",
+          "reportLanguage": "JA",
+          "reportName": "Sample Report Definition",
+          "reportSkipColumnHeader": "FALSE",
+          "reportSkipReportSummary": "FALSE",
+          "reportType": "ACCOUNT",
+          "requestTime": "2021/12/24 19:18:38",
+          "sortFields": [
+            {
+              "field": "CLICKS",
+              "reportSortType": "ASC"
+            }
+          ]
+        }
+      }
+    ]
+  }
 }
 ```
 
@@ -248,13 +306,6 @@ ReportDefinitionServiceのdownloadを使用します。<br>
 ##### ＜レスポンスサンプル＞
 ※対象のデータがない場合、以下のようになります。<br>
 ```.csv
-コスト,インプレッション数,クリック数,クリック率,平均CPC,平均掲載順位,トラッキングURL,コンバージョン数,コンバージョン率,コンバージョンの価値,コスト/コンバージョン数,価値/コンバージョン数,広告掲載方式の指定,クリック種別,デバイス,日,曜日,四半期,年間,毎月,月,毎週,時間
-0,
-0,
-0,
-0.0000,
-0.0000,--,--,
-0.0000,--,
-0.0000,--,
-0.0000,--,--,--,--,--,--,--,--,--,--,--
+コスト,インプレッション数,クリック数,クリック率,平均CPC,トラッキングURL,コンバージョン数,コンバージョン率,コンバージョンの価値,コスト/コンバージョン数,価値/コンバージョン数,広告掲載方式の指定,クリック種別,デバイス,日,曜日,四半期,年間,毎月,毎週,時間
+0,0,0,0,0,,0,0,0,0,0,,,,,,,,,,
 ```
