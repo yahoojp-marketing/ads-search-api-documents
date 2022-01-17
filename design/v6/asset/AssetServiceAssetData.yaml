@@ -1,0 +1,20 @@
+AssetServiceAssetData:
+  type: object
+  nullable: true
+  properties:
+    'type':
+      $ref: 'AssetServiceType.yaml#/AssetServiceType'
+    quickLinkAsset:
+      $ref: 'AssetServiceQuickLinkAsset.yaml#/AssetServiceQuickLinkAsset'
+    callAsset:
+      $ref: 'AssetServiceCallAsset.yaml#/AssetServiceCallAsset'
+    calloutAsset:
+      $ref: 'AssetServiceCalloutAsset.yaml#/AssetServiceCalloutAsset'
+    structuredSnippetAsset:
+      $ref: 'AssetServiceStructuredSnippetAsset.yaml#/AssetServiceStructuredSnippetAsset'
+  title: AssetServiceAssetData
+  description: |
+    <div lang="ja">AssetServiceAssetDataオブジェクトは、アセットの詳細情報を格納します。<br>
+    このフィールドは、ADD時は必須となり、SET時は省略可能となります。</div>
+    <div lang="en">AssetServiceAssetData object contains the details of Asset.<br>
+    This field is required in ADD operation, and will be optional in SET operation.</div>

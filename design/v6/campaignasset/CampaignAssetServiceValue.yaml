@@ -1,0 +1,21 @@
+CampaignAssetServiceValue:
+  type: object
+  nullable: true
+  properties:
+    campaignAsset:
+      $ref: 'CampaignAsset.yaml#/CampaignAsset'
+    errors:
+      type: array
+      nullable: true
+      items:
+        $ref: '../../Error.yaml#/Error'
+    operationSucceeded:
+      type: boolean
+      nullable: true
+      description: |
+        <div lang="ja">処理結果です。trueの場合は、処理は成功しました。falseの場合は処理が失敗しています。</div>
+        <div lang="en">The process results. If true, the process succeeded. If false, the process failed.</div>
+  title: CampaignAssetServiceValue
+  description: |
+    <div lang="ja">CampaignAssetServiceValueオブジェクトは、キャンペーンとアセット間の設定情報を格納するコンテナです。</div>
+    <div lang="en">CampaignAssetServiceValue is a container of configuration information between campaign and assets.</div>

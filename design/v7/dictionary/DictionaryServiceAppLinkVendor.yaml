@@ -1,0 +1,26 @@
+DictionaryServiceAppLinkVendor:
+  type: object
+  nullable: true
+  properties:
+    appVendorId:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">アプリ計測ベンダーIDです。</div>
+        <div lang="en">App Vendor ID.</div>
+    appVendorNameJa:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">アプリ計測ベンダー名（日本語）です。</div>
+        <div lang="en">App Vendor Name in Japanese.</div>
+    appVendorNameEn:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">アプリ計測ベンダー名（英語）です。</div>
+        <div lang="en">App Vendor Name in English.</div>
+  title: DictionaryServiceAppLinkVendor
+  description: |
+    <div lang="ja">DictionaryServiceAppLinkVendor オブジェクトは、 アプリ計測ベンダー情報を格納するコンテナです。</div>
+    <div lang="en">DictionaryServiceAppLinkVendor object is a container that stores App measurement vendor information.</div>

@@ -1,0 +1,26 @@
+AccountServicePage:
+  type: object
+  nullable: true
+  properties:
+    authorizationBusinessId:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">アプリケーションによるYahoo!広告へのアクセスを認可したYahoo! JAPANビジネスIDです。</div>
+        <div lang="en">Yahoo! JAPAN Business ID that authorized access to Yahoo! JAPAN Ads via application.</div>
+    totalNumEntries:
+      type: integer
+      nullable: false
+      format: int32
+      description: |
+        <div lang="ja">取得される項目の総件数です。</div>
+        <div lang="en">Total number of entries.</div>
+    values:
+      type: array
+      nullable: true
+      items:
+        $ref: 'AccountServiceValue.yaml#/AccountServiceValue'
+  title: AccountServicePage
+  description: |
+    <div lang="ja">AccountServicePageオブジェクトは、取得されるアカウントに関するエントリーを表します。</div>
+    <div lang="en">Account entry information.</div>

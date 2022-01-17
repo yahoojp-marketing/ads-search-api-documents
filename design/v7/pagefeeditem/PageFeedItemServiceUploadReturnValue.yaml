@@ -1,0 +1,10 @@
+PageFeedItemServiceUploadReturnValue:
+  type: object
+  nullable: true
+  properties:
+    values:
+      type: array
+      nullable: true
+      items:
+        $ref: 'PageFeedItemServiceUploadValue.yaml#/PageFeedItemServiceUploadValue'
+  title: PageFeedItemServiceUploadReturnValue

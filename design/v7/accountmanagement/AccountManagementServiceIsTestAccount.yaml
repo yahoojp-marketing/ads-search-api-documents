@@ -1,0 +1,21 @@
+AccountManagementServiceIsTestAccount:
+  type: string
+  nullable: true
+  enum:
+    - 'TRUE'
+    - 'FALSE'
+    - UNKNOWN
+  title: AccountManagementServiceIsTestAccount
+  description: |
+    <div lang="ja">AccountManagementServiceIsTestAccountは、テストアカウントかどうかを表すフラグです。<br>
+    このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
+    <div lang="en">AccountManagementServiceIsTestAccount describes whether the account is a test account or not.<br>
+    Although this field will be returned in the response, it will be ignored on input.</div>
+    <dl class=term>
+      <dt class="term__item">TRUE</dt>
+      <dd class="term__desc"><span lang="ja">テストアカウントです。</span><span lang="en">Test account.</span></dd>
+      <dt class="term__item">FALSE</dt>
+      <dd class="term__desc"><span lang="ja">Productionアカウント(テストアカウントではありません)です。</span><span lang="en">Production (non-test) account.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

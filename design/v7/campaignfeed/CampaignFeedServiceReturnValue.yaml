@@ -1,0 +1,13 @@
+CampaignFeedServiceReturnValue:
+  type: object
+  nullable: true
+  properties:
+    values:
+      type: array
+      nullable: true
+      items:
+        $ref: 'CampaignFeedServiceValue.yaml#/CampaignFeedServiceValue'
+  title: CampaignFeedServiceReturnValue
+  description: |
+    <div lang="ja">CampaignFeedServiceReturnValueオブジェクトは、FeedItem情報を格納するコンテナです。</div>
+    <div lang="en">CampaignFeedServiceReturnValue is a container of FeedItem information.</div>
