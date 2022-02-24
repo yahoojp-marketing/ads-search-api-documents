@@ -1,7 +1,8 @@
 ## ベストプラクティス
 ベストプラクティスでは、最も効率のよいYahoo!広告 APIの手法・プロセスをご紹介しております。<br>目的に合わせてご参照ください。
 * [レポートの作成・取得](./search_ads_report.md)
-* [広告表示オプションの追加](./addisplayoption.md)
+* [広告表示オプションの追加(Feed形式 廃止予定）](./addisplayoption.md)
+* [広告表示オプションの追加(Asset形式 2022年初春リリース予定）](./addisplayoption_asset.md)
 * [アドカスタマイザー機能（データの自動挿入）](./autoinsert_data.md)
 * [コンバージョントラッキング機能](./cv_tracking.md)
 * [動的検索連動型広告](./dynamic_ads_for_search.md)
