@@ -35,15 +35,15 @@ CampaignExportServiceEntityType:
       <dt class="term__item">AD</dt>
       <dd class="term__desc"><span lang="ja">広告</span><span lang="en">Ad</span></dd>
       <dt class="term__item">ASSET</dt>
-      <dd class="term__desc"><span lang="ja">※こちらのタイプは、現在利用できません。</span><span lang="en">*This type is currently unavailable.</span></dd>
+      <dd class="term__desc"><span lang="ja">すべてのアセット（広告表示オプション）</span><span lang="en">All assets（Ad display option）.</span></dd>
       <dt class="term__item">QUICKLINK_ASSET</dt>
-      <dd class="term__desc"><span lang="ja">※こちらのタイプは、現在利用できません。</span><span lang="en">*This type is currently unavailable.</span></dd>
+      <dd class="term__desc"><span lang="ja">クイックリンクオプションのアセット</span><span lang="en">Quicklink option assets.</span></dd>
       <dt class="term__item">CALLOUT_ASSET</dt>
-      <dd class="term__desc"><span lang="ja">※こちらのタイプは、現在利用できません。</span><span lang="en">*This type is currently unavailable.</span></dd>
+      <dd class="term__desc"><span lang="ja">テキスト補足オプションのアセット</span><span lang="en">Callout option assets.</span></dd>
       <dt class="term__item">STRUCTURED_SNIPPET_ASSET</dt>
-      <dd class="term__desc"><span lang="ja">※こちらのタイプは、現在利用できません。</span><span lang="en">*This type is currently unavailable.</span></dd>
+      <dd class="term__desc"><span lang="ja">カテゴリ補足オプションのアセット</span><span lang="en">Structured snippet option assets.</span></dd>
       <dt class="term__item">CALLEXTENSION_ASSET</dt>
-      <dd class="term__desc"><span lang="ja">※こちらのタイプは、現在利用できません。</span><span lang="en">*This type is currently unavailable.</span></dd>
+      <dd class="term__desc"><span lang="ja">電話番号オプションのアセット</span><span lang="en">Phone Number option assets.</span></dd>
       <dt class="term__item">ALL</dt>
       <dd class="term__desc"><span lang="ja">すべての広告エンティティ</span><span lang="en">All entities</span></dd>
       <dt class="term__item">UNKNOWN</dt>

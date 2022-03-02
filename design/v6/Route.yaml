@@ -196,6 +196,8 @@ tags:
       <li><div lang="ja"><a href="./reports/v6/KEYWORDLESS_QUERY.csv" download>検索クエリーレポート（動的検索連動型広告）</a></div></li><li><div lang="en"><a href="./reports/v6/KEYWORDLESS_QUERY.csv" download>Search Query Report (Dynamic Ads for Search)</a></div></li>
       <li><div lang="ja"><a href="./reports/v6/WEBPAGE_CRITERION.csv" download>ページフィードターゲティングレポート</a></div></li><li><div lang="en"><a href="./reports/v6/WEBPAGE_CRITERION.csv" download>Page Feed Targeting Report</a></div></li>
       <li><div lang="ja"><a href="./reports/v6/BID_MODIFIER.csv" download>入札価格調整率レポート</a></div></li><li><div lang="en"><a href="./reports/v6/BID_MODIFIER.csv" download>Bid Adjustments Report</a></div></li>
+      <li><div lang="ja"><a href="./reports/v6/CAMPAIGN_ASSET.csv" download>（新）広告表示オプションレポート（キャンペーン）</a></div></li><li><div lang="en"><a href="./reports/v6/CAMPAIGN_ASSET.csv" download>(New) Ad Display Option Report (campaign)</a></div></li>
+      <li><div lang="ja"><a href="./reports/v6/AD_GROUP_ASSET.csv" download>（新）広告表示オプションレポート（広告グループ）</a></div></li><li><div lang="en"><a href="./reports/v6/AD_GROUP_ASSET.csv" download>(New) Ad Display Option Report (ad group)</a></div></li>
       </ul>
   - name: CampaignExportService
     description: |
@@ -294,17 +296,17 @@ tags:
   - name: AdGroupAssetService
     description: |
       <label class="campaign"></label>
-      <div lang="ja">AdGroupAssetServiceは、広告グループに紐づくアセットの操作を提供します。<br>※現在、こちらのサービスは利用できません。</div>
+      <div lang="ja">AdGroupAssetServiceは、広告グループに紐づくアセットの操作を提供します。</div>
       <div lang="en">AdGroupAssetService provides operation of assets associated with ad groups.<br>*Currently this service is not available.</div>
   - name: CampaignAssetService
     description: |
       <label class="campaign"></label>
-      <div lang="ja">CampaignAssetServiceは、キャンペーンに紐づくアセットの操作を提供します。<br>※現在、こちらのサービスは利用できません。</div>
+      <div lang="ja">CampaignAssetServiceは、キャンペーンに紐づくアセットの操作を提供します。</div>
       <div lang="en">CampaignAssetService provides operation of assets associated with campaign.<br>*Currently this service is not available.</div>
   - name: AssetService
     description: |
       <label class="campaign"></label>
-      <div lang="ja">AssetServiceでは、アセット情報の取得および追加・更新を行います。<br>※現在、こちらのサービスは利用できません。</div>
+      <div lang="ja">AssetServiceでは、アセット情報の取得および追加・更新を行います。</div>
       <div lang="en">AssetService is to get, add, or update, Asset information.<br>*Currently this service is not available.</div>
 
 paths:

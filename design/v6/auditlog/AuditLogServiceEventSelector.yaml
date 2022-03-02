@@ -58,11 +58,11 @@ AuditLogServiceEventSelector:
           <dt class="term__item">EXCLUDE_AD_CUSTOMIZER</dt>
           <dd class="term__desc"><span lang="ja">アドカスタマイザーを除くすべての履歴です。</span><span lang="en">All operation history excepting ad customizer.</span></dd>
           <dt class="term__item">ASSET</dt>
-          <dd class="term__desc"><span lang="ja">※こちらのタイプは、現在利用できません。</span><span lang="en">*This type is currently unavailable.</span></dd>
+          <dd class="term__desc"><span lang="ja"アセット（広告表示オプション）です。</span><span lang="en">Assets（Ad display option）.</span></dd>
           <dt class="term__item">CAMPAIGN_ASSET</dt>
-          <dd class="term__desc"><span lang="ja">※こちらのタイプは、現在利用できません。</span><span lang="en">*This type is currently unavailable.</span></dd>
+          <dd class="term__desc"><span lang="ja">キャンペーンとアセット間の設定情報です。</span><span lang="en">Configuration information between campaign and assets.</span></dd>
           <dt class="term__item">AD_GROUP_ASSET</dt>
-          <dd class="term__desc"><span lang="ja">※こちらのタイプは、現在利用できません。</span><span lang="en">*This type is currently unavailable.</span></dd>
+          <dd class="term__desc"><span lang="ja">広告グループとアセット間の設定情報です。</span><span lang="en">Configuration information between ad group and assets.</span></dd>
           <dt class="term__item">ALL</dt>
           <dd class="term__desc"><span lang="ja">すべての履歴です。</span><span lang="en">All operation history.</span></dd>
           <dt class="term__item">UNKNOWN</dt>
