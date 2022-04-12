@@ -297,17 +297,17 @@ tags:
     description: |
       <label class="campaign"></label>
       <div lang="ja">AdGroupAssetServiceは、広告グループに紐づくアセットの操作を提供します。</div>
-      <div lang="en">AdGroupAssetService provides operation of assets associated with ad groups.<br>*Currently this service is not available.</div>
+      <div lang="en">AdGroupAssetService provides operation of assets associated with ad groups.</div>
   - name: CampaignAssetService
     description: |
       <label class="campaign"></label>
       <div lang="ja">CampaignAssetServiceは、キャンペーンに紐づくアセットの操作を提供します。</div>
-      <div lang="en">CampaignAssetService provides operation of assets associated with campaign.<br>*Currently this service is not available.</div>
+      <div lang="en">CampaignAssetService provides operation of assets associated with campaign.</div>
   - name: AssetService
     description: |
       <label class="campaign"></label>
       <div lang="ja">AssetServiceでは、アセット情報の取得および追加・更新を行います。</div>
-      <div lang="en">AssetService is to get, add, or update, Asset information.<br>*Currently this service is not available.</div>
+      <div lang="en">AssetService is to get, add, or update, Asset information.</div>
 
 paths:
   /AccountManagementService/get:

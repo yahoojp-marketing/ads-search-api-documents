@@ -28,7 +28,7 @@
 "CAMPAIGN_TRACKING_ID","キャンペーントラッキングID","Campaign Tracking ID","campaignTrackingID","LONG","true",,"Attribute","","",
 "ADGROUP_TRACKING_ID","広告グループトラッキングID","Ad Group Tracking ID","adgroupTrackingID","LONG","true",,"Attribute","","",
 "TARGET_LIST_TRACKING_ID","ターゲットリストトラッキングID","Target List Tracking ID","targetListTrackingID","LONG","true",,"Attribute","","",
-"NETWORK","広告掲載方式の指定","Network","network","ENUM","false",,"Segment","ウェブ検索,その他の広告掲載方式","Web Search,All Ad Distribution,Other",
+"NETWORK","広告掲載方式の指定","Network","network","ENUM","false",,"Segment","ウェブ検索,その他の広告掲載方式,その他","Web Search,All Ad Distribution,Other",
 "CLICK_TYPE","クリック種別","ClickType","clickType","ENUM","false",,"Segment","電話番号,クイックリンク,メイン広告,その他","PhoneCalls,QuickLinks,Ad,Other",
 "DEVICE","デバイス","Device","device","ENUM","false",,"Segment","PC,スマートフォン,タブレット,その他","PC,Smartphone,Tablet,Other",
 "DAY","日","Day","day","STRING","false",,"Segment","","",

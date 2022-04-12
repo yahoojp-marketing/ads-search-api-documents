@@ -37,7 +37,7 @@
 "SITELINK_ASSET_LINE2","クイックリンク説明文2","QuickLink Description 2","sitelinkAssetLine2","STRING","true","[DAY_OF_WEEK, VALUE_PER_ALL_CONV]","Attribute","","",
 "STRUCTURED_SNIPPET_ASSET_HEADER","補足カテゴリー","Category","structuredSnippetAssetHeader","STRING","true","[DAY_OF_WEEK, VALUE_PER_ALL_CONV]","Attribute","","",
 "STRUCTURED_SNIPPET_ASSET_VALUES","補足内容","Text","structuredSnippetAssetValues","STRING","true","[DAY_OF_WEEK, VALUE_PER_ALL_CONV]","Attribute","","",
-"NETWORK","広告掲載方式の指定","Network","network","ENUM","false",,"Segment","ウェブ検索,その他の広告掲載方式","Web Search,All Ad Distribution,Other",
+"NETWORK","広告掲載方式の指定","Network","network","ENUM","false",,"Segment","ウェブ検索,その他の広告掲載方式,その他","Web Search,All Ad Distribution,Other",
 "CLICK_TYPE","クリック種別","ClickType","clickType","ENUM","false",,"Segment","電話番号,クイックリンク,メイン広告,その他","PhoneCalls,QuickLinks,Ad,Other",
 "DEVICE","デバイス","Device","device","ENUM","false",,"Segment","PC,スマートフォン,タブレット,その他","PC,Smartphone,Tablet,Other",
 "DAY","日","Day","day","STRING","false",,"Segment","","",

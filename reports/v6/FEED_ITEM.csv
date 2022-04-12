@@ -42,7 +42,7 @@
 "ADGROUP_TRACKING_ID","広告グループトラッキングID","Ad Group Tracking ID","adgroupTrackingID","LONG","false",,"Attribute","","",
 "AD_TRACKING_ID","広告トラッキングID","Ad Tracking ID","adTrackingID","LONG","false",,"Attribute","","",
 "FEED_ITEM_TRACKING_ID","広告表示オプショントラッキングID","Ad Display Option Tracking ID","adDisplayOptionTrackingID","LONG","true",,"Attribute","","",
-"NETWORK","広告掲載方式の指定","Network","network","ENUM","false",,"Segment","ウェブ検索,その他の広告掲載方式","Web Search,All Ad Distribution,Other",
+"NETWORK","広告掲載方式の指定","Network","network","ENUM","false",,"Segment","ウェブ検索,その他の広告掲載方式,その他","Web Search,All Ad Distribution,Other",
 "ATTRIBUTE_VALUES","広告表示オプションの詳細","Ad Display Option Detail","attributeValues","STRING","true","[DAY_OF_WEEK, VALUE_PER_ALL_CONV]","Attribute","","",
 "ATTRIBUTE_VALUES_JSON","広告表示オプションの詳細(JSON)","Ad Display Option Detail (JSON)","attributeValuesJson","STRING","true","[DAY_OF_WEEK, VALUE_PER_ALL_CONV]","Attribute","","",
 "CLICK_TYPE","クリック種別","ClickType","clickType","ENUM","false","[IS_SELF_ACTION]","Segment","電話番号,クイックリンク,メイン広告,その他","PhoneCalls,QuickLinks,Ad,Other",

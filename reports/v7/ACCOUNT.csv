@@ -24,7 +24,7 @@
 "COST_PER_ALL_CONV","コスト/すべてのコンバージョン数","Cost Per All Conv.","costPerAllConv","DOUBLE","true","[CONVERSION_NAME, MONTH_OF_YEAR, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",
 "VALUE_PER_ALL_CONV","価値/すべてのコンバージョン数","Value Per All Conv.","valuePerAllConv","DOUBLE","true","[MONTH_OF_YEAR]","Metric","","",
 "CROSS_DEVICE_CONVERSIONS","デバイスをまたいだコンバージョン数","Conversions across devices","crossDeviceConversions","DOUBLE","true","[HOUR_OF_DAY]","Metric","","","データ取得出来ない場合、値は空文字が設定されます/When the data cannot be retrieved, the value is set to a blank"
-"NETWORK","広告掲載方式の指定","Network","network","ENUM","false",,"Segment","ウェブ検索,その他の広告掲載方式","Web Search,All Ad Distribution,Other",
+"NETWORK","広告掲載方式の指定","Network","network","ENUM","false",,"Segment","ウェブ検索,その他の広告掲載方式,その他","Web Search,All Ad Distribution,Other",
 "CLICK_TYPE","クリック種別","ClickType","clickType","ENUM","false","[BUDGET_LOST_IMPRESSION_SHARE, EXACT_MATCH_IMPRESSION_SHARE, IMPRESSION_SHARE, QUALITY_LOST_IMPRESSION_SHARE]","Segment","電話番号,クイックリンク,メイン広告,その他","PhoneCalls,QuickLinks,Ad,Other",
 "DEVICE","デバイス","Device","device","ENUM","false","[INVALID_CLICKS, INVALID_CLICK_RATE]","Segment","PC,スマートフォン,タブレット,その他","PC,Smartphone,Tablet,Other",
 "DAY","日","Day","day","STRING","false",,"Segment","","",
