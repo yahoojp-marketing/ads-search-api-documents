@@ -1,56 +1,56 @@
-﻿"フィールド名/Field Name","日本語表示名称/Japanese Display Name","英語表示名称/English Display Name","XML属性/XML Attribute","型/Type","表示回数0回のレコード取得指定可否/Supports Zero Impressions","組合せ不可フィールド/Not compatible fields","動作区分/Behavior Type","日本語表示値/Japanese display values","英語表示値/English display values","備考/Note"
-"ACCOUNT_ID","アカウントID","Account ID","accountID","STRING","true",,"Attribute","","",
-"ACCOUNT_NAME","アカウント名","Account Name","accountName","STRING","true",,"Attribute","","",
-"CAMPAIGN_ID","キャンペーンID","CampaignID","campaignID","LONG","true",,"Attribute","","",
-"ADGROUP_ID","広告グループID","Ad Group ID","adgroupID","LONG","true",,"Attribute","","",
-"CAMPAIGN_NAME","キャンペーン名","Campaign Name","campaignName","STRING","true",,"Attribute","","",
-"ADGROUP_NAME","広告グループ名","Ad Group Name","adgroupName","STRING","true",,"Attribute","","",
-"COST","コスト","Cost","cost","LONG","true","[CONVERSION_NAME, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",
-"IMPS","インプレッション数","Impressions","impressions","LONG","true","[CONVERSION_NAME, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",
-"CLICKS","クリック数","Clicks","clicks","LONG","true","[CONVERSION_NAME, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",
-"CLICK_RATE","クリック率","CTR","ctr","DOUBLE","true","[CONVERSION_NAME, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",
-"AVG_CPC","平均CPC","Avg. CPC","averageCpc","DOUBLE","true","[CONVERSION_NAME, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",
-"EDITORIAL_STATUS","審査状況","Editorial Status","editorialStatus","ENUM","true",,"Attribute","審査完了,編集内容審査中,審査中,掲載不可,掲載停止,その他","APPROVED,APPROVED_WITH_REVIEW,REVIEW,PRE_DISAPPROVED,POST_DISAPPROVED,Other",
-"ASSET_ID","広告表示オプションID","Ad Display Option ID","assetID","LONG","true",,"Attribute","","",
-"ASSET_ENTITY_TYPE","広告表示オプションの種類","Ad Display Option Type","adDisplayOptionType","ENUM","true","[VALUE_PER_ALL_CONV]","Attribute","クイックリンクオプション,テキスト補足オプション,カテゴリ補足オプション,電話番号オプション,その他","QuickLinks,Callout,Category Text,Call Extensions,Other",
-"ASSET_START_DATE","開始日","Start Date","adDisplayOptionStartDate","STRING","true",,"Attribute","","",
-"ASSET_END_DATE","終了日","End Date","adDisplayOptionEndDate","STRING","true",,"Attribute","","",
-"TRACKING_URL","トラッキングURL","Tracking URL","trackingURL","STRING","true","[DAY_OF_WEEK, VALUE_PER_ALL_CONV]","Attribute","","",
-"CUSTOM_PARAMETERS","カスタムパラメータ","Custom Parameters","customParameters","STRING","true",,"Attribute","","",
-"FINAL_URL","最終リンク先URL","Final URL","finalURL","STRING","true","[DAY_OF_WEEK, VALUE_PER_ALL_CONV]","Attribute","","",
-"FINAL_URL_SMARTPHONE","スマートフォン向けURL","Smartphone final URL","finalURLSmartphone","STRING","true","[DAY_OF_WEEK, VALUE_PER_ALL_CONV]","Attribute","","",
-"ASSET_CALLOUT","補足用テキスト","Callout","callout","STRING","true","[DAY_OF_WEEK, VALUE_PER_ALL_CONV, VALUE_PER_ALL_CONV]","Attribute","","",
-"ASSET_PHONE_NUMBER","電話番号","Phone Number","phoneNumber","STRING","true","[DAY_OF_WEEK, VALUE_PER_ALL_CONV]","Attribute","","",
-"CONVERSIONS","コンバージョン数","Conversions","conversions","DOUBLE","true","[MONTH_OF_YEAR]","Metric","","",
-"CONV_RATE","コンバージョン率","Conv. Rate","convRate","DOUBLE","true","[CONVERSION_NAME, MONTH_OF_YEAR, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",
-"CONV_VALUE","コンバージョンの価値","Conv. Value","convValue","DOUBLE","true","[MONTH_OF_YEAR]","Metric","","",
-"COST_PER_CONV","コスト/コンバージョン数","Cost Per Conv.","costPerConv","DOUBLE","true","[CONVERSION_NAME, MONTH_OF_YEAR, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",
-"VALUE_PER_CONV","価値/コンバージョン数","Value Per Conv.","valuePerConv","DOUBLE","true","[MONTH_OF_YEAR]","Metric","","",
-"ALL_CONV","すべてのコンバージョン数","All Conv.","allConv","DOUBLE","true","[MONTH_OF_YEAR]","Metric","","",
-"ALL_CONV_RATE","すべてのコンバージョン率","All Conv. Rate","allConvRate","DOUBLE","true","[CONVERSION_NAME, MONTH_OF_YEAR, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",
-"ALL_CONV_VALUE","すべてのコンバージョンの価値","All Conv. Value","allConvValue","DOUBLE","true","[MONTH_OF_YEAR]","Metric","","",
-"COST_PER_ALL_CONV","コスト/すべてのコンバージョン数","Cost Per All Conv.","costPerAllConv","DOUBLE","true","[CONVERSION_NAME, MONTH_OF_YEAR, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",
-"VALUE_PER_ALL_CONV","価値/すべてのコンバージョン数","Value Per All Conv.","valuePerAllConv","DOUBLE","true","[ASSET_CALLOUT, ASSET_CALLOUT, ASSET_ENTITY_TYPE, ASSET_PHONE_NUMBER, FINAL_URL, FINAL_URL_SMARTPHONE, MONTH_OF_YEAR, SITELINK_ASSET_LINE1, SITELINK_ASSET_LINE2, SITELINK_TEXT, SITELINK_TEXT, STRUCTURED_SNIPPET_ASSET_HEADER, STRUCTURED_SNIPPET_ASSET_VALUES, TRACKING_URL]","Metric","","",
-"CROSS_DEVICE_CONVERSIONS","デバイスをまたいだコンバージョン数","Conversions across devices","crossDeviceConversions","DOUBLE","true",,"Metric","","","データ取得出来ない場合、値は空文字が設定されます/When the data cannot be retrieved, the value is set to a blank"
-"CAMPAIGN_TRACKING_ID","キャンペーントラッキングID","Campaign Tracking ID","campaignTrackingID","LONG","true",,"Attribute","","",
-"ADGROUP_TRACKING_ID","広告グループトラッキングID","Ad Group Tracking ID","adgroupTrackingID","LONG","true",,"Attribute","","",
-"ASSET_TRACKING_ID","広告表示オプショントラッキングID","Ad Display Option Tracking ID","adDisplayOptionTrackingID","LONG","true",,"Attribute","","",
-"SITELINK_TEXT","クイックリンクテキスト","QuickLink Text","siteLinkText","STRING","true","[DAY_OF_WEEK, VALUE_PER_ALL_CONV, VALUE_PER_ALL_CONV]","Attribute","","",
-"SITELINK_ASSET_LINE1","クイックリンク説明文1","QuickLink Description 1","sitelinkAssetLine1","STRING","true","[DAY_OF_WEEK, VALUE_PER_ALL_CONV]","Attribute","","",
-"SITELINK_ASSET_LINE2","クイックリンク説明文2","QuickLink Description 2","sitelinkAssetLine2","STRING","true","[DAY_OF_WEEK, VALUE_PER_ALL_CONV]","Attribute","","",
-"STRUCTURED_SNIPPET_ASSET_HEADER","補足カテゴリー","Category","structuredSnippetAssetHeader","STRING","true","[DAY_OF_WEEK, VALUE_PER_ALL_CONV]","Attribute","","",
-"STRUCTURED_SNIPPET_ASSET_VALUES","補足内容","Text","structuredSnippetAssetValues","STRING","true","[DAY_OF_WEEK, VALUE_PER_ALL_CONV]","Attribute","","",
-"NETWORK","広告掲載方式の指定","Network","network","ENUM","false",,"Segment","ウェブ検索,その他の広告掲載方式,その他","Web Search,All Ad Distribution,Other",
-"CLICK_TYPE","クリック種別","ClickType","clickType","ENUM","false",,"Segment","電話番号,クイックリンク,メイン広告,その他","PhoneCalls,QuickLinks,Ad,Other",
-"DEVICE","デバイス","Device","device","ENUM","false",,"Segment","PC,スマートフォン,タブレット,その他","PC,Smartphone,Tablet,Other",
-"DAY","日","Day","day","STRING","false",,"Segment","","",
-"DAY_OF_WEEK","曜日","Day of week","dayOfWeek","ENUM","false","[ASSET_CALLOUT, ASSET_PHONE_NUMBER, FINAL_URL, FINAL_URL_SMARTPHONE, SITELINK_ASSET_LINE1, SITELINK_ASSET_LINE2, SITELINK_TEXT, STRUCTURED_SNIPPET_ASSET_HEADER, STRUCTURED_SNIPPET_ASSET_VALUES, TRACKING_URL]","Segment","月曜日,火曜日,水曜日,木曜日,金曜日,土曜日,日曜日,その他","Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday,Other",
-"QUARTER","四半期","Quarter","quarter","STRING","false",,"Segment","","",
-"YEAR","年間","Year","year","STRING","false",,"Segment","","",
-"MONTH","毎月","Month","month","STRING","false","[MONTH_OF_YEAR]","Segment","","",
-"MONTH_OF_YEAR","月","Month of Year","monthofYear","ENUM","false","[ALL_CONV, ALL_CONV_RATE, ALL_CONV_VALUE, ALL_CONV_VALUE_PER_COST, CONVERSIONS, CONV_RATE, CONV_VALUE, CONV_VALUE_PER_COST, COST_PER_ALL_CONV, COST_PER_CONV, MONTH, VALUE_PER_ALL_CONV, VALUE_PER_CONV]","Segment","1月,2月,3月,4月,5月,6月,7月,8月,9月,10月,11月,12月,その他","January,February,March,April,May,June,July,August,September,October,November,December,Other",
-"WEEK","毎週","Week","week","STRING","false",,"Segment","","",
-"OBJECT_OF_CONVERSION_TRACKING","コンバージョン測定の目的","Objective of Conversion Tracking","objectiveOfConversionTracking","ENUM","false","[ALL_CONV_RATE, ALL_CONV_VALUE_PER_COST, AVG_CPC, CLICKS, CLICK_RATE, CONV_RATE, CONV_VALUE_PER_COST, COST, COST_PER_ALL_CONV, COST_PER_CONV, IMPS]","Segment","購入/販売,販売促進,見積もりのリクエスト,予約,お申し込み,架電,連絡先,カートに追加,決済の開始,定期購入,実店舗に来店,実店舗で購入,主要なページの閲覧,ルート・乗換案内,見込み客のフォーム送信,ダウンロード,タグの発火,離脱クリック,データのインポート,その他","Purchase / Sales,Sales promotion,Request a quote,Reservation,Application,Phone call leads,Contact,Add to cart,Begin checkout,Subscription,Store visits,Store sales,Page Access,Route / transfer information,Form submission by prospect,Download,Engagements,Withdrawal click,Imported leads,Other",
-"CONVERSION_NAME","コンバージョン名","Conversion Name","conversionName","STRING","false","[ALL_CONV_RATE, ALL_CONV_VALUE_PER_COST, AVG_CPC, CLICKS, CLICK_RATE, CONV_RATE, CONV_VALUE_PER_COST, COST, COST_PER_ALL_CONV, COST_PER_CONV, IMPS]","Segment","","",
-"CONV_VALUE_PER_COST","コンバージョンの価値/コスト","Conv. Value Per Cost","convValuePerCost","DOUBLE","true","[CONVERSION_NAME, MONTH_OF_YEAR, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",
-"ALL_CONV_VALUE_PER_COST","すべてのコンバージョンの価値/コスト","All Conv. Value Per Cost","allConvValuePerCost","DOUBLE","true","[CONVERSION_NAME, MONTH_OF_YEAR, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",
+﻿"フィールド名/Field Name","日本語表示名称/Japanese Display Name","英語表示名称/English Display Name","XML属性/XML Attribute","型/Type","組合せ不可フィールド/Not compatible fields","動作区分/Behavior Type","日本語表示値/Japanese display values","英語表示値/English display values","備考/Note"
+"ACCOUNT_ID","アカウントID","Account ID","accountID","STRING","","Attribute","","",""
+"ACCOUNT_NAME","アカウント名","Account Name","accountName","STRING","","Attribute","","",""
+"CAMPAIGN_ID","キャンペーンID","CampaignID","campaignID","LONG","","Attribute","","",""
+"ADGROUP_ID","広告グループID","Ad Group ID","adgroupID","LONG","","Attribute","","",""
+"CAMPAIGN_NAME","キャンペーン名","Campaign Name","campaignName","STRING","","Attribute","","",""
+"ADGROUP_NAME","広告グループ名","Ad Group Name","adgroupName","STRING","","Attribute","","",""
+"COST","コスト","Cost","cost","LONG","[CONVERSION_NAME, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",""
+"IMPS","インプレッション数","Impressions","impressions","LONG","[CONVERSION_NAME, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",""
+"CLICKS","クリック数","Clicks","clicks","LONG","[CONVERSION_NAME, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",""
+"CLICK_RATE","クリック率","CTR","ctr","DOUBLE","[CONVERSION_NAME, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",""
+"AVG_CPC","平均CPC","Avg. CPC","averageCpc","DOUBLE","[CONVERSION_NAME, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",""
+"EDITORIAL_STATUS","審査状況","Editorial Status","editorialStatus","ENUM","","Attribute","審査完了,編集内容審査中,審査中,掲載不可,掲載停止,その他","APPROVED,APPROVED_WITH_REVIEW,REVIEW,PRE_DISAPPROVED,POST_DISAPPROVED,Other",""
+"ASSET_ID","広告表示オプションID","Ad Display Option ID","assetID","LONG","","Attribute","","",""
+"ASSET_ENTITY_TYPE","広告表示オプションの種類","Ad Display Option Type","adDisplayOptionType","ENUM","[VALUE_PER_ALL_CONV]","Attribute","クイックリンクオプション,テキスト補足オプション,カテゴリ補足オプション,電話番号オプション,その他","QuickLinks,Callout,Category Text,Call Extensions,Other",""
+"ASSET_START_DATE","開始日","Start Date","adDisplayOptionStartDate","STRING","","Attribute","","",""
+"ASSET_END_DATE","終了日","End Date","adDisplayOptionEndDate","STRING","","Attribute","","",""
+"TRACKING_URL","トラッキングURL","Tracking URL","trackingURL","STRING","[DAY_OF_WEEK, VALUE_PER_ALL_CONV]","Attribute","","",""
+"CUSTOM_PARAMETERS","カスタムパラメータ","Custom Parameters","customParameters","STRING","","Attribute","","",""
+"FINAL_URL","最終リンク先URL","Final URL","finalURL","STRING","[DAY_OF_WEEK, VALUE_PER_ALL_CONV]","Attribute","","",""
+"FINAL_URL_SMARTPHONE","スマートフォン向けURL","Smartphone final URL","finalURLSmartphone","STRING","[DAY_OF_WEEK, VALUE_PER_ALL_CONV]","Attribute","","",""
+"ASSET_CALLOUT","補足用テキスト","Callout","callout","STRING","[DAY_OF_WEEK, VALUE_PER_ALL_CONV]","Attribute","","",""
+"ASSET_PHONE_NUMBER","電話番号","Phone Number","phoneNumber","STRING","[DAY_OF_WEEK, VALUE_PER_ALL_CONV]","Attribute","","",""
+"CONVERSIONS","コンバージョン数","Conversions","conversions","DOUBLE","[MONTH_OF_YEAR]","Metric","","",""
+"CONV_RATE","コンバージョン率","Conv. Rate","convRate","DOUBLE","[CONVERSION_NAME, MONTH_OF_YEAR, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",""
+"CONV_VALUE","コンバージョンの価値","Conv. Value","convValue","DOUBLE","[MONTH_OF_YEAR]","Metric","","",""
+"COST_PER_CONV","コスト/コンバージョン数","Cost Per Conv.","costPerConv","DOUBLE","[CONVERSION_NAME, MONTH_OF_YEAR, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",""
+"VALUE_PER_CONV","価値/コンバージョン数","Value Per Conv.","valuePerConv","DOUBLE","[MONTH_OF_YEAR]","Metric","","",""
+"ALL_CONV","すべてのコンバージョン数","All Conv.","allConv","DOUBLE","[MONTH_OF_YEAR]","Metric","","",""
+"ALL_CONV_RATE","すべてのコンバージョン率","All Conv. Rate","allConvRate","DOUBLE","[CONVERSION_NAME, MONTH_OF_YEAR, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",""
+"ALL_CONV_VALUE","すべてのコンバージョンの価値","All Conv. Value","allConvValue","DOUBLE","[MONTH_OF_YEAR]","Metric","","",""
+"COST_PER_ALL_CONV","コスト/すべてのコンバージョン数","Cost Per All Conv.","costPerAllConv","DOUBLE","[CONVERSION_NAME, MONTH_OF_YEAR, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",""
+"VALUE_PER_ALL_CONV","価値/すべてのコンバージョン数","Value Per All Conv.","valuePerAllConv","DOUBLE","[ASSET_CALLOUT, ASSET_ENTITY_TYPE, ASSET_PHONE_NUMBER, FINAL_URL, FINAL_URL_SMARTPHONE, MONTH_OF_YEAR, SITELINK_ASSET_LINE1, SITELINK_ASSET_LINE2, SITELINK_TEXT, STRUCTURED_SNIPPET_ASSET_HEADER, STRUCTURED_SNIPPET_ASSET_VALUES, TRACKING_URL]","Metric","","",""
+"CROSS_DEVICE_CONVERSIONS","デバイスをまたいだコンバージョン数","Conversions across devices","crossDeviceConversions","DOUBLE","","Metric","","","データ取得出来ない場合、値は空文字が設定されます/When the data cannot be retrieved, the value is set to a blank"
+"CAMPAIGN_TRACKING_ID","キャンペーントラッキングID","Campaign Tracking ID","campaignTrackingID","LONG","","Attribute","","",""
+"ADGROUP_TRACKING_ID","広告グループトラッキングID","Ad Group Tracking ID","adgroupTrackingID","LONG","","Attribute","","",""
+"ASSET_TRACKING_ID","広告表示オプショントラッキングID","Ad Display Option Tracking ID","adDisplayOptionTrackingID","LONG","","Attribute","","",""
+"SITELINK_TEXT","クイックリンクテキスト","QuickLink Text","siteLinkText","STRING","[DAY_OF_WEEK, VALUE_PER_ALL_CONV]","Attribute","","",""
+"SITELINK_ASSET_LINE1","クイックリンク説明文1","QuickLink Description 1","sitelinkAssetLine1","STRING","[DAY_OF_WEEK, VALUE_PER_ALL_CONV]","Attribute","","",""
+"SITELINK_ASSET_LINE2","クイックリンク説明文2","QuickLink Description 2","sitelinkAssetLine2","STRING","[DAY_OF_WEEK, VALUE_PER_ALL_CONV]","Attribute","","",""
+"STRUCTURED_SNIPPET_ASSET_HEADER","補足カテゴリー","Category","structuredSnippetAssetHeader","STRING","[DAY_OF_WEEK, VALUE_PER_ALL_CONV]","Attribute","","",""
+"STRUCTURED_SNIPPET_ASSET_VALUES","補足内容","Text","structuredSnippetAssetValues","STRING","[DAY_OF_WEEK, VALUE_PER_ALL_CONV]","Attribute","","",""
+"NETWORK","広告掲載方式の指定","Network","network","ENUM","","Segment","ウェブ検索,その他の広告掲載方式,その他","Web Search,All Ad Distribution,Other",""
+"CLICK_TYPE","クリック種別","ClickType","clickType","ENUM","","Segment","電話番号,クイックリンク,メイン広告,その他","PhoneCalls,QuickLinks,Ad,Other",""
+"DEVICE","デバイス","Device","device","ENUM","","Segment","PC,スマートフォン,タブレット,その他","PC,Smartphone,Tablet,Other",""
+"DAY","日","Day","day","STRING","","Segment","","",""
+"DAY_OF_WEEK","曜日","Day of week","dayOfWeek","ENUM","[ASSET_CALLOUT, ASSET_PHONE_NUMBER, FINAL_URL, FINAL_URL_SMARTPHONE, SITELINK_ASSET_LINE1, SITELINK_ASSET_LINE2, SITELINK_TEXT, STRUCTURED_SNIPPET_ASSET_HEADER, STRUCTURED_SNIPPET_ASSET_VALUES, TRACKING_URL]","Segment","月曜日,火曜日,水曜日,木曜日,金曜日,土曜日,日曜日,その他","Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday,Other",""
+"QUARTER","四半期","Quarter","quarter","STRING","","Segment","","",""
+"YEAR","年間","Year","year","STRING","","Segment","","",""
+"MONTH","毎月","Month","month","STRING","[MONTH_OF_YEAR]","Segment","","",""
+"MONTH_OF_YEAR","月","Month of Year","monthofYear","ENUM","[ALL_CONV, ALL_CONV_RATE, ALL_CONV_VALUE, ALL_CONV_VALUE_PER_COST, CONVERSIONS, CONV_RATE, CONV_VALUE, CONV_VALUE_PER_COST, COST_PER_ALL_CONV, COST_PER_CONV, MONTH, VALUE_PER_ALL_CONV, VALUE_PER_CONV]","Segment","1月,2月,3月,4月,5月,6月,7月,8月,9月,10月,11月,12月,その他","January,February,March,April,May,June,July,August,September,October,November,December,Other",""
+"WEEK","毎週","Week","week","STRING","","Segment","","",""
+"OBJECT_OF_CONVERSION_TRACKING","コンバージョン測定の目的","Objective of Conversion Tracking","objectiveOfConversionTracking","ENUM","[ALL_CONV_RATE, ALL_CONV_VALUE_PER_COST, AVG_CPC, CLICKS, CLICK_RATE, CONV_RATE, CONV_VALUE_PER_COST, COST, COST_PER_ALL_CONV, COST_PER_CONV, IMPS]","Segment","購入/販売,販売促進,見積もりのリクエスト,予約,お申し込み,架電,連絡先,カートに追加,決済の開始,定期購入,実店舗に来店,実店舗で購入,主要なページの閲覧,ルート・乗換案内,見込み客のフォーム送信,ダウンロード,タグの発火,離脱クリック,データのインポート,その他","Purchase / Sales,Sales promotion,Request a quote,Reservation,Application,Phone call leads,Contact,Add to cart,Begin checkout,Subscription,Store visits,Store sales,Page Access,Route / transfer information,Form submission by prospect,Download,Engagements,Withdrawal click,Imported leads,Other",""
+"CONVERSION_NAME","コンバージョン名","Conversion Name","conversionName","STRING","[ALL_CONV_RATE, ALL_CONV_VALUE_PER_COST, AVG_CPC, CLICKS, CLICK_RATE, CONV_RATE, CONV_VALUE_PER_COST, COST, COST_PER_ALL_CONV, COST_PER_CONV, IMPS]","Segment","","",""
+"CONV_VALUE_PER_COST","コンバージョンの価値/コスト","Conv. Value Per Cost","convValuePerCost","DOUBLE","[CONVERSION_NAME, MONTH_OF_YEAR, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",""
+"ALL_CONV_VALUE_PER_COST","すべてのコンバージョンの価値/コスト","All Conv. Value Per Cost","allConvValuePerCost","DOUBLE","[CONVERSION_NAME, MONTH_OF_YEAR, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",""

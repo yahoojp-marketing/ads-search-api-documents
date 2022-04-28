@@ -1,10 +1,10 @@
-﻿"フィールド名/Field Name","日本語表示名称/Japanese Display Name","英語表示名称/English Display Name","XML属性/XML Attribute","型/Type","表示回数0回のレコード取得指定可否/Supports Zero Impressions","組合せ不可フィールド/Not compatible fields","動作区分/Behavior Type","日本語表示値/Japanese display values","英語表示値/English display values","備考/Note"
-"ACCOUNT_ID","アカウントID","Account ID","accountID","STRING","true",,"Attribute","","",
-"ACCOUNT_NAME","アカウント名","Account Name","accountName","STRING","true",,"Attribute","","",
-"ADGROUP_ID","広告グループID","Ad Group ID","adgroupID","LONG","true",,"Attribute","","",
-"ADGROUP_NAME","広告グループ名","Ad Group Name","adgroupName","STRING","true",,"Attribute","","",
-"CAMPAIGN_ID","キャンペーンID","CampaignID","campaignID","LONG","true",,"Attribute","","",
-"CAMPAIGN_NAME","キャンペーン名","Campaign Name","campaignName","STRING","true",,"Attribute","","",
-"DEVICE_TYPE","入札価格調整率を設定したデバイス","Device","deviceType","ENUM","false",,"Attribute","PC,スマートフォン,タブレット,その他","PC,Smartphone,Tablet,Other",
-"BID_MULTIPLIER","入札価格調整率(％)","Bid Adjustment(%)","bidAdjustment","DOUBLE","true",,"Attribute","","","データ取得出来ない場合、値は空文字が設定されます/When the data cannot be retrieved, the value is set to a blank"
-"BID_MODIFIER_ATTACHMENT_LEVEL","入札価格調整率の対象","Level","bidModifierAttachmentLevel","ENUM","false",,"Attribute","広告グループ,キャンペーン,その他","Ad Group,Campaign,Other",
+﻿"フィールド名/Field Name","日本語表示名称/Japanese Display Name","英語表示名称/English Display Name","XML属性/XML Attribute","型/Type","組合せ不可フィールド/Not compatible fields","動作区分/Behavior Type","日本語表示値/Japanese display values","英語表示値/English display values","備考/Note"
+"ACCOUNT_ID","アカウントID","Account ID","accountID","STRING","","Attribute","","",""
+"ACCOUNT_NAME","アカウント名","Account Name","accountName","STRING","","Attribute","","",""
+"ADGROUP_ID","広告グループID","Ad Group ID","adgroupID","LONG","","Attribute","","",""
+"ADGROUP_NAME","広告グループ名","Ad Group Name","adgroupName","STRING","","Attribute","","",""
+"CAMPAIGN_ID","キャンペーンID","CampaignID","campaignID","LONG","","Attribute","","",""
+"CAMPAIGN_NAME","キャンペーン名","Campaign Name","campaignName","STRING","","Attribute","","",""
+"DEVICE_TYPE","入札価格調整率を設定したデバイス","Device","deviceType","ENUM","","Attribute","PC,スマートフォン,タブレット,その他","PC,Smartphone,Tablet,Other",""
+"BID_MULTIPLIER","入札価格調整率(％)","Bid Adjustment(%)","bidAdjustment","DOUBLE","","Attribute","","","データ取得出来ない場合、値は空文字が設定されます/When the data cannot be retrieved, the value is set to a blank"
+"BID_MODIFIER_ATTACHMENT_LEVEL","入札価格調整率の対象","Level","bidModifierAttachmentLevel","ENUM","","Attribute","広告グループ,キャンペーン,その他","Ad Group,Campaign,Other",""
