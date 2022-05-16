@@ -1,0 +1,13 @@
+PageFeedAssetSetServiceReturnValue:
+  type: object
+  nullable: true
+  properties:
+    values:
+      type: array
+      nullable: true
+      items:
+        $ref: 'PageFeedAssetSetServiceValue.yaml#/PageFeedAssetSetServiceValue'
+  title: PageFeedAssetSetServiceReturnValue
+  description: |
+    <div lang="ja">PageFeedAssetSetServiceReturnValueは、操作結果を含むページフィードアセットセットのコンテナです。</div>
+    <div lang="en">PageFeedAssetSetReturn contains the result value of page feed asset set.</div>

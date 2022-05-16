@@ -1,0 +1,56 @@
+AdGroupCriterionCustomizer:
+  type: object
+  nullable: true
+  properties:
+    accountId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">アカウントIDです。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
+        <div lang="en">Account ID.<br>
+        Although this field will be returned in the response, it will be ignored on input.</div>
+    criterionId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">クライテリアIDです。<br>
+        ADDおよびREMOVE時、このフィールドは必須となります。</div>
+        <div lang="en">Criterion ID.<br>
+        This field is required in ADD and REMOVE operation.</div>
+    customizerAttributeId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">カスタマイザー属性IDです。<br>
+        ADDおよびREMOVE時、このフィールドは必須となります。</div>
+        <div lang="en">CustomizerAttribute ID.<br>
+        This field is required in ADD and REMOVE operation.</div>
+    value:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">属性値です。挿入用広告に挿入されます。<br>
+        ADD時、このフィールドは必須となります。</div>
+        <div lang="en">The attribute value. It will be inserted into the ad for insertion.<br>
+        This field is required in ADD operation.</div>
+    approvalStatus:
+      $ref: 'AdGroupCriterionCustomizerServiceApprovalStatus.yaml#/AdGroupCriterionCustomizerServiceApprovalStatus'
+    disapprovalReasonCodes:
+      type: array
+      nullable: true
+      items:
+        type: string
+        nullable: true
+      description: |
+        <div lang="ja">審査否認理由です。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
+        <div lang="en">Reject reason on editorial review.<br>
+        Although this field will be returned in the response, it will be ignored on input.</div>
+  title: AdGroupCriterionCustomizer
+  description: |
+    <div lang="ja">AdGroupCriterionCustomizerオブジェクトは、キーワードとカスタマイザー属性間の設定情報を格納します。</div>
+    <div lang="en">AdGroupCriterionCustomizer object contains the configuration information between the keyword and the customizer attribute.</div>

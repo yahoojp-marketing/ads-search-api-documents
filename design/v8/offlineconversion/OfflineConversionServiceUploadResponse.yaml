@@ -1,0 +1,14 @@
+OfflineConversionServiceUploadResponse:
+  type: object
+  nullable: true
+  properties:
+    errors:
+      type: array
+      nullable: true
+      items:
+        $ref: '../../Error.yaml#/Error'
+    rid:
+      type: string
+      nullable: true
+    rval:
+      $ref: 'OfflineConversionServiceUploadReturnValue.yaml#/OfflineConversionServiceUploadReturnValue'

@@ -1,0 +1,32 @@
+CampaignServiceTargetImpressionShareScheme:
+  type: object
+  nullable: true
+  properties:
+    location:
+      $ref: 'CampaignServiceTargetImpressionShareLocation.yaml#/CampaignServiceTargetImpressionShareLocation'
+    bidCeiling:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">入札価格の上限です。<br>
+        このフィールドは省略可能となります。その際、デフォルト設定値は0となります。<br>
+        ※「0」が設定された場合、上限設定はありません。</div>
+        <div lang="en">Limit of bid (CPC).<br>
+        This field is optional. The default value will be 0.<br>
+        * No limits if &#34;0&#34; is set.</div>
+    targetImpressionShare:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">目標のインプレッションシェアです。<br>
+        ADD時およびSET時、このフィールドは必須となります。</div>
+        <div lang="en">Target impression share.<br>
+        This field is required in ADD and SET operation.</div>
+  title: CampaignServiceTargetImpressionShareScheme
+  description: |
+    <div lang="ja">CampaignServiceTargetImpressionShareSchemeオブジェクトは、インプレッションシェアの目標値の自動入札設定情報を表します。 （BiddingStrategyService以外用のオブジェクトです。）<br>
+    ADD時、BiddingStrategyTypeがTARGET_IMPRESSION_SHAREの場合、必須となり、それ以外では省略可能となります。</div>
+    <div lang="en">CampaignServiceTargetImpressionShareScheme object describes automatic bid setting information of the impression share target value. (Object for anything other than BiddingStrategyService.)<br>
+    If BiddingStrategyType is TARGET_IMPRESSION_SHARE, this field is required in ADD operation, and it is optional when BiddingStrategyType is the others.</div>

@@ -1,0 +1,13 @@
+AdGroupAssetServiceReplaceReturnValue:
+  type: object
+  nullable: true
+  properties:
+    values:
+      type: array
+      nullable: true
+      items:
+        $ref: 'AdGroupAssetServiceReplaceValue.yaml#/AdGroupAssetServiceReplaceValue'
+  title: AdGroupAssetServiceReplaceReturnValue
+  description: |
+    <div lang="ja">AdGroupAssetServiceReplaceReturnValueオブジェクトは、広告グループとアセット間の設定情報を格納するコンテナです。</div>
+    <div lang="en">AdGroupAssetServiceReplaceReturnValue is a container of configuration information between ad groups and assets.</div>

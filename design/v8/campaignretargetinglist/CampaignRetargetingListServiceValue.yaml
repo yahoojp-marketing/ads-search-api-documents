@@ -1,0 +1,21 @@
+CampaignRetargetingListServiceValue:
+  type: object
+  nullable: true
+  properties:
+    campaignRetargetingList:
+      $ref: 'CampaignRetargetingList.yaml#/CampaignRetargetingList'
+    errors:
+      type: array
+      nullable: true
+      items:
+        $ref: '../../Error.yaml#/Error'
+    operationSucceeded:
+      type: boolean
+      nullable: true
+      description: |
+        <div lang="ja">処理結果です。trueの場合は、処理は成功しました。falseの場合は処理が失敗しています。</div>
+        <div lang="en">The process results. If true, the process succeeded. If false, the process failed.</div>
+  title: CampaignRetargetingListServiceValue
+  description: |
+    <div lang="ja">CampaignRetargetingListServiceValueオブジェクトは、キャンペーン階層のターゲットリスト設定における実行結果（1Entity）を保持します。</div>
+    <div lang="en">CampaignRetargetingListServiceValue object holds operation results (1 entity)  for Target List settings on the campaign level.</div>
