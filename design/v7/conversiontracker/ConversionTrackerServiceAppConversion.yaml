@@ -9,9 +9,9 @@ ConversionTrackerServiceAppConversion:
       nullable: true
       description: |
         <div lang="ja">アプリケーションIDです。<br>
-        このフィールドは、いずれの場合でも省略可能となります。</div>
+        このフィールドは、ADD時に省略可能となり、SET時は無視されます。</div>
         <div lang="en">Application ID.<br>
-        This field is optional in any cases.</div>
+        This field is optional in ADD operation, and will be ignored in SET operation.</div>
     appPlatform:
       $ref: 'ConversionTrackerServiceAppPlatform.yaml#/ConversionTrackerServiceAppPlatform'
     appPostbackUrl:

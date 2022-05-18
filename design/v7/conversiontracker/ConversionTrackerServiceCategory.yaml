@@ -27,7 +27,6 @@ ConversionTrackerServiceCategory:
   description: |
     <div lang="ja">ConversionTrackerServiceCategoryは、トラッキング対象のコンバージョントラッカー情報のカテゴリです。<br>
     このフィールドは、ADD時に必須となり、SET時に省略可能となります。<br>
-    *SET時、LEADは指定できません。<br>
     *conversionTrackerTypeがAPP_LINK_CONVERSIONの場合、ADDおよびSET時にappEventTypeによって指定できる値に制限があります。<br>
      appEventTypeはConversionTrackerService/getAppEventTypeで取得されるappEvent.appEventTypeで確認できます。<br>
     ・first_openの場合はDOWNLOADのみ選択できます。<br>
@@ -36,7 +35,6 @@ ConversionTrackerServiceCategory:
     </div>
     <div lang="en">ConversionTrackerServiceCategory is a category for ConversionTracker.<br>
     This field is required in ADD operation, and is optional in SET operation.<br>
-    * <code>LEAD</code> cannot be specified in SET operation.<br>
     * In ADD and SET operation, if the conversionTrackerType is APP_LINK_CONVERSION, there is a limit to the values that can be specified by appEventType.<br>
     appEventType can be confirmed by appEvent.appEventType obtained by ConversionTrackerService/getAppEventType.<br>
     - In case of first_open, only DOWNLOAD can be selected.<br>
@@ -53,37 +51,37 @@ ConversionTrackerServiceCategory:
       <dt class="term__item">SIGNUP</dt>
       <dd class="term__desc"><span lang="ja">契約です。<br>会員やメールマガジンの登録数などの測定を行います。</span><span lang="en">Agreement. It is used to measure registration of membership or subscription</span></dd>
       <dt class="term__item">LEAD</dt>
-      <dd class="term__desc"><span lang="ja">販売促進です。<br>資料請求数やサービス、商品に関する問い合わせ数などの測定を行います。</span><span lang="en">Sales promotion. It is used to measure inquiries for catalog, service or merchandise.</span></dd>
+      <dd class="term__desc"><span lang="ja">販売促進です。<br>資料請求数やサービス、商品に関する問い合わせ数などの測定を行います。<br>※ADDまたはSET時、このEnumは指定できません。</span><span lang="en">Sales promotion. It is used to measure inquiries for catalog, service or merchandise.<br>*This Enum cannot be specified in ADD and SET operation.</span></dd>
       <dt class="term__item">DOWNLOAD</dt>
       <dd class="term__desc"><span lang="ja">ダウンロードです。<br>※広告管理ツールおよびレポート上での表示は「その他」になります。</span><span lang="en"> Download.<br> *This will be displayed as Others in Campaign Management Tool and Reports. </span></dd>
       <dt class="term__item">ADD_TO_CART</dt>
-      <dd class="term__desc"><span lang="ja">カートへの追加です。<br>※こちらのEnumは、現在利用できません。</span><span lang="en">Add to cart.<br>*This Enum is currently unavailable.</span></dd>
+      <dd class="term__desc"><span lang="ja">カートへの追加です。</span><span lang="en">Add to cart.</span></dd>
       <dt class="term__item">BEGIN_CHECKOUT</dt>
-      <dd class="term__desc"><span lang="ja">決済の開始です。<br>※こちらのEnumは、現在利用できません。</span><span lang="en">Begin checkout.<br>*This Enum is currently unavailable.</span></dd>
+      <dd class="term__desc"><span lang="ja">決済の開始です。</span><span lang="en">Begin checkout.</span></dd>
       <dt class="term__item">SUBSCRIBE_PAID</dt>
-      <dd class="term__desc"><span lang="ja">定期購入です。<br>※こちらのEnumは、現在利用できません。</span><span lang="en">Subscription.<br>*This Enum is currently unavailable.</span></dd>
+      <dd class="term__desc"><span lang="ja">定期購入です。</span><span lang="en">Subscription.</span></dd>
       <dt class="term__item">PHONE_CALL_LEAD</dt>
-      <dd class="term__desc"><span lang="ja">架電です。<br>※こちらのEnumは、現在利用できません。</span><span lang="en">Phone call leads.<br>*This Enum is currently unavailable.</span></dd>
+      <dd class="term__desc"><span lang="ja">架電です。</span><span lang="en">Phone call leads.</span></dd>
       <dt class="term__item">IMPORTED_LEAD</dt>
       <dd class="term__desc"><span lang="ja">データのインポートです。<br>※こちらのEnumは、現在利用できません。</span><span lang="en">Imported leads.<br>*This Enum is currently unavailable.</span></dd>
       <dt class="term__item">SUBMIT_LEAD_FORM</dt>
-      <dd class="term__desc"><span lang="ja">見込み客のフォーム送信です。<br>※こちらのEnumは、現在利用できません。</span><span lang="en">Form submission by prospect.<br>*This Enum is currently unavailable.</span></dd>
+      <dd class="term__desc"><span lang="ja">見込み客のフォーム送信です。</span><span lang="en">Form submission by prospect.</span></dd>
       <dt class="term__item">BOOK_APPOINTMENT</dt>
-      <dd class="term__desc"><span lang="ja">予約です。<br>※こちらのEnumは、現在利用できません。</span><span lang="en">Reservation.<br>*This Enum is currently unavailable.</span></dd>
+      <dd class="term__desc"><span lang="ja">予約です。</span><span lang="en">Reservation.</span></dd>
       <dt class="term__item">REQUEST_QUOTE</dt>
-      <dd class="term__desc"><span lang="ja">見積もりのリクエストです。<br>※こちらのEnumは、現在利用できません。</span><span lang="en">Request a quote.<br>*This Enum is currently unavailable.</span></dd>
+      <dd class="term__desc"><span lang="ja">見積もりのリクエストです。</span><span lang="en">Request a quote.</span></dd>
       <dt class="term__item">GET_DIRECTIONS</dt>
-      <dd class="term__desc"><span lang="ja">ルート・乗換案内です。<br>※こちらのEnumは、現在利用できません。</span><span lang="en">Route / transfer information.<br>*This Enum is currently unavailable.</span></dd>
+      <dd class="term__desc"><span lang="ja">ルート・乗換案内です。</span><span lang="en">Route / transfer information.</span></dd>
       <dt class="term__item">OUTBOUND_CLICK</dt>
-      <dd class="term__desc"><span lang="ja">離脱クリックです。<br>※こちらのEnumは、現在利用できません。</span><span lang="en">Withdrawal click.<br>*This Enum is currently unavailable.</span></dd>
+      <dd class="term__desc"><span lang="ja">離脱クリックです。</span><span lang="en">Withdrawal click.</span></dd>
       <dt class="term__item">CONTACT</dt>
-      <dd class="term__desc"><span lang="ja">連絡先です。<br>※こちらのEnumは、現在利用できません。</span><span lang="en">Contact.<br>*This Enum is currently unavailable.</span></dd>
+      <dd class="term__desc"><span lang="ja">連絡先です。</span><span lang="en">Contact.</span></dd>
       <dt class="term__item">ENGAGEMENT</dt>
-      <dd class="term__desc"><span lang="ja">タグの発火です。<br>※こちらのEnumは、現在利用できません。</span><span lang="en">Engagements.<br>*This Enum is currently unavailable.</span></dd>
+      <dd class="term__desc"><span lang="ja">タグの発火です。</span><span lang="en">Engagements.</span></dd>
       <dt class="term__item">STORE_VISIT</dt>
-      <dd class="term__desc"><span lang="ja">実店舗への来店です。<br>※こちらのEnumは、現在利用できません。</span><span lang="en">Store visits.<br>*This Enum is currently unavailable.</span></dd>
+      <dd class="term__desc"><span lang="ja">実店舗への来店です。</span><span lang="en">Store visits.</span></dd>
       <dt class="term__item">STORE_SALE</dt>
-      <dd class="term__desc"><span lang="ja">実店舗での購入です。<br>※こちらのEnumは、現在利用できません。</span><span lang="en">Store sales.<br>*This Enum is currently unavailable.</span></dd>
+      <dd class="term__desc"><span lang="ja">実店舗での購入です。</span><span lang="en">Store sales.</span></dd>
       <dt class="term__item">UNKNOWN</dt>
       <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
     </dl>

@@ -26,7 +26,7 @@ ConversionTrackerServiceSelector:
       nullable: true
       items:
         $ref: 'ConversionTrackerServiceCategory.yaml#/ConversionTrackerServiceCategory'
-      maxItems: 6
+      maxItems: 20
     conversionCountingTypes:
       type: array
       nullable: true
