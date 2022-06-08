@@ -7,9 +7,9 @@ AssetServiceStructuredSnippetAsset:
       nullable: true
       description: |
         <div lang="ja">ヘッダーです。<br>
-        ADD時、このフィールドは必須となります。</div>
+        ADDおよびSET時、このフィールドは必須となります。</div>
         <div lang="en">header.<br>
-        This field is required in ADD operation.</div>
+        This field is required in ADD and SET operation.</div>
     reviewHeader:
       type: string
       nullable: true
@@ -28,9 +28,9 @@ AssetServiceStructuredSnippetAsset:
         nullable: true
       description: |
         <div lang="ja">バリューです。<br>
-        ADD時、このフィールドは必須となります。</div>
+        ADDおよびSET時、このフィールドは必須となります。</div>
         <div lang="en">value.<br>
-        This field is required in ADD operation.</div>
+        This field is required in ADD and SET operation.</div>
     reviewValues:
       type: array
       nullable: true

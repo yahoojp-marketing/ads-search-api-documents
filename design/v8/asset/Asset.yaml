@@ -83,11 +83,12 @@ Asset:
       nullable: true
       description: |
         <div lang="ja">最終リンク先URLです。<br>
-        ADDおよびSET時、このフィールドは省略可能となります。<br>
-        ※ADD時、assetData.typeがQUICKLINKの場合は必須です。</div>
+        ADDおよびSET時、assetData.typeがQUICKLINKの場合は必須です。<br>
+        assetData.typeがQUICKLINK以外の場合、リクエストの際に無視されます。</div>
         <div lang="en">Landing Page URL.<br>
         This field is optional in ADD and SET operation.<br>
-        *In ADD operation, If assetData.type is QUICKLINK, this field is required.</div>
+        In ADD and SET operation, If assetData.type is QUICKLINK, this field is required.<br>
+        And will be ignored when assetData.type is the others.</div>
     reviewFinalUrl:
       type: string
       nullable: true

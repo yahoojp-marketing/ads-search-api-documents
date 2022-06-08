@@ -7,9 +7,9 @@ AssetServiceCalloutAsset:
       nullable: true
       description: |
         <div lang="ja">コールアウトテキストです。<br>
-        ADD時、このフィールドは必須となります。</div>
+        ADDおよびSET時、このフィールドは必須となります。</div>
         <div lang="en">Callout text.<br>
-        This field is required in ADD operation.</div>
+        This field is required in ADD and SET operation.</div>
     reviewCalloutText:
       type: string
       nullable: true

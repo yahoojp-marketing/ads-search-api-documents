@@ -7,9 +7,9 @@ AssetServiceQuickLinkAsset:
       nullable: true
       description: |
         <div lang="ja">リンクテキストです。<br>
-        ADD時、このフィールドは必須となります。</div>
+        ADDおよびSET時、このフィールドは必須となります。</div>
         <div lang="en">Link text.<br>
-        This field is required in ADD operation.</div>
+        This field is required in ADD and SET operation.</div>
     reviewLinkText:
       type: string
       nullable: true

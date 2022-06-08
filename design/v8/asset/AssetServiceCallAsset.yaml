@@ -7,9 +7,9 @@ AssetServiceCallAsset:
       nullable: true
       description: |
         <div lang="ja">電話番号です。<br>
-        ADD時、このフィールドは必須となります。</div>
+        ADDおよびSET時、このフィールドは必須となります。</div>
         <div lang="en">Phone Number.<br>
-        This field is required in ADD operation.</div>
+        This field is required in ADD and SET operation.</div>
     reviewPhoneNumber:
       type: string
       nullable: true
