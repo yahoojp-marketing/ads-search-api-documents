@@ -48,7 +48,7 @@
 "CLICK_TYPE","クリック種別","ClickType","clickType","ENUM","[IS_SELF_ACTION]","Segment","電話番号,クイックリンク,メイン広告,その他","PhoneCalls,QuickLinks,Ad,Other",""
 "DEVICE","デバイス","Device","device","ENUM","","Segment","PC,スマートフォン,タブレット,その他","PC,Smartphone,Tablet,Other",""
 "DAY","日","Day","day","STRING","","Segment","","",""
-"DAY_OF_WEEK","曜日","Day of week","dayOfWeek","ENUM","[ATTRIBUTE_VALUES, ATTRIBUTE_VALUES_JSON, CALLOUT, FINAL_URL, FINAL_URL_SMARTPHONE, IS_SELF_ACTION, PHONE_NUMBER, PLACEHOLDER_TYPE, QUICK_LINK_TEXT, QUICK_LINK_URL, TRACKING_URL]","Segment","月曜日,火曜日,水曜日,木曜日,金曜日,土曜日,日曜日,その他","Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday,Other",""
+"DAY_OF_WEEK","曜日","Day of week","dayOfWeek","ENUM","[ATTRIBUTE_VALUES, ATTRIBUTE_VALUES_JSON, CALLOUT, FINAL_URL, FINAL_URL_SMARTPHONE, IS_SELF_ACTION, PHONE_NUMBER, PLACEHOLDER_TYPE, QUICK_LINK_TEXT, QUICK_LINK_URL, SITELINK_FEED_ITEM_LINE1, SITELINK_FEED_ITEM_LINE2, TRACKING_URL]","Segment","月曜日,火曜日,水曜日,木曜日,金曜日,土曜日,日曜日,その他","Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday,Other",""
 "QUARTER","四半期","Quarter","quarter","STRING","","Segment","","",""
 "YEAR","年間","Year","year","STRING","","Segment","","",""
 "MONTH","毎月","Month","month","STRING","[MONTH_OF_YEAR]","Segment","","",""

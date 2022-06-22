@@ -64,15 +64,15 @@ AuditLogServiceEventSelector:
           <dt class="term__item">AD_GROUP_ASSET</dt>
           <dd class="term__desc"><span lang="ja">広告グループとアセット間の設定情報です。</span><span lang="en">Configuration information between ad group and assets.</span></dd>
           <dt class="term__item">ACCOUNT_CUSTOMIZER</dt>
-          <dd class="term__desc"><span lang="ja">アカウントとカスタマイザー属性間の設定情報です。<br>※こちらのタイプは、現在利用できません。</span><span lang="en">Configuration information between account and customizer attributes.<br>*This type is currently unavailable.</span></dd>
+          <dd class="term__desc"><span lang="ja">アカウントとカスタマイザー属性間の設定情報です。</span><span lang="en">Configuration information between account and customizer attributes.</span></dd>
           <dt class="term__item">CAMPAIGN_CUSTOMIZER</dt>
-          <dd class="term__desc"><span lang="ja">キャンペーンとカスタマイザー属性間の設定情報です。<br>※こちらのタイプは、現在利用できません。</span><span lang="en">Configuration information between campaign and customizer attributes.<br>*This type is currently unavailable.</span></dd>
+          <dd class="term__desc"><span lang="ja">キャンペーンとカスタマイザー属性間の設定情報です。</span><span lang="en">Configuration information between campaign and customizer attributes.</span></dd>
           <dt class="term__item">AD_GROUP_CUSTOMIZER</dt>
-          <dd class="term__desc"><span lang="ja">広告グループとカスタマイザー属性間の設定情報です。<br>※こちらのタイプは、現在利用できません。</span><span lang="en">Configuration information between ad group and customizer attributes.<br>*This type is currently unavailable.</span></dd>
+          <dd class="term__desc"><span lang="ja">広告グループとカスタマイザー属性間の設定情報です。</span><span lang="en">Configuration information between ad group and customizer attributes.</span></dd>
           <dt class="term__item">AD_GROUP_CRITERION_CUSTOMIZER</dt>
-          <dd class="term__desc"><span lang="ja">キーワードとカスタマイザー属性間の設定情報です。<br>※こちらのタイプは、現在利用できません。</span><span lang="en">Configuration information between keyword and customizer attributes.<br>*This type is currently unavailable.</span></dd>
+          <dd class="term__desc"><span lang="ja">キーワードとカスタマイザー属性間の設定情報です。</span><span lang="en">Configuration information between keyword and customizer attributes.</span></dd>
           <dt class="term__item">CUSTOMIZER_ATTRIBUTE</dt>
-          <dd class="term__desc"><span lang="ja">カスタマイザー属性です。<br>※こちらのタイプは、現在利用できません。</span><span lang="en">Customizer attributes.<br>*This type is currently unavailable.</span></dd>
+          <dd class="term__desc"><span lang="ja">カスタマイザー属性です。</span><span lang="en">Customizer attributes.</span></dd>
           <dt class="term__item">PAGE_FEED_ASSET_SET</dt>
           <dd class="term__desc"><span lang="ja">ページフィードアセットセットです。<br>※こちらのタイプは、現在利用できません。</span><span lang="en">PageFeedAssetSet.<br>*This type is currently unavailable.</span></dd>
           <dt class="term__item">PAGE_FEED_ASSET</dt>

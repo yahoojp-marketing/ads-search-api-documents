@@ -198,6 +198,7 @@ tags:
       <li><div lang="ja"><a href="./reports/v8/BID_MODIFIER.csv" download>入札価格調整率レポート</a></div></li><li><div lang="en"><a href="./reports/v8/BID_MODIFIER.csv" download>Bid Adjustments Report</a></div></li>
       <li><div lang="ja"><a href="./reports/v8/CAMPAIGN_ASSET.csv" download>（新）広告表示オプションレポート（キャンペーン）</a></div></li><li><div lang="en"><a href="./reports/v8/CAMPAIGN_ASSET.csv" download>(New) Ad Display Option Report (campaign)</a></div></li>
       <li><div lang="ja"><a href="./reports/v8/AD_GROUP_ASSET.csv" download>（新）広告表示オプションレポート（広告グループ）</a></div></li><li><div lang="en"><a href="./reports/v8/AD_GROUP_ASSET.csv" download>(New) Ad Display Option Report (ad group)</a></div></li>
+      <li><div lang="ja"><a href="./reports/v8/RESPONSIVE_ADS_FOR_SEARCH_ASSET.csv" download>レスポンシブ検索広告アセットレポート</a></div></li><li><div lang="en"><a href="./reports/v8/RESPONSIVE_ADS_FOR_SEARCH_ASSET.csv" download>Responsive Ads for Search Asset Report</a></div></li>
       </ul>
   - name: CampaignExportService
     description: |
@@ -311,28 +312,28 @@ tags:
   - name: CustomizerAttributeService
     description: |
       <label class="campaign"></label>
-      <div lang="ja">CustomizerAttributeServiceでは、カスタマイザー属性の取得および追加・削除を行います。<br>※現在、こちらのサービスは利用できません。</div>
-      <div lang="en">CustomizerAttributeService is to get, add, or delete, CustomizerAttribute information.<br>*Currently this service is not available.</div>
+      <div lang="ja">CustomizerAttributeServiceでは、カスタマイザー属性の取得および追加・削除を行います。</div>
+      <div lang="en">CustomizerAttributeService is to get, add, or delete, CustomizerAttribute information.</div>
   - name: AccountCustomizerService
     description: |
       <label class="campaign"></label>
-      <div lang="ja">AccountCustomizerServiceでは、アカウントとカスタマイザー属性間の設定情報の取得および追加・削除を行います。<br>※現在、こちらのサービスは利用できません。</div>
-      <div lang="en">AccountCustomizerService is to get, add, or delete, Asset information.<br>*Currently this service is not available.</div>
+      <div lang="ja">AccountCustomizerServiceでは、アカウントとカスタマイザー属性間の設定情報の取得および追加・削除を行います。</div>
+      <div lang="en">AccountCustomizerService is to get, add, or delete, Asset information.</div>
   - name: CampaignCustomizerService
     description: |
       <label class="campaign"></label>
-      <div lang="ja">CampaignCustomizerServiceでは、キャンペーンとカスタマイザー属性間の設定情報の取得および追加・削除を行います。<br>※現在、こちらのサービスは利用できません。</div>
-      <div lang="en">CampaignCustomizerService is to get, add, or delete, Asset information.<br>*Currently this service is not available.</div>
+      <div lang="ja">CampaignCustomizerServiceでは、キャンペーンとカスタマイザー属性間の設定情報の取得および追加・削除を行います。</div>
+      <div lang="en">CampaignCustomizerService is to get, add, or delete, Asset information.</div>
   - name: AdGroupCustomizerService
     description: |
       <label class="campaign"></label>
-      <div lang="ja">AdGroupCustomizerServiceでは、広告グループとカスタマイザー属性間の設定情報の取得および追加・削除を行います。<br>※現在、こちらのサービスは利用できません。</div>
-      <div lang="en">AdGroupCustomizerService is to get, add, or delete, Asset information.<br>*Currently this service is not available.</div>
+      <div lang="ja">AdGroupCustomizerServiceでは、広告グループとカスタマイザー属性間の設定情報の取得および追加・削除を行います。</div>
+      <div lang="en">AdGroupCustomizerService is to get, add, or delete, Asset information.</div>
   - name: AdGroupCriterionCustomizerService
     description: |
       <label class="campaign"></label>
-      <div lang="ja">AdGroupCriterionCustomizerServiceでは、キーワードとカスタマイザー属性間の設定情報の取得および追加・削除を行います。<br>※現在、こちらのサービスは利用できません。</div>
-      <div lang="en">AdGroupCriterionCustomizerService is to get, add, or delete, Asset information.<br>*Currently this service is not available.</div>
+      <div lang="ja">AdGroupCriterionCustomizerServiceでは、キーワードとカスタマイザー属性間の設定情報の取得および追加・削除を行います。</div>
+      <div lang="en">AdGroupCriterionCustomizerService is to get, add, or delete, Asset information.</div>
   - name: PageFeedAssetSetService
     description: |
       <label class="campaign"></label>
@@ -8386,8 +8387,8 @@ paths:
   /CustomizerAttributeService/get:
     post:
       description: |
-        <div lang="ja">カスタマイザー属性の情報を取得します。<br>※現在利用できません</div>
-        <div lang="en">Get customizerAttribute information.<br>* Not Available.</div>
+        <div lang="ja">カスタマイザー属性の情報を取得します。</div>
+        <div lang="en">Get customizerAttribute information.</div>
       tags:
         - CustomizerAttributeService
       requestBody:
@@ -8438,8 +8439,8 @@ paths:
   /CustomizerAttributeService/add:
     post:
       description: |
-        <div lang="ja">カスタマイザー属性の情報を追加します。<br>※現在利用できません</div>
-        <div lang="en">Add customizerAttribute information.<br>* Not Available.</div>
+        <div lang="ja">カスタマイザー属性の情報を追加します。</div>
+        <div lang="en">Add customizerAttribute information.</div>
       tags:
         - CustomizerAttributeService
       requestBody:
@@ -8490,8 +8491,8 @@ paths:
   /CustomizerAttributeService/remove:
     post:
       description: |
-        <div lang="ja">カスタマイザー属性の情報を削除します。<br>※現在利用できません</div>
-        <div lang="en">Remove customizerAttribute information.<br>* Not Available.</div>
+        <div lang="ja">カスタマイザー属性の情報を削除します。</div>
+        <div lang="en">Remove customizerAttribute information.</div>
       tags:
         - CustomizerAttributeService
       requestBody:
@@ -8542,8 +8543,8 @@ paths:
   /AccountCustomizerService/get:
     post:
       description: |
-        <div lang="ja">アカウントとカスタマイザー属性間の設定情報を取得します。<br>※現在利用できません</div>
-        <div lang="en">Get the configuration information between the account and the customizer attributes.<br>* Not Available.</div>
+        <div lang="ja">アカウントとカスタマイザー属性間の設定情報を取得します。</div>
+        <div lang="en">Get the configuration information between the account and the customizer attributes.</div>
       tags:
         - AccountCustomizerService
       requestBody:
@@ -8594,8 +8595,8 @@ paths:
   /AccountCustomizerService/add:
     post:
       description: |
-        <div lang="ja">アカウントとカスタマイザー属性間の設定情報を追加します。<br>※現在利用できません</div>
-        <div lang="en">Add the configuration information between the account and the customizer attributes.<br>* Not Available.</div>
+        <div lang="ja">アカウントとカスタマイザー属性間の設定情報を追加します。</div>
+        <div lang="en">Add the configuration information between the account and the customizer attributes.</div>
       tags:
         - AccountCustomizerService
       requestBody:
@@ -8646,8 +8647,8 @@ paths:
   /AccountCustomizerService/remove:
     post:
       description: |
-        <div lang="ja">アカウントとカスタマイザー属性間の設定情報を削除します。<br>※現在利用できません</div>
-        <div lang="en">Remove the configuration information between the account and the customizer attributes.<br>* Not Available.</div>
+        <div lang="ja">アカウントとカスタマイザー属性間の設定情報を削除します。</div>
+        <div lang="en">Remove the configuration information between the account and the customizer attributes.</div>
       tags:
         - AccountCustomizerService
       requestBody:
@@ -8698,8 +8699,8 @@ paths:
   /CampaignCustomizerService/get:
     post:
       description: |
-        <div lang="ja">キャンペーンとカスタマイザー属性間の設定情報を取得します。<br>※現在利用できません</div>
-        <div lang="en">Get the configuration information between the campaign and the customizer attributes.<br>* Not Available.</div>
+        <div lang="ja">キャンペーンとカスタマイザー属性間の設定情報を取得します。</div>
+        <div lang="en">Get the configuration information between the campaign and the customizer attributes.</div>
       tags:
         - CampaignCustomizerService
       requestBody:
@@ -8750,8 +8751,8 @@ paths:
   /CampaignCustomizerService/add:
     post:
       description: |
-        <div lang="ja">キャンペーンとカスタマイザー属性間の設定情報を追加します。<br>※現在利用できません</div>
-        <div lang="en">Add the configuration information between the campaign and the customizer attributes.<br>* Not Available.</div>
+        <div lang="ja">キャンペーンとカスタマイザー属性間の設定情報を追加します。</div>
+        <div lang="en">Add the configuration information between the campaign and the customizer attributes.</div>
       tags:
         - CampaignCustomizerService
       requestBody:
@@ -8802,8 +8803,8 @@ paths:
   /CampaignCustomizerService/remove:
     post:
       description: |
-        <div lang="ja">キャンペーンとカスタマイザー属性間の設定情報を削除します。<br>※現在利用できません</div>
-        <div lang="en">Remove the configuration information between the campaign and the customizer attributes.<br>* Not Available.</div>
+        <div lang="ja">キャンペーンとカスタマイザー属性間の設定情報を削除します。</div>
+        <div lang="en">Remove the configuration information between the campaign and the customizer attributes.</div>
       tags:
         - CampaignCustomizerService
       requestBody:
@@ -8854,8 +8855,8 @@ paths:
   /AdGroupCustomizerService/get:
     post:
       description: |
-        <div lang="ja">広告グループとカスタマイザー属性間の設定情報を取得します。<br>※現在利用できません</div>
-        <div lang="en">Get the configuration information between the adgroup and the customizer attributes.<br>* Not Available.</div>
+        <div lang="ja">広告グループとカスタマイザー属性間の設定情報を取得します。</div>
+        <div lang="en">Get the configuration information between the adgroup and the customizer attributes.</div>
       tags:
         - AdGroupCustomizerService
       requestBody:
@@ -8906,8 +8907,8 @@ paths:
   /AdGroupCustomizerService/add:
     post:
       description: |
-        <div lang="ja">広告グループとカスタマイザー属性間の設定情報を追加します。<br>※現在利用できません</div>
-        <div lang="en">Add the configuration information between the adgroup and the customizer attributes.<br>* Not Available.</div>
+        <div lang="ja">広告グループとカスタマイザー属性間の設定情報を追加します。</div>
+        <div lang="en">Add the configuration information between the adgroup and the customizer attributes.</div>
       tags:
         - AdGroupCustomizerService
       requestBody:
@@ -8958,8 +8959,8 @@ paths:
   /AdGroupCustomizerService/remove:
     post:
       description: |
-        <div lang="ja">広告グループとカスタマイザー属性間の設定情報を削除します。<br>※現在利用できません</div>
-        <div lang="en">Remove the configuration information between the adgroup and the customizer attributes.<br>* Not Available.</div>
+        <div lang="ja">広告グループとカスタマイザー属性間の設定情報を削除します。</div>
+        <div lang="en">Remove the configuration information between the adgroup and the customizer attributes.</div>
       tags:
         - AdGroupCustomizerService
       requestBody:
@@ -9010,8 +9011,8 @@ paths:
   /AdGroupCriterionCustomizerService/get:
     post:
       description: |
-        <div lang="ja">キーワードとカスタマイザー属性間の設定情報を取得します。<br>※現在利用できません</div>
-        <div lang="en">Get the configuration information between the keyword and the customizer attributes.<br>* Not Available.</div>
+        <div lang="ja">キーワードとカスタマイザー属性間の設定情報を取得します。</div>
+        <div lang="en">Get the configuration information between the keyword and the customizer attributes.</div>
       tags:
         - AdGroupCriterionCustomizerService
       requestBody:
@@ -9062,8 +9063,8 @@ paths:
   /AdGroupCriterionCustomizerService/add:
     post:
       description: |
-        <div lang="ja">キーワードとカスタマイザー属性間の設定情報を追加します。<br>※現在利用できません</div>
-        <div lang="en">Add the configuration information between the keyword and the customizer attributes.<br>* Not Available.</div>
+        <div lang="ja">キーワードとカスタマイザー属性間の設定情報を追加します。</div>
+        <div lang="en">Add the configuration information between the keyword and the customizer attributes.</div>
       tags:
         - AdGroupCriterionCustomizerService
       requestBody:
@@ -9114,8 +9115,8 @@ paths:
   /AdGroupCriterionCustomizerService/remove:
     post:
       description: |
-        <div lang="ja">キーワードとカスタマイザー属性間の設定情報を削除します。<br>※現在利用できません</div>
-        <div lang="en">Remove the configuration information between the keyword and the customizer attributes.<br>* Not Available.</div>
+        <div lang="ja">キーワードとカスタマイザー属性間の設定情報を削除します。</div>
+        <div lang="en">Remove the configuration information between the keyword and the customizer attributes.</div>
       tags:
         - AdGroupCriterionCustomizerService
       requestBody:
