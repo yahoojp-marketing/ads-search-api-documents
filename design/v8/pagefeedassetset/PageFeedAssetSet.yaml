@@ -11,6 +11,17 @@ PageFeedAssetSet:
         このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
         <div lang="en">Account ID.<br>
         Although this field will be returned in the response, it will be ignored on input.</div>
+    feedId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">フィードIDです。<br>
+        旧形式から自動移行されたページフィードの場合、旧形式のページフィードのIDが返却されます。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
+        <div lang="en">Feed ID.<br>
+        If the page feed is auto-migrated, the old-style page feed ID will be returned.<br>
+        Although this field will be returned in the response, it will be ignored on input.</div>
     pageFeedAssetSetId:
       type: integer
       nullable: true
