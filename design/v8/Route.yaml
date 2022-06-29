@@ -1618,14 +1618,17 @@ paths:
         ・1リクエストで異なるキャンペーン配下の広告グループに対してFeedItem情報の設定が可能です。<br>
         ・1つの広告グループに設定できるFeedItem情報は、QUICKLINKS、CALLEXTENSIONでそれぞれ20件までです。<br>
         ・CALLEXTENSIONについては1広告グループあたり1件の設定をお薦めします。<br>
-        ・1リクエスト内で同一のadGroupIdに複数のFeedItem情報を設定できません。</div>
+        ・1リクエスト内で同一のadGroupIdに複数のFeedItem情報を設定できません。<br>
+        ※現在、こちらのサービスは利用できません。</div>
         <div lang="en">Add, update or release(remove) FeedItem information of ad group.<br>
         Update will overwrite the old information, so have to include the additional information on every updates.<br>
         ・To release FeedItem information, update with blank data.<br>
         ・It is possible to set FeedItem information to ad groups in different campaigns by single request.<br>
         ・FeedItem information that can be set for a single ad group is up to 20 for each QUICKLINKS, CALLEXTENSION.<br>
         ・As for CALLEXTENSION, We recommend setting only one phone number per ad group.<br>
-        ・It is not possible to set multiple FeedItem information to an adGroupId by single request.</div>
+        ・It is not possible to set multiple FeedItem information to an adGroupId by single request.<br>
+        *Currently this service is not available.
+        </div>
       tags:
         - AdGroupFeedService
       requestBody:
@@ -5761,14 +5764,16 @@ paths:
         ・FeedItem情報を解除するときは空の情報で更新します。<br>
         ・1つのキャンペーンに設定できるFeedItem情報は、QUICKLINKS、CALLEXTENSIONでそれぞれ20件までです。<br>
         ・CALLEXTENSIONについて1キャンペーンあたり1件の設定をお薦めします。<br>
-        ・1リクエスト内で同一のcampaignIdに複数のFeedItem情報は設定できません。
+        ・1リクエスト内で同一のcampaignIdに複数のFeedItem情報は設定できません。<br>
+        ※現在、こちらのサービスは利用できません。
         </div><div lang="en">Add, update or release(remove) FeedItem information of ad group.<br>
         Update will overwrite the old information, so have to include the additional information on every updates. <br>
         * To release FeedItem information, update with blank data.<br>
         * It is possible to set FeedItem information to ad groups in different campaigns by single request.<br>
         * FeedItem information that can be set for a single ad group is up to 20 for each QUICKLINKS, CALLEXTENSION.<br>
         * As for CALLEXTENSION, We recommend setting only one phone number per ad group.<br>
-        * It is not possible to set multiple FeedItem information to an campaignId by single request.</div>
+        * It is not possible to set multiple FeedItem information to an campaignId by single request.<br>
+        *Currently this service is not available.</div>
       tags:
         - CampaignFeedService
       requestBody:
