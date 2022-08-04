@@ -22,12 +22,10 @@ CampaignServiceDynamicAdsForSearchSetting:
       description: |
         <div lang="ja">
           キャンペーンで使用するページフィードアセットセットIDです。<br>
-          ※こちらのフィールドは、現在利用できません。<br>
           ADD時およびSET時、DasUseUrlsTypeがUSE_SUPPLIED_URLS_ONLYまたはDOMAIN_AND_SUPPLIED_URLSの場合、feedIdsフィールドもしくはpageFeedAssetSetIdsフィールドのどちらか片方の設定が必須となります。
         </div>
         <div lang="en">
           PageFeedAssetSet ID for campaign.<br>
-          *This type is currently unavailable.<br>
           In ADD and SET operation, If DasUseUrlsType is USE_SUPPLIED_URLS_ONLY or DOMAIN_AND_SUPPLIED_URLS, either the feedIds field or the pageFeedAssetSetIds field must be set.
         </div>
       type: array

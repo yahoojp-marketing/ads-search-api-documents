@@ -10,11 +10,13 @@ AccountManagementServiceEnterpriseTypePosition:
     <div lang="ja">AccountManagementServiceEnterpriseTypePositionは、企業形態の位置を表します。<br>
     このフィールドは、ADD時に省略可能となり、SET時は無視されます。<br>
     ※ADD時、enterpriseTypeがKOJIN（個人事業主）またはOTHER（その他法人）の場合は設定できません。<br>
-    ※clientTypeがSELFの場合は、ADD時、SET時ともに無視されます。</div>
+    ※clientTypeがSELFの場合は、ADD時、SET時ともに無視されます。<br>
+    ※このフィールドは、レスポンスの際に返却されません。</div>
     <div lang="en">AccountManagementServiceEnterpriseTypePosition describes the position of enterprise type.<br>
     This field is optional in ADD operation, and will be ignored in SET operation.<br>
     * Cannot be set when enterpriseType is KOJIN or OTHER in ADD operation.<br>
-    * When clientType is "SELF", this field will be ignored in ADD and SET operations.</div>
+    * When clientType is "SELF", this field will be ignored in ADD and SET operations.<br>
+    * This field is not returned in the response.</div>
     <dl class=term>
       <dt class="term__item">FRONT</dt>
       <dd class="term__desc"><span lang="ja">会社名の前です。</span><span lang="en">Enterprise type is placed before the company name.</span></dd>

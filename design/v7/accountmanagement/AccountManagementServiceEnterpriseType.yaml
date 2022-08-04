@@ -20,10 +20,12 @@ AccountManagementServiceEnterpriseType:
   description: |
     <div lang="ja">AccountManagementServiceEnterpriseTypeは、企業形態を表します。<br>
     このフィールドは、ADD時は必須となり、SET時は無視されます。<br>
-    ※clientTypeがSELFの場合は、ADD時、SET時ともに無視されます。</div>
+    ※clientTypeがSELFの場合は、ADD時、SET時ともに無視されます。<br>
+    ※このフィールドは、レスポンスの際に返却されません。</div>
     <div lang="en">AccountManagementServiceEnterpriseType object describes type of enterprise.<br>
     This field is required in ADD operation, and will be ignored in SET operation.<br>
-    * When clientType is "SELF", this field will be ignored in ADD and SET operations.</div>
+    * When clientType is "SELF", this field will be ignored in ADD and SET operations.<br>
+    * This field is not returned in the response.</div>
     <dl class=term>
       <dt class="term__item">KABUSHIKI</dt>
       <dd class="term__desc"><span lang="ja">株式会社</span><span lang="en">KABUSHIKI</span></dd>

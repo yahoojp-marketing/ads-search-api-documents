@@ -5776,8 +5776,8 @@ paths:
   /DictionaryService/getDisapprovalReason:
     post:
       description: |
-        <div lang="ja">EditorialReasonと推奨する対応方法の一覧を取得します。</div>
-        <div lang="en">Get EditorialReason and recommended resolution list.</div>
+        <div lang="ja">審査否認理由と推奨する対応方法の一覧を取得します。</div>
+        <div lang="en">Get Reject Reason and recommended resolution list.</div>
       tags:
         - DictionaryService
       requestBody:

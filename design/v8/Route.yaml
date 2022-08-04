@@ -339,23 +339,19 @@ tags:
       <label class="campaign"></label>
       <div lang="ja">PageFeedAssetSetServiceでは、ページフィードアセットセットの取得および追加・更新・削除を行います。<br>
       ページフィードアセットセットとは、広告管理ツール上のページフィードを指します。<br>
-      ページフィードアセットとは、広告管理ツール上のページフィードアイテムを指します。<br>
-      ※現在、こちらのサービスは利用できません。</div>
+      ページフィードアセットとは、広告管理ツール上のページフィードアイテムを指します。</div>
       <div lang="en">PageFeedAssetSetService is to get, add, update, or remove the PageFeedAssetSet.<br>
       A PageFeedAssetSet is a PageFeed of Campaign Management Tool.<br>
-      A PageFeedAsset is a PageFeedItem of Campaign Management Tool.<br>
-      *Currently this service is not available.</div>
+      A PageFeedAsset is a PageFeedItem of Campaign Management Tool.</div>
   - name: PageFeedAssetService
     description: |
       <label class="campaign"></label>
       <div lang="ja">PageFeedAssetServiceでは、ページフィードアセットの取得、アップロード、一括取得を行います。<br>
       ページフィードアセットセットとは、広告管理ツール上のページフィードを指します。<br>
-      ページフィードアセットとは、広告管理ツール上のページフィードアイテムを指します。<br>
-      ※現在、こちらのサービスは利用できません。</div>
+      ページフィードアセットとは、広告管理ツール上のページフィードアイテムを指します。</div>
       <div lang="en">Use this service to get page feed asset, upload or bulk download.<br>
       A PageFeedAssetSet is a PageFeed of Campaign Management Tool.<br>
-      A PageFeedAsset is a PageFeedItem of Campaign Management Tool.<br>
-      *Currently this service is not available.</div>
+      A PageFeedAsset is a PageFeedItem of Campaign Management Tool.</div>
 
 paths:
   /AccountManagementService/get:
@@ -5825,8 +5821,8 @@ paths:
   /DictionaryService/getDisapprovalReason:
     post:
       description: |
-        <div lang="ja">EditorialReasonと推奨する対応方法の一覧を取得します。</div>
-        <div lang="en">Get EditorialReason and recommended resolution list.</div>
+        <div lang="ja">審査否認理由と推奨する対応方法の一覧を取得します。</div>
+        <div lang="en">Get Reject Reason and recommended resolution list.</div>
       tags:
         - DictionaryService
       requestBody:
