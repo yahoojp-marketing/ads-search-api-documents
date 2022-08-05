@@ -14,9 +14,15 @@ ConversionTrackerServiceTrackingCodeType:
     This field is required in ADD operation, and cannot be specified in SET operation.</div>
     <dl class=term>
       <dt class="term__item">WEBPAGE</dt>
-      <dd class="term__desc"><span lang="ja">ウェブページでのコンバージョンです。</span><span lang="en">Web page conversion</span></dd>
+      <dd class="term__desc">
+        <span lang="ja">ウェブページでのコンバージョンです。<br>このEnumは、categoryがQUALIFIED_LEADまたはCONVERTED_LEADの場合、指定できません。</span>
+        <span lang="en">Web page conversion<br>This Enum cannot be specified if category is QUALIFIED_LEAD or CONVERTED_LEAD.</span>
+      </dd>
       <dt class="term__item">CLICK_TO_CALL</dt>
-      <dd class="term__desc"><span lang="ja">電話番号発信のコンバージョンです。</span><span lang="en">Click to call conversion</span></dd>
+      <dd class="term__desc">
+        <span lang="ja">電話番号発信のコンバージョンです。<br>このEnumは、categoryがQUALIFIED_LEADまたはCONVERTED_LEADの場合、指定できません。</span>
+        <span lang="en">Click to call conversion<br>This Enum cannot be specified if category is QUALIFIED_LEAD or CONVERTED_LEAD.</span>
+      </dd>
       <dt class="term__item">IMPORT</dt>
       <dd class="term__desc"><span lang="ja">インポートのコンバージョンです。</span><span lang="en">Import conversion</span></dd>
       <dt class="term__item">UNKNOWN</dt>
