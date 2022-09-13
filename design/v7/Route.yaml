@@ -265,9 +265,9 @@ tags:
     description: |
       <label class="proposal"></label>
       <div lang="ja">KeywordEstimatorServiceは、既存のキャンペーンの登録内容（地域ターゲティングの設定状況、など）に基づき、獲得できるトラフィックの見積もり機能を提供します。<br>
-      (deprecated) このAPIは将来のバージョンで削除予定です。このAPIの代わりにKeywordForecastMetricsServiceを使用してください。</div>
+      ※現在、こちらのサービスは利用できません。このAPIの代わりにKeywordForecastMetricsServiceを使用してください。</div>
       <div lang="en">KeywordEstimatorService is to request traffic estimates based on exsisting campaign data (device, geo targeting setting etc).<br>
-      (deprecated) This API is deprecated in the futere version. Use KeywordForecastMetricsService instead of this.</div>
+      *Currently this service is not available. Use KeywordForecastMetricsService instead of this.</div>
   - name: KeywordForecastMetricsService
     description: |
       <label class="proposal"></label>
@@ -1513,8 +1513,8 @@ paths:
   /AdGroupFeedService/get:
     post:
       description: |
-        <div lang="ja">広告グループに設定されているFeedItem情報を取得します。</div>
-        <div lang="en">Returns FeedItem information of ad groups.</div>
+        <div lang="ja">広告グループに設定されているFeedItem情報を取得します。<br>※現在、こちらのサービスは利用できません。</div>
+        <div lang="en">Returns FeedItem information of ad groups.<br>*Currently this service is not available.</div>
       tags:
         - AdGroupFeedService
       requestBody:
@@ -5660,8 +5660,8 @@ paths:
   /CampaignFeedService/get:
     post:
       description: |
-        <div lang="ja">キャンペーンのFeedItem情報を取得します。</div>
-        <div lang="en">Get FeedItem information of campaign.</div>
+        <div lang="ja">キャンペーンのFeedItem情報を取得します。<br>※現在、こちらのサービスは利用できません。</div>
+        <div lang="en">Get FeedItem information of campaign.<br>*Currently this service is not available.</div>
       tags:
         - CampaignFeedService
       requestBody:
@@ -7083,9 +7083,9 @@ paths:
     post:
       description: |
         <div lang="ja">獲得できるトラフィックの見積を取得します。<br>
-        (deprecated) このAPIは将来のバージョンで削除予定です。このAPIの代わりにKeywordForecastMetricsServiceを使用してください。</div>
+        ※現在、こちらのサービスは利用できません。このAPIの代わりにKeywordForecastMetricsServiceを使用してください。</div>
         <div lang="en">Get traffic estimate.<br>
-        (deprecated) This API is deprecated in the futere version. Use KeywordForecastMetricsService instead of this.</div>
+        *Currently this service is not available. Use KeywordForecastMetricsService instead of this.</div>
       tags:
         - KeywordEstimatorService
       requestBody:

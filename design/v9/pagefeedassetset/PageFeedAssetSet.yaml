@@ -1,0 +1,53 @@
+PageFeedAssetSet:
+  type: object
+  nullable: true
+  properties:
+    accountId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">アカウントIDです。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
+        <div lang="en">Account ID.<br>
+        Although this field will be returned in the response, it will be ignored on input.</div>
+    feedId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">フィードIDです。<br>
+        旧形式から自動移行されたページフィードの場合、旧形式のページフィードのIDが返却されます。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
+        <div lang="en">Feed ID.<br>
+        If the page feed is auto-migrated, the old-style page feed ID will be returned.<br>
+        Although this field will be returned in the response, it will be ignored on input.</div>
+    pageFeedAssetSetId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">ページフィードアセットセットIDです。<br>
+        このフィールドは、SETおよびREMOVE時に必須となり、ADD時は無視されます。</div>
+        <div lang="en">PageFeedAssetSet ID.<br>
+        This field is required in SET and REMOVE operation, and will be ignored in ADD operation.</div>
+    pageFeedAssetSetName:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">ページフィードアセットセット名です。<br>
+        このフィールドは、ADDおよびSET時に必須となり、REMOVE時に無視されます。</div>
+        <div lang="en">PageFeedAssetSet name.<br>
+        This field is required in ADD and SET operation, and will be ignored in REMOVE operation.</div>
+    domain:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">ドメインです。<br>
+        このフィールドは、ADD時に必須となり、SETおよびREMOVE時に無視されます。</div>
+        <div lang="en">Domain.　<br>
+        This field is required in ADD operation, and will be ignored in SET and REMOVE operation.</div>
+  title: PageFeedAssetSet
+  description: |
+    <div lang="ja">PageFeedAssetSetオブジェクトは、ページフィードアセットセットの情報を格納します。</div>
+    <div lang="en">PageFeedAssetSet object stores page feed asset set information.</div>

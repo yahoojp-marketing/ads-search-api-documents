@@ -1,0 +1,21 @@
+AssetServiceValue:
+  type: object
+  nullable: true
+  properties:
+    errors:
+      type: array
+      nullable: true
+      items:
+        $ref: '../../Error.yaml#/Error'
+    asset:
+      $ref: 'Asset.yaml#/Asset'
+    operationSucceeded:
+      type: boolean
+      nullable: true
+      description: |
+        <div lang="ja">処理結果です。</div>
+        <div lang="en">Result of process.</div>
+  title: AssetServiceValue
+  description: |
+    <div lang="ja">AssetServiceValueオブジェクトは、アセット情報を格納します。</div>
+    <div lang="en">AssetServiceValue contains Asset value information.</div>

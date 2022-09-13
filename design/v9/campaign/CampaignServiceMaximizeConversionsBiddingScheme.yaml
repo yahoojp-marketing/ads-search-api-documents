@@ -1,0 +1,20 @@
+CampaignServiceMaximizeConversionsBiddingScheme:
+  type: object
+  nullable: true
+  properties:
+    targetCpa:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">コンバージョン単価の目標値です。<br>
+        ※制限値：1 ～ 800000<br>
+        ※日本円のみの設定です。</div>
+        <div lang="en">Target CPA (JPY).<br>
+        * Range limit: 1 - 800000</div>
+  title: CampaignServiceMaximizeConversionsBiddingScheme
+  description: |
+    <div lang="ja">CampaignServiceMaximizeConversionsBiddingSchemeオブジェクトは、コンバージョン単価の目標値の自動入札設定情報を表します。<br>
+    ADD時、BiddingStrategyTypeがMAXIMIZE_CONVERSIONSの場合、必須となり、それ以外では省略可能となります。</div>
+    <div lang="en">CampaignServiceMaximizeConversionsBiddingScheme object displays Auto Bidding setting for Target CPA.<br>
+    This field is required when BiddingStrategyType is 'MAXIMIZE_CONVERSIONS' in ADD operation. For other BiddingStrategyType, this field is optional in ADD operation.</div>

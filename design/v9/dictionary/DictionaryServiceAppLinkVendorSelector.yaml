@@ -1,0 +1,25 @@
+DictionaryServiceAppLinkVendorSelector:
+  type: object
+  nullable: true
+  properties:
+    startIndex:
+      type: integer
+      nullable: true
+      format: int32
+      minimum: 1
+      default: 1
+      description: |
+        <div lang="ja">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div>
+        <div lang="en">Index of the first result to return in this page. This field must be greater than or equal to 1.</div>
+    numberResults:
+      type: integer
+      nullable: true
+      format: int32
+      minimum: 1
+      description: |
+        <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div>
+        <div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1. Also see Entity Limits per operation.</div>
+  title: DictionaryServiceAppLinkVendorSelector
+  description: |
+    <div lang="ja">DictionaryServiceAppLinkVendorSelectorオブジェクトは、 アプリ計測ベンダー情報一覧取得のリクエストを格納するコンテナです。</div>
+    <div lang="en">DictionaryServiceAppLinkVendorSelectorobject is a containter that stores the request to get the App measurement vendor information list.</div>

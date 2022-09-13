@@ -1,0 +1,25 @@
+LabelServiceOperation:
+  type: object
+  nullable: true
+  required:
+  - accountId
+  - operand
+  properties:
+    accountId:
+      type: integer
+      nullable: false
+      format: int64
+      description: |
+        <div lang="ja">アカウントID</div>
+        <div lang="en">Account ID</div>
+    operand:
+      type: array
+      nullable: true
+      items:
+        $ref: 'Label.yaml#/Label'
+      minItems: 1
+      maxItems: 2000
+  title: LabelServiceOperation
+  description: |
+    <div lang="ja">LabelServiceOperationオブジェクトは、操作の対象となるラベルの情報と処理の内容を表します。</div>
+    <div lang="en">LabelServiceOperation object displays the information on label to be operated and processing content.</div>

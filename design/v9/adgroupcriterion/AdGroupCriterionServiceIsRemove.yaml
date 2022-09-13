@@ -1,0 +1,22 @@
+AdGroupCriterionServiceIsRemove:
+  type: string
+  nullable: true
+  enum:
+  - 'TRUE'
+  - 'FALSE'
+  - UNKNOWN
+  title: AdGroupCriterionServiceIsRemove
+  description: |
+    <div lang="ja">AdGroupCriterionServiceIsRemoveは、カスタムパラメータの削除フラグです。<br>
+    SET時、このフィールドは省略可能となります。</div>
+    <div lang="en">AdGroupCriterionServiceIsRemove is Delete flag.<br>
+    This field is optional in SET operation.<br>
+    </div>
+    <dl class=term>
+      <dt class="term__item">TRUE</dt>
+      <dd class="term__desc"><span lang="ja">カスタムパラメータの削除フラグがオンです。</span><span lang="en">Delete flag is on.</span></dd>
+      <dt class="term__item">FALSE</dt>
+      <dd class="term__desc"><span lang="ja">カスタムパラメータの削除フラグがオフです。</span><span lang="en">Delete flag is off.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

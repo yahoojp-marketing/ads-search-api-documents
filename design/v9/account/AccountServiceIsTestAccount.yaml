@@ -1,0 +1,21 @@
+AccountServiceIsTestAccount:
+  type: string
+  nullable: true
+  enum:
+    - 'TRUE'
+    - 'FALSE'
+    - UNKNOWN
+  title: AccountServiceIsTestAccount
+  description: |
+    <div lang="ja">isTestAccountは、テストアカウントかどうかを表すフラグです。<br>
+    MCCアカウントの場合、このフィールドは<code>FALSE</code>になります。</div>
+    <div lang="en">Test account.<br>
+    If isManagerAccount is "TRUE", this field will be <code>FALSE</code>.</div>
+    <dl class=term>
+      <dt class="term__item">TRUE</dt>
+      <dd class="term__desc"><span lang="ja">テストアカウント</span><span lang="en">Test account.</span></dd>
+      <dt class="term__item">FALSE</dt>
+      <dd class="term__desc"><span lang="ja">Productionアカウント(テストアカウントではありません)</span><span lang="en">Production (non-test) account.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>
