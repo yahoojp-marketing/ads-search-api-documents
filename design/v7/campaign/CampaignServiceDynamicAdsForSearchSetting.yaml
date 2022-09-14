@@ -6,11 +6,11 @@ CampaignServiceDynamicAdsForSearchSetting:
       description: |
         <div lang="ja">
           キャンペーンで使用するページフィードIDです。<br>
-          ADD時およびSET時、DasUseUrlsTypeがUSE_SUPPLIED_URLS_ONLYまたはDOMAIN_AND_SUPPLIED_URLSの場合、このフィールドは必須となります。
+          ※現在このフィールドは参照のみ可能です。ページフィードを設定する場合は、v8以降のバージョンをご利用ください。
         </div>
         <div lang="en">
           Page Feed ID for campaign.<br>
-          If DasUseUrlsType is USE_SUPPLIED_URLS_ONLY or DOMAIN_AND_SUPPLIED_URLS, this field is required in ADD and SET operation.
+          *Currently, this field is read-only. To set up page feeds, please use v8 or later version.
         </div>
       type: array
       nullable: true

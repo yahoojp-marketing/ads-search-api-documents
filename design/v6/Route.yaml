@@ -5140,8 +5140,8 @@ paths:
   /PageFeedItemService/upload:
     post:
       description: |
-        <div lang="ja">ページフィードアイテムのアップロード処理を実施します。</div>
-        <div lang="en">Executes upload page feed item.</div>
+        <div lang="ja">ページフィードアイテムのアップロード処理を実施します。<br>※現在、こちらのサービスは利用できません。</div>
+        <div lang="en">Executes upload page feed item.<br>*Currently this service is not available.</div>
       tags:
         - PageFeedItemService
       parameters:

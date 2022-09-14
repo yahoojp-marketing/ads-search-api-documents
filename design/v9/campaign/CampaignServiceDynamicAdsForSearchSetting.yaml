@@ -6,11 +6,11 @@ CampaignServiceDynamicAdsForSearchSetting:
       description: |
         <div lang="ja">
           キャンペーンで使用するページフィードIDです。<br>
-          ADD時およびSET時、DasUseUrlsTypeがUSE_SUPPLIED_URLS_ONLYまたはDOMAIN_AND_SUPPLIED_URLSの場合、feedIdsフィールドもしくはpageFeedAssetSetIdsフィールドのどちらか片方の設定が必須となります。
+          ※現在このフィールドは参照のみ可能です。ページフィードを設定する場合は、pageFeedAssetSetIdsをご利用ください。
         </div>
         <div lang="en">
           Page Feed ID for campaign.<br>
-          In ADD and SET operation, If DasUseUrlsType is USE_SUPPLIED_URLS_ONLY or DOMAIN_AND_SUPPLIED_URLS, either the feedIds field or the pageFeedAssetSetIds field must be set.
+          *Currently, this field is read-only. To set up page feeds, please use pageFeedAssetSetIds.
         </div>
       type: array
       nullable: true
@@ -22,11 +22,11 @@ CampaignServiceDynamicAdsForSearchSetting:
       description: |
         <div lang="ja">
           キャンペーンで使用するページフィードアセットセットIDです。<br>
-          ADD時およびSET時、DasUseUrlsTypeがUSE_SUPPLIED_URLS_ONLYまたはDOMAIN_AND_SUPPLIED_URLSの場合、feedIdsフィールドもしくはpageFeedAssetSetIdsフィールドのどちらか片方の設定が必須となります。
+          ADD時およびSET時、DasUseUrlsTypeがUSE_SUPPLIED_URLS_ONLYまたはDOMAIN_AND_SUPPLIED_URLSの場合、このフィールドは必須となります。
         </div>
         <div lang="en">
           PageFeedAssetSet ID for campaign.<br>
-          In ADD and SET operation, If DasUseUrlsType is USE_SUPPLIED_URLS_ONLY or DOMAIN_AND_SUPPLIED_URLS, either the feedIds field or the pageFeedAssetSetIds field must be set.
+          In ADD and SET operation, If DasUseUrlsType is USE_SUPPLIED_URLS_ONLY or DOMAIN_AND_SUPPLIED_URLS, this field is required.
         </div>
       type: array
       nullable: true
