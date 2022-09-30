@@ -1,0 +1,691 @@
+------
+diff -ru v8/Route.yaml v9/Route.yaml
+--- v8/Route.yaml	2022-09-29 11:05:34.000000000 +0900
++++ v9/Route.yaml	2022-09-29 11:05:34.000000000 +0900
+@@ -1,11 +1,11 @@
+ openapi: 3.0.2
+ info:
+   title: 'Yahoo!広告 検索広告 API リファレンス / Yahoo! JAPAN Ads Search Ads API Reference'
+-  version: 'v8'
++  version: 'v9'
+   description: |
+     <div lang="ja">Yahoo!広告 検索広告 APIのWebサービスについて説明します。</div>
+     <div lang="en">Search Ads API Web Services supported in Yahoo! JAPAN Ads API.</div>
+-    <div><a target="_blank" href="https://github.com/yahoojp-marketing/ads-search-api-documents/blob/master/design/v8/Route.yaml">OpenAPI Specification</a></div>
++    <div><a target="_blank" href="https://github.com/yahoojp-marketing/ads-search-api-documents/blob/master/design/v9/Route.yaml">OpenAPI Specification</a></div>
+     <div lang="ja"><a target="_blank" href="https://github.com/yahoojp-marketing/ads-search-api-documents/blob/master/bestpractice/ja">Best Practice</a></div>
+     <div lang="en"><a target="_blank" href="https://github.com/yahoojp-marketing/ads-search-api-documents/blob/master/bestpractice/en">Best Practice</a></div>
+
+@@ -23,7 +23,7 @@
+   - oAuth: [ yahooads ]
+
+ servers:
+-  - url: https://ads-search.yahooapis.jp/api/v8
++  - url: https://ads-search.yahooapis.jp/api/v9
+
+ tags:
+   - name: AccountManagementService
+@@ -179,26 +179,26 @@
+       <h2 lang="ja">レポートフィールド</h2>
+       <h2 lang="en">Report Fields</h2>
+       <ul>
+-      <li><div lang="ja"><a href="./reports/v8/ACCOUNT.csv" download>アカウントレポート</a></div></li><li><div lang="en"><a href="./reports/v8/ACCOUNT.csv" download>Account Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v8/CAMPAIGN.csv" download>キャンペーンレポート</a></div></li><li><div lang="en"><a href="./reports/v8/CAMPAIGN.csv" download>Campaign Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v8/ADGROUP.csv" download>広告グループレポート</a></div></li><li><div lang="en"><a href="./reports/v8/ADGROUP.csv" download>Ad Group Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v8/AD.csv" download>広告レポート</a></div></li><li><div lang="en"><a href="./reports/v8/AD.csv" download>Ad Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v8/KEYWORDS.csv" download>キーワードレポート</a></div></li><li><div lang="en"><a href="./reports/v8/KEYWORDS.csv" download>Keyword Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v8/SEARCH_QUERY.csv" download>検索クエリレポート</a></div></li><li><div lang="en"><a href="./reports/v8/SEARCH_QUERY.csv" download>Search Query Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v8/GEO.csv" download>地域別レポート</a></div></li><li><div lang="en"><a href="./reports/v8/GEO.csv" download>Geo Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v8/FEED_ITEM.csv" download>広告表示オプションレポート</a></div></li><li><div lang="en"><a href="./reports/v8/FEED_ITEM.csv" download>Ad Display Option Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v8/GEO_TARGET.csv" download>地域ターゲティングレポート</a></div></li><li><div lang="en"><a href="./reports/v8/GEO_TARGET.csv" download>Geo Targeting Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v8/SCHEDULE_TARGET.csv" download>曜日・時間帯ターゲティングレポート</a></div></li><li><div lang="en"><a href="./reports/v8/SCHEDULE_TARGET.csv" download>Schedule Targeting Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v8/BID_STRATEGY.csv" download>自動入札レポート</a></div></li><li><div lang="en"><a href="./reports/v8/BID_STRATEGY.csv" download>Auto Bidding Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v8/CAMPAIGN_TARGET_LIST.csv" download>キャンペーンターゲットリストレポート</a></div></li><li><div lang="en"><a href="./reports/v8/CAMPAIGN_TARGET_LIST.csv"download>Campaign Target List Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v8/ADGROUP_TARGET_LIST.csv" download>広告グループターゲットリストレポート</a></div></li><li><div lang="en"><a href="./reports/v8/ADGROUP_TARGET_LIST.csv" download>Ad Group Target List Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v8/LANDING_PAGE_URL.csv" download>ランディングページURLレポート</a></div></li><li><div lang="en"><a href="./reports/v8/LANDING_PAGE_URL.csv" download>Landing Page URL Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v8/KEYWORDLESS_QUERY.csv" download>検索クエリーレポート（動的検索連動型広告）</a></div></li><li><div lang="en"><a href="./reports/v8/KEYWORDLESS_QUERY.csv" download>Search Query Report (Dynamic Ads for Search)</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v8/WEBPAGE_CRITERION.csv" download>ページフィードターゲティングレポート</a></div></li><li><div lang="en"><a href="./reports/v8/WEBPAGE_CRITERION.csv" download>Page Feed Targeting Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v8/BID_MODIFIER.csv" download>入札価格調整率レポート</a></div></li><li><div lang="en"><a href="./reports/v8/BID_MODIFIER.csv" download>Bid Adjustments Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v8/CAMPAIGN_ASSET.csv" download>（新）広告表示オプションレポート（キャンペーン）</a></div></li><li><div lang="en"><a href="./reports/v8/CAMPAIGN_ASSET.csv" download>(New) Ad Display Option Report (campaign)</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v8/AD_GROUP_ASSET.csv" download>（新）広告表示オプションレポート（広告グループ）</a></div></li><li><div lang="en"><a href="./reports/v8/AD_GROUP_ASSET.csv" download>(New) Ad Display Option Report (ad group)</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v8/RESPONSIVE_ADS_FOR_SEARCH_ASSET.csv" download>レスポンシブ検索広告アセットレポート</a></div></li><li><div lang="en"><a href="./reports/v8/RESPONSIVE_ADS_FOR_SEARCH_ASSET.csv" download>Responsive Ads for Search Asset Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v9/ACCOUNT.csv" download>アカウントレポート</a></div></li><li><div lang="en"><a href="./reports/v9/ACCOUNT.csv" download>Account Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v9/CAMPAIGN.csv" download>キャンペーンレポート</a></div></li><li><div lang="en"><a href="./reports/v9/CAMPAIGN.csv" download>Campaign Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v9/ADGROUP.csv" download>広告グループレポート</a></div></li><li><div lang="en"><a href="./reports/v9/ADGROUP.csv" download>Ad Group Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v9/AD.csv" download>広告レポート</a></div></li><li><div lang="en"><a href="./reports/v9/AD.csv" download>Ad Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v9/KEYWORDS.csv" download>キーワードレポート</a></div></li><li><div lang="en"><a href="./reports/v9/KEYWORDS.csv" download>Keyword Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v9/SEARCH_QUERY.csv" download>検索クエリレポート</a></div></li><li><div lang="en"><a href="./reports/v9/SEARCH_QUERY.csv" download>Search Query Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v9/GEO.csv" download>地域別レポート</a></div></li><li><div lang="en"><a href="./reports/v9/GEO.csv" download>Geo Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v9/FEED_ITEM.csv" download>広告表示オプションレポート</a></div></li><li><div lang="en"><a href="./reports/v9/FEED_ITEM.csv" download>Ad Display Option Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v9/GEO_TARGET.csv" download>地域ターゲティングレポート</a></div></li><li><div lang="en"><a href="./reports/v9/GEO_TARGET.csv" download>Geo Targeting Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v9/SCHEDULE_TARGET.csv" download>曜日・時間帯ターゲティングレポート</a></div></li><li><div lang="en"><a href="./reports/v9/SCHEDULE_TARGET.csv" download>Schedule Targeting Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v9/BID_STRATEGY.csv" download>自動入札レポート</a></div></li><li><div lang="en"><a href="./reports/v9/BID_STRATEGY.csv" download>Auto Bidding Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v9/CAMPAIGN_TARGET_LIST.csv" download>キャンペーンターゲットリストレポート</a></div></li><li><div lang="en"><a href="./reports/v9/CAMPAIGN_TARGET_LIST.csv"download>Campaign Target List Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v9/ADGROUP_TARGET_LIST.csv" download>広告グループターゲットリストレポート</a></div></li><li><div lang="en"><a href="./reports/v9/ADGROUP_TARGET_LIST.csv" download>Ad Group Target List Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v9/LANDING_PAGE_URL.csv" download>ランディングページURLレポート</a></div></li><li><div lang="en"><a href="./reports/v9/LANDING_PAGE_URL.csv" download>Landing Page URL Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v9/KEYWORDLESS_QUERY.csv" download>検索クエリーレポート（動的検索連動型広告）</a></div></li><li><div lang="en"><a href="./reports/v9/KEYWORDLESS_QUERY.csv" download>Search Query Report (Dynamic Ads for Search)</a></div></li>
++      <li><div lang="ja"><a href="./reports/v9/WEBPAGE_CRITERION.csv" download>ページフィードターゲティングレポート</a></div></li><li><div lang="en"><a href="./reports/v9/WEBPAGE_CRITERION.csv" download>Page Feed Targeting Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v9/BID_MODIFIER.csv" download>入札価格調整率レポート</a></div></li><li><div lang="en"><a href="./reports/v9/BID_MODIFIER.csv" download>Bid Adjustments Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v9/CAMPAIGN_ASSET.csv" download>（新）広告表示オプションレポート（キャンペーン）</a></div></li><li><div lang="en"><a href="./reports/v9/CAMPAIGN_ASSET.csv" download>(New) Ad Display Option Report (campaign)</a></div></li>
++      <li><div lang="ja"><a href="./reports/v9/AD_GROUP_ASSET.csv" download>（新）広告表示オプションレポート（広告グループ）</a></div></li><li><div lang="en"><a href="./reports/v9/AD_GROUP_ASSET.csv" download>(New) Ad Display Option Report (ad group)</a></div></li>
++      <li><div lang="ja"><a href="./reports/v9/RESPONSIVE_ADS_FOR_SEARCH_ASSET.csv" download>レスポンシブ検索広告アセットレポート</a></div></li><li><div lang="en"><a href="./reports/v9/RESPONSIVE_ADS_FOR_SEARCH_ASSET.csv" download>Responsive Ads for Search Asset Report</a></div></li>
+       </ul>
+   - name: CampaignExportService
+     description: |
+@@ -262,13 +262,6 @@
+       <label class="proposal"></label>
+       <div lang="ja">KeywordPlanIdeaServiceは、指定された情報を元に新しいキーワード候補を提案するサービスです。</div>
+       <div lang="en">KeywordPlanIdeaService is a service that suggests new related keywords based on the specified value.</div>
+-  - name: KeywordEstimatorService
+-    description: |
+-      <label class="proposal"></label>
+-      <div lang="ja">KeywordEstimatorServiceは、既存のキャンペーンの登録内容（地域ターゲティングの設定状況、など）に基づき、獲得できるトラフィックの見積もり機能を提供します。<br>
+-      ※現在、こちらのサービスは利用できません。このAPIの代わりにKeywordForecastMetricsServiceを使用してください。</div>
+-      <div lang="en">KeywordEstimatorService is to request traffic estimates based on exsisting campaign data (device, geo targeting setting etc).<br>
+-      *Currently this service is not available. Use KeywordForecastMetricsService instead of this.</div>
+   - name: KeywordForecastMetricsService
+     description: |
+       <label class="proposal"></label>
+@@ -1624,8 +1617,7 @@
+         ・FeedItem information that can be set for a single ad group is up to 20 for each QUICKLINKS, CALLEXTENSION.<br>
+         ・As for CALLEXTENSION, We recommend setting only one phone number per ad group.<br>
+         ・It is not possible to set multiple FeedItem information to an adGroupId by single request.<br>
+-        *Currently this service is not available.
+-        </div>
++        *Currently this service is not available.</div>
+       tags:
+         - AdGroupFeedService
+       requestBody:
+@@ -2698,7 +2690,7 @@
+                 <tr><td>210311</td><td>Campaign has been started.</td><td><div lang="ja">すでに開始しているキャンペーンの開始日は変更できません。</div><div lang="en">The start date of a campaign that has already started can not change.</div></td></tr>
+                 <tr><td>210310</td><td>Select the correct bid type.</td><td><div lang="ja">入札最適化タイプと一致しません。</div><div lang="en">It does not match the correct bid type.</div></td></tr>
+                 <tr><td>210307</td><td>Budget is lower than ad group/keywords.</td><td><div lang="ja">予算額は、キャンペーン内の広告グループ・キーワードに設定されている予算よりも高く設定してください。</div><div lang="en">The budget should be set higher than the budget set for the ad group / keyword in the campaign.</div></td></tr>
+-                <tr><td>210300</td><td>Double or no settings in Auto bidding.</td><td><div lang="ja">入札タイプ、もしくは自動入札IDの指定がありません。 <br>または、入札タイプと自動入札IDの両方を指定しています。</div><div lang="en">There is no specification of biddingStrategyType or biddingStrategyId. <br>Or both biddingStrategyType and biddingStrategyId are specified.</div></td></tr>
++                <tr><td>210300</td><td>Double or no settings in Auto bidding.</td><td><div lang="ja">入札タイプ、もしくはポートフォリオ入札IDの指定がありません。 <br>または、入札タイプとポートフォリオ入札IDの両方を指定しています。</div><div lang="en">There is no specification of biddingStrategyType or PortfolioBiddingId. <br>Or both biddingStrategyType and PortfolioBiddingId are specified.</div></td></tr>
+                 <tr><td>210301</td><td>Setting the disabled Auto bidding.</td><td><div lang="ja">編集中（削除含む）の自動入札を指定しています。</div><div lang="en">Auto bidding in editing (including deletion) is specified.</div></td></tr>
+                 <tr><td>210302</td><td>Conversion related settings in Auto bidding.</td><td><div lang="ja">コンバージョン関連の自動入札を指定しています。</div><div lang="en">Auto bidding for conversion is specified.</div></td></tr>
+                 <tr><td>210303</td><td>Invalid conversion tracking.</td><td><div lang="ja">コンバージョントラッキングが無効です。</div><div lang="en">Conversion tracking is Invalid.</div></td></tr>
+@@ -2769,7 +2761,7 @@
+                 <tr><td>210311</td><td>Campaign has been started.</td><td><div lang="ja">すでに開始しているキャンペーンの開始日は変更できません。</div><div lang="en">The start date of a campaign that has already started can not change.</div></td></tr>
+                 <tr><td>210310</td><td>Select the correct bid type.</td><td><div lang="ja">入札最適化タイプと一致しません。</div><div lang="en">It does not match the correct bid type.</div></td></tr>
+                 <tr><td>210307</td><td>Budget is lower than ad group/keywords.</td><td><div lang="ja">予算額は、キャンペーン内の広告グループ・キーワードに設定されている予算よりも高く設定してください。</div><div lang="en">The budget should be set higher than the budget set for the ad group / keyword in the campaign.</div></td></tr>
+-                <tr><td>210300</td><td>Double or no settings in Auto bidding.</td><td><div lang="ja">入札タイプ、もしくは自動入札IDの指定がありません。 <br>または、入札タイプと自動入札IDの両方を指定しています。</div><div lang="en">There is no specification of biddingStrategyType or biddingStrategyId. <br>Or both biddingStrategyType and biddingStrategyId are specified.</div></td></tr>
++                <tr><td>210300</td><td>Double or no settings in Auto bidding.</td><td><div lang="ja">入札タイプ、もしくはポートフォリオ入札IDの指定がありません。 <br>または、入札タイプとポートフォリオ入札IDの両方を指定しています。</div><div lang="en">There is no specification of biddingStrategyType or PortfolioBiddingId. <br>Or both biddingStrategyType and PortfolioBiddingId are specified.</div></td></tr>
+                 <tr><td>210301</td><td>Setting the disabled Auto bidding.</td><td><div lang="ja">編集中（削除含む）の自動入札を指定しています。</div><div lang="en">Auto bidding in editing (including deletion) is specified.</div></td></tr>
+                 <tr><td>210302</td><td>Conversion related settings in Auto bidding.</td><td><div lang="ja">コンバージョン関連の自動入札を指定しています。</div><div lang="en">Auto bidding for conversion is specified.</div></td></tr>
+                 <tr><td>210303</td><td>Invalid conversion tracking.</td><td><div lang="ja">コンバージョントラッキングが無効です。</div><div lang="en">Conversion tracking is Invalid.</div></td></tr>
+@@ -2843,7 +2835,7 @@
+                 <tr><td>210311</td><td>Campaign has been started.</td><td><div lang="ja">すでに開始しているキャンペーンの開始日は変更できません。</div><div lang="en">The start date of a campaign that has already started can not change.</div></td></tr>
+                 <tr><td>210310</td><td>Select the correct bid type.</td><td><div lang="ja">入札最適化タイプと一致しません。</div><div lang="en">It does not match the correct bid type.</div></td></tr>
+                 <tr><td>210307</td><td>Budget is lower than ad group/keywords.</td><td><div lang="ja">予算額は、キャンペーン内の広告グループ・キーワードに設定されている予算よりも高く設定してください。</div><div lang="en">The budget should be set higher than the budget set for the ad group / keyword in the campaign.</div></td></tr>
+-                <tr><td>210300</td><td>Double or no settings in Auto bidding.</td><td><div lang="ja">入札タイプ、もしくは自動入札IDの指定がありません。 <br>または、入札タイプと自動入札IDの両方を指定しています。</div><div lang="en">There is no specification of biddingStrategyType or biddingStrategyId. <br>Or both biddingStrategyType and biddingStrategyId are specified.</div></td></tr>
++                <tr><td>210300</td><td>Double or no settings in Auto bidding.</td><td><div lang="ja">入札タイプ、もしくはポートフォリオ入札IDの指定がありません。 <br>または、入札タイプとポートフォリオ入札IDの両方を指定しています。</div><div lang="en">There is no specification of biddingStrategyType or PortfolioBiddingId. <br>Or both biddingStrategyType and PortfolioBiddingId are specified.</div></td></tr>
+                 <tr><td>210301</td><td>Setting the disabled Auto bidding.</td><td><div lang="ja">編集中（削除含む）の自動入札を指定しています。</div><div lang="en">Auto bidding in editing (including deletion) is specified.</div></td></tr>
+                 <tr><td>210302</td><td>Conversion related settings in Auto bidding.</td><td><div lang="ja">コンバージョン関連の自動入札を指定しています。</div><div lang="en">Auto bidding for conversion is specified.</div></td></tr>
+                 <tr><td>210303</td><td>Invalid conversion tracking.</td><td><div lang="ja">コンバージョントラッキングが無効です。</div><div lang="en">Conversion tracking is Invalid.</div></td></tr>
+@@ -2914,7 +2906,7 @@
+                 <tr><td>210311</td><td>Campaign has been started.</td><td><div lang="ja">すでに開始しているキャンペーンの開始日は変更できません。</div><div lang="en">The start date of a campaign that has already started can not change.</div></td></tr>
+                 <tr><td>210310</td><td>Select the correct bid type.</td><td><div lang="ja">入札最適化タイプと一致しません。</div><div lang="en">It does not match the correct bid type.</div></td></tr>
+                 <tr><td>210307</td><td>Budget is lower than ad group/keywords.</td><td><div lang="ja">予算額は、キャンペーン内の広告グループ・キーワードに設定されている予算よりも高く設定してください。</div><div lang="en">The budget should be set higher than the budget set for the ad group / keyword in the campaign.</div></td></tr>
+-                <tr><td>210300</td><td>Double or no settings in Auto bidding.</td><td><div lang="ja">入札タイプ、もしくは自動入札IDの指定がありません。 <br>または、入札タイプと自動入札IDの両方を指定しています。</div><div lang="en">There is no specification of biddingStrategyType or biddingStrategyId. <br>Or both biddingStrategyType and biddingStrategyId are specified.</div></td></tr>
++                <tr><td>210300</td><td>Double or no settings in Auto bidding.</td><td><div lang="ja">入札タイプ、もしくはポートフォリオ入札IDの指定がありません。 <br>または、入札タイプとポートフォリオ入札IDの両方を指定しています。</div><div lang="en">There is no specification of biddingStrategyType or PortfolioBiddingId. <br>Or both biddingStrategyType and PortfolioBiddingId are specified.</div></td></tr>
+                 <tr><td>210301</td><td>Setting the disabled Auto bidding.</td><td><div lang="ja">編集中（削除含む）の自動入札を指定しています。</div><div lang="en">Auto bidding in editing (including deletion) is specified.</div></td></tr>
+                 <tr><td>210302</td><td>Conversion related settings in Auto bidding.</td><td><div lang="ja">コンバージョン関連の自動入札を指定しています。</div><div lang="en">Auto bidding for conversion is specified.</div></td></tr>
+                 <tr><td>210303</td><td>Invalid conversion tracking.</td><td><div lang="ja">コンバージョントラッキングが無効です。</div><div lang="en">Conversion tracking is Invalid.</div></td></tr>
+@@ -4784,7 +4776,7 @@
+         <div lang="ja">フィードアイテム情報を更新します。<br>
+         ※現在、こちらのサービスは利用できません。</div>
+         <div lang="en">Updates the Feed Item details.<br>
+-        *Currently this service is not available.</div>
++        *Currently this service is not available</div>
+       tags:
+         - FeedItemService
+       requestBody:
+@@ -5196,102 +5188,6 @@
+           $ref: '../Response401.yaml#/Response401'
+         400:
+           $ref: '../Response400.yaml#/Response400'
+-  /PageFeedItemService/upload:
+-    post:
+-      description: |
+-        <div lang="ja">ページフィードアイテムのアップロード処理を実施します。<br>※現在、こちらのサービスは利用できません。</div>
+-        <div lang="en">Executes upload page feed item.<br>*Currently this service is not available.</div>
+-      tags:
+-        - PageFeedItemService
+-      parameters:
+-        - in: query
+-          name: accountId
+-          schema:
+-            type: integer
+-            format: int64
+-          required: true
+-          description: |
+-            <div lang="ja">アカウントIDです。</div>
+-            <div lang="en">Account ID.</div>
+-        - in: query
+-          name: uploadType
+-          schema:
+-            type: string
+-            enum:
+-              - NEW_OR_REPLACE
+-              - MODIFY
+-            description: |
+-              <div lang="ja">PageFeedItemUploadTypeは、アップロードする方法の種類を表します。</div>
+-              <div lang="en">PageFeedItemUploadType displays kind of upload method.</div>
+-              <dl class="term">
+-                <dt class="term__item">NEW_OR_REPLACE</dt>
+-                <dd class="term__desc"><span lang="ja">新規登録または、すべて置き換える場合の設定</span><span lang="en">New registration or replace all.</span></dd>
+-                <dt class="term__item">MODIFY</dt>
+-                <dd class="term__desc"><span lang="ja">既存のページフィードアイテムを更新</span><span lang="en">Modify existing page feed item.</span></dd>
+-              </dl>
+-          required: true
+-          description: |
+-            <div lang="ja">PageFeedItemUploadTypeは、アップロードする方法の種類を表します。</div>
+-            <div lang="en">PageFeedItemUploadType displays kind of upload method.</div>
+-        - in: query
+-          name: feedId
+-          schema:
+-            type: integer
+-            format: int64
+-          required: true
+-          description: |
+-            <div lang="ja">フィードIDです。</div>
+-            <div lang="en">Feed ID.</div>
+-      requestBody:
+-        content:
+-          multipart/form-data:
+-            schema:
+-              type: object
+-              properties:
+-                file:
+-                  type: string
+-                  format: binary
+-      responses:
+-        503:
+-          $ref: '../Response503.yaml#/Response503'
+-        500:
+-          $ref: '../Response500.yaml#/Response500'
+-        200:
+-          description: |
+-            <p class="cellContent__head">Error codes</p>
+-            <div class="cellContent__body">
+-            <table class="apiTable">
+-              <colgroup span="1" class="short"></colgroup>
+-              <colgroup span="2"></colgroup>
+-              <thead>
+-                <tr><th>Code</th><th>Message</th><th>Description</th></tr>
+-              </thead>
+-              <tbody>
+-                <tr><td>0001</td><td>Invalid Request.</td><td><div lang="ja">さまざまな要因が考えられます。<br>主な要因は、パラメータの値が不正か、誤りがあるためにオペレーションが完了できません。</div><div lang="en">This error can result for a variety of reasons. <br>Typically because one of the parameter values in the request is wrong or invalid and the operation cannot be completed.</div></td></tr>
+-                <tr><td>R0001</td><td>Require.</td><td><div lang="ja">必須です。</div><div lang="en">It is missing required parameter.</div></td></tr>
+-                <tr><td>F0001</td><td>Invalid format.</td><td><div lang="ja">値の形式が不正です。</div><div lang="en">The value format is invalid.</div></td></tr>
+-                <tr><td>V0001</td><td>Invalid value.</td><td><div lang="ja">値が無効です。</div><div lang="en">The value is invalid.</div></td></tr>
+-                <tr><td>S0001</td><td>Invalid Status.</td><td><div lang="ja">ステータスが無効です。</div><div lang="en">The status is invalid.</div></td></tr>
+-                <tr><td>L0002</td><td>Over list size.</td><td><div lang="ja">配列の要素数が上限値を超過しています。</div><div lang="en">The number of elements in the array exceeds the upper limit.</div></td></tr>
+-                <tr><td>L0001</td><td>Lower list size.</td><td><div lang="ja">配列の要素数が下限値を下回っています。</div><div lang="en">The number of elements in the array is below the lower limit.</div></td></tr>
+-                <tr><td>D0001</td><td>Duplicate.</td><td><div lang="ja">一意な値が重複しています。</div><div lang="en">The unique value is duplicated.</div></td></tr>
+-                <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
+-                <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
+-                <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
+-                <tr><td>211015</td><td>Same id UploadJob is in progress.</td><td><div lang="ja">同じidのアップロードジョブが実行中のため、アップロードできません。</div><div lang="en">Since upload job of same id is running, uploading is not possible.</div></td></tr>
+-              </tbody>
+-            </table>
+-            </div>
+-          content:
+-            application/json:
+-              schema:
+-                $ref: 'pagefeeditem/PageFeedItemServiceUploadResponse.yaml#/PageFeedItemServiceUploadResponse'
+-        403:
+-          $ref: '../Response403.yaml#/Response403'
+-        401:
+-          $ref: '../Response401.yaml#/Response401'
+-        400:
+-          $ref: '../Response400.yaml#/Response400'
+   /PageFeedItemService/download:
+     post:
+       description: |
+@@ -7138,60 +7034,6 @@
+           $ref: '../Response401.yaml#/Response401'
+         400:
+           $ref: '../Response400.yaml#/Response400'
+-  /KeywordEstimatorService/get:
+-    post:
+-      description: |
+-        <div lang="ja">獲得できるトラフィックの見積を取得します。<br>
+-        ※現在、こちらのサービスは利用できません。このAPIの代わりにKeywordForecastMetricsServiceを使用してください。</div>
+-        <div lang="en">Get traffic estimate.<br>
+-        *Currently this service is not available. Use KeywordForecastMetricsService instead of this.</div>
+-      tags:
+-        - KeywordEstimatorService
+-      requestBody:
+-        content:
+-          application/json:
+-            schema:
+-              $ref: 'keywordestimator/KeywordEstimatorServiceSelector.yaml#/KeywordEstimatorServiceSelector'
+-      responses:
+-        503:
+-          $ref: '../Response503.yaml#/Response503'
+-        500:
+-          $ref: '../Response500.yaml#/Response500'
+-        200:
+-          description: |
+-            <p class="cellContent__head">Error codes</p>
+-            <div class="cellContent__body">
+-            <table class="apiTable">
+-              <colgroup span="1" class="short"></colgroup>
+-              <colgroup span="2"></colgroup>
+-              <thead>
+-                <tr><th>Code</th><th>Message</th><th>Description</th></tr>
+-              </thead>
+-              <tbody>
+-                <tr><td>0001</td><td>Invalid Request.</td><td><div lang="ja">さまざまな要因が考えられます。<br>主な要因は、パラメータの値が不正か、誤りがあるためにオペレーションが完了できません。</div><div lang="en">This error can result for a variety of reasons. <br>Typically because one of the parameter values in the request is wrong or invalid and the operation cannot be completed.</div></td></tr>
+-                <tr><td>R0001</td><td>Require.</td><td><div lang="ja">必須です。</div><div lang="en">It is missing required parameter.</div></td></tr>
+-                <tr><td>F0001</td><td>Invalid format.</td><td><div lang="ja">値の形式が不正です。</div><div lang="en">The value format is invalid.</div></td></tr>
+-                <tr><td>V0001</td><td>Invalid value.</td><td><div lang="ja">値が無効です。</div><div lang="en">The value is invalid.</div></td></tr>
+-                <tr><td>S0001</td><td>Invalid Status.</td><td><div lang="ja">ステータスが無効です。</div><div lang="en">The status is invalid.</div></td></tr>
+-                <tr><td>L0002</td><td>Over list size.</td><td><div lang="ja">配列の要素数が上限値を超過しています。</div><div lang="en">The number of elements in the array exceeds the upper limit.</div></td></tr>
+-                <tr><td>L0001</td><td>Lower list size.</td><td><div lang="ja">配列の要素数が下限値を下回っています。</div><div lang="en">The number of elements in the array is below the lower limit.</div></td></tr>
+-                <tr><td>D0001</td><td>Duplicate.</td><td><div lang="ja">一意な値が重複しています。</div><div lang="en">The unique value is duplicated.</div></td></tr>
+-                <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
+-                <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
+-                <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
+-              </tbody>
+-            </table>
+-            </div>
+-          content:
+-            application/json:
+-              schema:
+-                $ref: 'keywordestimator/KeywordEstimatorServiceGetResponse.yaml#/KeywordEstimatorServiceGetResponse'
+-        403:
+-          $ref: '../Response403.yaml#/Response403'
+-        401:
+-          $ref: '../Response401.yaml#/Response401'
+-        400:
+-          $ref: '../Response400.yaml#/Response400'
+   /KeywordForecastMetricsService/get:
+     post:
+       description: |
+
+
+------
+diff -ru v8/accountmanagement/AccountManagementServiceClient.yaml v9/accountmanagement/AccountManagementServiceClient.yaml
+--- v8/accountmanagement/AccountManagementServiceClient.yaml	2022-09-29 15:58:58.000000000 +0900
++++ v9/accountmanagement/AccountManagementServiceClient.yaml	2022-09-29 15:58:58.000000000 +0900
+@@ -48,6 +48,25 @@
+         <div lang="en">Kana characters of company name.<br>
+         This field is required in ADD operation, and will be ignored in SET operation.<br>
+         * When clientType is "SELF", this field will be ignored in ADD and SET operations.</div>
++    corporateNumber:
++      type: integer
++      nullable: true
++      format: int64
++      description: |
++        <div lang="ja">
++        法人番号です。<br>
++        このフィールドは、ADD時に省略可能となり、SET時に無視されます。<br>
++        ※clientTypeがSELFの場合は、ADD時、SET時ともに無視されます。<br>
++        ※enterpriseTypeがKOJINの場合は、ADD時、SET時ともに無視されます。<br>
++        ※このフィールドは、レスポンスの際に返却されません。
++        </div>
++        <div lang="en">
++        Corporate number.<br>
++        This field is optional in ADD operation, and will be ignored in SET operation.<br>
++        * When clientType is "SELF", this field will be ignored in ADD and SET operations.<br>
++        * When enterpriseType is "KOJIN", this field will be ignored in ADD and SET operations.<br>
++        * This field is not returned in the response.
++        </div>
+     enterpriseType:
+       $ref: 'AccountManagementServiceEnterpriseType.yaml#/AccountManagementServiceEnterpriseType'
+     enterpriseTypePosition:
+
+
+------
+diff -ru v8/adgroup/AdGroup.yaml v9/adgroup/AdGroup.yaml
+--- v8/adgroup/AdGroup.yaml	2022-09-29 15:58:57.000000000 +0900
++++ v9/adgroup/AdGroup.yaml	2022-09-29 15:58:58.000000000 +0900
+@@ -11,8 +11,8 @@
+         このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
+         <div lang="en">Account ID.<br>
+         Although this field will be returned in the response, it will be ignored on input.</div>
+-    adGroupAdRotationMode:
+-      $ref: 'AdGroupServiceAdGroupAdRotationMode.yaml#/AdGroupServiceAdGroupAdRotationMode'
++    frequentlyRunBetterPerformingAdsMode:
++      $ref: 'AdGroupServiceFrequentlyRunBetterPerformingAdsMode.yaml#/AdGroupServiceFrequentlyRunBetterPerformingAdsMode'
+     adGroupId:
+       type: integer
+       nullable: true
+Only in v8/adgroup: AdGroupServiceAdGroupAdRotationMode.yaml
+Only in v8/adgroup: AdGroupServiceAdRotationMode.yaml
+Only in v9/adgroup: AdGroupServiceFrequentlyRunBetterPerformingAdsMode.yaml
+
+
+------
+diff -ru v8/adgroup/AdGroupServiceSelector.yaml v9/adgroup/AdGroupServiceSelector.yaml
+--- v8/adgroup/AdGroupServiceSelector.yaml	2022-09-29 15:58:57.000000000 +0900
++++ v9/adgroup/AdGroupServiceSelector.yaml	2022-09-29 15:58:58.000000000 +0900
+@@ -22,7 +22,7 @@
+       description: |
+         <div lang="ja">検索条件：広告グループID</div>
+         <div lang="en">Search condition: Ad Group ID</div>
+-    biddingStrategyIds:
++    portfolioBiddingIds:
+       type: array
+       nullable: true
+       items:
+@@ -31,8 +31,8 @@
+         format: int64
+       maxItems: 1000
+       description: |
+-        <div lang="ja">検索条件：自動入札ID</div>
+-        <div lang="en">Search condition: Auto Bidding ID</div>
++        <div lang="ja">検索条件：ポートフォリオ入札ID</div>
++        <div lang="en">Search condition: Portfolio bidding ID</div>
+     campaignIds:
+       type: array
+       nullable: true
+
+
+------
+diff -ru v8/adgroupcriterion/AdGroupCriterionServiceSelector.yaml v9/adgroupcriterion/AdGroupCriterionServiceSelector.yaml
+--- v8/adgroupcriterion/AdGroupCriterionServiceSelector.yaml	2022-09-29 15:58:57.000000000 +0900
++++ v9/adgroupcriterion/AdGroupCriterionServiceSelector.yaml	2022-09-29 15:58:58.000000000 +0900
+@@ -29,7 +29,7 @@
+       items:
+         $ref: 'AdGroupCriterionServiceApprovalStatus.yaml#/AdGroupCriterionServiceApprovalStatus'
+       maxItems: 5
+-    biddingStrategyIds:
++    portfolioBiddingIds:
+       type: array
+       nullable: true
+       items:
+@@ -38,8 +38,8 @@
+         format: int64
+       maxItems: 1000
+       description: |
+-        <div lang="ja">検索条件：自動入札ID</div>
+-        <div lang="en">Search condition: Auto bidding ID.</div>
++        <div lang="ja">検索条件：ポートフォリオ入札ID</div>
++        <div lang="en">Search condition: Portfolio bidding ID.</div>
+     campaignIds:
+       type: array
+       nullable: true
+
+
+------
+diff -ru v8/biddingstrategy/BiddingStrategy.yaml v9/biddingstrategy/BiddingStrategy.yaml
+--- v8/biddingstrategy/BiddingStrategy.yaml	2022-09-29 15:58:58.000000000 +0900
++++ v9/biddingstrategy/BiddingStrategy.yaml	2022-09-29 15:58:58.000000000 +0900
+@@ -13,24 +13,24 @@
+         This field is required in any cases.</div>
+     biddingScheme:
+       $ref: 'BiddingStrategyServiceBiddingScheme.yaml#/BiddingStrategyServiceBiddingScheme'
+-    biddingStrategyId:
++    portfolioBiddingId:
+       type: integer
+       nullable: true
+       format: int64
+       description: |
+-        <div lang="ja">自動入札IDです。<br>
++        <div lang="ja">ポートフォリオ入札IDです。<br>
+         SET時およびREMOVE時、このフィールドは必須となります。</div>
+-        <div lang="en">Auto bidding ID.<br>
++        <div lang="en">Portfolio bidding ID.<br>
+         This field is optional in SET and REMOVE operation.</div>
+-    biddingStrategyName:
++    portfolioBiddingName:
+       type: string
+       nullable: true
+       description: |
+-        <div lang="ja">自動入札名です（50文字以内になります）。<br>
++        <div lang="ja">ポートフォリオ入札名です（50文字以内になります）。<br>
+         このフィールドは、ADD時は必須となり、SET時は省略可能となります。</div>
+-        <div lang="en">Auto bidding name(Can set up to 50 characters).<br>
++        <div lang="en">Portfolio bidding name(Can set up to 50 characters).<br>
+         This field is required in ADD operation, and will be optional in SET operation.</div>
+   title: BiddingStrategy
+   description: |
+-    <div lang="ja">BiddingStrategyオブジェクトは、入札方法を表します。</div>
+-    <div lang="en">Bidding strategy object displays the type of bidding.</div>
++    <div lang="ja">BiddingStrategyオブジェクトは、入札戦略を表します。</div>
++    <div lang="en">Bidding strategy object displays the type of bid strategy.</div>
+
+
+------
+diff -ru v8/biddingstrategy/BiddingStrategyServiceSelector.yaml v9/biddingstrategy/BiddingStrategyServiceSelector.yaml
+--- v8/biddingstrategy/BiddingStrategyServiceSelector.yaml	2022-09-29 15:58:58.000000000 +0900
++++ v9/biddingstrategy/BiddingStrategyServiceSelector.yaml	2022-09-29 15:58:58.000000000 +0900
+@@ -11,7 +11,7 @@
+       description: |
+         <div lang="ja">アカウントID</div>
+         <div lang="en">Account ID.</div>
+-    biddingStrategyIds:
++    portfolioBiddingIds:
+       type: array
+       nullable: true
+       items:
+@@ -20,8 +20,8 @@
+         format: int64
+       maxItems: 500
+       description: |
+-        <div lang="ja">自動入札ID</div>
+-        <div lang="en">Auto bidding ID.</div>
++        <div lang="ja">ポートフォリオ入札ID</div>
++        <div lang="en">Portfolio bidding ID.</div>
+     biddingStrategyTypes:
+       type: array
+       nullable: true
+
+
+------
+diff -ru v8/campaign/CampaignServiceBiddingScheme.yaml v9/campaign/CampaignServiceBiddingScheme.yaml
+--- v8/campaign/CampaignServiceBiddingScheme.yaml	2022-09-29 15:58:58.000000000 +0900
++++ v9/campaign/CampaignServiceBiddingScheme.yaml	2022-09-29 15:58:58.000000000 +0900
+@@ -21,6 +21,6 @@
+   title: CampaignServiceBiddingScheme
+   description: |
+     <div lang="ja">CampaignServiceBiddingSchemeオブジェクトは、自動入札設定の詳細情報を表します。 （BiddingStrategyService以外用のオブジェクトです。）<br>
+-    ADD時、標準入札設定の場合、このフィールドは必須となり、ポートフォリオ入札設定の場合、設定不可となります。また、biddingStrategyIdと同時に設定することはできません。</div>
++    ADD時、標準入札設定の場合、このフィールドは必須となり、ポートフォリオ入札設定の場合、設定不可となります。また、portfolioBiddingIdと同時に設定することはできません。</div>
+     <div lang="en">CampaignServiceBiddingScheme object displays the details of Auto Bidding setting.<br>
+-    This field is required when Standard bidding is setting, and cannot be specified when Portfolio bidding is setting in ADD operation. It cannot be specified at the same times as biddingStrategyId.</div>
++    This field is required when Standard bidding is setting, and cannot be specified when Portfolio bidding is setting in ADD operation. It cannot be specified at the same times as portfolioBiddingId.</div>
+
+
+------
+diff -ru v8/campaign/CampaignServiceBiddingStrategy.yaml v9/campaign/CampaignServiceBiddingStrategy.yaml
+--- v8/campaign/CampaignServiceBiddingStrategy.yaml	2022-09-29 15:58:58.000000000 +0900
++++ v9/campaign/CampaignServiceBiddingStrategy.yaml	2022-09-29 15:58:58.000000000 +0900
+@@ -5,23 +5,23 @@
+   properties:
+     biddingScheme:
+       $ref: 'CampaignServiceBiddingScheme.yaml#/CampaignServiceBiddingScheme'
+-    biddingStrategyId:
++    portfolioBiddingId:
+       type: integer
+       nullable: true
+       format: int64
+       description: |
+-        <div lang="ja">自動入札IDです。<br>
++        <div lang="ja">ポートフォリオ入札IDです。<br>
+         ADD時、標準入札設定の場合、このフィールドは設定不可となり、ポートフォリオ入札設定の場合、必須となります。また、biddingSchemeと同時に設定することはできません。</div>
+-        <div lang="en">Auto Bidding ID.<br>
++        <div lang="en">Portfolio bidding ID.<br>
+         This field cannot be specified when Standard bidding is setting, and is required when Portfolio bidding is setting in ADD operation. It cannot be specified at the same times as biddingScheme.</div>
+-    biddingStrategyName:
++    portfolioBiddingName:
+       type: string
+       nullable: true
+       description: |
+-        <div lang="ja">自動入札名です。<br>
++        <div lang="ja">ポートフォリオ入札名です。<br>
+         ADD時、このフィールドは無視されます。<br>
+         ※50文字以内になります。</div>
+-        <div lang="en">Auto Bidding name.<br>
++        <div lang="en">Portfolio bidding name.<br>
+         This field will be ignored in ADD operation.<br>*
+         Up to 50 characters.</div>
+     biddingStrategySource:
+
+
+------
+diff -ru v8/campaign/CampaignServiceSelector.yaml v9/campaign/CampaignServiceSelector.yaml
+--- v8/campaign/CampaignServiceSelector.yaml	2022-09-29 15:58:58.000000000 +0900
++++ v9/campaign/CampaignServiceSelector.yaml	2022-09-29 15:58:58.000000000 +0900
+@@ -11,7 +11,7 @@
+       description: |
+         <div lang="ja">検索条件：アカウントIDです。</div>
+         <div lang="en">Search condition: Account ID.</div>
+-    biddingStrategyIds:
++    portfolioBiddingIds:
+       type: array
+       nullable: true
+       items:
+@@ -20,8 +20,8 @@
+         format: int64
+       maxItems: 1000
+       description: |
+-        <div lang="ja">検索条件：自動入札IDです。</div>
+-        <div lang="en">Search condition: Auto Bidding ID.</div>
++        <div lang="ja">検索条件：ポートフォリオ入札IDです。</div>
++        <div lang="en">Search condition: Portfolio bidding ID.</div>
+     campaignIds:
+       type: array
+       nullable: true
+
+
+------
+diff -ru v8/campaigntarget/CampaignTargetServiceNetworkCoverageType.yaml v9/campaigntarget/CampaignTargetServiceNetworkCoverageType.yaml
+--- v8/campaigntarget/CampaignTargetServiceNetworkCoverageType.yaml	2022-09-29 15:58:57.000000000 +0900
++++ v9/campaigntarget/CampaignTargetServiceNetworkCoverageType.yaml	2022-09-29 15:58:58.000000000 +0900
+@@ -7,15 +7,15 @@
+   - UNKNOWN
+   title: CampaignTargetServiceNetworkCoverageType
+   description: |
+-    <div lang="ja">CampaignTargetServiceNetworkCoverageTypeは、広告掲載方式を表します。 この指定は、キャンペーンのPlatformTypeがWAP_MOBILEの場合、指定できません。<br>
++    <div lang="ja">CampaignTargetServiceNetworkCoverageTypeは、広告を表示する検索画面を表します。 この指定は、キャンペーンのPlatformTypeがWAP_MOBILEの場合、指定できません。<br>
+     このフィールドは、ADD時に必須となります。</div>
+-    <div lang="en">Network coverage types. This cannot be specified if the campaign's platformType is specified as WAP MOBILE.<br>
++    <div lang="en">CampaignTargetServiceNetworkCoverageType represents a search screen that displays an ad. This cannot be specified if the campaign's platformType is specified as WAP MOBILE.<br>
+     This field is required in ADD operation.</div>
+     <dl class=term>
+       <dt class="term__item">YAHOO_SEARCH</dt>
+-      <dd class="term__desc"><span lang="ja">広告はYahoo!検索の検索結果画面にのみ表示されます。</span><span lang="en">Ads are only displayed in the search results of Yahoo! JAPAN Search.</span></dd>
++      <dd class="term__desc"><span lang="ja">広告はYahoo!検索の検索画面にのみ表示されます。</span><span lang="en">Ads are only displayed in the search of Yahoo! JAPAN Search.</span></dd>
+       <dt class="term__item">SEARCH_NETWORK</dt>
+-      <dd class="term__desc"><span lang="ja">広告はYahoo!検索を含むすべての広告掲載方式に配信されます。</span><span lang="en">Ads are delivered in all ad distribution including Yahoo! JAPAN Search.</span></dd>
++      <dd class="term__desc"><span lang="ja">広告はYahoo!検索を含むすべての検索画面に配信されます。</span><span lang="en">Ads are delivered in all search including Yahoo! JAPAN Search.</span></dd>
+       <dt class="term__item">UNKNOWN</dt>
+       <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+     </dl>
+
+
+------
+diff -ru v8/campaigntarget/CampaignTargetServiceNetworkTarget.yaml v9/campaigntarget/CampaignTargetServiceNetworkTarget.yaml
+--- v8/campaigntarget/CampaignTargetServiceNetworkTarget.yaml	2022-09-29 15:58:57.000000000 +0900
++++ v9/campaigntarget/CampaignTargetServiceNetworkTarget.yaml	2022-09-29 15:58:58.000000000 +0900
+@@ -6,11 +6,11 @@
+       $ref: 'CampaignTargetServiceNetworkCoverageType.yaml#/CampaignTargetServiceNetworkCoverageType'
+   title: CampaignTargetServiceNetworkTarget
+   description: |
+-    <div lang="ja">CampaignTargetServiceNetworkTargetオブジェクトは、広告掲載方式を表します。<br>
++    <div lang="ja">CampaignTargetServiceNetworkTargetオブジェクトは、広告を表示する検索画面を表します。<br>
+     このフィールドは、ADDおよびSET時に省略可能となります。<br>
+     ※targetTypeがNETWORKの場合、このフィールドはADD時に必須となります。<br>
+-    なおNetworkTargetを設定しない場合、「YAHOO_SEARCH」を含むすべての広告掲載方式に広告は配信されます。</div>
+-    <div lang="en">CampaignTargetServiceNetworkTarget object describes Network coverage type.<br>
++    なおNetworkTargetを設定しない場合、「YAHOO_SEARCH」を含むすべての検索画面に広告は配信されます。</div>
++    <div lang="en">CampaignTargetServiceNetworkTarget represents a search screen that displays an ad.<br>
+     This field is optional in ADD and SET operation.<br>
+     *If targetType is NETWORK, this field is required in ADD operation.<br>
+     If you do not set the NetworkTarget, ads are delivered to the advertising system including all "YAHOO_SEARCH".</div>
+
+
+------
+diff -ru v8/conversiontracker/ConversionTrackerServiceAppLinkConversion.yaml v9/conversiontracker/ConversionTrackerServiceAppLinkConversion.yaml
+--- v8/conversiontracker/ConversionTrackerServiceAppLinkConversion.yaml	2022-09-29 15:58:57.000000000 +0900
++++ v9/conversiontracker/ConversionTrackerServiceAppLinkConversion.yaml	2022-09-29 15:58:58.000000000 +0900
+@@ -28,14 +28,6 @@
+         このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
+         <div lang="en">Application Event Type.<br>
+         Although this field will be returned in the response, it will be ignored on input.</div>
+-    snippet:
+-      type: string
+-      nullable: true
+-      description: |
+-        <div lang="ja">トラッキングスクリプトです。<br>
+-        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
+-        <div lang="en"> Tracking script.<br>
+-        Although this field will be returned in the response, it will be ignored on input.</div>
+     advancedSnippet:
+       type: string
+       nullable: true
+
+
+------
+diff -ru v8/conversiontracker/ConversionTrackerServiceWebConversion.yaml v9/conversiontracker/ConversionTrackerServiceWebConversion.yaml
+--- v8/conversiontracker/ConversionTrackerServiceWebConversion.yaml	2022-09-29 15:58:57.000000000 +0900
++++ v9/conversiontracker/ConversionTrackerServiceWebConversion.yaml	2022-09-29 15:58:58.000000000 +0900
+@@ -4,14 +4,6 @@
+   properties:
+     markupLanguage:
+       $ref: 'ConversionTrackerServiceMarkupLanguage.yaml#/ConversionTrackerServiceMarkupLanguage'
+-    snippet:
+-      type: string
+-      nullable: true
+-      description: |
+-        <div lang="ja">トラッキングスクリプトです。<br>
+-        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
+-        <div lang="en"> Tracking script.<br>
+-        Although this field will be returned in the response, it will be ignored on input.</div>
+     advancedSnippet:
+       type: string
+       nullable: true
+Only in v8: keywordestimator
+
+
+------
+diff -ru v8/keywordforecastmetrics/KeywordForecastMetricsServiceKeywordPlanNetwork.yaml v9/keywordforecastmetrics/KeywordForecastMetricsServiceKeywordPlanNetwork.yaml
+--- v8/keywordforecastmetrics/KeywordForecastMetricsServiceKeywordPlanNetwork.yaml	2022-09-29 15:58:58.000000000 +0900
++++ v9/keywordforecastmetrics/KeywordForecastMetricsServiceKeywordPlanNetwork.yaml	2022-09-29 15:58:58.000000000 +0900
+@@ -7,15 +7,15 @@
+   - UNKNOWN
+   title: KeywordForecastMetricsServiceKeywordPlanNetwork
+   description: |
+-    <div lang="ja">KeywordForecastMetricsServiceKeywordPlanNetworkは、予測対象を表します。<br>
++    <div lang="ja">KeywordForecastMetricsServiceKeywordPlanNetworkは、予測対象の検索画面を表します。<br>
+     デフォルト値はYAHOO_SEARCHです。</div>
+-    <div lang="en">KeywordForecastMetricsServiceKeywordPlanNetwork describes the forecast target.<br>
++    <div lang="en">KeywordForecastMetricsServiceKeywordPlanNetwork represents the search screen for the forecast target.<br>
+     Default value will be "YAHOO_SEARCH".</div>
+     <dl class=term>
+       <dt class="term__item">YAHOO_SEARCH</dt>
+-      <dd class="term__desc"><span lang="ja">検索のみです。</span><span lang="en">Search only.</span></dd>
++      <dd class="term__desc"><span lang="ja">Yahoo!検索の検索画面のみです。</span><span lang="en">Only the search screen of Yahoo! JAPAN Search.</span></dd>
+       <dt class="term__item">SEARCH_NETWORK</dt>
+-      <dd class="term__desc"><span lang="ja">検索を含むすべての広告掲載方式です。</span><span lang="en">All ad distribution, including search.</span></dd>
++      <dd class="term__desc"><span lang="ja">Yahoo!検索を含むすべての検索画面です。</span><span lang="en">All search screens including Yahoo! JAPAN Search.</span></dd>
+       <dt class="term__item">UNKNOWN</dt>
+       <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+     </dl>
+Only in v8/pagefeeditem: PageFeedItemServiceUploadResponse.yaml
+Only in v8/pagefeeditem: PageFeedItemServiceUploadReturnValue.yaml
+Only in v8/pagefeeditem: PageFeedItemServiceUploadValue.yaml
+
+
+------
+diff -ru v8/retargetinglist/RetargetingListServiceTag.yaml v9/retargetinglist/RetargetingListServiceTag.yaml
+--- v8/retargetinglist/RetargetingListServiceTag.yaml	2022-09-29 15:58:58.000000000 +0900
++++ v9/retargetinglist/RetargetingListServiceTag.yaml	2022-09-29 15:58:58.000000000 +0900
+@@ -2,12 +2,6 @@
+   type: object
+   nullable: true
+   properties:
+-    snippet:
+-      type: string
+-      nullable: true
+-      description: |
+-        <div lang="ja">サイトリターゲティングのタグです。</div>
+-        <div lang="en">RetargetingListServiceTag of Site Retargeting.</div>
+     advancedSnippet:
+       type: string
+       nullable: true
