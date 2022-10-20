@@ -29,9 +29,9 @@ AdGroupAdServiceAd:
       nullable: true
       description: |
         <div lang="ja">説明文です。<br>
-        ADD時、このフィールドは必須となります。※adTypeがRESPONSIVE_SEARCH_ADの場合は無視されます。</div>
+        ADD時、このフィールドは必須となります。※adTypeがRESPONSIVE_SEARCH_ADの場合は無視されます。<br>自動挿入をサポートしていません。</div>
         <div lang="en">Description of ad.<br>
-        This field is required in ADD operation. *If adType is RESPONSIVE_SEARCH_AD, this field will be ignored.</div>
+        This field is required in ADD operation. *If adType is RESPONSIVE_SEARCH_AD, this field will be ignored.<br>Does not support Data Auto Insertion.</div>
     devicePreference:
       $ref: 'AdGroupAdServiceDevicePreference.yaml#/AdGroupAdServiceDevicePreference'
     displayUrl:

@@ -7,9 +7,9 @@ AdGroupWebpageServiceUserStatus:
   - UNKNOWN
   title: AdGroupWebpageServiceUserStatus
   description: |
-    <div lang="ja">AdGroupWebpageServiceUserStatusは、ユーザーにより広告配信の有無を調整できる設定です。<br>
+    <div lang="ja">AdGroupWebpageServiceUserStatusは、配信設定を表します。<br>
     ADD時およびSET時、このフィールドは省略可能となります。※ExcludedTypeがINCLUDEDのみ更新可能です。</div>
-    <div lang="en">AdGroupWebpageServiceUserStatus displays ad delivery status that can be set by an user.<br>
+    <div lang="en">AdGroupWebpageServiceUserStatus describes delivery settings.<br>
     This field is optional in ADD and SET operation. *This field can be updated when ExcludedType is 'INCLUDED'.</div>
     <dl class=term>
       <dt class="term__item">PAUSED</dt>

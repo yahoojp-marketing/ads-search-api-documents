@@ -7,9 +7,9 @@ AccountManagementServiceDeliveryStatus:
   - UNKNOWN
   title: AccountManagementServiceDeliveryStatus
   description: |
-    <div lang="ja">AccountManagementServiceDeliveryStatusは、アカウントの配信状況を表します。<br>
+    <div lang="ja">AccountManagementServiceDeliveryStatusは、アカウントの配信設定を表します。<br>
     このフィールドは、省略可能となります。その際、ADD時のデフォルト設定値はACTIVEとなります。</div>
-    <div lang="en">AccountManagementServiceDeliveryStatus object describes account delivery status.<br>
+    <div lang="en">AccountManagementServiceDeliveryStatus object describes account delivery settings.<br>
     This field is optional. The default value in ADD operation will be ACTIVE.</div>
     <dl class=term>
       <dt class="term__item">ACTIVE</dt>

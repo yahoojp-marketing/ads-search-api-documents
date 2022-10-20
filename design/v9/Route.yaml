@@ -4709,8 +4709,10 @@ paths:
   /FeedItemService/add:
     post:
       description: |
-        <div lang="ja">フィードアイテム情報を追加します。</div>
-        <div lang="en">Add Feed Item information.</div>
+        <div lang="ja">フィードアイテム情報を追加します。<br>
+        ※現在、こちらのサービスは利用できません。</div>
+        <div lang="en">Add Feed Item information.<br>
+        *Currently this service is not available.</div>
       tags:
         - FeedItemService
       requestBody:
@@ -4771,8 +4773,10 @@ paths:
   /FeedItemService/set:
     post:
       description: |
-        <div lang="ja">フィードアイテム情報を更新します。</div>
-        <div lang="en">Updates the Feed Item details.</div>
+        <div lang="ja">フィードアイテム情報を更新します。<br>
+        ※現在、こちらのサービスは利用できません。</div>
+        <div lang="en">Updates the Feed Item details.<br>
+        *Currently this service is not available</div>
       tags:
         - FeedItemService
       requestBody:
@@ -4833,8 +4837,10 @@ paths:
   /FeedItemService/remove:
     post:
       description: |
-        <div lang="ja">フィードアイテム情報を削除します。</div>
-        <div lang="en">Remove the Feed Item details.</div>
+        <div lang="ja">フィードアイテム情報を削除します。<br>
+        ※現在、こちらのサービスは利用できません。</div>
+        <div lang="en">Remove the Feed Item details.<br>
+        *Currently this service is not available.</div>
       tags:
         - FeedItemService
       requestBody:
@@ -4895,8 +4901,10 @@ paths:
   /FeedItemService/setTrademarkStatus:
     post:
       description: |
-        <div lang="ja">商標の使用制限解除を確認します。</div>
-        <div lang="en">Confirm the status of trademark restriction.</div>
+        <div lang="ja">商標の使用制限解除を確認します。<br>
+        ※現在、こちらのサービスは利用できません。</div>
+        <div lang="en">Confirm the status of trademark restriction.<br>
+        *Currently this service is not available.</div>
       tags:
         - FeedItemService
       requestBody:
@@ -5012,8 +5020,10 @@ paths:
   /FeedService/add:
     post:
       description: |
-        <div lang="ja">FeedItem情報を追加します。</div>
-        <div lang="en">Add the information related to Feed.</div>
+        <div lang="ja">FeedItem情報を追加します。<br>
+        ※現在、こちらのサービスは利用できません。</div>
+        <div lang="en">Add the information related to Feed.<br>
+        *Currently this service is not available.</div>
       tags:
         - FeedService
       requestBody:
@@ -5067,8 +5077,10 @@ paths:
   /FeedService/set:
     post:
       description: |
-        <div lang="ja">FeedItem情報を更新します。</div>
-        <div lang="en">Updates Feed information.</div>
+        <div lang="ja">FeedItem情報を更新します。<br>
+        ※現在、こちらのサービスは利用できません。</div>
+        <div lang="en">Updates Feed information.<br>
+        *Currently this service is not available.</div>
       tags:
         - FeedService
       requestBody:
@@ -5122,8 +5134,10 @@ paths:
   /FeedService/remove:
     post:
       description: |
-        <div lang="ja">FeedItem情報を削除します。</div>
-        <div lang="en">Removes Feed information.</div>
+        <div lang="ja">FeedItem情報を削除します。<br>
+        ※現在、こちらのサービスは利用できません。</div>
+        <div lang="en">Removes Feed information.<br>
+        *Currently this service is not available.</div>
       tags:
         - FeedService
       requestBody:

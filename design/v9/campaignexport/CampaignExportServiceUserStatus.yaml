@@ -7,9 +7,9 @@ CampaignExportServiceUserStatus:
   - UNKNOWN
   title: CampaignExportServiceUserStatus
   description: |
-    <div lang="ja">CampaignExportServiceUserStatusは、ユーザーにより広告配信の有無を調整できる設定です。<br>
+    <div lang="ja">CampaignExportServiceUserStatusは、配信設定を表します。<br>
     このフィールドは、省略可能となります。</div>
-    <div lang="en">CampaignExportServiceUserStatus displays ad delivery status that can be set by an user.<br>
+    <div lang="en">CampaignExportServiceUserStatus describes delivery settings.<br>
     This field is optional.</div>
     <dl class=term>
       <dt class="term__item">ACTIVE</dt>

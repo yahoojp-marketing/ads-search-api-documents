@@ -7,9 +7,9 @@ AdGroupCriterionServiceUserStatus:
   - UNKNOWN
   title: AdGroupCriterionServiceUserStatus
   description: |
-    <div lang="ja">AdGroupCriterionServiceUserStatusは、ユーザーにより広告配信の有無を調整できる設定です。<br>
+    <div lang="ja">AdGroupCriterionServiceUserStatusは、配信設定を表します。<br>
     このフィールドは、ADD時は必須となり、SET時は省略可能となります。</div>
-    <div lang="en">AdGroupCriterionServiceUserStatus displays ad delivery status that can be set by an user.<br>
+    <div lang="en">AdGroupCriterionServiceUserStatus describes delivery settings.<br>
     This field is required in ADD operation, and will be optional in SET operation.</div>
     <dl class=term>
       <dt class="term__item">ACTIVE</dt>
