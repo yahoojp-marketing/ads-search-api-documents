@@ -84,11 +84,13 @@ AdGroup:
         <div lang="ja">広告費用対効果の目標値です。<br>
         キャンペーンで設定した広告費用対効果の目標値を使用する場合は、0を指定してください。<br>
         このフィールドは、ADDおよびSET時に省略可能となり、REMOVE時に無視されます。<br>
-        ※キャンペーンのbiddingStrategyTypeが<code>TARGET_ROAS</code>または<code>MAXIMIZE_CONVERSION_VALUE</code>の場合に変更可能です。</div>
+        ※キャンペーンのbiddingStrategyTypeが<code>TARGET_ROAS</code>または<code>MAXIMIZE_CONVERSION_VALUE</code>の場合に変更可能です。<br>
+        ※キャンペーンで目標値を設定していない場合、広告グループに設定した目標値は無視されます。</div>
         <div lang="en">Target ROAS. <br>
         Specify 0 in order to use the Target ROAS specified in the campaign setting. <br>
         This field is optional in ADD and SET operation, and will be ignored in REMOVE operation. <br>
-        *This field can be specified only if biddingStrategyType of campaign is <code>TARGET_ROAS</code> or <code>MAXIMIZE_CONVERSION_VALUE</code>.</div>
+        *This field can be specified only if biddingStrategyType of campaign is <code>TARGET_ROAS</code> or <code>MAXIMIZE_CONVERSION_VALUE</code>.<br>
+        *If no target value is set in the campaign, the target value set in the ad group will be ignored.</div>
     targetCpaOverride:
       type: integer
       nullable: true
@@ -97,11 +99,13 @@ AdGroup:
         <div lang="ja">コンバージョン単価の目標値です。<br>
         キャンペーンで設定したコンバージョン単価の目標値を使用する場合は、0を指定してください。<br>
         このフィールドは、ADDおよびSET時に省略可能となり、REMOVE時に無視されます。<br>
-        ※キャンペーンのbiddingStrategyTypeが<code>TARGET_CPA</code>または<code>MAXIMIZE_CONVERSIONS</code>の場合に変更可能です。</div>
+        ※キャンペーンのbiddingStrategyTypeが<code>TARGET_CPA</code>または<code>MAXIMIZE_CONVERSIONS</code>の場合に変更可能です。<br>
+        ※キャンペーンで目標値を設定していない場合、広告グループに設定した目標値は無視されます。</div>
         <div lang="en">Target CPA. <br>
         Specify 0 in order to use the Target CPA specified in the campaign setting. <br>
         This field is optional in ADD and SET operation, and will be ignored in REMOVE operation.<br>
-        *This field can be specified only if biddingStrategyType of campaign is <code>TARGET_CPA</code> or <code>MAXIMIZE_CONVERSIONS</code>.</div>
+        *This field can be specified only if biddingStrategyType of campaign is <code>TARGET_CPA</code> or <code>MAXIMIZE_CONVERSIONS</code>.<br>
+        *If no target value is set in the campaign, the target value set in the ad group will be ignored.</div>
     trackingUrl:
       type: string
       nullable: true
