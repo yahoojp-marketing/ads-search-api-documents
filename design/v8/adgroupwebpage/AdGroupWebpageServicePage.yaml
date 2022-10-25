@@ -16,5 +16,5 @@ AdGroupWebpageServicePage:
         $ref: 'AdGroupWebpageServiceValue.yaml#/AdGroupWebpageServiceValue'
   title: AdGroupWebpageServicePage
   description: |
-    <div lang="ja">AdGroupWebpageServicePageオブジェクトは、取得されるPageFeedItemの配信/除外設定に関するエントリーを表します。</div>
-    <div lang="en">AdGroupWebpageServicePage object describes entry on allowed or excluded setting of acquired PageFeedItem.</div>
+    <div lang="ja">AdGroupWebpageServicePageオブジェクトは、取得されるPageFeedAssetの配信/除外設定に関するエントリーを表します。</div>
+    <div lang="en">AdGroupWebpageServicePage object describes entry on allowed or excluded setting of acquired PageFeedAsset.</div>

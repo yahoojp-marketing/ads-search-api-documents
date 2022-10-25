@@ -17,5 +17,5 @@ CampaignWebpageServiceValue:
         <div lang="en">Operation result</div>
   title: CampaignWebpageServiceValue
   description: |
-    <div lang="ja">CampaignWebpageServiceValueオブジェクトは、操作結果を含むPageFeedItemの除外設定を表します。</div>
+    <div lang="ja">CampaignWebpageServiceValueオブジェクトは、操作結果を含むPageFeedAssetの除外設定を表します。</div>
     <div lang="en">CampaignWebpageServiceValue object describes excluded settings including operation result.</div>

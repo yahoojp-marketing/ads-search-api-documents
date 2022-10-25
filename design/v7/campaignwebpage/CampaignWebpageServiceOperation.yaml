@@ -21,5 +21,5 @@ CampaignWebpageServiceOperation:
       maxItems: 2000
   title: CampaignWebpageServiceOperation
   description: |
-    <div lang="ja">CampaignWebpageServiceOperationオブジェクトは、mutateメソッドで操作対象となるPageFeedItemの除外設定を保持します。</div>
-    <div lang="en">CampaignWebpageServiceOperation object contains the excluded setting of PageFeedItem which is the target of mutate operation.</div>
+    <div lang="ja">CampaignWebpageServiceOperationオブジェクトは、mutateメソッドで操作対象となるPageFeedAssetの除外設定を保持します。</div>
+    <div lang="en">CampaignWebpageServiceOperation object contains the excluded setting of PageFeedAsset which is the target of mutate operation.</div>

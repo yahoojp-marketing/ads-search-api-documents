@@ -10,9 +10,9 @@ CampaignWebpageServiceWebpageConditionType:
   - UNKNOWN
   title: CampaignWebpageServiceWebpageConditionType
   description: |
-    <div lang="ja">PageFeedItemを除外設定する種別です。<br>
+    <div lang="ja">PageFeedAssetを除外設定する種別です。<br>
     このフィールドは、ADD時に必須となり、REMOVE時に無視されます。</div>
-    <div lang="en">Type to set PageFeedItem.<br>
+    <div lang="en">Type to set PageFeedAsset.<br>
     This field is required in ADD operation, and will be ignored in REMOVE operation.</div>
     <dl class=term>
       <dt class="term__item">URL</dt>

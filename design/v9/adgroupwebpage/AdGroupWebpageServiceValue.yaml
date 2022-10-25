@@ -17,5 +17,5 @@ AdGroupWebpageServiceValue:
         <div lang="en">The process results. If true, the process succeeded. If false, the process failed.</div>
   title: AdGroupWebpageServiceValue
   description: |
-    <div lang="ja">AdGroupWebpageServiceValueオブジェクトは、操作結果を含むPageFeedItemの配信/除外設定を表します。</div>
+    <div lang="ja">AdGroupWebpageServiceValueオブジェクトは、操作結果を含むPageFeedAssetの配信/除外設定を表します。</div>
     <div lang="en">AdGroupWebpageServiceValue object describes allowed or excluded settings including operation result.</div>

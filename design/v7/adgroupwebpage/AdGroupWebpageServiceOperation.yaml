@@ -21,5 +21,5 @@ AdGroupWebpageServiceOperation:
       maxItems: 2000
   title: AdGroupWebpageServiceOperation
   description: |
-    <div lang="ja">AdGroupWebpageServiceOperationオブジェクトは、mutateメソッドで操作対象となるPageFeedItemの配信/除外設定を保持します。</div>
-    <div lang="en">AdGroupWebpageServiceOperation object contains the allowed or excluded setting of PageFeedItem which is the target of mutate operation.</div>
+    <div lang="ja">AdGroupWebpageServiceOperationオブジェクトは、mutateメソッドで操作対象となるPageFeedAssetの配信/除外設定を保持します。</div>
+    <div lang="en">AdGroupWebpageServiceOperation object contains the allowed or excluded setting of PageFeedAsset which is the target of mutate operation.</div>

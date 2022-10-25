@@ -16,5 +16,5 @@ CampaignWebpageServicePage:
         $ref: 'CampaignWebpageServiceValue.yaml#/CampaignWebpageServiceValue'
   title: CampaignWebpageServicePage
   description: |
-    <div lang="ja">CampaignWebpageServicePageオブジェクトは、取得されるPageFeedItemの除外設定に関するエントリーを表します。</div>
-    <div lang="en">CampaignWebpageServicePage object describes entry on exclusion setting of acquired PageFeedItem.</div>
+    <div lang="ja">CampaignWebpageServicePageオブジェクトは、取得されるPageFeedAssetの除外設定に関するエントリーを表します。</div>
+    <div lang="en">CampaignWebpageServicePage object describes entry on exclusion setting of acquired PageFeedAsset.</div>

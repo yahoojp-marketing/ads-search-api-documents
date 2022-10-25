@@ -86,8 +86,8 @@ tags:
   - name: AdGroupWebpageService
     description: |
       <label class="campaign"></label>
-      <div lang="ja">AdGroupWebpageServiceでは、広告グループにPageFeedItemの配信/除外設定を行ないます。</div><div lang="en">AdGroupWebpageService
-      provides allowed or excluded settings of PageFeedItem for ad group.</div>
+      <div lang="ja">AdGroupWebpageServiceでは、広告グループにPageFeedAssetの配信/除外設定を行ないます。</div><div lang="en">AdGroupWebpageService
+      provides allowed or excluded settings of PageFeedAsset for ad group.</div>
   - name: CampaignService
     description: |
       <label class="campaign"></label>
@@ -116,8 +116,8 @@ tags:
   - name: CampaignWebpageService
     description: |
       <label class="campaign"></label>
-      <div lang="ja">CampaignWebpageServiceでは、キャンペーンにPageFeedItemの配信除外設定を行ないます。</div><div lang="en">CampaignWebpageService
-      provides excluded settings of PageFeedItem for campaign.</div>
+      <div lang="ja">CampaignWebpageServiceでは、キャンペーンにPageFeedAssetの配信除外設定を行ないます。</div><div lang="en">CampaignWebpageService
+      provides excluded settings of PageFeedAsset for campaign.</div>
   - name: SharedCriterionService
     description: |
       <label class="campaign"></label>
@@ -2045,8 +2045,8 @@ paths:
   /AdGroupWebpageService/get:
     post:
       description: |
-        <div lang="ja">広告グループに設定されているPageFeedItemの配信/除外設定を取得します。</div>
-        <div lang="en">Get allowed or excluded settings of PageFeedItem setting in ad group.</div>
+        <div lang="ja">広告グループに設定されているPageFeedAssetの配信/除外設定を取得します。</div>
+        <div lang="en">Get allowed or excluded settings of PageFeedAsset setting in ad group.</div>
       tags:
         - AdGroupWebpageService
       requestBody:
@@ -2101,10 +2101,10 @@ paths:
   /AdGroupWebpageService/add:
     post:
       description: |
-        <div lang="ja">広告グループにPageFeedItemを配信、又は、除外として設定します。<br>
+        <div lang="ja">広告グループにPageFeedAssetを配信、又は、除外として設定します。<br>
         ※1リクエストで異なるキャンペーン配下の広告グループに対してWebページ情報の設定が可能です。<br>
         ※1リクエスト内で同一のadGroupIdに同一組み合わせのWebpageParameterを設定できません。</div>
-        <div lang="en">Set allowed or excluded settings of PageFeedItem for ad group.<br>
+        <div lang="en">Set allowed or excluded settings of PageFeedAsset for ad group.<br>
         ∗ With one request, web page information can be set for ad group under different campaign.<br>
         ∗ Within one request, you can not set the same combination WebpageParameter to the same adGroupId.</div>
       tags:
@@ -2162,10 +2162,10 @@ paths:
   /AdGroupWebpageService/set:
     post:
       description: |
-        <div lang="ja">広告グループにPageFeedItemを配信、又は、除外として設定します。<br>
+        <div lang="ja">広告グループにPageFeedAssetを配信、又は、除外として設定します。<br>
         ※1リクエストで異なるキャンペーン配下の広告グループに対してWebページ情報の設定が可能です。<br>
         ※1リクエスト内で同一のadGroupIdに同一組み合わせのWebpageParameterを設定できません。</div>
-        <div lang="en">Set allowed or excluded settings of PageFeedItem for ad group.<br>
+        <div lang="en">Set allowed or excluded settings of PageFeedAsset for ad group.<br>
         ∗ With one request, web page information can be set for ad group under different campaign.<br>
         ∗ Within one request, you can not set the same combination WebpageParameter to the same adGroupId.</div>
       tags:
@@ -2222,8 +2222,8 @@ paths:
   /AdGroupWebpageService/remove:
     post:
       description: |
-        <div lang="ja">広告グループに関連付けしているPageFeedItemを解除します。</div>
-        <div lang="en">Remove PageFeedItem associated with ad group.</div>
+        <div lang="ja">広告グループに関連付けしているPageFeedAssetを解除します。</div>
+        <div lang="en">Remove PageFeedAsset associated with ad group.</div>
       tags:
         - AdGroupWebpageService
       requestBody:
@@ -4112,8 +4112,8 @@ paths:
   /CampaignWebpageService/get:
     post:
       description: |
-        <div lang="ja">キャンペーンに設定されているPageFeedItemを照会します。</div>
-        <div lang="en">Get PageFeedItem setting in campaign.</div>
+        <div lang="ja">キャンペーンに設定されているPageFeedAssetを照会します。</div>
+        <div lang="en">Get PageFeedAsset setting in campaign.</div>
       tags:
         - CampaignWebpageService
       requestBody:
@@ -4166,8 +4166,8 @@ paths:
   /CampaignWebpageService/add:
     post:
       description: |
-        <div lang="ja">キャンペーンにPageFeedItemを配信除外として設定します。</div>
-        <div lang="en">Set excluded settings of PageFeedItem for campaign.</div>
+        <div lang="ja">キャンペーンにPageFeedAssetを配信除外として設定します。</div>
+        <div lang="en">Set excluded settings of PageFeedAsset for campaign.</div>
       tags:
         - CampaignWebpageService
       requestBody:
@@ -4221,8 +4221,8 @@ paths:
   /CampaignWebpageService/remove:
     post:
       description: |
-        <div lang="ja">キャンペーンに関連付けしているPageFeedItemを解除します。</div>
-        <div lang="en">Remove PageFeedItem associated with campaign.</div>
+        <div lang="ja">キャンペーンに関連付けしているPageFeedAssetを解除します。</div>
+        <div lang="en">Remove PageFeedAsset associated with campaign.</div>
       tags:
         - CampaignWebpageService
       requestBody:
