@@ -6,9 +6,9 @@ CampaignWebpageServiceWebpageCondition:
       type: string
       nullable: true
       description: |
-        <div lang="ja">条件の設定値(正規表現の指定可)です。<br>
+        <div lang="ja">条件の設定値です。<br>
         このフィールドは、ADD時に必須となり、REMOVE時に無視されます。</div>
-        <div lang="en">Value of rule setting. ∗ Can specify regular expression.<br>
+        <div lang="en">Value of rule setting.<br>
         This field is required in ADD operation, and will be ignored in REMOVE operation.</div>
     'type':
       $ref: 'CampaignWebpageServiceWebpageConditionType.yaml#/CampaignWebpageServiceWebpageConditionType'
