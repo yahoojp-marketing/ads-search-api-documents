@@ -348,7 +348,7 @@ paths:
                 <tr><td>D0001</td><td>Duplicate.</td><td><div lang="ja">一意な値が重複しています。</div><div lang="en">The unique value is duplicated.</div></td></tr>
                 <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
-                <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
+                <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>           
               </tbody>
             </table>
             </div>
@@ -2742,6 +2742,7 @@ paths:
                 <tr><td>210312</td><td>ConversionTracker has been over limit.</td><td><div lang="ja">コンバージョントラッカーの登録できる上限値を超過しています。</div><div lang="en">The upper limit value of conversionTracker that can be registered is exceeded.</div></td></tr>
                 <tr><td>210313</td><td>Campaign Type: This is not available.</td><td><div lang="ja">キャンペーンタイプ：この設定は使用できません。</div><div lang="en">Campaign Type: This is not available.</div></td></tr>
                 <tr><td>210314</td><td>Cannot set Enhanced CPC for Mobile app download.</td><td><div lang="ja">アプリダウンロードキャンペーンに「拡張クリック単価」を設定しようとしています。</div><div lang="en">"Enhanced CPC" can not be set for Mobile app download.</div></td></tr>
+                <tr><td>211020</td><td>Domain crawling setting limit has exceed.</td><td><div lang="ja">「ドメイン全体」または「ドメイン全体とページフィードを併用」を設定したキャンペーンの作成上限数を超えています。</div><div lang="en">Exceeding the maximum limit of campaigns that have "Entire domain" and "Entire domain and page feed."</div></td></tr>
               </tbody>
             </table>
             </div>
@@ -2814,6 +2815,7 @@ paths:
                 <tr><td>211007</td><td>Representative URL Does Not Match.</td><td><div lang="ja">Feedで設定されているドメインと異なります。</div><div lang="en">It is different from the domain set by Feed.</div></td></tr>
                 <tr><td>211008</td><td>Cannot change Dynamic Ads for Search Campaign.</td><td><div lang="ja">Dynamic Ads for Searchのキャンペーンに変更はできません。</div><div lang="en">It can not be changed to the campaign of Dynamic Ads for Search.</div></td></tr>
                 <tr><td>210314</td><td>Cannot set Enhanced CPC for Mobile app download.</td><td><div lang="ja">アプリダウンロードキャンペーンに「拡張クリック単価」を設定しようとしています。</div><div lang="en">"Enhanced CPC" can not be set for Mobile app download.</div></td></tr>
+                <tr><td>211020</td><td>Domain crawling setting limit has exceed.</td><td><div lang="ja">「ドメイン全体」または「ドメイン全体とページフィードを併用」を設定したキャンペーンの作成上限数を超えています。</div><div lang="en">Exceeding the maximum limit of campaigns that have "Entire domain" and "Entire domain and page feed."</div></td></tr>
               </tbody>
             </table>
             </div>

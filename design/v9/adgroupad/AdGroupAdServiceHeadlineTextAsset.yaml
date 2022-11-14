@@ -27,9 +27,9 @@ AdGroupAdServiceHeadlineTextAsset:
         Although this field will be returned in the response, it will be ignored on input.</div>
   title: AdGroupAdServiceHeadlineTextAsset
   description: |
-    <div lang="ja">AdGroupAdServiceHeadlineTextAssetは、レスポンシブ広告で指定するタイトルのテキストアセットを表します。<br>
+    <div lang="ja">AdGroupAdServiceHeadlineTextAssetは、レスポンシブ検索広告で指定するタイトルのテキストアセットを表します。<br>
     headlines[]には、3~15件の指定が可能です。<br>
     ADD時、このフィールドは必須となります。</div>
-    <div lang="en">AdGroupAdServiceHeadlineTextAsset displays the text asset for the headline that specify in responsive ad.<br>
+    <div lang="en">AdGroupAdServiceHeadlineTextAsset displays the text asset for the headline that specify in responsive ads for search.<br>
     3 to 15 items can be specified for headlines[].<br>
     This field is required in ADD operation.</div>
