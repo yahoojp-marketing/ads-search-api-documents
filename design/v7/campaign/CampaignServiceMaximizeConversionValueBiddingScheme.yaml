@@ -9,11 +9,9 @@ CampaignServiceMaximizeConversionValueBiddingScheme:
       description: |
         <div lang="ja">広告費用対効果の目標値です。<br>
         0.01 ～ 1000.00（1% ～ 100000%）の範囲内のみ 許容します。<br>
-        ADD時およびSET時、このフィールドは必須となります。<br>
         ※ROAS:Return On Advertising Spend</div>
         <div lang="en">Target ROAS (Return On Advertising Spend)<br>
-        * Limit range: 0.01 - 1000.00 (1% - 100000%)<br>
-        This field is required in ADD and SET operation.</div>
+        * Limit range: 0.01 - 1000.00 (1% - 100000%)</div>
   title: CampaignServiceMaximizeConversionValueBiddingScheme
   description: |
     <div lang="ja">CampaignServiceMaximizeConversionValueBiddingSchemeオブジェクトは、広告費用対効果の目標値の自動入札設定情報を表します。<br>

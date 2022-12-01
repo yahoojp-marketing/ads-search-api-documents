@@ -13,7 +13,18 @@ RetargetingListServiceTargetListOwner:
       <dt class="term__item">OWNER</dt>
       <dd class="term__desc"><span lang="ja">アカウントで専有されているターゲットリストです。</span><span lang="en">The exclusive target list owned by an account.</span></dd>
       <dt class="term__item">SHARED</dt>
-      <dd class="term__desc"><span lang="ja">複数のアカウント間で共有されているターゲットリストです。</span><span lang="en">The target list shared by multiple accounts.</span></dd>
+      <dd class="term__desc">
+        <span lang="ja">
+          ターゲットリストグループで共有されているターゲットリストです。<br>
+          詳細は以下のヘルプを参照してください。<br>
+          ・<a href="https://ads-help.yahoo.co.jp/yahooads/ss/articledetail?lan=ja&aid=15833">ターゲットリストのアカウント間共有について</a>
+        </span>
+        <span lang="en">
+          The target list shared by the target list group.<br>
+          See also the help below.<br>
+          ・<a href="https://ads-help.yahoo.co.jp/yahooads/ss/articledetail?lan=en&aid=9538">Sharing target list across accounts</a>
+        </span>
+      </dd>
       <dt class="term__item">UNKNOWN</dt>
       <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
     </dl>

@@ -5297,8 +5297,10 @@ paths:
   /PageFeedItemService/download:
     post:
       description: |
-        <div lang="ja">ページフィードアイテムをダウンロードします。</div>
-        <div lang="en">Download page feed items.</div>
+        <div lang="ja">ページフィードアイテムをダウンロードします。<br>
+        ※現在、こちらのサービスは利用できません。</div>
+        <div lang="en">Download page feed items.<br>
+        *Currently this service is not available.</div>
       tags:
         - PageFeedItemService
       requestBody:
@@ -5351,8 +5353,10 @@ paths:
   /PageFeedItemService/downloadErrorFile:
     post:
       description: |
-        <div lang="ja">ページフィードアイテムのエラーファイルをダウンロードします。</div>
-        <div lang="en">Download the error file of page feed items.</div>
+        <div lang="ja">ページフィードアイテムのエラーファイルをダウンロードします。<br>
+        ※現在、こちらのサービスは利用できません。</div>
+        <div lang="en">Download the error file of page feed items.<br>
+        *Currently this service is not available.</div>
       tags:
         - PageFeedItemService
       requestBody:
@@ -5405,8 +5409,10 @@ paths:
   /PageFeedItemService/get:
     post:
       description: |
-        <div lang="ja">ページフィードアイテム情報を取得します。</div>
-        <div lang="en">Gets information related to page feed item.</div>
+        <div lang="ja">ページフィードアイテム情報を取得します。<br>
+        ※現在、こちらのサービスは利用できません。</div>
+        <div lang="en">Gets information related to page feed item.<br>
+        *Currently this service is not available.</div>
       tags:
         - PageFeedItemService
       requestBody:
@@ -5458,8 +5464,10 @@ paths:
   /PageFeedItemService/getReviewSummary:
     post:
       description: |
-        <div lang="ja">登録されているページフィードアイテムの審査成績・状況のサマリーを取得します。</div>
-        <div lang="en">Gets registered approval records of page feed item and summary of each status.</div>
+        <div lang="ja">登録されているページフィードアイテムの審査成績・状況のサマリーを取得します。<br>
+        ※現在、こちらのサービスは利用できません。</div>
+        <div lang="en">Gets registered approval records of page feed item and summary of each status.<br>
+        *Currently this service is not available.</div>
       tags:
         - PageFeedItemService
       requestBody:
@@ -5511,8 +5519,10 @@ paths:
   /PageFeedItemService/getJobStatus:
     post:
       description: |
-        <div lang="ja">upload、downloadの処理状況を取得します。</div>
-        <div lang="en">Gets processing status about upload or download.</div>
+        <div lang="ja">upload、downloadの処理状況を取得します。<br>
+        ※現在、こちらのサービスは利用できません。</div>
+        <div lang="en">Gets processing status about upload or download.<br>
+        *Currently this service is not available.</div>
       tags:
         - PageFeedItemService
       requestBody:
@@ -5564,8 +5574,10 @@ paths:
   /PageFeedItemService/addDownloadJob:
     post:
       description: |
-        <div lang="ja">登録されているページフィードアイテムを一括でダウンロードするためジョブを登録します。</div>
-        <div lang="en">Registers job to bulk download registered page feed item.</div>
+        <div lang="ja">登録されているページフィードアイテムを一括でダウンロードするためジョブを登録します。<br>
+        ※現在、こちらのサービスは利用できません。</div>
+        <div lang="en">Registers job to bulk download registered page feed item.<br>
+        *Currently this service is not available.</div>
       tags:
         - PageFeedItemService
       requestBody:
