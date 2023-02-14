@@ -1,0 +1,98 @@
+AdGroupServiceSelector:
+  type: object
+  nullable: true
+  required:
+  - accountId
+  properties:
+    accountId:
+      type: integer
+      nullable: false
+      format: int64
+      description: |
+        <div lang="ja">検索条件：アカウントID</div>
+        <div lang="en">Search condition: Account ID</div>
+    adGroupIds:
+      type: array
+      nullable: true
+      items:
+        type: integer
+        nullable: true
+        format: int64
+      maxItems: 1000
+      description: |
+        <div lang="ja">検索条件：広告グループID</div>
+        <div lang="en">Search condition: Ad Group ID</div>
+    portfolioBiddingIds:
+      type: array
+      nullable: true
+      items:
+        type: integer
+        nullable: true
+        format: int64
+      maxItems: 1000
+      description: |
+        <div lang="ja">検索条件：ポートフォリオ入札ID</div>
+        <div lang="en">Search condition: Portfolio bidding ID</div>
+    campaignIds:
+      type: array
+      nullable: true
+      items:
+        type: integer
+        nullable: true
+        format: int64
+      maxItems: 1000
+      description: |
+        <div lang="ja">検索条件：キャンペーンID</div>
+        <div lang="en">Search condition: Campaign ID</div>
+    containsLabel:
+      type: boolean
+      nullable: true
+      description: |
+        <div lang="ja">ラベルデータ取得フラグです。</div>
+        <div lang="en">AdGroupServiceContainsLabel object describes acquisition flag of label data.</div>
+    labelIds:
+      type: array
+      nullable: true
+      items:
+        type: integer
+        nullable: true
+        format: int64
+      maxItems: 1000
+      description: |
+        <div lang="ja">検索条件：ラベルIDです。<br>
+        ※labelIdsを指定した場合は、取得結果にcontainsLabelの情報が付与されます。</div>
+        <div lang="en">Search condition: Label ID.<br>
+        *When specified labelIds, containsLabel information is added to the result.</div>
+    numberResults:
+      type: integer
+      nullable: true
+      format: int32
+      minimum: 1
+      maximum: 10000
+      default: 500
+      description: |
+        <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div>
+        <div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1. Also see Entity Limits per operation.</div>
+    startIndex:
+      type: integer
+      nullable: true
+      format: int32
+      minimum: 1
+      default: 1
+      description: |
+        <div lang="ja">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div>
+        <div lang="en">Index of the first result to return in this page. This field must be greater than or equal to 1.</div>
+    userStatuses:
+      type: array
+      nullable: true
+      items:
+        $ref: 'AdGroupServiceUserStatus.yaml#/AdGroupServiceUserStatus'
+      maxItems: 2
+    createdDateRange:
+      $ref: 'AdGroupServiceCreatedDateRange.yaml#/AdGroupServiceCreatedDateRange'
+    biddingKeywordCpcRange:
+      $ref: 'AdGroupServiceBiddingKeywordCpcRange.yaml#/AdGroupServiceBiddingKeywordCpcRange'
+  title: AdGroupServiceSelector
+  description: |
+    <div lang="ja">AdGroupServiceSelectorオブジェクトは、指定された広告グループを表します。</div>
+    <div lang="en">AdGroupServiceSelector object displays the specified ad group.</div>

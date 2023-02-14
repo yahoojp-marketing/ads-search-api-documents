@@ -73,8 +73,10 @@ AdGroupAdServiceSelector:
         format: int64
       maxItems: 1000
       description: |
-        <div lang="ja">検索条件：ラベルID</div>
-        <div lang="en">Search condition: Label ID</div>
+        <div lang="ja">検索条件：ラベルID。<br>
+        ※labelIdsを指定する場合は、containsLabelIdをTRUEにする必要があります。</div>
+        <div lang="en">Search condition: Label ID.<br>
+        *To specify labelIds, must be containsLabelId set TRUE.</div>
     numberResults:
       type: integer
       nullable: true

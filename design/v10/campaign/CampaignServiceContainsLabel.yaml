@@ -1,0 +1,7 @@
+CampaignServiceContainsLabel:
+  type: boolean
+  nullable: true
+  title: CampaignServiceContainsLabel
+  description: |
+    <div lang="ja">ラベルID取得フラグ</div>
+    <div lang="en">Flag of contains label ID</div>

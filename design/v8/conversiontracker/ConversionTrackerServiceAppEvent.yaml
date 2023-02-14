@@ -31,5 +31,5 @@ ConversionTrackerServiceAppEvent:
         <div lang="en">Application Event Type.</div>
   title: ConversionTrackerServiceAppEvent
   description: |
-    <div lang="ja">ConversionTrackerServiceAppEventオブジェクトは、アプリコンバージョン測定タグやタグごとのパフォーマンスデータなどのアプリコンバージョントラッカー情報を表します。</div>
-    <div lang="en">ConversionTrackerServiceAppConversion object describes the App ConversionTracker information such as App ConversionTag and performance data by  tag.</div>
+    <div lang="ja">ConversionTrackerServiceAppEventオブジェクトは、アプリコンバージョン測定タグやタグごとのパフォーマンスデータなどのアプリコンバージョン設定を表します。</div>
+    <div lang="en">ConversionTrackerServiceAppConversion object describes the App ConversionTracker settings such as App ConversionTag and performance data by  tag.</div>

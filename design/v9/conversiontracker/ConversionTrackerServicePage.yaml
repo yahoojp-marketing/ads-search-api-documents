@@ -42,5 +42,5 @@ ConversionTrackerServicePage:
         $ref: 'ConversionTrackerServiceValue.yaml#/ConversionTrackerServiceValue'
   title: ConversionTrackerServicePage
   description: |
-    <div lang="ja">ConversionTrackerServicePageオブジェクトは、取得されるコンバージョントラッカー情報のエントリーを表します。</div>
+    <div lang="ja">ConversionTrackerServicePageオブジェクトは、取得されるコンバージョン設定のエントリーを表しますす。</div>
     <div lang="en">ConversionTrackerServicePage object shows entry of ConversionTracker.</div>

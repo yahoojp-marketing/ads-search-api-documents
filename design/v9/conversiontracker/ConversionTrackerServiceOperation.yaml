@@ -21,5 +21,5 @@ ConversionTrackerServiceOperation:
       maxItems: 200
   title: ConversionTrackerServiceOperation
   description: |
-    <div lang="ja">ConversionTrackerServiceOperationオブジェクトは、操作の対象となるコンバージョントラッカー情報および操作の内容を表します。</div>
-    <div lang="en">ConversionTrackerServiceOperation object describes ConversionTracker information and operation.</div>
+    <div lang="ja">ConversionTrackerServiceOperationオブジェクトは、操作の対象となるコンバージョン設定および操作の内容を表します。</div>
+    <div lang="en">ConversionTrackerServiceOperation object describes ConversionTracker settings and operation.</div>

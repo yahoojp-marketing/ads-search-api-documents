@@ -1,0 +1,21 @@
+AdGroupCustomizerServiceValue:
+  type: object
+  nullable: true
+  properties:
+    errors:
+      type: array
+      nullable: true
+      items:
+        $ref: '../../Error.yaml#/Error'
+    adGroupCustomizer:
+      $ref: 'AdGroupCustomizer.yaml#/AdGroupCustomizer'
+    operationSucceeded:
+      type: boolean
+      nullable: true
+      description: |
+        <div lang="ja">処理結果です。</div>
+        <div lang="en">Result of process.</div>
+  title: AdGroupCustomizerServiceValue
+  description: |
+    <div lang="ja">AdGroupCustomizerServiceValueオブジェクトは、広告グループとカスタマイザー属性間の設定情報を格納します。</div>
+    <div lang="en">AdGroupCustomizerServiceValue object contains the configuration information between the adgroup and the customizer attribute.</div>

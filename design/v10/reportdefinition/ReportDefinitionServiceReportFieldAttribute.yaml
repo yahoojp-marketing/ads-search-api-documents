@@ -1,0 +1,61 @@
+ReportDefinitionServiceReportFieldAttribute:
+  type: object
+  nullable: true
+  properties:
+    filterable:
+      type: boolean
+      nullable: true
+      description: |
+        <div lang="ja">ユーザーがこのフィールドにフィルタを 適用できるかどうかを示します。</div>
+        <div lang="en">Indicate if use can filter the fields.</div>
+    selectable:
+      type: boolean
+      nullable: true
+      description: |
+        <div lang="ja">ユーザーがこのフィールドを 選択できるかどうかを示します。</div>
+        <div lang="en">Indicate if user can select the fields.</div>
+    displayFieldNameEN:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">ダウンロードされたレポートに 表示される英語名です。</div>
+        <div lang="en">Field name displayed in downloaded report (in English).</div>
+    displayFieldNameJA:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">ダウンロードされたレポートに 表示される日本語名です。</div>
+        <div lang="en">Field name displayed in downloaded report (in Japanese).</div>
+    fieldName:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">フィールド名です。</div>
+        <div lang="en">Field name.</div>
+    fieldType:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">フィールドの種類です。<br>
+        数字、文字列、Enum値等を表します。</div>
+        <div lang="en">Type of field.<br>
+        Displays int, string, Enum, etc.</div>
+    impossibleCombinationFields:
+      type: array
+      nullable: true
+      items:
+        type: string
+        nullable: true
+      description: |
+        <div lang="ja">組み合わせができないレポートフィールドです。</div>
+        <div lang="en">Report fields which cannot be combined.</div>
+    xmlAttributeName:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">ダウンロードしたレポートの XMLアトリビュートです。</div>
+        <div lang="en">XML attribute name displayed in downloaded report.</div>
+  title: ReportDefinitionServiceReportFieldAttribute
+  description: |
+    <div lang="ja">ReportDefinitionServiceReportFieldAttributeオブジェクトは、レポート定義の作成に使用できるフィールドを表します。</div>
+    <div lang="en">ReportDefinitionServiceReportFieldAttribute object describes the available field to create report definition.</div>

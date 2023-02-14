@@ -1,0 +1,20 @@
+AccountLinkServicePage:
+  type: object
+  nullable: true
+  properties:
+    totalNumEntries:
+      type: integer
+      nullable: false
+      format: int32
+      description: |
+        <div lang="ja">取得される項目の総件数です。</div>
+        <div lang="en">Total number of items to be retrieved.</div>
+    values:
+      type: array
+      nullable: true
+      items:
+        $ref: 'AccountLinkServiceValue.yaml#/AccountLinkServiceValue'
+  title: AccountLinkServicePage
+  description: |
+    <div lang="ja">AccountLinkServicePageオブジェクトは、取得されるアカウントリンク情報に関するエントリーを表します。</div>
+    <div lang="en">The AccountLinkServicePage object is a container for storing account link information entry.</div>

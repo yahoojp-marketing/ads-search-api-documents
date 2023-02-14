@@ -1,0 +1,19 @@
+AdGroupAdServiceCustomParameters:
+  type: object
+  nullable: true
+  properties:
+    isRemove:
+      $ref: 'AdGroupAdServiceIsRemove.yaml#/AdGroupAdServiceIsRemove'
+    parameters:
+      type: array
+      nullable: true
+      items:
+        $ref: 'AdGroupAdServiceCustomParameter.yaml#/AdGroupAdServiceCustomParameter'
+  title: AdGroupAdServiceCustomParameters
+  description: |
+    <div lang="ja">AdGroupAdServiceCustomParametersは、カスタムパラメータの設定を表します。<br>
+    ADD時、このフィールドは省略可能となります。<br>
+    ※reviewCustomParameters配下の場合、このフィールドはリクエストの際に無視され、レスポンスの際は返却されません。</div>
+    <div lang="en">AdGroupAdServiceCustomParameters displays the setting of custom parameters.<br>
+    This field is optional in ADD operation.<br>
+    *Under reviewCustomParameters, this field is ignored in the request and not returned in the response.</div>

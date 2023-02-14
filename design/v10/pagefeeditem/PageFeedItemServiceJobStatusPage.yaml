@@ -1,0 +1,20 @@
+PageFeedItemServiceJobStatusPage:
+  type: object
+  nullable: true
+  properties:
+    totalNumEntries:
+      type: integer
+      nullable: false
+      format: int32
+      description: |
+        <div lang="ja">取得される項目の総件数です。</div>
+        <div lang="en">Total number of entries in the result that this page is a part of.</div>
+    values:
+      type: array
+      nullable: true
+      items:
+        $ref: 'PageFeedItemServiceJobValue.yaml#/PageFeedItemServiceJobValue'
+  title: PageFeedItemServiceJobStatusPage
+  description: |
+    <div lang="ja">PageFeedItemServiceJobStatusPageオブジェクトは、upload、downloadの処理状況の取得結果をリストに格納するコンテナです。</div>
+    <div lang="en">PageFeedItemServiceJobStatusPage object retains list of the processing situation results (upload/download).</div>

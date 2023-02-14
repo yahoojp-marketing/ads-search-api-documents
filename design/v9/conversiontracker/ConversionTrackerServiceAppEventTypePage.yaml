@@ -16,5 +16,5 @@ ConversionTrackerServiceAppEventTypePage:
         $ref: 'ConversionTrackerServiceAppEventTypeValue.yaml#/ConversionTrackerServiceAppEventTypeValue'
   title: ConversionTrackerServiceAppEventTypePage
   description: |
-    <div lang="ja">ConversionTrackerServiceAppEventTypePageオブジェクトは、取得されるコンバージョントラッカー情報のエントリーを表します。</div>
+    <div lang="ja">ConversionTrackerServiceAppEventTypePageオブジェクトは、取得されるコンバージョン設定のエントリーを表します。</div>
     <div lang="en">ConversionTrackerServiceAppEventTypePage object shows entry of ConversionTracker.</div>

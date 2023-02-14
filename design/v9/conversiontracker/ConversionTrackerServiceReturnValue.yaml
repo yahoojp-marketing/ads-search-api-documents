@@ -9,5 +9,5 @@ ConversionTrackerServiceReturnValue:
         $ref: 'ConversionTrackerServiceValue.yaml#/ConversionTrackerServiceValue'
   title: ConversionTrackerServiceReturnValue
   description: |
-    <div lang="ja">ConversionTrackerServiceReturnValueオブジェクトは、操作結果を含むコンバージョントラッカー情報のコンテナです。</div>
-    <div lang="en">A container of ConversionTracker information includes operation results.</div>
+    <div lang="ja">ConversionTrackerServiceReturnValueオブジェクトは、操作結果を含むコンバージョン設定のコンテナです。</div>
+    <div lang="en">A container of ConversionTracker settings includes operation results.</div>

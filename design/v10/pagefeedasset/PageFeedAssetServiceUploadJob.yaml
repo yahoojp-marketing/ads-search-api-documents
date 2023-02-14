@@ -1,0 +1,61 @@
+PageFeedAssetServiceUploadJob:
+  type: object
+  nullable: true
+  properties:
+    accountId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">アカウントID</div>
+        <div lang="en">Account ID</div>
+    jobId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">ジョブID</div>
+        <div lang="en">Job ID.</div>
+    pageFeedAssetSetId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">ページフィードアセットセットID</div>
+        <div lang="en">PageFeedAssetSet ID.</div>
+    uploadJobStatus:
+      $ref: 'PageFeedAssetServiceUploadJobStatus.yaml#/PageFeedAssetServiceUploadJobStatus'
+    progress:
+      type: integer
+      nullable: true
+      format: int32
+      description: |
+        <div lang="ja">ジョブの進捗状況</div>
+        <div lang="en">Progress of page feed asset job</div>
+    errorCount:
+      type: integer
+      nullable: true
+      format: int32
+      description: |
+        <div lang="ja">エラーの件数</div>
+        <div lang="en">count of error occured</div>
+    startDate:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">ジョブの開始日<br>
+        形式：yyyyMMddHHmmss</div>
+        <div lang="en">Start date of job<br>
+        Format:yyyyMMddHHmmss</div>
+    endDate:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">ジョブの終了日<br>
+        形式：yyyyMMddHHmmss</div>
+        <div lang="en">End date of job<br>
+        Format:yyyyMMddHHmmss</div>
+  title: PageFeedAssetServiceUploadJob
+  description: |
+    <div lang="ja">PageFeedAssetServiceUploadJobオブジェクトは、ページフィードアセット情報をダウンロードする処理内容を格納します。</div>
+    <div lang="en">PageFeedAssetServiceUploadJob object retains contents of page feed asset information for upload.</div>

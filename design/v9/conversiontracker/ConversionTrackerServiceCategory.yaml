@@ -26,7 +26,7 @@ ConversionTrackerServiceCategory:
   - UNKNOWN
   title: ConversionTrackerServiceCategory
   description: |
-    <div lang="ja">ConversionTrackerServiceCategoryは、トラッキング対象のコンバージョントラッカー情報のカテゴリです。<br>
+    <div lang="ja">ConversionTrackerServiceCategoryは、トラッキング対象のコンバージョン設定のカテゴリです。<br>
     このフィールドは、ADD時に必須となり、SET時に省略可能となります。<br>
     ※指定可能な組み合わせは以下のヘルプを参照してください。<br>
     ・<a href="https://ads-help.yahoo.co.jp/yahooads/search/articledetail?lan=ja&aid=76671">「コンバージョン測定の目的」について</a><br>

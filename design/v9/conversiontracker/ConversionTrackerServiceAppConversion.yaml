@@ -31,9 +31,9 @@ ConversionTrackerServiceAppConversion:
         <div lang="en">Converison tracker label</div>
   title: ConversionTrackerServiceAppConversion
   description: |
-    <div lang="ja">ConversionTrackerServiceAppConversionオブジェクトは、アプリコンバージョン測定タグやタグごとのパフォーマンスデータなどのアプリコンバージョントラッカー情報を表します。<br>
+    <div lang="ja">ConversionTrackerServiceAppConversionオブジェクトは、アプリコンバージョン測定タグやタグごとのパフォーマンスデータなどのアプリコンバージョン設定を表します。<br>
     このフィールドは、ADDおよびSET時に省略可能となります。<br>
     ※ADD時、conversionTrackerTypeがAPP_CONVERSIONの場合は必須です。</div>
-    <div lang="en">ConversionTrackerServiceAppConversion object describes the App ConversionTracker information such as App ConversionTag and performance data by  tag.<br>
+    <div lang="en">ConversionTrackerServiceAppConversion object describes the App ConversionTracker settings such as App ConversionTag and performance data by  tag.<br>
     This field is optional in ADD and SET operation.<br>
     *If the conversionTrackerType is APP_CONVERSION, this field will be required in ADD operation.</div>

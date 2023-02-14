@@ -91,5 +91,5 @@ ConversionTrackerServiceSelector:
       maxItems: 3
   title: ConversionTrackerServiceSelector
   description: |
-    <div lang="ja">ConversionTrackerServiceSelectorオブジェクトは、操作の対象となるコンバージョントラッカーおよび操作を指定します。</div>
-    <div lang="en">ConversionTrackerServiceSelector object specifies ConversionTracker and operation.</div>
+    <div lang="ja">ConversionTrackerServiceSelectorオブジェクトは、操作の対象となるコンバージョン設定および操作の内容を表します。</div>
+    <div lang="en">ConversionTrackerServiceSelector object specifies ConversionTracker settings and operation.</div>

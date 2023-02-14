@@ -11,9 +11,11 @@ AccountServiceStatus:
   title: AccountServiceStatus
   description: |
     <div lang="ja">AccountServiceStatusは、アカウントの契約状況を表します。<br>
-    MCCアカウントの場合、このフィールドは<code>SERVING</code>になります。</div>
+    MCCアカウントの場合、このフィールドは<code>SERVING</code>になります。<br>
+    このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
     <div lang="en">Account status.<br>
-    If isManagerAccount is "TRUE", this field will be <code>SERVING</code>.</div>
+    If isManagerAccount is "TRUE", this field will be <code>SERVING</code>.<br>
+    Although this field will be returned in the response, it will be ignored on input.</div>
     <dl class=term>
       <dt class="term__item">INPROGRESS</dt>
       <dd class="term__desc"><span lang="ja">審査中</span><span lang="en">Under review</span></dd>

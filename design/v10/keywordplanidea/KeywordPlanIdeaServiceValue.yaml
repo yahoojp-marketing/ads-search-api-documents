@@ -1,0 +1,21 @@
+KeywordPlanIdeaServiceValue:
+  type: object
+  nullable: true
+  properties:
+    keywordPlanIdea:
+      $ref: 'KeywordPlanIdea.yaml#/KeywordPlanIdea'
+    errors:
+      type: array
+      nullable: true
+      items:
+        $ref: '../../Error.yaml#/Error'
+    operationSucceeded:
+      type: boolean
+      nullable: true
+      description: |
+        <div lang="ja">処理結果です。</div>
+        <div lang="en">Operation result.</div>
+  title: KeywordPlanIdeaServiceValue
+  description: |
+    <div lang="ja">KeywordPlanIdeaServiceValueオブジェクトは、関連キーワードを格納するコンテナの結果を表します。</div>
+    <div lang="en">Result of the related keyword.</div>

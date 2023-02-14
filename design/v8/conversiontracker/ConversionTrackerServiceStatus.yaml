@@ -7,7 +7,7 @@ ConversionTrackerServiceStatus:
   - UNKNOWN
   title: ConversionTrackerServiceStatus
   description: |
-    <div lang="ja">ConversionTrackerServiceStatusは、コンバージョントラッカー情報のステータスを表します。<br>
+    <div lang="ja">ConversionTrackerServiceStatusは、コンバージョン設定のステータスを表します。<br>
     このフィールドは、ADD時に必須となり、SET時に省略可能となります。</div>
     <div lang="en">It shows ConversionTracker status.<br>
     This field is required in ADD operation, and is optional in SET operation.</div>

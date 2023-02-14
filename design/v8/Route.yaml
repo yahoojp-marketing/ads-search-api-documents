@@ -65,10 +65,10 @@ tags:
   - name: ConversionTrackerService
     description: |
       <label class="account"></label>
-      <div lang="ja">ConversionTrackerServiceでは、コンバージョントラッカー情報の取得および追加・更新を行います。<br/>コンバージョントラッカー情報とは、コンバージョン測定タグおよびタグごとのパフォーマンスデータを表します。<br/>本サービスを利用することで、検索広告で掲載されている広告からのコンバージョン数（商品の購入や会員登録、資料請求などサイト上で何らかの成約に至った件数）を取得することができ、広告がどの程度成果を上げているかなどを確認できます。<br/>コンバージョンタグは広告管理ツールとAPIで共有しています。</div><div lang="en">ConversionTrackerService
-      is to get, add, and update ConversionTracker information.<br/>Number of conversions
+      <div lang="ja">ConversionTrackerServiceでは、コンバージョン設定の取得および追加・更新を行います。<br/>コンバージョン設定とは、コンバージョン測定タグおよびタグごとのパフォーマンスデータを表します。<br/>本サービスを利用することで、検索広告で掲載されている広告からのコンバージョン数（商品の購入や会員登録、資料請求などサイト上で何らかの成約に至った件数）を取得することができ、広告がどの程度成果を上げているかなどを確認できます。<br/>コンバージョンタグは広告管理ツールとAPIで共有しています。</div><div lang="en">ConversionTrackerService
+      is to get, add, and update ConversionTracker settings.<br/>Number of conversions
       and performance of Ads in Sponsored Search can be obtained.<br/>Conversion tag
-      will be shared both in Campaign Management Tool and API.<br/>* ConversionTrackerInformation
+      will be shared both in Campaign Management Tool and API.<br/>* ConversionTrackerSettings
       means Conversion Tag and performance data per tag. This service enables you to
       confirm the effect of your advertising campaign by tracking conversions on Sponsored
       Search ad such as purchasing products, member signup, document request.</div>
@@ -176,29 +176,29 @@ tags:
       - Any ad data without actual performance is not output for all report types.<br>
       - Report download jobs will be automatically deleted after a week (7 days) from requested.<br>
       </div>
-      <h2 lang="ja">レポートフィールド</h2>
-      <h2 lang="en">Report Fields</h2>
+      <h2 lang="ja" class="reportFields__title">レポートフィールド</h2>
+      <h2 lang="en" class="reportFields__title">Report Fields</h2>
       <ul>
-      <li><div lang="ja"><a href="./reports/v8/ACCOUNT.csv" download>アカウントレポート</a></div></li><li><div lang="en"><a href="./reports/v8/ACCOUNT.csv" download>Account Report</a></div></li>
-      <li><div lang="ja"><a href="./reports/v8/CAMPAIGN.csv" download>キャンペーンレポート</a></div></li><li><div lang="en"><a href="./reports/v8/CAMPAIGN.csv" download>Campaign Report</a></div></li>
-      <li><div lang="ja"><a href="./reports/v8/ADGROUP.csv" download>広告グループレポート</a></div></li><li><div lang="en"><a href="./reports/v8/ADGROUP.csv" download>Ad Group Report</a></div></li>
-      <li><div lang="ja"><a href="./reports/v8/AD.csv" download>広告レポート</a></div></li><li><div lang="en"><a href="./reports/v8/AD.csv" download>Ad Report</a></div></li>
-      <li><div lang="ja"><a href="./reports/v8/KEYWORDS.csv" download>キーワードレポート</a></div></li><li><div lang="en"><a href="./reports/v8/KEYWORDS.csv" download>Keyword Report</a></div></li>
-      <li><div lang="ja"><a href="./reports/v8/SEARCH_QUERY.csv" download>検索クエリレポート</a></div></li><li><div lang="en"><a href="./reports/v8/SEARCH_QUERY.csv" download>Search Query Report</a></div></li>
-      <li><div lang="ja"><a href="./reports/v8/GEO.csv" download>地域別レポート</a></div></li><li><div lang="en"><a href="./reports/v8/GEO.csv" download>Geo Report</a></div></li>
-      <li><div lang="ja"><a href="./reports/v8/FEED_ITEM.csv" download>広告表示オプションレポート</a></div></li><li><div lang="en"><a href="./reports/v8/FEED_ITEM.csv" download>Ad Display Option Report</a></div></li>
-      <li><div lang="ja"><a href="./reports/v8/GEO_TARGET.csv" download>地域ターゲティングレポート</a></div></li><li><div lang="en"><a href="./reports/v8/GEO_TARGET.csv" download>Geo Targeting Report</a></div></li>
-      <li><div lang="ja"><a href="./reports/v8/SCHEDULE_TARGET.csv" download>曜日・時間帯ターゲティングレポート</a></div></li><li><div lang="en"><a href="./reports/v8/SCHEDULE_TARGET.csv" download>Schedule Targeting Report</a></div></li>
-      <li><div lang="ja"><a href="./reports/v8/BID_STRATEGY.csv" download>自動入札レポート</a></div></li><li><div lang="en"><a href="./reports/v8/BID_STRATEGY.csv" download>Auto Bidding Report</a></div></li>
-      <li><div lang="ja"><a href="./reports/v8/CAMPAIGN_TARGET_LIST.csv" download>キャンペーンターゲットリストレポート</a></div></li><li><div lang="en"><a href="./reports/v8/CAMPAIGN_TARGET_LIST.csv"download>Campaign Target List Report</a></div></li>
-      <li><div lang="ja"><a href="./reports/v8/ADGROUP_TARGET_LIST.csv" download>広告グループターゲットリストレポート</a></div></li><li><div lang="en"><a href="./reports/v8/ADGROUP_TARGET_LIST.csv" download>Ad Group Target List Report</a></div></li>
-      <li><div lang="ja"><a href="./reports/v8/LANDING_PAGE_URL.csv" download>ランディングページURLレポート</a></div></li><li><div lang="en"><a href="./reports/v8/LANDING_PAGE_URL.csv" download>Landing Page URL Report</a></div></li>
-      <li><div lang="ja"><a href="./reports/v8/KEYWORDLESS_QUERY.csv" download>検索クエリーレポート（動的検索連動型広告）</a></div></li><li><div lang="en"><a href="./reports/v8/KEYWORDLESS_QUERY.csv" download>Search Query Report (Dynamic Ads for Search)</a></div></li>
-      <li><div lang="ja"><a href="./reports/v8/WEBPAGE_CRITERION.csv" download>ページフィードターゲティングレポート</a></div></li><li><div lang="en"><a href="./reports/v8/WEBPAGE_CRITERION.csv" download>Page Feed Targeting Report</a></div></li>
-      <li><div lang="ja"><a href="./reports/v8/BID_MODIFIER.csv" download>入札価格調整率レポート</a></div></li><li><div lang="en"><a href="./reports/v8/BID_MODIFIER.csv" download>Bid Adjustments Report</a></div></li>
-      <li><div lang="ja"><a href="./reports/v8/CAMPAIGN_ASSET.csv" download>（新）広告表示オプションレポート（キャンペーン）</a></div></li><li><div lang="en"><a href="./reports/v8/CAMPAIGN_ASSET.csv" download>(New) Ad Display Option Report (campaign)</a></div></li>
-      <li><div lang="ja"><a href="./reports/v8/AD_GROUP_ASSET.csv" download>（新）広告表示オプションレポート（広告グループ）</a></div></li><li><div lang="en"><a href="./reports/v8/AD_GROUP_ASSET.csv" download>(New) Ad Display Option Report (ad group)</a></div></li>
-      <li><div lang="ja"><a href="./reports/v8/RESPONSIVE_ADS_FOR_SEARCH_ASSET.csv" download>レスポンシブ検索広告アセットレポート</a></div></li><li><div lang="en"><a href="./reports/v8/RESPONSIVE_ADS_FOR_SEARCH_ASSET.csv" download>Responsive Ads for Search Asset Report</a></div></li>
+      <li><div lang="ja"><a href="./reports/v8/ACCOUNT.csv" download>アカウントレポート</a></div><div lang="en"><a href="./reports/v8/ACCOUNT.csv" download>Account Report</a></div></li>
+      <li><div lang="ja"><a href="./reports/v8/CAMPAIGN.csv" download>キャンペーンレポート</a></div><div lang="en"><a href="./reports/v8/CAMPAIGN.csv" download>Campaign Report</a></div></li>
+      <li><div lang="ja"><a href="./reports/v8/ADGROUP.csv" download>広告グループレポート</a></div><div lang="en"><a href="./reports/v8/ADGROUP.csv" download>Ad Group Report</a></div></li>
+      <li><div lang="ja"><a href="./reports/v8/AD.csv" download>広告レポート</a></div><div lang="en"><a href="./reports/v8/AD.csv" download>Ad Report</a></div></li>
+      <li><div lang="ja"><a href="./reports/v8/KEYWORDS.csv" download>キーワードレポート</a></div><div lang="en"><a href="./reports/v8/KEYWORDS.csv" download>Keyword Report</a></div></li>
+      <li><div lang="ja"><a href="./reports/v8/SEARCH_QUERY.csv" download>検索クエリレポート</a></div><div lang="en"><a href="./reports/v8/SEARCH_QUERY.csv" download>Search Query Report</a></div></li>
+      <li><div lang="ja"><a href="./reports/v8/GEO.csv" download>地域別レポート</a></div><div lang="en"><a href="./reports/v8/GEO.csv" download>Geo Report</a></div></li>
+      <li><div lang="ja"><a href="./reports/v8/FEED_ITEM.csv" download>広告表示オプションレポート</a></div><div lang="en"><a href="./reports/v8/FEED_ITEM.csv" download>Ad Display Option Report</a></div></li>
+      <li><div lang="ja"><a href="./reports/v8/GEO_TARGET.csv" download>地域ターゲティングレポート</a></div><div lang="en"><a href="./reports/v8/GEO_TARGET.csv" download>Geo Targeting Report</a></div></li>
+      <li><div lang="ja"><a href="./reports/v8/SCHEDULE_TARGET.csv" download>曜日・時間帯ターゲティングレポート</a></div><div lang="en"><a href="./reports/v8/SCHEDULE_TARGET.csv" download>Schedule Targeting Report</a></div></li>
+      <li><div lang="ja"><a href="./reports/v8/BID_STRATEGY.csv" download>自動入札レポート</a></div><div lang="en"><a href="./reports/v8/BID_STRATEGY.csv" download>Auto Bidding Report</a></div></li>
+      <li><div lang="ja"><a href="./reports/v8/CAMPAIGN_TARGET_LIST.csv" download>キャンペーンターゲットリストレポート</a></div><div lang="en"><a href="./reports/v8/CAMPAIGN_TARGET_LIST.csv"download>Campaign Target List Report</a></div></li>
+      <li><div lang="ja"><a href="./reports/v8/ADGROUP_TARGET_LIST.csv" download>広告グループターゲットリストレポート</a></div><div lang="en"><a href="./reports/v8/ADGROUP_TARGET_LIST.csv" download>Ad Group Target List Report</a></div></li>
+      <li><div lang="ja"><a href="./reports/v8/LANDING_PAGE_URL.csv" download>ランディングページURLレポート</a></div><div lang="en"><a href="./reports/v8/LANDING_PAGE_URL.csv" download>Landing Page URL Report</a></div></li>
+      <li><div lang="ja"><a href="./reports/v8/KEYWORDLESS_QUERY.csv" download>検索クエリーレポート（動的検索連動型広告）</a></div><div lang="en"><a href="./reports/v8/KEYWORDLESS_QUERY.csv" download>Search Query Report (Dynamic Ads for Search)</a></div></li>
+      <li><div lang="ja"><a href="./reports/v8/WEBPAGE_CRITERION.csv" download>ページフィードターゲティングレポート</a></div><div lang="en"><a href="./reports/v8/WEBPAGE_CRITERION.csv" download>Page Feed Targeting Report</a></div></li>
+      <li><div lang="ja"><a href="./reports/v8/BID_MODIFIER.csv" download>入札価格調整率レポート</a></div><div lang="en"><a href="./reports/v8/BID_MODIFIER.csv" download>Bid Adjustments Report</a></div></li>
+      <li><div lang="ja"><a href="./reports/v8/CAMPAIGN_ASSET.csv" download>（新）広告表示オプションレポート（キャンペーン）</a></div><div lang="en"><a href="./reports/v8/CAMPAIGN_ASSET.csv" download>(New) Ad Display Option Report (campaign)</a></div></li>
+      <li><div lang="ja"><a href="./reports/v8/AD_GROUP_ASSET.csv" download>（新）広告表示オプションレポート（広告グループ）</a></div><div lang="en"><a href="./reports/v8/AD_GROUP_ASSET.csv" download>(New) Ad Display Option Report (ad group)</a></div></li>
+      <li><div lang="ja"><a href="./reports/v8/RESPONSIVE_ADS_FOR_SEARCH_ASSET.csv" download>レスポンシブ検索広告アセットレポート</a></div><div lang="en"><a href="./reports/v8/RESPONSIVE_ADS_FOR_SEARCH_ASSET.csv" download>Responsive Ads for Search Asset Report</a></div></li>
       </ul>
   - name: CampaignExportService
     description: |
@@ -3531,8 +3531,8 @@ paths:
   /ConversionTrackerService/get:
     post:
       description: |
-        <div lang="ja">コンバージョントラッカー情報を取得します。</div>
-        <div lang="en">Get ConversionTracker informations.</div>
+        <div lang="ja">コンバージョン設定を取得します。</div>
+        <div lang="en">Get ConversionTracker settings.</div>
       tags:
         - ConversionTrackerService
       requestBody:
@@ -3585,8 +3585,8 @@ paths:
   /ConversionTrackerService/add:
     post:
       description: |
-        <div lang="ja">コンバージョントラッカー情報を追加します。</div>
-        <div lang="en">Add ConversionTracker informations.</div>
+        <div lang="ja">コンバージョン設定を追加します。</div>
+        <div lang="en">Add ConversionTracker settings.</div>
       tags:
         - ConversionTrackerService
       requestBody:
@@ -3639,8 +3639,8 @@ paths:
   /ConversionTrackerService/set:
     post:
       description: |
-        <div lang="ja">コンバージョントラッカー情報を更新します。</div>
-        <div lang="en">Update ConversionTracker informations.</div>
+        <div lang="ja">コンバージョン設定を更新します。</div>
+        <div lang="en">Update ConversionTracker settings.</div>
       tags:
         - ConversionTrackerService
       requestBody:

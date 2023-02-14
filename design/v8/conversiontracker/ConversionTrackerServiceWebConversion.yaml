@@ -32,9 +32,9 @@ ConversionTrackerServiceWebConversion:
       $ref: 'ConversionTrackerServiceTrackingCodeType.yaml#/ConversionTrackerServiceTrackingCodeType'
   title: ConversionTrackerServiceWebConversion
   description: |
-    <div lang="ja">ConversionTrackerServiceWebConversionオブジェクトは、ウェブページのコンバージョン測定タグやタグごとのパフォーマンスデータなどのコンバージョントラッカー情報を表します。<br>
+    <div lang="ja">ConversionTrackerServiceWebConversionオブジェクトは、ウェブページのコンバージョン測定タグやタグごとのパフォーマンスデータなどのコンバージョン設定を表します。<br>
     このフィールドは、ADDおよびSET時に省略可能となります。<br>
     ※ADD時、conversionTrackerTypeがWEB_CONVERSIONの場合、このフィールドは必須となります。</div>
-    <div lang="en">ConversionTrackerServiceWebConversion describes ConversionTracker information such as ConversionTag and performance data by tag.<br>
+    <div lang="en">ConversionTrackerServiceWebConversion describes ConversionTracker settings such as ConversionTag and performance data by tag.<br>
     This field is optional in ADD and SET operation.<br>
     *If the conversionTrackerType is WEB_CONVERSION,  this field will be required in ADD operation.</div>

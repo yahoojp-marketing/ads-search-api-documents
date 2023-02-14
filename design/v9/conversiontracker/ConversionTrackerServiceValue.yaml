@@ -16,5 +16,5 @@ ConversionTrackerServiceValue:
         <div lang="ja">処理結果です。</div><div lang="en">Operation result</div>
   title: ConversionTrackerServiceValue
   description: |
-    <div lang="ja">ConversionTrackerServiceValueオブジェクトは、操作結果を含むコンバージョントラッカー情報を表します。</div>
-    <div lang="en">ConversionTrackerServiceValue object shows ConversionTracker information includes operation results.</div>
+    <div lang="ja">ConversionTrackerServiceValueオブジェクトは、操作結果を含むコンバージョン設定を表します。</div>
+    <div lang="en">ConversionTrackerServiceValue object shows ConversionTracker settings includes operation results.</div>

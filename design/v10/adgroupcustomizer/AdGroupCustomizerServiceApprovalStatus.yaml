@@ -1,0 +1,30 @@
+AdGroupCustomizerServiceApprovalStatus:
+  type: string
+  nullable: true
+  enum:
+  - APPROVED
+  - APPROVED_WITH_REVIEW
+  - REVIEW
+  - PRE_DISAPPROVED
+  - POST_DISAPPROVED
+  - UNKNOWN
+  title: AdGroupCustomizerServiceApprovalStatus
+  description: |
+    <div lang="ja">AdGroupCustomizerServiceApprovalStatusは、審査状況を表します。<br>
+    このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
+    <div lang="en">AdGroupCustomizerServiceApprovalStatus displays Editorial Status.<br>
+    Although this field will be returned in the response, it will be ignored on input.</div>
+    <dl class=term>
+      <dt class="term__item">APPROVED</dt>
+      <dd class="term__desc"><span lang="ja">承認済です。</span><span lang="en">The item is approved</span></dd>
+      <dt class="term__item">APPROVED_WITH_REVIEW</dt>
+      <dd class="term__desc"><span lang="ja">承認済です。<br>すでに設定済みの情報を再編集した場合の再審査中です。</span><span lang="en">The item is approved.<br>Updated items are under review.</span></dd>
+      <dt class="term__item">REVIEW</dt>
+      <dd class="term__desc"><span lang="ja">審査中です。<br>新しく追加した設定情報の審査中です。</span><span lang="en">Under editorial review.<br>Newly added configuration information are under review.</span></dd>
+      <dt class="term__item">PRE_DISAPPROVED</dt>
+      <dd class="term__desc"><span lang="ja">掲載不可です。<br>新しく追加した設定情報は審査で承認されず、設定されていません。</span><span lang="en">The item was rejected.<br>Newly added configuration information have been rejected.</span></dd>
+      <dt class="term__item">POST_DISAPPROVED</dt>
+      <dd class="term__desc"><span lang="ja">掲載停止です。<br>すでに設定中の設定情報について審査が行われた結果、否認されました。</span><span lang="en">As a result of the review of the setting information that has already been set, it was rejected.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

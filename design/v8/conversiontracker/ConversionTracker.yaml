@@ -119,5 +119,5 @@ ConversionTracker:
       $ref: 'ConversionTrackerServiceWebConversion.yaml#/ConversionTrackerServiceWebConversion'
   title: ConversionTracker
   description: |
-    <div lang="ja">ConversionTrackerオブジェクトは、コンバージョン測定タグやタグごとのパフォーマンスデータなどのコンバージョントラッカー情報を表します。</div>
-    <div lang="en">ConversionTracker object shows ConversionTracker information such as ConversionTag and performance data by tag.</div>
+    <div lang="ja">ConversionTrackerオブジェクトは、コンバージョン測定タグやタグごとのパフォーマンスデータなどのコンバージョン設定を表します。</div>
+    <div lang="en">ConversionTracker object shows ConversionTracker settings such as ConversionTag and performance data by tag.</div>
