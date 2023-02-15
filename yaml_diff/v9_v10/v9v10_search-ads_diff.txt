@@ -1,0 +1,1337 @@
+
+
+------
+diff -ru v9/Route.yaml v10/Route.yaml
+--- v9/Route.yaml	2023-01-13 16:50:24.000000000 +0900
++++ v10/Route.yaml	2023-02-13 16:20:42.000000000 +0900
+@@ -1,11 +1,11 @@
+ openapi: 3.0.2
+ info:
+   title: 'Yahoo!広告 検索広告 API リファレンス / Yahoo! JAPAN Ads Search Ads API Reference'
+-  version: 'v9'
++  version: 'v10'
+   description: |
+     <div lang="ja">Yahoo!広告 検索広告 APIのWebサービスについて説明します。</div>
+     <div lang="en">Search Ads API Web Services supported in Yahoo! JAPAN Ads API.</div>
+-    <div><a target="_blank" href="https://github.com/yahoojp-marketing/ads-search-api-documents/blob/master/design/v9/Route.yaml">OpenAPI Specification</a></div>
++    <div><a target="_blank" href="https://github.com/yahoojp-marketing/ads-search-api-documents/blob/master/design/v10/Route.yaml">OpenAPI Specification</a></div>
+     <div lang="ja"><a target="_blank" href="https://github.com/yahoojp-marketing/ads-search-api-documents/blob/master/bestpractice/ja">Best Practice</a></div>
+     <div lang="en"><a target="_blank" href="https://github.com/yahoojp-marketing/ads-search-api-documents/blob/master/bestpractice/en">Best Practice</a></div>
+
+@@ -23,7 +23,7 @@
+   - oAuth: [ yahooads ]
+
+ servers:
+-  - url: https://ads-search.yahooapis.jp/api/v9
++  - url: https://ads-search.yahooapis.jp/api/v10
+
+ tags:
+   - name: AccountManagementService
+@@ -179,26 +179,26 @@
+       <h2 lang="ja" class="reportFields__title">レポートフィールド</h2>
+       <h2 lang="en" class="reportFields__title">Report Fields</h2>
+       <ul>
+-      <li><div lang="ja"><a href="./reports/v9/ACCOUNT.csv" download>アカウントレポート</a></div><div lang="en"><a href="./reports/v9/ACCOUNT.csv" download>Account Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v9/CAMPAIGN.csv" download>キャンペーンレポート</a></div><div lang="en"><a href="./reports/v9/CAMPAIGN.csv" download>Campaign Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v9/ADGROUP.csv" download>広告グループレポート</a></div><div lang="en"><a href="./reports/v9/ADGROUP.csv" download>Ad Group Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v9/AD.csv" download>広告レポート</a></div><div lang="en"><a href="./reports/v9/AD.csv" download>Ad Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v9/KEYWORDS.csv" download>キーワードレポート</a></div><div lang="en"><a href="./reports/v9/KEYWORDS.csv" download>Keyword Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v9/SEARCH_QUERY.csv" download>検索クエリレポート</a></div><div lang="en"><a href="./reports/v9/SEARCH_QUERY.csv" download>Search Query Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v9/GEO.csv" download>地域別レポート</a></div><div lang="en"><a href="./reports/v9/GEO.csv" download>Geo Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v9/FEED_ITEM.csv" download>広告表示オプションレポート</a></div><div lang="en"><a href="./reports/v9/FEED_ITEM.csv" download>Ad Display Option Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v9/GEO_TARGET.csv" download>地域ターゲティングレポート</a></div><div lang="en"><a href="./reports/v9/GEO_TARGET.csv" download>Geo Targeting Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v9/SCHEDULE_TARGET.csv" download>曜日・時間帯ターゲティングレポート</a></div><div lang="en"><a href="./reports/v9/SCHEDULE_TARGET.csv" download>Schedule Targeting Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v9/BID_STRATEGY.csv" download>自動入札レポート</a></div><div lang="en"><a href="./reports/v9/BID_STRATEGY.csv" download>Auto Bidding Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v9/CAMPAIGN_TARGET_LIST.csv" download>キャンペーンターゲットリストレポート</a></div><div lang="en"><a href="./reports/v9/CAMPAIGN_TARGET_LIST.csv"download>Campaign Target List Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v9/ADGROUP_TARGET_LIST.csv" download>広告グループターゲットリストレポート</a></div><div lang="en"><a href="./reports/v9/ADGROUP_TARGET_LIST.csv" download>Ad Group Target List Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v9/LANDING_PAGE_URL.csv" download>ランディングページURLレポート</a></div><div lang="en"><a href="./reports/v9/LANDING_PAGE_URL.csv" download>Landing Page URL Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v9/KEYWORDLESS_QUERY.csv" download>検索クエリーレポート（動的検索連動型広告）</a></div><div lang="en"><a href="./reports/v9/KEYWORDLESS_QUERY.csv" download>Search Query Report (Dynamic Ads for Search)</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v9/WEBPAGE_CRITERION.csv" download>ページフィードターゲティングレポート</a></div><div lang="en"><a href="./reports/v9/WEBPAGE_CRITERION.csv" download>Page Feed Targeting Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v9/BID_MODIFIER.csv" download>入札価格調整率レポート</a></div><div lang="en"><a href="./reports/v9/BID_MODIFIER.csv" download>Bid Adjustments Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v9/CAMPAIGN_ASSET.csv" download>（新）広告表示オプションレポート（キャンペーン）</a></div><div lang="en"><a href="./reports/v9/CAMPAIGN_ASSET.csv" download>(New) Ad Display Option Report (campaign)</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v9/AD_GROUP_ASSET.csv" download>（新）広告表示オプションレポート（広告グループ）</a></div><div lang="en"><a href="./reports/v9/AD_GROUP_ASSET.csv" download>(New) Ad Display Option Report (ad group)</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v9/RESPONSIVE_ADS_FOR_SEARCH_ASSET.csv" download>レスポンシブ検索広告アセットレポート</a></div><div lang="en"><a href="./reports/v9/RESPONSIVE_ADS_FOR_SEARCH_ASSET.csv" download>Responsive Ads for Search Asset Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v10/ACCOUNT.csv" download>アカウントレポート</a></div><div lang="en"><a href="./reports/v10/ACCOUNT.csv" download>Account Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v10/CAMPAIGN.csv" download>キャンペーンレポート</a></div><div lang="en"><a href="./reports/v10/CAMPAIGN.csv" download>Campaign Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v10/ADGROUP.csv" download>広告グループレポート</a></div><div lang="en"><a href="./reports/v10/ADGROUP.csv" download>Ad Group Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v10/AD.csv" download>広告レポート</a></div><div lang="en"><a href="./reports/v10/AD.csv" download>Ad Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v10/KEYWORDS.csv" download>キーワードレポート</a></div><div lang="en"><a href="./reports/v10/KEYWORDS.csv" download>Keyword Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v10/SEARCH_QUERY.csv" download>検索クエリレポート</a></div><div lang="en"><a href="./reports/v10/SEARCH_QUERY.csv" download>Search Query Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v10/GEO.csv" download>地域別レポート</a></div><div lang="en"><a href="./reports/v10/GEO.csv" download>Geo Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v10/FEED_ITEM.csv" download>広告表示オプションレポート</a></div><div lang="en"><a href="./reports/v10/FEED_ITEM.csv" download>Ad Display Option Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v10/GEO_TARGET.csv" download>地域ターゲティングレポート</a></div><div lang="en"><a href="./reports/v10/GEO_TARGET.csv" download>Geo Targeting Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v10/SCHEDULE_TARGET.csv" download>曜日・時間帯ターゲティングレポート</a></div><div lang="en"><a href="./reports/v10/SCHEDULE_TARGET.csv" download>Schedule Targeting Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v10/BID_STRATEGY.csv" download>自動入札レポート</a></div><div lang="en"><a href="./reports/v10/BID_STRATEGY.csv" download>Auto Bidding Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v10/CAMPAIGN_TARGET_LIST.csv" download>キャンペーンターゲットリストレポート</a></div><div lang="en"><a href="./reports/v10/CAMPAIGN_TARGET_LIST.csv"download>Campaign Target List Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v10/ADGROUP_TARGET_LIST.csv" download>広告グループターゲットリストレポート</a></div><div lang="en"><a href="./reports/v10/ADGROUP_TARGET_LIST.csv" download>Ad Group Target List Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v10/LANDING_PAGE_URL.csv" download>ランディングページURLレポート</a></div><div lang="en"><a href="./reports/v10/LANDING_PAGE_URL.csv" download>Landing Page URL Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v10/KEYWORDLESS_QUERY.csv" download>検索クエリーレポート（動的検索連動型広告）</a></div><div lang="en"><a href="./reports/v10/KEYWORDLESS_QUERY.csv" download>Search Query Report (Dynamic Ads for Search)</a></div></li>
++      <li><div lang="ja"><a href="./reports/v10/WEBPAGE_CRITERION.csv" download>ページフィードターゲティングレポート</a></div><div lang="en"><a href="./reports/v10/WEBPAGE_CRITERION.csv" download>Page Feed Targeting Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v10/BID_MODIFIER.csv" download>入札価格調整率レポート</a></div><div lang="en"><a href="./reports/v10/BID_MODIFIER.csv" download>Bid Adjustments Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v10/CAMPAIGN_ASSET.csv" download>（新）広告表示オプションレポート（キャンペーン）</a></div><div lang="en"><a href="./reports/v10/CAMPAIGN_ASSET.csv" download>(New) Ad Display Option Report (campaign)</a></div></li>
++      <li><div lang="ja"><a href="./reports/v10/AD_GROUP_ASSET.csv" download>（新）広告表示オプションレポート（広告グループ）</a></div><div lang="en"><a href="./reports/v10/AD_GROUP_ASSET.csv" download>(New) Ad Display Option Report (ad group)</a></div></li>
++      <li><div lang="ja"><a href="./reports/v10/RESPONSIVE_ADS_FOR_SEARCH_ASSET.csv" download>レスポンシブ検索広告アセットレポート</a></div><div lang="en"><a href="./reports/v10/RESPONSIVE_ADS_FOR_SEARCH_ASSET.csv" download>Responsive Ads for Search Asset Report</a></div></li>
+       </ul>
+   - name: CampaignExportService
+     description: |
+@@ -1412,6 +1412,7 @@
+                 <tr><td>211011</td><td>Cannot set DisplayURL and AdvancedURL(FinalURL),AdvancedMobileURL(SmartphoneFinalURL).</td><td><div lang="ja">Dynamic Ads for SearchにはAdvancedUrl(FinalUrl),AdvancedMobileUrl(SmartphoneFinalUrl),displayUrlは設定できません。</div><div lang="en">AdvancedUrl(FinalUrl), AdvancedMobileUrl(SmartphoneFinalUrl), DisplayUrl can not be set for Dynamic Ads for Search.</div></td></tr>
+                 <tr><td>211019</td><td>Request failed because of trademark conflicts.</td><td><div lang="ja">商標に抵触している為、登録できません。</div><div lang="en">Request failed because of trademark conflicts.</div></td></tr>
+                 <tr><td>210607</td><td>There are already 3 responsive ads with userStatus ACTIVE.</td><td><div lang="ja">レスポンシブ広告かつuserStatusがACTIVEである広告が既に3件存在します。</div><div lang="en">There are already 3 responsive ads with userStatus ACTIVE.</div></td></tr>
++                <tr><td>210604</td><td>The requested ad type is not available.</td><td><div lang="ja">リクエストされた広告タイプはご利用できません。</div><div lang="en">The requested ad type is not available.</div></td></tr>
+               </tbody>
+             </table>
+             </div>
+@@ -2372,7 +2373,7 @@
+           content:
+             application/json:
+               schema:
+-                $ref: 'auditlog/AuditLogServiceAddJobResponse.yaml#/AuditLogServiceAddJobResponse'
++                $ref: 'auditlog/AuditLogServiceAddResponse.yaml#/AuditLogServiceAddResponse'
+         403:
+           $ref: '../Response403.yaml#/Response403'
+         401:
+@@ -5249,8 +5250,10 @@
+   /PageFeedItemService/downloadErrorFile:
+     post:
+       description: |
+-        <div lang="ja">ページフィードアイテムのエラーファイルをダウンロードします。</div>
+-        <div lang="en">Download the error file of page feed items.</div>
++        <div lang="ja">ページフィードアイテムのエラーファイルをダウンロードします。<br>
++        ※現在、こちらのサービスは利用できません。</div>
++        <div lang="en">Download the error file of page feed items.<br>
++        *Currently this service is not available.</div>
+       tags:
+         - PageFeedItemService
+       requestBody:
+@@ -5468,8 +5471,10 @@
+   /PageFeedItemService/addDownloadJob:
+     post:
+       description: |
+-        <div lang="ja">登録されているページフィードアイテムを一括でダウンロードするためジョブを登録します。</div>
+-        <div lang="en">Registers job to bulk download registered page feed item.</div>
++        <div lang="ja">登録されているページフィードアイテムを一括でダウンロードするためジョブを登録します。<br>
++        ※現在、こちらのサービスは利用できません。</div>
++        <div lang="en">Registers job to bulk download registered page feed item.<br>
++        *Currently this service is not available.</div>
+       tags:
+         - PageFeedItemService
+       requestBody:
+@@ -5511,7 +5516,7 @@
+           content:
+             application/json:
+               schema:
+-                $ref: 'pagefeeditem/PageFeedItemServiceAddDownloadJobResponse.yaml#/PageFeedItemServiceAddDownloadJobResponse'
++                $ref: 'pagefeeditem/PageFeedItemServiceAddResponse.yaml#/PageFeedItemServiceAddResponse'
+         403:
+           $ref: '../Response403.yaml#/Response403'
+         401:
+@@ -6262,7 +6267,7 @@
+           content:
+             application/json:
+               schema:
+-                $ref: 'campaignexport/CampaignExportServiceAddJobResponse.yaml#/CampaignExportServiceAddJobResponse'
++                $ref: 'campaignexport/CampaignExportServiceAddResponse.yaml#/CampaignExportServiceAddResponse'
+         403:
+           $ref: '../Response403.yaml#/Response403'
+         401:
+@@ -7291,10 +7296,8 @@
+   /OfflineConversionService/downloadErrorFile:
+     post:
+       description: |
+-        <div lang="ja">エラーファイルのダウンロードを実施します。<br>
+-        ※現在、こちらのサービスは利用できません。</div>
+-        <div lang="en">Download error files.<br>
+-        *Currently this service is not available.</div>
++        <div lang="ja">エラーファイルのダウンロードを実施します。</div>
++        <div lang="en">Download error files.</div>
+       tags:
+         - OfflineConversionService
+       requestBody:
+@@ -9603,10 +9606,8 @@
+   /PageFeedAssetService/addDownloadJob:
+     post:
+       description: |
+-        <div lang="ja">登録されているページフィードアセットを一括でダウンロードするためジョブを登録します。<br>
+-        ※現在、こちらのサービスは利用できません。</div>
+-        <div lang="en">Registers job to bulk download registered page feed asset.<br>
+-        *Currently this service is not available.</div>
++        <div lang="ja">登録されているページフィードアセットを一括でダウンロードするためジョブを登録します。</div>
++        <div lang="en">Registers job to bulk download registered page feed asset.</div>
+       tags:
+         - PageFeedAssetService
+       requestBody:
+
+
+------
+diff -ru v9/account/AccountServiceSelector.yaml v10/account/AccountServiceSelector.yaml
+--- v9/account/AccountServiceSelector.yaml	2022-09-15 21:21:13.000000000 +0900
++++ v10/account/AccountServiceSelector.yaml	2022-12-12 13:16:50.000000000 +0900
+@@ -9,7 +9,7 @@
+         type: integer
+         nullable: true
+         format: int64
+-      maxItems: 200
++      maxItems: 500
+       description: |
+         <div lang="ja">アカウントIDの配列です。</div>
+         <div lang="en">Account IDs.</div>
+@@ -40,8 +40,8 @@
+       nullable: true
+       format: int32
+       minimum: 1
+-      maximum: 200
+-      default: 200
++      maximum: 500
++      default: 500
+       description: |
+         <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div>
+         <div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1. Also see Entity Limits per operation.</div>
+
+
+------
+diff -ru v9/adgroup/AdGroup.yaml v10/adgroup/AdGroup.yaml
+--- v9/adgroup/AdGroup.yaml	2022-10-21 18:01:24.000000000 +0900
++++ v10/adgroup/AdGroup.yaml	2022-12-16 16:46:04.000000000 +0900
+@@ -11,6 +11,8 @@
+         このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
+         <div lang="en">Account ID.<br>
+         Although this field will be returned in the response, it will be ignored on input.</div>
++    biddingStrategyConfiguration:
++      $ref: 'AdGroupServiceBiddingStrategyConfiguration.yaml#/AdGroupServiceBiddingStrategyConfiguration'
+     frequentlyRunBetterPerformingAdsMode:
+       $ref: 'AdGroupServiceFrequentlyRunBetterPerformingAdsMode.yaml#/AdGroupServiceFrequentlyRunBetterPerformingAdsMode'
+     adGroupId:
+@@ -39,8 +41,6 @@
+         このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
+         <div lang="en">Ad Group ID for tracking.<br>
+         Although this field will be returned in the response, it will be ignored on input.</div>
+-    bid:
+-      $ref: 'AdGroupServiceBid.yaml#/AdGroupServiceBid'
+     campaignId:
+       type: integer
+       nullable: true
+@@ -76,36 +76,6 @@
+         $ref: 'AdGroupServiceLabel.yaml#/AdGroupServiceLabel'
+     settings:
+       $ref: 'AdGroupServiceSettings.yaml#/AdGroupServiceSettings'
+-    targetRoasOverride:
+-      type: number
+-      nullable: true
+-      format: double
+-      description: |
+-        <div lang="ja">広告費用対効果の目標値です。<br>
+-        キャンペーンで設定した広告費用対効果の目標値を使用する場合は、0を指定してください。<br>
+-        このフィールドは、ADDおよびSET時に省略可能となり、REMOVE時に無視されます。<br>
+-        ※キャンペーンのbiddingStrategyTypeが<code>TARGET_ROAS</code>または<code>MAXIMIZE_CONVERSION_VALUE</code>の場合に変更可能です。<br>
+-        ※キャンペーンで目標値を設定していない場合、広告グループに設定した目標値は無視されます。</div>
+-        <div lang="en">Target ROAS. <br>
+-        Specify 0 in order to use the Target ROAS specified in the campaign setting. <br>
+-        This field is optional in ADD and SET operation, and will be ignored in REMOVE operation. <br>
+-        *This field can be specified only if biddingStrategyType of campaign is <code>TARGET_ROAS</code> or <code>MAXIMIZE_CONVERSION_VALUE</code>.<br>
+-        *If no target value is set in the campaign, the target value set in the ad group will be ignored.</div>
+-    targetCpaOverride:
+-      type: integer
+-      nullable: true
+-      format: int64
+-      description: |
+-        <div lang="ja">コンバージョン単価の目標値です。<br>
+-        キャンペーンで設定したコンバージョン単価の目標値を使用する場合は、0を指定してください。<br>
+-        このフィールドは、ADDおよびSET時に省略可能となり、REMOVE時に無視されます。<br>
+-        ※キャンペーンのbiddingStrategyTypeが<code>TARGET_CPA</code>または<code>MAXIMIZE_CONVERSIONS</code>の場合に変更可能です。<br>
+-        ※キャンペーンで目標値を設定していない場合、広告グループに設定した目標値は無視されます。</div>
+-        <div lang="en">Target CPA. <br>
+-        Specify 0 in order to use the Target CPA specified in the campaign setting. <br>
+-        This field is optional in ADD and SET operation, and will be ignored in REMOVE operation.<br>
+-        *This field can be specified only if biddingStrategyType of campaign is <code>TARGET_CPA</code> or <code>MAXIMIZE_CONVERSIONS</code>.<br>
+-        *If no target value is set in the campaign, the target value set in the ad group will be ignored.</div>
+     trackingUrl:
+       type: string
+       nullable: true
+@@ -118,6 +88,8 @@
+         This field is optional.<br>
+         *Cannot set for a Mobile App campaign for Android OS.<br>
+         *In SET operation, cannot update it when this field is in editorial review. In addition, if there is no change, it will not to be reviewed.</div>
++    isRemoveTrackingUrl:
++      $ref: 'AdGroupServiceIsRemoveFlg.yaml#/AdGroupServiceIsRemoveFlg'
+     urlReviewData:
+       $ref: 'AdGroupServiceUrlReviewData.yaml#/AdGroupServiceUrlReviewData'
+     userStatus:
+Only in v9/adgroup: AdGroupServiceBid.yaml
+Only in v9/adgroup: AdGroupServiceBidSource.yaml
+Only in v10/adgroup: AdGroupServiceBiddingScheme.yaml
+Only in v10/adgroup: AdGroupServiceBiddingStrategyConfiguration.yaml
+Only in v10/adgroup: AdGroupServiceCampaignBiddingStrategyType.yaml
+Only in v9/adgroup: AdGroupServiceContainsLabelId.yaml
+Only in v10/adgroup: AdGroupServiceCpcBiddingScheme.yaml
+Only in v10/adgroup: AdGroupServiceIsRemoveFlg.yaml
+Only in v10/adgroup: AdGroupServiceMaximizeConversionValueBiddingScheme.yaml
+Only in v10/adgroup: AdGroupServiceMaximizeConversionsBiddingScheme.yaml
+
+
+------
+diff -ru v9/adgroup/AdGroupServiceSelector.yaml v10/adgroup/AdGroupServiceSelector.yaml
+--- v9/adgroup/AdGroupServiceSelector.yaml	2022-12-16 16:46:04.000000000 +0900
++++ v10/adgroup/AdGroupServiceSelector.yaml	2023-01-13 16:50:24.000000000 +0900
+@@ -44,8 +44,12 @@
+       description: |
+         <div lang="ja">検索条件：キャンペーンID</div>
+         <div lang="en">Search condition: Campaign ID</div>
+-    containsLabelId:
+-      $ref: 'AdGroupServiceContainsLabelId.yaml#/AdGroupServiceContainsLabelId'
++    containsLabel:
++      type: boolean
++      nullable: true
++      description: |
++        <div lang="ja">ラベルデータ取得フラグです。</div>
++        <div lang="en">AdGroupServiceContainsLabel object describes acquisition flag of label data.</div>
+     labelIds:
+       type: array
+       nullable: true
+@@ -56,9 +60,9 @@
+       maxItems: 1000
+       description: |
+         <div lang="ja">検索条件：ラベルIDです。<br>
+-        ※labelIdsを指定する場合は、containsLabelIdをTRUEにする必要があります。</div>
++        ※labelIdsを指定した場合は、取得結果にcontainsLabelの情報が付与されます。</div>
+         <div lang="en">Search condition: Label ID.<br>
+-        *To specify labelIds, must be containsLabelId set TRUE.</div>
++        *When specified labelIds, containsLabel information is added to the result.</div>
+     numberResults:
+       type: integer
+       nullable: true
+Only in v10/adgroup: AdGroupServiceTargetCpaBiddingScheme.yaml
+Only in v10/adgroup: AdGroupServiceTargetRoasBiddingScheme.yaml
+
+
+------
+diff -ru v9/adgroupad/AdGroupAdServiceAd.yaml v10/adgroupad/AdGroupAdServiceAd.yaml
+--- v9/adgroupad/AdGroupAdServiceAd.yaml	2022-10-21 18:01:24.000000000 +0900
++++ v10/adgroupad/AdGroupAdServiceAd.yaml	2023-02-13 16:20:42.000000000 +0900
+@@ -4,14 +4,16 @@
+   properties:
+     adType:
+       $ref: 'AdGroupAdServiceAdType.yaml#/AdGroupAdServiceAdType'
+-    smartphoneFinalUrl:
+-      type: string
+-      nullable: true
+-      description: |
+-        <div lang="ja">最終リンク先URL（スマートフォン）です。<br>
+-        ADD時、このフィールドは省略可能となります。※adTypeがDYNAMIC_SEARCH_LINKED_ADの場合は無視されます。</div>
+-        <div lang="en">Landing Page URL (Smartphone).<br>
+-        This field is optional in ADD operation. *If adType is DYNAMIC_SEARCH_LINKED_AD, this field will be ignored.</div>
++    textAd2:
++      $ref: 'AdGroupAdServiceTextAd2.yaml#/AdGroupAdServiceTextAd2'
++    appAd:
++      $ref: 'AdGroupAdServiceAppAd.yaml#/AdGroupAdServiceAppAd'
++    extendedTextAd:
++      $ref: 'AdGroupAdServiceExtendedTextAd.yaml#/AdGroupAdServiceExtendedTextAd'
++    dynamicSearchLinkedAd:
++      $ref: 'AdGroupAdServiceDynamicSearchLinkedAd.yaml#/AdGroupAdServiceDynamicSearchLinkedAd'
++    responsiveSearchAd:
++      $ref: 'AdGroupAdServiceResponsiveSearchAd.yaml#/AdGroupAdServiceResponsiveSearchAd'
+     finalUrl:
+       type: string
+       nullable: true
+@@ -20,44 +22,36 @@
+         ADD時、このフィールドは必須となります。※adTypeがDYNAMIC_SEARCH_LINKED_ADの場合は無視されます。</div>
+         <div lang="en">Landing Page URL.<br>
+         This field is required in ADD operation. *If adType is DYNAMIC_SEARCH_LINKED_AD, this field will be ignored.</div>
+-    appAd:
+-      $ref: 'AdGroupAdServiceAppAd.yaml#/AdGroupAdServiceAppAd'
+-    customParameters:
+-      $ref: 'AdGroupAdServiceCustomParameters.yaml#/AdGroupAdServiceCustomParameters'
+-    description1:
++    reviewFinalUrl:
+       type: string
+       nullable: true
+       description: |
+-        <div lang="ja">説明文です。<br>
+-        ADD時、このフィールドは必須となります。※adTypeがRESPONSIVE_SEARCH_ADの場合は無視されます。<br>自動挿入をサポートしていません。</div>
+-        <div lang="en">Description of ad.<br>
+-        This field is required in ADD operation. *If adType is RESPONSIVE_SEARCH_AD, this field will be ignored.<br>Does not support Data Auto Insertion.</div>
+-    devicePreference:
+-      $ref: 'AdGroupAdServiceDevicePreference.yaml#/AdGroupAdServiceDevicePreference'
+-    displayUrl:
++        <div lang="ja">審査中の最終リンク先URLです。<br>
++        このフィールドは、リクエストの際には無視されます。<br>
++        ※現在、こちらのフィールドは返却されません。</div>
++        <div lang="en">Landing Page URL on editorial review.<br>
++        This field will be ignored on input.<br>
++        Currently, this field will not be returned.</div>
++    smartphoneFinalUrl:
+       type: string
+       nullable: true
+       description: |
+-        <div lang="ja">表示URLです。<br>
+-        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
+-        <div lang="en">Display URL.<br>
+-        Although this field will be returned in the response, it will be ignored on input.</div>
+-    extendedTextAd:
+-      $ref: 'AdGroupAdServiceExtendedTextAd.yaml#/AdGroupAdServiceExtendedTextAd'
+-    responsiveSearchAd:
+-      $ref: 'AdGroupAdServiceResponsiveSearchAd.yaml#/AdGroupAdServiceResponsiveSearchAd'
+-    headline1:
++        <div lang="ja">最終リンク先URL（スマートフォン）です。<br>
++        ADD時、このフィールドは省略可能となります。※adTypeがDYNAMIC_SEARCH_LINKED_ADの場合は無視されます。</div>
++        <div lang="en">Landing Page URL (Smartphone).<br>
++        This field is optional in ADD operation. *If adType is DYNAMIC_SEARCH_LINKED_AD, this field will be ignored.</div>
++    reviewSmartphoneFinalUrl:
+       type: string
+       nullable: true
+       description: |
+-        <div lang="ja">タイトル文です。<br>
+-        ADD時、このフィールドは必須となります。※adTypeがDYNAMIC_SEARCH_LINKED_AD、またはRESPONSIVE_SEARCH_ADの場合は無視されます。</div>
+-        <div lang="en">Title of ad.<br>
+-        This field is required in ADD operation. *If adType is DYNAMIC_SEARCH_LINKED_AD or RESPONSIVE_SEARCH_AD, this field will be ignored.</div>
+-    textAd2:
+-      $ref: 'AdGroupAdServiceTextAd2.yaml#/AdGroupAdServiceTextAd2'
+-    dynamicSearchLinkedAd:
+-      $ref: 'AdGroupAdServiceDynamicSearchLinkedAd.yaml#/AdGroupAdServiceDynamicSearchLinkedAd'
++        <div lang="ja">審査中の最終リンク先URL（スマートフォン）です。<br>
++        このフィールドは、リクエストの際には無視されます。<br>
++        ※現在、こちらのフィールドは返却されません。</div>
++        <div lang="en">Landing Page URL (Smartphone) on editorial review.<br>
++        This field will be ignored on input.<br>
++        Currently, this field will not be returned.</div>
++    isRemoveSmartphoneFinalUrl:
++      $ref: 'AdGroupAdServiceIsRemove.yaml#/AdGroupAdServiceIsRemove'
+     trackingUrl:
+       type: string
+       nullable: true
+@@ -66,6 +60,32 @@
+         ADD時、このフィールドは省略可能となります。</div>
+         <div lang="en">Tracking URL.<br>
+         This field is optional in ADD operation.</div>
++    reviewTrackingUrl:
++      type: string
++      nullable: true
++      description: |
++        <div lang="ja">審査中のトラッキングURLです。<br>
++        このフィールドは、リクエストの際には無視されます。<br>
++        ※現在、こちらのフィールドは返却されません。</div>
++        <div lang="en">Tracking URL on editorial review.<br>
++        This field will be ignored on input.<br>
++        Currently, this field will not be returned.</div>
++    isRemoveTrackingUrl:
++      $ref: 'AdGroupAdServiceIsRemove.yaml#/AdGroupAdServiceIsRemove'
++    customParameters:
++      $ref: 'AdGroupAdServiceCustomParameters.yaml#/AdGroupAdServiceCustomParameters'
++    reviewCustomParameters:
++      $ref: 'AdGroupAdServiceCustomParameters.yaml#/AdGroupAdServiceCustomParameters'
++    devicePreference:
++      $ref: 'AdGroupAdServiceDevicePreference.yaml#/AdGroupAdServiceDevicePreference'
++    displayUrl:
++      type: string
++      nullable: true
++      description: |
++        <div lang="ja">表示URLです。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
++        <div lang="en">Display URL.<br>
++        Although this field will be returned in the response, it will be ignored on input.</div>
+     url:
+       type: string
+       nullable: true
+
+
+------
+diff -ru v9/adgroupad/AdGroupAdServiceAdType.yaml v10/adgroupad/AdGroupAdServiceAdType.yaml
+--- v9/adgroupad/AdGroupAdServiceAdType.yaml	2022-12-12 13:16:44.000000000 +0900
++++ v10/adgroupad/AdGroupAdServiceAdType.yaml	2023-02-13 16:20:42.000000000 +0900
+@@ -11,8 +11,10 @@
+   title: AdGroupAdServiceAdType
+   description: |
+     <div lang="ja">AdGroupAdServiceAdTypeは、広告タイプを表します。<br>
+-    ADD時、このフィールドは必須となります。<br>なお、選択した配信先デバイスにより、指定可能な広告の文字数は異なります。</div>
+-    <div lang="en">AdGroupAdServiceAdType describes the type of ad.<br>This field is required in ADD operation.<br>
++    ADD時、このフィールドは必須となります。<br>
++    なお、選択した配信先デバイスにより、指定可能な広告の文字数は異なります。</div>
++    <div lang="en">AdGroupAdServiceAdType describes the type of ad.<br>
++    This field is required in ADD operation.<br>
+     The number of character vary from the device type you choose.</div>
+     <dl class=term>
+       <dt class="term__item">EXTENDED_TEXT_AD</dt>
+
+
+------
+diff -ru v9/adgroupad/AdGroupAdServiceAppAd.yaml v10/adgroupad/AdGroupAdServiceAppAd.yaml
+--- v9/adgroupad/AdGroupAdServiceAppAd.yaml	2022-09-15 21:21:13.000000000 +0900
++++ v10/adgroupad/AdGroupAdServiceAppAd.yaml	2022-12-16 16:46:04.000000000 +0900
+@@ -12,6 +12,22 @@
+         *Automatically set for Mobile app campaign.</div>
+     appStore:
+       $ref: 'AdGroupAdServiceAppStore.yaml#/AdGroupAdServiceAppStore'
++    headline:
++      type: string
++      nullable: true
++      description: |
++        <div lang="ja">タイトル文です。<br>
++        ADD時、このフィールドは必須となります。※adTypeがDYNAMIC_SEARCH_LINKED_AD、またはRESPONSIVE_SEARCH_ADの場合は無視されます。</div>
++        <div lang="en">Title of ad.<br>
++        This field is required in ADD operation. *If adType is DYNAMIC_SEARCH_LINKED_AD or RESPONSIVE_SEARCH_AD, this field will be ignored.</div>
++    description:
++      type: string
++      nullable: true
++      description: |
++        <div lang="ja">説明文です。<br>
++        ADD時、このフィールドは必須となります。※adTypeがRESPONSIVE_SEARCH_ADの場合は無視されます。<br>自動挿入をサポートしていません。</div>
++        <div lang="en">Description of ad.<br>
++        This field is required in ADD operation. *If adType is RESPONSIVE_SEARCH_AD, this field will be ignored.<br>Does not support Data Auto Insertion.</div>
+     description2:
+       type: string
+       nullable: true
+
+
+------
+diff -ru v9/adgroupad/AdGroupAdServiceApprovalStatus.yaml v10/adgroupad/AdGroupAdServiceApprovalStatus.yaml
+--- v9/adgroupad/AdGroupAdServiceApprovalStatus.yaml	2022-09-15 21:21:13.000000000 +0900
++++ v10/adgroupad/AdGroupAdServiceApprovalStatus.yaml	2022-12-12 13:16:44.000000000 +0900
+@@ -18,13 +18,13 @@
+       <dt class="term__item">APPROVED</dt>
+       <dd class="term__desc"><span lang="ja">承認済です。</span><span lang="en">The item is approved</span></dd>
+       <dt class="term__item">APPROVED_WITH_REVIEW</dt>
+-      <dd class="term__desc"><span lang="ja">承認済です。<br>すでに掲載中のキーワード・広告を再編集し、審査中となり、編集前の広告が掲載されています。</span><span lang="en">The item is approved<br>Updated items are under review</span></dd>
++      <dd class="term__desc"><span lang="ja">承認済です。<br>すでに掲載中のキーワード・広告・広告テキストアセットを再編集し、審査中となり、編集前のキーワード・広告・広告テキストアセットが掲載されています。</span><span lang="en">The item is approved<br>Updated items are under review</span></dd>
+       <dt class="term__item">REVIEW</dt>
+-      <dd class="term__desc"><span lang="ja">審査中です。<br>新しく追加したキーワード・広告が審査中となり、広告は未掲載です。</span><span lang="en">Under editorial review<br>Newly added keywords/ads are under review, and not displayed yet</span></dd>
++      <dd class="term__desc"><span lang="ja">審査中です。<br>新しく追加したキーワード・広告・広告テキストアセットが審査中となり、キーワード・広告・広告テキストアセットは未掲載です。</span><span lang="en">Under editorial review<br>Newly added items are under review, and not displayed yet</span></dd>
+       <dt class="term__item">PRE_DISAPPROVED</dt>
+-      <dd class="term__desc"><span lang="ja">掲載不可です。<br>新しく追加したキーワード・広告が審査で承認されず非掲載です。</span><span lang="en">The item was rejected<br>Newly added keywords/ads have been rejected, so it cannot be displayed</span></dd>
++      <dd class="term__desc"><span lang="ja">掲載不可です。<br>新しく追加したキーワード・広告・広告テキストアセットが審査で承認されず非掲載です。</span><span lang="en">The item was rejected<br>Newly added items have been rejected, so it cannot be displayed</span></dd>
+       <dt class="term__item">POST_DISAPPROVED</dt>
+-      <dd class="term__desc"><span lang="ja">掲載停止です。<br>すでに掲載中のキーワード・広告について審査が行われた結果、承認されず非掲載です。</span><span lang="en">The item was rejected<br>Ads already displayed have been taken offline due to a result from post review</span></dd>
++      <dd class="term__desc"><span lang="ja">掲載停止です。<br>すでに掲載中のキーワード・広告・広告テキストアセットについて審査が行われた結果、承認されず非掲載です。</span><span lang="en">The item was rejected<br>Ads already displayed have been taken offline due to a result from post review</span></dd>
+       <dt class="term__item">UNKNOWN</dt>
+       <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+     </dl>
+Only in v9/adgroupad: AdGroupAdServiceContainsLabelId.yaml
+
+
+------
+diff -ru v9/adgroupad/AdGroupAdServiceCustomParameter.yaml v10/adgroupad/AdGroupAdServiceCustomParameter.yaml
+--- v9/adgroupad/AdGroupAdServiceCustomParameter.yaml	2022-09-15 21:21:13.000000000 +0900
++++ v10/adgroupad/AdGroupAdServiceCustomParameter.yaml	2023-02-13 16:20:42.000000000 +0900
+@@ -7,13 +7,13 @@
+       nullable: true
+       description: |
+         <div lang="ja">キーです。<br>このフィールドは、ADD時は必須となり、SET時は無視されます。</div>
+-        <div lang="en">Key of parameter.<br>This field is required in ADD operation, and will be ignored in SET operation.</div>
++        <div lang="en">Key of parameter.<br>Key of parameter.<br>This field is required in ADD operation, and will be ignored in SET operation.</div>
+     value:
+       type: string
+       nullable: true
+       description: |
+         <div lang="ja">値です。<br>このフィールドは、ADD時は省略可能となり、SET時は無視されます。</div>
+-        <div lang="en">Value of parameter.<br>This field is optional in ADD operation,  and will be ignored in SET operation.</div>
++        <div lang="en">Value of parameter.<br>Value of parameter.<br>This field is optional in ADD operation, and will be ignored in SET operation.</div>
+   title: AdGroupAdServiceCustomParameter
+   description: |
+     <div lang="ja">AdGroupAdServiceCustomParameterは、カスタムパラメータの内容を表します。<br>ADD時、このフィールドは必須となります。</div>
+
+
+------
+diff -ru v9/adgroupad/AdGroupAdServiceCustomParameters.yaml v10/adgroupad/AdGroupAdServiceCustomParameters.yaml
+--- v9/adgroupad/AdGroupAdServiceCustomParameters.yaml	2022-09-15 21:21:13.000000000 +0900
++++ v10/adgroupad/AdGroupAdServiceCustomParameters.yaml	2023-02-13 16:20:42.000000000 +0900
+@@ -11,7 +11,9 @@
+         $ref: 'AdGroupAdServiceCustomParameter.yaml#/AdGroupAdServiceCustomParameter'
+   title: AdGroupAdServiceCustomParameters
+   description: |
+-    <div lang="ja">AdGroupAdServiceCustomParametersオブジェクトは、カスタムパラメータの設定を表します。<br>
+-    ADD時、このフィールドは省略可能となります。</div>
++    <div lang="ja">AdGroupAdServiceCustomParametersは、カスタムパラメータの設定を表します。<br>
++    ADD時、このフィールドは省略可能となります。<br>
++    ※reviewCustomParameters配下の場合、このフィールドはリクエストの際に無視され、レスポンスの際は返却されません。</div>
+     <div lang="en">AdGroupAdServiceCustomParameters displays the setting of custom parameters.<br>
+-    This field is optional in ADD operation.</div>
++    This field is optional in ADD operation.<br>
++    *Under reviewCustomParameters, this field is ignored in the request and not returned in the response.</div>
+
+
+------
+diff -ru v9/adgroupad/AdGroupAdServiceDescriptionTextAsset.yaml v10/adgroupad/AdGroupAdServiceDescriptionTextAsset.yaml
+--- v9/adgroupad/AdGroupAdServiceDescriptionTextAsset.yaml	2022-12-12 13:16:44.000000000 +0900
++++ v10/adgroupad/AdGroupAdServiceDescriptionTextAsset.yaml	2023-02-13 16:20:42.000000000 +0900
+@@ -10,8 +10,10 @@
+         <div lang="en">Text of parameter.<br>This field is required in ADD operation, and will be ignored in SET operation.</div>
+     pinnedField:
+       $ref: 'AdGroupAdServiceDescriptionPinnedField.yaml#/AdGroupAdServiceDescriptionPinnedField'
++    activeStatus:
++      $ref: 'AdGroupAdServiceTextAssetActiveStatus.yaml#/AdGroupAdServiceTextAssetActiveStatus'
+     approvalStatus:
+-      $ref: 'AdGroupAdServiceTextAssetApprovalStatus.yaml#/AdGroupAdServiceTextAssetApprovalStatus'
++      $ref: 'AdGroupAdServiceApprovalStatus.yaml#/AdGroupAdServiceApprovalStatus'
+     disapprovalReasonCodes:
+       type: array
+       nullable: true
+@@ -26,10 +28,3 @@
+         (Refer to DictionaryService getDisapprovalReason response for details) <br>
+         Although this field will be returned in the response, it will be ignored on input.</div>
+   title: AdGroupAdServiceDescriptionTextAsset
+-  description: |
+-    <div lang="ja">AdGroupAdServiceDescriptionTextAssetは、レスポンシブ検索広告で指定する説明文のテキストアセットを表します。<br>
+-    descriptions[]には、2~4件の指定が可能です。<br>
+-    ADD時、このフィールドは必須となります。</div>
+-    <div lang="en">AdGroupAdServiceDescriptionTextAsset displays the text asset for the description that specify in responsive ads for search.<br>
+-    2 to 4 items can be specified for descriptions[].<br>
+-    This field is required in ADD operation.</div>
+
+
+------
+diff -ru v9/adgroupad/AdGroupAdServiceDynamicSearchLinkedAd.yaml v10/adgroupad/AdGroupAdServiceDynamicSearchLinkedAd.yaml
+--- v9/adgroupad/AdGroupAdServiceDynamicSearchLinkedAd.yaml	2022-09-15 21:21:13.000000000 +0900
++++ v10/adgroupad/AdGroupAdServiceDynamicSearchLinkedAd.yaml	2022-12-16 16:46:04.000000000 +0900
+@@ -2,6 +2,14 @@
+   type: object
+   nullable: true
+   properties:
++    description:
++      type: string
++      nullable: true
++      description: |
++        <div lang="ja">説明文です。<br>
++        ADD時、このフィールドは必須となります。※adTypeがRESPONSIVE_SEARCH_ADの場合は無視されます。<br>自動挿入をサポートしていません。</div>
++        <div lang="en">Description of ad.<br>
++        This field is required in ADD operation. *If adType is RESPONSIVE_SEARCH_AD, this field will be ignored.<br>Does not support Data Auto Insertion.</div>
+     description2:
+       type: string
+       nullable: true
+
+
+------
+diff -ru v9/adgroupad/AdGroupAdServiceExtendedTextAd.yaml v10/adgroupad/AdGroupAdServiceExtendedTextAd.yaml
+--- v9/adgroupad/AdGroupAdServiceExtendedTextAd.yaml	2022-09-15 21:21:13.000000000 +0900
++++ v10/adgroupad/AdGroupAdServiceExtendedTextAd.yaml	2022-12-16 16:46:04.000000000 +0900
+@@ -2,6 +2,14 @@
+   type: object
+   nullable: true
+   properties:
++    headline:
++      type: string
++      nullable: true
++      description: |
++        <div lang="ja">タイトル文です。<br>
++        ADD時、このフィールドは必須となります。※adTypeがDYNAMIC_SEARCH_LINKED_AD、またはRESPONSIVE_SEARCH_ADの場合は無視されます。</div>
++        <div lang="en">Title of ad.<br>
++        This field is required in ADD operation. *If adType is DYNAMIC_SEARCH_LINKED_AD or RESPONSIVE_SEARCH_AD, this field will be ignored.</div>
+     headline2:
+       type: string
+       nullable: true
+@@ -18,6 +26,14 @@
+         ADD時、このフィールドは省略可能となります。その際、デフォルト設定値はnullとなります。</div>
+         <div lang="en">Title on the second line.<br>
+         This field is optional in ADD operation. The default value will be null.</div>
++    description:
++      type: string
++      nullable: true
++      description: |
++        <div lang="ja">説明文です。<br>
++        ADD時、このフィールドは必須となります。※adTypeがRESPONSIVE_SEARCH_ADの場合は無視されます。<br>自動挿入をサポートしていません。</div>
++        <div lang="en">Description of ad.<br>
++        This field is required in ADD operation. *If adType is RESPONSIVE_SEARCH_AD, this field will be ignored.<br>Does not support Data Auto Insertion.</div>
+     description2:
+       type: string
+       nullable: true
+
+
+------
+diff -ru v9/adgroupad/AdGroupAdServiceHeadlineTextAsset.yaml v10/adgroupad/AdGroupAdServiceHeadlineTextAsset.yaml
+--- v9/adgroupad/AdGroupAdServiceHeadlineTextAsset.yaml	2022-12-12 13:16:44.000000000 +0900
++++ v10/adgroupad/AdGroupAdServiceHeadlineTextAsset.yaml	2023-02-13 16:20:42.000000000 +0900
+@@ -10,8 +10,10 @@
+         <div lang="en">Text of parameter.<br>This field is required in ADD operation, and will be ignored in SET operation.</div>
+     pinnedField:
+       $ref: 'AdGroupAdServiceHeadlinePinnedField.yaml#/AdGroupAdServiceHeadlinePinnedField'
++    activeStatus:
++      $ref: 'AdGroupAdServiceTextAssetActiveStatus.yaml#/AdGroupAdServiceTextAssetActiveStatus'
+     approvalStatus:
+-      $ref: 'AdGroupAdServiceTextAssetApprovalStatus.yaml#/AdGroupAdServiceTextAssetApprovalStatus'
++      $ref: 'AdGroupAdServiceApprovalStatus.yaml#/AdGroupAdServiceApprovalStatus'
+     disapprovalReasonCodes:
+       type: array
+       nullable: true
+@@ -26,10 +28,3 @@
+         (Refer to DictionaryService getDisapprovalReason response for details) <br>
+         Although this field will be returned in the response, it will be ignored on input.</div>
+   title: AdGroupAdServiceHeadlineTextAsset
+-  description: |
+-    <div lang="ja">AdGroupAdServiceHeadlineTextAssetは、レスポンシブ検索広告で指定するタイトルのテキストアセットを表します。<br>
+-    headlines[]には、3~15件の指定が可能です。<br>
+-    ADD時、このフィールドは必須となります。</div>
+-    <div lang="en">AdGroupAdServiceHeadlineTextAsset displays the text asset for the headline that specify in responsive ads for search.<br>
+-    3 to 15 items can be specified for headlines[].<br>
+-    This field is required in ADD operation.</div>
+
+
+------
+diff -ru v9/adgroupad/AdGroupAdServiceIsRemove.yaml v10/adgroupad/AdGroupAdServiceIsRemove.yaml
+--- v9/adgroupad/AdGroupAdServiceIsRemove.yaml	2022-09-15 21:21:13.000000000 +0900
++++ v10/adgroupad/AdGroupAdServiceIsRemove.yaml	2023-02-13 16:20:42.000000000 +0900
+@@ -7,15 +7,23 @@
+   - UNKNOWN
+   title: AdGroupAdServiceIsRemove
+   description: |
+-    <div lang="ja">AdGroupAdServiceIsRemoveは、カスタムパラメータの削除フラグです。<br>
+-    SET時、このフィールドは無視されます。</div>
+-    <div lang="en">AdGroupAdServiceIsRemove is Delete flag.<br>
+-    This field will be ignored in SET operation.</div>
++    <div lang="ja">
++    AdGroupAdServiceIsRemoveFlgは、項目を削除するフラグです。<br>
++    設定値が「TRUE」の場合、設定されている値が無効になります。<br>
++    このフィールドは、ADD時は無視され、SET時は省略可能となります。<br>
++    ※現在、isRemovePath1/isRemovePath2/isRemoveSmartphoneFinalUrl/isRemoveTrackingUrlは利用できません。
++    </div>
++    <div lang="en">
++    AdGroupAdServiceIsRemoveFlg is a flag for removing an information item.<br>
++    If the set value is 'TRUE', the set value will be invalid.<br>
++    This field will be ignored in ADD operation, and will be optional in SET operation.<br>
++    *Currently isRemovePath1/isRemovePath2/isRemoveSmartphoneFinalUrl/isRemoveTrackingUrl is not available.
++    </div>
+     <dl class=term>
+       <dt class="term__item">TRUE</dt>
+-      <dd class="term__desc"><span lang="ja">カスタムパラメータの削除フラグがオンです。</span><span lang="en">Delete flag is on.</span></dd>
++      <dd class="term__desc"><span lang="ja">項目の削除。</span><span lang="en">removes the information item.</span></dd>
+       <dt class="term__item">FALSE</dt>
+-      <dd class="term__desc"><span lang="ja">カスタムパラメータの削除フラグがオフです。</span><span lang="en">Delete flag is off.</span></dd>
++      <dd class="term__desc"><span lang="ja">項目の削除なし。</span><span lang="en">not remove the information item.</span></dd>
+       <dt class="term__item">UNKNOWN</dt>
+       <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+     </dl>
+
+
+------
+diff -ru v9/adgroupad/AdGroupAdServiceResponsiveSearchAd.yaml v10/adgroupad/AdGroupAdServiceResponsiveSearchAd.yaml
+--- v9/adgroupad/AdGroupAdServiceResponsiveSearchAd.yaml	2022-09-15 21:21:13.000000000 +0900
++++ v10/adgroupad/AdGroupAdServiceResponsiveSearchAd.yaml	2023-02-13 16:20:42.000000000 +0900
+@@ -7,11 +7,25 @@
+       nullable: true
+       items:
+         $ref: 'AdGroupAdServiceHeadlineTextAsset.yaml#/AdGroupAdServiceHeadlineTextAsset'
++      description: |
++        <div lang="ja">レスポンシブ検索広告で指定するタイトルのテキストアセットを表します。<br>
++        headlines[]には、3~15件の指定が可能です。<br>
++        ADD時、このフィールドは必須となります。</div>
++        <div lang="en">Text asset for the headline that specify in responsive ads for search.<br>
++        3 to 15 items can be specified for headlines[].<br>
++        This field is required in ADD operation.</div>
+     descriptions:
+       type: array
+       nullable: true
+       items:
+         $ref: 'AdGroupAdServiceDescriptionTextAsset.yaml#/AdGroupAdServiceDescriptionTextAsset'
++      description: |
++        <div lang="ja">レスポンシブ検索広告で指定する説明文のテキストアセットを表します。<br>
++        descriptions[]には、2~4件の指定が可能です。<br>
++        ADD時、このフィールドは必須となります。</div>
++        <div lang="en">Text asset for the description that specify in responsive ads for search.<br>
++        2 to 4 items can be specified for descriptions[].<br>
++        This field is required in ADD operation.</div>
+     path1:
+       type: string
+       nullable: true
+@@ -20,6 +34,8 @@
+         ADD時、このフィールドは省略可能となります。その際、デフォルト設定値はnullとなります。<br>※path2を指定する場合は、path1は必須です。</div>
+         <div lang="en">The path information which complements display URL generated automatically.<br>
+         This field is optional in ADD operation. The default value will be null.<br>*To specify path2, path1 is required.</div>
++    isRemovePath1:
++      $ref: 'AdGroupAdServiceIsRemove.yaml#/AdGroupAdServiceIsRemove'
+     path2:
+       type: string
+       nullable: true
+@@ -28,9 +44,55 @@
+         ADD時、このフィールドは省略可能となります。その際、デフォルト設定値はnullとなります。<br>※path1を指定していない場合、path2は無視されます。</div>
+         <div lang="en">The path information which complements display URL generated automatically.<br>
+         This field is optional in ADD operation. The default value will be null.<br>*If path1 is not specified, path2 will be ignored.</div>
++    isRemovePath2:
++      $ref: 'AdGroupAdServiceIsRemove.yaml#/AdGroupAdServiceIsRemove'
++    reviewHeadlines:
++      type: array
++      nullable: true
++      items:
++        $ref: 'AdGroupAdServiceHeadlineTextAsset.yaml#/AdGroupAdServiceHeadlineTextAsset'
++      description: |
++        <div lang="ja">審査中のタイトルのテキストアセットを表します。<br>
++        このフィールドは、リクエストの際には無視されます。<br>
++        ※現在、こちらのフィールドは返却されません。</div>
++        <div lang="en">Text asset for the headline under review.<br>
++        This field will be ignored on input.<br>
++        Currently, this field will not be returned.</div>
++    reviewDescriptions:
++      type: array
++      nullable: true
++      items:
++        $ref: 'AdGroupAdServiceDescriptionTextAsset.yaml#/AdGroupAdServiceDescriptionTextAsset'
++      description: |
++        <div lang="ja">審査中の説明文のテキストアセットを表します。<br>
++        このフィールドは、リクエストの際には無視されます。<br>
++        ※現在、こちらのフィールドは返却されません。</div>
++        <div lang="en">Text asset for the description under review.<br>
++        This field will be ignored on input.<br>
++        Currently, this field will not be returned.</div>
++    reviewPath1:
++      type: string
++      nullable: true
++      description: |
++        <div lang="ja">審査中の自動作成される表示URLを補足するパスです。<br>
++        このフィールドは、リクエストの際には無視されます。<br>
++        ※現在、こちらのフィールドは返却されません。</div>
++        <div lang="en">The path information which complements display URL generated automatically (Under review).<br>
++        This field will be ignored on input.<br>
++        Currently, this field will not be returned.</div>
++    reviewPath2:
++      type: string
++      nullable: true
++      description: |
++        <div lang="ja">審査中の自動作成される表示URLを補足するパスです。<br>
++        このフィールドは、リクエストの際には無視されます。<br>
++        ※現在、こちらのフィールドは返却されません。</div>
++        <div lang="en">The path information which complements display URL generated automatically (Under review).<br>
++        This field will be ignored on input.<br>
++        Currently, this field will not be returned.</div>
+   title: AdGroupAdServiceResponsiveSearchAd
+   description: |
+-    <div lang="ja">AdGroupAdServiceResponsiveSearchAdオブジェクトは、レスポンシブ広告を表します。<br>
+-    ADD時、このフィールドは省略可能となります。※adTypeがRESPONSIVE_SEARCH_ADの場合は必須です。</div>
++    <div lang="ja">AdGroupAdServiceResponsiveSearchAdオブジェクトは、レスポンシブ検索広告を表します。<br>
++    ADD、このフィールドは省略可能となります。※adTypeがRESPONSIVE_SEARCH_ADの場合は必須です。</div>
+     <div lang="en">AdGroupAdServiceResponsiveSearchAd object is Responsive ads.<br>
+     This field is optional in ADD operation. *If adType is RESPONSIVE_SEARCH_AD, this field is required.</div>
+
+
+------
+diff -ru v9/adgroupad/AdGroupAdServiceSelector.yaml v10/adgroupad/AdGroupAdServiceSelector.yaml
+--- v9/adgroupad/AdGroupAdServiceSelector.yaml	2022-12-16 16:46:04.000000000 +0900
++++ v10/adgroupad/AdGroupAdServiceSelector.yaml	2023-01-13 16:50:24.000000000 +0900
+@@ -2,7 +2,7 @@
+   type: object
+   nullable: true
+   required:
+-  - accountId
++    - accountId
+   properties:
+     accountId:
+       type: integer
+@@ -11,6 +11,20 @@
+       description: |
+         <div lang="ja">検索条件：アカウントID</div>
+         <div lang="en">Search condition: Account ID.</div>
++    campaignIds:
++      type: array
++      nullable: true
++      items:
++        type: integer
++        nullable: true
++        format: int64
++      maxItems: 1000
++      description: |
++        <div lang="ja">検索条件：キャンペーンID</div>
++        <div lang="en">Search condition: Campaign ID.<br>
++        Ads returned will be from campaigns whose ids are included in this list.<br>
++        An empty list means there are no campaign restrictions when selecting AdGroupAds.<br>
++        * This field must contain distinct elements.<br>* This field cannot contain null elements.</div>
+     adGroupIds:
+       type: array
+       nullable: true
+@@ -48,22 +62,18 @@
+       items:
+         $ref: 'AdGroupAdServiceApprovalStatus.yaml#/AdGroupAdServiceApprovalStatus'
+       maxItems: 5
+-    campaignIds:
++    userStatuses:
+       type: array
+       nullable: true
+       items:
+-        type: integer
+-        nullable: true
+-        format: int64
+-      maxItems: 1000
++        $ref: 'AdGroupAdServiceUserStatus.yaml#/AdGroupAdServiceUserStatus'
++      maxItems: 2
++    containsLabel:
++      type: boolean
++      nullable: true
+       description: |
+-        <div lang="ja">検索条件：キャンペーンID</div>
+-        <div lang="en">Search condition: Campaign ID.<br>
+-        Ads returned will be from campaigns whose ids are included in this list.<br>
+-        An empty list means there are no campaign restrictions when selecting AdGroupAds.<br>
+-        * This field must contain distinct elements.<br>* This field cannot contain null elements.</div>
+-    containsLabelId:
+-      $ref: 'AdGroupAdServiceContainsLabelId.yaml#/AdGroupAdServiceContainsLabelId'
++        <div lang="ja">ラベルデータ取得フラグです。</div>
++        <div lang="en">AdGroupAdServiceContainsLabel object describes acquisition flag of label data.</div>
+     labelIds:
+       type: array
+       nullable: true
+@@ -74,9 +84,11 @@
+       maxItems: 1000
+       description: |
+         <div lang="ja">検索条件：ラベルIDです。<br>
+-        ※labelIdsを指定する場合は、containsLabelIdをTRUEにする必要があります。</div>
++        ※labelIdsを指定した場合は、取得結果にcontainsLabelの情報が付与されます。</div>
+         <div lang="en">Search condition: Label ID.<br>
+-        *To specify labelIds, must be containsLabelId set TRUE.</div>
++        *When specified labelIds, containsLabel information is added to the result.</div>
++    createdDateRange:
++      $ref: 'AdGroupAdServiceCreatedDateRange.yaml#/AdGroupAdServiceCreatedDateRange'
+     numberResults:
+       type: integer
+       nullable: true
+@@ -96,14 +108,6 @@
+       description: |
+         <div lang="ja">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div>
+         <div lang="en">Index of the first result to return in this page. This field must be greater than or equal to 1.</div>
+-    userStatuses:
+-      type: array
+-      nullable: true
+-      items:
+-        $ref: 'AdGroupAdServiceUserStatus.yaml#/AdGroupAdServiceUserStatus'
+-      maxItems: 2
+-    createdDateRange:
+-      $ref: 'AdGroupAdServiceCreatedDateRange.yaml#/AdGroupAdServiceCreatedDateRange'
+   title: AdGroupAdServiceSelector
+   description: |
+     <div lang="ja">AdGroupAdServiceSelectorオブジェクトは、操作の対象とする広告およびフィルタ条件を表します。</div>
+
+
+------
+diff -ru v9/adgroupad/AdGroupAdServiceTextAd2.yaml v10/adgroupad/AdGroupAdServiceTextAd2.yaml
+--- v9/adgroupad/AdGroupAdServiceTextAd2.yaml	2022-09-15 21:21:13.000000000 +0900
++++ v10/adgroupad/AdGroupAdServiceTextAd2.yaml	2022-12-16 16:46:04.000000000 +0900
+@@ -2,6 +2,22 @@
+   type: object
+   nullable: true
+   properties:
++    headline:
++      type: string
++      nullable: true
++      description: |
++        <div lang="ja">タイトル文です。<br>
++        ADD時、このフィールドは必須となります。※adTypeがDYNAMIC_SEARCH_LINKED_AD、またはRESPONSIVE_SEARCH_ADの場合は無視されます。</div>
++        <div lang="en">Title of ad.<br>
++        This field is required in ADD operation. *If adType is DYNAMIC_SEARCH_LINKED_AD or RESPONSIVE_SEARCH_AD, this field will be ignored.</div>
++    description:
++      type: string
++      nullable: true
++      description: |
++        <div lang="ja">説明文です。<br>
++        ADD時、このフィールドは必須となります。※adTypeがRESPONSIVE_SEARCH_ADの場合は無視されます。<br>自動挿入をサポートしていません。</div>
++        <div lang="en">Description of ad.<br>
++        This field is required in ADD operation. *If adType is RESPONSIVE_SEARCH_AD, this field will be ignored.<br>Does not support Data Auto Insertion.</div>
+     description2:
+       type: string
+       nullable: true
+Only in v10/adgroupad: AdGroupAdServiceTextAssetActiveStatus.yaml
+
+
+------
+diff -ru v9/adgroupad/AdGroupAdServiceTextAssetApprovalStatus.yaml v10/adgroupad/AdGroupAdServiceTextAssetApprovalStatus.yaml
+--- v9/adgroupad/AdGroupAdServiceTextAssetApprovalStatus.yaml	2022-09-15 21:21:13.000000000 +0900
++++ v10/adgroupad/AdGroupAdServiceTextAssetApprovalStatus.yaml	2023-01-24 21:29:55.000000000 +0900
+@@ -2,23 +2,29 @@
+   type: string
+   nullable: true
+   enum:
+-    - APPROVED
+-    - REVIEW
+-    - PRE_DISAPPROVED
+-    - UNKNOWN
++  - APPROVED
++  - APPROVED_WITH_REVIEW
++  - REVIEW
++  - PRE_DISAPPROVED
++  - POST_DISAPPROVED
++  - UNKNOWN
+   title: AdGroupAdServiceTextAssetApprovalStatus
+   description: |
+-    <div lang="ja">AdGroupAdServiceTextAssetApprovalStatusは、審査状況を表します。<br>
++    <div lang="ja">AdGroupAdServiceApprovalStatusは、審査状況を表します。<br>
+     このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
+-    <div lang="en">AdGroupAdServiceTextAssetApprovalStatus displays Editorial Status.<br>
++    <div lang="en">AdGroupAdServiceApprovalStatus displays Editorial Status.<br>
+     Although this field will be returned in the response, it will be ignored on input.</div>
+     <dl class=term>
+       <dt class="term__item">APPROVED</dt>
+       <dd class="term__desc"><span lang="ja">承認済です。</span><span lang="en">The item is approved</span></dd>
++      <dt class="term__item">APPROVED_WITH_REVIEW</dt>
++      <dd class="term__desc"><span lang="ja">承認済です。<br>すでに掲載中のキーワード・広告・広告テキストアセットを再編集し、審査中となり、編集前のキーワード・広告・広告テキストアセットが掲載されています。</span><span lang="en">The item is approved<br>Updated items are under review</span></dd>
+       <dt class="term__item">REVIEW</dt>
+-      <dd class="term__desc"><span lang="ja">審査中です。<br>新しく追加した広告テキストアセットが審査中となり、広告テキストアセットは未掲載です。</span><span lang="en">Under editorial review<br>Newly added ad text asset are under review, and not displayed yet</span></dd>
++      <dd class="term__desc"><span lang="ja">審査中です。<br>新しく追加したキーワード・広告・広告テキストアセットが審査中となり、キーワード・広告・広告テキストアセットは未掲載です。</span><span lang="en">Under editorial review<br>Newly added items are under review, and not displayed yet</span></dd>
+       <dt class="term__item">PRE_DISAPPROVED</dt>
+-      <dd class="term__desc"><span lang="ja">掲載不可です。<br>新しく追加した広告テキストアセットが審査で承認されず非掲載です。</span><span lang="en">The item was rejected<br>Newly added ad text asset have been rejected, so it cannot be displayed</span></dd>
++      <dd class="term__desc"><span lang="ja">掲載不可です。<br>新しく追加したキーワード・広告・広告テキストアセットが審査で承認されず非掲載です。</span><span lang="en">The item was rejected<br>Newly added items have been rejected, so it cannot be displayed</span></dd>
++      <dt class="term__item">POST_DISAPPROVED</dt>
++      <dd class="term__desc"><span lang="ja">掲載停止です。<br>すでに掲載中のキーワード・広告・広告テキストアセットについて審査が行われた結果、承認されず非掲載です。</span><span lang="en">The item was rejected<br>Ads already displayed have been taken offline due to a result from post review</span></dd>
+       <dt class="term__item">UNKNOWN</dt>
+       <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+     </dl>
+Only in v9/auditlog: AuditLogServiceAddJobResponse.yaml
+Only in v10/auditlog: AuditLogServiceAddResponse.yaml
+
+
+------
+diff -ru v9/auditlog/AuditLogServiceEventSelector.yaml v10/auditlog/AuditLogServiceEventSelector.yaml
+--- v9/auditlog/AuditLogServiceEventSelector.yaml	2022-09-15 21:21:14.000000000 +0900
++++ v10/auditlog/AuditLogServiceEventSelector.yaml	2022-12-12 13:16:44.000000000 +0900
+@@ -90,6 +90,8 @@
+   title: AuditLogServiceEventSelector
+   description: |
+     <div lang="ja">AuditLogServiceEventSelectorオブジェクトは、操作履歴の取得対象を設定します。<br>
+-    このフィールドは、必須です。</div>
++    このフィールドは、必須です。<br>
++    1~25件の指定が可能です。</div>
+     <div lang="en">AuditLogServiceEventSelector object enables the target setting of acquiring operation history.<br>
+-    This field is required.</div>
++    This field is required.<br>
++    1 to 25 items can be specified.</div>
+
+
+------
+diff -ru v9/auditlog/AuditLogServiceJob.yaml v10/auditlog/AuditLogServiceJob.yaml
+--- v9/auditlog/AuditLogServiceJob.yaml	2022-09-15 21:21:14.000000000 +0900
++++ v10/auditlog/AuditLogServiceJob.yaml	2022-12-12 13:16:44.000000000 +0900
+@@ -1,8 +1,6 @@
+ AuditLogServiceJob:
+   type: object
+   nullable: true
+-  required:
+-  - eventSelector
+   properties:
+     accountId:
+       type: integer
+@@ -20,8 +18,6 @@
+       nullable: true
+       items:
+         $ref: 'AuditLogServiceEventSelector.yaml#/AuditLogServiceEventSelector'
+-      minItems: 1
+-      maxItems: 25
+     jobId:
+       type: integer
+       nullable: true
+
+
+------
+diff -ru v9/budgetorder/BudgetOrderServiceSelector.yaml v10/budgetorder/BudgetOrderServiceSelector.yaml
+--- v9/budgetorder/BudgetOrderServiceSelector.yaml	2022-09-15 21:21:13.000000000 +0900
++++ v10/budgetorder/BudgetOrderServiceSelector.yaml	2022-12-16 16:46:04.000000000 +0900
+@@ -12,7 +12,7 @@
+         nullable: false
+         format: int64
+       minItems: 1
+-      maxItems: 200
++      maxItems: 500
+       description: |
+         <div lang="ja">アカウントIDです。</div>
+         <div lang="en">Account ID.</div>
+@@ -21,8 +21,8 @@
+       nullable: true
+       format: int32
+       minimum: 1
+-      maximum: 200
+-      default: 200
++      maximum: 500
++      default: 500
+       description: |
+         <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div>
+         <div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1. Also see Entity Limits per operation.</div>
+
+
+------
+diff -ru v9/campaign/Campaign.yaml v10/campaign/Campaign.yaml
+--- v9/campaign/Campaign.yaml	2022-09-15 21:21:13.000000000 +0900
++++ v10/campaign/Campaign.yaml	2022-12-16 16:46:04.000000000 +0900
+@@ -21,8 +21,8 @@
+         <div lang="en">App ID (for iOS) or Package name (for Android).<br>
+         *Input only the numbers for iOS in Mobile App Campaign.<br>
+          In ADD operation, this field will be ignored when campaignType is 'STANDARD' or 'DYNAMIC_ADS_FOR_SEARCH_SETTING', and is required when campaignType is MOBILE_APP.</div>
+-    appStore:
+-      $ref: 'CampaignServiceAppStore.yaml#/CampaignServiceAppStore'
++    appOsType:
++      $ref: 'CampaignServiceAppOsType.yaml#/CampaignServiceAppOsType'
+     biddingStrategyConfiguration:
+       $ref: 'CampaignServiceBiddingStrategy.yaml#/CampaignServiceBiddingStrategy'
+     biddingStrategyFailedReason:
+Only in v10/campaign: CampaignServiceAppOsType.yaml
+Only in v9/campaign: CampaignServiceAppStore.yaml
+
+
+------
+diff -ru v9/campaign/CampaignServiceBudget.yaml v10/campaign/CampaignServiceBudget.yaml
+--- v9/campaign/CampaignServiceBudget.yaml	2022-09-15 21:21:13.000000000 +0900
++++ v10/campaign/CampaignServiceBudget.yaml	2022-12-16 16:46:04.000000000 +0900
+@@ -11,8 +11,6 @@
+         このフィールドは、ADD時は必須となり、SET時は省略可能となります。</div>
+         <div lang="en">Amount of budget of Campaign.<br>
+         This field is required in ADD operation, and is optional in SET operation.</div>
+-    budgetPeriod:
+-      $ref: 'CampaignServiceBudgetPeriod.yaml#/CampaignServiceBudgetPeriod'
+   title: CampaignServiceBudget
+   description: |
+     <div lang="ja">CampaignServiceBudgetオブジェクトは、キャンペーン予算に関する情報を表します。<br>
+Only in v9/campaign: CampaignServiceBudgetPeriod.yaml
+Only in v10/campaign: CampaignServiceContainsLabel.yaml
+Only in v9/campaign: CampaignServiceContainsLabelId.yaml
+
+
+------
+diff -ru v9/campaign/CampaignServiceIsRemove.yaml v10/campaign/CampaignServiceIsRemove.yaml
+--- v9/campaign/CampaignServiceIsRemove.yaml	2022-09-15 21:21:13.000000000 +0900
++++ v10/campaign/CampaignServiceIsRemove.yaml	2023-01-13 16:50:24.000000000 +0900
+@@ -7,13 +7,21 @@
+   - UNKNOWN
+   title: CampaignServiceIsRemove
+   description: |
+-    <div lang="ja">CampaignServiceIsRemoveは、カスタムパラメータの削除フラグです。</div>
+-    <div lang="en">CampaignServiceIsRemove is Delete flag.</div>
++    <div lang="ja">
++    CampaignServiceIsRemoveは、項目を削除するフラグです。<br>
++    設定値が「TRUE」の場合、設定されている値が無効になります。<br>
++    このフィールドは、ADD時は無視され、SET時は省略可能となります。
++    </div>
++    <div lang="en">
++    CampaignServiceIsRemove is a flag for removing an information item.<br>
++    If the set value is 'TRUE', the set value will be invalid.<br>
++    This field will be ignored in ADD operation, and will be optional in SET operation.
++    </div>
+     <dl class=term>
+       <dt class="term__item">TRUE</dt>
+-      <dd class="term__desc"><span lang="ja">カスタムパラメータの削除フラグがオンです。</span><span lang="en">Delete flag is on.</span></dd>
++      <dd class="term__desc"><span lang="ja">項目の削除。</span><span lang="en">removes the information item.</span></dd>
+       <dt class="term__item">FALSE</dt>
+-      <dd class="term__desc"><span lang="ja">カスタムパラメータの削除フラグがオフです。</span><span lang="en">Delete flag is off.</span></dd>
++      <dd class="term__desc"><span lang="ja">項目の削除なし。</span><span lang="en">not remove the information item.</span></dd>
+       <dt class="term__item">UNKNOWN</dt>
+       <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+     </dl>
+
+
+------
+diff -ru v9/campaign/CampaignServiceMaximizeConversionValueBiddingScheme.yaml v10/campaign/CampaignServiceMaximizeConversionValueBiddingScheme.yaml
+--- v9/campaign/CampaignServiceMaximizeConversionValueBiddingScheme.yaml	2022-12-12 13:16:44.000000000 +0900
++++ v10/campaign/CampaignServiceMaximizeConversionValueBiddingScheme.yaml	2023-01-13 16:50:24.000000000 +0900
+@@ -12,6 +12,8 @@
+         ※ROAS:Return On Advertising Spend</div>
+         <div lang="en">Target ROAS (Return On Advertising Spend)<br>
+         * Limit range: 0.01 - 1000.00 (1% - 100000%)</div>
++    isRemoveTargetRoas:
++      $ref: 'CampaignServiceIsRemove.yaml#/CampaignServiceIsRemove'
+   title: CampaignServiceMaximizeConversionValueBiddingScheme
+   description: |
+     <div lang="ja">CampaignServiceMaximizeConversionValueBiddingSchemeオブジェクトは、広告費用対効果の目標値の自動入札設定情報を表します。<br>
+
+
+------
+diff -ru v9/campaign/CampaignServiceMaximizeConversionsBiddingScheme.yaml v10/campaign/CampaignServiceMaximizeConversionsBiddingScheme.yaml
+--- v9/campaign/CampaignServiceMaximizeConversionsBiddingScheme.yaml	2022-09-15 21:21:13.000000000 +0900
++++ v10/campaign/CampaignServiceMaximizeConversionsBiddingScheme.yaml	2023-01-13 16:50:24.000000000 +0900
+@@ -12,6 +12,8 @@
+         ※日本円のみの設定です。</div>
+         <div lang="en">Target CPA (JPY).<br>
+         * Range limit: 1 - 800000</div>
++    isRemoveTargetCpa:
++      $ref: 'CampaignServiceIsRemove.yaml#/CampaignServiceIsRemove'
+   title: CampaignServiceMaximizeConversionsBiddingScheme
+   description: |
+     <div lang="ja">CampaignServiceMaximizeConversionsBiddingSchemeオブジェクトは、コンバージョン単価の目標値の自動入札設定情報を表します。<br>
+
+
+------
+diff -ru v9/campaign/CampaignServiceSelector.yaml v10/campaign/CampaignServiceSelector.yaml
+--- v9/campaign/CampaignServiceSelector.yaml	2022-12-16 16:46:04.000000000 +0900
++++ v10/campaign/CampaignServiceSelector.yaml	2023-01-13 16:50:24.000000000 +0900
+@@ -35,8 +35,12 @@
+         ※指定しない場合は、フィルタ条件に すべてのキャンペーンが含まれます。</div>
+         <div lang="en">Search condition: Campaign ID<br>
+         * All campaign will return, if no campaign are not specified.</div>
+-    containsLabelId:
+-      $ref: 'CampaignServiceContainsLabelId.yaml#/CampaignServiceContainsLabelId'
++    containsLabel:
++      type: boolean
++      nullable: true
++      description: |
++        <div lang="ja">ラベルID取得フラグ</div>
++        <div lang="en">Flag of contains label ID</div>
+     labelIds:
+       type: array
+       nullable: true
+@@ -47,9 +51,9 @@
+       maxItems: 1000
+       description: |
+         <div lang="ja">検索条件：ラベルIDです。<br>
+-        ※labelIdsを指定する場合は、containsLabelIdをTRUEにする必要があります。</div>
++        ※labelIdsを指定した場合は、取得結果にcontainsLabelの情報が付与されます。</div>
+         <div lang="en">Search condition: Label ID.<br>
+-        *To specify labelIds, must be containsLabelId set TRUE.</div>
++        *When specified labelIds, containsLabel information is added to the result.</div>
+     numberResults:
+       type: integer
+       nullable: true
+Only in v9/campaignexport: CampaignExportServiceAddJobResponse.yaml
+Only in v10/campaignexport: CampaignExportServiceAddResponse.yaml
+
+
+------
+diff -ru v9/conversiontracker/ConversionTrackerServiceAppPostbackUrl.yaml v10/conversiontracker/ConversionTrackerServiceAppPostbackUrl.yaml
+--- v9/conversiontracker/ConversionTrackerServiceAppPostbackUrl.yaml	2022-09-15 21:21:13.000000000 +0900
++++ v10/conversiontracker/ConversionTrackerServiceAppPostbackUrl.yaml	2022-12-12 13:16:50.000000000 +0900
+@@ -2,8 +2,8 @@
+   type: object
+   nullable: true
+   properties:
+-    appPostbackUrlClearFlag:
+-      $ref: 'ConversionTrackerServiceAppPostbackUrlClearFlag.yaml#/ConversionTrackerServiceAppPostbackUrlClearFlag'
++    isRemoveUrl:
++      $ref: 'ConversionTrackerServiceIsRemoveUrl.yaml#/ConversionTrackerServiceIsRemoveUrl'
+     url:
+       type: string
+       nullable: true
+Only in v9/conversiontracker: ConversionTrackerServiceAppPostbackUrlClearFlag.yaml
+Only in v10/conversiontracker: ConversionTrackerServiceIsRemoveUrl.yaml
+
+
+------
+diff -ru v9/conversiontracker/ConversionTrackerServicePage.yaml v10/conversiontracker/ConversionTrackerServicePage.yaml
+--- v9/conversiontracker/ConversionTrackerServicePage.yaml	2023-01-13 16:50:24.000000000 +0900
++++ v10/conversiontracker/ConversionTrackerServicePage.yaml	2023-01-13 16:50:24.000000000 +0900
+@@ -42,5 +42,5 @@
+         $ref: 'ConversionTrackerServiceValue.yaml#/ConversionTrackerServiceValue'
+   title: ConversionTrackerServicePage
+   description: |
+-    <div lang="ja">ConversionTrackerServicePageオブジェクトは、取得されるコンバージョン設定のエントリーを表しますす。</div>
++    <div lang="ja">ConversionTrackerServicePageオブジェクトは、取得されるコンバージョン設定のエントリーを表します。</div>
+     <div lang="en">ConversionTrackerServicePage object shows entry of ConversionTracker.</div>
+
+
+------
+diff -ru v9/label/LabelServiceSelector.yaml v10/label/LabelServiceSelector.yaml
+--- v9/label/LabelServiceSelector.yaml	2022-09-15 21:21:13.000000000 +0900
++++ v10/label/LabelServiceSelector.yaml	2022-12-16 16:46:04.000000000 +0900
+@@ -30,7 +30,7 @@
+       format: int32
+       minimum: 1
+       maximum: 2000
+-      default: 500
++      default: 2000
+       description: |
+         <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div>
+         <div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1. Also see Entity Limits per operation.</div>
+
+
+------
+diff -ru v9/pagefeedassetset/PageFeedAssetSet.yaml v10/pagefeedassetset/PageFeedAssetSet.yaml
+--- v9/pagefeedassetset/PageFeedAssetSet.yaml	2022-12-12 13:16:44.000000000 +0900
++++ v10/pagefeedassetset/PageFeedAssetSet.yaml	2022-12-12 13:16:44.000000000 +0900
+@@ -11,17 +11,6 @@
+         このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
+         <div lang="en">Account ID.<br>
+         Although this field will be returned in the response, it will be ignored on input.</div>
+-    feedId:
+-      type: integer
+-      nullable: true
+-      format: int64
+-      description: |
+-        <div lang="ja">フィードIDです。<br>
+-        旧形式から自動移行されたページフィードの場合、旧形式のページフィードのIDが返却されます。<br>
+-        ※現在、こちらのフィールドは返却されません。</div>
+-        <div lang="en">Feed ID.<br>
+-        If the page feed is auto-migrated, the old-style page feed ID will be returned.<br>
+-        *Currently this field will not be returned.</div>
+     pageFeedAssetSetId:
+       type: integer
+       nullable: true
+
+
+------
+diff -ru v9/pagefeedassetset/PageFeedAssetSetServiceSelector.yaml v10/pagefeedassetset/PageFeedAssetSetServiceSelector.yaml
+--- v9/pagefeedassetset/PageFeedAssetSetServiceSelector.yaml	2022-09-15 21:21:13.000000000 +0900
++++ v10/pagefeedassetset/PageFeedAssetSetServiceSelector.yaml	2022-12-12 13:16:44.000000000 +0900
+@@ -11,19 +11,6 @@
+       description: |
+         <div lang="ja">アカウントIDです。</div>
+         <div lang="en">Account ID.</div>
+-    feedIds:
+-      type: array
+-      nullable: true
+-      items:
+-        type: integer
+-        nullable: true
+-        format: int64
+-      maxItems: 1000
+-      description: |
+-        <div lang="ja">フィードIDです。<br>
+-        旧形式のページフィードです。旧形式から自動移行されたページフィードを検索します。</div>
+-        <div lang="en">Feed ID.<br>
+-        It is in the previous format and searches the migrated page feeds.</div>
+     pageFeedAssetSetIds:
+       type: array
+       nullable: true
+Only in v9/pagefeeditem: PageFeedItemServiceAddDownloadJobResponse.yaml
+Only in v10/pagefeeditem: PageFeedItemServiceAddResponse.yaml
+
+
+------
+diff -ru v9/reportdefinition/ReportDefinition.yaml v10/reportdefinition/ReportDefinition.yaml
+--- v9/reportdefinition/ReportDefinition.yaml	2022-09-15 21:21:13.000000000 +0900
++++ v10/reportdefinition/ReportDefinition.yaml	2022-12-12 13:16:50.000000000 +0900
+@@ -87,12 +87,14 @@
+       type: string
+       nullable: true
+       description: |
+-        <div lang="ja">ジョブの起動時刻です。<br>
+-        ※YYYY/MM/DD hh:mm:ss形式になります。<br>
+-        ※hhは24時間表記になります。</div>
+-        <div lang="en">Start time of Report Job request.<br>
+-        *Displays in YYYY/MM/DD hh:mm:ss form.<br>
+-        *hh will display in 24-hour time.</div>
++        <div lang="ja">リクエストの到着日時です。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
++        ※フォーマット: yyyy/MM/dd HH:mm:ss<br>
++        ※HHは24時間表記になります。</div>
++        <div lang="en">Arrival date and time of your request.<br>
++        Although this field will be returned in the response, it will be ignored on input.<br>
++        *Format: yyyy/MM/dd HH:mm:ss
++        *HH will display in 24-hour time.</div>
+     sortFields:
+       type: array
+       nullable: true
+
+
+------
+diff -ru v9/reportdefinition/ReportDefinitionServiceReportFieldAttribute.yaml v10/reportdefinition/ReportDefinitionServiceReportFieldAttribute.yaml
+--- v9/reportdefinition/ReportDefinitionServiceReportFieldAttribute.yaml	2022-09-15 21:21:13.000000000 +0900
++++ v10/reportdefinition/ReportDefinitionServiceReportFieldAttribute.yaml	2022-12-12 13:16:50.000000000 +0900
+@@ -2,13 +2,13 @@
+   type: object
+   nullable: true
+   properties:
+-    canFilter:
++    filterable:
+       type: boolean
+       nullable: true
+       description: |
+         <div lang="ja">ユーザーがこのフィールドにフィルタを 適用できるかどうかを示します。</div>
+         <div lang="en">Indicate if use can filter the fields.</div>
+-    canSelect:
++    selectable:
+       type: boolean
+       nullable: true
+       description: |
+
+
+------
+diff -ru v9/retargetinglist/RetargetingListServiceRuleBaseTargetList.yaml v10/retargetinglist/RetargetingListServiceRuleBaseTargetList.yaml
+--- v9/retargetinglist/RetargetingListServiceRuleBaseTargetList.yaml	2023-02-13 16:20:43.000000000 +0900
++++ v10/retargetinglist/RetargetingListServiceRuleBaseTargetList.yaml	2023-02-13 16:20:42.000000000 +0900
+@@ -7,9 +7,9 @@
+       nullable: true
+       description: |
+         <div lang="ja">ルール適用終了日です。<br>
++        ※このフィールドの追加と編集は廃止され、現在設定できません。<br>
+         ※YYYYMMDD形式です。<br>
+-        ※リクエスト日は2037/12/30まで 指定可能です。<br>
+-        ※このフィールドの追加と編集は廃止され、現在設定できません。</div>
++        ※リクエスト日は2037/12/30まで 指定可能です。</div>
+         <div lang="en">End date of rule setting.<br>
+         *In YYYYMMDD format<br>
+         *Request date can be set up to 2037/12/30<br>
