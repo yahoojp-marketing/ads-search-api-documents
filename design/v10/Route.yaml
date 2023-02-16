@@ -2328,7 +2328,7 @@ paths:
           $ref: '../Response401.yaml#/Response401'
         400:
           $ref: '../Response400.yaml#/Response400'
-  /AuditLogService/addJob:
+  /AuditLogService/add:
     post:
       description: |
         <div lang="ja">操作履歴ファイルをダウンロードするためのジョブを登録します。</div>
@@ -5468,7 +5468,7 @@ paths:
           $ref: '../Response401.yaml#/Response401'
         400:
           $ref: '../Response400.yaml#/Response400'
-  /PageFeedItemService/addDownloadJob:
+  /PageFeedItemService/add:
     post:
       description: |
         <div lang="ja">登録されているページフィードアイテムを一括でダウンロードするためジョブを登録します。<br>
@@ -6222,7 +6222,7 @@ paths:
           $ref: '../Response401.yaml#/Response401'
         400:
           $ref: '../Response400.yaml#/Response400'
-  /CampaignExportService/addJob:
+  /CampaignExportService/add:
     post:
       description: |
         <div lang="ja">エクスポートの登録を実施します。</div>
