@@ -2,8 +2,8 @@
 
 ------
 diff -ru v9/Route.yaml v10/Route.yaml
---- v9/Route.yaml	2023-01-13 16:50:24.000000000 +0900
-+++ v10/Route.yaml	2023-02-13 16:20:42.000000000 +0900
+--- v9/Route.yaml	2023-02-01 12:28:51.000000000 +0900
++++ v10/Route.yaml	2023-02-16 12:52:37.000000000 +0900
 @@ -1,11 +1,11 @@
  openapi: 3.0.2
  info:
@@ -82,6 +82,15 @@ diff -ru v9/Route.yaml v10/Route.yaml
                </tbody>
              </table>
              </div>
+@@ -2327,7 +2328,7 @@
+           $ref: '../Response401.yaml#/Response401'
+         400:
+           $ref: '../Response400.yaml#/Response400'
+-  /AuditLogService/addJob:
++  /AuditLogService/add:
+     post:
+       description: |
+         <div lang="ja">操作履歴ファイルをダウンロードするためのジョブを登録します。</div>
 @@ -2372,7 +2373,7 @@
            content:
              application/json:
@@ -104,8 +113,12 @@ diff -ru v9/Route.yaml v10/Route.yaml
        tags:
          - PageFeedItemService
        requestBody:
-@@ -5468,8 +5471,10 @@
-   /PageFeedItemService/addDownloadJob:
+@@ -5465,11 +5468,13 @@
+           $ref: '../Response401.yaml#/Response401'
+         400:
+           $ref: '../Response400.yaml#/Response400'
+-  /PageFeedItemService/addDownloadJob:
++  /PageFeedItemService/add:
      post:
        description: |
 -        <div lang="ja">登録されているページフィードアイテムを一括でダウンロードするためジョブを登録します。</div>
@@ -126,6 +139,15 @@ diff -ru v9/Route.yaml v10/Route.yaml
          403:
            $ref: '../Response403.yaml#/Response403'
          401:
+@@ -6217,7 +6222,7 @@
+           $ref: '../Response401.yaml#/Response401'
+         400:
+           $ref: '../Response400.yaml#/Response400'
+-  /CampaignExportService/addJob:
++  /CampaignExportService/add:
+     post:
+       description: |
+         <div lang="ja">エクスポートの登録を実施します。</div>
 @@ -6262,7 +6267,7 @@
            content:
              application/json:
@@ -165,8 +187,8 @@ diff -ru v9/Route.yaml v10/Route.yaml
 
 ------
 diff -ru v9/account/AccountServiceSelector.yaml v10/account/AccountServiceSelector.yaml
---- v9/account/AccountServiceSelector.yaml	2022-09-15 21:21:13.000000000 +0900
-+++ v10/account/AccountServiceSelector.yaml	2022-12-12 13:16:50.000000000 +0900
+--- v9/account/AccountServiceSelector.yaml	2023-02-16 12:53:14.000000000 +0900
++++ v10/account/AccountServiceSelector.yaml	2023-02-16 12:53:14.000000000 +0900
 @@ -9,7 +9,7 @@
          type: integer
          nullable: true
@@ -191,8 +213,8 @@ diff -ru v9/account/AccountServiceSelector.yaml v10/account/AccountServiceSelect
 
 ------
 diff -ru v9/adgroup/AdGroup.yaml v10/adgroup/AdGroup.yaml
---- v9/adgroup/AdGroup.yaml	2022-10-21 18:01:24.000000000 +0900
-+++ v10/adgroup/AdGroup.yaml	2022-12-16 16:46:04.000000000 +0900
+--- v9/adgroup/AdGroup.yaml	2023-02-16 12:53:14.000000000 +0900
++++ v10/adgroup/AdGroup.yaml	2023-02-16 12:53:14.000000000 +0900
 @@ -11,6 +11,8 @@
          このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
          <div lang="en">Account ID.<br>
@@ -271,8 +293,8 @@ Only in v10/adgroup: AdGroupServiceMaximizeConversionsBiddingScheme.yaml
 
 ------
 diff -ru v9/adgroup/AdGroupServiceSelector.yaml v10/adgroup/AdGroupServiceSelector.yaml
---- v9/adgroup/AdGroupServiceSelector.yaml	2022-12-16 16:46:04.000000000 +0900
-+++ v10/adgroup/AdGroupServiceSelector.yaml	2023-01-13 16:50:24.000000000 +0900
+--- v9/adgroup/AdGroupServiceSelector.yaml	2023-02-16 12:53:14.000000000 +0900
++++ v10/adgroup/AdGroupServiceSelector.yaml	2023-02-16 12:53:14.000000000 +0900
 @@ -44,8 +44,12 @@
        description: |
          <div lang="ja">検索条件：キャンペーンID</div>
@@ -306,8 +328,8 @@ Only in v10/adgroup: AdGroupServiceTargetRoasBiddingScheme.yaml
 
 ------
 diff -ru v9/adgroupad/AdGroupAdServiceAd.yaml v10/adgroupad/AdGroupAdServiceAd.yaml
---- v9/adgroupad/AdGroupAdServiceAd.yaml	2022-10-21 18:01:24.000000000 +0900
-+++ v10/adgroupad/AdGroupAdServiceAd.yaml	2023-02-13 16:20:42.000000000 +0900
+--- v9/adgroupad/AdGroupAdServiceAd.yaml	2023-02-16 12:53:14.000000000 +0900
++++ v10/adgroupad/AdGroupAdServiceAd.yaml	2023-02-16 12:53:14.000000000 +0900
 @@ -4,14 +4,16 @@
    properties:
      adType:
@@ -436,8 +458,8 @@ diff -ru v9/adgroupad/AdGroupAdServiceAd.yaml v10/adgroupad/AdGroupAdServiceAd.y
 
 ------
 diff -ru v9/adgroupad/AdGroupAdServiceAdType.yaml v10/adgroupad/AdGroupAdServiceAdType.yaml
---- v9/adgroupad/AdGroupAdServiceAdType.yaml	2022-12-12 13:16:44.000000000 +0900
-+++ v10/adgroupad/AdGroupAdServiceAdType.yaml	2023-02-13 16:20:42.000000000 +0900
+--- v9/adgroupad/AdGroupAdServiceAdType.yaml	2023-02-16 12:53:14.000000000 +0900
++++ v10/adgroupad/AdGroupAdServiceAdType.yaml	2023-02-16 12:53:14.000000000 +0900
 @@ -11,8 +11,10 @@
    title: AdGroupAdServiceAdType
    description: |
@@ -455,8 +477,8 @@ diff -ru v9/adgroupad/AdGroupAdServiceAdType.yaml v10/adgroupad/AdGroupAdService
 
 ------
 diff -ru v9/adgroupad/AdGroupAdServiceAppAd.yaml v10/adgroupad/AdGroupAdServiceAppAd.yaml
---- v9/adgroupad/AdGroupAdServiceAppAd.yaml	2022-09-15 21:21:13.000000000 +0900
-+++ v10/adgroupad/AdGroupAdServiceAppAd.yaml	2022-12-16 16:46:04.000000000 +0900
+--- v9/adgroupad/AdGroupAdServiceAppAd.yaml	2023-02-16 12:53:14.000000000 +0900
++++ v10/adgroupad/AdGroupAdServiceAppAd.yaml	2023-02-16 12:53:14.000000000 +0900
 @@ -12,6 +12,22 @@
          *Automatically set for Mobile app campaign.</div>
      appStore:
@@ -484,8 +506,8 @@ diff -ru v9/adgroupad/AdGroupAdServiceAppAd.yaml v10/adgroupad/AdGroupAdServiceA
 
 ------
 diff -ru v9/adgroupad/AdGroupAdServiceApprovalStatus.yaml v10/adgroupad/AdGroupAdServiceApprovalStatus.yaml
---- v9/adgroupad/AdGroupAdServiceApprovalStatus.yaml	2022-09-15 21:21:13.000000000 +0900
-+++ v10/adgroupad/AdGroupAdServiceApprovalStatus.yaml	2022-12-12 13:16:44.000000000 +0900
+--- v9/adgroupad/AdGroupAdServiceApprovalStatus.yaml	2023-02-16 12:53:14.000000000 +0900
++++ v10/adgroupad/AdGroupAdServiceApprovalStatus.yaml	2023-02-16 12:53:14.000000000 +0900
 @@ -18,13 +18,13 @@
        <dt class="term__item">APPROVED</dt>
        <dd class="term__desc"><span lang="ja">承認済です。</span><span lang="en">The item is approved</span></dd>
@@ -509,8 +531,8 @@ Only in v9/adgroupad: AdGroupAdServiceContainsLabelId.yaml
 
 ------
 diff -ru v9/adgroupad/AdGroupAdServiceCustomParameter.yaml v10/adgroupad/AdGroupAdServiceCustomParameter.yaml
---- v9/adgroupad/AdGroupAdServiceCustomParameter.yaml	2022-09-15 21:21:13.000000000 +0900
-+++ v10/adgroupad/AdGroupAdServiceCustomParameter.yaml	2023-02-13 16:20:42.000000000 +0900
+--- v9/adgroupad/AdGroupAdServiceCustomParameter.yaml	2023-02-16 12:53:14.000000000 +0900
++++ v10/adgroupad/AdGroupAdServiceCustomParameter.yaml	2023-02-16 12:53:14.000000000 +0900
 @@ -7,13 +7,13 @@
        nullable: true
        description: |
@@ -531,8 +553,8 @@ diff -ru v9/adgroupad/AdGroupAdServiceCustomParameter.yaml v10/adgroupad/AdGroup
 
 ------
 diff -ru v9/adgroupad/AdGroupAdServiceCustomParameters.yaml v10/adgroupad/AdGroupAdServiceCustomParameters.yaml
---- v9/adgroupad/AdGroupAdServiceCustomParameters.yaml	2022-09-15 21:21:13.000000000 +0900
-+++ v10/adgroupad/AdGroupAdServiceCustomParameters.yaml	2023-02-13 16:20:42.000000000 +0900
+--- v9/adgroupad/AdGroupAdServiceCustomParameters.yaml	2023-02-16 12:53:14.000000000 +0900
++++ v10/adgroupad/AdGroupAdServiceCustomParameters.yaml	2023-02-16 12:53:14.000000000 +0900
 @@ -11,7 +11,9 @@
          $ref: 'AdGroupAdServiceCustomParameter.yaml#/AdGroupAdServiceCustomParameter'
    title: AdGroupAdServiceCustomParameters
@@ -550,8 +572,8 @@ diff -ru v9/adgroupad/AdGroupAdServiceCustomParameters.yaml v10/adgroupad/AdGrou
 
 ------
 diff -ru v9/adgroupad/AdGroupAdServiceDescriptionTextAsset.yaml v10/adgroupad/AdGroupAdServiceDescriptionTextAsset.yaml
---- v9/adgroupad/AdGroupAdServiceDescriptionTextAsset.yaml	2022-12-12 13:16:44.000000000 +0900
-+++ v10/adgroupad/AdGroupAdServiceDescriptionTextAsset.yaml	2023-02-13 16:20:42.000000000 +0900
+--- v9/adgroupad/AdGroupAdServiceDescriptionTextAsset.yaml	2023-02-16 12:53:14.000000000 +0900
++++ v10/adgroupad/AdGroupAdServiceDescriptionTextAsset.yaml	2023-02-16 12:53:14.000000000 +0900
 @@ -10,8 +10,10 @@
          <div lang="en">Text of parameter.<br>This field is required in ADD operation, and will be ignored in SET operation.</div>
      pinnedField:
@@ -579,8 +601,8 @@ diff -ru v9/adgroupad/AdGroupAdServiceDescriptionTextAsset.yaml v10/adgroupad/Ad
 
 ------
 diff -ru v9/adgroupad/AdGroupAdServiceDynamicSearchLinkedAd.yaml v10/adgroupad/AdGroupAdServiceDynamicSearchLinkedAd.yaml
---- v9/adgroupad/AdGroupAdServiceDynamicSearchLinkedAd.yaml	2022-09-15 21:21:13.000000000 +0900
-+++ v10/adgroupad/AdGroupAdServiceDynamicSearchLinkedAd.yaml	2022-12-16 16:46:04.000000000 +0900
+--- v9/adgroupad/AdGroupAdServiceDynamicSearchLinkedAd.yaml	2023-02-16 12:53:14.000000000 +0900
++++ v10/adgroupad/AdGroupAdServiceDynamicSearchLinkedAd.yaml	2023-02-16 12:53:14.000000000 +0900
 @@ -2,6 +2,14 @@
    type: object
    nullable: true
@@ -600,8 +622,8 @@ diff -ru v9/adgroupad/AdGroupAdServiceDynamicSearchLinkedAd.yaml v10/adgroupad/A
 
 ------
 diff -ru v9/adgroupad/AdGroupAdServiceExtendedTextAd.yaml v10/adgroupad/AdGroupAdServiceExtendedTextAd.yaml
---- v9/adgroupad/AdGroupAdServiceExtendedTextAd.yaml	2022-09-15 21:21:13.000000000 +0900
-+++ v10/adgroupad/AdGroupAdServiceExtendedTextAd.yaml	2022-12-16 16:46:04.000000000 +0900
+--- v9/adgroupad/AdGroupAdServiceExtendedTextAd.yaml	2023-02-16 12:53:14.000000000 +0900
++++ v10/adgroupad/AdGroupAdServiceExtendedTextAd.yaml	2023-02-16 12:53:14.000000000 +0900
 @@ -2,6 +2,14 @@
    type: object
    nullable: true
@@ -636,8 +658,8 @@ diff -ru v9/adgroupad/AdGroupAdServiceExtendedTextAd.yaml v10/adgroupad/AdGroupA
 
 ------
 diff -ru v9/adgroupad/AdGroupAdServiceHeadlineTextAsset.yaml v10/adgroupad/AdGroupAdServiceHeadlineTextAsset.yaml
---- v9/adgroupad/AdGroupAdServiceHeadlineTextAsset.yaml	2022-12-12 13:16:44.000000000 +0900
-+++ v10/adgroupad/AdGroupAdServiceHeadlineTextAsset.yaml	2023-02-13 16:20:42.000000000 +0900
+--- v9/adgroupad/AdGroupAdServiceHeadlineTextAsset.yaml	2023-02-16 12:53:14.000000000 +0900
++++ v10/adgroupad/AdGroupAdServiceHeadlineTextAsset.yaml	2023-02-16 12:53:14.000000000 +0900
 @@ -10,8 +10,10 @@
          <div lang="en">Text of parameter.<br>This field is required in ADD operation, and will be ignored in SET operation.</div>
      pinnedField:
@@ -665,8 +687,8 @@ diff -ru v9/adgroupad/AdGroupAdServiceHeadlineTextAsset.yaml v10/adgroupad/AdGro
 
 ------
 diff -ru v9/adgroupad/AdGroupAdServiceIsRemove.yaml v10/adgroupad/AdGroupAdServiceIsRemove.yaml
---- v9/adgroupad/AdGroupAdServiceIsRemove.yaml	2022-09-15 21:21:13.000000000 +0900
-+++ v10/adgroupad/AdGroupAdServiceIsRemove.yaml	2023-02-13 16:20:42.000000000 +0900
+--- v9/adgroupad/AdGroupAdServiceIsRemove.yaml	2023-02-16 12:53:14.000000000 +0900
++++ v10/adgroupad/AdGroupAdServiceIsRemove.yaml	2023-02-16 12:53:14.000000000 +0900
 @@ -7,15 +7,23 @@
    - UNKNOWN
    title: AdGroupAdServiceIsRemove
@@ -701,8 +723,8 @@ diff -ru v9/adgroupad/AdGroupAdServiceIsRemove.yaml v10/adgroupad/AdGroupAdServi
 
 ------
 diff -ru v9/adgroupad/AdGroupAdServiceResponsiveSearchAd.yaml v10/adgroupad/AdGroupAdServiceResponsiveSearchAd.yaml
---- v9/adgroupad/AdGroupAdServiceResponsiveSearchAd.yaml	2022-09-15 21:21:13.000000000 +0900
-+++ v10/adgroupad/AdGroupAdServiceResponsiveSearchAd.yaml	2023-02-13 16:20:42.000000000 +0900
+--- v9/adgroupad/AdGroupAdServiceResponsiveSearchAd.yaml	2023-02-16 12:53:14.000000000 +0900
++++ v10/adgroupad/AdGroupAdServiceResponsiveSearchAd.yaml	2023-02-16 12:53:14.000000000 +0900
 @@ -7,11 +7,25 @@
        nullable: true
        items:
@@ -800,8 +822,8 @@ diff -ru v9/adgroupad/AdGroupAdServiceResponsiveSearchAd.yaml v10/adgroupad/AdGr
 
 ------
 diff -ru v9/adgroupad/AdGroupAdServiceSelector.yaml v10/adgroupad/AdGroupAdServiceSelector.yaml
---- v9/adgroupad/AdGroupAdServiceSelector.yaml	2022-12-16 16:46:04.000000000 +0900
-+++ v10/adgroupad/AdGroupAdServiceSelector.yaml	2023-01-13 16:50:24.000000000 +0900
+--- v9/adgroupad/AdGroupAdServiceSelector.yaml	2023-02-16 12:53:14.000000000 +0900
++++ v10/adgroupad/AdGroupAdServiceSelector.yaml	2023-02-16 12:53:14.000000000 +0900
 @@ -2,7 +2,7 @@
    type: object
    nullable: true
@@ -896,8 +918,8 @@ diff -ru v9/adgroupad/AdGroupAdServiceSelector.yaml v10/adgroupad/AdGroupAdServi
 
 ------
 diff -ru v9/adgroupad/AdGroupAdServiceTextAd2.yaml v10/adgroupad/AdGroupAdServiceTextAd2.yaml
---- v9/adgroupad/AdGroupAdServiceTextAd2.yaml	2022-09-15 21:21:13.000000000 +0900
-+++ v10/adgroupad/AdGroupAdServiceTextAd2.yaml	2022-12-16 16:46:04.000000000 +0900
+--- v9/adgroupad/AdGroupAdServiceTextAd2.yaml	2023-02-16 12:53:14.000000000 +0900
++++ v10/adgroupad/AdGroupAdServiceTextAd2.yaml	2023-02-16 12:53:14.000000000 +0900
 @@ -2,6 +2,22 @@
    type: object
    nullable: true
@@ -922,58 +944,15 @@ diff -ru v9/adgroupad/AdGroupAdServiceTextAd2.yaml v10/adgroupad/AdGroupAdServic
        type: string
        nullable: true
 Only in v10/adgroupad: AdGroupAdServiceTextAssetActiveStatus.yaml
-
-
-------
-diff -ru v9/adgroupad/AdGroupAdServiceTextAssetApprovalStatus.yaml v10/adgroupad/AdGroupAdServiceTextAssetApprovalStatus.yaml
---- v9/adgroupad/AdGroupAdServiceTextAssetApprovalStatus.yaml	2022-09-15 21:21:13.000000000 +0900
-+++ v10/adgroupad/AdGroupAdServiceTextAssetApprovalStatus.yaml	2023-01-24 21:29:55.000000000 +0900
-@@ -2,23 +2,29 @@
-   type: string
-   nullable: true
-   enum:
--    - APPROVED
--    - REVIEW
--    - PRE_DISAPPROVED
--    - UNKNOWN
-+  - APPROVED
-+  - APPROVED_WITH_REVIEW
-+  - REVIEW
-+  - PRE_DISAPPROVED
-+  - POST_DISAPPROVED
-+  - UNKNOWN
-   title: AdGroupAdServiceTextAssetApprovalStatus
-   description: |
--    <div lang="ja">AdGroupAdServiceTextAssetApprovalStatusは、審査状況を表します。<br>
-+    <div lang="ja">AdGroupAdServiceApprovalStatusは、審査状況を表します。<br>
-     このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
--    <div lang="en">AdGroupAdServiceTextAssetApprovalStatus displays Editorial Status.<br>
-+    <div lang="en">AdGroupAdServiceApprovalStatus displays Editorial Status.<br>
-     Although this field will be returned in the response, it will be ignored on input.</div>
-     <dl class=term>
-       <dt class="term__item">APPROVED</dt>
-       <dd class="term__desc"><span lang="ja">承認済です。</span><span lang="en">The item is approved</span></dd>
-+      <dt class="term__item">APPROVED_WITH_REVIEW</dt>
-+      <dd class="term__desc"><span lang="ja">承認済です。<br>すでに掲載中のキーワード・広告・広告テキストアセットを再編集し、審査中となり、編集前のキーワード・広告・広告テキストアセットが掲載されています。</span><span lang="en">The item is approved<br>Updated items are under review</span></dd>
-       <dt class="term__item">REVIEW</dt>
--      <dd class="term__desc"><span lang="ja">審査中です。<br>新しく追加した広告テキストアセットが審査中となり、広告テキストアセットは未掲載です。</span><span lang="en">Under editorial review<br>Newly added ad text asset are under review, and not displayed yet</span></dd>
-+      <dd class="term__desc"><span lang="ja">審査中です。<br>新しく追加したキーワード・広告・広告テキストアセットが審査中となり、キーワード・広告・広告テキストアセットは未掲載です。</span><span lang="en">Under editorial review<br>Newly added items are under review, and not displayed yet</span></dd>
-       <dt class="term__item">PRE_DISAPPROVED</dt>
--      <dd class="term__desc"><span lang="ja">掲載不可です。<br>新しく追加した広告テキストアセットが審査で承認されず非掲載です。</span><span lang="en">The item was rejected<br>Newly added ad text asset have been rejected, so it cannot be displayed</span></dd>
-+      <dd class="term__desc"><span lang="ja">掲載不可です。<br>新しく追加したキーワード・広告・広告テキストアセットが審査で承認されず非掲載です。</span><span lang="en">The item was rejected<br>Newly added items have been rejected, so it cannot be displayed</span></dd>
-+      <dt class="term__item">POST_DISAPPROVED</dt>
-+      <dd class="term__desc"><span lang="ja">掲載停止です。<br>すでに掲載中のキーワード・広告・広告テキストアセットについて審査が行われた結果、承認されず非掲載です。</span><span lang="en">The item was rejected<br>Ads already displayed have been taken offline due to a result from post review</span></dd>
-       <dt class="term__item">UNKNOWN</dt>
-       <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
-     </dl>
+Only in v9/adgroupad: AdGroupAdServiceTextAssetApprovalStatus.yaml
 Only in v9/auditlog: AuditLogServiceAddJobResponse.yaml
 Only in v10/auditlog: AuditLogServiceAddResponse.yaml
 
 
 ------
 diff -ru v9/auditlog/AuditLogServiceEventSelector.yaml v10/auditlog/AuditLogServiceEventSelector.yaml
---- v9/auditlog/AuditLogServiceEventSelector.yaml	2022-09-15 21:21:14.000000000 +0900
-+++ v10/auditlog/AuditLogServiceEventSelector.yaml	2022-12-12 13:16:44.000000000 +0900
+--- v9/auditlog/AuditLogServiceEventSelector.yaml	2023-02-16 12:53:14.000000000 +0900
++++ v10/auditlog/AuditLogServiceEventSelector.yaml	2023-02-16 12:53:14.000000000 +0900
 @@ -90,6 +90,8 @@
    title: AuditLogServiceEventSelector
    description: |
@@ -989,8 +968,8 @@ diff -ru v9/auditlog/AuditLogServiceEventSelector.yaml v10/auditlog/AuditLogServ
 
 ------
 diff -ru v9/auditlog/AuditLogServiceJob.yaml v10/auditlog/AuditLogServiceJob.yaml
---- v9/auditlog/AuditLogServiceJob.yaml	2022-09-15 21:21:14.000000000 +0900
-+++ v10/auditlog/AuditLogServiceJob.yaml	2022-12-12 13:16:44.000000000 +0900
+--- v9/auditlog/AuditLogServiceJob.yaml	2023-02-16 12:53:14.000000000 +0900
++++ v10/auditlog/AuditLogServiceJob.yaml	2023-02-16 12:53:14.000000000 +0900
 @@ -1,8 +1,6 @@
  AuditLogServiceJob:
    type: object
@@ -1013,8 +992,8 @@ diff -ru v9/auditlog/AuditLogServiceJob.yaml v10/auditlog/AuditLogServiceJob.yam
 
 ------
 diff -ru v9/budgetorder/BudgetOrderServiceSelector.yaml v10/budgetorder/BudgetOrderServiceSelector.yaml
---- v9/budgetorder/BudgetOrderServiceSelector.yaml	2022-09-15 21:21:13.000000000 +0900
-+++ v10/budgetorder/BudgetOrderServiceSelector.yaml	2022-12-16 16:46:04.000000000 +0900
+--- v9/budgetorder/BudgetOrderServiceSelector.yaml	2023-02-16 12:53:14.000000000 +0900
++++ v10/budgetorder/BudgetOrderServiceSelector.yaml	2023-02-16 12:53:14.000000000 +0900
 @@ -12,7 +12,7 @@
          nullable: false
          format: int64
@@ -1039,8 +1018,8 @@ diff -ru v9/budgetorder/BudgetOrderServiceSelector.yaml v10/budgetorder/BudgetOr
 
 ------
 diff -ru v9/campaign/Campaign.yaml v10/campaign/Campaign.yaml
---- v9/campaign/Campaign.yaml	2022-09-15 21:21:13.000000000 +0900
-+++ v10/campaign/Campaign.yaml	2022-12-16 16:46:04.000000000 +0900
+--- v9/campaign/Campaign.yaml	2023-02-16 12:53:14.000000000 +0900
++++ v10/campaign/Campaign.yaml	2023-02-16 12:53:14.000000000 +0900
 @@ -21,8 +21,8 @@
          <div lang="en">App ID (for iOS) or Package name (for Android).<br>
          *Input only the numbers for iOS in Mobile App Campaign.<br>
@@ -1058,8 +1037,8 @@ Only in v9/campaign: CampaignServiceAppStore.yaml
 
 ------
 diff -ru v9/campaign/CampaignServiceBudget.yaml v10/campaign/CampaignServiceBudget.yaml
---- v9/campaign/CampaignServiceBudget.yaml	2022-09-15 21:21:13.000000000 +0900
-+++ v10/campaign/CampaignServiceBudget.yaml	2022-12-16 16:46:04.000000000 +0900
+--- v9/campaign/CampaignServiceBudget.yaml	2023-02-16 12:53:14.000000000 +0900
++++ v10/campaign/CampaignServiceBudget.yaml	2023-02-16 12:53:14.000000000 +0900
 @@ -11,8 +11,6 @@
          このフィールドは、ADD時は必須となり、SET時は省略可能となります。</div>
          <div lang="en">Amount of budget of Campaign.<br>
@@ -1076,8 +1055,8 @@ Only in v9/campaign: CampaignServiceContainsLabelId.yaml
 
 ------
 diff -ru v9/campaign/CampaignServiceIsRemove.yaml v10/campaign/CampaignServiceIsRemove.yaml
---- v9/campaign/CampaignServiceIsRemove.yaml	2022-09-15 21:21:13.000000000 +0900
-+++ v10/campaign/CampaignServiceIsRemove.yaml	2023-01-13 16:50:24.000000000 +0900
+--- v9/campaign/CampaignServiceIsRemove.yaml	2023-02-16 12:53:14.000000000 +0900
++++ v10/campaign/CampaignServiceIsRemove.yaml	2023-02-16 12:53:14.000000000 +0900
 @@ -7,13 +7,21 @@
    - UNKNOWN
    title: CampaignServiceIsRemove
@@ -1108,8 +1087,8 @@ diff -ru v9/campaign/CampaignServiceIsRemove.yaml v10/campaign/CampaignServiceIs
 
 ------
 diff -ru v9/campaign/CampaignServiceMaximizeConversionValueBiddingScheme.yaml v10/campaign/CampaignServiceMaximizeConversionValueBiddingScheme.yaml
---- v9/campaign/CampaignServiceMaximizeConversionValueBiddingScheme.yaml	2022-12-12 13:16:44.000000000 +0900
-+++ v10/campaign/CampaignServiceMaximizeConversionValueBiddingScheme.yaml	2023-01-13 16:50:24.000000000 +0900
+--- v9/campaign/CampaignServiceMaximizeConversionValueBiddingScheme.yaml	2023-02-16 12:53:14.000000000 +0900
++++ v10/campaign/CampaignServiceMaximizeConversionValueBiddingScheme.yaml	2023-02-16 12:53:14.000000000 +0900
 @@ -12,6 +12,8 @@
          ※ROAS:Return On Advertising Spend</div>
          <div lang="en">Target ROAS (Return On Advertising Spend)<br>
@@ -1123,8 +1102,8 @@ diff -ru v9/campaign/CampaignServiceMaximizeConversionValueBiddingScheme.yaml v1
 
 ------
 diff -ru v9/campaign/CampaignServiceMaximizeConversionsBiddingScheme.yaml v10/campaign/CampaignServiceMaximizeConversionsBiddingScheme.yaml
---- v9/campaign/CampaignServiceMaximizeConversionsBiddingScheme.yaml	2022-09-15 21:21:13.000000000 +0900
-+++ v10/campaign/CampaignServiceMaximizeConversionsBiddingScheme.yaml	2023-01-13 16:50:24.000000000 +0900
+--- v9/campaign/CampaignServiceMaximizeConversionsBiddingScheme.yaml	2023-02-16 12:53:14.000000000 +0900
++++ v10/campaign/CampaignServiceMaximizeConversionsBiddingScheme.yaml	2023-02-16 12:53:14.000000000 +0900
 @@ -12,6 +12,8 @@
          ※日本円のみの設定です。</div>
          <div lang="en">Target CPA (JPY).<br>
@@ -1138,8 +1117,8 @@ diff -ru v9/campaign/CampaignServiceMaximizeConversionsBiddingScheme.yaml v10/ca
 
 ------
 diff -ru v9/campaign/CampaignServiceSelector.yaml v10/campaign/CampaignServiceSelector.yaml
---- v9/campaign/CampaignServiceSelector.yaml	2022-12-16 16:46:04.000000000 +0900
-+++ v10/campaign/CampaignServiceSelector.yaml	2023-01-13 16:50:24.000000000 +0900
+--- v9/campaign/CampaignServiceSelector.yaml	2023-02-16 12:53:14.000000000 +0900
++++ v10/campaign/CampaignServiceSelector.yaml	2023-02-16 12:53:14.000000000 +0900
 @@ -35,8 +35,12 @@
          ※指定しない場合は、フィルタ条件に すべてのキャンペーンが含まれます。</div>
          <div lang="en">Search condition: Campaign ID<br>
@@ -1173,8 +1152,8 @@ Only in v10/campaignexport: CampaignExportServiceAddResponse.yaml
 
 ------
 diff -ru v9/conversiontracker/ConversionTrackerServiceAppPostbackUrl.yaml v10/conversiontracker/ConversionTrackerServiceAppPostbackUrl.yaml
---- v9/conversiontracker/ConversionTrackerServiceAppPostbackUrl.yaml	2022-09-15 21:21:13.000000000 +0900
-+++ v10/conversiontracker/ConversionTrackerServiceAppPostbackUrl.yaml	2022-12-12 13:16:50.000000000 +0900
+--- v9/conversiontracker/ConversionTrackerServiceAppPostbackUrl.yaml	2023-02-16 12:53:14.000000000 +0900
++++ v10/conversiontracker/ConversionTrackerServiceAppPostbackUrl.yaml	2023-02-16 12:53:14.000000000 +0900
 @@ -2,8 +2,8 @@
    type: object
    nullable: true
@@ -1192,8 +1171,8 @@ Only in v10/conversiontracker: ConversionTrackerServiceIsRemoveUrl.yaml
 
 ------
 diff -ru v9/conversiontracker/ConversionTrackerServicePage.yaml v10/conversiontracker/ConversionTrackerServicePage.yaml
---- v9/conversiontracker/ConversionTrackerServicePage.yaml	2023-01-13 16:50:24.000000000 +0900
-+++ v10/conversiontracker/ConversionTrackerServicePage.yaml	2023-01-13 16:50:24.000000000 +0900
+--- v9/conversiontracker/ConversionTrackerServicePage.yaml	2023-02-16 12:53:14.000000000 +0900
++++ v10/conversiontracker/ConversionTrackerServicePage.yaml	2023-02-16 12:53:14.000000000 +0900
 @@ -42,5 +42,5 @@
          $ref: 'ConversionTrackerServiceValue.yaml#/ConversionTrackerServiceValue'
    title: ConversionTrackerServicePage
@@ -1205,8 +1184,8 @@ diff -ru v9/conversiontracker/ConversionTrackerServicePage.yaml v10/conversiontr
 
 ------
 diff -ru v9/label/LabelServiceSelector.yaml v10/label/LabelServiceSelector.yaml
---- v9/label/LabelServiceSelector.yaml	2022-09-15 21:21:13.000000000 +0900
-+++ v10/label/LabelServiceSelector.yaml	2022-12-16 16:46:04.000000000 +0900
+--- v9/label/LabelServiceSelector.yaml	2023-02-16 12:53:14.000000000 +0900
++++ v10/label/LabelServiceSelector.yaml	2023-02-16 12:53:14.000000000 +0900
 @@ -30,7 +30,7 @@
        format: int32
        minimum: 1
@@ -1220,8 +1199,8 @@ diff -ru v9/label/LabelServiceSelector.yaml v10/label/LabelServiceSelector.yaml
 
 ------
 diff -ru v9/pagefeedassetset/PageFeedAssetSet.yaml v10/pagefeedassetset/PageFeedAssetSet.yaml
---- v9/pagefeedassetset/PageFeedAssetSet.yaml	2022-12-12 13:16:44.000000000 +0900
-+++ v10/pagefeedassetset/PageFeedAssetSet.yaml	2022-12-12 13:16:44.000000000 +0900
+--- v9/pagefeedassetset/PageFeedAssetSet.yaml	2023-02-16 12:53:14.000000000 +0900
++++ v10/pagefeedassetset/PageFeedAssetSet.yaml	2023-02-16 12:53:14.000000000 +0900
 @@ -11,17 +11,6 @@
          このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
          <div lang="en">Account ID.<br>
@@ -1244,8 +1223,8 @@ diff -ru v9/pagefeedassetset/PageFeedAssetSet.yaml v10/pagefeedassetset/PageFeed
 
 ------
 diff -ru v9/pagefeedassetset/PageFeedAssetSetServiceSelector.yaml v10/pagefeedassetset/PageFeedAssetSetServiceSelector.yaml
---- v9/pagefeedassetset/PageFeedAssetSetServiceSelector.yaml	2022-09-15 21:21:13.000000000 +0900
-+++ v10/pagefeedassetset/PageFeedAssetSetServiceSelector.yaml	2022-12-12 13:16:44.000000000 +0900
+--- v9/pagefeedassetset/PageFeedAssetSetServiceSelector.yaml	2023-02-16 12:53:14.000000000 +0900
++++ v10/pagefeedassetset/PageFeedAssetSetServiceSelector.yaml	2023-02-16 12:53:14.000000000 +0900
 @@ -11,19 +11,6 @@
        description: |
          <div lang="ja">アカウントIDです。</div>
@@ -1272,8 +1251,8 @@ Only in v10/pagefeeditem: PageFeedItemServiceAddResponse.yaml
 
 ------
 diff -ru v9/reportdefinition/ReportDefinition.yaml v10/reportdefinition/ReportDefinition.yaml
---- v9/reportdefinition/ReportDefinition.yaml	2022-09-15 21:21:13.000000000 +0900
-+++ v10/reportdefinition/ReportDefinition.yaml	2022-12-12 13:16:50.000000000 +0900
+--- v9/reportdefinition/ReportDefinition.yaml	2023-02-16 12:53:14.000000000 +0900
++++ v10/reportdefinition/ReportDefinition.yaml	2023-02-16 12:53:14.000000000 +0900
 @@ -87,12 +87,14 @@
        type: string
        nullable: true
@@ -1299,8 +1278,8 @@ diff -ru v9/reportdefinition/ReportDefinition.yaml v10/reportdefinition/ReportDe
 
 ------
 diff -ru v9/reportdefinition/ReportDefinitionServiceReportFieldAttribute.yaml v10/reportdefinition/ReportDefinitionServiceReportFieldAttribute.yaml
---- v9/reportdefinition/ReportDefinitionServiceReportFieldAttribute.yaml	2022-09-15 21:21:13.000000000 +0900
-+++ v10/reportdefinition/ReportDefinitionServiceReportFieldAttribute.yaml	2022-12-12 13:16:50.000000000 +0900
+--- v9/reportdefinition/ReportDefinitionServiceReportFieldAttribute.yaml	2023-02-16 12:53:14.000000000 +0900
++++ v10/reportdefinition/ReportDefinitionServiceReportFieldAttribute.yaml	2023-02-16 12:53:14.000000000 +0900
 @@ -2,13 +2,13 @@
    type: object
    nullable: true
@@ -1321,8 +1300,8 @@ diff -ru v9/reportdefinition/ReportDefinitionServiceReportFieldAttribute.yaml v1
 
 ------
 diff -ru v9/retargetinglist/RetargetingListServiceRuleBaseTargetList.yaml v10/retargetinglist/RetargetingListServiceRuleBaseTargetList.yaml
---- v9/retargetinglist/RetargetingListServiceRuleBaseTargetList.yaml	2023-02-13 16:20:43.000000000 +0900
-+++ v10/retargetinglist/RetargetingListServiceRuleBaseTargetList.yaml	2023-02-13 16:20:42.000000000 +0900
+--- v9/retargetinglist/RetargetingListServiceRuleBaseTargetList.yaml	2023-02-16 12:53:14.000000000 +0900
++++ v10/retargetinglist/RetargetingListServiceRuleBaseTargetList.yaml	2023-02-16 12:53:14.000000000 +0900
 @@ -7,9 +7,9 @@
        nullable: true
        description: |
