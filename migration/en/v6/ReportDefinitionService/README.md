@@ -108,7 +108,7 @@ Refer to [Changes by Report Type](ReportType.md).
 ### Is there any change on QPS?
 
 No change on QPS.
-Refer to the details on [QPS](https://ads-developers.yahoo.co.jp/developercenter/en/developers-guide/qps.html).
+Refer to the details on [QPS](https://ads-developers.yahoo.co.jp/en/ads-api/developers-guide/qps.html).
 
 ### Is there any other change on v6?
 

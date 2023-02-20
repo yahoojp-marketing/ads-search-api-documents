@@ -108,7 +108,7 @@ v5とv6の/ReportDefinitionService/downloadへのリクエスト例です。
 ### QPSに変更はありますか？
 
 QPSには変更はありません。   
-QPSについての詳しい説明は[リクエストの制約（QPS）](https://ads-developers.yahoo.co.jp/developercenter/ja/developers-guide/qps.html)をご参照ください。
+QPSについての詳しい説明は[リクエストの制約（QPS）](https://ads-developers.yahoo.co.jp/ja/ads-api/developers-guide/qps.html)をご参照ください。
 
 ### 他にv6で変更されたものはありますか？
 

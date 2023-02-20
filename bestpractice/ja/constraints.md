@@ -3,7 +3,7 @@
 
 ### 各エンティティの登録可能数
 アカウント、キャンペーン、広告グループに登録可能数には、上限や規定が設けられています。  
-詳しくは[各エンティティの登録可能数](https://ads-developers.yahoo.co.jp/developercenter/ja/developers-guide/value-constraints.html)を確認ください。
+詳しくは[各エンティティの登録可能数](https://ads-developers.yahoo.co.jp/ja/ads-api/developers-guide/value-constraints.html)を確認ください。
 
 ### パフォーマンスレポートの登録可能数
 同時に実行可能な件数は60件です。  

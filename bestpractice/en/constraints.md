@@ -3,7 +3,7 @@ The following are the lists of value constraints.
 
 # Entity Limits
 Entities in your accounts, campaigns, and ad groups have the following limits.  
-Learn more on [Entity Limits](https://ads-developers.yahoo.co.jp/developercenter/en/developers-guide/value-constraints.html).
+Learn more on [Entity Limits](https://ads-developers.yahoo.co.jp/en/ads-api/developers-guide/value-constraints.html).
 
 # Performance report registration limits
 Up to 60 report can be created on an account at same time.  
