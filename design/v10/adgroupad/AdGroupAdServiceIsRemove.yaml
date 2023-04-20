@@ -10,14 +10,12 @@ AdGroupAdServiceIsRemove:
     <div lang="ja">
     AdGroupAdServiceIsRemoveFlgは、項目を削除するフラグです。<br>
     設定値が「TRUE」の場合、設定されている値が無効になります。<br>
-    このフィールドは、ADD時は無視され、SET時は省略可能となります。<br>
-    ※現在、isRemovePath1/isRemovePath2/isRemoveSmartphoneFinalUrl/isRemoveTrackingUrlは利用できません。
+    このフィールドは、ADD時は無視され、SET時は省略可能となります。
     </div>
     <div lang="en">
     AdGroupAdServiceIsRemoveFlg is a flag for removing an information item.<br>
     If the set value is 'TRUE', the set value will be invalid.<br>
-    This field will be ignored in ADD operation, and will be optional in SET operation.<br>
-    *Currently isRemovePath1/isRemovePath2/isRemoveSmartphoneFinalUrl/isRemoveTrackingUrl is not available.
+    This field will be ignored in ADD operation, and will be optional in SET operation.
     </div>
     <dl class=term>
       <dt class="term__item">TRUE</dt>

@@ -9,9 +9,9 @@ AdGroupAdServiceDescriptionPinnedField:
   title: AdGroupAdServiceDescriptionPinnedField
   description: |
     <div lang="ja">AdGroupAdServiceDescriptionPinnedFieldは、説明文の表示位置を固定する箇所を指定するフィールドです。<br>
-    このフィールドは、ADD時は省略可能となり、SET時は無視されます。</div>
+    ADDおよびSET時、このフィールドは省略可能です。</div>
     <div lang="en">AdGroupAdServiceDescriptionPinnedField object is a field that specifies where to fix the display position of the description.<br>
-    This field is optional in ADD operation, and will be ignored in SET operation.</div>
+    This field is optional in ADD and SET operation.</div>
     <dl class=term>
       <dt class="term__item">UNSPECIFIED</dt>
       <dd class="term__desc"><span lang="ja">指定なしです。</span><span lang="en">unspecified.</span></dd>

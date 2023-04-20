@@ -7,8 +7,12 @@ AdGroupServiceContainsLabelId:
   - UNKNOWN
   title: AdGroupServiceContainsLabelId
   description: |
-    <div lang="ja">ラベルデータ取得フラグです。</div>
-    <div lang="en">AdGroupServiceContainsLabelId object describes acquisition flag of label data.</div>
+    <div lang="ja">ラベルID取得フラグです。<br>
+    このフィールドは省略可能となります。その際、デフォルト値はfalseとなります。
+    </div>
+    <div lang="en">Flag of contains label ID.<br>
+    This field is optional. The default value will be false.
+    </div>
     <dl class=term>
       <dt class="term__item">TRUE</dt>
       <dd class="term__desc"><span lang="ja">取得する</span><span lang="en">acquiring</span></dd>

@@ -18,11 +18,10 @@
 ・<a href="https://ads-help.yahoo.co.jp/yahooads/ss/articledetail?lan=ja&aid=28684">動的検索連動型広告の入稿の流れ</a>
 
 #### 1.	フィードアイテム情報を追加
-FeedService:addを使用して、フィードアイテム情報を追加します。以下の指定が必要です。<br>
-* アカウントID（accountId）
-* ドメイン（domain）
-* フィード名（FeedName）
-* FeedItem情報の種類（placeholderType）：動的検索連動型広告ページフィード（DYNAMIC_AD_FOR_SEARCH_PAGE_FEEDS）
+PageFeedAssetSetService:addを使用して、フィードアイテム情報を追加します。以下の指定が必要です。<br>
+* アカウントID（accountId）<br>
+* ドメイン（domain）<br>
+* フィード名（pageFeedAssetSetName）<br>
 
 ##### ＜リクエストサンプル＞
 ```json
@@ -30,9 +29,9 @@ FeedService:addを使用して、フィードアイテム情報を追加しま�
   "accountId": 111111,
   "operand": [
     {
+      "accountId": 111111,
       "domain": "http://example.yahoo.co.jp",
-      "feedName": "商品list",
-      "placeholderType": "DYNAMIC_AD_FOR_SEARCH_PAGE_FEEDS"
+      "pageFeedAssetSetName": "商品list"
     }
   ]
 }
@@ -42,19 +41,16 @@ FeedService:addを使用して、フィードアイテム情報を追加しま�
 ```json
 {
     "errors": null,
-    "rid": "5ff2b9a29f9a8b4ef735d83219ff7b15",
+    "rid": "1234567890123456ascdefghijklmno",
     "rval": {
         "values": [
             {
                 "errors": null,
-                "feed": {
+                "pageFeedAssetSet": {
                     "accountId": 111111,
-                    "domain": "http://example.yahoo.co.jp",
-                    "feedAttribute": [],
-                    "feedId": 123456,
-                    "feedName": "商品list",
-                    "feedTrackId": 0,
-                    "placeholderType": "DYNAMIC_AD_FOR_SEARCH_PAGE_FEEDS"
+                    "pageFeedAssetSetId": 12345,
+                    "pageFeedAssetSetName": "商品list",
+                    "domain": "http://example.yahoo.co.jp"
                 },
                 "operationSucceeded": true
             }
@@ -65,39 +61,46 @@ FeedService:addを使用して、フィードアイテム情報を追加しま�
 <br>
 
 #### 2.	ページフィードの入稿
-次に、以下のようなページフィードアイテムcsvファイルを作成し、PageFeedItemService:uploadを使って、ページフィードアイテムをアップロードします。
+次に、以下のようなページフィードアイテムcsvファイルを作成し、PageFeedAssetService:uploadを使って、ページフィードアイテムをアップロードします。
 
 |ページURL|カスタムラベル|
 |---|---|
 |http://example.yahoo.co.jp/1.html|Service;Japan;IT|
 |http://example.yahoo.co.jp/2.html|Service;Japan;|
 
-ファイルアップロードの際、以下の指定が必要です。<br>
-* アップロードタイプ（NEW_OR_REPLACE:新規登録または、全て置き換える。MODIFY:既存のページフィードアイテムを更新）
+※ページフィードアイテムcsvファイルのテンプレートは、管理画面からダウンロードもできます。<br>
+　詳しくは以下のヘルプをご参照ください。<br>
+　<a href="https://ads-help.yahoo.co.jp/yahooads/ss/articledetail?lan=ja&aid=20901">ページフィードの作成方法</a>
+
+ファイルアップロードの際、クエリパラメータに以下の指定が必要です。<br>
+*　accountId <br>
+*　pageFeedAssetSetId <br>
+*　uploadType（NEW_OR_REPLACE:新規登録または、全て置き換える。MODIFY:既存のページフィードアイテムを更新） <br>
+リクエストbody に Content-Type: multipart/form-data 形式でファイル本文を指定します。<br>
+ご参考：リファレンス<br>
+　　　　https://ads-developers.yahoo.co.jp/reference/ads-search-api/v10/PageFeedAssetService/upload/
 
 ##### ＜リクエストサンプル＞
-https://ads-search.yahooapis.jp/api/v5/PageFeedItemService/upload?file=temp.csv&accountId=111111&uploadType=NEW_OR_REPLACE&feedId=123456
+https://ads-search.yahooapis.jp/api/v10/PageFeedAssetService/upload?file=temp.csv&accountId=111111&uploadType=NEW_OR_REPLACE&pageFeedAssetSetId=12345
 
 ##### ＜レスポンスサンプル＞
 ```json
 {
     "errors": null,
-    "rid": "12e7bab1b86851a34f625312f3caf46f",
+    "rid": "1234567890123456ascdefghijklmnp",
     "rval": {
         "values": [
             {
                 "errors": null,
                 "uploadJob": {
                     "accountId": 111111,
-                    "endDate": null,
+                    "jobId": 3450,
+                    "pageFeedAssetSetId": 12345,
+                    "uploadJobStatus": "IN_PROGRESS",
+                    "progress": 0,
                     "errorCount": null,
-                    "feedIds": [
-                        123456
-                    ],
-                    "jobId": 7700,
-                    "progress": null,
                     "startDate": null,
-                    "uploadJobStatus": null
+                    "endDate": null
                 },
                 "operationSucceeded": true
             }
@@ -118,25 +121,25 @@ CampaignService:addを使用します。以下の指定が必要です。<br>
   "accountId": 111111,
   "operand": [
     {
+      "accountId": 111111,
       "biddingStrategyConfiguration": {
         "biddingScheme": {
-          "biddingStrategyType": "MANUAL_CPC",
-          "manualCpcBiddingScheme": {
+          "biddingStrategyType": "CPC",
+          "cpcBiddingScheme": {
             "enhancedCpcEnabled": "TRUE"
           }
         },
-        "biddingStrategyType": "MANUAL_CPC"
+        "biddingStrategySource": "CAMPAIGN"
       },
       "budget": {
-        "amount": 100,
-        "budgetPeriod": "DAILY"
+        "amount": 100
       },
       "campaignName": "auto_campaign_01",
       "settings": [
         {
           "dynamicAdsForSearchSetting": {
-            "feedIds": [
-              123456
+            "pageFeedAssetSetIds": [
+              12345
             ]
           },
           "settingType": "DYNAMIC_ADS_FOR_SEARCH_SETTING",
@@ -156,33 +159,34 @@ CampaignService:addを使用します。以下の指定が必要です。<br>
 ```json
 {
     "errors": null,
-    "rid": "25263345ef84ad5aa9532accfff25656",
+    "rid": "1234567890123456ascdefghijklmnq",
     "rval": {
         "values": [
             {
                 "campaign": {
                     "accountId": 111111,
                     "appId": null,
-                    "appStore": null,
+                    "appOsType": null,
                     "biddingStrategyConfiguration": {
                         "biddingScheme": {
-                            "biddingStrategyType": "MANUAL_CPC",
-                            "manualCpcBiddingScheme": {
+                            "biddingStrategyType": "CPC",
+                            "cpcBiddingScheme": {
                                 "enhancedCpcEnabled": "TRUE"
                             },
                             "targetCpaBiddingScheme": null,
                             "targetRoasBiddingScheme": null,
-                            "targetSpendBiddingScheme": null
+                            "maximizeClicksBiddingScheme": null,
+                            "targetImpressionShareScheme": null,
+                            "maximizeConversionsBiddingScheme": null,
+                            "maximizeConversionValueBiddingScheme": null
                         },
-                        "biddingStrategyId": null,
-                        "biddingStrategyName": null,
-                        "biddingStrategySource": "CAMPAIGN",
-                        "biddingStrategyType": "MANUAL_CPC"
+                        "portfolioBiddingId": null,
+                        "portfolioBiddingName": null,
+                        "biddingStrategySource": "CAMPAIGN"
                     },
                     "biddingStrategyFailedReason": null,
                     "budget": {
-                        "amount": 100,
-                        "budgetPeriod": "DAILY"
+                        "amount": 100
                     },
                     "campaignId": 222222,
                     "campaignName": "auto_campaign_01",
@@ -196,9 +200,12 @@ CampaignService:addを使用します。以下の指定が必要です。<br>
                     "settings": [
                         {
                             "dynamicAdsForSearchSetting": {
-                                "feedIds": [
-                                    123456
-                                ]
+                                "feedIds": null,
+                                "pageFeedAssetSetIds": [
+                                    12345
+                                ],
+                                "domain": null,
+                                "dasUseUrlsType": "USE_SUPPLIED_URLS_ONLY"
                             },
                             "geoTargetTypeSetting": null,
                             "settingType": "DYNAMIC_ADS_FOR_SEARCH_SETTING",
@@ -222,7 +229,7 @@ CampaignService:addを使用します。以下の指定が必要です。<br>
                             }
                         }
                     ],
-                    "startDate": "20200908",
+                    "startDate": "20230329",
                     "trackingUrl": null,
                     "type": "DYNAMIC_ADS_FOR_SEARCH",
                     "urlReviewData": {
@@ -231,7 +238,8 @@ CampaignService:addを使用します。以下の指定が必要です。<br>
                         "inReviewUrl": null,
                         "urlApprovalStatus": "NONE"
                     },
-                    "userStatus": "ACTIVE"
+                    "userStatus": "ACTIVE",
+                    "createdDate": "20230329"
                 },
                 "errors": null,
                 "operationSucceeded": true
@@ -239,6 +247,7 @@ CampaignService:addを使用します。以下の指定が必要です。<br>
         ]
     }
 }
+
 ```
 <br>
 
@@ -263,25 +272,33 @@ AdGroupService:addを使用します。
 ```json
 {
     "errors": null,
-    "rid": "84cdb8486a734150afcad28a8fb06aef",
+    "rid": "1234567890123456ascdefghijklmnr",
     "rval": {
         "values": [
             {
                 "adGroup": {
                     "accountId": 111111,
-                    "adGroupAdRotationMode": {
-                        "adRotationMode": "OPTIMIZE"
+                    "biddingStrategyConfiguration": {
+                        "biddingScheme": {
+                            "campaignBiddingStrategyType": "CPC",
+                            "cpcBiddingScheme": {
+                                "cpc": 1
+                            },
+                            "targetCpaBiddingScheme": null,
+                            "targetRoasBiddingScheme": null,
+                            "maximizeConversionsBiddingScheme": null,
+                            "maximizeConversionValueBiddingScheme": null
+                        },
+                        "portfolioBiddingId": null,
+                        "portfolioBiddingName": null
                     },
+                    "frequentlyRunBetterPerformingAdsMode": "APPLY",
                     "adGroupId": 333333,
                     "adGroupName": "auto_adgroup_01",
                     "adGroupTrackId": 0,
-                    "bid": {
-                        "bidSource": "ADGROUP",
-                        "maxCpc": 1
-                    },
                     "campaignId": 222222,
                     "campaignName": "auto_campaign_01",
-                    "campaignTrackId": 100000,
+                    "campaignTrackId": 1234567890,
                     "customParameters": null,
                     "labels": null,
                     "settings": {
@@ -290,16 +307,16 @@ AdGroupService:addを使用します。
                             "targetAll": "ACTIVE"
                         }
                     },
-                    "targetRoasOverride": null,
-                    "targetCpaOverride": null,
                     "trackingUrl": null,
+                    "isRemoveTrackingUrl": null,
                     "urlReviewData": {
                         "disapprovalReasonCodes": null,
                         "disapprovalReviewUrl": null,
                         "inReviewUrl": null,
                         "urlApprovalStatus": "NONE"
                     },
-                    "userStatus": "ACTIVE"
+                    "userStatus": "ACTIVE",
+                    "createdDate": "20230329"
                 },
                 "errors": null,
                 "operationSucceeded": true
@@ -312,8 +329,8 @@ AdGroupService:addを使用します。
 
 #### 5.	広告作成
 AdGroupAdService:addを使用します。以下の指定が必要です。<br>
-* 広告タイプ（ad:adType）：動的検索連動型広告（DYNAMIC_SEARCH_LINKED_AD）
-* 説明文（ad:description1）：自由記述　※1のみの指定。
+* 広告タイプ（ad.adType）：動的検索連動型広告（DYNAMIC_SEARCH_LINKED_AD）
+* 説明文（ad.dynamicSearchLinkedAd.description）：自由記述
 
 ##### ＜リクエストサンプル＞
 ```json
@@ -322,9 +339,11 @@ AdGroupAdService:addを使用します。以下の指定が必要です。<br>
   "operand": [
     {
       "ad": {
-        "adType": "DYNAMIC_SEARCH_LINKED_AD",        
-        "description1": "広告の説明文01",
-        "devicePreference": "SMART_PHONE"
+        "adType": "DYNAMIC_SEARCH_LINKED_AD",
+        "devicePreference": "SMART_PHONE",
+        "dynamicSearchLinkedAd": {
+          "description": "広告の説明文01"
+        }
       },
       "adGroupId": 333333,
       "adName": "広告名01",
@@ -333,13 +352,14 @@ AdGroupAdService:addを使用します。以下の指定が必要です。<br>
     }
   ]
 }
+
 ```
 
 ##### ＜レスポンスサンプル＞
 ```json
 {
     "errors": null,
-    "rid": "54d647d2f59a14a082de68d381cd9699",
+    "rid": "1234567890123456ascdefghijklmns",
     "rval": {
         "values": [
             {
@@ -347,37 +367,45 @@ AdGroupAdService:addを使用します。以下の指定が必要です。<br>
                     "accountId": 111111,
                     "ad": {
                         "adType": "DYNAMIC_SEARCH_LINKED_AD",
-                        "additionalAdvancedMobileUrls": [],
-                        "additionalAdvancedUrls": [],
-                        "advancedMobileUrl": null,
-                        "advancedUrl": null,
+                        "textAd2": null,
                         "appAd": null,
+                        "extendedTextAd": null,
+                        "dynamicSearchLinkedAd": {
+                            "description": "広告の説明文01",
+                            "description2": null
+                        },
+                        "responsiveSearchAd": null,
+                        "finalUrl": null,
+                        "reviewFinalUrl": null,
+                        "smartphoneFinalUrl": null,
+                        "reviewSmartphoneFinalUrl": null,
+                        "isRemoveSmartphoneFinalUrl": null,
+                        "trackingUrl": null,
+                        "reviewTrackingUrl": null,
+                        "isRemoveTrackingUrl": null,
                         "customParameters": null,
-                        "description1": "広告の説明文01",
+                        "reviewCustomParameters": null,
                         "devicePreference": null,
                         "displayUrl": null,
-                        "extendedTextAd": null,
-                        "headline1": null,
-                        "textAd2": null,
-                        "trackingUrl": null,
                         "url": null
                     },
                     "adGroupId": 333333,
                     "adGroupName": "auto_adgroup_01",
-                    "adGroupTrackId": 200000,
-                    "adId": 444444,
+                    "adGroupTrackId": 0,
+                    "adId": 4444444444,
                     "adName": "広告名01",
                     "adTrackId": 0,
                     "approvalStatus": "REVIEW",
                     "campaignId": 222222,
                     "campaignName": "auto_campaign_01",
-                    "campaignTrackId": 100000,
+                    "campaignTrackId": 1234567890,
                     "disapprovalReasonCodes": null,
                     "feedId": null,
                     "invalidedTrademarks": null,
                     "labels": null,
                     "trademarkStatus": "NO_RESTRICTION",
-                    "userStatus": "ACTIVE"
+                    "userStatus": "ACTIVE",
+                    "createdDate": "20230329"
                 },
                 "errors": null,
                 "operationSucceeded": true
@@ -385,4 +413,5 @@ AdGroupAdService:addを使用します。以下の指定が必要です。<br>
         ]
     }
 }
+
 ```

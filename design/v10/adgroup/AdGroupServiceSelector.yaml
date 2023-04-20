@@ -48,8 +48,12 @@ AdGroupServiceSelector:
       type: boolean
       nullable: true
       description: |
-        <div lang="ja">ラベルデータ取得フラグです。</div>
-        <div lang="en">AdGroupServiceContainsLabel object describes acquisition flag of label data.</div>
+        <div lang="ja">ラベルID取得フラグです。<br>
+        このフィールドは省略可能となります。その際、デフォルト値はfalseとなります。
+        </div>
+        <div lang="en">Flag of contains label ID.<br>
+        This field is optional. The default value will be false.
+        </div>
     labelIds:
       type: array
       nullable: true

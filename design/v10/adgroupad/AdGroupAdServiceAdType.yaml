@@ -11,10 +11,12 @@ AdGroupAdServiceAdType:
   title: AdGroupAdServiceAdType
   description: |
     <div lang="ja">AdGroupAdServiceAdTypeは、広告タイプを表します。<br>
-    ADD時、このフィールドは必須となります。<br>
+    ADDおよびSET時、このフィールドは必須となります。<br>
+    現在、SET時はRESPONSIVE_SEARCH_ADのみ指定可能です。<br>
     なお、選択した配信先デバイスにより、指定可能な広告の文字数は異なります。</div>
     <div lang="en">AdGroupAdServiceAdType describes the type of ad.<br>
-    This field is required in ADD operation.<br>
+    This field is required in ADD and Set operation.<br>
+    Currently, only RESPONSIVE_SEARCH_AD can be specified in SET operation.<br>
     The number of character vary from the device type you choose.</div>
     <dl class=term>
       <dt class="term__item">EXTENDED_TEXT_AD</dt>

@@ -19,7 +19,8 @@ AdGroupAdServiceAd:
       nullable: true
       description: |
         <div lang="ja">最終リンク先URLです。<br>
-        ADD時、このフィールドは必須となります。※adTypeがDYNAMIC_SEARCH_LINKED_ADの場合は無視されます。</div>
+        ADD時、このフィールドは必須となります。※adTypeがDYNAMIC_SEARCH_LINKED_ADの場合は無視されます。<br>
+        SET時、adTypeがRESPONSIVE_SEARCH_ADの場合のみ更新可能です。</div>
         <div lang="en">Landing Page URL.<br>
         This field is required in ADD operation. *If adType is DYNAMIC_SEARCH_LINKED_AD, this field will be ignored.</div>
     reviewFinalUrl:
@@ -28,16 +29,17 @@ AdGroupAdServiceAd:
       description: |
         <div lang="ja">審査中の最終リンク先URLです。<br>
         このフィールドは、リクエストの際には無視されます。<br>
-        ※現在、こちらのフィールドは返却されません。</div>
+        審査中の間のみ、レスポンスの際に返却されます。</div>
         <div lang="en">Landing Page URL on editorial review.<br>
         This field will be ignored on input.<br>
-        Currently, this field will not be returned.</div>
+        It will be returned at the time of response only during the review.</div>
     smartphoneFinalUrl:
       type: string
       nullable: true
       description: |
         <div lang="ja">最終リンク先URL（スマートフォン）です。<br>
-        ADD時、このフィールドは省略可能となります。※adTypeがDYNAMIC_SEARCH_LINKED_ADの場合は無視されます。</div>
+        ADD時、このフィールドは省略可能となります。※adTypeがDYNAMIC_SEARCH_LINKED_ADの場合は無視されます。<br>
+        SET時、adTypeがRESPONSIVE_SEARCH_ADの場合のみ更新可能です。</div>
         <div lang="en">Landing Page URL (Smartphone).<br>
         This field is optional in ADD operation. *If adType is DYNAMIC_SEARCH_LINKED_AD, this field will be ignored.</div>
     reviewSmartphoneFinalUrl:
@@ -46,10 +48,10 @@ AdGroupAdServiceAd:
       description: |
         <div lang="ja">審査中の最終リンク先URL（スマートフォン）です。<br>
         このフィールドは、リクエストの際には無視されます。<br>
-        ※現在、こちらのフィールドは返却されません。</div>
+        審査中の間のみ、レスポンスの際に返却されます。</div>
         <div lang="en">Landing Page URL (Smartphone) on editorial review.<br>
         This field will be ignored on input.<br>
-        Currently, this field will not be returned.</div>
+        It will be returned at the time of response only during the review.</div>
     isRemoveSmartphoneFinalUrl:
       $ref: 'AdGroupAdServiceIsRemove.yaml#/AdGroupAdServiceIsRemove'
     trackingUrl:
@@ -57,7 +59,8 @@ AdGroupAdServiceAd:
       nullable: true
       description: |
         <div lang="ja">トラッキングURLです。<br>
-        ADD時、このフィールドは省略可能となります。</div>
+        ADD時、このフィールドは省略可能となります。<br>
+        SET時、adTypeがRESPONSIVE_SEARCH_ADの場合のみ更新可能です。</div>
         <div lang="en">Tracking URL.<br>
         This field is optional in ADD operation.</div>
     reviewTrackingUrl:
@@ -66,10 +69,10 @@ AdGroupAdServiceAd:
       description: |
         <div lang="ja">審査中のトラッキングURLです。<br>
         このフィールドは、リクエストの際には無視されます。<br>
-        ※現在、こちらのフィールドは返却されません。</div>
+        審査中の間のみ、レスポンスの際に返却されます。</div>
         <div lang="en">Tracking URL on editorial review.<br>
         This field will be ignored on input.<br>
-        Currently, this field will not be returned.</div>
+        It will be returned at the time of response only during the review.</div>
     isRemoveTrackingUrl:
       $ref: 'AdGroupAdServiceIsRemove.yaml#/AdGroupAdServiceIsRemove'
     customParameters:
@@ -97,6 +100,6 @@ AdGroupAdServiceAd:
   title: AdGroupAdServiceAd
   description: |
     <div lang="ja">AdGroupAdServiceAdオブジェクトは、広告に関する情報を表します。<br>
-    ADD時、このフィールドは必須となります。</div>
+    このフィールドは、ADD時は必須となり、SET時は省略可能となります。</div>
     <div lang="en">AdGroupAdServiceAd object describes ad information.<br>
-    This field is required in ADD operation.</div>
+    This field is required in ADD operation, and will be optional in SET operation.</div>

@@ -10,9 +10,9 @@ AdGroupAdServiceTextAssetActiveStatus:
   title: AdGroupAdServiceTextAssetActiveStatus
   description: |
     <div lang="ja">AdGroupAdServiceTextAssetActiveStatusは、アセットが配信可能かの状況を表します。<br>
-    現在、このフィールドはリクエストの際に無視され、レスポンスの際は返却されません。</div>
+    このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
     <div lang="en">AdGroupAdServiceTextAssetActiveStatus displays the availability of assets appears.<br>
-    Currently, this field is ignored in the request and not returned in the response.</div>
+    Although this field will be returned in the response, it will be ignored on input.</div>
     <dl class=term>
       <dt class="term__item">ACTIVE</dt>
       <dd class="term__desc"><span lang="ja">配信可です。</span><span lang="en">Available.</span></dd>
