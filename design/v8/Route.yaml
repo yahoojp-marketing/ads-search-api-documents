@@ -7315,11 +7315,13 @@ paths:
       description: |
         <div lang="ja">
         オフラインコンバージョンデータのアップロード処理を実施します。<br>
-        ・ファイルサイズ上限20Mbyte(20,971,520 byte)
+        ・ファイルサイズ上限20Mbyte(20,971,520 byte)<br>
+        ファイルフォーマットや仕様の説明は<a href="https://ads-help.yahoo-net.jp/s/article/H000044354?language=ja">こちらのページ</a>をご参照下さい。
         </div>
         <div lang="en">
         Execute upload offline conversion data.<br>
-        * File size upper limit 20Mbyte(20,971,520 byte)
+        * File size upper limit 20Mbyte(20,971,520 byte)<br>
+        Please refer to <a href="https://ads-help.yahoo-net.jp/s/article/H000044354?language=en_US">this page</a> for a description of file formats and specifications.
         </div>
       tags:
         - OfflineConversionService
