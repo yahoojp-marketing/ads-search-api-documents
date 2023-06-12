@@ -1,0 +1,25 @@
+AdGroupCustomizerServiceOperation:
+  type: object
+  nullable: true
+  required:
+  - accountId
+  - operand
+  properties:
+    accountId:
+      type: integer
+      nullable: false
+      format: int64
+      description: |
+        <div lang="ja">アカウントIDです。</div>
+        <div lang="en">Account ID.</div>
+    operand:
+      type: array
+      nullable: true
+      items:
+        $ref: 'AdGroupCustomizer.yaml#/AdGroupCustomizer'
+      minItems: 1
+      maxItems: 2000
+  title: AdGroupCustomizerServiceOperation
+  description: |
+    <div lang="ja">AdGroupCustomizerServiceOperationオブジェクトは、広告グループとカスタマイザー属性間の設定情報を格納するコンテナです。</div>
+    <div lang="en">AdGroupCustomizerServiceOperation is a container of configuration information between the adgroup and the customizer attribute.</div>

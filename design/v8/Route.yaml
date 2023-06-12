@@ -7209,8 +7209,8 @@ paths:
   /KeywordForecastMetricsService/get:
     post:
       description: |
-        <div lang="ja">キーワードの実績情報を取得します。</div>
-        <div lang="en">Get the performance information of the keyword.</div>
+        <div lang="ja">キーワードの実績情報を取得します。<br>※現在、こちらのサービスは利用できません。</div>
+        <div lang="en">Get the performance information of the keyword.<br>*Currently this service is not available.</div>
       tags:
         - KeywordForecastMetricsService
       requestBody:

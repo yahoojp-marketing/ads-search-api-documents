@@ -1,0 +1,21 @@
+ConversionTrackerServiceStatus:
+  type: string
+  nullable: true
+  enum:
+  - ENABLED
+  - DISABLED
+  - UNKNOWN
+  title: ConversionTrackerServiceStatus
+  description: |
+    <div lang="ja">ConversionTrackerServiceStatusは、コンバージョン設定のステータスを表します。<br>
+    このフィールドは、ADD時に必須となり、SET時に省略可能となります。</div>
+    <div lang="en">It shows ConversionTracker status.<br>
+    This field is required in ADD operation, and is optional in SET operation.</div>
+    <dl class=term>
+      <dt class="term__item">ENABLED</dt>
+      <dd class="term__desc"><span lang="ja">コンバージョンページへのアクセスが記録されます。</span><span lang="en">It records access to Conversion page.</span></dd>
+      <dt class="term__item">DISABLED</dt>
+      <dd class="term__desc"><span lang="ja">コンバージョンページへのアクセスが記録されません。</span><span lang="en">It does not record access to Conversion page.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

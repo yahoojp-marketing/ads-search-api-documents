@@ -1,0 +1,25 @@
+AuditLogServiceEventTypes:
+  type: string
+  nullable: true
+  enum:
+  - ADD
+  - SET
+  - REMOVE
+  - ALL
+  - UNKNOWN
+  title: AuditLogServiceEventTypes
+  description: |
+    <div lang="ja">AuditLogServiceEventTypesは、操作履歴で取得する操作タイプを表します。</div>
+    <div lang="en">AuditLogServiceEventTypes describes the operation type to be acquired the operation history data.</div>
+    <dl class=term>
+      <dt class="term__item">ADD</dt>
+      <dd class="term__desc"><span lang="ja">追加</span><span lang="en">add</span></dd>
+      <dt class="term__item">SET</dt>
+      <dd class="term__desc"><span lang="ja">更新</span><span lang="en">update</span></dd>
+      <dt class="term__item">REMOVE</dt>
+      <dd class="term__desc"><span lang="ja">削除</span><span lang="en">delete</span></dd>
+      <dt class="term__item">ALL</dt>
+      <dd class="term__desc"><span lang="ja">すべての操作タイプ</span><span lang="en">all operation types</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

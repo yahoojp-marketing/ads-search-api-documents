@@ -1,0 +1,21 @@
+CampaignExportServiceLang:
+  type: string
+  nullable: true
+  enum:
+  - JA
+  - EN
+  - UNKNOWN
+  title: CampaignExportServiceLang
+  description: |
+    <div lang="ja">CampaignExportServiceLangは、エクスポートするデータの言語設定です。<br>
+    このフィールドは、必須です。</div>
+    <div lang="en">CampaignExportServiceLang is a language setting for exporting data.<br>
+    This field is required.</div>
+    <dl class=term>
+      <dt class="term__item">JA</dt>
+      <dd class="term__desc"><span lang="ja">日本語です。</span><span lang="en">Japanese.</span></dd>
+      <dt class="term__item">EN</dt>
+      <dd class="term__desc"><span lang="ja">英語です。</span><span lang="en">English.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

@@ -1,0 +1,11 @@
+CampaignServiceContainsLabel:
+  type: boolean
+  nullable: true
+  title: CampaignServiceContainsLabel
+  description: |
+    <div lang="ja">ラベルID取得フラグです。<br>
+    このフィールドは省略可能となります。その際、デフォルト値はfalseとなります。
+    </div>
+    <div lang="en">Flag of contains label ID.<br>
+    This field is optional. The default value will be false.
+    </div>

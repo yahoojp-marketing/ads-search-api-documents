@@ -298,7 +298,6 @@
 <tr><td>配信設定</td></tr>
 <tr><td>ヤフーによる配信設定</td></tr>
 <tr><td>連絡先利用者のYahoo! JAPANビジネスID</td></tr>
-<tr><td>入金割合</td></tr>
 <tr><td>トラッキングURL</td></tr>
 <tr><td>自動タグ設定</td></tr>
 <tr><td rowspan='13'>SS_CONVERSION</td><td>コンバージョン名</td></tr>

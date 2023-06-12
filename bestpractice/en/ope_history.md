@@ -301,7 +301,6 @@ AuditLog item of Search Ad are as follows. *Data as of August 28, 2020.
 <tr><td>Display Settings</td></tr>
 <tr><td>Display Settings (Internal)</td></tr>
 <tr><td>Primary Business Contact (Yahoo! JAPAN Business ID)</td></tr>
-<tr><td>Fund Allocatio</td></tr>
 <tr><td>Tracking URL</td></tr>
 <tr><td>Auto-tagging</td></tr>
 <tr><td rowspan='13'>SS_CONVERSION</td><td>Conversion Name</td></tr>

@@ -1,0 +1,21 @@
+KeywordForecastMetricsServiceKeywordPlanNetwork:
+  type: string
+  nullable: true
+  enum:
+  - YAHOO_SEARCH
+  - SEARCH_NETWORK
+  - UNKNOWN
+  title: KeywordForecastMetricsServiceKeywordPlanNetwork
+  description: |
+    <div lang="ja">KeywordForecastMetricsServiceKeywordPlanNetworkは、予測対象の検索画面を表します。<br>
+    デフォルト値はYAHOO_SEARCHです。</div>
+    <div lang="en">KeywordForecastMetricsServiceKeywordPlanNetwork represents the search screen for the forecast target.<br>
+    Default value will be "YAHOO_SEARCH".</div>
+    <dl class=term>
+      <dt class="term__item">YAHOO_SEARCH</dt>
+      <dd class="term__desc"><span lang="ja">Yahoo!検索の検索画面のみです。</span><span lang="en">Only the search screen of Yahoo! JAPAN Search.</span></dd>
+      <dt class="term__item">SEARCH_NETWORK</dt>
+      <dd class="term__desc"><span lang="ja">Yahoo!検索を含むすべての検索画面です。</span><span lang="en">All search screens including Yahoo! JAPAN Search.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

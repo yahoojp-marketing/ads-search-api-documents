@@ -1,0 +1,30 @@
+AdGroupAdServiceHeadlineTextAsset:
+  type: object
+  nullable: true
+  properties:
+    text:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">テキストです。<br>ADDおよびSET時、このフィールドは必須となります。</div>
+        <div lang="en">Text of parameter.<br>This field is required in ADD and SET operation.</div>
+    pinnedField:
+      $ref: 'AdGroupAdServiceHeadlinePinnedField.yaml#/AdGroupAdServiceHeadlinePinnedField'
+    activeStatus:
+      $ref: 'AdGroupAdServiceTextAssetActiveStatus.yaml#/AdGroupAdServiceTextAssetActiveStatus'
+    approvalStatus:
+      $ref: 'AdGroupAdServiceApprovalStatus.yaml#/AdGroupAdServiceApprovalStatus'
+    disapprovalReasonCodes:
+      type: array
+      nullable: true
+      items:
+        type: string
+        nullable: true
+      description: |
+        <div lang="ja">審査否認の理由コードです。<br>
+        (コード詳細は、DictionaryServiceのgetDisapprovalReasonのレスポンスを参照)<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
+        <div lang="en">Code of Disapproval reason.<br>
+        (Refer to DictionaryService getDisapprovalReason response for details) <br>
+        Although this field will be returned in the response, it will be ignored on input.</div>
+  title: AdGroupAdServiceHeadlineTextAsset

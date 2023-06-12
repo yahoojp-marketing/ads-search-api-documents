@@ -1,0 +1,17 @@
+RetargetingListServiceCustomKeyPage:
+  type: object
+  nullable: true
+  properties:
+    customKeys:
+      $ref: 'RetargetingListServiceCustomKey.yaml#/RetargetingListServiceCustomKey'
+    totalNumEntries:
+      type: integer
+      nullable: false
+      format: int32
+      description: |
+        <div lang="ja">取得される項目の総件数です。</div>
+        <div lang="en">Total number of entries in the result that this page is a part of.</div>
+  title: RetargetingListServiceCustomKeyPage
+  description: |
+    <div lang="ja">RetargetingListServiceCustomKeyPageは、ターゲットリストのカスタムキー情報を保持するオブジェクトです。</div>
+    <div lang="en">RetargetingListServiceCustomKeyPage is an object that holds custom key informations of target list.</div>

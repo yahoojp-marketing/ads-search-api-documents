@@ -1,0 +1,112 @@
+AdGroupCriterionServiceSelector:
+  type: object
+  nullable: true
+  required:
+  - accountId
+  - use
+  properties:
+    accountId:
+      type: integer
+      nullable: false
+      format: int64
+      description: |
+        <div lang="ja">検索条件：アカウントID</div>
+        <div lang="en">Search condition: Account ID.</div>
+    adGroupIds:
+      type: array
+      nullable: true
+      items:
+        type: integer
+        nullable: true
+        format: int64
+      maxItems: 1000
+      description: |
+        <div lang="ja">検索条件：広告グループID</div>
+        <div lang="en">Search condition: Ad group ID.</div>
+    approvalStatuses:
+      type: array
+      nullable: true
+      items:
+        $ref: 'AdGroupCriterionServiceApprovalStatus.yaml#/AdGroupCriterionServiceApprovalStatus'
+      maxItems: 5
+    portfolioBiddingIds:
+      type: array
+      nullable: true
+      items:
+        type: integer
+        nullable: true
+        format: int64
+      maxItems: 1000
+      description: |
+        <div lang="ja">検索条件：ポートフォリオ入札ID</div>
+        <div lang="en">Search condition: Portfolio bidding ID.</div>
+    campaignIds:
+      type: array
+      nullable: true
+      items:
+        type: integer
+        nullable: true
+        format: int64
+      maxItems: 1000
+      description: |
+        <div lang="ja">検索条件：キャンペーンID</div>
+        <div lang="en">Search condition: Campaign ID.</div>
+    containsLabelId:
+      $ref: 'AdGroupCriterionServiceContainsLabelId.yaml#/AdGroupCriterionServiceContainsLabelId'
+    criterionIds:
+      type: array
+      nullable: true
+      items:
+        type: integer
+        nullable: true
+        format: int64
+      maxItems: 1000
+      description: |
+        <div lang="ja">検索条件：クライテリオンID<br>指定しない場合は、広告グループID以下のすべてのクライ テリアが含まれます。</div>
+        <div lang="en">Search condition: Criterion ID.<br>* All criteria under the Ad group ID will return if theres is no designation.</div>
+    labelIds:
+      type: array
+      nullable: true
+      items:
+        type: integer
+        nullable: true
+        format: int64
+      maxItems: 1000
+      description: |
+        <div lang="ja">検索条件：ラベルID</div>
+        <div lang="en">Search condition: Label ID</div>
+    numberResults:
+      type: integer
+      nullable: true
+      format: int32
+      minimum: 1
+      maximum: 10000
+      default: 500
+      description: |
+        <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div>
+        <div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1. Also see Entity Limits per operation.</div>
+    startIndex:
+      type: integer
+      nullable: true
+      format: int32
+      minimum: 1
+      default: 1
+      description: |
+        <div lang="ja">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div>
+        <div lang="en">Index of the first result to return in this page. This field must be greater than or equal to 1.</div>
+    use:
+      $ref: 'AdGroupCriterionServiceUse.yaml#/AdGroupCriterionServiceUse'
+    userStatuses:
+      type: array
+      nullable: true
+      items:
+        $ref: 'AdGroupCriterionServiceUserStatus.yaml#/AdGroupCriterionServiceUserStatus'
+      maxItems: 2
+    keyword:
+      $ref: 'AdGroupCriterionServiceKeyword.yaml#/AdGroupCriterionServiceKeyword'
+    biddingKeywordCpcRange:
+      $ref: 'AdGroupCriterionServiceBiddingKeywordCpcRange.yaml#/AdGroupCriterionServiceBiddingKeywordCpcRange'
+  title: AdGroupCriterionServiceSelector
+  description: |
+    <div lang="ja">AdGroupCriterionServiceSelectorオブジェクトは、操作の対象となる広告グループのクライテリアを表します。</div>
+    <div lang="en">AdGroupCriterionServiceSelector object displays criteria of ad group to be operated.</div>

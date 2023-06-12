@@ -1,0 +1,93 @@
+AdGroupCriterionServiceBiddableAdGroupCriterion:
+  type: object
+  nullable: true
+  properties:
+    smartphoneFinalUrl:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">最終リンク先URL（スマートフォン）です。<br>
+        ADDおよびSET時、このフィールドは省略可能となります。<br>
+        ※空で設定すると、既存の最終リンク先URL（スマートフォン）は削除されます。</div>
+        <div lang="en">Upgraded Final URL (Smartphone).<br>
+        This field is optional in ADD and SET operation.<br>
+        *When tag is set blank, existing upgraded Final URL (Smartphone) will be deleted.</div>
+    finalUrl:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">移行後の最終リンク先URLです。<br>
+        ADDおよびSET時、このフィールドは省略可能となります。※ADD時、移行してtracking Urlを指定している場合は必須となります。<br>
+        ※空で設定すると、既存の移行後の最終リンク先URLは削除されます。</div>
+        <div lang="en">Upgraded Final URL.<br>
+        This field is optional in ADD and SET operation. *If upgraded and tracking Url is specified, it is required in ADD operation.<br>
+        *When this is set blank, existing upgraded Final URL will be deleted.</div>
+    approvalStatus:
+      $ref: 'AdGroupCriterionServiceApprovalStatus.yaml#/AdGroupCriterionServiceApprovalStatus'
+    bid:
+      $ref: 'AdGroupCriterionServiceBid.yaml#/AdGroupCriterionServiceBid'
+    customParameters:
+      $ref: 'AdGroupCriterionServiceCustomParameters.yaml#/AdGroupCriterionServiceCustomParameters'
+    destinationUrl:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">移行前のカスタムURLです。<br>
+        ADDおよびSET時、このフィールドは省略可能となります。<br>
+        ※空で設定すると、既存の移行前のカスタムURLは削除されます。</div>
+        <div lang="en">Custom URL of before upgrading.<br>
+        This field is optional in ADD and SET operation.<br>
+        *When tag is set blank, existing Custom URL before upgrade will be deleted.</div>
+    disapprovalReasonCodes:
+      type: array
+      nullable: true
+      items:
+        type: string
+        nullable: true
+      description: |
+        <div lang="ja">審査否認コードです。<br>
+        (コード詳細は、DictionaryServiceのgetDisapprovalReasonのレスポンスを参照)</div>
+        <div lang="en">Code of Disapproval reason.<br>
+        (Refer to DictionaryService getDisapprovalReason response for details)</div>
+    reviewSmartphoneFinalUrl:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">配信審査中の最終リンク先URL（スマートフォン）です。</div>
+        <div lang="en">Upgraded Final URL (Smartphone), in review.</div>
+    reviewFinalUrl:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">移行後の配信審査中の最終リンク先URLです。</div>
+        <div lang="en">Upgraded Final URL, in review.</div>
+    reviewCustomParameters:
+      $ref: 'AdGroupCriterionServiceCustomParameters.yaml#/AdGroupCriterionServiceCustomParameters'
+    reviewDestinationUrl:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">移行前の配信審査中のカスタムURLです。</div>
+        <div lang="en">Custom URL of before upgrading, in review.</div>
+    reviewTrackingUrl:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">配信審査中のトラッキングURLです。</div>
+        <div lang="en">Tracking URL, in review.</div>
+    trackingUrl:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">トラッキングURLです。<br>
+        ADDおよびSET時、このフィールドは省略可能となります。<br>
+        ※空で設定すると、既存のトラッキングURLは削除されます。</div>
+        <div lang="en">Tracking URL.<br>
+        This field is optional in ADD and SET operation.<br>
+        *When tag is set blank, existing Tracking URL will be deleted.</div>
+    userStatus:
+      $ref: 'AdGroupCriterionServiceUserStatus.yaml#/AdGroupCriterionServiceUserStatus'
+  title: AdGroupCriterionServiceBiddableAdGroupCriterion
+  description: |
+    <div lang="ja">AdGroupCriterionServiceBiddableAdGroupCriterionオブジェクトは、広告グループの単価設定可能（包含）クライテリアです。</div>
+    <div lang="en">AdGroupCriterionServiceBiddableAdGroupCriterion object displays biddable criterion in ad group.</div>

@@ -1,0 +1,24 @@
+CampaignAssetServiceList:
+  type: object
+  nullable: true
+  properties:
+    campaignAssets:
+      type: array
+      nullable: true
+      items:
+        $ref: 'CampaignAsset.yaml#/CampaignAsset'
+    campaignId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">キャンペーンIDです。<br>
+        REPLACE時、このフィールドは必須です。</div>
+        <div lang="en">Campaign ID.<br>
+        This field is required in REPLACE operation.</div>
+    'type':
+      $ref: 'CampaignAssetServiceType.yaml#/CampaignAssetServiceType'
+  title: CampaignAssetServiceList
+  description: |
+    <div lang="ja">CampaignAssetServiceListオブジェクトは、キャンペーンとアセット間の設定情報を表します。</div>
+    <div lang="en">CampaignAssetServiceList object describes configuration information between campaign and assets.</div>

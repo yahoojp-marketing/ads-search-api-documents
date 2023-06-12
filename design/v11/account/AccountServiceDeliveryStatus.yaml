@@ -1,0 +1,23 @@
+AccountServiceDeliveryStatus:
+  type: string
+  nullable: true
+  enum:
+  - ACTIVE
+  - PAUSED
+  - UNKNOWN
+  title: AccountServiceDeliveryStatus
+  description: |
+    <div lang="ja">AccountServiceDeliveryStatusは、アカウントの配信設定を表します。<br>
+    SET時、このフィールドは省略可能となります。<br>
+    MCCアカウントの場合、このフィールドは返却されず、リクエストの際も無視されます。</div>
+    <div lang="en">AccountServiceDeliveryStatus object describes delivery settings.<br>
+    This field is optional in SET operation.<br>
+    If isManagerAccount is "TRUE", this field will not be returned and will be ignored on request.</div>
+    <dl class=term>
+      <dt class="term__item">PAUSED</dt>
+      <dd class="term__desc"><span lang="ja">配信状況はオフです。</span><span lang="en">Not active.</span></dd>
+      <dt class="term__item">ACTIVE</dt>
+      <dd class="term__desc"><span lang="ja">配信状況はオンです。</span><span lang="en">Active</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>
