@@ -29,11 +29,13 @@ RetargetingListServiceTargetingList:
       description: |
         <div lang="ja">Cookieを保持する日数です。<br>
         SET時、このフィールドは省略可能となります。<br>LogicalTargetListの場合、SET時にこのフィールドは無視されます。<br>
+        ※SET時、ruleBaseTargetList.isDateSpecificRule = TRUEの場合には、変更は出来ません。<br>
         ※Default：180<br>
         ※1-540日まで設定可能です。</div>
         <div lang="en">Days to hold Cookie.<br>
         This field is optional in SET operation.<br>
         For LogicalTargetList, this field will be ignored in SET operation.<br>
+        *In SET operation, if ruleBaseTargetList.isDateSpecificRule = TRUE, it is can not change.<br>
         *Default: 180<br>
         *Can set from 1-540 days.</div>
     reachStorageStatus:

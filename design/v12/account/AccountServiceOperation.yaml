@@ -1,0 +1,25 @@
+AccountServiceOperation:
+  type: object
+  nullable: true
+  required:
+  - accountId
+  - operand
+  properties:
+    accountId:
+      type: integer
+      nullable: false
+      format: int64
+      description: |
+        <div lang="ja">アカウントIDです。</div>
+        <div lang="en">Account ID.</div>
+    operand:
+      type: array
+      nullable: false
+      items:
+        $ref: 'Account.yaml#/Account'
+      minItems: 1
+      maxItems: 1
+  title: AccountServiceOperation
+  description: |
+    <div lang="ja">AccountServiceOperationオブジェクトは、操作対象となるアカウント情報と処理の内容を表します。</div>
+    <div lang="en">AccountServiceOperation object describes account information for operation and list of operations.</div>

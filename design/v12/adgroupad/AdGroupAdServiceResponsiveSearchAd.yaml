@@ -1,0 +1,98 @@
+AdGroupAdServiceResponsiveSearchAd:
+  type: object
+  nullable: true
+  properties:
+    headlines:
+      type: array
+      nullable: true
+      items:
+        $ref: 'AdGroupAdServiceHeadlineTextAsset.yaml#/AdGroupAdServiceHeadlineTextAsset'
+      description: |
+        <div lang="ja">レスポンシブ検索広告で指定するタイトルのテキストアセットを表します。<br>
+        headlines[]には、3~15件の指定が可能です。<br>
+        このフィールドは、ADD時は必須となり、SET時は省略可能となります。</div>
+        <div lang="en">Text asset for the headline that specify in responsive ads for search.<br>
+        3 to 15 items can be specified for headlines[].<br>
+        This field is required in ADD operation, and will be optional in SET operation.</div>
+    descriptions:
+      type: array
+      nullable: true
+      items:
+        $ref: 'AdGroupAdServiceDescriptionTextAsset.yaml#/AdGroupAdServiceDescriptionTextAsset'
+      description: |
+        <div lang="ja">レスポンシブ検索広告で指定する説明文のテキストアセットを表します。<br>
+        descriptions[]には、2~4件の指定が可能です。<br>
+        このフィールドは、ADD時は必須となり、SET時は省略可能となります。</div>
+        <div lang="en">Text asset for the description that specify in responsive ads for search.<br>
+        2 to 4 items can be specified for descriptions[].<br>
+        This field is required in ADD operation, and will be optional in SET operation.</div>
+    path1:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">自動作成される表示URLを補足するパスです。<br>
+        ADDおよびSET時、このフィールドは省略可能となります。その際、デフォルト設定値はnullとなります。<br>※path2を指定する場合は、path1は必須です。</div>
+        <div lang="en">The path information which complements display URL generated automatically.<br>
+        This field is optional in ADD and SET operation. The default value will be null.<br>*To specify path2, path1 is required.</div>
+    isRemovePath1:
+      $ref: 'AdGroupAdServiceIsRemove.yaml#/AdGroupAdServiceIsRemove'
+    path2:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">自動作成される表示URLを補足するパスです。<br>
+        ADDおよびSET時、このフィールドは省略可能となります。その際、デフォルト設定値はnullとなります。<br>※path1を指定していない場合、path2は無視されます。</div>
+        <div lang="en">The path information which complements display URL generated automatically.<br>
+        This field is optional in ADD and SET operation. The default value will be null.<br>*If path1 is not specified, path2 will be ignored.</div>
+    isRemovePath2:
+      $ref: 'AdGroupAdServiceIsRemove.yaml#/AdGroupAdServiceIsRemove'
+    reviewHeadlines:
+      type: array
+      nullable: true
+      items:
+        $ref: 'AdGroupAdServiceHeadlineTextAsset.yaml#/AdGroupAdServiceHeadlineTextAsset'
+      description: |
+        <div lang="ja">審査中のタイトルのテキストアセットを表します。<br>
+        このフィールドは、リクエストの際には無視されます。<br>
+        審査中の間のみ、レスポンスの際に返却されます。</div>
+        <div lang="en">Text asset for the headline under review.<br>
+        This field will be ignored on input.<br>
+        It will be returned at the time of response only during the review.</div>
+    reviewDescriptions:
+      type: array
+      nullable: true
+      items:
+        $ref: 'AdGroupAdServiceDescriptionTextAsset.yaml#/AdGroupAdServiceDescriptionTextAsset'
+      description: |
+        <div lang="ja">審査中の説明文のテキストアセットを表します。<br>
+        このフィールドは、リクエストの際には無視されます。<br>
+        審査中の間のみ、レスポンスの際に返却されます。</div>
+        <div lang="en">Text asset for the description under review.<br>
+        This field will be ignored on input.<br>
+        It will be returned at the time of response only during the review.</div>
+    reviewPath1:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">審査中の自動作成される表示URLを補足するパスです。<br>
+        このフィールドは、リクエストの際には無視されます。<br>
+        審査中の間のみ、レスポンスの際に返却されます。</div>
+        <div lang="en">The path information which complements display URL generated automatically (Under review).<br>
+        This field will be ignored on input.<br>
+        It will be returned at the time of response only during the review.</div>
+    reviewPath2:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">審査中の自動作成される表示URLを補足するパスです。<br>
+        このフィールドは、リクエストの際には無視されます。<br>
+        審査中の間のみ、レスポンスの際に返却されます。</div>
+        <div lang="en">The path information which complements display URL generated automatically (Under review).<br>
+        This field will be ignored on input.<br>
+        It will be returned at the time of response only during the review.</div>
+  title: AdGroupAdServiceResponsiveSearchAd
+  description: |
+    <div lang="ja">AdGroupAdServiceResponsiveSearchAdオブジェクトは、レスポンシブ検索広告を表します。<br>
+    ADDおよびSET時、このフィールドは省略可能となります。※adTypeがRESPONSIVE_SEARCH_ADの場合は必須です。</div>
+    <div lang="en">AdGroupAdServiceResponsiveSearchAd object is Responsive ads.<br>
+    This field is optional in ADD and SET operation. *If adType is RESPONSIVE_SEARCH_AD, this field is required.</div>

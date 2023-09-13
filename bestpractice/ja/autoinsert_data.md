@@ -3,7 +3,7 @@
 アドカスタマイザーとは、検索広告の広告文面を動的に変更できる機能です。<br>
 広告のタイトルや説明文に任意のテキストを自動挿入できます。また、カウントダウン関数を使って、セール終了までの時間をカウントダウン表示できます。<br>
 アドカスタマイザーについて、詳しくは以下のヘルプをご参照ください。<br>
-・<a href="https://ads-help.yahoo.co.jp/yahooads/ss/articledetail?lan=ja&aid=11385">アドカスタマイザーについて</a><br>
+・<a href="https://ads-help.yahoo-net.jp/s/article/H000044652?language=ja">アドカスタマイザーについて</a><br>
 
 ## 検索広告API での実施方法
 検索広告APIではアドカスタマイザーを利用するために、以下の3つのServiceを使用します。
@@ -729,7 +729,7 @@ FeedItemを登録する前に、AdGroupCriterionService:addで、キーワード
 
 <b>■ヒント</b><br>
 カウントダウン関数を使用すると、広告内にセールやキャンペーンなどの終了までの残り時間を表示できます。また、カウントダウンの終了とともに、広告配信を停止できます。詳しくは以下のヘルプをご参照ください。<br>
-・<a href="https://ads-help.yahoo.co.jp/yahooads/ss/articledetail?lan=ja&aid=11374">カウントダウン関数について</a>
+・<a href="https://ads-help.yahoo-net.jp/s/article/H000044692?language=ja">カウントダウン関数について</a>
 
 ##### リクエストサンプル
 ```json

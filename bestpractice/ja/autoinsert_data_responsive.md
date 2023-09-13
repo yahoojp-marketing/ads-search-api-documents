@@ -3,8 +3,8 @@
 アドカスタマイザーとは、検索広告の広告文面を動的に変更できる機能です。<br>
 広告のタイトルや説明文に任意のテキストを自動挿入できます。また、カウントダウン関数を使って、セール終了までの時間をカウントダウン表示できます。<br>
 アドカスタマイザーについて、詳しくは以下のヘルプをご参照ください。<br>
-・<a href="https://ads-help.yahoo.co.jp/yahooads/ss/articledetail?lan=ja&aid=11385">アドカスタマイザーについて</a><br>
-・<a href="https://ads-help.yahoo.co.jp/yahooads/search/articledetail?lan=ja&aid=81509">レスポンシブ検索広告とは</a><br>
+・<a href="https://ads-help.yahoo-net.jp/s/article/H000044652?language=ja">アドカスタマイザーについて</a><br>
+・<a href="https://ads-help.yahoo-net.jp/s/article/H000044220?language=ja">レスポンシブ検索広告とは</a><br>
 
 ## 検索広告API での実施方法
 検索広告APIではアドカスタマイザーを利用するために、以下のServiceを使用します。
@@ -525,7 +525,7 @@ A社は、販促施策の一環として、検索広告APIを使い、以下の�
 例えば、Descriptionsは最低2件、最大4件の指定が必要ですが、カウントダウン関数を含めないDescriptionsを2件以上、カウントダウン関数の有無関係なしのDescriptionsを4件以内の登録が必要です。<br>
 
 カウントダウン関数（レスポンシブ検索広告用）について、詳しくは以下のヘルプをご参照ください。<br>
-・<a href="https://ads-help.yahoo.co.jp/yahooads/search/articledetail?lan=ja&aid=81650">カウントダウン関数（レスポンシブ検索広告用）</a>
+・<a href="https://ads-help.yahoo-net.jp/s/article/H000044277?language=ja">カウントダウン関数（レスポンシブ検索広告用）</a>
 
 ##### リクエストサンプル
 ```json

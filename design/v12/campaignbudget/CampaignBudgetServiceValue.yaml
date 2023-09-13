@@ -1,0 +1,21 @@
+CampaignBudgetServiceValue:
+  type: object
+  nullable: true
+  properties:
+    errors:
+      type: array
+      nullable: true
+      items:
+        $ref: '../../Error.yaml#/Error'
+    campaignBudget:
+      $ref: 'CampaignBudget.yaml#/CampaignBudget'
+    operationSucceeded:
+      type: boolean
+      nullable: true
+      description: |
+        <div lang="ja">処理結果です。</div>
+        <div lang="en">Result of process.</div>
+  title: CampaignBudgetServiceValue
+  description: |
+    <div lang="ja">CampaignBudgetServiceValueオブジェクトは、共有予算の情報を格納します。</div>
+    <div lang="en">CampaignBudgetServiceValue contains CampaignBudget value information.</div>

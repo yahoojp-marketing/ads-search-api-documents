@@ -8,9 +8,11 @@ RetargetingListServiceIsAllVisitorRule:
   title: RetargetingListServiceIsAllVisitorRule
   description: |
     <div lang="ja">RetargetingListServiceIsAllVisitorRuleは、すべての訪問者に対するルールか定義します。<br>
-    ADDおよびSET時、このフィールドは必須となります。</div>
+    ADDおよびSET時、このフィールドは必須となります。<br>
+    ※SET時、ruleBaseTargetList.isDateSpecificRule = TRUEの場合には、変更は出来ません。</div>
     <div lang="en">RetargetingListServiceIsAllVisitorRule define the rule of visitors.<br>
-    This field is required in ADD and SET operation.</div>
+    This field is required in ADD and SET operation.<br>
+    *In SET operation, if ruleBaseTargetList.isDateSpecificRule = TRUE, it is can not change.</div>
     <dl class=term>
       <dt class="term__item">TRUE</dt>
       <dd class="term__desc"><span lang="ja">すべての訪問者へのターゲットリストです。</span><span lang="en">Target list to all visitors.</span></dd>

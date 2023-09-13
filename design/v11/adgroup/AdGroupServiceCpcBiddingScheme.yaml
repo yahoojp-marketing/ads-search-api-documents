@@ -9,13 +9,11 @@ AdGroupServiceCpcBiddingScheme:
       description: |
         <div lang="ja">
         広告グループ最大入札価格（CPC）です。<br>
-        ADDおよびSET時、このフィールドは省略可能となります。<br>
-        ※campaignBiddingStrategyTypeがCPCの場合のみ指定可能です。
+        ADDおよびSET時、このフィールドは省略可能となります。
         </div>
         <div lang="en">
         Max bid of ad group (CPC).<br>
-        This field is optional in ADD and SET operation.<br>
-        *This can only be specified when campaignBiddingStrategyType is CPC.
+        This field is optional in ADD and SET operation.
         </div>
   title: AdGroupServiceCpcBiddingScheme
   description: |

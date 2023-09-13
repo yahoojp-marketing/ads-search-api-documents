@@ -1,0 +1,52 @@
+OfflineConversionServiceSelector:
+  type: object
+  nullable: true
+  required:
+  - accountId
+  properties:
+    accountId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">検索条件：アカウントIDです。</div>
+        <div lang="en">Search condition: Account ID.</div>
+    uploadIds:
+      type: array
+      nullable: true
+      items:
+        type: integer
+        nullable: true
+        format: int64
+      maxItems: 1000
+      description: |
+        <div lang="ja">検索条件：アップロードIDです。</div>
+        <div lang="en">Search condition: Upload ID.</div>
+    sorts:
+      type: array
+      nullable: true
+      items:
+        $ref: 'OfflineConversionServiceSort.yaml#/OfflineConversionServiceSort'
+    numberResults:
+      type: integer
+      nullable: true
+      format: int32
+      minimum: 1
+      maximum: 1000
+      default: 500
+      description: |
+        <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div>
+        <div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1. Also see Entity Limits per operation.</div>
+    startIndex:
+      type: integer
+      nullable: true
+      format: int32
+      minimum: 1
+      default: 1
+      description: |
+        <div lang="ja">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div>
+        <div lang="en">Index of the first result to return in this page. This field must be greater than or equal to 1.</div>
+  title: OfflineConversionServiceSelector
+  description: |
+    <div lang="ja">OfflineConversionServiceSelectorオブジェクトは、登録したオフラインコンバージョンデータを照会するための検索条件を格納します。</div>
+    <div lang="en">OfflineConversionServiceSelector object contains search condition to inquire about registered offline conversion data.</div>

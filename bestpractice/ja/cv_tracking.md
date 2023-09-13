@@ -2,7 +2,7 @@
 ## コンバージョンとは
 広告をクリックしたユーザーが、何らかの「成果」となる行動をとった数です。これを計測することで、広告がどの程度成果を上げているかなどを確認できます。<br>
 詳しくは以下のヘルプをご参照ください。<br>
-・<a href="https://ads-help.yahoo.co.jp/yahooads/ss/articledetail?lan=ja&aid=1159">コンバージョン測定とは</a>
+・<a href="https://ads-help.yahoo-net.jp/s/article/H000045014?language=ja">コンバージョン測定とは</a>
 
 ## 検索広告API での実施方法
 検索広告APIでは、コンバージョントラッカー情報（コンバージョン測定タグおよび、タグごとのパフォーマンスデータ）の取得および追加・更新を行うために、ConversionTrackerService、を使用します。<br>
@@ -131,7 +131,7 @@ A社は商品B（1万円）を販売しているが、ウェブページでコ�
 次に、ConversionTrackerService:getを使い、先ほど登録したコンバージョン計測タグを取得します。<br>
 ※コンバージョン測定タグの、snippet（webConversion）※従来版、advancedSnippet（webConversion）※リニューアル版、は、ここで確認してください。<br>
 ※advancedSnippetを使用する場合、サイトジェネラルタグも必要です。詳しくは以下のヘルプをご参照ください。<br>
-・<a href="https://ads-help.yahoo.co.jp/yahooads/ss/articledetail?lan=ja&aid=47048">サイトジェネラルタグについて</a>
+・<a href="https://ads-help.yahoo-net.jp/s/article/H000044574?language=ja">サイトジェネラルタグについて</a>
 
 ##### リクエストサンプル
 ```json

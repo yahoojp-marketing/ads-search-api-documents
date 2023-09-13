@@ -17,7 +17,7 @@ AccountServiceIncludeManagerAccount:
       <dt class="term__item">EXCLUDE_MANAGER</dt>
       <dd class="term__desc"><span lang="ja">MCCアカウントを除外します。</span><span lang="en">Exclude MCC accounts.</span></dd>
       <dt class="term__item">ALL</dt>
-      <dd class="term__desc"><span lang="ja">全てのアカウントです。</span><span lang="en">All accounts.</span></dd>
+      <dd class="term__desc"><span lang="ja">全てのアカウントです。リクエストヘッダーにx-z-base-account-idを指定した場合、この値は指定できません。</span><span lang="en">All accounts. If x-z-base-account-id is specified in the request header, this value cannot be specified.</span></dd>
       <dt class="term__item">UNKNOWN</dt>
       <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
     </dl>

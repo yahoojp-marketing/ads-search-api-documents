@@ -3,7 +3,7 @@
 Conversion is the number of users who clicked on an Ads and performed some "result" action.<br>
 By measuring this, you can see how well your Ads is performing.<br>
 For details, refer to the help below.<br>
-・<a href="https://ads-help.yahoo.co.jp/yahooads/ss/articledetail?lan=en&aid=353">Conversion Analytics</a>
+・<a href="https://ads-help.yahoo-net.jp/s/article/H000045014?language=en_US">Conversion Analytics</a>
 
 ## How to operate from Search Ads API
 Search Ads API uses ConversionTrackerService, to get, add and update conversion tracker information.<br>
@@ -132,7 +132,7 @@ At first, add Conversion Tracker Information with ConversionTrackerService:add.
 Get comversion tags to measure with ConversionTrackerService:get.<br>
 ※Check Conversion measurement tag (snippet or advancedSnippet) here.<br>
 ※Then you use advancedSnippet, you need site general tag. For details, refer to the help below.<br>
-・<a href="https://ads-help.yahoo.co.jp/yahooads/ss/articledetail?lan=en&aid=27085">Conversion Analytics</a>
+・<a href="https://ads-help.yahoo-net.jp/s/article/H000044574?language=en_US">Conversion Analytics</a>
 
 ##### Request sample
 ```json

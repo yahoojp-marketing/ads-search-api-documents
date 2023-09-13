@@ -8195,6 +8195,7 @@ paths:
                 <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
+                <tr><td>225305</td><td>invalid structured snippet header.</td><td><div lang="ja">カテゴリ補足オプション（ヘッダ）が不正です。</div><div lang="en">Structured snippet header is invalid.</div></td></tr>
               </tbody>
             </table>
             </div>

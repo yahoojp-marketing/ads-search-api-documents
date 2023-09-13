@@ -1,0 +1,21 @@
+FeedServicePlaceholderType:
+  type: string
+  nullable: true
+  enum:
+  - AD_CUSTOMIZER
+  - DYNAMIC_AD_FOR_SEARCH_PAGE_FEEDS
+  - UNKNOWN
+  title: FeedServicePlaceholderType
+  description: |
+    <div lang="ja">FeedPlaceholderTypeは、FeedItem情報の種類を選択します。<br>
+    このフィールドは、ADD時に必須となり、SETおよびREMOVE時に無視されます。</div>
+    <div lang="en">FeedServicePlaceholderType (enum) object select the type of Feed Item information.<br>
+    This field is required in ADD operation, and will be ignored in SET and REMOVE operation.</div>
+    <dl class=term>
+      <dt class="term__item">AD_CUSTOMIZER</dt>
+      <dd class="term__desc"><span lang="ja">データ自動挿入です。</span><span lang="en">Auto data insertion.</span></dd>
+      <dt class="term__item">DYNAMIC_AD_FOR_SEARCH_PAGE_FEEDS</dt>
+      <dd class="term__desc"><span lang="ja">動的検索連動型広告ページフィードです。<br>※現在、こちらのEnumは利用できません。</span><span lang="en">Page feeds of dynamic ad for search.<br>*Currently this Enum is not available.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown value.</span></dd>
+    </dl>

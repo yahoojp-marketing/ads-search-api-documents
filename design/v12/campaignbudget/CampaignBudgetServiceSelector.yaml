@@ -1,0 +1,47 @@
+CampaignBudgetServiceSelector:
+  type: object
+  nullable: true
+  required:
+  - accountId
+  properties:
+    accountId:
+      type: integer
+      nullable: false
+      format: int64
+      description: |
+        <div lang="ja">検索条件：アカウントIDです。</div>
+        <div lang="en">Search condition: Account ID.</div>
+    campaignBudgetIds:
+      type: array
+      nullable: true
+      items:
+        type: integer
+        nullable: true
+        format: int64
+      maxItems: 1000
+      description: |
+        <div lang="ja">検索条件：共有予算IDです。</div>
+        <div lang="en">Search condition: Campaign budget ID.</div>
+    numberResults:
+      type: integer
+      nullable: true
+      format: int32
+      minimum: 1
+      maximum: 2000
+      default: 500
+      description: |
+        <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div>
+        <div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1. Also see Entity Limits per operation.</div>
+    startIndex:
+      type: integer
+      nullable: true
+      format: int32
+      minimum: 1
+      default: 1
+      description: |
+        <div lang="ja">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div>
+        <div lang="en">Index of the first result to return in this page. This field must be greater than or equal to 1.</div>
+  title: CampaignBudgetServiceSelector
+  description: |
+    <div lang="ja">CampaignBudgetServiceSelectorオブジェクトは、共有予算の情報を指定します。</div>
+    <div lang="en">CampaignBudgetServiceSelector describes the CampaignBudget information.</div>

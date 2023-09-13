@@ -2,7 +2,7 @@
 ## Whats is Dynamic Ads for Search?
 Ads with the title automatically generated.<br>
 For details, refer to the help below.<br>
-・<a href="https://ads-help.yahoo.co.jp/yahooads/ss/articledetail?lan=en&aid=15375">Benefits of Dynamic Ads for Search and how it works</a>
+・<a href="https://ads-help.yahoo-net.jp/s/article/H000044549?language=en_US">Benefits of Dynamic Ads for Search and how it works</a>
 
 ## Create Dynamic Ads for Search
 You can create Dynamic Ads for Search with following flow.
@@ -15,7 +15,7 @@ You can create Dynamic Ads for Search with following flow.
 Once the ad has been reviewed, ad delivery usually begins in 1-3 days, up to a maximum of 2 weeks.<br>
 
 For details, refer to the help below.<br>
-・<a href="https://ads-help.yahoo.co.jp/yahooads/ss/articledetail?lan=en&aid=283">Create Dynamic Ads for Search</a>
+・<a href="https://ads-help.yahoo-net.jp/s/article/H000044590?language=en_US">Create Dynamic Ads for Search</a>
 
 #### 1.	Add feed item information
 Add feed item information with FeedService:add. Specify the following.<br>

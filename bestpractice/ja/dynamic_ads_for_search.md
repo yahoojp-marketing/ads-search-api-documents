@@ -2,7 +2,7 @@
 ## 動的検索連動型広告とは
 あらかじめ指定したサイトのコンテンツと関連性の高い検索キーワードに対して、広告のタイトルを自動的に生成して配信する広告です。<br>
 詳しくは以下のヘルプをご参照ください。<br>
-・<a href="https://ads-help.yahoo.co.jp/yahooads/ss/articledetail?lan=ja&aid=20994">動的検索連動型広告のメリットと仕組み</a>
+・<a href="https://ads-help.yahoo-net.jp/s/article/H000044549?language=ja">動的検索連動型広告のメリットと仕組み</a>
 
 ## 動的検索連動型広告の入稿の流れ
 動的検索連動型広告の入稿の流れは以下の通りです。
@@ -15,7 +15,7 @@
 ※広告の審査が完了後、通常は1～3日、最長で2週程度で広告配信が開始されます。<br>
 
 詳しくは以下のヘルプをご参照ください。<br>
-・<a href="https://ads-help.yahoo.co.jp/yahooads/ss/articledetail?lan=ja&aid=28684">動的検索連動型広告の入稿の流れ</a>
+・<a href="https://ads-help.yahoo-net.jp/s/article/H000044590?language=ja">動的検索連動型広告の入稿の流れ</a>
 
 #### 1.	フィードアイテム情報を追加
 PageFeedAssetSetService:addを使用して、フィードアイテム情報を追加します。以下の指定が必要です。<br>
@@ -70,7 +70,7 @@ PageFeedAssetSetService:addを使用して、フィードアイテム情報を�
 
 ※ページフィードアイテムcsvファイルのテンプレートは、管理画面からダウンロードもできます。<br>
 　詳しくは以下のヘルプをご参照ください。<br>
-　<a href="https://ads-help.yahoo.co.jp/yahooads/ss/articledetail?lan=ja&aid=20901">ページフィードの作成方法</a>
+　<a href="https://ads-help.yahoo-net.jp/s/article/H000044706?language=ja">ページフィードの作成方法</a>
 
 ファイルアップロードの際、クエリパラメータに以下の指定が必要です。<br>
 *　accountId <br>

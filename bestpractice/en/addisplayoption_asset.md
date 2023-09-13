@@ -2,7 +2,7 @@
 ## What is “Ad Display Option”?
 \* This best practice page is for the new method to be released in Spring, 2022.
 			
-<A href="https://ads-help.yahoo.co.jp/yahooads/ss/articledetail?lan=en&aid=85&o=default">Ad Display Option</a> is a function of displaying additional information such as a link to other URL page or phone number to Search Ads.   
+<A href="https://ads-help.yahoo-net.jp/s/article/H000045056?language=en_US">Ad Display Option</a> is a function of displaying additional information such as a link to other URL page or phone number to Search Ads.   
     
 There are 4 features for Ad Display Option:  
 * "QuickLink" (Displays a URL link to other URL page on bottom of the ads)
