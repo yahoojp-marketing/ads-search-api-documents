@@ -5,7 +5,7 @@
 4. [Column](#anchor4)
 
 ## Item
-AuditLog item of Search Ad are as follows. *Data as of August 28, 2020.
+AuditLog item of Search Ad are as follows. *Data as of September 20, 2023.
 
 #### 1. AuditLog field
 <a id="anchor1"></a>
