@@ -5,6 +5,7 @@ Best Practice introduces an efficient way of using Yahoo! JAPAN Ads API.<br>Plea
 * [Ad Customizers feature](./autoinsert_data_responsive.md)
 * [Conversion Tracking](./cv_tracking.md)
 * [Dynamic Ads for Search](./dynamic_ads_for_search.md)
+* [Targeting](./search_ads_targeting.md)
 
 ## Appendix
 * [Value Constraints](./constraints.md)

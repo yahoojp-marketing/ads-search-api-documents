@@ -1605,6 +1605,9 @@ paths:
                 <tr><td>211019</td><td>Request failed because of trademark conflicts.</td><td><div lang="ja">商標に抵触している為、登録できません。</div><div lang="en">Request failed because of trademark conflicts.</div></td></tr>
                 <tr><td>210607</td><td>There are already 3 responsive ads with userStatus ACTIVE.</td><td><div lang="ja">レスポンシブ広告かつuserStatusがACTIVEである広告が既に3件存在します。</div><div lang="en">There are already 3 responsive ads with userStatus ACTIVE.</div></td></tr>
                 <tr><td>210604</td><td>The requested ad type is not available.</td><td><div lang="ja">リクエストされた広告タイプはご利用できません。</div><div lang="en">The requested ad type is not available.</div></td></tr>
+                <tr><td>210608</td><td>When using fixed display position, need three title assets and two description assets.</td><td><div lang="ja">表示位置の固定を利用する場合、タイトルは3番目まで、説明文は2番目まで表示されるアセットが必要です。</div><div lang="en">When using fixed display position, need three title assets and two description assets.</div></td></tr>
+                <tr><td>210609</td><td>Need three title assets and two description assets. Assets that use a function without default text are not counted in the required count.</td><td><div lang="ja">タイトルは3番目まで、説明文は2番目まで表示されるアセットが必要です。<br>デフォルトテキストのない関数が使われているアセットは、必須件数にカウントされません。<br>デフォルトテキストを設定、または関数を使わずにアセットを作成してください。</div><div lang="en">Need three title assets and two description assets.<br>Assets that use a function without default text are not counted in the required count.<br>Set the default text or create an asset without using a function.</div></td></tr>
+                <tr><td>210614</td><td>Description: A number of characters is exceeding the limit for input.</td><td><div lang="ja">説明文：入力可能な文字数を超えています。</div><div lang="en">Description: A number of characters is exceeding the limit for input.</div></td></tr>
               </tbody>
             </table>
             </div>
@@ -7297,6 +7300,7 @@ paths:
                 <tr><td>R0001</td><td>Require.</td><td><div lang="ja">必須です。</div><div lang="en">It is missing required parameter.</div></td></tr>
                 <tr><td>F0001</td><td>Invalid format.</td><td><div lang="ja">値の形式が不正です。</div><div lang="en">The value format is invalid.</div></td></tr>
                 <tr><td>V0001</td><td>Invalid value.</td><td><div lang="ja">値が無効です。</div><div lang="en">The value is invalid.</div></td></tr>
+                <tr><td>V0003</td><td>Invalid value.</td><td><div lang="ja">アップロードファイルサイズが上限を超過しています。</div><div lang="en">The upload file size exceeds the limit.</div></td></tr>
                 <tr><td>S0001</td><td>Invalid Status.</td><td><div lang="ja">ステータスが無効です。</div><div lang="en">The status is invalid.</div></td></tr>
                 <tr><td>L0002</td><td>Over list size.</td><td><div lang="ja">配列の要素数が上限値を超過しています。</div><div lang="en">The number of elements in the array exceeds the upper limit.</div></td></tr>
                 <tr><td>L0001</td><td>Lower list size.</td><td><div lang="ja">配列の要素数が下限値を下回っています。</div><div lang="en">The number of elements in the array is below the lower limit.</div></td></tr>
@@ -10507,6 +10511,16 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /BiddingSeasonalityAdjustmentService/get:
     post:
+      parameters:
+        - in: header
+          name: x-z-base-account-id
+          schema:
+            type: integer
+            format: int64
+          required: true
+          description: |
+            <div lang="ja">アカウントIDを指定してください。</div>
+            <div lang="en">Specify Account ID.</div>
       description: |
         <div lang="ja">自動入札のスポット調整に関する情報を取得します。</div>
         <div lang="en">Gets bidding seasonality adjustment.</div>
@@ -10559,6 +10573,16 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /BiddingSeasonalityAdjustmentService/add:
     post:
+      parameters:
+        - in: header
+          name: x-z-base-account-id
+          schema:
+            type: integer
+            format: int64
+          required: true
+          description: |
+            <div lang="ja">アカウントIDを指定してください。</div>
+            <div lang="en">Specify Account ID.</div>
       description: |
         <div lang="ja">自動入札のスポット調整を追加します。</div>
         <div lang="en">Create bidding seasonality adjustment.</div>
@@ -10611,6 +10635,16 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /BiddingSeasonalityAdjustmentService/set:
     post:
+      parameters:
+        - in: header
+          name: x-z-base-account-id
+          schema:
+            type: integer
+            format: int64
+          required: true
+          description: |
+            <div lang="ja">アカウントIDを指定してください。</div>
+            <div lang="en">Specify Account ID.</div>
       description: |
         <div lang="ja">自動入札のスポット調整の設定を変更します。</div>
         <div lang="en">Update bidding seasonality adjustment.</div>
@@ -10663,6 +10697,16 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /BiddingSeasonalityAdjustmentService/remove:
     post:
+      parameters:
+        - in: header
+          name: x-z-base-account-id
+          schema:
+            type: integer
+            format: int64
+          required: true
+          description: |
+            <div lang="ja">アカウントIDを指定してください。</div>
+            <div lang="en">Specify Account ID.</div>
       description: |
         <div lang="ja">自動入札のスポット調整を削除します。</div>
         <div lang="en">Remove bidding seasonality adjustment.</div>

@@ -5,6 +5,7 @@
 * [アドカスタマイザー機能](./autoinsert_data_responsive.md)
 * [コンバージョントラッキング機能](./cv_tracking.md)
 * [動的検索連動型広告](./dynamic_ads_for_search.md)
+* [ターゲティング](./search_ads_targeting.md)
 
 ## Appendix
 * [値の制限](./constraints.md)
