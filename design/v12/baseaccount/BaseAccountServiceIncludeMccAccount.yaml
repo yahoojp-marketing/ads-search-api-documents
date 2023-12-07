@@ -23,7 +23,7 @@ BaseAccountServiceIncludeMccAccount:
       <dt class="term__item">ONLY_ROOT_MCC</dt>
       <dd class="term__desc"><span lang="ja">ルートMCCアカウントのみです。</span><span lang="en">Root MCC account only.</span></dd>
       <dt class="term__item">ONLY_ADS_ACCOUNT</dt>
-      <dd class="term__desc"><span lang="ja">広告アカウントのみです。</span><span lang="en">Ads account only.</span></dd>
+      <dd class="term__desc"><span lang="ja">検索広告アカウントのみです。</span><span lang="en">Search Ads account only.</span></dd>
       <dt class="term__item">ALL</dt>
       <dd class="term__desc"><span lang="ja">全てのアカウントです。</span><span lang="en">All accounts.</span></dd>
       <dt class="term__item">UNKNOWN</dt>
