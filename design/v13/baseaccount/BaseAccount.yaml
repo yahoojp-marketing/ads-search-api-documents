@@ -1,0 +1,43 @@
+BaseAccount:
+  type: object
+  nullable: true
+  properties:
+    accountId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        アカウントIDです。
+        </div>
+        <div lang="en">
+        Account ID.
+        </div>
+    accountName:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        アカウント名です。
+        </div>
+        <div lang="en">
+        Account name.
+        </div>
+    accountStatus:
+      $ref: 'BaseAccountServiceAccountStatus.yaml#/BaseAccountServiceAccountStatus'
+    authType:
+      $ref: 'BaseAccountServiceAuthType.yaml#/BaseAccountServiceAuthType'
+    hasAdminAuth:
+      $ref: 'BaseAccountServiceHasAdminAuth.yaml#/BaseAccountServiceHasAdminAuth'
+    isRootMccAccount:
+      $ref: 'BaseAccountServiceIsRootMccAccount.yaml#/BaseAccountServiceIsRootMccAccount'
+    isMccAccount:
+      $ref: 'BaseAccountServiceIsMccAccount.yaml#/BaseAccountServiceIsMccAccount'
+    isTestAccount:
+      $ref: 'BaseAccountServiceIsTestAccount.yaml#/BaseAccountServiceIsTestAccount'
+  title: Account
+  description: |
+    <div lang="ja">BaseAccountオブジェクトは、アカウント情報を示します。<br>
+    </div>
+    <div lang="en">BaseAccount objects serve account information.<br>
+    </div>

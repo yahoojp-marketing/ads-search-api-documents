@@ -81,3 +81,4 @@
 "ASSET_DESCRIPTION2","アセット（説明文2）","Asset (description2)","assetDescription2","STRING","","Attribute","","",""
 "ASSET_DESCRIPTION3","アセット（説明文3）","Asset (description3)","assetDescription3","STRING","","Attribute","","",""
 "ASSET_DESCRIPTION4","アセット（説明文4）","Asset (description4)","assetDescription4","STRING","","Attribute","","",""
+"AD_STRENGTH","広告の有効性","Ad strength","adStrength","ENUM","","Attribute","非常に高い,高い,平均的,低い,保留,-","Excellent,Good,Average,Poor,Pending,-",""

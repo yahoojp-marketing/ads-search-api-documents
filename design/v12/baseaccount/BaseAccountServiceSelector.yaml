@@ -19,9 +19,11 @@ BaseAccountServiceSelector:
       description: |
         <div lang="ja">アカウント名です。<br>
         このフィールドは、省略可能となります。<br>
+        この検索条件では、大文字と小文字は区別されません。
         </div>
         <div lang="en">Account name.<br>
         This field is optional.<br>
+        This searching condition is case-insensitive.
         </div>
     accountStatuses:
       type: array

@@ -1,0 +1,80 @@
+PageFeedAssetServiceSelector:
+  type: object
+  nullable: true
+  required:
+  - accountId
+  properties:
+    accountId:
+      type: integer
+      nullable: false
+      format: int64
+      description: |
+        <div lang="ja">アカウントID</div>
+        <div lang="en">Account ID.</div>
+    pageFeedAssetSetIds:
+      type: array
+      nullable: true
+      items:
+        type: integer
+        nullable: true
+        format: int64
+      minItems: 1
+      maxItems: 1000
+      description: |
+        <div lang="ja">ページフィードアセットセットID</div>
+        <div lang="en">PageFeedAssetSet ID.</div>
+    pageFeedAssetIds:
+      type: array
+      nullable: true
+      items:
+        type: integer
+        nullable: true
+        format: int64
+      minItems: 1
+      maxItems: 1000
+      description: |
+        <div lang="ja">ページフィードアセットID</div>
+        <div lang="en">PageFeedAsset ID.</div>
+    approvalStatuses:
+      type: array
+      nullable: true
+      items:
+        $ref: 'PageFeedAssetServiceApprovalStatus.yaml#/PageFeedAssetServiceApprovalStatus'
+      maxItems: 5
+    pageFeedAssetCustomLabels:
+      type: array
+      nullable: true
+      items:
+        type: string
+        nullable: true
+      description: |
+        <div lang="ja">ページフィードアセットのカスタムラベル</div>
+        <div lang="en">Custom label of Page feed asset.</div>
+    pageFeedAssetUrls:
+      type: array
+      nullable: true
+      items:
+        $ref: 'PageFeedAssetServicePageFeedAssetUrl.yaml#/PageFeedAssetServicePageFeedAssetUrl'
+    numberResults:
+      type: integer
+      nullable: true
+      format: int32
+      minimum: 1
+      maximum: 10000
+      default: 500
+      description: |
+        <div lang="ja">開始位置から取得する結果の数。このフィールドは、1以上を指定する必要があります。</div>
+        <div lang="en">The number of results to retrieve starting from the initial position. This field must be greater than or equal to 1.</div>
+    startIndex:
+      type: integer
+      nullable: true
+      format: int32
+      minimum: 1
+      default: 1
+      description: |
+        <div lang="ja">取得を開始する結果セット内の位置。このフィールドは、1以上を指定する必要があります。</div>
+        <div lang="en">The position within the result set where retrieval begins. This field must be greater than or equal to 1.</div>
+  title: PageFeedAssetServiceSelector
+  description: |
+    <div lang="ja">PageFeedAssetServiceSelectorオブジェクトは、登録したページフィードアセットを照会するための検索条件を格納します。</div>
+    <div lang="en">PageFeedAssetServiceSelector object stores search condition to inquire about registered page feed asset.</div>

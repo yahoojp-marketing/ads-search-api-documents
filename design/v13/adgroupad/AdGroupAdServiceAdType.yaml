@@ -1,0 +1,34 @@
+AdGroupAdServiceAdType:
+  type: string
+  nullable: true
+  enum:
+  - TEXT_AD2
+  - APP_AD
+  - EXTENDED_TEXT_AD
+  - DYNAMIC_SEARCH_LINKED_AD
+  - RESPONSIVE_SEARCH_AD
+  - UNKNOWN
+  title: AdGroupAdServiceAdType
+  description: |
+    <div lang="ja">AdGroupAdServiceAdTypeは、広告タイプを表します。<br>
+    ADDおよびSET時、このフィールドは必須となります。<br>
+    現在、SET時はRESPONSIVE_SEARCH_ADのみ指定可能です。<br>
+    なお、選択した配信先デバイスにより、指定可能な広告の文字数は異なります。</div>
+    <div lang="en">AdGroupAdServiceAdType describes the type of ad.<br>
+    This field is required in ADD and Set operation.<br>
+    Currently, only RESPONSIVE_SEARCH_AD can be specified in SET operation.<br>
+    The number of character vary from the device type you choose.</div>
+    <dl class=term>
+      <dt class="term__item">EXTENDED_TEXT_AD</dt>
+      <dd class="term__desc"><span lang="ja">「タイトル15文字-15文字、説明文40文字」のテキスト広告です。<br>PC、スマートフォン・タブレット端末の場合にご利用いただけます。<br>※現在、こちらの広告タイプでは入稿できません。</span><span lang="en">Text ads for “Title: 15 - 15 characters, Description: 40 characters”.<br>It is available for PC, Smartphone and Tablet.<br>*Currently this ad type is not available for ad creation.</span></dd>
+      <dt class="term__item">DYNAMIC_SEARCH_LINKED_AD</dt>
+      <dd class="term__desc"><span lang="ja">動的検索連動型広告です。</span><span lang="en">Dynamic Ads for Search.</span></dd>
+      <dt class="term__item">TEXT_AD2</dt>
+      <dd class="term__desc"><span lang="ja">「タイトル15文字、説明文19文字-19文字」のテキスト広告です。<br>PC、スマートフォン・タブレット端末の場合にご利用いただけます。<br>※現在、こちらの広告タイプでは入稿できません。</span><span lang="en">Text ads for “Title: 15 characters, Description: 19 characters / 19 characters”.<br>It is available for PC, Smartphone and Tablet.<br>*Currently this ad type is not available for ad creation.</span></dd>
+      <dt class="term__item">APP_AD</dt>
+      <dd class="term__desc"><span lang="ja">アプリ用広告です。<br>スマートフォン・タブレット端末の場合にご利用いただけます。</span><span lang="en">Ads for Mobile App Ads.<br>It is available for Smartphone or Tablet.</span></dd>
+      <dt class="term__item">RESPONSIVE_SEARCH_AD</dt>
+      <dd class="term__desc"><span lang="ja">レスポンシブ検索広告です。</span><span lang="en">Responsive Ads for Search.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown value.</span></dd>
+    </dl>

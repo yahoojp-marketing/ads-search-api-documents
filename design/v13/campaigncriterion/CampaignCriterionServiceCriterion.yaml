@@ -1,0 +1,32 @@
+CampaignCriterionServiceCriterion:
+  type: object
+  nullable: true
+  properties:
+    criterionId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">クライテリアIDです。<br>
+        REMOVE時、このフィールドは必須です。</div>
+        <div lang="en">CampaignCriterionServiceCriterion ID.<br>
+        This field is required in REMOVE operation.</div>
+    criterionTrackId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">クライテリオントラックIDです。<br>
+        対象外キーワードでは返却されません。</div>
+        <div lang="en">CampaignCriterionServiceCriterion track ID.<br>
+        This is not returned for Negative keyword.</div>
+    criterionType:
+      $ref: 'CampaignCriterionServiceCriterionType.yaml#/CampaignCriterionServiceCriterionType'
+    keyword:
+      $ref: 'CampaignCriterionServiceKeyword.yaml#/CampaignCriterionServiceKeyword'
+  title: CampaignCriterionServiceCriterion
+  description: |
+    <div lang="ja">CampaignCriterionServiceCriterionオブジェクトは、クライテリアを表します。※キャンペーン用クライテリアです。<br>
+    ADD時およびREMOVE時、このフィールドは必須です。</div>
+    <div lang="en">CampaignCriterionServiceCriterion object describes criteria information. *This is a criteria for campaign.<br>
+    This field is required in ADD and REMOVE operation.</div>

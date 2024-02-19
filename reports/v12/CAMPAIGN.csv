@@ -63,3 +63,5 @@
 "SEARCH_RANK_LOST_TOP_IMPRESSION_SHARE","ページ上部のインプレッションシェア損失率（ランク）","Search top lost impression share (rank)","searchRankLostTopImpressionShare","DOUBLE","[CLICK_TYPE, CONVERSION_NAME, MONTH_OF_YEAR, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",""
 "CONV_VALUE_PER_COST","コンバージョンの価値/コスト","Conv. value/cost","convValuePerCost","DOUBLE","[CONVERSION_NAME, MONTH_OF_YEAR, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",""
 "ALL_CONV_VALUE_PER_COST","コンバージョンの価値（全て）/コスト","Conv. value (all)/cost","allConvValuePerCost","DOUBLE","[CONVERSION_NAME, MONTH_OF_YEAR, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",""
+"BUDGET_ID","共有予算ID","Shared budget ID","budgetID","LONG","","Attribute","","",""
+"BUDGET_NAME","共有予算名","Shared budget name","budgetName","STRING","","Attribute","","",""

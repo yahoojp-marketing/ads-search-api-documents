@@ -1,0 +1,56 @@
+AssetServiceStructuredSnippetAsset:
+  type: object
+  nullable: true
+  properties:
+    header:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">ヘッダーです。<br>
+        ADDおよびSET時、このフィールドは必須となります。</div>
+        <div lang="en">Header.<br>
+        This field is required in ADD and SET operation.</div>
+    reviewHeader:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">審査中のヘッダーです。<br>
+        このフィールドは、リクエストの際には無視されます。<br>
+        審査中の間のみ、レスポンスの際に返却されます。</div>
+        <div lang="en">Header on editorial review.<br>
+        This field will be ignored on input.<br>
+        It will be returned at the time of response only during the review.</div>
+    values:
+      type: array
+      nullable: true
+      items:
+        type: string
+        nullable: true
+      description: |
+        <div lang="ja">バリューです。<br>
+        ADDおよびSET時、このフィールドは必須となります。</div>
+        <div lang="en">Value.<br>
+        This field is required in ADD and SET operation.</div>
+    reviewValues:
+      type: array
+      nullable: true
+      items:
+        type: string
+        nullable: true
+      description: |
+        <div lang="ja">レビュー中のバリューです。<br>
+        このフィールドは、リクエストの際には無視されます。<br>
+        審査中の間のみ、レスポンスの際に返却されます。</div>
+        <div lang="en">Value on editorial review.<br>
+        This field will be ignored on input.<br>
+        It will be returned at the time of response only during the review.</div>
+  title: AssetServiceStructuredSnippetAsset
+  description: |
+    <div lang="ja">AssetServiceStructuredSnippetAssetオブジェクトは、カテゴリ補足オプションのアセット情報を格納します。<br>
+    ADD時、このフィールドは省略可能となります。※typeがSTRUCTURED_SNIPPETの場合は必須です。<br>
+    詳細は以下のヘルプを参照してください。<br>
+    ・<a href="https://ads-help.yahoo-net.jp/s/article/H000044718?language=ja">補足カテゴリーと補足内容の入力例（カテゴリ補足オプション）</a></div>
+    <div lang="en">AssetServiceStructuredSnippetAsset contains Asset value information for structured snippet options.<br>
+    This field is optional in ADD operation. *If type is STRUCTURED_SNIPPET, this field is required.<br>
+    See also the help below.<br>
+    * <a href="https://ads-help.yahoo-net.jp/s/article/H000044718?language=en_US">Example of Category and Text (Category Text)</a></div>

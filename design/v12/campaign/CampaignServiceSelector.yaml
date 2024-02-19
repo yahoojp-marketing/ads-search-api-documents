@@ -44,8 +44,8 @@ CampaignServiceSelector:
         format: int64
       maxItems: 1000
       description: |
-        <div lang="ja">検索条件：共有予算IDです。<br>※現在、こちらのフィールドは利用できません。</div>
-        <div lang="en">Search condition: Campaign budget ID.<br>*Currently this field is not available.</div>
+        <div lang="ja">検索条件：共有予算IDです。</div>
+        <div lang="en">Search condition: Campaign budget ID.</div>
     containsLabel:
       type: boolean
       nullable: true

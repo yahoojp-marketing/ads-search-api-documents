@@ -194,6 +194,7 @@ tags:
       <li><div lang="ja"><a href="./reports/v12/CAMPAIGN_ASSET.csv" download>（新）広告表示オプションレポート（キャンペーン）</a></div><div lang="en"><a href="./reports/v12/CAMPAIGN_ASSET.csv" download>(New) Ad Display Option Report (campaign)</a></div></li>
       <li><div lang="ja"><a href="./reports/v12/AD_GROUP_ASSET.csv" download>（新）広告表示オプションレポート（広告グループ）</a></div><div lang="en"><a href="./reports/v12/AD_GROUP_ASSET.csv" download>(New) Ad Display Option Report (ad group)</a></div></li>
       <li><div lang="ja"><a href="./reports/v12/RESPONSIVE_ADS_FOR_SEARCH_ASSET.csv" download>レスポンシブ検索広告アセットレポート</a></div><div lang="en"><a href="./reports/v12/RESPONSIVE_ADS_FOR_SEARCH_ASSET.csv" download>Responsive Ads for Search Asset Report</a></div></li>
+      <li><div lang="ja"><a href="./reports/v12/SHARED_BUDGET.csv" download>共有予算レポート</a></div><div lang="en"><a href="./reports/v12/SHARED_BUDGET.csv" download>Campaign Budget Report</a></div></li>
       </ul>
   - name: CampaignExportService
     description: |
@@ -338,8 +339,8 @@ tags:
   - name: CampaignBudgetService
     description: |
       <label class="campaign"></label>
-      <div lang="ja">CampaignBudgetServiceでは、共有予算に関する情報の取得および追加・更新・削除を行います。<br>※現在、こちらのサービスは利用できません。</div>
-      <div lang="en">CampaignBudgetService is to get, add, update or remove information of Campaign Budget.<br>*Currently this service is not available.</div>
+      <div lang="ja">CampaignBudgetServiceでは、共有予算に関する情報の取得および追加・更新・削除を行います。</div>
+      <div lang="en">CampaignBudgetService is to get, add, update or remove information of Campaign Budget.</div>
   - name: BiddingSeasonalityAdjustmentService
     description: |
       <label class="campaign"></label>
@@ -10193,8 +10194,8 @@ paths:
             <div lang="ja">アカウントIDを指定してください。</div>
             <div lang="en">Specify Account ID.</div>
       description: |
-        <div lang="ja">共有予算に関する情報を取得します。<br>※現在、こちらのサービスは利用できません。</div>
-        <div lang="en">Gets information related to campaign budget.<br>*Currently this service is not available.</div>
+        <div lang="ja">共有予算に関する情報を取得します。</div>
+        <div lang="en">Gets information related to campaign budget.</div>
       tags:
         - CampaignBudgetService
       requestBody:
@@ -10274,8 +10275,8 @@ paths:
             <div lang="ja">アカウントIDを指定してください。</div>
             <div lang="en">Specify Account ID.</div>
       description: |
-        <div lang="ja">共有予算を追加します。<br>※現在、こちらのサービスは利用できません。</div>
-        <div lang="en">Add campaign budget information.<br>*Currently this service is not available.</div>
+        <div lang="ja">共有予算を追加します。</div>
+        <div lang="en">Add campaign budget information.</div>
       tags:
         - CampaignBudgetService
       requestBody:
@@ -10358,8 +10359,8 @@ paths:
             <div lang="ja">アカウントIDを指定してください。</div>
             <div lang="en">Specify Account ID.</div>
       description: |
-        <div lang="ja">共有予算を更新します。<br>※現在、こちらのサービスは利用できません。</div>
-        <div lang="en">Updates the information related to campaign budget.<br>*Currently this service is not available.</div>
+        <div lang="ja">共有予算を更新します。</div>
+        <div lang="en">Updates the information related to campaign budget.</div>
       tags:
         - CampaignBudgetService
       requestBody:
@@ -10441,8 +10442,8 @@ paths:
             <div lang="ja">アカウントIDを指定してください。</div>
             <div lang="en">Specify Account ID.</div>
       description: |
-        <div lang="ja">共有予算を削除します。<br>※現在、こちらのサービスは利用できません。</div>
-        <div lang="en">Removes the inforamtion related to campaign budget.<br>*Currently this service is not available.</div>
+        <div lang="ja">共有予算を削除します。</div>
+        <div lang="en">Removes the inforamtion related to campaign budget.</div>
       tags:
         - CampaignBudgetService
       requestBody:

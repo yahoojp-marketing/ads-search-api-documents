@@ -1,0 +1,13 @@
+AssetServiceReturnValue:
+  type: object
+  nullable: true
+  properties:
+    values:
+      type: array
+      nullable: true
+      items:
+        $ref: 'AssetServiceValue.yaml#/AssetServiceValue'
+  title: AssetServiceReturnValue
+  description: |
+    <div lang="ja">AssetReturnオブジェクトは、アセットの情報を格納します。</div>
+    <div lang="en">AssetReturn contains the Asset information.</div>

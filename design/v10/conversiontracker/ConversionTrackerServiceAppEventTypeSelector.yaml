@@ -19,8 +19,10 @@ ConversionTrackerServiceAppEventTypeSelector:
       maximum: 500
       default: 500
       description: |
-        <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div>
-        <div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1. Also see Entity Limits per operation.</div>
+        <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。<br>
+        ※現在、こちらのフィールドは利用できません。</div>
+        <div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1. Also see Entity Limits per operation.<br>
+        *Currently this field is not available.</div>
     startIndex:
       type: integer
       nullable: true
@@ -28,8 +30,10 @@ ConversionTrackerServiceAppEventTypeSelector:
       minimum: 1
       default: 1
       description: |
-        <div lang="ja">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div>
-        <div lang="en">Index of the first result to return in this page. This field must be greater than or equal to 1.</div>
+        <div lang="ja">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。<br>
+        ※現在、こちらのフィールドは利用できません。</div>
+        <div lang="en">Index of the first result to return in this page. This field must be greater than or equal to 1.<br>
+        *Currently this field is not available.</div>
   title: ConversionTrackerServiceAppEventTypeSelector
   description: |
     <div lang="ja">ConversionTrackerServiceAppEventTypeSelectorオブジェクトは、操作の対象となるコンバージョントラッカーおよびフィルタ条件を指定します。</div>

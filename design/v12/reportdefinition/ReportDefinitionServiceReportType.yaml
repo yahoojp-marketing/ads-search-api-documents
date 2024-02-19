@@ -72,7 +72,7 @@ ReportDefinitionServiceReportType:
       <dt class="term__item">RESPONSIVE_ADS_FOR_SEARCH_ASSET</dt>
       <dd class="term__desc"><span lang="ja">レスポンシブ検索広告アセットレポートです。</span><span lang="en">Responsive Ads for search asset report.</span></dd>
       <dt class="term__item">CAMPAIGN_BUDGET</dt>
-      <dd class="term__desc"><span lang="ja">共有予算レポートです。<br>※現在、こちらのEnumは利用できません。</span><span lang="en">Campaign budget report.<br>*Currently this Enum is not available.</span></dd>
+      <dd class="term__desc"><span lang="ja">共有予算レポートです。</span><span lang="en">Campaign budget report.</span></dd>
       <dt class="term__item">UNKNOWN</dt>
       <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown value.</span></dd>
     </dl>

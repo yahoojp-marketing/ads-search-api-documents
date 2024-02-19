@@ -1,0 +1,53 @@
+AssetServiceCalloutAsset:
+  type: object
+  nullable: true
+  properties:
+    calloutText:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">コールアウトテキストです。<br>
+        ADDおよびSET時、このフィールドは必須となります。</div>
+        <div lang="en">Callout text.<br>
+        This field is required in ADD and SET operation.</div>
+    reviewCalloutText:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">審査中のコールアウトテキストです。<br>
+        このフィールドは、リクエストの際には無視されます。<br>
+        審査中の間のみ、レスポンスの際に返却されます。</div>
+        <div lang="en">Callout text on editorial review.<br>
+        This field will be ignored on input.<br>
+        It will be returned at the time of response only during the review.</div>
+    startDate:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">配信開始日です。<br>
+        ※空で設定すると、既存の配信開始日は削除されます。<br>
+        このフィールドは、ADDおよびSET時に省略可能となり、REMOVE時に無視されます。</div>
+        <div lang="en">Start date of ad display<br>
+        *On setting blank, existing start date of ad display will be deleted.<br>
+        This field is optional in ADD and SET operation, and will be ignored in REMOVE operation.</div>
+    endDate:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">配信終了日です。<br>
+        ※空で設定すると、既存の配信終了日は削除されます。<br>
+        このフィールドは、ADDおよびSET時に省略可能となり、REMOVE時に無視されます。</div>
+        <div lang="en">End date of ad display.<br>
+        *By setting blank, existing end date of ad display will be deleted.<br>
+        This field is optional in ADD and SET operation, and will be ignored in REMOVE operation.</div>
+    schedules:
+      type: array
+      nullable: true
+      items:
+        $ref: 'AssetServiceSchedule.yaml#/AssetServiceSchedule'
+  title: AssetServiceCalloutAsset
+  description: |
+    <div lang="ja">AssetServiceCalloutAssetオブジェクトは、テキスト補足オプションのアセット情報を格納します。<br>
+    ADD時、このフィールドは省略可能となります。※typeがCALLOUTの場合は必須です。</div>
+    <div lang="en">AssetServiceCalloutAsset contains Asset value information for callout options.<br>
+    This field is optional in ADD operation. *If type is CALLOUT, this field is required.</div>

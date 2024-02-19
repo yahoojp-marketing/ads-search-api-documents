@@ -1,0 +1,53 @@
+BiddingStrategyServiceSelector:
+  type: object
+  nullable: true
+  required:
+  - accountId
+  properties:
+    accountId:
+      type: integer
+      nullable: false
+      format: int64
+      description: |
+        <div lang="ja">アカウントID</div>
+        <div lang="en">Account ID.</div>
+    portfolioBiddingIds:
+      type: array
+      nullable: true
+      items:
+        type: integer
+        nullable: true
+        format: int64
+      maxItems: 500
+      description: |
+        <div lang="ja">ポートフォリオ入札ID</div>
+        <div lang="en">Portfolio bidding ID.</div>
+    biddingStrategyTypes:
+      type: array
+      nullable: true
+      items:
+        $ref: 'BiddingStrategyServiceType.yaml#/BiddingStrategyServiceType'
+      maxItems: 3
+    numberResults:
+      type: integer
+      nullable: true
+      format: int32
+      minimum: 1
+      maximum: 500
+      default: 500
+      description: |
+        <div lang="ja">開始位置から取得する結果の数。このフィールドは、1以上を指定する必要があります。</div>
+        <div lang="en">The number of results to retrieve starting from the initial position. This field must be greater than or equal to 1.</div>
+    startIndex:
+      type: integer
+      nullable: true
+      format: int32
+      minimum: 1
+      default: 1
+      description: |
+        <div lang="ja">取得を開始する結果セット内の位置。このフィールドは、1以上を指定する必要があります。</div>
+        <div lang="en">The position within the result set where retrieval begins. This field must be greater than or equal to 1.</div>
+  title: BiddingStrategyServiceSelector
+  description: |
+    <div lang="ja">BiddingStrategyServiceSelectorオブジェクトは、自動入札設定の検索条件に関する情報を表します。</div>
+    <div lang="en">BiddingStrategyServiceSelector object displays the details of search results of auto bidding setting .</div>
