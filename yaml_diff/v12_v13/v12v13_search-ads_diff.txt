@@ -1,0 +1,2000 @@
+
+
+------
+diff -ru v12/Route.yaml v13/Route.yaml
+--- v12/Route.yaml	2024-01-31 18:55:23.000000000 +0900
++++ v13/Route.yaml	2024-02-15 16:41:52.000000000 +0900
+@@ -1,11 +1,11 @@
+ openapi: 3.0.2
+ info:
+   title: 'Yahoo!広告 検索広告 API リファレンス / Yahoo! JAPAN Ads Search Ads API Reference'
+-  version: 'v12'
++  version: 'v13'
+   description: |
+     <div lang="ja">Yahoo!広告 検索広告 APIのWebサービスについて説明します。</div>
+     <div lang="en">Search Ads API Web Services supported in Yahoo! JAPAN Ads API.</div>
+-    <div><a target="_blank" href="https://github.com/yahoojp-marketing/ads-search-api-documents/blob/master/design/v12/Route.yaml">OpenAPI Specification</a></div>
++    <div><a target="_blank" href="https://github.com/yahoojp-marketing/ads-search-api-documents/blob/master/design/v13/Route.yaml">OpenAPI Specification</a></div>
+     <div lang="ja"><a target="_blank" href="https://github.com/yahoojp-marketing/ads-search-api-documents/blob/master/bestpractice/ja">Best Practice</a></div>
+     <div lang="en"><a target="_blank" href="https://github.com/yahoojp-marketing/ads-search-api-documents/blob/master/bestpractice/en">Best Practice</a></div>
+
+@@ -23,7 +23,7 @@
+   - oAuth: [ yahooads ]
+
+ servers:
+-  - url: https://ads-search.yahooapis.jp/api/v12
++  - url: https://ads-search.yahooapis.jp/api/v13
+
+ tags:
+   - name: AccountManagementService
+@@ -123,16 +123,6 @@
+       <label class="campaign"></label>
+       <div lang="ja">SharedCriterionServiceでは、対象外キーワードリストに、対象外キーワードの登録や削除を行います。</div><div lang="en">Use
+       this service to add or remove negative keyword to negative keyword list.</div>
+-  - name: FeedItemService
+-    description: |
+-      <label class="campaign"></label>
+-      <div lang="ja">FeedItemServiceでは、フィードアイテム情報の取得および追加・更新・削除を行います。</div><div lang="en">FeedItemService
+-      is to get, add, update, or remove Feed Item information.</div>
+-  - name: FeedService
+-    description: |
+-      <label class="campaign"></label>
+-      <div lang="ja">FeedServiceでは、自動データ挿入のリスト情報の取得および追加・更新・削除を行います。</div><div lang="en">FeedService
+-      is to get, add, update, or remove the Feed (Data auto insertion) information.</div>
+   - name: AdGroupRetargetingListService
+     description: |
+       <label class="campaign"></label>
+@@ -174,27 +164,27 @@
+       <h2 lang="ja" class="reportFields__title">レポートフィールド</h2>
+       <h2 lang="en" class="reportFields__title">Report Fields</h2>
+       <ul>
+-      <li><div lang="ja"><a href="./reports/v12/ACCOUNT.csv" download>アカウントレポート</a></div><div lang="en"><a href="./reports/v12/ACCOUNT.csv" download>Account Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v12/CAMPAIGN.csv" download>キャンペーンレポート</a></div><div lang="en"><a href="./reports/v12/CAMPAIGN.csv" download>Campaign Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v12/ADGROUP.csv" download>広告グループレポート</a></div><div lang="en"><a href="./reports/v12/ADGROUP.csv" download>Ad Group Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v12/AD.csv" download>広告レポート</a></div><div lang="en"><a href="./reports/v12/AD.csv" download>Ad Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v12/KEYWORDS.csv" download>キーワードレポート</a></div><div lang="en"><a href="./reports/v12/KEYWORDS.csv" download>Keyword Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v12/SEARCH_QUERY.csv" download>検索クエリレポート</a></div><div lang="en"><a href="./reports/v12/SEARCH_QUERY.csv" download>Search Query Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v12/GEO.csv" download>地域別レポート</a></div><div lang="en"><a href="./reports/v12/GEO.csv" download>Geo Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v12/FEED_ITEM.csv" download>広告表示オプションレポート</a></div><div lang="en"><a href="./reports/v12/FEED_ITEM.csv" download>Ad Display Option Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v12/GEO_TARGET.csv" download>地域ターゲティングレポート</a></div><div lang="en"><a href="./reports/v12/GEO_TARGET.csv" download>Geo Targeting Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v12/SCHEDULE_TARGET.csv" download>曜日・時間帯ターゲティングレポート</a></div><div lang="en"><a href="./reports/v12/SCHEDULE_TARGET.csv" download>Schedule Targeting Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v12/BID_STRATEGY.csv" download>自動入札レポート</a></div><div lang="en"><a href="./reports/v12/BID_STRATEGY.csv" download>Auto Bidding Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v12/CAMPAIGN_TARGET_LIST.csv" download>キャンペーンターゲットリストレポート</a></div><div lang="en"><a href="./reports/v12/CAMPAIGN_TARGET_LIST.csv"download>Campaign Target List Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v12/ADGROUP_TARGET_LIST.csv" download>広告グループターゲットリストレポート</a></div><div lang="en"><a href="./reports/v12/ADGROUP_TARGET_LIST.csv" download>Ad Group Target List Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v12/LANDING_PAGE_URL.csv" download>ランディングページURLレポート</a></div><div lang="en"><a href="./reports/v12/LANDING_PAGE_URL.csv" download>Landing Page URL Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v12/KEYWORDLESS_QUERY.csv" download>検索クエリーレポート（動的検索連動型広告）</a></div><div lang="en"><a href="./reports/v12/KEYWORDLESS_QUERY.csv" download>Search Query Report (Dynamic Ads for Search)</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v12/WEBPAGE_CRITERION.csv" download>ページフィードターゲティングレポート</a></div><div lang="en"><a href="./reports/v12/WEBPAGE_CRITERION.csv" download>Page Feed Targeting Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v12/BID_MODIFIER.csv" download>入札価格調整率レポート</a></div><div lang="en"><a href="./reports/v12/BID_MODIFIER.csv" download>Bid Adjustments Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v12/CAMPAIGN_ASSET.csv" download>（新）広告表示オプションレポート（キャンペーン）</a></div><div lang="en"><a href="./reports/v12/CAMPAIGN_ASSET.csv" download>(New) Ad Display Option Report (campaign)</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v12/AD_GROUP_ASSET.csv" download>（新）広告表示オプションレポート（広告グループ）</a></div><div lang="en"><a href="./reports/v12/AD_GROUP_ASSET.csv" download>(New) Ad Display Option Report (ad group)</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v12/RESPONSIVE_ADS_FOR_SEARCH_ASSET.csv" download>レスポンシブ検索広告アセットレポート</a></div><div lang="en"><a href="./reports/v12/RESPONSIVE_ADS_FOR_SEARCH_ASSET.csv" download>Responsive Ads for Search Asset Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v12/SHARED_BUDGET.csv" download>共有予算レポート</a></div><div lang="en"><a href="./reports/v12/SHARED_BUDGET.csv" download>Campaign Budget Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v13/ACCOUNT.csv" download>アカウントレポート</a></div><div lang="en"><a href="./reports/v13/ACCOUNT.csv" download>Account Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v13/CAMPAIGN.csv" download>キャンペーンレポート</a></div><div lang="en"><a href="./reports/v13/CAMPAIGN.csv" download>Campaign Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v13/ADGROUP.csv" download>広告グループレポート</a></div><div lang="en"><a href="./reports/v13/ADGROUP.csv" download>Ad Group Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v13/AD.csv" download>広告レポート</a></div><div lang="en"><a href="./reports/v13/AD.csv" download>Ad Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v13/KEYWORDS.csv" download>キーワードレポート</a></div><div lang="en"><a href="./reports/v13/KEYWORDS.csv" download>Keyword Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v13/SEARCH_QUERY.csv" download>検索クエリレポート</a></div><div lang="en"><a href="./reports/v13/SEARCH_QUERY.csv" download>Search Query Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v13/GEO.csv" download>地域別レポート</a></div><div lang="en"><a href="./reports/v13/GEO.csv" download>Geo Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v13/FEED_ITEM.csv" download>広告表示オプションレポート</a></div><div lang="en"><a href="./reports/v13/FEED_ITEM.csv" download>Ad Display Option Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v13/GEO_TARGET.csv" download>地域ターゲティングレポート</a></div><div lang="en"><a href="./reports/v13/GEO_TARGET.csv" download>Geo Targeting Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v13/SCHEDULE_TARGET.csv" download>曜日・時間帯ターゲティングレポート</a></div><div lang="en"><a href="./reports/v13/SCHEDULE_TARGET.csv" download>Schedule Targeting Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v13/BID_STRATEGY.csv" download>自動入札レポート</a></div><div lang="en"><a href="./reports/v13/BID_STRATEGY.csv" download>Auto Bidding Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v13/CAMPAIGN_TARGET_LIST.csv" download>キャンペーンターゲットリストレポート</a></div><div lang="en"><a href="./reports/v13/CAMPAIGN_TARGET_LIST.csv"download>Campaign Target List Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v13/ADGROUP_TARGET_LIST.csv" download>広告グループターゲットリストレポート</a></div><div lang="en"><a href="./reports/v13/ADGROUP_TARGET_LIST.csv" download>Ad Group Target List Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v13/LANDING_PAGE_URL.csv" download>ランディングページURLレポート</a></div><div lang="en"><a href="./reports/v13/LANDING_PAGE_URL.csv" download>Landing Page URL Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v13/KEYWORDLESS_QUERY.csv" download>検索クエリーレポート（動的検索連動型広告）</a></div><div lang="en"><a href="./reports/v13/KEYWORDLESS_QUERY.csv" download>Search Query Report (Dynamic Ads for Search)</a></div></li>
++      <li><div lang="ja"><a href="./reports/v13/WEBPAGE_CRITERION.csv" download>ページフィードターゲティングレポート</a></div><div lang="en"><a href="./reports/v13/WEBPAGE_CRITERION.csv" download>Page Feed Targeting Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v13/BID_MODIFIER.csv" download>入札価格調整率レポート</a></div><div lang="en"><a href="./reports/v13/BID_MODIFIER.csv" download>Bid Adjustments Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v13/CAMPAIGN_ASSET.csv" download>（新）広告表示オプションレポート（キャンペーン）</a></div><div lang="en"><a href="./reports/v13/CAMPAIGN_ASSET.csv" download>(New) Ad Display Option Report (campaign)</a></div></li>
++      <li><div lang="ja"><a href="./reports/v13/AD_GROUP_ASSET.csv" download>（新）広告表示オプションレポート（広告グループ）</a></div><div lang="en"><a href="./reports/v13/AD_GROUP_ASSET.csv" download>(New) Ad Display Option Report (ad group)</a></div></li>
++      <li><div lang="ja"><a href="./reports/v13/RESPONSIVE_ADS_FOR_SEARCH_ASSET.csv" download>レスポンシブ検索広告アセットレポート</a></div><div lang="en"><a href="./reports/v13/RESPONSIVE_ADS_FOR_SEARCH_ASSET.csv" download>Responsive Ads for Search Asset Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v13/SHARED_BUDGET.csv" download>共有予算レポート</a></div><div lang="en"><a href="./reports/v13/SHARED_BUDGET.csv" download>Campaign Budget Report</a></div></li>
+       </ul>
+   - name: CampaignExportService
+     description: |
+@@ -5328,143 +5318,6 @@
+           $ref: '../Response401.yaml#/Response401'
+         400:
+           $ref: '../Response400.yaml#/Response400'
+-  /FeedItemService/get:
+-    post:
+-      parameters:
+-        - in: header
+-          name: x-z-base-account-id
+-          schema:
+-            type: integer
+-            format: int64
+-          required: true
+-          description: |
+-            <div lang="ja">アカウントIDを指定してください。</div>
+-            <div lang="en">Specify Account ID.</div>
+-      description: |
+-        <div lang="ja">フィードアイテム情報を取得します。</div>
+-        <div lang="en">Get Feed Item information.</div>
+-      tags:
+-        - FeedItemService
+-      requestBody:
+-        content:
+-          application/json:
+-            schema:
+-              $ref: 'feeditem/FeedItemServiceSelector.yaml#/FeedItemServiceSelector'
+-      responses:
+-        503:
+-          $ref: '../Response503.yaml#/Response503'
+-        500:
+-          $ref: '../Response500.yaml#/Response500'
+-        200:
+-          description: |
+-            <p class="cellContent__head">Error codes</p>
+-            <div class="cellContent__body">
+-            <table class="apiTable">
+-              <colgroup span="1" class="short"></colgroup>
+-              <colgroup span="2"></colgroup>
+-              <thead>
+-                <tr><th>Code</th><th>Message</th><th>Description</th></tr>
+-              </thead>
+-              <tbody>
+-                <tr><td>0001</td><td>Invalid Request.</td><td><div lang="ja">さまざまな要因が考えられます。<br>主な要因は、パラメータの値が不正か、誤りがあるためにオペレーションが完了できません。</div><div lang="en">This error can result for a variety of reasons. <br>Typically because one of the parameter values in the request is wrong or invalid and the operation cannot be completed.</div></td></tr>
+-                <tr><td>R0001</td><td>Require.</td><td><div lang="ja">必須です。</div><div lang="en">It is missing required parameter.</div></td></tr>
+-                <tr><td>F0001</td><td>Invalid format.</td><td><div lang="ja">値の形式が不正です。</div><div lang="en">The value format is invalid.</div></td></tr>
+-                <tr><td>V0001</td><td>Invalid value.</td><td><div lang="ja">値が無効です。</div><div lang="en">The value is invalid.</div></td></tr>
+-                <tr><td>S0001</td><td>Invalid Status.</td><td><div lang="ja">ステータスが無効です。</div><div lang="en">The status is invalid.</div></td></tr>
+-                <tr><td>L0002</td><td>Over list size.</td><td><div lang="ja">配列の要素数が上限値を超過しています。</div><div lang="en">The number of elements in the array exceeds the upper limit.</div></td></tr>
+-                <tr><td>L0001</td><td>Lower list size.</td><td><div lang="ja">配列の要素数が下限値を下回っています。</div><div lang="en">The number of elements in the array is below the lower limit.</div></td></tr>
+-                <tr><td>D0001</td><td>Duplicate.</td><td><div lang="ja">一意な値が重複しています。</div><div lang="en">The unique value is duplicated.</div></td></tr>
+-                <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
+-                <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
+-                <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
+-                <tr><td>210110</td><td>Invalid target</td><td>１日のスケジュール指定が上限値（6件）を超えています。</div><div lang="en">The daily schedule specification exceeds the upper limit (6 cases).</div></td></tr>
+-                <tr><td>210517</td><td>Exceeds maximum word limit.</td><td><div lang="ja">キーワードは最大10個までしか指定できません。</div><div lang="en">10 keywords can only be specified up to.</div></td></tr>
+-                <tr><td>210126</td><td>Mobile app download cannot connect to.</td><td><div lang="ja">アプリダウンロードキャンペーンは設定できません。</div><div lang="en">Mobile app download cannot connect to.</div></td></tr>
+-                <tr><td>210123</td><td>Campaign targeting mismatch</td><td>targetingCampaignIdで指定したキャンペーンIDと、targetingAdGroupIdで指定した広告グループの上位キャンペーンIDが異なるため、設定できません。</div><div lang="en">It can not be set because the campaign ID specified by targetingCampaignId is different from the campaign ID of the ad group specified by targetingAdGroupId.</div></td></tr>
+-                <tr><td>211000</td><td>Cannot operate AdvancedURL(FinalURL).</td><td><div lang="ja">アドバンスドURLに移行済みのため、操作できません。</div><div lang="en">Since it has already been transferred to AdvancedURL(FinalURL), it can not be operated.</div></td></tr>
+-                <tr><td>211001</td><td>Cannot set AdvancedMobileURL(SmartphoneFinalURL).</td><td><div lang="ja">アプリダウンロードキャンペーンでは、advancedMobileURL(smartphoneFinalURL)の設定はできません。</div><div lang="en">In the app download campaign, AdvancedMobileURL(SmartphoneFinalURL) can not be set.</div></td></tr>
+-                <tr><td>211003</td><td>Domain does not match with DisplayURL.</td><td><div lang="ja">表示URLと最終リンク先URLのドメインが一致していません。</div><div lang="en">Domain of DisplayURL and AdvancedURL(FinalURL) do not match.</div></td></tr>
+-                <tr><td>211004</td><td>Cannot set under AndroidCampaign.</td><td><div lang="ja">Androidのアプリキャンペーンでは、以下の設定ができません：<br>・キャンペーン、広告グループ、広告、キーワードにTrackingUrlや CustomParameterを設定<br>・キーワードに最終リンク先URLやスマートフォン向けURLを設定</div><div lang="en">In the Android app campaign, the following settings can not be made：<br>・Set TrackingUrl and CustomParameter for campaigns, ad groups, ads, keywords<br>・Set the AdvancedUrl(FinalUrl) and AdvancedMobileUrl(SmartphoneFinalUrl) for the keywords</div></td></tr>
+-                <tr><td>225305</td><td>invalid structured snippet header.</td><td><div lang="ja">カテゴリ補足オプション（ヘッダ）が不正です。</div><div lang="en">Structured snippet header is invalid.</div></td></tr>
+-                <tr><td>211019</td><td>Request failed because of trademark conflicts.</td><td><div lang="ja">商標に抵触している為、登録できません。</div><div lang="en">Request failed because of trademark conflicts.</div></td></tr>
+-              </tbody>
+-            </table>
+-            </div>
+-          content:
+-            application/json:
+-              schema:
+-                $ref: 'feeditem/FeedItemServiceGetResponse.yaml#/FeedItemServiceGetResponse'
+-        403:
+-          $ref: '../Response403.yaml#/Response403'
+-        401:
+-          $ref: '../Response401.yaml#/Response401'
+-        400:
+-          $ref: '../Response400.yaml#/Response400'
+-  /FeedService/get:
+-    post:
+-      parameters:
+-        - in: header
+-          name: x-z-base-account-id
+-          schema:
+-            type: integer
+-            format: int64
+-          required: true
+-          description: |
+-            <div lang="ja">アカウントIDを指定してください。</div>
+-            <div lang="en">Specify Account ID.</div>
+-      description: |
+-        <div lang="ja">自動データ挿入のリスト情報を取得します。</div>
+-        <div lang="en">Returns Feed information.</div>
+-      tags:
+-        - FeedService
+-      requestBody:
+-        content:
+-          application/json:
+-            schema:
+-              $ref: 'feed/FeedServiceSelector.yaml#/FeedServiceSelector'
+-      responses:
+-        503:
+-          $ref: '../Response503.yaml#/Response503'
+-        500:
+-          $ref: '../Response500.yaml#/Response500'
+-        200:
+-          description: |
+-            <p class="cellContent__head">Error codes</p>
+-            <div class="cellContent__body">
+-            <table class="apiTable">
+-              <colgroup span="1" class="short"></colgroup>
+-              <colgroup span="2"></colgroup>
+-              <thead>
+-                <tr><th>Code</th><th>Message</th><th>Description</th></tr>
+-              </thead>
+-              <tbody>
+-                <tr><td>0001</td><td>Invalid Request.</td><td><div lang="ja">さまざまな要因が考えられます。<br>主な要因は、パラメータの値が不正か、誤りがあるためにオペレーションが完了できません。</div><div lang="en">This error can result for a variety of reasons. <br>Typically because one of the parameter values in the request is wrong or invalid and the operation cannot be completed.</div></td></tr>
+-                <tr><td>R0001</td><td>Require.</td><td><div lang="ja">必須です。</div><div lang="en">It is missing required parameter.</div></td></tr>
+-                <tr><td>F0001</td><td>Invalid format.</td><td><div lang="ja">値の形式が不正です。</div><div lang="en">The value format is invalid.</div></td></tr>
+-                <tr><td>V0001</td><td>Invalid value.</td><td><div lang="ja">値が無効です。</div><div lang="en">The value is invalid.</div></td></tr>
+-                <tr><td>S0001</td><td>Invalid Status.</td><td><div lang="ja">ステータスが無効です。</div><div lang="en">The status is invalid.</div></td></tr>
+-                <tr><td>L0002</td><td>Over list size.</td><td><div lang="ja">配列の要素数が上限値を超過しています。</div><div lang="en">The number of elements in the array exceeds the upper limit.</div></td></tr>
+-                <tr><td>L0001</td><td>Lower list size.</td><td><div lang="ja">配列の要素数が下限値を下回っています。</div><div lang="en">The number of elements in the array is below the lower limit.</div></td></tr>
+-                <tr><td>D0001</td><td>Duplicate.</td><td><div lang="ja">一意な値が重複しています。</div><div lang="en">The unique value is duplicated.</div></td></tr>
+-                <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
+-                <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
+-                <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
+-                <tr><td>211009</td><td>Cannot Update.</td><td><div lang="ja">Dynamic Ads for SearchのFeedは更新はできません。</div><div lang="en">Dynamic Ads for Search Feed can not be updated.</div></td></tr>
+-                <tr><td>211014</td><td>Cannot remove Feed related with campaign.</td><td><div lang="ja">DASキャンペーンに設定されているFeedは削除できません。</div><div lang="en">Feed that is set for the campaign of Dynamic Ads for Search can not be deleted.</div></td></tr>
+-                <tr><td>211017</td><td>Cannot add Dynamic Search Ads Feed by Adult Account.</td><td><div lang="ja">アダルトアカウントの場合、Dynamic Ads for Searchのフィード登録はできません。</div><div lang="en">For the Adult Accounts, Feeds for Dynamic Ads for Search can not be registered.</div></td></tr>
+-              </tbody>
+-            </table>
+-            </div>
+-          content:
+-            application/json:
+-              schema:
+-                $ref: 'feed/FeedServiceGetResponse.yaml#/FeedServiceGetResponse'
+-        403:
+-          $ref: '../Response403.yaml#/Response403'
+-        401:
+-          $ref: '../Response401.yaml#/Response401'
+-        400:
+-          $ref: '../Response400.yaml#/Response400'
+   /CampaignLabelService/add:
+     post:
+       parameters:
+@@ -8387,6 +8240,13 @@
+                 <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
+                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
+                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
++                <tr><td>V0003</td><td>Over limit of the file size.</td><td><div lang="ja">アップロードファイルサイズが上限を超過しています。</div><div lang="en">The upload file size exceeds the limit.</div></td></tr>
++                <tr><td>210621</td><td>Can’t add. The image format isn’t supported.</td><td><div lang="ja">サポート外の画像フォーマットのため登録できません。</div><div lang="en">Can’t add. The image format isn’t supported.</div></td></tr>
++                <tr><td>210624</td><td>Unsupported pixel size.</td><td><div lang="ja">規定のピクセルサイズではありません。</div><div lang="en">Unsupported pixel size.</div></td></tr>
++                <tr><td>210626</td><td>Over compressed image size.</td><td><div lang="ja">システムで自動圧縮した結果、画像ファイルを200KB以下に圧縮できなかったため、アップロードできませんでした。画像ファイルのサイズを200KB以内に変更して再度お試しください。</div><div lang="en">The system compressed your images, but the file size was still too large (over 200 KB) to upload. Make your file size 200 KB or less and upload it again.</div></td></tr>
++                <tr><td>210629</td><td>Only GIF89a is supported.</td><td><div lang="ja">GIFファイルの規格がGIF89aではありません。</div><div lang="en">GIF file is not in GIF89a.</div></td></tr>
++                <tr><td>210630</td><td>Images not added. They may appear in incorrect orientation. Remove Exif data from images.</td><td><div lang="ja">画像が正しい方向に表示されない可能性があるため、画像は登録されませんでした。画像のExif情報を削除してください。</div><div lang="en">Images not added. They may appear in incorrect orientation. Remove Exif data from images.</div></td></tr>
++                <tr><td>210631</td><td>Transparent images is unsupported.</td><td><div lang="ja">透過画像は登録できません。</div><div lang="en">Can't add transparent images.</div></td></tr>
+               </tbody>
+             </table>
+             </div>
+@@ -8525,6 +8385,73 @@
+           $ref: '../Response401.yaml#/Response401'
+         400:
+           $ref: '../Response400.yaml#/Response400'
++  /AssetService/downloadImage:
++    post:
++      parameters:
++        - in: header
++          name: x-z-base-account-id
++          schema:
++            type: integer
++            format: int64
++          required: true
++          description: |
++            <div lang="ja">アカウントIDを指定してください。</div>
++            <div lang="en">Specify Account ID.</div>
++      description: |
++        <div lang="ja">入稿済みの画像ファイルをダウンロードします。<br>
++        ※現在、こちらのサービスは利用できません。</div>
++        <div lang="en">Download the submitted image file.<br>
++        *Currently this service is not available.</div>
++      tags:
++        - AssetService
++      requestBody:
++        content:
++          application/json:
++            schema:
++              $ref: 'asset/AssetServiceDownloadImageSelector.yaml#/AssetServiceDownloadImageSelector'
++      responses:
++        503:
++          $ref: '../Response503.yaml#/Response503'
++        500:
++          $ref: '../Response500.yaml#/Response500'
++        403:
++          $ref: '../Response403.yaml#/Response403'
++        401:
++          $ref: '../Response401.yaml#/Response401'
++        400:
++          $ref: '../Response400.yaml#/Response400'
++        200:
++          description: |
++            <p class="cellContent__head">Error codes</p>
++            <div class="cellContent__body">
++            <table class="apiTable">
++              <colgroup span="1" class="short"></colgroup>
++              <colgroup span="2"></colgroup>
++              <thead>
++                <tr><th>Code</th><th>Message</th><th>Description</th></tr>
++              </thead>
++              <tbody>
++                <tr><td>0001</td><td>Invalid Request.</td><td><div lang="ja">さまざまな要因が考えられます。<br>主な要因は、パラメータの値が不正か、誤りがあるためにオペレーションが完了できません。</div><div lang="en">This error can result for a variety of reasons. <br>Typically because one of the parameter values in the request is wrong or invalid and the operation cannot be completed.</div></td></tr>
++                <tr><td>R0001</td><td>Require.</td><td><div lang="ja">必須です。</div><div lang="en">It is missing required parameter.</div></td></tr>
++                <tr><td>F0001</td><td>Invalid format.</td><td><div lang="ja">値の形式が不正です。</div><div lang="en">The value format is invalid.</div></td></tr>
++                <tr><td>V0001</td><td>Invalid value.</td><td><div lang="ja">値が無効です。</div><div lang="en">The value is invalid.</div></td></tr>
++                <tr><td>S0001</td><td>Invalid Status.</td><td><div lang="ja">ステータスが無効です。</div><div lang="en">The status is invalid.</div></td></tr>
++                <tr><td>L0002</td><td>Over list size.</td><td><div lang="ja">配列の要素数が上限値を超過しています。</div><div lang="en">The number of elements in the array exceeds the upper limit.</div></td></tr>
++                <tr><td>L0001</td><td>Lower list size.</td><td><div lang="ja">配列の要素数が下限値を下回っています。</div><div lang="en">The number of elements in the array is below the lower limit.</div></td></tr>
++                <tr><td>D0001</td><td>Duplicate.</td><td><div lang="ja">一意な値が重複しています。</div><div lang="en">The unique value is duplicated.</div></td></tr>
++                <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
++                <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
++                <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
++                <tr><td>S0001</td><td>Invalid Status.</td><td><div lang="ja">ステータスが無効です。</div><div lang="en">The status is invalid.</div></td></tr>
++                <tr><td>210631</td><td>Unable to download this image file.</td><td><div lang="ja">ダウンロードできない画像ファイルです。詳細は審査否認理由をご確認ください。</div><div lang="en">This image file cannot be downloaded. Refer to disapproval reason for more details.</div></td></tr>
++              </tbody>
++            </table>
++            </div>
++          content:
++            application/json:
++              schema:
++                type: string
++                format: binary
+   /CustomizerAttributeService/get:
+     post:
+       parameters:
+
+
+------
+diff -ru v12/account/AccountServiceSelector.yaml v13/account/AccountServiceSelector.yaml
+--- v12/account/AccountServiceSelector.yaml	2024-02-13 17:20:08.000000000 +0900
++++ v13/account/AccountServiceSelector.yaml	2024-02-13 17:20:08.000000000 +0900
+@@ -47,8 +47,8 @@
+       maximum: 500
+       default: 500
+       description: |
+-        <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1. Also see Entity Limits per operation.</div>
++        <div lang="ja">開始位置から取得する結果の数。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The number of results to retrieve starting from the initial position. This field must be greater than or equal to 1.</div>
+     startIndex:
+       type: integer
+       nullable: true
+@@ -56,8 +56,8 @@
+       minimum: 1
+       default: 1
+       description: |
+-        <div lang="ja">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Index of the first result to return in this page. This field must be greater than or equal to 1.</div>
++        <div lang="ja">取得を開始する結果セット内の位置。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The position within the result set where retrieval begins. This field must be greater than or equal to 1.</div>
+   title: AccountServiceSelector
+   description: |
+     <div lang="ja">AccountServiceSelectorオブジェクトは、選択するアカウントを表します。</div>
+
+
+------
+diff -ru v12/accountcustomizer/AccountCustomizerServiceSelector.yaml v13/accountcustomizer/AccountCustomizerServiceSelector.yaml
+--- v12/accountcustomizer/AccountCustomizerServiceSelector.yaml	2024-02-13 17:20:08.000000000 +0900
++++ v13/accountcustomizer/AccountCustomizerServiceSelector.yaml	2024-02-13 17:20:08.000000000 +0900
+@@ -35,8 +35,8 @@
+       maximum: 2000
+       default: 500
+       description: |
+-        <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1. Also see Entity Limits per operation.</div>
++        <div lang="ja">開始位置から取得する結果の数。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The number of results to retrieve starting from the initial position. This field must be greater than or equal to 1.</div>
+     startIndex:
+       type: integer
+       nullable: true
+@@ -44,8 +44,8 @@
+       minimum: 1
+       default: 1
+       description: |
+-        <div lang="ja">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Index of the first result to return in this page. This field must be greater than or equal to 1.</div>
++        <div lang="ja">取得を開始する結果セット内の位置。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The position within the result set where retrieval begins. This field must be greater than or equal to 1.</div>
+   title: AccountCustomizerServiceSelector
+   description: |
+     <div lang="ja">AccountCustomizerServiceSelectorオブジェクトは、カスタマイザー属性の情報を指定します。</div>
+
+
+------
+diff -ru v12/accountlink/AccountLinkServiceSelector.yaml v13/accountlink/AccountLinkServiceSelector.yaml
+--- v12/accountlink/AccountLinkServiceSelector.yaml	2024-02-13 17:20:08.000000000 +0900
++++ v13/accountlink/AccountLinkServiceSelector.yaml	2024-02-13 17:20:08.000000000 +0900
+@@ -25,8 +25,8 @@
+       maximum: 500
+       default: 500
+       description: |
+-        <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1. Also see Entity Limits per operation.</div>
++        <div lang="ja">開始位置から取得する結果の数。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The number of results to retrieve starting from the initial position. This field must be greater than or equal to 1.</div>
+     startIndex:
+       type: integer
+       nullable: true
+@@ -34,8 +34,8 @@
+       minimum: 1
+       default: 1
+       description: |
+-        <div lang="ja">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Index of the first result to return in this page. This field must be greater than or equal to 1.</div>
++        <div lang="ja">取得を開始する結果セット内の位置。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The position within the result set where retrieval begins. This field must be greater than or equal to 1.</div>
+   title: AccountLinkServiceSelector
+   description: |
+     <div lang="ja">AccountLinkServiceSelectorオブジェクトは、取得するアカウントリンク情報を指定します。</div>
+
+
+------
+diff -ru v12/accountmanagement/AccountManagementServiceSelector.yaml v13/accountmanagement/AccountManagementServiceSelector.yaml
+--- v12/accountmanagement/AccountManagementServiceSelector.yaml	2024-02-13 17:20:08.000000000 +0900
++++ v13/accountmanagement/AccountManagementServiceSelector.yaml	2024-02-13 17:20:08.000000000 +0900
+@@ -41,8 +41,8 @@
+       maximum: 200
+       default: 200
+       description: |
+-        <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1.</div>
++        <div lang="ja">開始位置から取得する結果の数。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The number of results to retrieve starting from the initial position. This field must be greater than or equal to 1.</div>
+     startIndex:
+       type: integer
+       nullable: true
+@@ -50,8 +50,8 @@
+       minimum: 1
+       default: 1
+       description: |
+-        <div lang="ja">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Index of the first result to return in this page. This field must be greater than or equal to 1.</div>
++        <div lang="ja">取得を開始する結果セット内の位置。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The position within the result set where retrieval begins. This field must be greater than or equal to 1.</div>
+   title: AccountManagementServiceSelector
+   description: |
+     <div lang="ja">AccountManagementServiceSelectorオブジェクトは、選択するアカウントを表します。</div>
+
+
+------
+diff -ru v12/accountshared/AccountSharedServiceSelector.yaml v13/accountshared/AccountSharedServiceSelector.yaml
+--- v12/accountshared/AccountSharedServiceSelector.yaml	2024-02-13 17:20:08.000000000 +0900
++++ v13/accountshared/AccountSharedServiceSelector.yaml	2024-02-13 17:20:08.000000000 +0900
+@@ -11,16 +11,6 @@
+       description: |
+         <div lang="ja">アカウントIDです。</div>
+         <div lang="en">Account ID.</div>
+-    numberResults:
+-      type: integer
+-      nullable: true
+-      format: int32
+-      minimum: 1
+-      maximum: 20
+-      default: 20
+-      description: |
+-        <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1. Also see Entity Limits per operation.</div>
+     sharedListIds:
+       type: array
+       nullable: true
+@@ -32,6 +22,16 @@
+       description: |
+         <div lang="ja">検索対象外キーワードリストIDです。</div>
+         <div lang="en">Negative keyword list ID.</div>
++    numberResults:
++      type: integer
++      nullable: true
++      format: int32
++      minimum: 1
++      maximum: 20
++      default: 20
++      description: |
++        <div lang="ja">開始位置から取得する結果の数。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The number of results to retrieve starting from the initial position. This field must be greater than or equal to 1.</div>
+     startIndex:
+       type: integer
+       nullable: true
+@@ -39,8 +39,8 @@
+       minimum: 1
+       default: 1
+       description: |
+-        <div lang="ja">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Index of the first result to return in this page. This field must be greater than or equal to 1.</div>
++        <div lang="ja">取得を開始する結果セット内の位置。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The position within the result set where retrieval begins. This field must be greater than or equal to 1.</div>
+   title: AccountSharedServiceSelector
+   description: |
+     <div lang="ja">AccountSharedServiceSelectorオブジェクトは、検索条件（実行パラメータ）を保持します。</div>
+
+
+------
+diff -ru v12/accounttrackingurl/AccountTrackingUrlServiceSelector.yaml v13/accounttrackingurl/AccountTrackingUrlServiceSelector.yaml
+--- v12/accounttrackingurl/AccountTrackingUrlServiceSelector.yaml	2024-02-13 17:20:08.000000000 +0900
++++ v13/accounttrackingurl/AccountTrackingUrlServiceSelector.yaml	2024-02-13 17:20:08.000000000 +0900
+@@ -20,8 +20,8 @@
+       maximum: 1000
+       default: 1000
+       description: |
+-        <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1. Also see Entity Limits per operation.</div>
++        <div lang="ja">開始位置から取得する結果の数。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The number of results to retrieve starting from the initial position. This field must be greater than or equal to 1.</div>
+     startIndex:
+       type: integer
+       nullable: true
+@@ -29,8 +29,8 @@
+       minimum: 1
+       default: 1
+       description: |
+-        <div lang="ja">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Index of the first result to return in this page. This field must be greater than or equal to 1.</div>
++        <div lang="ja">取得を開始する結果セット内の位置。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The position within the result set where retrieval begins. This field must be greater than or equal to 1.</div>
+   title: AccountTrackingUrlServiceSelector
+   description: |
+     <div lang="ja">AccountTrackingUrlServiceSelectorオブジェクトは、アカウントトラッキング情報のget処理の検索条件を表します。</div>
+
+
+------
+diff -ru v12/adgroup/AdGroupServiceSelector.yaml v13/adgroup/AdGroupServiceSelector.yaml
+--- v12/adgroup/AdGroupServiceSelector.yaml	2024-02-13 17:20:08.000000000 +0900
++++ v13/adgroup/AdGroupServiceSelector.yaml	2024-02-13 17:20:08.000000000 +0900
+@@ -75,8 +75,8 @@
+       maximum: 10000
+       default: 500
+       description: |
+-        <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1. Also see Entity Limits per operation.</div>
++        <div lang="ja">開始位置から取得する結果の数。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The number of results to retrieve starting from the initial position. This field must be greater than or equal to 1.</div>
+     startIndex:
+       type: integer
+       nullable: true
+@@ -84,8 +84,8 @@
+       minimum: 1
+       default: 1
+       description: |
+-        <div lang="ja">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Index of the first result to return in this page. This field must be greater than or equal to 1.</div>
++        <div lang="ja">取得を開始する結果セット内の位置。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The position within the result set where retrieval begins. This field must be greater than or equal to 1.</div>
+     userStatuses:
+       type: array
+       nullable: true
+
+
+------
+diff -ru v12/adgroupad/AdGroupAdServiceSelector.yaml v13/adgroupad/AdGroupAdServiceSelector.yaml
+--- v12/adgroupad/AdGroupAdServiceSelector.yaml	2024-02-13 17:20:07.000000000 +0900
++++ v13/adgroupad/AdGroupAdServiceSelector.yaml	2024-02-13 17:20:08.000000000 +0900
+@@ -101,8 +101,8 @@
+       maximum: 10000
+       default: 500
+       description: |
+-        <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1. Also see Entity Limits per operation.</div>
++        <div lang="ja">開始位置から取得する結果の数。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The number of results to retrieve starting from the initial position. This field must be greater than or equal to 1.</div>
+     startIndex:
+       type: integer
+       nullable: true
+@@ -110,8 +110,8 @@
+       minimum: 1
+       default: 1
+       description: |
+-        <div lang="ja">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Index of the first result to return in this page. This field must be greater than or equal to 1.</div>
++        <div lang="ja">取得を開始する結果セット内の位置。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The position within the result set where retrieval begins. This field must be greater than or equal to 1.</div>
+   title: AdGroupAdServiceSelector
+   description: |
+     <div lang="ja">AdGroupAdServiceSelectorオブジェクトは、操作の対象とする広告およびフィルタ条件を表します。</div>
+
+
+------
+diff -ru v12/adgroupasset/AdGroupAssetServiceSelector.yaml v13/adgroupasset/AdGroupAssetServiceSelector.yaml
+--- v12/adgroupasset/AdGroupAssetServiceSelector.yaml	2024-02-13 17:20:08.000000000 +0900
++++ v13/adgroupasset/AdGroupAssetServiceSelector.yaml	2024-02-15 16:41:52.000000000 +0900
+@@ -49,7 +49,7 @@
+       nullable: true
+       items:
+         $ref: 'AdGroupAssetServiceType.yaml#/AdGroupAssetServiceType'
+-      maxItems: 4
++      maxItems: 5
+     userStatuses:
+       type: array
+       nullable: true
+@@ -64,8 +64,8 @@
+       maximum: 500
+       default: 500
+       description: |
+-        <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1. Also see Entity Limits per operation.</div>
++        <div lang="ja">開始位置から取得する結果の数。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The number of results to retrieve starting from the initial position. This field must be greater than or equal to 1.</div>
+     startIndex:
+       type: integer
+       nullable: true
+@@ -73,8 +73,8 @@
+       minimum: 1
+       default: 1
+       description: |
+-        <div lang="ja">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Index of the first result to return in this page. This field must be greater than or equal to 1.</div>
++        <div lang="ja">取得を開始する結果セット内の位置。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The position within the result set where retrieval begins. This field must be greater than or equal to 1.</div>
+   title: AdGroupAssetServiceSelector
+   description: |
+     <div lang="ja">AdGroupAssetServiceSelectorオブジェクトは、アセット情報を指定します。</div>
+
+
+------
+diff -ru v12/adgroupasset/AdGroupAssetServiceType.yaml v13/adgroupasset/AdGroupAssetServiceType.yaml
+--- v12/adgroupasset/AdGroupAssetServiceType.yaml	2024-02-13 17:20:08.000000000 +0900
++++ v13/adgroupasset/AdGroupAssetServiceType.yaml	2024-02-15 16:41:52.000000000 +0900
+@@ -6,6 +6,7 @@
+   - CALL
+   - CALLOUT
+   - STRUCTURED_SNIPPET
++  - IMAGE
+   - UNKNOWN
+   title: AdGroupAssetServiceType
+   description: |
+@@ -22,6 +23,8 @@
+       <dd class="term__desc"><span lang="ja">広告表示オプションのテキスト補足オプションです。</span><span lang="en">Callout option from ad display option.</span></dd>
+       <dt class="term__item">STRUCTURED_SNIPPET</dt>
+       <dd class="term__desc"><span lang="ja">広告表示オプションのカテゴリ補足オプションです。</span><span lang="en">Structured snippet option from ad display option.</span></dd>
++      <dt class="term__item">IMAGE</dt>
++      <dd class="term__desc"><span lang="ja">広告表示オプションの画像オプションです。<br>※現在、こちらのEnumは利用できません。</span><span lang="en">Image option from Ad Display Option.<br>*Currently this Enum is not available.</span></dd>
+       <dt class="term__item">UNKNOWN</dt>
+       <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown value.</span></dd>
+     </dl>
+
+
+------
+diff -ru v12/adgroupbidmultiplier/AdGroupBidMultiplierServiceSelector.yaml v13/adgroupbidmultiplier/AdGroupBidMultiplierServiceSelector.yaml
+--- v12/adgroupbidmultiplier/AdGroupBidMultiplierServiceSelector.yaml	2024-02-13 17:20:07.000000000 +0900
++++ v13/adgroupbidmultiplier/AdGroupBidMultiplierServiceSelector.yaml	2024-02-13 17:20:08.000000000 +0900
+@@ -33,6 +33,12 @@
+       description: |
+         <div lang="ja">キャンペーンIDです。</div>
+         <div lang="en">Campaign ID.</div>
++    platformTypes:
++      type: array
++      nullable: true
++      items:
++        $ref: 'AdGroupBidMultiplierServicePlatformType.yaml#/AdGroupBidMultiplierServicePlatformType'
++      maxItems: 3
+     numberResults:
+       type: integer
+       nullable: true
+@@ -41,14 +47,8 @@
+       maximum: 10000
+       default: 1000
+       description: |
+-        <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1. Also see Entity Limits per operation.</div>
+-    platformTypes:
+-      type: array
+-      nullable: true
+-      items:
+-        $ref: 'AdGroupBidMultiplierServicePlatformType.yaml#/AdGroupBidMultiplierServicePlatformType'
+-      maxItems: 3
++        <div lang="ja">開始位置から取得する結果の数。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The number of results to retrieve starting from the initial position. This field must be greater than or equal to 1.</div>
+     startIndex:
+       type: integer
+       nullable: true
+@@ -56,8 +56,8 @@
+       minimum: 1
+       default: 1
+       description: |
+-        <div lang="ja">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Index of the first result to return in this page. This field must be greater than or equal to 1.</div>
++        <div lang="ja">取得を開始する結果セット内の位置。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The position within the result set where retrieval begins. This field must be greater than or equal to 1.</div>
+   title: AdGroupBidMultiplierServiceSelector
+   description: |
+     <div lang="ja">AdGroupBidMultiplierServiceSelectorオブジェクトは、入札価格調整率を格納するコンテナです。</div>
+
+
+------
+diff -ru v12/adgroupcriterion/AdGroupCriterionServiceSelector.yaml v13/adgroupcriterion/AdGroupCriterionServiceSelector.yaml
+--- v12/adgroupcriterion/AdGroupCriterionServiceSelector.yaml	2024-02-13 17:20:08.000000000 +0900
++++ v13/adgroupcriterion/AdGroupCriterionServiceSelector.yaml	2024-02-13 17:20:08.000000000 +0900
+@@ -83,8 +83,8 @@
+       maximum: 10000
+       default: 500
+       description: |
+-        <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1. Also see Entity Limits per operation.</div>
++        <div lang="ja">開始位置から取得する結果の数。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The number of results to retrieve starting from the initial position. This field must be greater than or equal to 1.</div>
+     startIndex:
+       type: integer
+       nullable: true
+@@ -92,8 +92,8 @@
+       minimum: 1
+       default: 1
+       description: |
+-        <div lang="ja">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Index of the first result to return in this page. This field must be greater than or equal to 1.</div>
++        <div lang="ja">取得を開始する結果セット内の位置。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The position within the result set where retrieval begins. This field must be greater than or equal to 1.</div>
+     use:
+       $ref: 'AdGroupCriterionServiceUse.yaml#/AdGroupCriterionServiceUse'
+     userStatuses:
+
+
+------
+diff -ru v12/adgroupcriterioncustomizer/AdGroupCriterionCustomizerServiceSelector.yaml v13/adgroupcriterioncustomizer/AdGroupCriterionCustomizerServiceSelector.yaml
+--- v12/adgroupcriterioncustomizer/AdGroupCriterionCustomizerServiceSelector.yaml	2024-02-13 17:20:07.000000000 +0900
++++ v13/adgroupcriterioncustomizer/AdGroupCriterionCustomizerServiceSelector.yaml	2024-02-13 17:20:08.000000000 +0900
+@@ -65,8 +65,8 @@
+       maximum: 2000
+       default: 500
+       description: |
+-        <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1. Also see Entity Limits per operation.</div>
++        <div lang="ja">開始位置から取得する結果の数。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The number of results to retrieve starting from the initial position. This field must be greater than or equal to 1.</div>
+     startIndex:
+       type: integer
+       nullable: true
+@@ -74,8 +74,8 @@
+       minimum: 1
+       default: 1
+       description: |
+-        <div lang="ja">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Index of the first result to return in this page. This field must be greater than or equal to 1.</div>
++        <div lang="ja">取得を開始する結果セット内の位置。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The position within the result set where retrieval begins. This field must be greater than or equal to 1.</div>
+   title: AdGroupCriterionCustomizerServiceSelector
+   description: |
+     <div lang="ja">AdGroupCriterionCustomizerServiceSelectorオブジェクトは、カスタマイザー属性の情報を指定します。</div>
+
+
+------
+diff -ru v12/adgroupcustomizer/AdGroupCustomizerServiceSelector.yaml v13/adgroupcustomizer/AdGroupCustomizerServiceSelector.yaml
+--- v12/adgroupcustomizer/AdGroupCustomizerServiceSelector.yaml	2024-02-13 17:20:08.000000000 +0900
++++ v13/adgroupcustomizer/AdGroupCustomizerServiceSelector.yaml	2024-02-13 17:20:08.000000000 +0900
+@@ -55,8 +55,8 @@
+       maximum: 2000
+       default: 500
+       description: |
+-        <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1. Also see Entity Limits per operation.</div>
++        <div lang="ja">開始位置から取得する結果の数。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The number of results to retrieve starting from the initial position. This field must be greater than or equal to 1.</div>
+     startIndex:
+       type: integer
+       nullable: true
+@@ -64,8 +64,8 @@
+       minimum: 1
+       default: 1
+       description: |
+-        <div lang="ja">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Index of the first result to return in this page. This field must be greater than or equal to 1.</div>
++        <div lang="ja">取得を開始する結果セット内の位置。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The position within the result set where retrieval begins. This field must be greater than or equal to 1.</div>
+   title: AdGroupCustomizerServiceSelector
+   description: |
+     <div lang="ja">AdGroupCustomizerServiceSelectorオブジェクトは、カスタマイザー属性の情報を指定します。</div>
+
+
+------
+diff -ru v12/adgroupretargetinglist/AdGroupRetargetingListServiceSelector.yaml v13/adgroupretargetinglist/AdGroupRetargetingListServiceSelector.yaml
+--- v12/adgroupretargetinglist/AdGroupRetargetingListServiceSelector.yaml	2024-02-13 17:20:08.000000000 +0900
++++ v13/adgroupretargetinglist/AdGroupRetargetingListServiceSelector.yaml	2024-02-13 17:20:08.000000000 +0900
+@@ -43,8 +43,8 @@
+       maximum: 1000
+       default: 500
+       description: |
+-        <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1. Also see Entity Limits per operation.</div>
++        <div lang="ja">開始位置から取得する結果の数。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The number of results to retrieve starting from the initial position. This field must be greater than or equal to 1.</div>
+     startIndex:
+       type: integer
+       nullable: true
+@@ -52,8 +52,8 @@
+       minimum: 1
+       default: 1
+       description: |
+-        <div lang="ja">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Index of the first result to return in this page. This field must be greater than or equal to 1.</div>
++        <div lang="ja">取得を開始する結果セット内の位置。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The position within the result set where retrieval begins. This field must be greater than or equal to 1.</div>
+     targetListIds:
+       type: array
+       nullable: true
+
+
+------
+diff -ru v12/adgroupwebpage/AdGroupWebpageServiceSelector.yaml v13/adgroupwebpage/AdGroupWebpageServiceSelector.yaml
+--- v12/adgroupwebpage/AdGroupWebpageServiceSelector.yaml	2024-02-13 17:20:08.000000000 +0900
++++ v13/adgroupwebpage/AdGroupWebpageServiceSelector.yaml	2024-02-13 17:20:08.000000000 +0900
+@@ -41,8 +41,8 @@
+       maximum: 2000
+       default: 500
+       description: |
+-        <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1. Also see Entity Limits per operation.</div>
++        <div lang="ja">開始位置から取得する結果の数。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The number of results to retrieve starting from the initial position. This field must be greater than or equal to 1.</div>
+     startIndex:
+       type: integer
+       nullable: true
+@@ -50,8 +50,8 @@
+       minimum: 1
+       default: 1
+       description: |
+-        <div lang="ja">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Index of the first result to return in this page. This field must be greater than or equal to 1.</div>
++        <div lang="ja">取得を開始する結果セット内の位置。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The position within the result set where retrieval begins. This field must be greater than or equal to 1.</div>
+     targetIds:
+       type: array
+       nullable: true
+
+
+------
+diff -ru v12/applink/AppLinkServiceSelector.yaml v13/applink/AppLinkServiceSelector.yaml
+--- v12/applink/AppLinkServiceSelector.yaml	2024-02-13 17:20:08.000000000 +0900
++++ v13/applink/AppLinkServiceSelector.yaml	2024-02-13 17:20:08.000000000 +0900
+@@ -32,8 +32,8 @@
+       maximum: 500
+       default: 500
+       description: |
+-        <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1. Also see Entity Limits per operation.</div>
++        <div lang="ja">開始位置から取得する結果の数。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The number of results to retrieve starting from the initial position. This field must be greater than or equal to 1.</div>
+     startIndex:
+       type: integer
+       nullable: true
+@@ -41,8 +41,8 @@
+       minimum: 1
+       default: 1
+       description: |
+-        <div lang="ja">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Index of the first result to return in this page. This field must be greater than or equal to 1.</div>
++        <div lang="ja">取得を開始する結果セット内の位置。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The position within the result set where retrieval begins. This field must be greater than or equal to 1.</div>
+   title: AppLinkServiceSelector
+   description: |
+     <div lang="ja">AppLinkServiceSelectorオブジェクトは、操作の対象となるコンバージョントラッカーおよびフィルタ条件を指定します。</div>
+
+
+------
+diff -ru v12/asset/Asset.yaml v13/asset/Asset.yaml
+--- v12/asset/Asset.yaml	2024-02-13 17:20:07.000000000 +0900
++++ v13/asset/Asset.yaml	2024-02-15 16:41:52.000000000 +0900
+@@ -119,5 +119,7 @@
+         It will be returned at the time of response only during the review.</div>
+   title: Asset
+   description: |
+-    <div lang="ja">Assetオブジェクトは、アセット情報を格納します。</div>
+-    <div lang="en">Asset object contains the information of Asset.</div>
++    <div lang="ja">Assetオブジェクトは、アセット情報を格納します。<br>
++    ※type=IMAGEのアセットを登録するときは最大1件となります。</div>
++    <div lang="en">Asset object contains the information of Asset.<br>
++    *In the case of `type=IMAGE`, the operand size is limited to one item.</div>
+
+
+------
+diff -ru v12/asset/AssetServiceAssetData.yaml v13/asset/AssetServiceAssetData.yaml
+--- v12/asset/AssetServiceAssetData.yaml	2024-02-13 17:20:07.000000000 +0900
++++ v13/asset/AssetServiceAssetData.yaml	2024-02-15 16:41:52.000000000 +0900
+@@ -12,6 +12,8 @@
+       $ref: 'AssetServiceCalloutAsset.yaml#/AssetServiceCalloutAsset'
+     structuredSnippetAsset:
+       $ref: 'AssetServiceStructuredSnippetAsset.yaml#/AssetServiceStructuredSnippetAsset'
++    imageAsset:
++      $ref: 'AssetServiceImageAsset.yaml#/AssetServiceImageAsset'
+   title: AssetServiceAssetData
+   description: |
+     <div lang="ja">AssetServiceAssetDataオブジェクトは、アセットの詳細情報を格納します。<br>
+Only in v13/asset: AssetServiceDownloadImageSelector.yaml
+Only in v13/asset: AssetServiceFileType.yaml
+Only in v13/asset: AssetServiceImageAsset.yaml
+
+
+------
+diff -ru v12/asset/AssetServiceSelector.yaml v13/asset/AssetServiceSelector.yaml
+--- v12/asset/AssetServiceSelector.yaml	2024-02-13 17:20:07.000000000 +0900
++++ v13/asset/AssetServiceSelector.yaml	2024-02-15 16:41:52.000000000 +0900
+@@ -27,7 +27,7 @@
+       nullable: true
+       items:
+         $ref: 'AssetServiceType.yaml#/AssetServiceType'
+-      maxItems: 4
++      maxItems: 5
+     approvalStatuses:
+       type: array
+       nullable: true
+@@ -42,8 +42,8 @@
+       maximum: 2000
+       default: 500
+       description: |
+-        <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1. Also see Entity Limits per operation.</div>
++        <div lang="ja">開始位置から取得する結果の数。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The number of results to retrieve starting from the initial position. This field must be greater than or equal to 1.</div>
+     startIndex:
+       type: integer
+       nullable: true
+@@ -51,8 +51,8 @@
+       minimum: 1
+       default: 1
+       description: |
+-        <div lang="ja">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Index of the first result to return in this page. This field must be greater than or equal to 1.</div>
++        <div lang="ja">取得を開始する結果セット内の位置。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The position within the result set where retrieval begins. This field must be greater than or equal to 1.</div>
+   title: AssetServiceSelector
+   description: |
+     <div lang="ja">AssetServiceSelectorオブジェクトは、アセットの情報を指定します。</div>
+
+
+------
+diff -ru v12/asset/AssetServiceType.yaml v13/asset/AssetServiceType.yaml
+--- v12/asset/AssetServiceType.yaml	2024-02-13 17:20:07.000000000 +0900
++++ v13/asset/AssetServiceType.yaml	2024-02-15 16:41:52.000000000 +0900
+@@ -6,6 +6,7 @@
+   - CALL
+   - CALLOUT
+   - STRUCTURED_SNIPPET
++  - IMAGE
+   - UNKNOWN
+   title: AssetServiceType
+   description: |
+@@ -22,6 +23,8 @@
+       <dd class="term__desc"><span lang="ja">広告表示オプションのテキスト補足オプションです。</span><span lang="en">Callout option from Ad Display Option.</span></dd>
+       <dt class="term__item">STRUCTURED_SNIPPET</dt>
+       <dd class="term__desc"><span lang="ja">広告表示オプションのカテゴリ補足オプションです。</span><span lang="en">Structured snippet option from Ad Display Option.</span></dd>
++      <dt class="term__item">IMAGE</dt>
++      <dd class="term__desc"><span lang="ja">広告表示オプションの画像アセットオプションです。<br>※現在、こちらのEnumは利用できません。</span><span lang="en">Image option from Ad Display Option.<br>*Currently this Enum is not available.</span></dd>
+       <dt class="term__item">UNKNOWN</dt>
+       <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown value.</span></dd>
+     </dl>
+
+
+------
+diff -ru v12/auditlog/AuditLogServiceSelector.yaml v13/auditlog/AuditLogServiceSelector.yaml
+--- v12/auditlog/AuditLogServiceSelector.yaml	2024-02-13 17:20:08.000000000 +0900
++++ v13/auditlog/AuditLogServiceSelector.yaml	2024-02-13 17:20:08.000000000 +0900
+@@ -36,8 +36,8 @@
+       maximum: 1000
+       default: 500
+       description: |
+-        <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1. Also see Entity Limits per operation.</div>
++        <div lang="ja">開始位置から取得する結果の数。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The number of results to retrieve starting from the initial position. This field must be greater than or equal to 1.</div>
+     startIndex:
+       type: integer
+       nullable: true
+@@ -45,8 +45,8 @@
+       minimum: 1
+       default: 1
+       description: |
+-        <div lang="ja">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Index of the first result to return in this page. This field must be greater than or equal to 1.</div>
++        <div lang="ja">取得を開始する結果セット内の位置。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The position within the result set where retrieval begins. This field must be greater than or equal to 1.</div>
+   title: AuditLogServiceSelector
+   description: |
+     <div lang="ja">AuditLogServiceSelectorオブジェクトは、登録したジョブを照会するための検索条件を保持します。</div>
+
+
+------
+diff -ru v12/baseaccount/BaseAccountServiceSelector.yaml v13/baseaccount/BaseAccountServiceSelector.yaml
+--- v12/baseaccount/BaseAccountServiceSelector.yaml	2024-02-13 17:20:08.000000000 +0900
++++ v13/baseaccount/BaseAccountServiceSelector.yaml	2024-02-13 17:20:08.000000000 +0900
+@@ -47,8 +47,8 @@
+       maximum: 200
+       default: 200
+       description: |
+-        <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1. Also see Entity Limits per operation.</div>
++        <div lang="ja">開始位置から取得する結果の数。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The number of results to retrieve starting from the initial position. This field must be greater than or equal to 1.</div>
+     startIndex:
+       type: integer
+       nullable: true
+@@ -56,8 +56,8 @@
+       minimum: 1
+       default: 1
+       description: |
+-        <div lang="ja">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Index of the first result to return in this page. This field must be greater than or equal to 1.</div>
++        <div lang="ja">取得を開始する結果セット内の位置。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The position within the result set where retrieval begins. This field must be greater than or equal to 1.</div>
+   title: BaseAccountServiceSelector
+   description: |
+     <div lang="ja">BaseAccountServiceSelectorオブジェクトは、取得するアカウントを指定します。</div>
+
+
+------
+diff -ru v12/biddingseasonalityadjustment/BiddingSeasonalityAdjustmentServiceSelector.yaml v13/biddingseasonalityadjustment/BiddingSeasonalityAdjustmentServiceSelector.yaml
+--- v12/biddingseasonalityadjustment/BiddingSeasonalityAdjustmentServiceSelector.yaml	2024-02-13 17:20:08.000000000 +0900
++++ v13/biddingseasonalityadjustment/BiddingSeasonalityAdjustmentServiceSelector.yaml	2024-02-13 17:20:08.000000000 +0900
+@@ -22,6 +22,13 @@
+       description: |
+         <div lang="ja">自動入札のスポット調整ID</div>
+         <div lang="en">Bidding seasonality adjustment Ids.</div>
++    campaignId:
++      type: integer
++      nullable: true
++      format: int64
++      description: |
++        <div lang="ja">キャンペーンID</div>
++        <div lang="en">Campaign Id.</div>
+     numberResults:
+       type: integer
+       nullable: true
+@@ -30,8 +37,8 @@
+       maximum: 500
+       default: 500
+       description: |
+-        <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1. Also see Entity Limits per operation.</div>
++        <div lang="ja">開始位置から取得する結果の数。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The number of results to retrieve starting from the initial position. This field must be greater than or equal to 1.</div>
+     startIndex:
+       type: integer
+       nullable: true
+@@ -39,8 +46,8 @@
+       minimum: 1
+       default: 1
+       description: |
+-        <div lang="ja">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Index of the first result to return in this page. This field must be greater than or equal to 1.</div>
++        <div lang="ja">取得を開始する結果セット内の位置。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The position within the result set where retrieval begins. This field must be greater than or equal to 1.</div>
+   title: BiddingSeasonalityAdjustmentServiceSelector
+   description: |
+     <div lang="ja">BiddingSeasonalityAdjustmentServiceSelectorオブジェクトは、選択する自動入札のスポット調整を表します。</div>
+
+
+------
+diff -ru v12/biddingstrategy/BiddingStrategyServiceSelector.yaml v13/biddingstrategy/BiddingStrategyServiceSelector.yaml
+--- v12/biddingstrategy/BiddingStrategyServiceSelector.yaml	2024-02-13 17:20:08.000000000 +0900
++++ v13/biddingstrategy/BiddingStrategyServiceSelector.yaml	2024-02-13 17:20:08.000000000 +0900
+@@ -36,8 +36,8 @@
+       maximum: 500
+       default: 500
+       description: |
+-        <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1. Also see Entity Limits per operation.</div>
++        <div lang="ja">開始位置から取得する結果の数。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The number of results to retrieve starting from the initial position. This field must be greater than or equal to 1.</div>
+     startIndex:
+       type: integer
+       nullable: true
+@@ -45,8 +45,8 @@
+       minimum: 1
+       default: 1
+       description: |
+-        <div lang="ja">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Index of the first result to return in this page. This field must be greater than or equal to 1.</div>
++        <div lang="ja">取得を開始する結果セット内の位置。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The position within the result set where retrieval begins. This field must be greater than or equal to 1.</div>
+   title: BiddingStrategyServiceSelector
+   description: |
+     <div lang="ja">BiddingStrategyServiceSelectorオブジェクトは、自動入札設定の検索条件に関する情報を表します。</div>
+
+
+------
+diff -ru v12/budgetorder/BudgetOrderServiceSelector.yaml v13/budgetorder/BudgetOrderServiceSelector.yaml
+--- v12/budgetorder/BudgetOrderServiceSelector.yaml	2024-02-13 17:20:07.000000000 +0900
++++ v13/budgetorder/BudgetOrderServiceSelector.yaml	2024-02-13 17:20:08.000000000 +0900
+@@ -24,8 +24,8 @@
+       maximum: 500
+       default: 500
+       description: |
+-        <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1. Also see Entity Limits per operation.</div>
++        <div lang="ja">開始位置から取得する結果の数。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The number of results to retrieve starting from the initial position. This field must be greater than or equal to 1.</div>
+     startIndex:
+       type: integer
+       nullable: true
+@@ -33,8 +33,8 @@
+       minimum: 1
+       default: 1
+       description: |
+-        <div lang="ja">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Index of the first result to return in this page. This field must be greater than or equal to 1.</div>
++        <div lang="ja">取得を開始する結果セット内の位置。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The position within the result set where retrieval begins. This field must be greater than or equal to 1.</div>
+   title: BudgetOrderServiceSelector
+   description: |
+     <div lang="ja">BudgetOrderServiceSelectorオブジェクトは、取得するアカウント予算を指定します。</div>
+
+
+------
+diff -ru v12/campaign/CampaignServiceSelector.yaml v13/campaign/CampaignServiceSelector.yaml
+--- v12/campaign/CampaignServiceSelector.yaml	2024-02-13 17:20:08.000000000 +0900
++++ v13/campaign/CampaignServiceSelector.yaml	2024-02-13 17:20:08.000000000 +0900
+@@ -77,8 +77,8 @@
+       maximum: 10000
+       default: 500
+       description: |
+-        <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1. Also see Entity Limits per operation.</div>
++        <div lang="ja">開始位置から取得する結果の数。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The number of results to retrieve starting from the initial position. This field must be greater than or equal to 1.</div>
+     startIndex:
+       type: integer
+       nullable: true
+@@ -86,8 +86,8 @@
+       minimum: 1
+       default: 1
+       description: |
+-        <div lang="ja">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Index of the first result to return in this page. This field must be greater than or equal to 1.</div>
++        <div lang="ja">取得を開始する結果セット内の位置。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The position within the result set where retrieval begins. This field must be greater than or equal to 1.</div>
+     userStatuses:
+       type: array
+       nullable: true
+
+
+------
+diff -ru v12/campaignasset/CampaignAssetServiceSelector.yaml v13/campaignasset/CampaignAssetServiceSelector.yaml
+--- v12/campaignasset/CampaignAssetServiceSelector.yaml	2024-02-13 17:20:08.000000000 +0900
++++ v13/campaignasset/CampaignAssetServiceSelector.yaml	2024-02-15 16:41:52.000000000 +0900
+@@ -38,7 +38,7 @@
+       nullable: true
+       items:
+         $ref: 'CampaignAssetServiceType.yaml#/CampaignAssetServiceType'
+-      maxItems: 4
++      maxItems: 5
+     userStatuses:
+       type: array
+       nullable: true
+@@ -53,8 +53,8 @@
+       maximum: 500
+       default: 500
+       description: |
+-        <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1. Also see Entity Limits per operation.</div>
++        <div lang="ja">開始位置から取得する結果の数。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The number of results to retrieve starting from the initial position. This field must be greater than or equal to 1.</div>
+     startIndex:
+       type: integer
+       nullable: true
+@@ -62,8 +62,8 @@
+       minimum: 1
+       default: 1
+       description: |
+-        <div lang="ja">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Index of the first result to return in this page. This field must be greater than or equal to 1.</div>
++        <div lang="ja">取得を開始する結果セット内の位置。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The position within the result set where retrieval begins. This field must be greater than or equal to 1.</div>
+   title: CampaignAssetServiceSelector
+   description: |
+     <div lang="ja">CampaignAssetServiceSelectorオブジェクトは、アセット情報を指定します。</div>
+
+
+------
+diff -ru v12/campaignasset/CampaignAssetServiceType.yaml v13/campaignasset/CampaignAssetServiceType.yaml
+--- v12/campaignasset/CampaignAssetServiceType.yaml	2024-02-13 17:20:08.000000000 +0900
++++ v13/campaignasset/CampaignAssetServiceType.yaml	2024-02-15 16:41:52.000000000 +0900
+@@ -6,6 +6,7 @@
+   - CALL
+   - CALLOUT
+   - STRUCTURED_SNIPPET
++  - IMAGE
+   - UNKNOWN
+   title: CampaignAssetServiceType
+   description: |
+@@ -22,6 +23,8 @@
+       <dd class="term__desc"><span lang="ja">広告表示オプションのテキスト補足オプションです。</span><span lang="en">Callout option from Ad Display Option.</span></dd>
+       <dt class="term__item">STRUCTURED_SNIPPET</dt>
+       <dd class="term__desc"><span lang="ja">広告表示オプションのカテゴリ補足オプションです。</span><span lang="en">Structured snippet option from Ad Display Option.</span></dd>
++      <dt class="term__item">IMAGE</dt>
++      <dd class="term__desc"><span lang="ja">広告表示オプションの画像オプションです。<br>※現在、こちらのEnumは利用できません。</span><span lang="en">Image option from Ad Display Option.<br>*Currently this Enum is not available.</span></dd>
+       <dt class="term__item">UNKNOWN</dt>
+       <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown value.</span></dd>
+     </dl>
+
+
+------
+diff -ru v12/campaignbudget/CampaignBudgetServiceSelector.yaml v13/campaignbudget/CampaignBudgetServiceSelector.yaml
+--- v12/campaignbudget/CampaignBudgetServiceSelector.yaml	2024-02-13 17:20:08.000000000 +0900
++++ v13/campaignbudget/CampaignBudgetServiceSelector.yaml	2024-02-13 17:20:08.000000000 +0900
+@@ -30,8 +30,8 @@
+       maximum: 2000
+       default: 500
+       description: |
+-        <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1. Also see Entity Limits per operation.</div>
++        <div lang="ja">開始位置から取得する結果の数。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The number of results to retrieve starting from the initial position. This field must be greater than or equal to 1.</div>
+     startIndex:
+       type: integer
+       nullable: true
+@@ -39,8 +39,8 @@
+       minimum: 1
+       default: 1
+       description: |
+-        <div lang="ja">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Index of the first result to return in this page. This field must be greater than or equal to 1.</div>
++        <div lang="ja">取得を開始する結果セット内の位置。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The position within the result set where retrieval begins. This field must be greater than or equal to 1.</div>
+   title: CampaignBudgetServiceSelector
+   description: |
+     <div lang="ja">CampaignBudgetServiceSelectorオブジェクトは、共有予算の情報を指定します。</div>
+
+
+------
+diff -ru v12/campaigncriterion/CampaignCriterionServiceSelector.yaml v13/campaigncriterion/CampaignCriterionServiceSelector.yaml
+--- v12/campaigncriterion/CampaignCriterionServiceSelector.yaml	2024-02-13 17:20:07.000000000 +0900
++++ v13/campaigncriterion/CampaignCriterionServiceSelector.yaml	2024-02-13 17:20:08.000000000 +0900
+@@ -43,8 +43,8 @@
+       maximum: 10000
+       default: 500
+       description: |
+-        <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1. Also see Entity Limits per operation.</div>
++        <div lang="ja">開始位置から取得する結果の数。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The number of results to retrieve starting from the initial position. This field must be greater than or equal to 1.</div>
+     startIndex:
+       type: integer
+       nullable: true
+@@ -52,8 +52,8 @@
+       minimum: 1
+       default: 1
+       description: |
+-        <div lang="ja">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Index of the first result to return in this page. This field must be greater than or equal to 1.</div>
++        <div lang="ja">取得を開始する結果セット内の位置。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The position within the result set where retrieval begins. This field must be greater than or equal to 1.</div>
+     use:
+       $ref: 'CampaignCriterionServiceUse.yaml#/CampaignCriterionServiceUse'
+   title: CampaignCriterionServiceSelector
+
+
+------
+diff -ru v12/campaigncustomizer/CampaignCustomizerServiceSelector.yaml v13/campaigncustomizer/CampaignCustomizerServiceSelector.yaml
+--- v12/campaigncustomizer/CampaignCustomizerServiceSelector.yaml	2024-02-13 17:20:08.000000000 +0900
++++ v13/campaigncustomizer/CampaignCustomizerServiceSelector.yaml	2024-02-13 17:20:08.000000000 +0900
+@@ -45,8 +45,8 @@
+       maximum: 2000
+       default: 500
+       description: |
+-        <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1. Also see Entity Limits per operation.</div>
++        <div lang="ja">開始位置から取得する結果の数。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The number of results to retrieve starting from the initial position. This field must be greater than or equal to 1.</div>
+     startIndex:
+       type: integer
+       nullable: true
+@@ -54,8 +54,8 @@
+       minimum: 1
+       default: 1
+       description: |
+-        <div lang="ja">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Index of the first result to return in this page. This field must be greater than or equal to 1.</div>
++        <div lang="ja">取得を開始する結果セット内の位置。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The position within the result set where retrieval begins. This field must be greater than or equal to 1.</div>
+   title: CampaignCustomizerServiceSelector
+   description: |
+     <div lang="ja">CampaignCustomizerServiceSelectorオブジェクトは、カスタマイザー属性の情報を指定します。</div>
+
+
+------
+diff -ru v12/campaignexport/CampaignExportServiceEntityType.yaml v13/campaignexport/CampaignExportServiceEntityType.yaml
+--- v12/campaignexport/CampaignExportServiceEntityType.yaml	2024-02-13 17:20:08.000000000 +0900
++++ v13/campaignexport/CampaignExportServiceEntityType.yaml	2024-02-15 16:41:52.000000000 +0900
+@@ -13,6 +13,7 @@
+   - CALLOUT_ASSET
+   - STRUCTURED_SNIPPET_ASSET
+   - CALLEXTENSION_ASSET
++  - IMAGE_ASSET
+   - ALL
+   - UNKNOWN
+   title: CampaignExportServiceEntityType
+@@ -44,6 +45,8 @@
+       <dd class="term__desc"><span lang="ja">カテゴリ補足オプションのアセット</span><span lang="en">Structured snippet option assets.</span></dd>
+       <dt class="term__item">CALLEXTENSION_ASSET</dt>
+       <dd class="term__desc"><span lang="ja">電話番号オプションのアセット</span><span lang="en">Phone Number option assets.</span></dd>
++      <dt class="term__item">IMAGE_ASSET</dt>
++      <dd class="term__desc"><span lang="ja">画像アセットオプションのアセット<br>※現在、こちらのEnumは利用できません。</span><span lang="en">Image option assets.<br>*Currently this Enum is not available.</span></dd>
+       <dt class="term__item">ALL</dt>
+       <dd class="term__desc"><span lang="ja">すべての広告エンティティ</span><span lang="en">All entities.</span></dd>
+       <dt class="term__item">UNKNOWN</dt>
+
+
+------
+diff -ru v12/campaignexport/CampaignExportServiceSelector.yaml v13/campaignexport/CampaignExportServiceSelector.yaml
+--- v12/campaignexport/CampaignExportServiceSelector.yaml	2024-02-13 17:20:08.000000000 +0900
++++ v13/campaignexport/CampaignExportServiceSelector.yaml	2024-02-13 17:20:08.000000000 +0900
+@@ -36,8 +36,8 @@
+       maximum: 500
+       default: 500
+       description: |
+-        <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1. Also see Entity Limits per operation.</div>
++        <div lang="ja">開始位置から取得する結果の数。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The number of results to retrieve starting from the initial position. This field must be greater than or equal to 1.</div>
+     startIndex:
+       type: integer
+       nullable: true
+@@ -45,8 +45,8 @@
+       minimum: 1
+       default: 1
+       description: |
+-        <div lang="ja">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Index of the first result to return in this page. This field must be greater than or equal to 1.</div>
++        <div lang="ja">取得を開始する結果セット内の位置。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The position within the result set where retrieval begins. This field must be greater than or equal to 1.</div>
+   title: CampaignExportServiceSelector
+   description: |
+     <div lang="ja">CampaignExportServiceSelector オブジェクトは、登録したジョブを検索する条件を表します。</div>
+
+
+------
+diff -ru v12/campaignretargetinglist/CampaignRetargetingListServiceSelector.yaml v13/campaignretargetinglist/CampaignRetargetingListServiceSelector.yaml
+--- v12/campaignretargetinglist/CampaignRetargetingListServiceSelector.yaml	2024-02-13 17:20:07.000000000 +0900
++++ v13/campaignretargetinglist/CampaignRetargetingListServiceSelector.yaml	2024-02-13 17:20:08.000000000 +0900
+@@ -32,8 +32,8 @@
+       maximum: 1000
+       default: 500
+       description: |
+-        <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1. Also see Entity Limits per operation.</div>
++        <div lang="ja">開始位置から取得する結果の数。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The number of results to retrieve starting from the initial position. This field must be greater than or equal to 1.</div>
+     startIndex:
+       type: integer
+       nullable: true
+@@ -41,8 +41,8 @@
+       minimum: 1
+       default: 1
+       description: |
+-        <div lang="ja">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Index of the first result to return in this page. This field must be greater than or equal to 1.</div>
++        <div lang="ja">取得を開始する結果セット内の位置。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The position within the result set where retrieval begins. This field must be greater than or equal to 1.</div>
+     targetListIds:
+       type: array
+       nullable: true
+
+
+------
+diff -ru v12/campaignsharedset/CampaignSharedSetServiceSelector.yaml v13/campaignsharedset/CampaignSharedSetServiceSelector.yaml
+--- v12/campaignsharedset/CampaignSharedSetServiceSelector.yaml	2024-02-13 17:20:08.000000000 +0900
++++ v13/campaignsharedset/CampaignSharedSetServiceSelector.yaml	2024-02-13 17:20:08.000000000 +0900
+@@ -22,16 +22,6 @@
+       description: |
+         <div lang="ja">検索条件：キャンペーンIDです。</div>
+         <div lang="en">Search condition : Campaign ID.</div>
+-    numberResults:
+-      type: integer
+-      nullable: true
+-      format: int32
+-      minimum: 1
+-      maximum: 1000
+-      default: 1000
+-      description: |
+-        <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1. Also see Entity Limits per operation.</div>
+     sharedListIds:
+       type: array
+       nullable: true
+@@ -43,6 +33,16 @@
+       description: |
+         <div lang="ja">検索条件：対象外キーワードリストIDです。</div>
+         <div lang="en">Search criteria : Shared list ID.</div>
++    numberResults:
++      type: integer
++      nullable: true
++      format: int32
++      minimum: 1
++      maximum: 1000
++      default: 1000
++      description: |
++        <div lang="ja">開始位置から取得する結果の数。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The number of results to retrieve starting from the initial position. This field must be greater than or equal to 1.</div>
+     startIndex:
+       type: integer
+       nullable: true
+@@ -50,8 +50,8 @@
+       minimum: 1
+       default: 1
+       description: |
+-        <div lang="ja">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Index of the first result to return in this page. This field must be greater than or equal to 1.</div>
++        <div lang="ja">取得を開始する結果セット内の位置。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The position within the result set where retrieval begins. This field must be greater than or equal to 1.</div>
+   title: CampaignSharedSetServiceSelector
+   description: |
+     <div lang="ja">CampaignSharedSetServiceSelectorは、検索条件（実行パラメータ）を保持するオブジェクトです。</div>
+
+
+------
+diff -ru v12/campaigntarget/CampaignTargetServiceSelector.yaml v13/campaigntarget/CampaignTargetServiceSelector.yaml
+--- v12/campaigntarget/CampaignTargetServiceSelector.yaml	2024-02-13 17:20:07.000000000 +0900
++++ v13/campaigntarget/CampaignTargetServiceSelector.yaml	2024-02-13 17:20:08.000000000 +0900
+@@ -24,6 +24,12 @@
+         <div lang="en">Campaign ID.</div>
+     excludedType:
+       $ref: 'CampaignTargetServiceExcludedType.yaml#/CampaignTargetServiceExcludedType'
++    platformTypes:
++      type: array
++      nullable: true
++      items:
++        $ref: 'CampaignTargetServicePlatformType.yaml#/CampaignTargetServicePlatformType'
++      maxItems: 3
+     numberResults:
+       type: integer
+       nullable: true
+@@ -32,14 +38,8 @@
+       maximum: 500
+       default: 500
+       description: |
+-        <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1. Also see Entity Limits per operation.</div>
+-    platformTypes:
+-      type: array
+-      nullable: true
+-      items:
+-        $ref: 'CampaignTargetServicePlatformType.yaml#/CampaignTargetServicePlatformType'
+-      maxItems: 3
++        <div lang="ja">開始位置から取得する結果の数。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The number of results to retrieve starting from the initial position. This field must be greater than or equal to 1.</div>
+     startIndex:
+       type: integer
+       nullable: true
+@@ -47,8 +47,8 @@
+       minimum: 1
+       default: 1
+       description: |
+-        <div lang="ja">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Index of the first result to return in this page. This field must be greater than or equal to 1.</div>
++        <div lang="ja">取得を開始する結果セット内の位置。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The position within the result set where retrieval begins. This field must be greater than or equal to 1.</div>
+     targetIds:
+       type: array
+       nullable: true
+
+
+------
+diff -ru v12/campaignwebpage/CampaignWebpageServiceSelector.yaml v13/campaignwebpage/CampaignWebpageServiceSelector.yaml
+--- v12/campaignwebpage/CampaignWebpageServiceSelector.yaml	2024-02-13 17:20:07.000000000 +0900
++++ v13/campaignwebpage/CampaignWebpageServiceSelector.yaml	2024-02-13 17:20:08.000000000 +0900
+@@ -30,8 +30,8 @@
+       maximum: 2000
+       default: 500
+       description: |
+-        <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1. Also see Entity Limits per operation.</div>
++        <div lang="ja">開始位置から取得する結果の数。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The number of results to retrieve starting from the initial position. This field must be greater than or equal to 1.</div>
+     startIndex:
+       type: integer
+       nullable: true
+@@ -39,8 +39,8 @@
+       minimum: 1
+       default: 1
+       description: |
+-        <div lang="ja">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Index of the first result to return in this page. This field must be greater than or equal to 1.</div>
++        <div lang="ja">取得を開始する結果セット内の位置。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The position within the result set where retrieval begins. This field must be greater than or equal to 1.</div>
+     targetIds:
+       type: array
+       nullable: true
+
+
+------
+diff -ru v12/conversiontracker/ConversionTrackerServiceAppEventTypeSelector.yaml v13/conversiontracker/ConversionTrackerServiceAppEventTypeSelector.yaml
+--- v12/conversiontracker/ConversionTrackerServiceAppEventTypeSelector.yaml	2024-02-13 17:20:08.000000000 +0900
++++ v13/conversiontracker/ConversionTrackerServiceAppEventTypeSelector.yaml	2024-02-13 17:20:08.000000000 +0900
+@@ -19,9 +19,9 @@
+       maximum: 500
+       default: 500
+       description: |
+-        <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。<br>
++        <div lang="ja">開始位置から取得する結果の数。このフィールドは、1以上を指定する必要があります。<br>
+         ※現在、こちらのフィールドは利用できません。</div>
+-        <div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1. Also see Entity Limits per operation.<br>
++        <div lang="en">The number of results to retrieve starting from the initial position. This field must be greater than or equal to 1.<br>
+         *Currently this field is not available.</div>
+     startIndex:
+       type: integer
+@@ -30,9 +30,9 @@
+       minimum: 1
+       default: 1
+       description: |
+-        <div lang="ja">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。<br>
++        <div lang="ja">取得を開始する結果セット内の位置。このフィールドは、1以上を指定する必要があります。<br>
+         ※現在、こちらのフィールドは利用できません。</div>
+-        <div lang="en">Index of the first result to return in this page. This field must be greater than or equal to 1.<br>
++        <div lang="en">The position within the result set where retrieval begins. This field must be greater than or equal to 1.<br>
+         *Currently this field is not available.</div>
+   title: ConversionTrackerServiceAppEventTypeSelector
+   description: |
+
+
+------
+diff -ru v12/conversiontracker/ConversionTrackerServiceSelector.yaml v13/conversiontracker/ConversionTrackerServiceSelector.yaml
+--- v12/conversiontracker/ConversionTrackerServiceSelector.yaml	2024-02-13 17:20:08.000000000 +0900
++++ v13/conversiontracker/ConversionTrackerServiceSelector.yaml	2024-02-13 17:20:08.000000000 +0900
+@@ -66,8 +66,8 @@
+       maximum: 500
+       default: 500
+       description: |
+-        <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1. Also see Entity Limits per operation.</div>
++        <div lang="ja">開始位置から取得する結果の数。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The number of results to retrieve starting from the initial position. This field must be greater than or equal to 1.</div>
+     startIndex:
+       type: integer
+       nullable: true
+@@ -75,8 +75,8 @@
+       minimum: 1
+       default: 1
+       description: |
+-        <div lang="ja">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Index of the first result to return in this page. This field must be greater than or equal to 1.</div>
++        <div lang="ja">取得を開始する結果セット内の位置。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The position within the result set where retrieval begins. This field must be greater than or equal to 1.</div>
+     statuses:
+       type: array
+       nullable: true
+
+
+------
+diff -ru v12/dictionary/DictionaryServiceAppLinkVendorSelector.yaml v13/dictionary/DictionaryServiceAppLinkVendorSelector.yaml
+--- v12/dictionary/DictionaryServiceAppLinkVendorSelector.yaml	2024-02-13 17:20:08.000000000 +0900
++++ v13/dictionary/DictionaryServiceAppLinkVendorSelector.yaml	2024-02-13 17:20:08.000000000 +0900
+@@ -2,23 +2,23 @@
+   type: object
+   nullable: true
+   properties:
+-    startIndex:
++    numberResults:
+       type: integer
+       nullable: true
+       format: int32
+       minimum: 1
+-      default: 1
+       description: |
+-        <div lang="ja">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Index of the first result to return in this page. This field must be greater than or equal to 1.</div>
+-    numberResults:
++        <div lang="ja">開始位置から取得する結果の数。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The number of results to retrieve starting from the initial position. This field must be greater than or equal to 1.</div>
++    startIndex:
+       type: integer
+       nullable: true
+       format: int32
+       minimum: 1
++      default: 1
+       description: |
+-        <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1. Also see Entity Limits per operation.</div>
++        <div lang="ja">取得を開始する結果セット内の位置。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The position within the result set where retrieval begins. This field must be greater than or equal to 1.</div>
+   title: DictionaryServiceAppLinkVendorSelector
+   description: |
+     <div lang="ja">DictionaryServiceAppLinkVendorSelectorオブジェクトは、 アプリ計測ベンダー情報一覧取得のリクエストを格納するコンテナです。</div>
+
+
+------
+diff -ru v12/dictionary/DictionaryServiceDisapprovalReasonSelector.yaml v13/dictionary/DictionaryServiceDisapprovalReasonSelector.yaml
+--- v12/dictionary/DictionaryServiceDisapprovalReasonSelector.yaml	2024-02-13 17:20:08.000000000 +0900
++++ v13/dictionary/DictionaryServiceDisapprovalReasonSelector.yaml	2024-02-13 17:20:08.000000000 +0900
+@@ -6,23 +6,23 @@
+   properties:
+     lang:
+       $ref: 'DictionaryServiceLang.yaml#/DictionaryServiceLang'
+-    startIndex:
++    numberResults:
+       type: integer
+       nullable: true
+       format: int32
+       minimum: 1
+-      default: 1
+       description: |
+-        <div lang="ja">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Index of the first result to return in this page. This field must be greater than or equal to 1.</div>
+-    numberResults:
++        <div lang="ja">開始位置から取得する結果の数。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The number of results to retrieve starting from the initial position. This field must be greater than or equal to 1.</div>
++    startIndex:
+       type: integer
+       nullable: true
+       format: int32
+       minimum: 1
++      default: 1
+       description: |
+-        <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1. Also see Entity Limits per operation.</div>
++        <div lang="ja">開始位置から取得する結果の数。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The number of results to retrieve starting from the initial position. This field must be greater than or equal to 1.</div>
+   title: DictionaryServiceDisapprovalReasonSelector
+   description: |
+     <div lang="ja">DictionaryServiceDisapprovalReasonSelectorオブジェクトは、 EditorialReason一覧取得リクエストを格納するコンテナです。</div>
+Only in v12: feed
+Only in v12: feeditem
+
+
+------
+diff -ru v12/keywordplanidea/KeywordPlanIdeaServiceSelector.yaml v13/keywordplanidea/KeywordPlanIdeaServiceSelector.yaml
+--- v12/keywordplanidea/KeywordPlanIdeaServiceSelector.yaml	2024-02-13 17:20:07.000000000 +0900
++++ v13/keywordplanidea/KeywordPlanIdeaServiceSelector.yaml	2024-02-13 17:20:08.000000000 +0900
+@@ -16,25 +16,25 @@
+         This field is required.</div>
+     seed:
+       $ref: 'KeywordPlanIdeaServiceSeed.yaml#/KeywordPlanIdeaServiceSeed'
+-    startIndex:
++    numberResults:
+       type: integer
+       nullable: true
+       format: int32
+       minimum: 1
+-      default: 1
++      maximum: 500
++      default: 500
+       description: |
+-        <div lang="ja">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Index of the first result to return in this page. This field must be greater than or equal to 1.</div>
+-    numberResults:
++        <div lang="ja">開始位置から取得する結果の数。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The number of results to retrieve starting from the initial position. This field must be greater than or equal to 1.</div>
++    pageIndex:
+       type: integer
+       nullable: true
+       format: int32
+       minimum: 1
+-      maximum: 500
+-      default: 500
++      default: 1
+       description: |
+-        <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1. Also see Entity Limits per operation.</div>
++        <div lang="ja">ページ番号です。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">Page number. This field must be greater than or equal to 1.</div>
+   title: KeywordPlanIdeaServiceSelector
+   description: |
+     <div lang="ja">KeywordPlanIdeaSelectorオブジェクトは、関連キーワードの提案条件を表します。</div>
+
+
+------
+diff -ru v12/label/LabelServiceSelector.yaml v13/label/LabelServiceSelector.yaml
+--- v12/label/LabelServiceSelector.yaml	2024-02-13 17:20:07.000000000 +0900
++++ v13/label/LabelServiceSelector.yaml	2024-02-13 17:20:08.000000000 +0900
+@@ -32,8 +32,8 @@
+       maximum: 2000
+       default: 2000
+       description: |
+-        <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1. Also see Entity Limits per operation.</div>
++        <div lang="ja">開始位置から取得する結果の数。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The number of results to retrieve starting from the initial position. This field must be greater than or equal to 1.</div>
+     startIndex:
+       type: integer
+       nullable: true
+@@ -41,8 +41,8 @@
+       minimum: 1
+       default: 1
+       description: |
+-        <div lang="ja">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Index of the first result to return in this page. This field must be greater than or equal to 1.</div>
++        <div lang="ja">取得を開始する結果セット内の位置。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The position within the result set where retrieval begins. This field must be greater than or equal to 1.</div>
+   title: LabelServiceSelector
+   description: |
+     <div lang="ja">LabelServiceSelectorオブジェクトは、操作の対象とするラベルの情報およびフィルタ条件を表します。</div>
+
+
+------
+diff -ru v12/offlineconversion/OfflineConversionServiceSelector.yaml v13/offlineconversion/OfflineConversionServiceSelector.yaml
+--- v12/offlineconversion/OfflineConversionServiceSelector.yaml	2024-02-13 17:20:08.000000000 +0900
++++ v13/offlineconversion/OfflineConversionServiceSelector.yaml	2024-02-13 17:20:08.000000000 +0900
+@@ -35,8 +35,8 @@
+       maximum: 1000
+       default: 500
+       description: |
+-        <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1. Also see Entity Limits per operation.</div>
++        <div lang="ja">開始位置から取得する結果の数。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The number of results to retrieve starting from the initial position. This field must be greater than or equal to 1.</div>
+     startIndex:
+       type: integer
+       nullable: true
+@@ -44,8 +44,8 @@
+       minimum: 1
+       default: 1
+       description: |
+-        <div lang="ja">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Index of the first result to return in this page. This field must be greater than or equal to 1.</div>
++        <div lang="ja">取得を開始する結果セット内の位置。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The position within the result set where retrieval begins. This field must be greater than or equal to 1.</div>
+   title: OfflineConversionServiceSelector
+   description: |
+     <div lang="ja">OfflineConversionServiceSelectorオブジェクトは、登録したオフラインコンバージョンデータを照会するための検索条件を格納します。</div>
+
+
+------
+diff -ru v12/pagefeedasset/PageFeedAssetServiceGetJobStatusSelector.yaml v13/pagefeedasset/PageFeedAssetServiceGetJobStatusSelector.yaml
+--- v12/pagefeedasset/PageFeedAssetServiceGetJobStatusSelector.yaml	2024-02-13 17:20:08.000000000 +0900
++++ v13/pagefeedasset/PageFeedAssetServiceGetJobStatusSelector.yaml	2024-02-13 17:20:08.000000000 +0900
+@@ -33,8 +33,8 @@
+       maximum: 10000
+       default: 500
+       description: |
+-        <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1. Also see Entity Limits per operation.</div>
++        <div lang="ja">開始位置から取得する結果の数。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The number of results to retrieve starting from the initial position. This field must be greater than or equal to 1.</div>
+     startIndex:
+       type: integer
+       nullable: true
+@@ -42,8 +42,8 @@
+       minimum: 1
+       default: 1
+       description: |
+-        <div lang="ja">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Index of the first result to return in this page. This field must be greater than or equal to 1.</div>
++        <div lang="ja">取得を開始する結果セット内の位置。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The position within the result set where retrieval begins. This field must be greater than or equal to 1.</div>
+   title: PageFeedAssetServiceGetJobStatusSelector
+   description: |
+     <div lang="ja">PageFeedAssetServiceGetJobStatusSelectorオブジェクトは、upload、downloadの処理状況を取得するための検索条件を格納します。</div>
+
+
+------
+diff -ru v12/pagefeedasset/PageFeedAssetServiceGetReviewSummarySelector.yaml v13/pagefeedasset/PageFeedAssetServiceGetReviewSummarySelector.yaml
+--- v12/pagefeedasset/PageFeedAssetServiceGetReviewSummarySelector.yaml	2024-02-13 17:20:08.000000000 +0900
++++ v13/pagefeedasset/PageFeedAssetServiceGetReviewSummarySelector.yaml	2024-02-13 17:20:08.000000000 +0900
+@@ -30,8 +30,8 @@
+       maximum: 10000
+       default: 500
+       description: |
+-        <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1. Also see Entity Limits per operation.</div>
++        <div lang="ja">開始位置から取得する結果の数。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The number of results to retrieve starting from the initial position. This field must be greater than or equal to 1.</div>
+     startIndex:
+       type: integer
+       nullable: true
+@@ -39,8 +39,8 @@
+       minimum: 1
+       default: 1
+       description: |
+-        <div lang="ja">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Index of the first result to return in this page. This field must be greater than or equal to 1.</div>
++        <div lang="ja">取得を開始する結果セット内の位置。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The position within the result set where retrieval begins. This field must be greater than or equal to 1.</div>
+   title: PageFeedAssetServiceGetReviewSummarySelector
+   description: |
+     <div lang="ja">PageFeedAssetServiceGetReviewSummarySelectorオブジェクトは、登録したページフィードアセットの審査成績、状況サマリーを取得するための検索条件を格納します。</div>
+
+
+------
+diff -ru v12/pagefeedasset/PageFeedAssetServiceSelector.yaml v13/pagefeedasset/PageFeedAssetServiceSelector.yaml
+--- v12/pagefeedasset/PageFeedAssetServiceSelector.yaml	2024-02-13 17:20:08.000000000 +0900
++++ v13/pagefeedasset/PageFeedAssetServiceSelector.yaml	2024-02-13 17:20:08.000000000 +0900
+@@ -63,8 +63,8 @@
+       maximum: 10000
+       default: 500
+       description: |
+-        <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1. Also see Entity Limits per operation.</div>
++        <div lang="ja">開始位置から取得する結果の数。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The number of results to retrieve starting from the initial position. This field must be greater than or equal to 1.</div>
+     startIndex:
+       type: integer
+       nullable: true
+@@ -72,8 +72,8 @@
+       minimum: 1
+       default: 1
+       description: |
+-        <div lang="ja">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Index of the first result to return in this page. This field must be greater than or equal to 1.</div>
++        <div lang="ja">取得を開始する結果セット内の位置。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The position within the result set where retrieval begins. This field must be greater than or equal to 1.</div>
+   title: PageFeedAssetServiceSelector
+   description: |
+     <div lang="ja">PageFeedAssetServiceSelectorオブジェクトは、登録したページフィードアセットを照会するための検索条件を格納します。</div>
+
+
+------
+diff -ru v12/pagefeedassetset/PageFeedAssetSetServiceSelector.yaml v13/pagefeedassetset/PageFeedAssetSetServiceSelector.yaml
+--- v12/pagefeedassetset/PageFeedAssetSetServiceSelector.yaml	2024-02-13 17:20:07.000000000 +0900
++++ v13/pagefeedassetset/PageFeedAssetSetServiceSelector.yaml	2024-02-13 17:20:08.000000000 +0900
+@@ -38,8 +38,8 @@
+       minimum: 1
+       default: 1
+       description: |
+-        <div lang="ja">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Index of the first result to return in this page. This field must be greater than or equal to 1.</div>
++        <div lang="ja">取得を開始する結果セット内の位置。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The position within the result set where retrieval begins. This field must be greater than or equal to 1.</div>
+   title: PageFeedAssetSetServiceSelector
+   description: |
+     <div lang="ja">PageFeedAssetSetServiceSelectorオブジェクトは、ページフィードアセットセットの検索条件を格納します。</div>
+
+
+------
+diff -ru v12/reportdefinition/ReportDefinitionServiceReportType.yaml v13/reportdefinition/ReportDefinitionServiceReportType.yaml
+--- v12/reportdefinition/ReportDefinitionServiceReportType.yaml	2024-02-13 17:20:07.000000000 +0900
++++ v13/reportdefinition/ReportDefinitionServiceReportType.yaml	2024-02-13 17:20:08.000000000 +0900
+@@ -9,7 +9,6 @@
+   - KEYWORDS
+   - SEARCH_QUERY
+   - GEO
+-  - FEED_ITEM
+   - GEO_TARGET
+   - SCHEDULE_TARGET
+   - BID_STRATEGY
+@@ -22,6 +21,7 @@
+   - CAMPAIGN_ASSET
+   - ADGROUP_ASSET
+   - RESPONSIVE_ADS_FOR_SEARCH_ASSET
++  - ASSET_COMBINATIONS
+   - CAMPAIGN_BUDGET
+   - UNKNOWN
+   title: ReportDefinitionServiceReportType
+@@ -45,8 +45,6 @@
+       <dd class="term__desc"><span lang="ja">検索クエリレポートです。</span><span lang="en">Search query report.<br>Performance data for search queries which triggered the ad and received the clicks.</span></dd>
+       <dt class="term__item">GEO</dt>
+       <dd class="term__desc"><span lang="ja">地域別レポートです。</span><span lang="en">Geo report.<br>Performance data by selected location.</span></dd>
+-      <dt class="term__item">FEED_ITEM</dt>
+-      <dd class="term__desc"><span lang="ja">広告表示オプションレポートです。</span><span lang="en">Ad display option report.<br>Performance data for selected Quick Links and/or Call Extension.</span></dd>
+       <dt class="term__item">GEO_TARGET</dt>
+       <dd class="term__desc"><span lang="ja">地域ターゲティングレポートです。</span><span lang="en">Geo targeting report.<br>Performance data for location targeting.</span></dd>
+       <dt class="term__item">SCHEDULE_TARGET</dt>
+@@ -71,6 +69,8 @@
+       <dd class="term__desc"><span lang="ja">（新）広告表示オプションレポート（広告グループ）です。</span><span lang="en">(New) Ad display option report (ad group).</span></dd>
+       <dt class="term__item">RESPONSIVE_ADS_FOR_SEARCH_ASSET</dt>
+       <dd class="term__desc"><span lang="ja">レスポンシブ検索広告アセットレポートです。</span><span lang="en">Responsive Ads for search asset report.</span></dd>
++      <dt class="term__item">ASSET_COMBINATIONS</dt>
++      <dd class="term__desc"><span lang="ja">アセット組み合わせレポートです。<br>※現在、こちらのEnumは利用できません。</span><span lang="en">Asset combinations report.<br>*Currently this Enum is not available.</span></dd>
+       <dt class="term__item">CAMPAIGN_BUDGET</dt>
+       <dd class="term__desc"><span lang="ja">共有予算レポートです。</span><span lang="en">Campaign budget report.</span></dd>
+       <dt class="term__item">UNKNOWN</dt>
+
+
+------
+diff -ru v12/reportdefinition/ReportDefinitionServiceSelector.yaml v13/reportdefinition/ReportDefinitionServiceSelector.yaml
+--- v12/reportdefinition/ReportDefinitionServiceSelector.yaml	2024-02-13 17:20:07.000000000 +0900
++++ v13/reportdefinition/ReportDefinitionServiceSelector.yaml	2024-02-13 17:20:08.000000000 +0900
+@@ -11,16 +11,6 @@
+       description: |
+         <div lang="ja">検索条件： アカウントIDです。</div>
+         <div lang="en">Search condition: Account ID.</div>
+-    numberResults:
+-      type: integer
+-      nullable: true
+-      format: int32
+-      minimum: 1
+-      maximum: 500
+-      default: 500
+-      description: |
+-        <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1. Also see Entity Limits per operation.</div>
+     reportJobIds:
+       type: array
+       nullable: true
+@@ -42,6 +32,16 @@
+       nullable: true
+       items:
+         $ref: 'ReportDefinitionServiceReportType.yaml#/ReportDefinitionServiceReportType'
++    numberResults:
++      type: integer
++      nullable: true
++      format: int32
++      minimum: 1
++      maximum: 500
++      default: 500
++      description: |
++        <div lang="ja">開始位置から取得する結果の数。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The number of results to retrieve starting from the initial position. This field must be greater than or equal to 1.</div>
+     startIndex:
+       type: integer
+       nullable: true
+@@ -49,8 +49,8 @@
+       minimum: 1
+       default: 1
+       description: |
+-        <div lang="ja">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Index of the first result to return in this page. This field must be greater than or equal to 1.</div>
++        <div lang="ja">取得を開始する結果セット内の位置。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The position within the result set where retrieval begins. This field must be greater than or equal to 1.</div>
+   title: ReportDefinitionServiceSelector
+   description: |
+     <div lang="ja">ReportDefinitionServiceSelectorオブジェクトは、操作の対象とするレポートです。</div>
+
+
+------
+diff -ru v12/retargetinglist/RetargetingListServiceSelector.yaml v13/retargetinglist/RetargetingListServiceSelector.yaml
+--- v12/retargetinglist/RetargetingListServiceSelector.yaml	2024-02-13 17:20:08.000000000 +0900
++++ v13/retargetinglist/RetargetingListServiceSelector.yaml	2024-02-13 17:20:08.000000000 +0900
+@@ -19,8 +19,8 @@
+       maximum: 1000
+       default: 500
+       description: |
+-        <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1. Also see Entity Limits per operation.</div>
++        <div lang="ja">開始位置から取得する結果の数。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The number of results to retrieve starting from the initial position. This field must be greater than or equal to 1.</div>
+     startIndex:
+       type: integer
+       nullable: true
+@@ -28,8 +28,8 @@
+       minimum: 1
+       default: 1
+       description: |
+-        <div lang="ja">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Index of the first result to return in this page. This field must be greater than or equal to 1.</div>
++        <div lang="ja">取得を開始する結果セット内の位置。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The position within the result set where retrieval begins. This field must be greater than or equal to 1.</div>
+     targetListIds:
+       type: array
+       nullable: true
+
+
+------
+diff -ru v12/retargetinglist/RetargetingListServiceUrlRuleKey.yaml v13/retargetinglist/RetargetingListServiceUrlRuleKey.yaml
+--- v12/retargetinglist/RetargetingListServiceUrlRuleKey.yaml	2024-02-13 17:20:08.000000000 +0900
++++ v13/retargetinglist/RetargetingListServiceUrlRuleKey.yaml	2024-02-13 17:20:08.000000000 +0900
+@@ -3,7 +3,7 @@
+   nullable: true
+   enum:
+   - URL
+-  - REFFER_URL
++  - REFER_URL
+   - UNKNOWN
+   title: RetargetingListServiceUrlRuleKey
+   description: |
+@@ -14,7 +14,7 @@
+     <dl class=term>
+       <dt class="term__item">URL</dt>
+       <dd class="term__desc"><span lang="ja">URLです。</span><span lang="en">URL.</span></dd>
+-      <dt class="term__item">REFFER_URL</dt>
++      <dt class="term__item">REFER_URL</dt>
+       <dd class="term__desc"><span lang="ja">リファラURLです。</span><span lang="en">Refer URL.</span></dd>
+       <dt class="term__item">UNKNOWN</dt>
+       <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown value.</span></dd>
+
+
+------
+diff -ru v12/sharedcriterion/SharedCriterionServiceSelector.yaml v13/sharedcriterion/SharedCriterionServiceSelector.yaml
+--- v12/sharedcriterion/SharedCriterionServiceSelector.yaml	2024-02-13 17:20:08.000000000 +0900
++++ v13/sharedcriterion/SharedCriterionServiceSelector.yaml	2024-02-13 17:20:08.000000000 +0900
+@@ -22,16 +22,6 @@
+       description: |
+         <div lang="ja">クライテリオンIDです。</div>
+         <div lang="en">Criterion ID.</div>
+-    numberResults:
+-      type: integer
+-      nullable: true
+-      format: int32
+-      minimum: 1
+-      maximum: 1000
+-      default: 1000
+-      description: |
+-        <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1. Also see Entity Limits per operation.</div>
+     sharedListIds:
+       type: array
+       nullable: true
+@@ -43,6 +33,16 @@
+       description: |
+         <div lang="ja">共有リストのIDです。</div>
+         <div lang="en">Share list ID.</div>
++    numberResults:
++      type: integer
++      nullable: true
++      format: int32
++      minimum: 1
++      maximum: 1000
++      default: 1000
++      description: |
++        <div lang="ja">開始位置から取得する結果の数。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The number of results to retrieve starting from the initial position. This field must be greater than or equal to 1.</div>
+     startIndex:
+       type: integer
+       nullable: true
+@@ -50,8 +50,8 @@
+       minimum: 1
+       default: 1
+       description: |
+-        <div lang="ja">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div>
+-        <div lang="en">Index of the first result to return in this page. This field must be greater than or equal to 1.</div>
++        <div lang="ja">取得を開始する結果セット内の位置。このフィールドは、1以上を指定する必要があります。</div>
++        <div lang="en">The position within the result set where retrieval begins. This field must be greater than or equal to 1.</div>
+   title: SharedCriterionServiceSelector
+   description: |
+     <div lang="ja">SharedCriterionServiceSelectorオブジェクトは、検索条件を保持します。</div>
