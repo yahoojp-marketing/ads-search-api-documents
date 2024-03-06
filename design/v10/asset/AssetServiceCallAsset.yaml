@@ -27,7 +27,7 @@ AssetServiceCallAsset:
         $ref: 'AssetServiceSchedule.yaml#/AssetServiceSchedule'
   title: AssetServiceCallAsset
   description: |
-    <div lang="ja">AssetServiceCallAssetオブジェクトは、電話番号オプションのアセット情報を格納します。<br>
+    <div lang="ja">AssetServiceCallAssetオブジェクトは、電話番号アセットのアセット情報を格納します。<br>
     ADD時、このフィールドは省略可能となります。※typeがCALLの場合は必須です。</div>
-    <div lang="en">AssetServiceCallAsset contains Asset value information for phone number options.<br>
+    <div lang="en">AssetServiceCallAsset contains Asset value information for call assets.<br>
     This field is optional in ADD operation. *If type is CALL, this field is required.<br></div>

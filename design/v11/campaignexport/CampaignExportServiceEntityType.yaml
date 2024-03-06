@@ -35,15 +35,15 @@ CampaignExportServiceEntityType:
       <dt class="term__item">AD</dt>
       <dd class="term__desc"><span lang="ja">広告</span><span lang="en">Ad</span></dd>
       <dt class="term__item">ASSET</dt>
-      <dd class="term__desc"><span lang="ja">すべてのアセット（広告表示オプション）</span><span lang="en">All assets（Ad display option）.</span></dd>
+      <dd class="term__desc"><span lang="ja">すべてのアセット（広告表示アセット）</span><span lang="en">All assets（Ad display asset）.</span></dd>
       <dt class="term__item">QUICKLINK_ASSET</dt>
-      <dd class="term__desc"><span lang="ja">クイックリンクオプションのアセット</span><span lang="en">Quicklink option assets.</span></dd>
+      <dd class="term__desc"><span lang="ja">クイックリンクアセットのアセット</span><span lang="en">Quick link asset.</span></dd>
       <dt class="term__item">CALLOUT_ASSET</dt>
-      <dd class="term__desc"><span lang="ja">テキスト補足オプションのアセット</span><span lang="en">Callout option assets.</span></dd>
+      <dd class="term__desc"><span lang="ja">テキスト補足アセットのアセット</span><span lang="en">Callout asset.</span></dd>
       <dt class="term__item">STRUCTURED_SNIPPET_ASSET</dt>
-      <dd class="term__desc"><span lang="ja">カテゴリ補足オプションのアセット</span><span lang="en">Structured snippet option assets.</span></dd>
+      <dd class="term__desc"><span lang="ja">カテゴリ補足アセットのアセット</span><span lang="en">Category snippet asset.</span></dd>
       <dt class="term__item">CALLEXTENSION_ASSET</dt>
-      <dd class="term__desc"><span lang="ja">電話番号オプションのアセット</span><span lang="en">Phone Number option assets.</span></dd>
+      <dd class="term__desc"><span lang="ja">電話番号アセットのアセット</span><span lang="en">Call asset asset.</span></dd>
       <dt class="term__item">ALL</dt>
       <dd class="term__desc"><span lang="ja">すべての広告エンティティ</span><span lang="en">All entities</span></dd>
       <dt class="term__item">UNKNOWN</dt>

@@ -47,7 +47,7 @@ AssetServiceCalloutAsset:
         $ref: 'AssetServiceSchedule.yaml#/AssetServiceSchedule'
   title: AssetServiceCalloutAsset
   description: |
-    <div lang="ja">AssetServiceCalloutAssetオブジェクトは、テキスト補足オプションのアセット情報を格納します。<br>
+    <div lang="ja">AssetServiceCalloutAssetオブジェクトは、テキスト補足アセットのアセット情報を格納します。<br>
     ADD時、このフィールドは省略可能となります。※typeがCALLOUTの場合は必須です。</div>
     <div lang="en">AssetServiceCalloutAsset contains Asset value information for callout options.<br>
     This field is optional in ADD operation. *If type is CALLOUT, this field is required.</div>

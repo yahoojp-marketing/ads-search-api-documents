@@ -46,11 +46,11 @@ AssetServiceStructuredSnippetAsset:
         It will be returned at the time of response only during the review.</div>
   title: AssetServiceStructuredSnippetAsset
   description: |
-    <div lang="ja">AssetServiceStructuredSnippetAssetオブジェクトは、カテゴリ補足オプションのアセット情報を格納します。<br>
+    <div lang="ja">AssetServiceStructuredSnippetAssetオブジェクトは、カテゴリ補足アセットのアセット情報を格納します。<br>
     ADD時、このフィールドは省略可能となります。※typeがSTRUCTURED_SNIPPETの場合は必須です。<br>
     詳細は以下のヘルプを参照してください。<br>
-    ・<a href="https://ads-help.yahoo-net.jp/s/article/H000044718?language=ja">補足カテゴリーと補足内容の入力例（カテゴリ補足オプション）</a></div>
-    <div lang="en">AssetServiceStructuredSnippetAsset contains Asset value information for structured snippet options.<br>
+    ・<a href="https://ads-help.yahoo-net.jp/s/article/H000044718?language=ja">補足カテゴリーと補足内容の入力例（カテゴリ補足アセット）</a></div>
+    <div lang="en">AssetServiceStructuredSnippetAsset contains Asset value information for category snippet asset.<br>
     This field is optional in ADD operation. *If type is STRUCTURED_SNIPPET, this field is required.<br>
     See also the help below.<br>
-    * <a href="https://ads-help.yahoo-net.jp/s/article/H000044718?language=en_US">Example of Category and Text (Category Text)</a></div>
+    * <a href="https://ads-help.yahoo-net.jp/s/article/H000044718?language=en_US">Example of supplemental category and supplemental text (Category snippet asset)</a></div>

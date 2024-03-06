@@ -16,15 +16,15 @@ AdGroupAssetServiceType:
     In REPLACE operation, this field will be ignored under 'AdGroupAsset', and this field is required under 'AdGroupAssetServiceList'.</div>
     <dl class=term>
       <dt class="term__item">QUICKLINK</dt>
-      <dd class="term__desc"><span lang="ja">広告表示オプションのクイックリンクオプションです。</span><span lang="en">QuickLink option from ad display option.</span></dd>
+      <dd class="term__desc"><span lang="ja">広告表示アセットのクイックリンクアセットです。</span><span lang="en">Quick link asset from ad display asset.</span></dd>
       <dt class="term__item">CALL</dt>
-      <dd class="term__desc"><span lang="ja">広告表示オプションの電話番号オプションです。</span><span lang="en">Phone Number option from ad display option.</span></dd>
+      <dd class="term__desc"><span lang="ja">広告表示アセットの電話番号アセットです。</span><span lang="en">Call asset from ad display asset.</span></dd>
       <dt class="term__item">CALLOUT</dt>
-      <dd class="term__desc"><span lang="ja">広告表示オプションのテキスト補足オプションです。</span><span lang="en">Callout option from ad display option.</span></dd>
+      <dd class="term__desc"><span lang="ja">広告表示アセットのテキスト補足アセットです。</span><span lang="en">Callout asset from ad display asset.</span></dd>
       <dt class="term__item">STRUCTURED_SNIPPET</dt>
-      <dd class="term__desc"><span lang="ja">広告表示オプションのカテゴリ補足オプションです。</span><span lang="en">Structured snippet option from ad display option.</span></dd>
+      <dd class="term__desc"><span lang="ja">広告表示アセットのカテゴリ補足アセットです。</span><span lang="en">Category snippet asset from ad display asset.</span></dd>
       <dt class="term__item">IMAGE</dt>
-      <dd class="term__desc"><span lang="ja">広告表示オプションの画像オプションです。<br>※現在、こちらのEnumは利用できません。</span><span lang="en">Image option from Ad Display Option.<br>*Currently this Enum is not available.</span></dd>
+      <dd class="term__desc"><span lang="ja">広告表示アセットの画像アセットです。<br>※現在、こちらのEnumは利用できません。</span><span lang="en">Image asset from ad display asset.<br>*Currently this Enum is not available.</span></dd>
       <dt class="term__item">UNKNOWN</dt>
       <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown value.</span></dd>
     </dl>

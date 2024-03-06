@@ -77,6 +77,6 @@ AssetServiceImageAsset:
     <div lang="ja">AssetServiceImageAssetオブジェクトは、画像アセット情報を格納します。<br>
     ADD時、このフィールドは省略可能となります。※typeがIMAGEの場合は必須です。<br>
     ※現在、こちらのフィールドは利用できません。</div>
-    <div lang="en">AssetServiceImageAsset contains Asset value information for image options.<br>
+    <div lang="en">AssetServiceImageAsset contains Asset value information for image asset.<br>
     This field is optional in ADD operation. *If type is IMAGE, this field is required.<br>
     *Currently this field is not available.</div>

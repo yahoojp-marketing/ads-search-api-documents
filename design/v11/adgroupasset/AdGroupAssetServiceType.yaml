@@ -15,13 +15,13 @@ AdGroupAssetServiceType:
     In REPLACE operation, this field will be ignored under 'AdGroupAsset', and this field is required under 'AdGroupAssetServiceList'.</div>
     <dl class=term>
       <dt class="term__item">QUICKLINK</dt>
-      <dd class="term__desc"><span lang="ja">広告表示オプションのクイックリンクオプションです。</span><span lang="en">QuickLink option from Ad Display Option.</span></dd>
+      <dd class="term__desc"><span lang="ja">広告表示アセットのクイックリンクアセットです。</span><span lang="en">Quick link asset from ad display asset.</span></dd>
       <dt class="term__item">CALL</dt>
-      <dd class="term__desc"><span lang="ja">広告表示オプションの電話番号オプションです。</span><span lang="en">Phone Number option from Ad Display Option.</span></dd>
+      <dd class="term__desc"><span lang="ja">広告表示アセットの電話番号アセットです。</span><span lang="en">Call asset from ad display asset.</span></dd>
       <dt class="term__item">CALLOUT</dt>
-      <dd class="term__desc"><span lang="ja">広告表示オプションのテキスト補足オプションです。</span><span lang="en">Callout option from Ad Display Option.</span></dd>
+      <dd class="term__desc"><span lang="ja">広告表示アセットのテキスト補足アセットです。</span><span lang="en">Callout asset from ad display asset.</span></dd>
       <dt class="term__item">STRUCTURED_SNIPPET</dt>
-      <dd class="term__desc"><span lang="ja">広告表示オプションのカテゴリ補足オプションです。</span><span lang="en">Structured snippet option from Ad Display Option.</span></dd>
+      <dd class="term__desc"><span lang="ja">広告表示アセットのカテゴリ補足アセットです。</span><span lang="en">Category snippet asset from ad display asset.</span></dd>
       <dt class="term__item">UNKNOWN</dt>
       <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
     </dl>

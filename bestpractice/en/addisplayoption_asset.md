@@ -1,24 +1,24 @@
-# Ad Display Option
-## What is “Ad Display Option”?
+# Ad display asset
+## What is “Ad display asset”?
 \* This best practice page is for the new method to be released in Spring, 2022.
 			
-<A href="https://ads-help.yahoo-net.jp/s/article/H000045056?language=en_US">Ad Display Option</a> is a function of displaying additional information such as a link to other URL page or phone number to Search Ads.   
+<A href="https://ads-help.yahoo-net.jp/s/article/H000045056?language=en_US">Ad display asset</a> is a function of displaying additional information such as a link to other URL page or phone number to Search Ads.   
     
-There are 4 features for Ad Display Option:  
-* "QuickLink" (Displays a URL link to other URL page on bottom of the ads)
-* "CallExtension" (Displays phone number)  
-* “CALLOUT” (Options for supplementing text)
-* “STRUCTURED_SNIPPET” (Options for supplementing category)
+There are 4 features for Ad display asset:  
+* "QuickLink" (Quick link asset)
+* "CallExtension" (Call asset)  
+* “CALLOUT” (Callout asset)
+* “STRUCTURED_SNIPPET” (Category snippet asset)
   
-There are 2 advantages from using Ad Display Option.    
+There are 2 advantages from using Ad display asset.    
 1. Ad spaces become larger and increase the visibility. This will raise the click rate.
 2. Can easily access to the page that user desires. This will raise the convenience.
 
 ## How to operate through Search Ads API
-To display ads with Ad Display Option, use the 3 services below from Search Ads API.  
+To display ads with Ad display asset, use the 3 services below from Search Ads API.  
 ##### 1. AssetService 
 In AssetService, you can retrieve, add and update Asset Information.  
-Asset Information is a component such as text, link URL, and phone number to be displayed as Ad Display Option.
+Asset Information is a component such as text, link URL, and phone number to be displayed as Ad display asset.
   
 ##### 2. CampaignAssetService
 In CampaignAssetService, you can set the added Asset Information to campaign, and retrieve the Asset Information that is set to campaign. 
@@ -27,7 +27,7 @@ In CampaignAssetService, you can set the added Asset Information to campaign, an
 InAdGroupAssetService, you can set the added Asset Information to ad group, and retrieve the Asset Information that is set to ad group. 
   
 ## Examples
-Company A is planning to add the below Ad Display Option through Search Ads API for their sales promotion.
+Company A is planning to add the below Ad display asset through Search Ads API for their sales promotion.
   
 ##### QuickLink
 No                | LINK_TEXT             | LINK_URL                                 
@@ -47,7 +47,7 @@ No                | CALL_PHONE_NUMBER
 
 #### 1.	Adding Asset Information
 First, add an Asset Information to Search Ads account using AssetService:add.  
-In this example, each Ad Display Option will be added to the account of company A (ID: 11111111).  
+In this example, each Ad display asset will be added to the account of company A (ID: 11111111).  
 ##### \<Request Sample> [For QUICKLINK]
 ```json
 {

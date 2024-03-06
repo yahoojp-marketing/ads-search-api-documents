@@ -64,13 +64,13 @@ ReportDefinitionServiceReportType:
       <dt class="term__item">BID_MODIFIER</dt>
       <dd class="term__desc"><span lang="ja">入札価格調整率レポートです。</span><span lang="en">Bid modifier report.</span></dd>
       <dt class="term__item">CAMPAIGN_ASSET</dt>
-      <dd class="term__desc"><span lang="ja">（新）広告表示オプションレポート（キャンペーン）です。</span><span lang="en">(New) Ad display option report (campaign).</span></dd>
+      <dd class="term__desc"><span lang="ja">広告表示アセットレポート（キャンペーン）です。</span><span lang="en">Ad display asset report (campaign).</span></dd>
       <dt class="term__item">ADGROUP_ASSET</dt>
-      <dd class="term__desc"><span lang="ja">（新）広告表示オプションレポート（広告グループ）です。</span><span lang="en">(New) Ad display option report (ad group).</span></dd>
+      <dd class="term__desc"><span lang="ja">広告表示アセットレポート（広告グループ）です。</span><span lang="en">Ad display asset report (ad group).</span></dd>
       <dt class="term__item">RESPONSIVE_ADS_FOR_SEARCH_ASSET</dt>
       <dd class="term__desc"><span lang="ja">レスポンシブ検索広告アセットレポートです。</span><span lang="en">Responsive Ads for search asset report.</span></dd>
       <dt class="term__item">ASSET_COMBINATIONS</dt>
-      <dd class="term__desc"><span lang="ja">アセット組み合わせレポートです。<br>※現在、こちらのEnumは利用できません。</span><span lang="en">Asset combinations report.<br>*Currently this Enum is not available.</span></dd>
+      <dd class="term__desc"><span lang="ja">アセット組み合わせレポートです。</span><span lang="en">Asset combinations report.</span></dd>
       <dt class="term__item">CAMPAIGN_BUDGET</dt>
       <dd class="term__desc"><span lang="ja">共有予算レポートです。</span><span lang="en">Campaign budget report.</span></dd>
       <dt class="term__item">UNKNOWN</dt>

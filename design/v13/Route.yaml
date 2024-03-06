@@ -171,7 +171,7 @@ tags:
       <li><div lang="ja"><a href="./reports/v13/KEYWORDS.csv" download>キーワードレポート</a></div><div lang="en"><a href="./reports/v13/KEYWORDS.csv" download>Keyword Report</a></div></li>
       <li><div lang="ja"><a href="./reports/v13/SEARCH_QUERY.csv" download>検索クエリレポート</a></div><div lang="en"><a href="./reports/v13/SEARCH_QUERY.csv" download>Search Query Report</a></div></li>
       <li><div lang="ja"><a href="./reports/v13/GEO.csv" download>地域別レポート</a></div><div lang="en"><a href="./reports/v13/GEO.csv" download>Geo Report</a></div></li>
-      <li><div lang="ja"><a href="./reports/v13/FEED_ITEM.csv" download>広告表示オプションレポート</a></div><div lang="en"><a href="./reports/v13/FEED_ITEM.csv" download>Ad Display Option Report</a></div></li>
+      <li><div lang="ja"><a href="./reports/v13/FEED_ITEM.csv" download>広告表示アセットレポート</a></div><div lang="en"><a href="./reports/v13/FEED_ITEM.csv" download>Ad Display Asset Report</a></div></li>
       <li><div lang="ja"><a href="./reports/v13/GEO_TARGET.csv" download>地域ターゲティングレポート</a></div><div lang="en"><a href="./reports/v13/GEO_TARGET.csv" download>Geo Targeting Report</a></div></li>
       <li><div lang="ja"><a href="./reports/v13/SCHEDULE_TARGET.csv" download>曜日・時間帯ターゲティングレポート</a></div><div lang="en"><a href="./reports/v13/SCHEDULE_TARGET.csv" download>Schedule Targeting Report</a></div></li>
       <li><div lang="ja"><a href="./reports/v13/BID_STRATEGY.csv" download>自動入札レポート</a></div><div lang="en"><a href="./reports/v13/BID_STRATEGY.csv" download>Auto Bidding Report</a></div></li>
@@ -181,10 +181,11 @@ tags:
       <li><div lang="ja"><a href="./reports/v13/KEYWORDLESS_QUERY.csv" download>検索クエリーレポート（動的検索連動型広告）</a></div><div lang="en"><a href="./reports/v13/KEYWORDLESS_QUERY.csv" download>Search Query Report (Dynamic Ads for Search)</a></div></li>
       <li><div lang="ja"><a href="./reports/v13/WEBPAGE_CRITERION.csv" download>ページフィードターゲティングレポート</a></div><div lang="en"><a href="./reports/v13/WEBPAGE_CRITERION.csv" download>Page Feed Targeting Report</a></div></li>
       <li><div lang="ja"><a href="./reports/v13/BID_MODIFIER.csv" download>入札価格調整率レポート</a></div><div lang="en"><a href="./reports/v13/BID_MODIFIER.csv" download>Bid Adjustments Report</a></div></li>
-      <li><div lang="ja"><a href="./reports/v13/CAMPAIGN_ASSET.csv" download>（新）広告表示オプションレポート（キャンペーン）</a></div><div lang="en"><a href="./reports/v13/CAMPAIGN_ASSET.csv" download>(New) Ad Display Option Report (campaign)</a></div></li>
-      <li><div lang="ja"><a href="./reports/v13/AD_GROUP_ASSET.csv" download>（新）広告表示オプションレポート（広告グループ）</a></div><div lang="en"><a href="./reports/v13/AD_GROUP_ASSET.csv" download>(New) Ad Display Option Report (ad group)</a></div></li>
+      <li><div lang="ja"><a href="./reports/v13/CAMPAIGN_ASSET.csv" download>広告表示アセットレポート（キャンペーン）</a></div><div lang="en"><a href="./reports/v13/CAMPAIGN_ASSET.csv" download>Ad Display Asset Report (campaign)</a></div></li>
+      <li><div lang="ja"><a href="./reports/v13/AD_GROUP_ASSET.csv" download>広告表示アセットレポート（広告グループ）</a></div><div lang="en"><a href="./reports/v13/AD_GROUP_ASSET.csv" download>Ad Display Asset Report (ad group)</a></div></li>
       <li><div lang="ja"><a href="./reports/v13/RESPONSIVE_ADS_FOR_SEARCH_ASSET.csv" download>レスポンシブ検索広告アセットレポート</a></div><div lang="en"><a href="./reports/v13/RESPONSIVE_ADS_FOR_SEARCH_ASSET.csv" download>Responsive Ads for Search Asset Report</a></div></li>
       <li><div lang="ja"><a href="./reports/v13/SHARED_BUDGET.csv" download>共有予算レポート</a></div><div lang="en"><a href="./reports/v13/SHARED_BUDGET.csv" download>Campaign Budget Report</a></div></li>
+      <li><div lang="ja"><a href="./reports/v13/ASSET_COMBINATION.csv" download>アセット組み合わせレポート</a></div><div lang="en"><a href="./reports/v13/ASSET_COMBINATION.csv" download>Asset combinations report</a></div></li>
       </ul>
   - name: CampaignExportService
     description: |
@@ -8309,7 +8310,7 @@ paths:
                 <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
-                <tr><td>225305</td><td>invalid structured snippet header.</td><td><div lang="ja">カテゴリ補足オプション（ヘッダ）が不正です。</div><div lang="en">Structured snippet header is invalid.</div></td></tr>
+                <tr><td>225305</td><td>invalid category snippet header.</td><td><div lang="ja">カテゴリ補足アセット（ヘッダ）が不正です。</div><div lang="en">Category snippet header is invalid.</div></td></tr>
               </tbody>
             </table>
             </div>

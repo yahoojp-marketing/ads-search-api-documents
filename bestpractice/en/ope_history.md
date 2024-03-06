@@ -32,52 +32,51 @@ AuditLog item of Search Ad are as follows. *Data as of September 20, 2023.
 #### 2. Entity 
 <a id="anchor2"></a>
 
-|Entity|
-|---|
-|Campaigns|
-|Negative Keywords (Campaign)|
-|Campaign Targeting|
-|Ad Groups|
-|Ad group device|
-|Keywords|
-|Negative Keywords (Ad Group)|
-|Ads|
-|Ad Paramaters|
-|Location Option|
-|Phone Option|
-|QuickLinks|
-|Callout|
-|Structured snippet|
-|Feed|
-|Ad Display Option|
-|(Prev) Ad display option|
-|Account|
-|Roles|
-|Alert Setting|
-|Alert recipient|
-|Intout Detail|
-|Conversion Analytics|
-|Media|
-|Ad Display Option|
-|Auto Bidding Tool|
-|Campaign target list (exclude)|
-|Ad group target list (allow)|
-|Target List|
-|Ad group target list (exclude)|
-|Negative Keywords List|
-|Negative Keywords|
-|Campaign Target List|
-|Campaign Dynamic Ads for Search pages (exclude)|
-|Ad group Dynamic Ads for Search pages|
-|Ad group Dynamic Ads for Search pages (exclude)|
-|Page Feed|
-|Labels|
-|Campaigns (label settings)|
-|Ad Groups (label settings)|
-|Ads (label settings)|
-|Keywords (label settings)|
-|Attribute|
-|Seasonality bid adjustment|
+| Entity                                          |
+|-------------------------------------------------|
+| Campaigns                                       |
+| Negative Keywords (Campaign)                    |
+| Campaign Targeting                              |
+| Ad Groups                                       |
+| Ad group device                                 |
+| Keywords                                        |
+| Negative Keywords (Ad Group)                    |
+| Ads                                             |
+| Ad Paramaters                                   |
+| Call                                   |
+| QuickLinks                                      |
+| Callout                                         |
+| Structured snippet                              |
+| Feed                                            |
+| Ad Display Asset                                |
+| (Prev) Ad display asset                         |
+| Account                                         |
+| Roles                                           |
+| Alert Setting                                   |
+| Alert recipient                                 |
+| Intout Detail                                   |
+| Conversion Analytics                            |
+| Media                                           |
+| Ad Display Asset                                |
+| Auto Bidding Tool                               |
+| Campaign target list (exclude)                  |
+| Ad group target list (allow)                    |
+| Target List                                     |
+| Ad group target list (exclude)                  |
+| Negative Keywords List                          |
+| Negative Keywords                               |
+| Campaign Target List                            |
+| Campaign Dynamic Ads for Search pages (exclude) |
+| Ad group Dynamic Ads for Search pages           |
+| Ad group Dynamic Ads for Search pages (exclude) |
+| Page Feed                                       |
+| Labels                                          |
+| Campaigns (label settings)                      |
+| Ad Groups (label settings)                      |
+| Ads (label settings)                            |
+| Keywords (label settings)                       |
+| Attribute                                       |
+| Seasonality bid adjustment                      |
 
 
 #### 3. Entity output item
@@ -299,7 +298,7 @@ AuditLog item of Search Ad are as follows. *Data as of September 20, 2023.
 <tr><td>Company Name</td></tr>
 <tr><td>Phone Number</td></tr>
 
-<tr><td rowspan='1'>Phone Option</td><td>Phone Number</td></tr>
+<tr><td rowspan='1'>Call</td><td>Phone Number</td></tr>
 
 <tr><td rowspan='10'>QuickLinks</td><td>QuickLinks 1r</td></tr>
 <tr><td>QuickLinks 2</td></tr>
@@ -314,7 +313,7 @@ AuditLog item of Search Ad are as follows. *Data as of September 20, 2023.
 
 <tr><td rowspan='82'>Feed</td><td>Feed ID</td></tr>
 <tr><td>Geographic Location</td></tr>
-<tr><td>Ad Display Option Id</td></tr>
+<tr><td>Ad Display Asset Id</td></tr>
 <tr><td>Campaign ID</td></tr>
 <tr><td>Ad Group ID</td></tr>
 <tr><td>Keyword</td></tr>

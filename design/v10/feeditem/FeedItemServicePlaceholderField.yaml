@@ -29,11 +29,11 @@ FeedItemServicePlaceholderField:
     *For AD_CUSTOMIZER,  this field will be ignored in ADD and SET operation.</div>
     <dl class=term>
       <dt class="term__item">LINK_TEXT</dt>
-      <dd class="term__desc"><span lang="ja">クイックリンクオプションのテキストです。</span><span lang="en">QuickLink option text.</span></dd>
+      <dd class="term__desc"><span lang="ja">クイックリンクアセットのテキストです。</span><span lang="en">Quick link asset text.</span></dd>
       <dt class="term__item">LINK_DESCRIPTION_1</dt>
-      <dd class="term__desc"><span lang="ja">クイックリンク説明文1</span><span lang="en">Description 1 of Quicklink. </span></dd>
+      <dd class="term__desc"><span lang="ja">クイックリンク説明文1</span><span lang="en">Quick link description 1. </span></dd>
       <dt class="term__item">LINK_DESCRIPTION_2</dt>
-      <dd class="term__desc"><span lang="ja">クイックリンク説明文2</span><span lang="en">Description 2 of Quicklink. </span></dd>
+      <dd class="term__desc"><span lang="ja">クイックリンク説明文2</span><span lang="en">Quick link description 2. </span></dd>
       <dt class="term__item">ADVANCED_URL</dt>
       <dd class="term__desc"><span lang="ja">最終リンク先URLです。</span><span lang="en">Landing Page URL.</span></dd>
       <dt class="term__item">ADVANCED_MOBILE_URL</dt>
@@ -41,7 +41,7 @@ FeedItemServicePlaceholderField:
       <dt class="term__item">TRACKING_URL</dt>
       <dd class="term__desc"><span lang="ja">トラッキングURLです。</span><span lang="en">Tracking URL.</span></dd>
       <dt class="term__item">CALL_PHONE_NUMBER</dt>
-      <dd class="term__desc"><span lang="ja">電話番号オプションの電話番号です。</span><span lang="en">Phone number of Call extensions.</span></dd>
+      <dd class="term__desc"><span lang="ja">電話番号アセットの電話番号です。</span><span lang="en">Phone number of Call assets.</span></dd>
       <dt class="term__item">AD_CUSTOMIZER_INTEGER</dt>
       <dd class="term__desc"><span lang="ja">データ自動挿入（INTEGERタイプの入力定義）です。</span><span lang="en">Auto data insertion (INTEGER type defined).</span></dd>
       <dt class="term__item">AD_CUSTOMIZER_PRICE</dt>
@@ -51,15 +51,15 @@ FeedItemServicePlaceholderField:
       <dt class="term__item">AD_CUSTOMIZER_STRING</dt>
       <dd class="term__desc"><span lang="ja">データ自動挿入（STRINGタイプの入力定義）です。</span><span lang="en">Auto data insertion (STRING type defined.).</span></dd>
       <dt class="term__item">CALLOUT_TEXT</dt>
-      <dd class="term__desc"><span lang="ja">テキスト補足オプションのテキストです。</span><span lang="en">Text for Callout option.</span></dd>
+      <dd class="term__desc"><span lang="ja">テキスト補足アセットのテキストです。</span><span lang="en">Text for Callout asset.</span></dd>
       <dt class="term__item">ADDITIONAL_ADVANCED_URLS</dt>
       <dd class="term__desc"><span lang="ja">最終リンク先URLを2件以上設定する場合の入力定義です。</span><span lang="en">Define when multiple Landing Page URLs are set.</span></dd>
       <dt class="term__item">ADDITIONAL_ADVANCED_MOBILE_URLS</dt>
       <dd class="term__desc"><span lang="ja">スマートフォン向けURLを2件以上設定する場合の入力定義です。</span><span lang="en">Define when multiple smartphone landing page URLs are set.</span></dd>
       <dt class="term__item">STRUCTURED_SNIPPET_HEADER</dt>
-      <dd class="term__desc"><span lang="ja">カテゴリ補足オプション（ヘッダ）です。</span><span lang="en">Category Option (header)</span></dd>
+      <dd class="term__desc"><span lang="ja">カテゴリ補足アセット（ヘッダ）です。</span><span lang="en">Category snippet asset (header)</span></dd>
       <dt class="term__item">STRUCTURED_SNIPPET_VALUES</dt>
-      <dd class="term__desc"><span lang="ja">カテゴリ補足オプション（バリュー）です。</span><span lang="en">Category Option (value)</span></dd>
+      <dd class="term__desc"><span lang="ja">カテゴリ補足アセット（バリュー）です。</span><span lang="en">Category snippet asset (value)</span></dd>
       <dt class="term__item">UNKNOWN</dt>
       <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
     </dl>

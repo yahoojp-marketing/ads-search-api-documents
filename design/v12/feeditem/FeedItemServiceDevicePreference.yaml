@@ -9,7 +9,7 @@ FeedItemServiceDevicePreference:
   description: |
     <div lang="ja">FeedItemServiceDevicePreferenceは、広告を優先的に配信するデバイスを選択します。<br>
     このフィールドは、ADDおよびSET時に省略可能となり、REMOVE時に無視されます。<br>
-    電話番号オプションの場合、ADD時に省略可能となり、SET時に無視されます。<br>
+    電話番号アセットの場合、ADD時に省略可能となり、SET時に無視されます。<br>
     ※ADD時のデフォルト設定値はSMART_PHONEとなります。 </div>
     <div lang="en">FeedItemServiceDevicePreference is a selection of device to deliver ads in high priority.<br>
     This field is optional in ADD and SET operation, and will be  ignored in REMOVE operation.<br>

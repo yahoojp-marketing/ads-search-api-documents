@@ -79,7 +79,7 @@ AssetServiceQuickLinkAsset:
         $ref: 'AssetServiceSchedule.yaml#/AssetServiceSchedule'
   title: AssetServiceQuickLinkAsset
   description: |
-    <div lang="ja">AssetServiceQuickLinkAssetオブジェクトは、クイックリンクオプションのアセット情報を格納します。<br>
+    <div lang="ja">AssetServiceQuickLinkAssetオブジェクトは、クイックリンクアセットのアセット情報を格納します。<br>
     ADD時、このフィールドは省略可能となります。※typeがQUICKLINKの場合は必須です。</div>
-    <div lang="en">AssetServiceQuickLinkAsset contains Asset value information for quicklink options.<br>
+    <div lang="en">AssetServiceQuickLinkAsset contains Asset value information for quick link asset.<br>
     This field is optional in ADD operation. *If type is QUICKLINK, this field is required.<br></div>

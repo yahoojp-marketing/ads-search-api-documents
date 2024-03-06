@@ -32,7 +32,7 @@ AssetServiceSchedule:
       $ref: 'AssetServiceMinuteOfHour.yaml#/AssetServiceMinuteOfHour'
   title: AssetServiceSchedule
   description: |
-    <div lang="ja">AssetServiceScheduleオブジェクトは、広告表示オプションの配信スケジュール設定を表します。<br>
+    <div lang="ja">AssetServiceScheduleオブジェクトは、広告表示アセットの配信スケジュール設定を表します。<br>
     このフィールドは、ADDおよびSET時に省略可能となります。</div>
-    <div lang="en">AssetServiceSchedule object describes display schedule from Ad Display Option.<br>
+    <div lang="en">AssetServiceSchedule object describes display schedule from ad display asset.<br>
     This field is optional in ADD and SET operation.</div>

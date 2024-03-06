@@ -30,7 +30,7 @@ FeedItemServiceSchedule:
       $ref: 'FeedItemServiceMinuteOfHour.yaml#/FeedItemServiceMinuteOfHour'
   title: FeedItemServiceSchedule
   description: |
-    <div lang="ja">FeedItemServiceScheduleオブジェクトは、広告表示オプションの配信スケジュール設定を表します。<br>
+    <div lang="ja">FeedItemServiceScheduleオブジェクトは、広告表示アセットの配信スケジュール設定を表します。<br>
     このフィールドは、ADDおよびSET時に省略可能となります。</div>
-    <div lang="en">FeedItemServiceSchedule object describes display schedule from Ad Display Option.<br>
+    <div lang="en">FeedItemServiceSchedule object describes display schedule from ad display asset.<br>
     This field is optional in ADD and SET operation.</div>

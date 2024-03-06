@@ -28,11 +28,11 @@ AuditLogServiceEventSelector:
           <dt class="term__item">FEED</dt>
           <dd class="term__desc"><span lang="ja">Feedフォルダーです。</span><span lang="en">Feed folder.</span></dd>
           <dt class="term__item">FEED_ITEM</dt>
-          <dd class="term__desc"><span lang="ja">広告表示オプションです。</span><span lang="en">Ad display options.</span></dd>
+          <dd class="term__desc"><span lang="ja">広告表示アセットです。</span><span lang="en">Ad display assets.</span></dd>
           <dt class="term__item">CAMPAIGN_FEED</dt>
-          <dd class="term__desc"><span lang="ja">広告表示オプションです（キャンペーン）。</span><span lang="en">Ad display options for campaign.</span></dd>
+          <dd class="term__desc"><span lang="ja">広告表示アセットです（キャンペーン）。</span><span lang="en">Ad display assets for campaign.</span></dd>
           <dt class="term__item">AD_GROUP_FEED</dt>
-          <dd class="term__desc"><span lang="ja">広告表示オプションです（広告グループ）。</span><span lang="en">Ad display options for ad group.</span></dd>
+          <dd class="term__desc"><span lang="ja">広告表示アセットです（広告グループ）。</span><span lang="en">Ad display assets for ad group.</span></dd>
           <dt class="term__item">SS_IO</dt>
           <dd class="term__desc"><span lang="ja">アカウントです。</span><span lang="en">Account.</span></dd>
           <dt class="term__item">SS_CONVERSION</dt>
@@ -58,7 +58,7 @@ AuditLogServiceEventSelector:
           <dt class="term__item">EXCLUDE_AD_CUSTOMIZER</dt>
           <dd class="term__desc"><span lang="ja">アドカスタマイザーを除くすべての履歴です。</span><span lang="en">All operation history excepting ad customizer.</span></dd>
           <dt class="term__item">ASSET</dt>
-          <dd class="term__desc"><span lang="ja">アセット（広告表示オプション）です。</span><span lang="en">Assets (Ad display option).</span></dd>
+          <dd class="term__desc"><span lang="ja">アセット（広告表示アセット）です。</span><span lang="en">Assets (Ad display asset).</span></dd>
           <dt class="term__item">CAMPAIGN_ASSET</dt>
           <dd class="term__desc"><span lang="ja">キャンペーンとアセット間の設定情報です。</span><span lang="en">Configuration information between campaign and assets.</span></dd>
           <dt class="term__item">AD_GROUP_ASSET</dt>
