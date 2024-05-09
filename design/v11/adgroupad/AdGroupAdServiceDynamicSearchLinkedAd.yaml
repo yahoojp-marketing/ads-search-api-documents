@@ -14,8 +14,8 @@ AdGroupAdServiceDynamicSearchLinkedAd:
       type: string
       nullable: true
       description: |
-        <div lang="ja">説明文2です。<br>※現在、こちらのフィールドは利用できません。</div>
-        <div lang="en">Description2 of the ad.<br>*Currently this field is not available.</div>
+        <div lang="ja">説明文2です。</div>
+        <div lang="en">Description2 of the ad.</div>
   title: AdGroupAdServiceDynamicSearchLinkedAd
   description: |
     <div lang="ja">AdGroupAdServiceDynamicSearchLinkedAdオブジェクトは、動的検索連動型広告を表します。<br>

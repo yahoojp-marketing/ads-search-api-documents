@@ -46,7 +46,7 @@ CampaignExportServiceEntityType:
       <dt class="term__item">CALLEXTENSION_ASSET</dt>
       <dd class="term__desc"><span lang="ja">電話番号アセットのアセット</span><span lang="en">Call asset asset.</span></dd>
       <dt class="term__item">IMAGE_ASSET</dt>
-      <dd class="term__desc"><span lang="ja">画像アセットのアセット<br>※現在、こちらのEnumは利用できません。</span><span lang="en">Image asset assets.<br>*Currently this Enum is not available.</span></dd>
+      <dd class="term__desc"><span lang="ja">画像アセットのアセット</span><span lang="en">Image asset assets.</span></dd>
       <dt class="term__item">ALL</dt>
       <dd class="term__desc"><span lang="ja">すべての広告エンティティ</span><span lang="en">All entities.</span></dd>
       <dt class="term__item">UNKNOWN</dt>

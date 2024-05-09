@@ -2,9 +2,9 @@ AssetServiceFileType:
   type: string
   nullable: true
   enum:
-    - GIF
     - PNG
     - JPEG
+    - GIF
     - UNKNOWN
   title: AssetServiceFileType
   description: |
@@ -17,12 +17,12 @@ AssetServiceFileType:
     Although this field will be returned in the response, it will be ignored on input.
     </div>
     <dl class=term>
-      <dt class="term__item">GIF</dt>
-      <dd class="term__desc"><span lang="ja">GIF（静止画）です。</span><span lang="en">GIF image.</span></dd>
       <dt class="term__item">PNG</dt>
       <dd class="term__desc"><span lang="ja">PNGです。</span><span lang="en">PNG image.</span></dd>
       <dt class="term__item">JPEG</dt>
       <dd class="term__desc"><span lang="ja">JPEGです。</span><span lang="en">JPEG image.</span></dd>
+      <dt class="term__item">GIF</dt>
+      <dd class="term__desc"><span lang="ja">GIF（静止画）です。<br>※現在、こちらのEnumは利用できません。</span><span lang="en">GIF image.<br>*Currently this Enum is not available.</span></dd>
       <dt class="term__item">UNKNOWN</dt>
       <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
     </dl>

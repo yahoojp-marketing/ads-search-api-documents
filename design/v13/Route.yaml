@@ -171,7 +171,6 @@ tags:
       <li><div lang="ja"><a href="./reports/v13/KEYWORDS.csv" download>キーワードレポート</a></div><div lang="en"><a href="./reports/v13/KEYWORDS.csv" download>Keyword Report</a></div></li>
       <li><div lang="ja"><a href="./reports/v13/SEARCH_QUERY.csv" download>検索クエリレポート</a></div><div lang="en"><a href="./reports/v13/SEARCH_QUERY.csv" download>Search Query Report</a></div></li>
       <li><div lang="ja"><a href="./reports/v13/GEO.csv" download>地域別レポート</a></div><div lang="en"><a href="./reports/v13/GEO.csv" download>Geo Report</a></div></li>
-      <li><div lang="ja"><a href="./reports/v13/FEED_ITEM.csv" download>広告表示アセットレポート</a></div><div lang="en"><a href="./reports/v13/FEED_ITEM.csv" download>Ad Display Asset Report</a></div></li>
       <li><div lang="ja"><a href="./reports/v13/GEO_TARGET.csv" download>地域ターゲティングレポート</a></div><div lang="en"><a href="./reports/v13/GEO_TARGET.csv" download>Geo Targeting Report</a></div></li>
       <li><div lang="ja"><a href="./reports/v13/SCHEDULE_TARGET.csv" download>曜日・時間帯ターゲティングレポート</a></div><div lang="en"><a href="./reports/v13/SCHEDULE_TARGET.csv" download>Schedule Targeting Report</a></div></li>
       <li><div lang="ja"><a href="./reports/v13/BID_STRATEGY.csv" download>自動入札レポート</a></div><div lang="en"><a href="./reports/v13/BID_STRATEGY.csv" download>Auto Bidding Report</a></div></li>
@@ -1014,6 +1013,8 @@ paths:
                 <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
+                <tr><td>130000</td><td>The server is busy. Please retry later.</td><td><div lang="ja">サーバーが高負荷です。時間をおいて再試行してください。</div><div lang="en">The server is busy. Please retry later.</div></td></tr>
+                <tr><td>130001</td><td>The request was not completed. Please reduce concurrent requests or data size. </td><td><div lang="ja">リクエストが完了しませんでした。同時リクエスト数またはデータサイズを減らして再度お試しください。</div><div lang="en">The request was not completed. Please reduce concurrent requests or data size.</div></td></tr>
                 <tr><td>211006</td><td>Cannot bid modify criterion campaign opted out.</td><td><div lang="ja">キャンペーンでデバイス別入札価格調整率を0（そのデバイスには配信しない）で設定済みのため、広告グループで同デバイスの入札価格調整率は変更できません。</div><div lang="en">The bid adjustment rate for this device in an ad group because the device bid adjustment rate in the campaign have already been set to 0 (not delivered to that device) can not changed.</div></td></tr>
               </tbody>
             </table>
@@ -1077,6 +1078,8 @@ paths:
                 <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
+                <tr><td>130000</td><td>The server is busy. Please retry later.</td><td><div lang="ja">サーバーが高負荷です。時間をおいて再試行してください。</div><div lang="en">The server is busy. Please retry later.</div></td></tr>
+                <tr><td>130001</td><td>The request was not completed. Please reduce concurrent requests or data size. </td><td><div lang="ja">リクエストが完了しませんでした。同時リクエスト数またはデータサイズを減らして再度お試しください。</div><div lang="en">The request was not completed. Please reduce concurrent requests or data size.</div></td></tr>
                 <tr><td>211006</td><td>Cannot bid modify criterion campaign opted out.</td><td><div lang="ja">キャンペーンでデバイス別入札価格調整率を0（そのデバイスには配信しない）で設定済みのため、広告グループで同デバイスの入札価格調整率は変更できません。</div><div lang="en">The bid adjustment rate for this device in an ad group because the device bid adjustment rate in the campaign have already been set to 0 (not delivered to that device) can not changed.</div></td></tr>
               </tbody>
             </table>
@@ -1215,6 +1218,8 @@ paths:
                 <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
+                <tr><td>130000</td><td>The server is busy. Please retry later.</td><td><div lang="ja">サーバーが高負荷です。時間をおいて再試行してください。</div><div lang="en">The server is busy. Please retry later.</div></td></tr>
+                <tr><td>130001</td><td>The request was not completed. Please reduce concurrent requests or data size. </td><td><div lang="ja">リクエストが完了しませんでした。同時リクエスト数またはデータサイズを減らして再度お試しください。</div><div lang="en">The request was not completed. Please reduce concurrent requests or data size.</div></td></tr>
                 <tr><td>210405</td><td>Budget has exceeded.</td><td><div lang="ja">予算額を超過しています。</div><div lang="en">The budget amount is exceeded.</div></td></tr>
                 <tr><td>210303</td><td>Invalid conversion tracking.</td><td><div lang="ja">コンバージョントラッキングが無効です。</div><div lang="en">Conversion tracking is Invalid.</div></td></tr>
                 <tr><td>210301</td><td>Setting the disabled Auto bidding.</td><td><div lang="ja">編集中（削除含む）の自動入札を指定しています。</div><div lang="en">Auto bidding in editing (including deletion) is specified.</div></td></tr>
@@ -1291,6 +1296,8 @@ paths:
                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
                 <tr><td>210405</td><td>Budget has exceeded.</td><td><div lang="ja">予算額を超過しています。</div><div lang="en">The budget amount is exceeded.</div></td></tr>
+                <tr><td>130000</td><td>The server is busy. Please retry later.</td><td><div lang="ja">サーバーが高負荷です。時間をおいて再試行してください。</div><div lang="en">The server is busy. Please retry later.</div></td></tr>
+                <tr><td>130001</td><td>The request was not completed. Please reduce concurrent requests or data size. </td><td><div lang="ja">リクエストが完了しませんでした。同時リクエスト数またはデータサイズを減らして再度お試しください。</div><div lang="en">The request was not completed. Please reduce concurrent requests or data size.</div></td></tr>
                 <tr><td>210303</td><td>Invalid conversion tracking.</td><td><div lang="ja">コンバージョントラッキングが無効です。</div><div lang="en">Conversion tracking is Invalid.</div></td></tr>
                 <tr><td>210301</td><td>Setting the disabled Auto bidding.</td><td><div lang="ja">編集中（削除含む）の自動入札を指定しています。</div><div lang="en">Auto bidding in editing (including deletion) is specified.</div></td></tr>
                 <tr><td>210304</td><td>Not enough conversions or invalid setting.</td><td><div lang="ja">コンバージョン数が不十分です。</div><div lang="en">Conversions is not enough.</div></td></tr>
@@ -1365,6 +1372,8 @@ paths:
                 <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
+                <tr><td>130000</td><td>The server is busy. Please retry later.</td><td><div lang="ja">サーバーが高負荷です。時間をおいて再試行してください。</div><div lang="en">The server is busy. Please retry later.</div></td></tr>
+                <tr><td>130001</td><td>The request was not completed. Please reduce concurrent requests or data size. </td><td><div lang="ja">リクエストが完了しませんでした。同時リクエスト数またはデータサイズを減らして再度お試しください。</div><div lang="en">The request was not completed. Please reduce concurrent requests or data size.</div></td></tr>
                 <tr><td>210405</td><td>Budget has exceeded.</td><td><div lang="ja">予算額を超過しています。</div><div lang="en">The budget amount is exceeded.</div></td></tr>
                 <tr><td>210303</td><td>Invalid conversion tracking.</td><td><div lang="ja">コンバージョントラッキングが無効です。</div><div lang="en">Conversion tracking is Invalid.</div></td></tr>
                 <tr><td>210301</td><td>Setting the disabled Auto bidding.</td><td><div lang="ja">編集中（削除含む）の自動入札を指定しています。</div><div lang="en">Auto bidding in editing (including deletion) is specified.</div></td></tr>
@@ -1511,6 +1520,8 @@ paths:
                 <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
+                <tr><td>130000</td><td>The server is busy. Please retry later.</td><td><div lang="ja">サーバーが高負荷です。時間をおいて再試行してください。</div><div lang="en">The server is busy. Please retry later.</div></td></tr>
+                <tr><td>130001</td><td>The request was not completed. Please reduce concurrent requests or data size. </td><td><div lang="ja">リクエストが完了しませんでした。同時リクエスト数またはデータサイズを減らして再度お試しください。</div><div lang="en">The request was not completed. Please reduce concurrent requests or data size.</div></td></tr>
                 <tr><td>210605</td><td>App ad does not support Data Auto Insertion.</td><td><div lang="ja">アプリ広告はデータ自動挿入をサポートしていません。</div><div lang="en">App ad does not support Data Auto Insertion.</div></td></tr>
                 <tr><td>210601</td><td>Multiple feeds are set in one ad.</td><td><div lang="ja">一つの広告に複数のフィードが含まれています。</div><div lang="en">Multiple feeds are set in one ad.</div></td></tr>
                 <tr><td>211003</td><td>Domain does not match with DisplayURL.</td><td><div lang="ja">表示URLと最終リンク先URLのドメインが一致していません。</div><div lang="en">Domain of DisplayURL and AdvancedURL(FinalURL) do not match.</div></td></tr>
@@ -1586,6 +1597,8 @@ paths:
                 <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
+                <tr><td>130000</td><td>The server is busy. Please retry later.</td><td><div lang="ja">サーバーが高負荷です。時間をおいて再試行してください。</div><div lang="en">The server is busy. Please retry later.</div></td></tr>
+                <tr><td>130001</td><td>The request was not completed. Please reduce concurrent requests or data size. </td><td><div lang="ja">リクエストが完了しませんでした。同時リクエスト数またはデータサイズを減らして再度お試しください。</div><div lang="en">The request was not completed. Please reduce concurrent requests or data size.</div></td></tr>
                 <tr><td>210605</td><td>App ad does not support Data Auto Insertion.</td><td><div lang="ja">アプリ広告はデータ自動挿入をサポートしていません。</div><div lang="en">App ad does not support Data Auto Insertion.</div></td></tr>
                 <tr><td>210601</td><td>Multiple feeds are set in one ad.</td><td><div lang="ja">一つの広告に複数のフィードが含まれています。</div><div lang="en">Multiple feeds are set in one ad.</div></td></tr>
                 <tr><td>211003</td><td>Domain does not match with DisplayURL.</td><td><div lang="ja">表示URLと最終リンク先URLのドメインが一致していません。</div><div lang="en">Domain of DisplayURL and AdvancedURL(FinalURL) do not match.</div></td></tr>
@@ -1662,6 +1675,8 @@ paths:
                 <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
+                <tr><td>130000</td><td>The server is busy. Please retry later.</td><td><div lang="ja">サーバーが高負荷です。時間をおいて再試行してください。</div><div lang="en">The server is busy. Please retry later.</div></td></tr>
+                <tr><td>130001</td><td>The request was not completed. Please reduce concurrent requests or data size. </td><td><div lang="ja">リクエストが完了しませんでした。同時リクエスト数またはデータサイズを減らして再度お試しください。</div><div lang="en">The request was not completed. Please reduce concurrent requests or data size.</div></td></tr>
                 <tr><td>210605</td><td>App ad does not support Data Auto Insertion.</td><td><div lang="ja">アプリ広告はデータ自動挿入をサポートしていません。</div><div lang="en">App ad does not support Data Auto Insertion.</div></td></tr>
                 <tr><td>210601</td><td>Multiple feeds are set in one ad.</td><td><div lang="ja">一つの広告に複数のフィードが含まれています。</div><div lang="en">Multiple feeds are set in one ad.</div></td></tr>
                 <tr><td>211003</td><td>Domain does not match with DisplayURL.</td><td><div lang="ja">表示URLと最終リンク先URLのドメインが一致していません。</div><div lang="en">Domain of DisplayURL and AdvancedURL(FinalURL) do not match.</div></td></tr>
@@ -1733,6 +1748,8 @@ paths:
                 <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
+                <tr><td>130000</td><td>The server is busy. Please retry later.</td><td><div lang="ja">サーバーが高負荷です。時間をおいて再試行してください。</div><div lang="en">The server is busy. Please retry later.</div></td></tr>
+                <tr><td>130001</td><td>The request was not completed. Please reduce concurrent requests or data size. </td><td><div lang="ja">リクエストが完了しませんでした。同時リクエスト数またはデータサイズを減らして再度お試しください。</div><div lang="en">The request was not completed. Please reduce concurrent requests or data size.</div></td></tr>
                 <tr><td>210605</td><td>App ad does not support Data Auto Insertion.</td><td><div lang="ja">アプリ広告はデータ自動挿入をサポートしていません。</div><div lang="en">App ad does not support Data Auto Insertion.</div></td></tr>
                 <tr><td>210601</td><td>Multiple feeds are set in one ad.</td><td><div lang="ja">一つの広告に複数のフィードが含まれています。</div><div lang="en">Multiple feeds are set in one ad.</div></td></tr>
                 <tr><td>211003</td><td>Domain does not match with DisplayURL.</td><td><div lang="ja">表示URLと最終リンク先URLのドメインが一致していません。</div><div lang="en">Domain of DisplayURL and AdvancedURL(FinalURL) do not match.</div></td></tr>
@@ -2006,6 +2023,8 @@ paths:
                 <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
+                <tr><td>130000</td><td>The server is busy. Please retry later.</td><td><div lang="ja">サーバーが高負荷です。時間をおいて再試行してください。</div><div lang="en">The server is busy. Please retry later.</div></td></tr>
+                <tr><td>130001</td><td>The request was not completed. Please reduce concurrent requests or data size. </td><td><div lang="ja">リクエストが完了しませんでした。同時リクエスト数またはデータサイズを減らして再度お試しください。</div><div lang="en">The request was not completed. Please reduce concurrent requests or data size.</div></td></tr>
                 <tr><td>210301</td><td>Setting the disabled Auto bidding.</td><td><div lang="ja">編集中（削除含む）の自動入札を指定しています。</div><div lang="en">Auto bidding in editing (including deletion) is specified.</div></td></tr>
                 <tr><td>210303</td><td>Invalid conversion tracking.</td><td><div lang="ja">コンバージョントラッキングが無効です。</div><div lang="en">Conversion tracking is Invalid.</div></td></tr>
                 <tr><td>210304</td><td>Not enough conversions or invalid setting.</td><td><div lang="ja">コンバージョン数が不十分です。</div><div lang="en">Conversions is not enough.</div></td></tr>
@@ -2084,6 +2103,8 @@ paths:
                 <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
+                <tr><td>130000</td><td>The server is busy. Please retry later.</td><td><div lang="ja">サーバーが高負荷です。時間をおいて再試行してください。</div><div lang="en">The server is busy. Please retry later.</div></td></tr>
+                <tr><td>130001</td><td>The request was not completed. Please reduce concurrent requests or data size. </td><td><div lang="ja">リクエストが完了しませんでした。同時リクエスト数またはデータサイズを減らして再度お試しください。</div><div lang="en">The request was not completed. Please reduce concurrent requests or data size.</div></td></tr>
                 <tr><td>210301</td><td>Setting the disabled Auto bidding.</td><td><div lang="ja">編集中（削除含む）の自動入札を指定しています。</div><div lang="en">Auto bidding in editing (including deletion) is specified.</div></td></tr>
                 <tr><td>210303</td><td>Invalid conversion tracking.</td><td><div lang="ja">コンバージョントラッキングが無効です。</div><div lang="en">Conversion tracking is Invalid.</div></td></tr>
                 <tr><td>210304</td><td>Not enough conversions or invalid setting.</td><td><div lang="ja">コンバージョン数が不十分です。</div><div lang="en">Conversions is not enough.</div></td></tr>
@@ -2162,6 +2183,8 @@ paths:
                 <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
+                <tr><td>130000</td><td>The server is busy. Please retry later.</td><td><div lang="ja">サーバーが高負荷です。時間をおいて再試行してください。</div><div lang="en">The server is busy. Please retry later.</div></td></tr>
+                <tr><td>130001</td><td>The request was not completed. Please reduce concurrent requests or data size. </td><td><div lang="ja">リクエストが完了しませんでした。同時リクエスト数またはデータサイズを減らして再度お試しください。</div><div lang="en">The request was not completed. Please reduce concurrent requests or data size.</div></td></tr>
                 <tr><td>210301</td><td>Setting the disabled Auto bidding.</td><td><div lang="ja">編集中（削除含む）の自動入札を指定しています。</div><div lang="en">Auto bidding in editing (including deletion) is specified.</div></td></tr>
                 <tr><td>210303</td><td>Invalid conversion tracking.</td><td><div lang="ja">コンバージョントラッキングが無効です。</div><div lang="en">Conversion tracking is Invalid.</div></td></tr>
                 <tr><td>210304</td><td>Not enough conversions or invalid setting.</td><td><div lang="ja">コンバージョン数が不十分です。</div><div lang="en">Conversions is not enough.</div></td></tr>
@@ -2310,6 +2333,8 @@ paths:
                 <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
+                <tr><td>130000</td><td>The server is busy. Please retry later.</td><td><div lang="ja">サーバーが高負荷です。時間をおいて再試行してください。</div><div lang="en">The server is busy. Please retry later.</div></td></tr>
+                <tr><td>130001</td><td>The request was not completed. Please reduce concurrent requests or data size. </td><td><div lang="ja">リクエストが完了しませんでした。同時リクエスト数またはデータサイズを減らして再度お試しください。</div><div lang="en">The request was not completed. Please reduce concurrent requests or data size.</div></td></tr>
                 <tr><td>210405</td><td>Budget has exceeded.</td><td><div lang="ja">予算額を超過しています。</div><div lang="en">The budget amount is exceeded.</div></td></tr>
                 <tr><td>211010</td><td>Cannot set excluded.</td><td><div lang="ja">AdGroupWebpageServiceの場合、WebpageConditionType：ALL_PAGESの時にExcludedType：EXCLUDEDは設定できません。又、CampaignWebpageServiceの場合、WebpageConditionType：ALL_PAGESは設定できません。</div><div lang="en">For AdGroupWebpageService, ExcludedType: EXCLUDED can not be set when WebpageConditionType: ALL_PAGES. In case of CampaignWebpageService, WebpageConditionType: ALL_PAGES can not be set.</div></td></tr>
                 <tr><td>211012</td><td>Cannot update excluded type target.</td><td><div lang="ja">除外タイプのターゲットは変更できません。</div><div lang="en">Exclusion type target cannot be updated.</div></td></tr>
@@ -2381,6 +2406,8 @@ paths:
                 <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
+                <tr><td>130000</td><td>The server is busy. Please retry later.</td><td><div lang="ja">サーバーが高負荷です。時間をおいて再試行してください。</div><div lang="en">The server is busy. Please retry later.</div></td></tr>
+                <tr><td>130001</td><td>The request was not completed. Please reduce concurrent requests or data size. </td><td><div lang="ja">リクエストが完了しませんでした。同時リクエスト数またはデータサイズを減らして再度お試しください。</div><div lang="en">The request was not completed. Please reduce concurrent requests or data size.</div></td></tr>
                 <tr><td>210405</td><td>Budget has exceeded.</td><td><div lang="ja">予算額を超過しています。</div><div lang="en">The budget amount is exceeded.</div></td></tr>
                 <tr><td>211010</td><td>Cannot set excluded.</td><td><div lang="ja">AdGroupWebpageServiceの場合、WebpageConditionType：ALL_PAGESの時にExcludedType：EXCLUDEDは設定できません。又、CampaignWebpageServiceの場合、WebpageConditionType：ALL_PAGESは設定できません。</div><div lang="en">For AdGroupWebpageService, ExcludedType: EXCLUDED can not be set when WebpageConditionType: ALL_PAGES. In case of CampaignWebpageService, WebpageConditionType: ALL_PAGES can not be set.</div></td></tr>
                 <tr><td>211012</td><td>Cannot update excluded type target.</td><td><div lang="ja">除外タイプのターゲットは変更できません。</div><div lang="en">Exclusion type target cannot be updated.</div></td></tr>
@@ -2447,6 +2474,8 @@ paths:
                 <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
+                <tr><td>130000</td><td>The server is busy. Please retry later.</td><td><div lang="ja">サーバーが高負荷です。時間をおいて再試行してください。</div><div lang="en">The server is busy. Please retry later.</div></td></tr>
+                <tr><td>130001</td><td>The request was not completed. Please reduce concurrent requests or data size. </td><td><div lang="ja">リクエストが完了しませんでした。同時リクエスト数またはデータサイズを減らして再度お試しください。</div><div lang="en">The request was not completed. Please reduce concurrent requests or data size.</div></td></tr>
                 <tr><td>210405</td><td>Budget has exceeded.</td><td><div lang="ja">予算額を超過しています。</div><div lang="en">The budget amount is exceeded.</div></td></tr>
                 <tr><td>211010</td><td>Cannot set excluded.</td><td><div lang="ja">AdGroupWebpageServiceの場合、WebpageConditionType：ALL_PAGESの時にExcludedType：EXCLUDEDは設定できません。又、CampaignWebpageServiceの場合、WebpageConditionType：ALL_PAGESは設定できません。</div><div lang="en">For AdGroupWebpageService, ExcludedType: EXCLUDED can not be set when WebpageConditionType: ALL_PAGES. In case of CampaignWebpageService, WebpageConditionType: ALL_PAGES can not be set.</div></td></tr>
                 <tr><td>211012</td><td>Cannot update excluded type target.</td><td><div lang="ja">除外タイプのターゲットは変更できません。</div><div lang="en">Exclusion type target cannot be updated.</div></td></tr>
@@ -3091,6 +3120,8 @@ paths:
                 <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
+                <tr><td>130000</td><td>The server is busy. Please retry later.</td><td><div lang="ja">サーバーが高負荷です。時間をおいて再試行してください。</div><div lang="en">The server is busy. Please retry later.</div></td></tr>
+                <tr><td>130001</td><td>The request was not completed. Please reduce concurrent requests or data size. </td><td><div lang="ja">リクエストが完了しませんでした。同時リクエスト数またはデータサイズを減らして再度お試しください。</div><div lang="en">The request was not completed. Please reduce concurrent requests or data size.</div></td></tr>
                 <tr><td>210311</td><td>Campaign has been started.</td><td><div lang="ja">すでに開始しているキャンペーンの開始日は変更できません。</div><div lang="en">The start date of a campaign that has already started can not change.</div></td></tr>
                 <tr><td>210310</td><td>Select the correct bid type.</td><td><div lang="ja">入札最適化タイプと一致しません。</div><div lang="en">It does not match the correct bid type.</div></td></tr>
                 <tr><td>210307</td><td>Budget is lower than ad group/keywords.</td><td><div lang="ja">予算額は、キャンペーン内の広告グループ・キーワードに設定されている予算よりも高く設定してください。</div><div lang="en">The budget should be set higher than the budget set for the ad group / keyword in the campaign.</div></td></tr>
@@ -3176,6 +3207,8 @@ paths:
                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
                 <tr><td>120020</td><td>Can not set value.</td><td><div lang="ja">値を設定することができません。</div><div lang="en">Value cannot be set.</div></td></tr>
+                <tr><td>130000</td><td>The server is busy. Please retry later.</td><td><div lang="ja">サーバーが高負荷です。時間をおいて再試行してください。</div><div lang="en">The server is busy. Please retry later.</div></td></tr>
+                <tr><td>130001</td><td>The request was not completed. Please reduce concurrent requests or data size. </td><td><div lang="ja">リクエストが完了しませんでした。同時リクエスト数またはデータサイズを減らして再度お試しください。</div><div lang="en">The request was not completed. Please reduce concurrent requests or data size.</div></td></tr>
                 <tr><td>210311</td><td>Campaign has been started.</td><td><div lang="ja">すでに開始しているキャンペーンの開始日は変更できません。</div><div lang="en">The start date of a campaign that has already started can not change.</div></td></tr>
                 <tr><td>210310</td><td>Select the correct bid type.</td><td><div lang="ja">入札最適化タイプと一致しません。</div><div lang="en">It does not match the correct bid type.</div></td></tr>
                 <tr><td>210307</td><td>Budget is lower than ad group/keywords.</td><td><div lang="ja">予算額は、キャンペーン内の広告グループ・キーワードに設定されている予算よりも高く設定してください。</div><div lang="en">The budget should be set higher than the budget set for the ad group / keyword in the campaign.</div></td></tr>
@@ -3258,6 +3291,8 @@ paths:
                 <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
+                <tr><td>130000</td><td>The server is busy. Please retry later.</td><td><div lang="ja">サーバーが高負荷です。時間をおいて再試行してください。</div><div lang="en">The server is busy. Please retry later.</div></td></tr>
+                <tr><td>130001</td><td>The request was not completed. Please reduce concurrent requests or data size. </td><td><div lang="ja">リクエストが完了しませんでした。同時リクエスト数またはデータサイズを減らして再度お試しください。</div><div lang="en">The request was not completed. Please reduce concurrent requests or data size.</div></td></tr>
                 <tr><td>210311</td><td>Campaign has been started.</td><td><div lang="ja">すでに開始しているキャンペーンの開始日は変更できません。</div><div lang="en">The start date of a campaign that has already started can not change.</div></td></tr>
                 <tr><td>210310</td><td>Select the correct bid type.</td><td><div lang="ja">入札最適化タイプと一致しません。</div><div lang="en">It does not match the correct bid type.</div></td></tr>
                 <tr><td>210307</td><td>Budget is lower than ad group/keywords.</td><td><div lang="ja">予算額は、キャンペーン内の広告グループ・キーワードに設定されている予算よりも高く設定してください。</div><div lang="en">The budget should be set higher than the budget set for the ad group / keyword in the campaign.</div></td></tr>
@@ -3404,6 +3439,8 @@ paths:
                 <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
+                <tr><td>130000</td><td>The server is busy. Please retry later.</td><td><div lang="ja">サーバーが高負荷です。時間をおいて再試行してください。</div><div lang="en">The server is busy. Please retry later.</div></td></tr>
+                <tr><td>130001</td><td>The request was not completed. Please reduce concurrent requests or data size. </td><td><div lang="ja">リクエストが完了しませんでした。同時リクエスト数またはデータサイズを減らして再度お試しください。</div><div lang="en">The request was not completed. Please reduce concurrent requests or data size.</div></td></tr>
                 <tr><td>210110</td><td>Invalid target</td><td>１日のスケジュール指定が上限値（6件）を超えています。</div><div lang="en">The daily schedule specification exceeds the upper limit (6 cases).</div></td></tr>
                 <tr><td>210517</td><td>Exceeds maximum word limit.</td><td><div lang="ja">キーワードは最大10個までしか指定できません。</div><div lang="en">10 keywords can only be specified up to.</div></td></tr>
                 <tr><td>210510</td><td>Exists same text with match type.</td><td><div lang="ja">指定されたキーワード、マッチタイプはすでにキャンペーン/広告グループ内に存在します。</div><div lang="en">The specified keyword, match type already exists in the campaign / ad group.</div></td></tr>
@@ -3469,6 +3506,8 @@ paths:
                 <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
+                <tr><td>130000</td><td>The server is busy. Please retry later.</td><td><div lang="ja">サーバーが高負荷です。時間をおいて再試行してください。</div><div lang="en">The server is busy. Please retry later.</div></td></tr>
+                <tr><td>130001</td><td>The request was not completed. Please reduce concurrent requests or data size. </td><td><div lang="ja">リクエストが完了しませんでした。同時リクエスト数またはデータサイズを減らして再度お試しください。</div><div lang="en">The request was not completed. Please reduce concurrent requests or data size.</div></td></tr>
                 <tr><td>210110</td><td>Invalid target</td><td>１日のスケジュール指定が上限値（6件）を超えています。</div><div lang="en">The daily schedule specification exceeds the upper limit (6 cases).</div></td></tr>
                 <tr><td>210517</td><td>Exceeds maximum word limit.</td><td><div lang="ja">キーワードは最大10個までしか指定できません。</div><div lang="en">10 keywords can only be specified up to.</div></td></tr>
                 <tr><td>210510</td><td>Exists same text with match type.</td><td><div lang="ja">指定されたキーワード、マッチタイプはすでにキャンペーン/広告グループ内に存在します。</div><div lang="en">The specified keyword, match type already exists in the campaign / ad group.</div></td></tr>
@@ -4797,6 +4836,8 @@ paths:
                 <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
+                <tr><td>130000</td><td>The server is busy. Please retry later.</td><td><div lang="ja">サーバーが高負荷です。時間をおいて再試行してください。</div><div lang="en">The server is busy. Please retry later.</div></td></tr>
+                <tr><td>130001</td><td>The request was not completed. Please reduce concurrent requests or data size. </td><td><div lang="ja">リクエストが完了しませんでした。同時リクエスト数またはデータサイズを減らして再度お試しください。</div><div lang="en">The request was not completed. Please reduce concurrent requests or data size.</div></td></tr>
                 <tr><td>211010</td><td>Cannot set excluded.</td><td><div lang="ja">AdGroupWebpageServiceの場合、WebpageConditionType：ALL_PAGESの時にExcludedType：EXCLUDEDは設定できません。又、CampaignWebpageServiceの場合、WebpageConditionType：ALL_PAGESは設定できません。</div><div lang="en">For AdGroupWebpageService, ExcludedType: EXCLUDED can not be set when WebpageConditionType: ALL_PAGES. In case of CampaignWebpageService, WebpageConditionType: ALL_PAGES can not be set.</div></td></tr>
                 <tr><td>211021</td><td>Cannot set multiple conditions.</td><td><div lang="ja">webpageConditionType:URLの時にoperator:EQUALSを指定した場合、conditionsは複数設定できません。</div><div lang="en">If EQUALS is specified in operator when webpageConditionType is URL, you cannot specify multiple values for conditions.</div></td></tr>
                 <tr><td>211022</td><td>Domain does not match with CampaignURL.</td><td><div lang="ja">キャンペーンに設定したドメインと一致していません。</div><div lang="en">The domain doesn't match the one you set in the campaign.</div></td></tr>
@@ -4862,6 +4903,8 @@ paths:
                 <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
+                <tr><td>130000</td><td>The server is busy. Please retry later.</td><td><div lang="ja">サーバーが高負荷です。時間をおいて再試行してください。</div><div lang="en">The server is busy. Please retry later.</div></td></tr>
+                <tr><td>130001</td><td>The request was not completed. Please reduce concurrent requests or data size. </td><td><div lang="ja">リクエストが完了しませんでした。同時リクエスト数またはデータサイズを減らして再度お試しください。</div><div lang="en">The request was not completed. Please reduce concurrent requests or data size.</div></td></tr>
                 <tr><td>211010</td><td>Cannot set excluded.</td><td><div lang="ja">AdGroupWebpageServiceの場合、WebpageConditionType：ALL_PAGESの時にExcludedType：EXCLUDEDは設定できません。又、CampaignWebpageServiceの場合、WebpageConditionType：ALL_PAGESは設定できません。</div><div lang="en">For AdGroupWebpageService, ExcludedType: EXCLUDED can not be set when WebpageConditionType: ALL_PAGES. In case of CampaignWebpageService, WebpageConditionType: ALL_PAGES can not be set.</div></td></tr>
                 <tr><td>211021</td><td>Cannot set multiple conditions.</td><td><div lang="ja">webpageConditionType:URLの時にoperator:EQUALSを指定した場合、conditionsは複数設定できません。</div><div lang="en">If EQUALS is specified in operator when webpageConditionType is URL, you cannot specify multiple values for conditions.</div></td></tr>
               </tbody>
@@ -5712,6 +5755,8 @@ paths:
                 <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
+                <tr><td>130000</td><td>The server is busy. Please retry later.</td><td><div lang="ja">サーバーが高負荷です。時間をおいて再試行してください。</div><div lang="en">The server is busy. Please retry later.</div></td></tr>
+                <tr><td>130001</td><td>The request was not completed. Please reduce concurrent requests or data size. </td><td><div lang="ja">リクエストが完了しませんでした。同時リクエスト数またはデータサイズを減らして再度お試しください。</div><div lang="en">The request was not completed. Please reduce concurrent requests or data size.</div></td></tr>
                 <tr><td>210113</td><td>can not modify a bidMultiplier</td><td>Bid調整率を設定することができません。</div><div lang="en">A bidMultiplier can not be modified.</div></td></tr>
                 <tr><td>210112</td><td>can not delete a PlatformTarget</td><td>プラットフォームターゲットを削除することができません。</div><div lang="en">The platform target can not deleted.</div></td></tr>
               </tbody>
@@ -5776,6 +5821,8 @@ paths:
                 <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
+                <tr><td>130000</td><td>The server is busy. Please retry later.</td><td><div lang="ja">サーバーが高負荷です。時間をおいて再試行してください。</div><div lang="en">The server is busy. Please retry later.</div></td></tr>
+                <tr><td>130001</td><td>The request was not completed. Please reduce concurrent requests or data size. </td><td><div lang="ja">リクエストが完了しませんでした。同時リクエスト数またはデータサイズを減らして再度お試しください。</div><div lang="en">The request was not completed. Please reduce concurrent requests or data size.</div></td></tr>
                 <tr><td>210113</td><td>can not modify a bidMultiplier</td><td>Bid調整率を設定することができません。</div><div lang="en">A bidMultiplier can not be modified.</div></td></tr>
                 <tr><td>210112</td><td>can not delete a PlatformTarget</td><td>プラットフォームターゲットを削除することができません。</div><div lang="en">The platform target can not deleted.</div></td></tr>
               </tbody>
@@ -5840,6 +5887,8 @@ paths:
                 <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
+                <tr><td>130000</td><td>The server is busy. Please retry later.</td><td><div lang="ja">サーバーが高負荷です。時間をおいて再試行してください。</div><div lang="en">The server is busy. Please retry later.</div></td></tr>
+                <tr><td>130001</td><td>The request was not completed. Please reduce concurrent requests or data size. </td><td><div lang="ja">リクエストが完了しませんでした。同時リクエスト数またはデータサイズを減らして再度お試しください。</div><div lang="en">The request was not completed. Please reduce concurrent requests or data size.</div></td></tr>
                 <tr><td>210113</td><td>can not modify a bidMultiplier</td><td>Bid調整率を設定することができません。</div><div lang="en">A bidMultiplier can not be modified.</div></td></tr>
                 <tr><td>210112</td><td>can not delete a PlatformTarget</td><td>プラットフォームターゲットを削除することができません。</div><div lang="en">The platform target can not deleted.</div></td></tr>
               </tbody>
@@ -7853,6 +7902,8 @@ paths:
                 <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
+                <tr><td>130000</td><td>The server is busy. Please retry later.</td><td><div lang="ja">サーバーが高負荷です。時間をおいて再試行してください。</div><div lang="en">The server is busy. Please retry later.</div></td></tr>
+                <tr><td>130001</td><td>The request was not completed. Please reduce concurrent requests or data size. </td><td><div lang="ja">リクエストが完了しませんでした。同時リクエスト数またはデータサイズを減らして再度お試しください。</div><div lang="en">The request was not completed. Please reduce concurrent requests or data size.</div></td></tr>
               </tbody>
             </table>
             </div>
@@ -7919,6 +7970,8 @@ paths:
                 <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
+                <tr><td>130000</td><td>The server is busy. Please retry later.</td><td><div lang="ja">サーバーが高負荷です。時間をおいて再試行してください。</div><div lang="en">The server is busy. Please retry later.</div></td></tr>
+                <tr><td>130001</td><td>The request was not completed. Please reduce concurrent requests or data size. </td><td><div lang="ja">リクエストが完了しませんでした。同時リクエスト数またはデータサイズを減らして再度お試しください。</div><div lang="en">The request was not completed. Please reduce concurrent requests or data size.</div></td></tr>
               </tbody>
             </table>
             </div>
@@ -8051,6 +8104,8 @@ paths:
                 <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
+                <tr><td>130000</td><td>The server is busy. Please retry later.</td><td><div lang="ja">サーバーが高負荷です。時間をおいて再試行してください。</div><div lang="en">The server is busy. Please retry later.</div></td></tr>
+                <tr><td>130001</td><td>The request was not completed. Please reduce concurrent requests or data size. </td><td><div lang="ja">リクエストが完了しませんでした。同時リクエスト数またはデータサイズを減らして再度お試しください。</div><div lang="en">The request was not completed. Please reduce concurrent requests or data size.</div></td></tr>
               </tbody>
             </table>
             </div>
@@ -8117,6 +8172,8 @@ paths:
                 <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
+                <tr><td>130000</td><td>The server is busy. Please retry later.</td><td><div lang="ja">サーバーが高負荷です。時間をおいて再試行してください。</div><div lang="en">The server is busy. Please retry later.</div></td></tr>
+                <tr><td>130001</td><td>The request was not completed. Please reduce concurrent requests or data size. </td><td><div lang="ja">リクエストが完了しませんでした。同時リクエスト数またはデータサイズを減らして再度お試しください。</div><div lang="en">The request was not completed. Please reduce concurrent requests or data size.</div></td></tr>
               </tbody>
             </table>
             </div>
@@ -8241,13 +8298,15 @@ paths:
                 <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
+                <tr><td>130000</td><td>The server is busy. Please retry later.</td><td><div lang="ja">サーバーが高負荷です。時間をおいて再試行してください。</div><div lang="en">The server is busy. Please retry later.</div></td></tr>
+                <tr><td>130001</td><td>The request was not completed. Please reduce concurrent requests or data size. </td><td><div lang="ja">リクエストが完了しませんでした。同時リクエスト数またはデータサイズを減らして再度お試しください。</div><div lang="en">The request was not completed. Please reduce concurrent requests or data size.</div></td></tr>
                 <tr><td>V0003</td><td>Over limit of the file size.</td><td><div lang="ja">アップロードファイルサイズが上限を超過しています。</div><div lang="en">The upload file size exceeds the limit.</div></td></tr>
                 <tr><td>210621</td><td>Can’t add. The image format isn’t supported.</td><td><div lang="ja">サポート外の画像フォーマットのため登録できません。</div><div lang="en">Can’t add. The image format isn’t supported.</div></td></tr>
                 <tr><td>210624</td><td>Unsupported pixel size.</td><td><div lang="ja">規定のピクセルサイズではありません。</div><div lang="en">Unsupported pixel size.</div></td></tr>
                 <tr><td>210626</td><td>Over compressed image size.</td><td><div lang="ja">システムで自動圧縮した結果、画像ファイルを200KB以下に圧縮できなかったため、アップロードできませんでした。画像ファイルのサイズを200KB以内に変更して再度お試しください。</div><div lang="en">The system compressed your images, but the file size was still too large (over 200 KB) to upload. Make your file size 200 KB or less and upload it again.</div></td></tr>
-                <tr><td>210629</td><td>Only GIF89a is supported.</td><td><div lang="ja">GIFファイルの規格がGIF89aではありません。</div><div lang="en">GIF file is not in GIF89a.</div></td></tr>
                 <tr><td>210630</td><td>Images not added. They may appear in incorrect orientation. Remove Exif data from images.</td><td><div lang="ja">画像が正しい方向に表示されない可能性があるため、画像は登録されませんでした。画像のExif情報を削除してください。</div><div lang="en">Images not added. They may appear in incorrect orientation. Remove Exif data from images.</div></td></tr>
                 <tr><td>210631</td><td>Transparent images is unsupported.</td><td><div lang="ja">透過画像は登録できません。</div><div lang="en">Can't add transparent images.</div></td></tr>
+                <tr><td>210633</td><td>Image assets aren't available for Adult Ads accounts.</td><td><div lang="ja">アダルト広告のアカウントでは、画像アセットは利用できません。</div><div lang="en">Image assets aren't available for Adult Ads accounts.</div></td></tr>
               </tbody>
             </table>
             </div>
@@ -8310,6 +8369,8 @@ paths:
                 <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
+                <tr><td>130000</td><td>The server is busy. Please retry later.</td><td><div lang="ja">サーバーが高負荷です。時間をおいて再試行してください。</div><div lang="en">The server is busy. Please retry later.</div></td></tr>
+                <tr><td>130001</td><td>The request was not completed. Please reduce concurrent requests or data size. </td><td><div lang="ja">リクエストが完了しませんでした。同時リクエスト数またはデータサイズを減らして再度お試しください。</div><div lang="en">The request was not completed. Please reduce concurrent requests or data size.</div></td></tr>
                 <tr><td>225305</td><td>invalid category snippet header.</td><td><div lang="ja">カテゴリ補足アセット（ヘッダ）が不正です。</div><div lang="en">Category snippet header is invalid.</div></td></tr>
               </tbody>
             </table>
@@ -8373,6 +8434,8 @@ paths:
                 <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
+                <tr><td>130000</td><td>The server is busy. Please retry later.</td><td><div lang="ja">サーバーが高負荷です。時間をおいて再試行してください。</div><div lang="en">The server is busy. Please retry later.</div></td></tr>
+                <tr><td>130001</td><td>The request was not completed. Please reduce concurrent requests or data size. </td><td><div lang="ja">リクエストが完了しませんでした。同時リクエスト数またはデータサイズを減らして再度お試しください。</div><div lang="en">The request was not completed. Please reduce concurrent requests or data size.</div></td></tr>
               </tbody>
             </table>
             </div>
@@ -8399,10 +8462,8 @@ paths:
             <div lang="ja">アカウントIDを指定してください。</div>
             <div lang="en">Specify Account ID.</div>
       description: |
-        <div lang="ja">入稿済みの画像ファイルをダウンロードします。<br>
-        ※現在、こちらのサービスは利用できません。</div>
-        <div lang="en">Download the submitted image file.<br>
-        *Currently this service is not available.</div>
+        <div lang="ja">入稿済みの画像ファイルをダウンロードします。</div>
+        <div lang="en">Download the submitted image file.</div>
       tags:
         - AssetService
       requestBody:

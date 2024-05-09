@@ -76,7 +76,9 @@ AssetServiceImageAsset:
   description: |
     <div lang="ja">AssetServiceImageAssetオブジェクトは、画像アセット情報を格納します。<br>
     ADD時、このフィールドは省略可能となります。※typeがIMAGEの場合は必須です。<br>
-    ※現在、こちらのフィールドは利用できません。</div>
+    ・<a href="https://ads-help.yahoo-net.jp/s/article/H000051554?language=ja">画像アセットについて</a><br>
+    ・<a href="https://ads-help.yahoo-net.jp/s/article/H000051555?language=ja">画像アセットの作成</a></div>
     <div lang="en">AssetServiceImageAsset contains Asset value information for image asset.<br>
     This field is optional in ADD operation. *If type is IMAGE, this field is required.<br>
-    *Currently this field is not available.</div>
+    * <a href="https://ads-help.yahoo-net.jp/s/article/H000051554?language=en_US">About image asset</a><br>
+    * <a href="https://ads-help.yahoo-net.jp/s/article/H000051555?language=en_US">Create image asset</a></div>
