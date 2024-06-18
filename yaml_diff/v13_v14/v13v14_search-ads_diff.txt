@@ -1,0 +1,487 @@
+
+
+------
+diff -ru v13/Route.yaml v14/Route.yaml
+--- v13/Route.yaml	2024-05-30 16:32:30.000000000 +0900
++++ v14/Route.yaml	2024-06-14 19:39:20.000000000 +0900
+@@ -1,11 +1,11 @@
+ openapi: 3.0.2
+ info:
+   title: 'Yahoo!広告 検索広告 API リファレンス / Yahoo! JAPAN Ads Search Ads API Reference'
+-  version: 'v13'
++  version: 'v14'
+   description: |
+     <div lang="ja">Yahoo!広告 検索広告 APIのWebサービスについて説明します。</div>
+     <div lang="en">Search Ads API Web Services supported in Yahoo! JAPAN Ads API.</div>
+-    <div><a target="_blank" href="https://github.com/yahoojp-marketing/ads-search-api-documents/blob/master/design/v13/Route.yaml">OpenAPI Specification</a></div>
++    <div><a target="_blank" href="https://github.com/yahoojp-marketing/ads-search-api-documents/blob/master/design/v14/Route.yaml">OpenAPI Specification</a></div>
+     <div lang="ja"><a target="_blank" href="https://github.com/yahoojp-marketing/ads-search-api-documents/blob/master/bestpractice/ja">Best Practice</a></div>
+     <div lang="en"><a target="_blank" href="https://github.com/yahoojp-marketing/ads-search-api-documents/blob/master/bestpractice/en">Best Practice</a></div>
+
+@@ -23,7 +23,7 @@
+   - oAuth: [ yahooads ]
+
+ servers:
+-  - url: https://ads-search.yahooapis.jp/api/v13
++  - url: https://ads-search.yahooapis.jp/api/v14
+
+ tags:
+   - name: AccountManagementService
+@@ -164,27 +164,27 @@
+       <h2 lang="ja" class="reportFields__title">レポートフィールド</h2>
+       <h2 lang="en" class="reportFields__title">Report Fields</h2>
+       <ul>
+-      <li><div lang="ja"><a href="./reports/v13/ACCOUNT.csv" download>アカウントレポート</a></div><div lang="en"><a href="./reports/v13/ACCOUNT.csv" download>Account Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v13/CAMPAIGN.csv" download>キャンペーンレポート</a></div><div lang="en"><a href="./reports/v13/CAMPAIGN.csv" download>Campaign Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v13/ADGROUP.csv" download>広告グループレポート</a></div><div lang="en"><a href="./reports/v13/ADGROUP.csv" download>Ad Group Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v13/AD.csv" download>広告レポート</a></div><div lang="en"><a href="./reports/v13/AD.csv" download>Ad Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v13/KEYWORDS.csv" download>キーワードレポート</a></div><div lang="en"><a href="./reports/v13/KEYWORDS.csv" download>Keyword Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v13/SEARCH_QUERY.csv" download>検索クエリレポート</a></div><div lang="en"><a href="./reports/v13/SEARCH_QUERY.csv" download>Search Query Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v13/GEO.csv" download>地域別レポート</a></div><div lang="en"><a href="./reports/v13/GEO.csv" download>Geo Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v13/GEO_TARGET.csv" download>地域ターゲティングレポート</a></div><div lang="en"><a href="./reports/v13/GEO_TARGET.csv" download>Geo Targeting Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v13/SCHEDULE_TARGET.csv" download>曜日・時間帯ターゲティングレポート</a></div><div lang="en"><a href="./reports/v13/SCHEDULE_TARGET.csv" download>Schedule Targeting Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v13/BID_STRATEGY.csv" download>自動入札レポート</a></div><div lang="en"><a href="./reports/v13/BID_STRATEGY.csv" download>Auto Bidding Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v13/CAMPAIGN_TARGET_LIST.csv" download>キャンペーンターゲットリストレポート</a></div><div lang="en"><a href="./reports/v13/CAMPAIGN_TARGET_LIST.csv"download>Campaign Target List Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v13/ADGROUP_TARGET_LIST.csv" download>広告グループターゲットリストレポート</a></div><div lang="en"><a href="./reports/v13/ADGROUP_TARGET_LIST.csv" download>Ad Group Target List Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v13/LANDING_PAGE_URL.csv" download>ランディングページURLレポート</a></div><div lang="en"><a href="./reports/v13/LANDING_PAGE_URL.csv" download>Landing Page URL Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v13/KEYWORDLESS_QUERY.csv" download>検索クエリーレポート（動的検索連動型広告）</a></div><div lang="en"><a href="./reports/v13/KEYWORDLESS_QUERY.csv" download>Search Query Report (Dynamic Ads for Search)</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v13/WEBPAGE_CRITERION.csv" download>ページフィードターゲティングレポート</a></div><div lang="en"><a href="./reports/v13/WEBPAGE_CRITERION.csv" download>Page Feed Targeting Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v13/BID_MODIFIER.csv" download>入札価格調整率レポート</a></div><div lang="en"><a href="./reports/v13/BID_MODIFIER.csv" download>Bid Adjustments Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v13/CAMPAIGN_ASSET.csv" download>広告表示アセットレポート（キャンペーン）</a></div><div lang="en"><a href="./reports/v13/CAMPAIGN_ASSET.csv" download>Ad Display Asset Report (campaign)</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v13/AD_GROUP_ASSET.csv" download>広告表示アセットレポート（広告グループ）</a></div><div lang="en"><a href="./reports/v13/AD_GROUP_ASSET.csv" download>Ad Display Asset Report (ad group)</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v13/RESPONSIVE_ADS_FOR_SEARCH_ASSET.csv" download>レスポンシブ検索広告アセットレポート</a></div><div lang="en"><a href="./reports/v13/RESPONSIVE_ADS_FOR_SEARCH_ASSET.csv" download>Responsive Ads for Search Asset Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v13/SHARED_BUDGET.csv" download>共有予算レポート</a></div><div lang="en"><a href="./reports/v13/SHARED_BUDGET.csv" download>Campaign Budget Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v13/ASSET_COMBINATION.csv" download>アセット組み合わせレポート</a></div><div lang="en"><a href="./reports/v13/ASSET_COMBINATION.csv" download>Asset combinations report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v14/ACCOUNT.csv" download>アカウントレポート</a></div><div lang="en"><a href="./reports/v14/ACCOUNT.csv" download>Account Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v14/CAMPAIGN.csv" download>キャンペーンレポート</a></div><div lang="en"><a href="./reports/v14/CAMPAIGN.csv" download>Campaign Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v14/ADGROUP.csv" download>広告グループレポート</a></div><div lang="en"><a href="./reports/v14/ADGROUP.csv" download>Ad Group Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v14/AD.csv" download>広告レポート</a></div><div lang="en"><a href="./reports/v14/AD.csv" download>Ad Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v14/KEYWORDS.csv" download>キーワードレポート</a></div><div lang="en"><a href="./reports/v14/KEYWORDS.csv" download>Keyword Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v14/SEARCH_QUERY.csv" download>検索クエリレポート</a></div><div lang="en"><a href="./reports/v14/SEARCH_QUERY.csv" download>Search Query Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v14/GEO.csv" download>地域別レポート</a></div><div lang="en"><a href="./reports/v14/GEO.csv" download>Geo Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v14/GEO_TARGET.csv" download>地域ターゲティングレポート</a></div><div lang="en"><a href="./reports/v14/GEO_TARGET.csv" download>Geo Targeting Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v14/SCHEDULE_TARGET.csv" download>曜日・時間帯ターゲティングレポート</a></div><div lang="en"><a href="./reports/v14/SCHEDULE_TARGET.csv" download>Schedule Targeting Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v14/BID_STRATEGY.csv" download>自動入札レポート</a></div><div lang="en"><a href="./reports/v14/BID_STRATEGY.csv" download>Auto Bidding Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v14/CAMPAIGN_TARGET_LIST.csv" download>キャンペーンターゲットリストレポート</a></div><div lang="en"><a href="./reports/v14/CAMPAIGN_TARGET_LIST.csv"download>Campaign Target List Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v14/ADGROUP_TARGET_LIST.csv" download>広告グループターゲットリストレポート</a></div><div lang="en"><a href="./reports/v14/ADGROUP_TARGET_LIST.csv" download>Ad Group Target List Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v14/LANDING_PAGE_URL.csv" download>ランディングページURLレポート</a></div><div lang="en"><a href="./reports/v14/LANDING_PAGE_URL.csv" download>Landing Page URL Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v14/KEYWORDLESS_QUERY.csv" download>検索クエリーレポート（動的検索連動型広告）</a></div><div lang="en"><a href="./reports/v14/KEYWORDLESS_QUERY.csv" download>Search Query Report (Dynamic Ads for Search)</a></div></li>
++      <li><div lang="ja"><a href="./reports/v14/WEBPAGE_CRITERION.csv" download>ページフィードターゲティングレポート</a></div><div lang="en"><a href="./reports/v14/WEBPAGE_CRITERION.csv" download>Page Feed Targeting Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v14/BID_MODIFIER.csv" download>入札価格調整率レポート</a></div><div lang="en"><a href="./reports/v14/BID_MODIFIER.csv" download>Bid Adjustments Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v14/CAMPAIGN_ASSET.csv" download>広告表示アセットレポート（キャンペーン）</a></div><div lang="en"><a href="./reports/v14/CAMPAIGN_ASSET.csv" download>Ad Display Asset Report (campaign)</a></div></li>
++      <li><div lang="ja"><a href="./reports/v14/AD_GROUP_ASSET.csv" download>広告表示アセットレポート（広告グループ）</a></div><div lang="en"><a href="./reports/v14/AD_GROUP_ASSET.csv" download>Ad Display Asset Report (ad group)</a></div></li>
++      <li><div lang="ja"><a href="./reports/v14/RESPONSIVE_ADS_FOR_SEARCH_ASSET.csv" download>レスポンシブ検索広告アセットレポート</a></div><div lang="en"><a href="./reports/v14/RESPONSIVE_ADS_FOR_SEARCH_ASSET.csv" download>Responsive Ads for Search Asset Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v14/SHARED_BUDGET.csv" download>共有予算レポート</a></div><div lang="en"><a href="./reports/v14/SHARED_BUDGET.csv" download>Campaign Budget Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v14/ASSET_COMBINATION.csv" download>アセット組み合わせレポート</a></div><div lang="en"><a href="./reports/v14/ASSET_COMBINATION.csv" download>Asset combinations report</a></div></li>
+       </ul>
+   - name: CampaignExportService
+     description: |
+@@ -336,6 +336,11 @@
+       <label class="campaign"></label>
+       <div lang="ja">BiddingSeasonalityAdjustmentServiceでは、自動入札のスポット調整に関する情報の取得および追加・更新・削除を行います。</div>
+       <div lang="en">BiddingSeasonalityAdjustmentService is to get, add, update or remove information of BiddingSeasonalityAdjustment.</div>
++  - name: LearningDataExclusionService
++    description: |
++      <label class="campaign"></label>
++      <div lang="ja">LearningDataExclusionServiceでは、自動入札の学習データ除外に関する情報の取得および追加・更新・削除を行います。</div>
++      <div lang="en">LearningDataExclusionService is to get, add, update or remove information of Learning data exclusion for autobidding.</div>
+
+ paths:
+   /AccountManagementService/get:
+@@ -3312,6 +3317,7 @@
+                 <tr><td>211007</td><td>Representative URL Does Not Match.</td><td><div lang="ja">Feedで設定されているドメインと異なります。</div><div lang="en">It is different from the domain set by Feed.</div></td></tr>
+                 <tr><td>211008</td><td>Cannot change Dynamic Ads for Search Campaign.</td><td><div lang="ja">Dynamic Ads for Searchのキャンペーンに変更はできません。</div><div lang="en">It can not be changed to the campaign of Dynamic Ads for Search.</div></td></tr>
+                 <tr><td>210314</td><td>Cannot set Enhanced CPC for Mobile app download.</td><td><div lang="ja">アプリダウンロードキャンペーンに「拡張クリック単価」を設定しようとしています。</div><div lang="en">"Enhanced CPC" can not be set for Mobile app download.</div></td></tr>
++                <tr><td>210916</td><td>Cannot delete learning data exclusion for autobidding.</td><td><div lang="ja">学習データ除外を設定しているため、キャンペーンを削除できません。</div><div lang="en">You can't remove campaigns that are associated with learning data exclusions. Remove learning data exclusions or remove associations with the campaign.</div></td></tr>
+               </tbody>
+             </table>
+             </div>
+@@ -10747,3 +10753,259 @@
+           $ref: '../Response401.yaml#/Response401'
+         400:
+           $ref: '../Response400.yaml#/Response400'
++  /LearningDataExclusionService/get:
++    post:
++      parameters:
++        - in: header
++          name: x-z-base-account-id
++          schema:
++            type: integer
++            format: int64
++          required: true
++          description: |
++            <div lang="ja">アカウントIDを指定してください。</div>
++            <div lang="en">Specify Account ID.</div>
++      description: |
++        <div lang="ja">自動入札の学習データ除外に関する情報を取得します。<br>
++        ※現在、こちらのサービスは利用できません。</div>
++        <div lang="en">Gets learning data exclusion for autobidding.<br>
++        *Currently this service is not available.</div>
++      tags:
++        - LearningDataExclusionService
++      requestBody:
++        content:
++          application/json:
++            schema:
++              $ref: 'learningdataexclusion/LearningDataExclusionServiceSelector.yaml#/LearningDataExclusionServiceSelector'
++      responses:
++        503:
++          $ref: '../Response503.yaml#/Response503'
++        500:
++          $ref: '../Response500.yaml#/Response500'
++        200:
++          description: |
++            <p class="cellContent__head">Error codes</p>
++            <div class="cellContent__body">
++            <table class="apiTable">
++              <colgroup span="1" class="short"></colgroup>
++              <colgroup span="2"></colgroup>
++              <thead>
++                <tr><th>Code</th><th>Message</th><th>Description</th></tr>
++              </thead>
++              <tbody>
++                <tr><td>0001</td><td>Invalid Request.</td><td><div lang="ja">さまざまな要因が考えられます。<br>主な要因は、パラメータの値が不正か、誤りがあるためにオペレーションが完了できません。</div></td></tr>
++                <tr><td>R0001</td><td>Require.</td><td><div lang="ja">必須です。</div></td></tr>
++                <tr><td>F0001</td><td>Invalid format.</td><td><div lang="ja">値の形式が不正です。</div></td></tr>
++                <tr><td>V0001</td><td>Invalid value.</td><td><div lang="ja">値が無効です。</div></td></tr>
++                <tr><td>S0001</td><td>Invalid Status.</td><td><div lang="ja">ステータスが無効です。</div></td></tr>
++                <tr><td>L0002</td><td>Over list size.</td><td><div lang="ja">配列の要素数が上限値を超過しています。</div></td></tr>
++                <tr><td>L0001</td><td>Lower list size.</td><td><div lang="ja">配列の要素数が下限値を下回っています。</div></td></tr>
++                <tr><td>D0001</td><td>Duplicate.</td><td><div lang="ja">一意な値が重複しています。</div></td></tr>
++                <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始≧終了の日付指定の日付指定を行なっているなど</div></td></tr>
++                <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div></td></tr>
++                <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div></td></tr>
++              </tbody>
++            </table>
++            </div>
++          content:
++            application/json:
++              schema:
++                $ref: 'learningdataexclusion/LearningDataExclusionServiceGetResponse.yaml#/LearningDataExclusionServiceGetResponse'
++        403:
++          $ref: '../Response403.yaml#/Response403'
++        401:
++          $ref: '../Response401.yaml#/Response401'
++        400:
++          $ref: '../Response400.yaml#/Response400'
++  /LearningDataExclusionService/add:
++    post:
++      parameters:
++        - in: header
++          name: x-z-base-account-id
++          schema:
++            type: integer
++            format: int64
++          required: true
++          description: |
++            <div lang="ja">アカウントIDを指定してください。</div>
++            <div lang="en">Specify Account ID.</div>
++      description: |
++        <div lang="ja">自動入札の学習データ除外を追加します。<br>
++        ※現在、こちらのサービスは利用できません。</div>
++        <div lang="en">Create learning data exclusion for autobidding.<br>
++        *Currently this service is not available.</div>
++      tags:
++        - LearningDataExclusionService
++      requestBody:
++        content:
++          application/json:
++            schema:
++              $ref: 'learningdataexclusion/LearningDataExclusionServiceOperation.yaml#/LearningDataExclusionServiceOperation'
++      responses:
++        503:
++          $ref: '../Response503.yaml#/Response503'
++        500:
++          $ref: '../Response500.yaml#/Response500'
++        200:
++          description: |
++            <p class="cellContent__head">Error codes</p>
++            <div class="cellContent__body">
++            <table class="apiTable">
++              <colgroup span="1" class="short"></colgroup>
++              <colgroup span="2"></colgroup>
++              <thead>
++                <tr><th>Code</th><th>Message</th><th>Description</th></tr>
++              </thead>
++              <tbody>
++                <tr><td>0001</td><td>Invalid Request.</td><td><div lang="ja">さまざまな要因が考えられます。<br>主な要因は、パラメータの値が不正か、誤りがあるためにオペレーションが完了できません。</div></td></tr>
++                <tr><td>R0001</td><td>Require.</td><td><div lang="ja">必須です。</div></td></tr>
++                <tr><td>F0001</td><td>Invalid format.</td><td><div lang="ja">値の形式が不正です。</div></td></tr>
++                <tr><td>V0001</td><td>Invalid value.</td><td><div lang="ja">値が無効です。</div></td></tr>
++                <tr><td>S0001</td><td>Invalid Status.</td><td><div lang="ja">ステータスが無効です。</div></td></tr>
++                <tr><td>L0002</td><td>Over list size.</td><td><div lang="ja">配列の要素数が上限値を超過しています。</div></td></tr>
++                <tr><td>L0001</td><td>Lower list size.</td><td><div lang="ja">配列の要素数が下限値を下回っています。</div></td></tr>
++                <tr><td>D0001</td><td>Duplicate.</td><td><div lang="ja">一意な値が重複しています。</div></td></tr>
++                <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div></td></tr>
++                <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div></td></tr>
++                <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div></td></tr>
++              </tbody>
++            </table>
++            </div>
++          content:
++            application/json:
++              schema:
++                $ref: 'learningdataexclusion/LearningDataExclusionServiceMutateResponse.yaml#/LearningDataExclusionServiceMutateResponse'
++        403:
++          $ref: '../Response403.yaml#/Response403'
++        401:
++          $ref: '../Response401.yaml#/Response401'
++        400:
++          $ref: '../Response400.yaml#/Response400'
++  /LearningDataExclusionService/set:
++    post:
++      parameters:
++        - in: header
++          name: x-z-base-account-id
++          schema:
++            type: integer
++            format: int64
++          required: true
++          description: |
++            <div lang="ja">アカウントIDを指定してください。</div>
++            <div lang="en">Specify Account ID.</div>
++      description: |
++        <div lang="ja">自動入札の学習データ除外の設定を変更します。<br>
++        ※現在、こちらのサービスは利用できません。</div>
++        <div lang="en">Update learning data exclusion for autobidding.<br>
++        *Currently this service is not available.</div>
++      tags:
++        - LearningDataExclusionService
++      requestBody:
++        content:
++          application/json:
++            schema:
++              $ref: 'learningdataexclusion/LearningDataExclusionServiceOperation.yaml#/LearningDataExclusionServiceOperation'
++      responses:
++        503:
++          $ref: '../Response503.yaml#/Response503'
++        500:
++          $ref: '../Response500.yaml#/Response500'
++        200:
++          description: |
++            <p class="cellContent__head">Error codes</p>
++            <div class="cellContent__body">
++            <table class="apiTable">
++              <colgroup span="1" class="short"></colgroup>
++              <colgroup span="2"></colgroup>
++              <thead>
++                <tr><th>Code</th><th>Message</th><th>Description</th></tr>
++              </thead>
++              <tbody>
++                <tr><td>0001</td><td>Invalid Request.</td><td><div lang="ja">さまざまな要因が考えられます。<br>主な要因は、パラメータの値が不正か、誤りがあるためにオペレーションが完了できません。</div></td></tr>
++                <tr><td>R0001</td><td>Require.</td><td><div lang="ja">必須です。</div></td></tr>
++                <tr><td>F0001</td><td>Invalid format.</td><td><div lang="ja">値の形式が不正です。</div></td></tr>
++                <tr><td>V0001</td><td>Invalid value.</td><td><div lang="ja">値が無効です。</div></td></tr>
++                <tr><td>S0001</td><td>Invalid Status.</td><td><div lang="ja">ステータスが無効です。</div></td></tr>
++                <tr><td>L0002</td><td>Over list size.</td><td><div lang="ja">配列の要素数が上限値を超過しています。</div></td></tr>
++                <tr><td>L0001</td><td>Lower list size.</td><td><div lang="ja">配列の要素数が下限値を下回っています。</div></td></tr>
++                <tr><td>D0001</td><td>Duplicate.</td><td><div lang="ja">一意な値が重複しています。</div></td></tr>
++                <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div></td></tr>
++                <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div></td></tr>
++                <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div></td></tr>
++              </tbody>
++            </table>
++            </div>
++          content:
++            application/json:
++              schema:
++                $ref: 'learningdataexclusion/LearningDataExclusionServiceMutateResponse.yaml#/LearningDataExclusionServiceMutateResponse'
++        403:
++          $ref: '../Response403.yaml#/Response403'
++        401:
++          $ref: '../Response401.yaml#/Response401'
++        400:
++          $ref: '../Response400.yaml#/Response400'
++  /LearningDataExclusionService/remove:
++    post:
++      parameters:
++        - in: header
++          name: x-z-base-account-id
++          schema:
++            type: integer
++            format: int64
++          required: true
++          description: |
++            <div lang="ja">アカウントIDを指定してください。</div>
++            <div lang="en">Specify Account ID.</div>
++      description: |
++        <div lang="ja">自動入札の学習データ除外を削除します。<br>
++        ※現在、こちらのサービスは利用できません。</div>
++        <div lang="en">Remove learning data exclusion for autobidding.<br>
++        *Currently this service is not available.</div>
++      tags:
++        - LearningDataExclusionService
++      requestBody:
++        content:
++          application/json:
++            schema:
++              $ref: 'learningdataexclusion/LearningDataExclusionServiceOperation.yaml#/LearningDataExclusionServiceOperation'
++      responses:
++        503:
++          $ref: '../Response503.yaml#/Response503'
++        500:
++          $ref: '../Response500.yaml#/Response500'
++        200:
++          description: |
++            <p class="cellContent__head">Error codes</p>
++            <div class="cellContent__body">
++            <table class="apiTable">
++              <colgroup span="1" class="short"></colgroup>
++              <colgroup span="2"></colgroup>
++              <thead>
++                <tr><th>Code</th><th>Message</th><th>Description</th></tr>
++              </thead>
++              <tbody>
++                <tr><td>0001</td><td>Invalid Request.</td><td><div lang="ja">さまざまな要因が考えられます。<br>主な要因は、パラメータの値が不正か、誤りがあるためにオペレーションが完了できません。</div></td></tr>
++                <tr><td>R0001</td><td>Require.</td><td><div lang="ja">必須です。</div></td></tr>
++                <tr><td>F0001</td><td>Invalid format.</td><td><div lang="ja">値の形式が不正です。</div></td></tr>
++                <tr><td>V0001</td><td>Invalid value.</td><td><div lang="ja">値が無効です。</div></td></tr>
++                <tr><td>S0001</td><td>Invalid Status.</td><td><div lang="ja">ステータスが無効です。</div></td></tr>
++                <tr><td>L0002</td><td>Over list size.</td><td><div lang="ja">配列の要素数が上限値を超過しています。</div></td></tr>
++                <tr><td>L0001</td><td>Lower list size.</td><td><div lang="ja">配列の要素数が下限値を下回っています。</div></td></tr>
++                <tr><td>D0001</td><td>Duplicate.</td><td><div lang="ja">一意な値が重複しています。</div></td></tr>
++                <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div></td></tr>
++                <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div></td></tr>
++                <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div></td></tr>
++              </tbody>
++            </table>
++            </div>
++          content:
++            application/json:
++              schema:
++                $ref: 'learningdataexclusion/LearningDataExclusionServiceMutateResponse.yaml#/LearningDataExclusionServiceMutateResponse'
++        403:
++          $ref: '../Response403.yaml#/Response403'
++        401:
++          $ref: '../Response401.yaml#/Response401'
++        400:
++          $ref: '../Response400.yaml#/Response400'
+
+
+------
+diff -ru v13/adgroup/AdGroup.yaml v14/adgroup/AdGroup.yaml
+--- v13/adgroup/AdGroup.yaml	2024-06-13 20:40:36.000000000 +0900
++++ v14/adgroup/AdGroup.yaml	2024-06-13 20:40:36.000000000 +0900
+@@ -100,6 +100,12 @@
+       description: |
+         <div lang="ja">広告グループが作成された日です。<br>※フォーマット：yyyyMMdd</div>
+         <div lang="en">Date of ad group made.<br>* Format: yyyyMMdd</div>
++    updatedDate:
++      type: string
++      nullable: true
++      description: |
++        <div lang="ja">広告グループが更新された日です。<br>※フォーマット：yyyyMMdd</div>
++        <div lang="en">Date of ad group updated.<br>* Format: yyyyMMdd</div>
+   title: AdGroup
+   description: |
+     <div lang="ja">AdGroup オブジェクトは、広告グループを表します。</div>
+
+
+------
+diff -ru v13/adgroup/AdGroupServiceSelector.yaml v14/adgroup/AdGroupServiceSelector.yaml
+--- v13/adgroup/AdGroupServiceSelector.yaml	2024-06-13 20:40:36.000000000 +0900
++++ v14/adgroup/AdGroupServiceSelector.yaml	2024-06-14 19:39:31.000000000 +0900
+@@ -94,6 +94,8 @@
+       maxItems: 2
+     createdDateRange:
+       $ref: 'AdGroupServiceCreatedDateRange.yaml#/AdGroupServiceCreatedDateRange'
++    updatedDateRange:
++      $ref: 'AdGroupServiceUpdatedDateRange.yaml#/AdGroupServiceUpdatedDateRange'
+     biddingKeywordCpcRange:
+       $ref: 'AdGroupServiceBiddingKeywordCpcRange.yaml#/AdGroupServiceBiddingKeywordCpcRange'
+   title: AdGroupServiceSelector
+Only in v14/adgroup: AdGroupServiceUpdatedDateRange.yaml
+
+
+------
+diff -ru v13/adgroupad/AdGroupAd.yaml v14/adgroupad/AdGroupAd.yaml
+--- v13/adgroupad/AdGroupAd.yaml	2024-06-13 20:40:36.000000000 +0900
++++ v14/adgroupad/AdGroupAd.yaml	2024-06-13 20:40:36.000000000 +0900
+@@ -141,6 +141,12 @@
+       description: |
+         <div lang="ja">広告が作成された日です。<br>※フォーマット：yyyyMMdd</div>
+         <div lang="en">Date of Ad made.<br>* Format: yyyyMMdd</div>
++    updatedDate:
++      type: string
++      nullable: true
++      description: |
++        <div lang="ja">広告が更新された日です。<br>※フォーマット：yyyyMMdd</div>
++        <div lang="en">Date of Ad updated.<br>* Format: yyyyMMdd</div>
+   title: AdGroupAd
+   description: |
+     <div lang="ja">AdGroupAdオブジェクトは、広告に関する操作を行うための情報を表します。</div>
+
+
+------
+diff -ru v13/adgroupad/AdGroupAdServiceSelector.yaml v14/adgroupad/AdGroupAdServiceSelector.yaml
+--- v13/adgroupad/AdGroupAdServiceSelector.yaml	2024-06-13 20:40:36.000000000 +0900
++++ v14/adgroupad/AdGroupAdServiceSelector.yaml	2024-06-13 20:40:36.000000000 +0900
+@@ -93,6 +93,8 @@
+         *When specified labelIds, containsLabel information is added to the result.</div>
+     createdDateRange:
+       $ref: 'AdGroupAdServiceCreatedDateRange.yaml#/AdGroupAdServiceCreatedDateRange'
++    updatedDateRange:
++      $ref: 'AdGroupAdServiceUpdatedDateRange.yaml#/AdGroupAdServiceUpdatedDateRange'
+     numberResults:
+       type: integer
+       nullable: true
+Only in v14/adgroupad: AdGroupAdServiceUpdatedDateRange.yaml
+
+
+------
+diff -ru v13/asset/AssetServiceFileType.yaml v14/asset/AssetServiceFileType.yaml
+--- v13/asset/AssetServiceFileType.yaml	2024-06-13 20:40:36.000000000 +0900
++++ v14/asset/AssetServiceFileType.yaml	2024-06-13 20:40:36.000000000 +0900
+@@ -4,7 +4,6 @@
+   enum:
+     - PNG
+     - JPEG
+-    - GIF
+     - UNKNOWN
+   title: AssetServiceFileType
+   description: |
+@@ -21,8 +20,6 @@
+       <dd class="term__desc"><span lang="ja">PNGです。</span><span lang="en">PNG image.</span></dd>
+       <dt class="term__item">JPEG</dt>
+       <dd class="term__desc"><span lang="ja">JPEGです。</span><span lang="en">JPEG image.</span></dd>
+-      <dt class="term__item">GIF</dt>
+-      <dd class="term__desc"><span lang="ja">GIF（静止画）です。<br>※現在、こちらのEnumは利用できません。</span><span lang="en">GIF image.<br>*Currently this Enum is not available.</span></dd>
+       <dt class="term__item">UNKNOWN</dt>
+       <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+     </dl>
+
+
+------
+diff -ru v13/campaign/Campaign.yaml v14/campaign/Campaign.yaml
+--- v13/campaign/Campaign.yaml	2024-06-13 20:40:36.000000000 +0900
++++ v14/campaign/Campaign.yaml	2024-06-13 20:40:36.000000000 +0900
+@@ -118,6 +118,12 @@
+       description: |
+         <div lang="ja">キャンペーンが作成された日です。<br>※フォーマット：yyyyMMdd</div>
+         <div lang="en">Date of Campaign made.<br>* Format: yyyyMMdd</div>
++    updatedDate:
++      type: string
++      nullable: true
++      description: |
++        <div lang="ja">キャンペーンが更新された日です。<br>※フォーマット：yyyyMMdd</div>
++        <div lang="en">Date of Campaign updated.<br>* Format: yyyyMMdd</div>
+   title: Campaign
+   description: |
+     <div lang="ja">Campaignオブジェクトは、キャンペーンの情報を表します。</div>
+
+
+------
+diff -ru v13/campaign/CampaignServiceSelector.yaml v14/campaign/CampaignServiceSelector.yaml
+--- v13/campaign/CampaignServiceSelector.yaml	2024-06-13 20:40:36.000000000 +0900
++++ v14/campaign/CampaignServiceSelector.yaml	2024-06-13 20:40:36.000000000 +0900
+@@ -96,6 +96,8 @@
+       maxItems: 2
+     createdDateRange:
+       $ref: 'CampaignServiceCreatedDateRange.yaml#/CampaignServiceCreatedDateRange'
++    updatedDateRange:
++      $ref: 'CampaignServiceUpdatedDateRange.yaml#/CampaignServiceUpdatedDateRange'
+     budgetAmountRange:
+       $ref: 'CampaignServiceBudgetAmountRange.yaml#/CampaignServiceBudgetAmountRange'
+   title: CampaignServiceSelector
+Only in v14/campaign: CampaignServiceUpdatedDateRange.yaml
+Only in v14: learningdataexclusion
