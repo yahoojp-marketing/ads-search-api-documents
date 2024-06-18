@@ -1,0 +1,54 @@
+CampaignExportServiceEntityType:
+  type: string
+  nullable: true
+  enum:
+  - CAMPAIGN
+  - NEGATIVE_CAMPAIGN_CRITERION
+  - AD_GROUP
+  - BIDDABLE_AD_GROUP_CRITERION
+  - NEGATIVE_AD_GROUP_CRITERION
+  - AD
+  - ASSET
+  - QUICKLINK_ASSET
+  - CALLOUT_ASSET
+  - STRUCTURED_SNIPPET_ASSET
+  - CALLEXTENSION_ASSET
+  - IMAGE_ASSET
+  - ALL
+  - UNKNOWN
+  title: CampaignExportServiceEntityType
+  description: |
+    <div lang="ja">CampaignExportServiceEntityTypeは、対象となるエンティティを表します。<br>
+    このフィールドは、省略可能となります。※リクエスト時はCampaignExportServiceEntityTypeで定義されている値をString型で指定します。 ※レスポンスの値はenumとして返却されます。</div>
+    <div lang="en">CampaignExportServiceEntityType object describes target entities.<br>
+    This field is optional.* When requesting, specify the value defined on CampaignExportServiceEntityType in string. * Response value is returned in enum type.</div>
+    <dl class=term>
+      <dt class="term__item">CAMPAIGN</dt>
+      <dd class="term__desc"><span lang="ja">キャンペーン</span><span lang="en">Campaign.</span></dd>
+      <dt class="term__item">NEGATIVE_CAMPAIGN_CRITERION</dt>
+      <dd class="term__desc"><span lang="ja">対象外キーワード（キャンペーンレベル）</span><span lang="en">Negative keyword (campaign level).</span></dd>
+      <dt class="term__item">AD_GROUP</dt>
+      <dd class="term__desc"><span lang="ja">広告グループ</span><span lang="en">Ad group.</span></dd>
+      <dt class="term__item">BIDDABLE_AD_GROUP_CRITERION</dt>
+      <dd class="term__desc"><span lang="ja">入札キーワード</span><span lang="en">Biddable keyword.</span></dd>
+      <dt class="term__item">NEGATIVE_AD_GROUP_CRITERION</dt>
+      <dd class="term__desc"><span lang="ja">対象外キーワード（広告グループレベル）</span><span lang="en">Negative keyword (ad group level).</span></dd>
+      <dt class="term__item">AD</dt>
+      <dd class="term__desc"><span lang="ja">広告</span><span lang="en">Ad.</span></dd>
+      <dt class="term__item">ASSET</dt>
+      <dd class="term__desc"><span lang="ja">すべてのアセット（広告表示アセット）</span><span lang="en">All assets (Ad display asset).</span></dd>
+      <dt class="term__item">QUICKLINK_ASSET</dt>
+      <dd class="term__desc"><span lang="ja">クイックリンクアセットのアセット</span><span lang="en">Quick link asset.</span></dd>
+      <dt class="term__item">CALLOUT_ASSET</dt>
+      <dd class="term__desc"><span lang="ja">テキスト補足アセットのアセット</span><span lang="en">Callout asset.</span></dd>
+      <dt class="term__item">STRUCTURED_SNIPPET_ASSET</dt>
+      <dd class="term__desc"><span lang="ja">カテゴリ補足アセットのアセット</span><span lang="en">Category snippet asset.</span></dd>
+      <dt class="term__item">CALLEXTENSION_ASSET</dt>
+      <dd class="term__desc"><span lang="ja">電話番号アセットのアセット</span><span lang="en">Call asset asset.</span></dd>
+      <dt class="term__item">IMAGE_ASSET</dt>
+      <dd class="term__desc"><span lang="ja">画像アセットのアセット</span><span lang="en">Image asset assets.</span></dd>
+      <dt class="term__item">ALL</dt>
+      <dd class="term__desc"><span lang="ja">すべての広告エンティティ</span><span lang="en">All entities.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown value.</span></dd>
+    </dl>

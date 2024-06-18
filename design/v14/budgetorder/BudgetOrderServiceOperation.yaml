@@ -1,0 +1,25 @@
+BudgetOrderServiceOperation:
+  type: object
+  nullable: true
+  required:
+  - accountId
+  - operand
+  properties:
+    accountId:
+      type: integer
+      nullable: false
+      format: int64
+      description: |
+        <div lang="ja">アカウントIDです。</div>
+        <div lang="en">Account ID.</div>
+    operand:
+      type: array
+      nullable: false
+      items:
+        $ref: 'BudgetOrder.yaml#/BudgetOrder'
+      minItems: 1
+      maxItems: 1
+  title: BudgetOrderServiceOperation
+  description: |
+    <div lang="ja">BudgetOrderServiceOperationオブジェクトは、操作の対象となるアカウント予算情報を表します。</div>
+    <div lang="en">The BudgetOrderServiceOperation object is a container for storing account budget information.</div>

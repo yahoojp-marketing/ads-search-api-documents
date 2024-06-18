@@ -1,0 +1,104 @@
+BiddingSeasonalityAdjustment:
+  type: object
+  nullable: true
+  properties:
+    accountId:
+      type: integer
+      nullable: false
+      format: int64
+      description: |
+        <div lang="ja">アカウントIDです。</div>
+        <div lang="en">Account ID.</div>
+    biddingSeasonalityAdjustmentName:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">自動入札のスポット調整名です。<br>
+        ADDおよびSET時、このフィールドは必須となります。<br>
+        ※256文字以内になります。</div>
+        <div lang="en">Bidding seasonality adjustment name.<br>
+        This field is required in ADD and SET operation.<br>
+        *Up to 256 characters.</div>
+    description:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">自動入札のスポット調整の説明です。<br>
+        このフィールドは、省略可能となります。<br>
+        ※500文字以内になります。</div>
+        <div lang="en">Bidding Seasonality Adjustment description.<br>
+        This field is optional.<br>
+        *Up to 500 characters.</div>
+    biddingSeasonalityAdjustmentId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">自動入札のスポット調整IDです。<br>
+        SET及びREMOVE時、このフィールドは必須です。</div>
+        <div lang="en">Bidding seasonality adjustment ID.<br>
+        This field is required in SET and REMOVE operation.</div>
+    devices:
+      type: array
+      nullable: true
+      items:
+        $ref: 'BiddingSeasonalityAdjustmentServiceDevices.yaml#/BiddingSeasonalityAdjustmentServiceDevices'
+      maxItems: 3
+    startDateTime:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">ルール適用開始日です。<br>
+        ADD時、このフィールドは必須です。<br>
+        ※YYYYMMDDHHmmss形式です。<br>
+        ※リクエスト日は2037/12/30まで 指定可能です。<br>
+        ※startDateTime〜endDateTimeが14日を超える場合はエラーになります。</div>
+        <div lang="en">Start date of rule setting.<br>
+        This field is required in ADD operation.<br>
+        *In YYYYMMDDHHmmss format<br>
+        *Request date can be set up to 2037/12/30<br>
+        *If startDateTime〜endDateTime exceeds 14 days, an error will occur.</div>
+    endDateTime:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">ルール適用終了日です。<br>
+        ADD時、このフィールドは必須です。<br>
+        ※YYYYMMDDHHmmss形式です。<br>
+        ※リクエスト日は2037/12/30まで 指定可能です。<br>
+        ※startDateTime〜endDateTimeが14日を超える場合はエラーになります。</div>
+        <div lang="en">End date of rule setting.<br>
+        This field is required in ADD operation.<br>
+        *In YYYYMMDDHHmmss format<br>
+        *Request date can be set up to 2037/12/30<br>
+        *If startDateTime〜endDateTime exceeds 14 days, an error will occur.</div>
+    conversionRate:
+      type: number
+      nullable: true
+      format: double
+      description: |
+        <div lang="ja">コンバージョン率を調整する値です。<br>
+        ADD時、このフィールドは必須となります。<br>
+        ※制限値：0.1 ～ 10
+        </div>
+        <div lang="en">Value to adjust conversion rate.<br>
+        This field is required in ADD operation.<br>
+        *Range limit: 0.1 ～ 10
+        </div>
+    campaignIds:
+      type: array
+      nullable: true
+      items:
+        type: integer
+        nullable: true
+        format: int64
+      maxItems: 2000
+      description: |
+        <div lang="ja">キャンペーンIDです。<br>
+        ADD時、このフィールドは必須となります。</div>
+        <div lang="en">Campaign ID.<br>
+        This field is required in ADD operation.</div>
+  title: BiddingSeasonalityAdjustment
+  description: |
+    <div lang="ja">BiddingSeasonalityAdjustment オブジェクトは、自動入札のスポット調整を表します。</div>
+    <div lang="en">BiddingSeasonalityAdjustment object describes bidding seasonality adjustment information.</div>

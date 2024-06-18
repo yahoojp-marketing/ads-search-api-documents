@@ -1,0 +1,19 @@
+OfflineConversionServiceSortType:
+  type: string
+  nullable: true
+  enum:
+  - ASC
+  - DESC
+  - UNKNOWN
+  title: OfflineConversionServiceSortType
+  description:
+    <div lang="ja">OfflineConversionServiceSortTypeは、ソート条件を表します。</div>
+    <div lang="en">OfflineConversionServiceSortType is a sort condition type.</div>
+    <dl class=term>
+      <dt class="term__item">ASC</dt>
+      <dd class="term__desc"><span lang="ja">昇順にソートされます。</span><span lang="en">Sort in ascending order.</span></dd>
+      <dt class="term__item">DESC</dt>
+      <dd class="term__desc"><span lang="ja">降順にソートされます。</span><span lang="en">Sort in descending order.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown value.</span></dd>
+    </dl>

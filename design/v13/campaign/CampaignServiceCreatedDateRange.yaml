@@ -29,7 +29,7 @@ CampaignServiceCreatedDateRange:
   title: CampaignServiceCreatedDateRange
   description: |
     <div lang="ja">
-    CampaignServiceCreatedDateRangeは、作成日時による検索対象期間を表します。
+    CampaignServiceCreatedDateRangeは、作成日による検索対象期間を表します。
     </div>
     <div lang="en">
     CampaignServiceCreatedDateRange represents the search target period by the creation date.

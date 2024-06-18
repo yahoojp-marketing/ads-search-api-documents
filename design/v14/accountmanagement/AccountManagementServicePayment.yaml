@@ -1,0 +1,14 @@
+AccountManagementServicePayment:
+  type: object
+  nullable: true
+  properties:
+    invoice:
+      $ref: 'AccountManagementServiceInvoice.yaml#/AccountManagementServiceInvoice'
+    paymentType:
+      $ref: 'AccountManagementServicePaymentType.yaml#/AccountManagementServicePaymentType'
+  title: AccountManagementServicePayment
+  description: |
+    <div lang="ja">AccountManagementServicePaymentオブジェクトは、支払情報を保持します。<br>
+    このフィールドは、ADD時は必須となり、SET時は省略可能となります。</div>
+    <div lang="en">AccountManagementServicePayment object contains the payment information.<br>
+    This field is required in ADD operation, and will be optional in SET operation.</div>

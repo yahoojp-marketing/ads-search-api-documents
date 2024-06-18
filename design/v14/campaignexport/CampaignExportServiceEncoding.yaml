@@ -1,0 +1,21 @@
+CampaignExportServiceEncoding:
+  type: string
+  nullable: true
+  enum:
+  - UTF8
+  - SJIS
+  - UNKNOWN
+  title: CampaignExportServiceEncoding
+  description: |
+    <div lang="ja">CampaignExportServiceEncodingは、エクスポートするデータのエンコーディング設定です。<br>
+    このフィールドは、必須です。</div>
+    <div lang="en">CampaignExportServiceEncoding is an encoding setting for exporting data.<br>
+    This field is required.</div>
+    <dl class=term>
+      <dt class="term__item">UTF8</dt>
+      <dd class="term__desc"><span lang="ja">UTF8です。</span><span lang="en">UTF8 encode.</span></dd>
+      <dt class="term__item">SJIS</dt>
+      <dd class="term__desc"><span lang="ja">Shift-JISです。</span><span lang="en">Shift-JIS encode.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown value.</span></dd>
+    </dl>

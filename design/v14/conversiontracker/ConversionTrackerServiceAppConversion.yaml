@@ -1,0 +1,39 @@
+ConversionTrackerServiceAppConversion:
+  type: object
+  nullable: true
+  properties:
+    appConversionType:
+      $ref: 'ConversionTrackerServiceAppConversionType.yaml#/ConversionTrackerServiceAppConversionType'
+    appId:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">アプリケーションIDです。<br>
+        このフィールドは、ADD時に省略可能となり、SET時は無視されます。</div>
+        <div lang="en">Application ID.<br>
+        This field is optional in ADD operation, and will be ignored in SET operation.</div>
+    appPlatform:
+      $ref: 'ConversionTrackerServiceAppPlatform.yaml#/ConversionTrackerServiceAppPlatform'
+    appPostbackUrl:
+      $ref: 'ConversionTrackerServiceAppPostbackUrl.yaml#/ConversionTrackerServiceAppPostbackUrl'
+    snippetId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">コンバージョンIDです。</div>
+        <div lang="en">Conversion ID.</div>
+    snippetLabel:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">コンバージョントラッカーラベルです。</div>
+        <div lang="en">Conversion tracker label.</div>
+  title: ConversionTrackerServiceAppConversion
+  description: |
+    <div lang="ja">ConversionTrackerServiceAppConversionオブジェクトは、アプリコンバージョン測定タグやタグごとのパフォーマンスデータなどのアプリコンバージョン設定を表します。<br>
+    このフィールドは、ADDおよびSET時に省略可能となります。<br>
+    ※ADD時、conversionTrackerTypeがAPP_CONVERSIONの場合は必須です。</div>
+    <div lang="en">ConversionTrackerServiceAppConversion object describes the App ConversionTracker settings such as App ConversionTag and performance data by  tag.<br>
+    This field is optional in ADD and SET operation.<br>
+    *If the conversionTrackerType is APP_CONVERSION, this field will be required in ADD operation.</div>

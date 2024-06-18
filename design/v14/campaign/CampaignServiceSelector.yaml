@@ -1,0 +1,106 @@
+CampaignServiceSelector:
+  type: object
+  nullable: true
+  required:
+  - accountId
+  properties:
+    accountId:
+      type: integer
+      nullable: false
+      format: int64
+      description: |
+        <div lang="ja">検索条件：アカウントIDです。</div>
+        <div lang="en">Search condition: Account ID.</div>
+    portfolioBiddingIds:
+      type: array
+      nullable: true
+      items:
+        type: integer
+        nullable: true
+        format: int64
+      maxItems: 1000
+      description: |
+        <div lang="ja">検索条件：ポートフォリオ入札IDです。</div>
+        <div lang="en">Search condition: Portfolio bidding ID.</div>
+    campaignIds:
+      type: array
+      nullable: true
+      items:
+        type: integer
+        nullable: true
+        format: int64
+      maxItems: 1000
+      description: |
+        <div lang="ja">検索条件：キャンペーンIDです。<br>
+        ※指定しない場合は、フィルタ条件に すべてのキャンペーンが含まれます。</div>
+        <div lang="en">Search condition: Campaign ID<br>
+        * All campaign will return, if no campaign are not specified.</div>
+    campaignBudgetIds:
+      type: array
+      nullable: true
+      items:
+        type: integer
+        nullable: true
+        format: int64
+      maxItems: 1000
+      description: |
+        <div lang="ja">検索条件：共有予算IDです。</div>
+        <div lang="en">Search condition: Campaign budget ID.</div>
+    containsLabel:
+      type: boolean
+      nullable: true
+      description: |
+        <div lang="ja">ラベルID取得フラグです。<br>
+        このフィールドは省略可能となります。その際、デフォルト値はfalseとなります。
+        </div>
+        <div lang="en">Flag of contains label ID.<br>
+        This field is optional. The default value will be false.
+        </div>
+    labelIds:
+      type: array
+      nullable: true
+      items:
+        type: integer
+        nullable: true
+        format: int64
+      maxItems: 1000
+      description: |
+        <div lang="ja">検索条件：ラベルIDです。<br>
+        ※labelIdsを指定した場合は、取得結果にcontainsLabelの情報が付与されます。</div>
+        <div lang="en">Search condition: Label ID.<br>
+        *When specified labelIds, containsLabel information is added to the result.</div>
+    numberResults:
+      type: integer
+      nullable: true
+      format: int32
+      minimum: 1
+      maximum: 10000
+      default: 500
+      description: |
+        <div lang="ja">開始位置から取得する結果の数。このフィールドは、1以上を指定する必要があります。</div>
+        <div lang="en">The number of results to retrieve starting from the initial position. This field must be greater than or equal to 1.</div>
+    startIndex:
+      type: integer
+      nullable: true
+      format: int32
+      minimum: 1
+      default: 1
+      description: |
+        <div lang="ja">取得を開始する結果セット内の位置。このフィールドは、1以上を指定する必要があります。</div>
+        <div lang="en">The position within the result set where retrieval begins. This field must be greater than or equal to 1.</div>
+    userStatuses:
+      type: array
+      nullable: true
+      items:
+        $ref: 'CampaignServiceUserStatus.yaml#/CampaignServiceUserStatus'
+      maxItems: 2
+    createdDateRange:
+      $ref: 'CampaignServiceCreatedDateRange.yaml#/CampaignServiceCreatedDateRange'
+    updatedDateRange:
+      $ref: 'CampaignServiceUpdatedDateRange.yaml#/CampaignServiceUpdatedDateRange'
+    budgetAmountRange:
+      $ref: 'CampaignServiceBudgetAmountRange.yaml#/CampaignServiceBudgetAmountRange'
+  title: CampaignServiceSelector
+  description: |
+    <div lang="ja">CampaignServiceSelectorオブジェクトは、操作の対象とするキャンペーンの情報およびフィルタ条件を表します。</div>
+    <div lang="en">CampaignServiceSelector object displays information and filter criteria of campaign to be operated.</div>

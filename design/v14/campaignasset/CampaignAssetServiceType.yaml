@@ -1,0 +1,30 @@
+CampaignAssetServiceType:
+  type: string
+  nullable: true
+  enum:
+  - QUICKLINK
+  - CALL
+  - CALLOUT
+  - STRUCTURED_SNIPPET
+  - IMAGE
+  - UNKNOWN
+  title: CampaignAssetServiceType
+  description: |
+    <div lang="ja">CampaignAssetServiceTypeは、アセット情報の種類を選択します。<br>
+    REPLACE時、CampaignAsset配下では無視され、CampaignAssetServiceList配下では必須です。</div>
+    <div lang="en">CampaignAssetServiceType selects the type of Asset information.<br>
+    In REPLACE operation, this field will be ignored under 'CampaignAsset', and this field is required under 'CampaignAssetServiceList'.</div>
+    <dl class=term>
+      <dt class="term__item">QUICKLINK</dt>
+      <dd class="term__desc"><span lang="ja">広告表示アセットのクイックリンクアセットです。</span><span lang="en">Quick link asset from ad display asset.</span></dd>
+      <dt class="term__item">CALL</dt>
+      <dd class="term__desc"><span lang="ja">広告表示アセットの電話番号アセットです。</span><span lang="en">Call asset from ad display asset.</span></dd>
+      <dt class="term__item">CALLOUT</dt>
+      <dd class="term__desc"><span lang="ja">広告表示アセットのテキスト補足アセットです。</span><span lang="en">Callout asset from ad display asset.</span></dd>
+      <dt class="term__item">STRUCTURED_SNIPPET</dt>
+      <dd class="term__desc"><span lang="ja">広告表示アセットのカテゴリ補足アセットです。</span><span lang="en">Category snippet asset from ad display asset.</span></dd>
+      <dt class="term__item">IMAGE</dt>
+      <dd class="term__desc"><span lang="ja">広告表示アセットの画像アセットです。</span><span lang="en">Image asset from ad display asset.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown value.</span></dd>
+    </dl>

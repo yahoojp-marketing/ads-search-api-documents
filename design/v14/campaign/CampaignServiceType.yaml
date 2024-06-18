@@ -1,0 +1,24 @@
+CampaignServiceType:
+  type: string
+  nullable: true
+  enum:
+  - STANDARD
+  - MOBILE_APP
+  - DYNAMIC_ADS_FOR_SEARCH
+  - UNKNOWN
+  title: CampaignServiceType
+  description: |
+    <div lang="ja">CampaignServiceType、キャンペーンタイプです。<br>
+    ADD時、このフィールドは省略可能となります。その際、デフォルト設定値はSTANDARDとなります。</div>
+    <div lang="en">CampaignServiceType is the type of campaign.<br>
+    This field is optional in ADD operation. The default value will be STANDARD.</div>
+    <dl class=term>
+      <dt class="term__item">STANDARD</dt>
+      <dd class="term__desc"><span lang="ja">標準キャンペーンです。</span><span lang="en">Standard campaign.</span></dd>
+      <dt class="term__item">MOBILE_APP</dt>
+      <dd class="term__desc"><span lang="ja">アプリキャンペーンです。</span><span lang="en">Mobile app download campaign.</span></dd>
+      <dt class="term__item">DYNAMIC_ADS_FOR_SEARCH</dt>
+      <dd class="term__desc"><span lang="ja">動的検索連動型広告用キャンペーンです。</span><span lang="en">Dynamic ads for search campaign.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown value.</span></dd>
+    </dl>

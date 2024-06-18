@@ -1,0 +1,20 @@
+CampaignServicePage:
+  type: object
+  nullable: true
+  properties:
+    totalNumEntries:
+      type: integer
+      nullable: false
+      format: int32
+      description: |
+        <div lang="ja">取得される項目の総件数です。</div>
+        <div lang="en">Total number of entries in the result.</div>
+    values:
+      type: array
+      nullable: true
+      items:
+        $ref: 'CampaignServiceValue.yaml#/CampaignServiceValue'
+  title: CampaignServicePage
+  description: |
+    <div lang="ja">CampaignServicePageオブジェクトは、取得されるキャンペーンに関するエントリーを表します。</div>
+    <div lang="en">CampaignServicePage object displays entries for campaign.</div>
