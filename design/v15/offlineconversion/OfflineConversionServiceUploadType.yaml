@@ -1,0 +1,19 @@
+OfflineConversionServiceUploadType:
+  type: string
+  nullable: true
+  enum:
+  - NEW
+  - ADJUSTMENT
+  - UNKNOWN
+  title: OfflineConversionServiceUploadType
+  description:
+    <div lang="ja">アップロード種別です。</div>
+    <div lang="en">Upload type.</div>
+    <dl class=term>
+      <dt class="term__item">NEW</dt>
+      <dd class="term__desc"><span lang="ja">新規アップロードです。</span><span lang="en">New upload.</span></dd>
+      <dt class="term__item">ADJUSTMENT</dt>
+      <dd class="term__desc"><span lang="ja">調整アップロードです。</span><span lang="en">Adjustment upload.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown value.</span></dd>
+    </dl>

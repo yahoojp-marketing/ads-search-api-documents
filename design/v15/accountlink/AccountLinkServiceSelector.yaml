@@ -1,0 +1,42 @@
+AccountLinkServiceSelector:
+  type: object
+  nullable: true
+  required:
+    - mccAccountId
+  properties:
+    mccAccountId:
+      type: integer
+      nullable: false
+      format: int64
+      description: |
+        <div lang="ja">MCCアカウントIDです。</div>
+        <div lang="en">MCC account ID.</div>
+    accountStatuses:
+      type: array
+      nullable: true
+      items:
+        $ref: 'AccountLinkServiceAccountStatus.yaml#/AccountLinkServiceAccountStatus'
+      maxItems: 5
+    numberResults:
+      type: integer
+      nullable: true
+      format: int32
+      minimum: 1
+      maximum: 500
+      default: 500
+      description: |
+        <div lang="ja">開始位置から取得する結果の数。このフィールドは、1以上を指定する必要があります。</div>
+        <div lang="en">The number of results to retrieve starting from the initial position. This field must be greater than or equal to 1.</div>
+    startIndex:
+      type: integer
+      nullable: true
+      format: int32
+      minimum: 1
+      default: 1
+      description: |
+        <div lang="ja">取得を開始する結果セット内の位置。このフィールドは、1以上を指定する必要があります。</div>
+        <div lang="en">The position within the result set where retrieval begins. This field must be greater than or equal to 1.</div>
+  title: AccountLinkServiceSelector
+  description: |
+    <div lang="ja">AccountLinkServiceSelectorオブジェクトは、取得するアカウントリンク情報を指定します。</div>
+    <div lang="en">The AccountLinkServiceSelector object is used to select account link for acquisition.</div>

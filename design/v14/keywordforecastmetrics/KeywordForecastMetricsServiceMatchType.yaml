@@ -16,7 +16,7 @@ KeywordForecastMetricsServiceMatchType:
       <dt class="term__item">PHRASE</dt>
       <dd class="term__desc"><span lang="ja">フレーズ一致です。</span><span lang="en">Phrase match.</span></dd>
       <dt class="term__item">BROAD</dt>
-      <dd class="term__desc"><span lang="ja">部分一致です。</span><span lang="en">Broad match.</span></dd>
+      <dd class="term__desc"><span lang="ja">インテントマッチです。</span><span lang="en">Broad match.</span></dd>
       <dt class="term__item">UNKNOWN</dt>
       <dd class="term__desc"><span lang=ja>未知の値です。</span><span lang=en>Unknown value.</span></dd>
     </dl>

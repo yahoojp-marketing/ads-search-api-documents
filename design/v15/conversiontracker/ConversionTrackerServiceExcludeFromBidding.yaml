@@ -1,0 +1,23 @@
+ConversionTrackerServiceExcludeFromBidding:
+  type: string
+  nullable: true
+  enum:
+  - 'TRUE'
+  - 'FALSE'
+  - UNKNOWN
+  title: ConversionTrackerServiceExcludeFromBidding
+  description: |
+    <div lang="ja">ConversionTrackerServiceExcludeFromBiddingは、自動入札設定で使用するかを表します。<br>
+    このフィールドは、ADDおよびSET時に省略可能となります。<br>
+    ※ADD時のデフォルト設定値はFALSE（使用する）となります。</div>
+    <div lang="en">ConversionTrackerServiceExcludeFromBidding describes whether exclude the data for auto bidding setting or not.<br>
+    This field is optional in ADD and SET operation.<br>
+    *The default value in ADD operation will be FALSE.</div>
+    <dl class=term>
+      <dt class="term__item">TRUE</dt>
+      <dd class="term__desc"><span lang="ja">使用しません。</span><span lang="en">Exclude from auto bidding.</span></dd>
+      <dt class="term__item">FALSE</dt>
+      <dd class="term__desc"><span lang="ja">使用します。</span><span lang="en">Include for auto bidding.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown value.</span></dd>
+    </dl>

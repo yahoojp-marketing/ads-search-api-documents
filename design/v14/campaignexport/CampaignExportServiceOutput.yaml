@@ -8,9 +8,9 @@ CampaignExportServiceOutput:
   title: CampaignExportServiceOutput
   description: |
     <div lang="ja">CampaignExportServiceOutputは、エクスポートするデータの形式設定です。<br>
-    このフィールドは、必須です。</div>
+    このフィールドは、省略可能となります。</div>
     <div lang="en">CampaignExportServiceOutput is an output format for exporting data.<br>
-    This field is required.</div>
+    This field is optional.</div>
     <dl class=term>
       <dt class="term__item">CSV</dt>
       <dd class="term__desc"><span lang="ja">CSVフォーマットです。</span><span lang="en">CSV format.</span></dd>

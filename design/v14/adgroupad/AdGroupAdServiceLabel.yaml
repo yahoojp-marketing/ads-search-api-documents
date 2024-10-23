@@ -38,6 +38,6 @@ AdGroupAdServiceLabel:
   title: AdGroupAdServiceLabel
   description: |
     <div lang="ja">AdGroupAdServiceLabelは、紐づけられているラベル情報を表します。<br>
-    このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
+    このフィールドは、リクエストの際は無視され、GET時のリクエストでcontainsLabelをtrueに指定した場合のみレスポンスされます。</div>
     <div lang="en">AdGroupAdServiceLabel object describes label information to be associated.<br>
-    Although this field will be returned in the response, it will be ignored on input.</div>
+    This field is ignored in the request and is only included in the response if containsLabel is specified as true in the GET request.</div>

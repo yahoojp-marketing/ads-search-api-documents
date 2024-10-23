@@ -1525,6 +1525,7 @@ paths:
                 <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
+                <tr><td>120020</td><td>Can not set value.</td><td><div lang="ja">値を設定することができません。</div><div lang="en">Value cannot be set.</div></td></tr>
                 <tr><td>130000</td><td>The server is busy. Please retry later.</td><td><div lang="ja">サーバーが高負荷です。時間をおいて再試行してください。</div><div lang="en">The server is busy. Please retry later.</div></td></tr>
                 <tr><td>130001</td><td>The request was not completed. Please reduce concurrent requests or data size. </td><td><div lang="ja">リクエストが完了しませんでした。同時リクエスト数またはデータサイズを減らして再度お試しください。</div><div lang="en">The request was not completed. Please reduce concurrent requests or data size.</div></td></tr>
                 <tr><td>210605</td><td>App ad does not support Data Auto Insertion.</td><td><div lang="ja">アプリ広告はデータ自動挿入をサポートしていません。</div><div lang="en">App ad does not support Data Auto Insertion.</div></td></tr>
@@ -10766,10 +10767,8 @@ paths:
             <div lang="ja">アカウントIDを指定してください。</div>
             <div lang="en">Specify Account ID.</div>
       description: |
-        <div lang="ja">自動入札の学習データ除外に関する情報を取得します。<br>
-        ※現在、こちらのサービスは利用できません。</div>
-        <div lang="en">Gets learning data exclusion for autobidding.<br>
-        *Currently this service is not available.</div>
+        <div lang="ja">自動入札の学習データ除外に関する情報を取得します。</div>
+        <div lang="en">Gets learning data exclusion for autobidding.</div>
       tags:
         - LearningDataExclusionService
       requestBody:
@@ -10830,10 +10829,8 @@ paths:
             <div lang="ja">アカウントIDを指定してください。</div>
             <div lang="en">Specify Account ID.</div>
       description: |
-        <div lang="ja">自動入札の学習データ除外を追加します。<br>
-        ※現在、こちらのサービスは利用できません。</div>
-        <div lang="en">Create learning data exclusion for autobidding.<br>
-        *Currently this service is not available.</div>
+        <div lang="ja">自動入札の学習データ除外を追加します。</div>
+        <div lang="en">Create learning data exclusion for autobidding.</div>
       tags:
         - LearningDataExclusionService
       requestBody:
@@ -10894,10 +10891,8 @@ paths:
             <div lang="ja">アカウントIDを指定してください。</div>
             <div lang="en">Specify Account ID.</div>
       description: |
-        <div lang="ja">自動入札の学習データ除外の設定を変更します。<br>
-        ※現在、こちらのサービスは利用できません。</div>
-        <div lang="en">Update learning data exclusion for autobidding.<br>
-        *Currently this service is not available.</div>
+        <div lang="ja">自動入札の学習データ除外の設定を変更します。</div>
+        <div lang="en">Update learning data exclusion for autobidding.</div>
       tags:
         - LearningDataExclusionService
       requestBody:
@@ -10958,10 +10953,8 @@ paths:
             <div lang="ja">アカウントIDを指定してください。</div>
             <div lang="en">Specify Account ID.</div>
       description: |
-        <div lang="ja">自動入札の学習データ除外を削除します。<br>
-        ※現在、こちらのサービスは利用できません。</div>
-        <div lang="en">Remove learning data exclusion for autobidding.<br>
-        *Currently this service is not available.</div>
+        <div lang="ja">自動入札の学習データ除外を削除します。</div>
+        <div lang="en">Remove learning data exclusion for autobidding.</div>
       tags:
         - LearningDataExclusionService
       requestBody:

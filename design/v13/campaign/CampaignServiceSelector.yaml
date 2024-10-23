@@ -50,10 +50,10 @@ CampaignServiceSelector:
       type: boolean
       nullable: true
       description: |
-        <div lang="ja">ラベルID取得フラグです。<br>
+        <div lang="ja">ラベル情報取得フラグです。<br>
         このフィールドは省略可能となります。その際、デフォルト値はfalseとなります。
         </div>
-        <div lang="en">Flag of contains label ID.<br>
+        <div lang="en">Flag of contains label information.<br>
         This field is optional. The default value will be false.
         </div>
     labelIds:

@@ -1,0 +1,81 @@
+AdGroupAssetServiceSelector:
+  type: object
+  nullable: true
+  required:
+  - accountId
+  properties:
+    accountId:
+      type: integer
+      nullable: false
+      format: int64
+      description: |
+        <div lang="ja">アカウントIDです。</div>
+        <div lang="en">Account ID.</div>
+    adGroupIds:
+      type: array
+      nullable: true
+      items:
+        type: integer
+        nullable: true
+        format: int64
+      maxItems: 500
+      description: |
+        <div lang="ja">広告グループIDです。</div>
+        <div lang="en">Ad group ID.</div>
+    campaignIds:
+      type: array
+      nullable: true
+      items:
+        type: integer
+        nullable: true
+        format: int64
+      maxItems: 500
+      description: |
+        <div lang="ja">キャンペーンIDです。</div>
+        <div lang="en">Campaign ID.</div>
+    assetIds:
+      type: array
+      nullable: true
+      items:
+        type: integer
+        nullable: true
+        format: int64
+      maxItems: 500
+      description: |
+        <div lang="ja">アセット情報のIDです。</div>
+        <div lang="en">Asset information ID.</div>
+    types:
+      type: array
+      nullable: true
+      items:
+        $ref: 'AdGroupAssetServiceType.yaml#/AdGroupAssetServiceType'
+      maxItems: 5
+    userStatuses:
+      type: array
+      nullable: true
+      items:
+        $ref: 'AdGroupAssetServiceUserStatus.yaml#/AdGroupAssetServiceUserStatus'
+      maxItems: 2
+    numberResults:
+      type: integer
+      nullable: true
+      format: int32
+      minimum: 1
+      maximum: 500
+      default: 500
+      description: |
+        <div lang="ja">開始位置から取得する結果の数。このフィールドは、1以上を指定する必要があります。</div>
+        <div lang="en">The number of results to retrieve starting from the initial position. This field must be greater than or equal to 1.</div>
+    startIndex:
+      type: integer
+      nullable: true
+      format: int32
+      minimum: 1
+      default: 1
+      description: |
+        <div lang="ja">取得を開始する結果セット内の位置。このフィールドは、1以上を指定する必要があります。</div>
+        <div lang="en">The position within the result set where retrieval begins. This field must be greater than or equal to 1.</div>
+  title: AdGroupAssetServiceSelector
+  description: |
+    <div lang="ja">AdGroupAssetServiceSelectorオブジェクトは、アセット情報を指定します。</div>
+    <div lang="en">AdGroupAssetServiceSelector describes the Asset information.</div>

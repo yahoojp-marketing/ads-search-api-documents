@@ -1,0 +1,13 @@
+LearningDataExclusionServiceReturnValue:
+  type: object
+  nullable: true
+  properties:
+    values:
+      type: array
+      nullable: true
+      items:
+        $ref: 'LearningDataExclusionServiceValue.yaml#/LearningDataExclusionServiceValue'
+  title: LearningDataExclusionServiceReturnValue
+  description: |
+    <div lang="ja">LearningDataExclusionServiceReturnValueオブジェクトは、自動入札の学習データ除外の情報を含む操作結果として戻される値を表します。</div>
+    <div lang="en">LearningDataExclusionServiceReturnValue object is a container which has learning data exclusion for autobidding information including its operation results.</div>

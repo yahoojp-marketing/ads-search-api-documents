@@ -11,6 +11,7 @@
 "DELIVERED_TITLE1","配信タイトル1","Delivered title 1","deliveredTitle1","STRING","","Attribute","","",""
 "DELIVERED_TITLE2","配信タイトル2","Delivered title 2","deliveredTitle2","STRING","","Attribute","","",""
 "DELIVERED_TITLE3","配信タイトル3","Delivered title 3","deliveredTitle3","STRING","","Attribute","","",""
+"CONCATENATED_TITLE","説明文に連結したタイトル","Concatenated title","concatenatedTitle","STRING","","Attribute","","",""
 "DELIVERED_DESCRIPTION1","配信説明文1","Delivered description 1","deliveredDescription1","STRING","","Attribute","","",""
 "DELIVERED_DESCRIPTION2","配信説明文2","Delivered description 2","deliveredDescription2","STRING","","Attribute","","",""
 "DELIVERED_AD_IMAGE1","配信画像1","Delivered image 1","deliveredAdImage1","STRING","","Attribute","","",""

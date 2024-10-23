@@ -1,0 +1,36 @@
+CampaignServiceTargetRoasBiddingScheme:
+  type: object
+  nullable: true
+  properties:
+    bidCeiling:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">入札価格の上限です。<br>このフィールドの追加と編集は廃止され、現在設定できません。</div>
+        <div lang="en">Limit of bid (CPC).<br>Adding and editing this field is obsolete. Currently not available.</div>
+    bidFloor:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">入札価格の下限です。<br>このフィールドの追加と編集は廃止され、現在設定できません。</div>
+        <div lang="en">Minimum CPC.<br>Adding and editing this field is obsolete. Currently not available.</div>
+    targetRoas:
+      type: number
+      nullable: true
+      format: double
+      description: |
+        <div lang="ja">広告費用対効果の目標値です。<br>
+        0.01 ～ 1000.00（1% ～ 100000%）の範囲内のみ 許容します。<br>
+        ADD時およびSET時、このフィールドは必須となります。<br>
+        ※ROAS:Return On Advertising Spend</div>
+        <div lang="en">Target ROAS (Return On Advertising Spend)<br>
+        * Limit range: 0.01 - 1000.00 (1% - 100000%)<br>
+        This field is required in ADD and SET operation.</div>
+  title: CampaignServiceTargetRoasBiddingScheme
+  description: |
+    <div lang="ja">CampaignServiceTargetRoasBiddingSchemeオブジェクトは、広告費用対効果の目標値の自動入札設定情報を表します。 （BiddingStrategyService以外用のオブジェクトです。）<br>
+    ADD時、BiddingStrategyTypeがTARGET_ROASの場合、必須となり、それ以外では省略可能となります。</div>
+    <div lang="en">CampaignServiceTargetRoasBiddingScheme object displays auto bidding setting for Target ROAS. *This is an object for anything other than BiddingStrategyService.<br>
+    This field is required when BiddingStrategyType is 'TARGET_ROAS' in ADD operation. For other BiddingStrategyType, this field is optional in ADD operation.</div>

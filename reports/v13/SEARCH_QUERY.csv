@@ -7,7 +7,7 @@
 "CAMPAIGN_NAME","キャンペーン名","Campaign name","campaignName","STRING","","Attribute","","",""
 "ADGROUP_NAME","広告グループ名","Ad group name","adgroupName","STRING","","Attribute","","",""
 "SEARCH_QUERY","検索クエリー","Search Query","searchQuery","STRING","","Attribute","","",""
-"SEARCH_QUERY_MATCH_TYPE","検索クエリーのマッチタイプ","SearchQueryMatch Type","searchQueryMatchType","ENUM","","Segment","部分一致,完全一致,完全一致（類似語句）,フレーズ一致（類似語句）,フレーズ一致,その他","Broad match,Exact match,Exact match (similar term),Phrase match (similar term),Phrase match,Other",""
+"SEARCH_QUERY_MATCH_TYPE","検索クエリーのマッチタイプ","SearchQueryMatch Type","searchQueryMatchType","ENUM","","Segment","インテントマッチ,完全一致,完全一致（類似語句）,フレーズ一致（類似語句）,フレーズ一致,その他","Broad match,Exact match,Exact match (similar term),Phrase match (similar term),Phrase match,Other",""
 "KEYWORD","キーワード","Keyword","keyword","STRING","[MONTH_OF_YEAR]","Attribute","","",""
 "COST","コスト","Cost","cost","LONG","[CONVERSION_NAME, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",""
 "IMPS","インプレッション数","Impressions","impressions","LONG","[CONVERSION_NAME, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",""
