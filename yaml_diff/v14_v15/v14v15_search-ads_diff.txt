@@ -1,0 +1,1675 @@
+
+
+------
+diff -ru v14/Route.yaml v15/Route.yaml
+--- v14/Route.yaml	2024-09-11 16:26:53
++++ v15/Route.yaml	2024-10-16 18:10:44
+@@ -1,11 +1,11 @@
+ openapi: 3.0.2
+ info:
+   title: 'Yahoo!広告 検索広告 API リファレンス / Yahoo! JAPAN Ads Search Ads API Reference'
+-  version: 'v14'
++  version: 'v15'
+   description: |
+     <div lang="ja">Yahoo!広告 検索広告 APIのWebサービスについて説明します。</div>
+     <div lang="en">Search Ads API Web Services supported in Yahoo! JAPAN Ads API.</div>
+-    <div><a target="_blank" href="https://github.com/yahoojp-marketing/ads-search-api-documents/blob/master/design/v14/Route.yaml">OpenAPI Specification</a></div>
++    <div><a target="_blank" href="https://github.com/yahoojp-marketing/ads-search-api-documents/blob/master/design/v15/Route.yaml">OpenAPI Specification</a></div>
+     <div lang="ja"><a target="_blank" href="https://github.com/yahoojp-marketing/ads-search-api-documents/blob/master/bestpractice/ja">Best Practice</a></div>
+     <div lang="en"><a target="_blank" href="https://github.com/yahoojp-marketing/ads-search-api-documents/blob/master/bestpractice/en">Best Practice</a></div>
+
+@@ -23,9 +23,14 @@
+   - oAuth: [ yahooads ]
+
+ servers:
+-  - url: https://ads-search.yahooapis.jp/api/v14
++  - url: https://ads-search.yahooapis.jp/api/v15
+
+ tags:
++  - name: AbTestService
++    description: |
++      <label class="campaign"></label>
++      <div lang="ja">AbTestServiceでは、A/Bテストに関する情報の取得および、追加、更新を行います。</div>
++      <div lang="en">AbTestService provides functions for creating and managing A/B test.</div>
+   - name: AccountManagementService
+     description: |
+       <label class="account" ></label>
+@@ -164,27 +169,27 @@
+       <h2 lang="ja" class="reportFields__title">レポートフィールド</h2>
+       <h2 lang="en" class="reportFields__title">Report Fields</h2>
+       <ul>
+-      <li><div lang="ja"><a href="./reports/v14/ACCOUNT.csv" download>アカウントレポート</a></div><div lang="en"><a href="./reports/v14/ACCOUNT.csv" download>Account Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v14/CAMPAIGN.csv" download>キャンペーンレポート</a></div><div lang="en"><a href="./reports/v14/CAMPAIGN.csv" download>Campaign Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v14/ADGROUP.csv" download>広告グループレポート</a></div><div lang="en"><a href="./reports/v14/ADGROUP.csv" download>Ad Group Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v14/AD.csv" download>広告レポート</a></div><div lang="en"><a href="./reports/v14/AD.csv" download>Ad Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v14/KEYWORDS.csv" download>キーワードレポート</a></div><div lang="en"><a href="./reports/v14/KEYWORDS.csv" download>Keyword Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v14/SEARCH_QUERY.csv" download>検索クエリレポート</a></div><div lang="en"><a href="./reports/v14/SEARCH_QUERY.csv" download>Search Query Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v14/GEO.csv" download>地域別レポート</a></div><div lang="en"><a href="./reports/v14/GEO.csv" download>Geo Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v14/GEO_TARGET.csv" download>地域ターゲティングレポート</a></div><div lang="en"><a href="./reports/v14/GEO_TARGET.csv" download>Geo Targeting Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v14/SCHEDULE_TARGET.csv" download>曜日・時間帯ターゲティングレポート</a></div><div lang="en"><a href="./reports/v14/SCHEDULE_TARGET.csv" download>Schedule Targeting Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v14/BID_STRATEGY.csv" download>自動入札レポート</a></div><div lang="en"><a href="./reports/v14/BID_STRATEGY.csv" download>Auto Bidding Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v14/CAMPAIGN_TARGET_LIST.csv" download>キャンペーンターゲットリストレポート</a></div><div lang="en"><a href="./reports/v14/CAMPAIGN_TARGET_LIST.csv"download>Campaign Target List Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v14/ADGROUP_TARGET_LIST.csv" download>広告グループターゲットリストレポート</a></div><div lang="en"><a href="./reports/v14/ADGROUP_TARGET_LIST.csv" download>Ad Group Target List Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v14/LANDING_PAGE_URL.csv" download>ランディングページURLレポート</a></div><div lang="en"><a href="./reports/v14/LANDING_PAGE_URL.csv" download>Landing Page URL Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v14/KEYWORDLESS_QUERY.csv" download>検索クエリーレポート（動的検索連動型広告）</a></div><div lang="en"><a href="./reports/v14/KEYWORDLESS_QUERY.csv" download>Search Query Report (Dynamic Ads for Search)</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v14/WEBPAGE_CRITERION.csv" download>ページフィードターゲティングレポート</a></div><div lang="en"><a href="./reports/v14/WEBPAGE_CRITERION.csv" download>Page Feed Targeting Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v14/BID_MODIFIER.csv" download>入札価格調整率レポート</a></div><div lang="en"><a href="./reports/v14/BID_MODIFIER.csv" download>Bid Adjustments Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v14/CAMPAIGN_ASSET.csv" download>広告表示アセットレポート（キャンペーン）</a></div><div lang="en"><a href="./reports/v14/CAMPAIGN_ASSET.csv" download>Ad Display Asset Report (campaign)</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v14/AD_GROUP_ASSET.csv" download>広告表示アセットレポート（広告グループ）</a></div><div lang="en"><a href="./reports/v14/AD_GROUP_ASSET.csv" download>Ad Display Asset Report (ad group)</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v14/RESPONSIVE_ADS_FOR_SEARCH_ASSET.csv" download>レスポンシブ検索広告アセットレポート</a></div><div lang="en"><a href="./reports/v14/RESPONSIVE_ADS_FOR_SEARCH_ASSET.csv" download>Responsive Ads for Search Asset Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v14/SHARED_BUDGET.csv" download>共有予算レポート</a></div><div lang="en"><a href="./reports/v14/SHARED_BUDGET.csv" download>Campaign Budget Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v14/ASSET_COMBINATION.csv" download>アセット組み合わせレポート</a></div><div lang="en"><a href="./reports/v14/ASSET_COMBINATION.csv" download>Asset combinations report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v15/ACCOUNT.csv" download>アカウントレポート</a></div><div lang="en"><a href="./reports/v15/ACCOUNT.csv" download>Account Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v15/CAMPAIGN.csv" download>キャンペーンレポート</a></div><div lang="en"><a href="./reports/v15/CAMPAIGN.csv" download>Campaign Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v15/ADGROUP.csv" download>広告グループレポート</a></div><div lang="en"><a href="./reports/v15/ADGROUP.csv" download>Ad Group Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v15/AD.csv" download>広告レポート</a></div><div lang="en"><a href="./reports/v15/AD.csv" download>Ad Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v15/KEYWORDS.csv" download>キーワードレポート</a></div><div lang="en"><a href="./reports/v15/KEYWORDS.csv" download>Keyword Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v15/SEARCH_QUERY.csv" download>検索クエリレポート</a></div><div lang="en"><a href="./reports/v15/SEARCH_QUERY.csv" download>Search Query Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v15/GEO.csv" download>地域別レポート</a></div><div lang="en"><a href="./reports/v15/GEO.csv" download>Geo Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v15/GEO_TARGET.csv" download>地域ターゲティングレポート</a></div><div lang="en"><a href="./reports/v15/GEO_TARGET.csv" download>Geo Targeting Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v15/SCHEDULE_TARGET.csv" download>曜日・時間帯ターゲティングレポート</a></div><div lang="en"><a href="./reports/v15/SCHEDULE_TARGET.csv" download>Schedule Targeting Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v15/BID_STRATEGY.csv" download>自動入札レポート</a></div><div lang="en"><a href="./reports/v15/BID_STRATEGY.csv" download>Auto Bidding Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v15/CAMPAIGN_TARGET_LIST.csv" download>キャンペーンターゲットリストレポート</a></div><div lang="en"><a href="./reports/v15/CAMPAIGN_TARGET_LIST.csv"download>Campaign Target List Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v15/ADGROUP_TARGET_LIST.csv" download>広告グループターゲットリストレポート</a></div><div lang="en"><a href="./reports/v15/ADGROUP_TARGET_LIST.csv" download>Ad Group Target List Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v15/LANDING_PAGE_URL.csv" download>ランディングページURLレポート</a></div><div lang="en"><a href="./reports/v15/LANDING_PAGE_URL.csv" download>Landing Page URL Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v15/KEYWORDLESS_QUERY.csv" download>検索クエリーレポート（動的検索連動型広告）</a></div><div lang="en"><a href="./reports/v15/KEYWORDLESS_QUERY.csv" download>Search Query Report (Dynamic Ads for Search)</a></div></li>
++      <li><div lang="ja"><a href="./reports/v15/WEBPAGE_CRITERION.csv" download>ページフィードターゲティングレポート</a></div><div lang="en"><a href="./reports/v15/WEBPAGE_CRITERION.csv" download>Page Feed Targeting Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v15/BID_MODIFIER.csv" download>入札価格調整率レポート</a></div><div lang="en"><a href="./reports/v15/BID_MODIFIER.csv" download>Bid Adjustments Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v15/CAMPAIGN_ASSET.csv" download>広告表示アセットレポート（キャンペーン）</a></div><div lang="en"><a href="./reports/v15/CAMPAIGN_ASSET.csv" download>Ad Display Asset Report (campaign)</a></div></li>
++      <li><div lang="ja"><a href="./reports/v15/AD_GROUP_ASSET.csv" download>広告表示アセットレポート（広告グループ）</a></div><div lang="en"><a href="./reports/v15/AD_GROUP_ASSET.csv" download>Ad Display Asset Report (ad group)</a></div></li>
++      <li><div lang="ja"><a href="./reports/v15/RESPONSIVE_ADS_FOR_SEARCH_ASSET.csv" download>レスポンシブ検索広告アセットレポート</a></div><div lang="en"><a href="./reports/v15/RESPONSIVE_ADS_FOR_SEARCH_ASSET.csv" download>Responsive Ads for Search Asset Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v15/SHARED_BUDGET.csv" download>共有予算レポート</a></div><div lang="en"><a href="./reports/v15/SHARED_BUDGET.csv" download>Campaign Budget Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v15/ASSET_COMBINATION.csv" download>アセット組み合わせレポート</a></div><div lang="en"><a href="./reports/v15/ASSET_COMBINATION.csv" download>Asset combinations report</a></div></li>
+       </ul>
+   - name: CampaignExportService
+     description: |
+@@ -243,11 +248,6 @@
+       <label class="proposal"></label>
+       <div lang="ja">KeywordPlanIdeaServiceは、指定された情報を元に新しいキーワード候補を提案するサービスです。</div>
+       <div lang="en">KeywordPlanIdeaService is a service that suggests new related keywords based on the specified value.</div>
+-  - name: KeywordForecastMetricsService
+-    description: |
+-      <label class="proposal"></label>
+-      <div lang="ja">KeywordForecastMetricsServiceは、キーワードの実績情報を取得します。</div>
+-      <div lang="en">KeywordForecastMetricsService gets performance information of keywords.</div>
+   - name: OfflineConversionService
+     description: |
+       <label class="account"></label>
+@@ -341,6 +341,11 @@
+       <label class="campaign"></label>
+       <div lang="ja">LearningDataExclusionServiceでは、自動入札の学習データ除外に関する情報の取得および追加・更新・削除を行います。</div>
+       <div lang="en">LearningDataExclusionService is to get, add, update or remove information of Learning data exclusion for autobidding.</div>
++  - name: ConversionGroupService
++    description: |
++      <label class="account"></label>
++      <div lang="ja">ConversionGroupServiceでは、コンバージョングループ情報の操作を提供します。</div>
++      <div lang="en">ConversionGroupService provides ConversionGroup information operations.</div>
+
+ paths:
+   /AccountManagementService/get:
+@@ -1021,6 +1026,7 @@
+                 <tr><td>130000</td><td>The server is busy. Please retry later.</td><td><div lang="ja">サーバーが高負荷です。時間をおいて再試行してください。</div><div lang="en">The server is busy. Please retry later.</div></td></tr>
+                 <tr><td>130001</td><td>The request was not completed. Please reduce concurrent requests or data size. </td><td><div lang="ja">リクエストが完了しませんでした。同時リクエスト数またはデータサイズを減らして再度お試しください。</div><div lang="en">The request was not completed. Please reduce concurrent requests or data size.</div></td></tr>
+                 <tr><td>211006</td><td>Cannot bid modify criterion campaign opted out.</td><td><div lang="ja">キャンペーンでデバイス別入札価格調整率を0（そのデバイスには配信しない）で設定済みのため、広告グループで同デバイスの入札価格調整率は変更できません。</div><div lang="en">The bid adjustment rate for this device in an ad group because the device bid adjustment rate in the campaign have already been set to 0 (not delivered to that device) can not changed.</div></td></tr>
++                <tr><td>210920</td><td>This action isn't available when creating the A/B test.</td><td><div lang="ja">A/Bテスト作成中のため操作できません。</div><div lang="en">This action isn't available when creating the A/B test.</div></td></tr>
+               </tbody>
+             </table>
+             </div>
+@@ -1086,6 +1092,7 @@
+                 <tr><td>130000</td><td>The server is busy. Please retry later.</td><td><div lang="ja">サーバーが高負荷です。時間をおいて再試行してください。</div><div lang="en">The server is busy. Please retry later.</div></td></tr>
+                 <tr><td>130001</td><td>The request was not completed. Please reduce concurrent requests or data size. </td><td><div lang="ja">リクエストが完了しませんでした。同時リクエスト数またはデータサイズを減らして再度お試しください。</div><div lang="en">The request was not completed. Please reduce concurrent requests or data size.</div></td></tr>
+                 <tr><td>211006</td><td>Cannot bid modify criterion campaign opted out.</td><td><div lang="ja">キャンペーンでデバイス別入札価格調整率を0（そのデバイスには配信しない）で設定済みのため、広告グループで同デバイスの入札価格調整率は変更できません。</div><div lang="en">The bid adjustment rate for this device in an ad group because the device bid adjustment rate in the campaign have already been set to 0 (not delivered to that device) can not changed.</div></td></tr>
++                <tr><td>210920</td><td>This action isn't available when creating the A/B test.</td><td><div lang="ja">A/Bテスト作成中のため操作できません。</div><div lang="en">This action isn't available when creating the A/B test.</div></td></tr>
+               </tbody>
+             </table>
+             </div>
+@@ -1238,6 +1245,7 @@
+                 <tr><td>211001</td><td>Cannot set AdvancedMobileURL(SmartphoneFinalURL).</td><td><div lang="ja">アプリダウンロードキャンペーンでは、advancedMobileURL(smartphoneFinalURL)の設定はできません。</div><div lang="en">In the app download campaign, AdvancedMobileURL(SmartphoneFinalURL) can not be set.</div></td></tr>
+                 <tr><td>211003</td><td>Domain does not match with DisplayURL.</td><td><div lang="ja">表示URLと最終リンク先URLのドメインが一致していません。</div><div lang="en">Domain of DisplayURL and FinalUrl do not match.</div></td></tr>
+                 <tr><td>211004</td><td>Cannot set under AndroidCampaign.</td><td><div lang="ja">Androidのアプリキャンペーンでは、以下の設定ができません：<br>・キャンペーン、広告グループ、広告、キーワードにTrackingUrlや CustomParameterを設定<br>・キーワードに最終リンク先URLやスマートフォン向けURLを設定</div><div lang="en">In the Android app campaign, the following settings can not be made：<br>・Set TrackingUrl and CustomParameter for campaigns, ad groups, ads, keywords<br>・Set the AdvancedUrl(FinalUrl) and AdvancedMobileUrl(SmartphoneFinalUrl) for the keywords</div></td></tr>
++                <tr><td>210920</td><td>This action isn't available when creating the A/B test.</td><td><div lang="ja">A/Bテスト作成中のため操作できません。</div><div lang="en">This action isn't available when creating the A/B test.</div></td></tr>
+               </tbody>
+             </table>
+             </div>
+@@ -1315,6 +1323,8 @@
+                 <tr><td>211001</td><td>Cannot set AdvancedMobileURL(SmartphoneFinalURL).</td><td><div lang="ja">アプリダウンロードキャンペーンでは、advancedMobileURL(smartphoneFinalURL)の設定はできません。</div><div lang="en">In the app download campaign, AdvancedMobileURL(SmartphoneFinalURL) can not be set.</div></td></tr>
+                 <tr><td>211003</td><td>Domain does not match with DisplayURL.</td><td><div lang="ja">表示URLと最終リンク先URLのドメインが一致していません。</div><div lang="en">Domain of DisplayURL and AdvancedURL(FinalURL) do not match.</div></td></tr>
+                 <tr><td>211004</td><td>Cannot set under AndroidCampaign.</td><td><div lang="ja">Androidのアプリキャンペーンでは、以下の設定ができません：<br>・キャンペーン、広告グループ、広告、キーワードにTrackingUrlや CustomParameterを設定<br>・キーワードに最終リンク先URLやスマートフォン向けURLを設定</div><div lang="en">In the Android app campaign, the following settings can not be made：<br>・Set TrackingUrl and CustomParameter for campaigns, ad groups, ads, keywords<br>・Set the AdvancedUrl(FinalUrl) and AdvancedMobileUrl(SmartphoneFinalUrl) for the keywords</div></td></tr>
++                <tr><td>210920</td><td>This action isn't available when creating the A/B test.</td><td><div lang="ja">A/Bテスト作成中のため操作できません。</div><div lang="en">This action isn't available when creating the A/B test.</div></td></tr>
++                <tr><td>120020</td><td>Can not set value.</td><td><div lang="ja">値を設定することができません。詳細はヘルプを参照してください。<a href="https://ads-help.yahoo-net.jp/s/article/H000044211?language=ja">A/Bテストについて</a></div><div lang="en">Value cannot be set. See also the help below. <a href="https://ads-help.yahoo-net.jp/s/article/H000044211?language=en_US">About A/B test</a></div></td></tr>
+               </tbody>
+             </table>
+             </div>
+@@ -1392,6 +1402,7 @@
+                 <tr><td>211001</td><td>Cannot set AdvancedMobileURL(SmartphoneFinalURL).</td><td><div lang="ja">アプリダウンロードキャンペーンでは、advancedMobileURL(smartphoneFinalURL)の設定はできません。</div><div lang="en">In the app download campaign, AdvancedMobileURL(SmartphoneFinalURL) can not be set.</div></td></tr>
+                 <tr><td>211003</td><td>Domain does not match with DisplayURL.</td><td><div lang="ja">表示URLと最終リンク先URLのドメインが一致していません。</div><div lang="en">Domain of DisplayURL and AdvancedURL(FinalURL) do not match.</div></td></tr>
+                 <tr><td>211004</td><td>Cannot set under AndroidCampaign.</td><td><div lang="ja">Androidのアプリキャンペーンでは、以下の設定ができません：<br>・キャンペーン、広告グループ、広告、キーワードにTrackingUrlや CustomParameterを設定<br>・キーワードに最終リンク先URLやスマートフォン向けURLを設定</div><div lang="en">In the Android app campaign, the following settings can not be made：<br>・Set TrackingUrl and CustomParameter for campaigns, ad groups, ads, keywords<br>・Set the AdvancedUrl(FinalUrl) and AdvancedMobileUrl(SmartphoneFinalUrl) for the keywords</div></td></tr>
++                <tr><td>210920</td><td>This action isn't available when creating the A/B test.</td><td><div lang="ja">A/Bテスト作成中のため操作できません。</div><div lang="en">This action isn't available when creating the A/B test.</div></td></tr>
+               </tbody>
+             </table>
+             </div>
+@@ -1541,6 +1552,7 @@
+                 <tr><td>210608</td><td>When using fixed display position, need three title assets and two description assets.</td><td><div lang="ja">表示位置の固定を利用する場合、タイトルは3番目まで、説明文は2番目まで表示されるアセットが必要です。</div><div lang="en">When using fixed display position, need three title assets and two description assets.</div></td></tr>
+                 <tr><td>210609</td><td>Need three title assets and two description assets. Assets that use a function without default text are not counted in the required count.</td><td><div lang="ja">タイトルは3番目まで、説明文は2番目まで表示されるアセットが必要です。<br>デフォルトテキストのない関数が使われているアセットは、必須件数にカウントされません。<br>デフォルトテキストを設定、または関数を使わずにアセットを作成してください。</div><div lang="en">Need three title assets and two description assets.<br>Assets that use a function without default text are not counted in the required count.<br>Set the default text or create an asset without using a function.</div></td></tr>
+                 <tr><td>210614</td><td>Description: A number of characters is exceeding the limit for input.</td><td><div lang="ja">説明文：入力可能な文字数を超えています。</div><div lang="en">Description: A number of characters is exceeding the limit for input.</div></td></tr>
++                <tr><td>210920</td><td>This action isn't available when creating the A/B test.</td><td><div lang="ja">A/Bテスト作成中のため操作できません。</div><div lang="en">This action isn't available when creating the A/B test.</div></td></tr>
+               </tbody>
+             </table>
+             </div>
+@@ -1619,6 +1631,8 @@
+                 <tr><td>210608</td><td>When using fixed display position, need three title assets and two description assets.</td><td><div lang="ja">表示位置の固定を利用する場合、タイトルは3番目まで、説明文は2番目まで表示されるアセットが必要です。</div><div lang="en">When using fixed display position, need three title assets and two description assets.</div></td></tr>
+                 <tr><td>210609</td><td>Need three title assets and two description assets. Assets that use a function without default text are not counted in the required count.</td><td><div lang="ja">タイトルは3番目まで、説明文は2番目まで表示されるアセットが必要です。<br>デフォルトテキストのない関数が使われているアセットは、必須件数にカウントされません。<br>デフォルトテキストを設定、または関数を使わずにアセットを作成してください。</div><div lang="en">Need three title assets and two description assets.<br>Assets that use a function without default text are not counted in the required count.<br>Set the default text or create an asset without using a function.</div></td></tr>
+                 <tr><td>210614</td><td>Description: A number of characters is exceeding the limit for input.</td><td><div lang="ja">説明文：入力可能な文字数を超えています。</div><div lang="en">Description: A number of characters is exceeding the limit for input.</div></td></tr>
++                <tr><td>210920</td><td>This action isn't available when creating the A/B test.</td><td><div lang="ja">A/Bテスト作成中のため操作できません。</div><div lang="en">This action isn't available when creating the A/B test.</div></td></tr>
++                <tr><td>120020</td><td>Can not set value.</td><td><div lang="ja">値を設定することができません。詳細はヘルプを参照してください。<a href="https://ads-help.yahoo-net.jp/s/article/H000044211?language=ja">A/Bテストについて</a></div><div lang="en">Value cannot be set. See also the help below. <a href="https://ads-help.yahoo-net.jp/s/article/H000044211?language=en_US">About A/B test</a></div></td></tr>
+               </tbody>
+             </table>
+             </div>
+@@ -1692,6 +1706,7 @@
+                 <tr><td>210606</td><td>Cannot create double text ad.</td><td><div lang="ja">拡張テキスト広告が設定できるアカウントではありません。</div><div lang="en">It is not an account that can set double text ad.</div></td></tr>
+                 <tr><td>211011</td><td>Cannot set DisplayURL and AdvancedURL(FinalURL),AdvancedMobileURL(SmartphoneFinalURL).</td><td><div lang="ja">Dynamic Ads for SearchにはAdvancedUrl(FinalUrl),AdvancedMobileUrl(SmartphoneFinalUrl),displayUrlは設定できません。</div><div lang="en">AdvancedUrl(FinalUrl), AdvancedMobileUrl(SmartphoneFinalUrl), DisplayUrl can not be set for Dynamic Ads for Search.</div></td></tr>
+                 <tr><td>211019</td><td>Request failed because of trademark conflicts.</td><td><div lang="ja">商標に抵触している為、登録できません。</div><div lang="en">Request failed because of trademark conflicts.</div></td></tr>
++                <tr><td>210920</td><td>This action isn't available when creating the A/B test.</td><td><div lang="ja">A/Bテスト作成中のため操作できません。</div><div lang="en">This action isn't available when creating the A/B test.</div></td></tr>
+               </tbody>
+             </table>
+             </div>
+@@ -1765,6 +1780,7 @@
+                 <tr><td>210606</td><td>Cannot create double text ad.</td><td><div lang="ja">拡張テキスト広告が設定できるアカウントではありません。</div><div lang="en">It is not an account that can set double text ad.</div></td></tr>
+                 <tr><td>211011</td><td>Cannot set DisplayURL and AdvancedURL(FinalURL),AdvancedMobileURL(SmartphoneFinalURL).</td><td><div lang="ja">Dynamic Ads for SearchにはAdvancedUrl(FinalUrl),AdvancedMobileUrl(SmartphoneFinalUrl),displayUrlは設定できません。</div><div lang="en">AdvancedUrl(FinalUrl), AdvancedMobileUrl(SmartphoneFinalUrl), DisplayUrl can not be set for Dynamic Ads for Search.</div></td></tr>
+                 <tr><td>211019</td><td>Request failed because of trademark conflicts.</td><td><div lang="ja">商標に抵触している為、登録できません。</div><div lang="en">Request failed because of trademark conflicts.</div></td></tr>
++                <tr><td>210920</td><td>This action isn't available when creating the A/B test.</td><td><div lang="ja">A/Bテスト作成中のため操作できません。</div><div lang="en">This action isn't available when creating the A/B test.</div></td></tr>
+               </tbody>
+             </table>
+             </div>
+@@ -1827,6 +1843,8 @@
+                 <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
+                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
+                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
++                <tr><td>210920</td><td>This action isn't available when creating the A/B test.</td><td><div lang="ja">A/Bテスト作成中のため操作できません。</div><div lang="en">This action isn't available when creating the A/B test.</div></td></tr>
++                <tr><td>120020</td><td>Can not set value.</td><td><div lang="ja">値を設定することができません。</div><div lang="en">Value cannot be set.</div></td></tr>
+               </tbody>
+             </table>
+             </div>
+@@ -1889,6 +1907,7 @@
+                 <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
+                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
+                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
++                <tr><td>210920</td><td>This action isn't available when creating the A/B test.</td><td><div lang="ja">A/Bテスト作成中のため操作できません。</div><div lang="en">This action isn't available when creating the A/B test.</div></td></tr>
+               </tbody>
+             </table>
+             </div>
+@@ -2047,6 +2066,7 @@
+                 <tr><td>211001</td><td>Cannot set AdvancedMobileURL(SmartphoneFinalURL).</td><td><div lang="ja">アプリダウンロードキャンペーンでは、advancedMobileURL(smartphoneFinalURL)の設定はできません。</div><div lang="en">In the app download campaign, AdvancedMobileURL(SmartphoneFinalURL) can not be set.</div></td></tr>
+                 <tr><td>211003</td><td>Domain does not match with DisplayURL.</td><td><div lang="ja">表示URLと最終リンク先URLのドメインが一致していません。</div><div lang="en">Domain of DisplayURL and AdvancedURL(FinalURL) do not match.</div></td></tr>
+                 <tr><td>211004</td><td>Cannot set under AndroidCampaign.</td><td><div lang="ja">Androidのアプリキャンペーンでは、以下の設定ができません：<br>・キャンペーン、広告グループ、広告、キーワードにTrackingUrlや CustomParameterを設定<br>・キーワードに最終リンク先URLやスマートフォン向けURLを設定</div><div lang="en">In the Android app campaign, the following settings can not be made：<br>・Set TrackingUrl and CustomParameter for campaigns, ad groups, ads, keywords<br>・Set the AdvancedUrl(FinalUrl) and AdvancedMobileUrl(SmartphoneFinalUrl) for the keywords</div></td></tr>
++                <tr><td>210920</td><td>This action isn't available when creating the A/B test.</td><td><div lang="ja">A/Bテスト作成中のため操作できません。</div><div lang="en">This action isn't available when creating the A/B test.</div></td></tr>
+               </tbody>
+             </table>
+             </div>
+@@ -2127,6 +2147,8 @@
+                 <tr><td>211001</td><td>Cannot set AdvancedMobileURL(SmartphoneFinalURL).</td><td><div lang="ja">アプリダウンロードキャンペーンでは、advancedMobileURL(smartphoneFinalURL)の設定はできません。</div><div lang="en">In the app download campaign, AdvancedMobileURL(SmartphoneFinalURL) can not be set.</div></td></tr>
+                 <tr><td>211003</td><td>Domain does not match with DisplayURL.</td><td><div lang="ja">表示URLと最終リンク先URLのドメインが一致していません。</div><div lang="en">Domain of DisplayURL and AdvancedURL(FinalURL) do not match.</div></td></tr>
+                 <tr><td>211004</td><td>Cannot set under AndroidCampaign.</td><td><div lang="ja">Androidのアプリキャンペーンでは、以下の設定ができません：<br>・キャンペーン、広告グループ、広告、キーワードにTrackingUrlや CustomParameterを設定<br>・キーワードに最終リンク先URLやスマートフォン向けURLを設定</div><div lang="en">In the Android app campaign, the following settings can not be made：<br>・Set TrackingUrl and CustomParameter for campaigns, ad groups, ads, keywords<br>・Set the AdvancedUrl(FinalUrl) and AdvancedMobileUrl(SmartphoneFinalUrl) for the keywords</div></td></tr>
++                <tr><td>210920</td><td>This action isn't available when creating the A/B test.</td><td><div lang="ja">A/Bテスト作成中のため操作できません。</div><div lang="en">This action isn't available when creating the A/B test.</div></td></tr>
++                <tr><td>120020</td><td>Can not set value.</td><td><div lang="ja">値を設定することができません。詳細はヘルプを参照してください。<a href="https://ads-help.yahoo-net.jp/s/article/H000044211?language=ja">A/Bテストについて</a></div><div lang="en">Value cannot be set. See also the help below. <a href="https://ads-help.yahoo-net.jp/s/article/H000044211?language=en_US">About A/B test</a></div></td></tr>
+               </tbody>
+             </table>
+             </div>
+@@ -2207,6 +2229,7 @@
+                 <tr><td>211001</td><td>Cannot set AdvancedMobileURL(SmartphoneFinalURL).</td><td><div lang="ja">アプリダウンロードキャンペーンでは、advancedMobileURL(smartphoneFinalURL)の設定はできません。</div><div lang="en">In the app download campaign, AdvancedMobileURL(SmartphoneFinalURL) can not be set.</div></td></tr>
+                 <tr><td>211003</td><td>Domain does not match with DisplayURL.</td><td><div lang="ja">表示URLと最終リンク先URLのドメインが一致していません。</div><div lang="en">Domain of DisplayURL and AdvancedURL(FinalURL) do not match.</div></td></tr>
+                 <tr><td>211004</td><td>Cannot set under AndroidCampaign.</td><td><div lang="ja">Androidのアプリキャンペーンでは、以下の設定ができません：<br>・キャンペーン、広告グループ、広告、キーワードにTrackingUrlや CustomParameterを設定<br>・キーワードに最終リンク先URLやスマートフォン向けURLを設定</div><div lang="en">In the Android app campaign, the following settings can not be made：<br>・Set TrackingUrl and CustomParameter for campaigns, ad groups, ads, keywords<br>・Set the AdvancedUrl(FinalUrl) and AdvancedMobileUrl(SmartphoneFinalUrl) for the keywords</div></td></tr>
++                <tr><td>210920</td><td>This action isn't available when creating the A/B test.</td><td><div lang="ja">A/Bテスト作成中のため操作できません。</div><div lang="en">This action isn't available when creating the A/B test.</div></td></tr>
+               </tbody>
+             </table>
+             </div>
+@@ -3235,6 +3258,7 @@
+                 <tr><td>211008</td><td>Cannot change Dynamic Ads for Search Campaign.</td><td><div lang="ja">Dynamic Ads for Searchのキャンペーンに変更はできません。</div><div lang="en">It can not be changed to the campaign of Dynamic Ads for Search.</div></td></tr>
+                 <tr><td>210314</td><td>Cannot set Enhanced CPC for Mobile app download.</td><td><div lang="ja">アプリダウンロードキャンペーンに「拡張クリック単価」を設定しようとしています。</div><div lang="en">"Enhanced CPC" can not be set for Mobile app download.</div></td></tr>
+                 <tr><td>211020</td><td>Domain crawling setting limit has exceed.</td><td><div lang="ja">「ドメイン全体」または「ドメイン全体とページフィードを併用」を設定したキャンペーンの作成上限数を超えています。</div><div lang="en">Exceeding the maximum limit of campaigns that have "Entire domain" and "Entire domain and page feed."</div></td></tr>
++                <tr><td>210920</td><td>This action isn't available when creating the A/B test.</td><td><div lang="ja">A/Bテスト作成中のため操作できません。</div><div lang="en">This action isn't available when creating the A/B test.</div></td></tr>
+               </tbody>
+             </table>
+             </div>
+@@ -3319,6 +3343,7 @@
+                 <tr><td>211008</td><td>Cannot change Dynamic Ads for Search Campaign.</td><td><div lang="ja">Dynamic Ads for Searchのキャンペーンに変更はできません。</div><div lang="en">It can not be changed to the campaign of Dynamic Ads for Search.</div></td></tr>
+                 <tr><td>210314</td><td>Cannot set Enhanced CPC for Mobile app download.</td><td><div lang="ja">アプリダウンロードキャンペーンに「拡張クリック単価」を設定しようとしています。</div><div lang="en">"Enhanced CPC" can not be set for Mobile app download.</div></td></tr>
+                 <tr><td>210916</td><td>Cannot delete learning data exclusion for autobidding.</td><td><div lang="ja">学習データ除外を設定しているため、キャンペーンを削除できません。</div><div lang="en">You can't remove campaigns that are associated with learning data exclusions. Remove learning data exclusions or remove associations with the campaign.</div></td></tr>
++                <tr><td>210920</td><td>This action isn't available when creating the A/B test.</td><td><div lang="ja">A/Bテスト作成中のため操作できません。</div><div lang="en">This action isn't available when creating the A/B test.</div></td></tr>
+               </tbody>
+             </table>
+             </div>
+@@ -3451,6 +3476,7 @@
+                 <tr><td>210110</td><td>Invalid target</td><td>１日のスケジュール指定が上限値（6件）を超えています。</div><div lang="en">The daily schedule specification exceeds the upper limit (6 cases).</div></td></tr>
+                 <tr><td>210517</td><td>Exceeds maximum word limit.</td><td><div lang="ja">キーワードは最大10個までしか指定できません。</div><div lang="en">10 keywords can only be specified up to.</div></td></tr>
+                 <tr><td>210510</td><td>Exists same text with match type.</td><td><div lang="ja">指定されたキーワード、マッチタイプはすでにキャンペーン/広告グループ内に存在します。</div><div lang="en">The specified keyword, match type already exists in the campaign / ad group.</div></td></tr>
++                <tr><td>210920</td><td>This action isn't available when creating the A/B test.</td><td><div lang="ja">A/Bテスト作成中のため操作できません。</div><div lang="en">This action isn't available when creating the A/B test.</div></td></tr>
+               </tbody>
+             </table>
+             </div>
+@@ -3518,6 +3544,7 @@
+                 <tr><td>210110</td><td>Invalid target</td><td>１日のスケジュール指定が上限値（6件）を超えています。</div><div lang="en">The daily schedule specification exceeds the upper limit (6 cases).</div></td></tr>
+                 <tr><td>210517</td><td>Exceeds maximum word limit.</td><td><div lang="ja">キーワードは最大10個までしか指定できません。</div><div lang="en">10 keywords can only be specified up to.</div></td></tr>
+                 <tr><td>210510</td><td>Exists same text with match type.</td><td><div lang="ja">指定されたキーワード、マッチタイプはすでにキャンペーン/広告グループ内に存在します。</div><div lang="en">The specified keyword, match type already exists in the campaign / ad group.</div></td></tr>
++                <tr><td>210920</td><td>This action isn't available when creating the A/B test.</td><td><div lang="ja">A/Bテスト作成中のため操作できません。</div><div lang="en">This action isn't available when creating the A/B test.</div></td></tr>
+               </tbody>
+             </table>
+             </div>
+@@ -3580,6 +3607,8 @@
+                 <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
+                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
+                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
++                <tr><td>210920</td><td>This action isn't available when creating the A/B test.</td><td><div lang="ja">A/Bテスト作成中のため操作できません。</div><div lang="en">This action isn't available when creating the A/B test.</div></td></tr>
++                <tr><td>120020</td><td>Can not set value.</td><td><div lang="ja">値を設定することができません。詳細はヘルプを参照してください。<a href="https://ads-help.yahoo-net.jp/s/article/H000044211?language=ja">A/Bテストについて</a></div><div lang="en">Value cannot be set. See also the help below. <a href="https://ads-help.yahoo-net.jp/s/article/H000044211?language=en_US">About A/B test</a></div></td></tr>
+               </tbody>
+             </table>
+             </div>
+@@ -3642,6 +3671,7 @@
+                 <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
+                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
+                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
++                <tr><td>210920</td><td>This action isn't available when creating the A/B test.</td><td><div lang="ja">A/Bテスト作成中のため操作できません。</div><div lang="en">This action isn't available when creating the A/B test.</div></td></tr>
+               </tbody>
+             </table>
+             </div>
+@@ -3705,6 +3735,8 @@
+                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
+                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
+                 <tr><td>211018</td><td>Cannot Add AdGroupServiceLabel to Negative Criterion.</td><td><div lang="ja">除外キーワードに対して、ラベルの紐付けはできません。</div><div lang="en">Labels cannot be associated with negative keywords.</div></td></tr>
++                <tr><td>210920</td><td>This action isn't available when creating the A/B test.</td><td><div lang="ja">A/Bテスト作成中のため操作できません。</div><div lang="en">This action isn't available when creating the A/B test.</div></td></tr>
++                <tr><td>120020</td><td>Can not set value.</td><td><div lang="ja">値を設定することができません。詳細はヘルプを参照してください。<a href="https://ads-help.yahoo-net.jp/s/article/H000044211?language=ja">A/Bテストについて</a></div><div lang="en">Value cannot be set. See also the help below. <a href="https://ads-help.yahoo-net.jp/s/article/H000044211?language=en_US">About A/B test</a></div></td></tr>
+               </tbody>
+             </table>
+             </div>
+@@ -3768,6 +3800,7 @@
+                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
+                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
+                 <tr><td>211018</td><td>Cannot Add AdGroupServiceLabel to Negative Criterion.</td><td><div lang="ja">除外キーワードに対して、ラベルの紐付けはできません。</div><div lang="en">Labels cannot be associated with negative keywords.</div></td></tr>
++                <tr><td>210920</td><td>This action isn't available when creating the A/B test.</td><td><div lang="ja">A/Bテスト作成中のため操作できません。</div><div lang="en">This action isn't available when creating the A/B test.</div></td></tr>
+               </tbody>
+             </table>
+             </div>
+@@ -4144,6 +4177,7 @@
+                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
+                 <tr><td>225303</td><td>Cannot duplicate Auto Bidding, since the app conversion type 'App Download' has been already with 'Auto' bidding on the same App ID.</td><td><div lang="ja">同一のappIdで、アプリコンバージョン種別に「ダウンロード」が設定されている場合、自動入札を重複して設定できません。</div><div lang="en">If 'App Download' is set for the app conversion type with the same App ID, Auto Bidding can not be set twice.</div></td></tr>
+                 <tr><td>225304</td><td>Invalid combination of Auto Bidding and the app conversion type 'App Download' on the same App ID.</td><td><div lang="ja">同一のappIdで、アプリコンバージョン種別「ダウンロード」と、自動入札設定の組み合わせが正しくありません。</div><div lang="en">With the same App ID, the combination of the app conversion type 'App Download' and Auto Bidding setting is incorrect.</div></td></tr>
++                <tr><td>225307</td><td>This action isn't available for the conversion tracker. Try again later.</td><td><div lang="ja">このコンバージョントラッカーは現在、操作できません。しばらく時間をおいて、再度お試しください。</div><div lang="en">This action isn't available for the conversion tracker. Try again later.</div></td></tr>
+               </tbody>
+             </table>
+             </div>
+@@ -4208,6 +4242,7 @@
+                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
+                 <tr><td>225303</td><td>Cannot duplicate Auto Bidding, since the app conversion type 'App Download' has been already with 'Auto' bidding on the same App ID.</td><td><div lang="ja">同一のappIdで、アプリコンバージョン種別に「ダウンロード」が設定されている場合、自動入札を重複して設定できません。</div><div lang="en">If 'App Download' is set for the app conversion type with the same App ID, Auto Bidding can not be set twice.</div></td></tr>
+                 <tr><td>225304</td><td>Invalid combination of Auto Bidding and the app conversion type 'App Download' on the same App ID.</td><td><div lang="ja">同一のappIdで、アプリコンバージョン種別「ダウンロード」と、自動入札設定の組み合わせが正しくありません。</div><div lang="en">With the same App ID, the combination of the app conversion type 'App Download' and Auto Bidding setting is incorrect.</div></td></tr>
++                <tr><td>225306</td><td>Cannot deactivated conversion tracker.</td><td><div lang="ja">このコンバージョン設定はコンバージョングループに設定されているため、設定をオフにできません。</div><div lang="en">Cannot turn off the conversion settings set in the conversion group.</div></td></tr>
+               </tbody>
+             </table>
+             </div>
+@@ -4589,6 +4624,7 @@
+                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
+                 <tr><td>225301</td><td>Cannot attach criteria at campaign and adgroup.</td><td><div lang="ja">広告グループとキャンペーンの両方にターゲットリストの関連付けはできません。</div><div lang="en">Target lists can not be associated with both ad groups and campaigns.</div></td></tr>
+                 <tr><td>225302</td><td>Cannot add closed target list.</td><td><div lang="ja">停止中のターゲットリストは関連付けできません。</div><div lang="en">A closed target list can not be associated.</div></td></tr>
++                <tr><td>210920</td><td>This action isn't available when creating the A/B test.</td><td><div lang="ja">A/Bテスト作成中のため操作できません。</div><div lang="en">This action isn't available when creating the A/B test.</div></td></tr>
+               </tbody>
+             </table>
+             </div>
+@@ -4653,6 +4689,7 @@
+                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
+                 <tr><td>225301</td><td>Cannot attach criteria at campaign and adgroup.</td><td><div lang="ja">広告グループとキャンペーンの両方にターゲットリストの関連付けはできません。</div><div lang="en">Target lists can not be associated with both ad groups and campaigns.</div></td></tr>
+                 <tr><td>225302</td><td>Cannot add closed target list.</td><td><div lang="ja">停止中のターゲットリストは関連付けできません。</div><div lang="en">A closed target list can not be associated.</div></td></tr>
++                <tr><td>210920</td><td>This action isn't available when creating the A/B test.</td><td><div lang="ja">A/Bテスト作成中のため操作できません。</div><div lang="en">This action isn't available when creating the A/B test.</div></td></tr>
+               </tbody>
+             </table>
+             </div>
+@@ -4717,6 +4754,7 @@
+                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
+                 <tr><td>225301</td><td>Cannot attach criteria at campaign and adgroup.</td><td><div lang="ja">広告グループとキャンペーンの両方にターゲットリストの関連付けはできません。</div><div lang="en">Target lists can not be associated with both ad groups and campaigns.</div></td></tr>
+                 <tr><td>225302</td><td>Cannot add closed target list.</td><td><div lang="ja">停止中のターゲットリストは関連付けできません。</div><div lang="en">A closed target list can not be associated.</div></td></tr>
++                <tr><td>210920</td><td>This action isn't available when creating the A/B test.</td><td><div lang="ja">A/Bテスト作成中のため操作できません。</div><div lang="en">This action isn't available when creating the A/B test.</div></td></tr>
+               </tbody>
+             </table>
+             </div>
+@@ -5042,6 +5080,7 @@
+                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
+                 <tr><td>225301</td><td>Cannot attach criteria at campaign and adgroup.</td><td><div lang="ja">広告グループとキャンペーンの両方にターゲットリストの関連付けはできません。</div><div lang="en">Target lists can not be associated with both ad groups and campaigns.</div></td></tr>
+                 <tr><td>225302</td><td>Cannot add closed target list.</td><td><div lang="ja">停止中のターゲットリストは関連付けできません。</div><div lang="en">A closed target list can not be associated.</div></td></tr>
++                <tr><td>210920</td><td>This action isn't available when creating the A/B test.</td><td><div lang="ja">A/Bテスト作成中のため操作できません。</div><div lang="en">This action isn't available when creating the A/B test.</div></td></tr>
+               </tbody>
+             </table>
+             </div>
+@@ -5106,6 +5145,7 @@
+                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
+                 <tr><td>225301</td><td>Cannot attach criteria at campaign and adgroup.</td><td><div lang="ja">広告グループとキャンペーンの両方にターゲットリストの関連付けはできません。</div><div lang="en">Target lists can not be associated with both ad groups and campaigns.</div></td></tr>
+                 <tr><td>225302</td><td>Cannot add closed target list.</td><td><div lang="ja">停止中のターゲットリストは関連付けできません。</div><div lang="en">A closed target list can not be associated.</div></td></tr>
++                <tr><td>210920</td><td>This action isn't available when creating the A/B test.</td><td><div lang="ja">A/Bテスト作成中のため操作できません。</div><div lang="en">This action isn't available when creating the A/B test.</div></td></tr>
+               </tbody>
+             </table>
+             </div>
+@@ -5170,6 +5210,7 @@
+                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
+                 <tr><td>225301</td><td>Cannot attach criteria at campaign and adgroup.</td><td><div lang="ja">広告グループとキャンペーンの両方にターゲットリストの関連付けはできません。</div><div lang="en">Target lists can not be associated with both ad groups and campaigns.</div></td></tr>
+                 <tr><td>225302</td><td>Cannot add closed target list.</td><td><div lang="ja">停止中のターゲットリストは関連付けできません。</div><div lang="en">A closed target list can not be associated.</div></td></tr>
++                <tr><td>210920</td><td>This action isn't available when creating the A/B test.</td><td><div lang="ja">A/Bテスト作成中のため操作できません。</div><div lang="en">This action isn't available when creating the A/B test.</div></td></tr>
+               </tbody>
+             </table>
+             </div>
+@@ -5294,6 +5335,7 @@
+                 <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
+                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
+                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
++                <tr><td>210920</td><td>This action isn't available when creating the A/B test.</td><td><div lang="ja">A/Bテスト作成中のため操作できません。</div><div lang="en">This action isn't available when creating the A/B test.</div></td></tr>
+               </tbody>
+             </table>
+             </div>
+@@ -5356,6 +5398,7 @@
+                 <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
+                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
+                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
++                <tr><td>210920</td><td>This action isn't available when creating the A/B test.</td><td><div lang="ja">A/Bテスト作成中のため操作できません。</div><div lang="en">This action isn't available when creating the A/B test.</div></td></tr>
+               </tbody>
+             </table>
+             </div>
+@@ -5418,6 +5461,8 @@
+                 <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
+                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
+                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
++                <tr><td>210920</td><td>This action isn't available when creating the A/B test.</td><td><div lang="ja">A/Bテスト作成中のため操作できません。</div><div lang="en">This action isn't available when creating the A/B test.</div></td></tr>
++                <tr><td>120020</td><td>Can not set value.</td><td><div lang="ja">値を設定することができません。詳細はヘルプを参照してください。<a href="https://ads-help.yahoo-net.jp/s/article/H000044211?language=ja">A/Bテストについて</a></div><div lang="en">Value cannot be set. See also the help below. <a href="https://ads-help.yahoo-net.jp/s/article/H000044211?language=en_US">About A/B test</a></div></td></tr>
+               </tbody>
+             </table>
+             </div>
+@@ -5480,6 +5525,7 @@
+                 <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
+                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
+                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
++                <tr><td>210920</td><td>This action isn't available when creating the A/B test.</td><td><div lang="ja">A/Bテスト作成中のため操作できません。</div><div lang="en">This action isn't available when creating the A/B test.</div></td></tr>
+               </tbody>
+             </table>
+             </div>
+@@ -7003,68 +7049,6 @@
+           $ref: '../Response401.yaml#/Response401'
+         400:
+           $ref: '../Response400.yaml#/Response400'
+-  /KeywordForecastMetricsService/get:
+-    post:
+-      parameters:
+-        - in: header
+-          name: x-z-base-account-id
+-          schema:
+-            type: integer
+-            format: int64
+-          required: true
+-          description: |
+-            <div lang="ja">アカウントIDを指定してください。</div>
+-            <div lang="en">Specify Account ID.</div>
+-      description: |
+-        <div lang="ja">キーワードの実績情報を取得します。<br>※現在、こちらのサービスは利用できません。</div>
+-        <div lang="en">Get the performance information of the keyword.<br>*Currently this service is not available.</div>
+-      tags:
+-        - KeywordForecastMetricsService
+-      requestBody:
+-        content:
+-          application/json:
+-            schema:
+-              $ref: 'keywordforecastmetrics/KeywordForecastMetricsServiceSelector.yaml#/KeywordForecastMetricsServiceSelector'
+-      responses:
+-        503:
+-          $ref: '../Response503.yaml#/Response503'
+-        500:
+-          $ref: '../Response500.yaml#/Response500'
+-        200:
+-          description: |
+-            <p class="cellContent__head">Error codes</p>
+-            <div class="cellContent__body">
+-            <table class="apiTable">
+-              <colgroup span="1" class="short"></colgroup>
+-              <colgroup span="2"></colgroup>
+-              <thead>
+-                <tr><th>Code</th><th>Message</th><th>Description</th></tr>
+-              </thead>
+-              <tbody>
+-                <tr><td>0001</td><td>Invalid Request.</td><td><div lang="ja">さまざまな要因が考えられます。<br>主な要因は、パラメータの値が不正か、誤りがあるためにオペレーションが完了できません。</div><div lang="en">This error can result for a variety of reasons. <br>Typically because one of the parameter values in the request is wrong or invalid and the operation cannot be completed.</div></td></tr>
+-                <tr><td>R0001</td><td>Require.</td><td><div lang="ja">必須です。</div><div lang="en">It is missing required parameter.</div></td></tr>
+-                <tr><td>F0001</td><td>Invalid format.</td><td><div lang="ja">値の形式が不正です。</div><div lang="en">The value format is invalid.</div></td></tr>
+-                <tr><td>V0001</td><td>Invalid value.</td><td><div lang="ja">値が無効です。</div><div lang="en">The value is invalid.</div></td></tr>
+-                <tr><td>S0001</td><td>Invalid Status.</td><td><div lang="ja">ステータスが無効です。</div><div lang="en">The status is invalid.</div></td></tr>
+-                <tr><td>L0002</td><td>Over list size.</td><td><div lang="ja">配列の要素数が上限値を超過しています。</div><div lang="en">The number of elements in the array exceeds the upper limit.</div></td></tr>
+-                <tr><td>L0001</td><td>Lower list size.</td><td><div lang="ja">配列の要素数が下限値を下回っています。</div><div lang="en">The number of elements in the array is below the lower limit.</div></td></tr>
+-                <tr><td>D0001</td><td>Duplicate.</td><td><div lang="ja">一意な値が重複しています。</div><div lang="en">The unique value is duplicated.</div></td></tr>
+-                <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
+-                <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
+-                <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
+-              </tbody>
+-            </table>
+-            </div>
+-          content:
+-            application/json:
+-              schema:
+-                $ref: 'keywordforecastmetrics/KeywordForecastMetricsServiceGetResponse.yaml#/KeywordForecastMetricsServiceGetResponse'
+-        403:
+-          $ref: '../Response403.yaml#/Response403'
+-        401:
+-          $ref: '../Response401.yaml#/Response401'
+-        400:
+-          $ref: '../Response400.yaml#/Response400'
+   /OfflineConversionService/get:
+     post:
+       parameters:
+@@ -7911,6 +7895,7 @@
+                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
+                 <tr><td>130000</td><td>The server is busy. Please retry later.</td><td><div lang="ja">サーバーが高負荷です。時間をおいて再試行してください。</div><div lang="en">The server is busy. Please retry later.</div></td></tr>
+                 <tr><td>130001</td><td>The request was not completed. Please reduce concurrent requests or data size. </td><td><div lang="ja">リクエストが完了しませんでした。同時リクエスト数またはデータサイズを減らして再度お試しください。</div><div lang="en">The request was not completed. Please reduce concurrent requests or data size.</div></td></tr>
++                <tr><td>210920</td><td>This action isn't available when creating the A/B test.</td><td><div lang="ja">A/Bテスト作成中のため操作できません。</div><div lang="en">This action isn't available when creating the A/B test.</div></td></tr>
+               </tbody>
+             </table>
+             </div>
+@@ -7979,6 +7964,7 @@
+                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
+                 <tr><td>130000</td><td>The server is busy. Please retry later.</td><td><div lang="ja">サーバーが高負荷です。時間をおいて再試行してください。</div><div lang="en">The server is busy. Please retry later.</div></td></tr>
+                 <tr><td>130001</td><td>The request was not completed. Please reduce concurrent requests or data size. </td><td><div lang="ja">リクエストが完了しませんでした。同時リクエスト数またはデータサイズを減らして再度お試しください。</div><div lang="en">The request was not completed. Please reduce concurrent requests or data size.</div></td></tr>
++                <tr><td>210920</td><td>This action isn't available when creating the A/B test.</td><td><div lang="ja">A/Bテスト作成中のため操作できません。</div><div lang="en">This action isn't available when creating the A/B test.</div></td></tr>
+               </tbody>
+             </table>
+             </div>
+@@ -8113,6 +8099,7 @@
+                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
+                 <tr><td>130000</td><td>The server is busy. Please retry later.</td><td><div lang="ja">サーバーが高負荷です。時間をおいて再試行してください。</div><div lang="en">The server is busy. Please retry later.</div></td></tr>
+                 <tr><td>130001</td><td>The request was not completed. Please reduce concurrent requests or data size. </td><td><div lang="ja">リクエストが完了しませんでした。同時リクエスト数またはデータサイズを減らして再度お試しください。</div><div lang="en">The request was not completed. Please reduce concurrent requests or data size.</div></td></tr>
++                <tr><td>210920</td><td>This action isn't available when creating the A/B test.</td><td><div lang="ja">A/Bテスト作成中のため操作できません。</div><div lang="en">This action isn't available when creating the A/B test.</div></td></tr>
+               </tbody>
+             </table>
+             </div>
+@@ -8181,6 +8168,7 @@
+                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
+                 <tr><td>130000</td><td>The server is busy. Please retry later.</td><td><div lang="ja">サーバーが高負荷です。時間をおいて再試行してください。</div><div lang="en">The server is busy. Please retry later.</div></td></tr>
+                 <tr><td>130001</td><td>The request was not completed. Please reduce concurrent requests or data size. </td><td><div lang="ja">リクエストが完了しませんでした。同時リクエスト数またはデータサイズを減らして再度お試しください。</div><div lang="en">The request was not completed. Please reduce concurrent requests or data size.</div></td></tr>
++                <tr><td>210920</td><td>This action isn't available when creating the A/B test.</td><td><div lang="ja">A/Bテスト作成中のため操作できません。</div><div lang="en">This action isn't available when creating the A/B test.</div></td></tr>
+               </tbody>
+             </table>
+             </div>
+@@ -9004,6 +8992,7 @@
+                 <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
+                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
+                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
++                <tr><td>120020</td><td>Can not set value.</td><td><div lang="ja">値を設定することができません。詳細はヘルプを参照してください。<a href="https://ads-help.yahoo-net.jp/s/article/H000044211?language=ja">A/Bテストについて</a></div><div lang="en">Value cannot be set. See also the help below. <a href="https://ads-help.yahoo-net.jp/s/article/H000044211?language=en_US">About A/B test</a></div></td></tr>
+               </tbody>
+             </table>
+             </div>
+@@ -9190,6 +9179,7 @@
+                 <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
+                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
+                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
++                <tr><td>120020</td><td>Can not set value.</td><td><div lang="ja">値を設定することができません。詳細はヘルプを参照してください。<a href="https://ads-help.yahoo-net.jp/s/article/H000044211?language=ja">A/Bテストについて</a></div><div lang="en">Value cannot be set. See also the help below. <a href="https://ads-help.yahoo-net.jp/s/article/H000044211?language=en_US">About A/B test</a></div></td></tr>
+               </tbody>
+             </table>
+             </div>
+@@ -9376,6 +9366,7 @@
+                 <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
+                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
+                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
++                <tr><td>120020</td><td>Can not set value.</td><td><div lang="ja">値を設定することができません。詳細はヘルプを参照してください。<a href="https://ads-help.yahoo-net.jp/s/article/H000044211?language=ja">A/Bテストについて</a></div><div lang="en">Value cannot be set. See also the help below. <a href="https://ads-help.yahoo-net.jp/s/article/H000044211?language=en_US">About A/B test</a></div></td></tr>
+               </tbody>
+             </table>
+             </div>
+@@ -10617,6 +10608,7 @@
+                 <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div></td></tr>
+                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div></td></tr>
+                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div></td></tr>
++                <tr><td>120020</td><td>Can not set value.</td><td><div lang="ja">値を設定することができません。詳細はヘルプを参照してください。<a href="https://ads-help.yahoo-net.jp/s/article/H000044211?language=ja">A/Bテストについて</a></div><div lang="en">Value cannot be set. See also the help below. <a href="https://ads-help.yahoo-net.jp/s/article/H000044211?language=en_US">About A/B test</a></div></td></tr>
+               </tbody>
+             </table>
+             </div>
+@@ -10679,6 +10671,7 @@
+                 <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div></td></tr>
+                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div></td></tr>
+                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div></td></tr>
++                <tr><td>120020</td><td>Can not set value.</td><td><div lang="ja">値を設定することができません。詳細はヘルプを参照してください。<a href="https://ads-help.yahoo-net.jp/s/article/H000044211?language=ja">A/Bテストについて</a></div><div lang="en">Value cannot be set. See also the help below. <a href="https://ads-help.yahoo-net.jp/s/article/H000044211?language=en_US">About A/B test</a></div></td></tr>
+               </tbody>
+             </table>
+             </div>
+@@ -10865,6 +10858,7 @@
+                 <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div></td></tr>
+                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div></td></tr>
+                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div></td></tr>
++                <tr><td>120020</td><td>Can not set value.</td><td><div lang="ja">値を設定することができません。詳細はヘルプを参照してください。<a href="https://ads-help.yahoo-net.jp/s/article/H000044211?language=ja">A/Bテストについて</a></div><div lang="en">Value cannot be set. See also the help below. <a href="https://ads-help.yahoo-net.jp/s/article/H000044211?language=en_US">About A/B test</a></div></td></tr>
+               </tbody>
+             </table>
+             </div>
+@@ -10927,6 +10921,7 @@
+                 <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div></td></tr>
+                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div></td></tr>
+                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div></td></tr>
++                <tr><td>120020</td><td>Can not set value.</td><td><div lang="ja">値を設定することができません。詳細はヘルプを参照してください。<a href="https://ads-help.yahoo-net.jp/s/article/H000044211?language=ja">A/Bテストについて</a></div><div lang="en">Value cannot be set. See also the help below. <a href="https://ads-help.yahoo-net.jp/s/article/H000044211?language=en_US">About A/B test</a></div></td></tr>
+               </tbody>
+             </table>
+             </div>
+@@ -10996,6 +10991,611 @@
+             application/json:
+               schema:
+                 $ref: 'learningdataexclusion/LearningDataExclusionServiceMutateResponse.yaml#/LearningDataExclusionServiceMutateResponse'
++        403:
++          $ref: '../Response403.yaml#/Response403'
++        401:
++          $ref: '../Response401.yaml#/Response401'
++        400:
++          $ref: '../Response400.yaml#/Response400'
++  /AbTestService/get:
++    post:
++      parameters:
++        - in: header
++          name: x-z-base-account-id
++          schema:
++            type: integer
++            format: int64
++          required: true
++          description: |
++            <div lang="ja">アカウントIDを指定してください。</div>
++            <div lang="en">Specify Account ID.</div>
++      description: |
++        <div lang="ja">
++          A/Bテストの情報を取得します。<br>
++          ※現在、こちらのサービスは利用できません。
++        </div>
++        <div lang="en">
++          Retrieves A/B test information.<br>
++          *Currently this service is not available.
++        </div>
++      tags:
++        - AbTestService
++      requestBody:
++        content:
++          application/json:
++            schema:
++              $ref: 'abtest/AbTestServiceSelector.yaml#/AbTestServiceSelector'
++      responses:
++        503:
++          $ref: '../Response503.yaml#/Response503'
++        500:
++          $ref: '../Response500.yaml#/Response500'
++        403:
++          $ref: '../Response403.yaml#/Response403'
++        401:
++          $ref: '../Response401.yaml#/Response401'
++        400:
++          $ref: '../Response400.yaml#/Response400'
++        200:
++          description: |
++            <p class="cellContent__head">Error codes</p>
++            <div class="cellContent__body">
++            <table class="apiTable">
++              <colgroup span="1" class="short"></colgroup>
++              <colgroup span="2"></colgroup>
++              <thead>
++                <tr><th>Code</th><th>Message</th><th>Description</th></tr>
++              </thead>
++              <tbody>
++                <tr><td>0001</td><td>Invalid Request.</td><td><div lang="ja">さまざまな要因が考えられます。<br>主な要因は、パラメータの値が不正か、誤りがあるためにオペレーションが完了できません。</div><div lang="en">This error can result for a variety of reasons. <br>Typically because one of the parameter values in the request is wrong or invalid and the operation cannot be completed.</div></td></tr>
++                <tr><td>R0001</td><td>Require.</td><td><div lang="ja">必須です。</div><div lang="en">It is missing required parameter.</div></td></tr>
++                <tr><td>V0001</td><td>Invalid value.</td><td><div lang="ja">値が無効です。</div><div lang="en">The value is invalid.</div></td></tr>
++                <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
++                <tr><td>F0001</td><td>Invalid format.</td><td><div lang="ja">値の形式が不正です。</div><div lang="en">The value format is invalid.</div></td></tr>
++                <tr><td>L0002</td><td>Over list size.</td><td><div lang="ja">配列の要素数が上限値を超過しています。</div><div lang="en">The number of elements in the array exceeds the upper limit.</div></td></tr>
++                <tr><td>D0001</td><td>Duplicate.</td><td><div lang="ja">一意な値が重複しています。</div><div lang="en">The unique value is duplicated.</div></td></tr>
++                <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
++                <tr><td>L0001</td><td>Lower list size.</td><td><div lang="ja">配列の要素数が下限値を下回っています。</div><div lang="en">The number of elements in the array is below the lower limit.</div></td></tr>
++                <tr><td>120020</td><td>Can not set value.</td><td><div lang="ja">値を設定することができません。</div><div lang="en">Value cannot be set.</div></td></tr>
++                <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
++              </tbody>
++            </table>
++            </div>
++          content:
++            application/json:
++              schema:
++                $ref: 'abtest/AbTestServiceGetResponse.yaml#/AbTestServiceGetResponse'
++  /AbTestService/add:
++    post:
++      parameters:
++        - in: header
++          name: x-z-base-account-id
++          schema:
++            type: integer
++            format: int64
++          required: true
++          description: |
++            <div lang="ja">アカウントIDを指定してください。</div>
++            <div lang="en">Specify Account ID.</div>
++      description: |
++        <div lang="ja">
++          A/Bテストを追加します。<br>
++          ※現在、こちらのサービスは利用できません。
++        </div>
++        <div lang="en">
++          Adds A/B test.<br>
++          *Currently this service is not available.
++        </div>
++      tags:
++        - AbTestService
++      requestBody:
++        content:
++          application/json:
++            schema:
++              $ref: 'abtest/AbTestServiceOperation.yaml#/AbTestServiceOperation'
++      responses:
++        503:
++          $ref: '../Response503.yaml#/Response503'
++        500:
++          $ref: '../Response500.yaml#/Response500'
++        403:
++          $ref: '../Response403.yaml#/Response403'
++        401:
++          $ref: '../Response401.yaml#/Response401'
++        400:
++          $ref: '../Response400.yaml#/Response400'
++        200:
++          description: |
++            <p class="cellContent__head">Error codes</p>
++            <div class="cellContent__body">
++            <table class="apiTable">
++              <colgroup span="1" class="short"></colgroup>
++              <colgroup span="2"></colgroup>
++              <thead>
++                <tr><th>Code</th><th>Message</th><th>Description</th></tr>
++              </thead>
++              <tbody>
++                <tr><td>0001</td><td>Invalid Request.</td><td><div lang="ja">さまざまな要因が考えられます。<br>主な要因は、パラメータの値が不正か、誤りがあるためにオペレーションが完了できません。</div><div lang="en">This error can result for a variety of reasons. <br>Typically because one of the parameter values in the request is wrong or invalid and the operation cannot be completed.</div></td></tr>
++                <tr><td>R0001</td><td>Require.</td><td><div lang="ja">必須です。</div><div lang="en">It is missing required parameter.</div></td></tr>
++                <tr><td>V0001</td><td>Invalid value.</td><td><div lang="ja">値が無効です。</div><div lang="en">The value is invalid.</div></td></tr>
++                <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
++                <tr><td>F0001</td><td>Invalid format.</td><td><div lang="ja">値の形式が不正です。</div><div lang="en">The value format is invalid.</div></td></tr>
++                <tr><td>L0002</td><td>Over list size.</td><td><div lang="ja">配列の要素数が上限値を超過しています。</div><div lang="en">The number of elements in the array exceeds the upper limit.</div></td></tr>
++                <tr><td>D0001</td><td>Duplicate.</td><td><div lang="ja">一意な値が重複しています。</div><div lang="en">The unique value is duplicated.</div></td></tr>
++                <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
++                <tr><td>L0001</td><td>Lower list size.</td><td><div lang="ja">配列の要素数が下限値を下回っています。</div><div lang="en">The number of elements in the array is below the lower limit.</div></td></tr>
++                <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
++                <tr><td>130001</td><td>The request was not completed. Please reduce concurrent requests or data size. </td><td><div lang="ja">リクエストが完了しませんでした。同時リクエスト数またはデータサイズを減らして再度お試しください。</div><div lang="en">The request was not completed. Please reduce concurrent requests or data size.</div></td></tr>
++                <tr><td>210917</td><td>Cannot create duplicate test for campaign.</td><td><div lang="ja">選択したキャンペーンは他のA/Bテストで「テスト元のキャンペーン」に設定されています。複数のA/Bテストで同じキャンペーンを設定できません。</div><div lang="en">The selected campaign is the original campaign for a different A/B test. You can't set up the same campaign for multiple A/B tests.</div></td></tr>
++                <tr><td>120020</td><td>Value cannot be set.</td><td><div lang="ja">値を設定することができません。</div><div lang="en">[TODO ヘルプページ追加する]Can not set value.</div></td></tr>
++                <tr><td>210919</td><td>Specify a start date three days or later from today.</td><td><div lang="ja">開始日は本日から3日後以降の日付を指定してください。</div><div lang="en">Specify a start date three days or later from today.</div></td></tr>
++              </tbody>
++            </table>
++            </div>
++          content:
++            application/json:
++              schema:
++                $ref: 'abtest/AbTestServiceMutateResponse.yaml#/AbTestServiceMutateResponse'
++  /AbTestService/set:
++    post:
++      parameters:
++        - in: header
++          name: x-z-base-account-id
++          schema:
++            type: integer
++            format: int64
++          required: true
++          description: |
++            <div lang="ja">アカウントIDを指定してください。</div>
++            <div lang="en">Specify Account ID.</div>
++      description: |
++        <div lang="ja">
++          A/Bテストを変更します。<br>
++          ※現在、こちらのサービスは利用できません。
++        </div>
++        <div lang="en">
++          Updates information of A/B test.<br>
++          *Currently this service is not available.
++        </div>
++      tags:
++        - AbTestService
++      requestBody:
++        content:
++          application/json:
++            schema:
++              $ref: 'abtest/AbTestServiceOperation.yaml#/AbTestServiceOperation'
++      responses:
++        503:
++          $ref: '../Response503.yaml#/Response503'
++        500:
++          $ref: '../Response500.yaml#/Response500'
++        403:
++          $ref: '../Response403.yaml#/Response403'
++        401:
++          $ref: '../Response401.yaml#/Response401'
++        400:
++          $ref: '../Response400.yaml#/Response400'
++        200:
++          description: |
++            <p class="cellContent__head">Error codes</p>
++            <div class="cellContent__body">
++            <table class="apiTable">
++              <colgroup span="1" class="short"></colgroup>
++              <colgroup span="2"></colgroup>
++              <thead>
++                <tr><th>Code</th><th>Message</th><th>Description</th></tr>
++              </thead>
++              <tbody>
++                <tr><td>0001</td><td>Invalid Request.</td><td><div lang="ja">さまざまな要因が考えられます。<br>主な要因は、パラメータの値が不正か、誤りがあるためにオペレーションが完了できません。</div><div lang="en">This error can result for a variety of reasons. <br>Typically because one of the parameter values in the request is wrong or invalid and the operation cannot be completed.</div></td></tr>
++                <tr><td>R0001</td><td>Require.</td><td><div lang="ja">必須です。</div><div lang="en">It is missing required parameter.</div></td></tr>
++                <tr><td>V0001</td><td>Invalid value.</td><td><div lang="ja">値が無効です。</div><div lang="en">The value is invalid.</div></td></tr>
++                <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
++                <tr><td>F0001</td><td>Invalid format.</td><td><div lang="ja">値の形式が不正です。</div><div lang="en">The value format is invalid.</div></td></tr>
++                <tr><td>L0002</td><td>Over list size.</td><td><div lang="ja">配列の要素数が上限値を超過しています。</div><div lang="en">The number of elements in the array exceeds the upper limit.</div></td></tr>
++                <tr><td>D0001</td><td>Duplicate.</td><td><div lang="ja">一意な値が重複しています。</div><div lang="en">The unique value is duplicated.</div></td></tr>
++                <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
++                <tr><td>L0001</td><td>Lower list size.</td><td><div lang="ja">配列の要素数が下限値を下回っています。</div><div lang="en">The number of elements in the array is below the lower limit.</div></td></tr>
++                <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
++                <tr><td>130001</td><td>The request was not completed. Please reduce concurrent requests or data size. </td><td><div lang="ja">リクエストが完了しませんでした。同時リクエスト数またはデータサイズを減らして再度お試しください。</div><div lang="en">The request was not completed. Please reduce concurrent requests or data size.</div></td></tr>
++                <tr><td>210919</td><td>Specify a start date three days or later from today.</td><td><div lang="ja">開始日は本日から3日後以降の日付を指定してください。</div><div lang="en">Specify a start date three days or later from today.</div></td></tr>
++                <tr><td>120020</td><td>Value cannot be set.</td><td><div lang="ja">値を設定することができません。</div><div lang="en">Can not set value.</div></td></tr>
++                <tr><td>210920</td><td>This action isn't available when creating the A/B test.</td><td><div lang="ja">A/Bテスト作成中のため操作できません。</div><div lang="en">This action isn't available when creating the A/B test.</div></td></tr>
++              </tbody>
++            </table>
++            </div>
++          content:
++            application/json:
++              schema:
++                $ref: 'abtest/AbTestServiceMutateResponse.yaml#/AbTestServiceMutateResponse'
++  /AbTestService/remove:
++    post:
++      parameters:
++        - in: header
++          name: x-z-base-account-id
++          schema:
++            type: integer
++            format: int64
++          required: true
++          description: |
++            <div lang="ja">アカウントIDを指定してください。</div>
++            <div lang="en">Specify Account ID.</div>
++      description: |
++        <div lang="ja">
++          A/Bテストを削除します。<br>
++          ※現在、こちらのサービスは利用できません。
++        </div>
++        <div lang="en">
++          Removes A/B test.<br>
++          *Currently this service is not available.
++        </div>
++      tags:
++        - AbTestService
++      requestBody:
++        content:
++          application/json:
++            schema:
++              $ref: 'abtest/AbTestServiceOperation.yaml#/AbTestServiceOperation'
++      responses:
++        503:
++          $ref: '../Response503.yaml#/Response503'
++        500:
++          $ref: '../Response500.yaml#/Response500'
++        403:
++          $ref: '../Response403.yaml#/Response403'
++        401:
++          $ref: '../Response401.yaml#/Response401'
++        400:
++          $ref: '../Response400.yaml#/Response400'
++        200:
++          description: |
++            <p class="cellContent__head">Error codes</p>
++            <div class="cellContent__body">
++            <table class="apiTable">
++              <colgroup span="1" class="short"></colgroup>
++              <colgroup span="2"></colgroup>
++              <thead>
++                <tr><th>Code</th><th>Message</th><th>Description</th></tr>
++              </thead>
++              <tbody>
++                <tr><td>0001</td><td>Invalid Request.</td><td><div lang="ja">さまざまな要因が考えられます。<br>主な要因は、パラメータの値が不正か、誤りがあるためにオペレーションが完了できません。</div><div lang="en">This error can result for a variety of reasons. <br>Typically because one of the parameter values in the request is wrong or invalid and the operation cannot be completed.</div></td></tr>
++                <tr><td>R0001</td><td>Require.</td><td><div lang="ja">必須です。</div><div lang="en">It is missing required parameter.</div></td></tr>
++                <tr><td>V0001</td><td>Invalid value.</td><td><div lang="ja">値が無効です。</div><div lang="en">The value is invalid.</div></td></tr>
++                <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
++                <tr><td>F0001</td><td>Invalid format.</td><td><div lang="ja">値の形式が不正です。</div><div lang="en">The value format is invalid.</div></td></tr>
++                <tr><td>L0002</td><td>Over list size.</td><td><div lang="ja">配列の要素数が上限値を超過しています。</div><div lang="en">The number of elements in the array exceeds the upper limit.</div></td></tr>
++                <tr><td>D0001</td><td>Duplicate.</td><td><div lang="ja">一意な値が重複しています。</div><div lang="en">The unique value is duplicated.</div></td></tr>
++                <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
++                <tr><td>L0001</td><td>Lower list size.</td><td><div lang="ja">配列の要素数が下限値を下回っています。</div><div lang="en">The number of elements in the array is below the lower limit.</div></td></tr>
++                <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
++                <tr><td>130001</td><td>The request was not completed. Please reduce concurrent requests or data size. </td><td><div lang="ja">リクエストが完了しませんでした。同時リクエスト数またはデータサイズを減らして再度お試しください。</div><div lang="en">The request was not completed. Please reduce concurrent requests or data size.</div></td></tr>
++                <tr><td>210920</td><td>This action isn't available when creating the A/B test.</td><td><div lang="ja">A/Bテスト作成中のため操作できません。</div><div lang="en">This action isn't available when creating the A/B test.</div></td></tr>
++              </tbody>
++            </table>
++            </div>
++          content:
++            application/json:
++              schema:
++                $ref: 'abtest/AbTestServiceMutateResponse.yaml#/AbTestServiceMutateResponse'
++  /AbTestService/graduateTest:
++    post:
++      parameters:
++        - in: header
++          name: x-z-base-account-id
++          schema:
++            type: integer
++            format: int64
++          required: true
++          description: |
++            <div lang="ja">アカウントIDを指定してください。</div>
++            <div lang="en">Specify Account ID.</div>
++      description: |
++        <div lang="ja">
++          A/Bテストで使用中のキャンペーンに適用します。<br>
++          ※現在、こちらのサービスは利用できません。
++        </div>
++        <div lang="en">
++          [TODO]Graduate Test A/B test.<br>
++          *Currently this service is not available.
++        </div>
++      tags:
++        - AbTestService
++      requestBody:
++        content:
++          application/json:
++            schema:
++              $ref: 'abtest/AbTestServiceGraduateTestOperation.yaml#/AbTestServiceGraduateTestOperation'
++      responses:
++        503:
++          $ref: '../Response503.yaml#/Response503'
++        500:
++          $ref: '../Response500.yaml#/Response500'
++        403:
++          $ref: '../Response403.yaml#/Response403'
++        401:
++          $ref: '../Response401.yaml#/Response401'
++        400:
++          $ref: '../Response400.yaml#/Response400'
++        200:
++          description: |
++            <p class="cellContent__head">Error codes</p>
++            <div class="cellContent__body">
++            <table class="apiTable">
++              <colgroup span="1" class="short"></colgroup>
++              <colgroup span="2"></colgroup>
++              <thead>
++                <tr><th>Code</th><th>Message</th><th>Description</th></tr>
++              </thead>
++              <tbody>
++                <tr><td>0001</td><td>Invalid Request.</td><td><div lang="ja">さまざまな要因が考えられます。<br>主な要因は、パラメータの値が不正か、誤りがあるためにオペレーションが完了できません。</div><div lang="en">This error can result for a variety of reasons. <br>Typically because one of the parameter values in the request is wrong or invalid and the operation cannot be completed.</div></td></tr>
++                <tr><td>R0001</td><td>Require.</td><td><div lang="ja">必須です。</div><div lang="en">It is missing required parameter.</div></td></tr>
++                <tr><td>V0001</td><td>Invalid value.</td><td><div lang="ja">値が無効です。</div><div lang="en">The value is invalid.</div></td></tr>
++                <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
++                <tr><td>F0001</td><td>Invalid format.</td><td><div lang="ja">値の形式が不正です。</div><div lang="en">The value format is invalid.</div></td></tr>
++                <tr><td>L0002</td><td>Over list size.</td><td><div lang="ja">配列の要素数が上限値を超過しています。</div><div lang="en">The number of elements in the array exceeds the upper limit.</div></td></tr>
++                <tr><td>D0001</td><td>Duplicate.</td><td><div lang="ja">一意な値が重複しています。</div><div lang="en">The unique value is duplicated.</div></td></tr>
++                <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
++                <tr><td>L0001</td><td>Lower list size.</td><td><div lang="ja">配列の要素数が下限値を下回っています。</div><div lang="en">The number of elements in the array is below the lower limit.</div></td></tr>
++                <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
++                <tr><td>130001</td><td>The request was not completed. Please reduce concurrent requests or data size. </td><td><div lang="ja">リクエストが完了しませんでした。同時リクエスト数またはデータサイズを減らして再度お試しください。</div><div lang="en">The request was not completed. Please reduce concurrent requests or data size.</div></td></tr>
++                <tr><td>210307</td><td>Budget is lower than ad group/keywords.</td><td><div lang="ja">予算額は、キャンペーン内の広告グループ・キーワードに設定されている予算よりも高く設定してください。</div><div lang="en">The budget should be set higher than the budget set for the ad group / keyword in the campaign.</div></td></tr>
++                <tr><td>210316</td><td>Cannot set campaign budget for bidding strategy type.</td><td><div lang="ja">入札戦略「MAXIMIZE_CONVERSIONS(targetCpa設定なし)」もしくは「MAXIMIZE_CONVERSION_VALUE(targetRoas設定なし)」のキャンペーンには共有予算を設定できません。</div><div lang="en">Cannot set campaign budget for bidding strategy type.</div></td></tr>
++                <tr><td>210317</td><td>Please set either CampaignBudgetId or amount.</td><td><div lang="ja">CampaignBudgetId または amount どちらかを設定してください。</div><div lang="en">Please set either CampaignBudgetId or amount.</div></td></tr>
++                <tr><td>210922</td><td>Test status is not ENDED or already GRADUATED.</td><td><div lang="ja">A/BテストのステータスがENDEDでないため変換できません。</div><div lang="en">Can't switch. The A/B test status isn't ENDED.</div></td></tr>
++              </tbody>
++            </table>
++            </div>
++          content:
++            application/json:
++              schema:
++                $ref: 'abtest/AbTestServiceMutateResponse.yaml#/AbTestServiceMutateResponse'
++  /ConversionGroupService/get:
++    post:
++      parameters:
++        - in: header
++          name: x-z-base-account-id
++          schema:
++            type: integer
++            format: int64
++          required: true
++          description: |
++            <div lang="ja">アカウントIDを指定してください。</div>
++            <div lang="en">Specify Account ID.</div>
++      description: |
++        <div lang="ja">指定アカウントのコンバージョングループ情報を取得します。</div>
++        <div lang="en">Get ConversionGroup information of specified account.</div>
++      tags:
++        - ConversionGroupService
++      requestBody:
++        content:
++          application/json:
++            schema:
++              $ref: 'conversiongroup/ConversionGroupServiceSelector.yaml#/ConversionGroupServiceSelector'
++      responses:
++        503:
++          $ref: '../Response503.yaml#/Response503'
++        500:
++          $ref: '../Response500.yaml#/Response500'
++        200:
++          description: |
++            <p class="cellContent__head">Error codes</p>
++            <div class="cellContent__body">
++            <table class="apiTable">
++              <colgroup span="1" class="short"></colgroup>
++              <colgroup span="2"></colgroup>
++              <thead>
++                <tr><th>Code</th><th>Message</th><th>Description</th></tr>
++              </thead>
++              <tbody>
++                <tr><td>0001</td><td>Invalid Request.</td><td><div lang="ja">さまざまな要因が考えられます。<br>主な要因は、パラメータの値が不正か、誤りがあるためにオペレーションが完了できません。</div></td></tr>
++                <tr><td>R0001</td><td>Require.</td><td><div lang="ja">必須です。</div></td></tr>
++                <tr><td>F0001</td><td>Invalid format.</td><td><div lang="ja">値の形式が不正です。</div></td></tr>
++                <tr><td>V0001</td><td>Invalid value.</td><td><div lang="ja">値が無効です。</div></td></tr>
++                <tr><td>S0001</td><td>Invalid Status.</td><td><div lang="ja">ステータスが無効です。</div></td></tr>
++                <tr><td>L0002</td><td>Over list size.</td><td><div lang="ja">配列の要素数が上限値を超過しています。</div></td></tr>
++                <tr><td>L0001</td><td>Lower list size.</td><td><div lang="ja">配列の要素数が下限値を下回っています。</div></td></tr>
++                <tr><td>D0001</td><td>Duplicate.</td><td><div lang="ja">一意な値が重複しています。</div></td></tr>
++                <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始≧終了の日付指定の日付指定を行なっているなど</div></td></tr>
++                <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div></td></tr>
++                <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div></td></tr>
++              </tbody>
++            </table>
++            </div>
++          content:
++            application/json:
++              schema:
++                $ref: 'conversiongroup/ConversionGroupServiceGetResponse.yaml#/ConversionGroupServiceGetResponse'
++        403:
++          $ref: '../Response403.yaml#/Response403'
++        401:
++          $ref: '../Response401.yaml#/Response401'
++        400:
++          $ref: '../Response400.yaml#/Response400'
++  /ConversionGroupService/add:
++    post:
++      parameters:
++        - in: header
++          name: x-z-base-account-id
++          schema:
++            type: integer
++            format: int64
++          required: true
++          description: |
++            <div lang="ja">アカウントIDを指定してください。</div>
++            <div lang="en">Specify Account ID.</div>
++      description: |
++        <div lang="ja">コンバージョングループ情報を追加します。</div>
++        <div lang="en">Add ConversionGroup information.</div>
++      tags:
++        - ConversionGroupService
++      requestBody:
++        content:
++          application/json:
++            schema:
++              $ref: 'conversiongroup/ConversionGroupServiceOperation.yaml#/ConversionGroupServiceOperation'
++      responses:
++        503:
++          $ref: '../Response503.yaml#/Response503'
++        500:
++          $ref: '../Response500.yaml#/Response500'
++        200:
++          description: |
++            <p class="cellContent__head">Error codes</p>
++            <div class="cellContent__body">
++            <table class="apiTable">
++              <colgroup span="1" class="short"></colgroup>
++              <colgroup span="2"></colgroup>
++              <thead>
++                <tr><th>Code</th><th>Message</th><th>Description</th></tr>
++              </thead>
++              <tbody>
++                <tr><td>0001</td><td>Invalid Request.</td><td><div lang="ja">さまざまな要因が考えられます。<br>主な要因は、パラメータの値が不正か、誤りがあるためにオペレーションが完了できません。</div></td></tr>
++                <tr><td>R0001</td><td>Require.</td><td><div lang="ja">必須です。</div></td></tr>
++                <tr><td>F0001</td><td>Invalid format.</td><td><div lang="ja">値の形式が不正です。</div></td></tr>
++                <tr><td>V0001</td><td>Invalid value.</td><td><div lang="ja">値が無効です。</div></td></tr>
++                <tr><td>S0001</td><td>Invalid Status.</td><td><div lang="ja">ステータスが無効です。</div></td></tr>
++                <tr><td>L0002</td><td>Over list size.</td><td><div lang="ja">配列の要素数が上限値を超過しています。</div></td></tr>
++                <tr><td>L0001</td><td>Lower list size.</td><td><div lang="ja">配列の要素数が下限値を下回っています。</div></td></tr>
++                <tr><td>D0001</td><td>Duplicate.</td><td><div lang="ja">一意な値が重複しています。</div></td></tr>
++                <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div></td></tr>
++                <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div></td></tr>
++                <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div></td></tr>
++                <tr><td>225310</td><td>Turn on the conversion settings.</td><td><div lang="ja">このコンバージョン設定はコンバージョングループに設定されているため、設定をオフにできません。</div><div lang="en">You can't turn off the conversion settings  set in the conversion group.</div></td></tr>
++                <tr><td>225308</td><td>This action isn't available for the conversion group. Try again later.</td><td><div lang="ja">このコンバージョングループは現在、操作できません。しばらく時間をおいて、再度お試しください。</div><div lang="en">This action isn't available for the conversion group. Try again later.</div></td></tr>
++                <tr><td>210923</td><td>Cannot delete conversion group.</td><td><div lang="ja">キャンペーンに紐づいているコンバージョングループは削除できません。</div><div lang="en">Cannot delete conversion group.</div></td></tr>
++              </tbody>
++            </table>
++            </div>
++          content:
++            application/json:
++              schema:
++                $ref: 'conversiongroup/ConversionGroupServiceMutateResponse.yaml#/ConversionGroupServiceMutateResponse'
++        403:
++          $ref: '../Response403.yaml#/Response403'
++        401:
++          $ref: '../Response401.yaml#/Response401'
++        400:
++          $ref: '../Response400.yaml#/Response400'
++  /ConversionGroupService/set:
++    post:
++      parameters:
++        - in: header
++          name: x-z-base-account-id
++          schema:
++            type: integer
++            format: int64
++          required: true
++          description: |
++            <div lang="ja">アカウントIDを指定してください。</div>
++            <div lang="en">Specify Account ID.</div>
++      description: |
++        <div lang="ja">コンバージョングループ情報を更新します。</div>
++        <div lang="en">Update ConversionGroup information.</div>
++      tags:
++        - ConversionGroupService
++      requestBody:
++        content:
++          application/json:
++            schema:
++              $ref: 'conversiongroup/ConversionGroupServiceOperation.yaml#/ConversionGroupServiceOperation'
++      responses:
++        503:
++          $ref: '../Response503.yaml#/Response503'
++        500:
++          $ref: '../Response500.yaml#/Response500'
++        200:
++          description: |
++            <p class="cellContent__head">Error codes</p>
++            <div class="cellContent__body">
++            <table class="apiTable">
++              <colgroup span="1" class="short"></colgroup>
++              <colgroup span="2"></colgroup>
++              <thead>
++                <tr><th>Code</th><th>Message</th><th>Description</th></tr>
++              </thead>
++              <tbody>
++                <tr><td>0001</td><td>Invalid Request.</td><td><div lang="ja">さまざまな要因が考えられます。<br>主な要因は、パラメータの値が不正か、誤りがあるためにオペレーションが完了できません。</div></td></tr>
++                <tr><td>R0001</td><td>Require.</td><td><div lang="ja">必須です。</div></td></tr>
++                <tr><td>F0001</td><td>Invalid format.</td><td><div lang="ja">値の形式が不正です。</div></td></tr>
++                <tr><td>V0001</td><td>Invalid value.</td><td><div lang="ja">値が無効です。</div></td></tr>
++                <tr><td>S0001</td><td>Invalid Status.</td><td><div lang="ja">ステータスが無効です。</div></td></tr>
++                <tr><td>L0002</td><td>Over list size.</td><td><div lang="ja">配列の要素数が上限値を超過しています。</div></td></tr>
++                <tr><td>L0001</td><td>Lower list size.</td><td><div lang="ja">配列の要素数が下限値を下回っています。</div></td></tr>
++                <tr><td>D0001</td><td>Duplicate.</td><td><div lang="ja">一意な値が重複しています。</div></td></tr>
++                <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div></td></tr>
++                <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div></td></tr>
++                <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div></td></tr>
++                <tr><td>225310</td><td>Turn on the conversion settings.</td><td><div lang="ja">このコンバージョン設定はコンバージョングループに設定されているため、設定をオフにできません。</div><div lang="en">You can't turn off the conversion settings  set in the conversion group.</div></td></tr>
++                <tr><td>225308</td><td>This action isn't available for the conversion group. Try again later.</td><td><div lang="ja">このコンバージョングループは現在、操作できません。しばらく時間をおいて、再度お試しください。</div><div lang="en">This action isn't available for the conversion group. Try again later.</div></td></tr>
++                <tr><td>210923</td><td>Cannot delete conversion group.</td><td><div lang="ja">キャンペーンに紐づいているコンバージョングループは削除できません。</div><div lang="en">Cannot delete conversion group.</div></td></tr>
++              </tbody>
++            </table>
++            </div>
++          content:
++            application/json:
++              schema:
++                $ref: 'conversiongroup/ConversionGroupServiceMutateResponse.yaml#/ConversionGroupServiceMutateResponse'
++        403:
++          $ref: '../Response403.yaml#/Response403'
++        401:
++          $ref: '../Response401.yaml#/Response401'
++        400:
++          $ref: '../Response400.yaml#/Response400'
++  /ConversionGroupService/remove:
++    post:
++      parameters:
++        - in: header
++          name: x-z-base-account-id
++          schema:
++            type: integer
++            format: int64
++          required: true
++          description: |
++            <div lang="ja">アカウントIDを指定してください。</div>
++            <div lang="en">Specify Account ID.</div>
++      description: |
++        <div lang="ja">コンバージョングループ情報を削除します。</div>
++        <div lang="en">Remove ConversionGroup information.</div>
++      tags:
++        - ConversionGroupService
++      requestBody:
++        content:
++          application/json:
++            schema:
++              $ref: 'conversiongroup/ConversionGroupServiceOperation.yaml#/ConversionGroupServiceOperation'
++      responses:
++        503:
++          $ref: '../Response503.yaml#/Response503'
++        500:
++          $ref: '../Response500.yaml#/Response500'
++        200:
++          description: |
++            <p class="cellContent__head">Error codes</p>
++            <div class="cellContent__body">
++            <table class="apiTable">
++              <colgroup span="1" class="short"></colgroup>
++              <colgroup span="2"></colgroup>
++              <thead>
++                <tr><th>Code</th><th>Message</th><th>Description</th></tr>
++              </thead>
++              <tbody>
++                <tr><td>0001</td><td>Invalid Request.</td><td><div lang="ja">さまざまな要因が考えられます。<br>主な要因は、パラメータの値が不正か、誤りがあるためにオペレーションが完了できません。</div></td></tr>
++                <tr><td>R0001</td><td>Require.</td><td><div lang="ja">必須です。</div></td></tr>
++                <tr><td>F0001</td><td>Invalid format.</td><td><div lang="ja">値の形式が不正です。</div></td></tr>
++                <tr><td>V0001</td><td>Invalid value.</td><td><div lang="ja">値が無効です。</div></td></tr>
++                <tr><td>S0001</td><td>Invalid Status.</td><td><div lang="ja">ステータスが無効です。</div></td></tr>
++                <tr><td>L0002</td><td>Over list size.</td><td><div lang="ja">配列の要素数が上限値を超過しています。</div></td></tr>
++                <tr><td>L0001</td><td>Lower list size.</td><td><div lang="ja">配列の要素数が下限値を下回っています。</div></td></tr>
++                <tr><td>D0001</td><td>Duplicate.</td><td><div lang="ja">一意な値が重複しています。</div></td></tr>
++                <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div></td></tr>
++                <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div></td></tr>
++                <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div></td></tr>
++              </tbody>
++            </table>
++            </div>
++          content:
++            application/json:
++              schema:
++                $ref: 'conversiongroup/ConversionGroupServiceMutateResponse.yaml#/ConversionGroupServiceMutateResponse'
+         403:
+           $ref: '../Response403.yaml#/Response403'
+         401:
+Only in v15: abtest
+Only in v15/accountlink: XXEFJMhb
+
+
+------
+diff -ru v14/auditlog/AuditLogServiceEventSelector.yaml v15/auditlog/AuditLogServiceEventSelector.yaml
+--- v14/auditlog/AuditLogServiceEventSelector.yaml	2024-10-08 16:20:34
++++ v15/auditlog/AuditLogServiceEventSelector.yaml	2024-10-08 16:20:33
+@@ -6,86 +6,338 @@
+       type: string
+       nullable: true
+       description: |
+-        <div lang="ja">AuditLogServiceEntityTypeオブジェクトは、操作履歴に出力するエンティティの種類を表します。</div>
+-        <div lang="en">AuditLogServiceEntityType object describes the type of entities to be output on the data of operation history.</div>
+-        <dl class=term>
+-          <dt class="term__item">CAMPAIGN</dt>
+-          <dd class="term__desc"><span lang="ja">キャンペーンです。</span><span lang="en">Campaign.</span></dd>
+-          <dt class="term__item">NEGATIVE_CAMPAIGN_CRITERION</dt>
+-          <dd class="term__desc"><span lang="ja">対象外キーワードです（キャンペーン）。</span><span lang="en">Negative keywords (for campaign).</span></dd>
+-          <dt class="term__item">CAMPAIGN_CRITERION</dt>
+-          <dd class="term__desc"><span lang="ja">キャンペーンのターゲティング設定です。</span><span lang="en">Targeting setting on campaign.</span></dd>
+-          <dt class="term__item">AD_GROUP</dt>
+-          <dd class="term__desc"><span lang="ja">広告グループです。</span><span lang="en">Ad group.</span></dd>
+-          <dt class="term__item">AD_GROUP_BID_MULTIPLIER</dt>
+-          <dd class="term__desc"><span lang="ja">広告グループ入札価格調整率です。</span><span lang="en">Bid adjustment for ad group.</span></dd>
+-          <dt class="term__item">BIDDABLE_AD_GROUP_CRITERION</dt>
+-          <dd class="term__desc"><span lang="ja">入札キーワードです。</span><span lang="en">Bidding keyword.</span></dd>
+-          <dt class="term__item">NEGATIVE_AD_GROUP_CRITERION</dt>
+-          <dd class="term__desc"><span lang="ja">対象外キーワードです（広告グループ）。</span><span lang="en">Negative keywords (for ad group).</span></dd>
+-          <dt class="term__item">AD</dt>
+-          <dd class="term__desc"><span lang="ja">広告です。</span><span lang="en">Ad.</span></dd>
+-          <dt class="term__item">FEED</dt>
+-          <dd class="term__desc"><span lang="ja">Feedフォルダーです。</span><span lang="en">Feed folder.</span></dd>
+-          <dt class="term__item">FEED_ITEM</dt>
+-          <dd class="term__desc"><span lang="ja">広告表示アセットです。</span><span lang="en">Ad display assets.</span></dd>
+-          <dt class="term__item">CAMPAIGN_FEED</dt>
+-          <dd class="term__desc"><span lang="ja">広告表示アセットです（キャンペーン）。</span><span lang="en">Ad display assets for campaign.</span></dd>
+-          <dt class="term__item">AD_GROUP_FEED</dt>
+-          <dd class="term__desc"><span lang="ja">広告表示アセットです（広告グループ）。</span><span lang="en">Ad display assets for ad group.</span></dd>
+-          <dt class="term__item">SS_IO</dt>
+-          <dd class="term__desc"><span lang="ja">アカウントです。</span><span lang="en">Account.</span></dd>
+-          <dt class="term__item">SS_CONVERSION</dt>
+-          <dd class="term__desc"><span lang="ja">コンバージョントラッカー（コンバージョン測定）です。</span><span lang="en">Conversion tracker for conversion tracking.</span></dd>
+-          <dt class="term__item">BIDDING_STRATEGY</dt>
+-          <dd class="term__desc"><span lang="ja">自動入札設定です。</span><span lang="en">Auto bidding setting.</span></dd>
+-          <dt class="term__item">NEGATIVE_CAMPAIGN_USER_LIST</dt>
+-          <dd class="term__desc"><span lang="ja">対象外ターゲットリストです（キャンペーン）。</span><span lang="en">Exclude target list for campaign.</span></dd>
+-          <dt class="term__item">NEGATIVE_AD_GROUP_USER_LIST</dt>
+-          <dd class="term__desc"><span lang="ja">対象外ターゲットリストです（広告グループ）。</span><span lang="en">Exclude target list for ad group.</span></dd>
+-          <dt class="term__item">AD_GROUP_USER_LIST</dt>
+-          <dd class="term__desc"><span lang="ja">ターゲットリストです（広告グループ）。</span><span lang="en">Target list for ad group.</span></dd>
+-          <dt class="term__item">TARGET_LIST</dt>
+-          <dd class="term__desc"><span lang="ja">サイトリターゲテイングのターゲットリストです。</span><span lang="en">Target list of Site Retargeting.</span></dd>
+-          <dt class="term__item">SHARED_SET</dt>
+-          <dd class="term__desc"><span lang="ja">共有リストです。</span><span lang="en">Shared list.</span></dd>
+-          <dt class="term__item">SHARED_CRITERION</dt>
+-          <dd class="term__desc"><span lang="ja">共有キーワードです。</span><span lang="en">Shared keywords.</span></dd>
+-          <dt class="term__item">CAMPAIGN_SHARED_SET</dt>
+-          <dd class="term__desc"><span lang="ja">キャンペーン共有リストです。</span><span lang="en">Shared list for campaign.</span></dd>
+-          <dt class="term__item">AD_CUSTOMIZER</dt>
+-          <dd class="term__desc"><span lang="ja">アドカスタマイザーです。</span><span lang="en">Ad customizer.</span></dd>
+-          <dt class="term__item">EXCLUDE_AD_CUSTOMIZER</dt>
+-          <dd class="term__desc"><span lang="ja">アドカスタマイザーを除くすべての履歴です。</span><span lang="en">All operation history excepting ad customizer.</span></dd>
+-          <dt class="term__item">ASSET</dt>
+-          <dd class="term__desc"><span lang="ja">アセット（広告表示アセット）です。</span><span lang="en">Assets (Ad display asset).</span></dd>
+-          <dt class="term__item">CAMPAIGN_ASSET</dt>
+-          <dd class="term__desc"><span lang="ja">キャンペーンとアセット間の設定情報です。</span><span lang="en">Configuration information between campaign and assets.</span></dd>
+-          <dt class="term__item">AD_GROUP_ASSET</dt>
+-          <dd class="term__desc"><span lang="ja">広告グループとアセット間の設定情報です。</span><span lang="en">Configuration information between ad group and assets.</span></dd>
+-          <dt class="term__item">ACCOUNT_CUSTOMIZER</dt>
+-          <dd class="term__desc"><span lang="ja">アカウントとカスタマイザー属性間の設定情報です。</span><span lang="en">Configuration information between account and customizer attributes.</span></dd>
+-          <dt class="term__item">CAMPAIGN_CUSTOMIZER</dt>
+-          <dd class="term__desc"><span lang="ja">キャンペーンとカスタマイザー属性間の設定情報です。</span><span lang="en">Configuration information between campaign and customizer attributes.</span></dd>
+-          <dt class="term__item">AD_GROUP_CUSTOMIZER</dt>
+-          <dd class="term__desc"><span lang="ja">広告グループとカスタマイザー属性間の設定情報です。</span><span lang="en">Configuration information between ad group and customizer attributes.</span></dd>
+-          <dt class="term__item">AD_GROUP_CRITERION_CUSTOMIZER</dt>
+-          <dd class="term__desc"><span lang="ja">キーワードとカスタマイザー属性間の設定情報です。</span><span lang="en">Configuration information between keyword and customizer attributes.</span></dd>
+-          <dt class="term__item">CUSTOMIZER_ATTRIBUTE</dt>
+-          <dd class="term__desc"><span lang="ja">カスタマイザー属性です。</span><span lang="en">Customizer attributes.</span></dd>
+-          <dt class="term__item">PAGE_FEED_ASSET_SET</dt>
+-          <dd class="term__desc"><span lang="ja">ページフィードアセットセットです。</span><span lang="en">PageFeedAssetSet.</span></dd>
+-          <dt class="term__item">PAGE_FEED_ASSET</dt>
+-          <dd class="term__desc"><span lang="ja">ページフィードアセットです。</span><span lang="en">PageFeedAsset.</span></dd>
+-          <dt class="term__item">BIDDING_SEASONALITY_ADJUSTMENT</dt>
+-          <dd class="term__desc"><span lang="ja">自動入札のスポット調整です。</span><span lang="en">Bidding Seasonality Adjustment.</span></dd>
+-          <dt class="term__item">CAMPAIGN_BUDGET</dt>
+-          <dd class="term__desc"><span lang="ja">キャンペーン間の共有予算です。</span><span lang="en">Shared budgets.</span></dd>
+-          <dt class="term__item">ALL</dt>
+-          <dd class="term__desc"><span lang="ja">すべての履歴です。</span><span lang="en">All operation history.</span></dd>
+-          <dt class="term__item">UNKNOWN</dt>
+-          <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown value.</span></dd>
+-        </dl>
++        <div lang="ja">
++          AuditLogServiceEntityTypeは、操作履歴に出力するエンティティの種類を表します。</br>
++          ADD時、指定必須です。</br>
++          <table border='1'>
++            <tr>
++              <th>AuditLogServiceEntityType</th>
++              <th>説明</th>
++            </tr>
++            <tr>
++              <td>CAMPAIGN</td>
++              <td>キャンペーンです。</td>
++            </tr>
++            <tr>
++              <td>NEGATIVE_CAMPAIGN_CRITERION</td>
++              <td>対象外キーワードです（キャンペーン）。</td>
++            </tr>
++            <tr>
++              <td>CAMPAIGN_CRITERION</td>
++              <td>キャンペーンのターゲティング設定です。</td>
++            </tr>
++            <tr>
++              <td>AD_GROUP</td>
++              <td>広告グループです。</td>
++            </tr>
++            <tr>
++              <td>AD_GROUP_BID_MULTIPLIER</td>
++              <td>広告グループ入札価格調整率です。</td>
++            </tr>
++            <tr>
++              <td>BIDDABLE_AD_GROUP_CRITERION</td>
++              <td>入札キーワードです。</td>
++            </tr>
++            <tr>
++              <td>NEGATIVE_AD_GROUP_CRITERION</td>
++              <td>対象外キーワードです（広告グループ）。</td>
++            </tr>
++            <tr>
++              <td>AD</td>
++              <td>広告です。</td>
++            </tr>
++            <tr>
++              <td>FEED</td>
++              <td>Feedフォルダーです。</td>
++            </tr>
++            <tr>
++              <td>FEED_ITEM</td>
++              <td>広告表示アセットです。</td>
++            </tr>
++            <tr>
++              <td>CAMPAIGN_FEED</td>
++              <td>広告表示アセットです（キャンペーン）。</td>
++            </tr>
++            <tr>
++              <td>AD_GROUP_FEED</td>
++              <td>広告表示アセットです（広告グループ）。</td>
++            </tr>
++            <tr>
++              <td>SS_IO</td>
++              <td>アカウントです。</td>
++            </tr>
++            <tr>
++              <td>SS_CONVERSION</td>
++              <td>コンバージョントラッカー（コンバージョン測定）です。</td>
++            </tr>
++            <tr>
++              <td>BIDDING_STRATEGY</td>
++              <td>自動入札設定です。</td>
++            </tr>
++            <tr>
++              <td>NEGATIVE_CAMPAIGN_USER_LIST</td>
++              <td>対象外ターゲットリストです（キャンペーン）。</td>
++            </tr>
++            <tr>
++              <td>NEGATIVE_AD_GROUP_USER_LIST</td>
++              <td>対象外ターゲットリストです（広告グループ）。</td>
++            </tr>
++            <tr>
++              <td>AD_GROUP_USER_LIST</td>
++              <td>ターゲットリストです（広告グループ）。</td>
++            </tr>
++            <tr>
++              <td>TARGET_LIST</td>
++              <td>サイトリターゲテイングのターゲットリストです。</td>
++            </tr>
++            <tr>
++              <td>SHARED_SET</td>
++              <td>共有リストです。</td>
++            </tr>
++            <tr>
++              <td>SHARED_CRITERION</td>
++              <td>共有キーワードです。</td>
++            </tr>
++            <tr>
++              <td>CAMPAIGN_SHARED_SET</td>
++              <td>キャンペーン共有リストです。</td>
++            </tr>
++            <tr>
++              <td>AD_CUSTOMIZER</td>
++              <td>アドカスタマイザーです。</td>
++            </tr>
++            <tr>
++              <td>EXCLUDE_AD_CUSTOMIZER</td>
++              <td>アドカスタマイザーを除くすべての履歴です。</td>
++            </tr>
++            <tr>
++              <td>ASSET</td>
++              <td>アセット（広告表示アセット）です。</td>
++            </tr>
++            <tr>
++              <td>CAMPAIGN_ASSET</td>
++              <td>キャンペーンとアセット間の設定情報です。</td>
++            </tr>
++            <tr>
++              <td>AD_GROUP_ASSET</td>
++              <td>広告グループとアセット間の設定情報です。</td>
++            </tr>
++            <tr>
++              <td>ACCOUNT_CUSTOMIZER</td>
++              <td>アカウントとカスタマイザー属性間の設定情報です。</td>
++            </tr>
++            <tr>
++              <td>CAMPAIGN_CUSTOMIZER</td>
++              <td>キャンペーンとカスタマイザー属性間の設定情報です。</td>
++            </tr>
++            <tr>
++              <td>AD_GROUP_CUSTOMIZER</td>
++              <td>広告グループとカスタマイザー属性間の設定情報です。</td>
++            </tr>
++            <tr>
++              <td>AD_GROUP_CRITERION_CUSTOMIZER</td>
++              <td>キーワードとカスタマイザー属性間の設定情報です。</td>
++            </tr>
++            <tr>
++              <td>CUSTOMIZER_ATTRIBUTE</td>
++              <td>カスタマイザー属性です。</td>
++            </tr>
++            <tr>
++              <td>PAGE_FEED_ASSET_SET</td>
++              <td>ページフィードアセットセットです。</td>
++            </tr>
++            <tr>
++              <td>PAGE_FEED_ASSET</td>
++              <td>ページフィードアセットです。</td>
++            </tr>
++            <tr>
++              <td>BIDDING_SEASONALITY_ADJUSTMENT</td>
++              <td>自動入札のスポット調整です。</td>
++            </tr>
++            <tr>
++              <td>CAMPAIGN_BUDGET</td>
++              <td>キャンペーン間の共有予算です。</td>
++            </tr>
++            <tr>
++              <td>AB_TEST</td>
++              <td>A/Bテストです。</td>
++            </tr>
++            <tr>
++              <td>SS_CONVERSION_GROUP</td>
++              <td>コンバージョングループです。</td>
++            </tr>
++            <tr>
++              <td>ALL</td>
++              <td>すべての履歴です。</td>
++            </tr>
++          </table>
++        </div>
++        <div lang="en">
++          AuditLogServiceEntityType object describes the type of entities to be output on the data of operation history.</br>
++          This field is required in ADD operation.</br>
++          <table border='1'>
++            <tr>
++              <th>AuditLogServiceEntityType</th>
++              <th>description</th>
++            </tr>
++            <tr>
++              <td>CAMPAIGN</td>
++              <td>Campaign.</td>
++            </tr>
++            <tr>
++              <td>NEGATIVE_CAMPAIGN_CRITERION</td>
++              <td>Negative keywords (for campaign).</td>
++            </tr>
++            <tr>
++              <td>CAMPAIGN_CRITERION</td>
++              <td>Targeting setting on campaign.</td>
++            </tr>
++            <tr>
++              <td>AD_GROUP</td>
++              <td>Ad group.</td>
++            </tr>
++            <tr>
++              <td>AD_GROUP_BID_MULTIPLIER</td>
++              <td>Bid adjustment for ad group.</td>
++            </tr>
++            <tr>
++              <td>BIDDABLE_AD_GROUP_CRITERION</td>
++              <td>Bidding keyword.</td>
++            </tr>
++            <tr>
++              <td>NEGATIVE_AD_GROUP_CRITERION</td>
++              <td>Negative keywords (for ad group).</td>
++            </tr>
++            <tr>
++              <td>AD</td>
++              <td>Ad.</td>
++            </tr>
++            <tr>
++              <td>FEED</td>
++              <td>Feed folder.</td>
++            </tr>
++            <tr>
++              <td>FEED_ITEM</td>
++              <td>Ad display assets.</td>
++            </tr>
++            <tr>
++              <td>CAMPAIGN_FEED</td>
++              <td>Ad display assets for campaign.</td>
++            </tr>
++            <tr>
++              <td>AD_GROUP_FEED</td>
++              <td>Ad display assets for ad group.</td>
++            </tr>
++            <tr>
++              <td>SS_IO</td>
++              <td>Account.</td>
++            </tr>
++            <tr>
++              <td>SS_CONVERSION</td>
++              <td>Conversion tracker for conversion tracking.</td>
++            </tr>
++            <tr>
++              <td>BIDDING_STRATEGY</td>
++              <td>Auto bidding setting.</td>
++            </tr>
++            <tr>
++              <td>NEGATIVE_CAMPAIGN_USER_LIST</td>
++              <td>Exclude target list for campaign.</td>
++            </tr>
++            <tr>
++              <td>NEGATIVE_AD_GROUP_USER_LIST</td>
++              <td>Exclude target list for ad group.</td>
++            </tr>
++            <tr>
++              <td>AD_GROUP_USER_LIST</td>
++              <td>Target list for ad group.</td>
++            </tr>
++            <tr>
++              <td>TARGET_LIST</td>
++              <td>Target list of Site Retargeting.</td>
++            </tr>
++            <tr>
++              <td>SHARED_SET</td>
++              <td>Shared list.</td>
++            </tr>
++            <tr>
++              <td>SHARED_CRITERION</td>
++              <td>Shared keywords.</td>
++            </tr>
++            <tr>
++              <td>CAMPAIGN_SHARED_SET</td>
++              <td>Shared list for campaign.</td>
++            </tr>
++            <tr>
++              <td>AD_CUSTOMIZER</td>
++              <td>Ad customizer.</td>
++            </tr>
++            <tr>
++              <td>EXCLUDE_AD_CUSTOMIZER</td>
++              <td>All operation history excepting ad customizer.</td>
++            </tr>
++            <tr>
++              <td>ASSET</td>
++              <td>Assets (Ad display asset).</td>
++            </tr>
++            <tr>
++              <td>CAMPAIGN_ASSET</td>
++              <td>Configuration information between campaign and assets.</td>
++            </tr>
++            <tr>
++              <td>AD_GROUP_ASSET</td>
++              <td>Configuration information between ad group and assets.</td>
++            </tr>
++            <tr>
++              <td>ACCOUNT_CUSTOMIZER</td>
++              <td>Configuration information between account and customizer attributes.</td>
++            </tr>
++            <tr>
++              <td>CAMPAIGN_CUSTOMIZER</td>
++              <td>Configuration information between campaign and customizer attributes.</td>
++            </tr>
++            <tr>
++              <td>AD_GROUP_CUSTOMIZER</td>
++              <td>Configuration information between ad group and customizer attributes.</td>
++            </tr>
++            <tr>
++              <td>AD_GROUP_CRITERION_CUSTOMIZER</td>
++              <td>Configuration information between keyword and customizer attributes.</td>
++            </tr>
++            <tr>
++              <td>CUSTOMIZER_ATTRIBUTE</td>
++              <td>Customizer attributes.</td>
++            </tr>
++            <tr>
++              <td>PAGE_FEED_ASSET_SET</td>
++              <td>PageFeedAssetSet.</td>
++            </tr>
++            <tr>
++              <td>PAGE_FEED_ASSET</td>
++              <td>PageFeedAsset.</td>
++            </tr>
++            <tr>
++              <td>BIDDING_SEASONALITY_ADJUSTMENT</td>
++              <td>Bidding Seasonality Adjustment.</td>
++            </tr>
++            <tr>
++              <td>CAMPAIGN_BUDGET</td>
++              <td>Shared budgets.</td>
++            </tr>
++            <tr>
++              <td>AB_TEST</td>
++              <td>A/B test.</td>
++            </tr>
++            <tr>
++              <td>SS_CONVERSION_GROUP</td>
++              <td>Conversion Group.</td>
++            </tr>
++            <tr>
++              <td>ALL</td>
++              <td>All operation history.</td>
++            </tr>
++          </table>
++        </div>
+     eventTypes:
+       type: array
+       nullable: true
+
+
+------
+diff -ru v14/campaign/Campaign.yaml v15/campaign/Campaign.yaml
+--- v14/campaign/Campaign.yaml	2024-10-08 16:20:33
++++ v15/campaign/Campaign.yaml	2024-10-08 16:20:33
+@@ -124,6 +124,8 @@
+       description: |
+         <div lang="ja">キャンペーンが更新された日です。<br>※フォーマット：yyyyMMdd</div>
+         <div lang="en">Date of Campaign updated.<br>* Format: yyyyMMdd</div>
++    conversionSetting:
++      $ref: 'CampaignServiceConversionSetting.yaml#/CampaignServiceConversionSetting'
+   title: Campaign
+   description: |
+     <div lang="ja">Campaignオブジェクトは、キャンペーンの情報を表します。</div>
+Only in v15/campaign: CampaignServiceCampaignConversionGoals.yaml
+Only in v15/campaign: CampaignServiceConversionActionCategory.yaml
+Only in v15/campaign: CampaignServiceConversionSetting.yaml
+Only in v15/campaign: CampaignServiceConversionSource.yaml
+Only in v15/campaign: CampaignServiceGoalConfigLevel.yaml
+Only in v15: conversiongroup
+
+
+------
+diff -ru v14/conversiontracker/ConversionTrackerServiceAppConversion.yaml v15/conversiontracker/ConversionTrackerServiceAppConversion.yaml
+--- v14/conversiontracker/ConversionTrackerServiceAppConversion.yaml	2024-10-08 16:20:33
++++ v15/conversiontracker/ConversionTrackerServiceAppConversion.yaml	2024-10-08 16:20:33
+@@ -29,6 +29,8 @@
+       description: |
+         <div lang="ja">コンバージョントラッカーラベルです。</div>
+         <div lang="en">Conversion tracker label.</div>
++    source:
++      $ref: 'ConversionTrackerServiceConversionSource.yaml#/ConversionTrackerServiceConversionSource'
+   title: ConversionTrackerServiceAppConversion
+   description: |
+     <div lang="ja">ConversionTrackerServiceAppConversionオブジェクトは、アプリコンバージョン測定タグやタグごとのパフォーマンスデータなどのアプリコンバージョン設定を表します。<br>
+
+
+------
+diff -ru v14/conversiontracker/ConversionTrackerServiceAppLinkConversion.yaml v15/conversiontracker/ConversionTrackerServiceAppLinkConversion.yaml
+--- v14/conversiontracker/ConversionTrackerServiceAppLinkConversion.yaml	2024-10-08 16:20:33
++++ v15/conversiontracker/ConversionTrackerServiceAppLinkConversion.yaml	2024-10-08 16:20:33
+@@ -44,6 +44,8 @@
+           * <a href="https://ads-help.yahoo-net.jp/s/article/H000045014?language=en_US">Conversion Analytics</a><br>
+           Although this field will be returned in the response, it will be ignored on input.
+         </div>
++    source:
++      $ref: 'ConversionTrackerServiceConversionSource.yaml#/ConversionTrackerServiceConversionSource'
+   title: ConversionTrackerServiceAppLinkConversion
+   description: |
+     <div lang="ja">ConversionTrackerServiceAppLinkConversionオブジェクトは、アプリコンバージョン測定タグやタグごとのパフォーマンスデータなどのアプリコンバージョン設定を表します。<br>
+Only in v15/conversiontracker: ConversionTrackerServiceConversionSource.yaml
+
+
+------
+diff -ru v14/conversiontracker/ConversionTrackerServiceWebConversion.yaml v15/conversiontracker/ConversionTrackerServiceWebConversion.yaml
+--- v14/conversiontracker/ConversionTrackerServiceWebConversion.yaml	2024-10-08 16:20:33
++++ v15/conversiontracker/ConversionTrackerServiceWebConversion.yaml	2024-10-08 16:20:33
+@@ -22,6 +22,8 @@
+         </div>
+     trackingCodeType:
+       $ref: 'ConversionTrackerServiceTrackingCodeType.yaml#/ConversionTrackerServiceTrackingCodeType'
++    source:
++      $ref: 'ConversionTrackerServiceConversionSource.yaml#/ConversionTrackerServiceConversionSource'
+   title: ConversionTrackerServiceWebConversion
+   description: |
+     <div lang="ja">ConversionTrackerServiceWebConversionオブジェクトは、ウェブページのコンバージョン測定タグやタグごとのパフォーマンスデータなどのコンバージョン設定を表します。<br>
+Only in v14: keywordforecastmetrics
+
+
+------
+diff -ru v14/reportdefinition/ReportDefinitionServiceReportDownloadEncode.yaml v15/reportdefinition/ReportDefinitionServiceReportDownloadEncode.yaml
+--- v14/reportdefinition/ReportDefinitionServiceReportDownloadEncode.yaml	2024-10-08 16:20:33
++++ v15/reportdefinition/ReportDefinitionServiceReportDownloadEncode.yaml	2024-10-08 16:20:33
+@@ -4,7 +4,6 @@
+   enum:
+   - UTF8
+   - SJIS
+-  - EUC
+   - UTF16LE
+   - UNKNOWN
+   title: ReportDefinitionServiceReportDownloadEncode
+@@ -18,8 +17,6 @@
+       <dd class="term__desc"><span lang="ja">文字コード：UTF8です。<br>※デフォルトに設定されます。</span><span lang="en">Character code: UTF8.<br>*Default setting.</span></dd>
+       <dt class="term__item">SJIS</dt>
+       <dd class="term__desc"><span lang="ja">文字コード：Shift-JISです。</span><span lang="en">Character code: SJIS.</span></dd>
+-      <dt class="term__item">EUC</dt>
+-      <dd class="term__desc"><span lang="ja">文字コード：EUCです。</span><span lang="en">Character code: EUC.</span></dd>
+       <dt class="term__item">UTF16LE</dt>
+       <dd class="term__desc"><span lang="ja">文字コード：UTF16LEです。</span><span lang="en">Character code: UTF16LE.</span></dd>
+       <dt class="term__item">UNKNOWN</dt>
