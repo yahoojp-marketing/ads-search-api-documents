@@ -20,7 +20,7 @@ AbTestServiceStatus:
     </div>
     <dl class=term>
       <dt class="term__item">PENDING</dt>
-      <dd class="term__desc"><span lang="ja">開始前</span><span lang="en">Planned</span></dd>
+      <dd class="term__desc"><span lang="ja">作成中</span><span lang="en">Planned</span></dd>
       <dt class="term__item">ACTIVE</dt>
       <dd class="term__desc"><span lang="ja">テスト中</span><span lang="en">Live</span></dd>
       <dt class="term__item">ENDED</dt>

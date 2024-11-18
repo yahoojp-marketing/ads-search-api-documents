@@ -21,7 +21,7 @@
 
 ※1 半角英数は1文字、全角は3文字とカウントされます
 
-広告、キーワード、入札価格などの制限は、[入稿規定（ガイドライン）](https://ads-help.yahoo.co.jp/yahooads/middlecategory?lan=ja&cid=1735)でご確認ください。
+広告、キーワード、入札価格などの制限は、[入稿規定（ガイドライン）](https://ads-help.yahoo-net.jp/s/article/H000044930?language=ja)でご確認ください。
 
 ### 1リクエストあたりの最大指定/取得数
 <table>

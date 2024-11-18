@@ -17,8 +17,8 @@ Asset:
       format: int64
       description: |
         <div lang="ja">アセットIDです。<br>
-        このフィールドは、SETおよびREMOVE時に必須となり、ADD時に無視されます。</div>
-        <div lang="en">Asset ID.<br>This field is required in SET and REMOVE operation, and will be ignored in ADD operation.</div>
+        このフィールドは、SET時に必須となり、ADD時に無視されます。</div>
+        <div lang="en">Asset ID.<br>This field is required in SET operation, and will be ignored in ADD operation.</div>
     assetTrackId:
       type: integer
       nullable: true

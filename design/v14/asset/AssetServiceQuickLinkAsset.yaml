@@ -58,20 +58,20 @@ AssetServiceQuickLinkAsset:
       description: |
         <div lang="ja">配信開始日です。<br>
         ※空で設定すると、既存の配信開始日は削除されます。<br>
-        このフィールドは、ADDおよびSET時に省略可能となり、REMOVE時に無視されます。</div>
+        このフィールドは、ADDおよびSET時に省略可能となります。</div>
         <div lang="en">Start date of ad display<br>
         *On setting blank, existing start date of ad display will be deleted.<br>
-        This field is optional in ADD and SET operation, and will be ignored in REMOVE operation.</div>
+        This field is optional in ADD and SET operation.</div>
     endDate:
       type: string
       nullable: true
       description: |
         <div lang="ja">配信終了日です。<br>
         ※空で設定すると、既存の配信終了日は削除されます。<br>
-        このフィールドは、ADDおよびSET時に省略可能となり、REMOVE時に無視されます。</div>
+        このフィールドは、ADDおよびSET時に省略可能となります。</div>
         <div lang="en">End date of ad display.<br>
         *By setting blank, existing end date of ad display will be deleted.<br>
-        This field is optional in ADD and SET operation, and will be ignored in REMOVE operation.</div>
+        This field is optional in ADD and SET operation.</div>
     schedules:
       type: array
       nullable: true

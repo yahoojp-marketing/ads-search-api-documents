@@ -11011,12 +11011,10 @@ paths:
             <div lang="en">Specify Account ID.</div>
       description: |
         <div lang="ja">
-          A/Bテストの情報を取得します。<br>
-          ※現在、こちらのサービスは利用できません。
+          A/Bテストの情報を取得します。
         </div>
         <div lang="en">
-          Retrieves A/B test information.<br>
-          *Currently this service is not available.
+          Retrieves A/B test information.
         </div>
       tags:
         - AbTestService
@@ -11079,12 +11077,10 @@ paths:
             <div lang="en">Specify Account ID.</div>
       description: |
         <div lang="ja">
-          A/Bテストを追加します。<br>
-          ※現在、こちらのサービスは利用できません。
+          A/Bテストを追加します。
         </div>
         <div lang="en">
-          Adds A/B test.<br>
-          *Currently this service is not available.
+          Adds A/B test.
         </div>
       tags:
         - AbTestService
@@ -11150,12 +11146,10 @@ paths:
             <div lang="en">Specify Account ID.</div>
       description: |
         <div lang="ja">
-          A/Bテストを変更します。<br>
-          ※現在、こちらのサービスは利用できません。
+          A/Bテストを変更します。
         </div>
         <div lang="en">
-          Updates information of A/B test.<br>
-          *Currently this service is not available.
+          Updates information of A/B test.
         </div>
       tags:
         - AbTestService
@@ -11221,12 +11215,10 @@ paths:
             <div lang="en">Specify Account ID.</div>
       description: |
         <div lang="ja">
-          A/Bテストを削除します。<br>
-          ※現在、こちらのサービスは利用できません。
+          A/Bテストを削除します。
         </div>
         <div lang="en">
-          Removes A/B test.<br>
-          *Currently this service is not available.
+          Removes A/B test.
         </div>
       tags:
         - AbTestService
@@ -11290,12 +11282,10 @@ paths:
             <div lang="en">Specify Account ID.</div>
       description: |
         <div lang="ja">
-          A/Bテストで使用中のキャンペーンに適用します。<br>
-          ※現在、こちらのサービスは利用できません。
+          A/Bテストで使用中のキャンペーンに適用します。
         </div>
         <div lang="en">
-          [TODO]Graduate Test A/B test.<br>
-          *Currently this service is not available.
+          Graduate Test A/B test.
         </div>
       tags:
         - AbTestService
