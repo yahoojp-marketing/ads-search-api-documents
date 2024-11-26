@@ -184,7 +184,9 @@ AbTest:
         - CAMPAIGN_OVER_LIMIT: キャンペーンの作成上限数を超えています。<br>
         - KEYWORD_OVER_LIMIT: キーワードの作成上限数を超えています。<br>
         - AD_OVER_LIMIT: 広告の作成上限数を超えています。<br>
-        - SYSTEM_ERROR_OCCURRED: システムエラーが発生しました。</div>
+        - SYSTEM_ERROR_OCCURRED: システムエラーが発生しました。<br>
+        詳細は以下のヘルプを参照してください。<br>
+        ・<a href="https://ads-help.yahoo-net.jp/s/article/H000053491?language=ja">A/Bテストについて【検索広告】</a></div>
         <div lang="en">Errors.<br>
         This field will be ignored on input.<br>
         Error details.<br>
@@ -193,7 +195,9 @@ AbTest:
         - CAMPAIGN_OVER_LIMIT: You already have the maximum number of campaigns.<br>
         - KEYWORD_OVER_LIMIT: You already have the maximum number of keywords.<br>
         - AD_OVER_LIMIT: You already have the maximum number of ads.<br>
-        - SYSTEM_ERROR_OCCURRED: A system error has occurred.</div>
+        - SYSTEM_ERROR_OCCURRED: A system error has occurred.<br>
+        See also the help below.<br>
+        * <a href="https://ads-help.yahoo-net.jp/s/article/H000053491?language=en_US">A/B test [Search Ads]</a></div>
   title: AbTest
   description: |
     <div lang="ja">AbTestオブジェクトは、A/Bテスト情報を保持します。</div>
