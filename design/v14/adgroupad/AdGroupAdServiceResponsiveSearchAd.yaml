@@ -10,10 +10,12 @@ AdGroupAdServiceResponsiveSearchAd:
       description: |
         <div lang="ja">レスポンシブ検索広告で指定するタイトルのテキストアセットを表します。<br>
         headlines[]には、3~15件の指定が可能です。<br>
-        このフィールドは、ADD時は必須となり、SET時は省略可能となります。</div>
+        このフィールドは、ADD時は必須となり、SET時は省略可能となります。<br>
+        ※ descriptionsを指定する場合は、headlinesは必須です。</div>
         <div lang="en">Text asset for the headline that specify in responsive ads for search.<br>
         3 to 15 items can be specified for headlines[].<br>
-        This field is required in ADD operation, and will be optional in SET operation.</div>
+        This field is required in ADD operation, and will be optional in SET operation.<br>
+        *To specify descriptions, headlines is required.</div>
     descriptions:
       type: array
       nullable: true
@@ -22,10 +24,12 @@ AdGroupAdServiceResponsiveSearchAd:
       description: |
         <div lang="ja">レスポンシブ検索広告で指定する説明文のテキストアセットを表します。<br>
         descriptions[]には、2~4件の指定が可能です。<br>
-        このフィールドは、ADD時は必須となり、SET時は省略可能となります。</div>
+        このフィールドは、ADD時は必須となり、SET時は省略可能となります。<br>
+        ※ headlinesを指定する場合は、descriptionsは必須です。</div>
         <div lang="en">Text asset for the description that specify in responsive ads for search.<br>
         2 to 4 items can be specified for descriptions[].<br>
-        This field is required in ADD operation, and will be optional in SET operation.</div>
+        This field is required in ADD operation, and will be optional in SET operation.<br>
+        *To specify headlines, descriptions is required.</div>
     path1:
       type: string
       nullable: true
