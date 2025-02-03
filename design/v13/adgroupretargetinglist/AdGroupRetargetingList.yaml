@@ -36,14 +36,12 @@ AdGroupRetargetingList:
         <div lang="ja">
           CPC上昇値です。<br>
           0.10～10.00まで指定できます。<br>
-          また、0を指定した場合、広告は配信されません。<br>
           CPC上昇値の値は小数点第二位まで指定可能です。<br>
           このフィールドは省略可能となります。その際、デフォルト設定値は1.0となります。
         </div>
         <div lang="en">
           Maximum CPC increase value.<br>
           Can be specified between  0.10 to 10.00.<br>
-          When specified &#39;0&#39;, the ad will not be delivered.<br>
           Maximum CPC increase value can be specified up to two decimal places.<br>
           This field is optional. The default value will be 1.0.
         </div>
