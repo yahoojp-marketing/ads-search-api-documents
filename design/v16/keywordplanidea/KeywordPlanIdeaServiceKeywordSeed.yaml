@@ -1,0 +1,17 @@
+KeywordPlanIdeaServiceKeywordSeed:
+  type: object
+  nullable: true
+  properties:
+    keywords:
+      type: array
+      nullable: true
+      items:
+        type: string
+        nullable: true
+      description: |
+        <div lang="ja">キーワードです。</div>
+        <div lang="en">Keyword.</div>
+  title: KeywordPlanIdeaServiceKeywordSeed
+  description: |
+    <div lang="ja">KeywordPlanIdeaServiceKeywordSeedオブジェクトは、キーワード候補作成条件としてキーワードを指定するオブジェクトです。<br>seedTypeが<code>KEYWORD</code>の場合は必須です。</div>
+    <div lang="en">KeywordPlanIdeaServiceKeywordSeed object is for specifying keywords as related keywords creation conditions.<br>If seedType is <code>KEYWORD</code>, this field is required.</div>

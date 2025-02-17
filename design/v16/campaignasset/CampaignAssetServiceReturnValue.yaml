@@ -1,0 +1,13 @@
+CampaignAssetServiceReturnValue:
+  type: object
+  nullable: true
+  properties:
+    values:
+      type: array
+      nullable: true
+      items:
+        $ref: 'CampaignAssetServiceValue.yaml#/CampaignAssetServiceValue'
+  title: CampaignAssetServiceReturnValue
+  description: |
+    <div lang="ja">CampaignAssetServiceReturnValueオブジェクトは、キャンペーンとアセット間の設定情報を格納するコンテナです。</div>
+    <div lang="en">CampaignAssetServiceReturnValue is a container of configuration information between campaign and assets.</div>

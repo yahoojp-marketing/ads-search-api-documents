@@ -1,0 +1,25 @@
+BaseAccountServiceAuthType:
+  type: string
+  nullable: true
+  enum:
+  - REFERABLE
+  - UPDATABLE
+  - UNKNOWN
+  title: BaseAccountServiceAuthType
+  description: |
+    <div lang="ja">
+    権限タイプです。<br>
+    このフィールドは、GET時に省略可能となり、SET時に無視されます。
+    </div>
+    <div lang="en">
+    Access Roles.<br>
+    Although this field is optional in GET operation, and will be ignored in SET operation.
+    </div>
+    <dl class=term>
+      <dt class="term__item">REFERABLE</dt>
+      <dd class="term__desc"><span lang="ja">参照権限</span><span lang="en">Read only</span></dd>
+      <dt class="term__item">UPDATABLE</dt>
+      <dd class="term__desc"><span lang="ja">更新権限</span><span lang="en">Write</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown value.</span></dd>
+    </dl>

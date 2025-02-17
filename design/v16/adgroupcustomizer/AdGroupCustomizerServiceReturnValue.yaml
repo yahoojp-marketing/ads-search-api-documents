@@ -1,0 +1,13 @@
+AdGroupCustomizerServiceReturnValue:
+  type: object
+  nullable: true
+  properties:
+    values:
+      type: array
+      nullable: true
+      items:
+        $ref: 'AdGroupCustomizerServiceValue.yaml#/AdGroupCustomizerServiceValue'
+  title: AdGroupCustomizerServiceReturnValue
+  description: |
+    <div lang="ja">AdGroupCustomizerServiceReturnValueオブジェクトは、広告グループとカスタマイザー属性間の設定情報を格納します。</div>
+    <div lang="en">AdGroupCustomizerServiceReturnValue object contains the configuration information between the adgroup and the customizer attribute.</div>

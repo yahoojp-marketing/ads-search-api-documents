@@ -1,0 +1,25 @@
+AbTestServiceOperation:
+  type: object
+  nullable: true
+  required:
+    - accountId
+    - operand
+  properties:
+    accountId:
+      type: integer
+      nullable: false
+      format: int64
+      description: |
+        <div lang="ja">アカウントIDです。</div>
+        <div lang="en">The account ID.</div>
+    operand:
+      type: array
+      nullable: false
+      items:
+        $ref: 'AbTest.yaml#/AbTest'
+      minItems: 1
+      maxItems: 10
+  title: AbTestServiceOperation
+  description: |
+    <div lang="ja">AbTestServiceOperationオブジェクトは、操作の対象となるA/Bテストの情報と処理の内容を表します。</div>
+    <div lang="en">The AbTestServiceOperation object is a container for storing A/B test information and operation results.</div>

@@ -1,0 +1,20 @@
+CampaignCustomizerServicePage:
+  type: object
+  nullable: true
+  properties:
+    totalNumEntries:
+      type: integer
+      nullable: false
+      format: int32
+      description: |
+        <div lang="ja">取得される項目の総件数です。</div>
+        <div lang="en">Total number of entries in the result.</div>
+    values:
+      type: array
+      nullable: true
+      items:
+        $ref: 'CampaignCustomizerServiceValue.yaml#/CampaignCustomizerServiceValue'
+  title: CampaignCustomizerServicePage
+  description: |
+    <div lang="ja">CampaignCustomizerServicePageオブジェクトは、キャンペーンとカスタマイザー属性間の設定情報を格納します。</div>
+    <div lang="en">CampaignCustomizerServicePage object contains the configuration information between the campaign and the customizer attribute.</div>

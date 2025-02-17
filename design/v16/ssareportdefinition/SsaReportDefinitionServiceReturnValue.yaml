@@ -1,0 +1,13 @@
+SsaReportDefinitionServiceReturnValue:
+  type: object
+  nullable: true
+  properties:
+    values:
+      type: array
+      nullable: true
+      items:
+        $ref: 'SsaReportDefinitionServiceValue.yaml#/SsaReportDefinitionServiceValue'
+  title: SsaReportDefinitionServiceReturnValue
+  description: |
+    <div lang="ja">SsaReportDefinitionServiceReturnValueオブジェクトは、操作結果を含むレポートのコンテナです。</div>
+    <div lang="en">A container of reports including operation result.</div>

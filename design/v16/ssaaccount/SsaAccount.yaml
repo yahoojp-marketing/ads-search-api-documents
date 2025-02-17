@@ -1,0 +1,51 @@
+SsaAccount:
+  type: object
+  nullable: true
+  properties:
+    accountId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">アカウントIDです。</div>
+        <div lang="en">Account ID.</div>
+    accountName:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">アカウント名です。</div>
+        <div lang="en">Account name.</div>
+    accountStatus:
+      $ref: 'SsaAccountServiceStatus.yaml#/SsaAccountServiceStatus'
+    accountType:
+      $ref: 'SsaAccountServiceType.yaml#/SsaAccountServiceType'
+    autoTaggingEnabled:
+      $ref: 'SsaAccountServiceAutoTaggingEnabled.yaml#/SsaAccountServiceAutoTaggingEnabled'
+    deliveryStatus:
+      $ref: 'SsaAccountServiceDeliveryStatus.yaml#/SsaAccountServiceDeliveryStatus'
+    startDate:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">掲載開始日です。<br>
+        「yyyyMMdd」形式で表示されます。</div>
+        <div lang="en">Start date of ad serving.<br>
+        It is displayed in &#39;yyyyMMdd&#39; format.</div>
+    endDate:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">掲載終了日です。<br>
+        「yyyyMMdd」形式で表示されます。</div>
+        <div lang="en">End date of ad serving.<br>
+        It is displayed in &#39;yyyyMMdd&#39; format.</div>
+    contactBizId:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">アカウント管理者のYahoo! JAPANビジネスIDです。</div>
+        <div lang="en">Contact Business ID.</div>
+  title: SsaAccount
+  description: |
+    <div lang="ja">SsaAccountオブジェクトは、アカウントを表します。</div>
+    <div lang="en">SsaAccount object describes the account information.</div>

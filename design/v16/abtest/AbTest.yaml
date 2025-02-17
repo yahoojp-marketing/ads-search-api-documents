@@ -1,0 +1,204 @@
+AbTest:
+  type: object
+  nullable: true
+  properties:
+    accountId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        アカウントIDです。<br>
+        このフィールドは、リクエストの場合は必須です。
+        </div>
+        <div lang="en">
+        Account ID.<br>
+        This field is required in requests.
+        </div>
+    abTestId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        A/BテストIDです。<br>
+        このフィールドは、ADD時は無視され、SETおよびREMOVE時は必須となります。
+        </div>
+        <div lang="en">
+        A/B test ID.<br>
+        This field will be ignored in ADD operation, and will be required in SET and REMOVE operation.
+        </div>
+    abTestName:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        A/Bテスト名です。<br>
+        このフィールドは、ADD時は必須となり、SET時は省略可能となります。<br>
+        ※256文字以内になります。
+        </div>
+        <div lang="en">
+        A/B test name.<br>
+        This field is required in ADD operation, and will be optional in SET operation.<br>
+        *Up to 128 characters.
+        </div>
+    description:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        説明文です。<br>
+        ADDおよびSET時、このフィールドは省略可能となります。<br>
+        ※512文字以内になります。
+        </div>
+        <div lang="en">
+        Description text.<br>
+        This field is optional in ADD and SET operation.<br>
+        *Up to 512 characters.
+        </div>
+    suffix:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        A/Bテストのサフィックスです。<br>
+        ADD時、このフィールドは必須となります。<br>
+        ※16文字以内になります。
+        </div>
+        <div lang="en">
+        suffix text.<br>
+        This field is required in ADD operation.<br>
+        *Up to 16 characters.
+        </div>
+    aCampaignId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        キャンペーンAのキャンペーンIDです。<br>
+        ADD時、このフィールドは必須となります。
+        </div>
+        <div lang="en">
+        Campaign ID of Campaign A.<br>
+        This field is required in ADD operation.
+        </div>
+    aCampaignName:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        キャンペーンAのキャンペーン名です。<br>
+        このフィールドはリクエストの際には無視されます。<br>
+        GET時のみレスポンスの際に返却されます。
+        </div>
+        <div lang="en">
+        Campaign name of Campaign A.<br>
+        This field will be ignored on input.<br>
+        This field will be returned in the GET response only.
+        </div>
+    aCampaignUserStatus:
+      $ref: 'AbTestServiceCampaignUserStatus.yaml#/AbTestServiceCampaignUserStatus'
+    aCampaignTestType:
+      $ref: 'AbTestServiceCampaignTestType.yaml#/AbTestServiceCampaignTestType'
+    aCampaignIsDeleted:
+      $ref: 'AbTestServiceCampaignIsDeleteFlg.yaml#/AbTestServiceCampaignIsDeleteFlg'
+    bCampaignId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        キャンペーンBのキャンペーンIDです。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        Campaign ID of Campaign B.<br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
+    bCampaignName:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        キャンペーンBのキャンペーン名です。<br>
+        このフィールドはリクエストの際には無視されます。<br>
+        GET時のみレスポンスの際に返却されます。
+        </div>
+        <div lang="en">
+        Campaign name of Campaign B.<br>
+        This field will be ignored on input.<br>
+        This field will be returned in the GET response only.
+        </div>
+    bCampaignUserStatus:
+      $ref: 'AbTestServiceCampaignUserStatus.yaml#/AbTestServiceCampaignUserStatus'
+    bCampaignTestType:
+      $ref: 'AbTestServiceCampaignTestType.yaml#/AbTestServiceCampaignTestType'
+    bCampaignIsDeleted:
+      $ref: 'AbTestServiceCampaignIsDeleteFlg.yaml#/AbTestServiceCampaignIsDeleteFlg'
+    isRemoveDescription:
+      $ref: 'AbTestServiceIsRemoveFlg.yaml#/AbTestServiceIsRemoveFlg'
+    endDate:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        終了日です。<br>
+        このフィールドは、ADD時は必須となり、SET時は省略可能となります。<br>
+        ※フォーマット：yyyyMMdd
+        </div>
+        <div lang="en">
+        End date.<br>
+        This field is required in ADD operation, and will be optional in SET operation.<br>
+        *format: yyyyMMdd
+        </div>
+    startDate:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        開始日です。<br>
+        このフィールドは、ADD時は必須となり、SET時は省略可能となります。<br>
+        ※フォーマット：yyyyMMdd
+        </div>
+        <div lang="en">
+        Start date.<br>
+        This field is required in ADD operation, and will be optional in SET operation.<br>
+        *format: yyyyMMdd
+        </div>
+    status:
+      $ref: 'AbTestServiceStatus.yaml#/AbTestServiceStatus'
+    errors:
+      type: array
+      nullable: true
+      items:
+        type: string
+        nullable: true
+      description: |
+        <div lang="ja">
+        エラー内容です。<br>
+        このフィールドはリクエストの際には無視されます。<br>
+        以下エラー詳細になります。<br>
+        - ENTITY_USE_AD_CUSTOMIZER: アドカスタマイザーを利用した広告が含まれるキャンペーンはテスト元のキャンペーンに設定できません。<br>
+        - ENTITY_UNDER_REVIEW: 審査中のアイテムが含まれるためA/Bテストを作成できませんでした。<br>
+        - CAMPAIGN_OVER_LIMIT: キャンペーンの作成上限数を超えています。<br>
+        - KEYWORD_OVER_LIMIT: キーワードの作成上限数を超えています。<br>
+        - AD_OVER_LIMIT: 広告の作成上限数を超えています。<br>
+        - SYSTEM_ERROR_OCCURRED: システムエラーが発生しました。<br>
+        詳細は以下のヘルプを参照してください。<br>
+        ・<a href="https://ads-help.yahoo-net.jp/s/article/H000053491?language=ja">A/Bテストについて【検索広告】</a></div>
+        <div lang="en">Errors.<br>
+        This field will be ignored on input.<br>
+        Error details.<br>
+        - ENTITY_USE_AD_CUSTOMIZER: You can't set up a campaign that contains ads using the ad customizer as the original campaign.<br>
+        - ENTITY_UNDER_REVIEW: Can't create an A/B test. The campaign contains elements under review.<br>
+        - CAMPAIGN_OVER_LIMIT: You already have the maximum number of campaigns.<br>
+        - KEYWORD_OVER_LIMIT: You already have the maximum number of keywords.<br>
+        - AD_OVER_LIMIT: You already have the maximum number of ads.<br>
+        - SYSTEM_ERROR_OCCURRED: A system error has occurred.<br>
+        See also the help below.<br>
+        * <a href="https://ads-help.yahoo-net.jp/s/article/H000053491?language=en_US">A/B test [Search Ads]</a></div>
+  title: AbTest
+  description: |
+    <div lang="ja">AbTestオブジェクトは、A/Bテスト情報を保持します。</div>
+    <div lang="en">The A/B Test object is a container for storing A/B test information.</div>

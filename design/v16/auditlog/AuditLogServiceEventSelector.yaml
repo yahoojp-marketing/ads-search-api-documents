@@ -1,0 +1,353 @@
+AuditLogServiceEventSelector:
+  type: object
+  nullable: true
+  properties:
+    entityType:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+          AuditLogServiceEntityTypeは、操作履歴に出力するエンティティの種類を表します。</br>
+          ADD時、指定必須です。</br>
+          <table border='1'>
+            <tr>
+              <th>AuditLogServiceEntityType</th>
+              <th>説明</th>
+            </tr>
+            <tr>
+              <td>CAMPAIGN</td>
+              <td>キャンペーンです。</td>
+            </tr>
+            <tr>
+              <td>NEGATIVE_CAMPAIGN_CRITERION</td>
+              <td>対象外キーワードです（キャンペーン）。</td>
+            </tr>
+            <tr>
+              <td>CAMPAIGN_CRITERION</td>
+              <td>キャンペーンのターゲティング設定です。</td>
+            </tr>
+            <tr>
+              <td>AD_GROUP</td>
+              <td>広告グループです。</td>
+            </tr>
+            <tr>
+              <td>AD_GROUP_BID_MULTIPLIER</td>
+              <td>広告グループ入札価格調整率です。</td>
+            </tr>
+            <tr>
+              <td>BIDDABLE_AD_GROUP_CRITERION</td>
+              <td>入札キーワードです。</td>
+            </tr>
+            <tr>
+              <td>NEGATIVE_AD_GROUP_CRITERION</td>
+              <td>対象外キーワードです（広告グループ）。</td>
+            </tr>
+            <tr>
+              <td>AD</td>
+              <td>広告です。</td>
+            </tr>
+            <tr>
+              <td>FEED</td>
+              <td>Feedフォルダーです。</td>
+            </tr>
+            <tr>
+              <td>FEED_ITEM</td>
+              <td>広告表示アセットです。</td>
+            </tr>
+            <tr>
+              <td>CAMPAIGN_FEED</td>
+              <td>広告表示アセットです（キャンペーン）。</td>
+            </tr>
+            <tr>
+              <td>AD_GROUP_FEED</td>
+              <td>広告表示アセットです（広告グループ）。</td>
+            </tr>
+            <tr>
+              <td>SS_IO</td>
+              <td>アカウントです。</td>
+            </tr>
+            <tr>
+              <td>SS_CONVERSION</td>
+              <td>コンバージョントラッカー（コンバージョン測定）です。</td>
+            </tr>
+            <tr>
+              <td>BIDDING_STRATEGY</td>
+              <td>自動入札設定です。</td>
+            </tr>
+            <tr>
+              <td>NEGATIVE_CAMPAIGN_USER_LIST</td>
+              <td>対象外ターゲットリストです（キャンペーン）。</td>
+            </tr>
+            <tr>
+              <td>NEGATIVE_AD_GROUP_USER_LIST</td>
+              <td>対象外ターゲットリストです（広告グループ）。</td>
+            </tr>
+            <tr>
+              <td>AD_GROUP_USER_LIST</td>
+              <td>ターゲットリストです（広告グループ）。</td>
+            </tr>
+            <tr>
+              <td>TARGET_LIST</td>
+              <td>サイトリターゲテイングのターゲットリストです。</td>
+            </tr>
+            <tr>
+              <td>SHARED_SET</td>
+              <td>共有リストです。</td>
+            </tr>
+            <tr>
+              <td>SHARED_CRITERION</td>
+              <td>共有キーワードです。</td>
+            </tr>
+            <tr>
+              <td>CAMPAIGN_SHARED_SET</td>
+              <td>キャンペーン共有リストです。</td>
+            </tr>
+            <tr>
+              <td>AD_CUSTOMIZER</td>
+              <td>アドカスタマイザーです。</td>
+            </tr>
+            <tr>
+              <td>EXCLUDE_AD_CUSTOMIZER</td>
+              <td>アドカスタマイザーを除くすべての履歴です。</td>
+            </tr>
+            <tr>
+              <td>ASSET</td>
+              <td>アセット（広告表示アセット）です。</td>
+            </tr>
+            <tr>
+              <td>CAMPAIGN_ASSET</td>
+              <td>キャンペーンとアセット間の設定情報です。</td>
+            </tr>
+            <tr>
+              <td>AD_GROUP_ASSET</td>
+              <td>広告グループとアセット間の設定情報です。</td>
+            </tr>
+            <tr>
+              <td>ACCOUNT_CUSTOMIZER</td>
+              <td>アカウントとカスタマイザー属性間の設定情報です。</td>
+            </tr>
+            <tr>
+              <td>CAMPAIGN_CUSTOMIZER</td>
+              <td>キャンペーンとカスタマイザー属性間の設定情報です。</td>
+            </tr>
+            <tr>
+              <td>AD_GROUP_CUSTOMIZER</td>
+              <td>広告グループとカスタマイザー属性間の設定情報です。</td>
+            </tr>
+            <tr>
+              <td>AD_GROUP_CRITERION_CUSTOMIZER</td>
+              <td>キーワードとカスタマイザー属性間の設定情報です。</td>
+            </tr>
+            <tr>
+              <td>CUSTOMIZER_ATTRIBUTE</td>
+              <td>カスタマイザー属性です。</td>
+            </tr>
+            <tr>
+              <td>PAGE_FEED_ASSET_SET</td>
+              <td>ページフィードアセットセットです。</td>
+            </tr>
+            <tr>
+              <td>PAGE_FEED_ASSET</td>
+              <td>ページフィードアセットです。</td>
+            </tr>
+            <tr>
+              <td>BIDDING_SEASONALITY_ADJUSTMENT</td>
+              <td>自動入札のスポット調整です。</td>
+            </tr>
+            <tr>
+              <td>CAMPAIGN_BUDGET</td>
+              <td>キャンペーン間の共有予算です。</td>
+            </tr>
+            <tr>
+              <td>AB_TEST</td>
+              <td>A/Bテストです。</td>
+            </tr>
+            <tr>
+              <td>SS_CONVERSION_GROUP</td>
+              <td>コンバージョングループです。</td>
+            </tr>
+            <tr>
+              <td>ALL</td>
+              <td>すべての履歴です。</td>
+            </tr>
+          </table>
+        </div>
+        <div lang="en">
+          AuditLogServiceEntityType object describes the type of entities to be output on the data of operation history.</br>
+          This field is required in ADD operation.</br>
+          <table border='1'>
+            <tr>
+              <th>AuditLogServiceEntityType</th>
+              <th>description</th>
+            </tr>
+            <tr>
+              <td>CAMPAIGN</td>
+              <td>Campaign.</td>
+            </tr>
+            <tr>
+              <td>NEGATIVE_CAMPAIGN_CRITERION</td>
+              <td>Negative keywords (for campaign).</td>
+            </tr>
+            <tr>
+              <td>CAMPAIGN_CRITERION</td>
+              <td>Targeting setting on campaign.</td>
+            </tr>
+            <tr>
+              <td>AD_GROUP</td>
+              <td>Ad group.</td>
+            </tr>
+            <tr>
+              <td>AD_GROUP_BID_MULTIPLIER</td>
+              <td>Bid adjustment for ad group.</td>
+            </tr>
+            <tr>
+              <td>BIDDABLE_AD_GROUP_CRITERION</td>
+              <td>Bidding keyword.</td>
+            </tr>
+            <tr>
+              <td>NEGATIVE_AD_GROUP_CRITERION</td>
+              <td>Negative keywords (for ad group).</td>
+            </tr>
+            <tr>
+              <td>AD</td>
+              <td>Ad.</td>
+            </tr>
+            <tr>
+              <td>FEED</td>
+              <td>Feed folder.</td>
+            </tr>
+            <tr>
+              <td>FEED_ITEM</td>
+              <td>Ad display assets.</td>
+            </tr>
+            <tr>
+              <td>CAMPAIGN_FEED</td>
+              <td>Ad display assets for campaign.</td>
+            </tr>
+            <tr>
+              <td>AD_GROUP_FEED</td>
+              <td>Ad display assets for ad group.</td>
+            </tr>
+            <tr>
+              <td>SS_IO</td>
+              <td>Account.</td>
+            </tr>
+            <tr>
+              <td>SS_CONVERSION</td>
+              <td>Conversion tracker for conversion tracking.</td>
+            </tr>
+            <tr>
+              <td>BIDDING_STRATEGY</td>
+              <td>Auto bidding setting.</td>
+            </tr>
+            <tr>
+              <td>NEGATIVE_CAMPAIGN_USER_LIST</td>
+              <td>Exclude target list for campaign.</td>
+            </tr>
+            <tr>
+              <td>NEGATIVE_AD_GROUP_USER_LIST</td>
+              <td>Exclude target list for ad group.</td>
+            </tr>
+            <tr>
+              <td>AD_GROUP_USER_LIST</td>
+              <td>Target list for ad group.</td>
+            </tr>
+            <tr>
+              <td>TARGET_LIST</td>
+              <td>Target list of Site Retargeting.</td>
+            </tr>
+            <tr>
+              <td>SHARED_SET</td>
+              <td>Shared list.</td>
+            </tr>
+            <tr>
+              <td>SHARED_CRITERION</td>
+              <td>Shared keywords.</td>
+            </tr>
+            <tr>
+              <td>CAMPAIGN_SHARED_SET</td>
+              <td>Shared list for campaign.</td>
+            </tr>
+            <tr>
+              <td>AD_CUSTOMIZER</td>
+              <td>Ad customizer.</td>
+            </tr>
+            <tr>
+              <td>EXCLUDE_AD_CUSTOMIZER</td>
+              <td>All operation history excepting ad customizer.</td>
+            </tr>
+            <tr>
+              <td>ASSET</td>
+              <td>Assets (Ad display asset).</td>
+            </tr>
+            <tr>
+              <td>CAMPAIGN_ASSET</td>
+              <td>Configuration information between campaign and assets.</td>
+            </tr>
+            <tr>
+              <td>AD_GROUP_ASSET</td>
+              <td>Configuration information between ad group and assets.</td>
+            </tr>
+            <tr>
+              <td>ACCOUNT_CUSTOMIZER</td>
+              <td>Configuration information between account and customizer attributes.</td>
+            </tr>
+            <tr>
+              <td>CAMPAIGN_CUSTOMIZER</td>
+              <td>Configuration information between campaign and customizer attributes.</td>
+            </tr>
+            <tr>
+              <td>AD_GROUP_CUSTOMIZER</td>
+              <td>Configuration information between ad group and customizer attributes.</td>
+            </tr>
+            <tr>
+              <td>AD_GROUP_CRITERION_CUSTOMIZER</td>
+              <td>Configuration information between keyword and customizer attributes.</td>
+            </tr>
+            <tr>
+              <td>CUSTOMIZER_ATTRIBUTE</td>
+              <td>Customizer attributes.</td>
+            </tr>
+            <tr>
+              <td>PAGE_FEED_ASSET_SET</td>
+              <td>PageFeedAssetSet.</td>
+            </tr>
+            <tr>
+              <td>PAGE_FEED_ASSET</td>
+              <td>PageFeedAsset.</td>
+            </tr>
+            <tr>
+              <td>BIDDING_SEASONALITY_ADJUSTMENT</td>
+              <td>Bidding Seasonality Adjustment.</td>
+            </tr>
+            <tr>
+              <td>CAMPAIGN_BUDGET</td>
+              <td>Shared budgets.</td>
+            </tr>
+            <tr>
+              <td>AB_TEST</td>
+              <td>A/B test.</td>
+            </tr>
+            <tr>
+              <td>SS_CONVERSION_GROUP</td>
+              <td>Conversion Group.</td>
+            </tr>
+            <tr>
+              <td>ALL</td>
+              <td>All operation history.</td>
+            </tr>
+          </table>
+        </div>
+    eventTypes:
+      type: array
+      nullable: true
+      items:
+        $ref: 'AuditLogServiceEventTypes.yaml#/AuditLogServiceEventTypes'
+  title: AuditLogServiceEventSelector
+  description: |
+    <div lang="ja">AuditLogServiceEventSelectorオブジェクトは、操作履歴の取得対象を設定します。<br>
+    このフィールドは、必須です。<br>
+    1~25件の指定が可能です。</div>
+    <div lang="en">AuditLogServiceEventSelector object enables the target setting of acquiring operation history.<br>
+    This field is required.<br>
+    1 to 25 items can be specified.</div>

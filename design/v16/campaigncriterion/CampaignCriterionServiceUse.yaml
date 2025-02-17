@@ -1,0 +1,18 @@
+CampaignCriterionServiceUse:
+  type: string
+  nullable: true
+  enum:
+  - NEGATIVE
+  - UNKNOWN
+  title: CampaignCriterionServiceUse
+  description: |
+    <div lang="ja">CampaignCriterionServiceUseは、選択するクライテリアを示します。<br>
+    ADD時およびREMOVE時、このフィールドは必須です。</div>
+    <div lang="en">CampaignCriterionServiceUse describes the criteria to be selected.<br>
+    This field is required in ADD and REMOVE operation.</div>
+    <dl class=term>
+      <dt class="term__item">NEGATIVE</dt>
+      <dd class="term__desc"><span lang="ja">除外クライテリア（広告を表示させないためのターゲット条件）です。</span><span lang="en">Negative criteria (a part of target condition not to display ads).</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown value.</span></dd>
+    </dl>

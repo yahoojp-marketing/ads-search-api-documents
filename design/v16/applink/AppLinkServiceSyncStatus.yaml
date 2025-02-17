@@ -1,0 +1,19 @@
+AppLinkServiceSyncStatus:
+  type: string
+  nullable: true
+  enum:
+  - IN_PROGRESS
+  - COMPLETED
+  - UNKNOWN
+  title: AppLinkServiceSyncStatus
+  description: |
+    <div lang="ja">AppLinkServiceSyncStatusは、リンクID同期ステータスを表します。</div>
+    <div lang="en">Sync Status.</div>
+    <dl class=term>
+      <dt class="term__item">IN_PROGRESS</dt>
+      <dd class="term__desc"><span lang="ja">同期中です。</span><span lang="en">Synchronization is in progress.</span></dd>
+      <dt class="term__item">COMPLETED</dt>
+      <dd class="term__desc"><span lang="ja">同期済みです。</span><span lang="en">Synchronization is complete.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown value.</span></dd>
+    </dl>
