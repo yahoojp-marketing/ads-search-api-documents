@@ -1,0 +1,1158 @@
+
+
+------
+diff -ru v15/Route.yaml v16/Route.yaml
+--- v15/Route.yaml	2025-01-30 19:06:22
++++ v16/Route.yaml	2025-02-21 12:17:31
+@@ -1,11 +1,11 @@
+ openapi: 3.0.2
+ info:
+   title: 'Yahoo!広告 検索広告 API リファレンス / Yahoo! JAPAN Ads Search Ads API Reference'
+-  version: 'v15'
++  version: 'v16'
+   description: |
+     <div lang="ja">Yahoo!広告 検索広告 APIのWebサービスについて説明します。</div>
+     <div lang="en">Search Ads API Web Services supported in Yahoo! JAPAN Ads API.</div>
+-    <div><a target="_blank" href="https://github.com/yahoojp-marketing/ads-search-api-documents/blob/master/design/v15/Route.yaml">OpenAPI Specification</a></div>
++    <div><a target="_blank" href="https://github.com/yahoojp-marketing/ads-search-api-documents/blob/master/design/v16/Route.yaml">OpenAPI Specification</a></div>
+     <div lang="ja"><a target="_blank" href="https://github.com/yahoojp-marketing/ads-search-api-documents/blob/master/bestpractice/ja">Best Practice</a></div>
+     <div lang="en"><a target="_blank" href="https://github.com/yahoojp-marketing/ads-search-api-documents/blob/master/bestpractice/en">Best Practice</a></div>
+
+@@ -23,7 +23,7 @@
+   - oAuth: [ yahooads ]
+
+ servers:
+-  - url: https://ads-search.yahooapis.jp/api/v15
++  - url: https://ads-search.yahooapis.jp/api/v16
+
+ tags:
+   - name: AbTestService
+@@ -169,27 +169,27 @@
+       <h2 lang="ja" class="reportFields__title">レポートフィールド</h2>
+       <h2 lang="en" class="reportFields__title">Report Fields</h2>
+       <ul>
+-      <li><div lang="ja"><a href="./reports/v15/ACCOUNT.csv" download>アカウントレポート</a></div><div lang="en"><a href="./reports/v15/ACCOUNT.csv" download>Account Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v15/CAMPAIGN.csv" download>キャンペーンレポート</a></div><div lang="en"><a href="./reports/v15/CAMPAIGN.csv" download>Campaign Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v15/ADGROUP.csv" download>広告グループレポート</a></div><div lang="en"><a href="./reports/v15/ADGROUP.csv" download>Ad Group Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v15/AD.csv" download>広告レポート</a></div><div lang="en"><a href="./reports/v15/AD.csv" download>Ad Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v15/KEYWORDS.csv" download>キーワードレポート</a></div><div lang="en"><a href="./reports/v15/KEYWORDS.csv" download>Keyword Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v15/SEARCH_QUERY.csv" download>検索クエリレポート</a></div><div lang="en"><a href="./reports/v15/SEARCH_QUERY.csv" download>Search Query Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v15/GEO.csv" download>地域別レポート</a></div><div lang="en"><a href="./reports/v15/GEO.csv" download>Geo Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v15/GEO_TARGET.csv" download>地域ターゲティングレポート</a></div><div lang="en"><a href="./reports/v15/GEO_TARGET.csv" download>Geo Targeting Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v15/SCHEDULE_TARGET.csv" download>曜日・時間帯ターゲティングレポート</a></div><div lang="en"><a href="./reports/v15/SCHEDULE_TARGET.csv" download>Schedule Targeting Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v15/BID_STRATEGY.csv" download>自動入札レポート</a></div><div lang="en"><a href="./reports/v15/BID_STRATEGY.csv" download>Auto Bidding Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v15/CAMPAIGN_TARGET_LIST.csv" download>キャンペーンターゲットリストレポート</a></div><div lang="en"><a href="./reports/v15/CAMPAIGN_TARGET_LIST.csv"download>Campaign Target List Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v15/ADGROUP_TARGET_LIST.csv" download>広告グループターゲットリストレポート</a></div><div lang="en"><a href="./reports/v15/ADGROUP_TARGET_LIST.csv" download>Ad Group Target List Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v15/LANDING_PAGE_URL.csv" download>ランディングページURLレポート</a></div><div lang="en"><a href="./reports/v15/LANDING_PAGE_URL.csv" download>Landing Page URL Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v15/KEYWORDLESS_QUERY.csv" download>検索クエリーレポート（動的検索連動型広告）</a></div><div lang="en"><a href="./reports/v15/KEYWORDLESS_QUERY.csv" download>Search Query Report (Dynamic Ads for Search)</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v15/WEBPAGE_CRITERION.csv" download>ページフィードターゲティングレポート</a></div><div lang="en"><a href="./reports/v15/WEBPAGE_CRITERION.csv" download>Page Feed Targeting Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v15/BID_MODIFIER.csv" download>入札価格調整率レポート</a></div><div lang="en"><a href="./reports/v15/BID_MODIFIER.csv" download>Bid Adjustments Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v15/CAMPAIGN_ASSET.csv" download>広告表示アセットレポート（キャンペーン）</a></div><div lang="en"><a href="./reports/v15/CAMPAIGN_ASSET.csv" download>Ad Display Asset Report (campaign)</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v15/AD_GROUP_ASSET.csv" download>広告表示アセットレポート（広告グループ）</a></div><div lang="en"><a href="./reports/v15/AD_GROUP_ASSET.csv" download>Ad Display Asset Report (ad group)</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v15/RESPONSIVE_ADS_FOR_SEARCH_ASSET.csv" download>レスポンシブ検索広告アセットレポート</a></div><div lang="en"><a href="./reports/v15/RESPONSIVE_ADS_FOR_SEARCH_ASSET.csv" download>Responsive Ads for Search Asset Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v15/SHARED_BUDGET.csv" download>共有予算レポート</a></div><div lang="en"><a href="./reports/v15/SHARED_BUDGET.csv" download>Campaign Budget Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v15/ASSET_COMBINATION.csv" download>アセット組み合わせレポート</a></div><div lang="en"><a href="./reports/v15/ASSET_COMBINATION.csv" download>Asset combinations report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v16/ACCOUNT.csv" download>アカウントレポート</a></div><div lang="en"><a href="./reports/v16/ACCOUNT.csv" download>Account Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v16/CAMPAIGN.csv" download>キャンペーンレポート</a></div><div lang="en"><a href="./reports/v16/CAMPAIGN.csv" download>Campaign Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v16/ADGROUP.csv" download>広告グループレポート</a></div><div lang="en"><a href="./reports/v16/ADGROUP.csv" download>Ad Group Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v16/AD.csv" download>広告レポート</a></div><div lang="en"><a href="./reports/v16/AD.csv" download>Ad Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v16/KEYWORDS.csv" download>キーワードレポート</a></div><div lang="en"><a href="./reports/v16/KEYWORDS.csv" download>Keyword Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v16/SEARCH_QUERY.csv" download>検索クエリレポート</a></div><div lang="en"><a href="./reports/v16/SEARCH_QUERY.csv" download>Search Query Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v16/GEO.csv" download>地域別レポート</a></div><div lang="en"><a href="./reports/v16/GEO.csv" download>Geo Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v16/GEO_TARGET.csv" download>地域ターゲティングレポート</a></div><div lang="en"><a href="./reports/v16/GEO_TARGET.csv" download>Geo Targeting Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v16/SCHEDULE_TARGET.csv" download>曜日・時間帯ターゲティングレポート</a></div><div lang="en"><a href="./reports/v16/SCHEDULE_TARGET.csv" download>Schedule Targeting Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v16/BID_STRATEGY.csv" download>自動入札レポート</a></div><div lang="en"><a href="./reports/v16/BID_STRATEGY.csv" download>Auto Bidding Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v16/CAMPAIGN_TARGET_LIST.csv" download>キャンペーンターゲットリストレポート</a></div><div lang="en"><a href="./reports/v16/CAMPAIGN_TARGET_LIST.csv"download>Campaign Target List Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v16/ADGROUP_TARGET_LIST.csv" download>広告グループターゲットリストレポート</a></div><div lang="en"><a href="./reports/v16/ADGROUP_TARGET_LIST.csv" download>Ad Group Target List Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v16/LANDING_PAGE_URL.csv" download>ランディングページURLレポート</a></div><div lang="en"><a href="./reports/v16/LANDING_PAGE_URL.csv" download>Landing Page URL Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v16/KEYWORDLESS_QUERY.csv" download>検索クエリーレポート（動的検索連動型広告）</a></div><div lang="en"><a href="./reports/v16/KEYWORDLESS_QUERY.csv" download>Search Query Report (Dynamic Ads for Search)</a></div></li>
++      <li><div lang="ja"><a href="./reports/v16/WEBPAGE_CRITERION.csv" download>ページフィードターゲティングレポート</a></div><div lang="en"><a href="./reports/v16/WEBPAGE_CRITERION.csv" download>Page Feed Targeting Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v16/BID_MODIFIER.csv" download>入札価格調整率レポート</a></div><div lang="en"><a href="./reports/v16/BID_MODIFIER.csv" download>Bid Adjustments Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v16/CAMPAIGN_ASSET.csv" download>広告表示アセットレポート（キャンペーン）</a></div><div lang="en"><a href="./reports/v16/CAMPAIGN_ASSET.csv" download>Ad Display Asset Report (campaign)</a></div></li>
++      <li><div lang="ja"><a href="./reports/v16/AD_GROUP_ASSET.csv" download>広告表示アセットレポート（広告グループ）</a></div><div lang="en"><a href="./reports/v16/AD_GROUP_ASSET.csv" download>Ad Display Asset Report (ad group)</a></div></li>
++      <li><div lang="ja"><a href="./reports/v16/RESPONSIVE_ADS_FOR_SEARCH_ASSET.csv" download>レスポンシブ検索広告アセットレポート</a></div><div lang="en"><a href="./reports/v16/RESPONSIVE_ADS_FOR_SEARCH_ASSET.csv" download>Responsive Ads for Search Asset Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v16/SHARED_BUDGET.csv" download>共有予算レポート</a></div><div lang="en"><a href="./reports/v16/SHARED_BUDGET.csv" download>Campaign Budget Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v16/ASSET_COMBINATION.csv" download>アセット組み合わせレポート</a></div><div lang="en"><a href="./reports/v16/ASSET_COMBINATION.csv" download>Asset combinations report</a></div></li>
+       </ul>
+   - name: CampaignExportService
+     description: |
+@@ -346,6 +346,48 @@
+       <label class="account"></label>
+       <div lang="ja">ConversionGroupServiceでは、コンバージョングループ情報の操作を提供します。</div>
+       <div lang="en">ConversionGroupService provides ConversionGroup information operations.</div>
++  - name: SsaAccountService
++    description: |
++      <label class="account" ></label>
++      <div lang="ja">SsaAccountServiceでは、SSAアカウントに関する情報の取得を行います。</div>
++      <div lang="en">SsaAccountService provides functions for get SSA accounts.</div>
++  - name: SsaReportDefinitionService
++    description: |
++      <label class="report"></label>
++      <div lang="ja">SsaReportDefinitionServiceでは、レポート定義の取得および追加・削除を行います。<br/>
++      レポート定義では、レポート形式、期間およびフィールドを指定します。<br/>
++      また特定のレポート形式に対して使用可能なレポートフィールドを取得する操作が提供されます。<br>
++      以下の操作が実行可能です。<br>
++      ・レポートの取得<br>
++      ・レポートの登録<br>
++      ・レポートの削除<br>
++      ・レポート出力項目の取得<br>
++      【注意事項】<br>
++      ・すべてのレポートタイプにおいて配信実績のないデータは出力されません。<br>
++      ・レポートは、リクエストしてから1週間（7日間）で自動的に削除されます。<br>
++      </div>
++      <div lang="en">SsaReportDefinitionService is to get, add or delete report definition.<br/>
++      Report defines report type, date range, and fields.<br/>
++      It also provides operation to get available report fields for specific report type.<br>
++      The following operations are provided:<br>
++      - Get reports<br>
++      - Add reports<br>
++      - Delete reports<br>
++      - Get report fields' information<br>
++      [Notes]<br>
++      - Any ad data without actual performance is not output for all report types.<br>
++      - Report download jobs will be automatically deleted after a week (7 days) from requested.<br>
++      </div>
++      <h2 lang="ja" class="reportFields__title">レポートフィールド</h2>
++      <h2 lang="en" class="reportFields__title">Report Fields</h2>
++      <ul>
++      <li><div lang="ja"><a href="./reports/v16/SSA_ACCOUNT.csv" download>アカウントレポート</a></div><div lang="en"><a href="./reports/v16/SSA_ACCOUNT.csv" download>Account Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v16/SSA_CAMPAIGN.csv" download>キャンペーンレポート</a></div><div lang="en"><a href="./reports/v16/SSA_CAMPAIGN.csv" download>Campaign Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v16/SSA_ADGROUP.csv" download>広告グループレポート</a></div><div lang="en"><a href="./reports/v16/SSA_ADGROUP.csv" download>Ad Group Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v16/SSA_SEARCH_QUERY.csv" download>検索クエリレポート</a></div><div lang="en"><a href="./reports/v16/SSA_SEARCH_QUERY.csv" download>Search Query Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v16/SSA_PRODUCT_GROUP.csv" download>商品グループレポート</a></div><div lang="en"><a href="./reports/v16/SSA_PRODUCT_GROUP.csv" download>Product Group Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v16/SSA_PRODUCT.csv" download>商品レポート</a></div><div lang="en"><a href="./reports/v16/SSA_PRODUCT.csv" download>Product Report</a></div></li>
++      </ul>
+
+ paths:
+   /AccountManagementService/get:
+@@ -8302,6 +8344,7 @@
+                 <tr><td>210630</td><td>Images not added. They may appear in incorrect orientation. Remove Exif data from images.</td><td><div lang="ja">画像が正しい方向に表示されない可能性があるため、画像は登録されませんでした。画像のExif情報を削除してください。</div><div lang="en">Images not added. They may appear in incorrect orientation. Remove Exif data from images.</div></td></tr>
+                 <tr><td>210631</td><td>Transparent images is unsupported.</td><td><div lang="ja">透過画像は登録できません。</div><div lang="en">Can't add transparent images.</div></td></tr>
+                 <tr><td>210633</td><td>Image assets aren't available for Adult Ads accounts.</td><td><div lang="ja">アダルト広告のアカウントでは、画像アセットは利用できません。</div><div lang="en">Image assets aren't available for Adult Ads accounts.</div></td></tr>
++                <tr><td>210634</td><td>Favicon assets aren't available for Adult Ads accounts.</td><td><div lang="ja">アダルト広告のアカウントでは、ファビコンアセットは利用できません。</div><div lang="en">Favicon assets aren't available for Adult Ads accounts.</div></td></tr>
+               </tbody>
+             </table>
+             </div>
+@@ -11123,7 +11166,7 @@
+                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
+                 <tr><td>130001</td><td>The request was not completed. Please reduce concurrent requests or data size. </td><td><div lang="ja">リクエストが完了しませんでした。同時リクエスト数またはデータサイズを減らして再度お試しください。</div><div lang="en">The request was not completed. Please reduce concurrent requests or data size.</div></td></tr>
+                 <tr><td>210917</td><td>Cannot create duplicate test for campaign.</td><td><div lang="ja">選択したキャンペーンは他のA/Bテストで「テスト元のキャンペーン」に設定されています。複数のA/Bテストで同じキャンペーンを設定できません。</div><div lang="en">The selected campaign is the original campaign for a different A/B test. You can't set up the same campaign for multiple A/B tests.</div></td></tr>
+-                <tr><td>120020</td><td>Value cannot be set.</td><td><div lang="ja">値を設定することができません。</div><div lang="en">[TODO ヘルプページ追加する]Can not set value.</div></td></tr>
++                <tr><td>120020</td><td>Value cannot be set.</td><td><div lang="ja">値を設定することができません。</div><div lang="en">Can not set value.</div></td></tr>
+                 <tr><td>210919</td><td>Specify a start date three days or later from today.</td><td><div lang="ja">開始日は本日から3日後以降の日付を指定してください。</div><div lang="en">Specify a start date three days or later from today.</div></td></tr>
+               </tbody>
+             </table>
+@@ -11586,6 +11629,381 @@
+             application/json:
+               schema:
+                 $ref: 'conversiongroup/ConversionGroupServiceMutateResponse.yaml#/ConversionGroupServiceMutateResponse'
++        403:
++          $ref: '../Response403.yaml#/Response403'
++        401:
++          $ref: '../Response401.yaml#/Response401'
++        400:
++          $ref: '../Response400.yaml#/Response400'
++  /SsaAccountService/get:
++    post:
++      parameters:
++        - in: header
++          name: x-z-base-account-id
++          schema:
++            type: integer
++            format: int64
++          required: true
++          description: |
++            <div lang="ja">アカウントIDを指定してください。</div>
++            <div lang="en">Specify Account ID.</div>
++      description: |
++        <div lang="ja">アカウントに関する情報を取得します。契約状況などのフィルタ条件を設定することが可能です。<br>
++        x-z-base-account-idに指定可能なアカウントIDはBaseAccountService/getで取得可能です。</div>
++        <div lang="en">Returns the account information. Enable to set the filter condition, such as the account Type.<br>
++        Retrieve the account ID available for the "x-z-base-account-id" header using BaseAccountService/get.</div>
++      tags:
++        - SsaAccountService
++      requestBody:
++        content:
++          application/json:
++            schema:
++              $ref: 'ssaaccount/SsaAccountServiceSelector.yaml#/SsaAccountServiceSelector'
++      responses:
++        503:
++          $ref: '../Response503.yaml#/Response503'
++        500:
++          $ref: '../Response500.yaml#/Response500'
++        200:
++          description: |
++            <p class="cellContent__head">Error codes</p>
++            <div class="cellContent__body">
++            <table class="apiTable">
++              <colgroup span="1" class="short"></colgroup>
++              <colgroup span="2"></colgroup>
++              <thead>
++                <tr><th>Code</th><th>Message</th><th>Description</th></tr>
++              </thead>
++              <tbody>
++                <tr><td>0001</td><td>Invalid Request.</td><td><div lang="ja">さまざまな要因が考えられます。<br>主な要因は、パラメータの値が不正か、誤りがあるためにオペレーションが完了できません。</div><div lang="en">This error can result for a variety of reasons. <br>Typically because one of the parameter values in the request is wrong or invalid and the operation cannot be completed.</div></td></tr>
++                <tr><td>R0001</td><td>Require.</td><td><div lang="ja">必須です。</div><div lang="en">It is missing required parameter.</div></td></tr>
++                <tr><td>F0001</td><td>Invalid format.</td><td><div lang="ja">値の形式が不正です。</div><div lang="en">The value format is invalid.</div></td></tr>
++                <tr><td>V0001</td><td>Invalid value.</td><td><div lang="ja">値が無効です。</div><div lang="en">The value is invalid.</div></td></tr>
++                <tr><td>S0001</td><td>Invalid Status.</td><td><div lang="ja">ステータスが無効です。</div><div lang="en">The status is invalid.</div></td></tr>
++                <tr><td>L0002</td><td>Over list size.</td><td><div lang="ja">配列の要素数が上限値を超過しています。</div><div lang="en">The number of elements in the array exceeds the upper limit.</div></td></tr>
++                <tr><td>L0001</td><td>Lower list size.</td><td><div lang="ja">配列の要素数が下限値を下回っています。</div><div lang="en">The number of elements in the array is below the lower limit.</div></td></tr>
++                <tr><td>D0001</td><td>Duplicate.</td><td><div lang="ja">一意な値が重複しています。</div><div lang="en">The unique value is duplicated.</div></td></tr>
++                <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
++                <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
++                <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
++              </tbody>
++            </table>
++            </div>
++          content:
++            application/json:
++              schema:
++                $ref: 'ssaaccount/SsaAccountServiceGetResponse.yaml#/SsaAccountServiceGetResponse'
++        403:
++          $ref: '../Response403.yaml#/Response403'
++        401:
++          $ref: '../Response401.yaml#/Response401'
++        400:
++          $ref: '../Response400.yaml#/Response400'
++  /SsaReportDefinitionService/get:
++    post:
++      parameters:
++        - in: header
++          name: x-z-base-account-id
++          schema:
++            type: integer
++            format: int64
++          required: true
++          description: |
++            <div lang="ja">アカウントIDを指定してください。</div>
++            <div lang="en">Specify Account ID.</div>
++      description: |
++        <div lang="ja">レポート定義に関する情報を取得します。</div>
++        <div lang="en">Get information related to report definition.</div>
++      tags:
++        - SsaReportDefinitionService
++      requestBody:
++        content:
++          application/json:
++            schema:
++              $ref: 'ssareportdefinition/SsaReportDefinitionServiceSelector.yaml#/SsaReportDefinitionServiceSelector'
++      responses:
++        503:
++          $ref: '../Response503.yaml#/Response503'
++        500:
++          $ref: '../Response500.yaml#/Response500'
++        200:
++          description: |
++            <p class="cellContent__head">Error codes</p>
++            <div class="cellContent__body">
++            <table class="apiTable">
++              <colgroup span="1" class="short"></colgroup>
++              <colgroup span="2"></colgroup>
++              <thead>
++                <tr><th>Code</th><th>Message</th><th>Description</th></tr>
++              </thead>
++              <tbody>
++                <tr><td>0001</td><td>Invalid Request.</td><td><div lang="ja">さまざまな要因が考えられます。<br>主な要因は、パラメータの値が不正か、誤りがあるためにオペレーションが完了できません。</div><div lang="en">This error can result for a variety of reasons. <br>Typically because one of the parameter values in the request is wrong or invalid and the operation cannot be completed.</div></td></tr>
++                <tr><td>R0001</td><td>Require.</td><td><div lang="ja">必須です。</div><div lang="en">It is missing required parameter.</div></td></tr>
++                <tr><td>F0001</td><td>Invalid format.</td><td><div lang="ja">値の形式が不正です。</div><div lang="en">The value format is invalid.</div></td></tr>
++                <tr><td>V0001</td><td>Invalid value.</td><td><div lang="ja">値が無効です。</div><div lang="en">The value is invalid.</div></td></tr>
++                <tr><td>S0001</td><td>Invalid Status.</td><td><div lang="ja">ステータスが無効です。</div><div lang="en">The status is invalid.</div></td></tr>
++                <tr><td>L0002</td><td>Over list size.</td><td><div lang="ja">配列の要素数が上限値を超過しています。</div><div lang="en">The number of elements in the array exceeds the upper limit.</div></td></tr>
++                <tr><td>L0001</td><td>Lower list size.</td><td><div lang="ja">配列の要素数が下限値を下回っています。</div><div lang="en">The number of elements in the array is below the lower limit.</div></td></tr>
++                <tr><td>D0001</td><td>Duplicate.</td><td><div lang="ja">一意な値が重複しています。</div><div lang="en">The unique value is duplicated.</div></td></tr>
++                <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
++                <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
++                <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
++                <tr><td>240003</td><td>Invalid Filters Item.</td><td><div lang="ja">Filtersに指定できない項目が含まれています。</div><div lang="en">It contains an item that cannot specify Filters.</div></td></tr>
++                <tr><td>240004</td><td>Can not Specify Date Range.</td><td><div lang="ja">期間指定の種類がCUSTOM_DATE以外に期間の指定はできません。</div><div lang="en">Date range cannot be specified when the date range type is not CUSTOM_DATE.</div></td></tr>
++              </tbody>
++            </table>
++            </div>
++          content:
++            application/json:
++              schema:
++                $ref: 'ssareportdefinition/SsaReportDefinitionServiceGetResponse.yaml#/SsaReportDefinitionServiceGetResponse'
++        403:
++          $ref: '../Response403.yaml#/Response403'
++        401:
++          $ref: '../Response401.yaml#/Response401'
++        400:
++          $ref: '../Response400.yaml#/Response400'
++  /SsaReportDefinitionService/add:
++    post:
++      parameters:
++        - in: header
++          name: x-z-base-account-id
++          schema:
++            type: integer
++            format: int64
++          required: true
++          description: |
++            <div lang="ja">アカウントIDを指定してください。</div>
++            <div lang="en">Specify Account ID.</div>
++      description: |
++        <div lang="ja">レポート定義を追加します。</div>
++        <div lang="en">Adds report definitions.</div>
++      tags:
++        - SsaReportDefinitionService
++      requestBody:
++        content:
++          application/json:
++            schema:
++              $ref: 'ssareportdefinition/SsaReportDefinitionServiceOperation.yaml#/SsaReportDefinitionServiceOperation'
++      responses:
++        503:
++          $ref: '../Response503.yaml#/Response503'
++        500:
++          $ref: '../Response500.yaml#/Response500'
++        200:
++          description: |
++            <p class="cellContent__head">Error codes</p>
++            <div class="cellContent__body">
++            <table class="apiTable">
++              <colgroup span="1" class="short"></colgroup>
++              <colgroup span="2"></colgroup>
++              <thead>
++                <tr><th>Code</th><th>Message</th><th>Description</th></tr>
++              </thead>
++              <tbody>
++                <tr><td>0001</td><td>Invalid Request.</td><td><div lang="ja">さまざまな要因が考えられます。<br>主な要因は、パラメータの値が不正か、誤りがあるためにオペレーションが完了できません。</div><div lang="en">This error can result for a variety of reasons. <br>Typically because one of the parameter values in the request is wrong or invalid and the operation cannot be completed.</div></td></tr>
++                <tr><td>R0001</td><td>Require.</td><td><div lang="ja">必須です。</div><div lang="en">It is missing required parameter.</div></td></tr>
++                <tr><td>F0001</td><td>Invalid format.</td><td><div lang="ja">値の形式が不正です。</div><div lang="en">The value format is invalid.</div></td></tr>
++                <tr><td>V0001</td><td>Invalid value.</td><td><div lang="ja">値が無効です。</div><div lang="en">The value is invalid.</div></td></tr>
++                <tr><td>S0001</td><td>Invalid Status.</td><td><div lang="ja">ステータスが無効です。</div><div lang="en">The status is invalid.</div></td></tr>
++                <tr><td>L0002</td><td>Over list size.</td><td><div lang="ja">配列の要素数が上限値を超過しています。</div><div lang="en">The number of elements in the array exceeds the upper limit.</div></td></tr>
++                <tr><td>L0001</td><td>Lower list size.</td><td><div lang="ja">配列の要素数が下限値を下回っています。</div><div lang="en">The number of elements in the array is below the lower limit.</div></td></tr>
++                <tr><td>D0001</td><td>Duplicate.</td><td><div lang="ja">一意な値が重複しています。</div><div lang="en">The unique value is duplicated.</div></td></tr>
++                <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
++                <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
++                <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
++                <tr><td>240003</td><td>Invalid Filters Item.</td><td><div lang="ja">Filtersに指定できない項目が含まれています。</div><div lang="en">It contains an item that cannot specify Filters.</div></td></tr>
++                <tr><td>240004</td><td>Can not Specify Date Range.</td><td><div lang="ja">期間指定の種類がCUSTOM_DATE以外に期間の指定はできません。</div><div lang="en">Date range cannot be specified when the date range type is not CUSTOM_DATE.</div></td></tr>
++              </tbody>
++            </table>
++            </div>
++          content:
++            application/json:
++              schema:
++                $ref: 'ssareportdefinition/SsaReportDefinitionServiceMutateResponse.yaml#/SsaReportDefinitionServiceMutateResponse'
++        403:
++          $ref: '../Response403.yaml#/Response403'
++        401:
++          $ref: '../Response401.yaml#/Response401'
++        400:
++          $ref: '../Response400.yaml#/Response400'
++  /SsaReportDefinitionService/remove:
++    post:
++      parameters:
++        - in: header
++          name: x-z-base-account-id
++          schema:
++            type: integer
++            format: int64
++          required: true
++          description: |
++            <div lang="ja">アカウントIDを指定してください。</div>
++            <div lang="en">Specify Account ID.</div>
++      description: |
++        <div lang="ja">レポート定義を削除します。</div>
++        <div lang="en">Removes report definitions.</div>
++      tags:
++        - SsaReportDefinitionService
++      requestBody:
++        content:
++          application/json:
++            schema:
++              $ref: 'ssareportdefinition/SsaReportDefinitionServiceOperation.yaml#/SsaReportDefinitionServiceOperation'
++      responses:
++        503:
++          $ref: '../Response503.yaml#/Response503'
++        500:
++          $ref: '../Response500.yaml#/Response500'
++        200:
++          description: |
++            <p class="cellContent__head">Error codes</p>
++            <div class="cellContent__body">
++            <table class="apiTable">
++              <colgroup span="1" class="short"></colgroup>
++              <colgroup span="2"></colgroup>
++              <thead>
++                <tr><th>Code</th><th>Message</th><th>Description</th></tr>
++              </thead>
++              <tbody>
++                <tr><td>0001</td><td>Invalid Request.</td><td><div lang="ja">さまざまな要因が考えられます。<br>主な要因は、パラメータの値が不正か、誤りがあるためにオペレーションが完了できません。</div><div lang="en">This error can result for a variety of reasons. <br>Typically because one of the parameter values in the request is wrong or invalid and the operation cannot be completed.</div></td></tr>
++                <tr><td>R0001</td><td>Require.</td><td><div lang="ja">必須です。</div><div lang="en">It is missing required parameter.</div></td></tr>
++                <tr><td>F0001</td><td>Invalid format.</td><td><div lang="ja">値の形式が不正です。</div><div lang="en">The value format is invalid.</div></td></tr>
++                <tr><td>V0001</td><td>Invalid value.</td><td><div lang="ja">値が無効です。</div><div lang="en">The value is invalid.</div></td></tr>
++                <tr><td>S0001</td><td>Invalid Status.</td><td><div lang="ja">ステータスが無効です。</div><div lang="en">The status is invalid.</div></td></tr>
++                <tr><td>L0002</td><td>Over list size.</td><td><div lang="ja">配列の要素数が上限値を超過しています。</div><div lang="en">The number of elements in the array exceeds the upper limit.</div></td></tr>
++                <tr><td>L0001</td><td>Lower list size.</td><td><div lang="ja">配列の要素数が下限値を下回っています。</div><div lang="en">The number of elements in the array is below the lower limit.</div></td></tr>
++                <tr><td>D0001</td><td>Duplicate.</td><td><div lang="ja">一意な値が重複しています。</div><div lang="en">The unique value is duplicated.</div></td></tr>
++                <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
++                <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
++                <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
++                <tr><td>240003</td><td>Invalid Filters Item.</td><td><div lang="ja">Filtersに指定できない項目が含まれています。</div><div lang="en">It contains an item that cannot specify Filters.</div></td></tr>
++                <tr><td>240004</td><td>Can not Specify Date Range.</td><td><div lang="ja">期間指定の種類がCUSTOM_DATE以外に期間の指定はできません。</div><div lang="en">Date range cannot be specified when the date range type is not CUSTOM_DATE.</div></td></tr>
++              </tbody>
++            </table>
++            </div>
++          content:
++            application/json:
++              schema:
++                $ref: 'ssareportdefinition/SsaReportDefinitionServiceMutateResponse.yaml#/SsaReportDefinitionServiceMutateResponse'
++        403:
++          $ref: '../Response403.yaml#/Response403'
++        401:
++          $ref: '../Response401.yaml#/Response401'
++        400:
++          $ref: '../Response400.yaml#/Response400'
++  /SsaReportDefinitionService/getReportFields:
++    post:
++      description: |
++        <div lang="ja">レポートタイプに対して使用可能なレポートのフィールドを返します。</div>
++        <div lang="en">Returns the available report fields for a given report type.</div>
++      tags:
++        - SsaReportDefinitionService
++      requestBody:
++        content:
++          application/json:
++            schema:
++              $ref: 'ssareportdefinition/SsaReportDefinitionServiceGetReportFields.yaml#/SsaReportDefinitionServiceGetReportFields'
++      responses:
++        503:
++          $ref: '../Response503.yaml#/Response503'
++        500:
++          $ref: '../Response500.yaml#/Response500'
++        200:
++          description: |
++            <p class="cellContent__head">Error codes</p>
++            <div class="cellContent__body">
++            <table class="apiTable">
++              <colgroup span="1" class="short"></colgroup>
++              <colgroup span="2"></colgroup>
++              <thead>
++                <tr><th>Code</th><th>Message</th><th>Description</th></tr>
++              </thead>
++              <tbody>
++                <tr><td>0001</td><td>Invalid Request.</td><td><div lang="ja">さまざまな要因が考えられます。<br>主な要因は、パラメータの値が不正か、誤りがあるためにオペレーションが完了できません。</div><div lang="en">This error can result for a variety of reasons. <br>Typically because one of the parameter values in the request is wrong or invalid and the operation cannot be completed.</div></td></tr>
++                <tr><td>R0001</td><td>Require.</td><td><div lang="ja">必須です。</div><div lang="en">It is missing required parameter.</div></td></tr>
++                <tr><td>F0001</td><td>Invalid format.</td><td><div lang="ja">値の形式が不正です。</div><div lang="en">The value format is invalid.</div></td></tr>
++                <tr><td>V0001</td><td>Invalid value.</td><td><div lang="ja">値が無効です。</div><div lang="en">The value is invalid.</div></td></tr>
++                <tr><td>S0001</td><td>Invalid Status.</td><td><div lang="ja">ステータスが無効です。</div><div lang="en">The status is invalid.</div></td></tr>
++                <tr><td>L0002</td><td>Over list size.</td><td><div lang="ja">配列の要素数が上限値を超過しています。</div><div lang="en">The number of elements in the array exceeds the upper limit.</div></td></tr>
++                <tr><td>L0001</td><td>Lower list size.</td><td><div lang="ja">配列の要素数が下限値を下回っています。</div><div lang="en">The number of elements in the array is below the lower limit.</div></td></tr>
++                <tr><td>D0001</td><td>Duplicate.</td><td><div lang="ja">一意な値が重複しています。</div><div lang="en">The unique value is duplicated.</div></td></tr>
++                <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
++                <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
++                <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
++                <tr><td>240003</td><td>Invalid Filters Item.</td><td><div lang="ja">Filtersに指定できない項目が含まれています。</div><div lang="en">It contains an item that cannot specify Filters.</div></td></tr>
++                <tr><td>240004</td><td>Can not Specify Date Range.</td><td><div lang="ja">期間指定の種類がCUSTOM_DATE以外に期間の指定はできません。</div><div lang="en">Date range cannot be specified when the date range type is not CUSTOM_DATE.</div></td></tr>
++              </tbody>
++            </table>
++            </div>
++          content:
++            application/json:
++              schema:
++                $ref: 'ssareportdefinition/SsaReportDefinitionServiceGetReportFieldsResponse.yaml#/SsaReportDefinitionServiceGetReportFieldsResponse'
++        403:
++          $ref: '../Response403.yaml#/Response403'
++        401:
++          $ref: '../Response401.yaml#/Response401'
++        400:
++          $ref: '../Response400.yaml#/Response400'
++  /SsaReportDefinitionService/download:
++    post:
++      parameters:
++        - in: header
++          name: x-z-base-account-id
++          schema:
++            type: integer
++            format: int64
++          required: true
++          description: |
++            <div lang="ja">アカウントIDを指定してください。</div>
++            <div lang="en">Specify Account ID.</div>
++      description: |
++        <div lang="ja">レポートをダウンロードします。</div>
++        <div lang="en">Download the report.</div>
++      tags:
++        - SsaReportDefinitionService
++      requestBody:
++        content:
++          application/json:
++            schema:
++              $ref: 'ssareportdefinition/SsaReportDefinitionServiceDownloadSelector.yaml#/SsaReportDefinitionServiceDownloadSelector'
++      responses:
++        503:
++          $ref: '../Response503.yaml#/Response503'
++        500:
++          $ref: '../Response500.yaml#/Response500'
++        200:
++          description: |
++            <p class="cellContent__head">Error codes</p>
++            <div class="cellContent__body">
++            <table class="apiTable">
++              <colgroup span="1" class="short"></colgroup>
++              <colgroup span="2"></colgroup>
++              <thead>
++                <tr><th>Code</th><th>Message</th><th>Description</th></tr>
++              </thead>
++              <tbody>
++                <tr><td>0001</td><td>Invalid Request.</td><td><div lang="ja">さまざまな要因が考えられます。<br>主な要因は、パラメータの値が不正か、誤りがあるためにオペレーションが完了できません。</div><div lang="en">This error can result for a variety of reasons. <br>Typically because one of the parameter values in the request is wrong or invalid and the operation cannot be completed.</div></td></tr>
++                <tr><td>R0001</td><td>Require.</td><td><div lang="ja">必須です。</div><div lang="en">It is missing required parameter.</div></td></tr>
++                <tr><td>F0001</td><td>Invalid format.</td><td><div lang="ja">値の形式が不正です。</div><div lang="en">The value format is invalid.</div></td></tr>
++                <tr><td>V0001</td><td>Invalid value.</td><td><div lang="ja">値が無効です。</div><div lang="en">The value is invalid.</div></td></tr>
++                <tr><td>S0001</td><td>Invalid Status.</td><td><div lang="ja">ステータスが無効です。</div><div lang="en">The status is invalid.</div></td></tr>
++                <tr><td>L0002</td><td>Over list size.</td><td><div lang="ja">配列の要素数が上限値を超過しています。</div><div lang="en">The number of elements in the array exceeds the upper limit.</div></td></tr>
++                <tr><td>L0001</td><td>Lower list size.</td><td><div lang="ja">配列の要素数が下限値を下回っています。</div><div lang="en">The number of elements in the array is below the lower limit.</div></td></tr>
++                <tr><td>D0001</td><td>Duplicate.</td><td><div lang="ja">一意な値が重複しています。</div><div lang="en">The unique value is duplicated.</div></td></tr>
++                <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
++                <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
++                <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
++                <tr><td>240003</td><td>Invalid Filters Item.</td><td><div lang="ja">Filtersに指定できない項目が含まれています。</div><div lang="en">It contains an item that cannot specify Filters.</div></td></tr>
++                <tr><td>240004</td><td>Can not Specify Date Range.</td><td><div lang="ja">期間指定の種類がCUSTOM_DATE以外に期間の指定はできません。</div><div lang="en">Date range cannot be specified when the date range type is not CUSTOM_DATE.</div></td></tr>
++              </tbody>
++            </table>
++            </div>
++          content:
++            application/octet-stream:
++              schema:
++                type: string
++                format: binary
+         403:
+           $ref: '../Response403.yaml#/Response403'
+         401:
+
+
+------
+diff -ru v15/accountcustomizer/AccountCustomizerServiceSelector.yaml v16/accountcustomizer/AccountCustomizerServiceSelector.yaml
+--- v15/accountcustomizer/AccountCustomizerServiceSelector.yaml	2025-02-21 12:43:31
++++ v16/accountcustomizer/AccountCustomizerServiceSelector.yaml	2025-02-21 12:43:32
+@@ -26,7 +26,6 @@
+       nullable: true
+       items:
+         $ref: 'AccountCustomizerServiceType.yaml#/AccountCustomizerServiceType'
+-      maxItems: 4
+     numberResults:
+       type: integer
+       nullable: true
+
+
+------
+diff -ru v15/accountlink/AccountLinkServiceSelector.yaml v16/accountlink/AccountLinkServiceSelector.yaml
+--- v15/accountlink/AccountLinkServiceSelector.yaml	2025-02-21 12:43:31
++++ v16/accountlink/AccountLinkServiceSelector.yaml	2025-02-21 12:43:32
+@@ -16,7 +16,6 @@
+       nullable: true
+       items:
+         $ref: 'AccountLinkServiceAccountStatus.yaml#/AccountLinkServiceAccountStatus'
+-      maxItems: 5
+     numberResults:
+       type: integer
+       nullable: true
+
+
+------
+diff -ru v15/accountmanagement/AccountManagementServiceSelector.yaml v16/accountmanagement/AccountManagementServiceSelector.yaml
+--- v15/accountmanagement/AccountManagementServiceSelector.yaml	2025-02-21 12:43:31
++++ v16/accountmanagement/AccountManagementServiceSelector.yaml	2025-02-21 12:43:32
+@@ -18,7 +18,6 @@
+       nullable: true
+       items:
+         $ref: 'AccountManagementServiceStatus.yaml#/AccountManagementServiceStatus'
+-      maxItems: 5
+       description: |
+         <div lang="ja">検索条件：アカウントステータス</div>
+         <div lang="en">Account statuses.</div>
+@@ -27,7 +26,6 @@
+       nullable: true
+       items:
+         $ref: 'AccountManagementServicePaymentType.yaml#/AccountManagementServicePaymentType'
+-      maxItems: 2
+       description: |
+         <div lang="ja">検索条件：アカウントの料金支払い種別</div>
+         <div lang="en">Account payment types.</div>
+
+
+------
+diff -ru v15/adgroup/AdGroupServiceSelector.yaml v16/adgroup/AdGroupServiceSelector.yaml
+--- v15/adgroup/AdGroupServiceSelector.yaml	2025-02-21 12:43:31
++++ v16/adgroup/AdGroupServiceSelector.yaml	2025-02-21 12:43:32
+@@ -91,7 +91,6 @@
+       nullable: true
+       items:
+         $ref: 'AdGroupServiceUserStatus.yaml#/AdGroupServiceUserStatus'
+-      maxItems: 2
+     createdDateRange:
+       $ref: 'AdGroupServiceCreatedDateRange.yaml#/AdGroupServiceCreatedDateRange'
+     updatedDateRange:
+
+
+------
+diff -ru v15/adgroupad/AdGroupAdServiceSelector.yaml v16/adgroupad/AdGroupAdServiceSelector.yaml
+--- v15/adgroupad/AdGroupAdServiceSelector.yaml	2025-02-21 12:43:31
++++ v16/adgroupad/AdGroupAdServiceSelector.yaml	2025-02-21 12:43:32
+@@ -55,19 +55,16 @@
+       nullable: true
+       items:
+         $ref: 'AdGroupAdServiceAdType.yaml#/AdGroupAdServiceAdType'
+-      maxItems: 5
+     approvalStatuses:
+       type: array
+       nullable: true
+       items:
+         $ref: 'AdGroupAdServiceApprovalStatus.yaml#/AdGroupAdServiceApprovalStatus'
+-      maxItems: 5
+     userStatuses:
+       type: array
+       nullable: true
+       items:
+         $ref: 'AdGroupAdServiceUserStatus.yaml#/AdGroupAdServiceUserStatus'
+-      maxItems: 2
+     containsLabel:
+       type: boolean
+       nullable: true
+
+
+------
+diff -ru v15/adgroupasset/AdGroupAssetServiceSelector.yaml v16/adgroupasset/AdGroupAssetServiceSelector.yaml
+--- v15/adgroupasset/AdGroupAssetServiceSelector.yaml	2025-02-21 12:43:31
++++ v16/adgroupasset/AdGroupAssetServiceSelector.yaml	2025-02-21 12:43:32
+@@ -49,13 +49,11 @@
+       nullable: true
+       items:
+         $ref: 'AdGroupAssetServiceType.yaml#/AdGroupAssetServiceType'
+-      maxItems: 5
+     userStatuses:
+       type: array
+       nullable: true
+       items:
+         $ref: 'AdGroupAssetServiceUserStatus.yaml#/AdGroupAssetServiceUserStatus'
+-      maxItems: 2
+     numberResults:
+       type: integer
+       nullable: true
+
+
+------
+diff -ru v15/adgroupbidmultiplier/AdGroupBidMultiplierServiceSelector.yaml v16/adgroupbidmultiplier/AdGroupBidMultiplierServiceSelector.yaml
+--- v15/adgroupbidmultiplier/AdGroupBidMultiplierServiceSelector.yaml	2025-02-21 12:43:31
++++ v16/adgroupbidmultiplier/AdGroupBidMultiplierServiceSelector.yaml	2025-02-21 12:43:32
+@@ -38,7 +38,6 @@
+       nullable: true
+       items:
+         $ref: 'AdGroupBidMultiplierServicePlatformType.yaml#/AdGroupBidMultiplierServicePlatformType'
+-      maxItems: 3
+     numberResults:
+       type: integer
+       nullable: true
+
+
+------
+diff -ru v15/adgroupcriterion/AdGroupCriterionServiceSelector.yaml v16/adgroupcriterion/AdGroupCriterionServiceSelector.yaml
+--- v15/adgroupcriterion/AdGroupCriterionServiceSelector.yaml	2025-02-21 12:43:31
++++ v16/adgroupcriterion/AdGroupCriterionServiceSelector.yaml	2025-02-21 12:43:32
+@@ -28,7 +28,6 @@
+       nullable: true
+       items:
+         $ref: 'AdGroupCriterionServiceApprovalStatus.yaml#/AdGroupCriterionServiceApprovalStatus'
+-      maxItems: 5
+     portfolioBiddingIds:
+       type: array
+       nullable: true
+@@ -101,7 +100,6 @@
+       nullable: true
+       items:
+         $ref: 'AdGroupCriterionServiceUserStatus.yaml#/AdGroupCriterionServiceUserStatus'
+-      maxItems: 2
+     keyword:
+       $ref: 'AdGroupCriterionServiceKeyword.yaml#/AdGroupCriterionServiceKeyword'
+     biddingKeywordCpcRange:
+
+
+------
+diff -ru v15/adgroupcriterioncustomizer/AdGroupCriterionCustomizerServiceSelector.yaml v16/adgroupcriterioncustomizer/AdGroupCriterionCustomizerServiceSelector.yaml
+--- v15/adgroupcriterioncustomizer/AdGroupCriterionCustomizerServiceSelector.yaml	2025-02-21 12:43:31
++++ v16/adgroupcriterioncustomizer/AdGroupCriterionCustomizerServiceSelector.yaml	2025-02-21 12:43:32
+@@ -56,7 +56,6 @@
+       nullable: true
+       items:
+         $ref: 'AdGroupCriterionCustomizerServiceType.yaml#/AdGroupCriterionCustomizerServiceType'
+-      maxItems: 4
+     numberResults:
+       type: integer
+       nullable: true
+
+
+------
+diff -ru v15/adgroupcustomizer/AdGroupCustomizerServiceSelector.yaml v16/adgroupcustomizer/AdGroupCustomizerServiceSelector.yaml
+--- v15/adgroupcustomizer/AdGroupCustomizerServiceSelector.yaml	2025-02-21 12:43:31
++++ v16/adgroupcustomizer/AdGroupCustomizerServiceSelector.yaml	2025-02-21 12:43:32
+@@ -46,7 +46,6 @@
+       nullable: true
+       items:
+         $ref: 'AdGroupCustomizerServiceType.yaml#/AdGroupCustomizerServiceType'
+-      maxItems: 4
+     numberResults:
+       type: integer
+       nullable: true
+
+
+------
+diff -ru v15/asset/Asset.yaml v16/asset/Asset.yaml
+--- v15/asset/Asset.yaml	2025-02-21 12:43:31
++++ v16/asset/Asset.yaml	2025-02-21 12:43:32
+@@ -120,6 +120,6 @@
+   title: Asset
+   description: |
+     <div lang="ja">Assetオブジェクトは、アセット情報を格納します。<br>
+-    ※type=IMAGEのアセットを登録するときは最大1件となります。</div>
++    ※type=IMAGE, FAVICONのアセットを登録するときは最大1件となります。</div>
+     <div lang="en">Asset object contains the information of Asset.<br>
+-    *In the case of `type=IMAGE`, the operand size is limited to one item.</div>
++    *In the case of `type=IMAGE, FAVICON`, the operand size is limited to one item.</div>
+
+
+------
+diff -ru v15/asset/AssetServiceAssetData.yaml v16/asset/AssetServiceAssetData.yaml
+--- v15/asset/AssetServiceAssetData.yaml	2025-02-21 12:43:31
++++ v16/asset/AssetServiceAssetData.yaml	2025-02-21 12:43:32
+@@ -14,6 +14,8 @@
+       $ref: 'AssetServiceStructuredSnippetAsset.yaml#/AssetServiceStructuredSnippetAsset'
+     imageAsset:
+       $ref: 'AssetServiceImageAsset.yaml#/AssetServiceImageAsset'
++    faviconAsset:
++      $ref: 'AssetServiceFaviconAsset.yaml#/AssetServiceFaviconAsset'
+   title: AssetServiceAssetData
+   description: |
+     <div lang="ja">AssetServiceAssetDataオブジェクトは、アセットの詳細情報を格納します。<br>
+Only in v16/asset: AssetServiceFaviconAsset.yaml
+
+
+------
+diff -ru v15/asset/AssetServiceSelector.yaml v16/asset/AssetServiceSelector.yaml
+--- v15/asset/AssetServiceSelector.yaml	2025-02-21 12:43:31
++++ v16/asset/AssetServiceSelector.yaml	2025-02-21 12:43:32
+@@ -27,13 +27,11 @@
+       nullable: true
+       items:
+         $ref: 'AssetServiceType.yaml#/AssetServiceType'
+-      maxItems: 5
+     approvalStatuses:
+       type: array
+       nullable: true
+       items:
+         $ref: 'AssetServiceApprovalStatus.yaml#/AssetServiceApprovalStatus'
+-      maxItems: 5
+     numberResults:
+       type: integer
+       nullable: true
+
+
+------
+diff -ru v15/asset/AssetServiceType.yaml v16/asset/AssetServiceType.yaml
+--- v15/asset/AssetServiceType.yaml	2025-02-21 12:43:31
++++ v16/asset/AssetServiceType.yaml	2025-02-21 12:43:32
+@@ -7,6 +7,7 @@
+   - CALLOUT
+   - STRUCTURED_SNIPPET
+   - IMAGE
++  - FAVICON
+   - UNKNOWN
+   title: AssetServiceType
+   description: |
+@@ -25,6 +26,8 @@
+       <dd class="term__desc"><span lang="ja">広告表示アセットのカテゴリ補足アセットです。</span><span lang="en">Category snippet asset from ad display asset.</span></dd>
+       <dt class="term__item">IMAGE</dt>
+       <dd class="term__desc"><span lang="ja">広告表示アセットの画像アセットです。</span><span lang="en">Image asset from ad display asset.</span></dd>
++      <dt class="term__item">FAVICON</dt>
++      <dd class="term__desc"><span lang="ja">広告表示アセットのファビコンアセットです。<br>※現在、こちらのEnumは利用できません。</span><span lang="en">Favicon asset from ad display asset.<br>*Currently this Enum is not available.</div></span></dd>
+       <dt class="term__item">UNKNOWN</dt>
+       <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown value.</span></dd>
+     </dl>
+
+
+------
+diff -ru v15/auditlog/AuditLogServiceSelector.yaml v16/auditlog/AuditLogServiceSelector.yaml
+--- v15/auditlog/AuditLogServiceSelector.yaml	2025-02-21 12:43:31
++++ v16/auditlog/AuditLogServiceSelector.yaml	2025-02-21 12:43:33
+@@ -27,7 +27,6 @@
+       nullable: true
+       items:
+         $ref: 'AuditLogServiceJobStatus.yaml#/AuditLogServiceJobStatus'
+-      maxItems: 4
+     numberResults:
+       type: integer
+       nullable: true
+
+
+------
+diff -ru v15/baseaccount/BaseAccount.yaml v16/baseaccount/BaseAccount.yaml
+--- v15/baseaccount/BaseAccount.yaml	2025-02-21 12:43:31
++++ v16/baseaccount/BaseAccount.yaml	2025-02-21 12:43:32
+@@ -35,6 +35,8 @@
+       $ref: 'BaseAccountServiceIsMccAccount.yaml#/BaseAccountServiceIsMccAccount'
+     isTestAccount:
+       $ref: 'BaseAccountServiceIsTestAccount.yaml#/BaseAccountServiceIsTestAccount'
++    isSsaAccount:
++      $ref: 'BaseAccountServiceIsSsaAccount.yaml#/BaseAccountServiceIsSsaAccount'
+   title: Account
+   description: |
+     <div lang="ja">BaseAccountオブジェクトは、アカウント情報を示します。<br>
+Only in v16/baseaccount: BaseAccountServiceIncludeSsaAccount.yaml
+Only in v16/baseaccount: BaseAccountServiceIsSsaAccount.yaml
+
+
+------
+diff -ru v15/baseaccount/BaseAccountServiceSelector.yaml v16/baseaccount/BaseAccountServiceSelector.yaml
+--- v15/baseaccount/BaseAccountServiceSelector.yaml	2025-02-21 12:43:31
++++ v16/baseaccount/BaseAccountServiceSelector.yaml	2025-02-21 12:43:32
+@@ -30,7 +30,6 @@
+       nullable: true
+       items:
+         $ref: 'BaseAccountServiceAccountStatus.yaml#/BaseAccountServiceAccountStatus'
+-      maxItems: 3
+     authType:
+       $ref: 'BaseAccountServiceAuthType.yaml#/BaseAccountServiceAuthType'
+     includeAdminAuth:
+@@ -39,6 +38,8 @@
+       $ref: 'BaseAccountServiceIncludeMccAccount.yaml#/BaseAccountServiceIncludeMccAccount'
+     includeTestAccount:
+       $ref: 'BaseAccountServiceIncludeTestAccount.yaml#/BaseAccountServiceIncludeTestAccount'
++    includeSsaAccount:
++      $ref: 'BaseAccountServiceIncludeSsaAccount.yaml#/BaseAccountServiceIncludeSsaAccount'
+     numberResults:
+       type: integer
+       nullable: true
+
+
+------
+diff -ru v15/biddingseasonalityadjustment/BiddingSeasonalityAdjustment.yaml v16/biddingseasonalityadjustment/BiddingSeasonalityAdjustment.yaml
+--- v15/biddingseasonalityadjustment/BiddingSeasonalityAdjustment.yaml	2025-02-21 12:43:31
++++ v16/biddingseasonalityadjustment/BiddingSeasonalityAdjustment.yaml	2025-02-21 12:43:32
+@@ -43,7 +43,6 @@
+       nullable: true
+       items:
+         $ref: 'BiddingSeasonalityAdjustmentServiceDevices.yaml#/BiddingSeasonalityAdjustmentServiceDevices'
+-      maxItems: 3
+     startDateTime:
+       type: string
+       nullable: true
+@@ -92,7 +91,6 @@
+         type: integer
+         nullable: true
+         format: int64
+-      maxItems: 2000
+       description: |
+         <div lang="ja">キャンペーンIDです。<br>
+         ADD時、このフィールドは必須となります。</div>
+
+
+------
+diff -ru v15/biddingstrategy/BiddingStrategyServiceSelector.yaml v16/biddingstrategy/BiddingStrategyServiceSelector.yaml
+--- v15/biddingstrategy/BiddingStrategyServiceSelector.yaml	2025-02-21 12:43:31
++++ v16/biddingstrategy/BiddingStrategyServiceSelector.yaml	2025-02-21 12:43:32
+@@ -27,7 +27,6 @@
+       nullable: true
+       items:
+         $ref: 'BiddingStrategyServiceType.yaml#/BiddingStrategyServiceType'
+-      maxItems: 3
+     numberResults:
+       type: integer
+       nullable: true
+
+
+------
+diff -ru v15/campaign/CampaignServiceSelector.yaml v16/campaign/CampaignServiceSelector.yaml
+--- v15/campaign/CampaignServiceSelector.yaml	2025-02-21 12:43:31
++++ v16/campaign/CampaignServiceSelector.yaml	2025-02-21 12:43:32
+@@ -93,7 +93,6 @@
+       nullable: true
+       items:
+         $ref: 'CampaignServiceUserStatus.yaml#/CampaignServiceUserStatus'
+-      maxItems: 2
+     createdDateRange:
+       $ref: 'CampaignServiceCreatedDateRange.yaml#/CampaignServiceCreatedDateRange'
+     updatedDateRange:
+
+
+------
+diff -ru v15/campaignasset/CampaignAssetServiceSelector.yaml v16/campaignasset/CampaignAssetServiceSelector.yaml
+--- v15/campaignasset/CampaignAssetServiceSelector.yaml	2025-02-21 12:43:31
++++ v16/campaignasset/CampaignAssetServiceSelector.yaml	2025-02-21 12:43:32
+@@ -38,13 +38,11 @@
+       nullable: true
+       items:
+         $ref: 'CampaignAssetServiceType.yaml#/CampaignAssetServiceType'
+-      maxItems: 5
+     userStatuses:
+       type: array
+       nullable: true
+       items:
+         $ref: 'CampaignAssetServiceUserStatus.yaml#/CampaignAssetServiceUserStatus'
+-      maxItems: 2
+     numberResults:
+       type: integer
+       nullable: true
+
+
+------
+diff -ru v15/campaignasset/CampaignAssetServiceType.yaml v16/campaignasset/CampaignAssetServiceType.yaml
+--- v15/campaignasset/CampaignAssetServiceType.yaml	2025-02-21 12:43:31
++++ v16/campaignasset/CampaignAssetServiceType.yaml	2025-02-21 12:43:32
+@@ -7,6 +7,7 @@
+   - CALLOUT
+   - STRUCTURED_SNIPPET
+   - IMAGE
++  - FAVICON
+   - UNKNOWN
+   title: CampaignAssetServiceType
+   description: |
+@@ -25,6 +26,8 @@
+       <dd class="term__desc"><span lang="ja">広告表示アセットのカテゴリ補足アセットです。</span><span lang="en">Category snippet asset from ad display asset.</span></dd>
+       <dt class="term__item">IMAGE</dt>
+       <dd class="term__desc"><span lang="ja">広告表示アセットの画像アセットです。</span><span lang="en">Image asset from ad display asset.</span></dd>
++      <dt class="term__item">FAVICON</dt>
++      <dd class="term__desc"><span lang="ja">広告表示アセットのファビコンアセットです。<br>※現在、こちらのEnumは利用できません。</span><span lang="en">Favicon asset from ad display asset.<br>*Currently this Enum is not available.</span></dd>
+       <dt class="term__item">UNKNOWN</dt>
+       <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown value.</span></dd>
+     </dl>
+
+
+------
+diff -ru v15/campaigncustomizer/CampaignCustomizerServiceSelector.yaml v16/campaigncustomizer/CampaignCustomizerServiceSelector.yaml
+--- v15/campaigncustomizer/CampaignCustomizerServiceSelector.yaml	2025-02-21 12:43:31
++++ v16/campaigncustomizer/CampaignCustomizerServiceSelector.yaml	2025-02-21 12:43:32
+@@ -36,7 +36,6 @@
+       nullable: true
+       items:
+         $ref: 'CampaignCustomizerServiceType.yaml#/CampaignCustomizerServiceType'
+-      maxItems: 4
+     numberResults:
+       type: integer
+       nullable: true
+
+
+------
+diff -ru v15/campaignexport/CampaignExportServiceEntityType.yaml v16/campaignexport/CampaignExportServiceEntityType.yaml
+--- v15/campaignexport/CampaignExportServiceEntityType.yaml	2025-02-21 12:43:31
++++ v16/campaignexport/CampaignExportServiceEntityType.yaml	2025-02-21 12:43:32
+@@ -14,6 +14,7 @@
+   - STRUCTURED_SNIPPET_ASSET
+   - CALLEXTENSION_ASSET
+   - IMAGE_ASSET
++  - FAVICON_ASSET
+   - ALL
+   - UNKNOWN
+   title: CampaignExportServiceEntityType
+@@ -47,6 +48,8 @@
+       <dd class="term__desc"><span lang="ja">電話番号アセットのアセット</span><span lang="en">Call asset asset.</span></dd>
+       <dt class="term__item">IMAGE_ASSET</dt>
+       <dd class="term__desc"><span lang="ja">画像アセットのアセット</span><span lang="en">Image asset assets.</span></dd>
++      <dt class="term__item">FAVICON_ASSET</dt>
++      <dd class="term__desc"><span lang="ja">ファビコンアセットのアセット<br>※現在、こちらのEnumは利用できません。</span><span lang="en">Favicon asset assets.<br>*Currently this Enum is not available.</span></dd>
+       <dt class="term__item">ALL</dt>
+       <dd class="term__desc"><span lang="ja">すべての広告エンティティ</span><span lang="en">All entities.</span></dd>
+       <dt class="term__item">UNKNOWN</dt>
+
+
+------
+diff -ru v15/campaignexport/CampaignExportServiceExportSetting.yaml v16/campaignexport/CampaignExportServiceExportSetting.yaml
+--- v15/campaignexport/CampaignExportServiceExportSetting.yaml	2025-02-21 12:43:31
++++ v16/campaignexport/CampaignExportServiceExportSetting.yaml	2025-02-21 12:43:32
+@@ -16,19 +16,16 @@
+       nullable: true
+       items:
+         $ref: 'CampaignExportServiceApprovalStatus.yaml#/CampaignExportServiceApprovalStatus'
+-      maxItems: 5
+     adGroupAdUserStatuses:
+       type: array
+       nullable: true
+       items:
+         $ref: 'CampaignExportServiceUserStatus.yaml#/CampaignExportServiceUserStatus'
+-      maxItems: 2
+     adGroupCriterionApprovalStatuses:
+       type: array
+       nullable: true
+       items:
+         $ref: 'CampaignExportServiceApprovalStatus.yaml#/CampaignExportServiceApprovalStatus'
+-      maxItems: 5
+     adGroupCriterionIds:
+       type: array
+       nullable: true
+@@ -45,7 +42,6 @@
+       nullable: true
+       items:
+         $ref: 'CampaignExportServiceUserStatus.yaml#/CampaignExportServiceUserStatus'
+-      maxItems: 2
+     adGroupIds:
+       type: array
+       nullable: true
+@@ -64,7 +60,6 @@
+       nullable: true
+       items:
+         $ref: 'CampaignExportServiceUserStatus.yaml#/CampaignExportServiceUserStatus'
+-      maxItems: 2
+     adIds:
+       type: array
+       nullable: true
+@@ -109,7 +104,6 @@
+       nullable: true
+       items:
+         $ref: 'CampaignExportServiceUserStatus.yaml#/CampaignExportServiceUserStatus'
+-      maxItems: 2
+     encoding:
+       $ref: 'CampaignExportServiceEncoding.yaml#/CampaignExportServiceEncoding'
+     entityTypes:
+@@ -117,7 +111,6 @@
+       nullable: true
+       items:
+         $ref: 'CampaignExportServiceEntityType.yaml#/CampaignExportServiceEntityType'
+-      maxItems: 6
+     exportFields:
+       type: array
+       nullable: true
+
+
+------
+diff -ru v15/campaignexport/CampaignExportServiceSelector.yaml v16/campaignexport/CampaignExportServiceSelector.yaml
+--- v15/campaignexport/CampaignExportServiceSelector.yaml	2025-02-21 12:43:31
++++ v16/campaignexport/CampaignExportServiceSelector.yaml	2025-02-21 12:43:32
+@@ -27,7 +27,6 @@
+       nullable: true
+       items:
+         $ref: 'CampaignExportServiceJobStatus.yaml#/CampaignExportServiceJobStatus'
+-      maxItems: 4
+     numberResults:
+       type: integer
+       nullable: true
+
+
+------
+diff -ru v15/campaigntarget/CampaignTargetServiceSelector.yaml v16/campaigntarget/CampaignTargetServiceSelector.yaml
+--- v15/campaigntarget/CampaignTargetServiceSelector.yaml	2025-02-21 12:43:31
++++ v16/campaigntarget/CampaignTargetServiceSelector.yaml	2025-02-21 12:43:32
+@@ -29,7 +29,6 @@
+       nullable: true
+       items:
+         $ref: 'CampaignTargetServicePlatformType.yaml#/CampaignTargetServicePlatformType'
+-      maxItems: 3
+     numberResults:
+       type: integer
+       nullable: true
+@@ -64,7 +63,6 @@
+       nullable: true
+       items:
+         $ref: 'CampaignTargetServiceTargetType.yaml#/CampaignTargetServiceTargetType'
+-      maxItems: 4
+   title: CampaignTargetServiceSelector
+   description: |
+     <div lang="ja">CampaignTargetServiceSelectorオブジェクトは、操作の対象とするキャンペーンのターゲティング設定を表します。</div>
+
+
+------
+diff -ru v15/conversiontracker/ConversionTrackerServiceSelector.yaml v16/conversiontracker/ConversionTrackerServiceSelector.yaml
+--- v15/conversiontracker/ConversionTrackerServiceSelector.yaml	2025-02-21 12:43:31
++++ v16/conversiontracker/ConversionTrackerServiceSelector.yaml	2025-02-21 12:43:32
+@@ -26,13 +26,11 @@
+       nullable: true
+       items:
+         $ref: 'ConversionTrackerServiceCategory.yaml#/ConversionTrackerServiceCategory'
+-      maxItems: 21
+     conversionCountingTypes:
+       type: array
+       nullable: true
+       items:
+         $ref: 'ConversionTrackerServiceConversionCountingType.yaml#/ConversionTrackerServiceConversionCountingType'
+-      maxItems: 2
+     conversionDateRange:
+       $ref: 'ConversionTrackerServiceConversionDateRange.yaml#/ConversionTrackerServiceConversionDateRange'
+     conversionTrackerIds:
+@@ -51,13 +49,11 @@
+       nullable: true
+       items:
+         $ref: 'ConversionTrackerServiceConversionTrackerType.yaml#/ConversionTrackerServiceConversionTrackerType'
+-      maxItems: 2
+     excludeFromBiddings:
+       type: array
+       nullable: true
+       items:
+         $ref: 'ConversionTrackerServiceExcludeFromBidding.yaml#/ConversionTrackerServiceExcludeFromBidding'
+-      maxItems: 2
+     numberResults:
+       type: integer
+       nullable: true
+@@ -82,13 +78,11 @@
+       nullable: true
+       items:
+         $ref: 'ConversionTrackerServiceStatus.yaml#/ConversionTrackerServiceStatus'
+-      maxItems: 2
+     trackingCodeTypes:
+       type: array
+       nullable: true
+       items:
+         $ref: 'ConversionTrackerServiceTrackingCodeType.yaml#/ConversionTrackerServiceTrackingCodeType'
+-      maxItems: 3
+   title: ConversionTrackerServiceSelector
+   description: |
+     <div lang="ja">ConversionTrackerServiceSelectorオブジェクトは、操作の対象となるコンバージョン設定および操作の内容を表します。</div>
+
+
+------
+diff -ru v15/customizerattribute/CustomizerAttributeServiceSelector.yaml v16/customizerattribute/CustomizerAttributeServiceSelector.yaml
+--- v15/customizerattribute/CustomizerAttributeServiceSelector.yaml	2025-02-21 12:43:31
++++ v16/customizerattribute/CustomizerAttributeServiceSelector.yaml	2025-02-21 12:43:32
+@@ -16,7 +16,6 @@
+       nullable: true
+       items:
+         $ref: 'CustomizerAttributeServiceType.yaml#/CustomizerAttributeServiceType'
+-      maxItems: 4
+   title: CustomizerAttributeServiceSelector
+   description: |
+     <div lang="ja">CustomizerAttributeServiceSelectorオブジェクトは、カスタマイザー属性の情報を指定します。</div>
+
+
+------
+diff -ru v15/learningdataexclusion/LearningDataExclusion.yaml v16/learningdataexclusion/LearningDataExclusion.yaml
+--- v15/learningdataexclusion/LearningDataExclusion.yaml	2025-02-21 12:43:31
++++ v16/learningdataexclusion/LearningDataExclusion.yaml	2025-02-21 12:43:32
+@@ -43,7 +43,6 @@
+       nullable: true
+       items:
+         $ref: 'LearningDataExclusionServiceDevices.yaml#/LearningDataExclusionServiceDevices'
+-      maxItems: 3
+     startDateTime:
+       type: string
+       nullable: true
+
+
+------
+diff -ru v15/pagefeedasset/PageFeedAssetServiceSelector.yaml v16/pagefeedasset/PageFeedAssetServiceSelector.yaml
+--- v15/pagefeedasset/PageFeedAssetServiceSelector.yaml	2025-02-21 12:43:31
++++ v16/pagefeedasset/PageFeedAssetServiceSelector.yaml	2025-02-21 12:43:32
+@@ -40,7 +40,6 @@
+       nullable: true
+       items:
+         $ref: 'PageFeedAssetServiceApprovalStatus.yaml#/PageFeedAssetServiceApprovalStatus'
+-      maxItems: 5
+     pageFeedAssetCustomLabels:
+       type: array
+       nullable: true
+
+
+------
+diff -ru v15/retargetinglist/RetargetingListServiceSelector.yaml v16/retargetinglist/RetargetingListServiceSelector.yaml
+--- v15/retargetinglist/RetargetingListServiceSelector.yaml	2025-02-21 12:43:31
++++ v16/retargetinglist/RetargetingListServiceSelector.yaml	2025-02-21 12:43:32
+@@ -48,7 +48,6 @@
+       nullable: true
+       items:
+         $ref: 'RetargetingListServiceTargetListType.yaml#/RetargetingListServiceTargetListType'
+-      maxItems: 3
+   title: RetargetingListServiceSelector
+   description: |
+     <div lang="ja">RetargetingListServiceSelectorは、ターゲットリストの検索条件（実行パラメータ）を保持するオブジェクトです。</div>
+Only in v16: ssaaccount
+Only in v16: ssareportdefinition
