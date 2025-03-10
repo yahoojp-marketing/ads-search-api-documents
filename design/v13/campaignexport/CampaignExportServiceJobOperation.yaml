@@ -1,9 +1,0 @@
-CampaignExportServiceJobOperation:
-  type: object
-  nullable: true
-  required:
-  - setting
-  properties:
-    setting:
-      $ref: 'CampaignExportServiceExportSetting.yaml#/CampaignExportServiceExportSetting'
-  title: CampaignExportServiceJobOperation
