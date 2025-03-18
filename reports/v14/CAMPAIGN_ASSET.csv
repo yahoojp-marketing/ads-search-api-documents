@@ -10,7 +10,7 @@
 "AVG_CPC","平均CPC","Avg. CPC","averageCpc","DOUBLE","[CONVERSION_NAME, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",""
 "EDITORIAL_STATUS","審査状況","Editorial Status","editorialStatus","ENUM","","Attribute","審査完了,編集内容審査中,審査中,掲載不可,掲載停止,その他","APPROVED,APPROVED_WITH_REVIEW,REVIEW,PRE_DISAPPROVED,POST_DISAPPROVED,Other",""
 "ASSET_ID","広告表示アセットID","Ad display asset ID","assetID","LONG","","Attribute","","",""
-"ASSET_ENTITY_TYPE","広告表示アセットタイプ","Ad display asset type","adDisplayOptionType","ENUM","","Attribute","クイックリンクアセット,テキスト補足アセット,カテゴリ補足アセット,電話番号アセット,画像アセット,その他","Quick link asset,Callout asset,Category snippet asset,Call asset,Image asset,Other",""
+"ASSET_ENTITY_TYPE","広告表示アセットタイプ","Ad display asset type","adDisplayOptionType","ENUM","","Attribute","クイックリンクアセット,テキスト補足アセット,カテゴリ補足アセット,電話番号アセット,画像アセット,ファビコンアセット,その他","Quick link asset,Callout asset,Category snippet asset,Call asset,Image asset,Favicon asset,Other",""
 "ASSET_START_DATE","開始日","Start Date","adDisplayOptionStartDate","STRING","","Attribute","","",""
 "ASSET_END_DATE","終了日","End Date","adDisplayOptionEndDate","STRING","","Attribute","","",""
 "TRACKING_URL","トラッキングURL","Tracking URL","trackingURL","STRING","","Attribute","","",""

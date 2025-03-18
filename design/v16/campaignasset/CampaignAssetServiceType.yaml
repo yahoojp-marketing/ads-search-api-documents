@@ -27,7 +27,7 @@ CampaignAssetServiceType:
       <dt class="term__item">IMAGE</dt>
       <dd class="term__desc"><span lang="ja">広告表示アセットの画像アセットです。</span><span lang="en">Image asset from ad display asset.</span></dd>
       <dt class="term__item">FAVICON</dt>
-      <dd class="term__desc"><span lang="ja">広告表示アセットのファビコンアセットです。<br>※現在、こちらのEnumは利用できません。</span><span lang="en">Favicon asset from ad display asset.<br>*Currently this Enum is not available.</span></dd>
+      <dd class="term__desc"><span lang="ja">広告表示アセットのファビコンアセットです。</span><span lang="en">Favicon asset from ad display asset.</span></dd>
       <dt class="term__item">UNKNOWN</dt>
       <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown value.</span></dd>
     </dl>

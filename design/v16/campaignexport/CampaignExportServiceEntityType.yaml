@@ -49,7 +49,7 @@ CampaignExportServiceEntityType:
       <dt class="term__item">IMAGE_ASSET</dt>
       <dd class="term__desc"><span lang="ja">画像アセットのアセット</span><span lang="en">Image asset assets.</span></dd>
       <dt class="term__item">FAVICON_ASSET</dt>
-      <dd class="term__desc"><span lang="ja">ファビコンアセットのアセット<br>※現在、こちらのEnumは利用できません。</span><span lang="en">Favicon asset assets.<br>*Currently this Enum is not available.</span></dd>
+      <dd class="term__desc"><span lang="ja">ファビコンアセットのアセット</span><span lang="en">Favicon asset assets.</span></dd>
       <dt class="term__item">ALL</dt>
       <dd class="term__desc"><span lang="ja">すべての広告エンティティ</span><span lang="en">All entities.</span></dd>
       <dt class="term__item">UNKNOWN</dt>

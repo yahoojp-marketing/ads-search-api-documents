@@ -38,3 +38,4 @@
 "DELIVERED_STRUCTURED_SNIPPET1","配信カテゴリ補足1","Delivered category snippet 1","deliveredStructuredSnippet1","STRING","","Attribute","","",""
 "DELIVERED_STRUCTURED_SNIPPET2","配信カテゴリ補足2","Delivered category snippet 2","deliveredStructuredSnippet2","STRING","","Attribute","","",""
 "DELIVERED_CALL","配信電話番号","Delivered call","deliveredCall","STRING","","Attribute","","",""
+"DELIVERED_FAVICON","配信ファビコン","Delivered favicon","deliveredFavicon","STRING","","Attribute","","",""
