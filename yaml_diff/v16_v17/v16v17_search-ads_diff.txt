@@ -1,0 +1,354 @@
+
+
+------
+diff -ru v16/Route.yaml v17/Route.yaml
+--- v16/Route.yaml	2025-04-02 21:40:45
++++ v17/Route.yaml	2025-05-22 13:27:16
+@@ -1,11 +1,11 @@
+ openapi: 3.0.2
+ info:
+   title: 'Yahoo!広告 検索広告 API リファレンス / Yahoo! JAPAN Ads Search Ads API Reference'
+-  version: 'v16'
++  version: 'v17'
+   description: |
+     <div lang="ja">Yahoo!広告 検索広告 APIのWebサービスについて説明します。</div>
+     <div lang="en">Search Ads API Web Services supported in Yahoo! JAPAN Ads API.</div>
+-    <div><a target="_blank" href="https://github.com/yahoojp-marketing/ads-search-api-documents/blob/master/design/v16/Route.yaml">OpenAPI Specification</a></div>
++    <div><a target="_blank" href="https://github.com/yahoojp-marketing/ads-search-api-documents/blob/master/design/v17/Route.yaml">OpenAPI Specification</a></div>
+     <div lang="ja"><a target="_blank" href="https://github.com/yahoojp-marketing/ads-search-api-documents/blob/master/bestpractice/ja">Best Practice</a></div>
+     <div lang="en"><a target="_blank" href="https://github.com/yahoojp-marketing/ads-search-api-documents/blob/master/bestpractice/en">Best Practice</a></div>
+ 
+@@ -23,7 +23,7 @@
+   - oAuth: [ yahooads ]
+ 
+ servers:
+-  - url: https://ads-search.yahooapis.jp/api/v16
++  - url: https://ads-search.yahooapis.jp/api/v17
+ 
+ tags:
+   - name: AbTestService
+@@ -169,27 +169,27 @@
+       <h2 lang="ja" class="reportFields__title">レポートフィールド</h2>
+       <h2 lang="en" class="reportFields__title">Report Fields</h2>
+       <ul>
+-      <li><div lang="ja"><a href="./reports/v16/ACCOUNT.csv" download>アカウントレポート</a></div><div lang="en"><a href="./reports/v16/ACCOUNT.csv" download>Account Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v16/CAMPAIGN.csv" download>キャンペーンレポート</a></div><div lang="en"><a href="./reports/v16/CAMPAIGN.csv" download>Campaign Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v16/ADGROUP.csv" download>広告グループレポート</a></div><div lang="en"><a href="./reports/v16/ADGROUP.csv" download>Ad Group Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v16/AD.csv" download>広告レポート</a></div><div lang="en"><a href="./reports/v16/AD.csv" download>Ad Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v16/KEYWORDS.csv" download>キーワードレポート</a></div><div lang="en"><a href="./reports/v16/KEYWORDS.csv" download>Keyword Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v16/SEARCH_QUERY.csv" download>検索クエリレポート</a></div><div lang="en"><a href="./reports/v16/SEARCH_QUERY.csv" download>Search Query Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v16/GEO.csv" download>地域別レポート</a></div><div lang="en"><a href="./reports/v16/GEO.csv" download>Geo Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v16/GEO_TARGET.csv" download>地域ターゲティングレポート</a></div><div lang="en"><a href="./reports/v16/GEO_TARGET.csv" download>Geo Targeting Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v16/SCHEDULE_TARGET.csv" download>曜日・時間帯ターゲティングレポート</a></div><div lang="en"><a href="./reports/v16/SCHEDULE_TARGET.csv" download>Schedule Targeting Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v16/BID_STRATEGY.csv" download>自動入札レポート</a></div><div lang="en"><a href="./reports/v16/BID_STRATEGY.csv" download>Auto Bidding Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v16/CAMPAIGN_TARGET_LIST.csv" download>キャンペーンターゲットリストレポート</a></div><div lang="en"><a href="./reports/v16/CAMPAIGN_TARGET_LIST.csv"download>Campaign Target List Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v16/ADGROUP_TARGET_LIST.csv" download>広告グループターゲットリストレポート</a></div><div lang="en"><a href="./reports/v16/ADGROUP_TARGET_LIST.csv" download>Ad Group Target List Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v16/LANDING_PAGE_URL.csv" download>ランディングページURLレポート</a></div><div lang="en"><a href="./reports/v16/LANDING_PAGE_URL.csv" download>Landing Page URL Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v16/KEYWORDLESS_QUERY.csv" download>検索クエリーレポート（動的検索連動型広告）</a></div><div lang="en"><a href="./reports/v16/KEYWORDLESS_QUERY.csv" download>Search Query Report (Dynamic Ads for Search)</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v16/WEBPAGE_CRITERION.csv" download>ページフィードターゲティングレポート</a></div><div lang="en"><a href="./reports/v16/WEBPAGE_CRITERION.csv" download>Page Feed Targeting Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v16/BID_MODIFIER.csv" download>入札価格調整率レポート</a></div><div lang="en"><a href="./reports/v16/BID_MODIFIER.csv" download>Bid Adjustments Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v16/CAMPAIGN_ASSET.csv" download>広告表示アセットレポート（キャンペーン）</a></div><div lang="en"><a href="./reports/v16/CAMPAIGN_ASSET.csv" download>Ad Display Asset Report (campaign)</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v16/AD_GROUP_ASSET.csv" download>広告表示アセットレポート（広告グループ）</a></div><div lang="en"><a href="./reports/v16/AD_GROUP_ASSET.csv" download>Ad Display Asset Report (ad group)</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v16/RESPONSIVE_ADS_FOR_SEARCH_ASSET.csv" download>レスポンシブ検索広告アセットレポート</a></div><div lang="en"><a href="./reports/v16/RESPONSIVE_ADS_FOR_SEARCH_ASSET.csv" download>Responsive Ads for Search Asset Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v16/SHARED_BUDGET.csv" download>共有予算レポート</a></div><div lang="en"><a href="./reports/v16/SHARED_BUDGET.csv" download>Campaign Budget Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v16/ASSET_COMBINATION.csv" download>アセット組み合わせレポート</a></div><div lang="en"><a href="./reports/v16/ASSET_COMBINATION.csv" download>Asset combinations report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v17/ACCOUNT.csv" download>アカウントレポート</a></div><div lang="en"><a href="./reports/v17/ACCOUNT.csv" download>Account Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v17/CAMPAIGN.csv" download>キャンペーンレポート</a></div><div lang="en"><a href="./reports/v17/CAMPAIGN.csv" download>Campaign Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v17/ADGROUP.csv" download>広告グループレポート</a></div><div lang="en"><a href="./reports/v17/ADGROUP.csv" download>Ad Group Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v17/AD.csv" download>広告レポート</a></div><div lang="en"><a href="./reports/v17/AD.csv" download>Ad Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v17/KEYWORDS.csv" download>キーワードレポート</a></div><div lang="en"><a href="./reports/v17/KEYWORDS.csv" download>Keyword Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v17/SEARCH_QUERY.csv" download>検索クエリレポート</a></div><div lang="en"><a href="./reports/v17/SEARCH_QUERY.csv" download>Search Query Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v17/GEO.csv" download>地域別レポート</a></div><div lang="en"><a href="./reports/v17/GEO.csv" download>Geo Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v17/GEO_TARGET.csv" download>地域ターゲティングレポート</a></div><div lang="en"><a href="./reports/v17/GEO_TARGET.csv" download>Geo Targeting Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v17/SCHEDULE_TARGET.csv" download>曜日・時間帯ターゲティングレポート</a></div><div lang="en"><a href="./reports/v17/SCHEDULE_TARGET.csv" download>Schedule Targeting Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v17/BID_STRATEGY.csv" download>自動入札レポート</a></div><div lang="en"><a href="./reports/v17/BID_STRATEGY.csv" download>Auto Bidding Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v17/CAMPAIGN_TARGET_LIST.csv" download>キャンペーンターゲットリストレポート</a></div><div lang="en"><a href="./reports/v17/CAMPAIGN_TARGET_LIST.csv"download>Campaign Target List Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v17/ADGROUP_TARGET_LIST.csv" download>広告グループターゲットリストレポート</a></div><div lang="en"><a href="./reports/v17/ADGROUP_TARGET_LIST.csv" download>Ad Group Target List Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v17/LANDING_PAGE_URL.csv" download>ランディングページURLレポート</a></div><div lang="en"><a href="./reports/v17/LANDING_PAGE_URL.csv" download>Landing Page URL Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v17/KEYWORDLESS_QUERY.csv" download>検索クエリーレポート（動的検索連動型広告）</a></div><div lang="en"><a href="./reports/v17/KEYWORDLESS_QUERY.csv" download>Search Query Report (Dynamic Ads for Search)</a></div></li>
++      <li><div lang="ja"><a href="./reports/v17/WEBPAGE_CRITERION.csv" download>ページフィードターゲティングレポート</a></div><div lang="en"><a href="./reports/v17/WEBPAGE_CRITERION.csv" download>Page Feed Targeting Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v17/BID_MODIFIER.csv" download>入札価格調整率レポート</a></div><div lang="en"><a href="./reports/v17/BID_MODIFIER.csv" download>Bid Adjustments Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v17/CAMPAIGN_ASSET.csv" download>広告表示アセットレポート（キャンペーン）</a></div><div lang="en"><a href="./reports/v17/CAMPAIGN_ASSET.csv" download>Ad Display Asset Report (campaign)</a></div></li>
++      <li><div lang="ja"><a href="./reports/v17/AD_GROUP_ASSET.csv" download>広告表示アセットレポート（広告グループ）</a></div><div lang="en"><a href="./reports/v17/AD_GROUP_ASSET.csv" download>Ad Display Asset Report (ad group)</a></div></li>
++      <li><div lang="ja"><a href="./reports/v17/RESPONSIVE_ADS_FOR_SEARCH_ASSET.csv" download>レスポンシブ検索広告アセットレポート</a></div><div lang="en"><a href="./reports/v17/RESPONSIVE_ADS_FOR_SEARCH_ASSET.csv" download>Responsive Ads for Search Asset Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v17/SHARED_BUDGET.csv" download>共有予算レポート</a></div><div lang="en"><a href="./reports/v17/SHARED_BUDGET.csv" download>Campaign Budget Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v17/ASSET_COMBINATION.csv" download>アセット組み合わせレポート</a></div><div lang="en"><a href="./reports/v17/ASSET_COMBINATION.csv" download>Asset combinations report</a></div></li>
+       </ul>
+   - name: CampaignExportService
+     description: |
+@@ -381,12 +381,12 @@
+       <h2 lang="ja" class="reportFields__title">レポートフィールド</h2>
+       <h2 lang="en" class="reportFields__title">Report Fields</h2>
+       <ul>
+-      <li><div lang="ja"><a href="./reports/v16/SSA_ACCOUNT.csv" download>アカウントレポート</a></div><div lang="en"><a href="./reports/v16/SSA_ACCOUNT.csv" download>Account Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v16/SSA_CAMPAIGN.csv" download>キャンペーンレポート</a></div><div lang="en"><a href="./reports/v16/SSA_CAMPAIGN.csv" download>Campaign Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v16/SSA_ADGROUP.csv" download>広告グループレポート</a></div><div lang="en"><a href="./reports/v16/SSA_ADGROUP.csv" download>Ad Group Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v16/SSA_SEARCH_QUERY.csv" download>検索クエリレポート</a></div><div lang="en"><a href="./reports/v16/SSA_SEARCH_QUERY.csv" download>Search Query Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v16/SSA_PRODUCT_GROUP.csv" download>商品グループレポート</a></div><div lang="en"><a href="./reports/v16/SSA_PRODUCT_GROUP.csv" download>Product Group Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v16/SSA_PRODUCT.csv" download>商品レポート</a></div><div lang="en"><a href="./reports/v16/SSA_PRODUCT.csv" download>Product Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v17/SSA_ACCOUNT.csv" download>アカウントレポート</a></div><div lang="en"><a href="./reports/v17/SSA_ACCOUNT.csv" download>Account Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v17/SSA_CAMPAIGN.csv" download>キャンペーンレポート</a></div><div lang="en"><a href="./reports/v17/SSA_CAMPAIGN.csv" download>Campaign Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v17/SSA_ADGROUP.csv" download>広告グループレポート</a></div><div lang="en"><a href="./reports/v17/SSA_ADGROUP.csv" download>Ad Group Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v17/SSA_SEARCH_QUERY.csv" download>検索クエリレポート</a></div><div lang="en"><a href="./reports/v17/SSA_SEARCH_QUERY.csv" download>Search Query Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v17/SSA_PRODUCT_GROUP.csv" download>商品グループレポート</a></div><div lang="en"><a href="./reports/v17/SSA_PRODUCT_GROUP.csv" download>Product Group Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v17/SSA_PRODUCT.csv" download>商品レポート</a></div><div lang="en"><a href="./reports/v17/SSA_PRODUCT.csv" download>Product Report</a></div></li>
+       </ul>
+ 
+ paths:
+@@ -8373,6 +8373,71 @@
+       description: |
+         <div lang="ja">アセットの情報を更新します。</div>
+         <div lang="en">Set asset information.</div>
++      tags:
++        - AssetService
++      requestBody:
++        content:
++          application/json:
++            schema:
++              $ref: 'asset/AssetServiceOperation.yaml#/AssetServiceOperation'
++      responses:
++        503:
++          $ref: '../Response503.yaml#/Response503'
++        500:
++          $ref: '../Response500.yaml#/Response500'
++        200:
++          description: |
++            <p class="cellContent__head">Error codes</p>
++            <div class="cellContent__body">
++            <table class="apiTable">
++              <colgroup span="1" class="short"></colgroup>
++              <colgroup span="2"></colgroup>
++              <thead>
++                <tr><th>Code</th><th>Message</th><th>Description</th></tr>
++              </thead>
++              <tbody>
++                <tr><td>0001</td><td>Invalid Request.</td><td><div lang="ja">さまざまな要因が考えられます。<br>主な要因は、パラメータの値が不正か、誤りがあるためにオペレーションが完了できません。</div><div lang="en">This error can result for a variety of reasons. <br>Typically because one of the parameter values in the request is wrong or invalid and the operation cannot be completed.</div></td></tr>
++                <tr><td>R0001</td><td>Require.</td><td><div lang="ja">必須です。</div><div lang="en">It is missing required parameter.</div></td></tr>
++                <tr><td>F0001</td><td>Invalid format.</td><td><div lang="ja">値の形式が不正です。</div><div lang="en">The value format is invalid.</div></td></tr>
++                <tr><td>V0001</td><td>Invalid value.</td><td><div lang="ja">値が無効です。</div><div lang="en">The value is invalid.</div></td></tr>
++                <tr><td>S0001</td><td>Invalid Status.</td><td><div lang="ja">ステータスが無効です。</div><div lang="en">The status is invalid.</div></td></tr>
++                <tr><td>L0002</td><td>Over list size.</td><td><div lang="ja">配列の要素数が上限値を超過しています。</div><div lang="en">The number of elements in the array exceeds the upper limit.</div></td></tr>
++                <tr><td>L0001</td><td>Lower list size.</td><td><div lang="ja">配列の要素数が下限値を下回っています。</div><div lang="en">The number of elements in the array is below the lower limit.</div></td></tr>
++                <tr><td>D0001</td><td>Duplicate.</td><td><div lang="ja">一意な値が重複しています。</div><div lang="en">The unique value is duplicated.</div></td></tr>
++                <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
++                <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
++                <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
++                <tr><td>130000</td><td>The server is busy. Please retry later.</td><td><div lang="ja">サーバーが高負荷です。時間をおいて再試行してください。</div><div lang="en">The server is busy. Please retry later.</div></td></tr>
++                <tr><td>130001</td><td>The request was not completed. Please reduce concurrent requests or data size. </td><td><div lang="ja">リクエストが完了しませんでした。同時リクエスト数またはデータサイズを減らして再度お試しください。</div><div lang="en">The request was not completed. Please reduce concurrent requests or data size.</div></td></tr>
++                <tr><td>225305</td><td>invalid category snippet header.</td><td><div lang="ja">カテゴリ補足アセット（ヘッダ）が不正です。</div><div lang="en">Category snippet header is invalid.</div></td></tr>
++              </tbody>
++            </table>
++            </div>
++          content:
++            application/json:
++              schema:
++                $ref: 'asset/AssetServiceMutateResponse.yaml#/AssetServiceMutateResponse'
++        403:
++          $ref: '../Response403.yaml#/Response403'
++        401:
++          $ref: '../Response401.yaml#/Response401'
++        400:
++          $ref: '../Response400.yaml#/Response400'
++  /AssetService/remove:
++    post:
++      parameters:
++        - in: header
++          name: x-z-base-account-id
++          schema:
++            type: integer
++            format: int64
++          required: true
++          description: |
++            <div lang="ja">アカウントIDを指定してください。</div>
++            <div lang="en">Specify Account ID.</div>
++      description: |
++        <div lang="ja">アセットの情報を削除します。</div>
++        <div lang="en">Remove asset information.</div>
+       tags:
+         - AssetService
+       requestBody:
+
+
+------
+diff -ru v16/account/Account.yaml v17/account/Account.yaml
+--- v16/account/Account.yaml	2025-05-22 20:42:16
++++ v17/account/Account.yaml	2025-05-22 20:42:16
+@@ -29,6 +29,8 @@
+       $ref: 'AccountServiceDeliveryStatus.yaml#/AccountServiceDeliveryStatus'
+     isTestAccount:
+       $ref: 'AccountServiceIsTestAccount.yaml#/AccountServiceIsTestAccount'
++    isCancellationPending:
++      $ref: 'AccountServiceIsCancellationPending.yaml#/AccountServiceIsCancellationPending'
+     startDate:
+       type: string
+       nullable: true
+Only in v17/account: AccountServiceIsCancellationPending.yaml
+
+
+------
+diff -ru v16/account/AccountServiceType.yaml v17/account/AccountServiceType.yaml
+--- v16/account/AccountServiceType.yaml	2025-05-22 20:42:16
++++ v17/account/AccountServiceType.yaml	2025-05-22 20:42:16
+@@ -3,6 +3,7 @@
+   nullable: true
+   enum:
+   - PREPAY
++  - POSTPAY
+   - INVOICE
+   - UNKNOWN
+   title: AccountServiceType
+@@ -15,7 +16,9 @@
+     If isManagerAccount is "TRUE", this field will not be returned.</div>
+     <dl class=term>
+       <dt class="term__item">PREPAY</dt>
+-      <dd class="term__desc"><span lang="ja">クレジットカードや銀行振込などの前払い方式です。</span><span lang="en">Creditcardor bank transfer</span></dd>
++      <dd class="term__desc"><span lang="ja">クレジットカードや銀行振込などの前払い方式です。</span><span lang="en">Creditcardor bank transfer (prepayment).</span></dd>
++      <dt class="term__item">POSTPAY</dt>
++      <dd class="term__desc"><span lang="ja">クレジットカードの後払い方式です。※現在利用できません</span><span lang="en">Creditcard (deferred payment) * Not Available.</span></dd>
+       <dt class="term__item">INVOICE</dt>
+       <dd class="term__desc"><span lang="ja">代理店クライアントなどの請求書方式です。</span><span lang="en">Invoice Type</span></dd>
+       <dt class="term__item">UNKNOWN</dt>
+
+
+------
+diff -ru v16/accountmanagement/AccountManagement.yaml v17/accountmanagement/AccountManagement.yaml
+--- v16/accountmanagement/AccountManagement.yaml	2025-05-22 20:42:16
++++ v17/accountmanagement/AccountManagement.yaml	2025-05-22 20:42:16
+@@ -51,6 +51,8 @@
+       $ref: 'AccountManagementServiceIsAdultAccount.yaml#/AccountManagementServiceIsAdultAccount'
+     isTestAccount:
+       $ref: 'AccountManagementServiceIsTestAccount.yaml#/AccountManagementServiceIsTestAccount'
++    isCancellationPending:
++      $ref: 'AccountManagementServiceIsCancellationPending.yaml#/AccountManagementServiceIsCancellationPending'
+     status:
+       $ref: 'AccountManagementServiceStatus.yaml#/AccountManagementServiceStatus'
+   title: AccountManagement
+Only in v17/accountmanagement: AccountManagementServiceIsCancellationPending.yaml
+
+
+------
+diff -ru v16/accountmanagement/AccountManagementServicePaymentType.yaml v17/accountmanagement/AccountManagementServicePaymentType.yaml
+--- v16/accountmanagement/AccountManagementServicePaymentType.yaml	2025-05-22 20:42:16
++++ v17/accountmanagement/AccountManagementServicePaymentType.yaml	2025-05-22 20:42:16
+@@ -3,6 +3,7 @@
+   nullable: true
+   enum:
+   - PREPAY
++  - POSTPAY
+   - INVOICE
+   - UNKNOWN
+   title: AccountManagementServicePaymentType
+@@ -14,6 +15,8 @@
+     <dl class=term>
+       <dt class="term__item">PREPAY</dt>
+       <dd class="term__desc"><span lang="ja">前課金です。</span><span lang="en">Prepayment.</span></dd>
++      <dt class="term__item">POSTPAY</dt>
++      <dd class="term__desc"><span lang="ja">後課金です。※現在利用できません</span><span lang="en">Deferred payment * Not Available.</span></dd>
+       <dt class="term__item">INVOICE</dt>
+       <dd class="term__desc"><span lang="ja">後請求です。</span><span lang="en">Invoice payment.</span></dd>
+       <dt class="term__item">UNKNOWN</dt>
+
+
+------
+diff -ru v16/asset/Asset.yaml v17/asset/Asset.yaml
+--- v16/asset/Asset.yaml	2025-05-22 20:42:15
++++ v17/asset/Asset.yaml	2025-05-22 20:42:16
+@@ -120,6 +120,8 @@
+   title: Asset
+   description: |
+     <div lang="ja">Assetオブジェクトは、アセット情報を格納します。<br>
+-    ※type=IMAGE, FAVICONのアセットを登録するときは最大1件となります。</div>
++    ※type=IMAGE, FAVICONのアセットを登録するときは最大1件となります。<br>
++    ※REMOVE時は最大100件となります。</div>
+     <div lang="en">Asset object contains the information of Asset.<br>
+-    *In the case of `type=IMAGE, FAVICON`, the operand size is limited to one item.</div>
++    *In the case of `type=IMAGE, FAVICON`, the operand size is limited to one item.<br>
++    *In the case of `REMOVE`, the operand size is limited to 100 items.</div>
+
+
+------
+diff -ru v16/budgetorder/BudgetOrder.yaml v17/budgetorder/BudgetOrder.yaml
+--- v16/budgetorder/BudgetOrder.yaml	2025-05-22 20:42:15
++++ v17/budgetorder/BudgetOrder.yaml	2025-05-22 20:42:16
+@@ -25,13 +25,13 @@
+         <div lang="ja">
+         アカウントの広告予算金額です。<br>
+         SET時、このフィールドは省略可能となります。
+-        月額予算は、accountTypeが<code>INVOICE</code>の場合のみ変更可能です。
++        月額予算は、accountTypeが<code>POSTPAY</code>または<code>INVOICE</code>の場合に変更可能です。
+         また、予算額は1000円単位で指定する必要があります。
+         </div>
+         <div lang="en">
+         Amount of budget.<br>
+         This field is optional in SET operation.
+-        The monthly budget can be changed only when accountType is <code>INVOICE</code>.
++        The monthly budget can be changed only when accountType is <code>POSTPAY</code> or <code>INVOICE</code>.
+         In addition, the budget amount must be specified in units of 1000 yen.
+         </div>
+     limitChargeType:
+
+
+------
+diff -ru v16/budgetorder/BudgetOrderServiceAccountType.yaml v17/budgetorder/BudgetOrderServiceAccountType.yaml
+--- v16/budgetorder/BudgetOrderServiceAccountType.yaml	2025-05-22 20:42:15
++++ v17/budgetorder/BudgetOrderServiceAccountType.yaml	2025-05-22 20:42:16
+@@ -3,6 +3,7 @@
+   nullable: true
+   enum:
+   - PREPAY
++  - POSTPAY
+   - INVOICE
+   - UNKNOWN
+   title: BudgetOrderServiceAccountType
+@@ -11,7 +12,9 @@
+     <div lang="en">BudgetOrderServiceAccountType displays the account charge type.</div>
+     <dl class=term>
+       <dt class="term__item">PREPAY</dt>
+-      <dd class="term__desc"><span lang="ja">クレジットカードや銀行振込などの前払い方式です。</span><span lang="en">Creditcardor bank transfer</span></dd>
++      <dd class="term__desc"><span lang="ja">クレジットカードや銀行振込などの前払い方式です。</span><span lang="en">Creditcardor bank transfer (prepayment).</span></dd>
++      <dt class="term__item">POSTPAY</dt>
++      <dd class="term__desc"><span lang="ja">クレジットカードの後払い方式です。※現在利用できません</span><span lang="en">Creditcard (deferred payment) * Not Available.</span></dd>
+       <dt class="term__item">INVOICE</dt>
+       <dd class="term__desc"><span lang="ja">代理店クライアントなどの請求書方式です。</span><span lang="en">Invoice Type</span></dd>
+       <dt class="term__item">UNKNOWN</dt>
+
+
+------
+diff -ru v16/ssaaccount/SsaAccount.yaml v17/ssaaccount/SsaAccount.yaml
+--- v16/ssaaccount/SsaAccount.yaml	2025-05-22 20:42:15
++++ v17/ssaaccount/SsaAccount.yaml	2025-05-22 20:42:16
+@@ -23,6 +23,8 @@
+       $ref: 'SsaAccountServiceAutoTaggingEnabled.yaml#/SsaAccountServiceAutoTaggingEnabled'
+     deliveryStatus:
+       $ref: 'SsaAccountServiceDeliveryStatus.yaml#/SsaAccountServiceDeliveryStatus'
++    isCancellationPending:
++      $ref: 'SsaAccountServiceIsCancellationPending.yaml#/SsaAccountServiceIsCancellationPending'
+     startDate:
+       type: string
+       nullable: true
+Only in v17/ssaaccount: SsaAccountServiceIsCancellationPending.yaml
+
+
+------
+diff -ru v16/ssaaccount/SsaAccountServiceType.yaml v17/ssaaccount/SsaAccountServiceType.yaml
+--- v16/ssaaccount/SsaAccountServiceType.yaml	2025-05-22 20:42:15
++++ v17/ssaaccount/SsaAccountServiceType.yaml	2025-05-22 20:42:16
+@@ -3,6 +3,7 @@
+   nullable: true
+   enum:
+   - PREPAY
++  - POSTPAY
+   - INVOICE
+   - UNKNOWN
+   title: SsaAccountServiceType
+@@ -11,7 +12,9 @@
+     <div lang="en">Payment type of the account.</div>
+     <dl class=term>
+       <dt class="term__item">PREPAY</dt>
+-      <dd class="term__desc"><span lang="ja">クレジットカードや銀行振込などの前払い方式です。</span><span lang="en">Creditcardor bank transfer</span></dd>
++      <dd class="term__desc"><span lang="ja">クレジットカードや銀行振込などの前払い方式です。</span><span lang="en">Creditcardor bank transfer (prepayment).</span></dd>
++      <dt class="term__item">POSTPAY</dt>
++      <dd class="term__desc"><span lang="ja">クレジットカードの後払い方式です。※現在利用できません</span><span lang="en">Creditcard (deferred payment) * Not Available.</span></dd>
+       <dt class="term__item">INVOICE</dt>
+       <dd class="term__desc"><span lang="ja">代理店クライアントなどの請求書方式です。</span><span lang="en">Invoice Type</span></dd>
+       <dt class="term__item">UNKNOWN</dt>
