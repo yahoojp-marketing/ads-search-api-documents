@@ -1,0 +1,22 @@
+SsaAccountServiceType:
+  type: string
+  nullable: true
+  enum:
+  - PREPAY
+  - POSTPAY
+  - INVOICE
+  - UNKNOWN
+  title: SsaAccountServiceType
+  description: |
+    <div lang="ja">SsaAccountServiceTypeは、アカウントの料金支払い種別を示します。</div>
+    <div lang="en">Payment type of the account.</div>
+    <dl class=term>
+      <dt class="term__item">PREPAY</dt>
+      <dd class="term__desc"><span lang="ja">クレジットカードや銀行振込などの前払い方式です。</span><span lang="en">Creditcardor bank transfer (prepayment).</span></dd>
+      <dt class="term__item">POSTPAY</dt>
+      <dd class="term__desc"><span lang="ja">クレジットカードの後払い方式です。※現在利用できません</span><span lang="en">Creditcard (deferred payment) * Not Available.</span></dd>
+      <dt class="term__item">INVOICE</dt>
+      <dd class="term__desc"><span lang="ja">代理店クライアントなどの請求書方式です。</span><span lang="en">Invoice Type</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown value.</span></dd>
+    </dl>

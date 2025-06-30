@@ -1,0 +1,9 @@
+SsaReportDefinitionServiceGetReportFields:
+  type: object
+  nullable: true
+  required:
+  - reportType
+  properties:
+    reportType:
+      $ref: 'SsaReportDefinitionServiceReportType.yaml#/SsaReportDefinitionServiceReportType'
+  title: SsaReportDefinitionServiceGetReportFields

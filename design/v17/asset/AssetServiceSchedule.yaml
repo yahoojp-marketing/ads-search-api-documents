@@ -1,0 +1,38 @@
+AssetServiceSchedule:
+  type: object
+  nullable: true
+  properties:
+    dayOfWeek:
+      $ref: 'AssetServiceDayOfWeek.yaml#/AssetServiceDayOfWeek'
+    endHour:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">終了時です。<br>
+        ※0 ～ 24の範囲で設定してください。<br>
+        このフィールドは、ADDおよびSET時に必須となります。</div>
+        <div lang="en">End time in hour.<br>
+        *Specify from 0 - 24.<br>
+        This field is required in ADD and SET operation.</div>
+    endMinute:
+      $ref: 'AssetServiceMinuteOfHour.yaml#/AssetServiceMinuteOfHour'
+    startHour:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">開始時です。<br>
+        ※0 ～ 23の範囲で設定してください。<br>
+        このフィールドは、ADDおよびSET時に必須となります。</div>
+        <div lang="en">Start time in hour.<br>
+        *Specify from 0 - 23.<br>
+        This field is required in ADD and SET operation.</div>
+    startMinute:
+      $ref: 'AssetServiceMinuteOfHour.yaml#/AssetServiceMinuteOfHour'
+  title: AssetServiceSchedule
+  description: |
+    <div lang="ja">AssetServiceScheduleオブジェクトは、広告表示アセットの配信スケジュール設定を表します。<br>
+    このフィールドは、ADDおよびSET時に省略可能となります。</div>
+    <div lang="en">AssetServiceSchedule object describes display schedule from ad display asset.<br>
+    This field is optional in ADD and SET operation.</div>

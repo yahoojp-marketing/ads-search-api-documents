@@ -1,0 +1,20 @@
+AbTestServicePage:
+  type: object
+  nullable: true
+  properties:
+    totalNumEntries:
+      type: integer
+      nullable: false
+      format: int32
+      description: |
+        <div lang="ja">取得される項目の総件数です。</div>
+        <div lang="en">Total number of entries.</div>
+    values:
+      type: array
+      nullable: true
+      items:
+        $ref: 'AbTestServiceValue.yaml#/AbTestServiceValue'
+  title: AbTestServicePage
+  description: |
+    <div lang="ja">AbTestServicePageオブジェクトは、取得されるA/Bテストに関するエントリーを表します。</div>
+    <div lang="en">The AbTestServicePage object is a container for storing A/B test information entry.</div>

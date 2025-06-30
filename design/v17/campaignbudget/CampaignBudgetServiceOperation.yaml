@@ -1,0 +1,25 @@
+CampaignBudgetServiceOperation:
+  type: object
+  nullable: true
+  required:
+  - accountId
+  - operand
+  properties:
+    accountId:
+      type: integer
+      nullable: false
+      format: int64
+      description: |
+        <div lang="ja">アカウントIDです。</div>
+        <div lang="en">Account ID.</div>
+    operand:
+      type: array
+      nullable: true
+      items:
+        $ref: 'CampaignBudget.yaml#/CampaignBudget'
+      minItems: 1
+      maxItems: 2000
+  title: CampaignBudgetServiceOperation
+  description: |
+    <div lang="ja">CampaignBudgetServiceOperationオブジェクトは、共有予算の情報を格納します。</div>
+    <div lang="en">CampaignBudgetServiceOperation contains the CampaignBudget information.</div>

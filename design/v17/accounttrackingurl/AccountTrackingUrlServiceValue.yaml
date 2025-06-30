@@ -1,0 +1,21 @@
+AccountTrackingUrlServiceValue:
+  type: object
+  nullable: true
+  properties:
+    accountTrackingUrl:
+      $ref: 'AccountTrackingUrl.yaml#/AccountTrackingUrl'
+    errors:
+      type: array
+      nullable: true
+      items:
+        $ref: '../../Error.yaml#/Error'
+    operationSucceeded:
+      type: boolean
+      nullable: true
+      description: |
+        <div lang="ja">処理結果を表示します。</div>
+        <div lang="en">Displays process result.</div>
+  title: AccountTrackingUrlServiceValue
+  description: |
+    <div lang="ja">AccountTrackingUrlServiceValueオブジェクトは、実行結果（1 Entity）を含むアカウントトラッキング情報を表します。</div>
+    <div lang="en">AccountTrackingUrlServiceValue object describes the account tracking details per entity result.</div>

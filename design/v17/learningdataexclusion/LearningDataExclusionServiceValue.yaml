@@ -1,0 +1,21 @@
+LearningDataExclusionServiceValue:
+  type: object
+  nullable: true
+  properties:
+    learningDataExclusion:
+      $ref: 'LearningDataExclusion.yaml#/LearningDataExclusion'
+    errors:
+      type: array
+      nullable: true
+      items:
+        $ref: '../../Error.yaml#/Error'
+    operationSucceeded:
+      type: boolean
+      nullable: true
+      description: |
+        <div lang="ja">処理結果を表示します。</div>
+        <div lang="en">Result of process.</div>
+  title: LearningDataExclusionServiceValue
+  description: |
+    <div lang="ja">LearningDataExclusionServiceValueオブジェクトは、操作結果を含む自動入札の学習データ除外の情報を表します。</div>
+    <div lang="en">LearningDataExclusionServiceValue object is learning data exclusion for autobidding information including its operation results.</div>

@@ -1,0 +1,17 @@
+AbTestServiceGraduateTest:
+  type: object
+  nullable: true
+  properties:
+    abTestId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">A/BテストIDです。</div>
+        <div lang="en">A/B test ID.</div>
+    budget:
+      $ref: 'AbTestServiceBudget.yaml#/AbTestServiceBudget'
+  title: AbTestServiceGraduateTest
+  description: |
+    <div lang="ja">AbTestServiceGraduateTestオブジェクトは、A/Bテストキャンペーンに適用する設定情報を表します。</div>
+    <div lang="en">AbTestServiceGraduateTest object describes configuration information between Apply to the campaign used for the A/B test.</div>

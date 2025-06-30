@@ -120,6 +120,8 @@ Asset:
   title: Asset
   description: |
     <div lang="ja">Assetオブジェクトは、アセット情報を格納します。<br>
-    ※type=IMAGE, FAVICONのアセットを登録するときは最大1件となります。</div>
+    ※type=IMAGE, FAVICONのアセットを登録するときは最大1件となります。<br>
+    ※REMOVE時は最大100件となります。</div>
     <div lang="en">Asset object contains the information of Asset.<br>
-    *In the case of `type=IMAGE, FAVICON`, the operand size is limited to one item.</div>
+    *In the case of `type=IMAGE, FAVICON`, the operand size is limited to one item.<br>
+    *In the case of `REMOVE`, the operand size is limited to 100 items.</div>

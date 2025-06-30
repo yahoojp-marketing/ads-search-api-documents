@@ -1,0 +1,46 @@
+PageFeedAssetSetServiceSelector:
+  type: object
+  nullable: true
+  required:
+  - accountId
+  properties:
+    accountId:
+      type: integer
+      nullable: false
+      format: int64
+      description: |
+        <div lang="ja">アカウントIDです。</div>
+        <div lang="en">Account ID.</div>
+    pageFeedAssetSetIds:
+      type: array
+      nullable: true
+      items:
+        type: integer
+        nullable: true
+        format: int64
+      description: |
+        <div lang="ja">ページフィードアセットセットIDです。</div>
+        <div lang="en">PageFeedAssetSet ID.</div>
+    numberResults:
+      type: integer
+      nullable: true
+      format: int32
+      minimum: 1
+      maximum: 500
+      default: 500
+      description: |
+        <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div>
+        <div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1. Also see Entity Limits per operation.</div>
+    startIndex:
+      type: integer
+      nullable: true
+      format: int32
+      minimum: 1
+      default: 1
+      description: |
+        <div lang="ja">取得を開始する結果セット内の位置。このフィールドは、1以上を指定する必要があります。</div>
+        <div lang="en">The position within the result set where retrieval begins. This field must be greater than or equal to 1.</div>
+  title: PageFeedAssetSetServiceSelector
+  description: |
+    <div lang="ja">PageFeedAssetSetServiceSelectorオブジェクトは、ページフィードアセットセットの検索条件を格納します。</div>
+    <div lang="en">PageFeedAssetSetServiceSelector object stores the search criteria for a page feed asset set.</div>

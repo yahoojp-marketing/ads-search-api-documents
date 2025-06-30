@@ -1,0 +1,25 @@
+AdGroupAdServiceSetTrademarkStatusOperation:
+  type: object
+  nullable: true
+  required:
+  - accountId
+  - operand
+  properties:
+    accountId:
+      type: integer
+      nullable: false
+      format: int64
+      description: |
+        <div lang="ja">アカウントIDです。</div>
+        <div lang="en">Account ID.</div>
+    operand:
+      type: array
+      nullable: true
+      items:
+        $ref: 'AdGroupAdServiceSetTrademarkStatus.yaml#/AdGroupAdServiceSetTrademarkStatus'
+      minItems: 1
+      maxItems: 2000
+  title: AdGroupAdServiceSetTrademarkStatusOperation
+  description: |
+    <div lang="ja">AdGroupAdServiceSetTrademarkStatusOperationオブジェクトは、操作対象の商標使用制限の情報を格納します。</div>
+    <div lang="en">AdGroupAdServiceSetTrademarkStatusOperation object holds the target's trademark restriction information.</div>

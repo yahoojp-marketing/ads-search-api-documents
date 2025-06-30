@@ -8380,6 +8380,71 @@ paths:
           $ref: '../Response401.yaml#/Response401'
         400:
           $ref: '../Response400.yaml#/Response400'
+  /AssetService/remove:
+    post:
+      parameters:
+        - in: header
+          name: x-z-base-account-id
+          schema:
+            type: integer
+            format: int64
+          required: true
+          description: |
+            <div lang="ja">アカウントIDを指定してください。</div>
+            <div lang="en">Specify Account ID.</div>
+      description: |
+        <div lang="ja">アセットの情報を削除します。</div>
+        <div lang="en">Remove asset information.</div>
+      tags:
+        - AssetService
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: 'asset/AssetServiceOperation.yaml#/AssetServiceOperation'
+      responses:
+        503:
+          $ref: '../Response503.yaml#/Response503'
+        500:
+          $ref: '../Response500.yaml#/Response500'
+        200:
+          description: |
+            <p class="cellContent__head">Error codes</p>
+            <div class="cellContent__body">
+            <table class="apiTable">
+              <colgroup span="1" class="short"></colgroup>
+              <colgroup span="2"></colgroup>
+              <thead>
+                <tr><th>Code</th><th>Message</th><th>Description</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>0001</td><td>Invalid Request.</td><td><div lang="ja">さまざまな要因が考えられます。<br>主な要因は、パラメータの値が不正か、誤りがあるためにオペレーションが完了できません。</div><div lang="en">This error can result for a variety of reasons. <br>Typically because one of the parameter values in the request is wrong or invalid and the operation cannot be completed.</div></td></tr>
+                <tr><td>R0001</td><td>Require.</td><td><div lang="ja">必須です。</div><div lang="en">It is missing required parameter.</div></td></tr>
+                <tr><td>F0001</td><td>Invalid format.</td><td><div lang="ja">値の形式が不正です。</div><div lang="en">The value format is invalid.</div></td></tr>
+                <tr><td>V0001</td><td>Invalid value.</td><td><div lang="ja">値が無効です。</div><div lang="en">The value is invalid.</div></td></tr>
+                <tr><td>S0001</td><td>Invalid Status.</td><td><div lang="ja">ステータスが無効です。</div><div lang="en">The status is invalid.</div></td></tr>
+                <tr><td>L0002</td><td>Over list size.</td><td><div lang="ja">配列の要素数が上限値を超過しています。</div><div lang="en">The number of elements in the array exceeds the upper limit.</div></td></tr>
+                <tr><td>L0001</td><td>Lower list size.</td><td><div lang="ja">配列の要素数が下限値を下回っています。</div><div lang="en">The number of elements in the array is below the lower limit.</div></td></tr>
+                <tr><td>D0001</td><td>Duplicate.</td><td><div lang="ja">一意な値が重複しています。</div><div lang="en">The unique value is duplicated.</div></td></tr>
+                <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
+                <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
+                <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
+                <tr><td>130000</td><td>The server is busy. Please retry later.</td><td><div lang="ja">サーバーが高負荷です。時間をおいて再試行してください。</div><div lang="en">The server is busy. Please retry later.</div></td></tr>
+                <tr><td>130001</td><td>The request was not completed. Please reduce concurrent requests or data size. </td><td><div lang="ja">リクエストが完了しませんでした。同時リクエスト数またはデータサイズを減らして再度お試しください。</div><div lang="en">The request was not completed. Please reduce concurrent requests or data size.</div></td></tr>
+                <tr><td>225305</td><td>invalid category snippet header.</td><td><div lang="ja">カテゴリ補足アセット（ヘッダ）が不正です。</div><div lang="en">Category snippet header is invalid.</div></td></tr>
+              </tbody>
+            </table>
+            </div>
+          content:
+            application/json:
+              schema:
+                $ref: 'asset/AssetServiceMutateResponse.yaml#/AssetServiceMutateResponse'
+        403:
+          $ref: '../Response403.yaml#/Response403'
+        401:
+          $ref: '../Response401.yaml#/Response401'
+        400:
+          $ref: '../Response400.yaml#/Response400'
   /AssetService/setTrademarkStatus:
     post:
       parameters:
@@ -11123,7 +11188,7 @@ paths:
                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
                 <tr><td>130001</td><td>The request was not completed. Please reduce concurrent requests or data size. </td><td><div lang="ja">リクエストが完了しませんでした。同時リクエスト数またはデータサイズを減らして再度お試しください。</div><div lang="en">The request was not completed. Please reduce concurrent requests or data size.</div></td></tr>
                 <tr><td>210917</td><td>Cannot create duplicate test for campaign.</td><td><div lang="ja">選択したキャンペーンは他のA/Bテストで「テスト元のキャンペーン」に設定されています。複数のA/Bテストで同じキャンペーンを設定できません。</div><div lang="en">The selected campaign is the original campaign for a different A/B test. You can't set up the same campaign for multiple A/B tests.</div></td></tr>
-                <tr><td>120020</td><td>Value cannot be set.</td><td><div lang="ja">値を設定することができません。</div><div lang="en">[TODO ヘルプページ追加する]Can not set value.</div></td></tr>
+                <tr><td>120020</td><td>Value cannot be set.</td><td><div lang="ja">値を設定することができません。</div><div lang="en">Can not set value.</div></td></tr>
                 <tr><td>210919</td><td>Specify a start date three days or later from today.</td><td><div lang="ja">開始日は本日から3日後以降の日付を指定してください。</div><div lang="en">Specify a start date three days or later from today.</div></td></tr>
               </tbody>
             </table>

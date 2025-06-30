@@ -1,0 +1,28 @@
+AbTestServiceCampaignTestType:
+  type: string
+  nullable: true
+  enum:
+    - BASE
+    - TEST
+    - NONE
+    - UNKNOWN
+  title: AbTestServiceCampaignTestType
+  description: |
+    <div lang="ja">
+    AbTestServiceCampaignTestTypeは、キャンペーンのテストタイプを表します。<br>
+    このフィールドはリクエストの際には無視されます。
+    </div>
+    <div lang="en">
+    AbTestServiceCampaignTestType test type of campaign.<br>
+    This field will be ignored on input.
+    </div>
+    <dl class=term>
+      <dt class="term__item">BASE</dt>
+      <dd class="term__desc"><span lang="ja">テスト対象のベースキャンペーン。</span><span lang="en">Base campaign to be tested.</span></dd>
+      <dt class="term__item">TEST</dt>
+      <dd class="term__desc"><span lang="ja">テストキャンペーン。</span><span lang="en">Test campaign.</span></dd>
+      <dt class="term__item">NONE</dt>
+      <dd class="term__desc"><span lang="ja">テスト対象外のキャンペーン。</span><span lang="en">Campaigns not subject to testing.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

@@ -1,0 +1,25 @@
+CampaignExportServiceJobStatus:
+  type: string
+  nullable: true
+  enum:
+  - IN_PROGRESS
+  - COMPLETED
+  - TIMEOUT
+  - SYSTEM_ERROR
+  - UNKNOWN
+  title: CampaignExportServiceJobStatus
+  description: |
+    <div lang="ja">CampaignExportServiceJobStatusは、エクスポートのジョブの処理状態です。</div>
+    <div lang="en">CampaignExportServiceJobStatus is a status of job in export setting.</div>
+    <dl class=term>
+      <dt class="term__item">IN_PROGRESS</dt>
+      <dd class="term__desc"><span lang="ja">現在、処理中です。</span><span lang="en">Currently in progress of creating.</span></dd>
+      <dt class="term__item">COMPLETED</dt>
+      <dd class="term__desc"><span lang="ja">処理が終了しました。</span><span lang="en">Job has completed.</span></dd>
+      <dt class="term__item">TIMEOUT</dt>
+      <dd class="term__desc"><span lang="ja">タイムアウトしました。</span><span lang="en">Timeout occurred.</span></dd>
+      <dt class="term__item">SYSTEM_ERROR</dt>
+      <dd class="term__desc"><span lang="ja">システムエラーです。</span><span lang="en">System error occurred.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown value.</span></dd>
+    </dl>

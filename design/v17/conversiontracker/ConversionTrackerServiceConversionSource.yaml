@@ -1,0 +1,24 @@
+ConversionTrackerServiceConversionSource:
+  type: string
+  nullable: true
+  enum:
+  - WEBSITE
+  - APP
+  - CALL_FROM_ADS
+  - UNKNOWN
+  title: ConversionTrackerServiceConversionSource
+  description: |
+    <div lang="ja">ConversionTrackerServiceConversionSource、コンバージョン発生元です。<br>
+    このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
+    <div lang="en">ConversionTrackerServiceConversionSource is conversion Source.<br>
+    Although this field will be returned in the response, it will be ignored on input.</div>
+    <dl class=term>
+      <dt class="term__item">WEBSITE</dt>
+      <dd class="term__desc"><span lang="ja">ウェブサイト</span><span lang="en">Website</span></dd>
+      <dt class="term__item">APP</dt>
+      <dd class="term__desc"><span lang="ja">アプリ</span><span lang="en">App</span></dd>
+      <dt class="term__item">CALL_FROM_ADS</dt>
+      <dd class="term__desc"><span lang="ja">電話</span><span lang="en">Phone call</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown value.</span></dd>
+    </dl>
