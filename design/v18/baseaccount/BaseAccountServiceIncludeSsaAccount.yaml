@@ -1,0 +1,28 @@
+BaseAccountServiceIncludeSsaAccount:
+  type: string
+  nullable: true
+  enum:
+  - ONLY_SSA
+  - EXCLUDE_SSA
+  - ALL
+  - UNKNOWN
+  title: BaseAccountServiceIncludeSsaAccount
+  description: |
+    <div lang="ja">
+    BaseAccountServiceIncludeSsaAccountオブジェクトは、取得するアカウントにSSAアカウントを含むかどうかを表します。<br>
+    このフィールドは、省略可能となります。その際、GET時のデフォルト設定値はEXCLUDE_SSAとなります。
+    </div>
+    <div lang="en">
+    BaseAccountServiceIncludeSsaAccount object represents whether the account to be retrieved includes an SSA account.<br>
+    This field is optional. The default value in GET operation will be EXCLUDE_SSA.
+    </div>
+    <dl class=term>
+      <dt class="term__item">ONLY_SSA</dt>
+      <dd class="term__desc"><span lang="ja">SSAアカウントのみ</span><span lang="en">SSA account only.</span></dd>
+      <dt class="term__item">EXCLUDE_SSA</dt>
+      <dd class="term__desc"><span lang="ja">SSAアカウントを除外</span><span lang="en">Exclude SSA accounts.</span></dd>
+      <dt class="term__item">ALL</dt>
+      <dd class="term__desc"><span lang="ja">全てのアカウント</span><span lang="en">All accounts.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown value.</span></dd>
+    </dl>

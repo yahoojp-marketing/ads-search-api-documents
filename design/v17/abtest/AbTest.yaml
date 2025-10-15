@@ -184,6 +184,9 @@ AbTest:
         - CAMPAIGN_OVER_LIMIT: キャンペーンの作成上限数を超えています。<br>
         - KEYWORD_OVER_LIMIT: キーワードの作成上限数を超えています。<br>
         - AD_OVER_LIMIT: 広告の作成上限数を超えています。<br>
+        - DOUBLE_TEXT_AD_UNSUPPORTED: 拡大テキスト広告が含まれるためA/Bテストを作成できませんでした。<br>
+        - DUPLICATE_CAMPAIGN_NAME: キャンペーン名が重複しているためA/Bテストの作成に失敗しました。<br>
+        - CAMPAIGN_CRITERION_OVER_LIMIT: 「キャンペーンに設定した除外キーワード数」「ターゲットリストのキャンペーンとの関連付け数」「地域ターゲティング/曜日・時間帯ターゲティング/デバイスターゲティングの設定数」「動的検索連動型広告の対象ページ（除外）数」の合計が上限数を超えています。<br>
         - SYSTEM_ERROR_OCCURRED: システムエラーが発生しました。<br>
         詳細は以下のヘルプを参照してください。<br>
         ・<a href="https://ads-help.yahoo-net.jp/s/article/H000053491?language=ja">A/Bテストについて【検索広告】</a></div>
@@ -195,6 +198,9 @@ AbTest:
         - CAMPAIGN_OVER_LIMIT: You already have the maximum number of campaigns.<br>
         - KEYWORD_OVER_LIMIT: You already have the maximum number of keywords.<br>
         - AD_OVER_LIMIT: You already have the maximum number of ads.<br>
+        - DOUBLE_TEXT_AD_UNSUPPORTED: Can't create an A/B test. The campaign contains extended text ads.<br>
+        - DUPLICATE_CAMPAIGN_NAME: Failed to create an A/B test. The campaign name is a duplicate.<br>
+        - CAMPAIGN_CRITERION_OVER_LIMIT: You have reached the maximum total number of "Excluded keywords specified in the campaign," "Associations of target lists with campaigns," "Settings for geo targeting, day of week/hours targeting, and device targeting," and "Target pages of Dynamic Ads for Search (exclusions)."<br>
         - SYSTEM_ERROR_OCCURRED: A system error has occurred.<br>
         See also the help below.<br>
         * <a href="https://ads-help.yahoo-net.jp/s/article/H000053491?language=en_US">A/B test [Search Ads]</a></div>

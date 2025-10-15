@@ -11,6 +11,8 @@
 "BID_MULTIPLIER","入札価格調整率","Bid Adjustment","bidAdjustment","DOUBLE","","Attribute","","","データ取得出来ない場合、値は空文字が設定されます/When the data cannot be retrieved, the value is set to a blank"
 "TARGET_LOCATION_ID","地域ID","Target Location ID","targetLocationID","STRING","","Attribute","","",""
 "TARGET_LOCATION_NAME","地域","Target Location Name","targetLocationName","STRING","","Attribute","","",""
+"LOCATION_TARGETING_TYPE","地域指定種別","Location targeting type","locationTargetingType","ENUM","","Attribute","地域名指定,半径指定,その他","Target locations,Target radiuses,Other",""
+"LATITUDE_LONGITUDE","緯度経度","Latitude-longitude","latitudeLongitude","STRING","","Attribute","","",""
 "CONVERSIONS","コンバージョン数","Conversions","conversions","DOUBLE","[MONTH_OF_YEAR]","Metric","","",""
 "CONV_RATE","コンバージョン率","Conv. rate","convRate","DOUBLE","[MONTH_OF_YEAR]","Metric","","",""
 "CONV_VALUE","コンバージョンの価値","Conv. value","convValue","DOUBLE","[MONTH_OF_YEAR]","Metric","","",""

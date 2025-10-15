@@ -46,3 +46,5 @@
 "PRODUCT_GROUP_TRACKING_ID","商品グループトラッキングID","Product group tracking ID","productGroupTrackingId","LONG","","Attribute","","",""
 "TOTAL_NUMBER_OF_PRODUCTS_FOR_ALL_ORDERS","注文内の合計商品数","Total number of products for all orders","totalNumberOfProductsForAllOrders","LONG","","Metric","","",""
 "DEVICE","デバイス","Device","device","ENUM","","Segment","PC,スマートフォン,タブレット,不明,設定なし","PC,Smartphone,Tablet,unknown,UNSPECIFIED",""
+"AGE","年齢","Age","age","ENUM","","Segment","17歳以下,18歳～19歳,20歳～24歳,25歳～29歳,30歳～34歳,35歳～39歳,40歳～44歳,45歳～49歳,50歳～54歳,55歳～59歳,60歳～64歳,65歳～69歳,70歳以上,不明","17 or less,18-19,20-24,25-29,30-34,35-39,40-44,45-49,50-54,55-59,60-64,65-69,70 or more,Unknown",""
+"GENDER","性別","Gender","gender","ENUM","","Segment","男性,女性,不明","Male,Female,Unknown",""

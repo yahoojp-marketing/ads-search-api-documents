@@ -1,0 +1,23 @@
+AccountServiceIsCancellationPending:
+  type: string
+  nullable: true
+  enum:
+    - 'TRUE'
+    - 'FALSE'
+    - UNKNOWN
+  title: AccountServiceIsCancellationPending
+  description: |
+    <div lang="ja">AccountServiceIsCancellationPendingは解約申請中かどうかを表します。<br>
+    このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+    MCCアカウントの場合、このフィールドは<code>FALSE</code>になります。</div>
+    <div lang="en">AccountServiceIsCancellationPending indicates whether a cancellation request is pending.<br>
+    Although this field will be returned in the response, it will be ignored on input.<br>
+    If isManagerAccount is "TRUE", this field will be <code>FALSE</code>.</div>
+    <dl class=term>
+      <dt class="term__item">TRUE</dt>
+      <dd class="term__desc"><span lang="ja">解約申請中です。</span><span lang="en">Cancellation Pending.</span></dd>
+      <dt class="term__item">FALSE</dt>
+      <dd class="term__desc"><span lang="ja">解約申請していません。</span><span lang="en">Not Applied.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

@@ -43,7 +43,7 @@ SsaAccount:
       type: string
       nullable: true
       description: |
-        <div lang="ja">アカウント管理者のYahoo! JAPANビジネスIDです。</div>
+        <div lang="ja">アカウント管理者のビジネスIDです。</div>
         <div lang="en">Contact Business ID.</div>
   title: SsaAccount
   description: |

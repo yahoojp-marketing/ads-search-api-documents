@@ -6,8 +6,8 @@ AccountServicePage:
       type: string
       nullable: true
       description: |
-        <div lang="ja">アプリケーションによるYahoo!広告へのアクセスを認可したYahoo! JAPANビジネスIDです。</div>
-        <div lang="en">Yahoo! JAPAN Business ID that authorized access to Yahoo! JAPAN Ads via application.</div>
+        <div lang="ja">アプリケーションによるYahoo!広告へのアクセスを認可したビジネスIDです。</div>
+        <div lang="en">Business ID that authorized access to Yahoo! JAPAN Ads via application.</div>
     totalNumEntries:
       type: integer
       nullable: false

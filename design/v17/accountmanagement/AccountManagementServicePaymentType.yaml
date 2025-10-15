@@ -16,7 +16,7 @@ AccountManagementServicePaymentType:
       <dt class="term__item">PREPAY</dt>
       <dd class="term__desc"><span lang="ja">前課金です。</span><span lang="en">Prepayment.</span></dd>
       <dt class="term__item">POSTPAY</dt>
-      <dd class="term__desc"><span lang="ja">後課金です。※現在利用できません</span><span lang="en">Deferred payment * Not Available.</span></dd>
+      <dd class="term__desc"><span lang="ja">後課金です。</span><span lang="en">Deferred payment</span></dd>
       <dt class="term__item">INVOICE</dt>
       <dd class="term__desc"><span lang="ja">後請求です。</span><span lang="en">Invoice payment.</span></dd>
       <dt class="term__item">UNKNOWN</dt>

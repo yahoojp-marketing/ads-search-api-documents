@@ -41,7 +41,7 @@ AccountManagement:
       type: string
       nullable: true
       description: |
-        <div lang="ja">アカウント管理者のYahoo! JAPANビジネスIDです。<br>
+        <div lang="ja">アカウント管理者のビジネスIDです。<br>
         このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
         <div lang="en">Contact business ID.<br>
         Although this field will be returned in the response, it will be ignored on input.</div>

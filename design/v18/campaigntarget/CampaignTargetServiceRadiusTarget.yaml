@@ -1,0 +1,57 @@
+CampaignTargetServiceRadiusTarget:
+  type: object
+  nullable: true
+  properties:
+    latitudeInMicroDegrees:
+      type: integer
+      nullable: true
+      format: int32
+      description: |
+        <div lang="ja">マイクロ表記の緯度です。<br>
+        1度と指定したい場合は、1000000を指定します。<br>
+        このフィールドは、ADD時に必須となり、SET時は無視されます。<br>
+        日本国内のみ指定できます。</div>
+        <div lang="en">Micro degrees for the latitude.<br>
+        To specify 1 degree, specify 1000000.<br>
+        This field is required in ADD operation. If specified in SET operation, it will be ignored.<br>
+        Can be specified only in Japan.</div>
+    longitudeInMicroDegrees:
+      type: integer
+      nullable: true
+      format: int32
+      description: |
+        <div lang="ja">マイクロ表記の経度です。<br>
+        1度と指定したい場合は、1000000を指定します。<br>
+        このフィールドは、ADD時に必須となり、SET時は無視されます。<br>
+        日本国内のみ指定できます。</div>
+        <div lang="en">Micro degrees for the longitude.<br>
+        To specify 1 degree, specify 1000000.<br>
+        This field is required in ADD operation. If specified in SET operation, it will be ignored.<br>
+        Can be specified only in Japan.</div>
+    radius:
+      type: integer
+      nullable: true
+      format: int32
+      description: |
+        <div lang="ja">半径(km)です。<br>
+        このフィールドは、ADD時に必須となり、SET時は無視されます。<br>
+        最大80kmまで指定できます。</div>
+        <div lang="en">Radius(km).<br>
+        This field is required in ADD operation. If specified in SET operation, it will be ignored.<br>
+        Can be specified up to 80km.</div>
+    description:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">指定した地点の説明です。<br>
+        このフィールドは、ADD時は必須となり、SET時は省略可能となります。</div>
+        <div lang="en">A description of the specified location.<br>
+        This field is required in ADD operation, and will be optional in SET operation.<br>
+  title: CampaignTargetServiceRadiusTarget
+  description: |
+    <div lang="ja">CampaignTargetServiceRadiusTargetオブジェクトは、半径ターゲティングを表します。<br>
+    このフィールドは、ADD時およびSET時に省略可能となります。<br>
+    ※targetTypeがRADIUSの場合、このフィールドはADD時に必須となります。</div>
+    <div lang="en">CampaignTargetServiceRadiusTarget describes radius targeting.<br>
+    *This field is optional in ADD and SET operation.<br>
+    If targetType is RADIUS, this field is required in ADD operation.</div>

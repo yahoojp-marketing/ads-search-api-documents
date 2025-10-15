@@ -53,7 +53,7 @@ Account:
       type: string
       nullable: true
       description: |
-        <div lang="ja">アカウント管理者のYahoo! JAPANビジネスIDです。<br>
+        <div lang="ja">アカウント管理者のビジネスIDです。<br>
         MCCアカウントの場合、このフィールドは返却されず、リクエストの際も無視されます。<br>
         テストアカウントの場合、このフィールドは更新できません。</div>
         <div lang="en">Contact Business ID.<br>

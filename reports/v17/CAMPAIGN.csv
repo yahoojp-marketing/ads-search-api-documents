@@ -66,3 +66,4 @@
 "ALL_CONV_VALUE_PER_COST","コンバージョンの価値（全て）/コスト","Conv. value (all)/cost","allConvValuePerCost","DOUBLE","[CONVERSION_NAME, MONTH_OF_YEAR, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",""
 "BUDGET_ID","共有予算ID","Shared budget ID","budgetID","LONG","","Attribute","","",""
 "BUDGET_NAME","共有予算名","Shared budget name","budgetName","STRING","","Attribute","","",""
+"AB_TEST_USAGE","A/Bテスト利用","A/B test usage","abTestUsage","ENUM","","Attribute","テスト元のキャンペーン,テストキャンペーン,対象外","Original campaign,Test campaign,Not applicable",""

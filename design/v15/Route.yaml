@@ -50,8 +50,8 @@ tags:
   - name: BaseAccountService
     description: |
       <label class="account"></label>
-      <div lang="ja">操作対象のYahoo! JAPANビジネスIDが直接権限を持つ全てのアカウント（MCCアカウント・広告アカウント）の一覧を提供します。</div>
-      <div lang="en">Retrieve lists of all accounts (MCC and ad accounts) that the target Yahoo! JAPAN Business ID has direct access.</div>
+      <div lang="ja">操作対象のビジネスIDが直接権限を持つ全てのアカウント（MCCアカウント・広告アカウント）の一覧を提供します。</div>
+      <div lang="en">Retrieve lists of all accounts (MCC and ad accounts) that the target Business ID has direct access.</div>
   - name: AdGroupBidMultiplierService
     description: |
       <label class="campaign"></label>
@@ -646,6 +646,7 @@ paths:
                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
                 <tr><td>212001</td><td>The budget specified is less than the estimated cost.</td><td><div lang="ja">指定された予算額が予想コストを下回っているため、設定できません。</div><div lang="en">Cannot be set since the specified budget amount is below the expected cost.</div></td></tr>
+                <tr><td>210006</td><td>Cannot update because this account has not completed the "procedures for succession of ad accounts".</td><td><div lang="ja">「広告アカウントの承継等の手続き」が完了していないため、更新できません。</div><div lang="en">Cannot update because this account has not completed the "procedures for succession of ad accounts".</div></td></tr>
               </tbody>
             </table>
             </div>
@@ -2712,9 +2713,9 @@ paths:
   /BaseAccountService/get:
     post:
       description: |
-        <div lang="ja">操作対象のYahoo! JAPANビジネスIDが直接権限を持つ全てのアカウント（MCCアカウント・広告アカウント）の一覧を取得します。<br>
+        <div lang="ja">操作対象のビジネスIDが直接権限を持つ全てのアカウント（MCCアカウント・広告アカウント）の一覧を取得します。<br>
         取得したアカウントのIDをx-z-base-account-idに指定し、AccountService/getにリクエストすることで、操作可能なアカウントの情報を取得できます。</div>
-        <div lang="en">Retrieve lists of all accounts (MCC and ad accounts) that the target Yahoo! JAPAN Business ID has direct access.<br>
+        <div lang="en">Retrieve lists of all accounts (MCC and ad accounts) that the target Business ID has direct access.<br>
         Get available account information by specifying the account ID for the "x-z-base-account-id" header and requesting AccountService/get.</div>
       tags:
         - BaseAccountService
