@@ -1,0 +1,27 @@
+BaseAccountServiceIncludeAdminAuth:
+  type: string
+  nullable: true
+  enum:
+    - ONLY_ADMIN
+    - EXCLUDE_ADMIN
+    - UNKNOWN
+  title: BaseAccountServiceIncludeAdminAuth
+  description: |
+    <div lang="ja">
+    BaseAccountServiceIncludeAdminAuthオブジェクトは、取得するアカウントに管理権限のアカウントを含むかどうかを表します。<br>
+    このフィールドは、省略可能となります。<br>
+    リクエスト時にauthTypeフィールドでREFERABLEを指定した場合、このフィールドは無視されます。
+    </div>
+    <div lang="en">
+    BaseAccountServiceIncludeAdminAuth indicates whether to include accounts with admin access for accounts you get.
+    This field is optional.
+    If it is specified REFERABLE in authType on request, this field will be ignored.
+    </div>
+    <dl class=term>
+      <dt class="term__item">ONLY_ADMIN</dt>
+      <dd class="term__desc"><span lang="ja">管理権限のアカウントのみを取得します。</span><span lang="en">Retrieve only accounts with admin access.</span></dd>
+      <dt class="term__item">EXCLUDE_ADMIN</dt>
+      <dd class="term__desc"><span lang="ja">管理権限のアカウントを除外します。</span><span lang="en">Exclude accounts without admin access.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown value.</span></dd>
+    </dl>

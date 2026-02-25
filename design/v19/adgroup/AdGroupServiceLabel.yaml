@@ -1,0 +1,43 @@
+AdGroupServiceLabel:
+  type: object
+  nullable: true
+  properties:
+    color:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">カラーです。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
+        <div lang="en">Color.<br>
+        Although this field will be returned in the response, it will be ignored on input.</div>
+    description:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">説明文です。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
+        <div lang="en">Description.<br>
+        Although this field will be returned in the response, it will be ignored on input.</div>
+    labelId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">ラベルIDです。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
+        <div lang="en">Label ID.<br>
+        Although this field will be returned in the response, it will be ignored on input.</div>
+    labelName:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">ラベル名です。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
+        <div lang="en">Label name.<br>
+        Although this field will be returned in the response, it will be ignored on input.</div>
+  title: AdGroupServiceLabel
+  description: |
+    <div lang="ja">AdGroupServiceLabelは、紐づけられているラベル情報を表します。<br>
+    このフィールドは、リクエストの際は無視され、GET時のリクエストでcontainsLabelをtrueに指定した場合のみレスポンスされます。</div>
+    <div lang="en">AdGroupServiceLabel object describes label information to be associated.<br>
+    This field is ignored in the request and is only included in the response if containsLabel is specified as true in the GET request.</div>

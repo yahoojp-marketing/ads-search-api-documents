@@ -1,0 +1,21 @@
+AdGroupAudienceListServiceIsDemographic:
+  type: string
+  nullable: true
+  enum:
+    - 'TRUE'
+    - 'FALSE'
+    - UNKNOWN
+  title: AdGroupAudienceListServiceIsDemographic
+  description: |
+    <div lang="ja">AdGroupAudienceListServiceIsDemographicは、年齢・性別ターゲティング用のオーディエンスリストかどうかを表します。<br>
+    このフィールドはレスポンスの際に返却されますが、リクエストの際には無視されます。</div>
+    <div lang="en">AdGroupAudienceListServiceIsDemographic indicates whether it is an audience list for age and gender targeting.<br>
+    Although this field will be returned in the response, it will be ignored on input.</div>
+    <dl class=term>
+      <dt class="term__item">TRUE</dt>
+      <dd class="term__desc"><span lang="ja">年齢・性別ターゲティング用のオーディエンスリストです。</span><span lang="en">Audience list for age and gender targeting.</span></dd>
+      <dt class="term__item">FALSE</dt>
+      <dd class="term__desc"><span lang="ja">通常のオーディエンスリストです。</span><span lang="en">Normal audience list.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown value.</span></dd>
+    </dl>

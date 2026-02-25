@@ -1,0 +1,24 @@
+CampaignServiceConversionSetting:
+  type: object
+  nullable: true
+  properties:
+    conversionGroupId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">コンバージョングループIDです。</div>
+        <div lang="en">Conversion Group ID.</div>
+    goalConfigLevel:
+      $ref: 'CampaignServiceGoalConfigLevel.yaml#/CampaignServiceGoalConfigLevel'
+    campaignConversionGoals:
+      type: array
+      nullable: true
+      items:
+        $ref: 'CampaignServiceCampaignConversionGoals.yaml#/CampaignServiceCampaignConversionGoals'
+  title: CampaignServiceConversionSetting
+  description: |
+    <div lang="ja">CampaignServiceConversionSettingオブジェクトは、コンバージョン設定を表します。<br>
+    conversionGroupId = null かつ campaignConversionGoals = null の際は goalConfigLevel = ACCOUNT を設定してください。</div>
+    <div lang="en">CampaignServiceConversionSetting object display the conversion setting.<br>
+    When both conversionGroupId and campaignConversionGoals are null, please set "goalConfigLevel = ACCOUNT".</div>

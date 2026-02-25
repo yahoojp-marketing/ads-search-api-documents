@@ -1,0 +1,27 @@
+LearningDataExclusionServiceOperation:
+  type: object
+  nullable: true
+  required:
+  - accountId
+  - operand
+  properties:
+    accountId:
+      type: integer
+      nullable: false
+      format: int64
+      description: |
+        <div lang="ja">アカウントIDです。</div>
+        <div lang="en">Account ID.</div>
+    operand:
+      type: array
+      nullable: true
+      items:
+        $ref: 'LearningDataExclusion.yaml#/LearningDataExclusion'
+      minItems: 1
+      maxItems: 200
+  title: LearningDataExclusionServiceOperation
+  description: |
+    <div lang="ja">LearningDataExclusionServiceOperationオブジェクトは、操作の対象となる自動入札の学習データ除外の情報と処理の内容を表します。<br>
+    ※add時とset時の上限は50になります。</div>
+    <div lang="en">LearningDataExclusionServiceOperation object displays target learning data exclusion for autobidding information and its operation results.<br>
+    *The maximum number of add and set cases is 50.</div>

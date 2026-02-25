@@ -1,0 +1,19 @@
+AudienceListServiceGetCustomKeySelector:
+  type: object
+  nullable: true
+  required:
+  - accountId
+  properties:
+    accountId:
+      type: integer
+      nullable: false
+      format: int64
+      description: |
+        <div lang="ja">検索条件：アカウントIDです。</div>
+        <div lang="en">Search condition: Account ID.</div>
+    audienceListOwner:
+      $ref: 'AudienceListServiceAudienceListOwner.yaml#/AudienceListServiceAudienceListOwner'
+  title: AudienceListServiceGetCustomKeySelector
+  description: |
+    <div lang="ja">AudienceListServiceGetCustomKeySelectorは、オーディエンスリストの検索条件（実行パラメータ）を保持するオブジェクトです。</div>
+    <div lang="en">AudienceListServiceGetCustomKeySelector object holds search condition (execution parameter).</div>

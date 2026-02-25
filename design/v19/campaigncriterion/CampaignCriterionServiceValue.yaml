@@ -1,0 +1,21 @@
+CampaignCriterionServiceValue:
+  type: object
+  nullable: true
+  properties:
+    campaignCriterion:
+      $ref: 'CampaignCriterion.yaml#/CampaignCriterion'
+    errors:
+      type: array
+      nullable: true
+      items:
+        $ref: '../../Error.yaml#/Error'
+    operationSucceeded:
+      type: boolean
+      nullable: true
+      description: |
+        <div lang="ja">処理結果です。</div>
+        <div lang="en">The result of operation.</div>
+  title: CampaignCriterionServiceValue
+  description: |
+    <div lang="ja">CampaignCriterionServiceValueオブジェクトは、処理結果を含むキャンペーンのクライテリアを表します。</div>
+    <div lang="en">Campaign criteria including operation results.</div>

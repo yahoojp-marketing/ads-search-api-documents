@@ -1,0 +1,25 @@
+AssetServiceDownloadImageSelector:
+  type: object
+  nullable: true
+  required:
+    - accountId
+    - assetId
+  properties:
+    accountId:
+      type: integer
+      nullable: false
+      format: int64
+      description: |
+        <div lang="ja">検索条件：アカウントIDです。</div>
+        <div lang="en">Search condition: Account ID.</div>
+    assetId:
+      type: integer
+      nullable: false
+      format: int64
+      description: |
+        <div lang="ja">検索条件：アセットIDです。</div>
+        <div lang="en">Search condition: Asset ID.</div>
+  title: AssetServiceDownloadImageSelector
+  description: |
+    <div lang="ja">入稿済みの画像ファイルをダウンロードします。</div>
+    <div lang="en">Download the submitted image file.</div>

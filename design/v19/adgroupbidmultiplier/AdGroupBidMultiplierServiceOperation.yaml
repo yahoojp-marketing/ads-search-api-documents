@@ -1,0 +1,25 @@
+AdGroupBidMultiplierServiceOperation:
+  type: object
+  nullable: true
+  required:
+  - accountId
+  - operand
+  properties:
+    accountId:
+      type: integer
+      nullable: false
+      format: int64
+      description: |
+        <div lang="ja">アカウントIDです。</div>
+        <div lang="en">Account ID.</div>
+    operand:
+      type: array
+      nullable: true
+      items:
+        $ref: 'AdGroupBidMultiplier.yaml#/AdGroupBidMultiplier'
+      minItems: 1
+      maxItems: 10000
+  title: AdGroupBidMultiplierServiceOperation
+  description: |
+    <div lang="ja">AdGroupBidMultiplierServiceOperationオブジェクトは、入札価格調整率の操作内容を表します。</div>
+    <div lang="en">Container for bid multiplier.</div>

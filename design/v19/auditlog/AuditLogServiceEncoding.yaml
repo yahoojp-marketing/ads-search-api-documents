@@ -1,0 +1,21 @@
+AuditLogServiceEncoding:
+  type: string
+  nullable: true
+  enum:
+  - SJIS
+  - UTF8
+  - UNKNOWN
+  title: AuditLogServiceEncoding
+  description: |
+    <div lang="ja">AuditLogServiceEncodingは、操作履歴ファイルのエンコーディング形式（文字コード）を表します。<br>
+    このフィールドは、省略可能となります。その際、デフォルト値はSJISとなります。</div>
+    <div lang="en">AuditLogServiceEncoding describes the encoding type (character encoding) for Operation History file.<br>
+    This field is optional. The default value will be SJIS.</div>
+    <dl class=term>
+      <dt class="term__item">SJIS</dt>
+      <dd class="term__desc"><span lang="ja">SJIS形式です。</span><span lang="en">SJIS.</span></dd>
+      <dt class="term__item">UTF8</dt>
+      <dd class="term__desc"><span lang="ja">UTF8形式です。</span><span lang="en">UTF8.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown value.</span></dd>
+    </dl>

@@ -1,0 +1,90 @@
+LearningDataExclusion:
+  type: object
+  nullable: true
+  properties:
+    accountId:
+      type: integer
+      nullable: false
+      format: int64
+      description: |
+        <div lang="ja">アカウントIDです。</div>
+        <div lang="en">Account ID.</div>
+    learningDataExclusionName:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">学習データ除外名です。<br>
+        ADD時、このフィールドは必須となります。<br>
+        ※128文字以内になります。</div>
+        <div lang="en">Learning Data Exclusion name.<br>
+        This field is required in ADD operation.<br>
+        *Up to 128 characters.</div>
+    description:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">学習データ除外の説明です。<br>
+        このフィールドは、省略可能となります。<br>
+        ※500文字以内になります。</div>
+        <div lang="en">Learning Data Exclusion description.<br>
+        This field is optional.<br>
+        *Up to 500 characters.</div>
+    learningDataExclusionId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">学習データ除外IDです。<br>
+        SET及びREMOVE時、このフィールドは必須です。</div>
+        <div lang="en">Learning Data Exclusion ID.<br>
+        This field is required in SET and REMOVE operation.</div>
+    devices:
+      type: array
+      nullable: true
+      items:
+        $ref: 'LearningDataExclusionServiceDevices.yaml#/LearningDataExclusionServiceDevices'
+    startDateTime:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">ルール適用開始日です。<br>
+        ADD時、このフィールドは必須です。<br>
+        ※YYYYMMDDHHmmss形式です。<br>
+        ※リクエスト日は2037/12/30まで 指定可能です。<br>
+        ※startDateTime〜endDateTimeが14日を超える場合はエラーになります。</div>
+        <div lang="en">Start date of rule setting.<br>
+        This field is required in ADD operation.<br>
+        *In YYYYMMDDHHmmss format<br>
+        *Request date can be set up to 2037/12/30<br>
+        *If startDateTime〜endDateTime exceeds 14 days, an error will occur.</div>
+    endDateTime:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">ルール適用終了日です。<br>
+        ADD時、このフィールドは必須です。<br>
+        ※YYYYMMDDHHmmss形式です。<br>
+        ※リクエスト日は2037/12/30まで 指定可能です。<br>
+        ※startDateTime〜endDateTimeが14日を超える場合はエラーになります。</div>
+        <div lang="en">End date of rule setting.<br>
+        This field is required in ADD operation.<br>
+        *In YYYYMMDDHHmmss format<br>
+        *Request date can be set up to 2037/12/30<br>
+        *If startDateTime〜endDateTime exceeds 14 days, an error will occur.</div>
+    campaignIds:
+      type: array
+      nullable: true
+      items:
+        type: integer
+        nullable: true
+        format: int64
+      maxItems: 2000
+      description: |
+        <div lang="ja">キャンペーンIDです。<br>
+        ADD時、このフィールドは必須となります。</div>
+        <div lang="en">Campaign ID.<br>
+        This field is required in ADD operation.</div>
+  title: LearningDataExclusion
+  description: |
+    <div lang="ja">LearningDataExclusion オブジェクトは、自動入札の学習データ除外を表します。</div>
+    <div lang="en">LearningDataExclusion object describes learning data exclusion for autobidding information.</div>

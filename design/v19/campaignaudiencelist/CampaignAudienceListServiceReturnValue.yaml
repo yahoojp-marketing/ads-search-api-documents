@@ -1,0 +1,13 @@
+CampaignAudienceListServiceReturnValue:
+  type: object
+  nullable: true
+  properties:
+    values:
+      type: array
+      nullable: true
+      items:
+        $ref: 'CampaignAudienceListServiceValue.yaml#/CampaignAudienceListServiceValue'
+  title: CampaignAudienceListServiceReturnValue
+  description: |
+    <div lang="ja">CampaignAudienceListPageオブジェクトは、キャンペーン階層のオーディエンスリスト設定における実行結果（全Entityのリスト）を保持します。</div>
+    <div lang="en">CampaignAudienceListPage object holds results (list of all entities) on Audience List settings for campaign layer.</div>

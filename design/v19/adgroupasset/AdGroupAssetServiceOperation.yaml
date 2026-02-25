@@ -1,0 +1,25 @@
+AdGroupAssetServiceOperation:
+  type: object
+  nullable: true
+  required:
+  - accountId
+  - operand
+  properties:
+    accountId:
+      type: integer
+      nullable: false
+      format: int64
+      description: |
+        <div lang="ja">アカウントIDです。</div>
+        <div lang="en">Account ID.</div>
+    operand:
+      type: array
+      nullable: true
+      items:
+        $ref: 'AdGroupAsset.yaml#/AdGroupAsset'
+      minItems: 1
+      maxItems: 2000
+  title: AdGroupAssetServiceOperation
+  description: |
+    <div lang="ja">AdGroupAssetServiceOperationオブジェクトは、アセット情報を格納するコンテナです。</div>
+    <div lang="en">AdGroupAssetServiceOperation is a container of Asset information.</div>

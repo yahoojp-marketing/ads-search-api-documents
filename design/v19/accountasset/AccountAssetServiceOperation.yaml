@@ -1,0 +1,25 @@
+AccountAssetServiceOperation:
+  type: object
+  nullable: true
+  required:
+    - accountId
+    - operand
+  properties:
+    accountId:
+      type: integer
+      nullable: false
+      format: int64
+      description: |
+        <div lang="ja">アカウントIDです。</div>
+        <div lang="en">Account ID.</div>
+    operand:
+      type: array
+      nullable: true
+      items:
+        $ref: 'AccountAsset.yaml#/AccountAsset'
+      minItems: 1
+      maxItems: 2000
+  title: AccountAssetServiceOperation
+  description: |
+    <div lang="ja">AccountAssetServiceOperationオブジェクトは、アセット情報を格納するコンテナです。</div>
+    <div lang="en">AccountAssetServiceOperation is a container of Asset information.</div>

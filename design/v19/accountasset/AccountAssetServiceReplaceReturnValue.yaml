@@ -1,0 +1,13 @@
+AccountAssetServiceReplaceReturnValue:
+  type: object
+  nullable: true
+  properties:
+    values:
+      type: array
+      nullable: true
+      items:
+        $ref: 'AccountAssetServiceReplaceValue.yaml#/AccountAssetServiceReplaceValue'
+  title: AccountAssetServiceReplaceReturnValue
+  description: |
+    <div lang="ja">AccountAssetServiceReplaceReturnValueオブジェクトは、アカウントとアセット間の設定情報を格納するコンテナです。</div>
+    <div lang="en">AccountAssetServiceReplaceReturnValue is a container of configuration information between accounts and assets.</div>

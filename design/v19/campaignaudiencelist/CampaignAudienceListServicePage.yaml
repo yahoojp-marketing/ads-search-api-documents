@@ -1,0 +1,20 @@
+CampaignAudienceListServicePage:
+  type: object
+  nullable: true
+  properties:
+    totalNumEntries:
+      type: integer
+      nullable: false
+      format: int32
+      description: |
+        <div lang="ja">取得される項目の総件数です。</div>
+        <div lang="en">Total number of entries in the result that this page is a part of.</div>
+    values:
+      type: array
+      nullable: true
+      items:
+        $ref: 'CampaignAudienceListServiceValue.yaml#/CampaignAudienceListServiceValue'
+  title: CampaignAudienceListServicePage
+  description: |
+    <div lang="ja">CampaignAudienceListServicePageオブジェクトは、キャンペーン階層におけるオーディエンスリストの設定に関する実行結果（全Entityのリスト）を保持します。</div>
+    <div lang="en">CampaignAudienceListServicePage  object holds execution results (list of all entities) for Audience List settings on the campaign level.</div>

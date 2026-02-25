@@ -1,0 +1,21 @@
+AudienceListServiceDemographicValue:
+  type: object
+  nullable: true
+  properties:
+    errors:
+      type: array
+      nullable: true
+      items:
+        $ref: '../../Error.yaml#/Error'
+    operationSucceeded:
+      type: boolean
+      nullable: true
+      description: |
+        <div lang="ja">処理結果を表示します。</div>
+        <div lang="en">Displays process result.</div>
+    audienceList:
+      $ref: 'AudienceListServiceDemographicList.yaml#/AudienceListServiceDemographicList'
+  title: AudienceListServiceDemographicValue
+  description: |
+    <div lang="ja">AudienceListServiceDemographicValueは、年齢・性別オーディエンスリストの実行結果（1 Entity）を保持するオブジェクトです。</div>
+    <div lang="en">AudienceListServiceDemographicValue is an object that holds results of age and gender audience list (one entity).</div>

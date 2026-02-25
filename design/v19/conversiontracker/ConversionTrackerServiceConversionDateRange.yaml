@@ -1,0 +1,20 @@
+ConversionTrackerServiceConversionDateRange:
+  type: object
+  nullable: true
+  properties:
+    endDate:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">コンバージョン実績集計終了期間です。</div>
+        <div lang="en">Conversion performance aggregation period end.</div>
+    startDate:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">コンバージョン実績集計開始期間です。</div>
+        <div lang="en">Conversion performance aggregation period start.</div>
+  title: ConversionTrackerServiceConversionDateRange
+  description: |
+    <div lang="ja">ConversionTrackerServiceConversionDateRangeオブジェクトは、コンバージョンの取得期間を指定します。</div>
+    <div lang="en">ConversionTrackerServiceConversionDateRange object is used to specify a period to obtain conversion.</div>

@@ -1,0 +1,25 @@
+OfflineConversionServiceDownloadSelector:
+  type: object
+  nullable: true
+  required:
+  - accountId
+  - uploadId
+  properties:
+    accountId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">検索条件：アカウントIDです。</div>
+        <div lang="en">Search condition: Account ID.</div>
+    uploadId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">検索条件：アップロードIDです。</div>
+        <div lang="en">Search condition: Upload ID.</div>
+  title: OfflineConversionServiceDownloadSelector
+  description: |
+    <div lang="ja">オフラインコンバージョンデータのファイルダウンロード処理を実施します。</div>
+    <div lang="en">Download file of offline conversion data.</div>

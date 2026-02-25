@@ -1,0 +1,23 @@
+AudienceListServiceGender:
+  type: string
+  nullable: true
+  enum:
+    - ST_MALE
+    - ST_FEMALE
+    - UNKNOWN
+  title: AudienceListServiceGender
+  description: |
+    <div lang="ja">
+    AudienceListServiceGenderは、性別を表します。
+    </div>
+    <div lang="en">
+    AudienceListServiceGender serves genders.
+    </div>
+    <dl class=term>
+      <dt class="term__item">ST_MALE</dt>
+      <dd class="term__desc"><span lang="ja">男性</span><span lang="en">Male</span></dd>
+      <dt class="term__item">ST_FEMALE</dt>
+      <dd class="term__desc"><span lang="ja">女性</span><span lang="en">Female</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value.</span></dd>
+    </dl>

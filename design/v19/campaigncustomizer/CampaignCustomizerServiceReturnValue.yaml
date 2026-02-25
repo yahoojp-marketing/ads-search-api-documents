@@ -1,0 +1,13 @@
+CampaignCustomizerServiceReturnValue:
+  type: object
+  nullable: true
+  properties:
+    values:
+      type: array
+      nullable: true
+      items:
+        $ref: 'CampaignCustomizerServiceValue.yaml#/CampaignCustomizerServiceValue'
+  title: CampaignCustomizerServiceReturnValue
+  description: |
+    <div lang="ja">CampaignCustomizerServiceReturnValueオブジェクトは、キャンペーンとカスタマイザー属性間の設定情報を格納します。</div>
+    <div lang="en">CampaignCustomizerServiceReturnValue object contains the configuration information between the campaign and the customizer attribute.</div>

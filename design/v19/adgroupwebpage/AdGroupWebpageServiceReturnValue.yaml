@@ -1,0 +1,13 @@
+AdGroupWebpageServiceReturnValue:
+  type: object
+  nullable: true
+  properties:
+    values:
+      type: array
+      nullable: true
+      items:
+        $ref: 'AdGroupWebpageServiceValue.yaml#/AdGroupWebpageServiceValue'
+  title: AdGroupWebpageServiceReturnValue
+  description: |
+    <div lang="ja">AdGroupWebpageServiceReturnValueオブジェクトは、操作結果を含む配信/除外設定のコンテナを保持します。</div>
+    <div lang="en">AdGroupWebpageServiceReturnValue object contains allowed or excluded settings including operation result.</div>

@@ -1,0 +1,16 @@
+AssetServiceBusinessNameAsset:
+  type: object
+  nullable: true
+  properties:
+    businessName:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">ビジネス名です。</div>
+        <div lang="en">Business name.</div>
+  title: AssetServiceBusinessNameAsset
+  description: |
+    <div lang="ja">AssetServiceBusinessNameAssetオブジェクトは、ビジネス名の情報を格納します。<br>
+    ADD時、このフィールドは省略可能となります。※typeがBUSINESS_NAMEの場合は必須です。</div>
+    <div lang="en">AssetServiceBusinessNameAsset object contains business name information.<br>
+    This field is optional in ADD operation. *If type is BUSINESS_NAME, this field is required.</div>

@@ -1,0 +1,13 @@
+PageFeedAssetServiceAddDownloadJobReturnValue:
+  type: object
+  nullable: true
+  properties:
+    values:
+      type: array
+      nullable: true
+      items:
+        $ref: 'PageFeedAssetServiceAddDownloadJobValue.yaml#/PageFeedAssetServiceAddDownloadJobValue'
+  title: PageFeedAssetServiceAddDownloadJobReturnValue
+  description: |
+    <div lang="ja">PageFeedAssetServiceAddDownloadJobReturnValueは、ダウンロードの実行結果をリストに格納するコンテナです。</div>
+    <div lang="en">PageFeedAssetServiceAddDownloadJobReturnValue retains list of download result.</div>

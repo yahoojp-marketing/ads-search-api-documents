@@ -1,0 +1,21 @@
+PageFeedAssetServiceAddDownloadJobValue:
+  type: object
+  nullable: true
+  properties:
+    errors:
+      type: array
+      nullable: true
+      items:
+        $ref: '../../Error.yaml#/Error'
+    job:
+      $ref: 'PageFeedAssetServiceDownloadJob.yaml#/PageFeedAssetServiceDownloadJob'
+    operationSucceeded:
+      type: boolean
+      nullable: true
+      description: |
+        <div lang="ja">処理結果です。trueの場合は、処理は成功しました。falseの場合は処理が失敗しています。</div>
+        <div lang="en">The process results. If true, the process succeeded. If false, the process failed.</div>
+  title: PageFeedAssetServiceAddDownloadJobValue
+  description: |
+    <div lang="ja">PageFeedAssetServiceAddDownloadJobValueは、ダウンロードの実行結果を格納するコンテナです。</div>
+    <div lang="en">PageFeedAssetServiceAddDownloadJobValue retains result of download execution.</div>

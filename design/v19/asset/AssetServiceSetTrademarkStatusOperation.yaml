@@ -1,0 +1,25 @@
+AssetServiceSetTrademarkStatusOperation:
+  type: object
+  nullable: true
+  required:
+  - accountId
+  - operand
+  properties:
+    accountId:
+      type: integer
+      nullable: false
+      format: int64
+      description: |
+        <div lang="ja">アカウントIDです。</div>
+        <div lang="en">Account ID.</div>
+    operand:
+      type: array
+      nullable: true
+      items:
+        $ref: 'AssetServiceSetTrademarkStatus.yaml#/AssetServiceSetTrademarkStatus'
+      minItems: 1
+      maxItems: 2000
+  title: AssetServiceSetTrademarkStatusOperation
+  description: |
+    <div lang="ja">AssetServiceSetTrademarkStatusOperationオブジェクトは、操作対象の商標使用制限の情報を格納します。</div>
+    <div lang="en">AssetServiceSetTrademarkStatusOperation object holds the target's trademark restriction information.</div>

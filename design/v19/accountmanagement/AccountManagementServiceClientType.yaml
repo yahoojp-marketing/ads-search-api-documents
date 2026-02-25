@@ -1,0 +1,23 @@
+AccountManagementServiceClientType:
+  type: string
+  nullable: true
+  enum:
+    - AGENT
+    - SELF
+    - UNKNOWN
+  title: AccountManagementServiceClientType
+  description: |
+    <div lang="ja">AccountManagementServiceClientTypeは、クライアント種別を表します。<br>
+    このフィールドは、ADD時に必須となり、SET時に無視されます。<br>
+    ※このフィールドは、レスポンスの際に返却されません。</div>
+    <div lang="en">AccountManagementServiceClientType object describes the type of client.<br>
+    This field is required in ADD operation, and will be ignored in SET operation.<br>
+    * This field is not returned in the response.</div>
+    <dl class=term>
+      <dt class="term__item">AGENT</dt>
+      <dd class="term__desc"><span lang="ja">代理出稿</span><span lang="en">AGENT</span></dd>
+      <dt class="term__item">SELF</dt>
+      <dd class="term__desc"><span lang="ja">自社出稿</span><span lang="en">SELF</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown value.</span></dd>
+    </dl>

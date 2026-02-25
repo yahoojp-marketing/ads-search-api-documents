@@ -1,0 +1,25 @@
+CampaignTargetServiceOperation:
+  type: object
+  nullable: true
+  required:
+  - accountId
+  - operand
+  properties:
+    accountId:
+      type: integer
+      nullable: false
+      format: int64
+      description: |
+        <div lang="ja">アカウントIDです。</div>
+        <div lang="en">Account ID.</div>
+    operand:
+      type: array
+      nullable: true
+      items:
+        $ref: 'CampaignTarget.yaml#/CampaignTarget'
+      minItems: 1
+      maxItems: 200
+  title: CampaignTargetServiceOperation
+  description: |
+    <div lang="ja">CampaignTargetServiceOperationオブジェクトは、操作の対象となるキャンペーンのターゲティング設定および操作の内容を表します。</div>
+    <div lang="en">Campaign target setting and its operation.</div>

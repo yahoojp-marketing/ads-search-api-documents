@@ -1,0 +1,17 @@
+AudienceListServiceCustomKeyPage:
+  type: object
+  nullable: true
+  properties:
+    customKeys:
+      $ref: 'AudienceListServiceCustomKey.yaml#/AudienceListServiceCustomKey'
+    totalNumEntries:
+      type: integer
+      nullable: false
+      format: int32
+      description: |
+        <div lang="ja">取得される項目の総件数です。</div>
+        <div lang="en">Total number of entries in the result that this page is a part of.</div>
+  title: AudienceListServiceCustomKeyPage
+  description: |
+    <div lang="ja">AudienceListServiceCustomKeyPageは、オーディエンスリストのカスタムキー情報を保持するオブジェクトです。</div>
+    <div lang="en">AudienceListServiceCustomKeyPage is an object that holds custom key information of audience list.</div>

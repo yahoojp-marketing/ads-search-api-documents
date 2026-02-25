@@ -1,0 +1,20 @@
+ConversionTrackerServiceAppEventTypePage:
+  type: object
+  nullable: true
+  properties:
+    totalNumEntries:
+      type: integer
+      nullable: false
+      format: int32
+      description: |
+        <div lang="ja">取得される項目の総件数です。</div>
+        <div lang="en">Total number of entries in the result that this page is a part of.</div>
+    values:
+      type: array
+      nullable: true
+      items:
+        $ref: 'ConversionTrackerServiceAppEventTypeValue.yaml#/ConversionTrackerServiceAppEventTypeValue'
+  title: ConversionTrackerServiceAppEventTypePage
+  description: |
+    <div lang="ja">ConversionTrackerServiceAppEventTypePageオブジェクトは、取得されるコンバージョン設定のエントリーを表します。</div>
+    <div lang="en">ConversionTrackerServiceAppEventTypePage object shows entry of ConversionTracker.</div>

@@ -1,0 +1,13 @@
+AdGroupAudienceListServiceReturnValue:
+  type: object
+  nullable: true
+  properties:
+    values:
+      type: array
+      nullable: true
+      items:
+        $ref: 'AdGroupAudienceListServiceValue.yaml#/AdGroupAudienceListServiceValue'
+  title: AdGroupAudienceListServiceReturnValue
+  description: |
+    <div lang="ja">AdGroupAudienceListServiceReturnValueは、広告グループレベルでのオーディエンスリスト設定の実行結果（全Entityのリスト）を保持するオブジェクトです。</div>
+    <div lang="en">AdGroupAudienceListServiceReturnValue is an object that holds the execution result (list of all entities) of audience list settings at the ad group level.</div>

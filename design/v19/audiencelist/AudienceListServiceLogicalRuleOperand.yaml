@@ -1,0 +1,19 @@
+AudienceListServiceLogicalRuleOperand:
+  type: object
+  nullable: true
+  properties:
+    audienceListId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">オーディエンスリストIDです。<br>組合せのオーディエンスリストは設定できません。<br>
+        このフィールドは、ADDおよびSET時に必須となります。</div>
+        <div lang="en">Audience list ID.<br>Cannot set the combination audience list.<br>
+        This field is required in ADD and SET operation.</div>
+  title: AudienceListServiceLogicalRuleOperand
+  description: |
+    <div lang="ja">AudienceListServiceLogicalRuleOperandは、組合せ対象のオーディエンスリストを保持するオブジェクトです。<br>
+    このフィールドは、ADDおよびSET時に必須となります。</div>
+    <div lang="en">AudienceListServiceLogicalRuleOperand is an object that holds audience list of combination.<br>
+    This field is required in ADD and SET operation.</div>

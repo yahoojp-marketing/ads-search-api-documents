@@ -1,0 +1,21 @@
+AdGroupAudienceListServiceValue:
+  type: object
+  nullable: true
+  properties:
+    adGroupAudienceList:
+      $ref: 'AdGroupAudienceList.yaml#/AdGroupAudienceList'
+    errors:
+      type: array
+      nullable: true
+      items:
+        $ref: '../../Error.yaml#/Error'
+    operationSucceeded:
+      type: boolean
+      nullable: true
+      description: |
+        <div lang="ja">処理結果です。</div>
+        <div lang="en">Process results.</div>
+  title: AdGroupAudienceListServiceValue
+  description: |
+    <div lang="ja">AdGroupAudienceListServiceValueは、広告グループレベルでのオーディエンスリスト設定の実行結果（1 Entity）を保持するオブジェクトです。</div>
+    <div lang="en">AdGroupAudienceListServiceValue is an object that holds results (one entity).</div>

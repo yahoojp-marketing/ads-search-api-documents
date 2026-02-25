@@ -1,0 +1,17 @@
+AudienceListServiceLogicalGroup:
+  type: object
+  nullable: true
+  properties:
+    logicalCondition:
+      $ref: 'AudienceListServiceLogicalCondition.yaml#/AudienceListServiceLogicalCondition'
+    logicalOperand:
+      type: array
+      nullable: true
+      items:
+        $ref: 'AudienceListServiceLogicalRuleOperand.yaml#/AudienceListServiceLogicalRuleOperand'
+  title: AudienceListServiceLogicalGroup
+  description: |
+    <div lang="ja">AudienceListServiceLogicalGroupは、組合せグループの情報を保持するオブジェクトです。<br>
+    このフィールドは、ADDおよびSET時に必須となります。</div>
+    <div lang="en">AudienceListServiceLogicalGroup is an object that holds combination group information.<br>
+    This field is required in ADD and SET operation.</div>

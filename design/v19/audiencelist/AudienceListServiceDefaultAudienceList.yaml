@@ -1,0 +1,13 @@
+AudienceListServiceDefaultAudienceList:
+  type: object
+  nullable: true
+  properties:
+    tag:
+      $ref: 'AudienceListServiceTag.yaml#/AudienceListServiceTag'
+  title: AudienceListServiceDefaultAudienceList
+  description: |
+    <div lang="ja">AudienceListServiceDefaultAudienceListは、デフォルトオーディエンスリストを保持するオブジェクトです。<br>
+    このフィールドは、省略可能となります。<br>
+    ※audienceListTypeがDEFAULTの場合、このフィールドは必須となります。</div>
+    <div lang="en">AudienceListServiceDefaultAudienceList is an object that holds default audience list.<br>
+    This field is optional.<br> If the audienceListType is DEFAULT, this field is required.</div>
