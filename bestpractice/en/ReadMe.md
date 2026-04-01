@@ -1,5 +1,5 @@
 ## Best Practice
-Best Practice introduces an efficient way of using Yahoo! JAPAN Ads API.<br>Please refer on each purposes.
+Best Practice introduces an efficient way of using LY Ads API.<br>Please refer on each purposes.
 * [Creating/Retrieving Report](./search_ads_report.md)
 * [Adding Ad display asset](./addisplayoption_asset.md)
 * [Ad Customizers feature](./autoinsert_data_responsive.md)

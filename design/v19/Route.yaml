@@ -395,6 +395,7 @@ tags:
       <li><div lang="ja"><a href="./reports/v19/SSA_SEARCH_QUERY.csv" download>検索クエリレポート</a></div><div lang="en"><a href="./reports/v19/SSA_SEARCH_QUERY.csv" download>Search Query Report</a></div></li>
       <li><div lang="ja"><a href="./reports/v19/SSA_PRODUCT_GROUP.csv" download>商品グループレポート</a></div><div lang="en"><a href="./reports/v19/SSA_PRODUCT_GROUP.csv" download>Product Group Report</a></div></li>
       <li><div lang="ja"><a href="./reports/v19/SSA_PRODUCT.csv" download>商品レポート</a></div><div lang="en"><a href="./reports/v19/SSA_PRODUCT.csv" download>Product Report</a></div></li>
+      <li><div lang="ja"><a href="./reports/v19/SSA_AUDIENCE_LIST.csv" download>オーディエンスリストレポート</a></div><div lang="en"><a href="./reports/v19/SSA_AUDIENCE_LIST.csv" download>Audience List Report</a></div></li>
       </ul>
 
 paths:
