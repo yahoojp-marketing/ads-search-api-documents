@@ -13,5 +13,5 @@ RetargetingListServiceCustomKeyPage:
         <div lang="en">Total number of entries in the result that this page is a part of.</div>
   title: RetargetingListServiceCustomKeyPage
   description: |
-    <div lang="ja">RetargetingListServiceCustomKeyPageは、ターゲットリストのカスタムキー情報を保持するオブジェクトです。</div>
-    <div lang="en">RetargetingListServiceCustomKeyPage is an object that holds custom key information of target list.</div>
+    <div lang="ja">RetargetingListServiceCustomKeyPageは、オーディエンスリストのカスタムキー情報を保持するオブジェクトです。</div>
+    <div lang="en">RetargetingListServiceCustomKeyPage is an object that holds custom key information of audience list.</div>

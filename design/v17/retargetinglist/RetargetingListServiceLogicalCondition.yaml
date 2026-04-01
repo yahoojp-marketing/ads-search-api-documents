@@ -8,9 +8,9 @@ RetargetingListServiceLogicalCondition:
   - UNKNOWN
   title: RetargetingListServiceLogicalCondition
   description: |
-    <div lang="ja">RetargetingListServiceLogicalConditionは、組合せターゲットリストの連結条件です。<br>
+    <div lang="ja">RetargetingListServiceLogicalConditionは、組合せオーディエンスリストの連結条件です。<br>
     このフィールドは、ADDおよびSET時に省略可能となります。</div>
-    <div lang="en">RetargetingListServiceLogicalCondition is the conditions of combined target list.<br>
+    <div lang="en">RetargetingListServiceLogicalCondition is the conditions of combined audience list.<br>
     This field is optional in ADD and SET operation.</div>
     <dl class=term>
       <dt class="term__item">NOT</dt>

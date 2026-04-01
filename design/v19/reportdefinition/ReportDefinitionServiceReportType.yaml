@@ -75,7 +75,7 @@ ReportDefinitionServiceReportType:
       <dt class="term__item">ADGROUP_ASSET</dt>
       <dd class="term__desc"><span lang="ja">広告表示アセットレポート（広告グループ）です。</span><span lang="en">Ad display asset report (ad group).</span></dd>
       <dt class="term__item">ACCOUNT_ASSET</dt>
-      <dd class="term__desc"><span lang="ja">広告表示アセットレポート（アカウント）です。※現在利用できません。</span><span lang="en">Ad display asset report (account). * Not Available.</span></dd>
+      <dd class="term__desc"><span lang="ja">広告表示アセットレポート（アカウント）です。</span><span lang="en">Ad display asset report (account).</span></dd>
       <dt class="term__item">RESPONSIVE_ADS_FOR_SEARCH_ASSET</dt>
       <dd class="term__desc"><span lang="ja">レスポンシブ検索広告アセットレポートです。</span><span lang="en">Responsive Ads for search asset report.</span></dd>
       <dt class="term__item">ASSET_COMBINATIONS</dt>

@@ -48,19 +48,19 @@ AuditLogServiceEventSelector:
             </tr>
             <tr>
               <td>FEED</td>
-              <td>Feedフォルダーです。</td>
+              <td>Feedフォルダーです。※提供終了済みです。</td>
             </tr>
             <tr>
               <td>FEED_ITEM</td>
-              <td>広告表示アセットです。</td>
+              <td>広告表示アセットです。※提供終了済みです。</td>
             </tr>
             <tr>
               <td>CAMPAIGN_FEED</td>
-              <td>広告表示アセットです（キャンペーン）。</td>
+              <td>広告表示アセットです（キャンペーン）。※提供終了済みです。</td>
             </tr>
             <tr>
               <td>AD_GROUP_FEED</td>
-              <td>広告表示アセットです（広告グループ）。</td>
+              <td>広告表示アセットです（広告グループ）。※提供終了済みです。</td>
             </tr>
             <tr>
               <td>SS_IO</td>
@@ -104,11 +104,11 @@ AuditLogServiceEventSelector:
             </tr>
             <tr>
               <td>AD_CUSTOMIZER</td>
-              <td>アドカスタマイザーです。</td>
+              <td>アドカスタマイザーです。※提供終了済みです。</td>
             </tr>
             <tr>
               <td>EXCLUDE_AD_CUSTOMIZER</td>
-              <td>アドカスタマイザーを除くすべての履歴です。</td>
+              <td>アドカスタマイザーを除くすべての履歴です。※提供終了済みです。</td>
             </tr>
             <tr>
               <td>ASSET</td>
@@ -124,7 +124,7 @@ AuditLogServiceEventSelector:
             </tr>
             <tr>
               <td>ACCOUNT_ASSET</td>
-              <td>アカウントとアセット間の設定情報です。※現在利用できません</td>
+              <td>アカウントとアセット間の設定情報です。</td>
             </tr>
             <tr>
               <td>ACCOUNT_CUSTOMIZER</td>
@@ -152,7 +152,7 @@ AuditLogServiceEventSelector:
             </tr>
             <tr>
               <td>PAGE_FEED_ASSET</td>
-              <td>ページフィードアセットです。</td>
+              <td>ページフィードアセットです。※提供終了済みです。</td>
             </tr>
             <tr>
               <td>BIDDING_SEASONALITY_ADJUSTMENT</td>
@@ -218,19 +218,19 @@ AuditLogServiceEventSelector:
             </tr>
             <tr>
               <td>FEED</td>
-              <td>Feed folder.</td>
+              <td>Feed folder. *This value is no longer supported.</td>
             </tr>
             <tr>
               <td>FEED_ITEM</td>
-              <td>Ad display assets.</td>
+              <td>Ad display assets. *This value is no longer supported.</td>
             </tr>
             <tr>
               <td>CAMPAIGN_FEED</td>
-              <td>Ad display assets for campaign.</td>
+              <td>Ad display assets for campaign. *This value is no longer supported.</td>
             </tr>
             <tr>
               <td>AD_GROUP_FEED</td>
-              <td>Ad display assets for ad group.</td>
+              <td>Ad display assets for ad group. *This value is no longer supported.</td>
             </tr>
             <tr>
               <td>SS_IO</td>
@@ -274,11 +274,11 @@ AuditLogServiceEventSelector:
             </tr>
             <tr>
               <td>AD_CUSTOMIZER</td>
-              <td>Ad customizer.</td>
+              <td>Ad customizer. *This value is no longer supported.</td>
             </tr>
             <tr>
               <td>EXCLUDE_AD_CUSTOMIZER</td>
-              <td>All operation history excepting ad customizer.</td>
+              <td>All operation history excepting ad customizer. *This value is no longer supported.</td>
             </tr>
             <tr>
               <td>ASSET</td>
@@ -294,7 +294,7 @@ AuditLogServiceEventSelector:
             </tr>
             <tr>
               <td>ACCOUNT_ASSET</td>
-              <td>Configuration information between account and assets. * Not Available.</td>
+              <td>Configuration information between account and assets.</td>
             </tr>
             <tr>
               <td>ACCOUNT_CUSTOMIZER</td>
@@ -322,7 +322,7 @@ AuditLogServiceEventSelector:
             </tr>
             <tr>
               <td>PAGE_FEED_ASSET</td>
-              <td>PageFeedAsset.</td>
+              <td>PageFeedAsset. *This value is no longer supported.</td>
             </tr>
             <tr>
               <td>BIDDING_SEASONALITY_ADJUSTMENT</td>

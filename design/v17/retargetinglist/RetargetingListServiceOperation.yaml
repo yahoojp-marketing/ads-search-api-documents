@@ -23,5 +23,5 @@ RetargetingListServiceOperation:
       $ref: 'RetargetingListServiceTargetListOwner.yaml#/RetargetingListServiceTargetListOwner'
   title: RetargetingListServiceOperation
   description: |
-    <div lang="ja">RetargetingListServiceOperationは、操作対象のターゲットリストを保持するオブジェクトです。</div>
+    <div lang="ja">RetargetingListServiceOperationは、操作対象のオーディエンスリストを保持するオブジェクトです。</div>
     <div lang="en">RetargetingListServiceOperation is an object that holds target retargeting.</div>

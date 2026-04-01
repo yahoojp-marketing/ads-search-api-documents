@@ -6,7 +6,7 @@ RetargetingListServiceClosingReason:
   - UNKNOWN
   title: RetargetingListServiceClosingReason
   description: |
-    <div lang="ja">RetargetingListServiceClosingReasonは、ターゲットリストのクローズ理由を表します。<br>
+    <div lang="ja">RetargetingListServiceClosingReasonは、オーディエンスリストのクローズ理由を表します。<br>
     このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
     <div lang="en">RetargetingListServiceClosingReason defines the reason for closing.<br>
     Although this field will be returned in the response, it will be ignored on input.</div>

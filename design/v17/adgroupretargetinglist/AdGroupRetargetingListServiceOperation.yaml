@@ -21,5 +21,5 @@ AdGroupRetargetingListServiceOperation:
       maxItems: 1000
   title: AdGroupRetargetingListServiceOperation
   description: |
-    <div lang="ja">AdGroupRetargetingListServiceOperationは、操作対象の広告グループレベルでのターゲットリスト設定を保持するオブジェクトです。</div>
+    <div lang="ja">AdGroupRetargetingListServiceOperationは、操作対象の広告グループレベルでのオーディエンスリスト設定を保持するオブジェクトです。</div>
     <div lang="en">AdGroupRetargetingListServiceOperation is an object that holds target ad group retargeting.</div>

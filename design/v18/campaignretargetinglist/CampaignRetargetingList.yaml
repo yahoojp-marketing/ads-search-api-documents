@@ -44,5 +44,5 @@ CampaignRetargetingList:
       $ref: 'CampaignRetargetingListServiceExcludedType.yaml#/CampaignRetargetingListServiceExcludedType'
   title: CampaignRetargetingList
   description: |
-    <div lang="ja">CampaignRetargetingListオブジェクトは、キャンペーン階層におけるターゲットリストの設定情報を保持するオブジェクトです。</div>
-    <div lang="en">CampaignRetargetingList object holds the setting information of Target List on campaign level.</div>
+    <div lang="ja">CampaignRetargetingListオブジェクトは、キャンペーン階層におけるオーディエンスリストの設定情報を保持するオブジェクトです。</div>
+    <div lang="en">CampaignRetargetingList object holds the setting information of audience list on campaign level.</div>

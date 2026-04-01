@@ -63,9 +63,9 @@ AdGroupRetargetingListServiceSelector:
         format: int64
       maxItems: 1000
       description: |
-        <div lang="ja">検索条件：ターゲットリストIDです。</div>
-        <div lang="en">Target list ID.</div>
+        <div lang="ja">検索条件：オーディエンスリストIDです。</div>
+        <div lang="en">Audience list ID.</div>
   title: AdGroupRetargetingListServiceSelector
   description: |
-    <div lang="ja">AdGroupRetargetingListServiceSelector、広告グループレベルでのターゲットリスト設定の検索条件（実行パラメータ）を保持するオブジェクトです。</div>
+    <div lang="ja">AdGroupRetargetingListServiceSelector、広告グループレベルでのオーディエンスリスト設定の検索条件（実行パラメータ）を保持するオブジェクトです。</div>
     <div lang="en">AdGroupRetargetingListServiceSelector is an object that holds search condition (parameter).</div>

@@ -7,9 +7,9 @@ RetargetingListServiceRuleType:
   - UNKNOWN
   title: RetargetingListServiceRuleType
   description: |
-    <div lang="ja">RetargetingListServiceRuleTypeは、ターゲットリストのルール種別です。<br>
+    <div lang="ja">RetargetingListServiceRuleTypeは、オーディエンスリストのルール種別です。<br>
     ADDおよびSET時、このフィールドは必須となります。</div>
-    <div lang="en">RetargetingListServiceRuleType is the rule type of target list.<br>
+    <div lang="en">RetargetingListServiceRuleType is the rule type of audience list.<br>
     This field is required in ADD and SET operation.</div>
     <dl class=term>
       <dt class="term__item">URL_RULE</dt>

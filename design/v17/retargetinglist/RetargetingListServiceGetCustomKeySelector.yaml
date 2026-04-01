@@ -15,5 +15,5 @@ RetargetingListServiceGetCustomKeySelector:
       $ref: 'RetargetingListServiceTargetListOwner.yaml#/RetargetingListServiceTargetListOwner'
   title: RetargetingListServiceGetCustomKeySelector
   description: |
-    <div lang="ja">RetargetingListServiceGetCustomKeySelectorは、ターゲットリストの検索条件（実行パラメータ）を保持するオブジェクトです。</div>
+    <div lang="ja">RetargetingListServiceGetCustomKeySelectorは、オーディエンスリストの検索条件（実行パラメータ）を保持するオブジェクトです。</div>
     <div lang="en">RetargetingListServiceGetCustomKeySelector object holds search condition (execution parameter).</div>

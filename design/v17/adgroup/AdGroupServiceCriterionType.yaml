@@ -14,7 +14,7 @@ AdGroupServiceCriterionType:
     *The default value in ADD operation for the case of no setting 'TargetingSetting' is TARGET_LIST.</div>
     <dl class=term>
       <dt class="term__item">TARGET_LIST</dt>
-      <dd class="term__desc"><span lang="ja">ターゲットリストです。</span><span lang="en">Target list.</span></dd>
+      <dd class="term__desc"><span lang="ja">オーディエンスリストです。</span><span lang="en">Audience list.</span></dd>
       <dt class="term__item">UNKNOWN</dt>
       <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown value.</span></dd>
     </dl>

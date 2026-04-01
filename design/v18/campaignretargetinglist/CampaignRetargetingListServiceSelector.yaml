@@ -52,9 +52,9 @@ CampaignRetargetingListServiceSelector:
         format: int64
       maxItems: 1000
       description: |
-        <div lang="ja">ターゲットリストIDです。</div>
-        <div lang="en">Search conditon: Target List ID.</div>
+        <div lang="ja">オーディエンスリストIDです。</div>
+        <div lang="en">Search conditon: audience list ID.</div>
   title: CampaignRetargetingListServiceSelector
   description: |
-    <div lang="ja">CampaignRetargetingListServiceSelectorオブジェクトは、キャンペーン階層におけるターゲットリストの設定情報を取得するための検索条件（実行パラメータ）を保持します。</div>
-    <div lang="en">CampaignRetargetingListServiceSelector object holds search conditions (exec parameters) to get Target List settings on the campaign level.</div>
+    <div lang="ja">CampaignRetargetingListServiceSelectorオブジェクトは、キャンペーン階層におけるオーディエンスリストの設定情報を取得するための検索条件（実行パラメータ）を保持します。</div>
+    <div lang="en">CampaignRetargetingListServiceSelector object holds search conditions (exec parameters) to get audience list settings on the campaign level.</div>

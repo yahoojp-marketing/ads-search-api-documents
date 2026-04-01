@@ -7,7 +7,7 @@ RetargetingListServiceReachStorageStatus:
   - UNKNOWN
   title: RetargetingListServiceReachStorageStatus
   description: |
-    <div lang="ja">RetargetingListServiceReachStorageStatusは、ターゲットリストの種別です。<br>
+    <div lang="ja">RetargetingListServiceReachStorageStatusは、オーディエンスリストの種別です。<br>
     このフィールドは省略可能となります。<br>
     ※LogicalTargetListの場合、このフィールドはレスポンスの際に返却されますが、リクエストの際には無視されます。<br>
     ※SET時、ruleBaseTargetList.isDateSpecificRule = TRUEの場合には、変更は出来ません。</div>

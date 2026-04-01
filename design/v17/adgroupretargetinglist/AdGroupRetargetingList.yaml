@@ -68,5 +68,5 @@ AdGroupRetargetingList:
       $ref: 'AdGroupRetargetingListServiceExcludedType.yaml#/AdGroupRetargetingListServiceExcludedType'
   title: AdGroupRetargetingList
   description: |
-    <div lang="ja">AdGroupRetargetingListは、広告グループレベルでのターゲットリスト設定を保持するオブジェクトです。</div>
-    <div lang="en">AdGroupRetargetingList is an object that holds ad group user list information.</div>
+    <div lang="ja">AdGroupRetargetingListは、広告グループレベルでのオーディエンスリスト設定を保持するオブジェクトです。</div>
+    <div lang="en">AdGroupRetargetingList is an object that holds ad group audience list information.</div>

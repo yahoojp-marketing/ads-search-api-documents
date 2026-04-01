@@ -16,21 +16,21 @@ AdGroupRetargetingListServiceCriterionTargetList:
       nullable: true
       format: int64
       description: |
-        <div lang="ja">ターゲットリストIDです。<br>
+        <div lang="ja">オーディエンスリストIDです。<br>
         このフィールドは、いずれの場合でも必須です。</div>
-        <div lang="en">Target list ID.<br>
+        <div lang="en">Audience list ID.<br>
         This field is required in any cases.</div>
     targetListName:
       type: string
       nullable: true
       description: |
-        <div lang="ja">ターゲットリスト名です。<br>
+        <div lang="ja">オーディエンスリスト名です。<br>
         このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
-        <div lang="en">Target list name.<br>
+        <div lang="en">Audience list name.<br>
         Although this field will be returned in the response, it will be ignored on input.</div>
   title: AdGroupRetargetingListServiceCriterionTargetList
   description: |
-    <div lang="ja">AdGroupRetargetingListServiceCriterionTargetListは、ターゲットリスト情報を保持するオブジェクトです。<br>
+    <div lang="ja">AdGroupRetargetingListServiceCriterionTargetListは、オーディエンスリスト情報を保持するオブジェクトです。<br>
     このフィールドは、いずれの場合でも必須です。</div>
-    <div lang="en">AdGroupRetargetingListServiceCriterionTargetList is an object that holds target list information.<br>
+    <div lang="en">AdGroupRetargetingListServiceCriterionTargetList is an object that holds audience list information.<br>
     This field is required in any cases.</div>

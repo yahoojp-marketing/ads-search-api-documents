@@ -69,4 +69,4 @@ AdGroupAudienceList:
   title: AdGroupAudienceList
   description: |
     <div lang="ja">AdGroupAudienceListは、広告グループレベルでのオーディエンスリスト設定を保持するオブジェクトです。</div>
-    <div lang="en">AdGroupAudienceList is an object that holds ad group user list information.</div>
+    <div lang="en">AdGroupAudienceList is an object that holds ad group audience list information.</div>

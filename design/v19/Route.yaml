@@ -1,10 +1,10 @@
 openapi: 3.0.2
 info:
-  title: 'Yahoo!広告 検索広告 API リファレンス / Yahoo! JAPAN Ads Search Ads API Reference'
+  title: 'LINEヤフー広告 検索広告 API リファレンス / LY Ads Search Ads API Reference'
   version: 'v19'
   description: |
-    <div lang="ja">Yahoo!広告 検索広告 APIのWebサービスについて説明します。</div>
-    <div lang="en">Search Ads API Web Services supported in Yahoo! JAPAN Ads API.</div>
+    <div lang="ja">LINEヤフー広告 検索広告 APIのWebサービスについて説明します。</div>
+    <div lang="en">Search Ads API Web Services supported in LY Ads API.</div>
     <div><a target="_blank" href="https://github.com/yahoojp-marketing/ads-search-api-documents/blob/master/design/v19/Route.yaml">OpenAPI Specification</a></div>
     <div lang="ja"><a target="_blank" href="https://github.com/yahoojp-marketing/ads-search-api-documents/blob/master/bestpractice/ja">Best Practice</a></div>
     <div lang="en"><a target="_blank" href="https://github.com/yahoojp-marketing/ads-search-api-documents/blob/master/bestpractice/en">Best Practice</a></div>
@@ -18,7 +18,7 @@ components:
           authorizationUrl: https://biz-oauth.yahoo.co.jp/oauth/v1/authorize
           tokenUrl: https://biz-oauth.yahoo.co.jp/oauth/v1/token
           scopes:
-            yahooads: アプリケーションを経由したYahoo!広告の各機能の操作/Operation by each function of Yahoo! JAPAN Ads via applications.
+            yahooads: アプリケーションを経由したLINEヤフー広告の各機能の操作/Operation by each function of LY Ads via applications.
 security:
   - oAuth: [ yahooads ]
 
@@ -181,12 +181,15 @@ tags:
       <li><div lang="ja"><a href="./reports/v19/BID_STRATEGY.csv" download>自動入札レポート</a></div><div lang="en"><a href="./reports/v19/BID_STRATEGY.csv" download>Auto Bidding Report</a></div></li>
       <li><div lang="ja"><a href="./reports/v19/CAMPAIGN_TARGET_LIST.csv" download>キャンペーンターゲットリストレポート</a></div><div lang="en"><a href="./reports/v19/CAMPAIGN_TARGET_LIST.csv"download>Campaign Target List Report</a></div></li>
       <li><div lang="ja"><a href="./reports/v19/ADGROUP_TARGET_LIST.csv" download>広告グループターゲットリストレポート</a></div><div lang="en"><a href="./reports/v19/ADGROUP_TARGET_LIST.csv" download>Ad Group Target List Report</a></div></li>
+      <li><div lang="ja"><a href="./reports/v19/CAMPAIGN_AUDIENCE_LIST.csv" download>キャンペーンオーディエンスリストレポート</a></div><div lang="en"><a href="./reports/v19/CAMPAIGN_AUDIENCE_LIST.csv"download>Campaign Audience List Report</a></div></li>
+      <li><div lang="ja"><a href="./reports/v19/ADGROUP_AUDIENCE_LIST.csv" download>広告グループオーディエンスリストレポート</a></div><div lang="en"><a href="./reports/v19/ADGROUP_AUDIENCE_LIST.csv" download>Ad Group Audience List Report</a></div></li>
       <li><div lang="ja"><a href="./reports/v19/LANDING_PAGE_URL.csv" download>ランディングページURLレポート</a></div><div lang="en"><a href="./reports/v19/LANDING_PAGE_URL.csv" download>Landing Page URL Report</a></div></li>
       <li><div lang="ja"><a href="./reports/v19/KEYWORDLESS_QUERY.csv" download>検索クエリーレポート（動的検索連動型広告）</a></div><div lang="en"><a href="./reports/v19/KEYWORDLESS_QUERY.csv" download>Search Query Report (Dynamic Ads for Search)</a></div></li>
       <li><div lang="ja"><a href="./reports/v19/WEBPAGE_CRITERION.csv" download>ページフィードターゲティングレポート</a></div><div lang="en"><a href="./reports/v19/WEBPAGE_CRITERION.csv" download>Page Feed Targeting Report</a></div></li>
       <li><div lang="ja"><a href="./reports/v19/BID_MODIFIER.csv" download>入札価格調整率レポート</a></div><div lang="en"><a href="./reports/v19/BID_MODIFIER.csv" download>Bid Adjustments Report</a></div></li>
       <li><div lang="ja"><a href="./reports/v19/CAMPAIGN_ASSET.csv" download>広告表示アセットレポート（キャンペーン）</a></div><div lang="en"><a href="./reports/v19/CAMPAIGN_ASSET.csv" download>Ad Display Asset Report (campaign)</a></div></li>
       <li><div lang="ja"><a href="./reports/v19/AD_GROUP_ASSET.csv" download>広告表示アセットレポート（広告グループ）</a></div><div lang="en"><a href="./reports/v19/AD_GROUP_ASSET.csv" download>Ad Display Asset Report (ad group)</a></div></li>
+      <li><div lang="ja"><a href="./reports/v19/ACCOUNT_ASSET.csv" download>広告表示アセットレポート（アカウント）</a></div><div lang="en"><a href="./reports/v19/ACCOUNT_ASSET.csv" download>Ad Display Asset Report (account)</a></div></li>
       <li><div lang="ja"><a href="./reports/v19/RESPONSIVE_ADS_FOR_SEARCH_ASSET.csv" download>レスポンシブ検索広告アセットレポート</a></div><div lang="en"><a href="./reports/v19/RESPONSIVE_ADS_FOR_SEARCH_ASSET.csv" download>Responsive Ads for Search Asset Report</a></div></li>
       <li><div lang="ja"><a href="./reports/v19/SHARED_BUDGET.csv" download>共有予算レポート</a></div><div lang="en"><a href="./reports/v19/SHARED_BUDGET.csv" download>Campaign Budget Report</a></div></li>
       <li><div lang="ja"><a href="./reports/v19/ASSET_COMBINATION.csv" download>アセット組み合わせレポート</a></div><div lang="en"><a href="./reports/v19/ASSET_COMBINATION.csv" download>Asset combinations report</a></div></li>
@@ -271,10 +274,8 @@ tags:
   - name: AccountAssetService
     description: |
       <label class="campaign"></label>
-      <div lang="ja">AccountAssetService、アカウントに紐づくアセットの操作を提供します。<br>
-      ※現在、こちらのサービスは利用できません。</div>
-      <div lang="en">AccountAssetService provides operation of assets associated with accounts.<br>
-      *Currently this service is not available.</div>
+      <div lang="ja">AccountAssetService、アカウントに紐づくアセットの操作を提供します。</div>
+      <div lang="en">AccountAssetService provides operation of assets associated with accounts.</div>
   - name: AdGroupAssetService
     description: |
       <label class="campaign"></label>
@@ -7910,10 +7911,8 @@ paths:
             <div lang="ja">アカウントIDを指定してください。</div>
             <div lang="en">Specify Account ID.</div>
       description: |
-        <div lang="ja">アカウントとアセット間の設定情報を取得します。<br>
-        ※現在、こちらのサービスは利用できません。</div>
-        <div lang="en">Get configuration information between accounts and assets.<br>
-        *Currently this service is not available.</div>
+        <div lang="ja">アカウントとアセット間の設定情報を取得します。</div>
+        <div lang="en">Get configuration information between accounts and assets.</div>
       tags:
         - AccountAssetService
       requestBody:
@@ -7978,14 +7977,12 @@ paths:
         ・更新は常に上書きされるため追加分を含めて更新する必要があります。<br>
         ・アセット情報を解除するときは空の情報で更新します。<br>
         ・1つのアカウントに設定できるステータスが有効なアセット情報は、各種それぞれ20件までです。<br>
-        ・1つのアカウントに設定できるステータスが無効なアセット情報は、各種それぞれ2000件までです。<br>
-        ※現在、こちらのサービスは利用できません。</div>
+        ・1つのアカウントに設定できるステータスが無効なアセット情報は、各種それぞれ2000件までです。</div>
         <div lang="en">Add, update or release(remove) Asset information of account.<br>
         ・Update will overwrite the old information, so have to include the additional information on every updates.<br>
         ・To release FeedItem information, update with blank data.<br>
         ・Up to 20 asset information with valid status can be set for one ad group for each AccountAssetServiceType.<br>
-        ・Up to 2000 asset information with invalid status can be set for one ad group for each AccountAssetServiceType.<br>
-        *Currently this service is not available.</div>
+        ・Up to 2000 asset information with invalid status can be set for one ad group for each AccountAssetServiceType.</div>
       tags:
         - AccountAssetService
       requestBody:
@@ -8050,12 +8047,10 @@ paths:
       description: |
         <div lang="ja">アカウントとアセット間の設定情報を更新します。<br>
         ・1つのアカウントに設定できるステータスが有効なアセット情報は、各種それぞれ20件までです。<br>
-        ・1つのアカウントに設定できるステータスが無効なアセット情報は、各種それぞれ2000件までです。<br>
-        ※現在、こちらのサービスは利用できません。</div>
+        ・1つのアカウントに設定できるステータスが無効なアセット情報は、各種それぞれ2000件までです。</div>
         <div lang="en">Updates configuration information between accounts and assets.<br>
         ・Up to 20 asset information with valid status can be set for one ad group for each AccountAssetServiceType.<br>
-        ・Up to 2000 asset information with invalid status can be set for one ad group for each AccountAssetServiceType.<br>
-        *Currently this service is not available.</div>
+        ・Up to 2000 asset information with invalid status can be set for one ad group for each AccountAssetServiceType.</div>
       tags:
         - AccountAssetService
       requestBody:

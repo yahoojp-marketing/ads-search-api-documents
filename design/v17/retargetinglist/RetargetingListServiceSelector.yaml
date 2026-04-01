@@ -39,8 +39,8 @@ RetargetingListServiceSelector:
         format: int64
       maxItems: 1000
       description: |
-        <div lang="ja">検索条件：ターゲットリストIDです。</div>
-        <div lang="en">Search condition: Target List ID.</div>
+        <div lang="ja">検索条件：オーディエンスリストIDです。</div>
+        <div lang="en">Search condition: audience list ID.</div>
     targetListOwner:
       $ref: 'RetargetingListServiceTargetListOwner.yaml#/RetargetingListServiceTargetListOwner'
     targetListTypes:
@@ -50,5 +50,5 @@ RetargetingListServiceSelector:
         $ref: 'RetargetingListServiceTargetListType.yaml#/RetargetingListServiceTargetListType'
   title: RetargetingListServiceSelector
   description: |
-    <div lang="ja">RetargetingListServiceSelectorは、ターゲットリストの検索条件（実行パラメータ）を保持するオブジェクトです。</div>
+    <div lang="ja">RetargetingListServiceSelectorは、オーディエンスリストの検索条件（実行パラメータ）を保持するオブジェクトです。</div>
     <div lang="en">RetargetingListServiceSelector is an object that holds search condition (parameter).</div>

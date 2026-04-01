@@ -1,10 +1,10 @@
 openapi: 3.0.2
 info:
-  title: 'Yahoo!広告 検索広告 API リファレンス / Yahoo! JAPAN Ads Search Ads API Reference'
+  title: 'LINEヤフー広告 検索広告 API リファレンス / LY Ads Search Ads API Reference'
   version: 'v17'
   description: |
-    <div lang="ja">Yahoo!広告 検索広告 APIのWebサービスについて説明します。</div>
-    <div lang="en">Search Ads API Web Services supported in Yahoo! JAPAN Ads API.</div>
+    <div lang="ja">LINEヤフー広告 検索広告 APIのWebサービスについて説明します。</div>
+    <div lang="en">Search Ads API Web Services supported in LY Ads API.</div>
     <div><a target="_blank" href="https://github.com/yahoojp-marketing/ads-search-api-documents/blob/master/design/v17/Route.yaml">OpenAPI Specification</a></div>
     <div lang="ja"><a target="_blank" href="https://github.com/yahoojp-marketing/ads-search-api-documents/blob/master/bestpractice/ja">Best Practice</a></div>
     <div lang="en"><a target="_blank" href="https://github.com/yahoojp-marketing/ads-search-api-documents/blob/master/bestpractice/en">Best Practice</a></div>
@@ -18,7 +18,7 @@ components:
           authorizationUrl: https://biz-oauth.yahoo.co.jp/oauth/v1/authorize
           tokenUrl: https://biz-oauth.yahoo.co.jp/oauth/v1/token
           scopes:
-            yahooads: アプリケーションを経由したYahoo!広告の各機能の操作/Operation by each function of Yahoo! JAPAN Ads via applications.
+            yahooads: アプリケーションを経由したLINEヤフー広告の各機能の操作/Operation by each function of LY Ads via applications.
 security:
   - oAuth: [ yahooads ]
 
@@ -131,14 +131,14 @@ tags:
   - name: AdGroupRetargetingListService
     description: |
       <label class="campaign"></label>
-      <div lang="ja">AdGroupRetargetingListServiceでは、広告グループレベルでのターゲットリスト設定に関する情報の取得および追加・更新・削除を行います。</div><div lang="en">AdGroupRetargetingListService
-      is to get, add, update, or delete information of target list setting in ad group
+      <div lang="ja">AdGroupRetargetingListServiceでは、広告グループレベルでのオーディエンスリスト設定に関する情報の取得および追加・更新・削除を行います。</div><div lang="en">AdGroupRetargetingListService
+      is to get, add, update, or delete information of audience list setting in ad group
       level.</div>
   - name: RetargetingListService
     description: |
       <label class="account"></label>
-      <div lang="ja">RetargetingListServiceでは、ターゲットリストに関する情報の取得および追加・更新を行います。</div><div lang="en">RetargetingListService
-      is to get, add, or update information of target list.</div>
+      <div lang="ja">RetargetingListServiceでは、オーディエンスリストに関する情報の取得および追加・更新を行います。</div><div lang="en">RetargetingListService
+      is to get, add, or update information of audience list.</div>
   - name: ReportDefinitionService
     description: |
       <label class="report"></label>
@@ -210,8 +210,8 @@ tags:
   - name: CampaignRetargetingListService
     description: |
       <label class="campaign"></label>
-      <div lang="ja">CampaignRetargetingListServiceでは、キャンペーン階層におけるターゲットリストの設定（設定情報の取得、追加、更新、削除）を行います。</div><div lang="en">CampaignRetargetingListService
-      is to get, add, update, or delete information of target list setting in campaign
+      <div lang="ja">CampaignRetargetingListServiceでは、キャンペーン階層におけるオーディエンスリストの設定（設定情報の取得、追加、更新、削除）を行います。</div><div lang="en">CampaignRetargetingListService
+      is to get, add, update, or delete information of audience list setting in campaign
       level.</div>
   - name: CampaignSharedSetService
     description: |
@@ -4565,8 +4565,8 @@ paths:
             <div lang="ja">アカウントIDを指定してください。</div>
             <div lang="en">Specify Account ID.</div>
       description: |
-        <div lang="ja">広告グループレベルでのターゲットリスト設定に関する情報を取得します。</div>
-        <div lang="en">Retreive the target list setting in ad group level.</div>
+        <div lang="ja">広告グループレベルでのオーディエンスリスト設定に関する情報を取得します。</div>
+        <div lang="en">Retreive the audience list setting in ad group level.</div>
       tags:
         - AdGroupRetargetingListService
       requestBody:
@@ -4601,8 +4601,8 @@ paths:
                 <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
-                <tr><td>225301</td><td>Cannot attach criteria at campaign and adgroup.</td><td><div lang="ja">広告グループとキャンペーンの両方にターゲットリストの関連付けはできません。</div><div lang="en">Target lists can not be associated with both ad groups and campaigns.</div></td></tr>
-                <tr><td>225302</td><td>Cannot add closed target list.</td><td><div lang="ja">停止中のターゲットリストは関連付けできません。</div><div lang="en">A closed target list can not be associated.</div></td></tr>
+                <tr><td>225301</td><td>Cannot attach criteria at campaign and adgroup.</td><td><div lang="ja">広告グループとキャンペーンの両方にオーディエンスリストの関連付けはできません。</div><div lang="en">Audience lists can not be associated with both ad groups and campaigns.</div></td></tr>
+                <tr><td>225302</td><td>Cannot add closed audience list.</td><td><div lang="ja">停止中のオーディエンスリストは関連付けできません。</div><div lang="en">A closed audience list can not be associated.</div></td></tr>
               </tbody>
             </table>
             </div>
@@ -4629,8 +4629,8 @@ paths:
             <div lang="ja">アカウントIDを指定してください。</div>
             <div lang="en">Specify Account ID.</div>
       description: |
-        <div lang="ja">広告グループレベルでのターゲットリスト設定を追加します。</div>
-        <div lang="en">Create the target list setting in ad group level.</div>
+        <div lang="ja">広告グループレベルでのオーディエンスリスト設定を追加します。</div>
+        <div lang="en">Create the audience list setting in ad group level.</div>
       tags:
         - AdGroupRetargetingListService
       requestBody:
@@ -4665,8 +4665,8 @@ paths:
                 <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
-                <tr><td>225301</td><td>Cannot attach criteria at campaign and adgroup.</td><td><div lang="ja">広告グループとキャンペーンの両方にターゲットリストの関連付けはできません。</div><div lang="en">Target lists can not be associated with both ad groups and campaigns.</div></td></tr>
-                <tr><td>225302</td><td>Cannot add closed target list.</td><td><div lang="ja">停止中のターゲットリストは関連付けできません。</div><div lang="en">A closed target list can not be associated.</div></td></tr>
+                <tr><td>225301</td><td>Cannot attach criteria at campaign and adgroup.</td><td><div lang="ja">広告グループとキャンペーンの両方にオーディエンスリストの関連付けはできません。</div><div lang="en">Audience lists can not be associated with both ad groups and campaigns.</div></td></tr>
+                <tr><td>225302</td><td>Cannot add closed audience list.</td><td><div lang="ja">停止中のオーディエンスリストは関連付けできません。</div><div lang="en">A closed audience list can not be associated.</div></td></tr>
                 <tr><td>210920</td><td>This action isn't available when creating the A/B test.</td><td><div lang="ja">A/Bテスト作成中のため操作できません。</div><div lang="en">This action isn't available when creating the A/B test.</div></td></tr>
               </tbody>
             </table>
@@ -4694,8 +4694,8 @@ paths:
             <div lang="ja">アカウントIDを指定してください。</div>
             <div lang="en">Specify Account ID.</div>
       description: |
-        <div lang="ja">広告グループレベルでのターゲットリスト設定を更新します。</div>
-        <div lang="en">Update the target list setting in ad group level.</div>
+        <div lang="ja">広告グループレベルでのオーディエンスリスト設定を更新します。</div>
+        <div lang="en">Update the audience list setting in ad group level.</div>
       tags:
         - AdGroupRetargetingListService
       requestBody:
@@ -4730,8 +4730,8 @@ paths:
                 <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
-                <tr><td>225301</td><td>Cannot attach criteria at campaign and adgroup.</td><td><div lang="ja">広告グループとキャンペーンの両方にターゲットリストの関連付けはできません。</div><div lang="en">Target lists can not be associated with both ad groups and campaigns.</div></td></tr>
-                <tr><td>225302</td><td>Cannot add closed target list.</td><td><div lang="ja">停止中のターゲットリストは関連付けできません。</div><div lang="en">A closed target list can not be associated.</div></td></tr>
+                <tr><td>225301</td><td>Cannot attach criteria at campaign and adgroup.</td><td><div lang="ja">広告グループとキャンペーンの両方にオーディエンスリストの関連付けはできません。</div><div lang="en">Audience lists can not be associated with both ad groups and campaigns.</div></td></tr>
+                <tr><td>225302</td><td>Cannot add closed audience list.</td><td><div lang="ja">停止中のオーディエンスリストは関連付けできません。</div><div lang="en">A closed audience list can not be associated.</div></td></tr>
                 <tr><td>210920</td><td>This action isn't available when creating the A/B test.</td><td><div lang="ja">A/Bテスト作成中のため操作できません。</div><div lang="en">This action isn't available when creating the A/B test.</div></td></tr>
               </tbody>
             </table>
@@ -4759,8 +4759,8 @@ paths:
             <div lang="ja">アカウントIDを指定してください。</div>
             <div lang="en">Specify Account ID.</div>
       description: |
-        <div lang="ja">広告グループレベルでのターゲットリスト設定を削除します。</div>
-        <div lang="en">Delete the target list setting in ad group level.</div>
+        <div lang="ja">広告グループレベルでのオーディエンスリスト設定を削除します。</div>
+        <div lang="en">Delete the audience list setting in ad group level.</div>
       tags:
         - AdGroupRetargetingListService
       requestBody:
@@ -4795,8 +4795,8 @@ paths:
                 <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
-                <tr><td>225301</td><td>Cannot attach criteria at campaign and adgroup.</td><td><div lang="ja">広告グループとキャンペーンの両方にターゲットリストの関連付けはできません。</div><div lang="en">Target lists can not be associated with both ad groups and campaigns.</div></td></tr>
-                <tr><td>225302</td><td>Cannot add closed target list.</td><td><div lang="ja">停止中のターゲットリストは関連付けできません。</div><div lang="en">A closed target list can not be associated.</div></td></tr>
+                <tr><td>225301</td><td>Cannot attach criteria at campaign and adgroup.</td><td><div lang="ja">広告グループとキャンペーンの両方にオーディエンスリストの関連付けはできません。</div><div lang="en">Audience lists can not be associated with both ad groups and campaigns.</div></td></tr>
+                <tr><td>225302</td><td>Cannot add closed audience list.</td><td><div lang="ja">停止中のオーディエンスリストは関連付けできません。</div><div lang="en">A closed audience list can not be associated.</div></td></tr>
                 <tr><td>210920</td><td>This action isn't available when creating the A/B test.</td><td><div lang="ja">A/Bテスト作成中のため操作できません。</div><div lang="en">This action isn't available when creating the A/B test.</div></td></tr>
               </tbody>
             </table>
@@ -5021,8 +5021,8 @@ paths:
             <div lang="ja">アカウントIDを指定してください。</div>
             <div lang="en">Specify Account ID.</div>
       description: |
-        <div lang="ja">キャンペーン階層におけるターゲットリストの設定情報を取得します。</div>
-        <div lang="en">Retreive the target list setting in campaign level.</div>
+        <div lang="ja">キャンペーン階層におけるオーディエンスリストの設定情報を取得します。</div>
+        <div lang="en">Retreive the audience list setting in campaign level.</div>
       tags:
         - CampaignRetargetingListService
       requestBody:
@@ -5057,8 +5057,8 @@ paths:
                 <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
-                <tr><td>225301</td><td>Cannot attach criteria at campaign and adgroup.</td><td><div lang="ja">広告グループとキャンペーンの両方にターゲットリストの関連付けはできません。</div><div lang="en">Target lists can not be associated with both ad groups and campaigns.</div></td></tr>
-                <tr><td>225302</td><td>Cannot add closed target list.</td><td><div lang="ja">停止中のターゲットリストは関連付けできません。</div><div lang="en">A closed target list can not be associated.</div></td></tr>
+                <tr><td>225301</td><td>Cannot attach criteria at campaign and adgroup.</td><td><div lang="ja">広告グループとキャンペーンの両方にオーディエンスリストの関連付けはできません。</div><div lang="en">Audience lists can not be associated with both ad groups and campaigns.</div></td></tr>
+                <tr><td>225302</td><td>Cannot add closed audience list.</td><td><div lang="ja">停止中のオーディエンスリストは関連付けできません。</div><div lang="en">A closed audience list can not be associated.</div></td></tr>
               </tbody>
             </table>
             </div>
@@ -5085,8 +5085,8 @@ paths:
             <div lang="ja">アカウントIDを指定してください。</div>
             <div lang="en">Specify Account ID.</div>
       description: |
-        <div lang="ja">キャンペーン階層におけるターゲットリストの設定情報を追加します。</div>
-        <div lang="en">Adds the target list setting in campaign level.</div>
+        <div lang="ja">キャンペーン階層におけるオーディエンスリストの設定情報を追加します。</div>
+        <div lang="en">Adds the audience list setting in campaign level.</div>
       tags:
         - CampaignRetargetingListService
       requestBody:
@@ -5121,8 +5121,8 @@ paths:
                 <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
-                <tr><td>225301</td><td>Cannot attach criteria at campaign and adgroup.</td><td><div lang="ja">広告グループとキャンペーンの両方にターゲットリストの関連付けはできません。</div><div lang="en">Target lists can not be associated with both ad groups and campaigns.</div></td></tr>
-                <tr><td>225302</td><td>Cannot add closed target list.</td><td><div lang="ja">停止中のターゲットリストは関連付けできません。</div><div lang="en">A closed target list can not be associated.</div></td></tr>
+                <tr><td>225301</td><td>Cannot attach criteria at campaign and adgroup.</td><td><div lang="ja">広告グループとキャンペーンの両方にオーディエンスリストの関連付けはできません。</div><div lang="en">Audience lists can not be associated with both ad groups and campaigns.</div></td></tr>
+                <tr><td>225302</td><td>Cannot add closed audience list.</td><td><div lang="ja">停止中のオーディエンスリストは関連付けできません。</div><div lang="en">A closed audience list can not be associated.</div></td></tr>
                 <tr><td>210920</td><td>This action isn't available when creating the A/B test.</td><td><div lang="ja">A/Bテスト作成中のため操作できません。</div><div lang="en">This action isn't available when creating the A/B test.</div></td></tr>
               </tbody>
             </table>
@@ -5150,8 +5150,8 @@ paths:
             <div lang="ja">アカウントIDを指定してください。</div>
             <div lang="en">Specify Account ID.</div>
       description: |
-        <div lang="ja">キャンペーン階層におけるターゲットリストの設定情報を更新します。</div>
-        <div lang="en">Updates the target list setting in campaign level.</div>
+        <div lang="ja">キャンペーン階層におけるオーディエンスリストの設定情報を更新します。</div>
+        <div lang="en">Updates the audience list setting in campaign level.</div>
       tags:
         - CampaignRetargetingListService
       requestBody:
@@ -5186,8 +5186,8 @@ paths:
                 <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
-                <tr><td>225301</td><td>Cannot attach criteria at campaign and adgroup.</td><td><div lang="ja">広告グループとキャンペーンの両方にターゲットリストの関連付けはできません。</div><div lang="en">Target lists can not be associated with both ad groups and campaigns.</div></td></tr>
-                <tr><td>225302</td><td>Cannot add closed target list.</td><td><div lang="ja">停止中のターゲットリストは関連付けできません。</div><div lang="en">A closed target list can not be associated.</div></td></tr>
+                <tr><td>225301</td><td>Cannot attach criteria at campaign and adgroup.</td><td><div lang="ja">広告グループとキャンペーンの両方にオーディエンスリストの関連付けはできません。</div><div lang="en">Audience lists can not be associated with both ad groups and campaigns.</div></td></tr>
+                <tr><td>225302</td><td>Cannot add closed audience list.</td><td><div lang="ja">停止中のオーディエンスリストは関連付けできません。</div><div lang="en">A closed audience list can not be associated.</div></td></tr>
                 <tr><td>210920</td><td>This action isn't available when creating the A/B test.</td><td><div lang="ja">A/Bテスト作成中のため操作できません。</div><div lang="en">This action isn't available when creating the A/B test.</div></td></tr>
               </tbody>
             </table>
@@ -5215,8 +5215,8 @@ paths:
             <div lang="ja">アカウントIDを指定してください。</div>
             <div lang="en">Specify Account ID.</div>
       description: |
-        <div lang="ja">キャンペーン階層におけるターゲットリストの設定情報を削除します。</div>
-        <div lang="en">Delete the target list setting in campaign level.</div>
+        <div lang="ja">キャンペーン階層におけるオーディエンスリストの設定情報を削除します。</div>
+        <div lang="en">Delete the audience list setting in campaign level.</div>
       tags:
         - CampaignRetargetingListService
       requestBody:
@@ -5251,8 +5251,8 @@ paths:
                 <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
-                <tr><td>225301</td><td>Cannot attach criteria at campaign and adgroup.</td><td><div lang="ja">広告グループとキャンペーンの両方にターゲットリストの関連付けはできません。</div><div lang="en">Target lists can not be associated with both ad groups and campaigns.</div></td></tr>
-                <tr><td>225302</td><td>Cannot add closed target list.</td><td><div lang="ja">停止中のターゲットリストは関連付けできません。</div><div lang="en">A closed target list can not be associated.</div></td></tr>
+                <tr><td>225301</td><td>Cannot attach criteria at campaign and adgroup.</td><td><div lang="ja">広告グループとキャンペーンの両方にオーディエンスリストの関連付けはできません。</div><div lang="en">Audience lists can not be associated with both ad groups and campaigns.</div></td></tr>
+                <tr><td>225302</td><td>Cannot add closed audience list.</td><td><div lang="ja">停止中のオーディエンスリストは関連付けできません。</div><div lang="en">A closed audience list can not be associated.</div></td></tr>
                 <tr><td>210920</td><td>This action isn't available when creating the A/B test.</td><td><div lang="ja">A/Bテスト作成中のため操作できません。</div><div lang="en">This action isn't available when creating the A/B test.</div></td></tr>
               </tbody>
             </table>
@@ -6262,8 +6262,8 @@ paths:
             <div lang="ja">アカウントIDを指定してください。</div>
             <div lang="en">Specify Account ID.</div>
       description: |
-        <div lang="ja">ターゲットリストに関する情報を取得します。</div>
-        <div lang="en">Retrieves the target list information.</div>
+        <div lang="ja">オーディエンスリストに関する情報を取得します。</div>
+        <div lang="en">Retrieves the audience list information.</div>
       tags:
         - RetargetingListService
       requestBody:
@@ -6302,11 +6302,11 @@ paths:
                 <tr><td>210803</td><td>Retargeting unavailable.</td><td><div lang="ja">審査状態により、リターゲティングが強制停止されているアカウントです。</div><div lang="en">The account whose retargeting is forcibly stopped due to the review status.</div></td></tr>
                 <tr><td>210804</td><td>Registered default list.</td><td><div lang="ja">デフォルトリストが登録済みのアカウントに対して再度デフォルトリストを登録しています。</div><div lang="en">The default list is registered again for the account with default list registered.</div></td></tr>
                 <tr><td>210807</td><td>Selecting Close default list.</td><td><div lang="ja">対象のデフォルトリストに「CLOSED」を指定しています。</div><div lang="en">"CLOSED" is specified in the target default list.</div></td></tr>
-                <tr><td>210809</td><td>Not logical target list.</td><td><div lang="ja">組み合わせリストに組合せのターゲットリストを指定しています。</div><div lang="en">The combination list is specified in the combination list.</div></td></tr>
+                <tr><td>210809</td><td>Not logical audience list.</td><td><div lang="ja">組み合わせリストに組合せのオーディエンスリストを指定しています。</div><div lang="en">The combination list is specified in the combination list.</div></td></tr>
                 <tr><td>210806</td><td>Requires default list.</td><td><div lang="ja">デフォルトリストが登録されていないアカウントに対して条件リストまたは組み合わせリストを登録しています。</div><div lang="en">The rule list or the combination list is registered for the account for which no default list has been registered.</div></td></tr>
-                <tr><td>210815</td><td>Selecting only one target list.</td><td><div lang="ja">組み合わせリストにターゲットリストをひとつだけ指定しています。</div><div lang="en">Only one target list is specified in the combination list.</div></td></tr>
+                <tr><td>210815</td><td>Selecting only one audience list.</td><td><div lang="ja">組み合わせリストにオーディエンスリストをひとつだけ指定しています。</div><div lang="en">Only one audience list is specified in the combination list.</div></td></tr>
                 <tr><td>210816</td><td>Selecting only Not condition.</td><td><div lang="ja">組み合わせリストでNOT条件のみを指定しています。</div><div lang="en">Only the NOT condition is specified in the combination list.</div></td></tr>
-                <tr><td>210822</td><td>Cannot create a share target list.</td><td><div lang="ja">共有アカウントの設定がない場合は、共有のターゲットリストを追加できません。</div><div lang="en">If you do not have account sharing settings, you can not add share target list.</div></td></tr>
+                <tr><td>210822</td><td>Cannot create a share audience list.</td><td><div lang="ja">共有アカウントの設定がない場合は、共有のオーディエンスリストを追加できません。</div><div lang="en">If you do not have account sharing settings, you can not add share audience list.</div></td></tr>
               </tbody>
             </table>
             </div>
@@ -6333,8 +6333,8 @@ paths:
             <div lang="ja">アカウントIDを指定してください。</div>
             <div lang="en">Specify Account ID.</div>
       description: |
-        <div lang="ja">ターゲットリストを追加します。</div>
-        <div lang="en">Adds target list.</div>
+        <div lang="ja">オーディエンスリストを追加します。</div>
+        <div lang="en">Adds audience list.</div>
       tags:
         - RetargetingListService
       requestBody:
@@ -6373,11 +6373,11 @@ paths:
                 <tr><td>210803</td><td>Retargeting unavailable.</td><td><div lang="ja">審査状態により、リターゲティングが強制停止されているアカウントです。</div><div lang="en">The account whose retargeting is forcibly stopped due to the review status.</div></td></tr>
                 <tr><td>210804</td><td>Registered default list.</td><td><div lang="ja">デフォルトリストが登録済みのアカウントに対して再度デフォルトリストを登録しています。</div><div lang="en">The default list is registered again for the account with default list registered.</div></td></tr>
                 <tr><td>210807</td><td>Selecting Close default list.</td><td><div lang="ja">対象のデフォルトリストに「CLOSED」を指定しています。</div><div lang="en">"CLOSED" is specified in the target default list.</div></td></tr>
-                <tr><td>210809</td><td>Not logical target list.</td><td><div lang="ja">組み合わせリストに組合せのターゲットリストを指定しています。</div><div lang="en">The combination list is specified in the combination list.</div></td></tr>
+                <tr><td>210809</td><td>Not logical audience list.</td><td><div lang="ja">組み合わせリストに組合せのオーディエンスリストを指定しています。</div><div lang="en">The combination list is specified in the combination list.</div></td></tr>
                 <tr><td>210806</td><td>Requires default list.</td><td><div lang="ja">デフォルトリストが登録されていないアカウントに対して条件リストまたは組み合わせリストを登録しています。</div><div lang="en">The rule list or the combination list is registered for the account for which no default list has been registered.</div></td></tr>
-                <tr><td>210815</td><td>Selecting only one target list.</td><td><div lang="ja">組み合わせリストにターゲットリストをひとつだけ指定しています。</div><div lang="en">Only one target list is specified in the combination list.</div></td></tr>
+                <tr><td>210815</td><td>Selecting only one audience list.</td><td><div lang="ja">組み合わせリストにオーディエンスリストをひとつだけ指定しています。</div><div lang="en">Only one audience list is specified in the combination list.</div></td></tr>
                 <tr><td>210816</td><td>Selecting only Not condition.</td><td><div lang="ja">組み合わせリストでNOT条件のみを指定しています。</div><div lang="en">Only the NOT condition is specified in the combination list.</div></td></tr>
-                <tr><td>210822</td><td>Cannot create a share target list.</td><td><div lang="ja">共有アカウントの設定がない場合は、共有のターゲットリストを追加できません。</div><div lang="en">If you do not have account sharing settings, you can not add share target list.</div></td></tr>
+                <tr><td>210822</td><td>Cannot create a share audience list.</td><td><div lang="ja">共有アカウントの設定がない場合は、共有のオーディエンスリストを追加できません。</div><div lang="en">If you do not have account sharing settings, you can not add share audience list.</div></td></tr>
               </tbody>
             </table>
             </div>
@@ -6404,8 +6404,8 @@ paths:
             <div lang="ja">アカウントIDを指定してください。</div>
             <div lang="en">Specify Account ID.</div>
       description: |
-        <div lang="ja">ターゲットリストを更新します。</div>
-        <div lang="en">Updates the target list.</div>
+        <div lang="ja">オーディエンスリストを更新します。</div>
+        <div lang="en">Updates the audience list.</div>
       tags:
         - RetargetingListService
       requestBody:
@@ -6444,11 +6444,11 @@ paths:
                 <tr><td>210803</td><td>Retargeting unavailable.</td><td><div lang="ja">審査状態により、リターゲティングが強制停止されているアカウントです。</div><div lang="en">The account whose retargeting is forcibly stopped due to the review status.</div></td></tr>
                 <tr><td>210804</td><td>Registered default list.</td><td><div lang="ja">デフォルトリストが登録済みのアカウントに対して再度デフォルトリストを登録しています。</div><div lang="en">The default list is registered again for the account with default list registered.</div></td></tr>
                 <tr><td>210807</td><td>Selecting Close default list.</td><td><div lang="ja">対象のデフォルトリストに「CLOSED」を指定しています。</div><div lang="en">"CLOSED" is specified in the target default list.</div></td></tr>
-                <tr><td>210809</td><td>Not logical target list.</td><td><div lang="ja">組み合わせリストに組合せのターゲットリストを指定しています。</div><div lang="en">The combination list is specified in the combination list.</div></td></tr>
+                <tr><td>210809</td><td>Not logical audience list.</td><td><div lang="ja">組み合わせリストに組合せのオーディエンスリストを指定しています。</div><div lang="en">The combination list is specified in the combination list.</div></td></tr>
                 <tr><td>210806</td><td>Requires default list.</td><td><div lang="ja">デフォルトリストが登録されていないアカウントに対して条件リストまたは組み合わせリストを登録しています。</div><div lang="en">The rule list or the combination list is registered for the account for which no default list has been registered.</div></td></tr>
-                <tr><td>210815</td><td>Selecting only one target list.</td><td><div lang="ja">組み合わせリストにターゲットリストをひとつだけ指定しています。</div><div lang="en">Only one target list is specified in the combination list.</div></td></tr>
+                <tr><td>210815</td><td>Selecting only one audience list.</td><td><div lang="ja">組み合わせリストにオーディエンスリストをひとつだけ指定しています。</div><div lang="en">Only one audience list is specified in the combination list.</div></td></tr>
                 <tr><td>210816</td><td>Selecting only Not condition.</td><td><div lang="ja">組み合わせリストでNOT条件のみを指定しています。</div><div lang="en">Only the NOT condition is specified in the combination list.</div></td></tr>
-                <tr><td>210822</td><td>Cannot create a share target list.</td><td><div lang="ja">共有アカウントの設定がない場合は、共有のターゲットリストを追加できません。</div><div lang="en">If you do not have account sharing settings, you can not add share target list.</div></td></tr>
+                <tr><td>210822</td><td>Cannot create a share audience list.</td><td><div lang="ja">共有アカウントの設定がない場合は、共有のオーディエンスリストを追加できません。</div><div lang="en">If you do not have account sharing settings, you can not add share audience list.</div></td></tr>
               </tbody>
             </table>
             </div>
@@ -6515,11 +6515,11 @@ paths:
                 <tr><td>210803</td><td>Retargeting unavailable.</td><td><div lang="ja">審査状態により、リターゲティングが強制停止されているアカウントです。</div><div lang="en">The account whose retargeting is forcibly stopped due to the review status.</div></td></tr>
                 <tr><td>210804</td><td>Registered default list.</td><td><div lang="ja">デフォルトリストが登録済みのアカウントに対して再度デフォルトリストを登録しています。</div><div lang="en">The default list is registered again for the account with default list registered.</div></td></tr>
                 <tr><td>210807</td><td>Selecting Close default list.</td><td><div lang="ja">対象のデフォルトリストに「CLOSED」を指定しています。</div><div lang="en">"CLOSED" is specified in the target default list.</div></td></tr>
-                <tr><td>210809</td><td>Not logical target list.</td><td><div lang="ja">組み合わせリストに組合せのターゲットリストを指定しています。</div><div lang="en">The combination list is specified in the combination list.</div></td></tr>
+                <tr><td>210809</td><td>Not logical audience list.</td><td><div lang="ja">組み合わせリストに組合せのオーディエンスリストを指定しています。</div><div lang="en">The combination list is specified in the combination list.</div></td></tr>
                 <tr><td>210806</td><td>Requires default list.</td><td><div lang="ja">デフォルトリストが登録されていないアカウントに対して条件リストまたは組み合わせリストを登録しています。</div><div lang="en">The rule list or the combination list is registered for the account for which no default list has been registered.</div></td></tr>
-                <tr><td>210815</td><td>Selecting only one target list.</td><td><div lang="ja">組み合わせリストにターゲットリストをひとつだけ指定しています。</div><div lang="en">Only one target list is specified in the combination list.</div></td></tr>
+                <tr><td>210815</td><td>Selecting only one audience list.</td><td><div lang="ja">組み合わせリストにオーディエンスリストをひとつだけ指定しています。</div><div lang="en">Only one audience list is specified in the combination list.</div></td></tr>
                 <tr><td>210816</td><td>Selecting only Not condition.</td><td><div lang="ja">組み合わせリストでNOT条件のみを指定しています。</div><div lang="en">Only the NOT condition is specified in the combination list.</div></td></tr>
-                <tr><td>210822</td><td>Cannot create a share target list.</td><td><div lang="ja">共有アカウントの設定がない場合は、共有のターゲットリストを追加できません。</div><div lang="en">If you do not have account sharing settings, you can not add share target list.</div></td></tr>
+                <tr><td>210822</td><td>Cannot create a share audience list.</td><td><div lang="ja">共有アカウントの設定がない場合は、共有のオーディエンスリストを追加できません。</div><div lang="en">If you do not have account sharing settings, you can not add share audience list.</div></td></tr>
               </tbody>
             </table>
             </div>

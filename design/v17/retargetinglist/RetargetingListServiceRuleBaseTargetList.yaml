@@ -36,8 +36,8 @@ RetargetingListServiceRuleBaseTargetList:
         *Adding and editing this field is obsolete. Currently not available.</div>
   title: RetargetingListServiceRuleBaseTargetList
   description: |
-    <div lang="ja">RetargetingListServiceRuleBaseTargetListは、ベースターゲットリストの情報を保持するオブジェクトです。<br>
+    <div lang="ja">RetargetingListServiceRuleBaseTargetListは、ベースオーディエンスリストの情報を保持するオブジェクトです。<br>
     このフィールドは、省略可能となります。<br>
     ※targetListTypeがRULEの場合、このフィールドは必須となります。</div>
-    <div lang="en">RetargetingListServiceRuleBaseTargetList is an object that holds Rule based target list information.<br>
+    <div lang="en">RetargetingListServiceRuleBaseTargetList is an object that holds Rule based audience list information.<br>
     This field is optional.<br>*If the targetListType is RULE, this field is required.</div>

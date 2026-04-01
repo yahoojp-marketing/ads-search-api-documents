@@ -9,5 +9,5 @@ RetargetingListServiceReturnValue:
         $ref: 'RetargetingListServiceValue.yaml#/RetargetingListServiceValue'
   title: RetargetingListServiceReturnValue
   description: |
-    <div lang="ja">RetargetingListServiceReturnValueは、ターゲットリストの実行結果（全Entityのリスト）を保持するオブジェクトです。</div>
+    <div lang="ja">RetargetingListServiceReturnValueは、オーディエンスリストの実行結果（全Entityのリスト）を保持するオブジェクトです。</div>
     <div lang="en">RetargetingListServiceReturnValue is an object that holds results (list of all entity).</div>
