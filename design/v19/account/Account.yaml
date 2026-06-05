@@ -57,10 +57,20 @@ Account:
       description: |
         <div lang="ja">アカウント管理者のビジネスIDです。<br>
         MCCアカウントの場合、このフィールドは返却されず、リクエストの際も無視されます。<br>
-        テストアカウントの場合、このフィールドは更新できません。</div>
-        <div lang="en">Contact Business ID.<br>
+        テストアカウントの場合、このフィールドは更新できません。<br>
+        SET時に現在設定されている連絡先ビジネスIDとは別のビジネスIDを指定する場合には、以下の条件を満たす必要があります。<br>
+        1. ベースアカウントがRootMCCアカウントであること。<br>
+        2. 指定する連絡先ビジネスIDが、1のRootMCCアカウントと操作対象の広告アカウントに対する操作権限を保有していること。<br>
+        これらの条件を満たさない場合、エラーコード120020が返却されます。<br>
+        </div>
+        <div lang="en">Contact business ID.<br>
         If isManagerAccount is "TRUE", this field will not be returned and will be ignored on request.<br>
-        If isTestAccount is "TRUE", this field cannot be set.</div>
+        If isTestAccount is "TRUE", this field cannot be updated.<br>
+        When specifying a business ID different from the currently set contact business ID in SET operation, all of the following conditions must be met.<br>
+        1. The base account must be a Root MCC account.<br>
+        2. The specified contact business ID must have operation permissions for both the Root MCC account in condition 1 and the target ad account.<br>
+        If these conditions are not met, error code 120020 will be returned.<br>
+        </div>
   title: Account
   description: |
     <div lang="ja">Accountオブジェクトは、アカウントを表します。</div>
