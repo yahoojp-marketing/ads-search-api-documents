@@ -1,0 +1,20 @@
+SsaProductGroupServiceBrandProductGroup:
+  type: object
+  nullable: true
+  properties:
+    value:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">属性値<br>
+        このフィールドはブランド名を表し、null の場合は「その他」を表します。<br>
+        このフィールドは、ADD時は必須となります。</div>
+        <div lang="en">Attribute value.<br>
+        This field represents the brand name. A null value indicates "Other".<br>
+        This field is required in ADD operation.</div>
+  title: SsaProductGroupServiceBrand
+  description: |
+    <div lang="ja">SsaProductGroupServiceBrandProductGroup オブジェクトは、ブランド商品グループを表します。<br>
+    ADD時、SsaProductGroupServiceProductGroupTypeがBRANDの場合、必須となり、それ以外では無視されます。</div>
+    <div lang="en">SsaProductGroupServiceBrandProductGroup object describes brand product group information.<br>
+    This field is required when SsaProductGroupServiceProductGroupType is 'BRAND' in ADD operation. For other BiddingStrategyType, this field is ignored in ADD operation.</div>

@@ -1,0 +1,33 @@
+CampaignServiceBiddingStrategy:
+  title: CampaignServiceBiddingStrategy
+  type: object
+  nullable: true
+  properties:
+    biddingScheme:
+      $ref: 'CampaignServiceBiddingScheme.yaml#/CampaignServiceBiddingScheme'
+    portfolioBiddingId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">ポートフォリオ入札IDです。<br>
+        ADD時、標準入札設定の場合、このフィールドは設定不可となり、ポートフォリオ入札設定の場合、必須となります。また、biddingSchemeと同時に設定することはできません。</div>
+        <div lang="en">Portfolio bidding ID.<br>
+        This field cannot be specified when Standard bidding is setting, and is required when Portfolio bidding is setting in ADD operation. It cannot be specified at the same times as biddingScheme.</div>
+    portfolioBiddingName:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">ポートフォリオ入札名です。<br>
+        ADD時、このフィールドは無視されます。<br>
+        ※50文字以内になります。</div>
+        <div lang="en">Portfolio bidding name.<br>
+        This field will be ignored in ADD operation.<br>*
+        Up to 50 characters.</div>
+    biddingStrategySource:
+      $ref: 'CampaignServiceBiddingStrategySource.yaml#/CampaignServiceBiddingStrategySource'
+  description: |
+    <div lang="ja">CampaignServiceBiddingStrategyオブジェクトは、自動入札設定方法を表します。<br>
+    ADD時、biddingStrategyConfigurationは必須となります。また、failedBiddingStrategyConfigurationはレスポンスの際に返却されますが、リクエストの際には無視されます。</div>
+    <div lang="en">CampaignServiceBiddingStrategy object describes auto bidding setting.<br>
+    biddingStrategyConfiguration is required in ADD operation. Although failedBiddingStrategyConfiguration will be returned in the response, it will be ignored on input.</div>

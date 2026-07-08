@@ -1,0 +1,23 @@
+SsaAdGroupTargetServiceTargetType:
+  type: string
+  nullable: true
+  enum:
+    - AGE_TARGET
+    - GENDER_TARGET
+    - UNKNOWN
+  title: SsaAdGroupTargetServiceTargetType
+  description: |
+    <div lang="ja">SsaAdGroupTargetServiceTargetTypeは、ターゲティング種別を表します。<br>
+    SET時、このフィールドは必須となります。<br>
+    REPLACE時、operand[]/targetTypeは必須となり、operand[]/ssaAdGroupTargets[]/target/targetTypeは無視されます。</div>
+    <div lang="en">SsaAdGroupTargetServiceTargetType describes the target type.<br>
+    This field is required in SET operation.<br>
+    In a REPLACE operation, operand[]/targetType is required, and operand[]/ssaAdGroupTargets[]/target/targetType is ignored.</div>
+    <dl class=term>
+      <dt class="term__item">AGE_TARGET</dt>
+      <dd class="term__desc"><span lang="ja">年齢ターゲティングです。</span><span lang="en">Age targeting.</span></dd>
+      <dt class="term__item">GENDER_TARGET</dt>
+      <dd class="term__desc"><span lang="ja">性別ターゲティングです。</span><span lang="en">Gender targeting.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown value.</span></dd>
+    </dl>

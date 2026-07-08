@@ -1,0 +1,21 @@
+SsaAdGroupTargetServiceValue:
+  type: object
+  nullable: true
+  properties:
+    errors:
+      type: array
+      nullable: true
+      items:
+        $ref: '../../Error.yaml#/Error'
+    operationSucceeded:
+      type: boolean
+      nullable: true
+      description: |
+        <div lang="ja">処理結果です。</div>
+        <div lang="en">Process results.</div>
+    ssaAdGroupTarget:
+      $ref: 'SsaAdGroupTarget.yaml#/SsaAdGroupTarget'
+  title: SsaAdGroupTargetServiceValue
+  description: |
+    <div lang="ja">SsaAdGroupTargetServiceValueオブジェクトは、広告グループターゲティング情報の処理結果（1 Entity）を保持します。</div>
+    <div lang="en">SsaAdGroupTargetServiceValue object contains operation results (one entity) of ad group targeting.</div>

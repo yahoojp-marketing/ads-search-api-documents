@@ -1,0 +1,25 @@
+SsaProductGroupServiceAddOperation:
+  type: object
+  nullable: true
+  required:
+  - accountId
+  - operand
+  properties:
+    accountId:
+      type: integer
+      nullable: false
+      format: int64
+      description: |
+        <div lang="ja">アカウントIDです。</div>
+        <div lang="en">Account ID.</div>
+    operand:
+      type: array
+      nullable: true
+      items:
+        $ref: 'SsaProductGroupAddOperand.yaml#/SsaProductGroupAddOperand'
+      minItems: 1
+      maxItems: 2000
+  title: SsaProductGroupServiceAddOperation
+  description: |
+    <div lang="ja">SsaProductGroupServiceAddOperationオブジェクトは、操作の対象となる商品グループと処理の内容を表します。</div>
+    <div lang="en">SsaProductGroupServiceAddOperation displays target product group information and its operation results.</div>

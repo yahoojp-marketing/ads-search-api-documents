@@ -1,0 +1,25 @@
+SsaAdGroupTargetServiceReplaceOperation:
+  type: object
+  nullable: true
+  required:
+    - accountId
+    - operand
+  properties:
+    accountId:
+      type: integer
+      nullable: false
+      format: int64
+      description: |
+        <div lang="ja">アカウントIDです。</div>
+        <div lang="en">Account ID.</div>
+    operand:
+      type: array
+      nullable: true
+      items:
+        $ref: 'SsaAdGroupTargetServiceList.yaml#/SsaAdGroupTargetServiceList'
+      minItems: 1
+      maxItems: 2000
+  title: SsaAdGroupTargetServiceReplaceOperation
+  description: |
+    <div lang="ja">SsaAdGroupTargetServiceReplaceOperationオブジェクトは、広告グループターゲティング情報を格納するコンテナです。</div>
+    <div lang="en">SsaAdGroupTargetServiceReplaceOperation object is a container of ad group targeting information.</div>

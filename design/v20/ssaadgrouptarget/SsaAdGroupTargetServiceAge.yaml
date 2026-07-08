@@ -1,0 +1,54 @@
+SsaAdGroupTargetServiceAge:
+  type: string
+  nullable: true
+  enum:
+    - AGE_RANGE_18_19
+    - AGE_RANGE_20_24
+    - AGE_RANGE_25_29
+    - AGE_RANGE_30_34
+    - AGE_RANGE_35_39
+    - AGE_RANGE_40_44
+    - AGE_RANGE_45_49
+    - AGE_RANGE_50_54
+    - AGE_RANGE_55_59
+    - AGE_RANGE_60_64
+    - AGE_RANGE_65_69
+    - AGE_RANGE_70_OVER
+    - AGE_RANGE_UNKNOWN
+    - UNKNOWN
+  title: SsaAdGroupTargetServiceAge
+  description: |
+    <div lang="ja">SsaAdGroupTargetServiceAgeは、年齢ターゲティングの値を表します。<br>
+    REPLACE時、targetTypeがAGE_TARGETの場合に指定します。</div>
+    <div lang="en">SsaAdGroupTargetServiceAge describes age targeting values.<br>
+    Specify this field when targetType is AGE_TARGET in REPLACE operation.</div>
+    <dl class=term>
+      <dt class="term__item">AGE_RANGE_18_19</dt>
+      <dd class="term__desc"><span lang="ja">18歳から19歳です。</span><span lang="en">From 18 to 19.</span></dd>
+      <dt class="term__item">AGE_RANGE_20_24</dt>
+      <dd class="term__desc"><span lang="ja">20歳から24歳です。</span><span lang="en">From 20 to 24.</span></dd>
+      <dt class="term__item">AGE_RANGE_25_29</dt>
+      <dd class="term__desc"><span lang="ja">25歳から29歳です。</span><span lang="en">From 25 to 29.</span></dd>
+      <dt class="term__item">AGE_RANGE_30_34</dt>
+      <dd class="term__desc"><span lang="ja">30歳から34歳です。</span><span lang="en">From 30 to 34.</span></dd>
+      <dt class="term__item">AGE_RANGE_35_39</dt>
+      <dd class="term__desc"><span lang="ja">35歳から39歳です。</span><span lang="en">From 35 to 39.</span></dd>
+      <dt class="term__item">AGE_RANGE_40_44</dt>
+      <dd class="term__desc"><span lang="ja">40歳から44歳です。</span><span lang="en">From 40 to 44.</span></dd>
+      <dt class="term__item">AGE_RANGE_45_49</dt>
+      <dd class="term__desc"><span lang="ja">45歳から49歳です。</span><span lang="en">From 45 to 49.</span></dd>
+      <dt class="term__item">AGE_RANGE_50_54</dt>
+      <dd class="term__desc"><span lang="ja">50歳から54歳です。</span><span lang="en">From 50 to 54.</span></dd>
+      <dt class="term__item">AGE_RANGE_55_59</dt>
+      <dd class="term__desc"><span lang="ja">55歳から59歳です。</span><span lang="en">From 55 to 59.</span></dd>
+      <dt class="term__item">AGE_RANGE_60_64</dt>
+      <dd class="term__desc"><span lang="ja">60歳から64歳です。</span><span lang="en">From 60 to 64.</span></dd>
+      <dt class="term__item">AGE_RANGE_65_69</dt>
+      <dd class="term__desc"><span lang="ja">65歳から69歳です。</span><span lang="en">From 65 to 69.</span></dd>
+      <dt class="term__item">AGE_RANGE_70_OVER</dt>
+      <dd class="term__desc"><span lang="ja">70歳以上です。</span><span lang="en">70 and over.</span></dd>
+      <dt class="term__item">AGE_RANGE_UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">年齢不明です。</span><span lang="en">Age unknown.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown value.</span></dd>
+    </dl>

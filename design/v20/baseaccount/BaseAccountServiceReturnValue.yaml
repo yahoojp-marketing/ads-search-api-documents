@@ -1,0 +1,13 @@
+BaseAccountServiceReturnValue:
+  type: object
+  nullable: true
+  properties:
+    values:
+      type: array
+      nullable: true
+      items:
+        $ref: 'BaseAccountServiceValue.yaml#/BaseAccountServiceValue'
+  title: BaseAccountServiceReturnValue
+  description: |
+    <div lang="ja">BaseAccountServiceReturnValueオブジェクトは、アカウント情報を格納するコンテナです。</div>
+    <div lang="en">The BaseAccountServiceReturnValue object is a container for storing account information.</div>

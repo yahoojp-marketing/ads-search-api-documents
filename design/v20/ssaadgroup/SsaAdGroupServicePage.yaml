@@ -1,0 +1,20 @@
+SsaAdGroupServicePage:
+  type: object
+  nullable: true
+  properties:
+    totalNumEntries:
+      type: integer
+      nullable: false
+      format: int32
+      description: |
+        <div lang="ja">取得される項目の総件数です。</div>
+        <div lang="en">Total number of entries in the result.</div>
+    values:
+      type: array
+      nullable: true
+      items:
+        $ref: 'SsaAdGroupServiceValue.yaml#/SsaAdGroupServiceValue'
+  title: SsaAdGroupServicePage
+  description: |
+    <div lang="ja">SsaAdGroupServicePageオブジェクトは、取得される広告グループに関するエントリーを表します。</div>
+    <div lang="en">SsaAdGroupServicePage object displays entries for ad group.</div>

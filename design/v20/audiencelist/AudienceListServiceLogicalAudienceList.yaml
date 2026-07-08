@@ -1,0 +1,17 @@
+AudienceListServiceLogicalAudienceList:
+  type: object
+  nullable: true
+  properties:
+    logicalGroup:
+      type: array
+      nullable: true
+      items:
+        $ref: 'AudienceListServiceLogicalGroup.yaml#/AudienceListServiceLogicalGroup'
+  title: AudienceListServiceLogicalAudienceList
+  description: |
+    <div lang="ja">AudienceListServiceLogicalAudienceListは、組合せオーディエンスリストの情報を保持するオブジェクトです。<br>
+    このフィールドは、省略可能となります。<br>
+    ※audienceListTypeがLOGICALの場合、このフィールドは必須となります。</div>
+    <div lang="en">AudienceListServiceLogicalAudienceList is an object that holds the combination audience list information.<br>
+    This field is optional.<br>
+    If the audienceListType is LOGICAL, this field is required.</div>

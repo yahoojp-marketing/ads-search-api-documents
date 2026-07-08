@@ -1,0 +1,29 @@
+SsaAdGroupServiceMaximizeConversionsBiddingScheme:
+  type: object
+  nullable: true
+  properties:
+    targetCpa:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        広告グループ目標単価（tCPA）です。<br>
+        ADDおよびSET時、このフィールドは省略可能となります。<br>
+        ※日本円のみの設定です。<br>
+        ※campaignBiddingStrategyTypeがMAXIMIZE_CONVERSIONSの場合のみ指定可能です。
+        </div>
+        <div lang="en">
+        Target CPA (tCPA) of ad group.<br>
+        This field is optional in ADD and SET operation.<br>
+        *JPY only.<br>
+        *This can only be specified when campaignBiddingStrategyType is MAXIMIZE_CONVERSIONS.
+        </div>
+  title: SsaAdGroupServiceMaximizeConversionsBiddingScheme
+  description: |
+    <div lang="ja">
+    SsaAdGroupServiceMaximizeConversionsBiddingSchemeオブジェクトは、広告グループ目標単価（tCPA）の設定情報を表します。
+    </div>
+    <div lang="en">
+    SsaAdGroupServiceMaximizeConversionsBiddingScheme object holds configuration information of Target CPA (tCPA) of ad group.
+    </div>

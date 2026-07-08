@@ -1,0 +1,33 @@
+SsaCampaignServiceMaximizeConversionValueBiddingScheme:
+  type: object
+  nullable: true
+  properties:
+    targetRoas:
+      type: number
+      nullable: true
+      format: double
+      description: |
+        <div lang="ja">
+        広告費用対効果の目標値です。※Return On Advertising Spend(ROAS)<br>
+        ADDおよびSET時、このフィールドは任意で指定できます。<br>
+        SET時、BiddingStrategyTypeにMAXIMIZE_CONVERSION_VALUEが指定されていて、targetRoasを指定しない場合、targetRoasの値がクリアされます。<br>
+        ※現在利用できません。
+        </div>
+        <div lang="en">
+        Target ROAS. * ROAS: Return On Advertising Spend.<br>
+        This field can be optionally specified in ADD and SET operation.<br>
+        If BiddingStrategyType is MAXIMIZE_CONVERSION_VALUE and targetCpa is not specified in SET operation, the value in this field will be cleared.<br>
+        *Not Available.
+        </div>
+  title: SsaCampaignServiceMaximizeConversionValueBiddingScheme
+  description: |
+    <div lang="ja">
+    SsaCampaignServiceMaximizeConversionValueBiddingSchemeオブジェクトは、広告費用対効果の目標値の設定情報を表します。<br>
+    このフィールドは、ADD時およびSET時に省略可能となり、REMOVE時に無視されます。<br>
+    ※BiddingStrategyTypeがMAXIMIZE_CONVERSION_VALUEの場合、指定可能となります。
+    </div>
+    <div lang="en">
+    SsaCampaignServiceMaximizeConversionValueBiddingScheme object displays bidding setting for Target ROAS.<br>
+    This field is optional in ADD and SET operation, and will be ignored in REMOVE operation.<br>
+    *This field can only be specified (optional) when BiddingStrategyType is MAXIMIZE_CONVERSION_VALUE.
+    </div>

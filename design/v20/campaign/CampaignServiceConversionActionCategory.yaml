@@ -1,0 +1,75 @@
+CampaignServiceConversionActionCategory:
+  type: string
+  nullable: true
+  enum:
+  - DEFAULT
+  - PAGE_VIEW
+  - PURCHASE
+  - SIGNUP
+  - DOWNLOAD
+  - ADD_TO_CART
+  - BEGIN_CHECKOUT
+  - SUBSCRIBE_PAID
+  - PHONE_CALL_LEAD
+  - SUBMIT_LEAD_FORM
+  - BOOK_APPOINTMENT
+  - REQUEST_QUOTE
+  - GET_DIRECTIONS
+  - OUTBOUND_CLICK
+  - CONTACT
+  - ENGAGEMENT
+  - STORE_VISIT
+  - STORE_SALE
+  - QUALIFIED_LEAD
+  - CONVERTED_LEAD
+  - UNKNOWN
+  title: CampaignServiceConversionActionCategory
+  description: |
+    <div lang="ja">CampaignServiceConversionActionCategory、コンバージョン測定の目的です。<br>
+    ADD時およびSET時、このフィールドはcampaignConversionGoals配下では必須となります。</div>
+    <div lang="en">CampaignServiceConversionActionCategory is conversion tracking purpose.<br>
+    Under campaignConversionGoals, this field is required in ADD and SET operation.</div>
+    <dl class=term>
+      <dt class="term__item">DEFAULT</dt>
+      <dd class="term__desc"><span lang="ja">その他です。</span><span lang="en">Others.</span></dd>
+      <dt class="term__item">PAGE_VIEW</dt>
+      <dd class="term__desc"><span lang="ja">主要なページの閲覧です。<br>重要なページなど特定ページの閲覧数の測定を行います。</span><span lang="en">Page Access.<br>This is used to measure page views of specific page such as an important page.</span></dd>
+      <dt class="term__item">PURCHASE</dt>
+      <dd class="term__desc"><span lang="ja">購入/販売です。<br>商品の注文やサービスへのお申し込みなど、販売につながった測定を行います。</span><span lang="en">Purchase/Sales.<br>It is used to measure sales such as order and application of the items or service.</span></dd>
+      <dt class="term__item">SIGNUP</dt>
+      <dd class="term__desc"><span lang="ja">お申し込みです。<br>会員やメールマガジンの登録数などの測定を行います。</span><span lang="en">Application.<br>It is used to measure registration of membership or subscription.</span></dd>
+      <dt class="term__item">DOWNLOAD</dt>
+      <dd class="term__desc"><span lang="ja">ダウンロードです。<br>※広告管理ツールおよびレポート上での表示は「その他」になります。</span><span lang="en"> Download.<br> *This will be displayed as Others in Campaign Management Tool and Reports. </span></dd>
+      <dt class="term__item">ADD_TO_CART</dt>
+      <dd class="term__desc"><span lang="ja">カートへの追加です。</span><span lang="en">Add to cart.</span></dd>
+      <dt class="term__item">BEGIN_CHECKOUT</dt>
+      <dd class="term__desc"><span lang="ja">決済の開始です。</span><span lang="en">Begin checkout.</span></dd>
+      <dt class="term__item">SUBSCRIBE_PAID</dt>
+      <dd class="term__desc"><span lang="ja">定期購入です。</span><span lang="en">Subscription.</span></dd>
+      <dt class="term__item">PHONE_CALL_LEAD</dt>
+      <dd class="term__desc"><span lang="ja">架電です。</span><span lang="en">Phone call leads.</span></dd>
+      <dt class="term__item">SUBMIT_LEAD_FORM</dt>
+      <dd class="term__desc"><span lang="ja">見込み客のフォーム送信です。</span><span lang="en">Form submission by prospect.</span></dd>
+      <dt class="term__item">BOOK_APPOINTMENT</dt>
+      <dd class="term__desc"><span lang="ja">予約です。</span><span lang="en">Reservation.</span></dd>
+      <dt class="term__item">REQUEST_QUOTE</dt>
+      <dd class="term__desc"><span lang="ja">見積もりのリクエストです。</span><span lang="en">Request a quote.</span></dd>
+      <dt class="term__item">GET_DIRECTIONS</dt>
+      <dd class="term__desc"><span lang="ja">ルート・乗換案内です。</span><span lang="en">Route / transfer information.</span></dd>
+      <dt class="term__item">OUTBOUND_CLICK</dt>
+      <dd class="term__desc"><span lang="ja">離脱クリックです。</span><span lang="en">Withdrawal click.</span></dd>
+      <dt class="term__item">CONTACT</dt>
+      <dd class="term__desc"><span lang="ja">連絡先です。</span><span lang="en">Contact.</span></dd>
+      <dt class="term__item">ENGAGEMENT</dt>
+      <dd class="term__desc"><span lang="ja">タグの発火です。</span><span lang="en">Engagements.</span></dd>
+      <dt class="term__item">STORE_VISIT</dt>
+      <dd class="term__desc"><span lang="ja">実店舗に来店です。</span><span lang="en">Store visits.</span></dd>
+      <dt class="term__item">STORE_SALE</dt>
+      <dd class="term__desc"><span lang="ja">実店舗で購入です。</span><span lang="en">Store sales.</span></dd>
+      <dt class="term__item">QUALIFIED_LEAD</dt>
+      <dd class="term__desc"><span lang="ja">有望な見込み客です。</span><span lang="en">Qualified leads.</span></dd>
+      <dt class="term__item">CONVERTED_LEAD</dt>
+      <dd class="term__desc"><span lang="ja">取引歴のある見込み客です。</span><span lang="en">Converted leads.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown value.</span></dd>
+    </dl>

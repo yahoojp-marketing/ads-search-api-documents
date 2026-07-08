@@ -1,0 +1,46 @@
+SsaProductGroupServiceProductGroupSetting:
+  type: object
+  nullable: true
+  properties:
+    productGroupId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">商品グループIDです。</div>
+        <div lang="en">Product group ID.</div>
+    userStatus:
+      $ref: 'SsaProductGroupServiceUserStatus.yaml#/SsaProductGroupServiceUserStatus'
+    cpc:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        商品グループ入札価格（CPC）です。
+        </div>
+        <div lang="en">
+        Bid of product group (CPC).
+        </div>
+    nodeType:
+      $ref: 'SsaProductGroupServiceNodeType.yaml#/SsaProductGroupServiceNodeType'
+    productGroupSchema:
+      $ref: 'SsaProductGroupServiceProductGroupSchema.yaml#/SsaProductGroupServiceProductGroupSchema'
+    customParameters:
+      $ref: 'SsaProductGroupServiceCustomParameters.yaml#/SsaProductGroupServiceCustomParameters'
+    trackingUrl:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">トラッキングURLです。<br>
+        このフィールドは、省略可能となります。<br>
+        ※SET時、こちらが審査中の場合、編集はできません。また、変更がない場合、審査対象とはなりません。</div>
+        <div lang="en">Tracking URL.<br>
+        This field is optional.<br>
+        *In SET operation, cannot update it when this field is in editorial review. In addition, if there is no change, it will not to be reviewed.</div>
+    urlReviewData:
+      $ref: 'SsaProductGroupServiceUrlReviewData.yaml#/SsaProductGroupServiceUrlReviewData'
+  title: SsaProductGroupServiceProductGroupSetting
+  description: |
+    <div lang="ja">SsaProductGroupServiceProductGroupSetting オブジェクトは、商品グループ設定を表します。</div>
+    <div lang="en">SsaProductGroupServiceProductGroupSetting object describes product group setting information.</div>

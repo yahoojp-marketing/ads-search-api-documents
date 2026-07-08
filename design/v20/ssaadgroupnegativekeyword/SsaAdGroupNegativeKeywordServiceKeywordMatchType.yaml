@@ -1,0 +1,24 @@
+SsaAdGroupNegativeKeywordServiceKeywordMatchType:
+  type: string
+  nullable: true
+  enum:
+    - EXACT
+    - PHRASE
+    - BROAD
+    - UNKNOWN
+  title: SsaAdGroupNegativeKeywordServiceKeywordMatchType
+  description: |
+    <div lang="ja">SsaAdGroupNegativeKeywordServiceKeywordMatchTypeは、対象外キーワードのマッチタイプを表します。<br>
+    ADD時、このフィールドは必須です。</div>
+    <div lang="en">SsaAdGroupNegativeKeywordServiceKeywordMatchType describes the match type of negative keyword.<br>
+    This field is required in ADD operation.</div>
+    <dl class=term>
+      <dt class="term__item">EXACT</dt>
+      <dd class="term__desc"><span lang="ja">完全一致です。</span><span lang="en">Exact match.</span></dd>
+      <dt class="term__item">PHRASE</dt>
+      <dd class="term__desc"><span lang="ja">フレーズ一致です。</span><span lang="en">Phrase match.</span></dd>
+      <dt class="term__item">BROAD</dt>
+      <dd class="term__desc"><span lang="ja">部分一致です。</span><span lang="en">Broad match.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown value.</span></dd>
+    </dl>

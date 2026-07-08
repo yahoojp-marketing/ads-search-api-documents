@@ -1,0 +1,13 @@
+SsaProductGroupServiceReturnValue:
+  type: object
+  nullable: true
+  properties:
+    values:
+      type: array
+      nullable: true
+      items:
+        $ref: 'SsaProductGroupServiceValue.yaml#/SsaProductGroupServiceValue'
+  title: SsaProductGroupServiceReturnValue
+  description: |
+    <div lang="ja">SsaProductGroupServiceReturnValueオブジェクトは、操作の対象となる商品グループと処理の内容です。</div>
+    <div lang="en">SsaProductGroupServiceReturnValue object is a container which has product group information including its operation results.</div>

@@ -1,0 +1,40 @@
+CampaignBudget:
+  type: object
+  nullable: true
+  properties:
+    accountId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">アカウントIDです。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
+        <div lang="en">Account ID.<br>
+        Although this field will be returned in the response, it will be ignored on input.</div>
+    campaignBudgetId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">共有予算IDです。<br>
+        このフィールドは、SETおよびREMOVE時に必須となり、ADD時に無視されます。</div>
+        <div lang="en">CampaignBudget ID.<br>This field is required in SET and REMOVE operation, and will be ignored in ADD operation.</div>
+    campaignBudgetName:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">共有予算名です。<br>このフィールドは、ADD時に必須となり、SET時に省略可能となります。</div>
+        <div lang="en">CampaignBudget name.<br>This field is required in ADD operation, and will be optional in SET operation.</div>
+    amount:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">共有予算の金額です。<br>
+        このフィールドは、ADD時は必須となり、SET時は省略可能となります。</div>
+        <div lang="en">Amount of budget of Campaign.<br>
+        This field is required in ADD operation, and is optional in SET operation.</div>
+  title: CampaignBudget
+  description: |
+    <div lang="ja">CampaignBudgetオブジェクトは、共有予算の情報を格納します。</div>
+    <div lang="en">CampaignBudget object contains the information of CampaignBudget.</div>

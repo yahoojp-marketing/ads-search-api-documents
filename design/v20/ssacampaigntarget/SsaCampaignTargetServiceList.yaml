@@ -1,0 +1,24 @@
+SsaCampaignTargetServiceList:
+  type: object
+  nullable: true
+  properties:
+    campaignTargets:
+      type: array
+      nullable: true
+      items:
+        $ref: 'SsaCampaignTarget.yaml#/SsaCampaignTarget'
+    campaignId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">キャンペーンIDです。<br>
+        REPLACE時、このフィールドは必須です。</div>
+        <div lang="en">Campaign ID.<br>
+        This field is required in REPLACE operation.</div>
+    targetType:
+      $ref: 'SsaCampaignTargetServiceTargetType.yaml#/SsaCampaignTargetServiceTargetType'
+  title: SsaCampaignTargetServiceList
+  description: |
+    <div lang="ja">SsaCampaignTargetServiceListオブジェクトは、キャンペーンの各種ターゲティング設定を表します。</div>
+    <div lang="en">SsaCampaignTargetServiceList object describes each type of targeting setting of Campaign.</div>

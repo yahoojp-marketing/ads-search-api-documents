@@ -1,0 +1,21 @@
+SsaAdGroupNegativeKeywordServiceValue:
+  type: object
+  nullable: true
+  properties:
+    errors:
+      type: array
+      nullable: true
+      items:
+        $ref: '../../Error.yaml#/Error'
+    operationSucceeded:
+      type: boolean
+      nullable: true
+      description: |
+        <div lang="ja">処理結果です。</div>
+        <div lang="en">Result of process.</div>
+    ssaAdGroupNegativeKeyword:
+      $ref: 'SsaAdGroupNegativeKeyword.yaml#/SsaAdGroupNegativeKeyword'
+  title: SsaAdGroupNegativeKeywordServiceValue
+  description: |
+    <div lang="ja">SsaAdGroupNegativeKeywordServiceValueオブジェクトは、SSA広告グループの対象外キーワード情報です。</div>
+    <div lang="en">SsaAdGroupNegativeKeywordServiceValue object is negative keyword information in SSA ad group-level including operation results.</div>

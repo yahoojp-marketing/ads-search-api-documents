@@ -1,0 +1,38 @@
+CampaignCriterion:
+  type: object
+  nullable: true
+  properties:
+    accountId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">アカウントIDです。<br>
+        ADD時およびREMOVE時、このフィールドは必須です。</div>
+        <div lang="en">Account ID.<br>
+        This field is required in ADD and REMOVE operation.</div>
+    campaignId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">キャンペーンIDです。<br>
+        ADD時およびREMOVE時、このフィールドは必須です。</div>
+        <div lang="en">Campaign ID.<br>
+        This field is required in ADD and REMOVE operation.</div>
+    campaignName:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">キャンペーン名です。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
+        <div lang="en">Campaign name.<br>
+        Although this field will be returned in the response, it will be ignored on input.</div>
+    criterion:
+      $ref: 'CampaignCriterionServiceCriterion.yaml#/CampaignCriterionServiceCriterion'
+    use:
+      $ref: 'CampaignCriterionServiceUse.yaml#/CampaignCriterionServiceUse'
+  title: CampaignCriterion
+  description: |
+    <div lang="ja">CampaignCriterionオブジェクトは、キャンペーンのクライテリアを表します。</div>
+    <div lang="en">CampaignCriterion object describes campaign criteria.</div>

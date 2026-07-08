@@ -1,0 +1,21 @@
+SsaReportDefinitionServiceValue:
+  type: object
+  nullable: true
+  properties:
+    errors:
+      type: array
+      nullable: true
+      items:
+        $ref: '../../Error.yaml#/Error'
+    operationSucceeded:
+      type: boolean
+      nullable: true
+      description: |
+        <div lang="ja">処理結果です。trueの場合は、処理は成功しました。falseの場合は処理が失敗しています。</div>
+        <div lang="en">The process results. If true, the process succeeded. If false, the process failed.</div>
+    reportDefinition:
+      $ref: 'SsaReportDefinition.yaml#/SsaReportDefinition'
+  title: SsaReportDefinitionServiceValue
+  description: |
+    <div lang="ja">SsaReportDefinitionServiceValueオブジェクトは、処理結果を含むレポートの情報を表します。</div>
+    <div lang="en">SsaReportDefinitionServiceValue is an information of the report including operation result.</div>

@@ -1,0 +1,26 @@
+SsaProductGroupServiceProductAttributeCustomLabelType:
+  type: string
+  nullable: true
+  enum:
+    - PRODUCT_ATTRIBUTE_CUSTOM_LABEL_0
+    - PRODUCT_ATTRIBUTE_CUSTOM_LABEL_1
+    - PRODUCT_ATTRIBUTE_CUSTOM_LABEL_2
+    - PRODUCT_ATTRIBUTE_CUSTOM_LABEL_3
+    - PRODUCT_ATTRIBUTE_CUSTOM_LABEL_4
+    - UNKNOWN
+  description: |
+    <dl class=term>
+      <dt class="term__item">PRODUCT_ATTRIBUTE_CUSTOM_LABEL_0</dt>
+      <dd class="term__desc"><span lang="ja">商品属性カスタムラベル0</span><span lang="en">Product attribute custom label 0</span></dd>
+      <dt class="term__item">PRODUCT_ATTRIBUTE_CUSTOM_LABEL_1</dt>
+      <dd class="term__desc"><span lang="ja">商品属性カスタムラベル1</span><span lang="en">Product attribute custom label 1</span></dd>
+      <dt class="term__item">PRODUCT_ATTRIBUTE_CUSTOM_LABEL_2</dt>
+      <dd class="term__desc"><span lang="ja">商品属性カスタムラベル2</span><span lang="en">Product attribute custom label 2</span></dd>
+      <dt class="term__item">PRODUCT_ATTRIBUTE_CUSTOM_LABEL_3</dt>
+      <dd class="term__desc"><span lang="ja">商品属性カスタムラベル3</span><span lang="en">Product attribute custom label 3</span></dd>
+      <dt class="term__item">PRODUCT_ATTRIBUTE_CUSTOM_LABEL_4</dt>
+      <dd class="term__desc"><span lang="ja">商品属性カスタムラベル4</span><span lang="en">Product attribute custom label 4</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown value.</span></dd>
+    </dl>
+  title: SsaProductGroupServiceProductAttributeCustomLabelType

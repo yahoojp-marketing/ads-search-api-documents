@@ -1,0 +1,25 @@
+AccountAssetServiceReplaceOperation:
+  type: object
+  nullable: true
+  required:
+    - accountId
+    - operand
+  properties:
+    accountId:
+      type: integer
+      nullable: false
+      format: int64
+      description: |
+        <div lang="ja">アカウントIDです。</div>
+        <div lang="en">Account ID.</div>
+    operand:
+      type: array
+      nullable: true
+      items:
+        $ref: 'AccountAssetServiceList.yaml#/AccountAssetServiceList'
+      minItems: 1
+      maxItems: 200
+  title: AccountAssetServiceReplaceOperation
+  description: |
+    <div lang="ja">AccountAssetServiceReplaceOperationオブジェクトは、アセット情報を格納するコンテナです。</div>
+    <div lang="en">AccountAssetServiceReplaceOperation is a container of Asset information.</div>

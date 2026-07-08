@@ -1,0 +1,58 @@
+CampaignSharedSetServiceSelector:
+  type: object
+  nullable: true
+  required:
+  - accountId
+  properties:
+    accountId:
+      type: integer
+      nullable: false
+      format: int64
+      description: |
+        <div lang="ja">検索条件：アカウントIDです。</div>
+        <div lang="en">Search condition : Account ID.</div>
+    campaignIds:
+      type: array
+      nullable: true
+      items:
+        type: integer
+        nullable: true
+        format: int64
+      maxItems: 1000
+      description: |
+        <div lang="ja">検索条件：キャンペーンIDです。</div>
+        <div lang="en">Search condition : Campaign ID.</div>
+    sharedListIds:
+      type: array
+      nullable: true
+      items:
+        type: integer
+        nullable: true
+        format: int64
+      maxItems: 20
+      description: |
+        <div lang="ja">検索条件：対象外キーワードリストIDです。</div>
+        <div lang="en">Search criteria : Shared list ID.</div>
+    numberResults:
+      type: integer
+      nullable: true
+      format: int32
+      minimum: 1
+      maximum: 1000
+      default: 1000
+      description: |
+        <div lang="ja">開始位置から取得する結果の数。このフィールドは、1以上を指定する必要があります。</div>
+        <div lang="en">The number of results to retrieve starting from the initial position. This field must be greater than or equal to 1.</div>
+    startIndex:
+      type: integer
+      nullable: true
+      format: int32
+      minimum: 1
+      default: 1
+      description: |
+        <div lang="ja">取得を開始する結果セット内の位置。このフィールドは、1以上を指定する必要があります。</div>
+        <div lang="en">The position within the result set where retrieval begins. This field must be greater than or equal to 1.</div>
+  title: CampaignSharedSetServiceSelector
+  description: |
+    <div lang="ja">CampaignSharedSetServiceSelectorは、検索条件（実行パラメータ）を保持するオブジェクトです。</div>
+    <div lang="en">CampaignSharedSetServiceSelector is object to hold the search criteria (exec parameter).</div>

@@ -1,0 +1,25 @@
+SsaAdGroupServiceOperation:
+  type: object
+  nullable: true
+  required:
+  - accountId
+  - operand
+  properties:
+    accountId:
+      type: integer
+      nullable: false
+      format: int64
+      description: |
+        <div lang="ja">アカウントIDです。</div>
+        <div lang="en">Account ID.</div>
+    operand:
+      type: array
+      nullable: true
+      items:
+        $ref: 'SsaAdGroup.yaml#/SsaAdGroup'
+      minItems: 1
+      maxItems: 2000
+  title: SsaAdGroupServiceOperation
+  description: |
+    <div lang="ja">SsaAdGroupServiceOperationオブジェクトは、操作の対象となる広告グループと処理の内容を表します。</div>
+    <div lang="en">SsaAdGroupServiceOperation displays target ad group information and its operation results.</div>

@@ -1,0 +1,23 @@
+SsaProductGroupServiceUrlReviewData:
+  type: object
+  nullable: true
+  properties:
+    disapprovalReasonCodes:
+      type: array
+      nullable: true
+      items:
+        type: string
+        nullable: true
+      description: |
+        <div lang="ja">審査否認理由コードです。</div>
+        <div lang="en">Code of Disapproval reason.<br></div>
+    disapprovalReviewUrl:
+      $ref: 'SsaProductGroupServiceReviewUrl.yaml#/SsaProductGroupServiceReviewUrl'
+    urlApprovalStatus:
+      $ref: 'SsaProductGroupServiceUrlApprovalStatus.yaml#/SsaProductGroupServiceUrlApprovalStatus'
+  title: SsaProductGroupServiceUrlReviewData
+  description: |
+    <div lang="ja">SsaProductGroupServiceUrlReviewDataオブジェクトは、URLの審査状況を表します。<br>
+    このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
+    <div lang="en">SsaProductGroupServiceUrlReviewData object displays review status of URL.<br>
+    Although this field will be returned in the response, it will be ignored on input.</div>

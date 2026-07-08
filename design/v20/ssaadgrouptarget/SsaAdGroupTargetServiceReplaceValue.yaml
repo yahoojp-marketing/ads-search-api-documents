@@ -1,0 +1,24 @@
+SsaAdGroupTargetServiceReplaceValue:
+  type: object
+  nullable: true
+  properties:
+    ssaAdGroupTargets:
+      type: array
+      nullable: true
+      items:
+        $ref: 'SsaAdGroupTarget.yaml#/SsaAdGroupTarget'
+    errors:
+      type: array
+      nullable: true
+      items:
+        $ref: '../../Error.yaml#/Error'
+    operationSucceeded:
+      type: boolean
+      nullable: true
+      description: |
+        <div lang="ja">処理結果です。</div>
+        <div lang="en">Process results.</div>
+  title: SsaAdGroupTargetServiceReplaceValue
+  description: |
+    <div lang="ja">SsaAdGroupTargetServiceReplaceValueオブジェクトは、広告グループターゲティング情報を格納するコンテナです。</div>
+    <div lang="en">SsaAdGroupTargetServiceReplaceValue object is a container of ad group targeting information.</div>

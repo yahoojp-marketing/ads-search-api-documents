@@ -1,0 +1,18 @@
+SsaReportDefinitionServiceReportSortField:
+  type: object
+  nullable: true
+  properties:
+    field:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">レポート定義のソート対象です。<br>ADD時、このフィールドは必須となります。</div>
+        <div lang="en">Sort object (field) of report definition.<br>This field is required in ADD operation.</div>
+    reportSortType:
+      $ref: 'SsaReportDefinitionServiceReportSortType.yaml#/SsaReportDefinitionServiceReportSortType'
+  title: SsaReportDefinitionServiceReportSortField
+  description: |
+    <div lang="ja">SsaReportDefinitionServiceReportSortFieldオブジェクトは、レポート定義のソート詳細を表します。<br>
+    ADD時、このフィールドは省略可能となります。</div>
+    <div lang="en">SsaReportDefinitionServiceReportSortField object describes sort details of report definition.<br>
+    This field is optional in ADD operation.</div>

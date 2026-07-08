@@ -1,0 +1,13 @@
+SsaAdGroupServiceReturnValue:
+  type: object
+  nullable: true
+  properties:
+    values:
+      type: array
+      nullable: true
+      items:
+        $ref: 'SsaAdGroupServiceValue.yaml#/SsaAdGroupServiceValue'
+  title: SsaAdGroupServiceReturnValue
+  description: |
+    <div lang="ja">SsaAdGroupServiceReturnValueオブジェクトは、操作の対象となる広告グループと処理の内容です。</div>
+    <div lang="en">SsaAdGroupServiceReturnValue object is a container which has ad group information including its operation results.</div>

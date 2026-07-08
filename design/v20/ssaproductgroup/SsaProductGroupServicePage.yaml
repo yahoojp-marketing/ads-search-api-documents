@@ -1,0 +1,20 @@
+SsaProductGroupServicePage:
+  type: object
+  nullable: true
+  properties:
+    totalNumEntries:
+      type: integer
+      nullable: false
+      format: int32
+      description: |
+        <div lang="ja">取得される項目の総件数です。</div>
+        <div lang="en">Total number of entries in the result.</div>
+    values:
+      type: array
+      nullable: true
+      items:
+        $ref: 'SsaProductGroupServiceValue.yaml#/SsaProductGroupServiceValue'
+  title: SsaProductGroupServicePage
+  description: |
+    <div lang="ja">SsaProductGroupServicePageオブジェクトは、取得される商品グループに関するエントリーを表します。</div>
+    <div lang="en">SsaProductGroupServicePage object displays entries for product group.</div>

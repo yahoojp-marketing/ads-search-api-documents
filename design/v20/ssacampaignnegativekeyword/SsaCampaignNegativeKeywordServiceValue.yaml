@@ -1,0 +1,21 @@
+SsaCampaignNegativeKeywordServiceValue:
+  type: object
+  nullable: true
+  properties:
+    ssaCampaignNegativeKeyword:
+      $ref: 'SsaCampaignNegativeKeyword.yaml#/SsaCampaignNegativeKeyword'
+    errors:
+      type: array
+      nullable: true
+      items:
+        $ref: '../../Error.yaml#/Error'
+    operationSucceeded:
+      type: boolean
+      nullable: true
+      description: |
+        <div lang="ja">処理結果です。</div>
+        <div lang="en">The result of operation.</div>
+  title: SsaCampaignNegativeKeywordServiceValue
+  description: |
+    <div lang="ja">SsaCampaignNegativeKeywordServiceValueオブジェクトは、処理結果を含むキャンペーンの対象外キーワードを表します。</div>
+    <div lang="en">Campaign negative keywords including operation results.</div>

@@ -1,0 +1,24 @@
+SsaAdGroupTargetServiceGender:
+  type: string
+  nullable: true
+  enum:
+    - GENDER_MALE
+    - GENDER_FEMALE
+    - GENDER_UNKNOWN
+    - UNKNOWN
+  title: SsaAdGroupTargetServiceGender
+  description: |
+    <div lang="ja">SsaAdGroupTargetServiceGenderは、性別ターゲティングの値を表します。<br>
+    REPLACE時、targetTypeがGENDER_TARGETの場合に指定します。</div>
+    <div lang="en">SsaAdGroupTargetServiceGender describes gender targeting values.<br>
+    Specify this field when targetType is GENDER_TARGET in REPLACE operation.</div>
+    <dl class=term>
+      <dt class="term__item">GENDER_MALE</dt>
+      <dd class="term__desc"><span lang="ja">男性です。</span><span lang="en">Male.</span></dd>
+      <dt class="term__item">GENDER_FEMALE</dt>
+      <dd class="term__desc"><span lang="ja">女性です。</span><span lang="en">Female.</span></dd>
+      <dt class="term__item">GENDER_UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">性別不明です。</span><span lang="en">Gender unknown.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown value.</span></dd>
+    </dl>

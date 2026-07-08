@@ -1,0 +1,13 @@
+SsaAdGroupTargetServiceReplaceReturnValue:
+  type: object
+  nullable: true
+  properties:
+    values:
+      type: array
+      nullable: true
+      items:
+        $ref: 'SsaAdGroupTargetServiceReplaceValue.yaml#/SsaAdGroupTargetServiceReplaceValue'
+  title: SsaAdGroupTargetServiceReplaceReturnValue
+  description: |
+    <div lang="ja">SsaAdGroupTargetServiceReplaceReturnValueオブジェクトは、広告グループターゲティング情報の置換結果を保持します。</div>
+    <div lang="en">SsaAdGroupTargetServiceReplaceReturnValue object contains replace results of ad group targeting.</div>

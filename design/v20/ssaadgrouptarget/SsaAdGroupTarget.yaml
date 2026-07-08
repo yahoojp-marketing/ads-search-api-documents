@@ -1,0 +1,42 @@
+SsaAdGroupTarget:
+  type: object
+  nullable: true
+  properties:
+    adGroupId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">広告グループIDです。<br>
+        SET時、このフィールドは必須となります。</div>
+        <div lang="en">Ad group ID.<br>
+        This field is required in SET operation.</div>
+    bidMultiplier:
+      type: number
+      nullable: true
+      format: double
+      description: |
+        <div lang="ja">入札価格調整率です。0.1～10.00まで指定できます。<br>
+        小数点第二位まで指定可能です。<br>
+        SET時に更新可能なのはこのフィールドのみです。</div>
+        <div lang="en">Bid adjustment rate.<br>
+        Can be specified from 0.1 to 10.00.<br>
+        Up to two decimal places can be specified.<br>
+        In SET operation, only this field can be updated.</div>
+    campaignId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">キャンペーンIDです。<br>
+        SET時このフィールドは必須となります。</div>
+        <div lang="en">Campaign ID.<br>
+        This field is required in SET operation.</div>
+    target:
+      $ref: 'SsaAdGroupTargetServiceTarget.yaml#/SsaAdGroupTargetServiceTarget'
+  title: SsaAdGroupTarget
+  description: |
+    <div lang="ja">SsaAdGroupTargetオブジェクトは、広告グループに設定されているターゲティング情報を格納します。<br>
+    SET時は更新対象の識別にtarget配下のtargetTypeおよびtargetIdを使用し、ageTargetおよびgenderTargetは更新対象ではありません。</div>
+    <div lang="en">SsaAdGroupTarget object describes age and gender targeting information set to an ad group.<br>
+    In SET operation, target.targetType and target.targetId are used to identify the target to update, and ageTarget and genderTarget are not updated.</div>

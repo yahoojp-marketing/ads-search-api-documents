@@ -1,0 +1,17 @@
+SsaCampaignServiceCustomParameters:
+  type: object
+  nullable: true
+  properties:
+    isRemove:
+      $ref: 'SsaCampaignServiceIsRemove.yaml#/SsaCampaignServiceIsRemove'
+    parameters:
+      type: array
+      nullable: true
+      items:
+        $ref: 'SsaCampaignServiceCustomParameter.yaml#/SsaCampaignServiceCustomParameter'
+  title: SsaCampaignServiceCustomParameters
+  description: |
+    <div lang="ja">SsaCampaignServiceCustomParametersオブジェクトは、カスタムパラメータの設定を表します。<br>
+    ADD時およびSET時、このフィールドは省略可能となります。</div>
+    <div lang="en">SsaCampaignServiceCustomParameters displays the setting of custom parameters.<br>
+    This field is optional in ADD and SET operation.</div>

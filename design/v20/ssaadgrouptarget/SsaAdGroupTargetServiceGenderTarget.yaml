@@ -1,0 +1,12 @@
+SsaAdGroupTargetServiceGenderTarget:
+  type: object
+  nullable: true
+  properties:
+    gender:
+      $ref: 'SsaAdGroupTargetServiceGender.yaml#/SsaAdGroupTargetServiceGender'
+  title: SsaAdGroupTargetServiceGenderTarget
+  description: |
+    <div lang="ja">SsaAdGroupTargetServiceGenderTargetオブジェクトは、性別ターゲティングの設定を表します。<br>
+    targetTypeがGENDER_TARGETの場合、REPLACE時に指定します。</div>
+    <div lang="en">SsaAdGroupTargetServiceGenderTarget object describes gender targeting settings.<br>
+    Specify this field in REPLACE operation when targetType is GENDER_TARGET.</div>

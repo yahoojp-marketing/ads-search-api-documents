@@ -1,0 +1,22 @@
+SsaAdGroupTargetServiceTarget:
+  type: object
+  nullable: true
+  properties:
+    ageTarget:
+      $ref: 'SsaAdGroupTargetServiceAgeTarget.yaml#/SsaAdGroupTargetServiceAgeTarget'
+    genderTarget:
+      $ref: 'SsaAdGroupTargetServiceGenderTarget.yaml#/SsaAdGroupTargetServiceGenderTarget'
+    targetId:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">ターゲットIDです。<br>
+        このフィールドは、REPLACE時は無視され、SET時は必須となります。</div>
+        <div lang="en">Target ID.<br>
+        This field will be ignored in REPLACE operation, and is required in SET operation.</div>
+    targetType:
+      $ref: 'SsaAdGroupTargetServiceTargetType.yaml#/SsaAdGroupTargetServiceTargetType'
+  title: SsaAdGroupTargetServiceTarget
+  description: |
+    <div lang="ja">SsaAdGroupTargetServiceTargetオブジェクトは、ターゲティング設定情報を保持します。</div>
+    <div lang="en">SsaAdGroupTargetServiceTarget object contains targeting settings.</div>

@@ -1,0 +1,25 @@
+CampaignExportServiceDownloadSelector:
+  type: object
+  nullable: true
+  required:
+  - accountId
+  - jobId
+  properties:
+    accountId:
+      type: integer
+      nullable: false
+      format: int64
+      description: |
+        <div lang="ja">検索条件：アカウントIDです。</div>
+        <div lang="en">Search condition: Account ID.</div>
+    jobId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">検索条件：ジョブIDです。</div>
+        <div lang="en">Search condition: Job ID.</div>
+  title: CampaignExportServiceDownloadSelector
+  description: |
+    <div lang="ja">エクスポート結果をダウンロードします。</div>
+    <div lang="en">Download the export result.</div>

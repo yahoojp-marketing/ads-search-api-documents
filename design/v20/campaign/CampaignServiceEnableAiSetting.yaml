@@ -1,0 +1,27 @@
+CampaignServiceEnableAiSetting:
+  type: string
+  nullable: true
+  enum:
+  - 'TRUE'
+  - 'FALSE'
+  - UNKNOWN
+  title: CampaignServiceEnableAiSetting
+  description: |
+    <div lang="ja">CampaignServiceEnableAiSetting、キャンペーンのAIキーワード拡張設定の有効化です。<br>
+    ※現在、このフィールドは利用できません。<br>
+    campaignTypeがSTANDARDの場合のみ指定可能です。<br>
+    ADD時およびSET時、このフィールドは省略可能となります。<br>
+    ADD時のデフォルト設定値はFALSE(利用しない)です。</div>
+    <div lang="en">CampaignServiceEnableAiSetting is the setting to enable AI keyword expansion for campaign.<br>
+    *Currently this field is not available.<br>
+    This field can be specified only when campaignType is STANDARD.<br>
+    This field is optional in ADD and SET operation.<br>
+    The default value in ADD operation will be FALSE (Do not use).</div>
+    <dl class=term>
+      <dt class="term__item">TRUE</dt>
+      <dd class="term__desc"><span lang="ja">利用する。</span><span lang="en">Use.</span></dd>
+      <dt class="term__item">FALSE</dt>
+      <dd class="term__desc"><span lang="ja">利用しない。</span><span lang="en">Do not use.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown value.</span></dd>
+    </dl>

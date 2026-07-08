@@ -1,0 +1,31 @@
+SsaCampaignServiceMaximizeConversionsBiddingScheme:
+  type: object
+  nullable: true
+  properties:
+    targetCpa:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        キャンペーン目標単価(tCPA)です。<br>
+        ADDおよびSET時、このフィールドは任意で指定できます。<br>
+        SET時、BiddingStrategyTypeにMAXIMIZE_CONVERSIONSが指定されていて、targetCpaを指定しない場合、targetCpaの値がクリアされます。
+        </div>
+        <div lang="en">
+        Target CPA (tCPA) of campaign.<br>
+        This field can be optionally specified in ADD and SET operation.<br>
+        If BiddingStrategyType is MAXIMIZE_CONVERSIONS and targetCpa is not specified in SET operation, the value in this field will be cleared.
+        </div>
+  title: SsaCampaignServiceMaximizeConversionsBiddingScheme
+  description: |
+    <div lang="ja">
+    SsaCampaignServiceMaximizeConversionsBiddingSchemeオブジェクトは、キャンペーン目標単価(tCPA)の設定情報を表します。<br>
+    このフィールドは、ADD時およびSET時に省略可能となり、REMOVE時に無視されます。<br>
+    ※BiddingStrategyTypeがMAXIMIZE_CONVERSIONSの場合、指定可能となります。
+    </div>
+    <div lang="en">
+    SsaCampaignServiceMaximizeConversionsBiddingScheme object holds configuration information of Target CPA (tCPA) of campaign.<br>
+    This field is optional in ADD and SET operation, and will be ignored in REMOVE operation.<br>
+    *This field can only be specified (optional) when BiddingStrategyType is MAXIMIZE_CONVERSIONS.
+    </div>

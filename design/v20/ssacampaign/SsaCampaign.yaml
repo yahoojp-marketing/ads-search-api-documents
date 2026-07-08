@@ -1,0 +1,99 @@
+SsaCampaign:
+  type: object
+  nullable: true
+  properties:
+    biddingStrategyConfiguration:
+      $ref: 'SsaCampaignServiceBiddingStrategy.yaml#/SsaCampaignServiceBiddingStrategy'
+    budget:
+      $ref: 'SsaCampaignServiceBudget.yaml#/SsaCampaignServiceBudget'
+    campaignId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">キャンペーンIDです。<br>
+        SET時およびREMOVE時、このフィールドは必須です。</div>
+        <div lang="en">Campaign ID.<br>
+        This field is required in SET and REMOVE operation.</div>
+    campaignName:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">キャンペーン名です。<br>
+        このフィールドは、ADD時に必須となり、SET時に省略可能となります。</div>
+        <div lang="en">Campaign name.<br>
+        This field is required in ADD operation, and will be optional in SET operation.</div>
+    customParameters:
+      $ref: 'SsaCampaignServiceCustomParameters.yaml#/SsaCampaignServiceCustomParameters'
+    endDate:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">キャンペーンの終了日です。<br>
+        ADD時およびSET時、このフィールドは省略可能となります。ADD時のデフォルト設定値は20371231となります。<br>
+        過去の日付、開始日以前の日付は指定できません。<br>※YYYYMMDD形式です。</div>
+        <div lang="en">End date of Campaign.<br>
+        This field is optional in ADD and SET operation. The default value in ADD operation will be 20371231.<br>
+        *Cannot set the past date and date before the start date.<br>
+        *In YYYYMMDD format.</div>
+    isRemoveTrackingUrl:
+      $ref: 'SsaCampaignServiceIsRemove.yaml#/SsaCampaignServiceIsRemove'
+    servingStatus:
+      $ref: 'SsaCampaignServiceServingStatus.yaml#/SsaCampaignServiceServingStatus'
+    shopId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">ショップIDです。<br>
+        このフィールドは、ADD時に必須となり、SET時は無視されます。</div>
+        <div lang="en">Shop ID.<br>
+        This field is required in ADD operation, and will be ignored in SET operation.</div>
+    shopName:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">ショップ名です。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
+        <div lang="en">Shop name.<br>
+        Although this field will be returned in the response, it will be ignored on input.</div>
+    startDate:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">キャンペーンの開始日です。<br>
+        ADD時およびSET時、このフィールドは省略可能となります。ADD時のデフォルト設定値は当日日付となります。<br>
+        過去の日付は指定できません。<br>※配信開始済みのキャンペーンは変更できません。<br>
+        ※YYYYMMDD形式です。</div>
+        <div lang="en">Start date of Campaign.<br>
+        This field is optional in ADD and SET operation. The default value in ADD operation will be Today's date.<br>
+        *Cannot set the past date.<br>*Cannot change the date to the campaign that is already active.<br>
+        *In YYYYMMDD format.</div>
+    trackingUrl:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">トラッキングURLです。<br>
+        ADD時およびSET時、このフィールドは省略可能となります。</div>
+        <div lang="en">Tracking URL.<br>
+        This field is optional in ADD and SET operation.</div>
+    urlReviewData:
+      $ref: 'SsaCampaignServiceUrlReviewData.yaml#/SsaCampaignServiceUrlReviewData'
+    userStatus:
+      $ref: 'SsaCampaignServiceUserStatus.yaml#/SsaCampaignServiceUserStatus'
+    createdDate:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">キャンペーンが作成された日です。<br>※フォーマット：yyyy/MM/dd HH:mm:ss</div>
+        <div lang="en">Date of Campaign made.<br>* Format: yyyy/MM/dd HH:mm:ss</div>
+    updatedDate:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">キャンペーンが更新された日です。<br>※フォーマット：yyyy/MM/dd HH:mm:ss</div>
+        <div lang="en">Date of Campaign updated.<br>* Format: yyyy/MM/dd HH:mm:ss</div>
+  title: SsaCampaign
+  description: |
+    <div lang="ja">SsaCampaignオブジェクトは、キャンペーンの情報を表します。</div>
+    <div lang="en">SsaCampaign object describes Campaign information.</div>

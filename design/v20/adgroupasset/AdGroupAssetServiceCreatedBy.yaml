@@ -1,0 +1,19 @@
+AdGroupAssetServiceCreatedBy:
+  type: string
+  nullable: true
+  enum:
+  - ADVERTISER
+  - SYSTEM
+  - UNKNOWN
+  title: AdGroupAssetServiceCreatedBy
+  description: |
+    <div lang="ja">AdGroupAssetServiceCreatedByは、アセットの作成元を表します。</div>
+    <div lang="en">AdGroupAssetServiceCreatedBy describes who created the asset.</div>
+    <dl class=term>
+      <dt class="term__item">ADVERTISER</dt>
+      <dd class="term__desc"><span lang="ja">広告主が作成したアセットです。※現在利用できません。</span><span lang="en">The asset was created by the advertiser. * Not Available.</span></dd>
+      <dt class="term__item">SYSTEM</dt>
+      <dd class="term__desc"><span lang="ja">システムが自動生成したアセットです。※現在利用できません。</span><span lang="en">The asset was automatically created by the system. * Not Available.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown value.</span></dd>
+    </dl>

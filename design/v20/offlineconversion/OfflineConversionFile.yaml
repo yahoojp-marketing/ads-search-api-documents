@@ -1,0 +1,40 @@
+OfflineConversionFile:
+  type: object
+  nullable: true
+  properties:
+    accountId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">アカウントIDです。</div>
+        <div lang="en">Account ID.</div>
+    uploadId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">アップロードIDです。</div>
+        <div lang="en">Upload ID.</div>
+    uploadFileName:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">アップロードファイル名です。</div>
+        <div lang="en">Upload file name.</div>
+    uploadType:
+      $ref: 'OfflineConversionServiceUploadType.yaml#/OfflineConversionServiceUploadType'
+    uploadedDate:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">アップロード日時です。</div>
+        <div lang="en">Upload date and time.</div>
+    uploadSourceType:
+      $ref: 'OfflineConversionServiceUploadSourceType.yaml#/OfflineConversionServiceUploadSourceType'
+    processStatus:
+      $ref: 'OfflineConversionServiceProcessStatus.yaml#/OfflineConversionServiceProcessStatus'
+  title: OfflineConversionFile
+  description: |
+    <div lang="ja">オフラインコンバージョンデータをアップロードする処理内容を格納します。</div>
+    <div lang="en">This object contains contents of offline conversion information for upload.</div>

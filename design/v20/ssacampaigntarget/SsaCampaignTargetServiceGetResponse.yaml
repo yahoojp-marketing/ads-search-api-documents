@@ -1,0 +1,15 @@
+SsaCampaignTargetServiceGetResponse:
+  type: object
+  nullable: true
+  properties:
+    errors:
+      type: array
+      nullable: true
+      items:
+        $ref: '../../Error.yaml#/Error'
+    rid:
+      type: string
+      nullable: false
+    rval:
+      $ref: 'SsaCampaignTargetServicePage.yaml#/SsaCampaignTargetServicePage'
+  title: SsaCampaignTargetServiceGetResponse

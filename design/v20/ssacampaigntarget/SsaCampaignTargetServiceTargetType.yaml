@@ -1,0 +1,23 @@
+SsaCampaignTargetServiceTargetType:
+  type: string
+  nullable: true
+  enum:
+  - SCHEDULE
+  - DEVICE
+  - UNKNOWN
+  title: SsaCampaignTargetServiceTargetType
+  description: |
+    <div lang="ja">SsaCampaignTargetServiceTargetTypeは、キャンペーンのターゲティング設定を表します。<br>
+    SET時、このフィールドは必須となります。<br>
+    REPLACE時、operand[]/targetTypeは必須となり、operand[]/campaignTargets[]/target/targetTypeは無視されます。</div>
+    <div lang="en">Type of target setting.<br>
+    This field is required in SET operation.<br>
+    In a REPLACE operation, operand[]/targetType is required, and operand[]/campaignTargets[]/target/targetType is ignored.</div>
+    <dl class=term>
+      <dt class="term__item">SCHEDULE</dt>
+      <dd class="term__desc"><span lang="ja">時間帯ターゲットです。</span><span lang="en">ScheduleTarget.</span></dd>
+      <dt class="term__item">DEVICE</dt>
+      <dd class="term__desc"><span lang="ja">デバイスターゲットです。</span><span lang="en">DeviceTarget.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown value.</span></dd>
+    </dl>

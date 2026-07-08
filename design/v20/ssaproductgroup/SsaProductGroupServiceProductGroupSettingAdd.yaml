@@ -1,0 +1,39 @@
+SsaProductGroupServiceProductGroupSettingAdd:
+  type: object
+  nullable: true
+  properties:
+    userStatus:
+      $ref: 'SsaProductGroupServiceUserStatus.yaml#/SsaProductGroupServiceUserStatus'
+    cpc:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        商品グループ入札価格（CPC）です。<br>
+        配信設定をACTIVEにする場合は必須となります。<br>
+        配信設定がPAUSEDの場合は設定できません。
+        </div>
+        <div lang="en">
+        Bid of product group (CPC).<br>
+        This is required when setting the user status to ACTIVE.<br>
+        Can not set value for a product group with userStatus is PAUSED.
+        </div>
+    productGroupSchema:
+      $ref: 'SsaProductGroupServiceProductGroupSchema.yaml#/SsaProductGroupServiceProductGroupSchema'
+    customParameters:
+      $ref: 'SsaProductGroupServiceCustomParameters.yaml#/SsaProductGroupServiceCustomParameters'
+    trackingUrl:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">トラッキングURLです。<br>
+        このフィールドは、省略可能となります。<br>
+        配信設定がPAUSEDの場合は設定できません。</div>
+        <div lang="en">Tracking URL.<br>
+        This field is optional.<br>
+        Can not set value for a product group with userStatus is PAUSED.</div>
+  title: SsaProductGroupServiceProductGroupSettingAdd
+  description: |
+    <div lang="ja">SsaProductGroupServiceProductGroupSettingAdd オブジェクトは、商品グループ設定を表します。</div>
+    <div lang="en">SsaProductGroupServiceProductGroupSettingAdd object describes product group setting information.</div>

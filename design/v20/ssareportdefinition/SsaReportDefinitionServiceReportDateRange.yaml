@@ -1,0 +1,22 @@
+SsaReportDefinitionServiceReportDateRange:
+  type: object
+  nullable: true
+  properties:
+    endDate:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">集計の終了日です。<br>※フォーマット：yyyyMMdd<br>DateRangeTypeがCUSTOM_DATEの場合、このフィールドはADD時に必須となります。</div>
+        <div lang="en">End date.<br>∗ Format: yyyyMMdd<br>If DateRangeType is CUSTOM_DATE, this field is required in ADD operation.</div>
+    startDate:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">集計の開始日です。<br>※フォーマット：yyyyMMdd<br>DateRangeTypeがCUSTOM_DATEの場合、このフィールドはADD時に必須となります。</div>
+        <div lang="en">Start date. <br>∗ Format: yyyyMMdd<br>If DateRangeType is CUSTOM_DATE, this field is required in ADD operation.</div>
+  title: SsaReportDefinitionServiceReportDateRange
+  description: |
+    <div lang="ja">SsaReportDefinitionServiceReportDateRangeオブジェクトは、レポートの集計対象期間を表します。<br>
+    ADD時、このフィールドは省略可能となります。</div>
+    <div lang="en">SsaReportDefinitionServiceReportDateRange object displays date range of the report.<br>
+    This field is optional in ADD operation.</div>

@@ -1,0 +1,15 @@
+AccountAssetServiceList:
+  type: object
+  nullable: true
+  properties:
+    accountAssets:
+      type: array
+      nullable: true
+      items:
+        $ref: 'AccountAsset.yaml#/AccountAsset'
+    'type':
+      $ref: 'AccountAssetServiceType.yaml#/AccountAssetServiceType'
+  title: AccountAssetServiceList
+  description: |
+    <div lang="ja">AccountAssetServiceListオブジェクトは、アカウントとアセット間の設定情報を表します。</div>
+    <div lang="en">AccountAssetServiceList object describes configuration information between accounts and assets.</div>

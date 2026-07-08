@@ -1,0 +1,19 @@
+SsaCampaignNegativeKeyword:
+  type: object
+  nullable: true
+  properties:
+    campaignId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">キャンペーンIDです。<br>
+        ADD時およびREMOVE時、このフィールドは必須です。</div>
+        <div lang="en">Campaign ID.<br>
+        This field is required in ADD and REMOVE operation.</div>
+    criterion:
+      $ref: 'SsaCampaignNegativeKeywordServiceCriterion.yaml#/SsaCampaignNegativeKeywordServiceCriterion'
+  title: SsaCampaignNegativeKeyword
+  description: |
+    <div lang="ja">SsaCampaignNegativeKeywordオブジェクトは、キャンペーンの対象外キーワードを表します。</div>
+    <div lang="en">SsaCampaignNegativeKeyword object describes campaign negative keywords.</div>

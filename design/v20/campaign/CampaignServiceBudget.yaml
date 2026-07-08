@@ -1,0 +1,36 @@
+CampaignServiceBudget:
+  type: object
+  nullable: true
+  properties:
+    amount:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">1日単位のキャンペーン予算利用金額です。<br>
+        ADDおよびSET時、個別予算を設定する場合、このフィールドは必須となり、共有予算を設定する場合、設定不可となります。また、campaignBudgetIdと同時に設定することはできません。</div>
+        <div lang="en">Amount of budget of Campaign.<br>
+        In ADD and SET operation, this field is required when setting individual budgets, and is not allowed when setting shared budgets. This field cannot be set at the same time as campaignBudgetId.</div>
+    campaignBudgetId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">共有予算IDです。<br>
+        ADDおよびSET時、個別予算を設定する場合、このフィールドは設定不可となり、共有予算を設定する場合、必須となります。また、amountと同時に設定することはできません。</div>
+        <div lang="en">CampaignBudget ID.<br>
+        In ADD and SET operation, this field is not allowed when setting individual budgets, and is required when setting shared budgets. This field cannot be set at the same time as amount.</div>
+    campaignBudgetName:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">共有予算名です。<br>
+        ADDおよびSET時、このフィールドは無視されます。</div>
+        <div lang="en">CampaignBudget name.<br>
+        This field will be ignored in ADD and SET operation.</div>
+  title: CampaignServiceBudget
+  description: |
+    <div lang="ja">CampaignServiceBudgetオブジェクトは、キャンペーン予算に関する情報を表します。<br>
+    このフィールドは、ADD時に必須となり、SET時は省略可能となります。</div>
+    <div lang="en">CampaignServiceBudget object displays budget information for campaign.<br>
+    This field is required in ADD operation, and will be optional in SET operation.</div>

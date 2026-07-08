@@ -1,0 +1,24 @@
+AdGroupAdServiceDescriptionPinnedField:
+  type: string
+  nullable: true
+  enum:
+    - UNSPECIFIED
+    - DESCRIPTION1
+    - DESCRIPTION2
+    - UNKNOWN
+  title: AdGroupAdServiceDescriptionPinnedField
+  description: |
+    <div lang="ja">AdGroupAdServiceDescriptionPinnedFieldは、説明文の表示位置を固定する箇所を指定するフィールドです。<br>
+    ADDおよびSET時、このフィールドは省略可能です。</div>
+    <div lang="en">AdGroupAdServiceDescriptionPinnedField object is a field that specifies where to fix the display position of the description.<br>
+    This field is optional in ADD and SET operation.</div>
+    <dl class=term>
+      <dt class="term__item">UNSPECIFIED</dt>
+      <dd class="term__desc"><span lang="ja">指定なしです。</span><span lang="en">Unspecified.</span></dd>
+      <dt class="term__item">DESCRIPTION1</dt>
+      <dd class="term__desc"><span lang="ja">説明文1です。</span><span lang="en">Description1.</span></dd>
+      <dt class="term__item">DESCRIPTION2</dt>
+      <dd class="term__desc"><span lang="ja">説明文2です。</span><span lang="en">Description2.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown value.</span></dd>
+    </dl>

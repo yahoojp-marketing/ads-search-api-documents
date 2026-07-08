@@ -1,0 +1,38 @@
+AdGroupAudienceListServiceCriterionAudienceList:
+  type: object
+  nullable: true
+  properties:
+    retargetingTrackId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">リターゲティングトラックIDです。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
+        <div lang="en">Retargeting track ID.<br>
+        Although this field will be returned in the response, it will be ignored on input.</div>
+    audienceListId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">オーディエンスリストIDです。<br>
+        このフィールドは、いずれの場合でも必須です。</div>
+        <div lang="en">Audience list ID.<br>
+        This field is required in any cases.</div>
+    audienceListName:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">オーディエンスリスト名です。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
+        <div lang="en">Audience list name.<br>
+        Although this field will be returned in the response, it will be ignored on input.</div>
+    isDemographic:
+      $ref: 'AdGroupAudienceListServiceIsDemographic.yaml#/AdGroupAudienceListServiceIsDemographic'
+  title: AdGroupAudienceListServiceCriterionAudienceList
+  description: |
+    <div lang="ja">AdGroupAudienceListServiceCriterionAudienceListは、オーディエンスリスト情報を保持するオブジェクトです。<br>
+    このフィールドは、いずれの場合でも必須です。</div>
+    <div lang="en">AdGroupAudienceListServiceCriterionAudienceList is an object that holds audience list information.<br>
+    This field is required in any cases.</div>

@@ -1,0 +1,50 @@
+PageFeedAssetServiceGetJobStatusSelector:
+  type: object
+  nullable: true
+  required:
+  - accountId
+  - jobType
+  properties:
+    accountId:
+      type: integer
+      nullable: false
+      format: int64
+      description: |
+        <div lang="ja">アカウントID</div>
+        <div lang="en">Account ID.</div>
+    jobIds:
+      type: array
+      nullable: true
+      items:
+        type: integer
+        nullable: true
+        format: int64
+      maxItems: 1000
+      description: |
+        <div lang="ja">登録したジョブのID</div>
+        <div lang="en">Registered job ID.</div>
+    jobType:
+      $ref: 'PageFeedAssetServiceGetJobStatusType.yaml#/PageFeedAssetServiceGetJobStatusType'
+    numberResults:
+      type: integer
+      nullable: true
+      format: int32
+      minimum: 1
+      maximum: 10000
+      default: 500
+      description: |
+        <div lang="ja">開始位置から取得する結果の数。このフィールドは、1以上を指定する必要があります。</div>
+        <div lang="en">The number of results to retrieve starting from the initial position. This field must be greater than or equal to 1.</div>
+    startIndex:
+      type: integer
+      nullable: true
+      format: int32
+      minimum: 1
+      default: 1
+      description: |
+        <div lang="ja">取得を開始する結果セット内の位置。このフィールドは、1以上を指定する必要があります。</div>
+        <div lang="en">The position within the result set where retrieval begins. This field must be greater than or equal to 1.</div>
+  title: PageFeedAssetServiceGetJobStatusSelector
+  description: |
+    <div lang="ja">PageFeedAssetServiceGetJobStatusSelectorオブジェクトは、upload、downloadの処理状況を取得するための検索条件を格納します。</div>
+    <div lang="en">PageFeedAssetServiceGetJobStatusSelector object retains search condition for The processing situation upload/download.</div>

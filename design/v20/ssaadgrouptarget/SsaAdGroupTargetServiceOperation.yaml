@@ -1,0 +1,27 @@
+SsaAdGroupTargetServiceOperation:
+  type: object
+  nullable: true
+  required:
+    - accountId
+    - operand
+  properties:
+    accountId:
+      type: integer
+      nullable: false
+      format: int64
+      description: |
+        <div lang="ja">アカウントIDです。</div>
+        <div lang="en">Account ID.</div>
+    operand:
+      type: array
+      nullable: true
+      items:
+        $ref: 'SsaAdGroupTarget.yaml#/SsaAdGroupTarget'
+      minItems: 1
+      maxItems: 2000
+  title: SsaAdGroupTargetServiceOperation
+  description: |
+    <div lang="ja">SsaAdGroupTargetServiceOperationオブジェクトは、GETおよびSET以外の操作対象を保持するコンテナです。<br>
+    SET時は各operandで更新可能なのはbidMultiplierのみです。</div>
+    <div lang="en">SsaAdGroupTargetServiceOperation object is a container of operation targets.<br>
+    In SET operation, only bidMultiplier can be updated for each operand.</div>

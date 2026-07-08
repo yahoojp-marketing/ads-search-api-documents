@@ -1,0 +1,25 @@
+PageFeedAssetSetServiceOperation:
+  type: object
+  nullable: true
+  required:
+  - accountId
+  - operand
+  properties:
+    accountId:
+      type: integer
+      nullable: false
+      format: int64
+      description: |
+        <div lang="ja">アカウントIDです。</div>
+        <div lang="en">Account ID.</div>
+    operand:
+      type: array
+      nullable: true
+      items:
+        $ref: 'PageFeedAssetSet.yaml#/PageFeedAssetSet'
+      minItems: 1
+      maxItems: 500
+  title: PageFeedAssetSetServiceOperation
+  description: |
+    <div lang="ja">PageFeedAssetSetServiceOperationオブジェクトは、ページフィードアセットセットを格納するコンテナです。</div>
+    <div lang="en">PageFeedAssetSetServiceOperation object is a container that stores a page feed asset set.</div>

@@ -1,0 +1,31 @@
+SsaProductGroupServiceProductGroupType:
+  type: string
+  nullable: true
+  enum:
+    - ALL
+    - CATEGORY
+    - BRAND
+    - SELLER_ID
+    - PRODUCT_ID
+    - PRODUCT_ATTRIBUTE_CUSTOM_LABEL
+    - UNKNOWN
+  description: |
+    <div lang="ja">SsaProductGroupServiceProductGroupTypeは、商品グループ種別を表します。</div>
+    <div lang="en">SsaProductGroupServiceProductGroupType displays the product group type.</div>
+    <dl class=term>
+      <dt class="term__item">ALL</dt>
+      <dd class="term__desc"><span lang="ja">全ての商品 ※リクエストには指定できません</span><span lang="en">All products *It cannot be specified in the request.</span></dd>
+      <dt class="term__item">CATEGORY</dt>
+      <dd class="term__desc"><span lang="ja">カテゴリ</span><span lang="en">Category</span></dd>
+      <dt class="term__item">BRAND</dt>
+      <dd class="term__desc"><span lang="ja">ブランド</span><span lang="en">Brand</span></dd>
+      <dt class="term__item">SELLER_ID</dt>
+      <dd class="term__desc"><span lang="ja">セラーID</span><span lang="en">Seller id</span></dd>
+      <dt class="term__item">PRODUCT_ID</dt>
+      <dd class="term__desc"><span lang="ja">商品ID</span><span lang="en">Product id</span></dd>
+      <dt class="term__item">PRODUCT_ATTRIBUTE_CUSTOM_LABEL</dt>
+      <dd class="term__desc"><span lang="ja">商品属性カスタムラベル</span><span lang="en">Product attribute custom label</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown value.</span></dd>
+    </dl>
+  title: SsaProductGroupServiceProductGroupType

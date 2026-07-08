@@ -1,0 +1,13 @@
+SsaAdGroupTargetServiceReturnValue:
+  type: object
+  nullable: true
+  properties:
+    values:
+      type: array
+      nullable: true
+      items:
+        $ref: 'SsaAdGroupTargetServiceValue.yaml#/SsaAdGroupTargetServiceValue'
+  title: SsaAdGroupTargetServiceReturnValue
+  description: |
+    <div lang="ja">SsaAdGroupTargetServiceReturnValueオブジェクトは、広告グループターゲティング情報の処理結果を保持します。</div>
+    <div lang="en">SsaAdGroupTargetServiceReturnValue object contains operation results of ad group targeting.</div>

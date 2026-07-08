@@ -1,0 +1,22 @@
+SsaProductGroupServiceUrlApprovalStatus:
+  type: string
+  nullable: true
+  enum:
+  - PROVISIONAL_APPROVED
+  - APPROVED
+  - DISAPPROVED
+  - UNKNOWN
+  title: SsaProductGroupServiceUrlApprovalStatus
+  description: |
+    <div lang="ja">SsaProductGroupServiceUrlApprovalStatusは、URLの審査状況を表します。</div>
+    <div lang="en">SsaProductGroupServiceUrlApprovalStatus is a review status of URL.</div>
+    <dl class=term>
+      <dt class="term__item">PROVISIONAL_APPROVED</dt>
+      <dd class="term__desc"><span lang="ja">仮承認中です。</span><span lang="en">This is a provisional approval.</span></dd>
+      <dt class="term__item">APPROVED</dt>
+      <dd class="term__desc"><span lang="ja">審査で承認済です。</span><span lang="en">Approved.<br>Ad can be displayed.</span></dd>
+      <dt class="term__item">DISAPPROVED</dt>
+      <dd class="term__desc"><span lang="ja">事前審査で否認となりました。<br>掲載不可です。</span><span lang="en">It has been disapproved.<br>Ad cannot be displayed.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown value.</span></dd>
+    </dl>

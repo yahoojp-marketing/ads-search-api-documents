@@ -1,0 +1,21 @@
+AdGroupCriterionLabelServiceValue:
+  type: object
+  nullable: true
+  properties:
+    adGroupCriterionLabel:
+      $ref: 'AdGroupCriterionLabel.yaml#/AdGroupCriterionLabel'
+    errors:
+      type: array
+      nullable: true
+      items:
+        $ref: '../../Error.yaml#/Error'
+    operationSucceeded:
+      type: boolean
+      nullable: true
+      description: |
+        <div lang="ja">処理結果です。trueの場合は、処理は成功しました。falseの場合は処理が失敗しています。</div>
+        <div lang="en">The process results. If true, the process succeeded. If false, the process failed.</div>
+  title: AdGroupCriterionLabelServiceValue
+  description: |
+    <div lang="ja">AdGroupCriterionLabelServiceValueオブジェクトは、操作結果を含む広告グループのクライテリアラベル情報を表します。</div>
+    <div lang="en">AdGroupCriterionLabelServiceValue object describes ad group criterion label information including its operation results.</div>

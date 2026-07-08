@@ -1,0 +1,21 @@
+BiddingSeasonalityAdjustmentServiceValue:
+  type: object
+  nullable: true
+  properties:
+    biddingSeasonalityAdjustment:
+      $ref: 'BiddingSeasonalityAdjustment.yaml#/BiddingSeasonalityAdjustment'
+    errors:
+      type: array
+      nullable: true
+      items:
+        $ref: '../../Error.yaml#/Error'
+    operationSucceeded:
+      type: boolean
+      nullable: true
+      description: |
+        <div lang="ja">処理結果を表示します。</div>
+        <div lang="en">Result of process.</div>
+  title: BiddingSeasonalityAdjustmentServiceValue
+  description: |
+    <div lang="ja">BiddingSeasonalityAdjustmentServiceValueオブジェクトは、操作結果を含む自動入札のスポット調整の情報を表します。</div>
+    <div lang="en">BiddingSeasonalityAdjustmentServiceValue object is bidding seasonality adjustment information including its operation results.</div>

@@ -1,0 +1,28 @@
+SsaAdGroupNegativeKeyword:
+  type: object
+  nullable: true
+  properties:
+    adGroupId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">広告グループIDです。<br>
+        ADD時およびREMOVE時、このフィールドは必須です。</div>
+        <div lang="en">Ad group ID.<br>
+        This field is required in ADD and REMOVE operation.</div>
+    campaignId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">キャンペーンIDです。<br>
+        ADD時およびREMOVE時、このフィールドは必須です。</div>
+        <div lang="en">Campaign ID.<br>
+        This field is required in ADD and REMOVE operation.</div>
+    criterion:
+      $ref: 'SsaAdGroupNegativeKeywordServiceCriterion.yaml#/SsaAdGroupNegativeKeywordServiceCriterion'
+  title: SsaAdGroupNegativeKeyword
+  description: |
+    <div lang="ja">SsaAdGroupNegativeKeywordオブジェクトは、SSA広告グループの対象外キーワード情報を表します。</div>
+    <div lang="en">SsaAdGroupNegativeKeyword object describes negative keyword information in SSA ad group-level.</div>

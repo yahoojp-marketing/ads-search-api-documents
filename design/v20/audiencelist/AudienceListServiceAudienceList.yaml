@@ -1,0 +1,86 @@
+AudienceListServiceAudienceList:
+  type: object
+  nullable: true
+  properties:
+    accountId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">アカウントIDです。<br> このフィールドは、いずれの場合でも必須となります。</div>
+        <div lang="en">Account ID.<br>This field is required in any cases.</div>
+    closingReason:
+      $ref: 'AudienceListServiceClosingReason.yaml#/AudienceListServiceClosingReason'
+    defaultAudienceList:
+      $ref: 'AudienceListServiceDefaultAudienceList.yaml#/AudienceListServiceDefaultAudienceList'
+    logicalAudienceList:
+      $ref: 'AudienceListServiceLogicalAudienceList.yaml#/AudienceListServiceLogicalAudienceList'
+    reach:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">リストに蓄積されているユーザー数です。</div>
+        <div lang="en">Number of users stored to the list.</div>
+    reachStorageSpan:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">Cookieを保持する日数です。<br>
+        SET時、このフィールドは省略可能となります。<br>LogicalAudienceListの場合、SET時にこのフィールドは無視されます。<br>
+        ※SET時、ruleBaseAudienceList.isDateSpecificRule = TRUEの場合には、変更は出来ません。<br>
+        ※Default：180<br>
+        ※1-540日まで設定可能です。</div>
+        <div lang="en">Days to hold Cookie.<br>
+        This field is optional in SET operation.<br>
+        For LogicalAudienceList, this field will be ignored in SET operation.<br>
+        *In SET operation, if ruleBaseAudienceList.isDateSpecificRule = TRUE, it is can not change.<br>
+        *Default: 180<br>
+        *Can set from 1-540 days.</div>
+    reachStorageStatus:
+      $ref: 'AudienceListServiceReachStorageStatus.yaml#/AudienceListServiceReachStorageStatus'
+    retargetingAccountStatus:
+      $ref: 'AudienceListServiceRetargetingAccountStatus.yaml#/AudienceListServiceRetargetingAccountStatus'
+    ruleBaseAudienceList:
+      $ref: 'AudienceListServiceRuleBaseAudienceList.yaml#/AudienceListServiceRuleBaseAudienceList'
+    audienceListDescription:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">オーディエンスリストの説明です。<br>
+        このフィールドは、いずれの場合でも省略可能となります。</div>
+        <div lang="en">Description of Audience List.<br>
+        This field is optional in any cases.</div>
+    audienceListId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">オーディエンスリストIDです。<br>
+        SET時、このフィールドは必須となります。</div>
+        <div lang="en">Audience List ID.<br>
+        This field is required in SET operation.</div>
+    audienceListName:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">オーディエンスリスト名です。<br>
+        ADD時にこのフィールドは必須となり、SET時にこのフィールドは省略可能となります。</div>
+        <div lang="en">Audience List name.<br>
+        This field is required in ADD operation, and is optional in SET operation.</div>
+    audienceListOwner:
+      $ref: 'AudienceListServiceAudienceListOwner.yaml#/AudienceListServiceAudienceListOwner'
+    audienceListTrackId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">オーディエンスリストのトラッキング用IDです。</div>
+        <div lang="en">Tracking ID of Audience list.</div>
+    audienceListType:
+      $ref: 'AudienceListServiceAudienceListType.yaml#/AudienceListServiceAudienceListType'
+  title: AudienceListServiceAudienceList
+  description: |
+    <div lang="ja">AudienceListServiceAudienceListは、リターゲティング情報（オーディエンスリスト）を保持するオブジェクトです。</div>
+    <div lang="en">AudienceListServiceAudienceList is an object that holds retargeting information (audience list).</div>

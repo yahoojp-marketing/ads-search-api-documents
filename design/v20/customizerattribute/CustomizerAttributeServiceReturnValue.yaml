@@ -1,0 +1,13 @@
+CustomizerAttributeServiceReturnValue:
+  type: object
+  nullable: true
+  properties:
+    values:
+      type: array
+      nullable: true
+      items:
+        $ref: 'CustomizerAttributeServiceValue.yaml#/CustomizerAttributeServiceValue'
+  title: CustomizerAttributeServiceReturnValue
+  description: |
+    <div lang="ja">CustomizerAttributeServiceReturnValueオブジェクトは、カスタマイザー属性の情報を格納します。</div>
+    <div lang="en">CustomizerAttributeServiceReturnValue contains the CustomizerAttribute information.</div>

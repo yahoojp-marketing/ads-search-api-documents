@@ -1,0 +1,35 @@
+AudienceListServiceAge:
+  type: string
+  nullable: false
+  enum:
+    - GT_RANGE18_24
+    - GT_RANGE25_34
+    - GT_RANGE35_44
+    - GT_RANGE45_54
+    - GT_RANGE55_64
+    - GT_RANGE65_UL
+    - UNKNOWN
+  title: AudienceListServiceAge
+  description: |
+    <div lang="ja">
+    AudienceListServiceAgeは、年代を表します。
+    </div>
+    <div lang="en">
+    AudienceListServiceAge displays ages.
+    </div>
+    <dl class=term>
+      <dt class="term__item">GT_RANGE18_24</dt>
+      <dd class="term__desc"><span lang="ja">18歳から24歳です。</span><span lang="en">From 18 to 24.</span></dd>
+      <dt class="term__item">GT_RANGE25_34</dt>
+      <dd class="term__desc"><span lang="ja">25歳から34歳です。</span><span lang="en">From 25 to 34.</span></dd>
+      <dt class="term__item">GT_RANGE35_44</dt>
+      <dd class="term__desc"><span lang="ja">35歳から44歳です。</span><span lang="en">From 35 to 44.</span></dd>
+      <dt class="term__item">GT_RANGE45_54</dt>
+      <dd class="term__desc"><span lang="ja">45歳から54歳です。</span><span lang="en">From 45 to 54.</span></dd>
+      <dt class="term__item">GT_RANGE55_64</dt>
+      <dd class="term__desc"><span lang="ja">55歳から64歳です。</span><span lang="en">From 55 to 64.</span></dd>
+      <dt class="term__item">GT_RANGE65_UL</dt>
+      <dd class="term__desc"><span lang="ja">65歳以上です。</span><span lang="en">65 and up.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value.</span></dd>
+    </dl>

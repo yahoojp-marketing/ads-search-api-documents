@@ -1,0 +1,13 @@
+SsaAdGroupNegativeKeywordServiceReturnValue:
+  type: object
+  nullable: true
+  properties:
+    values:
+      type: array
+      nullable: true
+      items:
+        $ref: 'SsaAdGroupNegativeKeywordServiceValue.yaml#/SsaAdGroupNegativeKeywordServiceValue'
+  title: SsaAdGroupNegativeKeywordServiceReturnValue
+  description: |
+    <div lang="ja">SsaAdGroupNegativeKeywordServiceReturnValueオブジェクトは、処理結果を含むSSA広告グループの対象外キーワード情報を表します。</div>
+    <div lang="en">SsaAdGroupNegativeKeywordServiceReturnValue object contains negative keyword information in SSA ad group-level including operation results.</div>

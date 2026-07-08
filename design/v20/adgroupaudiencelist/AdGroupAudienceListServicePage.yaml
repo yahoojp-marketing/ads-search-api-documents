@@ -1,0 +1,20 @@
+AdGroupAudienceListServicePage:
+  type: object
+  nullable: true
+  properties:
+    totalNumEntries:
+      type: integer
+      nullable: false
+      format: int32
+      description: |
+        <div lang="ja">取得される項目の総件数です。</div>
+        <div lang="en">Total number the item have retrieved.</div>
+    values:
+      type: array
+      nullable: true
+      items:
+        $ref: 'AdGroupAudienceListServiceValue.yaml#/AdGroupAudienceListServiceValue'
+  title: AdGroupAudienceListServicePage
+  description: |
+    <div lang="ja">AdGroupAudienceListServicePageは、広告グループレベルでのオーディエンスリスト設定の実行結果（全Entityのリスト）を保持するオブジェクトです。</div>
+    <div lang="en">AdGroupAudienceListServicePage is an object that holds the execution result (list of all entities) of audience list settings at the ad group level.</div>

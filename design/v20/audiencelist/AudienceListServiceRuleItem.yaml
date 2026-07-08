@@ -1,0 +1,29 @@
+AudienceListServiceRuleItem:
+  type: object
+  nullable: true
+  properties:
+    customKeyRuleItem:
+      $ref: 'AudienceListServiceCustomKeyRuleItem.yaml#/AudienceListServiceCustomKeyRuleItem'
+    ruleOperator:
+      $ref: 'AudienceListServiceRuleOperator.yaml#/AudienceListServiceRuleOperator'
+    ruleType:
+      $ref: 'AudienceListServiceRuleType.yaml#/AudienceListServiceRuleType'
+    urlRuleItem:
+      $ref: 'AudienceListServiceUrlRuleItem.yaml#/AudienceListServiceUrlRuleItem'
+    value:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">評価値です。<br> ADDおよびSET時、このフィールドは必須となります。<br>
+        ※括弧（()）、シングルクォート（&#39;）、ダブルクォート（&#34;）、タブ（\t）は利用できません。<br>
+        ※250文字まで指定可能です。</div>
+        <div lang="en">Evaluation value.<br>
+        *Cannot use: bracket, single quote, double quote, and tab.<br>
+        *Can select up to 250 characters.<br>
+        This field is required in ADD and SET operation.</div>
+  title: AudienceListServiceRuleItem
+  description: |
+    <div lang="ja">AudienceListServiceRuleItemは、ルールの評価条件を保持するオブジェクトです。<br>
+    このフィールドは、ADDおよびSET時に必須となります。</div>
+    <div lang="en">AudienceListServiceRuleItem is an object that holds evaluation condition of rule.<br>
+    This field is required in ADD and SET operation.</div>

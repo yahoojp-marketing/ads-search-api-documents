@@ -1,0 +1,21 @@
+AudienceListServiceRuleGroup:
+  type: object
+  nullable: true
+  properties:
+    ruleItems:
+      type: array
+      nullable: true
+      items:
+        $ref: 'AudienceListServiceRuleItem.yaml#/AudienceListServiceRuleItem'
+  title: AudienceListServiceRuleGroup
+  description: |
+    <div lang="ja">AudienceListServiceRuleGroupは、URL/LABELのルールをグループ化した情報を保持するオブジェクトです。<br>
+    ADDおよびSET時に、このフィールドは省略可能となります。<br>
+    isAllVisitorがTRUEである場合、ADDおよびSET時に必須となります。<br>
+    ※SET時、isAllVisitorRule = TRUEを指定してリクエストすると、このフィールドは無視されます。<br>
+    ruleBaseAudienceList.isDateSpecificRule = TRUEの場合には、このフィールドは変更出来ません。</div>
+    <div lang="en">AudienceListServiceRuleGroup is an object that holds grouped URL/LABEL rules.<br>
+    This field is optional in ADD and SET operation.<br>
+    If isAllVisitor is TRUE, this field is required in ADD and SET operation.<br>
+    *In SET operation, if isAllVisitorRule = TRUE, this field is ignored on request.<br>
+    If ruleBaseAudienceList.isDateSpecificRule = TRUE, it is can not change.</div>

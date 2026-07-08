@@ -1,0 +1,13 @@
+BudgetOrderServiceReturnValue:
+  type: object
+  nullable: true
+  properties:
+    values:
+      type: array
+      nullable: true
+      items:
+        $ref: 'BudgetOrderServiceValue.yaml#/BudgetOrderServiceValue'
+  title: BudgetOrderServiceReturnValue
+  description: |
+    <div lang="ja">BudgetOrderServiceReturnValueオブジェクトは、アカウント予算情報を格納するコンテナです。</div>
+    <div lang="en">The BudgetOrderServiceReturnValue object is a container for storing account budget information.</div>

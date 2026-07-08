@@ -1,0 +1,33 @@
+SsaAdGroupTargetServiceList:
+  type: object
+  nullable: true
+  properties:
+    ssaAdGroupTargets:
+      type: array
+      nullable: true
+      items:
+        $ref: 'SsaAdGroupTarget.yaml#/SsaAdGroupTarget'
+    adgroupId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">広告グループIDです。<br>
+        REPLACE時、このフィールドは必須です。</div>
+        <div lang="en">Ad group ID.<br>
+        This field is required in REPLACE operation.</div>
+    campaignId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">キャンペーンIDです。<br>
+        REPLACE時、このフィールドは必須です。</div>
+        <div lang="en">Campaign ID.<br>
+        This field is required in REPLACE operation.</div>
+    targetType:
+      $ref: 'SsaAdGroupTargetServiceTargetType.yaml#/SsaAdGroupTargetServiceTargetType'
+  title: SsaAdGroupTargetServiceList
+  description: |
+    <div lang="ja">SsaAdGroupTargetServiceListオブジェクトは、広告グループターゲティング情報を格納するコンテナです。</div>
+    <div lang="en">SsaAdGroupTargetServiceList object is a container of ad group targeting information.</div>

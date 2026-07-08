@@ -1,0 +1,26 @@
+SsaProductGroupServiceCategoryType:
+  type: string
+  nullable: true
+  enum:
+    - CATEGORY_1
+    - CATEGORY_2
+    - CATEGORY_3
+    - CATEGORY_4
+    - CATEGORY_5
+    - UNKNOWN
+  description: |
+    <dl class=term>
+      <dt class="term__item">CATEGORY_1</dt>
+      <dd class="term__desc"><span lang="ja">カテゴリ1</span><span lang="en">category 1</span></dd>
+      <dt class="term__item">CATEGORY_2</dt>
+      <dd class="term__desc"><span lang="ja">カテゴリ2</span><span lang="en">category 2</span></dd>
+      <dt class="term__item">CATEGORY_3</dt>
+      <dd class="term__desc"><span lang="ja">カテゴリ3</span><span lang="en">category 3</span></dd>
+      <dt class="term__item">CATEGORY_4</dt>
+      <dd class="term__desc"><span lang="ja">カテゴリ4</span><span lang="en">category 4</span></dd>
+      <dt class="term__item">CATEGORY_5</dt>
+      <dd class="term__desc"><span lang="ja">カテゴリ5</span><span lang="en">category 5</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown value.</span></dd>
+    </dl>
+  title: SsaProductGroupServiceCategoryType

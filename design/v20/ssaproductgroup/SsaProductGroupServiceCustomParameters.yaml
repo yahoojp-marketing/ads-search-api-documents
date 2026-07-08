@@ -1,0 +1,21 @@
+SsaProductGroupServiceCustomParameters:
+  type: object
+  nullable: true
+  properties:
+    isRemove:
+      $ref: 'SsaProductGroupServiceIsRemove.yaml#/SsaProductGroupServiceIsRemove'
+    parameters:
+      type: array
+      nullable: true
+      items:
+        $ref: 'SsaProductGroupServiceCustomParameter.yaml#/SsaProductGroupServiceCustomParameter'
+  title: SsaProductGroupServiceCustomParameters
+  description: |
+    <div lang="ja">SsaProductGroupServiceCustomParametersオブジェクトは、カスタムパラメータの設定を表します。<br>
+    このフィールドは、省略可能となります。<br>
+    配信設定がPAUSEDの場合は設定できません。<br>
+    nodeTypeがINTERNALの場合は設定できません。</div>
+    <div lang="en">SsaProductGroupServiceCustomParameters displays the setting of custom parameters.<br>
+    This field is optional.<br>
+    Can not set value for a product group with userStatus is PAUSED.<br>
+    Can not set value for a product group with nodeType is INTERNAL.</div>

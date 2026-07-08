@@ -1,0 +1,35 @@
+ConversionTrackerServiceAppEvent:
+  type: object
+  nullable: true
+  properties:
+    conversionTrackerTrackId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">トラッキング用コンバージョントラッカーIDです。</div>
+        <div lang="en">ConversionTracker ID for tracking.</div>
+    appVendorId:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">アプリ計測ベンダー識別子です。</div>
+        <div lang="en">Application vendor ID.</div>
+    appId:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">アプリケーションIDです。</div>
+        <div lang="en">Application ID.</div>
+    appLinkPlatform:
+      $ref: 'ConversionTrackerServiceAppLinkPlatform.yaml#/ConversionTrackerServiceAppLinkPlatform'
+    appEventType:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">アプリイベントタイプです。</div>
+        <div lang="en">Application event type.</div>
+  title: ConversionTrackerServiceAppEvent
+  description: |
+    <div lang="ja">ConversionTrackerServiceAppEventオブジェクトは、アプリコンバージョン測定タグやタグごとのパフォーマンスデータなどのアプリコンバージョン設定を表します。</div>
+    <div lang="en">ConversionTrackerServiceAppConversion object describes the app ConversionTracker settings such as App ConversionTag and performance data by  tag.</div>

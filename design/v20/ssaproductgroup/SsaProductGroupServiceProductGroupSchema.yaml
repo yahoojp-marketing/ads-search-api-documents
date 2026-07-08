@@ -1,0 +1,20 @@
+SsaProductGroupServiceProductGroupSchema:
+  type: object
+  nullable: true
+  properties:
+    'type':
+      $ref: 'SsaProductGroupServiceProductGroupType.yaml#/SsaProductGroupServiceProductGroupType'
+    categoryProductGroup:
+      $ref: 'SsaProductGroupServiceCategoryProductGroup.yaml#/SsaProductGroupServiceCategoryProductGroup'
+    brandProductGroup:
+      $ref: 'SsaProductGroupServiceBrandProductGroup.yaml#/SsaProductGroupServiceBrandProductGroup'
+    sellerIdProductGroup:
+      $ref: 'SsaProductGroupServiceSellerIdProductGroup.yaml#/SsaProductGroupServiceSellerIdProductGroup'
+    productIdProductGroup:
+      $ref: 'SsaProductGroupServiceProductIdProductGroup.yaml#/SsaProductGroupServiceProductIdProductGroup'
+    productAttributeCustomLabelProductGroup:
+      $ref: 'SsaProductGroupServiceProductAttributeCustomLabelProductGroup.yaml#/SsaProductGroupServiceProductAttributeCustomLabelProductGroup'
+  title: SsaProductGroupServiceProductGroupSchema
+  description: |
+    <div lang="ja">SsaProductGroupServiceProductGroupSchema オブジェクトは、商品グループ種別ごとの設定を表します。</div>
+    <div lang="en">SsaProductGroupServiceProductGroupSchema object represents the settings for each product group type.</div>

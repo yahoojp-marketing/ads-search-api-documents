@@ -1,0 +1,20 @@
+SsaAdGroupTargetServicePage:
+  type: object
+  nullable: true
+  properties:
+    totalNumEntries:
+      type: integer
+      nullable: false
+      format: int32
+      description: |
+        <div lang="ja">取得される項目の総件数です。</div>
+        <div lang="en">Total number of acquired items.</div>
+    values:
+      type: array
+      nullable: true
+      items:
+        $ref: 'SsaAdGroupTargetServiceValue.yaml#/SsaAdGroupTargetServiceValue'
+  title: SsaAdGroupTargetServicePage
+  description: |
+    <div lang="ja">SsaAdGroupTargetServicePageオブジェクトは、広告グループターゲティング情報の取得結果を保持します。</div>
+    <div lang="en">SsaAdGroupTargetServicePage object contains ad group targeting retrieval results.</div>

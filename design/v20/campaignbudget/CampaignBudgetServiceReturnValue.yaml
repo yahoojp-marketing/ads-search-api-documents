@@ -1,0 +1,13 @@
+CampaignBudgetServiceReturnValue:
+  type: object
+  nullable: true
+  properties:
+    values:
+      type: array
+      nullable: true
+      items:
+        $ref: 'CampaignBudgetServiceValue.yaml#/CampaignBudgetServiceValue'
+  title: CampaignBudgetServiceReturnValue
+  description: |
+    <div lang="ja">CampaignBudgetReturnオブジェクトは、共有予算の情報を格納します。</div>
+    <div lang="en">CampaignBudgetReturn contains the CampaignBudget information.</div>

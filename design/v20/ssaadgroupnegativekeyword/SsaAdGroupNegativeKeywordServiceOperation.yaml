@@ -1,0 +1,25 @@
+SsaAdGroupNegativeKeywordServiceOperation:
+  type: object
+  nullable: true
+  required:
+    - accountId
+    - operand
+  properties:
+    accountId:
+      type: integer
+      nullable: false
+      format: int64
+      description: |
+        <div lang="ja">アカウントIDです。</div>
+        <div lang="en">Account ID.</div>
+    operand:
+      type: array
+      nullable: true
+      items:
+        $ref: 'SsaAdGroupNegativeKeyword.yaml#/SsaAdGroupNegativeKeyword'
+      minItems: 1
+      maxItems: 2000
+  title: SsaAdGroupNegativeKeywordServiceOperation
+  description: |
+    <div lang="ja">SsaAdGroupNegativeKeywordServiceOperationオブジェクトは、SSA広告グループの対象外キーワードの操作内容を表します。</div>
+    <div lang="en">SsaAdGroupNegativeKeywordServiceOperation object describes operation targets of negative keywords in SSA ad group-level.</div>

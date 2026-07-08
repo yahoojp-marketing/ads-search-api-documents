@@ -1,0 +1,22 @@
+SsaCampaignNegativeKeywordServiceKeyword:
+  type: object
+  nullable: true
+  properties:
+    keywordMatchType:
+      $ref: 'SsaCampaignNegativeKeywordServiceKeywordMatchType.yaml#/SsaCampaignNegativeKeywordServiceKeywordMatchType'
+    text:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">キーワードの内容です。<br>
+        ADD時、このフィールドは必須です。<br>
+        ※最大80文字、6ワードです。</div>
+        <div lang="en">SsaCampaignNegativeKeywordServiceKeyword element.<br>
+        This field is required in ADD operation.<br>
+        * Maximum of 80 letters, 6 word.</div>
+  title: SsaCampaignNegativeKeywordServiceKeyword
+  description: |
+    <div lang="ja">SsaCampaignNegativeKeywordServiceKeywordオブジェクトは、対象外キーワードに関する情報を表します。<br>
+    ADD時、このフィールドは必須です。</div>
+    <div lang="en">SsaCampaignNegativeKeywordServiceKeyword object displays negative keyword information.<br>
+    This field is required in ADD operation.</div>

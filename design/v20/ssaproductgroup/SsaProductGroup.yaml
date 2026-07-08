@@ -1,0 +1,34 @@
+SsaProductGroup:
+  type: object
+  nullable: true
+  properties:
+    campaignId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">キャンペーンIDです。</div>
+        <div lang="en">Campaign ID.</div>
+    adGroupId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">広告グループIDです。</div>
+        <div lang="en">Ad group ID.</div>
+    baseProductGroupId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">上位階層の商品グループIDです。</div>
+        <div lang="en">Base product group ID.</div>
+    productGroupSettings:
+      type: array
+      nullable: true
+      items:
+        $ref: 'SsaProductGroupServiceProductGroupSetting.yaml#/SsaProductGroupServiceProductGroupSetting'
+  title: SsaProductGroup
+  description: |
+    <div lang="ja">SsaProductGroup オブジェクトは、商品グループを表します。</div>
+    <div lang="en">SsaProductGroup object describes product group information.</div>

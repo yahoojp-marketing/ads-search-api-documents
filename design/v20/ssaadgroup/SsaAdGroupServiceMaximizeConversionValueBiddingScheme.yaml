@@ -1,0 +1,29 @@
+SsaAdGroupServiceMaximizeConversionValueBiddingScheme:
+  type: object
+  nullable: true
+  properties:
+    targetRoas:
+      type: number
+      nullable: true
+      format: double
+      description: |
+        <div lang="ja">
+        広告費用対効果の目標値です。※Return On Advertising Spend(ROAS)<br>
+        ADDおよびSET時、このフィールドは省略可能となります。<br>
+        ※campaignBiddingStrategyTypeがMAXIMIZE_CONVERSION_VALUEの場合のみ指定可能です。<br>
+        ※現在利用できません。
+        </div>
+        <div lang="en">
+        Target ROAS. * ROAS: Return On Advertising Spend.<br>
+        This field is optional in ADD and SET operation.<br>
+        *This can only be specified when campaignBiddingStrategyType is MAXIMIZE_CONVERSION_VALUE.<br>
+        *Not Available.
+        </div>
+  title: SsaAdGroupServiceMaximizeConversionValueBiddingScheme
+  description: |
+    <div lang="ja">
+    SsaAdGroupServiceMaximizeConversionValueBiddingSchemeオブジェクトは、広告費用対効果の目標値の設定情報を表します。
+    </div>
+    <div lang="en">
+    SsaAdGroupServiceMaximizeConversionValueBiddingScheme object displays bidding setting for Target ROAS.
+    </div>

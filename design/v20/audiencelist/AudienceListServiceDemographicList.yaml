@@ -1,0 +1,32 @@
+AudienceListServiceDemographicList:
+  type: object
+  nullable: true
+  properties:
+    audienceListId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">オーディエンスリストIDです。</div>
+        <div lang="en">Audience List ID.</div>
+    audienceListName:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">オーディエンスリスト名です。</div>
+        <div lang="en">Audience List name.</div>
+    age:
+      $ref: 'AudienceListServiceAge.yaml#/AudienceListServiceAge'
+    gender:
+      $ref: 'AudienceListServiceGender.yaml#/AudienceListServiceGender'
+    audienceListTrackId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">オーディエンスリストのトラッキング用IDです。</div>
+        <div lang="en">Tracking ID of Audience list.</div>
+  title: AudienceListServiceDemographicList
+  description: |
+    <div lang="ja">AudienceListServiceDemographicListは、年齢・性別ターゲティング情報（オーディエンスリスト）を保持するオブジェクトです。</div>
+    <div lang="en">AudienceListServiceDemographicList is an object that holds age and gender targeting information (audience list).</div>

@@ -1,0 +1,13 @@
+SsaCampaignNegativeKeywordServiceReturnValue:
+  type: object
+  nullable: true
+  properties:
+    values:
+      type: array
+      nullable: true
+      items:
+        $ref: 'SsaCampaignNegativeKeywordServiceValue.yaml#/SsaCampaignNegativeKeywordServiceValue'
+  title: SsaCampaignNegativeKeywordServiceReturnValue
+  description: |
+    <div lang="ja">SsaCampaignNegativeKeywordServiceReturnValueオブジェクトは、操作結果を含むキャンペーンの対象外キーワードに関する情報のコンテナを表します。</div>
+    <div lang="en">Container for campaign negative keywords including operation results.</div>

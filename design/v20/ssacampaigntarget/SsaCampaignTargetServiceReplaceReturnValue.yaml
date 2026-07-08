@@ -1,0 +1,13 @@
+SsaCampaignTargetServiceReplaceReturnValue:
+  type: object
+  nullable: true
+  properties:
+    values:
+      type: array
+      nullable: true
+      items:
+        $ref: 'SsaCampaignTargetServiceReplaceValue.yaml#/SsaCampaignTargetServiceReplaceValue'
+  title: SsaCampaignTargetServiceReplaceReturnValue
+  description: |
+    <div lang="ja">SsaCampaignTargetServiceReplaceReturnValueオブジェクトは、操作結果を含むキャンペーンのターゲット設定に関する情報のコンテナです。</div>
+    <div lang="en">SsaCampaignTargetServiceReplaceReturnValue is a container of campaign target setting information including operation results.</div>

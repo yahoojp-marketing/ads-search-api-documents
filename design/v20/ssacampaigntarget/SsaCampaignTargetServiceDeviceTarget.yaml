@@ -1,0 +1,14 @@
+SsaCampaignTargetServiceDeviceTarget:
+  type: object
+  nullable: true
+  properties:
+    deviceType:
+      $ref: 'SsaCampaignTargetServiceDeviceType.yaml#/SsaCampaignTargetServiceDeviceType'
+  title: SsaCampaignTargetServiceDeviceTarget
+  description: |
+    <div lang="ja">SsaCampaignTargetServiceDeviceTargetオブジェクトは、デバイス設定を表します。<br>
+    このフィールドは、REPLACE時およびSET時に省略可能となります。<br>
+    ※TargetTypeがDEVICEの場合、このフィールドはREPLACE時に必須となります。</div>
+    <div lang="en">SsaCampaignTargetServiceDeviceTarget object describes device setting.<br>
+    This field is optional in REPLACE and SET operation.<br>
+    *If targetType is DEVICE, this field is required in REPLACE operation.</div>

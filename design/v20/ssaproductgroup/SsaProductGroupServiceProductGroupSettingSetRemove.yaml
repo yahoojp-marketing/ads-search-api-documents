@@ -1,0 +1,58 @@
+SsaProductGroupServiceProductGroupSettingSetRemove:
+  type: object
+  nullable: true
+  properties:
+    productGroupId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">商品グループIDです。<br>
+        このフィールドは、SETおよびREMOVE時は必須となります。</div>
+        <div lang="en">Product group ID.<br>
+        This field will be required in SET and REMOVE operation.</div>
+    userStatus:
+      $ref: 'SsaProductGroupServiceUserStatus.yaml#/SsaProductGroupServiceUserStatus'
+    cpc:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        商品グループ入札価格（CPC）です。<br>
+        配信設定をACTIVEにする場合は必須となります。<br>
+        配信設定がPAUSEDの場合は設定できません。<br>
+        nodeTypeがINTERNALの場合は設定できません。
+        </div>
+        <div lang="en">
+        Bid of product group (CPC).<br>
+        This is required when setting the user status to ACTIVE.<br>
+        Can not set value for a product group with userStatus is PAUSED.<br>
+        Can not set value for a product group with nodeType is INTERNAL.
+        </div>
+    customParameters:
+      $ref: 'SsaProductGroupServiceCustomParameters.yaml#/SsaProductGroupServiceCustomParameters'
+    trackingUrl:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">トラッキングURLです。<br>
+        このフィールドは、省略可能となります。<br>
+        配信設定がPAUSEDの場合は設定できません。<br>
+        nodeTypeがINTERNALの場合は設定できません。</div>
+        <div lang="en">Tracking URL.<br>
+        This field is optional.<br>
+        Can not set value for a product group with userStatus is PAUSED.<br>
+        Can not set value for a product group with nodeType is INTERNAL.</div>
+    isRemoveTrackingUrl:
+      $ref: 'SsaProductGroupServiceIsRemove.yaml#/SsaProductGroupServiceIsRemove'
+  title: SsaProductGroupServiceProductGroupSettingSetRemove
+  description: |
+    <div lang="ja">
+      SsaProductGroupServiceProductGroupSettingSetRemove オブジェクトは、商品グループ設定を表します。<br>
+      このフィールドは、SETおよびREMOVE時、必須となります。
+    </div>
+    <div lang="en">
+      SsaProductGroupServiceProductGroupSettingSetRemove object describes product group setting information.<br>
+      This field will be required in SET and REMOVE operation.
+    </div>

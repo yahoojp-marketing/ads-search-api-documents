@@ -1,0 +1,12 @@
+SsaAdGroupServiceBiddingStrategyConfiguration:
+  title: SsaAdGroupServiceBiddingStrategyConfiguration
+  type: object
+  nullable: true
+  properties:
+    biddingScheme:
+      $ref: 'SsaAdGroupServiceBiddingScheme.yaml#/SsaAdGroupServiceBiddingScheme'
+  description: |
+    <div lang="ja">SsaAdGroupServiceBiddingStrategyConfigurationオブジェクトは、自動入札設定方法を表します。<br>
+    </div>
+    <div lang="en">SsaAdGroupServiceBiddingStrategyConfiguration object describes auto bidding setting.<br>
+    </div>

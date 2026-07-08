@@ -1,0 +1,26 @@
+SsaAccountServicePage:
+  type: object
+  nullable: true
+  properties:
+    authorizationBusinessId:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">アプリケーションによるLINEヤフー広告へのアクセスを認可したビジネスIDです。</div>
+        <div lang="en">Business ID that authorized access to LY Ads via application.</div>
+    totalNumEntries:
+      type: integer
+      nullable: false
+      format: int32
+      description: |
+        <div lang="ja">取得される項目の総件数です。</div>
+        <div lang="en">Total number of entries.</div>
+    values:
+      type: array
+      nullable: true
+      items:
+        $ref: 'SsaAccountServiceValue.yaml#/SsaAccountServiceValue'
+  title: SsaAccountServicePage
+  description: |
+    <div lang="ja">SsaAccountServicePageオブジェクトは、取得されるアカウントに関するエントリーを表します。</div>
+    <div lang="en">Account entry information.</div>

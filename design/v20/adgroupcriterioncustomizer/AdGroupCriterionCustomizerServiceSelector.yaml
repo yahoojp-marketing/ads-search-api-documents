@@ -1,0 +1,81 @@
+AdGroupCriterionCustomizerServiceSelector:
+  type: object
+  nullable: true
+  required:
+  - accountId
+  properties:
+    accountId:
+      type: integer
+      nullable: false
+      format: int64
+      description: |
+        <div lang="ja">検索条件：アカウントIDです。</div>
+        <div lang="en">Search condition: Account ID.</div>
+    customizerAttributeIds:
+      type: array
+      nullable: true
+      items:
+        type: integer
+        nullable: true
+        format: int64
+      description: |
+        <div lang="ja">検索条件：カスタマイザー属性ID</div>
+        <div lang="en">Search condition: Customizer attribute ID</div>
+    campaignIds:
+      type: array
+      nullable: true
+      items:
+        type: integer
+        nullable: true
+        format: int64
+      description: |
+        <div lang="ja">検索条件：キャンペーンID</div>
+        <div lang="en">Search condition: Campaign ID.</div>
+    adGroupIds:
+      type: array
+      nullable: true
+      items:
+        type: integer
+        nullable: true
+        format: int64
+      description: |
+        <div lang="ja">検索条件：広告グループID</div>
+        <div lang="en">Search condition: Ad group ID</div>
+    criterionIds:
+      type: array
+      nullable: true
+      items:
+        type: integer
+        nullable: true
+        format: int64
+      description: |
+        <div lang="ja">検索条件：クライテリアID</div>
+        <div lang="en">Search condition: Criterion ID</div>
+    types:
+      type: array
+      nullable: true
+      items:
+        $ref: 'AdGroupCriterionCustomizerServiceType.yaml#/AdGroupCriterionCustomizerServiceType'
+    numberResults:
+      type: integer
+      nullable: true
+      format: int32
+      minimum: 1
+      maximum: 2000
+      default: 500
+      description: |
+        <div lang="ja">開始位置から取得する結果の数。このフィールドは、1以上を指定する必要があります。</div>
+        <div lang="en">The number of results to retrieve starting from the initial position. This field must be greater than or equal to 1.</div>
+    startIndex:
+      type: integer
+      nullable: true
+      format: int32
+      minimum: 1
+      default: 1
+      description: |
+        <div lang="ja">取得を開始する結果セット内の位置。このフィールドは、1以上を指定する必要があります。</div>
+        <div lang="en">The position within the result set where retrieval begins. This field must be greater than or equal to 1.</div>
+  title: AdGroupCriterionCustomizerServiceSelector
+  description: |
+    <div lang="ja">AdGroupCriterionCustomizerServiceSelectorオブジェクトは、カスタマイザー属性の情報を指定します。</div>
+    <div lang="en">AdGroupCriterionCustomizerServiceSelector describes the AdGroupCriterionCustomizer information.</div>

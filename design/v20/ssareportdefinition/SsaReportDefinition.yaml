@@ -1,0 +1,105 @@
+SsaReportDefinition:
+  type: object
+  nullable: true
+  properties:
+    accountId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">アカウントIDです。</div>
+        <div lang="en">Account ID.</div>
+    completeTime:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">ジョブの完了時刻です。<br>
+        ※YYYY/MM/DD hh:mm:ss形式になります。<br>
+        ※hhは24時間表記になります。</div>
+        <div lang="en">Completion time of Report Job request.<br>
+        *Displays in YYYY/MM/DD hh:mm:ss form.<br>
+        *hh will display in 24-hour time.</div>
+    dateRange:
+      $ref: 'SsaReportDefinitionServiceReportDateRange.yaml#/SsaReportDefinitionServiceReportDateRange'
+    fields:
+      type: array
+      nullable: true
+      items:
+        type: string
+        nullable: true
+      description: |
+        <div lang="ja">フィールド（レポートの出力項目名）です。<br>
+        ADD時、このフィールドは必須となります。</div>
+        <div lang="en">Item name of the report.<br>
+        Can appoint the value retrieved from getReportFields.<br>
+        This field is required in ADD operation.</div>
+    filters:
+      type: array
+      nullable: true
+      items:
+        $ref: 'SsaReportDefinitionServiceReportFilter.yaml#/SsaReportDefinitionServiceReportFilter'
+    reportCompressType:
+      $ref: 'SsaReportDefinitionServiceReportCompressType.yaml#/SsaReportDefinitionServiceReportCompressType'
+    reportDateRangeType:
+      $ref: 'SsaReportDefinitionServiceReportDateRangeType.yaml#/SsaReportDefinitionServiceReportDateRangeType'
+    reportDecimalPartDisplayType:
+      $ref: 'SsaReportDefinitionServiceReportDecimalPartDisplayType.yaml#/SsaReportDefinitionServiceReportDecimalPartDisplayType'
+    reportDownloadEncode:
+      $ref: 'SsaReportDefinitionServiceReportDownloadEncode.yaml#/SsaReportDefinitionServiceReportDownloadEncode'
+    reportDownloadFormat:
+      $ref: 'SsaReportDefinitionServiceReportDownloadFormat.yaml#/SsaReportDefinitionServiceReportDownloadFormat'
+    reportJobErrorDetail:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">レポートジョブのエラー詳細です。</div>
+        <div lang="en">Error details of Report Job.</div>
+    reportJobId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">レポートジョブIDです。<br>
+        REMOVE時、このフィールドは必須となります。</div>
+        <div lang="en">Report Job ID.<br>
+        This field is required in REMOVE operation.</div>
+    reportJobStatus:
+      $ref: 'SsaReportDefinitionServiceReportJobStatus.yaml#/SsaReportDefinitionServiceReportJobStatus'
+    reportLanguage:
+      $ref: 'SsaReportDefinitionServiceReportLanguage.yaml#/SsaReportDefinitionServiceReportLanguage'
+    reportName:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">レポート名称です。<br>
+        ADD時、このフィールドは必須となります。</div>
+        <div lang="en">Name of the report.<br>
+        This field is required in ADD operation.</div>
+    reportSkipColumnHeader:
+      $ref: 'SsaReportDefinitionServiceReportSkipColumnHeader.yaml#/SsaReportDefinitionServiceReportSkipColumnHeader'
+    reportSkipReportSummary:
+      $ref: 'SsaReportDefinitionServiceReportSkipReportSummary.yaml#/SsaReportDefinitionServiceReportSkipReportSummary'
+    reportType:
+      $ref: 'SsaReportDefinitionServiceReportType.yaml#/SsaReportDefinitionServiceReportType'
+    requestTime:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">リクエストの到着日時です。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+        ※フォーマット: yyyy/MM/dd HH:mm:ss<br>
+        ※HHは24時間表記になります。</div>
+        <div lang="en">Arrival date and time of your request.<br>
+        Although this field will be returned in the response, it will be ignored on input.<br>
+        *Format: yyyy/MM/dd HH:mm:ss
+        *HH will display in 24-hour time.</div>
+    sortFields:
+      type: array
+      nullable: true
+      items:
+        $ref: 'SsaReportDefinitionServiceReportSortField.yaml#/SsaReportDefinitionServiceReportSortField'
+      maxItems: 1
+  title: SsaReportDefinition
+  description: |
+    <div lang="ja">SsaReportDefinitionオブジェクトは、レポートの情報を表します。</div>
+    <div lang="en">SsaReportDefinition object describes report information.</div>

@@ -1,0 +1,25 @@
+BiddingStrategyServiceOperation:
+  type: object
+  nullable: true
+  required:
+  - accountId
+  - operand
+  properties:
+    accountId:
+      type: integer
+      nullable: false
+      format: int64
+      description: |
+        <div lang="ja">アカウントIDです。</div>
+        <div lang="en">Account ID.</div>
+    operand:
+      type: array
+      nullable: true
+      items:
+        $ref: 'BiddingStrategy.yaml#/BiddingStrategy'
+      minItems: 1
+      maxItems: 200
+  title: BiddingStrategyServiceOperation
+  description: |
+    <div lang="ja">BiddingStrategyServiceOperationオブジェクトは、自動入札設定の操作対象キャンペーンに関する情報を表します。</div>
+    <div lang="en">BiddingStrategyServiceOperation object displays the details of auto bidding details of designated campaign.</div>

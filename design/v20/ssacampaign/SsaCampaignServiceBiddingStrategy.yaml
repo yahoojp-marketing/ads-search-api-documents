@@ -1,0 +1,12 @@
+SsaCampaignServiceBiddingStrategy:
+  title: SsaCampaignServiceBiddingStrategy
+  type: object
+  nullable: true
+  properties:
+    biddingScheme:
+      $ref: 'SsaCampaignServiceBiddingScheme.yaml#/SsaCampaignServiceBiddingScheme'
+  description: |
+    <div lang="ja">SsaCampaignServiceBiddingStrategyオブジェクトは、キャンペーン入札戦略設定方法を表します。<br>
+    ADD時、biddingStrategyConfigurationは必須となります。</div>
+    <div lang="en">SsaCampaignServiceBiddingStrategy object describes campaign bidding strategy setting.<br>
+    biddingStrategyConfiguration is required in ADD operation.</div>

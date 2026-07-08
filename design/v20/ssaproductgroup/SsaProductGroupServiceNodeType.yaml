@@ -1,0 +1,19 @@
+SsaProductGroupServiceNodeType:
+  type: string
+  nullable: true
+  enum:
+  - INTERNAL
+  - LEAF
+  - UNKNOWN
+  title: SsaProductGroupServiceNodeType
+  description: |
+    <div lang="ja">SsaProductGroupServiceNodeTypeは、商品グループが分割されているかを表します。</div>
+    <div lang="en">SsaProductGroupServiceNodeType indicates whether the product group is subdivided.</div>
+    <dl class=term>
+      <dt class="term__item">INTERNAL</dt>
+      <dd class="term__desc"><span lang="ja">商品グループは分割されています。</span><span lang="en">The product group is subdivided.</span></dd>
+      <dt class="term__item">LEAF</dt>
+      <dd class="term__desc"><span lang="ja">商品グループは分割されていません。</span><span lang="en">The product group is not subdivided.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown value.</span></dd>
+    </dl>

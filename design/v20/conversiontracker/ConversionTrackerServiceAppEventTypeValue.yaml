@@ -1,0 +1,20 @@
+ConversionTrackerServiceAppEventTypeValue:
+  type: object
+  nullable: true
+  properties:
+    appEvent:
+      $ref: 'ConversionTrackerServiceAppEvent.yaml#/ConversionTrackerServiceAppEvent'
+    errors:
+      type: array
+      nullable: true
+      items:
+        $ref: '../../Error.yaml#/Error'
+    operationSucceeded:
+      type: boolean
+      nullable: true
+      description: |
+        <div lang="ja">処理結果です。</div><div lang="en">Operation result</div>
+  title: ConversionTrackerServiceAppEventTypeValue
+  description: |
+    <div lang="ja">ConversionTrackerServiceAppEventTypeValueオブジェクトは、アプリイベント情報を表します。</div>
+    <div lang="en">ConversionTrackerServiceAppEventTypeValue object shows AppEvent information.</div>

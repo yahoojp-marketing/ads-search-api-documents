@@ -1,0 +1,27 @@
+SsaAdGroupServiceCampaignBiddingStrategyType:
+  type: string
+  nullable: true
+  enum:
+    - CPC
+    - MAXIMIZE_CONVERSIONS
+    - MAXIMIZE_CONVERSION_VALUE
+    - MAXIMIZE_CLICKS
+    - UNKNOWN
+  description: |
+    <div lang="ja">SsaAdGroupServiceCampaignBiddingStrategyTypeは、自動入札タイプを表します。<br>
+    このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
+    <div lang="en">SsaAdGroupServiceCampaignBiddingStrategyType displays the auto bidding type.<br>
+    Although this field will be returned in the response, it will be ignored on input.</div>
+    <dl class=term>
+      <dt class="term__item">CPC</dt>
+      <dd class="term__desc"><span lang="ja">個別クリック単価</span><span lang="en">Individual CPC</span></dd>
+      <dt class="term__item">MAXIMIZE_CONVERSIONS</dt>
+      <dd class="term__desc"><span lang="ja">コンバージョン数の最大化</span><span lang="en">Maximize conversions</span></dd>
+      <dt class="term__item">MAXIMIZE_CONVERSION_VALUE</dt>
+      <dd class="term__desc"><span lang="ja">コンバージョン価値の最大化 ※現在利用できません。</span><span lang="en">Maximize conversion value *Not Available.</span></dd>
+      <dt class="term__item">MAXIMIZE_CLICKS</dt>
+      <dd class="term__desc"><span lang="ja">クリック数の最大化 ※現在利用できません。</span><span lang="en">Maximize clicks *Not Available.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown value.</span></dd>
+    </dl>
+  title: SsaAdGroupServiceCampaignBiddingStrategyType

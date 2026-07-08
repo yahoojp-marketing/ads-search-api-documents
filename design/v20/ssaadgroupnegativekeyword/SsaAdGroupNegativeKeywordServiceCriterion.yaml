@@ -1,0 +1,21 @@
+SsaAdGroupNegativeKeywordServiceCriterion:
+  type: object
+  nullable: true
+  properties:
+    criterionId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">クライテリアIDです。<br>
+        REMOVE時、このフィールドは必須です。</div>
+        <div lang="en">SsaAdGroupNegativeKeywordServiceCriterion ID.<br>
+        This field is required in REMOVE operation.</div>
+    keyword:
+      $ref: 'SsaAdGroupNegativeKeywordServiceKeyword.yaml#/SsaAdGroupNegativeKeywordServiceKeyword'
+  title: SsaAdGroupNegativeKeywordServiceCriterion
+  description: |
+    <div lang="ja">SsaAdGroupNegativeKeywordServiceCriterionオブジェクトは、対象外キーワードの条件を表します。※広告グループ用の条件です。<br>
+    ADD時およびREMOVE時、このフィールドは必須です。</div>
+    <div lang="en">SsaAdGroupNegativeKeywordServiceCriterion object describes negative keyword criteria information for ad group.<br>
+    This field is required in ADD and REMOVE operation.</div>
