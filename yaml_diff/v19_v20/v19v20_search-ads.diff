@@ -1,0 +1,1963 @@
+Only in v20/adgroup: AdGroupServiceDisableAiKeywordExpansion.yaml
+
+
+------
+diff -ru v19/adgroup/AdGroup.yaml v20/adgroup/AdGroup.yaml
+--- v19/adgroup/AdGroup.yaml	2026-07-08 13:06:51.343125509 +0900
++++ v20/adgroup/AdGroup.yaml	2026-07-08 13:06:51.375125325 +0900
+@@ -69,6 +69,8 @@
+         Although this field will be returned in the response, it will be ignored on input.</div>
+     customParameters:
+       $ref: 'AdGroupServiceCustomParameters.yaml#/AdGroupServiceCustomParameters'
++    disableAiKeywordExpansion:
++      $ref: 'AdGroupServiceDisableAiKeywordExpansion.yaml#/AdGroupServiceDisableAiKeywordExpansion'
+     labels:
+       type: array
+       nullable: true
+Only in v20/adgroupasset: AdGroupAssetServiceCreatedBy.yaml
+
+
+------
+diff -ru v19/adgroupasset/AdGroupAssetServiceSelector.yaml v20/adgroupasset/AdGroupAssetServiceSelector.yaml
+--- v19/adgroupasset/AdGroupAssetServiceSelector.yaml	2026-07-08 13:06:51.343125509 +0900
++++ v20/adgroupasset/AdGroupAssetServiceSelector.yaml	2026-07-08 13:06:51.379125303 +0900
+@@ -54,6 +54,11 @@
+       nullable: true
+       items:
+         $ref: 'AdGroupAssetServiceUserStatus.yaml#/AdGroupAssetServiceUserStatus'
++    createdBy:
++      type: array
++      nullable: true
++      items:
++        $ref: 'AdGroupAssetServiceCreatedBy.yaml#/AdGroupAssetServiceCreatedBy'
+     numberResults:
+       type: integer
+       nullable: true
+
+
+------
+diff -ru v19/adgroupasset/AdGroupAsset.yaml v20/adgroupasset/AdGroupAsset.yaml
+--- v19/adgroupasset/AdGroupAsset.yaml	2026-07-08 13:06:51.343125509 +0900
++++ v20/adgroupasset/AdGroupAsset.yaml	2026-07-08 13:06:51.379125303 +0900
+@@ -44,6 +44,8 @@
+       $ref: 'AdGroupAssetServiceType.yaml#/AdGroupAssetServiceType'
+     userStatus:
+       $ref: 'AdGroupAssetServiceUserStatus.yaml#/AdGroupAssetServiceUserStatus'
++    createdBy:
++      $ref: 'AdGroupAssetServiceCreatedBy.yaml#/AdGroupAssetServiceCreatedBy'
+   title: AdGroupAsset
+   description: |
+     <div lang="ja">AdGroupAssetオブジェクトは、広告グループとアセット間の設定情報を表します。<br>
+Only in v20/asset: AssetServiceCreatedBy.yaml
+
+
+------
+diff -ru v19/asset/AssetServiceSelector.yaml v20/asset/AssetServiceSelector.yaml
+--- v19/asset/AssetServiceSelector.yaml	2026-07-08 13:06:51.347125486 +0900
++++ v20/asset/AssetServiceSelector.yaml	2026-07-08 13:06:51.383125280 +0900
+@@ -32,6 +32,11 @@
+       nullable: true
+       items:
+         $ref: 'AssetServiceApprovalStatus.yaml#/AssetServiceApprovalStatus'
++    createdBy:
++      type: array
++      nullable: true
++      items:
++        $ref: 'AssetServiceCreatedBy.yaml#/AssetServiceCreatedBy'
+     numberResults:
+       type: integer
+       nullable: true
+
+
+------
+diff -ru v19/asset/Asset.yaml v20/asset/Asset.yaml
+--- v19/asset/Asset.yaml	2026-07-08 13:06:51.347125486 +0900
++++ v20/asset/Asset.yaml	2026-07-08 13:06:51.383125280 +0900
+@@ -32,6 +32,8 @@
+       $ref: 'AssetServiceAssetData.yaml#/AssetServiceAssetData'
+     approvalStatus:
+       $ref: 'AssetServiceApprovalStatus.yaml#/AssetServiceApprovalStatus'
++    createdBy:
++      $ref: 'AssetServiceCreatedBy.yaml#/AssetServiceCreatedBy'
+     disapprovalReasonCodes:
+       type: array
+       nullable: true
+
+
+------
+diff -ru v19/auditlog/AuditLogServiceEventSelector.yaml v20/auditlog/AuditLogServiceEventSelector.yaml
+--- v19/auditlog/AuditLogServiceEventSelector.yaml	2026-07-08 13:06:51.351125463 +0900
++++ v20/auditlog/AuditLogServiceEventSelector.yaml	2026-07-08 13:06:51.387125257 +0900
+@@ -47,22 +47,6 @@
+               <td>広告です。</td>
+             </tr>
+             <tr>
+-              <td>FEED</td>
+-              <td>Feedフォルダーです。※提供終了済みです。</td>
+-            </tr>
+-            <tr>
+-              <td>FEED_ITEM</td>
+-              <td>広告表示アセットです。※提供終了済みです。</td>
+-            </tr>
+-            <tr>
+-              <td>CAMPAIGN_FEED</td>
+-              <td>広告表示アセットです（キャンペーン）。※提供終了済みです。</td>
+-            </tr>
+-            <tr>
+-              <td>AD_GROUP_FEED</td>
+-              <td>広告表示アセットです（広告グループ）。※提供終了済みです。</td>
+-            </tr>
+-            <tr>
+               <td>SS_IO</td>
+               <td>アカウントです。</td>
+             </tr>
+@@ -103,14 +87,6 @@
+               <td>キャンペーン共有リストです。</td>
+             </tr>
+             <tr>
+-              <td>AD_CUSTOMIZER</td>
+-              <td>アドカスタマイザーです。※提供終了済みです。</td>
+-            </tr>
+-            <tr>
+-              <td>EXCLUDE_AD_CUSTOMIZER</td>
+-              <td>アドカスタマイザーを除くすべての履歴です。※提供終了済みです。</td>
+-            </tr>
+-            <tr>
+               <td>ASSET</td>
+               <td>アセット（広告表示アセット）です。</td>
+             </tr>
+@@ -151,10 +127,6 @@
+               <td>ページフィードアセットセットです。</td>
+             </tr>
+             <tr>
+-              <td>PAGE_FEED_ASSET</td>
+-              <td>ページフィードアセットです。※提供終了済みです。</td>
+-            </tr>
+-            <tr>
+               <td>BIDDING_SEASONALITY_ADJUSTMENT</td>
+               <td>自動入札のスポット調整です。</td>
+             </tr>
+@@ -217,22 +189,6 @@
+               <td>Ad.</td>
+             </tr>
+             <tr>
+-              <td>FEED</td>
+-              <td>Feed folder. *This value is no longer supported.</td>
+-            </tr>
+-            <tr>
+-              <td>FEED_ITEM</td>
+-              <td>Ad display assets. *This value is no longer supported.</td>
+-            </tr>
+-            <tr>
+-              <td>CAMPAIGN_FEED</td>
+-              <td>Ad display assets for campaign. *This value is no longer supported.</td>
+-            </tr>
+-            <tr>
+-              <td>AD_GROUP_FEED</td>
+-              <td>Ad display assets for ad group. *This value is no longer supported.</td>
+-            </tr>
+-            <tr>
+               <td>SS_IO</td>
+               <td>Account.</td>
+             </tr>
+@@ -273,14 +229,6 @@
+               <td>Shared list for campaign.</td>
+             </tr>
+             <tr>
+-              <td>AD_CUSTOMIZER</td>
+-              <td>Ad customizer. *This value is no longer supported.</td>
+-            </tr>
+-            <tr>
+-              <td>EXCLUDE_AD_CUSTOMIZER</td>
+-              <td>All operation history excepting ad customizer. *This value is no longer supported.</td>
+-            </tr>
+-            <tr>
+               <td>ASSET</td>
+               <td>Assets (Ad display asset).</td>
+             </tr>
+@@ -321,10 +269,6 @@
+               <td>PageFeedAssetSet.</td>
+             </tr>
+             <tr>
+-              <td>PAGE_FEED_ASSET</td>
+-              <td>PageFeedAsset. *This value is no longer supported.</td>
+-            </tr>
+-            <tr>
+               <td>BIDDING_SEASONALITY_ADJUSTMENT</td>
+               <td>Bidding Seasonality Adjustment.</td>
+             </tr>
+
+
+------
+diff -ru v19/biddingstrategy/BiddingStrategyServiceTargetRoasBiddingScheme.yaml v20/biddingstrategy/BiddingStrategyServiceTargetRoasBiddingScheme.yaml
+--- v19/biddingstrategy/BiddingStrategyServiceTargetRoasBiddingScheme.yaml	2026-07-08 13:06:51.351125463 +0900
++++ v20/biddingstrategy/BiddingStrategyServiceTargetRoasBiddingScheme.yaml	2026-07-08 13:06:51.391125234 +0900
+@@ -33,7 +33,7 @@
+         ※0.01 〜1000.00（1%〜100000%）の範囲内のみ許容します。<br>
+         このフィールドは、ADD時は必須となり、SET時は省略可能となります。※Return On Advertising Spend(ROAS)</div>
+         <div lang="en">Target ROAS.<br>
+-        * ROAS: Return On Average Spend.<br>
++        * ROAS: Return On Advertising Spend.<br>
+         * Setting limit: 0.01 〜1000.00（1%〜100000%）.<br>
+         This field is required in ADD operation, and will be optional in SET operation.</div>
+   title: BiddingStrategyServiceTargetRoasBiddingScheme
+Only in v20/campaign: CampaignServiceEnableAiSetting.yaml
+
+
+------
+diff -ru v19/campaign/Campaign.yaml v20/campaign/Campaign.yaml
+--- v19/campaign/Campaign.yaml	2026-07-08 13:06:51.355125440 +0900
++++ v20/campaign/Campaign.yaml	2026-07-08 13:06:51.391125234 +0900
+@@ -70,6 +70,8 @@
+         This field is optional in ADD and SET operation. The default value in ADD operation will be 20371231.<br>
+         *Cannot set the past date and date before the start date.<br>
+         *In YYYYMMDD format.</div>
++    enableAiSetting:
++      $ref: 'CampaignServiceEnableAiSetting.yaml#/CampaignServiceEnableAiSetting'
+     failedBiddingStrategyConfiguration:
+       $ref: 'CampaignServiceBiddingStrategy.yaml#/CampaignServiceBiddingStrategy'
+     labels:
+
+
+------
+diff -ru v19/campaignexport/CampaignExportServiceApprovalStatus.yaml v20/campaignexport/CampaignExportServiceApprovalStatus.yaml
+--- v19/campaignexport/CampaignExportServiceApprovalStatus.yaml	2026-07-08 13:06:51.359125417 +0900
++++ v20/campaignexport/CampaignExportServiceApprovalStatus.yaml	2026-07-08 13:06:51.395125211 +0900
+@@ -4,9 +4,11 @@
+   enum:
+   - APPROVED
+   - APPROVED_WITH_REVIEW
++  - APPROVED_WITH_PRE_DISAPPROVED
+   - REVIEW
+   - PRE_DISAPPROVED
+   - POST_DISAPPROVED
++  - POST_DISAPPROVED_WITH_REVIEW
+   - UNKNOWN
+   title: CampaignExportServiceApprovalStatus
+   description: |
+@@ -18,12 +20,16 @@
+       <dd class="term__desc"><span lang="ja">承認済です。</span><span lang="en">The item is approved.</span></dd>
+       <dt class="term__item">APPROVED_WITH_REVIEW</dt>
+       <dd class="term__desc"><span lang="ja">承認済です。<br>すでに掲載中のキーワード・広告を再編集し、審査中となり、編集前の広告が掲載されています。</span><span lang="en">The item is approved.<br>Updated items are under review.</span></dd>
++      <dt class="term__item">APPROVED_WITH_PRE_DISAPPROVED</dt>
++      <dd class="term__desc"><span lang="ja">承認済です。<br>すでに掲載中のキーワード・広告を再編集した内容が審査で承認されず、編集前のキーワード・広告が掲載されています。 ※現在利用できません。</span><span lang="en">The item is approved.<br>Updated items were rejected in review, so the previous items are displayed. *Not Available.</span></dd>
+       <dt class="term__item">REVIEW</dt>
+       <dd class="term__desc"><span lang="ja">審査中です。<br>新しく追加したキーワード・広告が審査中となり、広告は未掲載です。</span><span lang="en">Under editorial review.<br>Newly added keywords/ads are under review, and not displayed yet.</span></dd>
+       <dt class="term__item">PRE_DISAPPROVED</dt>
+       <dd class="term__desc"><span lang="ja">掲載不可です。<br>新しく追加したキーワード・広告が審査で承認されず非掲載です。</span><span lang="en">The item was rejected.<br>Newly added keywords/ads have been rejected, so it cannot be displayed.</span></dd>
+       <dt class="term__item">POST_DISAPPROVED</dt>
+       <dd class="term__desc"><span lang="ja">掲載停止です。<br>すでに掲載中のキーワード・広告について審査が行われた結果、承認されず非掲載です。</span><span lang="en">The item was rejected<br>Ads already displayed have been taken offline due to a result from post review.</span></dd>
++      <dt class="term__item">POST_DISAPPROVED_WITH_REVIEW</dt>
++      <dd class="term__desc"><span lang="ja">掲載停止です。<br>すでに掲載中のキーワード・広告を再編集し、審査中に編集前の内容についても審査が行われた結果、承認されず非掲載です。 ※現在利用できません。</span><span lang="en">The item is paused.<br>Previously displayed items were rejected in post review, so they are not displayed. *Not Available.</span></dd>
+       <dt class="term__item">UNKNOWN</dt>
+       <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown value.</span></dd>
+     </dl>
+
+
+------
+diff -ru v19/Route.yaml v20/Route.yaml
+--- v19/Route.yaml	2026-07-08 13:06:51.339125531 +0900
++++ v20/Route.yaml	2026-07-08 13:06:51.371125348 +0900
+@@ -1,11 +1,11 @@
+ openapi: 3.0.2
+ info:
+   title: 'LINEヤフー広告 検索広告 API リファレンス / LY Ads Search Ads API Reference'
+-  version: 'v19'
++  version: 'v20'
+   description: |
+     <div lang="ja">LINEヤフー広告 検索広告 APIのWebサービスについて説明します。</div>
+     <div lang="en">Search Ads API Web Services supported in LY Ads API.</div>
+-    <div><a target="_blank" href="https://github.com/yahoojp-marketing/ads-search-api-documents/blob/master/design/v19/Route.yaml">OpenAPI Specification</a></div>
++    <div><a target="_blank" href="https://github.com/yahoojp-marketing/ads-search-api-documents/blob/master/design/v20/Route.yaml">OpenAPI Specification</a></div>
+     <div lang="ja"><a target="_blank" href="https://github.com/yahoojp-marketing/ads-search-api-documents/blob/master/bestpractice/ja">Best Practice</a></div>
+     <div lang="en"><a target="_blank" href="https://github.com/yahoojp-marketing/ads-search-api-documents/blob/master/bestpractice/en">Best Practice</a></div>
+ 
+@@ -23,7 +23,7 @@
+   - oAuth: [ yahooads ]
+ 
+ servers:
+-  - url: https://ads-search.yahooapis.jp/api/v19
++  - url: https://ads-search.yahooapis.jp/api/v20
+ 
+ tags:
+   - name: AbTestService
+@@ -169,30 +169,30 @@
+       <h2 lang="ja" class="reportFields__title">レポートフィールド</h2>
+       <h2 lang="en" class="reportFields__title">Report Fields</h2>
+       <ul>
+-      <li><div lang="ja"><a href="./reports/v19/jp/ACCOUNT.csv" download>アカウントレポート</a></div><div lang="en"><a href="./reports/v19/jp/ACCOUNT.csv" download>Account Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v19/jp/CAMPAIGN.csv" download>キャンペーンレポート</a></div><div lang="en"><a href="./reports/v19/jp/CAMPAIGN.csv" download>Campaign Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v19/jp/ADGROUP.csv" download>広告グループレポート</a></div><div lang="en"><a href="./reports/v19/jp/ADGROUP.csv" download>Ad Group Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v19/jp/AD.csv" download>広告レポート</a></div><div lang="en"><a href="./reports/v19/jp/AD.csv" download>Ad Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v19/jp/KEYWORDS.csv" download>キーワードレポート</a></div><div lang="en"><a href="./reports/v19/jp/KEYWORDS.csv" download>Keyword Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v19/jp/SEARCH_QUERY.csv" download>検索クエリレポート</a></div><div lang="en"><a href="./reports/v19/jp/SEARCH_QUERY.csv" download>Search Query Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v19/jp/GEO.csv" download>地域別レポート</a></div><div lang="en"><a href="./reports/v19/jp/GEO.csv" download>Geo Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v19/jp/GEO_TARGET.csv" download>地域ターゲティングレポート</a></div><div lang="en"><a href="./reports/v19/jp/GEO_TARGET.csv" download>Geo Targeting Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v19/jp/SCHEDULE_TARGET.csv" download>曜日・時間帯ターゲティングレポート</a></div><div lang="en"><a href="./reports/v19/jp/SCHEDULE_TARGET.csv" download>Schedule Targeting Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v19/jp/BID_STRATEGY.csv" download>自動入札レポート</a></div><div lang="en"><a href="./reports/v19/jp/BID_STRATEGY.csv" download>Auto Bidding Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v19/jp/CAMPAIGN_TARGET_LIST.csv" download>キャンペーンターゲットリストレポート</a></div><div lang="en"><a href="./reports/v19/jp/CAMPAIGN_TARGET_LIST.csv"download>Campaign Target List Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v19/jp/ADGROUP_TARGET_LIST.csv" download>広告グループターゲットリストレポート</a></div><div lang="en"><a href="./reports/v19/jp/ADGROUP_TARGET_LIST.csv" download>Ad Group Target List Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v19/jp/CAMPAIGN_AUDIENCE_LIST.csv" download>キャンペーンオーディエンスリストレポート</a></div><div lang="en"><a href="./reports/v19/jp/CAMPAIGN_AUDIENCE_LIST.csv"download>Campaign Audience List Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v19/jp/ADGROUP_AUDIENCE_LIST.csv" download>広告グループオーディエンスリストレポート</a></div><div lang="en"><a href="./reports/v19/jp/ADGROUP_AUDIENCE_LIST.csv" download>Ad Group Audience List Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v19/jp/LANDING_PAGE_URL.csv" download>ランディングページURLレポート</a></div><div lang="en"><a href="./reports/v19/jp/LANDING_PAGE_URL.csv" download>Landing Page URL Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v19/jp/KEYWORDLESS_QUERY.csv" download>検索クエリーレポート（動的検索連動型広告）</a></div><div lang="en"><a href="./reports/v19/jp/KEYWORDLESS_QUERY.csv" download>Search Query Report (Dynamic Ads for Search)</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v19/jp/WEBPAGE_CRITERION.csv" download>ページフィードターゲティングレポート</a></div><div lang="en"><a href="./reports/v19/jp/WEBPAGE_CRITERION.csv" download>Page Feed Targeting Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v19/jp/BID_MODIFIER.csv" download>入札価格調整率レポート</a></div><div lang="en"><a href="./reports/v19/jp/BID_MODIFIER.csv" download>Bid Adjustments Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v19/jp/CAMPAIGN_ASSET.csv" download>広告表示アセットレポート（キャンペーン）</a></div><div lang="en"><a href="./reports/v19/jp/CAMPAIGN_ASSET.csv" download>Ad Display Asset Report (campaign)</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v19/jp/AD_GROUP_ASSET.csv" download>広告表示アセットレポート（広告グループ）</a></div><div lang="en"><a href="./reports/v19/jp/AD_GROUP_ASSET.csv" download>Ad Display Asset Report (ad group)</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v19/jp/ACCOUNT_ASSET.csv" download>広告表示アセットレポート（アカウント）</a></div><div lang="en"><a href="./reports/v19/jp/ACCOUNT_ASSET.csv" download>Ad Display Asset Report (account)</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v19/jp/RESPONSIVE_ADS_FOR_SEARCH_ASSET.csv" download>レスポンシブ検索広告アセットレポート</a></div><div lang="en"><a href="./reports/v19/jp/RESPONSIVE_ADS_FOR_SEARCH_ASSET.csv" download>Responsive Ads for Search Asset Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v19/jp/SHARED_BUDGET.csv" download>共有予算レポート</a></div><div lang="en"><a href="./reports/v19/jp/SHARED_BUDGET.csv" download>Campaign Budget Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v19/jp/ASSET_COMBINATION.csv" download>アセット組み合わせレポート</a></div><div lang="en"><a href="./reports/v19/jp/ASSET_COMBINATION.csv" download>Asset combinations report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v20/jp/ACCOUNT.csv" download>アカウントレポート</a></div><div lang="en"><a href="./reports/v20/jp/ACCOUNT.csv" download>Account Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v20/jp/CAMPAIGN.csv" download>キャンペーンレポート</a></div><div lang="en"><a href="./reports/v20/jp/CAMPAIGN.csv" download>Campaign Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v20/jp/ADGROUP.csv" download>広告グループレポート</a></div><div lang="en"><a href="./reports/v20/jp/ADGROUP.csv" download>Ad Group Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v20/jp/AD.csv" download>広告レポート</a></div><div lang="en"><a href="./reports/v20/jp/AD.csv" download>Ad Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v20/jp/KEYWORDS.csv" download>キーワードレポート</a></div><div lang="en"><a href="./reports/v20/jp/KEYWORDS.csv" download>Keyword Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v20/jp/SEARCH_QUERY.csv" download>検索クエリレポート</a></div><div lang="en"><a href="./reports/v20/jp/SEARCH_QUERY.csv" download>Search Query Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v20/jp/GEO.csv" download>地域別レポート</a></div><div lang="en"><a href="./reports/v20/jp/GEO.csv" download>Geo Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v20/jp/GEO_TARGET.csv" download>地域ターゲティングレポート</a></div><div lang="en"><a href="./reports/v20/jp/GEO_TARGET.csv" download>Geo Targeting Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v20/jp/SCHEDULE_TARGET.csv" download>曜日・時間帯ターゲティングレポート</a></div><div lang="en"><a href="./reports/v20/jp/SCHEDULE_TARGET.csv" download>Schedule Targeting Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v20/jp/BID_STRATEGY.csv" download>自動入札レポート</a></div><div lang="en"><a href="./reports/v20/jp/BID_STRATEGY.csv" download>Auto Bidding Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v20/jp/CAMPAIGN_TARGET_LIST.csv" download>キャンペーンターゲットリストレポート</a></div><div lang="en"><a href="./reports/v20/jp/CAMPAIGN_TARGET_LIST.csv"download>Campaign Target List Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v20/jp/ADGROUP_TARGET_LIST.csv" download>広告グループターゲットリストレポート</a></div><div lang="en"><a href="./reports/v20/jp/ADGROUP_TARGET_LIST.csv" download>Ad Group Target List Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v20/jp/CAMPAIGN_AUDIENCE_LIST.csv" download>キャンペーンオーディエンスリストレポート</a></div><div lang="en"><a href="./reports/v20/jp/CAMPAIGN_AUDIENCE_LIST.csv"download>Campaign Audience List Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v20/jp/ADGROUP_AUDIENCE_LIST.csv" download>広告グループオーディエンスリストレポート</a></div><div lang="en"><a href="./reports/v20/jp/ADGROUP_AUDIENCE_LIST.csv" download>Ad Group Audience List Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v20/jp/LANDING_PAGE_URL.csv" download>ランディングページURLレポート</a></div><div lang="en"><a href="./reports/v20/jp/LANDING_PAGE_URL.csv" download>Landing Page URL Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v20/jp/KEYWORDLESS_QUERY.csv" download>検索クエリーレポート（動的検索連動型広告）</a></div><div lang="en"><a href="./reports/v20/jp/KEYWORDLESS_QUERY.csv" download>Search Query Report (Dynamic Ads for Search)</a></div></li>
++      <li><div lang="ja"><a href="./reports/v20/jp/WEBPAGE_CRITERION.csv" download>ページフィードターゲティングレポート</a></div><div lang="en"><a href="./reports/v20/jp/WEBPAGE_CRITERION.csv" download>Page Feed Targeting Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v20/jp/BID_MODIFIER.csv" download>入札価格調整率レポート</a></div><div lang="en"><a href="./reports/v20/jp/BID_MODIFIER.csv" download>Bid Adjustments Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v20/jp/CAMPAIGN_ASSET.csv" download>広告表示アセットレポート（キャンペーン）</a></div><div lang="en"><a href="./reports/v20/jp/CAMPAIGN_ASSET.csv" download>Ad Display Asset Report (campaign)</a></div></li>
++      <li><div lang="ja"><a href="./reports/v20/jp/AD_GROUP_ASSET.csv" download>広告表示アセットレポート（広告グループ）</a></div><div lang="en"><a href="./reports/v20/jp/AD_GROUP_ASSET.csv" download>Ad Display Asset Report (ad group)</a></div></li>
++      <li><div lang="ja"><a href="./reports/v20/jp/ACCOUNT_ASSET.csv" download>広告表示アセットレポート（アカウント）</a></div><div lang="en"><a href="./reports/v20/jp/ACCOUNT_ASSET.csv" download>Ad Display Asset Report (account)</a></div></li>
++      <li><div lang="ja"><a href="./reports/v20/jp/RESPONSIVE_ADS_FOR_SEARCH_ASSET.csv" download>レスポンシブ検索広告アセットレポート</a></div><div lang="en"><a href="./reports/v20/jp/RESPONSIVE_ADS_FOR_SEARCH_ASSET.csv" download>Responsive Ads for Search Asset Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v20/jp/SHARED_BUDGET.csv" download>共有予算レポート</a></div><div lang="en"><a href="./reports/v20/jp/SHARED_BUDGET.csv" download>Campaign Budget Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v20/jp/ASSET_COMBINATION.csv" download>アセット組み合わせレポート</a></div><div lang="en"><a href="./reports/v20/jp/ASSET_COMBINATION.csv" download>Asset combinations report</a></div></li>
+       </ul>
+   - name: CampaignExportService
+     description: |
+@@ -359,6 +359,26 @@
+       <label class="account" ></label>
+       <div lang="ja">SsaAccountServiceでは、SSAアカウントに関する情報の取得を行います。</div>
+       <div lang="en">SsaAccountService provides functions for get SSA accounts.</div>
++  - name: SsaAdGroupTargetService
++    description: |
++      <label class="campaign"></label>
++      <div lang="ja">SsaAdGroupTargetServiceでは、SSA広告グループのターゲティング設定に関する情報の取得および更新を行います。</div><div lang="en">Use
++      this service to get or update SSA adgroup target setting information.</div>
++  - name: SsaAdGroupNegativeKeywordService
++    description: |
++      <label class="campaign"></label>
++      <div lang="ja">SsaAdGroupNegativeKeywordServiceでは、SSA広告グループの対象外キーワードの取得および追加・削除を行います。</div>
++      <div lang="en">SsaAdGroupNegativeKeywordService provides functions for getting, adding and removing ad group negative keywords for SSA.</div>
++  - name: SsaCampaignTargetService
++    description: |
++      <label class="campaign"></label>
++      <div lang="ja">SsaCampaignTargetServiceでは、SSAキャンペーンのターゲティング設定に関する情報の取得および更新を行います。</div>
++      <div lang="en">SsaCampaignTargetService is to get or update SSA campaign target setting information.</div>
++  - name: SsaCampaignNegativeKeywordService
++    description: |
++      <label class="campaign"></label>
++      <div lang="ja">SsaCampaignNegativeKeywordServiceでは、SSAキャンペーンの対象外キーワードの取得および追加・削除を行います。</div>
++      <div lang="en">SsaCampaignNegativeKeywordService provides functions for getting, adding and removing campaign negative keywords for SSA.</div>
+   - name: SsaReportDefinitionService
+     description: |
+       <label class="report"></label>
+@@ -389,14 +409,29 @@
+       <h2 lang="ja" class="reportFields__title">レポートフィールド</h2>
+       <h2 lang="en" class="reportFields__title">Report Fields</h2>
+       <ul>
+-      <li><div lang="ja"><a href="./reports/v19/jp/SSA_ACCOUNT.csv" download>アカウントレポート</a></div><div lang="en"><a href="./reports/v19/jp/SSA_ACCOUNT.csv" download>Account Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v19/jp/SSA_CAMPAIGN.csv" download>キャンペーンレポート</a></div><div lang="en"><a href="./reports/v19/jp/SSA_CAMPAIGN.csv" download>Campaign Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v19/jp/SSA_ADGROUP.csv" download>広告グループレポート</a></div><div lang="en"><a href="./reports/v19/jp/SSA_ADGROUP.csv" download>Ad Group Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v19/jp/SSA_SEARCH_QUERY.csv" download>検索クエリレポート</a></div><div lang="en"><a href="./reports/v19/jp/SSA_SEARCH_QUERY.csv" download>Search Query Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v19/jp/SSA_PRODUCT_GROUP.csv" download>商品グループレポート</a></div><div lang="en"><a href="./reports/v19/jp/SSA_PRODUCT_GROUP.csv" download>Product Group Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v19/jp/SSA_PRODUCT.csv" download>商品レポート</a></div><div lang="en"><a href="./reports/v19/jp/SSA_PRODUCT.csv" download>Product Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v19/jp/SSA_AUDIENCE_LIST.csv" download>オーディエンスリストレポート</a></div><div lang="en"><a href="./reports/v19/jp/SSA_AUDIENCE_LIST.csv" download>Audience List Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v20/jp/SSA_ACCOUNT.csv" download>アカウントレポート</a></div><div lang="en"><a href="./reports/v20/jp/SSA_ACCOUNT.csv" download>Account Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v20/jp/SSA_CAMPAIGN.csv" download>キャンペーンレポート</a></div><div lang="en"><a href="./reports/v20/jp/SSA_CAMPAIGN.csv" download>Campaign Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v20/jp/SSA_ADGROUP.csv" download>広告グループレポート</a></div><div lang="en"><a href="./reports/v20/jp/SSA_ADGROUP.csv" download>Ad Group Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v20/jp/SSA_SEARCH_QUERY.csv" download>検索クエリレポート</a></div><div lang="en"><a href="./reports/v20/jp/SSA_SEARCH_QUERY.csv" download>Search Query Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v20/jp/SSA_PRODUCT_GROUP.csv" download>商品グループレポート</a></div><div lang="en"><a href="./reports/v20/jp/SSA_PRODUCT_GROUP.csv" download>Product Group Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v20/jp/SSA_PRODUCT.csv" download>商品レポート</a></div><div lang="en"><a href="./reports/v20/jp/SSA_PRODUCT.csv" download>Product Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v20/jp/SSA_AUDIENCE_LIST.csv" download>オーディエンスリストレポート</a></div><div lang="en"><a href="./reports/v20/jp/SSA_AUDIENCE_LIST.csv" download>Audience List Report</a></div></li>
+       </ul>
++  - name: SsaCampaignService
++    description: |
++      <label class="campaign"></label>
++      <div lang="ja">SsaCampaignServiceでは、キャンペーンに関する情報の取得および追加・更新・削除を行います。</div><div lang="en">SsaCampaignService
++      is to get, add, update, or remove campaigns.</div>
++  - name: SsaAdGroupService
++    description: |
++      <label class="campaign"></label>
++      <div lang="ja">SsaAdGroupServiceでは、広告グループに関する情報の取得および追加・更新・削除を行います。</div><div lang="en">Use
++      this service to get, add, update, or remove Ad group.</div>
++  - name: SsaProductGroupService
++    description: |
++      <label class="campaign"></label>
++      <div lang="ja">SsaProductGroupServiceでは、商品グループに関する情報の取得および追加・更新・削除を行います。</div>
++      <div lang="en">Use this service to get, add, update, or remove Product group.</div>
+ 
+ paths:
+   /AccountManagementService/get:
+@@ -12050,6 +12085,773 @@
+           $ref: '../Response401.yaml#/Response401'
+         400:
+           $ref: '../Response400.yaml#/Response400'
++  /SsaAdGroupTargetService/get:
++    post:
++      parameters:
++        - in: header
++          name: x-z-base-account-id
++          schema:
++            type: integer
++            format: int64
++          required: true
++          description: |
++            <div lang="ja">アカウントIDを指定してください。</div>
++            <div lang="en">Specify Account ID.</div>
++      description: |
++        <div lang="ja">SSA広告グループのターゲティング設定に関する情報を取得します。</div>
++        <div lang="en">Gets SSA ad group information related to targeting setting.</div>
++      tags:
++        - SsaAdGroupTargetService
++      requestBody:
++        content:
++          application/json:
++            schema:
++              $ref: 'ssaadgrouptarget/SsaAdGroupTargetServiceSelector.yaml#/SsaAdGroupTargetServiceSelector'
++      responses:
++        503:
++          $ref: '../Response503.yaml#/Response503'
++        500:
++          $ref: '../Response500.yaml#/Response500'
++        200:
++          description: |
++            <p class="cellContent__head">Error codes</p>
++            <div class="cellContent__body">
++            <table class="apiTable">
++              <colgroup span="1" class="short"></colgroup>
++              <colgroup span="2"></colgroup>
++              <thead>
++                <tr><th>Code</th><th>Message</th><th>Description</th></tr>
++              </thead>
++              <tbody>
++                <tr><td>0001</td><td>Invalid Request.</td><td><div lang="ja">さまざまな要因が考えられます。<br>主な要因は、パラメータの値が不正か、誤りがあるためにオペレーションが完了できません。</div><div lang="en">This error can result for a variety of reasons. <br>Typically because one of the parameter values in the request is wrong or invalid and the operation cannot be completed.</div></td></tr>
++                <tr><td>R0001</td><td>Require.</td><td><div lang="ja">必須です。</div><div lang="en">It is missing required parameter.</div></td></tr>
++                <tr><td>F0001</td><td>Invalid format.</td><td><div lang="ja">値の形式が不正です。</div><div lang="en">The value format is invalid.</div></td></tr>
++                <tr><td>V0001</td><td>Invalid value.</td><td><div lang="ja">値が無効です。</div><div lang="en">The value is invalid.</div></td></tr>
++                <tr><td>L0002</td><td>Over list size.</td><td><div lang="ja">配列の要素数が上限値を超過しています。</div><div lang="en">The number of elements in the array exceeds the upper limit.</div></td></tr>
++              </tbody>
++            </table>
++            </div>
++          content:
++            application/json:
++              schema:
++                $ref: 'ssaadgrouptarget/SsaAdGroupTargetServiceGetResponse.yaml#/SsaAdGroupTargetServiceGetResponse'
++        403:
++          $ref: '../Response403.yaml#/Response403'
++        401:
++          $ref: '../Response401.yaml#/Response401'
++        400:
++          $ref: '../Response400.yaml#/Response400'
++  /SsaAdGroupTargetService/set:
++    post:
++      parameters:
++        - in: header
++          name: x-z-base-account-id
++          schema:
++            type: integer
++            format: int64
++          required: true
++          description: |
++            <div lang="ja">アカウントIDを指定してください。</div>
++            <div lang="en">Specify Account ID.</div>
++      description: |
++        <div lang="ja">SSA広告グループのターゲティング設定に関する情報を更新します。<br>
++        SET時はbidMultiplierのみ更新可能です。</div>
++        <div lang="en">Updates SSA ad group information related to targeting setting.<br>
++        Only bidMultiplier can be updated in SET operation.</div>
++      tags:
++        - SsaAdGroupTargetService
++      requestBody:
++        content:
++          application/json:
++            schema:
++              $ref: 'ssaadgrouptarget/SsaAdGroupTargetServiceOperation.yaml#/SsaAdGroupTargetServiceOperation'
++      responses:
++        503:
++          $ref: '../Response503.yaml#/Response503'
++        500:
++          $ref: '../Response500.yaml#/Response500'
++        200:
++          description: |
++            <p class="cellContent__head">Error codes</p>
++            <div class="cellContent__body">
++            <table class="apiTable">
++              <colgroup span="1" class="short"></colgroup>
++              <colgroup span="2"></colgroup>
++              <thead>
++                <tr><th>Code</th><th>Message</th><th>Description</th></tr>
++              </thead>
++              <tbody>
++                <tr><td>0001</td><td>Invalid Request.</td><td><div lang="ja">さまざまな要因が考えられます。<br>主な要因は、パラメータの値が不正か、誤りがあるためにオペレーションが完了できません。</div><div lang="en">This error can result for a variety of reasons. <br>Typically because one of the parameter values in the request is wrong or invalid and the operation cannot be completed.</div></td></tr>
++                <tr><td>R0001</td><td>Require.</td><td><div lang="ja">必須です。</div><div lang="en">It is missing required parameter.</div></td></tr>
++                <tr><td>F0001</td><td>Invalid format.</td><td><div lang="ja">値の形式が不正です。</div><div lang="en">The value format is invalid.</div></td></tr>
++                <tr><td>V0001</td><td>Invalid value.</td><td><div lang="ja">値が無効です。</div><div lang="en">The value is invalid.</div></td></tr>
++                <tr><td>L0002</td><td>Over list size.</td><td><div lang="ja">配列の要素数が上限値を超過しています。</div><div lang="en">The number of elements in the array exceeds the upper limit.</div></td></tr>
++                <tr><td>130000</td><td>The server is busy. Please retry later.</td><td><div lang="ja">サーバーが高負荷です。時間をおいて再試行してください。</div><div lang="en">The server is busy. Please retry later.</div></td></tr>
++              </tbody>
++            </table>
++            </div>
++          content:
++            application/json:
++              schema:
++                $ref: 'ssaadgrouptarget/SsaAdGroupTargetServiceMutateResponse.yaml#/SsaAdGroupTargetServiceMutateResponse'
++        403:
++          $ref: '../Response403.yaml#/Response403'
++        401:
++          $ref: '../Response401.yaml#/Response401'
++        400:
++          $ref: '../Response400.yaml#/Response400'
++  /SsaAdGroupTargetService/replace:
++    post:
++      parameters:
++        - in: header
++          name: x-z-base-account-id
++          schema:
++            type: integer
++            format: int64
++          required: true
++          description: |
++            <div lang="ja">アカウントIDを指定してください。</div>
++            <div lang="en">Specify Account ID.</div>
++      description: |
++        <div lang="ja">SSA広告グループのターゲティング設定に関する情報を置換します。</div>
++        <div lang="en">Replaces SSA ad group information related to targeting setting.</div>
++      tags:
++        - SsaAdGroupTargetService
++      requestBody:
++        content:
++          application/json:
++            schema:
++              $ref: 'ssaadgrouptarget/SsaAdGroupTargetServiceReplaceOperation.yaml#/SsaAdGroupTargetServiceReplaceOperation'
++      responses:
++        503:
++          $ref: '../Response503.yaml#/Response503'
++        500:
++          $ref: '../Response500.yaml#/Response500'
++        200:
++          description: |
++            <p class="cellContent__head">Error codes</p>
++            <div class="cellContent__body">
++            <table class="apiTable">
++              <colgroup span="1" class="short"></colgroup>
++              <colgroup span="2"></colgroup>
++              <thead>
++                <tr><th>Code</th><th>Message</th><th>Description</th></tr>
++              </thead>
++              <tbody>
++                <tr><td>0001</td><td>Invalid Request.</td><td><div lang="ja">さまざまな要因が考えられます。<br>主な要因は、パラメータの値が不正か、誤りがあるためにオペレーションが完了できません。</div><div lang="en">This error can result for a variety of reasons. <br>Typically because one of the parameter values in the request is wrong or invalid and the operation cannot be completed.</div></td></tr>
++                <tr><td>R0001</td><td>Require.</td><td><div lang="ja">必須です。</div><div lang="en">It is missing required parameter.</div></td></tr>
++                <tr><td>F0001</td><td>Invalid format.</td><td><div lang="ja">値の形式が不正です。</div><div lang="en">The value format is invalid.</div></td></tr>
++                <tr><td>V0001</td><td>Invalid value.</td><td><div lang="ja">値が無効です。</div><div lang="en">The value is invalid.</div></td></tr>
++                <tr><td>L0002</td><td>Over list size.</td><td><div lang="ja">配列の要素数が上限値を超過しています。</div><div lang="en">The number of elements in the array exceeds the upper limit.</div></td></tr>
++                <tr><td>130000</td><td>The server is busy. Please retry later.</td><td><div lang="ja">サーバーが高負荷です。時間をおいて再試行してください。</div><div lang="en">The server is busy. Please retry later.</div></td></tr>
++              </tbody>
++            </table>
++            </div>
++          content:
++            application/json:
++              schema:
++                $ref: 'ssaadgrouptarget/SsaAdGroupTargetServiceReplaceResponse.yaml#/SsaAdGroupTargetServiceReplaceResponse'
++        403:
++          $ref: '../Response403.yaml#/Response403'
++        401:
++          $ref: '../Response401.yaml#/Response401'
++        400:
++          $ref: '../Response400.yaml#/Response400'
++  /SsaAdGroupNegativeKeywordService/get:
++    post:
++      parameters:
++        - in: header
++          name: x-z-base-account-id
++          schema:
++            type: integer
++            format: int64
++          required: true
++          description: |
++            <div lang="ja">アカウントIDを指定してください。</div>
++            <div lang="en">Specify Account ID.</div>
++      description: |
++        <div lang="ja">SSA広告グループの対象外キーワードに関する情報を取得します。</div>
++        <div lang="en">Gets negative keywords in SSA ad group-level.</div>
++      tags:
++        - SsaAdGroupNegativeKeywordService
++      requestBody:
++        content:
++          application/json:
++            schema:
++              $ref: 'ssaadgroupnegativekeyword/SsaAdGroupNegativeKeywordServiceSelector.yaml#/SsaAdGroupNegativeKeywordServiceSelector'
++      responses:
++        503:
++          $ref: '../Response503.yaml#/Response503'
++        500:
++          $ref: '../Response500.yaml#/Response500'
++        200:
++          description: |
++            <p class="cellContent__head">Error codes</p>
++            <div class="cellContent__body">
++            <table class="apiTable">
++              <colgroup span="1" class="short"></colgroup>
++              <colgroup span="2"></colgroup>
++              <thead>
++                <tr><th>Code</th><th>Message</th><th>Description</th></tr>
++              </thead>
++              <tbody>
++                <tr><td>0001</td><td>Invalid Request.</td><td><div lang="ja">さまざまな要因が考えられます。<br>主な要因は、パラメータの値が不正か、誤りがあるためにオペレーションが完了できません。</div><div lang="en">This error can result for a variety of reasons. <br>Typically because one of the parameter values in the request is wrong or invalid and the operation cannot be completed.</div></td></tr>
++                <tr><td>R0001</td><td>Require.</td><td><div lang="ja">必須です。</div><div lang="en">It is missing required parameter.</div></td></tr>
++                <tr><td>F0001</td><td>Invalid format.</td><td><div lang="ja">値の形式が不正です。</div><div lang="en">The value format is invalid.</div></td></tr>
++                <tr><td>V0001</td><td>Invalid value.</td><td><div lang="ja">値が無効です。</div><div lang="en">The value is invalid.</div></td></tr>
++                <tr><td>S0001</td><td>Invalid Status.</td><td><div lang="ja">ステータスが無効です。</div><div lang="en">The status is invalid.</div></td></tr>
++                <tr><td>L0002</td><td>Over list size.</td><td><div lang="ja">配列の要素数が上限値を超過しています。</div><div lang="en">The number of elements in the array exceeds the upper limit.</div></td></tr>
++                <tr><td>L0001</td><td>Lower list size.</td><td><div lang="ja">配列の要素数が下限値を下回っています。</div><div lang="en">The number of elements in the array is below the lower limit.</div></td></tr>
++                <tr><td>D0001</td><td>Duplicate.</td><td><div lang="ja">一意な値が重複しています。</div><div lang="en">The unique value is duplicated.</div></td></tr>
++                <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
++                <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
++                <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
++                <tr><td>210518</td><td>Exceeds maximum word limit.</td><td><div lang="ja">キーワードは最大6個までしか指定できません。</div><div lang="en">6 keywords can only be specified up to.</div></td></tr>
++                <tr><td>210510</td><td>Exists same text with match type.</td><td><div lang="ja">指定されたキーワード、マッチタイプはすでにキャンペーン/広告グループ内に存在します。</div><div lang="en">The specified keyword, match type already exists in the campaign / ad group.</div></td></tr>
++              </tbody>
++            </table>
++            </div>
++          content:
++            application/json:
++              schema:
++                $ref: 'ssaadgroupnegativekeyword/SsaAdGroupNegativeKeywordServiceGetResponse.yaml#/SsaAdGroupNegativeKeywordServiceGetResponse'
++        403:
++          $ref: '../Response403.yaml#/Response403'
++        401:
++          $ref: '../Response401.yaml#/Response401'
++        400:
++          $ref: '../Response400.yaml#/Response400'
++  /SsaAdGroupNegativeKeywordService/add:
++    post:
++      parameters:
++        - in: header
++          name: x-z-base-account-id
++          schema:
++            type: integer
++            format: int64
++          required: true
++          description: |
++            <div lang="ja">アカウントIDを指定してください。</div>
++            <div lang="en">Specify Account ID.</div>
++      description: |
++        <div lang="ja">SSA広告グループの対象外キーワードを追加します。</div>
++        <div lang="en">Add negative keywords in SSA ad group-level.</div>
++      tags:
++        - SsaAdGroupNegativeKeywordService
++      requestBody:
++        content:
++          application/json:
++            schema:
++              $ref: 'ssaadgroupnegativekeyword/SsaAdGroupNegativeKeywordServiceOperation.yaml#/SsaAdGroupNegativeKeywordServiceOperation'
++      responses:
++        503:
++          $ref: '../Response503.yaml#/Response503'
++        500:
++          $ref: '../Response500.yaml#/Response500'
++        200:
++          description: |
++            <p class="cellContent__head">Error codes</p>
++            <div class="cellContent__body">
++            <table class="apiTable">
++              <colgroup span="1" class="short"></colgroup>
++              <colgroup span="2"></colgroup>
++              <thead>
++                <tr><th>Code</th><th>Message</th><th>Description</th></tr>
++              </thead>
++              <tbody>
++                <tr><td>0001</td><td>Invalid Request.</td><td><div lang="ja">さまざまな要因が考えられます。<br>主な要因は、パラメータの値が不正か、誤りがあるためにオペレーションが完了できません。</div><div lang="en">This error can result for a variety of reasons. <br>Typically because one of the parameter values in the request is wrong or invalid and the operation cannot be completed.</div></td></tr>
++                <tr><td>R0001</td><td>Require.</td><td><div lang="ja">必須です。</div><div lang="en">It is missing required parameter.</div></td></tr>
++                <tr><td>F0001</td><td>Invalid format.</td><td><div lang="ja">値の形式が不正です。</div><div lang="en">The value format is invalid.</div></td></tr>
++                <tr><td>V0001</td><td>Invalid value.</td><td><div lang="ja">値が無効です。</div><div lang="en">The value is invalid.</div></td></tr>
++                <tr><td>S0001</td><td>Invalid Status.</td><td><div lang="ja">ステータスが無効です。</div><div lang="en">The status is invalid.</div></td></tr>
++                <tr><td>L0002</td><td>Over list size.</td><td><div lang="ja">配列の要素数が上限値を超過しています。</div><div lang="en">The number of elements in the array exceeds the upper limit.</div></td></tr>
++                <tr><td>L0001</td><td>Lower list size.</td><td><div lang="ja">配列の要素数が下限値を下回っています。</div><div lang="en">The number of elements in the array is below the lower limit.</div></td></tr>
++                <tr><td>D0001</td><td>Duplicate.</td><td><div lang="ja">一意な値が重複しています。</div><div lang="en">The unique value is duplicated.</div></td></tr>
++                <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
++                <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
++                <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
++                <tr><td>130000</td><td>The server is busy. Please retry later.</td><td><div lang="ja">サーバーが高負荷です。時間をおいて再試行してください。</div><div lang="en">The server is busy. Please retry later.</div></td></tr>
++                <tr><td>130001</td><td>The request was not completed. Please reduce concurrent requests or data size. </td><td><div lang="ja">リクエストが完了しませんでした。同時リクエスト数またはデータサイズを減らして再度お試しください。</div><div lang="en">The request was not completed. Please reduce concurrent requests or data size.</div></td></tr>
++                <tr><td>210518</td><td>Exceeds maximum word limit.</td><td><div lang="ja">キーワードは最大6個までしか指定できません。</div><div lang="en">6 keywords can only be specified up to.</div></td></tr>
++                <tr><td>210510</td><td>Exists same text with match type.</td><td><div lang="ja">指定されたキーワード、マッチタイプはすでにキャンペーン/広告グループ内に存在します。</div><div lang="en">The specified keyword, match type already exists in the campaign / ad group.</div></td></tr>
++                <tr><td>210920</td><td>This action isn't available when creating the A/B test.</td><td><div lang="ja">A/Bテスト作成中のため操作できません。</div><div lang="en">This action isn't available when creating the A/B test.</div></td></tr>
++              </tbody>
++            </table>
++            </div>
++          content:
++            application/json:
++              schema:
++                $ref: 'ssaadgroupnegativekeyword/SsaAdGroupNegativeKeywordServiceMutateResponse.yaml#/SsaAdGroupNegativeKeywordServiceMutateResponse'
++        403:
++          $ref: '../Response403.yaml#/Response403'
++        401:
++          $ref: '../Response401.yaml#/Response401'
++        400:
++          $ref: '../Response400.yaml#/Response400'
++  /SsaAdGroupNegativeKeywordService/remove:
++    post:
++      parameters:
++        - in: header
++          name: x-z-base-account-id
++          schema:
++            type: integer
++            format: int64
++          required: true
++          description: |
++            <div lang="ja">アカウントIDを指定してください。</div>
++            <div lang="en">Specify Account ID.</div>
++      description: |
++        <div lang="ja">SSA広告グループの対象外キーワードを削除します。</div>
++        <div lang="en">Remove negative keywords in SSA ad group-level.</div>
++      tags:
++        - SsaAdGroupNegativeKeywordService
++      requestBody:
++        content:
++          application/json:
++            schema:
++              $ref: 'ssaadgroupnegativekeyword/SsaAdGroupNegativeKeywordServiceOperation.yaml#/SsaAdGroupNegativeKeywordServiceOperation'
++      responses:
++        503:
++          $ref: '../Response503.yaml#/Response503'
++        500:
++          $ref: '../Response500.yaml#/Response500'
++        200:
++          description: |
++            <p class="cellContent__head">Error codes</p>
++            <div class="cellContent__body">
++            <table class="apiTable">
++              <colgroup span="1" class="short"></colgroup>
++              <colgroup span="2"></colgroup>
++              <thead>
++                <tr><th>Code</th><th>Message</th><th>Description</th></tr>
++              </thead>
++              <tbody>
++                <tr><td>0001</td><td>Invalid Request.</td><td><div lang="ja">さまざまな要因が考えられます。<br>主な要因は、パラメータの値が不正か、誤りがあるためにオペレーションが完了できません。</div><div lang="en">This error can result for a variety of reasons. <br>Typically because one of the parameter values in the request is wrong or invalid and the operation cannot be completed.</div></td></tr>
++                <tr><td>R0001</td><td>Require.</td><td><div lang="ja">必須です。</div><div lang="en">It is missing required parameter.</div></td></tr>
++                <tr><td>F0001</td><td>Invalid format.</td><td><div lang="ja">値の形式が不正です。</div><div lang="en">The value format is invalid.</div></td></tr>
++                <tr><td>V0001</td><td>Invalid value.</td><td><div lang="ja">値が無効です。</div><div lang="en">The value is invalid.</div></td></tr>
++                <tr><td>S0001</td><td>Invalid Status.</td><td><div lang="ja">ステータスが無効です。</div><div lang="en">The status is invalid.</div></td></tr>
++                <tr><td>L0002</td><td>Over list size.</td><td><div lang="ja">配列の要素数が上限値を超過しています。</div><div lang="en">The number of elements in the array exceeds the upper limit.</div></td></tr>
++                <tr><td>L0001</td><td>Lower list size.</td><td><div lang="ja">配列の要素数が下限値を下回っています。</div><div lang="en">The number of elements in the array is below the lower limit.</div></td></tr>
++                <tr><td>D0001</td><td>Duplicate.</td><td><div lang="ja">一意な値が重複しています。</div><div lang="en">The unique value is duplicated.</div></td></tr>
++                <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
++                <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
++                <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
++                <tr><td>130000</td><td>The server is busy. Please retry later.</td><td><div lang="ja">サーバーが高負荷です。時間をおいて再試行してください。</div><div lang="en">The server is busy. Please retry later.</div></td></tr>
++                <tr><td>130001</td><td>The request was not completed. Please reduce concurrent requests or data size. </td><td><div lang="ja">リクエストが完了しませんでした。同時リクエスト数またはデータサイズを減らして再度お試しください。</div><div lang="en">The request was not completed. Please reduce concurrent requests or data size.</div></td></tr>
++                <tr><td>210518</td><td>Exceeds maximum word limit.</td><td><div lang="ja">キーワードは最大6個までしか指定できません。</div><div lang="en">6 keywords can only be specified up to.</div></td></tr>
++                <tr><td>210510</td><td>Exists same text with match type.</td><td><div lang="ja">指定されたキーワード、マッチタイプはすでにキャンペーン/広告グループ内に存在します。</div><div lang="en">The specified keyword, match type already exists in the campaign / ad group.</div></td></tr>
++                <tr><td>210920</td><td>This action isn't available when creating the A/B test.</td><td><div lang="ja">A/Bテスト作成中のため操作できません。</div><div lang="en">This action isn't available when creating the A/B test.</div></td></tr>
++              </tbody>
++            </table>
++            </div>
++          content:
++            application/json:
++              schema:
++                $ref: 'ssaadgroupnegativekeyword/SsaAdGroupNegativeKeywordServiceMutateResponse.yaml#/SsaAdGroupNegativeKeywordServiceMutateResponse'
++        403:
++          $ref: '../Response403.yaml#/Response403'
++        401:
++          $ref: '../Response401.yaml#/Response401'
++        400:
++          $ref: '../Response400.yaml#/Response400'
++  /SsaCampaignTargetService/get:
++    post:
++      parameters:
++        - in: header
++          name: x-z-base-account-id
++          schema:
++            type: integer
++            format: int64
++          required: true
++          description: |
++            <div lang="ja">アカウントIDを指定してください。</div>
++            <div lang="en">Specify Account ID.</div>
++      description: |
++        <div lang="ja">SSAキャンペーンのターゲティング設定に関する情報を取得します。</div>
++        <div lang="en">Gets SSA campaign informations related to targeting setting.</div>
++      tags:
++        - SsaCampaignTargetService
++      requestBody:
++        content:
++          application/json:
++            schema:
++              $ref: 'ssacampaigntarget/SsaCampaignTargetServiceSelector.yaml#/SsaCampaignTargetServiceSelector'
++      responses:
++        503:
++          $ref: '../Response503.yaml#/Response503'
++        500:
++          $ref: '../Response500.yaml#/Response500'
++        200:
++          description: |
++            <p class="cellContent__head">Error codes</p>
++            <div class="cellContent__body">
++            <table class="apiTable">
++              <colgroup span="1" class="short"></colgroup>
++              <colgroup span="2"></colgroup>
++              <thead>
++                <tr><th>Code</th><th>Message</th><th>Description</th></tr>
++              </thead>
++              <tbody>
++                <tr><td>0001</td><td>Invalid Request.</td><td><div lang="ja">さまざまな要因が考えられます。<br>主な要因は、パラメータの値が不正か、誤りがあるためにオペレーションが完了できません。</div><div lang="en">This error can result for a variety of reasons. <br>Typically because one of the parameter values in the request is wrong or invalid and the operation cannot be completed.</div></td></tr>
++                <tr><td>R0001</td><td>Require.</td><td><div lang="ja">必須です。</div><div lang="en">It is missing required parameter.</div></td></tr>
++                <tr><td>F0001</td><td>Invalid format.</td><td><div lang="ja">値の形式が不正です。</div><div lang="en">The value format is invalid.</div></td></tr>
++                <tr><td>V0001</td><td>Invalid value.</td><td><div lang="ja">値が無効です。</div><div lang="en">The value is invalid.</div></td></tr>
++                <tr><td>S0001</td><td>Invalid Status.</td><td><div lang="ja">ステータスが無効です。</div><div lang="en">The status is invalid.</div></td></tr>
++                <tr><td>L0002</td><td>Over list size.</td><td><div lang="ja">配列の要素数が上限値を超過しています。</div><div lang="en">The number of elements in the array exceeds the upper limit.</div></td></tr>
++                <tr><td>L0001</td><td>Lower list size.</td><td><div lang="ja">配列の要素数が下限値を下回っています。</div><div lang="en">The number of elements in the array is below the lower limit.</div></td></tr>
++                <tr><td>D0001</td><td>Duplicate.</td><td><div lang="ja">一意な値が重複しています。</div><div lang="en">The unique value is duplicated.</div></td></tr>
++                <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
++                <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
++                <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
++                <tr><td>210113</td><td>can not modify a bidMultiplier</td><td><div lang="ja">Bid調整率を設定することができません。</div><div lang="en">A bidMultiplier can not be modified.</div></td></tr>
++              </tbody>
++            </table>
++            </div>
++          content:
++            application/json:
++              schema:
++                $ref: 'ssacampaigntarget/SsaCampaignTargetServiceGetResponse.yaml#/SsaCampaignTargetServiceGetResponse'
++        403:
++          $ref: '../Response403.yaml#/Response403'
++        401:
++          $ref: '../Response401.yaml#/Response401'
++        400:
++          $ref: '../Response400.yaml#/Response400'
++  /SsaCampaignTargetService/set:
++    post:
++      parameters:
++        - in: header
++          name: x-z-base-account-id
++          schema:
++            type: integer
++            format: int64
++          required: true
++          description: |
++            <div lang="ja">アカウントIDを指定してください。</div>
++            <div lang="en">Specify Account ID.</div>
++      description: |
++        <div lang="ja">SSAキャンペーンのターゲティング設定に関する情報を変更します。※入札価格調整率（bidmultiplier）のみ変更可能です。</div>
++        <div lang="en">Update SSA campaign informations related to targeting setting.<br>* Bid Adjustment (bidmultiplier) is only modifiable.</div>
++      tags:
++        - SsaCampaignTargetService
++      requestBody:
++        content:
++          application/json:
++            schema:
++              $ref: 'ssacampaigntarget/SsaCampaignTargetServiceOperation.yaml#/SsaCampaignTargetServiceOperation'
++      responses:
++        503:
++          $ref: '../Response503.yaml#/Response503'
++        500:
++          $ref: '../Response500.yaml#/Response500'
++        200:
++          description: |
++            <p class="cellContent__head">Error codes</p>
++            <div class="cellContent__body">
++            <table class="apiTable">
++              <colgroup span="1" class="short"></colgroup>
++              <colgroup span="2"></colgroup>
++              <thead>
++                <tr><th>Code</th><th>Message</th><th>Description</th></tr>
++              </thead>
++              <tbody>
++                <tr><td>0001</td><td>Invalid Request.</td><td><div lang="ja">さまざまな要因が考えられます。<br>主な要因は、パラメータの値が不正か、誤りがあるためにオペレーションが完了できません。</div><div lang="en">This error can result for a variety of reasons. <br>Typically because one of the parameter values in the request is wrong or invalid and the operation cannot be completed.</div></td></tr>
++                <tr><td>R0001</td><td>Require.</td><td><div lang="ja">必須です。</div><div lang="en">It is missing required parameter.</div></td></tr>
++                <tr><td>F0001</td><td>Invalid format.</td><td><div lang="ja">値の形式が不正です。</div><div lang="en">The value format is invalid.</div></td></tr>
++                <tr><td>V0001</td><td>Invalid value.</td><td><div lang="ja">値が無効です。</div><div lang="en">The value is invalid.</div></td></tr>
++                <tr><td>S0001</td><td>Invalid Status.</td><td><div lang="ja">ステータスが無効です。</div><div lang="en">The status is invalid.</div></td></tr>
++                <tr><td>L0002</td><td>Over list size.</td><td><div lang="ja">配列の要素数が上限値を超過しています。</div><div lang="en">The number of elements in the array exceeds the upper limit.</div></td></tr>
++                <tr><td>L0001</td><td>Lower list size.</td><td><div lang="ja">配列の要素数が下限値を下回っています。</div><div lang="en">The number of elements in the array is below the lower limit.</div></td></tr>
++                <tr><td>D0001</td><td>Duplicate.</td><td><div lang="ja">一意な値が重複しています。</div><div lang="en">The unique value is duplicated.</div></td></tr>
++                <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
++                <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
++                <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
++                <tr><td>130000</td><td>The server is busy. Please retry later.</td><td><div lang="ja">サーバーが高負荷です。時間をおいて再試行してください。</div><div lang="en">The server is busy. Please retry later.</div></td></tr>
++                <tr><td>130001</td><td>The request was not completed. Please reduce concurrent requests or data size. </td><td><div lang="ja">リクエストが完了しませんでした。同時リクエスト数またはデータサイズを減らして再度お試しください。</div><div lang="en">The request was not completed. Please reduce concurrent requests or data size.</div></td></tr>
++                <tr><td>210113</td><td>can not modify a bidMultiplier</td><td><div lang="ja">Bid調整率を設定することができません。</div><div lang="en">A bidMultiplier can not be modified.</div></td></tr>
++                <tr><td>210121</td><td>Setting bidMultiplier to 0 for all devices is not allowed.</td><td><div lang="ja">デバイス設定をすべて入札価格調整率 0 にすることはできません。</div><div lang="en">Setting bidMultiplier to 0 for all devices is not allowed.</div></td></tr>
++              </tbody>
++            </table>
++            </div>
++          content:
++            application/json:
++              schema:
++                $ref: 'ssacampaigntarget/SsaCampaignTargetServiceMutateResponse.yaml#/SsaCampaignTargetServiceMutateResponse'
++        403:
++          $ref: '../Response403.yaml#/Response403'
++        401:
++          $ref: '../Response401.yaml#/Response401'
++        400:
++          $ref: '../Response400.yaml#/Response400'
++  /SsaCampaignTargetService/replace:
++    post:
++      parameters:
++        - in: header
++          name: x-z-base-account-id
++          schema:
++            type: integer
++            format: int64
++          required: true
++          description: |
++            <div lang="ja">アカウントIDを指定してください。</div>
++            <div lang="en">Specify Account ID.</div>
++      description: |
++        <div lang="ja">SSAキャンペーンのターゲティング設定に関する情報を追加・更新・削除します。</div>
++        <div lang="en">Add, update or release(remove) SSA campaign informations related to targeting setting.</div>
++      tags:
++        - SsaCampaignTargetService
++      requestBody:
++        content:
++          application/json:
++            schema:
++              $ref: 'ssacampaigntarget/SsaCampaignTargetServiceReplaceOperation.yaml#/SsaCampaignTargetServiceReplaceOperation'
++      responses:
++        503:
++          $ref: '../Response503.yaml#/Response503'
++        500:
++          $ref: '../Response500.yaml#/Response500'
++        200:
++          description: |
++            <p class="cellContent__head">Error codes</p>
++            <div class="cellContent__body">
++            <table class="apiTable">
++              <colgroup span="1" class="short"></colgroup>
++              <colgroup span="2"></colgroup>
++              <thead>
++                <tr><th>Code</th><th>Message</th><th>Description</th></tr>
++              </thead>
++              <tbody>
++                <tr><td>0001</td><td>Invalid Request.</td><td><div lang="ja">さまざまな要因が考えられます。<br>主な要因は、パラメータの値が不正か、誤りがあるためにオペレーションが完了できません。</div><div lang="en">This error can result for a variety of reasons. <br>Typically because one of the parameter values in the request is wrong or invalid and the operation cannot be completed.</div></td></tr>
++                <tr><td>R0001</td><td>Require.</td><td><div lang="ja">必須です。</div><div lang="en">It is missing required parameter.</div></td></tr>
++                <tr><td>F0001</td><td>Invalid format.</td><td><div lang="ja">値の形式が不正です。</div><div lang="en">The value format is invalid.</div></td></tr>
++                <tr><td>V0001</td><td>Invalid value.</td><td><div lang="ja">値が無効です。</div><div lang="en">The value is invalid.</div></td></tr>
++                <tr><td>S0001</td><td>Invalid Status.</td><td><div lang="ja">ステータスが無効です。</div><div lang="en">The status is invalid.</div></td></tr>
++                <tr><td>L0002</td><td>Over list size.</td><td><div lang="ja">配列の要素数が上限値を超過しています。</div><div lang="en">The number of elements in the array exceeds the upper limit.</div></td></tr>
++                <tr><td>L0001</td><td>Lower list size.</td><td><div lang="ja">配列の要素数が下限値を下回っています。</div><div lang="en">The number of elements in the array is below the lower limit.</div></td></tr>
++                <tr><td>D0001</td><td>Duplicate.</td><td><div lang="ja">一意な値が重複しています。</div><div lang="en">The unique value is duplicated.</div></td></tr>
++                <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
++                <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
++                <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
++                <tr><td>130000</td><td>The server is busy. Please retry later.</td><td><div lang="ja">サーバーが高負荷です。時間をおいて再試行してください。</div><div lang="en">The server is busy. Please retry later.</div></td></tr>
++                <tr><td>130001</td><td>The request was not completed. Please reduce concurrent requests or data size. </td><td><div lang="ja">リクエストが完了しませんでした。同時リクエスト数またはデータサイズを減らして再度お試しください。</div><div lang="en">The request was not completed. Please reduce concurrent requests or data size.</div></td></tr>
++                <tr><td>210113</td><td>can not modify a bidMultiplier</td><td><div lang="ja">Bid調整率を設定することができません。</div><div lang="en">A bidMultiplier can not be modified.</div></td></tr>
++                <tr><td>210115</td><td>Schedule end time cannot be set later than 24:00.</td><td><div lang="ja">スケジュールの終了日時に24時を超える時間は指定できません。</div><div lang="en">Schedule end time cannot be set later than 24:00.</div></td></tr>
++                <tr><td>210121</td><td>Setting bidMultiplier to 0 for all devices is not allowed.</td><td><div lang="ja">デバイス設定をすべて入札価格調整率 0 にすることはできません。</div><div lang="en">Setting bidMultiplier to 0 for all devices is not allowed.</div></td></tr>
++              </tbody>
++            </table>
++            </div>
++          content:
++            application/json:
++              schema:
++                $ref: 'ssacampaigntarget/SsaCampaignTargetServiceReplaceResponse.yaml#/SsaCampaignTargetServiceReplaceResponse'
++        403:
++          $ref: '../Response403.yaml#/Response403'
++        401:
++          $ref: '../Response401.yaml#/Response401'
++        400:
++          $ref: '../Response400.yaml#/Response400'
++  /SsaCampaignNegativeKeywordService/get:
++    post:
++      parameters:
++        - in: header
++          name: x-z-base-account-id
++          schema:
++            type: integer
++            format: int64
++          required: true
++          description: |
++            <div lang="ja">アカウントIDを指定してください。</div>
++            <div lang="en">Specify Account ID.</div>
++      description: |
++        <div lang="ja">SSAキャンペーンの対象外キーワードに関する情報を取得します。</div>
++        <div lang="en">Gets negative keywords in SSA campaign-level.</div>
++      tags:
++        - SsaCampaignNegativeKeywordService
++      requestBody:
++        content:
++          application/json:
++            schema:
++              $ref: 'ssacampaignnegativekeyword/SsaCampaignNegativeKeywordServiceSelector.yaml#/SsaCampaignNegativeKeywordServiceSelector'
++      responses:
++        503:
++          $ref: '../Response503.yaml#/Response503'
++        500:
++          $ref: '../Response500.yaml#/Response500'
++        200:
++          description: |
++            <p class="cellContent__head">Error codes</p>
++            <div class="cellContent__body">
++            <table class="apiTable">
++              <colgroup span="1" class="short"></colgroup>
++              <colgroup span="2"></colgroup>
++              <thead>
++                <tr><th>Code</th><th>Message</th><th>Description</th></tr>
++              </thead>
++              <tbody>
++                <tr><td>0001</td><td>Invalid Request.</td><td><div lang="ja">さまざまな要因が考えられます。<br>主な要因は、パラメータの値が不正か、誤りがあるためにオペレーションが完了できません。</div><div lang="en">This error can result for a variety of reasons. <br>Typically because one of the parameter values in the request is wrong or invalid and the operation cannot be completed.</div></td></tr>
++                <tr><td>R0001</td><td>Require.</td><td><div lang="ja">必須です。</div><div lang="en">It is missing required parameter.</div></td></tr>
++                <tr><td>F0001</td><td>Invalid format.</td><td><div lang="ja">値の形式が不正です。</div><div lang="en">The value format is invalid.</div></td></tr>
++                <tr><td>V0001</td><td>Invalid value.</td><td><div lang="ja">値が無効です。</div><div lang="en">The value is invalid.</div></td></tr>
++                <tr><td>S0001</td><td>Invalid Status.</td><td><div lang="ja">ステータスが無効です。</div><div lang="en">The status is invalid.</div></td></tr>
++                <tr><td>L0002</td><td>Over list size.</td><td><div lang="ja">配列の要素数が上限値を超過しています。</div><div lang="en">The number of elements in the array exceeds the upper limit.</div></td></tr>
++                <tr><td>L0001</td><td>Lower list size.</td><td><div lang="ja">配列の要素数が下限値を下回っています。</div><div lang="en">The number of elements in the array is below the lower limit.</div></td></tr>
++                <tr><td>D0001</td><td>Duplicate.</td><td><div lang="ja">一意な値が重複しています。</div><div lang="en">The unique value is duplicated.</div></td></tr>
++                <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
++                <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
++                <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
++                <tr><td>210110</td><td>Invalid target</td><td>１日のスケジュール指定が上限値（6件）を超えています。</div><div lang="en">The daily schedule specification exceeds the upper limit (6 cases).</div></td></tr>
++                <tr><td>210518</td><td>Exceeds maximum word limit.</td><td><div lang="ja">キーワードは最大6個までしか指定できません。</div><div lang="en">6 keywords can only be specified up to.</div></td></tr>
++                <tr><td>210510</td><td>Exists same text with match type.</td><td><div lang="ja">指定されたキーワード、マッチタイプはすでにキャンペーン/広告グループ内に存在します。</div><div lang="en">The specified keyword, match type already exists in the campaign / ad group.</div></td></tr>
++              </tbody>
++            </table>
++            </div>
++          content:
++            application/json:
++              schema:
++                $ref: 'ssacampaignnegativekeyword/SsaCampaignNegativeKeywordServiceGetResponse.yaml#/SsaCampaignNegativeKeywordServiceGetResponse'
++        403:
++          $ref: '../Response403.yaml#/Response403'
++        401:
++          $ref: '../Response401.yaml#/Response401'
++        400:
++          $ref: '../Response400.yaml#/Response400'
++  /SsaCampaignNegativeKeywordService/add:
++    post:
++      parameters:
++        - in: header
++          name: x-z-base-account-id
++          schema:
++            type: integer
++            format: int64
++          required: true
++          description: |
++            <div lang="ja">アカウントIDを指定してください。</div>
++            <div lang="en">Specify Account ID.</div>
++      description: |
++        <div lang="ja">SSAキャンペーンの対象外キーワードを追加します。</div>
++        <div lang="en">Add negative keywords in SSA campaign-level.</div>
++      tags:
++        - SsaCampaignNegativeKeywordService
++      requestBody:
++        content:
++          application/json:
++            schema:
++              $ref: 'ssacampaignnegativekeyword/SsaCampaignNegativeKeywordServiceOperation.yaml#/SsaCampaignNegativeKeywordServiceOperation'
++      responses:
++        503:
++          $ref: '../Response503.yaml#/Response503'
++        500:
++          $ref: '../Response500.yaml#/Response500'
++        200:
++          description: |
++            <p class="cellContent__head">Error codes</p>
++            <div class="cellContent__body">
++            <table class="apiTable">
++              <colgroup span="1" class="short"></colgroup>
++              <colgroup span="2"></colgroup>
++              <thead>
++                <tr><th>Code</th><th>Message</th><th>Description</th></tr>
++              </thead>
++              <tbody>
++                <tr><td>0001</td><td>Invalid Request.</td><td><div lang="ja">さまざまな要因が考えられます。<br>主な要因は、パラメータの値が不正か、誤りがあるためにオペレーションが完了できません。</div><div lang="en">This error can result for a variety of reasons. <br>Typically because one of the parameter values in the request is wrong or invalid and the operation cannot be completed.</div></td></tr>
++                <tr><td>R0001</td><td>Require.</td><td><div lang="ja">必須です。</div><div lang="en">It is missing required parameter.</div></td></tr>
++                <tr><td>F0001</td><td>Invalid format.</td><td><div lang="ja">値の形式が不正です。</div><div lang="en">The value format is invalid.</div></td></tr>
++                <tr><td>V0001</td><td>Invalid value.</td><td><div lang="ja">値が無効です。</div><div lang="en">The value is invalid.</div></td></tr>
++                <tr><td>S0001</td><td>Invalid Status.</td><td><div lang="ja">ステータスが無効です。</div><div lang="en">The status is invalid.</div></td></tr>
++                <tr><td>L0002</td><td>Over list size.</td><td><div lang="ja">配列の要素数が上限値を超過しています。</div><div lang="en">The number of elements in the array exceeds the upper limit.</div></td></tr>
++                <tr><td>L0001</td><td>Lower list size.</td><td><div lang="ja">配列の要素数が下限値を下回っています。</div><div lang="en">The number of elements in the array is below the lower limit.</div></td></tr>
++                <tr><td>D0001</td><td>Duplicate.</td><td><div lang="ja">一意な値が重複しています。</div><div lang="en">The unique value is duplicated.</div></td></tr>
++                <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
++                <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
++                <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
++                <tr><td>130000</td><td>The server is busy. Please retry later.</td><td><div lang="ja">サーバーが高負荷です。時間をおいて再試行してください。</div><div lang="en">The server is busy. Please retry later.</div></td></tr>
++                <tr><td>130001</td><td>The request was not completed. Please reduce concurrent requests or data size. </td><td><div lang="ja">リクエストが完了しませんでした。同時リクエスト数またはデータサイズを減らして再度お試しください。</div><div lang="en">The request was not completed. Please reduce concurrent requests or data size.</div></td></tr>
++                <tr><td>210110</td><td>Invalid target</td><td>１日のスケジュール指定が上限値（6件）を超えています。</div><div lang="en">The daily schedule specification exceeds the upper limit (6 cases).</div></td></tr>
++                <tr><td>210518</td><td>Exceeds maximum word limit.</td><td><div lang="ja">キーワードは最大6個までしか指定できません。</div><div lang="en">6 keywords can only be specified up to.</div></td></tr>
++                <tr><td>210510</td><td>Exists same text with match type.</td><td><div lang="ja">指定されたキーワード、マッチタイプはすでにキャンペーン/広告グループ内に存在します。</div><div lang="en">The specified keyword, match type already exists in the campaign / ad group.</div></td></tr>
++                <tr><td>210920</td><td>This action isn't available when creating the A/B test.</td><td><div lang="ja">A/Bテスト作成中のため操作できません。</div><div lang="en">This action isn't available when creating the A/B test.</div></td></tr>
++              </tbody>
++            </table>
++            </div>
++          content:
++            application/json:
++              schema:
++                $ref: 'ssacampaignnegativekeyword/SsaCampaignNegativeKeywordServiceMutateResponse.yaml#/SsaCampaignNegativeKeywordServiceMutateResponse'
++        403:
++          $ref: '../Response403.yaml#/Response403'
++        401:
++          $ref: '../Response401.yaml#/Response401'
++        400:
++          $ref: '../Response400.yaml#/Response400'
++  /SsaCampaignNegativeKeywordService/remove:
++    post:
++      parameters:
++        - in: header
++          name: x-z-base-account-id
++          schema:
++            type: integer
++            format: int64
++          required: true
++          description: |
++            <div lang="ja">アカウントIDを指定してください。</div>
++            <div lang="en">Specify Account ID.</div>
++      description: |
++        <div lang="ja">SSAキャンペーンの対象外キーワードを削除します。</div>
++        <div lang="en">Remove negative keywords in SSA campaign-level.</div>
++      tags:
++        - SsaCampaignNegativeKeywordService
++      requestBody:
++        content:
++          application/json:
++            schema:
++              $ref: 'ssacampaignnegativekeyword/SsaCampaignNegativeKeywordServiceOperation.yaml#/SsaCampaignNegativeKeywordServiceOperation'
++      responses:
++        503:
++          $ref: '../Response503.yaml#/Response503'
++        500:
++          $ref: '../Response500.yaml#/Response500'
++        200:
++          description: |
++            <p class="cellContent__head">Error codes</p>
++            <div class="cellContent__body">
++            <table class="apiTable">
++              <colgroup span="1" class="short"></colgroup>
++              <colgroup span="2"></colgroup>
++              <thead>
++                <tr><th>Code</th><th>Message</th><th>Description</th></tr>
++              </thead>
++              <tbody>
++                <tr><td>0001</td><td>Invalid Request.</td><td><div lang="ja">さまざまな要因が考えられます。<br>主な要因は、パラメータの値が不正か、誤りがあるためにオペレーションが完了できません。</div><div lang="en">This error can result for a variety of reasons. <br>Typically because one of the parameter values in the request is wrong or invalid and the operation cannot be completed.</div></td></tr>
++                <tr><td>R0001</td><td>Require.</td><td><div lang="ja">必須です。</div><div lang="en">It is missing required parameter.</div></td></tr>
++                <tr><td>F0001</td><td>Invalid format.</td><td><div lang="ja">値の形式が不正です。</div><div lang="en">The value format is invalid.</div></td></tr>
++                <tr><td>V0001</td><td>Invalid value.</td><td><div lang="ja">値が無効です。</div><div lang="en">The value is invalid.</div></td></tr>
++                <tr><td>S0001</td><td>Invalid Status.</td><td><div lang="ja">ステータスが無効です。</div><div lang="en">The status is invalid.</div></td></tr>
++                <tr><td>L0002</td><td>Over list size.</td><td><div lang="ja">配列の要素数が上限値を超過しています。</div><div lang="en">The number of elements in the array exceeds the upper limit.</div></td></tr>
++                <tr><td>L0001</td><td>Lower list size.</td><td><div lang="ja">配列の要素数が下限値を下回っています。</div><div lang="en">The number of elements in the array is below the lower limit.</div></td></tr>
++                <tr><td>D0001</td><td>Duplicate.</td><td><div lang="ja">一意な値が重複しています。</div><div lang="en">The unique value is duplicated.</div></td></tr>
++                <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
++                <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
++                <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
++                <tr><td>130000</td><td>The server is busy. Please retry later.</td><td><div lang="ja">サーバーが高負荷です。時間をおいて再試行してください。</div><div lang="en">The server is busy. Please retry later.</div></td></tr>
++                <tr><td>130001</td><td>The request was not completed. Please reduce concurrent requests or data size. </td><td><div lang="ja">リクエストが完了しませんでした。同時リクエスト数またはデータサイズを減らして再度お試しください。</div><div lang="en">The request was not completed. Please reduce concurrent requests or data size.</div></td></tr>
++                <tr><td>210110</td><td>Invalid target</td><td>１日のスケジュール指定が上限値（6件）を超えています。</div><div lang="en">The daily schedule specification exceeds the upper limit (6 cases).</div></td></tr>
++                <tr><td>210518</td><td>Exceeds maximum word limit.</td><td><div lang="ja">キーワードは最大6個までしか指定できません。</div><div lang="en">6 keywords can only be specified up to.</div></td></tr>
++                <tr><td>210510</td><td>Exists same text with match type.</td><td><div lang="ja">指定されたキーワード、マッチタイプはすでにキャンペーン/広告グループ内に存在します。</div><div lang="en">The specified keyword, match type already exists in the campaign / ad group.</div></td></tr>
++                <tr><td>210920</td><td>This action isn't available when creating the A/B test.</td><td><div lang="ja">A/Bテスト作成中のため操作できません。</div><div lang="en">This action isn't available when creating the A/B test.</div></td></tr>
++              </tbody>
++            </table>
++            </div>
++          content:
++            application/json:
++              schema:
++                $ref: 'ssacampaignnegativekeyword/SsaCampaignNegativeKeywordServiceMutateResponse.yaml#/SsaCampaignNegativeKeywordServiceMutateResponse'
++        403:
++          $ref: '../Response403.yaml#/Response403'
++        401:
++          $ref: '../Response401.yaml#/Response401'
++        400:
++          $ref: '../Response400.yaml#/Response400'
+   /SsaReportDefinitionService/get:
+     post:
+       parameters:
+@@ -12358,6 +13160,779 @@
+         403:
+           $ref: '../Response403.yaml#/Response403'
+         401:
++          $ref: '../Response401.yaml#/Response401'
++        400:
++          $ref: '../Response400.yaml#/Response400'
++  /SsaCampaignService/get:
++    post:
++      parameters:
++        - in: header
++          name: x-z-base-account-id
++          schema:
++            type: integer
++            format: int64
++          required: true
++          description: |
++            <div lang="ja">アカウントIDを指定してください。</div>
++            <div lang="en">Specify Account ID.</div>
++      description: |
++        <div lang="ja">キャンペーンに関する情報を取得します。</div>
++        <div lang="en">Gets information related to campaigns.</div>
++      tags:
++        - SsaCampaignService
++      requestBody:
++        content:
++          application/json:
++            schema:
++              $ref: 'ssacampaign/SsaCampaignServiceSelector.yaml#/SsaCampaignServiceSelector'
++      responses:
++        503:
++          $ref: '../Response503.yaml#/Response503'
++        500:
++          $ref: '../Response500.yaml#/Response500'
++        200:
++          description: |
++            <p class="cellContent__head">Error codes</p>
++            <div class="cellContent__body">
++            <table class="apiTable">
++              <colgroup span="1" class="short"></colgroup>
++              <colgroup span="2"></colgroup>
++              <thead>
++                <tr><th>Code</th><th>Message</th><th>Description</th></tr>
++              </thead>
++              <tbody>
++                <tr><td>0001</td><td>Invalid Request.</td><td><div lang="ja">さまざまな要因が考えられます。<br>主な要因は、パラメータの値が不正か、誤りがあるためにオペレーションが完了できません。</div><div lang="en">This error can result for a variety of reasons. <br>Typically because one of the parameter values in the request is wrong or invalid and the operation cannot be completed.</div></td></tr>
++                <tr><td>R0001</td><td>Require.</td><td><div lang="ja">必須です。</div><div lang="en">It is missing required parameter.</div></td></tr>
++                <tr><td>F0001</td><td>Invalid format.</td><td><div lang="ja">値の形式が不正です。</div><div lang="en">The value format is invalid.</div></td></tr>
++                <tr><td>V0001</td><td>Invalid value.</td><td><div lang="ja">値が無効です。</div><div lang="en">The value is invalid.</div></td></tr>
++                <tr><td>S0001</td><td>Invalid Status.</td><td><div lang="ja">ステータスが無効です。</div><div lang="en">The status is invalid.</div></td></tr>
++                <tr><td>L0002</td><td>Over list size.</td><td><div lang="ja">配列の要素数が上限値を超過しています。</div><div lang="en">The number of elements in the array exceeds the upper limit.</div></td></tr>
++                <tr><td>L0001</td><td>Lower list size.</td><td><div lang="ja">配列の要素数が下限値を下回っています。</div><div lang="en">The number of elements in the array is below the lower limit.</div></td></tr>
++                <tr><td>D0001</td><td>Duplicate.</td><td><div lang="ja">一意な値が重複しています。</div><div lang="en">The unique value is duplicated.</div></td></tr>
++                <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
++                <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
++                <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
++                <tr><td>210311</td><td>Campaign has been started.</td><td><div lang="ja">すでに開始しているキャンペーンの開始日は変更できません。</div><div lang="en">The start date of a campaign that has already started can not change.</div></td></tr>
++              </tbody>
++            </table>
++            </div>
++          content:
++            application/json:
++              schema:
++                $ref: 'ssacampaign/SsaCampaignServiceGetResponse.yaml#/SsaCampaignServiceGetResponse'
++        400:
++          $ref: '../Response400.yaml#/Response400'
++        401:
++          $ref: '../Response401.yaml#/Response401'
++        403:
++          $ref: '../Response403.yaml#/Response403'
++  /SsaCampaignService/add:
++    post:
++      parameters:
++        - in: header
++          name: x-z-base-account-id
++          schema:
++            type: integer
++            format: int64
++          required: true
++          description: |
++            <div lang="ja">アカウントIDを指定してください。</div>
++            <div lang="en">Specify Account ID.</div>
++      description: |
++        <div lang="ja">キャンペーンを追加します。</div>
++        <div lang="en">Add campaign information.</div>
++      tags:
++        - SsaCampaignService
++      requestBody:
++        content:
++          application/json:
++            schema:
++              $ref: 'ssacampaign/SsaCampaignServiceOperation.yaml#/SsaCampaignServiceOperation'
++      responses:
++        503:
++          $ref: '../Response503.yaml#/Response503'
++        500:
++          $ref: '../Response500.yaml#/Response500'
++        200:
++          description: |
++            <p class="cellContent__head">Error codes</p>
++            <div class="cellContent__body">
++            <table class="apiTable">
++              <colgroup span="1" class="short"></colgroup>
++              <colgroup span="2"></colgroup>
++              <thead>
++                <tr><th>Code</th><th>Message</th><th>Description</th></tr>
++              </thead>
++              <tbody>
++                <tr><td>0001</td><td>Invalid Request.</td><td><div lang="ja">さまざまな要因が考えられます。<br>主な要因は、パラメータの値が不正か、誤りがあるためにオペレーションが完了できません。</div><div lang="en">This error can result for a variety of reasons. <br>Typically because one of the parameter values in the request is wrong or invalid and the operation cannot be completed.</div></td></tr>
++                <tr><td>R0001</td><td>Require.</td><td><div lang="ja">必須です。</div><div lang="en">It is missing required parameter.</div></td></tr>
++                <tr><td>F0001</td><td>Invalid format.</td><td><div lang="ja">値の形式が不正です。</div><div lang="en">The value format is invalid.</div></td></tr>
++                <tr><td>V0001</td><td>Invalid value.</td><td><div lang="ja">値が無効です。</div><div lang="en">The value is invalid.</div></td></tr>
++                <tr><td>S0001</td><td>Invalid Status.</td><td><div lang="ja">ステータスが無効です。</div><div lang="en">The status is invalid.</div></td></tr>
++                <tr><td>L0002</td><td>Over list size.</td><td><div lang="ja">配列の要素数が上限値を超過しています。</div><div lang="en">The number of elements in the array exceeds the upper limit.</div></td></tr>
++                <tr><td>L0001</td><td>Lower list size.</td><td><div lang="ja">配列の要素数が下限値を下回っています。</div><div lang="en">The number of elements in the array is below the lower limit.</div></td></tr>
++                <tr><td>D0001</td><td>Duplicate.</td><td><div lang="ja">一意な値が重複しています。</div><div lang="en">The unique value is duplicated.</div></td></tr>
++                <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
++                <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
++                <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
++                <tr><td>130000</td><td>The server is busy. Please retry later.</td><td><div lang="ja">サーバーが高負荷です。時間をおいて再試行してください。</div><div lang="en">The server is busy. Please retry later.</div></td></tr>
++                <tr><td>130001</td><td>The request was not completed. Please reduce concurrent requests or data size. </td><td><div lang="ja">リクエストが完了しませんでした。同時リクエスト数またはデータサイズを減らして再度お試しください。</div><div lang="en">The request was not completed. Please reduce concurrent requests or data size.</div></td></tr>
++                <tr><td>210311</td><td>Campaign has been started.</td><td><div lang="ja">すでに開始しているキャンペーンの開始日は変更できません。</div><div lang="en">The start date of a campaign that has already started can not change.</div></td></tr>
++                <tr><td>210114</td><td>Can not select Maximize conversions when you don't use conversion tracking.</td><td><div lang="ja">コンバージョン測定を設定していないため、「コンバージョン数の最大化」は選択できません。</div><div lang="en">Can not select Maximize conversions when you don't use conversion tracking.</div></td></tr>
++              </tbody>
++            </table>
++            </div>
++          content:
++            application/json:
++              schema:
++                $ref: 'ssacampaign/SsaCampaignServiceMutateResponse.yaml#/SsaCampaignServiceMutateResponse'
++        403:
++          $ref: '../Response403.yaml#/Response403'
++        401:
++          $ref: '../Response401.yaml#/Response401'
++        400:
++          $ref: '../Response400.yaml#/Response400'
++  /SsaCampaignService/set:
++    post:
++      parameters:
++        - in: header
++          name: x-z-base-account-id
++          schema:
++            type: integer
++            format: int64
++          required: true
++          description: |
++            <div lang="ja">アカウントIDを指定してください。</div>
++            <div lang="en">Specify Account ID.</div>
++      description: |
++        <div lang="ja">キャンペーンを更新します。</div>
++        <div lang="en">Updates the information related to campaigns.</div>
++      tags:
++        - SsaCampaignService
++      requestBody:
++        content:
++          application/json:
++            schema:
++              $ref: 'ssacampaign/SsaCampaignServiceOperation.yaml#/SsaCampaignServiceOperation'
++      responses:
++        503:
++          $ref: '../Response503.yaml#/Response503'
++        500:
++          $ref: '../Response500.yaml#/Response500'
++        200:
++          description: |
++            <p class="cellContent__head">Error codes</p>
++            <div class="cellContent__body">
++            <table class="apiTable">
++              <colgroup span="1" class="short"></colgroup>
++              <colgroup span="2"></colgroup>
++              <thead>
++                <tr><th>Code</th><th>Message</th><th>Description</th></tr>
++              </thead>
++              <tbody>
++                <tr><td>0001</td><td>Invalid Request.</td><td><div lang="ja">さまざまな要因が考えられます。<br>主な要因は、パラメータの値が不正か、誤りがあるためにオペレーションが完了できません。</div><div lang="en">This error can result for a variety of reasons. <br>Typically because one of the parameter values in the request is wrong or invalid and the operation cannot be completed.</div></td></tr>
++                <tr><td>R0001</td><td>Require.</td><td><div lang="ja">必須です。</div><div lang="en">It is missing required parameter.</div></td></tr>
++                <tr><td>F0001</td><td>Invalid format.</td><td><div lang="ja">値の形式が不正です。</div><div lang="en">The value format is invalid.</div></td></tr>
++                <tr><td>V0001</td><td>Invalid value.</td><td><div lang="ja">値が無効です。</div><div lang="en">The value is invalid.</div></td></tr>
++                <tr><td>S0001</td><td>Invalid Status.</td><td><div lang="ja">ステータスが無効です。</div><div lang="en">The status is invalid.</div></td></tr>
++                <tr><td>L0002</td><td>Over list size.</td><td><div lang="ja">配列の要素数が上限値を超過しています。</div><div lang="en">The number of elements in the array exceeds the upper limit.</div></td></tr>
++                <tr><td>L0001</td><td>Lower list size.</td><td><div lang="ja">配列の要素数が下限値を下回っています。</div><div lang="en">The number of elements in the array is below the lower limit.</div></td></tr>
++                <tr><td>D0001</td><td>Duplicate.</td><td><div lang="ja">一意な値が重複しています。</div><div lang="en">The unique value is duplicated.</div></td></tr>
++                <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
++                <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
++                <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
++                <tr><td>120020</td><td>Can not set value.</td><td><div lang="ja">値を設定することができません。</div><div lang="en">Value cannot be set.</div></td></tr>
++                <tr><td>130000</td><td>The server is busy. Please retry later.</td><td><div lang="ja">サーバーが高負荷です。時間をおいて再試行してください。</div><div lang="en">The server is busy. Please retry later.</div></td></tr>
++                <tr><td>130001</td><td>The request was not completed. Please reduce concurrent requests or data size. </td><td><div lang="ja">リクエストが完了しませんでした。同時リクエスト数またはデータサイズを減らして再度お試しください。</div><div lang="en">The request was not completed. Please reduce concurrent requests or data size.</div></td></tr>
++                <tr><td>210311</td><td>Campaign has been started.</td><td><div lang="ja">すでに開始しているキャンペーンの開始日は変更できません。</div><div lang="en">The start date of a campaign that has already started can not change.</div></td></tr>
++                <tr><td>210114</td><td>Can not select Maximize conversions when you don't use conversion tracking.</td><td><div lang="ja">コンバージョン測定を設定していないため、「コンバージョン数の最大化」は選択できません。</div><div lang="en">Can not select Maximize conversions when you don't use conversion tracking.</div></td></tr>
++              </tbody>
++            </table>
++            </div>
++          content:
++            application/json:
++              schema:
++                $ref: 'ssacampaign/SsaCampaignServiceMutateResponse.yaml#/SsaCampaignServiceMutateResponse'
++        403:
++          $ref: '../Response403.yaml#/Response403'
++        401:
++          $ref: '../Response401.yaml#/Response401'
++        400:
++          $ref: '../Response400.yaml#/Response400'
++  /SsaCampaignService/remove:
++    post:
++      parameters:
++        - in: header
++          name: x-z-base-account-id
++          schema:
++            type: integer
++            format: int64
++          required: true
++          description: |
++            <div lang="ja">アカウントIDを指定してください。</div>
++            <div lang="en">Specify Account ID.</div>
++      description: |
++        <div lang="ja">キャンペーンを削除します。</div>
++        <div lang="en">Removes the inforamtion related to campaigns.</div>
++      tags:
++        - SsaCampaignService
++      requestBody:
++        content:
++          application/json:
++            schema:
++              $ref: 'ssacampaign/SsaCampaignServiceOperation.yaml#/SsaCampaignServiceOperation'
++      responses:
++        503:
++          $ref: '../Response503.yaml#/Response503'
++        500:
++          $ref: '../Response500.yaml#/Response500'
++        200:
++          description: |
++            <p class="cellContent__head">Error codes</p>
++            <div class="cellContent__body">
++            <table class="apiTable">
++              <colgroup span="1" class="short"></colgroup>
++              <colgroup span="2"></colgroup>
++              <thead>
++                <tr><th>Code</th><th>Message</th><th>Description</th></tr>
++              </thead>
++              <tbody>
++                <tr><td>0001</td><td>Invalid Request.</td><td><div lang="ja">さまざまな要因が考えられます。<br>主な要因は、パラメータの値が不正か、誤りがあるためにオペレーションが完了できません。</div><div lang="en">This error can result for a variety of reasons. <br>Typically because one of the parameter values in the request is wrong or invalid and the operation cannot be completed.</div></td></tr>
++                <tr><td>R0001</td><td>Require.</td><td><div lang="ja">必須です。</div><div lang="en">It is missing required parameter.</div></td></tr>
++                <tr><td>F0001</td><td>Invalid format.</td><td><div lang="ja">値の形式が不正です。</div><div lang="en">The value format is invalid.</div></td></tr>
++                <tr><td>V0001</td><td>Invalid value.</td><td><div lang="ja">値が無効です。</div><div lang="en">The value is invalid.</div></td></tr>
++                <tr><td>S0001</td><td>Invalid Status.</td><td><div lang="ja">ステータスが無効です。</div><div lang="en">The status is invalid.</div></td></tr>
++                <tr><td>L0002</td><td>Over list size.</td><td><div lang="ja">配列の要素数が上限値を超過しています。</div><div lang="en">The number of elements in the array exceeds the upper limit.</div></td></tr>
++                <tr><td>L0001</td><td>Lower list size.</td><td><div lang="ja">配列の要素数が下限値を下回っています。</div><div lang="en">The number of elements in the array is below the lower limit.</div></td></tr>
++                <tr><td>D0001</td><td>Duplicate.</td><td><div lang="ja">一意な値が重複しています。</div><div lang="en">The unique value is duplicated.</div></td></tr>
++                <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
++                <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
++                <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
++                <tr><td>130000</td><td>The server is busy. Please retry later.</td><td><div lang="ja">サーバーが高負荷です。時間をおいて再試行してください。</div><div lang="en">The server is busy. Please retry later.</div></td></tr>
++                <tr><td>130001</td><td>The request was not completed. Please reduce concurrent requests or data size. </td><td><div lang="ja">リクエストが完了しませんでした。同時リクエスト数またはデータサイズを減らして再度お試しください。</div><div lang="en">The request was not completed. Please reduce concurrent requests or data size.</div></td></tr>
++                <tr><td>210311</td><td>Campaign has been started.</td><td><div lang="ja">すでに開始しているキャンペーンの開始日は変更できません。</div><div lang="en">The start date of a campaign that has already started can not change.</div></td></tr>
++              </tbody>
++            </table>
++            </div>
++          content:
++            application/json:
++              schema:
++                $ref: 'ssacampaign/SsaCampaignServiceMutateResponse.yaml#/SsaCampaignServiceMutateResponse'
++        403:
++          $ref: '../Response403.yaml#/Response403'
++        401:
++          $ref: '../Response401.yaml#/Response401'
++        400:
++          $ref: '../Response400.yaml#/Response400'
++  /SsaAdGroupService/get:
++    post:
++      parameters:
++        - in: header
++          name: x-z-base-account-id
++          schema:
++            type: integer
++            format: int64
++          required: true
++          description: |
++            <div lang="ja">アカウントIDを指定してください。</div>
++            <div lang="en">Specify Account ID.</div>
++      description: |
++        <div lang="ja">広告グループに関する情報を取得します。</div>
++        <div lang="en">Gets Ad group information.</div>
++      tags:
++        - SsaAdGroupService
++      requestBody:
++        content:
++          application/json:
++            schema:
++              $ref: 'ssaadgroup/SsaAdGroupServiceSelector.yaml#/SsaAdGroupServiceSelector'
++      responses:
++        503:
++          $ref: '../Response503.yaml#/Response503'
++        500:
++          $ref: '../Response500.yaml#/Response500'
++        200:
++          description: |
++            <p class="cellContent__head">Error codes</p>
++            <div class="cellContent__body">
++            <table class="apiTable">
++              <colgroup span="1" class="short"></colgroup>
++              <colgroup span="2"></colgroup>
++              <thead>
++                <tr><th>Code</th><th>Message</th><th>Description</th></tr>
++              </thead>
++              <tbody>
++                <tr><td>0001</td><td>Invalid Request.</td><td><div lang="ja">さまざまな要因が考えられます。<br>主な要因は、パラメータの値が不正か、誤りがあるためにオペレーションが完了できません。</div><div lang="en">This error can result for a variety of reasons. <br>Typically because one of the parameter values in the request is wrong or invalid and the operation cannot be completed.</div></td></tr>
++                <tr><td>R0001</td><td>Require.</td><td><div lang="ja">必須です。</div><div lang="en">It is missing required parameter.</div></td></tr>
++                <tr><td>F0001</td><td>Invalid format.</td><td><div lang="ja">値の形式が不正です。</div><div lang="en">The value format is invalid.</div></td></tr>
++                <tr><td>V0001</td><td>Invalid value.</td><td><div lang="ja">値が無効です。</div><div lang="en">The value is invalid.</div></td></tr>
++                <tr><td>S0001</td><td>Invalid Status.</td><td><div lang="ja">ステータスが無効です。</div><div lang="en">The status is invalid.</div></td></tr>
++                <tr><td>L0002</td><td>Over list size.</td><td><div lang="ja">配列の要素数が上限値を超過しています。</div><div lang="en">The number of elements in the array exceeds the upper limit.</div></td></tr>
++                <tr><td>L0001</td><td>Lower list size.</td><td><div lang="ja">配列の要素数が下限値を下回っています。</div><div lang="en">The number of elements in the array is below the lower limit.</div></td></tr>
++                <tr><td>D0001</td><td>Duplicate.</td><td><div lang="ja">一意な値が重複しています。</div><div lang="en">The unique value is duplicated.</div></td></tr>
++                <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
++                <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
++                <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
++                <tr><td>210405</td><td>Budget has exceeded.</td><td><div lang="ja">予算額を超過しています。</div><div lang="en">The budget amount is exceeded.</div></td></tr>
++              </tbody>
++            </table>
++            </div>
++          content:
++            application/json:
++              schema:
++                $ref: 'ssaadgroup/SsaAdGroupServiceGetResponse.yaml#/SsaAdGroupServiceGetResponse'
++        403:
++          $ref: '../Response403.yaml#/Response403'
++        401:
++          $ref: '../Response401.yaml#/Response401'
++        400:
++          $ref: '../Response400.yaml#/Response400'
++  /SsaAdGroupService/add:
++    post:
++      parameters:
++        - in: header
++          name: x-z-base-account-id
++          schema:
++            type: integer
++            format: int64
++          required: true
++          description: |
++            <div lang="ja">アカウントIDを指定してください。</div>
++            <div lang="en">Specify Account ID.</div>
++      description: |
++        <div lang="ja">広告グループを追加します。</div>
++        <div lang="en">Create Ad group information.</div>
++      tags:
++        - SsaAdGroupService
++      requestBody:
++        content:
++          application/json:
++            schema:
++              $ref: 'ssaadgroup/SsaAdGroupServiceOperation.yaml#/SsaAdGroupServiceOperation'
++      responses:
++        503:
++          $ref: '../Response503.yaml#/Response503'
++        500:
++          $ref: '../Response500.yaml#/Response500'
++        200:
++          description: |
++            <p class="cellContent__head">Error codes</p>
++            <div class="cellContent__body">
++            <table class="apiTable">
++              <colgroup span="1" class="short"></colgroup>
++              <colgroup span="2"></colgroup>
++              <thead>
++                <tr><th>Code</th><th>Message</th><th>Description</th></tr>
++              </thead>
++              <tbody>
++                <tr><td>0001</td><td>Invalid Request.</td><td><div lang="ja">さまざまな要因が考えられます。<br>主な要因は、パラメータの値が不正か、誤りがあるためにオペレーションが完了できません。</div><div lang="en">This error can result for a variety of reasons. <br>Typically because one of the parameter values in the request is wrong or invalid and the operation cannot be completed.</div></td></tr>
++                <tr><td>R0001</td><td>Require.</td><td><div lang="ja">必須です。</div><div lang="en">It is missing required parameter.</div></td></tr>
++                <tr><td>F0001</td><td>Invalid format.</td><td><div lang="ja">値の形式が不正です。</div><div lang="en">The value format is invalid.</div></td></tr>
++                <tr><td>V0001</td><td>Invalid value.</td><td><div lang="ja">値が無効です。</div><div lang="en">The value is invalid.</div></td></tr>
++                <tr><td>S0001</td><td>Invalid Status.</td><td><div lang="ja">ステータスが無効です。</div><div lang="en">The status is invalid.</div></td></tr>
++                <tr><td>L0002</td><td>Over list size.</td><td><div lang="ja">配列の要素数が上限値を超過しています。</div><div lang="en">The number of elements in the array exceeds the upper limit.</div></td></tr>
++                <tr><td>L0001</td><td>Lower list size.</td><td><div lang="ja">配列の要素数が下限値を下回っています。</div><div lang="en">The number of elements in the array is below the lower limit.</div></td></tr>
++                <tr><td>D0001</td><td>Duplicate.</td><td><div lang="ja">一意な値が重複しています。</div><div lang="en">The unique value is duplicated.</div></td></tr>
++                <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
++                <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
++                <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
++                <tr><td>130000</td><td>The server is busy. Please retry later.</td><td><div lang="ja">サーバーが高負荷です。時間をおいて再試行してください。</div><div lang="en">The server is busy. Please retry later.</div></td></tr>
++                <tr><td>130001</td><td>The request was not completed. Please reduce concurrent requests or data size. </td><td><div lang="ja">リクエストが完了しませんでした。同時リクエスト数またはデータサイズを減らして再度お試しください。</div><div lang="en">The request was not completed. Please reduce concurrent requests or data size.</div></td></tr>
++                <tr><td>210405</td><td>Budget has exceeded.</td><td><div lang="ja">予算額を超過しています。</div><div lang="en">The budget amount is exceeded.</div></td></tr>
++              </tbody>
++            </table>
++            </div>
++          content:
++            application/json:
++              schema:
++                $ref: 'ssaadgroup/SsaAdGroupServiceMutateResponse.yaml#/SsaAdGroupServiceMutateResponse'
++        403:
++          $ref: '../Response403.yaml#/Response403'
++        401:
++          $ref: '../Response401.yaml#/Response401'
++        400:
++          $ref: '../Response400.yaml#/Response400'
++  /SsaAdGroupService/set:
++    post:
++      parameters:
++        - in: header
++          name: x-z-base-account-id
++          schema:
++            type: integer
++            format: int64
++          required: true
++          description: |
++            <div lang="ja">アカウントIDを指定してください。</div>
++            <div lang="en">Specify Account ID.</div>
++      description: |
++        <div lang="ja">広告グループを更新します。</div>
++        <div lang="en">Updates Ad group information.</div>
++      tags:
++        - SsaAdGroupService
++      requestBody:
++        content:
++          application/json:
++            schema:
++              $ref: 'ssaadgroup/SsaAdGroupServiceOperation.yaml#/SsaAdGroupServiceOperation'
++      responses:
++        503:
++          $ref: '../Response503.yaml#/Response503'
++        500:
++          $ref: '../Response500.yaml#/Response500'
++        200:
++          description: |
++            <p class="cellContent__head">Error codes</p>
++            <div class="cellContent__body">
++            <table class="apiTable">
++              <colgroup span="1" class="short"></colgroup>
++              <colgroup span="2"></colgroup>
++              <thead>
++                <tr><th>Code</th><th>Message</th><th>Description</th></tr>
++              </thead>
++              <tbody>
++                <tr><td>0001</td><td>Invalid Request.</td><td><div lang="ja">さまざまな要因が考えられます。<br>主な要因は、パラメータの値が不正か、誤りがあるためにオペレーションが完了できません。</div><div lang="en">This error can result for a variety of reasons. <br>Typically because one of the parameter values in the request is wrong or invalid and the operation cannot be completed.</div></td></tr>
++                <tr><td>R0001</td><td>Require.</td><td><div lang="ja">必須です。</div><div lang="en">It is missing required parameter.</div></td></tr>
++                <tr><td>F0001</td><td>Invalid format.</td><td><div lang="ja">値の形式が不正です。</div><div lang="en">The value format is invalid.</div></td></tr>
++                <tr><td>V0001</td><td>Invalid value.</td><td><div lang="ja">値が無効です。</div><div lang="en">The value is invalid.</div></td></tr>
++                <tr><td>S0001</td><td>Invalid Status.</td><td><div lang="ja">ステータスが無効です。</div><div lang="en">The status is invalid.</div></td></tr>
++                <tr><td>L0002</td><td>Over list size.</td><td><div lang="ja">配列の要素数が上限値を超過しています。</div><div lang="en">The number of elements in the array exceeds the upper limit.</div></td></tr>
++                <tr><td>L0001</td><td>Lower list size.</td><td><div lang="ja">配列の要素数が下限値を下回っています。</div><div lang="en">The number of elements in the array is below the lower limit.</div></td></tr>
++                <tr><td>D0001</td><td>Duplicate.</td><td><div lang="ja">一意な値が重複しています。</div><div lang="en">The unique value is duplicated.</div></td></tr>
++                <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
++                <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
++                <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
++                <tr><td>210405</td><td>Budget has exceeded.</td><td><div lang="ja">予算額を超過しています。</div><div lang="en">The budget amount is exceeded.</div></td></tr>
++                <tr><td>210116</td><td>UserStatus cannot be set to ACTIVE when the product group has a LINE category or system brand configured.</td><td><div lang="ja">商品グループにLINEカテゴリかシステムブランドが設定されている場合、userStatusをACTIVEにできません。</div><div lang="en">UserStatus cannot be set to ACTIVE when the product group has a LINE category or system brand configured.</div></td></tr>
++              </tbody>
++            </table>
++            </div>
++          content:
++            application/json:
++              schema:
++                $ref: 'ssaadgroup/SsaAdGroupServiceMutateResponse.yaml#/SsaAdGroupServiceMutateResponse'
++        403:
++          $ref: '../Response403.yaml#/Response403'
++        401:
++          $ref: '../Response401.yaml#/Response401'
++        400:
++          $ref: '../Response400.yaml#/Response400'
++  /SsaAdGroupService/remove:
++    post:
++      parameters:
++        - in: header
++          name: x-z-base-account-id
++          schema:
++            type: integer
++            format: int64
++          required: true
++          description: |
++            <div lang="ja">アカウントIDを指定してください。</div>
++            <div lang="en">Specify Account ID.</div>
++      description: |
++        <div lang="ja">広告グループを削除します。</div>
++        <div lang="en">Removes Ad group information.</div>
++      tags:
++        - SsaAdGroupService
++      requestBody:
++        content:
++          application/json:
++            schema:
++              $ref: 'ssaadgroup/SsaAdGroupServiceOperation.yaml#/SsaAdGroupServiceOperation'
++      responses:
++        503:
++          $ref: '../Response503.yaml#/Response503'
++        500:
++          $ref: '../Response500.yaml#/Response500'
++        200:
++          description: |
++            <p class="cellContent__head">Error codes</p>
++            <div class="cellContent__body">
++            <table class="apiTable">
++              <colgroup span="1" class="short"></colgroup>
++              <colgroup span="2"></colgroup>
++              <thead>
++                <tr><th>Code</th><th>Message</th><th>Description</th></tr>
++              </thead>
++              <tbody>
++                <tr><td>0001</td><td>Invalid Request.</td><td><div lang="ja">さまざまな要因が考えられます。<br>主な要因は、パラメータの値が不正か、誤りがあるためにオペレーションが完了できません。</div><div lang="en">This error can result for a variety of reasons. <br>Typically because one of the parameter values in the request is wrong or invalid and the operation cannot be completed.</div></td></tr>
++                <tr><td>R0001</td><td>Require.</td><td><div lang="ja">必須です。</div><div lang="en">It is missing required parameter.</div></td></tr>
++                <tr><td>F0001</td><td>Invalid format.</td><td><div lang="ja">値の形式が不正です。</div><div lang="en">The value format is invalid.</div></td></tr>
++                <tr><td>V0001</td><td>Invalid value.</td><td><div lang="ja">値が無効です。</div><div lang="en">The value is invalid.</div></td></tr>
++                <tr><td>S0001</td><td>Invalid Status.</td><td><div lang="ja">ステータスが無効です。</div><div lang="en">The status is invalid.</div></td></tr>
++                <tr><td>L0002</td><td>Over list size.</td><td><div lang="ja">配列の要素数が上限値を超過しています。</div><div lang="en">The number of elements in the array exceeds the upper limit.</div></td></tr>
++                <tr><td>L0001</td><td>Lower list size.</td><td><div lang="ja">配列の要素数が下限値を下回っています。</div><div lang="en">The number of elements in the array is below the lower limit.</div></td></tr>
++                <tr><td>D0001</td><td>Duplicate.</td><td><div lang="ja">一意な値が重複しています。</div><div lang="en">The unique value is duplicated.</div></td></tr>
++                <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
++                <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
++                <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
++                <tr><td>130000</td><td>The server is busy. Please retry later.</td><td><div lang="ja">サーバーが高負荷です。時間をおいて再試行してください。</div><div lang="en">The server is busy. Please retry later.</div></td></tr>
++                <tr><td>130001</td><td>The request was not completed. Please reduce concurrent requests or data size. </td><td><div lang="ja">リクエストが完了しませんでした。同時リクエスト数またはデータサイズを減らして再度お試しください。</div><div lang="en">The request was not completed. Please reduce concurrent requests or data size.</div></td></tr>
++                <tr><td>210405</td><td>Budget has exceeded.</td><td><div lang="ja">予算額を超過しています。</div><div lang="en">The budget amount is exceeded.</div></td></tr>
++              </tbody>
++            </table>
++            </div>
++          content:
++            application/json:
++              schema:
++                $ref: 'ssaadgroup/SsaAdGroupServiceMutateResponse.yaml#/SsaAdGroupServiceMutateResponse'
++        403:
++          $ref: '../Response403.yaml#/Response403'
++        401:
++          $ref: '../Response401.yaml#/Response401'
++        400:
++          $ref: '../Response400.yaml#/Response400'
++  /SsaProductGroupService/get:
++    post:
++      parameters:
++        - in: header
++          name: x-z-base-account-id
++          schema:
++            type: integer
++            format: int64
++          required: true
++          description: |
++            <div lang="ja">アカウントIDを指定してください。</div>
++            <div lang="en">Specify Account ID.</div>
++      description: |
++        <div lang="ja">商品グループに関する情報を取得します。</div>
++        <div lang="en">Gets Ad group information.</div>
++      tags:
++        - SsaProductGroupService
++      requestBody:
++        content:
++          application/json:
++            schema:
++              $ref: 'ssaproductgroup/SsaProductGroupServiceSelector.yaml#/SsaProductGroupServiceSelector'
++      responses:
++        503:
++          $ref: '../Response503.yaml#/Response503'
++        500:
++          $ref: '../Response500.yaml#/Response500'
++        200:
++          description: |
++            <p class="cellContent__head">Error codes</p>
++            <div class="cellContent__body">
++            <table class="apiTable">
++              <colgroup span="1" class="short"></colgroup>
++              <colgroup span="2"></colgroup>
++              <thead>
++                <tr><th>Code</th><th>Message</th><th>Description</th></tr>
++              </thead>
++              <tbody>
++                <tr><td>0001</td><td>Invalid Request.</td><td><div lang="ja">さまざまな要因が考えられます。<br>主な要因は、パラメータの値が不正か、誤りがあるためにオペレーションが完了できません。</div><div lang="en">This error can result for a variety of reasons. <br>Typically because one of the parameter values in the request is wrong or invalid and the operation cannot be completed.</div></td></tr>
++                <tr><td>R0001</td><td>Require.</td><td><div lang="ja">必須です。</div><div lang="en">It is missing required parameter.</div></td></tr>
++                <tr><td>F0001</td><td>Invalid format.</td><td><div lang="ja">値の形式が不正です。</div><div lang="en">The value format is invalid.</div></td></tr>
++                <tr><td>V0001</td><td>Invalid value.</td><td><div lang="ja">値が無効です。</div><div lang="en">The value is invalid.</div></td></tr>
++                <tr><td>S0001</td><td>Invalid Status.</td><td><div lang="ja">ステータスが無効です。</div><div lang="en">The status is invalid.</div></td></tr>
++                <tr><td>L0002</td><td>Over list size.</td><td><div lang="ja">配列の要素数が上限値を超過しています。</div><div lang="en">The number of elements in the array exceeds the upper limit.</div></td></tr>
++                <tr><td>L0001</td><td>Lower list size.</td><td><div lang="ja">配列の要素数が下限値を下回っています。</div><div lang="en">The number of elements in the array is below the lower limit.</div></td></tr>
++                <tr><td>D0001</td><td>Duplicate.</td><td><div lang="ja">一意な値が重複しています。</div><div lang="en">The unique value is duplicated.</div></td></tr>
++                <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
++                <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
++                <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
++              </tbody>
++            </table>
++            </div>
++          content:
++            application/json:
++              schema:
++                $ref: 'ssaproductgroup/SsaProductGroupServiceGetResponse.yaml#/SsaProductGroupServiceGetResponse'
++        403:
++          $ref: '../Response403.yaml#/Response403'
++        401:
++          $ref: '../Response401.yaml#/Response401'
++        400:
++          $ref: '../Response400.yaml#/Response400'
++  /SsaProductGroupService/add:
++    post:
++      parameters:
++        - in: header
++          name: x-z-base-account-id
++          schema:
++            type: integer
++            format: int64
++          required: true
++          description: |
++            <div lang="ja">アカウントIDを指定してください。</div>
++            <div lang="en">Specify Account ID.</div>
++      description: |
++        <div lang="ja">商品グループを追加します。</div>
++        <div lang="en">Create Ad group information.</div>
++      tags:
++        - SsaProductGroupService
++      requestBody:
++        content:
++          application/json:
++            schema:
++              $ref: 'ssaproductgroup/SsaProductGroupServiceAddOperation.yaml#/SsaProductGroupServiceAddOperation'
++      responses:
++        503:
++          $ref: '../Response503.yaml#/Response503'
++        500:
++          $ref: '../Response500.yaml#/Response500'
++        200:
++          description: |
++            <p class="cellContent__head">Error codes</p>
++            <div class="cellContent__body">
++            <table class="apiTable">
++              <colgroup span="1" class="short"></colgroup>
++              <colgroup span="2"></colgroup>
++              <thead>
++                <tr><th>Code</th><th>Message</th><th>Description</th></tr>
++              </thead>
++              <tbody>
++                <tr><td>0001</td><td>Invalid Request.</td><td><div lang="ja">さまざまな要因が考えられます。<br>主な要因は、パラメータの値が不正か、誤りがあるためにオペレーションが完了できません。</div><div lang="en">This error can result for a variety of reasons. <br>Typically because one of the parameter values in the request is wrong or invalid and the operation cannot be completed.</div></td></tr>
++                <tr><td>R0001</td><td>Require.</td><td><div lang="ja">必須です。</div><div lang="en">It is missing required parameter.</div></td></tr>
++                <tr><td>F0001</td><td>Invalid format.</td><td><div lang="ja">値の形式が不正です。</div><div lang="en">The value format is invalid.</div></td></tr>
++                <tr><td>V0001</td><td>Invalid value.</td><td><div lang="ja">値が無効です。</div><div lang="en">The value is invalid.</div></td></tr>
++                <tr><td>S0001</td><td>Invalid Status.</td><td><div lang="ja">ステータスが無効です。</div><div lang="en">The status is invalid.</div></td></tr>
++                <tr><td>L0002</td><td>Over list size.</td><td><div lang="ja">配列の要素数が上限値を超過しています。</div><div lang="en">The number of elements in the array exceeds the upper limit.</div></td></tr>
++                <tr><td>L0001</td><td>Lower list size.</td><td><div lang="ja">配列の要素数が下限値を下回っています。</div><div lang="en">The number of elements in the array is below the lower limit.</div></td></tr>
++                <tr><td>D0001</td><td>Duplicate.</td><td><div lang="ja">一意な値が重複しています。</div><div lang="en">The unique value is duplicated.</div></td></tr>
++                <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
++                <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
++                <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
++                <tr><td>120020</td><td>Can not set value.</td><td><div lang="ja">値を設定することができません。</div><div lang="en">Value cannot be set.</div></td></tr>
++                <tr><td>210117</td><td>This item is already linked to a different product group.</td><td><div lang="ja">既に別の商品グループが紐づいています。</div><div lang="en">This item is already linked to a different product group.</div></td></tr>
++                <tr><td>210118</td><td>There is an inconsistency with the product group in the parent hierarchy.</td><td><div lang="ja">上位階層の商品グループと不整合が生じています。</div><div lang="en">There is an inconsistency with the product group in the parent hierarchy.</div></td></tr>
++                <tr><td>210119</td><td>Required cpc for a product group with userStatus is ACTIVE.</td><td><div lang="ja">userStatusがACTIVEの商品グループはCPCの指定が必要です。</div><div lang="en">Required cpc for a product group with userStatus is ACTIVE.</div></td></tr>
++              </tbody>
++            </table>
++            </div>
++          content:
++            application/json:
++              schema:
++                $ref: 'ssaproductgroup/SsaProductGroupServiceMutateResponse.yaml#/SsaProductGroupServiceMutateResponse'
++        403:
++          $ref: '../Response403.yaml#/Response403'
++        401:
++          $ref: '../Response401.yaml#/Response401'
++        400:
++          $ref: '../Response400.yaml#/Response400'
++  /SsaProductGroupService/set:
++    post:
++      parameters:
++        - in: header
++          name: x-z-base-account-id
++          schema:
++            type: integer
++            format: int64
++          required: true
++          description: |
++            <div lang="ja">アカウントIDを指定してください。</div>
++            <div lang="en">Specify Account ID.</div>
++      description: |
++        <div lang="ja">商品グループを更新します。</div>
++        <div lang="en">Updates Ad group information.</div>
++      tags:
++        - SsaProductGroupService
++      requestBody:
++        content:
++          application/json:
++            schema:
++              $ref: 'ssaproductgroup/SsaProductGroupServiceSetRemoveOperation.yaml#/SsaProductGroupServiceSetRemoveOperation'
++      responses:
++        503:
++          $ref: '../Response503.yaml#/Response503'
++        500:
++          $ref: '../Response500.yaml#/Response500'
++        200:
++          description: |
++            <p class="cellContent__head">Error codes</p>
++            <div class="cellContent__body">
++            <table class="apiTable">
++              <colgroup span="1" class="short"></colgroup>
++              <colgroup span="2"></colgroup>
++              <thead>
++                <tr><th>Code</th><th>Message</th><th>Description</th></tr>
++              </thead>
++              <tbody>
++                <tr><td>0001</td><td>Invalid Request.</td><td><div lang="ja">さまざまな要因が考えられます。<br>主な要因は、パラメータの値が不正か、誤りがあるためにオペレーションが完了できません。</div><div lang="en">This error can result for a variety of reasons. <br>Typically because one of the parameter values in the request is wrong or invalid and the operation cannot be completed.</div></td></tr>
++                <tr><td>R0001</td><td>Require.</td><td><div lang="ja">必須です。</div><div lang="en">It is missing required parameter.</div></td></tr>
++                <tr><td>F0001</td><td>Invalid format.</td><td><div lang="ja">値の形式が不正です。</div><div lang="en">The value format is invalid.</div></td></tr>
++                <tr><td>V0001</td><td>Invalid value.</td><td><div lang="ja">値が無効です。</div><div lang="en">The value is invalid.</div></td></tr>
++                <tr><td>S0001</td><td>Invalid Status.</td><td><div lang="ja">ステータスが無効です。</div><div lang="en">The status is invalid.</div></td></tr>
++                <tr><td>L0002</td><td>Over list size.</td><td><div lang="ja">配列の要素数が上限値を超過しています。</div><div lang="en">The number of elements in the array exceeds the upper limit.</div></td></tr>
++                <tr><td>L0001</td><td>Lower list size.</td><td><div lang="ja">配列の要素数が下限値を下回っています。</div><div lang="en">The number of elements in the array is below the lower limit.</div></td></tr>
++                <tr><td>D0001</td><td>Duplicate.</td><td><div lang="ja">一意な値が重複しています。</div><div lang="en">The unique value is duplicated.</div></td></tr>
++                <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
++                <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
++                <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
++                <tr><td>120020</td><td>Can not set value.</td><td><div lang="ja">値を設定することができません。</div><div lang="en">Value cannot be set.</div></td></tr>
++                <tr><td>210119</td><td>Required cpc for a product group with userStatus is ACTIVE.</td><td><div lang="ja">userStatusがACTIVEの商品グループはCPCの指定が必要です。</div><div lang="en">Required cpc for a product group with userStatus is ACTIVE.</div></td></tr>
++              </tbody>
++            </table>
++            </div>
++          content:
++            application/json:
++              schema:
++                $ref: 'ssaproductgroup/SsaProductGroupServiceMutateResponse.yaml#/SsaProductGroupServiceMutateResponse'
++        403:
++          $ref: '../Response403.yaml#/Response403'
++        401:
++          $ref: '../Response401.yaml#/Response401'
++        400:
++          $ref: '../Response400.yaml#/Response400'
++  /SsaProductGroupService/remove:
++    post:
++      parameters:
++        - in: header
++          name: x-z-base-account-id
++          schema:
++            type: integer
++            format: int64
++          required: true
++          description: |
++            <div lang="ja">アカウントIDを指定してください。</div>
++            <div lang="en">Specify Account ID.</div>
++      description: |
++        <div lang="ja">商品グループを削除します。</div>
++        <div lang="en">Removes Ad group information.</div>
++      tags:
++        - SsaProductGroupService
++      requestBody:
++        content:
++          application/json:
++            schema:
++              $ref: 'ssaproductgroup/SsaProductGroupServiceSetRemoveOperation.yaml#/SsaProductGroupServiceSetRemoveOperation'
++      responses:
++        503:
++          $ref: '../Response503.yaml#/Response503'
++        500:
++          $ref: '../Response500.yaml#/Response500'
++        200:
++          description: |
++            <p class="cellContent__head">Error codes</p>
++            <div class="cellContent__body">
++            <table class="apiTable">
++              <colgroup span="1" class="short"></colgroup>
++              <colgroup span="2"></colgroup>
++              <thead>
++                <tr><th>Code</th><th>Message</th><th>Description</th></tr>
++              </thead>
++              <tbody>
++                <tr><td>0001</td><td>Invalid Request.</td><td><div lang="ja">さまざまな要因が考えられます。<br>主な要因は、パラメータの値が不正か、誤りがあるためにオペレーションが完了できません。</div><div lang="en">This error can result for a variety of reasons. <br>Typically because one of the parameter values in the request is wrong or invalid and the operation cannot be completed.</div></td></tr>
++                <tr><td>R0001</td><td>Require.</td><td><div lang="ja">必須です。</div><div lang="en">It is missing required parameter.</div></td></tr>
++                <tr><td>F0001</td><td>Invalid format.</td><td><div lang="ja">値の形式が不正です。</div><div lang="en">The value format is invalid.</div></td></tr>
++                <tr><td>V0001</td><td>Invalid value.</td><td><div lang="ja">値が無効です。</div><div lang="en">The value is invalid.</div></td></tr>
++                <tr><td>S0001</td><td>Invalid Status.</td><td><div lang="ja">ステータスが無効です。</div><div lang="en">The status is invalid.</div></td></tr>
++                <tr><td>L0002</td><td>Over list size.</td><td><div lang="ja">配列の要素数が上限値を超過しています。</div><div lang="en">The number of elements in the array exceeds the upper limit.</div></td></tr>
++                <tr><td>L0001</td><td>Lower list size.</td><td><div lang="ja">配列の要素数が下限値を下回っています。</div><div lang="en">The number of elements in the array is below the lower limit.</div></td></tr>
++                <tr><td>D0001</td><td>Duplicate.</td><td><div lang="ja">一意な値が重複しています。</div><div lang="en">The unique value is duplicated.</div></td></tr>
++                <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
++                <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
++                <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
++                <tr><td>210120</td><td>Can not remove this product group.</td><td><div lang="ja">指定された商品グループは削除できません。</div><div lang="en">Can not remove this product group.</div></td></tr>
++              </tbody>
++            </table>
++            </div>
++          content:
++            application/json:
++              schema:
++                $ref: 'ssaproductgroup/SsaProductGroupServiceMutateResponse.yaml#/SsaProductGroupServiceMutateResponse'
++        403:
++          $ref: '../Response403.yaml#/Response403'
++        401:
+           $ref: '../Response401.yaml#/Response401'
+         400:
+           $ref: '../Response400.yaml#/Response400'
+Only in v20: ssaadgroup
+Only in v20: ssaadgroupnegativekeyword
+Only in v20: ssaadgrouptarget
+Only in v20: ssacampaign
+Only in v20: ssacampaignnegativekeyword
+Only in v20: ssacampaigntarget
+Only in v20: ssaproductgroup

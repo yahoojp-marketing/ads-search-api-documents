@@ -2,17 +2,17 @@
 
 ------
 diff -ru v18/Route.yaml v19/Route.yaml
---- v18/Route.yaml	2025-10-10 17:06:26
-+++ v19/Route.yaml	2026-02-04 09:45:28
+--- v18/Route.yaml	2026-03-27 16:09:37
++++ v19/Route.yaml	2026-04-08 10:56:29
 @@ -1,11 +1,11 @@
  openapi: 3.0.2
  info:
-   title: 'Yahoo!広告 検索広告 API リファレンス / Yahoo! JAPAN Ads Search Ads API Reference'
+   title: 'LINEヤフー広告 検索広告 API リファレンス / LY Ads Search Ads API Reference'
 -  version: 'v18'
 +  version: 'v19'
    description: |
-     <div lang="ja">Yahoo!広告 検索広告 APIのWebサービスについて説明します。</div>
-     <div lang="en">Search Ads API Web Services supported in Yahoo! JAPAN Ads API.</div>
+     <div lang="ja">LINEヤフー広告 検索広告 APIのWebサービスについて説明します。</div>
+     <div lang="en">Search Ads API Web Services supported in LY Ads API.</div>
 -    <div><a target="_blank" href="https://github.com/yahoojp-marketing/ads-search-api-documents/blob/master/design/v18/Route.yaml">OpenAPI Specification</a></div>
 +    <div><a target="_blank" href="https://github.com/yahoojp-marketing/ads-search-api-documents/blob/master/design/v19/Route.yaml">OpenAPI Specification</a></div>
      <div lang="ja"><a target="_blank" href="https://github.com/yahoojp-marketing/ads-search-api-documents/blob/master/bestpractice/ja">Best Practice</a></div>
@@ -27,7 +27,7 @@ diff -ru v18/Route.yaml v19/Route.yaml
  
  tags:
    - name: AbTestService
-@@ -128,17 +128,17 @@
+@@ -128,16 +128,16 @@
        <label class="campaign"></label>
        <div lang="ja">SharedCriterionServiceでは、対象外キーワードリストに、対象外キーワードの登録や削除を行います。</div><div lang="en">Use
        this service to add or remove negative keyword to negative keyword list.</div>
@@ -35,23 +35,20 @@ diff -ru v18/Route.yaml v19/Route.yaml
 +  - name: AdGroupAudienceListService
      description: |
        <label class="campaign"></label>
--      <div lang="ja">AdGroupRetargetingListServiceでは、広告グループレベルでのターゲットリスト設定に関する情報の取得および追加・更新・削除を行います。</div><div lang="en">AdGroupRetargetingListService
--      is to get, add, update, or delete information of target list setting in ad group
+-      <div lang="ja">AdGroupRetargetingListServiceでは、広告グループレベルでのオーディエンスリスト設定に関する情報の取得および追加・更新・削除を行います。</div><div lang="en">AdGroupRetargetingListService
 +      <div lang="ja">AdGroupAudienceListServiceでは、広告グループレベルでのオーディエンスリスト設定に関する情報の取得および追加・更新・削除を行います。</div><div lang="en">AdGroupAudienceListService
-+      is to get, add, update, or delete information of audience list setting in ad group
+       is to get, add, update, or delete information of audience list setting in ad group
        level.</div>
 -  - name: RetargetingListService
 +  - name: AudienceListService
      description: |
        <label class="account"></label>
--      <div lang="ja">RetargetingListServiceでは、ターゲットリストに関する情報の取得および追加・更新を行います。</div><div lang="en">RetargetingListService
--      is to get, add, or update information of target list.</div>
+-      <div lang="ja">RetargetingListServiceでは、オーディエンスリストに関する情報の取得および追加・更新を行います。</div><div lang="en">RetargetingListService
 +      <div lang="ja">AudienceListServiceでは、オーディエンスリストに関する情報の取得および追加・更新を行います。</div><div lang="en">AudienceListService
-+      is to get, add, or update information of audience list.</div>
+       is to get, add, or update information of audience list.</div>
    - name: ReportDefinitionService
      description: |
-       <label class="report"></label>
-@@ -169,27 +169,27 @@
+@@ -169,27 +169,30 @@
        <h2 lang="ja" class="reportFields__title">レポートフィールド</h2>
        <h2 lang="en" class="reportFields__title">Report Fields</h2>
        <ul>
@@ -88,19 +85,22 @@ diff -ru v18/Route.yaml v19/Route.yaml
 +      <li><div lang="ja"><a href="./reports/v19/BID_STRATEGY.csv" download>自動入札レポート</a></div><div lang="en"><a href="./reports/v19/BID_STRATEGY.csv" download>Auto Bidding Report</a></div></li>
 +      <li><div lang="ja"><a href="./reports/v19/CAMPAIGN_TARGET_LIST.csv" download>キャンペーンターゲットリストレポート</a></div><div lang="en"><a href="./reports/v19/CAMPAIGN_TARGET_LIST.csv"download>Campaign Target List Report</a></div></li>
 +      <li><div lang="ja"><a href="./reports/v19/ADGROUP_TARGET_LIST.csv" download>広告グループターゲットリストレポート</a></div><div lang="en"><a href="./reports/v19/ADGROUP_TARGET_LIST.csv" download>Ad Group Target List Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v19/CAMPAIGN_AUDIENCE_LIST.csv" download>キャンペーンオーディエンスリストレポート</a></div><div lang="en"><a href="./reports/v19/CAMPAIGN_AUDIENCE_LIST.csv"download>Campaign Audience List Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v19/ADGROUP_AUDIENCE_LIST.csv" download>広告グループオーディエンスリストレポート</a></div><div lang="en"><a href="./reports/v19/ADGROUP_AUDIENCE_LIST.csv" download>Ad Group Audience List Report</a></div></li>
 +      <li><div lang="ja"><a href="./reports/v19/LANDING_PAGE_URL.csv" download>ランディングページURLレポート</a></div><div lang="en"><a href="./reports/v19/LANDING_PAGE_URL.csv" download>Landing Page URL Report</a></div></li>
 +      <li><div lang="ja"><a href="./reports/v19/KEYWORDLESS_QUERY.csv" download>検索クエリーレポート（動的検索連動型広告）</a></div><div lang="en"><a href="./reports/v19/KEYWORDLESS_QUERY.csv" download>Search Query Report (Dynamic Ads for Search)</a></div></li>
 +      <li><div lang="ja"><a href="./reports/v19/WEBPAGE_CRITERION.csv" download>ページフィードターゲティングレポート</a></div><div lang="en"><a href="./reports/v19/WEBPAGE_CRITERION.csv" download>Page Feed Targeting Report</a></div></li>
 +      <li><div lang="ja"><a href="./reports/v19/BID_MODIFIER.csv" download>入札価格調整率レポート</a></div><div lang="en"><a href="./reports/v19/BID_MODIFIER.csv" download>Bid Adjustments Report</a></div></li>
 +      <li><div lang="ja"><a href="./reports/v19/CAMPAIGN_ASSET.csv" download>広告表示アセットレポート（キャンペーン）</a></div><div lang="en"><a href="./reports/v19/CAMPAIGN_ASSET.csv" download>Ad Display Asset Report (campaign)</a></div></li>
 +      <li><div lang="ja"><a href="./reports/v19/AD_GROUP_ASSET.csv" download>広告表示アセットレポート（広告グループ）</a></div><div lang="en"><a href="./reports/v19/AD_GROUP_ASSET.csv" download>Ad Display Asset Report (ad group)</a></div></li>
++      <li><div lang="ja"><a href="./reports/v19/ACCOUNT_ASSET.csv" download>広告表示アセットレポート（アカウント）</a></div><div lang="en"><a href="./reports/v19/ACCOUNT_ASSET.csv" download>Ad Display Asset Report (account)</a></div></li>
 +      <li><div lang="ja"><a href="./reports/v19/RESPONSIVE_ADS_FOR_SEARCH_ASSET.csv" download>レスポンシブ検索広告アセットレポート</a></div><div lang="en"><a href="./reports/v19/RESPONSIVE_ADS_FOR_SEARCH_ASSET.csv" download>Responsive Ads for Search Asset Report</a></div></li>
 +      <li><div lang="ja"><a href="./reports/v19/SHARED_BUDGET.csv" download>共有予算レポート</a></div><div lang="en"><a href="./reports/v19/SHARED_BUDGET.csv" download>Campaign Budget Report</a></div></li>
 +      <li><div lang="ja"><a href="./reports/v19/ASSET_COMBINATION.csv" download>アセット組み合わせレポート</a></div><div lang="en"><a href="./reports/v19/ASSET_COMBINATION.csv" download>Asset combinations report</a></div></li>
        </ul>
    - name: CampaignExportService
      description: |
-@@ -207,11 +207,11 @@
+@@ -207,10 +210,10 @@
        <label class="campaign"></label>
        <div lang="ja">LabelServiceでは、ラベルに関する情報の取得および追加・更新・削除を行います。</div><div lang="en">Use this
        service to get, add, update or remove information of label.</div>
@@ -108,28 +108,24 @@ diff -ru v18/Route.yaml v19/Route.yaml
 +  - name: CampaignAudienceListService
      description: |
        <label class="campaign"></label>
--      <div lang="ja">CampaignRetargetingListServiceでは、キャンペーン階層におけるターゲットリストの設定（設定情報の取得、追加、更新、削除）を行います。</div><div lang="en">CampaignRetargetingListService
--      is to get, add, update, or delete information of target list setting in campaign
+-      <div lang="ja">CampaignRetargetingListServiceでは、キャンペーン階層におけるオーディエンスリストの設定（設定情報の取得、追加、更新、削除）を行います。</div><div lang="en">CampaignRetargetingListService
 +      <div lang="ja">CampaignAudienceListServiceでは、キャンペーン階層におけるオーディエンスリストの設定（設定情報の取得、追加、更新、削除）を行います。</div><div lang="en">CampaignAudienceListService
-+      is to get, add, update, or delete information of audience list setting in campaign
+       is to get, add, update, or delete information of audience list setting in campaign
        level.</div>
    - name: CampaignSharedSetService
-     description: |
-@@ -268,6 +268,13 @@
+@@ -268,6 +271,11 @@
        <label class="account"></label>
        <div lang="ja">AccountLinkServiceは、アカウントリンクの操作を提供します。</div>
        <div lang="en">AccountLinkService provides account link operations.</div>
 +  - name: AccountAssetService
 +    description: |
 +      <label class="campaign"></label>
-+      <div lang="ja">AccountAssetService、アカウントに紐づくアセットの操作を提供します。<br>
-+      ※現在、こちらのサービスは利用できません。</div>
-+      <div lang="en">AccountAssetService provides operation of assets associated with accounts.<br>
-+      *Currently this service is not available.</div>
++      <div lang="ja">AccountAssetService、アカウントに紐づくアセットの操作を提供します。</div>
++      <div lang="en">AccountAssetService provides operation of assets associated with accounts.</div>
    - name: AdGroupAssetService
      description: |
        <label class="campaign"></label>
-@@ -381,12 +388,12 @@
+@@ -381,12 +389,13 @@
        <h2 lang="ja" class="reportFields__title">レポートフィールド</h2>
        <h2 lang="en" class="reportFields__title">Report Fields</h2>
        <ul>
@@ -145,10 +141,11 @@ diff -ru v18/Route.yaml v19/Route.yaml
 +      <li><div lang="ja"><a href="./reports/v19/SSA_SEARCH_QUERY.csv" download>検索クエリレポート</a></div><div lang="en"><a href="./reports/v19/SSA_SEARCH_QUERY.csv" download>Search Query Report</a></div></li>
 +      <li><div lang="ja"><a href="./reports/v19/SSA_PRODUCT_GROUP.csv" download>商品グループレポート</a></div><div lang="en"><a href="./reports/v19/SSA_PRODUCT_GROUP.csv" download>Product Group Report</a></div></li>
 +      <li><div lang="ja"><a href="./reports/v19/SSA_PRODUCT.csv" download>商品レポート</a></div><div lang="en"><a href="./reports/v19/SSA_PRODUCT.csv" download>Product Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v19/SSA_AUDIENCE_LIST.csv" download>オーディエンスリストレポート</a></div><div lang="en"><a href="./reports/v19/SSA_AUDIENCE_LIST.csv" download>Audience List Report</a></div></li>
        </ul>
  
  paths:
-@@ -4552,7 +4559,7 @@
+@@ -4552,7 +4561,7 @@
            $ref: '../Response401.yaml#/Response401'
          400:
            $ref: '../Response400.yaml#/Response400'
@@ -157,14 +154,9 @@ diff -ru v18/Route.yaml v19/Route.yaml
      post:
        parameters:
          - in: header
-@@ -4565,15 +4572,15 @@
-             <div lang="ja">アカウントIDを指定してください。</div>
-             <div lang="en">Specify Account ID.</div>
-       description: |
--        <div lang="ja">広告グループレベルでのターゲットリスト設定に関する情報を取得します。</div>
--        <div lang="en">Retreive the target list setting in ad group level.</div>
-+        <div lang="ja">広告グループレベルでのオーディエンスリスト設定に関する情報を取得します。</div>
-+        <div lang="en">Retreive the audience list setting in ad group level.</div>
+@@ -4568,12 +4577,12 @@
+         <div lang="ja">広告グループレベルでのオーディエンスリスト設定に関する情報を取得します。</div>
+         <div lang="en">Retreive the audience list setting in ad group level.</div>
        tags:
 -        - AdGroupRetargetingListService
 +        - AdGroupAudienceListService
@@ -177,17 +169,7 @@ diff -ru v18/Route.yaml v19/Route.yaml
        responses:
          503:
            $ref: '../Response503.yaml#/Response503'
-@@ -4601,22 +4608,22 @@
-                 <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
-                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
-                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
--                <tr><td>225301</td><td>Cannot attach criteria at campaign and adgroup.</td><td><div lang="ja">広告グループとキャンペーンの両方にターゲットリストの関連付けはできません。</div><div lang="en">Target lists can not be associated with both ad groups and campaigns.</div></td></tr>
--                <tr><td>225302</td><td>Cannot add closed target list.</td><td><div lang="ja">停止中のターゲットリストは関連付けできません。</div><div lang="en">A closed target list can not be associated.</div></td></tr>
-+                <tr><td>225301</td><td>Cannot attach criteria at campaign and adgroup.</td><td><div lang="ja">広告グループとキャンペーンの両方にオーディエンスリストの関連付けはできません。</div><div lang="en">Audience lists can not be associated with both ad groups and campaigns.</div></td></tr>
-+                <tr><td>225302</td><td>Cannot add closed audience list.</td><td><div lang="ja">停止中のオーディエンスリストは関連付けできません。</div><div lang="en">A closed audience list can not be associated.</div></td></tr>
-               </tbody>
-             </table>
-             </div>
+@@ -4609,14 +4618,14 @@
            content:
              application/json:
                schema:
@@ -204,14 +186,9 @@ diff -ru v18/Route.yaml v19/Route.yaml
      post:
        parameters:
          - in: header
-@@ -4629,15 +4636,15 @@
-             <div lang="ja">アカウントIDを指定してください。</div>
-             <div lang="en">Specify Account ID.</div>
-       description: |
--        <div lang="ja">広告グループレベルでのターゲットリスト設定を追加します。</div>
--        <div lang="en">Create the target list setting in ad group level.</div>
-+        <div lang="ja">広告グループレベルでのオーディエンスリスト設定を追加します。</div>
-+        <div lang="en">Create the audience list setting in ad group level.</div>
+@@ -4632,12 +4641,12 @@
+         <div lang="ja">広告グループレベルでのオーディエンスリスト設定を追加します。</div>
+         <div lang="en">Create the audience list setting in ad group level.</div>
        tags:
 -        - AdGroupRetargetingListService
 +        - AdGroupAudienceListService
@@ -224,18 +201,7 @@ diff -ru v18/Route.yaml v19/Route.yaml
        responses:
          503:
            $ref: '../Response503.yaml#/Response503'
-@@ -4665,8 +4672,8 @@
-                 <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
-                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
-                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
--                <tr><td>225301</td><td>Cannot attach criteria at campaign and adgroup.</td><td><div lang="ja">広告グループとキャンペーンの両方にターゲットリストの関連付けはできません。</div><div lang="en">Target lists can not be associated with both ad groups and campaigns.</div></td></tr>
--                <tr><td>225302</td><td>Cannot add closed target list.</td><td><div lang="ja">停止中のターゲットリストは関連付けできません。</div><div lang="en">A closed target list can not be associated.</div></td></tr>
-+                <tr><td>225301</td><td>Cannot attach criteria at campaign and adgroup.</td><td><div lang="ja">広告グループとキャンペーンの両方にオーディエンスリストの関連付けはできません。</div><div lang="en">Audience lists can not be associated with both ad groups and campaigns.</div></td></tr>
-+                <tr><td>225302</td><td>Cannot add closed audience list.</td><td><div lang="ja">停止中のオーディエンスリストは関連付けできません。</div><div lang="en">A closed audience list can not be associated.</div></td></tr>
-                 <tr><td>210920</td><td>This action isn't available when creating the A/B test.</td><td><div lang="ja">A/Bテスト作成中のため操作できません。</div><div lang="en">This action isn't available when creating the A/B test.</div></td></tr>
-               </tbody>
-             </table>
-@@ -4674,14 +4681,14 @@
+@@ -4674,14 +4683,14 @@
            content:
              application/json:
                schema:
@@ -252,14 +218,9 @@ diff -ru v18/Route.yaml v19/Route.yaml
      post:
        parameters:
          - in: header
-@@ -4694,15 +4701,15 @@
-             <div lang="ja">アカウントIDを指定してください。</div>
-             <div lang="en">Specify Account ID.</div>
-       description: |
--        <div lang="ja">広告グループレベルでのターゲットリスト設定を更新します。</div>
--        <div lang="en">Update the target list setting in ad group level.</div>
-+        <div lang="ja">広告グループレベルでのオーディエンスリスト設定を更新します。</div>
-+        <div lang="en">Update the audience list setting in ad group level.</div>
+@@ -4697,12 +4706,12 @@
+         <div lang="ja">広告グループレベルでのオーディエンスリスト設定を更新します。</div>
+         <div lang="en">Update the audience list setting in ad group level.</div>
        tags:
 -        - AdGroupRetargetingListService
 +        - AdGroupAudienceListService
@@ -272,18 +233,7 @@ diff -ru v18/Route.yaml v19/Route.yaml
        responses:
          503:
            $ref: '../Response503.yaml#/Response503'
-@@ -4730,8 +4737,8 @@
-                 <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
-                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
-                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
--                <tr><td>225301</td><td>Cannot attach criteria at campaign and adgroup.</td><td><div lang="ja">広告グループとキャンペーンの両方にターゲットリストの関連付けはできません。</div><div lang="en">Target lists can not be associated with both ad groups and campaigns.</div></td></tr>
--                <tr><td>225302</td><td>Cannot add closed target list.</td><td><div lang="ja">停止中のターゲットリストは関連付けできません。</div><div lang="en">A closed target list can not be associated.</div></td></tr>
-+                <tr><td>225301</td><td>Cannot attach criteria at campaign and adgroup.</td><td><div lang="ja">広告グループとキャンペーンの両方にオーディエンスリストの関連付けはできません。</div><div lang="en">Audience lists can not be associated with both ad groups and campaigns.</div></td></tr>
-+                <tr><td>225302</td><td>Cannot add closed audience list.</td><td><div lang="ja">停止中のオーディエンスリストは関連付けできません。</div><div lang="en">A closed audience list can not be associated.</div></td></tr>
-                 <tr><td>210920</td><td>This action isn't available when creating the A/B test.</td><td><div lang="ja">A/Bテスト作成中のため操作できません。</div><div lang="en">This action isn't available when creating the A/B test.</div></td></tr>
-               </tbody>
-             </table>
-@@ -4739,14 +4746,14 @@
+@@ -4739,14 +4748,14 @@
            content:
              application/json:
                schema:
@@ -300,14 +250,9 @@ diff -ru v18/Route.yaml v19/Route.yaml
      post:
        parameters:
          - in: header
-@@ -4759,15 +4766,15 @@
-             <div lang="ja">アカウントIDを指定してください。</div>
-             <div lang="en">Specify Account ID.</div>
-       description: |
--        <div lang="ja">広告グループレベルでのターゲットリスト設定を削除します。</div>
--        <div lang="en">Delete the target list setting in ad group level.</div>
-+        <div lang="ja">広告グループレベルでのオーディエンスリスト設定を削除します。</div>
-+        <div lang="en">Delete the audience list setting in ad group level.</div>
+@@ -4762,12 +4771,12 @@
+         <div lang="ja">広告グループレベルでのオーディエンスリスト設定を削除します。</div>
+         <div lang="en">Delete the audience list setting in ad group level.</div>
        tags:
 -        - AdGroupRetargetingListService
 +        - AdGroupAudienceListService
@@ -320,18 +265,7 @@ diff -ru v18/Route.yaml v19/Route.yaml
        responses:
          503:
            $ref: '../Response503.yaml#/Response503'
-@@ -4795,8 +4802,8 @@
-                 <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
-                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
-                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
--                <tr><td>225301</td><td>Cannot attach criteria at campaign and adgroup.</td><td><div lang="ja">広告グループとキャンペーンの両方にターゲットリストの関連付けはできません。</div><div lang="en">Target lists can not be associated with both ad groups and campaigns.</div></td></tr>
--                <tr><td>225302</td><td>Cannot add closed target list.</td><td><div lang="ja">停止中のターゲットリストは関連付けできません。</div><div lang="en">A closed target list can not be associated.</div></td></tr>
-+                <tr><td>225301</td><td>Cannot attach criteria at campaign and adgroup.</td><td><div lang="ja">広告グループとキャンペーンの両方にオーディエンスリストの関連付けはできません。</div><div lang="en">Audience lists can not be associated with both ad groups and campaigns.</div></td></tr>
-+                <tr><td>225302</td><td>Cannot add closed audience list.</td><td><div lang="ja">停止中のオーディエンスリストは関連付けできません。</div><div lang="en">A closed audience list can not be associated.</div></td></tr>
-                 <tr><td>210920</td><td>This action isn't available when creating the A/B test.</td><td><div lang="ja">A/Bテスト作成中のため操作できません。</div><div lang="en">This action isn't available when creating the A/B test.</div></td></tr>
-               </tbody>
-             </table>
-@@ -4804,7 +4811,7 @@
+@@ -4804,7 +4813,7 @@
            content:
              application/json:
                schema:
@@ -340,7 +274,7 @@ diff -ru v18/Route.yaml v19/Route.yaml
          403:
            $ref: '../Response403.yaml#/Response403'
          401:
-@@ -5008,7 +5015,7 @@
+@@ -5008,7 +5017,7 @@
            $ref: '../Response401.yaml#/Response401'
          400:
            $ref: '../Response400.yaml#/Response400'
@@ -349,14 +283,9 @@ diff -ru v18/Route.yaml v19/Route.yaml
      post:
        parameters:
          - in: header
-@@ -5021,15 +5028,15 @@
-             <div lang="ja">アカウントIDを指定してください。</div>
-             <div lang="en">Specify Account ID.</div>
-       description: |
--        <div lang="ja">キャンペーン階層におけるターゲットリストの設定情報を取得します。</div>
--        <div lang="en">Retreive the target list setting in campaign level.</div>
-+        <div lang="ja">キャンペーン階層におけるオーディエンスリストの設定情報を取得します。</div>
-+        <div lang="en">Retreive the audience list setting in campaign level.</div>
+@@ -5024,12 +5033,12 @@
+         <div lang="ja">キャンペーン階層におけるオーディエンスリストの設定情報を取得します。</div>
+         <div lang="en">Retreive the audience list setting in campaign level.</div>
        tags:
 -        - CampaignRetargetingListService
 +        - CampaignAudienceListService
@@ -369,17 +298,7 @@ diff -ru v18/Route.yaml v19/Route.yaml
        responses:
          503:
            $ref: '../Response503.yaml#/Response503'
-@@ -5057,22 +5064,22 @@
-                 <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
-                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
-                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
--                <tr><td>225301</td><td>Cannot attach criteria at campaign and adgroup.</td><td><div lang="ja">広告グループとキャンペーンの両方にターゲットリストの関連付けはできません。</div><div lang="en">Target lists can not be associated with both ad groups and campaigns.</div></td></tr>
--                <tr><td>225302</td><td>Cannot add closed target list.</td><td><div lang="ja">停止中のターゲットリストは関連付けできません。</div><div lang="en">A closed target list can not be associated.</div></td></tr>
-+                <tr><td>225301</td><td>Cannot attach criteria at campaign and adgroup.</td><td><div lang="ja">広告グループとキャンペーンの両方にオーディエンスリストの関連付けはできません。</div><div lang="en">Audience lists can not be associated with both ad groups and campaigns.</div></td></tr>
-+                <tr><td>225302</td><td>Cannot add closed audience list.</td><td><div lang="ja">停止中のオーディエンスリストは関連付けできません。</div><div lang="en">A closed audience list can not be associated.</div></td></tr>
-               </tbody>
-             </table>
-             </div>
+@@ -5065,14 +5074,14 @@
            content:
              application/json:
                schema:
@@ -396,14 +315,9 @@ diff -ru v18/Route.yaml v19/Route.yaml
      post:
        parameters:
          - in: header
-@@ -5085,15 +5092,15 @@
-             <div lang="ja">アカウントIDを指定してください。</div>
-             <div lang="en">Specify Account ID.</div>
-       description: |
--        <div lang="ja">キャンペーン階層におけるターゲットリストの設定情報を追加します。</div>
--        <div lang="en">Adds the target list setting in campaign level.</div>
-+        <div lang="ja">キャンペーン階層におけるオーディエンスリストの設定情報を追加します。</div>
-+        <div lang="en">Adds the audience list setting in campaign level.</div>
+@@ -5088,12 +5097,12 @@
+         <div lang="ja">キャンペーン階層におけるオーディエンスリストの設定情報を追加します。</div>
+         <div lang="en">Adds the audience list setting in campaign level.</div>
        tags:
 -        - CampaignRetargetingListService
 +        - CampaignAudienceListService
@@ -416,18 +330,7 @@ diff -ru v18/Route.yaml v19/Route.yaml
        responses:
          503:
            $ref: '../Response503.yaml#/Response503'
-@@ -5121,8 +5128,8 @@
-                 <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
-                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
-                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
--                <tr><td>225301</td><td>Cannot attach criteria at campaign and adgroup.</td><td><div lang="ja">広告グループとキャンペーンの両方にターゲットリストの関連付けはできません。</div><div lang="en">Target lists can not be associated with both ad groups and campaigns.</div></td></tr>
--                <tr><td>225302</td><td>Cannot add closed target list.</td><td><div lang="ja">停止中のターゲットリストは関連付けできません。</div><div lang="en">A closed target list can not be associated.</div></td></tr>
-+                <tr><td>225301</td><td>Cannot attach criteria at campaign and adgroup.</td><td><div lang="ja">広告グループとキャンペーンの両方にオーディエンスリストの関連付けはできません。</div><div lang="en">Audience lists can not be associated with both ad groups and campaigns.</div></td></tr>
-+                <tr><td>225302</td><td>Cannot add closed audience list.</td><td><div lang="ja">停止中のオーディエンスリストは関連付けできません。</div><div lang="en">A closed audience list can not be associated.</div></td></tr>
-                 <tr><td>210920</td><td>This action isn't available when creating the A/B test.</td><td><div lang="ja">A/Bテスト作成中のため操作できません。</div><div lang="en">This action isn't available when creating the A/B test.</div></td></tr>
-               </tbody>
-             </table>
-@@ -5130,14 +5137,14 @@
+@@ -5130,14 +5139,14 @@
            content:
              application/json:
                schema:
@@ -444,14 +347,9 @@ diff -ru v18/Route.yaml v19/Route.yaml
      post:
        parameters:
          - in: header
-@@ -5150,15 +5157,15 @@
-             <div lang="ja">アカウントIDを指定してください。</div>
-             <div lang="en">Specify Account ID.</div>
-       description: |
--        <div lang="ja">キャンペーン階層におけるターゲットリストの設定情報を更新します。</div>
--        <div lang="en">Updates the target list setting in campaign level.</div>
-+        <div lang="ja">キャンペーン階層におけるオーディエンスリストの設定情報を更新します。</div>
-+        <div lang="en">Updates the audience list setting in campaign level.</div>
+@@ -5153,12 +5162,12 @@
+         <div lang="ja">キャンペーン階層におけるオーディエンスリストの設定情報を更新します。</div>
+         <div lang="en">Updates the audience list setting in campaign level.</div>
        tags:
 -        - CampaignRetargetingListService
 +        - CampaignAudienceListService
@@ -464,18 +362,7 @@ diff -ru v18/Route.yaml v19/Route.yaml
        responses:
          503:
            $ref: '../Response503.yaml#/Response503'
-@@ -5186,8 +5193,8 @@
-                 <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
-                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
-                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
--                <tr><td>225301</td><td>Cannot attach criteria at campaign and adgroup.</td><td><div lang="ja">広告グループとキャンペーンの両方にターゲットリストの関連付けはできません。</div><div lang="en">Target lists can not be associated with both ad groups and campaigns.</div></td></tr>
--                <tr><td>225302</td><td>Cannot add closed target list.</td><td><div lang="ja">停止中のターゲットリストは関連付けできません。</div><div lang="en">A closed target list can not be associated.</div></td></tr>
-+                <tr><td>225301</td><td>Cannot attach criteria at campaign and adgroup.</td><td><div lang="ja">広告グループとキャンペーンの両方にオーディエンスリストの関連付けはできません。</div><div lang="en">Audience lists can not be associated with both ad groups and campaigns.</div></td></tr>
-+                <tr><td>225302</td><td>Cannot add closed audience list.</td><td><div lang="ja">停止中のオーディエンスリストは関連付けできません。</div><div lang="en">A closed audience list can not be associated.</div></td></tr>
-                 <tr><td>210920</td><td>This action isn't available when creating the A/B test.</td><td><div lang="ja">A/Bテスト作成中のため操作できません。</div><div lang="en">This action isn't available when creating the A/B test.</div></td></tr>
-               </tbody>
-             </table>
-@@ -5195,14 +5202,14 @@
+@@ -5195,14 +5204,14 @@
            content:
              application/json:
                schema:
@@ -492,14 +379,9 @@ diff -ru v18/Route.yaml v19/Route.yaml
      post:
        parameters:
          - in: header
-@@ -5215,15 +5222,15 @@
-             <div lang="ja">アカウントIDを指定してください。</div>
-             <div lang="en">Specify Account ID.</div>
-       description: |
--        <div lang="ja">キャンペーン階層におけるターゲットリストの設定情報を削除します。</div>
--        <div lang="en">Delete the target list setting in campaign level.</div>
-+        <div lang="ja">キャンペーン階層におけるオーディエンスリストの設定情報を削除します。</div>
-+        <div lang="en">Delete the audience list setting in campaign level.</div>
+@@ -5218,12 +5227,12 @@
+         <div lang="ja">キャンペーン階層におけるオーディエンスリストの設定情報を削除します。</div>
+         <div lang="en">Delete the audience list setting in campaign level.</div>
        tags:
 -        - CampaignRetargetingListService
 +        - CampaignAudienceListService
@@ -512,18 +394,7 @@ diff -ru v18/Route.yaml v19/Route.yaml
        responses:
          503:
            $ref: '../Response503.yaml#/Response503'
-@@ -5251,8 +5258,8 @@
-                 <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
-                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
-                 <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
--                <tr><td>225301</td><td>Cannot attach criteria at campaign and adgroup.</td><td><div lang="ja">広告グループとキャンペーンの両方にターゲットリストの関連付けはできません。</div><div lang="en">Target lists can not be associated with both ad groups and campaigns.</div></td></tr>
--                <tr><td>225302</td><td>Cannot add closed target list.</td><td><div lang="ja">停止中のターゲットリストは関連付けできません。</div><div lang="en">A closed target list can not be associated.</div></td></tr>
-+                <tr><td>225301</td><td>Cannot attach criteria at campaign and adgroup.</td><td><div lang="ja">広告グループとキャンペーンの両方にオーディエンスリストの関連付けはできません。</div><div lang="en">Audience lists can not be associated with both ad groups and campaigns.</div></td></tr>
-+                <tr><td>225302</td><td>Cannot add closed audience list.</td><td><div lang="ja">停止中のオーディエンスリストは関連付けできません。</div><div lang="en">A closed audience list can not be associated.</div></td></tr>
-                 <tr><td>210920</td><td>This action isn't available when creating the A/B test.</td><td><div lang="ja">A/Bテスト作成中のため操作できません。</div><div lang="en">This action isn't available when creating the A/B test.</div></td></tr>
-               </tbody>
-             </table>
-@@ -5260,7 +5267,7 @@
+@@ -5260,7 +5269,7 @@
            content:
              application/json:
                schema:
@@ -532,7 +403,7 @@ diff -ru v18/Route.yaml v19/Route.yaml
          403:
            $ref: '../Response403.yaml#/Response403'
          401:
-@@ -6249,7 +6256,7 @@
+@@ -6249,7 +6258,7 @@
            $ref: '../Response401.yaml#/Response401'
          400:
            $ref: '../Response400.yaml#/Response400'
@@ -541,14 +412,9 @@ diff -ru v18/Route.yaml v19/Route.yaml
      post:
        parameters:
          - in: header
-@@ -6262,15 +6269,15 @@
-             <div lang="ja">アカウントIDを指定してください。</div>
-             <div lang="en">Specify Account ID.</div>
-       description: |
--        <div lang="ja">ターゲットリストに関する情報を取得します。</div>
--        <div lang="en">Retrieves the target list information.</div>
-+        <div lang="ja">オーディエンスリストに関する情報を取得します。</div>
-+        <div lang="en">Retrieves the audience list information.</div>
+@@ -6265,12 +6274,12 @@
+         <div lang="ja">オーディエンスリストに関する情報を取得します。</div>
+         <div lang="en">Retrieves the audience list information.</div>
        tags:
 -        - RetargetingListService
 +        - AudienceListService
@@ -561,21 +427,7 @@ diff -ru v18/Route.yaml v19/Route.yaml
        responses:
          503:
            $ref: '../Response503.yaml#/Response503'
-@@ -6302,25 +6309,25 @@
-                 <tr><td>210803</td><td>Retargeting unavailable.</td><td><div lang="ja">審査状態により、リターゲティングが強制停止されているアカウントです。</div><div lang="en">The account whose retargeting is forcibly stopped due to the review status.</div></td></tr>
-                 <tr><td>210804</td><td>Registered default list.</td><td><div lang="ja">デフォルトリストが登録済みのアカウントに対して再度デフォルトリストを登録しています。</div><div lang="en">The default list is registered again for the account with default list registered.</div></td></tr>
-                 <tr><td>210807</td><td>Selecting Close default list.</td><td><div lang="ja">対象のデフォルトリストに「CLOSED」を指定しています。</div><div lang="en">"CLOSED" is specified in the target default list.</div></td></tr>
--                <tr><td>210809</td><td>Not logical target list.</td><td><div lang="ja">組み合わせリストに組合せのターゲットリストを指定しています。</div><div lang="en">The combination list is specified in the combination list.</div></td></tr>
-+                <tr><td>210809</td><td>Not logical audience list.</td><td><div lang="ja">組み合わせリストに組合せのオーディエンスリストを指定しています。</div><div lang="en">The combination list is specified in the combination list.</div></td></tr>
-                 <tr><td>210806</td><td>Requires default list.</td><td><div lang="ja">デフォルトリストが登録されていないアカウントに対して条件リストまたは組み合わせリストを登録しています。</div><div lang="en">The rule list or the combination list is registered for the account for which no default list has been registered.</div></td></tr>
--                <tr><td>210815</td><td>Selecting only one target list.</td><td><div lang="ja">組み合わせリストにターゲットリストをひとつだけ指定しています。</div><div lang="en">Only one target list is specified in the combination list.</div></td></tr>
-+                <tr><td>210815</td><td>Selecting only one audience list.</td><td><div lang="ja">組み合わせリストにオーディエンスリストをひとつだけ指定しています。</div><div lang="en">Only one audience list is specified in the combination list.</div></td></tr>
-                 <tr><td>210816</td><td>Selecting only Not condition.</td><td><div lang="ja">組み合わせリストでNOT条件のみを指定しています。</div><div lang="en">Only the NOT condition is specified in the combination list.</div></td></tr>
--                <tr><td>210822</td><td>Cannot create a share target list.</td><td><div lang="ja">共有アカウントの設定がない場合は、共有のターゲットリストを追加できません。</div><div lang="en">If you do not have account sharing settings, you can not add share target list.</div></td></tr>
-+                <tr><td>210822</td><td>Cannot create a share audience list.</td><td><div lang="ja">共有アカウントの設定がない場合は、共有のオーディエンスリストを追加できません。</div><div lang="en">If you do not have account sharing settings, you can not add share audience list.</div></td></tr>
-               </tbody>
-             </table>
-             </div>
+@@ -6313,14 +6322,14 @@
            content:
              application/json:
                schema:
@@ -592,14 +444,9 @@ diff -ru v18/Route.yaml v19/Route.yaml
      post:
        parameters:
          - in: header
-@@ -6333,15 +6340,15 @@
-             <div lang="ja">アカウントIDを指定してください。</div>
-             <div lang="en">Specify Account ID.</div>
-       description: |
--        <div lang="ja">ターゲットリストを追加します。</div>
--        <div lang="en">Adds target list.</div>
-+        <div lang="ja">オーディエンスリストを追加します。</div>
-+        <div lang="en">Adds audience list.</div>
+@@ -6336,12 +6345,12 @@
+         <div lang="ja">オーディエンスリストを追加します。</div>
+         <div lang="en">Adds audience list.</div>
        tags:
 -        - RetargetingListService
 +        - AudienceListService
@@ -612,21 +459,7 @@ diff -ru v18/Route.yaml v19/Route.yaml
        responses:
          503:
            $ref: '../Response503.yaml#/Response503'
-@@ -6373,25 +6380,25 @@
-                 <tr><td>210803</td><td>Retargeting unavailable.</td><td><div lang="ja">審査状態により、リターゲティングが強制停止されているアカウントです。</div><div lang="en">The account whose retargeting is forcibly stopped due to the review status.</div></td></tr>
-                 <tr><td>210804</td><td>Registered default list.</td><td><div lang="ja">デフォルトリストが登録済みのアカウントに対して再度デフォルトリストを登録しています。</div><div lang="en">The default list is registered again for the account with default list registered.</div></td></tr>
-                 <tr><td>210807</td><td>Selecting Close default list.</td><td><div lang="ja">対象のデフォルトリストに「CLOSED」を指定しています。</div><div lang="en">"CLOSED" is specified in the target default list.</div></td></tr>
--                <tr><td>210809</td><td>Not logical target list.</td><td><div lang="ja">組み合わせリストに組合せのターゲットリストを指定しています。</div><div lang="en">The combination list is specified in the combination list.</div></td></tr>
-+                <tr><td>210809</td><td>Not logical audience list.</td><td><div lang="ja">組み合わせリストに組合せのオーディエンスリストを指定しています。</div><div lang="en">The combination list is specified in the combination list.</div></td></tr>
-                 <tr><td>210806</td><td>Requires default list.</td><td><div lang="ja">デフォルトリストが登録されていないアカウントに対して条件リストまたは組み合わせリストを登録しています。</div><div lang="en">The rule list or the combination list is registered for the account for which no default list has been registered.</div></td></tr>
--                <tr><td>210815</td><td>Selecting only one target list.</td><td><div lang="ja">組み合わせリストにターゲットリストをひとつだけ指定しています。</div><div lang="en">Only one target list is specified in the combination list.</div></td></tr>
-+                <tr><td>210815</td><td>Selecting only one audience list.</td><td><div lang="ja">組み合わせリストにオーディエンスリストをひとつだけ指定しています。</div><div lang="en">Only one audience list is specified in the combination list.</div></td></tr>
-                 <tr><td>210816</td><td>Selecting only Not condition.</td><td><div lang="ja">組み合わせリストでNOT条件のみを指定しています。</div><div lang="en">Only the NOT condition is specified in the combination list.</div></td></tr>
--                <tr><td>210822</td><td>Cannot create a share target list.</td><td><div lang="ja">共有アカウントの設定がない場合は、共有のターゲットリストを追加できません。</div><div lang="en">If you do not have account sharing settings, you can not add share target list.</div></td></tr>
-+                <tr><td>210822</td><td>Cannot create a share audience list.</td><td><div lang="ja">共有アカウントの設定がない場合は、共有のオーディエンスリストを追加できません。</div><div lang="en">If you do not have account sharing settings, you can not add share audience list.</div></td></tr>
-               </tbody>
-             </table>
-             </div>
+@@ -6384,14 +6393,14 @@
            content:
              application/json:
                schema:
@@ -643,14 +476,9 @@ diff -ru v18/Route.yaml v19/Route.yaml
      post:
        parameters:
          - in: header
-@@ -6404,15 +6411,15 @@
-             <div lang="ja">アカウントIDを指定してください。</div>
-             <div lang="en">Specify Account ID.</div>
-       description: |
--        <div lang="ja">ターゲットリストを更新します。</div>
--        <div lang="en">Updates the target list.</div>
-+        <div lang="ja">オーディエンスリストを更新します。</div>
-+        <div lang="en">Updates the audience list.</div>
+@@ -6407,12 +6416,12 @@
+         <div lang="ja">オーディエンスリストを更新します。</div>
+         <div lang="en">Updates the audience list.</div>
        tags:
 -        - RetargetingListService
 +        - AudienceListService
@@ -663,21 +491,7 @@ diff -ru v18/Route.yaml v19/Route.yaml
        responses:
          503:
            $ref: '../Response503.yaml#/Response503'
-@@ -6444,25 +6451,25 @@
-                 <tr><td>210803</td><td>Retargeting unavailable.</td><td><div lang="ja">審査状態により、リターゲティングが強制停止されているアカウントです。</div><div lang="en">The account whose retargeting is forcibly stopped due to the review status.</div></td></tr>
-                 <tr><td>210804</td><td>Registered default list.</td><td><div lang="ja">デフォルトリストが登録済みのアカウントに対して再度デフォルトリストを登録しています。</div><div lang="en">The default list is registered again for the account with default list registered.</div></td></tr>
-                 <tr><td>210807</td><td>Selecting Close default list.</td><td><div lang="ja">対象のデフォルトリストに「CLOSED」を指定しています。</div><div lang="en">"CLOSED" is specified in the target default list.</div></td></tr>
--                <tr><td>210809</td><td>Not logical target list.</td><td><div lang="ja">組み合わせリストに組合せのターゲットリストを指定しています。</div><div lang="en">The combination list is specified in the combination list.</div></td></tr>
-+                <tr><td>210809</td><td>Not logical audience list.</td><td><div lang="ja">組み合わせリストに組合せのオーディエンスリストを指定しています。</div><div lang="en">The combination list is specified in the combination list.</div></td></tr>
-                 <tr><td>210806</td><td>Requires default list.</td><td><div lang="ja">デフォルトリストが登録されていないアカウントに対して条件リストまたは組み合わせリストを登録しています。</div><div lang="en">The rule list or the combination list is registered for the account for which no default list has been registered.</div></td></tr>
--                <tr><td>210815</td><td>Selecting only one target list.</td><td><div lang="ja">組み合わせリストにターゲットリストをひとつだけ指定しています。</div><div lang="en">Only one target list is specified in the combination list.</div></td></tr>
-+                <tr><td>210815</td><td>Selecting only one audience list.</td><td><div lang="ja">組み合わせリストにオーディエンスリストをひとつだけ指定しています。</div><div lang="en">Only one audience list is specified in the combination list.</div></td></tr>
-                 <tr><td>210816</td><td>Selecting only Not condition.</td><td><div lang="ja">組み合わせリストでNOT条件のみを指定しています。</div><div lang="en">Only the NOT condition is specified in the combination list.</div></td></tr>
--                <tr><td>210822</td><td>Cannot create a share target list.</td><td><div lang="ja">共有アカウントの設定がない場合は、共有のターゲットリストを追加できません。</div><div lang="en">If you do not have account sharing settings, you can not add share target list.</div></td></tr>
-+                <tr><td>210822</td><td>Cannot create a share audience list.</td><td><div lang="ja">共有アカウントの設定がない場合は、共有のオーディエンスリストを追加できません。</div><div lang="en">If you do not have account sharing settings, you can not add share audience list.</div></td></tr>
-               </tbody>
-             </table>
-             </div>
+@@ -6455,14 +6464,14 @@
            content:
              application/json:
                schema:
@@ -694,7 +508,7 @@ diff -ru v18/Route.yaml v19/Route.yaml
      post:
        parameters:
          - in: header
-@@ -6478,12 +6485,12 @@
+@@ -6478,12 +6487,12 @@
          <div lang="ja">カスタムキーに関する情報を取得します。</div>
          <div lang="en">Get custom key information.</div>
        tags:
@@ -709,21 +523,7 @@ diff -ru v18/Route.yaml v19/Route.yaml
        responses:
          503:
            $ref: '../Response503.yaml#/Response503'
-@@ -6515,24 +6522,97 @@
-                 <tr><td>210803</td><td>Retargeting unavailable.</td><td><div lang="ja">審査状態により、リターゲティングが強制停止されているアカウントです。</div><div lang="en">The account whose retargeting is forcibly stopped due to the review status.</div></td></tr>
-                 <tr><td>210804</td><td>Registered default list.</td><td><div lang="ja">デフォルトリストが登録済みのアカウントに対して再度デフォルトリストを登録しています。</div><div lang="en">The default list is registered again for the account with default list registered.</div></td></tr>
-                 <tr><td>210807</td><td>Selecting Close default list.</td><td><div lang="ja">対象のデフォルトリストに「CLOSED」を指定しています。</div><div lang="en">"CLOSED" is specified in the target default list.</div></td></tr>
--                <tr><td>210809</td><td>Not logical target list.</td><td><div lang="ja">組み合わせリストに組合せのターゲットリストを指定しています。</div><div lang="en">The combination list is specified in the combination list.</div></td></tr>
-+                <tr><td>210809</td><td>Not logical audience list.</td><td><div lang="ja">組み合わせリストに組合せのオーディエンスリストを指定しています。</div><div lang="en">The combination list is specified in the combination list.</div></td></tr>
-                 <tr><td>210806</td><td>Requires default list.</td><td><div lang="ja">デフォルトリストが登録されていないアカウントに対して条件リストまたは組み合わせリストを登録しています。</div><div lang="en">The rule list or the combination list is registered for the account for which no default list has been registered.</div></td></tr>
--                <tr><td>210815</td><td>Selecting only one target list.</td><td><div lang="ja">組み合わせリストにターゲットリストをひとつだけ指定しています。</div><div lang="en">Only one target list is specified in the combination list.</div></td></tr>
-+                <tr><td>210815</td><td>Selecting only one audience list.</td><td><div lang="ja">組み合わせリストにオーディエンスリストをひとつだけ指定しています。</div><div lang="en">Only one audience list is specified in the combination list.</div></td></tr>
-                 <tr><td>210816</td><td>Selecting only Not condition.</td><td><div lang="ja">組み合わせリストでNOT条件のみを指定しています。</div><div lang="en">Only the NOT condition is specified in the combination list.</div></td></tr>
--                <tr><td>210822</td><td>Cannot create a share target list.</td><td><div lang="ja">共有アカウントの設定がない場合は、共有のターゲットリストを追加できません。</div><div lang="en">If you do not have account sharing settings, you can not add share target list.</div></td></tr>
-+                <tr><td>210822</td><td>Cannot create a share audience list.</td><td><div lang="ja">共有アカウントの設定がない場合は、共有のオーディエンスリストを追加できません。</div><div lang="en">If you do not have account sharing settings, you can not add share audience list.</div></td></tr>
-               </tbody>
-             </table>
-             </div>
+@@ -6526,13 +6535,86 @@
            content:
              application/json:
                schema:
@@ -811,7 +611,7 @@ diff -ru v18/Route.yaml v19/Route.yaml
    /BalanceService/get:
      post:
        parameters:
-@@ -7817,6 +7897,215 @@
+@@ -7817,6 +7899,209 @@
            $ref: '../Response401.yaml#/Response401'
          400:
            $ref: '../Response400.yaml#/Response400'
@@ -828,10 +628,8 @@ diff -ru v18/Route.yaml v19/Route.yaml
 +            <div lang="ja">アカウントIDを指定してください。</div>
 +            <div lang="en">Specify Account ID.</div>
 +      description: |
-+        <div lang="ja">アカウントとアセット間の設定情報を取得します。<br>
-+        ※現在、こちらのサービスは利用できません。</div>
-+        <div lang="en">Get configuration information between accounts and assets.<br>
-+        *Currently this service is not available.</div>
++        <div lang="ja">アカウントとアセット間の設定情報を取得します。</div>
++        <div lang="en">Get configuration information between accounts and assets.</div>
 +      tags:
 +        - AccountAssetService
 +      requestBody:
@@ -896,14 +694,12 @@ diff -ru v18/Route.yaml v19/Route.yaml
 +        ・更新は常に上書きされるため追加分を含めて更新する必要があります。<br>
 +        ・アセット情報を解除するときは空の情報で更新します。<br>
 +        ・1つのアカウントに設定できるステータスが有効なアセット情報は、各種それぞれ20件までです。<br>
-+        ・1つのアカウントに設定できるステータスが無効なアセット情報は、各種それぞれ2000件までです。<br>
-+        ※現在、こちらのサービスは利用できません。</div>
++        ・1つのアカウントに設定できるステータスが無効なアセット情報は、各種それぞれ2000件までです。</div>
 +        <div lang="en">Add, update or release(remove) Asset information of account.<br>
 +        ・Update will overwrite the old information, so have to include the additional information on every updates.<br>
 +        ・To release FeedItem information, update with blank data.<br>
 +        ・Up to 20 asset information with valid status can be set for one ad group for each AccountAssetServiceType.<br>
-+        ・Up to 2000 asset information with invalid status can be set for one ad group for each AccountAssetServiceType.<br>
-+        *Currently this service is not available.</div>
++        ・Up to 2000 asset information with invalid status can be set for one ad group for each AccountAssetServiceType.</div>
 +      tags:
 +        - AccountAssetService
 +      requestBody:
@@ -968,12 +764,10 @@ diff -ru v18/Route.yaml v19/Route.yaml
 +      description: |
 +        <div lang="ja">アカウントとアセット間の設定情報を更新します。<br>
 +        ・1つのアカウントに設定できるステータスが有効なアセット情報は、各種それぞれ20件までです。<br>
-+        ・1つのアカウントに設定できるステータスが無効なアセット情報は、各種それぞれ2000件までです。<br>
-+        ※現在、こちらのサービスは利用できません。</div>
++        ・1つのアカウントに設定できるステータスが無効なアセット情報は、各種それぞれ2000件までです。</div>
 +        <div lang="en">Updates configuration information between accounts and assets.<br>
 +        ・Up to 20 asset information with valid status can be set for one ad group for each AccountAssetServiceType.<br>
-+        ・Up to 2000 asset information with invalid status can be set for one ad group for each AccountAssetServiceType.<br>
-+        *Currently this service is not available.</div>
++        ・Up to 2000 asset information with invalid status can be set for one ad group for each AccountAssetServiceType.</div>
 +      tags:
 +        - AccountAssetService
 +      requestBody:
@@ -1027,38 +821,14 @@ diff -ru v18/Route.yaml v19/Route.yaml
    /AdGroupAssetService/get:
      post:
        parameters:
-
-
-------
-diff -ru v18/abtest/AbTest.yaml v19/abtest/AbTest.yaml
---- v18/abtest/AbTest.yaml	2026-01-28 09:51:52
-+++ v19/abtest/AbTest.yaml	2026-01-28 09:51:52
-@@ -186,7 +186,7 @@
-         - AD_OVER_LIMIT: 広告の作成上限数を超えています。<br>
-         - DOUBLE_TEXT_AD_UNSUPPORTED: 拡大テキスト広告が含まれるためA/Bテストを作成できませんでした。<br>
-         - DUPLICATE_CAMPAIGN_NAME: キャンペーン名が重複しているためA/Bテストの作成に失敗しました。<br>
--        - CAMPAIGN_CRITERION_OVER_LIMIT: 「キャンペーンに設定した除外キーワード数」「ターゲットリストのキャンペーンとの関連付け数」「地域ターゲティング/曜日・時間帯ターゲティング/デバイスターゲティングの設定数」「動的検索連動型広告の対象ページ（除外）数」の合計が上限数を超えています。<br>
-+        - CAMPAIGN_CRITERION_OVER_LIMIT: 「キャンペーンに設定した除外キーワード数」「オーディエンスリストのキャンペーンとの関連付け数」「地域ターゲティング/曜日・時間帯ターゲティング/デバイスターゲティングの設定数」「動的検索連動型広告の対象ページ（除外）数」の合計が上限数を超えています。<br>
-         - SYSTEM_ERROR_OCCURRED: システムエラーが発生しました。<br>
-         詳細は以下のヘルプを参照してください。<br>
-         ・<a href="https://ads-help.yahoo-net.jp/s/article/H000053491?language=ja">A/Bテストについて【検索広告】</a></div>
-@@ -200,7 +200,7 @@
-         - AD_OVER_LIMIT: You already have the maximum number of ads.<br>
-         - DOUBLE_TEXT_AD_UNSUPPORTED: Can't create an A/B test. The campaign contains extended text ads.<br>
-         - DUPLICATE_CAMPAIGN_NAME: Failed to create an A/B test. The campaign name is a duplicate.<br>
--        - CAMPAIGN_CRITERION_OVER_LIMIT: You have reached the maximum total number of "Excluded keywords specified in the campaign," "Associations of target lists with campaigns," "Settings for geo targeting, day of week/hours targeting, and device targeting," and "Target pages of Dynamic Ads for Search (exclusions)."<br>
-+        - CAMPAIGN_CRITERION_OVER_LIMIT: You have reached the maximum total number of "Excluded keywords specified in the campaign," "Associations of audience lists with campaigns," "Settings for geo targeting, day of week/hours targeting, and device targeting," and "Target pages of Dynamic Ads for Search (exclusions)."<br>
-         - SYSTEM_ERROR_OCCURRED: A system error has occurred.<br>
-         See also the help below.<br>
-         * <a href="https://ads-help.yahoo-net.jp/s/article/H000053491?language=en_US">A/B test [Search Ads]</a></div>
 Only in v19: accountasset
 
 
 ------
 diff -ru v18/adgroup/AdGroupServiceCriterionType.yaml v19/adgroup/AdGroupServiceCriterionType.yaml
---- v18/adgroup/AdGroupServiceCriterionType.yaml	2026-01-28 09:51:52
+--- v18/adgroup/AdGroupServiceCriterionType.yaml	2026-03-12 11:56:57
 +++ v19/adgroup/AdGroupServiceCriterionType.yaml	2026-01-28 09:51:52
-@@ -2,19 +2,19 @@
+@@ -2,18 +2,18 @@
    type: string
    nullable: true
    enum:
@@ -1077,30 +847,10 @@ diff -ru v18/adgroup/AdGroupServiceCriterionType.yaml v19/adgroup/AdGroupService
 +    *The default value in ADD operation for the case of no setting 'TargetingSetting' is AUDIENCE_LIST.</div>
      <dl class=term>
 -      <dt class="term__item">TARGET_LIST</dt>
--      <dd class="term__desc"><span lang="ja">ターゲットリストです。</span><span lang="en">Target list.</span></dd>
 +      <dt class="term__item">AUDIENCE_LIST</dt>
-+      <dd class="term__desc"><span lang="ja">オーディエンスリストです。</span><span lang="en">Audience list.</span></dd>
+       <dd class="term__desc"><span lang="ja">オーディエンスリストです。</span><span lang="en">Audience list.</span></dd>
        <dt class="term__item">UNKNOWN</dt>
        <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown value.</span></dd>
-     </dl>
-
-
-------
-diff -ru v18/adgroup/AdGroupServiceTargetAll.yaml v19/adgroup/AdGroupServiceTargetAll.yaml
---- v18/adgroup/AdGroupServiceTargetAll.yaml	2026-01-28 09:51:52
-+++ v19/adgroup/AdGroupServiceTargetAll.yaml	2026-01-28 09:51:52
-@@ -15,9 +15,9 @@
-     *The default value in ADD operation for the case of no setting 'TargetingSetting' is ACTIVE.</div>
-     <dl class=term>
-       <dt class="term__item">ACTIVE</dt>
--      <dd class="term__desc"><span lang="ja">すべてのユーザーを配信対象とします。<br>ターゲットリストのユーザーは入札価格調整率の適用のみ行います。</span><span lang="en">All users are target of ad delivery.<br>Only applying bid adjustment rate is done for users on the Target List.</span></dd>
-+      <dd class="term__desc"><span lang="ja">すべてのユーザーを配信対象とします。<br>オーディエンスリストのユーザーは入札価格調整率の適用のみ行います。</span><span lang="en">All users are target of ad delivery.<br>Only applying bid adjustment rate is done for users on the audience list.</span></dd>
-       <dt class="term__item">DEACTIVE</dt>
--      <dd class="term__desc"><span lang="ja">ターゲットリストのユーザーのみを配信対象とします。<br>また、ターゲットリストのユーザーに対して入札価格調整率を適用します。</span><span lang="en">Users on the target list are target of ad delivery.<br>And bid adjustment rate is applied to users on the target list.</span></dd>
-+      <dd class="term__desc"><span lang="ja">オーディエンスリストのユーザーのみを配信対象とします。<br>また、オーディエンスリストのユーザーに対して入札価格調整率を適用します。</span><span lang="en">Users on the audience list are target of ad delivery.<br>And bid adjustment rate is applied to users on the audience list.</span></dd>
-       <dt class="term__item">UNKNOWN</dt>
-       <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown value.</span></dd>
-     </dl>
 Only in v19: adgroupaudiencelist
 Only in v18: adgroupretargetinglist
 
@@ -1124,7 +874,7 @@ Only in v19/asset: AssetServiceBusinessNameAsset.yaml
 ------
 diff -ru v18/asset/AssetServiceType.yaml v19/asset/AssetServiceType.yaml
 --- v18/asset/AssetServiceType.yaml	2026-01-28 09:51:52
-+++ v19/asset/AssetServiceType.yaml	2026-02-04 09:45:28
++++ v19/asset/AssetServiceType.yaml	2026-03-06 18:19:30
 @@ -8,6 +8,7 @@
    - STRUCTURED_SNIPPET
    - IMAGE
@@ -1138,7 +888,7 @@ diff -ru v18/asset/AssetServiceType.yaml v19/asset/AssetServiceType.yaml
        <dt class="term__item">FAVICON</dt>
        <dd class="term__desc"><span lang="ja">広告表示アセットのファビコンアセットです。</span><span lang="en">Favicon asset from ad display asset.</div></span></dd>
 +      <dt class="term__item">BUSINESS_NAME</dt>
-+      <dd class="term__desc"><span lang="ja">広告表示アセットのビジネス名アセットです。※現在利用できません。</span><span lang="en">Business name asset from ad display asset. * Not Available.</span></dd>
++      <dd class="term__desc"><span lang="ja">広告表示アセットのビジネス名アセットです。</span><span lang="en">Business name asset from ad display asset.</span></dd>
        <dt class="term__item">UNKNOWN</dt>
        <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown value.</span></dd>
      </dl>
@@ -1147,32 +897,29 @@ Only in v19: audiencelist
 
 ------
 diff -ru v18/auditlog/AuditLogServiceEventSelector.yaml v19/auditlog/AuditLogServiceEventSelector.yaml
---- v18/auditlog/AuditLogServiceEventSelector.yaml	2026-01-28 09:51:52
-+++ v19/auditlog/AuditLogServiceEventSelector.yaml	2026-02-04 09:45:28
+--- v18/auditlog/AuditLogServiceEventSelector.yaml	2026-04-08 10:56:29
++++ v19/auditlog/AuditLogServiceEventSelector.yaml	2026-04-08 10:56:29
 @@ -75,20 +75,20 @@
                <td>自動入札設定です。</td>
              </tr>
              <tr>
 -              <td>NEGATIVE_CAMPAIGN_USER_LIST</td>
--              <td>対象外ターゲットリストです（キャンペーン）。</td>
 +              <td>NEGATIVE_CAMPAIGN_AUDIENCE_LIST</td>
-+              <td>対象外オーディエンスリストです（キャンペーン）。</td>
+               <td>対象外オーディエンスリストです（キャンペーン）。</td>
              </tr>
              <tr>
 -              <td>NEGATIVE_AD_GROUP_USER_LIST</td>
--              <td>対象外ターゲットリストです（広告グループ）。</td>
 +              <td>NEGATIVE_AD_GROUP_AUDIENCE_LIST</td>
-+              <td>対象外オーディエンスリストです（広告グループ）。</td>
+               <td>対象外オーディエンスリストです（広告グループ）。</td>
              </tr>
              <tr>
 -              <td>AD_GROUP_USER_LIST</td>
--              <td>ターゲットリストです（広告グループ）。</td>
 +              <td>AD_GROUP_AUDIENCE_LIST</td>
-+              <td>オーディエンスリストです（広告グループ）。</td>
+               <td>オーディエンスリストです（広告グループ）。</td>
              </tr>
              <tr>
 -              <td>TARGET_LIST</td>
--              <td>サイトリターゲテイングのターゲットリストです。</td>
+-              <td>サイトリターゲテイングのオーディエンスリストです。</td>
 +              <td>AUDIENCE_LIST</td>
 +              <td>オーディエンスリストです。</td>
              </tr>
@@ -1183,7 +930,7 @@ diff -ru v18/auditlog/AuditLogServiceEventSelector.yaml v19/auditlog/AuditLogSer
              </tr>
              <tr>
 +              <td>ACCOUNT_ASSET</td>
-+              <td>アカウントとアセット間の設定情報です。※現在利用できません</td>
++              <td>アカウントとアセット間の設定情報です。</td>
 +            </tr>
 +            <tr>
                <td>ACCOUNT_CUSTOMIZER</td>
@@ -1194,25 +941,22 @@ diff -ru v18/auditlog/AuditLogServiceEventSelector.yaml v19/auditlog/AuditLogSer
              </tr>
              <tr>
 -              <td>NEGATIVE_CAMPAIGN_USER_LIST</td>
--              <td>Exclude target list for campaign.</td>
 +              <td>NEGATIVE_CAMPAIGN_AUDIENCE_LIST</td>
-+              <td>Exclude audience list for campaign.</td>
+               <td>Exclude audience list for campaign.</td>
              </tr>
              <tr>
 -              <td>NEGATIVE_AD_GROUP_USER_LIST</td>
--              <td>Exclude target list for ad group.</td>
 +              <td>NEGATIVE_AD_GROUP_AUDIENCE_LIST</td>
-+              <td>Exclude audience list for ad group.</td>
+               <td>Exclude audience list for ad group.</td>
              </tr>
              <tr>
 -              <td>AD_GROUP_USER_LIST</td>
--              <td>Target list for ad group.</td>
 +              <td>AD_GROUP_AUDIENCE_LIST</td>
-+              <td>Audience list for ad group.</td>
+               <td>Audience list for ad group.</td>
              </tr>
              <tr>
 -              <td>TARGET_LIST</td>
--              <td>Target list of Site Retargeting.</td>
+-              <td>Audience list of Site Retargeting.</td>
 +              <td>AUDIENCE_LIST</td>
 +              <td>Audience list.</td>
              </tr>
@@ -1225,7 +969,7 @@ diff -ru v18/auditlog/AuditLogServiceEventSelector.yaml v19/auditlog/AuditLogSer
 +            </tr>
 +            <tr>
 +              <td>ACCOUNT_ASSET</td>
-+              <td>Configuration information between account and assets. * Not Available.</td>
++              <td>Configuration information between account and assets.</td>
              </tr>
              <tr>
                <td>ACCOUNT_CUSTOMIZER</td>
@@ -1234,7 +978,7 @@ diff -ru v18/auditlog/AuditLogServiceEventSelector.yaml v19/auditlog/AuditLogSer
 ------
 diff -ru v18/campaign/CampaignServiceSettingType.yaml v19/campaign/CampaignServiceSettingType.yaml
 --- v18/campaign/CampaignServiceSettingType.yaml	2026-01-28 09:51:52
-+++ v19/campaign/CampaignServiceSettingType.yaml	2026-01-28 09:51:53
++++ v19/campaign/CampaignServiceSettingType.yaml	2026-03-12 11:56:57
 @@ -3,7 +3,7 @@
    nullable: true
    enum:
@@ -1268,24 +1012,6 @@ diff -ru v18/campaign/CampaignServiceSettings.yaml v19/campaign/CampaignServiceS
      <div lang="en">CampaignServiceSettings object is container for geographic targeting  of campaign.<br>
 -    This field is required when campaignType is 'DYNAMIC_ADS_FOR_SEARCH_SETTING' in ADD operation. For other campaignType, this field is optional in ADD operation. The default value will be TARGET_LIST_SETTING for SettingType or ACTIVE for TargetAll when TargetingSetting is not setting.</div>
 +    This field is required when campaignType is 'DYNAMIC_ADS_FOR_SEARCH_SETTING' in ADD operation. For other campaignType, this field is optional in ADD operation. The default value will be AUDIENCE_LIST_SETTING for SettingType or ACTIVE for TargetAll when TargetingSetting is not setting.</div>
-
-
-------
-diff -ru v18/campaign/CampaignServiceTargetAll.yaml v19/campaign/CampaignServiceTargetAll.yaml
---- v18/campaign/CampaignServiceTargetAll.yaml	2026-01-28 09:51:52
-+++ v19/campaign/CampaignServiceTargetAll.yaml	2026-01-28 09:51:53
-@@ -13,9 +13,9 @@
-     This field is required in ADD and SET operation.</div>
-     <dl class=term>
-       <dt class="term__item">ACTIVE</dt>
--      <dd class="term__desc"><span lang="ja">すべてのユーザーを配信対象とします。<br>ターゲットリストのユーザーは入札価格調整率の適用のみ行います。</span><span lang="en">All users are target of ad delivery.<br>Only applying bid adjustment rate is done for users on the target list.</span></dd>
-+      <dd class="term__desc"><span lang="ja">すべてのユーザーを配信対象とします。<br>オーディエンスリストのユーザーは入札価格調整率の適用のみ行います。</span><span lang="en">All users are target of ad delivery.<br>Only applying bid adjustment rate is done for users on the audience list.</span></dd>
-       <dt class="term__item">DEACTIVE</dt>
--      <dd class="term__desc"><span lang="ja">ターゲットリストのユーザーのみを配信対象とします。<br>また、ターゲットリストのユーザーに対して入札価格調整率を適用します。</span><span lang="en">Users on the Target List are target of ad delivery.<br>And bid adjustment rate is applied to users on the target list.</span></dd>
-+      <dd class="term__desc"><span lang="ja">オーディエンスリストのユーザーのみを配信対象とします。<br>また、オーディエンスリストのユーザーに対して入札価格調整率を適用します。</span><span lang="en">Users on the audience list are target of ad delivery.<br>And bid adjustment rate is applied to users on the audience list.</span></dd>
-       <dt class="term__item">UNKNOWN</dt>
-       <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown value.</span></dd>
-     </dl>
 
 
 ------
@@ -1330,7 +1056,7 @@ Only in v19: campaignaudiencelist
 ------
 diff -ru v18/campaignexport/CampaignExportServiceEntityType.yaml v19/campaignexport/CampaignExportServiceEntityType.yaml
 --- v18/campaignexport/CampaignExportServiceEntityType.yaml	2026-01-28 09:51:52
-+++ v19/campaignexport/CampaignExportServiceEntityType.yaml	2026-02-04 09:45:28
++++ v19/campaignexport/CampaignExportServiceEntityType.yaml	2026-03-06 18:19:30
 @@ -15,6 +15,7 @@
    - CALLEXTENSION_ASSET
    - IMAGE_ASSET
@@ -1344,7 +1070,7 @@ diff -ru v18/campaignexport/CampaignExportServiceEntityType.yaml v19/campaignexp
        <dt class="term__item">FAVICON_ASSET</dt>
        <dd class="term__desc"><span lang="ja">ファビコンアセットのアセット</span><span lang="en">Favicon asset assets.</span></dd>
 +      <dt class="term__item">BUSINESS_NAME_ASSET</dt>
-+      <dd class="term__desc"><span lang="ja">ビジネス名アセットのアセット※現在利用できません</span><span lang="en">Business name asset assets.* Not Available</span></dd>
++      <dd class="term__desc"><span lang="ja">ビジネス名アセットのアセット</span><span lang="en">Business name asset assets.</span></dd>
        <dt class="term__item">ALL</dt>
        <dd class="term__desc"><span lang="ja">すべての広告エンティティ</span><span lang="en">All entities.</span></dd>
        <dt class="term__item">UNKNOWN</dt>
@@ -1354,7 +1080,7 @@ Only in v18: campaignretargetinglist
 ------
 diff -ru v18/reportdefinition/ReportDefinitionServiceReportType.yaml v19/reportdefinition/ReportDefinitionServiceReportType.yaml
 --- v18/reportdefinition/ReportDefinitionServiceReportType.yaml	2026-01-28 09:51:52
-+++ v19/reportdefinition/ReportDefinitionServiceReportType.yaml	2026-02-04 09:45:28
++++ v19/reportdefinition/ReportDefinitionServiceReportType.yaml	2026-03-12 11:56:43
 @@ -14,12 +14,15 @@
    - BID_STRATEGY
    - CAMPAIGN_TARGET_LIST
@@ -1387,7 +1113,7 @@ diff -ru v18/reportdefinition/ReportDefinitionServiceReportType.yaml v19/reportd
        <dt class="term__item">ADGROUP_ASSET</dt>
        <dd class="term__desc"><span lang="ja">広告表示アセットレポート（広告グループ）です。</span><span lang="en">Ad display asset report (ad group).</span></dd>
 +      <dt class="term__item">ACCOUNT_ASSET</dt>
-+      <dd class="term__desc"><span lang="ja">広告表示アセットレポート（アカウント）です。※現在利用できません。</span><span lang="en">Ad display asset report (account). * Not Available.</span></dd>
++      <dd class="term__desc"><span lang="ja">広告表示アセットレポート（アカウント）です。</span><span lang="en">Ad display asset report (account).</span></dd>
        <dt class="term__item">RESPONSIVE_ADS_FOR_SEARCH_ASSET</dt>
        <dd class="term__desc"><span lang="ja">レスポンシブ検索広告アセットレポートです。</span><span lang="en">Responsive Ads for search asset report.</span></dd>
        <dt class="term__item">ASSET_COMBINATIONS</dt>
@@ -1397,7 +1123,7 @@ Only in v18: retargetinglist
 ------
 diff -ru v18/ssareportdefinition/SsaReportDefinitionServiceReportType.yaml v19/ssareportdefinition/SsaReportDefinitionServiceReportType.yaml
 --- v18/ssareportdefinition/SsaReportDefinitionServiceReportType.yaml	2026-01-28 09:51:52
-+++ v19/ssareportdefinition/SsaReportDefinitionServiceReportType.yaml	2026-01-28 09:51:52
++++ v19/ssareportdefinition/SsaReportDefinitionServiceReportType.yaml	2026-04-08 10:56:29
 @@ -5,6 +5,7 @@
    - ACCOUNT
    - CAMPAIGN
@@ -1411,7 +1137,7 @@ diff -ru v18/ssareportdefinition/SsaReportDefinitionServiceReportType.yaml v19/s
        <dt class="term__item">ADGROUP</dt>
        <dd class="term__desc"><span lang="ja">広告グループレポートです。</span><span lang="en">Ad group report.<br>Performance data for selected ad group for one or more of campaigns.</span></dd>
 +      <dt class="term__item">AUDIENCE_LIST</dt>
-+      <dd class="term__desc"><span lang="ja">オーディエンスリストレポートです。※現在利用できません。</span><span lang="en">Audience list report. * Not Available.<br>Performance data for selected audience lists.</span></dd>
++      <dd class="term__desc"><span lang="ja">オーディエンスリストレポートです。</span><span lang="en">Audience list report.<br>Performance data for selected audience lists.</span></dd>
        <dt class="term__item">SEARCH_QUERY</dt>
        <dd class="term__desc"><span lang="ja">検索クエリレポートです。</span><span lang="en">Search query report.<br>Performance data for search queries which triggered the ad and received the clicks.</span></dd>
        <dt class="term__item">PRODUCT_GROUP</dt>
