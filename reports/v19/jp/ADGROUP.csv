@@ -56,3 +56,5 @@
 "CONV_VALUE_PER_COST","コンバージョンの価値/コスト","Conv. value/cost","convValuePerCost","DOUBLE","[CONVERSION_NAME, MONTH_OF_YEAR, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",""
 "ALL_CONV_VALUE_PER_COST","コンバージョンの価値（全て）/コスト","Conv. value (all)/cost","allConvValuePerCost","DOUBLE","[CONVERSION_NAME, MONTH_OF_YEAR, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",""
 "AB_TEST_USAGE","A/Bテスト利用","A/B test usage","abTestUsage","ENUM","","Attribute","テスト元のキャンペーン,テストキャンペーン,対象外","Original campaign,Test campaign,Not applicable",""
+"AI_SETTING","キャンペーンの検索クエリーマッチング","Campaign Search query matching","aiSetting","ENUM","","Attribute","利用する,利用しない,その他","Use,Don't use,Other",""
+"SEARCH_QUERY_MATCHING","広告グループの検索クエリーマッチング","Ad group Search query matching","searchQueryMatching","ENUM","","Attribute","利用する,利用しない,その他","Use,Don't use,Other",""

@@ -21,6 +21,8 @@
 "FINAL_URL_SMARTPHONE","スマートフォン向けURL","Smartphone final URL","finalURLSmartphone","STRING","","Attribute","","",""
 "ASSET_CALLOUT","補足用テキスト","Callout text","callout","STRING","","Attribute","","",""
 "ASSET_PHONE_NUMBER","電話番号","Call","phoneNumber","STRING","","Attribute","","",""
+"ASSET_SOURCE","作成元","Created by","assetSource","ENUM","","Attribute","広告主,システム,その他","Advertiser,System,Other",""
+"AUTO_CREATED_ASSET_LAST_UPDATED_DATE","自動作成の最終更新日","Automated creation last updated","autoCreatedAssetLastUpdatedDate","STRING","","Attribute","","",""
 "CONVERSIONS","コンバージョン数","Conversions","conversions","DOUBLE","[MONTH_OF_YEAR]","Metric","","",""
 "CONV_RATE","コンバージョン率","Conv. rate","convRate","DOUBLE","[CONVERSION_NAME, MONTH_OF_YEAR, OBJECT_OF_CONVERSION_TRACKING]","Metric","","",""
 "CONV_VALUE","コンバージョンの価値","Conv. value","convValue","DOUBLE","[MONTH_OF_YEAR]","Metric","","",""

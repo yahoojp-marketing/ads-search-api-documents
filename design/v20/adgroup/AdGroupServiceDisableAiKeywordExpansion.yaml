@@ -7,13 +7,11 @@ AdGroupServiceDisableAiKeywordExpansion:
   - UNKNOWN
   title: AdGroupServiceDisableAiKeywordExpansion
   description: |
-    <div lang="ja">AdGroupServiceDisableAiKeywordExpansionは、広告グループのAIキーワード拡張設定の無効化です。<br>
-    ※現在、このフィールドは利用できません。<br>
+    <div lang="ja">AdGroupServiceDisableAiKeywordExpansionは、広告グループの検索クエリーマッチング設定の無効化です。<br>
     campaignTypeがSTANDARDの場合のみ指定可能です。<br>
     ADD時およびSET時、このフィールドは省略可能となります。<br>
     ADD時のデフォルト設定値はFALSE(利用する)です。</div>
-    <div lang="en">AdGroupServiceDisableAiKeywordExpansion is the setting to disable AI keyword expansion for ad group.<br>
-    *Currently this field is not available.<br>
+    <div lang="en">AdGroupServiceDisableAiKeywordExpansion is the setting to disable Search query matching for ad group.<br>
     This field can be specified only when campaignType is STANDARD.<br>
     This field is optional in ADD and SET operation.<br>
     The default value in ADD operation will be FALSE (Use).</div>

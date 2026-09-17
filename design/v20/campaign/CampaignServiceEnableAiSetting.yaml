@@ -7,13 +7,11 @@ CampaignServiceEnableAiSetting:
   - UNKNOWN
   title: CampaignServiceEnableAiSetting
   description: |
-    <div lang="ja">CampaignServiceEnableAiSetting、キャンペーンのAIキーワード拡張設定の有効化です。<br>
-    ※現在、このフィールドは利用できません。<br>
+    <div lang="ja">CampaignServiceEnableAiSetting、キャンペーンの検索クエリーマッチング設定の有効化です。<br>
     campaignTypeがSTANDARDの場合のみ指定可能です。<br>
     ADD時およびSET時、このフィールドは省略可能となります。<br>
     ADD時のデフォルト設定値はFALSE(利用しない)です。</div>
-    <div lang="en">CampaignServiceEnableAiSetting is the setting to enable AI keyword expansion for campaign.<br>
-    *Currently this field is not available.<br>
+    <div lang="en">CampaignServiceEnableAiSetting is the setting to enable Search query matching for campaign.<br>
     This field can be specified only when campaignType is STANDARD.<br>
     This field is optional in ADD and SET operation.<br>
     The default value in ADD operation will be FALSE (Do not use).</div>

@@ -67,3 +67,4 @@
 "BUDGET_ID","共有予算ID","Shared budget ID","budgetID","LONG","","Attribute","","",""
 "BUDGET_NAME","共有予算名","Shared budget name","budgetName","STRING","","Attribute","","",""
 "AB_TEST_USAGE","A/Bテスト利用","A/B test usage","abTestUsage","ENUM","","Attribute","テスト元のキャンペーン,テストキャンペーン,対象外","Original campaign,Test campaign,Not applicable",""
+"AI_SETTING","キャンペーンの検索クエリーマッチング","Campaign Search query matching","aiSetting","ENUM","","Attribute","利用する,利用しない,その他","Use,Don't use,Other",""
